@@ -19,6 +19,7 @@ import org.slf4j.LoggerFactory;
 
 import led.discovery.h2.H2Queries;
 import led.discovery.h2.H2TermsDatabase;
+import led.discovery.utils.Term;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class H2TermsDatabaseTest {
@@ -86,7 +87,7 @@ public class H2TermsDatabaseTest {
 	public void test4_getDocumentsSize() throws IOException {
 		String folder = testFolder.newFolder().getAbsolutePath();
 		TermsDatabase d = new H2TermsDatabase(new File(folder), "test", user, pwd);
-		d.addDocument("doc1", new String[] { "a", "b", "c", "d", "e" });
+		d.addDocument("doc1", Term.buildList("a", "b", "c", "d", "e" ));
 		Assert.assertTrue("getDocumentsSize", d.countDocuments() == 1);
 		Assert.assertTrue("containsDocument(int)", d.containsDocument(d.getDocId("doc1")));
 		Assert.assertTrue("!containsDocument(int)", !d.containsDocument(0)); // id 0 does not exists
@@ -96,18 +97,18 @@ public class H2TermsDatabaseTest {
 		Assert.assertTrue("!containsDocument(String)", !d.containsDocument("doc2"));
 		
 		// Add another documents with the same terms
-		d.addDocument("doc2", new String[] { "a", "b", "c", "d", "e" });
+		d.addDocument("doc2", Term.buildList( "a", "b", "c", "d", "e" ));
 		Assert.assertTrue("getDocumentsSize", d.countDocuments() == 2);
 		
 		// Add another documents with new terms
-		d.addDocument("doc3", new String[] { "f", "g", "h", "i", "j", "k" });
+		d.addDocument("doc3", Term.buildList( "f", "g", "h", "i", "j", "k" ));
 		Assert.assertTrue("getDocumentsSize", d.countDocuments() == 3);
 	}
 	
 	public void getDocumentIds() throws IOException {
 		String folder = testFolder.newFolder().getAbsolutePath();
 		TermsDatabase d = new H2TermsDatabase(new File(folder), "test", user, pwd);
-		d.addDocument("doc1", new String[] { "a", "b", "c", "d", "e" });
+		d.addDocument("doc1", Term.buildList( "a", "b", "c", "d", "e" ));
 		Assert.assertTrue(d.getDocumentIds().size() == 1);
 		Assert.assertTrue(d.getDocumentIds().contains(1));
 		Assert.assertTrue(!d.getDocumentIds().contains(2));
@@ -116,11 +117,11 @@ public class H2TermsDatabaseTest {
 	public void getTermIds() throws IOException {
 		String folder = testFolder.newFolder().getAbsolutePath();
 		TermsDatabase d = new H2TermsDatabase(new File(folder), "test", user, pwd);
-		d.addDocument("doc1", new String[] { "a"});
+		d.addDocument("doc1", Term.buildList( "a" ));
 		Assert.assertTrue(d.getTermIds().size() == 1);
 		Assert.assertTrue(d.getTermIds().contains(1));
 		Assert.assertTrue(!d.getTermIds().contains(2));
-		Assert.assertTrue(d.getTerms().contains("a"));
+		Assert.assertTrue(d.getTerms().contains(Term.build("a","")));
 	}
 	
 	@Test
@@ -128,9 +129,21 @@ public class H2TermsDatabaseTest {
 		String folder = testFolder.newFolder().getAbsolutePath();
 		TermsDatabase db = new H2TermsDatabase(new File(folder));
 		TFIDF tfidf = new TFIDF(db);
-		db.addDocument("d1", new String[] {"a", "b", "c"});
-		l.info("tf is {}", tfidf.tf("d1", "a") );
-		Assert.assertTrue(tfidf.tf("d1", "a") > 0.2);
-		Assert.assertTrue(tfidf.tf("d1", "a") < 0.4);
+		db.addDocument("d1", Term.buildList("a", "b", "c"));
+		l.info("tf is {}", tfidf.tf("d1", Term.build("a","")) );
+		Assert.assertTrue(tfidf.tf("d1", Term.build("a","")) > 0.2);
+		Assert.assertTrue(tfidf.tf("d1", Term.build("a","")) < 0.4);
+	}
+	
+	@Test
+	public void countDocumentsContainingTermId() throws IOException {
+		String folder = testFolder.newFolder().getAbsolutePath();
+		TermsDatabase db = new H2TermsDatabase(new File(folder));
+		db.addDocument("d1", Term.buildList("a", "b", "c"));
+		db.addDocument("d2", Term.buildList("c", "d", "e"));
+		db.addDocument("d3", Term.buildList("a", "f", "c"));
+		Assert.assertTrue(db.countDocumentsContainingTerm(db.getTermId(Term.build("c", ""))) == 3);
+		Assert.assertTrue(db.countDocumentsContainingTerm(db.getTermId(Term.build("a", ""))) == 2);
+		Assert.assertTrue(db.countDocumentsContainingTerm(db.getTermId(Term.build("b", ""))) == 1);
 	}
 }
