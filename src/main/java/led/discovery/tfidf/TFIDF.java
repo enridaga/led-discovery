@@ -12,6 +12,8 @@ import java.util.Map.Entry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import led.discovery.utils.Term;
+
 /**
  * Computes TF/IDF scores from a TermsDatabase.
  * 
@@ -24,8 +26,33 @@ public class TFIDF {
 	private Logger log = LoggerFactory.getLogger(TFIDF.class);
 	private TermsDatabase data;
 
+	private List<Term> terms = null;
+	private List<Integer> termIds = null;
+	private Map<Integer,Term> termsAndIds = null;
+	private int countDocuments = -1;
+	private List<Integer> documentIds;
+	private Map<Integer, Integer> countDocumentTerms;
+
 	public TFIDF(TermsDatabase data) throws IOException {
 		this.data = data;
+	}
+
+	/**
+	 * Do this prior to invoking any tf/idf method
+	 * 
+	 * @throws IOException
+	 */
+	public void init() throws IOException {
+		log.info("init started");
+		termIds = data.getTermIds();
+		log.info("{} term ids loaded", termIds.size());
+		terms = data.getTerms();
+		log.info("{} terms loaded", termIds.size());
+		termsAndIds = data.getTermAndIds();
+		documentIds = data.getDocumentIds();
+		countDocuments = documentIds.size();
+		log.info("{} documents ids", documentIds.size());
+		countDocumentTerms = data.countDocumentTerms();
 	}
 
 	/**
@@ -52,7 +79,7 @@ public class TFIDF {
 	 *            the term to check for frequency
 	 * @return
 	 */
-	public double tf(String docName, String term) throws IOException {
+	public double tf(String docName, Term term) throws IOException {
 		return tf(data.getDocId(docName), data.getTermId(term));
 	}
 
@@ -65,10 +92,16 @@ public class TFIDF {
 	 *         dictionary)
 	 */
 	public Map<Integer, Double> tf(int docId) throws IOException {
-		List<Integer> termIds = data.getTermIds();
 		Map<Integer, Double> tf = new HashMap<Integer, Double>();
+		Map<Integer, Integer> tc = data.countEachTerm(docId);
 		for (Integer tid : termIds) {
-			tf.put(tid, tf(docId, tid));
+			double ttf;
+			if(tc.containsKey(tid)) {
+				ttf = (double) tc.get(tid) / (double) countDocumentTerms.get(docId);
+			}else {
+				ttf = 0;
+			}
+			tf.put(tid, ttf);
 		}
 		return tf;
 	}
@@ -79,10 +112,10 @@ public class TFIDF {
 	 * @param termId
 	 * @return
 	 */
-	public double idf(int termId) throws IOException {
+	public double idf(int termId, int documentsWithTermId) throws IOException {
 		int count = 0;
-		int z = data.countDocuments();
-		count = data.countDocumentsContainingTerm(termId);
+		int z = countDocuments;
+		count = documentsWithTermId;
 		double fl = (double) z / (double) count;
 		double idf = Math.log(fl);
 		return idf;
@@ -95,9 +128,9 @@ public class TFIDF {
 	 */
 	public Map<Integer, Double> idf() throws IOException {
 		Map<Integer, Double> idf = new HashMap<Integer, Double>();
-		List<Integer> termIds = data.getTermIds();
-		for (Integer termId : termIds) {
-			idf.put(termId, idf(termId));
+		Map<Integer, Integer> documentsWithTermIds = data.countDocumentsContainingTermIds();
+		for (Entry<Integer, Integer> term : documentsWithTermIds.entrySet()) {
+			idf.put(term.getKey(), idf(term.getKey(), term.getValue()));
 		}
 		return idf;
 	}
@@ -123,39 +156,47 @@ public class TFIDF {
 		return tfidf;
 	}
 
-	public List<Map.Entry<String, Double>> compute(int docId, Map<Integer,Double> idf) throws IOException {
-		Map<Integer,Double> tfidf = tfidf(tf(docId), idf);
-		log.info(" - tfidf vector length {}", tfidf.size());
-		Map<String, Double> termsTfidf = new HashMap<String, Double>();
-		for (Entry<Integer,Double> tfidfe:tfidf.entrySet()) {
-			termsTfidf.put(data.getTerm(tfidfe.getKey()), tfidfe.getValue());
+	public List<Map.Entry<Term, Double>> compute(int docId, Map<Integer, Double> idf) throws IOException {
+		Map<Integer, Double> tfidf = tfidf(tf(docId), idf);
+		Map<Term, Double> termsTfidf = new HashMap<Term, Double>();
+		for (Entry<Integer, Double> tfidfe : tfidf.entrySet()) {
+			termsTfidf.put(termsAndIds.get(tfidfe.getKey()), tfidfe.getValue());
 		}
-		log.info(" - tfidf entries {}", termsTfidf.size());
-		List<Map.Entry<String, Double>> entries = new ArrayList<Map.Entry<String, Double>>();
+		List<Map.Entry<Term, Double>> entries = new ArrayList<Map.Entry<Term, Double>>();
 		entries.addAll(termsTfidf.entrySet());
 		return entries;
 	}
 
-	public List<Map.Entry<String, Double>> compute(String docName) throws IOException {
+	public List<Map.Entry<Term, Double>> compute(String docName) throws IOException {
 		return compute(data.getDocId(docName), idf());
 	}
 
-	public Map<String, List<Map.Entry<String, Double>>> computeMap() throws IOException {
-		Comparator<Map.Entry<String, Double>> byMapValuesDesc = new Comparator<Map.Entry<String, Double>>() {
+	public Map<String, List<Map.Entry<Term, Double>>> computeMap() throws IOException {
+		Comparator<Map.Entry<Term, Double>> byMapValuesDesc = new Comparator<Map.Entry<Term, Double>>() {
 			@Override
-			public int compare(Map.Entry<String, Double> left, Map.Entry<String, Double> right) {
+			public int compare(Map.Entry<Term, Double> left, Map.Entry<Term, Double> right) {
 				// inverse order
 				return right.getValue().compareTo(left.getValue());
 			}
 		};
-		Map<String, List<Map.Entry<String, Double>>> computation = new HashMap<String, List<Map.Entry<String, Double>>>();
-		Map<Integer,Double> idf = idf();
-		// FIXME We assume documents id are a complete 1-to-N set
-		log.info("Documents: {}", data.countDocuments());
-		List<Integer> documentIds = data.getDocumentIds();
-		for(Integer x : documentIds) {
-			List<Map.Entry<String, Double>> entries = compute(x, idf);
+		Map<String, List<Map.Entry<Term, Double>>> computation = new HashMap<String, List<Map.Entry<Term, Double>>>();
+		log.info("Computing idf ... ");
+		long start = System.currentTimeMillis();
+		Map<Integer, Double> idf = idf();
+		log.info(" ... idf map size {} ...", idf.size());
+		long end = System.currentTimeMillis();
+		log.info(" ... computed in {}ms", (end - start));
+		log.info("Documents: {}", countDocuments);
+		for (Integer x : documentIds) {
+			log.info("Computing doc {} ...", x);
+			start = System.currentTimeMillis();
+			List<Map.Entry<Term, Double>> entries = compute(x, idf);
+			end = System.currentTimeMillis();
+			log.info(" ... computed in {}s ...", (end - start) / 1000);
+			start = System.currentTimeMillis();
 			Collections.sort(entries, byMapValuesDesc);
+			end = System.currentTimeMillis();
+			log.info(" ... sorted in {}s", (end - start) / 1000);
 			computation.put(data.getDocName(x), entries);
 		}
 		return computation;

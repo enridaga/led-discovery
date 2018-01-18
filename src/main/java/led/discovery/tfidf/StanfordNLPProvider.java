@@ -2,6 +2,7 @@ package led.discovery.tfidf;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Properties;
@@ -12,12 +13,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
+import led.discovery.utils.Term;
 
 public class StanfordNLPProvider implements TermsProvider {
 	private Set<String> stopwords;
@@ -36,11 +39,11 @@ public class StanfordNLPProvider implements TermsProvider {
 	}
 
 	@Override
-	public String[] terms(String text) {
+	public List<Term> terms(String text) {
 		Annotation document = new Annotation(text);
 		pipeline.annotate(document);
 		List<CoreMap> sentences = document.get(SentencesAnnotation.class);
-		List<String> lemmas = new ArrayList<String>();
+		List<Term> terms = new ArrayList<Term>();
 
 		for (CoreMap sentence : sentences) {
 			// traversing the words in the current sentence
@@ -48,14 +51,15 @@ public class StanfordNLPProvider implements TermsProvider {
 			for (CoreLabel token : sentence.get(TokensAnnotation.class)) {
 				// this is the text of the token
 				String lemma = token.getString(LemmaAnnotation.class);
+				String pos = token.getString(PartOfSpeechAnnotation.class);
 				if (stopwords.contains(lemma)) {
 					continue;
 				}
 
-				lemmas.add(lemma);
+				terms.add(Term.build(lemma, pos));
 
 			}
 		}
-		return lemmas.toArray(new String[lemmas.size()]);
+		return Collections.unmodifiableList(terms);
 	}
 }

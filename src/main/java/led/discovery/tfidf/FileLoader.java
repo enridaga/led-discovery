@@ -13,6 +13,8 @@ import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import led.discovery.utils.Term;
+
 public class FileLoader {
 	private TermsDatabase db;
 	private TermsProvider provider;
@@ -26,33 +28,33 @@ public class FileLoader {
 
 	private void add(String name, InputStream is) throws IOException {
 		if (db.containsDocument(name)) {
-			throw new IOException();
+			log.warn("[SKIP] Already in database: {}", name);
 		}
 
 		String text = IOUtils.toString(is, "UTF-8");
-		String[] lemmas = provider.terms(text);
-		db.addDocument(name, lemmas);
+		List<Term> terms = provider.terms(text);
+		db.addDocument(name, terms);
 	}
 
 	public void add(File file) throws IOException {
-		if (!file.exists() || file.isDirectory())
+		if (!file.exists() || file.isDirectory()) {
 			throw new IOException("Not a file");
-
+		}
 		if (file.getName().endsWith(".zip")) {
 			ZipInputStream is = new ZipInputStream(new FileInputStream(file));
 			ZipEntry entry;
 			while ((entry = is.getNextEntry()) != null) {
-				String fileInfo = String.format("Entry: [%s] len %d added %TD", entry.getName(), entry.getSize(), new Date(entry.getTime()));
-				log.info(fileInfo);
+				long start = System.currentTimeMillis();
 				add(file.getAbsolutePath() + "/" + entry.getName(), is);
+				long end = System.currentTimeMillis();
+				String fileInfo = String.format("Entry: [%s] len %d created %TD", entry.getName(), entry.getSize(), new Date(entry.getTime()));
+				log.info("{} [loaded in {}{}]", new Object[] {fileInfo, ((end - start) / 1000) , "s"});
 			}
 		} else {
 			InputStream is = new FileInputStream(file);
 			add(file.getAbsolutePath(), is);
 		}
-
 	}
-	
 
 	public void addAll(String[] files) {
 		for (String f : files) {
@@ -63,7 +65,7 @@ public class FileLoader {
 			}
 		}
 	}
-	
+
 	/**
 	 * One file per line
 	 * 

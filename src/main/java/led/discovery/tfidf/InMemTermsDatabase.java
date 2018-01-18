@@ -7,28 +7,31 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+
+import led.discovery.utils.Term;
 
 public class InMemTermsDatabase implements TermsDatabase {
 	// private Logger log = LoggerFactory.getLogger(InMemTermsDatabase.class);
 	private Map<Integer, Integer[]> docTerms;
-	private List<String> dictionary;
+	private List<Term> dictionary;
 	private List<String> docIds;
 
 	public InMemTermsDatabase() {
 		docTerms = new HashMap<Integer, Integer[]>();
 		docIds = new ArrayList<String>();
-		dictionary = new ArrayList<String>();
+		dictionary = new ArrayList<Term>();
 	}
 
 	@Override
-	public boolean containsTerm(String term) {
+	public boolean containsTerm(Term term) {
 		return dictionary.contains(term);
 	}
 
 	@Override
-	public int addTerm(String term) {
+	public int addTerm(Term term) {
 		if (!dictionary.contains(term)) {
 			dictionary.add(term);
 		}
@@ -36,7 +39,7 @@ public class InMemTermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public String getTerm(int termId) {
+	public Term getTerm(int termId) {
 		return dictionary.get(termId);
 	}
 
@@ -70,17 +73,17 @@ public class InMemTermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public int addDocument(String name, String[] lemmas) throws IOException {
+	public int addDocument(String name, List<Term> terms) throws IOException {
 		if (docIds.contains(name)) {
 			throw new IOException("Already exists");
 		}
 		docIds.add(name);
 		int id = docIds.indexOf(name);
-		Integer[] terms = new Integer[lemmas.length];
-		for (int x = 0; x < lemmas.length; x++) {
-			terms[x] = addTerm(lemmas[x]);
+		Integer[] termIds = new Integer[terms.size()];
+		for (int x = 0; x < terms.size(); x++) {
+			termIds[x] = addTerm(terms.get(x));
 		}
-		docTerms.put(id, terms);
+		docTerms.put(id, termIds);
 		return id;
 	}
 
@@ -90,7 +93,7 @@ public class InMemTermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public int getTermCount(int docId, String term) {
+	public int getTermCount(int docId, Term term) {
 		return countTerm(docId, getTermId(term));
 	}
 
@@ -112,7 +115,7 @@ public class InMemTermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public int getTermId(String term) {
+	public int getTermId(Term term) {
 		return dictionary.indexOf(term);
 	}
 
@@ -137,7 +140,56 @@ public class InMemTermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public List<String> getTerms() {
+	public List<Term> getTerms() {
 		return Collections.unmodifiableList(dictionary);
+	}
+
+	/**
+	 * Returns a map <doc-id,term-count>
+	 * 
+	 * @return
+	 */
+	@Override
+	public Map<Integer, Integer> countDocumentTerms() {
+		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+		for (Entry<Integer, Integer[]> dt : docTerms.entrySet()) {
+			map.put(dt.getKey(), dt.getValue().length);
+		}
+		return map;
+	}
+
+	@Override
+	public Map<Integer, Integer> countEachTerm(int docId) {
+		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+		Integer[] terms = docTerms.get(docId);
+		List<Integer> tl = Arrays.asList(terms);
+		for (int x = 0; x < dictionary.size(); x++) {
+			map.put(x, Collections.frequency(tl, x));
+		}
+		return map;
+	}
+
+	@Override
+	public Map<Integer, Integer> countDocumentsContainingTermIds() {
+		Map<Integer, Integer> count = new HashMap<Integer, Integer>();
+		for (int x = 0; x < dictionary.size(); x++) {
+			int c = 0;
+			for (Entry<Integer, Integer[]> doc : docTerms.entrySet()) {
+				if (Arrays.asList(doc.getValue()).contains(x)) {
+					c++;
+				}
+			}
+			count.put(x, c);
+		}
+		return count;
+	}
+
+	@Override
+	public Map<Integer, Term> getTermAndIds() throws IOException {
+		Map<Integer, Term> termAndIds = new HashMap<Integer, Term>();
+		for (int x = 0; x < dictionary.size(); x++) {
+			termAndIds.put(x, dictionary.get(x));
+		}
+		return termAndIds;
 	}
 }
