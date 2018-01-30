@@ -1,4 +1,4 @@
-package led.discovery.tfidf;
+package led.discovery.db;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,9 +17,11 @@ import org.junit.runners.MethodSorters;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import led.discovery.h2.H2Queries;
-import led.discovery.h2.H2TermsDatabase;
-import led.discovery.utils.Term;
+import led.discovery.db.H2Queries;
+import led.discovery.db.H2TermsDatabase;
+import led.discovery.db.TermsDatabase;
+import led.discovery.nlp.Term;
+import led.discovery.tfidf.TFIDF;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class H2TermsDatabaseTest {

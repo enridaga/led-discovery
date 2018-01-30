@@ -7,7 +7,9 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import led.discovery.utils.Term;
+import led.discovery.db.InMemTermsDatabase;
+import led.discovery.db.TermsDatabase;
+import led.discovery.nlp.Term;
 
 public class TFIDFTest {
 	Logger log = LoggerFactory.getLogger(TFIDFTest.class);

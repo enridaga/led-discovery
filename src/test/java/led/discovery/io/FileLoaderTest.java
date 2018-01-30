@@ -1,17 +1,18 @@
-package led.discovery.tfidf;
+package led.discovery.io;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import led.discovery.db.InMemTermsDatabase;
+import led.discovery.db.TermsDatabase;
+import led.discovery.io.FileLoader;
+import led.discovery.nlp.StanfordNLPProvider;
 
 public class FileLoaderTest {
 	
