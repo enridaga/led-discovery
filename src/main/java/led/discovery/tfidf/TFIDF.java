@@ -12,7 +12,8 @@ import java.util.Map.Entry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import led.discovery.utils.Term;
+import led.discovery.db.TermsDatabase;
+import led.discovery.nlp.Term;
 
 /**
  * Computes TF/IDF scores from a TermsDatabase.
@@ -26,9 +27,8 @@ public class TFIDF {
 	private Logger log = LoggerFactory.getLogger(TFIDF.class);
 	private TermsDatabase data;
 
-	private List<Term> terms = null;
 	private List<Integer> termIds = null;
-	private Map<Integer,Term> termsAndIds = null;
+	private Map<Integer, Term> termsAndIds = null;
 	private int countDocuments = -1;
 	private List<Integer> documentIds;
 	private Map<Integer, Integer> countDocumentTerms;
@@ -46,7 +46,7 @@ public class TFIDF {
 		log.info("init started");
 		termIds = data.getTermIds();
 		log.info("{} term ids loaded", termIds.size());
-		terms = data.getTerms();
+		data.getTerms();
 		log.info("{} terms loaded", termIds.size());
 		termsAndIds = data.getTermAndIds();
 		documentIds = data.getDocumentIds();
@@ -96,9 +96,9 @@ public class TFIDF {
 		Map<Integer, Integer> tc = data.countEachTerm(docId);
 		for (Integer tid : termIds) {
 			double ttf;
-			if(tc.containsKey(tid)) {
+			if (tc.containsKey(tid)) {
 				ttf = (double) tc.get(tid) / (double) countDocumentTerms.get(docId);
-			}else {
+			} else {
 				ttf = 0;
 			}
 			tf.put(tid, ttf);
@@ -127,11 +127,14 @@ public class TFIDF {
 	 * @return an array of idf scores (index is the term id in dictionary)
 	 */
 	public Map<Integer, Double> idf() throws IOException {
+		long start = System.currentTimeMillis();
 		Map<Integer, Double> idf = new HashMap<Integer, Double>();
 		Map<Integer, Integer> documentsWithTermIds = data.countDocumentsContainingTermIds();
 		for (Entry<Integer, Integer> term : documentsWithTermIds.entrySet()) {
 			idf.put(term.getKey(), idf(term.getKey(), term.getValue()));
 		}
+		long end = System.currentTimeMillis();
+		log.trace("IDF computed in {}s", (end - start) / 1000);
 		return idf;
 	}
 
