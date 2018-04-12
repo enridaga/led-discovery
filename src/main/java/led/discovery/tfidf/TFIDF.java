@@ -23,17 +23,17 @@ import led.discovery.nlp.Term;
  * @author enridaga
  *
  */
-public class TFIDF {
+public class TFIDF<T> {
 	private Logger log = LoggerFactory.getLogger(TFIDF.class);
-	private TermsDatabase data;
+	private TermsDatabase<T> data;
 
-	private List<Integer> termIds = null;
-	private Map<Integer, Term> termsAndIds = null;
+	private List<T> termIds = null;
+	private Map<T, Term> termsAndIds = null;
 	private int countDocuments = -1;
-	private List<Integer> documentIds;
-	private Map<Integer, Integer> countDocumentTerms;
+	private List<T> documentIds;
+	private Map<T, Integer> countDocumentTerms;
 
-	public TFIDF(TermsDatabase data) throws IOException {
+	public TFIDF(TermsDatabase<T> data) throws IOException {
 		this.data = data;
 	}
 
@@ -65,7 +65,7 @@ public class TFIDF {
 	 *            Index of term in the dictionary
 	 * @return the term frequency
 	 */
-	public double tf(int docId, int termId) throws IOException {
+	public double tf(T docId, T termId) throws IOException {
 		return (double) data.countTerm(docId, termId) / (double) data.countTerms(docId);
 	}
 
@@ -91,10 +91,10 @@ public class TFIDF {
 	 * @return the term frequency of doc terms (key being the term of the
 	 *         dictionary)
 	 */
-	public Map<Integer, Double> tf(int docId) throws IOException {
-		Map<Integer, Double> tf = new HashMap<Integer, Double>();
-		Map<Integer, Integer> tc = data.countEachTerm(docId);
-		for (Integer tid : termIds) {
+	public Map<T, Double> tf(T docId) throws IOException {
+		Map<T, Double> tf = new HashMap<T, Double>();
+		Map<T, Integer> tc = data.countEachTerm(docId);
+		for (T tid : termIds) {
 			double ttf;
 			if (tc.containsKey(tid)) {
 				ttf = (double) tc.get(tid) / (double) countDocumentTerms.get(docId);
@@ -112,7 +112,7 @@ public class TFIDF {
 	 * @param termId
 	 * @return
 	 */
-	public double idf(int termId, int documentsWithTermId) throws IOException {
+	public double idf(T termId, int documentsWithTermId) throws IOException {
 		int count = 0;
 		int z = countDocuments;
 		count = documentsWithTermId;
@@ -126,11 +126,11 @@ public class TFIDF {
 	 * 
 	 * @return an array of idf scores (index is the term id in dictionary)
 	 */
-	public Map<Integer, Double> idf() throws IOException {
+	public Map<T, Double> idf() throws IOException {
 		long start = System.currentTimeMillis();
-		Map<Integer, Double> idf = new HashMap<Integer, Double>();
-		Map<Integer, Integer> documentsWithTermIds = data.countDocumentsContainingTermIds();
-		for (Entry<Integer, Integer> term : documentsWithTermIds.entrySet()) {
+		Map<T, Double> idf = new HashMap<T, Double>();
+		Map<T, Integer> documentsWithTermIds = data.countDocumentsContainingTermIds();
+		for (Entry<T, Integer> term : documentsWithTermIds.entrySet()) {
 			idf.put(term.getKey(), idf(term.getKey(), term.getValue()));
 		}
 		long end = System.currentTimeMillis();
@@ -148,9 +148,9 @@ public class TFIDF {
 	 *            dictionary)
 	 * @return
 	 */
-	public Map<Integer, Double> tfidf(Map<Integer, Double> tf, Map<Integer, Double> idf) throws IOException {
-		Map<Integer, Double> tfidf = new HashMap<Integer, Double>();
-		for (Entry<Integer, Double> tfEntry : tf.entrySet()) {
+	public Map<T, Double> tfidf(Map<T, Double> tf, Map<T, Double> idf) throws IOException {
+		Map<T, Double> tfidf = new HashMap<T, Double>();
+		for (Entry<T, Double> tfEntry : tf.entrySet()) {
 			double tfv = tf.get(tfEntry.getKey());
 			double idfv = idf.get(tfEntry.getKey());
 			double tfidfv = tfv * idfv;
@@ -159,10 +159,10 @@ public class TFIDF {
 		return tfidf;
 	}
 
-	public List<Map.Entry<Term, Double>> compute(int docId, Map<Integer, Double> idf) throws IOException {
-		Map<Integer, Double> tfidf = tfidf(tf(docId), idf);
+	public List<Map.Entry<Term, Double>> compute(T docId, Map<T, Double> idf) throws IOException {
+		Map<T, Double> tfidf = tfidf(tf(docId), idf);
 		Map<Term, Double> termsTfidf = new HashMap<Term, Double>();
-		for (Entry<Integer, Double> tfidfe : tfidf.entrySet()) {
+		for (Entry<T, Double> tfidfe : tfidf.entrySet()) {
 			termsTfidf.put(termsAndIds.get(tfidfe.getKey()), tfidfe.getValue());
 		}
 		List<Map.Entry<Term, Double>> entries = new ArrayList<Map.Entry<Term, Double>>();
@@ -185,12 +185,12 @@ public class TFIDF {
 		Map<String, List<Map.Entry<Term, Double>>> computation = new HashMap<String, List<Map.Entry<Term, Double>>>();
 		log.info("Computing idf ... ");
 		long start = System.currentTimeMillis();
-		Map<Integer, Double> idf = idf();
+		Map<T, Double> idf = idf();
 		log.info(" ... idf map size {} ...", idf.size());
 		long end = System.currentTimeMillis();
 		log.info(" ... computed in {}ms", (end - start));
 		log.info("Documents: {}", countDocuments);
-		for (Integer x : documentIds) {
+		for (T x : documentIds) {
 			log.info("Computing doc {} ...", x);
 			start = System.currentTimeMillis();
 			List<Map.Entry<Term, Double>> entries = compute(x, idf);

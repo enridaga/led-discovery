@@ -88,13 +88,13 @@ public class H2TermsDatabaseTest {
 	@Test
 	public void test4_getDocumentsSize() throws IOException {
 		String folder = testFolder.newFolder().getAbsolutePath();
-		TermsDatabase d = new H2TermsDatabase(new File(folder), "test", user, pwd);
+		H2TermsDatabase d = new H2TermsDatabase(new File(folder), "test", user, pwd);
 		d.addDocument("doc1", Term.buildList("a", "b", "c", "d", "e" ));
 		Assert.assertTrue("getDocumentsSize", d.countDocuments() == 1);
-		Assert.assertTrue("containsDocument(int)", d.containsDocument(d.getDocId("doc1")));
-		Assert.assertTrue("!containsDocument(int)", !d.containsDocument(0)); // id 0 does not exists
-		Assert.assertTrue("!containsDocument(int)", !d.containsDocument(2)); // id 2 does not exists
-		Assert.assertTrue("containsDocument(String)", d.containsDocument(1)); // 1 is the first id
+		Assert.assertTrue("containsDocument(int)", d.containsDocumentId(d.getDocId("doc1")));
+		Assert.assertTrue("!containsDocument(int)", !d.containsDocumentId(0)); // id 0 does not exists
+		Assert.assertTrue("!containsDocument(int)", !d.containsDocumentId(2)); // id 2 does not exists
+		Assert.assertTrue("containsDocument(String)", d.containsDocumentId(1)); // 1 is the first id
 		Assert.assertTrue("containsDocument(String)", d.containsDocument("doc1"));
 		Assert.assertTrue("!containsDocument(String)", !d.containsDocument("doc2"));
 		

@@ -6,41 +6,41 @@ import java.util.Map;
 
 import led.discovery.nlp.Term;
 
-public interface TermsDatabase {
+public interface TermsDatabase<IDType> {
 
-	public int addTerm(Term term) throws IOException;
+	//protected IDType addTerm(Term term) throws IOException;
 
-	public Term getTerm(int termId) throws IOException;
+	public Term getTerm(IDType termId) throws IOException;
 
-	public int getTermId(Term term) throws IOException;
+	public IDType getTermId(Term term) throws IOException;
 
-	public int getDocId(String name) throws IOException;
+	public IDType getDocId(String name) throws IOException;
 
-	public String getDocName(int docId) throws IOException;
+	public String getDocName(IDType docId) throws IOException;
 
 	public boolean containsTerm(Term term) throws IOException;
 
 	public boolean containsDocument(String name) throws IOException;
 
-	public boolean containsDocument(int docId) throws IOException;
+	public boolean containsDocumentId(IDType docId) throws IOException;
 
-	public int addDocument(String name, List<Term> terms) throws IOException;
+	public IDType addDocument(String name, List<Term> terms) throws IOException;
 
-	public int countTerms(int docId) throws IOException;
+	public int countTerms(IDType docId) throws IOException;
 
-	public int countTerm(int docId, int termId) throws IOException;
+	public int countTerm(IDType docId, IDType termId) throws IOException;
 
 	public int countTerms() throws IOException;
 
 	public int countDocuments() throws IOException;
 
-	public int countDocumentsContainingTerm(int termId) throws IOException;
+	public int countDocumentsContainingTerm(IDType termId) throws IOException;
 
-	public int getTermCount(int docId, Term term) throws IOException;
+	public int getTermCount(IDType docId, Term term) throws IOException;
 
-	public List<Integer> getTermIds() throws IOException;
+	public List<IDType> getTermIds() throws IOException;
 
-	public List<Integer> getDocumentIds() throws IOException;
+	public List<IDType> getDocumentIds() throws IOException;
 
 	public List<Term> getTerms() throws IOException;
 
@@ -52,7 +52,7 @@ public interface TermsDatabase {
 	 * @return
 	 * @throws IOException 
 	 */
-	public Map<Integer, Integer> countDocumentTerms() throws IOException;
+	public Map<IDType, Integer> countDocumentTerms() throws IOException;
 
 	/**
 	 * Count occurrences of each term in a document
@@ -61,7 +61,7 @@ public interface TermsDatabase {
 	 * @return
 	 * @throws IOException 
 	 */
-	public Map<Integer, Integer> countEachTerm(int docId) throws IOException;
+	public Map<IDType, Integer> countEachTerm(IDType docId) throws IOException;
 
 	/**
 	 * Key being the term and Value the number of documents having it
@@ -69,7 +69,7 @@ public interface TermsDatabase {
 	 * @return
 	 * @throws IOException 
 	 */
-	public Map<Integer, Integer> countDocumentsContainingTermIds() throws IOException;
+	public Map<IDType, Integer> countDocumentsContainingTermIds() throws IOException;
 
-	public Map<Integer, Term> getTermAndIds() throws IOException;
+	public Map<IDType, Term> getTermAndIds() throws IOException;
 }

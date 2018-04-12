@@ -26,9 +26,10 @@ public class LEDExperiences {
 				"  OPTIONAL {?experience led:is_reported_in/rdf:value ?text} .\n" + 
 				"  OPTIONAL {?experience led:has_evidence_text ?text}\n" + 
 				"}";
+		//System.err.println(queryString);
 		if (limit > 0) {
 			queryString = new StringBuilder().append(queryString).append(" LIMIT ").append(limit).toString();
-		}
+		}//else return;
 		log.debug("{}", queryString);
 		
 		Query query = QueryFactory.create(queryString);
@@ -37,7 +38,7 @@ public class LEDExperiences {
 			
 			QuerySolution qs = res.next();
 			String experienceUri = qs.get("experience").asResource().getURI();
-			log.info("Downloading {}", experienceUri);
+			log.info("Writing {}", experienceUri);
 			String experienceId = experienceUri.substring(experienceUri.lastIndexOf('/'));
 			String text = qs.get("text").asLiteral().getLexicalForm();
 			String fileId = new StringBuilder().append(experienceId).append(".txt").toString();
@@ -52,7 +53,9 @@ public class LEDExperiences {
 			if(!location.exists()) {
 				location.createNewFile();
 			}
-			IOUtils.write(text, new FileOutputStream(location), "utf-8");
+			FileOutputStream os = new FileOutputStream(location);
+			IOUtils.write(text, os, "utf-8");
+			os.close();
 		}
 	}
 

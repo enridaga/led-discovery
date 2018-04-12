@@ -13,7 +13,7 @@ import java.util.stream.IntStream;
 
 import led.discovery.nlp.Term;
 
-public class InMemTermsDatabase implements TermsDatabase {
+public class InMemTermsDatabase implements TermsDatabase<Integer> {
 	// private Logger log = LoggerFactory.getLogger(InMemTermsDatabase.class);
 	private Map<Integer, Integer[]> docTerms;
 	private List<Term> dictionary;
@@ -30,8 +30,7 @@ public class InMemTermsDatabase implements TermsDatabase {
 		return dictionary.contains(term);
 	}
 
-	@Override
-	public int addTerm(Term term) {
+	protected Integer addTerm(Term term) {
 		if (!dictionary.contains(term)) {
 			dictionary.add(term);
 		}
@@ -39,22 +38,22 @@ public class InMemTermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public Term getTerm(int termId) {
+	public Term getTerm(Integer termId) {
 		return dictionary.get(termId);
 	}
 
 	@Override
-	public int countTerms(int termId) {
+	public int countTerms(Integer termId) {
 		return dictionary.size();
 	}
 
 	@Override
-	public int getDocId(String name) {
+	public Integer getDocId(String name) {
 		return docIds.indexOf(name);
 	}
 
 	@Override
-	public String getDocName(int docId) {
+	public String getDocName(Integer docId) {
 		return docIds.get(docId);
 	}
 
@@ -64,7 +63,7 @@ public class InMemTermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public boolean containsDocument(int docId) {
+	public boolean containsDocumentId(Integer docId) {
 		try {
 			return (docIds.get(docId) != null) && docTerms.containsKey(docId);
 		} catch (IndexOutOfBoundsException e) {
@@ -73,7 +72,7 @@ public class InMemTermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public int addDocument(String name, List<Term> terms) throws IOException {
+	public Integer addDocument(String name, List<Term> terms) throws IOException {
 		if (docIds.contains(name)) {
 			throw new IOException("Already exists");
 		}
@@ -88,17 +87,17 @@ public class InMemTermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public int countTerm(int docId, int termId) {
+	public int countTerm(Integer docId, Integer termId) {
 		return Collections.frequency(Arrays.asList(docTerms.get(docId)), termId);
 	}
 
 	@Override
-	public int getTermCount(int docId, Term term) {
+	public int getTermCount(Integer docId, Term term) {
 		return countTerm(docId, getTermId(term));
 	}
 
 	@Override
-	public int countDocumentsContainingTerm(int termId) {
+	public int countDocumentsContainingTerm(Integer termId) {
 		int count = 0;
 		for (int x = 0; x < docTerms.size(); x++) {
 			// Any document containing the term counts 1
@@ -115,7 +114,7 @@ public class InMemTermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public int getTermId(Term term) {
+	public Integer getTermId(Term term) {
 		return dictionary.indexOf(term);
 	}
 
@@ -159,7 +158,7 @@ public class InMemTermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public Map<Integer, Integer> countEachTerm(int docId) {
+	public Map<Integer, Integer> countEachTerm(Integer docId) {
 		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 		Integer[] terms = docTerms.get(docId);
 		List<Integer> tl = Arrays.asList(terms);

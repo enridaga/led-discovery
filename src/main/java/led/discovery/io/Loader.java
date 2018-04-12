@@ -16,12 +16,12 @@ import led.discovery.nlp.TermsProvider;
 
 public class Loader {
 
-	private TermsDatabase db;
+	private TermsDatabase<?> db;
 	private TermsProvider provider;
 	private Logger log = LoggerFactory.getLogger(Loader.class);
 	private SourceProvider sourceProvider;
 
-	public Loader(TermsDatabase database, SourceProvider sourceProvider, TermsProvider provider) {
+	public Loader(TermsDatabase<?> database, SourceProvider sourceProvider, TermsProvider provider) {
 		this.provider = provider;
 		this.db = database;
 		this.sourceProvider = sourceProvider;

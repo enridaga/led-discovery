@@ -24,8 +24,8 @@ public class InMemTermsDatabaseTest {
 	public void getDocumentsSize() throws IOException {
 		d.addDocument("doc1", Term.buildList("a", "b", "c", "d", "e") );
 		Assert.assertTrue("getDocumentsSize", d.countDocuments() == 1);
-		Assert.assertTrue("containsDocument(int)", d.containsDocument(0));
-		Assert.assertTrue("!containsDocument(int)", !d.containsDocument(1));
+		Assert.assertTrue("containsDocument(int)", d.containsDocumentId(0));
+		Assert.assertTrue("!containsDocument(int)", !d.containsDocumentId(1));
 		Assert.assertTrue("containsDocument(String)", d.containsDocument("doc1"));
 		Assert.assertTrue("!containsDocument(String)", !d.containsDocument("doc2"));
 		

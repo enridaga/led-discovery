@@ -2,10 +2,14 @@ package led.discovery.io;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
+import java.util.Scanner;
+
+import com.glaforge.i18n.io.CharsetToolkit;
 
 public class FileSourceFactory implements SourceFactory<File>, FilenameFilter {
 	@Override
@@ -23,7 +27,18 @@ public class FileSourceFactory implements SourceFactory<File>, FilenameFilter {
 
 			@Override
 			public Charset getEncoding() {
-				// TODO Detect encoding?
+				try {
+					// 1024 bytes
+					byte[] b = new byte[1024];
+					FileInputStream fis = new FileInputStream(file);
+					fis.read(b);
+					fis.close();
+					return new CharsetToolkit(b).guessEncoding();
+				} catch (FileNotFoundException e) {
+					e.printStackTrace();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
 				return Charset.defaultCharset();
 			}
 		};

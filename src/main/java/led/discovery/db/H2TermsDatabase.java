@@ -19,7 +19,7 @@ import org.slf4j.LoggerFactory;
 
 import led.discovery.nlp.Term;
 
-public class H2TermsDatabase implements TermsDatabase {
+public class H2TermsDatabase implements TermsDatabase<Integer> {
 	private static final Logger l = LoggerFactory.getLogger(H2TermsDatabase.class);
 	protected String connectionString;
 	protected String username;
@@ -73,7 +73,7 @@ public class H2TermsDatabase implements TermsDatabase {
 		}
 		return conn;
 	}
-	
+
 	@Override
 	public boolean containsTerm(Term term) throws IOException {
 		try (Connection conn = getConnection(); PreparedStatement st = conn.prepareStatement(H2Queries.SELECT_CONTAINS_TERM)) {
@@ -87,8 +87,8 @@ public class H2TermsDatabase implements TermsDatabase {
 		}
 	}
 
-	@Override
-	public int addTerm(Term term) throws IOException {
+	
+	protected Integer addTerm(Term term) throws IOException {
 		if (containsTerm(term))
 			return getTermId(term);
 		try (Connection conn = getConnection(); PreparedStatement st = conn.prepareStatement(H2Queries.INSERT_TERM, Statement.RETURN_GENERATED_KEYS)) {
@@ -106,7 +106,7 @@ public class H2TermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public Term getTerm(int termId) throws IOException {
+	public Term getTerm(Integer termId) throws IOException {
 		try (Connection conn = getConnection(); PreparedStatement st = conn.prepareStatement(H2Queries.SELECT_GET_TERM_BY_ID)) {
 			st.setInt(1, termId);
 			ResultSet rs = st.executeQuery();
@@ -122,7 +122,7 @@ public class H2TermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public int getTermId(Term term) throws IOException {
+	public Integer getTermId(Term term) throws IOException {
 		try (Connection conn = getConnection(); PreparedStatement st = conn.prepareStatement(H2Queries.SELECT_GET_ID_OF_TERM)) {
 			st.setString(1, term.getLemma());
 			st.setString(2, term.getPOS());
@@ -139,7 +139,7 @@ public class H2TermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public int countTerms(int docId) throws IOException {
+	public int countTerms(Integer docId) throws IOException {
 		try (Connection conn = getConnection(); PreparedStatement st = conn.prepareStatement(H2Queries.SELECT_COUNT_TERMS_OF_DOCUMENT)) {
 			st.setInt(1, docId);
 			ResultSet rs = st.executeQuery();
@@ -155,7 +155,7 @@ public class H2TermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public int getDocId(String name) throws IOException {
+	public Integer getDocId(String name) throws IOException {
 		try (Connection conn = getConnection(); PreparedStatement st = conn.prepareStatement(H2Queries.SELECT_GET_ID_OF_DOCUMENT)) {
 			st.setString(1, name);
 			ResultSet rs = st.executeQuery();
@@ -171,7 +171,7 @@ public class H2TermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public String getDocName(int docId) throws IOException {
+	public String getDocName(Integer docId) throws IOException {
 		try (Connection conn = getConnection(); PreparedStatement st = conn.prepareStatement(H2Queries.SELECT_GET_DOCUMENT_BY_ID)) {
 			st.setInt(1, docId);
 			ResultSet rs = st.executeQuery();
@@ -199,7 +199,7 @@ public class H2TermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public boolean containsDocument(int docId) throws IOException {
+	public boolean containsDocumentId(Integer docId) throws IOException {
 		try (Connection conn = getConnection(); PreparedStatement st = conn.prepareStatement(H2Queries.SELECT_CONTAINS_DOCUMENT_ID)) {
 			st.setInt(1, docId);
 			ResultSet rs = st.executeQuery();
@@ -211,7 +211,7 @@ public class H2TermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public int addDocument(String name, List<Term> terms) throws IOException {
+	public Integer addDocument(String name, List<Term> terms) throws IOException {
 		int id;
 		try (Connection conn = getConnection()) {
 			conn.setAutoCommit(false);
@@ -248,7 +248,7 @@ public class H2TermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public int countTerm(int docId, int termId) throws IOException {
+	public int countTerm(Integer docId, Integer termId) throws IOException {
 		try (Connection conn = getConnection(); PreparedStatement st = conn.prepareStatement(H2Queries.SELECT_COUNT_TERM_IN_DOCUMENT)) {
 			st.setInt(1, docId);
 			st.setInt(2, termId);
@@ -295,7 +295,7 @@ public class H2TermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public int countDocumentsContainingTerm(int termId) throws IOException {
+	public int countDocumentsContainingTerm(Integer termId) throws IOException {
 		try (Connection conn = getConnection(); PreparedStatement st = conn.prepareStatement(H2Queries.SELECT_COUNT_DOCUMENTS_OF_TERM)) {
 			st.setInt(1, termId);
 			ResultSet rs = st.executeQuery();
@@ -311,7 +311,7 @@ public class H2TermsDatabase implements TermsDatabase {
 	}
 
 	@Override
-	public int getTermCount(int docId, Term term) throws IOException {
+	public int getTermCount(Integer docId, Term term) throws IOException {
 		int termId = getTermId(term);
 		try (Connection conn = getConnection(); PreparedStatement st = conn.prepareStatement(H2Queries.SELECT_COUNT_TERM_IN_DOCUMENT)) {
 			st.setInt(1, docId);
@@ -387,10 +387,10 @@ public class H2TermsDatabase implements TermsDatabase {
 		}
 		return Collections.unmodifiableList(terms);
 	}
-	
+
 	@Override
-	public Map<Integer, Integer> countEachTerm(int docId) throws IOException {
-		Map<Integer, Integer> countEachTerm = new HashMap<Integer,Integer>();
+	public Map<Integer, Integer> countEachTerm(Integer docId) throws IOException {
+		Map<Integer, Integer> countEachTerm = new HashMap<Integer, Integer>();
 		try (Connection conn = getConnection(); PreparedStatement st = conn.prepareStatement(H2Queries.SELECT_COUNT_EACH_TERM_IN_DOCUMENT)) {
 			st.setInt(1, docId);
 			ResultSet rs = st.executeQuery();
@@ -403,9 +403,10 @@ public class H2TermsDatabase implements TermsDatabase {
 		}
 		return Collections.unmodifiableMap(countEachTerm);
 	}
+
 	@Override
 	public Map<Integer, Integer> countDocumentsContainingTermIds() throws IOException {
-		Map<Integer, Integer> countDocuments = new HashMap<Integer,Integer>();
+		Map<Integer, Integer> countDocuments = new HashMap<Integer, Integer>();
 		try (Connection conn = getConnection(); PreparedStatement st = conn.prepareStatement(H2Queries.SELECT_COUNT_DOCUMENTS_HAVING_TERM)) {
 			ResultSet rs = st.executeQuery();
 			while (rs.next()) {
@@ -418,10 +419,10 @@ public class H2TermsDatabase implements TermsDatabase {
 		}
 		return Collections.unmodifiableMap(countDocuments);
 	}
-	
+
 	@Override
 	public Map<Integer, Integer> countDocumentTerms() throws IOException {
-		Map<Integer, Integer> countTerms = new HashMap<Integer,Integer>();
+		Map<Integer, Integer> countTerms = new HashMap<Integer, Integer>();
 		try (Connection conn = getConnection(); PreparedStatement st = conn.prepareStatement(H2Queries.SELECT_COUNT_DOCUMENTS_TERMS)) {
 			ResultSet rs = st.executeQuery();
 			while (rs.next()) {
@@ -434,10 +435,10 @@ public class H2TermsDatabase implements TermsDatabase {
 		}
 		return Collections.unmodifiableMap(countTerms);
 	}
-	
+
 	@Override
 	public Map<Integer, Term> getTermAndIds() throws IOException {
-		Map<Integer, Term> termsAndIds = new HashMap<Integer,Term>();
+		Map<Integer, Term> termsAndIds = new HashMap<Integer, Term>();
 		try (Connection conn = getConnection(); PreparedStatement st = conn.prepareStatement(H2Queries.SELECT_TERMS)) {
 			ResultSet rs = st.executeQuery();
 			while (rs.next()) {
