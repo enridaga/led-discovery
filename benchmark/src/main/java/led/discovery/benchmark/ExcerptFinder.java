@@ -1,4 +1,4 @@
-package led.discovery.utils;
+package led.discovery.benchmark;
 
 import java.util.ArrayList;
 import java.util.Arrays;

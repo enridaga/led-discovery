@@ -12,9 +12,6 @@ import org.junit.rules.TestName;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import led.discovery.utils.BenchmarkMaker;
-import led.discovery.utils.Bookmark;
-import led.discovery.utils.ExcerptFinder;
 
 public class BenchmarkTest {
 	private static final Logger log = LoggerFactory.getLogger(BenchmarkTest.class);
