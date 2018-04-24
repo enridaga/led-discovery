@@ -1,0 +1,668 @@
+Sentence #1 (13 tokens):
+Music is what is made, not what the performer makes it.
+[Text=Music CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=performer CharacterOffsetBegin=36 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=performer NamedEntityTag=O]
+[Text=makes CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=VBZ Lemma=make NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NN Music))
+    (VP (VBZ is)
+      (SBAR
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBZ is)
+              (VP (VBN made)))))
+        (, ,) (RB not)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (DT the) (NN performer))
+            (VP (VBZ makes)
+              (NP (PRP it)))))))
+    (. .)))
+
+root(ROOT-0, is-2)
+nsubj(is-2, Music-1)
+nsubjpass(made-5, what-3)
+auxpass(made-5, is-4)
+dep(is-2, made-5)
+punct(made-5, ,-6)
+dep(makes-11, not-7)
+dobj(makes-11, what-8)
+det(performer-10, the-9)
+nsubj(makes-11, performer-10)
+dep(made-5, makes-11)
+dobj(makes-11, it-12)
+punct(is-2, .-13)
+
+Sentence #2 (14 tokens):
+I can get great amusement out of hearing one of my fifteen-year-old records.
+[Text=I CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=amusement CharacterOffsetBegin=72 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=amusement NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=hearing CharacterOffsetBegin=89 CharacterOffsetEnd=96 PartOfSpeech=VBG Lemma=hear NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=104 CharacterOffsetEnd=106 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=fifteen-year-old CharacterOffsetBegin=107 CharacterOffsetEnd=123 PartOfSpeech=JJ Lemma=fifteen-year-old NamedEntityTag=DURATION NormalizedNamedEntityTag=P15Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P15Y">fifteen-year-old</TIMEX3>]
+[Text=records CharacterOffsetBegin=124 CharacterOffsetEnd=131 PartOfSpeech=NNS Lemma=record NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD can)
+      (VP (VB get)
+        (NP (JJ great) (NN amusement))
+        (ADVP (IN out)
+          (PP (IN of)
+            (S
+              (VP (VBG hearing)
+                (NP
+                  (NP (CD one))
+                  (PP (IN of)
+                    (NP (PRP$ my) (JJ fifteen-year-old) (NNS records))))))))))
+    (. .)))
+
+root(ROOT-0, get-3)
+nsubj(get-3, I-1)
+aux(get-3, can-2)
+amod(amusement-5, great-4)
+dobj(get-3, amusement-5)
+advmod(get-3, out-6)
+mark(hearing-8, of-7)
+advcl:of(out-6, hearing-8)
+dobj(hearing-8, one-9)
+case(records-13, of-10)
+nmod:poss(records-13, my-11)
+amod(records-13, fifteen-year-old-12)
+nmod:of(one-9, records-13)
+punct(get-3, .-14)
+
+Sentence #3 (19 tokens):
+It is a trio by Mendelssohn for clarinet, basset horn and piano, and a delightful work.
+[Text=It CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=trio CharacterOffsetBegin=141 CharacterOffsetEnd=145 PartOfSpeech=NN Lemma=trio NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=146 CharacterOffsetEnd=148 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Mendelssohn CharacterOffsetBegin=149 CharacterOffsetEnd=160 PartOfSpeech=NNP Lemma=Mendelssohn NamedEntityTag=PERSON]
+[Text=for CharacterOffsetBegin=161 CharacterOffsetEnd=164 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=clarinet CharacterOffsetBegin=165 CharacterOffsetEnd=173 PartOfSpeech=NN Lemma=clarinet NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=173 CharacterOffsetEnd=174 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=basset CharacterOffsetBegin=175 CharacterOffsetEnd=181 PartOfSpeech=NN Lemma=basset NamedEntityTag=O]
+[Text=horn CharacterOffsetBegin=182 CharacterOffsetEnd=186 PartOfSpeech=NN Lemma=horn NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=187 CharacterOffsetEnd=190 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=191 CharacterOffsetEnd=196 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=198 CharacterOffsetEnd=201 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=202 CharacterOffsetEnd=203 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=delightful CharacterOffsetBegin=204 CharacterOffsetEnd=214 PartOfSpeech=JJ Lemma=delightful NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=215 CharacterOffsetEnd=219 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=219 CharacterOffsetEnd=220 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN trio))
+        (PP (IN by)
+          (NP
+            (NP (NNP Mendelssohn))
+            (PP (IN for)
+              (NP
+                (NP (NN clarinet))
+                (, ,)
+                (NP (NN basset) (NN horn)
+                  (CC and)
+                  (NN piano))
+                (, ,)
+                (CC and)
+                (NP (DT a) (JJ delightful) (NN work))))))))
+    (. .)))
+
+root(ROOT-0, trio-4)
+nsubj(trio-4, It-1)
+cop(trio-4, is-2)
+det(trio-4, a-3)
+case(Mendelssohn-6, by-5)
+nmod:by(trio-4, Mendelssohn-6)
+case(clarinet-8, for-7)
+nmod:for(Mendelssohn-6, clarinet-8)
+punct(clarinet-8, ,-9)
+compound(horn-11, basset-10)
+nmod:for(Mendelssohn-6, horn-11)
+conj:and(clarinet-8, horn-11)
+cc(horn-11, and-12)
+conj:and(clarinet-8, piano-13)
+conj:and(horn-11, piano-13)
+punct(clarinet-8, ,-14)
+cc(clarinet-8, and-15)
+det(work-18, a-16)
+amod(work-18, delightful-17)
+nmod:for(Mendelssohn-6, work-18)
+conj:and(clarinet-8, work-18)
+punct(trio-4, .-19)
+
+Sentence #4 (36 tokens):
+I wish I could have heard its first performance... My own record sounds quite good, but there is just something about the matched styles of the clarinet and basset horn which is unsatisfactory.
+[Text=I CharacterOffsetBegin=221 CharacterOffsetEnd=222 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=wish CharacterOffsetBegin=223 CharacterOffsetEnd=227 PartOfSpeech=VBP Lemma=wish NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=228 CharacterOffsetEnd=229 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=230 CharacterOffsetEnd=235 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=236 CharacterOffsetEnd=240 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=241 CharacterOffsetEnd=246 PartOfSpeech=VBN Lemma=hear NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=247 CharacterOffsetEnd=250 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=251 CharacterOffsetEnd=256 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=performance CharacterOffsetBegin=257 CharacterOffsetEnd=268 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=268 CharacterOffsetEnd=271 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=My CharacterOffsetBegin=272 CharacterOffsetEnd=274 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=275 CharacterOffsetEnd=278 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=record CharacterOffsetBegin=279 CharacterOffsetEnd=285 PartOfSpeech=NN Lemma=record NamedEntityTag=O]
+[Text=sounds CharacterOffsetBegin=286 CharacterOffsetEnd=292 PartOfSpeech=VBZ Lemma=sound NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=293 CharacterOffsetEnd=298 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=299 CharacterOffsetEnd=303 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=303 CharacterOffsetEnd=304 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=305 CharacterOffsetEnd=308 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=309 CharacterOffsetEnd=314 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=315 CharacterOffsetEnd=317 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=318 CharacterOffsetEnd=322 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=323 CharacterOffsetEnd=332 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=333 CharacterOffsetEnd=338 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=339 CharacterOffsetEnd=342 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=matched CharacterOffsetBegin=343 CharacterOffsetEnd=350 PartOfSpeech=VBN Lemma=match NamedEntityTag=O]
+[Text=styles CharacterOffsetBegin=351 CharacterOffsetEnd=357 PartOfSpeech=NNS Lemma=style NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=358 CharacterOffsetEnd=360 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=361 CharacterOffsetEnd=364 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=clarinet CharacterOffsetBegin=365 CharacterOffsetEnd=373 PartOfSpeech=NN Lemma=clarinet NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=374 CharacterOffsetEnd=377 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=basset CharacterOffsetBegin=378 CharacterOffsetEnd=384 PartOfSpeech=NN Lemma=basset NamedEntityTag=O]
+[Text=horn CharacterOffsetBegin=385 CharacterOffsetEnd=389 PartOfSpeech=NN Lemma=horn NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=390 CharacterOffsetEnd=395 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=396 CharacterOffsetEnd=398 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=unsatisfactory CharacterOffsetBegin=399 CharacterOffsetEnd=413 PartOfSpeech=JJ Lemma=unsatisfactory NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=413 CharacterOffsetEnd=414 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP wish)
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (MD could)
+              (VP (VB have)
+                (VP (VBN heard)
+                  (NP (PRP$ its) (JJ first) (NN performance)))))))))
+    (: ...)
+    (S
+      (S
+        (NP (PRP$ My) (JJ own) (NN record))
+        (VP (VBZ sounds)
+          (ADJP (RB quite) (JJ good))))
+      (, ,)
+      (CC but)
+      (S
+        (NP (EX there))
+        (VP (VBZ is)
+          (ADVP (RB just))
+          (NP
+            (NP (NN something))
+            (PP (IN about)
+              (NP
+                (NP (DT the) (VBN matched) (NNS styles))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NN clarinet)
+                      (CC and)
+                      (NN basset) (NN horn))
+                    (SBAR
+                      (WHNP (WDT which))
+                      (S
+                        (VP (VBZ is)
+                          (ADJP (JJ unsatisfactory)))))))))))))
+    (. .)))
+
+root(ROOT-0, wish-2)
+nsubj(wish-2, I-1)
+nsubj(heard-6, I-3)
+aux(heard-6, could-4)
+aux(heard-6, have-5)
+ccomp(wish-2, heard-6)
+nmod:poss(performance-9, its-7)
+amod(performance-9, first-8)
+dobj(heard-6, performance-9)
+punct(wish-2, ...-10)
+nmod:poss(record-13, My-11)
+amod(record-13, own-12)
+nsubj(sounds-14, record-13)
+parataxis(wish-2, sounds-14)
+advmod(good-16, quite-15)
+xcomp(sounds-14, good-16)
+punct(sounds-14, ,-17)
+cc(sounds-14, but-18)
+expl(is-20, there-19)
+parataxis(wish-2, is-20)
+conj:but(sounds-14, is-20)
+advmod(is-20, just-21)
+nsubj(is-20, something-22)
+case(styles-26, about-23)
+det(styles-26, the-24)
+amod(styles-26, matched-25)
+nmod:about(something-22, styles-26)
+case(horn-32, of-27)
+det(horn-32, the-28)
+compound(horn-32, clarinet-29)
+cc(clarinet-29, and-30)
+conj:and(clarinet-29, basset-31)
+compound(horn-32, basset-31)
+nmod:of(styles-26, horn-32)
+nsubj(unsatisfactory-35, horn-32)
+ref(horn-32, which-33)
+cop(unsatisfactory-35, is-34)
+acl:relcl(horn-32, unsatisfactory-35)
+punct(wish-2, .-36)
+
+Sentence #5 (44 tokens):
+The two players do not sound like father and son; they sound like the same person, as they are - Brymer in both cases, and allowed to do this by the genius of one Bob Auger, a superb engineer.
+[Text=The CharacterOffsetBegin=415 CharacterOffsetEnd=418 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=419 CharacterOffsetEnd=422 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=players CharacterOffsetBegin=423 CharacterOffsetEnd=430 PartOfSpeech=NNS Lemma=player NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=431 CharacterOffsetEnd=433 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=434 CharacterOffsetEnd=437 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=sound CharacterOffsetBegin=438 CharacterOffsetEnd=443 PartOfSpeech=VB Lemma=sound NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=444 CharacterOffsetEnd=448 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=father CharacterOffsetBegin=449 CharacterOffsetEnd=455 PartOfSpeech=NN Lemma=father NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=456 CharacterOffsetEnd=459 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=son CharacterOffsetBegin=460 CharacterOffsetEnd=463 PartOfSpeech=NN Lemma=son NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=463 CharacterOffsetEnd=464 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=465 CharacterOffsetEnd=469 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=sound CharacterOffsetBegin=470 CharacterOffsetEnd=475 PartOfSpeech=VBP Lemma=sound NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=476 CharacterOffsetEnd=480 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=481 CharacterOffsetEnd=484 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=485 CharacterOffsetEnd=489 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=person CharacterOffsetBegin=490 CharacterOffsetEnd=496 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=496 CharacterOffsetEnd=497 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=498 CharacterOffsetEnd=500 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=501 CharacterOffsetEnd=505 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=506 CharacterOffsetEnd=509 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=510 CharacterOffsetEnd=511 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Brymer CharacterOffsetBegin=512 CharacterOffsetEnd=518 PartOfSpeech=NNP Lemma=Brymer NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=519 CharacterOffsetEnd=521 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=522 CharacterOffsetEnd=526 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=cases CharacterOffsetBegin=527 CharacterOffsetEnd=532 PartOfSpeech=NNS Lemma=case NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=532 CharacterOffsetEnd=533 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=534 CharacterOffsetEnd=537 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=allowed CharacterOffsetBegin=538 CharacterOffsetEnd=545 PartOfSpeech=VBN Lemma=allow NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=546 CharacterOffsetEnd=548 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=549 CharacterOffsetEnd=551 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=552 CharacterOffsetEnd=556 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=557 CharacterOffsetEnd=559 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=560 CharacterOffsetEnd=563 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=genius CharacterOffsetBegin=564 CharacterOffsetEnd=570 PartOfSpeech=NN Lemma=genius NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=571 CharacterOffsetEnd=573 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=574 CharacterOffsetEnd=577 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=Bob CharacterOffsetBegin=578 CharacterOffsetEnd=581 PartOfSpeech=NNP Lemma=Bob NamedEntityTag=PERSON]
+[Text=Auger CharacterOffsetBegin=582 CharacterOffsetEnd=587 PartOfSpeech=NNP Lemma=Auger NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=587 CharacterOffsetEnd=588 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=589 CharacterOffsetEnd=590 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=superb CharacterOffsetBegin=591 CharacterOffsetEnd=597 PartOfSpeech=JJ Lemma=superb NamedEntityTag=O]
+[Text=engineer CharacterOffsetBegin=598 CharacterOffsetEnd=606 PartOfSpeech=NN Lemma=engineer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=606 CharacterOffsetEnd=607 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (DT The) (CD two) (NNS players))
+      (VP (VBP do) (RB not)
+        (VP (VB sound)
+          (PP (IN like)
+            (NP (NN father)
+              (CC and)
+              (NN son))))))
+    (: ;)
+    (S
+      (NP (PRP they))
+      (VP
+        (VP (VBP sound)
+          (PP (IN like)
+            (NP
+              (NP (DT the) (JJ same) (NN person))
+              (, ,)
+              (SBAR (IN as)
+                (S
+                  (NP (PRP they))
+                  (VP (VBP are) (: -)
+                    (NP
+                      (NP (NNP Brymer))
+                      (PP (IN in)
+                        (NP (DT both) (NNS cases)))))))
+              (, ,))))
+        (CC and)
+        (VP (VBN allowed)
+          (S
+            (VP (TO to)
+              (VP (VB do)
+                (NP (DT this))
+                (PP (IN by)
+                  (NP
+                    (NP (DT the) (NN genius))
+                    (PP (IN of)
+                      (NP
+                        (NP (CD one) (NNP Bob) (NNP Auger))
+                        (, ,)
+                        (NP (DT a)
+                          (ADJP (JJ superb))
+                          (NN engineer))))))))))))
+    (. .)))
+
+root(ROOT-0, sound-6)
+det(players-3, The-1)
+nummod(players-3, two-2)
+nsubj(sound-6, players-3)
+aux(sound-6, do-4)
+neg(sound-6, not-5)
+case(father-8, like-7)
+nmod:like(sound-6, father-8)
+cc(father-8, and-9)
+nmod:like(sound-6, son-10)
+conj:and(father-8, son-10)
+punct(sound-6, ;-11)
+nsubj(sound-13, they-12)
+nsubj(allowed-29, they-12)
+nsubj:xsubj(do-31, they-12)
+parataxis(sound-6, sound-13)
+case(person-17, like-14)
+det(person-17, the-15)
+amod(person-17, same-16)
+nmod:like(sound-13, person-17)
+punct(person-17, ,-18)
+mark(Brymer-23, as-19)
+nsubj(Brymer-23, they-20)
+cop(Brymer-23, are-21)
+punct(Brymer-23, --22)
+dep(person-17, Brymer-23)
+case(cases-26, in-24)
+det(cases-26, both-25)
+nmod:in(Brymer-23, cases-26)
+punct(person-17, ,-27)
+cc(sound-13, and-28)
+parataxis(sound-6, allowed-29)
+conj:and(sound-13, allowed-29)
+mark(do-31, to-30)
+xcomp(allowed-29, do-31)
+dobj(do-31, this-32)
+case(genius-35, by-33)
+det(genius-35, the-34)
+nmod:by(do-31, genius-35)
+case(Auger-39, of-36)
+nummod(Auger-39, one-37)
+compound(Auger-39, Bob-38)
+nmod:of(genius-35, Auger-39)
+punct(Auger-39, ,-40)
+det(engineer-43, a-41)
+amod(engineer-43, superb-42)
+appos(Auger-39, engineer-43)
+punct(sound-6, .-44)
+
+Sentence #6 (18 tokens):
+It is, as I said, an amusing record - and even musically attractive and worthy.
+[Text=It CharacterOffsetBegin=608 CharacterOffsetEnd=610 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=611 CharacterOffsetEnd=613 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=613 CharacterOffsetEnd=614 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=615 CharacterOffsetEnd=617 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=618 CharacterOffsetEnd=619 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=620 CharacterOffsetEnd=624 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=624 CharacterOffsetEnd=625 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=626 CharacterOffsetEnd=628 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=amusing CharacterOffsetBegin=629 CharacterOffsetEnd=636 PartOfSpeech=JJ Lemma=amusing NamedEntityTag=O]
+[Text=record CharacterOffsetBegin=637 CharacterOffsetEnd=643 PartOfSpeech=NN Lemma=record NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=644 CharacterOffsetEnd=645 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=646 CharacterOffsetEnd=649 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=650 CharacterOffsetEnd=654 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=musically CharacterOffsetBegin=655 CharacterOffsetEnd=664 PartOfSpeech=RB Lemma=musically NamedEntityTag=O]
+[Text=attractive CharacterOffsetBegin=665 CharacterOffsetEnd=675 PartOfSpeech=JJ Lemma=attractive NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=676 CharacterOffsetEnd=679 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=worthy CharacterOffsetBegin=680 CharacterOffsetEnd=686 PartOfSpeech=JJ Lemma=worthy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=686 CharacterOffsetEnd=687 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is) (, ,)
+      (SBAR (IN as)
+        (S
+          (NP (PRP I))
+          (VP
+            (VP (VBD said))
+            (, ,)
+            (NP (DT an)
+              (ADJP
+                (ADJP (JJ amusing) (NN record))
+                (: -)
+                (CC and)
+                (ADJP (RB even) (RB musically) (JJ attractive)
+                  (CC and)
+                  (JJ worthy))))))))
+    (. .)))
+
+root(ROOT-0, is-2)
+nsubj(is-2, It-1)
+punct(is-2, ,-3)
+mark(said-6, as-4)
+nsubj(said-6, I-5)
+advcl:as(is-2, said-6)
+punct(said-6, ,-7)
+det(record-10, an-8)
+dep(record-10, amusing-9)
+dobj(said-6, record-10)
+punct(record-10, --11)
+cc(record-10, and-12)
+advmod(attractive-15, even-13)
+advmod(attractive-15, musically-14)
+dobj(said-6, attractive-15)
+conj:and(record-10, attractive-15)
+cc(attractive-15, and-16)
+conj:and(record-10, worthy-17)
+conj:and(attractive-15, worthy-17)
+punct(is-2, .-18)
+
+Sentence #7 (49 tokens):
+It was also done without anything added or taken away from the sound, and no computerized tempo adjustment; but of course it's phoney, because two players always should, and always will, sound like two, unless someone makes sure they don't.
+[Text=It CharacterOffsetBegin=688 CharacterOffsetEnd=690 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=691 CharacterOffsetEnd=694 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=695 CharacterOffsetEnd=699 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=700 CharacterOffsetEnd=704 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=705 CharacterOffsetEnd=712 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=713 CharacterOffsetEnd=721 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=added CharacterOffsetBegin=722 CharacterOffsetEnd=727 PartOfSpeech=VBD Lemma=add NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=728 CharacterOffsetEnd=730 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=taken CharacterOffsetBegin=731 CharacterOffsetEnd=736 PartOfSpeech=VBN Lemma=take NamedEntityTag=O]
+[Text=away CharacterOffsetBegin=737 CharacterOffsetEnd=741 PartOfSpeech=RB Lemma=away NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=742 CharacterOffsetEnd=746 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=747 CharacterOffsetEnd=750 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sound CharacterOffsetBegin=751 CharacterOffsetEnd=756 PartOfSpeech=NN Lemma=sound NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=756 CharacterOffsetEnd=757 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=758 CharacterOffsetEnd=761 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=762 CharacterOffsetEnd=764 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=computerized CharacterOffsetBegin=765 CharacterOffsetEnd=777 PartOfSpeech=JJ Lemma=computerized NamedEntityTag=O]
+[Text=tempo CharacterOffsetBegin=778 CharacterOffsetEnd=783 PartOfSpeech=NN Lemma=tempo NamedEntityTag=O]
+[Text=adjustment CharacterOffsetBegin=784 CharacterOffsetEnd=794 PartOfSpeech=NN Lemma=adjustment NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=794 CharacterOffsetEnd=795 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=796 CharacterOffsetEnd=799 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=800 CharacterOffsetEnd=802 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=803 CharacterOffsetEnd=809 PartOfSpeech=NN Lemma=course NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=810 CharacterOffsetEnd=812 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=812 CharacterOffsetEnd=814 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=phoney CharacterOffsetBegin=815 CharacterOffsetEnd=821 PartOfSpeech=JJ Lemma=phoney NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=821 CharacterOffsetEnd=822 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=823 CharacterOffsetEnd=830 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=831 CharacterOffsetEnd=834 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=players CharacterOffsetBegin=835 CharacterOffsetEnd=842 PartOfSpeech=NNS Lemma=player NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=843 CharacterOffsetEnd=849 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=850 CharacterOffsetEnd=856 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=856 CharacterOffsetEnd=857 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=858 CharacterOffsetEnd=861 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=862 CharacterOffsetEnd=868 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=869 CharacterOffsetEnd=873 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=873 CharacterOffsetEnd=874 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=sound CharacterOffsetBegin=875 CharacterOffsetEnd=880 PartOfSpeech=VB Lemma=sound NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=881 CharacterOffsetEnd=885 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=886 CharacterOffsetEnd=889 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=, CharacterOffsetBegin=889 CharacterOffsetEnd=890 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=unless CharacterOffsetBegin=891 CharacterOffsetEnd=897 PartOfSpeech=IN Lemma=unless NamedEntityTag=O]
+[Text=someone CharacterOffsetBegin=898 CharacterOffsetEnd=905 PartOfSpeech=NN Lemma=someone NamedEntityTag=O]
+[Text=makes CharacterOffsetBegin=906 CharacterOffsetEnd=911 PartOfSpeech=VBZ Lemma=make NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=912 CharacterOffsetEnd=916 PartOfSpeech=JJ Lemma=sure NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=917 CharacterOffsetEnd=921 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=922 CharacterOffsetEnd=924 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=924 CharacterOffsetEnd=927 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=927 CharacterOffsetEnd=928 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP
+        (ADVP (RB also))
+        (VBN done)
+        (PP (IN without)
+          (NP
+            (NP (NN anything))
+            (SBAR
+              (S
+                (VP
+                  (VP (VBD added))
+                  (CC or)
+                  (VP (VBN taken)
+                    (PP (RB away)
+                      (PP (IN from)
+                        (NP
+                          (NP (DT the) (NN sound))
+                          (, ,)
+                          (CC and)
+                          (NP (DT no) (JJ computerized) (NN tempo) (NN adjustment))
+                          (: ;)))
+                      (CC but)
+                      (PP (IN of)
+                        (NP
+                          (NP (NN course))
+                          (SBAR
+                            (S
+                              (NP (PRP it))
+                              (VP (VBZ 's)
+                                (ADJP (JJ phoney))
+                                (, ,)
+                                (SBAR (IN because)
+                                  (S
+                                    (NP (CD two) (NNS players))
+                                    (ADVP (RB always))
+                                    (VP
+                                      (VP (MD should))
+                                      (, ,)
+                                      (CC and)
+                                      (ADVP (RB always))
+                                      (VP (MD will))))))))))))
+                  (, ,)
+                  (VP (VB sound)
+                    (PP (IN like)
+                      (NP (CD two)))))))))
+        (, ,)
+        (SBAR (IN unless)
+          (S
+            (NP (NN someone))
+            (VP (VBZ makes)
+              (ADJP (JJ sure)
+                (SBAR
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP do) (RB n't))))))))))
+    (. .)))
+
+root(ROOT-0, done-4)
+nsubjpass(done-4, It-1)
+auxpass(done-4, was-2)
+advmod(done-4, also-3)
+case(anything-6, without-5)
+nmod:without(done-4, anything-6)
+acl:relcl(anything-6, added-7)
+cc(added-7, or-8)
+acl:relcl(anything-6, taken-9)
+conj:or(added-7, taken-9)
+conj:or(added-7, taken-9')
+conj:but(taken-9, taken-9')
+conj:or(added-7, taken-9'')
+conj:and(taken-9, taken-9'')
+advmod(sound-13, away-10)
+case(sound-13, from-11)
+det(sound-13, the-12)
+nmod:from(taken-9, sound-13)
+punct(sound-13, ,-14)
+cc(taken-9, and-15)
+neg(adjustment-19, no-16)
+amod(adjustment-19, computerized-17)
+compound(adjustment-19, tempo-18)
+conj(sound-13, adjustment-19)
+punct(sound-13, ;-20)
+cc(taken-9, but-21)
+case(course-23, of-22)
+nmod:of(taken-9', course-23)
+nsubj(phoney-26, it-24)
+cop(phoney-26, 's-25)
+acl:relcl(course-23, phoney-26)
+punct(phoney-26, ,-27)
+mark(should-32, because-28)
+nummod(players-30, two-29)
+nsubj(should-32, players-30)
+advmod(should-32, always-31)
+advcl:because(phoney-26, should-32)
+punct(should-32, ,-33)
+cc(should-32, and-34)
+advmod(will-36, always-35)
+advcl:because(phoney-26, will-36)
+conj:and(should-32, will-36)
+punct(added-7, ,-37)
+dep(added-7, sound-38)
+case(two-40, like-39)
+nmod:like(sound-38, two-40)
+punct(done-4, ,-41)
+mark(makes-44, unless-42)
+nsubj(makes-44, someone-43)
+advcl:unless(done-4, makes-44)
+xcomp(makes-44, sure-45)
+nsubj(do-47, they-46)
+ccomp(sure-45, do-47)
+neg(do-47, n't-48)
+punct(done-4, .-49)
+
+Coreference set:
+	(4,1,[1,2]) -> (2,1,[1,2]), that is: "I" -> "I"
+	(4,3,[3,4]) -> (2,1,[1,2]), that is: "I" -> "I"
+	(4,11,[11,12]) -> (2,1,[1,2]), that is: "My" -> "I"
+	(6,5,[5,6]) -> (2,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(3,1,[1,2]) -> (2,9,[9,14]), that is: "It" -> "one of my fifteen-year-old records"
+	(4,7,[7,8]) -> (2,9,[9,14]), that is: "its" -> "one of my fifteen-year-old records"
+Coreference set:
+	(6,1,[1,2]) -> (5,2,[2,3]), that is: "It" -> "two"
+	(7,24,[24,25]) -> (5,2,[2,3]), that is: "it" -> "two"
+	(7,29,[29,30]) -> (5,2,[2,3]), that is: "two" -> "two"
+	(7,40,[40,41]) -> (5,2,[2,3]), that is: "two" -> "two"
+Coreference set:
+	(5,43,[41,44]) -> (5,39,[38,40]), that is: "a superb engineer" -> "Bob Auger"
+Coreference set:
+	(5,12,[12,13]) -> (5,3,[1,4]), that is: "they" -> "The two players"
+	(5,20,[20,21]) -> (5,3,[1,4]), that is: "they" -> "The two players"
+	(7,30,[29,31]) -> (5,3,[1,4]), that is: "two players" -> "The two players"
+	(7,46,[46,47]) -> (5,3,[1,4]), that is: "they" -> "The two players"

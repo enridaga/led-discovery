@@ -1,0 +1,53 @@
+Sentence #1 (16 tokens):
+Stravinsky's Piano Concerto, third movement, is an assemblage of college football songs.
+[Text=Stravinsky CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Stravinsky NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Piano CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Piano NamedEntityTag=O]
+[Text=Concerto CharacterOffsetBegin=19 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=third CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=JJ Lemma=third NamedEntityTag=ORDINAL NormalizedNamedEntityTag=3.0]
+[Text=movement CharacterOffsetBegin=35 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=movement NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=assemblage CharacterOffsetBegin=51 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=assemblage NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=college CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=college NamedEntityTag=O]
+[Text=football CharacterOffsetBegin=73 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=football NamedEntityTag=O]
+[Text=songs CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=NNS Lemma=song NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Stravinsky) (POS 's))
+        (NNP Piano) (NNP Concerto))
+      (, ,)
+      (NP (JJ third) (NN movement))
+      (, ,))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN assemblage))
+        (PP (IN of)
+          (NP (NN college) (NN football) (NNS songs)))))
+    (. .)))
+
+root(ROOT-0, assemblage-11)
+nmod:poss(Concerto-4, Stravinsky-1)
+case(Stravinsky-1, 's-2)
+compound(Concerto-4, Piano-3)
+nsubj(assemblage-11, Concerto-4)
+punct(Concerto-4, ,-5)
+amod(movement-7, third-6)
+appos(Concerto-4, movement-7)
+punct(Concerto-4, ,-8)
+cop(assemblage-11, is-9)
+det(assemblage-11, an-10)
+case(songs-15, of-12)
+compound(songs-15, college-13)
+compound(songs-15, football-14)
+nmod:of(assemblage-11, songs-15)
+punct(assemblage-11, .-16)
+
+Coreference set:
+	(1,11,[10,16]) -> (1,4,[1,5]), that is: "an assemblage of college football songs" -> "Stravinsky 's Piano Concerto"

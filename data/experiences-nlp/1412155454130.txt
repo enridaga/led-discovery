@@ -1,0 +1,466 @@
+Sentence #1 (9 tokens):
+I remember buying my first stereo in 1976.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=remember CharacterOffsetBegin=2 CharacterOffsetEnd=10 PartOfSpeech=VBP Lemma=remember NamedEntityTag=O]
+[Text=buying CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=VBG Lemma=buy NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=stereo CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=stereo NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=1976 CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=CD Lemma=1976 NamedEntityTag=DATE NormalizedNamedEntityTag=1976 Timex=<TIMEX3 tid="t1" type="DATE" value="1976">1976</TIMEX3>]
+[Text=. CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP remember)
+      (S
+        (VP (VBG buying)
+          (NP (PRP$ my) (JJ first) (NN stereo))
+          (PP (IN in)
+            (NP (CD 1976))))))
+    (. .)))
+
+root(ROOT-0, remember-2)
+nsubj(remember-2, I-1)
+xcomp(remember-2, buying-3)
+nmod:poss(stereo-6, my-4)
+amod(stereo-6, first-5)
+dobj(buying-3, stereo-6)
+case(1976-8, in-7)
+nmod:in(buying-3, 1976-8)
+punct(remember-2, .-9)
+
+Sentence #2 (19 tokens):
+I was eighteen and had just moved into a place of my own, which was a bedsit.
+[Text=I CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=eighteen CharacterOffsetBegin=49 CharacterOffsetEnd=57 PartOfSpeech=CD Lemma=eighteen NamedEntityTag=NUMBER NormalizedNamedEntityTag=18.0]
+[Text=and CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=moved CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=VBN Lemma=move NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=101 CharacterOffsetEnd=106 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bedsit CharacterOffsetBegin=113 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=bedsit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBD was)
+        (NP (CD eighteen)))
+      (CC and)
+      (VP (VBD had)
+        (VP
+          (ADVP (RB just))
+          (VBN moved)
+          (PP (IN into)
+            (NP
+              (NP (DT a) (NN place))
+              (PP (IN of)
+                (NP (PRP$ my) (JJ own)))
+              (, ,)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBD was)
+                    (NP (DT a) (NN bedsit))))))))))
+    (. .)))
+
+root(ROOT-0, eighteen-3)
+nsubj(eighteen-3, I-1)
+nsubj(moved-7, I-1)
+cop(eighteen-3, was-2)
+cc(eighteen-3, and-4)
+aux(moved-7, had-5)
+advmod(moved-7, just-6)
+conj:and(eighteen-3, moved-7)
+case(place-10, into-8)
+det(place-10, a-9)
+nmod:into(moved-7, place-10)
+nsubj(bedsit-18, place-10)
+case(own-13, of-11)
+nmod:poss(own-13, my-12)
+nmod:of(place-10, own-13)
+punct(place-10, ,-14)
+ref(place-10, which-15)
+cop(bedsit-18, was-16)
+det(bedsit-18, a-17)
+acl:relcl(place-10, bedsit-18)
+punct(eighteen-3, .-19)
+
+Sentence #3 (17 tokens):
+The one thing that I simply had to have to make life bearable was a stereo.
+[Text=The CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=thing CharacterOffsetBegin=129 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=simply CharacterOffsetBegin=142 CharacterOffsetEnd=148 PartOfSpeech=RB Lemma=simply NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=149 CharacterOffsetEnd=152 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=153 CharacterOffsetEnd=155 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=156 CharacterOffsetEnd=160 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=164 CharacterOffsetEnd=168 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=life CharacterOffsetBegin=169 CharacterOffsetEnd=173 PartOfSpeech=NN Lemma=life NamedEntityTag=O]
+[Text=bearable CharacterOffsetBegin=174 CharacterOffsetEnd=182 PartOfSpeech=JJ Lemma=bearable NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=183 CharacterOffsetEnd=186 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=stereo CharacterOffsetBegin=189 CharacterOffsetEnd=195 PartOfSpeech=NN Lemma=stereo NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=195 CharacterOffsetEnd=196 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (CD one) (NN thing))
+      (SBAR (IN that)
+        (S
+          (NP (PRP I))
+          (ADVP (RB simply))
+          (VP (VBD had)
+            (S
+              (VP (TO to)
+                (VP (VB have)
+                  (S
+                    (VP (TO to)
+                      (VP (VB make)
+                        (S
+                          (NP (NN life))
+                          (ADJP (JJ bearable)))))))))))))
+    (VP (VBD was)
+      (NP (DT a) (NN stereo)))
+    (. .)))
+
+root(ROOT-0, stereo-16)
+det(thing-3, The-1)
+nummod(thing-3, one-2)
+nsubj(stereo-16, thing-3)
+mark(had-7, that-4)
+nsubj(had-7, I-5)
+nsubj:xsubj(have-9, I-5)
+advmod(had-7, simply-6)
+dep(thing-3, had-7)
+mark(have-9, to-8)
+xcomp(had-7, have-9)
+mark(make-11, to-10)
+xcomp(have-9, make-11)
+nsubj(bearable-13, life-12)
+xcomp(make-11, bearable-13)
+cop(stereo-16, was-14)
+det(stereo-16, a-15)
+punct(stereo-16, .-17)
+
+Sentence #4 (21 tokens):
+They were pretty expensive, so I bought a fairly basic system with a deck and speakers for £45.
+[Text=They CharacterOffsetBegin=197 CharacterOffsetEnd=201 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=202 CharacterOffsetEnd=206 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=pretty CharacterOffsetBegin=207 CharacterOffsetEnd=213 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O]
+[Text=expensive CharacterOffsetBegin=214 CharacterOffsetEnd=223 PartOfSpeech=JJ Lemma=expensive NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=223 CharacterOffsetEnd=224 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=228 CharacterOffsetEnd=229 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=bought CharacterOffsetBegin=230 CharacterOffsetEnd=236 PartOfSpeech=VBD Lemma=buy NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=237 CharacterOffsetEnd=238 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fairly CharacterOffsetBegin=239 CharacterOffsetEnd=245 PartOfSpeech=RB Lemma=fairly NamedEntityTag=O]
+[Text=basic CharacterOffsetBegin=246 CharacterOffsetEnd=251 PartOfSpeech=JJ Lemma=basic NamedEntityTag=O]
+[Text=system CharacterOffsetBegin=252 CharacterOffsetEnd=258 PartOfSpeech=NN Lemma=system NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=259 CharacterOffsetEnd=263 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=264 CharacterOffsetEnd=265 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=deck CharacterOffsetBegin=266 CharacterOffsetEnd=270 PartOfSpeech=NN Lemma=deck NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=271 CharacterOffsetEnd=274 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=speakers CharacterOffsetBegin=275 CharacterOffsetEnd=283 PartOfSpeech=NNS Lemma=speaker NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=284 CharacterOffsetEnd=287 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=# CharacterOffsetBegin=288 CharacterOffsetEnd=289 PartOfSpeech=# Lemma=# NamedEntityTag=MONEY NormalizedNamedEntityTag=£45.0]
+[Text=45 CharacterOffsetBegin=289 CharacterOffsetEnd=291 PartOfSpeech=CD Lemma=45 NamedEntityTag=MONEY NormalizedNamedEntityTag=£45.0]
+[Text=. CharacterOffsetBegin=291 CharacterOffsetEnd=292 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBD were)
+        (ADJP (RB pretty) (JJ expensive))))
+    (, ,) (IN so)
+    (S
+      (NP (PRP I))
+      (VP (VBD bought)
+        (NP (DT a)
+          (ADJP (RB fairly) (JJ basic))
+          (NN system))
+        (PP (IN with)
+          (NP
+            (NP (DT a) (NN deck))
+            (CC and)
+            (NP (NNS speakers))))
+        (PP (IN for)
+          (NP (# #) (CD 45)))))
+    (. .)))
+
+root(ROOT-0, expensive-4)
+nsubj(expensive-4, They-1)
+cop(expensive-4, were-2)
+advmod(expensive-4, pretty-3)
+punct(expensive-4, ,-5)
+dep(expensive-4, so-6)
+nsubj(bought-8, I-7)
+parataxis(expensive-4, bought-8)
+det(system-12, a-9)
+advmod(basic-11, fairly-10)
+amod(system-12, basic-11)
+dobj(bought-8, system-12)
+case(deck-15, with-13)
+det(deck-15, a-14)
+nmod:with(bought-8, deck-15)
+cc(deck-15, and-16)
+nmod:with(bought-8, speakers-17)
+conj:and(deck-15, speakers-17)
+case(45-20, for-18)
+dep(45-20, #-19)
+nmod:for(bought-8, 45-20)
+punct(expensive-4, .-21)
+
+Sentence #5 (27 tokens):
+That was a week’s wages for me at the time and I only managed it because my parents gave me some money for my birthday.
+[Text=That CharacterOffsetBegin=293 CharacterOffsetEnd=297 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=298 CharacterOffsetEnd=301 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=302 CharacterOffsetEnd=303 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=P1W Timex=<TIMEX3 tid="t2" type="DURATION" value="P1W">a week</TIMEX3>]
+[Text=week CharacterOffsetBegin=304 CharacterOffsetEnd=308 PartOfSpeech=NN Lemma=week NamedEntityTag=DURATION NormalizedNamedEntityTag=P1W Timex=<TIMEX3 tid="t2" type="DURATION" value="P1W">a week</TIMEX3>]
+[Text='s CharacterOffsetBegin=308 CharacterOffsetEnd=310 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=wages CharacterOffsetBegin=311 CharacterOffsetEnd=316 PartOfSpeech=NNS Lemma=wages NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=317 CharacterOffsetEnd=320 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=321 CharacterOffsetEnd=323 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=324 CharacterOffsetEnd=326 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=327 CharacterOffsetEnd=330 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=331 CharacterOffsetEnd=335 PartOfSpeech=NN Lemma=time NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t3" type="DATE" value="PAST_REF">time</TIMEX3>]
+[Text=and CharacterOffsetBegin=336 CharacterOffsetEnd=339 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=340 CharacterOffsetEnd=341 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=342 CharacterOffsetEnd=346 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=managed CharacterOffsetBegin=347 CharacterOffsetEnd=354 PartOfSpeech=VBD Lemma=manage NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=355 CharacterOffsetEnd=357 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=358 CharacterOffsetEnd=365 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=366 CharacterOffsetEnd=368 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=parents CharacterOffsetBegin=369 CharacterOffsetEnd=376 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=377 CharacterOffsetEnd=381 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=382 CharacterOffsetEnd=384 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=385 CharacterOffsetEnd=389 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=money CharacterOffsetBegin=390 CharacterOffsetEnd=395 PartOfSpeech=NN Lemma=money NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=396 CharacterOffsetEnd=399 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=400 CharacterOffsetEnd=402 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=birthday CharacterOffsetBegin=403 CharacterOffsetEnd=411 PartOfSpeech=NN Lemma=birthday NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=411 CharacterOffsetEnd=412 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (DT That))
+      (VP (VBD was)
+        (NP
+          (NP
+            (NP (DT a) (NN week) (POS 's))
+            (NNS wages))
+          (PP (IN for)
+            (NP (PRP me))))
+        (PP (IN at)
+          (NP (DT the) (NN time)))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (ADVP (RB only))
+      (VP (VBD managed)
+        (NP (PRP it))
+        (SBAR (IN because)
+          (S
+            (NP (PRP$ my) (NNS parents))
+            (VP (VBD gave)
+              (NP (PRP me))
+              (NP
+                (NP (DT some) (NN money))
+                (PP (IN for)
+                  (NP (PRP$ my) (NN birthday)))))))))
+    (. .)))
+
+root(ROOT-0, wages-6)
+nsubj(wages-6, That-1)
+cop(wages-6, was-2)
+det(week-4, a-3)
+nmod:poss(wages-6, week-4)
+case(week-4, 's-5)
+case(me-8, for-7)
+nmod:for(wages-6, me-8)
+case(time-11, at-9)
+det(time-11, the-10)
+nmod:at(wages-6, time-11)
+cc(wages-6, and-12)
+nsubj(managed-15, I-13)
+advmod(managed-15, only-14)
+conj:and(wages-6, managed-15)
+dobj(managed-15, it-16)
+mark(gave-20, because-17)
+nmod:poss(parents-19, my-18)
+nsubj(gave-20, parents-19)
+advcl:because(managed-15, gave-20)
+iobj(gave-20, me-21)
+det(money-23, some-22)
+dobj(gave-20, money-23)
+case(birthday-26, for-24)
+nmod:poss(birthday-26, my-25)
+nmod:for(money-23, birthday-26)
+punct(wages-6, .-27)
+
+Sentence #6 (16 tokens):
+Having a stereo was one of those essential things when you moved out of home.
+[Text=Having CharacterOffsetBegin=413 CharacterOffsetEnd=419 PartOfSpeech=VBG Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=420 CharacterOffsetEnd=421 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=stereo CharacterOffsetBegin=422 CharacterOffsetEnd=428 PartOfSpeech=NN Lemma=stereo NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=429 CharacterOffsetEnd=432 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=433 CharacterOffsetEnd=436 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=437 CharacterOffsetEnd=439 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=440 CharacterOffsetEnd=445 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=essential CharacterOffsetBegin=446 CharacterOffsetEnd=455 PartOfSpeech=JJ Lemma=essential NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=456 CharacterOffsetEnd=462 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=463 CharacterOffsetEnd=467 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=468 CharacterOffsetEnd=471 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=moved CharacterOffsetBegin=472 CharacterOffsetEnd=477 PartOfSpeech=VBD Lemma=move NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=478 CharacterOffsetEnd=481 PartOfSpeech=RB Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=482 CharacterOffsetEnd=484 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=home CharacterOffsetBegin=485 CharacterOffsetEnd=489 PartOfSpeech=NN Lemma=home NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=489 CharacterOffsetEnd=490 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (VP (VBG Having)
+        (NP (DT a) (NN stereo))))
+    (VP (VBD was)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT those) (JJ essential) (NNS things))
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP you))
+                (VP (VBD moved)
+                  (ADVP (RB out))
+                  (PP (IN of)
+                    (NP (NN home))))))))))
+    (. .)))
+
+root(ROOT-0, things-9)
+csubj(one-5, Having-1)
+det(stereo-3, a-2)
+dobj(Having-1, stereo-3)
+cop(one-5, was-4)
+det:qmod(things-9, one-5)
+mwe(one-5, of-6)
+det(things-9, those-7)
+amod(things-9, essential-8)
+advmod(moved-12, when-10)
+nsubj(moved-12, you-11)
+acl:relcl(things-9, moved-12)
+advmod(moved-12, out-13)
+case(home-15, of-14)
+nmod:of(moved-12, home-15)
+punct(one-5, .-16)
+
+Sentence #7 (22 tokens):
+I could put up without a lot, but not being able to hear Neil Young was not one of them.
+[Text=I CharacterOffsetBegin=491 CharacterOffsetEnd=492 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=493 CharacterOffsetEnd=498 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=499 CharacterOffsetEnd=502 PartOfSpeech=VB Lemma=put NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=503 CharacterOffsetEnd=505 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=506 CharacterOffsetEnd=513 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=514 CharacterOffsetEnd=515 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=516 CharacterOffsetEnd=519 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=519 CharacterOffsetEnd=520 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=521 CharacterOffsetEnd=524 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=525 CharacterOffsetEnd=528 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=529 CharacterOffsetEnd=534 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=able CharacterOffsetBegin=535 CharacterOffsetEnd=539 PartOfSpeech=JJ Lemma=able NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=540 CharacterOffsetEnd=542 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=543 CharacterOffsetEnd=547 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=Neil CharacterOffsetBegin=548 CharacterOffsetEnd=552 PartOfSpeech=NNP Lemma=Neil NamedEntityTag=PERSON]
+[Text=Young CharacterOffsetBegin=553 CharacterOffsetEnd=558 PartOfSpeech=NNP Lemma=Young NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=559 CharacterOffsetEnd=562 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=563 CharacterOffsetEnd=566 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=567 CharacterOffsetEnd=570 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=571 CharacterOffsetEnd=573 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=574 CharacterOffsetEnd=578 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=578 CharacterOffsetEnd=579 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD could)
+        (VP (VB put)
+          (PRT (RP up))
+          (PP (IN without)
+            (NP (DT a) (NN lot))))))
+    (, ,)
+    (CC but)
+    (S (RB not)
+      (VP (VBG being)
+        (ADJP (JJ able)
+          (S
+            (VP (TO to)
+              (VP (VB hear)
+                (SBAR
+                  (S
+                    (NP (NNP Neil) (NNP Young))
+                    (VP (VBD was) (RB not)
+                      (NP
+                        (NP (CD one))
+                        (PP (IN of)
+                          (NP (PRP them)))))))))))))
+    (. .)))
+
+root(ROOT-0, put-3)
+nsubj(put-3, I-1)
+nsubj(able-12, I-1)
+nsubj:xsubj(hear-14, I-1)
+aux(put-3, could-2)
+compound:prt(put-3, up-4)
+case(lot-7, without-5)
+det(lot-7, a-6)
+nmod:without(put-3, lot-7)
+punct(put-3, ,-8)
+cc(put-3, but-9)
+neg(able-12, not-10)
+cop(able-12, being-11)
+conj:but(put-3, able-12)
+mark(hear-14, to-13)
+xcomp(able-12, hear-14)
+compound(Young-16, Neil-15)
+nsubj(one-19, Young-16)
+cop(one-19, was-17)
+neg(one-19, not-18)
+det:qmod(them-21, one-19)
+mwe(one-19, of-20)
+ccomp(hear-14, them-21)
+punct(put-3, .-22)
+
+Coreference set:
+	(1,4,[4,5]) -> (1,1,[1,2]), that is: "my" -> "I"
+	(2,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(2,12,[12,13]) -> (1,1,[1,2]), that is: "my" -> "I"
+	(3,5,[5,6]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(4,7,[7,8]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(5,8,[8,9]) -> (1,1,[1,2]), that is: "me" -> "I"
+	(5,13,[13,14]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(5,18,[18,19]) -> (1,1,[1,2]), that is: "my" -> "I"
+	(5,21,[21,22]) -> (1,1,[1,2]), that is: "me" -> "I"
+	(5,25,[25,26]) -> (1,1,[1,2]), that is: "my" -> "I"
+	(7,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(3,16,[15,17]) -> (3,3,[1,14]), that is: "a stereo" -> "The one thing that I simply had to have to make life bearable"
+	(6,3,[2,4]) -> (3,3,[1,14]), that is: "a stereo" -> "The one thing that I simply had to have to make life bearable"
+Coreference set:
+	(4,15,[14,18]) -> (5,6,[3,9]), that is: "a deck and speakers" -> "a week 's wages for me"
+	(5,1,[1,2]) -> (5,6,[3,9]), that is: "That" -> "a week 's wages for me"
+Coreference set:
+	(5,16,[16,17]) -> (5,4,[3,6]), that is: "it" -> "a week 's"

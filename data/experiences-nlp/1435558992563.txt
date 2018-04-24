@@ -1,0 +1,409 @@
+Sentence #1 (6 tokens):
+Christmas was a great day.
+[Text=Christmas CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Christmas NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-12-25 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-12-25">Christmas</TIMEX3>]
+[Text=was CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t2" type="DURATION" value="P1D">day</TIMEX3>]
+[Text=. CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Christmas))
+    (VP (VBD was)
+      (NP (DT a) (JJ great) (NN day)))
+    (. .)))
+
+root(ROOT-0, day-5)
+nsubj(day-5, Christmas-1)
+cop(day-5, was-2)
+det(day-5, a-3)
+amod(day-5, great-4)
+punct(day-5, .-6)
+
+Sentence #2 (15 tokens):
+We were serenaded, of course, and we serenaded the C.O. in revenge.
+[Text=We CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=serenaded CharacterOffsetBegin=35 CharacterOffsetEnd=44 PartOfSpeech=VBN Lemma=serenade NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=course NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=serenaded CharacterOffsetBegin=64 CharacterOffsetEnd=73 PartOfSpeech=VBD Lemma=serenade NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=C.O. CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=C.O. NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=revenge CharacterOffsetBegin=86 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=revenge NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VBD were)
+        (VP (VBN serenaded) (, ,)
+          (PP (IN of)
+            (NP (NN course))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP we))
+      (VP (VBD serenaded)
+        (NP (DT the) (NNP C.O.))
+        (PP (IN in)
+          (NP (NN revenge)))))
+    (. .)))
+
+root(ROOT-0, serenaded-3)
+nsubjpass(serenaded-3, We-1)
+auxpass(serenaded-3, were-2)
+punct(serenaded-3, ,-4)
+case(course-6, of-5)
+nmod:of(serenaded-3, course-6)
+punct(serenaded-3, ,-7)
+cc(serenaded-3, and-8)
+nsubj(serenaded-10, we-9)
+conj:and(serenaded-3, serenaded-10)
+det(C.O.-12, the-11)
+dobj(serenaded-10, C.O.-12)
+case(revenge-14, in-13)
+nmod:in(serenaded-10, revenge-14)
+punct(serenaded-3, .-15)
+
+Sentence #3 (43 tokens):
+He was delighted and made a speech in pyjamas on his doorstep, and we killed a pig for the Company and ordered up certain barrels and smokes which livened up things considerably, especially during a terrific concert we had later.
+[Text=He CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=delighted CharacterOffsetBegin=102 CharacterOffsetEnd=111 PartOfSpeech=JJ Lemma=delighted NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=speech CharacterOffsetBegin=123 CharacterOffsetEnd=129 PartOfSpeech=NN Lemma=speech NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=130 CharacterOffsetEnd=132 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=pyjamas CharacterOffsetBegin=133 CharacterOffsetEnd=140 PartOfSpeech=NNS Lemma=pyjamas NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=144 CharacterOffsetEnd=147 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=doorstep CharacterOffsetBegin=148 CharacterOffsetEnd=156 PartOfSpeech=NN Lemma=doorstep NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=156 CharacterOffsetEnd=157 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=162 CharacterOffsetEnd=164 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=killed CharacterOffsetBegin=165 CharacterOffsetEnd=171 PartOfSpeech=VBD Lemma=kill NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=172 CharacterOffsetEnd=173 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=pig CharacterOffsetBegin=174 CharacterOffsetEnd=177 PartOfSpeech=NN Lemma=pig NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=178 CharacterOffsetEnd=181 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=182 CharacterOffsetEnd=185 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Company CharacterOffsetBegin=186 CharacterOffsetEnd=193 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=194 CharacterOffsetEnd=197 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=ordered CharacterOffsetBegin=198 CharacterOffsetEnd=205 PartOfSpeech=VBD Lemma=order NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=206 CharacterOffsetEnd=208 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=certain CharacterOffsetBegin=209 CharacterOffsetEnd=216 PartOfSpeech=JJ Lemma=certain NamedEntityTag=O]
+[Text=barrels CharacterOffsetBegin=217 CharacterOffsetEnd=224 PartOfSpeech=NNS Lemma=barrel NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=225 CharacterOffsetEnd=228 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=smokes CharacterOffsetBegin=229 CharacterOffsetEnd=235 PartOfSpeech=VBZ Lemma=smoke NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=236 CharacterOffsetEnd=241 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=livened CharacterOffsetBegin=242 CharacterOffsetEnd=249 PartOfSpeech=VBD Lemma=liven NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=250 CharacterOffsetEnd=252 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=253 CharacterOffsetEnd=259 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=considerably CharacterOffsetBegin=260 CharacterOffsetEnd=272 PartOfSpeech=RB Lemma=considerably NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=272 CharacterOffsetEnd=273 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=especially CharacterOffsetBegin=274 CharacterOffsetEnd=284 PartOfSpeech=RB Lemma=especially NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=285 CharacterOffsetEnd=291 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=292 CharacterOffsetEnd=293 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=terrific CharacterOffsetBegin=294 CharacterOffsetEnd=302 PartOfSpeech=JJ Lemma=terrific NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=303 CharacterOffsetEnd=310 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=311 CharacterOffsetEnd=313 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=314 CharacterOffsetEnd=317 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=later CharacterOffsetBegin=318 CharacterOffsetEnd=323 PartOfSpeech=RB Lemma=later NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=323 CharacterOffsetEnd=324 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP
+        (VP (VBD was)
+          (ADJP (JJ delighted)))
+        (CC and)
+        (VP (VBD made)
+          (NP (DT a) (NN speech))
+          (PP (IN in)
+            (NP
+              (NP (NNS pyjamas))
+              (PP (IN on)
+                (NP (PRP$ his) (NN doorstep))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP we))
+      (VP
+        (VP (VBD killed)
+          (NP (DT a) (NN pig))
+          (PP (IN for)
+            (NP (DT the) (NN Company))))
+        (CC and)
+        (VP
+          (VP (VBD ordered)
+            (PRT (RP up))
+            (NP (JJ certain) (NNS barrels)))
+          (CC and)
+          (VP (VBZ smokes)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBD livened)
+                  (PRT (RP up))
+                  (NP (NNS things))
+                  (ADVP (RB considerably))
+                  (, ,)
+                  (PP (RB especially) (IN during)
+                    (NP
+                      (NP (DT a) (JJ terrific) (NN concert))
+                      (SBAR
+                        (S
+                          (NP (PRP we))
+                          (VP (VBD had)
+                            (ADVP (RB later))))))))))))))
+    (. .)))
+
+root(ROOT-0, delighted-3)
+nsubj(delighted-3, He-1)
+nsubj(made-5, He-1)
+cop(delighted-3, was-2)
+cc(delighted-3, and-4)
+conj:and(delighted-3, made-5)
+det(speech-7, a-6)
+dobj(made-5, speech-7)
+case(pyjamas-9, in-8)
+nmod:in(made-5, pyjamas-9)
+case(doorstep-12, on-10)
+nmod:poss(doorstep-12, his-11)
+nmod:on(pyjamas-9, doorstep-12)
+punct(delighted-3, ,-13)
+cc(delighted-3, and-14)
+nsubj(killed-16, we-15)
+nsubj(ordered-23, we-15)
+conj:and(delighted-3, killed-16)
+det(pig-18, a-17)
+dobj(killed-16, pig-18)
+case(Company-21, for-19)
+det(Company-21, the-20)
+nmod:for(killed-16, Company-21)
+cc(killed-16, and-22)
+conj:and(delighted-3, ordered-23)
+conj:and(killed-16, ordered-23)
+compound:prt(ordered-23, up-24)
+amod(barrels-26, certain-25)
+dobj(ordered-23, barrels-26)
+cc(ordered-23, and-27)
+conj:and(killed-16, smokes-28)
+conj:and(ordered-23, smokes-28)
+nsubj(livened-30, which-29)
+ccomp(smokes-28, livened-30)
+compound:prt(livened-30, up-31)
+dobj(livened-30, things-32)
+advmod(livened-30, considerably-33)
+punct(livened-30, ,-34)
+advmod(concert-39, especially-35)
+case(concert-39, during-36)
+det(concert-39, a-37)
+amod(concert-39, terrific-38)
+nmod:during(livened-30, concert-39)
+nsubj(had-41, we-40)
+acl:relcl(concert-39, had-41)
+advmod(had-41, later-42)
+punct(delighted-3, .-43)
+
+Sentence #4 (17 tokens):
+There was, as far as I could hear, practically no firing 
+on Christmas Day.
+[Text=There CharacterOffsetBegin=325 CharacterOffsetEnd=330 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=331 CharacterOffsetEnd=334 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=334 CharacterOffsetEnd=335 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=336 CharacterOffsetEnd=338 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=far CharacterOffsetBegin=339 CharacterOffsetEnd=342 PartOfSpeech=RB Lemma=far NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=343 CharacterOffsetEnd=345 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=346 CharacterOffsetEnd=347 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=348 CharacterOffsetEnd=353 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=354 CharacterOffsetEnd=358 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=358 CharacterOffsetEnd=359 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=practically CharacterOffsetBegin=360 CharacterOffsetEnd=371 PartOfSpeech=RB Lemma=practically NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=372 CharacterOffsetEnd=374 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=firing CharacterOffsetBegin=375 CharacterOffsetEnd=381 PartOfSpeech=NN Lemma=firing NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=384 CharacterOffsetEnd=386 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Christmas CharacterOffsetBegin=387 CharacterOffsetEnd=396 PartOfSpeech=NNP Lemma=Christmas NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-12-25 Timex=<TIMEX3 tid="t3" type="DATE" value="XXXX-12-25">Christmas Day</TIMEX3>]
+[Text=Day CharacterOffsetBegin=397 CharacterOffsetEnd=400 PartOfSpeech=NNP Lemma=Day NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-12-25 Timex=<TIMEX3 tid="t3" type="DATE" value="XXXX-12-25">Christmas Day</TIMEX3>]
+[Text=. CharacterOffsetBegin=400 CharacterOffsetEnd=401 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD was) (, ,)
+      (ADVP (IN as) (RB far))
+      (SBAR (IN as)
+        (S
+          (NP (PRP I))
+          (VP (MD could)
+            (VP (VB hear)))))
+      (PRN (, ,)
+        (ADVP (RB practically))
+        (NP
+          (NP (DT no) (NN firing))
+          (PP (IN on)
+            (NP (NNP Christmas) (NNP Day))))))
+    (. .)))
+
+root(ROOT-0, was-2)
+expl(was-2, There-1)
+punct(was-2, ,-3)
+case(far-5, as-4)
+advmod(was-2, far-5)
+mark(hear-9, as-6)
+nsubj(hear-9, I-7)
+aux(hear-9, could-8)
+advcl:as(was-2, hear-9)
+punct(firing-13, ,-10)
+dep(firing-13, practically-11)
+neg(firing-13, no-12)
+dep(was-2, firing-13)
+case(Day-16, on-14)
+compound(Day-16, Christmas-15)
+nmod:on(firing-13, Day-16)
+punct(was-2, .-17)
+
+Sentence #5 (12 tokens):
+I think the Hun is rather susceptible there, very rightly.
+[Text=I CharacterOffsetBegin=402 CharacterOffsetEnd=403 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=404 CharacterOffsetEnd=409 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=410 CharacterOffsetEnd=413 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Hun CharacterOffsetBegin=414 CharacterOffsetEnd=417 PartOfSpeech=NNP Lemma=Hun NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=418 CharacterOffsetEnd=420 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=421 CharacterOffsetEnd=427 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=susceptible CharacterOffsetBegin=428 CharacterOffsetEnd=439 PartOfSpeech=JJ Lemma=susceptible NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=440 CharacterOffsetEnd=445 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=445 CharacterOffsetEnd=446 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=447 CharacterOffsetEnd=451 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=rightly CharacterOffsetBegin=452 CharacterOffsetEnd=459 PartOfSpeech=RB Lemma=rightly NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=459 CharacterOffsetEnd=460 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (DT the) (NNP Hun))
+          (VP (VBZ is)
+            (ADJP (RB rather) (JJ susceptible))
+            (NP-TMP (RB there))
+            (, ,)
+            (ADVP (RB very) (RB rightly))))))
+    (. .)))
+
+root(ROOT-0, think-2)
+nsubj(think-2, I-1)
+det(Hun-4, the-3)
+nsubj(susceptible-7, Hun-4)
+cop(susceptible-7, is-5)
+advmod(susceptible-7, rather-6)
+ccomp(think-2, susceptible-7)
+nmod:tmod(susceptible-7, there-8)
+punct(susceptible-7, ,-9)
+advmod(rightly-11, very-10)
+advmod(susceptible-7, rightly-11)
+punct(think-2, .-12)
+
+Sentence #6 (7 tokens):
+What a dull letter, though!
+[Text=What CharacterOffsetBegin=464 CharacterOffsetEnd=468 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=469 CharacterOffsetEnd=470 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=dull CharacterOffsetBegin=471 CharacterOffsetEnd=475 PartOfSpeech=JJ Lemma=dull NamedEntityTag=O]
+[Text=letter CharacterOffsetBegin=476 CharacterOffsetEnd=482 PartOfSpeech=NN Lemma=letter NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=482 CharacterOffsetEnd=483 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=though CharacterOffsetBegin=484 CharacterOffsetEnd=490 PartOfSpeech=IN Lemma=though NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=490 CharacterOffsetEnd=491 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (WP What))
+    (NP
+      (NP (DT a) (JJ dull) (NN letter))
+      (, ,)
+      (NP (IN though)))
+    (. !)))
+
+root(ROOT-0, What-1)
+det(letter-4, a-2)
+amod(letter-4, dull-3)
+dep(What-1, letter-4)
+punct(letter-4, ,-5)
+appos(letter-4, though-6)
+punct(What-1, !-7)
+
+Sentence #7 (2 tokens):
+Sorry.
+[Text=Sorry CharacterOffsetBegin=492 CharacterOffsetEnd=497 PartOfSpeech=JJ Lemma=sorry NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=497 CharacterOffsetEnd=498 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (ADJP (JJ Sorry))
+    (. .)))
+
+root(ROOT-0, Sorry-1)
+punct(Sorry-1, .-2)
+
+Sentence #8 (11 tokens):
+It's the gas attack which has caused it all.
+[Text=It CharacterOffsetBegin=499 CharacterOffsetEnd=501 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=501 CharacterOffsetEnd=503 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=504 CharacterOffsetEnd=507 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gas CharacterOffsetBegin=508 CharacterOffsetEnd=511 PartOfSpeech=NN Lemma=gas NamedEntityTag=O]
+[Text=attack CharacterOffsetBegin=512 CharacterOffsetEnd=518 PartOfSpeech=NN Lemma=attack NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=519 CharacterOffsetEnd=524 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=525 CharacterOffsetEnd=528 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=caused CharacterOffsetBegin=529 CharacterOffsetEnd=535 PartOfSpeech=VBN Lemma=cause NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=536 CharacterOffsetEnd=538 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=539 CharacterOffsetEnd=542 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=542 CharacterOffsetEnd=543 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT the) (NN gas) (NN attack))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ has)
+              (VP (VBN caused)
+                (S
+                  (NP (PRP it))
+                  (NP (DT all)))))))))
+    (. .)))
+
+root(ROOT-0, attack-5)
+nsubj(attack-5, It-1)
+cop(attack-5, 's-2)
+det(attack-5, the-3)
+compound(attack-5, gas-4)
+nsubj(caused-8, attack-5)
+ref(attack-5, which-6)
+aux(caused-8, has-7)
+acl:relcl(attack-5, caused-8)
+nsubj(all-10, it-9)
+xcomp(caused-8, all-10)
+punct(attack-5, .-11)
+
+Coreference set:
+	(1,1,[1,2]) -> (4,16,[15,17]), that is: "Christmas" -> "Christmas Day"
+Coreference set:
+	(2,9,[9,10]) -> (2,1,[1,2]), that is: "we" -> "We"
+	(3,15,[15,16]) -> (2,1,[1,2]), that is: "we" -> "We"
+	(3,40,[40,41]) -> (2,1,[1,2]), that is: "we" -> "We"
+Coreference set:
+	(3,1,[1,2]) -> (2,12,[11,13]), that is: "He" -> "the C.O."
+	(3,11,[11,12]) -> (2,12,[11,13]), that is: "his" -> "the C.O."
+Coreference set:
+	(5,1,[1,2]) -> (4,7,[7,8]), that is: "I" -> "I"
+Coreference set:
+	(6,1,[1,8]) -> (8,5,[3,11]), that is: "What a dull letter , though !" -> "the gas attack which has caused it all"
+	(8,1,[1,2]) -> (8,5,[3,11]), that is: "It" -> "the gas attack which has caused it all"
+	(8,9,[9,10]) -> (8,5,[3,11]), that is: "it" -> "the gas attack which has caused it all"
+Coreference set:
+	(6,6,[6,7]) -> (6,4,[2,5]), that is: "though" -> "a dull letter"

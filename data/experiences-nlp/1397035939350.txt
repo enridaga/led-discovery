@@ -1,0 +1,193 @@
+Sentence #1 (11 tokens):
+Went to church with Matron and heard a good sermon.
+[Text=Went CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=church CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=church NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Matron CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=matron NamedEntityTag=MISC]
+[Text=and CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=sermon CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=sermon NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP
+      (VP (VBD Went)
+        (PP (TO to)
+          (NP (NN church)))
+        (PP (IN with)
+          (NP (NN Matron))))
+      (CC and)
+      (VP (VBD heard)
+        (NP (DT a) (JJ good) (NN sermon))))
+    (. .)))
+
+root(ROOT-0, Went-1)
+case(church-3, to-2)
+nmod:to(Went-1, church-3)
+case(Matron-5, with-4)
+nmod:with(Went-1, Matron-5)
+cc(Went-1, and-6)
+conj:and(Went-1, heard-7)
+det(sermon-10, a-8)
+amod(sermon-10, good-9)
+dobj(heard-7, sermon-10)
+punct(Went-1, .-11)
+
+Sentence #2 (20 tokens):
+The padre asked me to play the organ and I said, 'Yes, failing a better.'
+[Text=The CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=padre CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=padre NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=organ CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=organ NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Yes CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=UH Lemma=yes NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=failing CharacterOffsetBegin=107 CharacterOffsetEnd=114 PartOfSpeech=VBG Lemma=fail NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=117 CharacterOffsetEnd=123 PartOfSpeech=RBR Lemma=better NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN padre))
+      (VP (VBD asked)
+        (S
+          (NP (PRP me))
+          (VP (TO to)
+            (VP (VB play)
+              (NP (DT the) (NN organ)))))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBD said) (, ,) (`` `)
+        (INTJ (UH Yes))))
+    (, ,)
+    (S
+      (VP (VBG failing)
+        (ADVP (DT a) (RBR better))))
+    (. .) ('' ')))
+
+root(ROOT-0, asked-3)
+det(padre-2, The-1)
+nsubj(asked-3, padre-2)
+dobj(asked-3, me-4)
+nsubj:xsubj(play-6, me-4)
+mark(play-6, to-5)
+xcomp(asked-3, play-6)
+det(organ-8, the-7)
+dobj(play-6, organ-8)
+cc(asked-3, and-9)
+nsubj(said-11, I-10)
+conj:and(asked-3, said-11)
+punct(said-11, ,-12)
+punct(said-11, `-13)
+discourse(said-11, Yes-14)
+punct(asked-3, ,-15)
+parataxis(asked-3, failing-16)
+dep(better-18, a-17)
+advmod(failing-16, better-18)
+punct(asked-3, .-19)
+punct(asked-3, '-20)
+
+Sentence #3 (10 tokens):
+Thanks goodness, the 'better' soon came.
+[Text=Thanks CharacterOffsetBegin=126 CharacterOffsetEnd=132 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=goodness CharacterOffsetBegin=133 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=goodness NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=143 CharacterOffsetEnd=146 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=148 CharacterOffsetEnd=154 PartOfSpeech=JJR Lemma=better NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=soon CharacterOffsetBegin=156 CharacterOffsetEnd=160 PartOfSpeech=RB Lemma=soon NamedEntityTag=O]
+[Text=came CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP
+      (NP (NNS Thanks))
+      (NP (NN goodness)))
+    (, ,)
+    (NP
+      (NP (DT the))
+      (`` `)
+      (NP (JJR better))
+      ('' '))
+    (ADVP (RB soon))
+    (VP (VBD came))
+    (. .)))
+
+root(ROOT-0, came-9)
+nmod:tmod(came-9, Thanks-1)
+dep(Thanks-1, goodness-2)
+punct(came-9, ,-3)
+nsubj(came-9, the-4)
+punct(the-4, `-5)
+dep(the-4, better-6)
+punct(the-4, '-7)
+advmod(came-9, soon-8)
+punct(came-9, .-10)
+
+Sentence #4 (14 tokens):
+The Presbyterian padre plays beautifully and he arrived in the nick of time.
+[Text=The CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Presbyterian CharacterOffsetBegin=171 CharacterOffsetEnd=183 PartOfSpeech=JJ Lemma=presbyterian NamedEntityTag=MISC]
+[Text=padre CharacterOffsetBegin=184 CharacterOffsetEnd=189 PartOfSpeech=NN Lemma=padre NamedEntityTag=O]
+[Text=plays CharacterOffsetBegin=190 CharacterOffsetEnd=195 PartOfSpeech=VBZ Lemma=play NamedEntityTag=O]
+[Text=beautifully CharacterOffsetBegin=196 CharacterOffsetEnd=207 PartOfSpeech=RB Lemma=beautifully NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=208 CharacterOffsetEnd=211 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=212 CharacterOffsetEnd=214 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=arrived CharacterOffsetBegin=215 CharacterOffsetEnd=222 PartOfSpeech=VBD Lemma=arrive NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=223 CharacterOffsetEnd=225 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=226 CharacterOffsetEnd=229 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=nick CharacterOffsetBegin=230 CharacterOffsetEnd=234 PartOfSpeech=NN Lemma=nick NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=235 CharacterOffsetEnd=237 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=238 CharacterOffsetEnd=242 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=242 CharacterOffsetEnd=243 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJ Presbyterian) (NN padre))
+      (VP (VBZ plays)
+        (ADVP (RB beautifully))))
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBD arrived)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN nick))
+            (PP (IN of)
+              (NP (NN time)))))))
+    (. .)))
+
+root(ROOT-0, plays-4)
+det(padre-3, The-1)
+amod(padre-3, Presbyterian-2)
+nsubj(plays-4, padre-3)
+advmod(plays-4, beautifully-5)
+cc(plays-4, and-6)
+nsubj(arrived-8, he-7)
+conj:and(plays-4, arrived-8)
+case(nick-11, in-9)
+det(nick-11, the-10)
+nmod:in(arrived-8, nick-11)
+case(time-13, of-12)
+nmod:of(nick-11, time-13)
+punct(plays-4, .-14)
+
+Coreference set:
+	(2,10,[10,11]) -> (2,4,[4,5]), that is: "I" -> "me"
+Coreference set:
+	(4,7,[7,8]) -> (4,3,[1,4]), that is: "he" -> "The Presbyterian padre"

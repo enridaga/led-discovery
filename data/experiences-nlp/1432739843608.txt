@@ -1,0 +1,299 @@
+Sentence #1 (8 tokens):
+Yesterday was a day I'll remember!
+[Text=Yesterday CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1D Timex=<TIMEX3 alt_value="OFFSET P-1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Yesterday</TIMEX3>]
+[Text=was CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t2" type="DURATION" value="P1D">a day</TIMEX3>]
+[Text=day CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t2" type="DURATION" value="P1D">a day</TIMEX3>]
+[Text=I CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=CD Lemma=i NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.0]
+[Text='ll CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=remember CharacterOffsetBegin=25 CharacterOffsetEnd=33 PartOfSpeech=VB Lemma=remember NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NN Yesterday))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN day))
+        (SBAR
+          (S
+            (NP (CD I))
+            (VP (MD 'll)
+              (VP (VB remember)))))))
+    (. !)))
+
+root(ROOT-0, day-4)
+nsubj(day-4, Yesterday-1)
+cop(day-4, was-2)
+det(day-4, a-3)
+nsubj(remember-7, I-5)
+aux(remember-7, 'll-6)
+acl:relcl(day-4, remember-7)
+punct(day-4, !-8)
+
+Sentence #2 (11 tokens):
+That young fellow must be in league with the devil.
+[Text=That CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=young CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=young NamedEntityTag=O]
+[Text=fellow CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=fellow NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=league CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=league NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=devil CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=devil NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT That) (JJ young) (NN fellow))
+    (VP (MD must)
+      (VP (VB be)
+        (PP (IN in)
+          (NP (NN league)))
+        (PP (IN with)
+          (NP (DT the) (NNP devil)))))
+    (. .)))
+
+root(ROOT-0, league-7)
+det(fellow-3, That-1)
+amod(fellow-3, young-2)
+nsubj(league-7, fellow-3)
+aux(league-7, must-4)
+cop(league-7, be-5)
+case(league-7, in-6)
+case(devil-10, with-8)
+det(devil-10, the-9)
+nmod:with(league-7, devil-10)
+punct(league-7, .-11)
+
+Sentence #3 (9 tokens):
+I've never heard anybody play like that!
+[Text=I CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=VBN Lemma=hear NamedEntityTag=O]
+[Text=anybody CharacterOffsetBegin=104 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=anybody NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=117 CharacterOffsetEnd=121 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 've)
+      (ADVP (RB never))
+      (VP (VBN heard)
+        (S
+          (NP (NN anybody))
+          (VP (VB play)
+            (PP (IN like)
+              (NP (DT that)))))))
+    (. !)))
+
+root(ROOT-0, heard-4)
+nsubj(heard-4, I-1)
+aux(heard-4, 've-2)
+neg(heard-4, never-3)
+nsubj(play-6, anybody-5)
+ccomp(heard-4, play-6)
+case(that-8, like-7)
+nmod:like(play-6, that-8)
+punct(heard-4, !-9)
+
+Sentence #4 (23 tokens):
+I gave him a theme to improvise on, and I assure you I've never even heard Mozart improvise so admirably.
+[Text=I CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=theme CharacterOffsetBegin=141 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=theme NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=improvise CharacterOffsetBegin=150 CharacterOffsetEnd=159 PartOfSpeech=VB Lemma=improvise NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=162 CharacterOffsetEnd=163 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=168 CharacterOffsetEnd=169 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=assure CharacterOffsetBegin=170 CharacterOffsetEnd=176 PartOfSpeech=VBP Lemma=assure NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=177 CharacterOffsetEnd=180 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=182 CharacterOffsetEnd=185 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=186 CharacterOffsetEnd=191 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=192 CharacterOffsetEnd=196 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=197 CharacterOffsetEnd=202 PartOfSpeech=VBN Lemma=hear NamedEntityTag=O]
+[Text=Mozart CharacterOffsetBegin=203 CharacterOffsetEnd=209 PartOfSpeech=NNP Lemma=Mozart NamedEntityTag=PERSON]
+[Text=improvise CharacterOffsetBegin=210 CharacterOffsetEnd=219 PartOfSpeech=VB Lemma=improvise NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=220 CharacterOffsetEnd=222 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=admirably CharacterOffsetBegin=223 CharacterOffsetEnd=232 PartOfSpeech=RB Lemma=admirably NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=232 CharacterOffsetEnd=233 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD gave)
+        (NP (PRP him))
+        (NP (DT a) (NN theme)
+          (S
+            (VP (TO to)
+              (VP (VB improvise)
+                (PP (IN on))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP assure)
+        (NP (PRP you))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP 've)
+              (ADVP (RB never) (RB even))
+              (VP (VBN heard)
+                (S
+                  (NP (NNP Mozart))
+                  (VP (VB improvise)
+                    (ADJP (RB so) (RB admirably))))))))))
+    (. .)))
+
+root(ROOT-0, gave-2)
+nsubj(gave-2, I-1)
+iobj(gave-2, him-3)
+det(theme-5, a-4)
+dobj(gave-2, theme-5)
+mark(improvise-7, to-6)
+acl:to(theme-5, improvise-7)
+nmod(improvise-7, on-8)
+punct(gave-2, ,-9)
+cc(gave-2, and-10)
+nsubj(assure-12, I-11)
+conj:and(gave-2, assure-12)
+dobj(assure-12, you-13)
+nsubj(heard-18, I-14)
+aux(heard-18, 've-15)
+dep(even-17, never-16)
+advmod(heard-18, even-17)
+dep(assure-12, heard-18)
+nsubj(improvise-20, Mozart-19)
+ccomp(heard-18, improvise-20)
+advmod(admirably-22, so-21)
+xcomp(improvise-20, admirably-22)
+punct(gave-2, .-23)
+
+Sentence #5 (32 tokens):
+Then he played some of his own compositions, which are marvellous - really wonderful - and he manages difficulties and effects at the keyboard that we never even dreamed of.
+[Text=Then CharacterOffsetBegin=234 CharacterOffsetEnd=238 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=239 CharacterOffsetEnd=241 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=242 CharacterOffsetEnd=248 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=249 CharacterOffsetEnd=253 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=254 CharacterOffsetEnd=256 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=261 CharacterOffsetEnd=264 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=compositions CharacterOffsetBegin=265 CharacterOffsetEnd=277 PartOfSpeech=NNS Lemma=composition NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=277 CharacterOffsetEnd=278 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=279 CharacterOffsetEnd=284 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=285 CharacterOffsetEnd=288 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=marvellous CharacterOffsetBegin=289 CharacterOffsetEnd=299 PartOfSpeech=JJ Lemma=marvellous NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=300 CharacterOffsetEnd=301 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=302 CharacterOffsetEnd=308 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=wonderful CharacterOffsetBegin=309 CharacterOffsetEnd=318 PartOfSpeech=JJ Lemma=wonderful NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=319 CharacterOffsetEnd=320 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=321 CharacterOffsetEnd=324 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=325 CharacterOffsetEnd=327 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=manages CharacterOffsetBegin=328 CharacterOffsetEnd=335 PartOfSpeech=VBZ Lemma=manage NamedEntityTag=O]
+[Text=difficulties CharacterOffsetBegin=336 CharacterOffsetEnd=348 PartOfSpeech=NNS Lemma=difficulty NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=349 CharacterOffsetEnd=352 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=effects CharacterOffsetBegin=353 CharacterOffsetEnd=360 PartOfSpeech=NNS Lemma=effect NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=361 CharacterOffsetEnd=363 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=364 CharacterOffsetEnd=367 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=keyboard CharacterOffsetBegin=368 CharacterOffsetEnd=376 PartOfSpeech=NN Lemma=keyboard NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=377 CharacterOffsetEnd=381 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=382 CharacterOffsetEnd=384 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=385 CharacterOffsetEnd=390 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=391 CharacterOffsetEnd=395 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=dreamed CharacterOffsetBegin=396 CharacterOffsetEnd=403 PartOfSpeech=VBN Lemma=dream NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=404 CharacterOffsetEnd=406 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=406 CharacterOffsetEnd=407 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (ADVP (RB Then))
+      (NP (PRP he))
+      (VP (VBD played)
+        (NP
+          (NP (DT some))
+          (PP (IN of)
+            (NP
+              (NP (PRP$ his) (JJ own) (NNS compositions))
+              (, ,)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBP are)
+                    (ADJP
+                      (ADJP (JJ marvellous))
+                      (: -)
+                      (ADJP (RB really) (JJ wonderful)))))))))))
+    (: -)
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBZ manages)
+        (NP (NNS difficulties)
+          (CC and)
+          (NNS effects))
+        (PP (IN at)
+          (NP (DT the) (NN keyboard)))
+        (SBAR (IN that)
+          (S
+            (NP (PRP we))
+            (ADVP (RB never))
+            (ADVP (RB even))
+            (VP (VBN dreamed)
+              (PP (IN of)))))))
+    (. .)))
+
+root(ROOT-0, played-3)
+advmod(played-3, Then-1)
+nsubj(played-3, he-2)
+dobj(played-3, some-4)
+case(compositions-8, of-5)
+nmod:poss(compositions-8, his-6)
+amod(compositions-8, own-7)
+nmod:of(some-4, compositions-8)
+nsubj(marvellous-12, compositions-8)
+punct(compositions-8, ,-9)
+ref(compositions-8, which-10)
+cop(marvellous-12, are-11)
+acl:relcl(compositions-8, marvellous-12)
+punct(marvellous-12, --13)
+advmod(wonderful-15, really-14)
+dep(marvellous-12, wonderful-15)
+punct(played-3, --16)
+cc(played-3, and-17)
+nsubj(manages-19, he-18)
+conj:and(played-3, manages-19)
+dobj(manages-19, difficulties-20)
+cc(difficulties-20, and-21)
+dobj(manages-19, effects-22)
+conj:and(difficulties-20, effects-22)
+case(keyboard-25, at-23)
+det(keyboard-25, the-24)
+nmod:at(manages-19, keyboard-25)
+mark(dreamed-30, that-26)
+nsubj(dreamed-30, we-27)
+neg(dreamed-30, never-28)
+advmod(dreamed-30, even-29)
+ccomp(manages-19, dreamed-30)
+nmod(dreamed-30, of-31)
+punct(played-3, .-32)
+
+Coreference set:
+	(3,1,[1,2]) -> (1,5,[5,6]), that is: "I" -> "I"
+	(3,8,[8,9]) -> (1,5,[5,6]), that is: "that" -> "I"
+	(4,1,[1,2]) -> (1,5,[5,6]), that is: "I" -> "I"
+	(4,11,[11,12]) -> (1,5,[5,6]), that is: "I" -> "I"
+	(4,14,[14,15]) -> (1,5,[5,6]), that is: "I" -> "I"
+Coreference set:
+	(4,3,[3,4]) -> (2,3,[1,4]), that is: "him" -> "That young fellow"
+	(5,2,[2,3]) -> (2,3,[1,4]), that is: "he" -> "That young fellow"
+	(5,6,[6,7]) -> (2,3,[1,4]), that is: "his" -> "That young fellow"
+	(5,18,[18,19]) -> (2,3,[1,4]), that is: "he" -> "That young fellow"

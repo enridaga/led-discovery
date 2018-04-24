@@ -1,0 +1,60 @@
+Sentence #1 (19 tokens):
+We play Nadia Boulanger's forty-five-year-old record of Monteverdi madrigals which Alice [Tully] does not know.
+[Text=We CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=play NamedEntityTag=O]
+[Text=Nadia CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Nadia NamedEntityTag=PERSON]
+[Text=Boulanger CharacterOffsetBegin=14 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Boulanger NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=forty-five-year-old CharacterOffsetBegin=26 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=forty-five-year-old NamedEntityTag=DURATION NormalizedNamedEntityTag=P5Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P5Y">five-year-old</TIMEX3>]
+[Text=record CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=record NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Monteverdi CharacterOffsetBegin=56 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Monteverdi NamedEntityTag=O]
+[Text=madrigals CharacterOffsetBegin=67 CharacterOffsetEnd=76 PartOfSpeech=NNS Lemma=madrigal NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=Alice CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=Alice NamedEntityTag=PERSON]
+[Text=-LSB- CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Tully CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=NNP Lemma=Tully NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP play)
+      (NP
+        (NP
+          (NP (NNP Nadia) (NNP Boulanger) (POS 's))
+          (JJ forty-five-year-old) (NN record))
+        (PP (IN of)
+          (NP (NNP Monteverdi) (NNS madrigals)))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (NP (NNP Alice) (-LRB- -LSB-) (NNP Tully) (-RRB- -RSB-))
+            (VP (VBZ does) (RB not)
+              (VP (VB know)))))))
+    (. .)))
+
+root(ROOT-0, play-2)
+nsubj(play-2, We-1)
+compound(Boulanger-4, Nadia-3)
+nmod:poss(record-7, Boulanger-4)
+case(Boulanger-4, 's-5)
+amod(record-7, forty-five-year-old-6)
+dobj(play-2, record-7)
+dobj(know-18, record-7)
+case(madrigals-10, of-8)
+compound(madrigals-10, Monteverdi-9)
+nmod:of(record-7, madrigals-10)
+ref(record-7, which-11)
+compound(Tully-14, Alice-12)
+punct(Tully-14, -LSB--13)
+nsubj(know-18, Tully-14)
+punct(Tully-14, -RSB--15)
+aux(know-18, does-16)
+neg(know-18, not-17)
+acl:relcl(record-7, know-18)
+punct(play-2, .-19)
+

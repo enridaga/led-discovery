@@ -1,0 +1,614 @@
+Sentence #1 (28 tokens):
+As a compliment to Abdallah [the Sherif of Mecca] we had borrowed the Turkish band and instruments taken at Tayif: with very remarkable results.
+[Text=As CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=compliment CharacterOffsetBegin=5 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=compliment NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Abdallah CharacterOffsetBegin=19 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Abdallah NamedEntityTag=PERSON]
+[Text=-LSB- CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Sherif CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Sherif NamedEntityTag=PERSON]
+[Text=of CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Mecca CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Mecca NamedEntityTag=LOCATION]
+[Text=-RSB- CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=borrowed CharacterOffsetBegin=57 CharacterOffsetEnd=65 PartOfSpeech=VBN Lemma=borrow NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Turkish CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=JJ Lemma=turkish NamedEntityTag=MISC]
+[Text=band CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=band NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=instruments CharacterOffsetBegin=87 CharacterOffsetEnd=98 PartOfSpeech=NNS Lemma=instrument NamedEntityTag=O]
+[Text=taken CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=VBN Lemma=take NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Tayif CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=NNP Lemma=Tayif NamedEntityTag=LOCATION]
+[Text=: CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=115 CharacterOffsetEnd=119 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=120 CharacterOffsetEnd=124 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=remarkable CharacterOffsetBegin=125 CharacterOffsetEnd=135 PartOfSpeech=JJ Lemma=remarkable NamedEntityTag=O]
+[Text=results CharacterOffsetBegin=136 CharacterOffsetEnd=143 PartOfSpeech=NNS Lemma=result NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN As)
+      (NP
+        (NP (DT a) (NN compliment))
+        (PP (TO to)
+          (NP
+            (NP (NNP Abdallah))
+            (PP (-LRB- -LSB-)
+              (NP
+                (NP (DT the) (NNP Sherif))
+                (PP (IN of)
+                  (NP (NNP Mecca)))))))))
+    (-RRB- -RSB-)
+    (NP (PRP we))
+    (VP (VBD had)
+      (VP (VBN borrowed)
+        (NP
+          (NP (DT the) (JJ Turkish) (NN band))
+          (CC and)
+          (NP
+            (NP (NNS instruments))
+            (VP (VBN taken)
+              (PP (IN at)
+                (NP (NNP Tayif)))
+              (: :)
+              (PP (IN with)
+                (NP
+                  (ADJP (RB very) (JJ remarkable))
+                  (NNS results))))))))
+    (. .)))
+
+root(ROOT-0, borrowed-14)
+case(compliment-3, As-1)
+det(compliment-3, a-2)
+nmod:as(borrowed-14, compliment-3)
+case(Abdallah-5, to-4)
+nmod:to(compliment-3, Abdallah-5)
+punct(Sherif-8, -LSB--6)
+det(Sherif-8, the-7)
+nmod(Abdallah-5, Sherif-8)
+case(Mecca-10, of-9)
+nmod:of(Sherif-8, Mecca-10)
+punct(borrowed-14, -RSB--11)
+nsubj(borrowed-14, we-12)
+aux(borrowed-14, had-13)
+det(band-17, the-15)
+amod(band-17, Turkish-16)
+dobj(borrowed-14, band-17)
+cc(band-17, and-18)
+dobj(borrowed-14, instruments-19)
+conj:and(band-17, instruments-19)
+acl(instruments-19, taken-20)
+case(Tayif-22, at-21)
+nmod:at(taken-20, Tayif-22)
+punct(taken-20, :-23)
+case(results-27, with-24)
+advmod(remarkable-26, very-25)
+amod(results-27, remarkable-26)
+nmod:with(taken-20, results-27)
+punct(borrowed-14, .-28)
+
+Sentence #2 (34 tokens):
+After a while Aziz Ali said there was a piece called "The Echo" they could render with great skill, and shouted down from the window an order to that effect.
+[Text=After CharacterOffsetBegin=145 CharacterOffsetEnd=150 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=153 CharacterOffsetEnd=158 PartOfSpeech=NN Lemma=while NamedEntityTag=O]
+[Text=Aziz CharacterOffsetBegin=159 CharacterOffsetEnd=163 PartOfSpeech=NNP Lemma=Aziz NamedEntityTag=PERSON]
+[Text=Ali CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=NNP Lemma=Ali NamedEntityTag=PERSON]
+[Text=said CharacterOffsetBegin=168 CharacterOffsetEnd=172 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=173 CharacterOffsetEnd=178 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=179 CharacterOffsetEnd=182 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=183 CharacterOffsetEnd=184 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=piece CharacterOffsetBegin=185 CharacterOffsetEnd=190 PartOfSpeech=NN Lemma=piece NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=191 CharacterOffsetEnd=197 PartOfSpeech=VBN Lemma=call NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=198 CharacterOffsetEnd=199 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Echo CharacterOffsetBegin=203 CharacterOffsetEnd=207 PartOfSpeech=NNP Lemma=Echo NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=209 CharacterOffsetEnd=213 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=214 CharacterOffsetEnd=219 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=render CharacterOffsetBegin=220 CharacterOffsetEnd=226 PartOfSpeech=VB Lemma=render NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=227 CharacterOffsetEnd=231 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=232 CharacterOffsetEnd=237 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=skill CharacterOffsetBegin=238 CharacterOffsetEnd=243 PartOfSpeech=NN Lemma=skill NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=243 CharacterOffsetEnd=244 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=245 CharacterOffsetEnd=248 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=shouted CharacterOffsetBegin=249 CharacterOffsetEnd=256 PartOfSpeech=VBD Lemma=shout NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=257 CharacterOffsetEnd=261 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=262 CharacterOffsetEnd=266 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=267 CharacterOffsetEnd=270 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=window CharacterOffsetBegin=271 CharacterOffsetEnd=277 PartOfSpeech=NN Lemma=window NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=278 CharacterOffsetEnd=280 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=order CharacterOffsetBegin=281 CharacterOffsetEnd=286 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=287 CharacterOffsetEnd=289 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=290 CharacterOffsetEnd=294 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=effect CharacterOffsetBegin=295 CharacterOffsetEnd=301 PartOfSpeech=NN Lemma=effect NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=301 CharacterOffsetEnd=302 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (PP (IN After)
+        (NP (DT a) (NN while)))
+      (NP (NNP Aziz) (NNP Ali))
+      (VP (VBD said)
+        (SBAR
+          (S
+            (NP (EX there))
+            (VP (VBD was)
+              (NP
+                (NP (DT a) (NN piece))
+                (VP (VBN called)
+                  (S (`` ``)
+                    (NP (DT The) (NNP Echo))
+                    ('' '')))))))))
+    (NP (PRP they))
+    (VP
+      (VP (MD could)
+        (VP (VB render)
+          (PP (IN with)
+            (NP (JJ great) (NN skill)))))
+      (, ,)
+      (CC and)
+      (VP (VBD shouted)
+        (PRT (RP down))
+        (PP (IN from)
+          (NP
+            (NP (DT the) (NN window))
+            (NP (DT an) (NN order))))
+        (PP (TO to)
+          (NP (DT that) (NN effect)))))
+    (. .)))
+
+root(ROOT-0, render-18)
+case(while-3, After-1)
+det(while-3, a-2)
+nmod:after(said-6, while-3)
+compound(Ali-5, Aziz-4)
+nsubj(said-6, Ali-5)
+dep(render-18, said-6)
+expl(was-8, there-7)
+ccomp(said-6, was-8)
+det(piece-10, a-9)
+nsubj(was-8, piece-10)
+acl(piece-10, called-11)
+punct(Echo-14, ``-12)
+det(Echo-14, The-13)
+xcomp(called-11, Echo-14)
+punct(Echo-14, ''-15)
+nsubj(render-18, they-16)
+nsubj(shouted-24, they-16)
+aux(render-18, could-17)
+case(skill-21, with-19)
+amod(skill-21, great-20)
+nmod:with(render-18, skill-21)
+punct(render-18, ,-22)
+cc(render-18, and-23)
+conj:and(render-18, shouted-24)
+compound:prt(shouted-24, down-25)
+case(window-28, from-26)
+det(window-28, the-27)
+nmod:from(shouted-24, window-28)
+det(order-30, an-29)
+dep(window-28, order-30)
+case(effect-33, to-31)
+det(effect-33, that-32)
+nmod:to(shouted-24, effect-33)
+punct(render-18, .-34)
+
+Sentence #3 (28 tokens):
+The result was two notes of an ineffable tristesse on the trombone, followed by a pause, in which we consumed more than half a course.
+[Text=The CharacterOffsetBegin=303 CharacterOffsetEnd=306 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=result CharacterOffsetBegin=307 CharacterOffsetEnd=313 PartOfSpeech=NN Lemma=result NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=314 CharacterOffsetEnd=317 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=318 CharacterOffsetEnd=321 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=notes CharacterOffsetBegin=322 CharacterOffsetEnd=327 PartOfSpeech=NNS Lemma=note NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=328 CharacterOffsetEnd=330 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=331 CharacterOffsetEnd=333 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=ineffable CharacterOffsetBegin=334 CharacterOffsetEnd=343 PartOfSpeech=JJ Lemma=ineffable NamedEntityTag=O]
+[Text=tristesse CharacterOffsetBegin=344 CharacterOffsetEnd=353 PartOfSpeech=NN Lemma=tristesse NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=354 CharacterOffsetEnd=356 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=357 CharacterOffsetEnd=360 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=trombone CharacterOffsetBegin=361 CharacterOffsetEnd=369 PartOfSpeech=NN Lemma=trombone NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=369 CharacterOffsetEnd=370 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=followed CharacterOffsetBegin=371 CharacterOffsetEnd=379 PartOfSpeech=VBN Lemma=follow NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=380 CharacterOffsetEnd=382 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=383 CharacterOffsetEnd=384 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=pause CharacterOffsetBegin=385 CharacterOffsetEnd=390 PartOfSpeech=NN Lemma=pause NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=390 CharacterOffsetEnd=391 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=392 CharacterOffsetEnd=394 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=395 CharacterOffsetEnd=400 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=401 CharacterOffsetEnd=403 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=consumed CharacterOffsetBegin=404 CharacterOffsetEnd=412 PartOfSpeech=VBD Lemma=consume NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=413 CharacterOffsetEnd=417 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=418 CharacterOffsetEnd=422 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=half CharacterOffsetBegin=423 CharacterOffsetEnd=427 PartOfSpeech=PDT Lemma=half NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=428 CharacterOffsetEnd=429 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=430 CharacterOffsetEnd=436 PartOfSpeech=NN Lemma=course NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=436 CharacterOffsetEnd=437 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NN result))
+    (VP (VBD was)
+      (NP
+        (NP (CD two) (NNS notes))
+        (PP (IN of)
+          (NP
+            (NP (DT an) (JJ ineffable) (NN tristesse))
+            (PP (IN on)
+              (NP (DT the) (NN trombone))))))
+      (, ,)
+      (PP (VBN followed)
+        (PP (IN by)
+          (NP
+            (NP (DT a) (NN pause))
+            (, ,)
+            (SBAR
+              (WHPP (IN in)
+                (WHNP (WDT which)))
+              (S
+                (NP (PRP we))
+                (VP (VBD consumed)
+                  (NP
+                    (QP (JJR more) (IN than) (PDT half))
+                    (DT a) (NN course)))))))))
+    (. .)))
+
+root(ROOT-0, notes-5)
+det(result-2, The-1)
+nsubj(notes-5, result-2)
+cop(notes-5, was-3)
+nummod(notes-5, two-4)
+case(tristesse-9, of-6)
+det(tristesse-9, an-7)
+amod(tristesse-9, ineffable-8)
+nmod:of(notes-5, tristesse-9)
+case(trombone-12, on-10)
+det(trombone-12, the-11)
+nmod:on(tristesse-9, trombone-12)
+punct(notes-5, ,-13)
+case(pause-17, followed-14)
+mwe(followed-14, by-15)
+det(pause-17, a-16)
+advcl:followed_by(notes-5, pause-17)
+nmod:in(consumed-22, pause-17)
+punct(pause-17, ,-18)
+case(which-20, in-19)
+ref(pause-17, which-20)
+nsubj(consumed-22, we-21)
+acl:relcl(pause-17, consumed-22)
+advmod(half-25, more-23)
+mwe(more-23, than-24)
+nummod(course-27, half-25)
+det(course-27, a-26)
+dobj(consumed-22, course-27)
+punct(notes-5, .-28)
+
+Sentence #4 (21 tokens):
+Then a few more disjointed and incoherent notes  from the rest of the orchestra, and so on da capo.
+[Text=Then CharacterOffsetBegin=438 CharacterOffsetEnd=442 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=443 CharacterOffsetEnd=444 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=few CharacterOffsetBegin=445 CharacterOffsetEnd=448 PartOfSpeech=JJ Lemma=few NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=449 CharacterOffsetEnd=453 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=disjointed CharacterOffsetBegin=454 CharacterOffsetEnd=464 PartOfSpeech=JJ Lemma=disjointed NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=465 CharacterOffsetEnd=468 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=incoherent CharacterOffsetBegin=469 CharacterOffsetEnd=479 PartOfSpeech=JJ Lemma=incoherent NamedEntityTag=O]
+[Text=notes CharacterOffsetBegin=480 CharacterOffsetEnd=485 PartOfSpeech=NNS Lemma=note NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=487 CharacterOffsetEnd=491 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=492 CharacterOffsetEnd=495 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rest CharacterOffsetBegin=496 CharacterOffsetEnd=500 PartOfSpeech=NN Lemma=rest NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=501 CharacterOffsetEnd=503 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=504 CharacterOffsetEnd=507 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=orchestra CharacterOffsetBegin=508 CharacterOffsetEnd=517 PartOfSpeech=NN Lemma=orchestra NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=517 CharacterOffsetEnd=518 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=519 CharacterOffsetEnd=522 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=523 CharacterOffsetEnd=525 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=526 CharacterOffsetEnd=528 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=da CharacterOffsetBegin=529 CharacterOffsetEnd=531 PartOfSpeech=NN Lemma=da NamedEntityTag=O]
+[Text=capo CharacterOffsetBegin=532 CharacterOffsetEnd=536 PartOfSpeech=NN Lemma=capo NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=536 CharacterOffsetEnd=537 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP
+        (ADVP (RB Then))
+        (DT a) (JJ few)
+        (ADJP
+          (ADJP (JJR more) (JJ disjointed))
+          (CC and)
+          (ADJP (JJ incoherent)))
+        (NNS notes))
+      (PP (IN from)
+        (NP
+          (NP (DT the) (NN rest))
+          (PP (IN of)
+            (NP (DT the) (NN orchestra))))))
+    (VP
+      (PRN (, ,)
+        (CC and)
+        (ADVP (RB so)))
+      (PP (IN on)
+        (NP (NN da) (NN capo))))
+    (. .)))
+
+root(ROOT-0, so-17)
+advmod(notes-8, Then-1)
+det(notes-8, a-2)
+amod(notes-8, few-3)
+dep(disjointed-5, more-4)
+amod(notes-8, disjointed-5)
+cc(disjointed-5, and-6)
+conj:and(disjointed-5, incoherent-7)
+amod(notes-8, incoherent-7)
+nsubj(so-17, notes-8)
+case(rest-11, from-9)
+det(rest-11, the-10)
+nmod:from(notes-8, rest-11)
+case(orchestra-14, of-12)
+det(orchestra-14, the-13)
+nmod:of(rest-11, orchestra-14)
+punct(so-17, ,-15)
+cc(so-17, and-16)
+case(capo-20, on-18)
+compound(capo-20, da-19)
+nmod:on(so-17, capo-20)
+punct(so-17, .-21)
+
+Sentence #5 (33 tokens):
+Even the Egyptians - indeed all but Abdallah- were  striken with the horror of the melody  and the effort to contain myself reduced me to a very dreadful state of prostration.
+[Text=Even CharacterOffsetBegin=538 CharacterOffsetEnd=542 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=543 CharacterOffsetEnd=546 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Egyptians CharacterOffsetBegin=547 CharacterOffsetEnd=556 PartOfSpeech=NNP Lemma=Egyptians NamedEntityTag=MISC]
+[Text=- CharacterOffsetBegin=557 CharacterOffsetEnd=558 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=indeed CharacterOffsetBegin=559 CharacterOffsetEnd=565 PartOfSpeech=RB Lemma=indeed NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=566 CharacterOffsetEnd=569 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=570 CharacterOffsetEnd=573 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=Abdallah CharacterOffsetBegin=574 CharacterOffsetEnd=582 PartOfSpeech=NNP Lemma=Abdallah NamedEntityTag=PERSON]
+[Text=- CharacterOffsetBegin=582 CharacterOffsetEnd=583 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=584 CharacterOffsetEnd=588 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=striken CharacterOffsetBegin=590 CharacterOffsetEnd=597 PartOfSpeech=VBN Lemma=striken NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=598 CharacterOffsetEnd=602 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=603 CharacterOffsetEnd=606 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=horror CharacterOffsetBegin=607 CharacterOffsetEnd=613 PartOfSpeech=NN Lemma=horror NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=614 CharacterOffsetEnd=616 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=617 CharacterOffsetEnd=620 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=melody CharacterOffsetBegin=621 CharacterOffsetEnd=627 PartOfSpeech=NN Lemma=melody NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=629 CharacterOffsetEnd=632 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=633 CharacterOffsetEnd=636 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=effort CharacterOffsetBegin=637 CharacterOffsetEnd=643 PartOfSpeech=NN Lemma=effort NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=644 CharacterOffsetEnd=646 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=contain CharacterOffsetBegin=647 CharacterOffsetEnd=654 PartOfSpeech=VB Lemma=contain NamedEntityTag=O]
+[Text=myself CharacterOffsetBegin=655 CharacterOffsetEnd=661 PartOfSpeech=PRP Lemma=myself NamedEntityTag=O]
+[Text=reduced CharacterOffsetBegin=662 CharacterOffsetEnd=669 PartOfSpeech=VBD Lemma=reduce NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=670 CharacterOffsetEnd=672 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=673 CharacterOffsetEnd=675 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=676 CharacterOffsetEnd=677 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=678 CharacterOffsetEnd=682 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=dreadful CharacterOffsetBegin=683 CharacterOffsetEnd=691 PartOfSpeech=JJ Lemma=dreadful NamedEntityTag=O]
+[Text=state CharacterOffsetBegin=692 CharacterOffsetEnd=697 PartOfSpeech=NN Lemma=state NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=698 CharacterOffsetEnd=700 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=prostration CharacterOffsetBegin=701 CharacterOffsetEnd=712 PartOfSpeech=NN Lemma=prostration NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=712 CharacterOffsetEnd=713 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (RB Even) (DT the) (NNP Egyptians))
+      (PRN (: -)
+        (ADVP (RB indeed))
+        (NP
+          (NP (DT all))
+          (CC but)
+          (NP (NNP Abdallah)))
+        (: -)))
+    (VP (VBD were)
+      (VP (VBN striken)
+        (PP (IN with)
+          (NP
+            (NP (DT the) (NN horror))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN melody))
+                (CC and)
+                (NP (DT the) (NN effort))))))
+        (S
+          (VP (TO to)
+            (VP (VB contain)
+              (SBAR
+                (S
+                  (NP (PRP myself))
+                  (VP (VBD reduced)
+                    (NP (PRP me))
+                    (PP (TO to)
+                      (NP
+                        (NP (DT a) (RB very) (JJ dreadful) (NN state))
+                        (PP (IN of)
+                          (NP (NN prostration)))))))))))))
+    (. .)))
+
+root(ROOT-0, striken-11)
+advmod(Egyptians-3, Even-1)
+det(Egyptians-3, the-2)
+nsubjpass(striken-11, Egyptians-3)
+nsubj:xsubj(contain-22, Egyptians-3)
+punct(all-6, --4)
+dep(all-6, indeed-5)
+dep(Egyptians-3, all-6)
+cc(all-6, but-7)
+dep(Egyptians-3, Abdallah-8)
+conj:but(all-6, Abdallah-8)
+punct(all-6, --9)
+auxpass(striken-11, were-10)
+case(horror-14, with-12)
+det(horror-14, the-13)
+nmod:with(striken-11, horror-14)
+case(melody-17, of-15)
+det(melody-17, the-16)
+nmod:of(horror-14, melody-17)
+cc(melody-17, and-18)
+det(effort-20, the-19)
+nmod:of(horror-14, effort-20)
+conj:and(melody-17, effort-20)
+mark(contain-22, to-21)
+xcomp(striken-11, contain-22)
+nsubj(reduced-24, myself-23)
+ccomp(contain-22, reduced-24)
+dobj(reduced-24, me-25)
+case(state-30, to-26)
+det(state-30, a-27)
+advmod(state-30, very-28)
+amod(state-30, dreadful-29)
+nmod:to(reduced-24, state-30)
+case(prostration-32, of-31)
+nmod:of(state-30, prostration-32)
+punct(striken-11, .-33)
+
+Sentence #6 (22 tokens):
+After a while Said Ali Pasha asked: "Is not this the music that is played for he dead?"
+[Text=After CharacterOffsetBegin=714 CharacterOffsetEnd=719 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=720 CharacterOffsetEnd=721 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=722 CharacterOffsetEnd=727 PartOfSpeech=NN Lemma=while NamedEntityTag=O]
+[Text=Said CharacterOffsetBegin=728 CharacterOffsetEnd=732 PartOfSpeech=VBD Lemma=say NamedEntityTag=PERSON]
+[Text=Ali CharacterOffsetBegin=733 CharacterOffsetEnd=736 PartOfSpeech=NNP Lemma=Ali NamedEntityTag=PERSON]
+[Text=Pasha CharacterOffsetBegin=737 CharacterOffsetEnd=742 PartOfSpeech=NNP Lemma=Pasha NamedEntityTag=PERSON]
+[Text=asked CharacterOffsetBegin=743 CharacterOffsetEnd=748 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=748 CharacterOffsetEnd=749 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=750 CharacterOffsetEnd=751 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Is CharacterOffsetBegin=751 CharacterOffsetEnd=753 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=754 CharacterOffsetEnd=757 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=758 CharacterOffsetEnd=762 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=763 CharacterOffsetEnd=766 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=767 CharacterOffsetEnd=772 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=773 CharacterOffsetEnd=777 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=778 CharacterOffsetEnd=780 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=781 CharacterOffsetEnd=787 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=788 CharacterOffsetEnd=791 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=792 CharacterOffsetEnd=794 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=dead CharacterOffsetBegin=795 CharacterOffsetEnd=799 PartOfSpeech=JJ Lemma=dead NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=799 CharacterOffsetEnd=800 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=800 CharacterOffsetEnd=801 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN After)
+      (S
+        (NP (DT a) (NN while))
+        (VP (VBD Said))))
+    (NP (NNP Ali) (NNP Pasha))
+    (VP (VBD asked) (: :) (`` ``)
+      (S
+        (S
+          (VP (VBZ Is) (RB not)
+            (NP
+              (NP (DT this) (DT the) (NN music))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ is)
+                    (VP (VBN played)
+                      (PP (IN for)
+                        (NP (PRP he))))))))))
+        (ADJP (JJ dead))))
+    (. ?) ('' '')))
+
+root(ROOT-0, asked-7)
+mark(Said-4, After-1)
+det(while-3, a-2)
+nsubj(Said-4, while-3)
+advcl:after(asked-7, Said-4)
+compound(Pasha-6, Ali-5)
+nsubj(asked-7, Pasha-6)
+punct(asked-7, :-8)
+punct(asked-7, ``-9)
+cop(music-14, Is-10)
+neg(music-14, not-11)
+det:predet(music-14, this-12)
+det(music-14, the-13)
+xcomp(asked-7, music-14)
+nsubjpass(played-17, music-14)
+ref(music-14, that-15)
+auxpass(played-17, is-16)
+acl:relcl(music-14, played-17)
+case(he-19, for-18)
+nmod:for(played-17, he-19)
+dep(music-14, dead-20)
+punct(asked-7, ?-21)
+punct(asked-7, ''-22)
+
+Sentence #7 (19 tokens):
+- an ill omen I had to explain to Abdallah as being for the death of his enemies.
+[Text=- CharacterOffsetBegin=801 CharacterOffsetEnd=802 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=803 CharacterOffsetEnd=805 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=ill CharacterOffsetBegin=806 CharacterOffsetEnd=809 PartOfSpeech=JJ Lemma=ill NamedEntityTag=O]
+[Text=omen CharacterOffsetBegin=810 CharacterOffsetEnd=814 PartOfSpeech=NN Lemma=omen NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=815 CharacterOffsetEnd=816 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=817 CharacterOffsetEnd=820 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=821 CharacterOffsetEnd=823 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=explain CharacterOffsetBegin=824 CharacterOffsetEnd=831 PartOfSpeech=VB Lemma=explain NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=832 CharacterOffsetEnd=834 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Abdallah CharacterOffsetBegin=835 CharacterOffsetEnd=843 PartOfSpeech=NNP Lemma=Abdallah NamedEntityTag=PERSON]
+[Text=as CharacterOffsetBegin=844 CharacterOffsetEnd=846 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=847 CharacterOffsetEnd=852 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=853 CharacterOffsetEnd=856 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=857 CharacterOffsetEnd=860 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=death CharacterOffsetBegin=861 CharacterOffsetEnd=866 PartOfSpeech=NN Lemma=death NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=867 CharacterOffsetEnd=869 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=870 CharacterOffsetEnd=873 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=enemies CharacterOffsetBegin=874 CharacterOffsetEnd=881 PartOfSpeech=NNS Lemma=enemy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=881 CharacterOffsetEnd=882 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (: -)
+    (NP
+      (NP (DT an) (JJ ill) (NN omen))
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBD had)
+            (S
+              (VP (TO to)
+                (VP (VB explain)
+                  (PP (TO to)
+                    (NP (NNP Abdallah)))
+                  (PP (IN as)
+                    (S
+                      (VP (VBG being)
+                        (PP (IN for)
+                          (NP
+                            (NP (DT the) (NN death))
+                            (PP (IN of)
+                              (NP (PRP$ his) (NNS enemies)))))))))))))))
+    (. .)))
+
+root(ROOT-0, omen-4)
+punct(omen-4, --1)
+det(omen-4, an-2)
+amod(omen-4, ill-3)
+nsubj(had-6, I-5)
+nsubj:xsubj(explain-8, I-5)
+acl:relcl(omen-4, had-6)
+mark(explain-8, to-7)
+xcomp(had-6, explain-8)
+case(Abdallah-10, to-9)
+nmod:to(explain-8, Abdallah-10)
+mark(death-15, as-11)
+cop(death-15, being-12)
+case(death-15, for-13)
+det(death-15, the-14)
+advcl:for(explain-8, death-15)
+case(enemies-18, of-16)
+nmod:poss(enemies-18, his-17)
+nmod:of(death-15, enemies-18)
+punct(omen-4, .-19)
+
+Coreference set:
+	(5,8,[8,9]) -> (1,5,[5,11]), that is: "Abdallah" -> "Abdallah -LSB- the Sherif of Mecca"
+	(7,10,[10,11]) -> (1,5,[5,11]), that is: "Abdallah" -> "Abdallah -LSB- the Sherif of Mecca"
+	(7,17,[17,18]) -> (1,5,[5,11]), that is: "his" -> "Abdallah -LSB- the Sherif of Mecca"
+Coreference set:
+	(3,21,[21,22]) -> (1,12,[12,13]), that is: "we" -> "we"
+Coreference set:
+	(6,3,[2,4]) -> (2,3,[2,4]), that is: "a while" -> "a while"
+Coreference set:
+	(5,25,[25,26]) -> (5,23,[23,24]), that is: "me" -> "myself"
+	(7,5,[5,6]) -> (5,23,[23,24]), that is: "I" -> "myself"
+Coreference set:
+	(6,19,[19,20]) -> (6,4,[4,7]), that is: "he" -> "Said Ali Pasha"

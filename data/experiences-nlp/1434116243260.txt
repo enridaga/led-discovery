@@ -1,0 +1,145 @@
+Sentence #1 (17 tokens):
+Go to R.C.M. at 3.0 to hear rehearsal of Bridge's opera "Christmas rose".
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=R.C.M. CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=R.C.M. NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=3.0 CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=CD Lemma=3.0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=to CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=rehearsal CharacterOffsetBegin=28 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=rehearsal NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Bridge CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Bridge NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=opera CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=opera NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Christmas CharacterOffsetBegin=57 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Christmas NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-12-25 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-12-25">Christmas</TIMEX3>]
+[Text=rose CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=VBD Lemma=rise NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PP (TO to)
+        (NP
+          (NP (NNP R.C.M.))
+          (PP (IN at)
+            (NP (CD 3.0)))))
+      (S
+        (VP (TO to)
+          (VP (VB hear)
+            (NP
+              (NP
+                (NP
+                  (NP (NN rehearsal))
+                  (PP (IN of)
+                    (NP (NNP Bridge)))
+                  (POS 's))
+                (NN opera))
+              (`` ``)
+              (S
+                (NP (NNP Christmas))
+                (VP (VBD rose)))
+              ('' ''))))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+case(R.C.M.-3, to-2)
+nmod:to(Go-1, R.C.M.-3)
+case(3.0-5, at-4)
+nmod:at(R.C.M.-3, 3.0-5)
+mark(hear-7, to-6)
+xcomp(Go-1, hear-7)
+nmod:poss(opera-12, rehearsal-8)
+case(Bridge-10, of-9)
+nmod:of(rehearsal-8, Bridge-10)
+case(rehearsal-8, 's-11)
+dobj(hear-7, opera-12)
+punct(opera-12, ``-13)
+nsubj(rose-15, Christmas-14)
+dep(opera-12, rose-15)
+punct(opera-12, ''-16)
+punct(Go-1, .-17)
+
+Sentence #2 (10 tokens):
+* He conducts - I sit with Mrs. B.
+[Text=* CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=He CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=conducts CharacterOffsetBegin=78 CharacterOffsetEnd=86 PartOfSpeech=VBZ Lemma=conduct NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=sit CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=VBP Lemma=sit NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Mrs. CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=Mrs. NamedEntityTag=O]
+[Text=B CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=NNP Lemma=B NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (X (SYM *))
+      (NP (PRP He))
+      (VP (VBZ conducts)))
+    (: -)
+    (S
+      (NP (PRP I))
+      (VP (VBP sit)
+        (PP (IN with)
+          (NP (NNP Mrs.) (NNP B)))))
+    (. .)))
+
+root(ROOT-0, conducts-3)
+dep(conducts-3, *-1)
+nsubj(conducts-3, He-2)
+punct(conducts-3, --4)
+nsubj(sit-6, I-5)
+parataxis(conducts-3, sit-6)
+case(B-9, with-7)
+compound(B-9, Mrs.-8)
+nmod:with(sit-6, B-9)
+punct(conducts-3, .-10)
+
+Sentence #3 (11 tokens):
+It sounds very attractive, & in parts v. beautiful.
+[Text=It CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=sounds CharacterOffsetBegin=111 CharacterOffsetEnd=117 PartOfSpeech=VBZ Lemma=sound NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=attractive CharacterOffsetBegin=123 CharacterOffsetEnd=133 PartOfSpeech=JJ Lemma=attractive NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=133 CharacterOffsetEnd=134 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=parts CharacterOffsetBegin=140 CharacterOffsetEnd=145 PartOfSpeech=NNS Lemma=part NamedEntityTag=O]
+[Text=v. CharacterOffsetBegin=146 CharacterOffsetEnd=148 PartOfSpeech=CC Lemma=v. NamedEntityTag=O]
+[Text=beautiful CharacterOffsetBegin=149 CharacterOffsetEnd=158 PartOfSpeech=JJ Lemma=beautiful NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ sounds)
+        (ADJP (RB very) (JJ attractive))))
+    (, ,)
+    (S
+      (NP (CC &))
+      (PP (IN in)
+        (NP
+          (NP (NNS parts))
+          (PP (CC v.)
+            (NP (JJ beautiful))))))
+    (. .)))
+
+root(ROOT-0, sounds-2)
+nsubj(sounds-2, It-1)
+advmod(attractive-4, very-3)
+xcomp(sounds-2, attractive-4)
+punct(sounds-2, ,-5)
+parataxis(sounds-2, &-6)
+case(parts-8, in-7)
+dep(&-6, parts-8)
+case(beautiful-10, v.-9)
+nmod:v.(parts-8, beautiful-10)
+punct(sounds-2, .-11)
+
+Coreference set:
+	(2,2,[2,3]) -> (1,3,[3,6]), that is: "He" -> "R.C.M. at 3.0"
+Coreference set:
+	(3,1,[1,2]) -> (2,9,[8,10]), that is: "It" -> "Mrs. B"

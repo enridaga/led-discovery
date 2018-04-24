@@ -1,0 +1,469 @@
+Sentence #1 (12 tokens):
+Anyhow she [George Sand] has a very pretty house.
+[Text=Anyhow CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Anyhow NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=George CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=George NamedEntityTag=PERSON]
+[Text=Sand CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Sand NamedEntityTag=PERSON]
+[Text=-RSB- CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=pretty CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O]
+[Text=house CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=house NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (VP (NNP Anyhow)
+        (NP (PRP she))))
+    (-LRB- -LSB-)
+    (NP (NNP George) (NNP Sand) (-RRB- -RSB-))
+    (VP (VBZ has)
+      (NP (DT a)
+        (ADJP (RB very) (RB pretty))
+        (NN house)))
+    (. .)))
+
+root(ROOT-0, has-7)
+dep(she-2, Anyhow-1)
+dep(has-7, she-2)
+punct(has-7, -LSB--3)
+compound(Sand-5, George-4)
+nsubj(has-7, Sand-5)
+punct(Sand-5, -RSB--6)
+det(house-11, a-8)
+advmod(pretty-10, very-9)
+amod(house-11, pretty-10)
+dobj(has-7, house-11)
+punct(has-7, .-12)
+
+Sentence #2 (14 tokens):
+From the entrance one proceeds straight to her large drawing-room with its billiard-table.
+[Text=From CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=entrance CharacterOffsetBegin=59 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=entrance NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=proceeds CharacterOffsetBegin=72 CharacterOffsetEnd=80 PartOfSpeech=VBZ Lemma=proceed NamedEntityTag=O]
+[Text=straight CharacterOffsetBegin=81 CharacterOffsetEnd=89 PartOfSpeech=JJ Lemma=straight NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=large CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=JJ Lemma=large NamedEntityTag=O]
+[Text=drawing-room CharacterOffsetBegin=103 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=drawing-room NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=billiard-table CharacterOffsetBegin=125 CharacterOffsetEnd=139 PartOfSpeech=JJ Lemma=billiard-table NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN From)
+      (NP (DT the) (NN entrance)))
+    (NP (CD one))
+    (VP (VBZ proceeds)
+      (ADJP (JJ straight)
+        (PP (TO to)
+          (NP
+            (NP (PRP$ her) (JJ large) (NN drawing-room))
+            (PP (IN with)
+              (NP (PRP$ its) (JJ billiard-table)))))))
+    (. .)))
+
+root(ROOT-0, proceeds-5)
+case(entrance-3, From-1)
+det(entrance-3, the-2)
+nmod:from(proceeds-5, entrance-3)
+nsubj(proceeds-5, one-4)
+xcomp(proceeds-5, straight-6)
+case(drawing-room-10, to-7)
+nmod:poss(drawing-room-10, her-8)
+amod(drawing-room-10, large-9)
+nmod:to(straight-6, drawing-room-10)
+case(billiard-table-13, with-11)
+nmod:poss(billiard-table-13, its-12)
+nmod:with(drawing-room-10, billiard-table-13)
+punct(proceeds-5, .-14)
+
+Sentence #3 (20 tokens):
+On the mantelpiece stand the things a smoker requires and she is the first to light up her cigar.
+[Text=On CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=144 CharacterOffsetEnd=147 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=mantelpiece CharacterOffsetBegin=148 CharacterOffsetEnd=159 PartOfSpeech=NN Lemma=mantelpiece NamedEntityTag=O]
+[Text=stand CharacterOffsetBegin=160 CharacterOffsetEnd=165 PartOfSpeech=VB Lemma=stand NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=166 CharacterOffsetEnd=169 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=170 CharacterOffsetEnd=176 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=177 CharacterOffsetEnd=178 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=smoker CharacterOffsetBegin=179 CharacterOffsetEnd=185 PartOfSpeech=NN Lemma=smoker NamedEntityTag=O]
+[Text=requires CharacterOffsetBegin=186 CharacterOffsetEnd=194 PartOfSpeech=VBZ Lemma=require NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=203 CharacterOffsetEnd=205 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=206 CharacterOffsetEnd=209 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=210 CharacterOffsetEnd=215 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=to CharacterOffsetBegin=216 CharacterOffsetEnd=218 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=light CharacterOffsetBegin=219 CharacterOffsetEnd=224 PartOfSpeech=VB Lemma=light NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=cigar CharacterOffsetBegin=232 CharacterOffsetEnd=237 PartOfSpeech=NN Lemma=cigar NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=237 CharacterOffsetEnd=238 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (DT the) (NN mantelpiece)
+        (S
+          (VP (VB stand)
+            (NP (DT the) (NNS things))))))
+    (S
+      (NP (DT a) (NN smoker))
+      (VP (VBZ requires)))
+    (CC and)
+    (S
+      (NP (PRP she))
+      (VP (VBZ is)
+        (NP (DT the) (JJ first)
+          (S
+            (VP (TO to)
+              (VP (VB light)
+                (PRT (RP up))
+                (NP (PRP$ her) (NN cigar))))))))
+    (. .)))
+
+root(ROOT-0, requires-9)
+case(mantelpiece-3, On-1)
+det(mantelpiece-3, the-2)
+nmod:on(requires-9, mantelpiece-3)
+dep(mantelpiece-3, stand-4)
+det(things-6, the-5)
+dobj(stand-4, things-6)
+det(smoker-8, a-7)
+nsubj(requires-9, smoker-8)
+cc(requires-9, and-10)
+nsubj(first-14, she-11)
+cop(first-14, is-12)
+det(first-14, the-13)
+conj:and(requires-9, first-14)
+mark(light-16, to-15)
+dep(first-14, light-16)
+compound:prt(light-16, up-17)
+nmod:poss(cigar-19, her-18)
+dobj(light-16, cigar-19)
+punct(requires-9, .-20)
+
+Sentence #4 (38 tokens):
+It is here that she prefers to meet her literary friends, among others Heinrich Heine, who is a most eager listener when Chopin allows himself to be led to the piano in a little side-salon.
+[Text=It CharacterOffsetBegin=239 CharacterOffsetEnd=241 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=242 CharacterOffsetEnd=244 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=245 CharacterOffsetEnd=249 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=250 CharacterOffsetEnd=254 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=255 CharacterOffsetEnd=258 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=prefers CharacterOffsetBegin=259 CharacterOffsetEnd=266 PartOfSpeech=VBZ Lemma=prefer NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=267 CharacterOffsetEnd=269 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=meet CharacterOffsetBegin=270 CharacterOffsetEnd=274 PartOfSpeech=VB Lemma=meet NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=275 CharacterOffsetEnd=278 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=literary CharacterOffsetBegin=279 CharacterOffsetEnd=287 PartOfSpeech=JJ Lemma=literary NamedEntityTag=O]
+[Text=friends CharacterOffsetBegin=288 CharacterOffsetEnd=295 PartOfSpeech=NNS Lemma=friend NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=295 CharacterOffsetEnd=296 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=among CharacterOffsetBegin=297 CharacterOffsetEnd=302 PartOfSpeech=IN Lemma=among NamedEntityTag=O]
+[Text=others CharacterOffsetBegin=303 CharacterOffsetEnd=309 PartOfSpeech=NNS Lemma=other NamedEntityTag=O]
+[Text=Heinrich CharacterOffsetBegin=310 CharacterOffsetEnd=318 PartOfSpeech=NNP Lemma=Heinrich NamedEntityTag=PERSON]
+[Text=Heine CharacterOffsetBegin=319 CharacterOffsetEnd=324 PartOfSpeech=NNP Lemma=Heine NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=324 CharacterOffsetEnd=325 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=326 CharacterOffsetEnd=329 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=330 CharacterOffsetEnd=332 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=333 CharacterOffsetEnd=334 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=335 CharacterOffsetEnd=339 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=eager CharacterOffsetBegin=340 CharacterOffsetEnd=345 PartOfSpeech=JJ Lemma=eager NamedEntityTag=O]
+[Text=listener CharacterOffsetBegin=346 CharacterOffsetEnd=354 PartOfSpeech=NN Lemma=listener NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=355 CharacterOffsetEnd=359 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=Chopin CharacterOffsetBegin=360 CharacterOffsetEnd=366 PartOfSpeech=NNP Lemma=Chopin NamedEntityTag=PERSON]
+[Text=allows CharacterOffsetBegin=367 CharacterOffsetEnd=373 PartOfSpeech=VBZ Lemma=allow NamedEntityTag=O]
+[Text=himself CharacterOffsetBegin=374 CharacterOffsetEnd=381 PartOfSpeech=PRP Lemma=himself NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=382 CharacterOffsetEnd=384 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=385 CharacterOffsetEnd=387 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=led CharacterOffsetBegin=388 CharacterOffsetEnd=391 PartOfSpeech=VBN Lemma=lead NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=392 CharacterOffsetEnd=394 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=395 CharacterOffsetEnd=398 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=399 CharacterOffsetEnd=404 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=405 CharacterOffsetEnd=407 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=408 CharacterOffsetEnd=409 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=410 CharacterOffsetEnd=416 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=side-salon CharacterOffsetBegin=417 CharacterOffsetEnd=427 PartOfSpeech=NN Lemma=side-salon NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=427 CharacterOffsetEnd=428 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADVP
+        (ADVP (RB here))
+        (SBAR (IN that)
+          (S
+            (NP (PRP she))
+            (VP (VBZ prefers)
+              (S
+                (VP (TO to)
+                  (VP (VB meet)
+                    (NP (PRP$ her) (JJ literary) (NNS friends)))))))))
+      (, ,)
+      (PP (IN among)
+        (NP (NNS others)))
+      (NP-TMP
+        (NP (NNP Heinrich) (NNP Heine))
+        (, ,)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ is)
+              (NP
+                (NP (DT a)
+                  (ADJP (RBS most) (JJ eager))
+                  (NN listener))
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (NNP Chopin))
+                    (VP (VBZ allows)
+                      (S
+                        (NP (PRP himself))
+                        (VP (TO to)
+                          (VP (VB be)
+                            (VP (VBN led)
+                              (PP (TO to)
+                                (NP
+                                  (NP (DT the) (NN piano))
+                                  (PP (IN in)
+                                    (NP (DT a) (JJ little) (NN side-salon))))))))))))))))))
+    (. .)))
+
+root(ROOT-0, others-14)
+nsubj(others-14, It-1)
+cop(others-14, is-2)
+advmod(others-14, here-3)
+mark(prefers-6, that-4)
+nsubj(prefers-6, she-5)
+nsubj:xsubj(meet-8, she-5)
+advcl:that(here-3, prefers-6)
+mark(meet-8, to-7)
+xcomp(prefers-6, meet-8)
+nmod:poss(friends-11, her-9)
+amod(friends-11, literary-10)
+dobj(meet-8, friends-11)
+punct(others-14, ,-12)
+case(others-14, among-13)
+compound(Heine-16, Heinrich-15)
+nmod:tmod(others-14, Heine-16)
+nsubj(listener-23, Heine-16)
+punct(Heine-16, ,-17)
+ref(Heine-16, who-18)
+cop(listener-23, is-19)
+det(listener-23, a-20)
+advmod(eager-22, most-21)
+amod(listener-23, eager-22)
+acl:relcl(Heine-16, listener-23)
+advmod(allows-26, when-24)
+nsubj(allows-26, Chopin-25)
+acl:relcl(listener-23, allows-26)
+dobj(allows-26, himself-27)
+nsubjpass:xsubj(led-30, himself-27)
+mark(led-30, to-28)
+auxpass(led-30, be-29)
+xcomp(allows-26, led-30)
+case(piano-33, to-31)
+det(piano-33, the-32)
+nmod:to(led-30, piano-33)
+case(side-salon-37, in-34)
+det(side-salon-37, a-35)
+amod(side-salon-37, little-36)
+nmod:in(piano-33, side-salon-37)
+punct(others-14, .-38)
+
+Sentence #5 (55 tokens):
+After letting his hands wander dreamily over the keys for a few moments he suddenly wakes up, and then his playing is stupefying and unbelievably moving in the almost complete darkness his varied inspirations now lull us, now electrify us, or throw us into the darkest recesses of our own thoughts.
+[Text=After CharacterOffsetBegin=429 CharacterOffsetEnd=434 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=letting CharacterOffsetBegin=435 CharacterOffsetEnd=442 PartOfSpeech=VBG Lemma=let NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=443 CharacterOffsetEnd=446 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=hands CharacterOffsetBegin=447 CharacterOffsetEnd=452 PartOfSpeech=NNS Lemma=hand NamedEntityTag=O]
+[Text=wander CharacterOffsetBegin=453 CharacterOffsetEnd=459 PartOfSpeech=VBP Lemma=wander NamedEntityTag=O]
+[Text=dreamily CharacterOffsetBegin=460 CharacterOffsetEnd=468 PartOfSpeech=RB Lemma=dreamily NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=469 CharacterOffsetEnd=473 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=474 CharacterOffsetEnd=477 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=keys CharacterOffsetBegin=478 CharacterOffsetEnd=482 PartOfSpeech=NNS Lemma=key NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=483 CharacterOffsetEnd=486 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=487 CharacterOffsetEnd=488 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=few CharacterOffsetBegin=489 CharacterOffsetEnd=492 PartOfSpeech=JJ Lemma=few NamedEntityTag=O]
+[Text=moments CharacterOffsetBegin=493 CharacterOffsetEnd=500 PartOfSpeech=NNS Lemma=moment NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=501 CharacterOffsetEnd=503 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=suddenly CharacterOffsetBegin=504 CharacterOffsetEnd=512 PartOfSpeech=RB Lemma=suddenly NamedEntityTag=O]
+[Text=wakes CharacterOffsetBegin=513 CharacterOffsetEnd=518 PartOfSpeech=VBZ Lemma=wake NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=519 CharacterOffsetEnd=521 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=521 CharacterOffsetEnd=522 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=523 CharacterOffsetEnd=526 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=527 CharacterOffsetEnd=531 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=532 CharacterOffsetEnd=535 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=536 CharacterOffsetEnd=543 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=544 CharacterOffsetEnd=546 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=stupefying CharacterOffsetBegin=547 CharacterOffsetEnd=557 PartOfSpeech=JJ Lemma=stupefying NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=558 CharacterOffsetEnd=561 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=unbelievably CharacterOffsetBegin=562 CharacterOffsetEnd=574 PartOfSpeech=RB Lemma=unbelievably NamedEntityTag=O]
+[Text=moving CharacterOffsetBegin=575 CharacterOffsetEnd=581 PartOfSpeech=VBG Lemma=move NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=582 CharacterOffsetEnd=584 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=585 CharacterOffsetEnd=588 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=almost CharacterOffsetBegin=589 CharacterOffsetEnd=595 PartOfSpeech=RB Lemma=almost NamedEntityTag=O]
+[Text=complete CharacterOffsetBegin=596 CharacterOffsetEnd=604 PartOfSpeech=JJ Lemma=complete NamedEntityTag=O]
+[Text=darkness CharacterOffsetBegin=605 CharacterOffsetEnd=613 PartOfSpeech=NN Lemma=darkness NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=614 CharacterOffsetEnd=617 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=varied CharacterOffsetBegin=618 CharacterOffsetEnd=624 PartOfSpeech=JJ Lemma=varied NamedEntityTag=O]
+[Text=inspirations CharacterOffsetBegin=625 CharacterOffsetEnd=637 PartOfSpeech=NNS Lemma=inspiration NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=638 CharacterOffsetEnd=641 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=lull CharacterOffsetBegin=642 CharacterOffsetEnd=646 PartOfSpeech=NN Lemma=lull NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=647 CharacterOffsetEnd=649 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=649 CharacterOffsetEnd=650 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=651 CharacterOffsetEnd=654 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t2" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=electrify CharacterOffsetBegin=655 CharacterOffsetEnd=664 PartOfSpeech=VB Lemma=electrify NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=665 CharacterOffsetEnd=667 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=667 CharacterOffsetEnd=668 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=669 CharacterOffsetEnd=671 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=throw CharacterOffsetBegin=672 CharacterOffsetEnd=677 PartOfSpeech=VB Lemma=throw NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=678 CharacterOffsetEnd=680 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=681 CharacterOffsetEnd=685 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=686 CharacterOffsetEnd=689 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=darkest CharacterOffsetBegin=690 CharacterOffsetEnd=697 PartOfSpeech=JJS Lemma=darkest NamedEntityTag=O]
+[Text=recesses CharacterOffsetBegin=698 CharacterOffsetEnd=706 PartOfSpeech=NNS Lemma=recess NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=707 CharacterOffsetEnd=709 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=710 CharacterOffsetEnd=713 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=714 CharacterOffsetEnd=717 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=thoughts CharacterOffsetBegin=718 CharacterOffsetEnd=726 PartOfSpeech=NNS Lemma=thought NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=726 CharacterOffsetEnd=727 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (PP (IN After)
+        (S
+          (VP (VBG letting)
+            (SBAR
+              (S
+                (NP (PRP$ his) (NNS hands))
+                (VP (VBP wander)
+                  (ADVP (RB dreamily))
+                  (PP (IN over)
+                    (NP
+                      (NP (DT the) (NNS keys))
+                      (PP (IN for)
+                        (NP (DT a) (JJ few) (NNS moments)))))))))))
+      (NP (PRP he))
+      (ADVP (RB suddenly))
+      (VP (VBZ wakes)
+        (PRT (RP up))))
+    (, ,)
+    (CC and)
+    (S
+      (ADVP (RB then))
+      (NP (PRP$ his) (NN playing))
+      (VP (VBZ is)
+        (ADJP (JJ stupefying)
+          (CC and)
+          (RB unbelievably))
+        (S
+          (VP (VBG moving)
+            (PP (IN in)
+              (NP (DT the)
+                (ADJP (RB almost) (JJ complete))
+                (NN darkness)))
+            (NP (PRP$ his) (JJ varied) (NNS inspirations))))
+        (SBAR (RB now)
+          (S
+            (VP (NN lull)
+              (NP (PRP us)))))
+        (, ,)
+        (S
+          (ADVP (RB now))
+          (VP
+            (VP (VB electrify)
+              (NP (PRP us)))
+            (, ,)
+            (CC or)
+            (VP (VB throw)
+              (NP (PRP us))
+              (PP (IN into)
+                (NP
+                  (NP (DT the) (JJS darkest) (NNS recesses))
+                  (PP (IN of)
+                    (NP (PRP$ our) (JJ own) (NNS thoughts))))))))))
+    (. .)))
+
+root(ROOT-0, wakes-16)
+mark(letting-2, After-1)
+advcl:after(wakes-16, letting-2)
+nmod:poss(hands-4, his-3)
+nsubj(wander-5, hands-4)
+ccomp(letting-2, wander-5)
+advmod(wander-5, dreamily-6)
+case(keys-9, over-7)
+det(keys-9, the-8)
+nmod:over(wander-5, keys-9)
+case(moments-13, for-10)
+det(moments-13, a-11)
+amod(moments-13, few-12)
+nmod:for(keys-9, moments-13)
+nsubj(wakes-16, he-14)
+advmod(wakes-16, suddenly-15)
+compound:prt(wakes-16, up-17)
+punct(wakes-16, ,-18)
+cc(wakes-16, and-19)
+advmod(stupefying-24, then-20)
+nmod:poss(playing-22, his-21)
+nsubj(stupefying-24, playing-22)
+cop(stupefying-24, is-23)
+conj:and(wakes-16, stupefying-24)
+cc(stupefying-24, and-25)
+advmod(stupefying-24, unbelievably-26)
+xcomp(stupefying-24, moving-27)
+case(darkness-32, in-28)
+det(darkness-32, the-29)
+advmod(complete-31, almost-30)
+amod(darkness-32, complete-31)
+nmod:in(moving-27, darkness-32)
+nmod:poss(inspirations-35, his-33)
+amod(inspirations-35, varied-34)
+dobj(moving-27, inspirations-35)
+advmod(lull-37, now-36)
+ccomp(stupefying-24, lull-37)
+dobj(lull-37, us-38)
+punct(stupefying-24, ,-39)
+advmod(electrify-41, now-40)
+ccomp(stupefying-24, electrify-41)
+dobj(electrify-41, us-42)
+punct(electrify-41, ,-43)
+cc(electrify-41, or-44)
+ccomp(stupefying-24, throw-45)
+conj:or(electrify-41, throw-45)
+dobj(throw-45, us-46)
+case(recesses-50, into-47)
+det(recesses-50, the-48)
+amod(recesses-50, darkest-49)
+nmod:into(throw-45, recesses-50)
+case(thoughts-54, of-51)
+nmod:poss(thoughts-54, our-52)
+amod(thoughts-54, own-53)
+nmod:of(recesses-50, thoughts-54)
+punct(wakes-16, .-55)
+
+Coreference set:
+	(2,8,[8,9]) -> (1,2,[2,3]), that is: "her" -> "she"
+	(3,11,[11,12]) -> (1,2,[2,3]), that is: "she" -> "she"
+	(3,18,[18,19]) -> (1,2,[2,3]), that is: "her" -> "she"
+	(4,5,[5,6]) -> (1,2,[2,3]), that is: "she" -> "she"
+	(4,9,[9,10]) -> (1,2,[2,3]), that is: "her" -> "she"
+Coreference set:
+	(2,12,[12,13]) -> (2,3,[2,4]), that is: "its" -> "the entrance"
+Coreference set:
+	(4,1,[1,2]) -> (3,3,[2,7]), that is: "It" -> "the mantelpiece stand the things"
+Coreference set:
+	(5,3,[3,4]) -> (4,16,[15,17]), that is: "his" -> "Heinrich Heine"
+	(5,14,[14,15]) -> (4,16,[15,17]), that is: "he" -> "Heinrich Heine"
+	(5,21,[21,22]) -> (4,16,[15,17]), that is: "his" -> "Heinrich Heine"
+	(5,33,[33,34]) -> (4,16,[15,17]), that is: "his" -> "Heinrich Heine"
+Coreference set:
+	(4,27,[27,28]) -> (4,25,[25,26]), that is: "himself" -> "Chopin"
+Coreference set:
+	(5,42,[42,43]) -> (5,38,[38,39]), that is: "us" -> "us"
+	(5,46,[46,47]) -> (5,38,[38,39]), that is: "us" -> "us"
+	(5,52,[52,53]) -> (5,38,[38,39]), that is: "our" -> "us"

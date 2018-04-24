@@ -1,0 +1,127 @@
+Sentence #1 (15 tokens):
+The TV documentary on Copland last night was unsatisfactory, like the Juilliard documentary.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=TV CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=tv NamedEntityTag=O]
+[Text=documentary CharacterOffsetBegin=7 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=documentary NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Copland CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Copland NamedEntityTag=MISC]
+[Text=last CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=JJ Lemma=last NamedEntityTag=TIME NormalizedNamedEntityTag=TNI OFFSET P-1D Timex=<TIMEX3 alt_value="TNI OFFSET P-1D" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">last night</TIMEX3>]
+[Text=night CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI OFFSET P-1D Timex=<TIMEX3 alt_value="TNI OFFSET P-1D" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">last night</TIMEX3>]
+[Text=was CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=unsatisfactory CharacterOffsetBegin=45 CharacterOffsetEnd=59 PartOfSpeech=JJ Lemma=unsatisfactory NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Juilliard CharacterOffsetBegin=70 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Juilliard NamedEntityTag=ORGANIZATION]
+[Text=documentary CharacterOffsetBegin=80 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=documentary NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN TV) (NN documentary))
+      (PP (IN on)
+        (NP (NNP Copland))))
+    (NP-TMP (JJ last) (NN night))
+    (VP (VBD was)
+      (ADJP (JJ unsatisfactory))
+      (, ,)
+      (PP (IN like)
+        (NP (DT the) (NNP Juilliard) (NN documentary))))
+    (. .)))
+
+root(ROOT-0, unsatisfactory-9)
+det(documentary-3, The-1)
+compound(documentary-3, TV-2)
+nsubj(unsatisfactory-9, documentary-3)
+case(Copland-5, on-4)
+nmod:on(documentary-3, Copland-5)
+amod(night-7, last-6)
+nmod:tmod(unsatisfactory-9, night-7)
+cop(unsatisfactory-9, was-8)
+punct(unsatisfactory-9, ,-10)
+case(documentary-14, like-11)
+det(documentary-14, the-12)
+compound(documentary-14, Juilliard-13)
+nmod:like(unsatisfactory-9, documentary-14)
+punct(unsatisfactory-9, .-15)
+
+Sentence #2 (11 tokens):
+Fragmented, furtive, skittish about playing too much music.
+[Text=Fragmented CharacterOffsetBegin=93 CharacterOffsetEnd=103 PartOfSpeech=JJ Lemma=fragmented NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=furtive CharacterOffsetBegin=105 CharacterOffsetEnd=112 PartOfSpeech=JJ Lemma=furtive NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=skittish CharacterOffsetBegin=114 CharacterOffsetEnd=122 PartOfSpeech=JJ Lemma=skittish NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=123 CharacterOffsetEnd=128 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=129 CharacterOffsetEnd=136 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=137 CharacterOffsetEnd=140 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=141 CharacterOffsetEnd=145 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=146 CharacterOffsetEnd=151 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (ADJP (JJ Fragmented) (, ,) (JJ furtive) (, ,) (JJ skittish)))
+    (PP (IN about)
+      (S
+        (VP (VBG playing)
+          (NP
+            (ADJP (RB too) (JJ much))
+            (NN music)))))
+    (. .)))
+
+root(ROOT-0, skittish-5)
+amod(skittish-5, Fragmented-1)
+punct(skittish-5, ,-2)
+amod(skittish-5, furtive-3)
+punct(skittish-5, ,-4)
+mark(playing-7, about-6)
+acl:about(skittish-5, playing-7)
+advmod(much-9, too-8)
+amod(music-10, much-9)
+dobj(playing-7, music-10)
+punct(skittish-5, .-11)
+
+Sentence #3 (12 tokens):
+Each bit of the music was just that, a bit.
+[Text=Each CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=162 CharacterOffsetEnd=164 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=165 CharacterOffsetEnd=168 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=169 CharacterOffsetEnd=174 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=175 CharacterOffsetEnd=178 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=179 CharacterOffsetEnd=183 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=188 CharacterOffsetEnd=189 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=190 CharacterOffsetEnd=191 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=192 CharacterOffsetEnd=195 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=195 CharacterOffsetEnd=196 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT Each) (NN bit))
+      (PP (IN of)
+        (NP (DT the) (NN music))))
+    (VP (VBD was)
+      (ADJP
+        (ADVP (RB just))
+        (SBAR (IN that)
+          (FRAG (, ,)
+            (NP (DT a) (NN bit))))))
+    (. .)))
+
+root(ROOT-0, just-7)
+det(bit-2, Each-1)
+nsubj(just-7, bit-2)
+case(music-5, of-3)
+det(music-5, the-4)
+nmod:of(bit-2, music-5)
+cop(just-7, was-6)
+mark(bit-11, that-8)
+punct(bit-11, ,-9)
+det(bit-11, a-10)
+dep(just-7, bit-11)
+punct(just-7, .-12)
+
+Coreference set:
+	(3,5,[4,6]) -> (2,10,[8,11]), that is: "the music" -> "too much music"

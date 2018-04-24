@@ -1,0 +1,100 @@
+Sentence #1 (11 tokens):
+The tour covered a great part of the United States.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=tour CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=tour NamedEntityTag=O]
+[Text=covered CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=cover NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=United CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=United NamedEntityTag=LOCATION]
+[Text=States CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NNPS Lemma=States NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NN tour))
+    (VP (VBD covered)
+      (NP
+        (NP (DT a) (JJ great) (NN part))
+        (PP (IN of)
+          (NP (DT the) (NNP United) (NNPS States)))))
+    (. .)))
+
+root(ROOT-0, covered-3)
+det(tour-2, The-1)
+nsubj(covered-3, tour-2)
+det(part-6, a-4)
+amod(part-6, great-5)
+dobj(covered-3, part-6)
+case(States-10, of-7)
+det(States-10, the-8)
+compound(States-10, United-9)
+nmod:of(part-6, States-10)
+punct(covered-3, .-11)
+
+Sentence #2 (18 tokens):
+Naturally Melba [Nellie Melba] loved admiration and her voice was still as pure as crystal.
+[Text=Naturally CharacterOffsetBegin=52 CharacterOffsetEnd=61 PartOfSpeech=RB Lemma=naturally NamedEntityTag=O]
+[Text=Melba CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=melba NamedEntityTag=PERSON]
+[Text=-LSB- CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=PERSON]
+[Text=Nellie CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Nellie NamedEntityTag=PERSON]
+[Text=Melba CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=melba NamedEntityTag=PERSON]
+[Text=-RSB- CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=loved CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=VBD Lemma=love NamedEntityTag=O]
+[Text=admiration CharacterOffsetBegin=89 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=admiration NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=voice CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=voice NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=118 CharacterOffsetEnd=123 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=124 CharacterOffsetEnd=126 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=pure CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=JJ Lemma=pure NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=crystal CharacterOffsetBegin=135 CharacterOffsetEnd=142 PartOfSpeech=NN Lemma=crystal NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Naturally))
+    (NP
+      (NP (NN Melba))
+      (PP (-LRB- -LSB-)
+        (NP (NNP Nellie) (NN Melba) (-RRB- -RSB-))))
+    (VP (VBD loved)
+      (SBAR
+        (S
+          (NP
+            (NP (NN admiration))
+            (CC and)
+            (NP (PRP$ her) (NN voice)))
+          (VP (VBD was)
+            (ADVP (RB still))
+            (PP (IN as)
+              (NP
+                (NP (JJ pure))
+                (PP (IN as)
+                  (NP (NN crystal)))))))))
+    (. .)))
+
+root(ROOT-0, loved-7)
+advmod(loved-7, Naturally-1)
+nsubj(loved-7, Melba-2)
+punct(Melba-5, -LSB--3)
+compound(Melba-5, Nellie-4)
+nmod(Melba-2, Melba-5)
+punct(Melba-5, -RSB--6)
+nsubj(pure-15, admiration-8)
+cc(admiration-8, and-9)
+nmod:poss(voice-11, her-10)
+conj:and(admiration-8, voice-11)
+nsubj(pure-15, voice-11)
+cop(pure-15, was-12)
+advmod(pure-15, still-13)
+case(pure-15, as-14)
+ccomp(loved-7, pure-15)
+case(crystal-17, as-16)
+nmod:as(pure-15, crystal-17)
+punct(loved-7, .-18)
+
+Coreference set:
+	(2,10,[10,11]) -> (2,2,[2,7]), that is: "her" -> "Melba -LSB- Nellie Melba -RSB-"

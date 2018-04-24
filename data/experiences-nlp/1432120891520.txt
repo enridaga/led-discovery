@@ -1,0 +1,347 @@
+Sentence #1 (10 tokens):
+"The first evening there was no marked result.
+[Text=`` CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=1 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=evening CharacterOffsetBegin=11 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t1" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=there CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=marked CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=marked NamedEntityTag=O]
+[Text=result CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=result NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (`` ``)
+    (NP-TMP (DT The) (JJ first) (NN evening))
+    (NP (EX there))
+    (VP (VBD was)
+      (NP (DT no) (JJ marked) (NN result)))
+    (. .)))
+
+root(ROOT-0, was-6)
+punct(was-6, ``-1)
+det(evening-4, The-2)
+amod(evening-4, first-3)
+nmod:tmod(was-6, evening-4)
+expl(was-6, there-5)
+neg(result-9, no-7)
+amod(result-9, marked-8)
+nsubj(was-6, result-9)
+punct(was-6, .-10)
+
+Sentence #2 (16 tokens):
+Although it rained hard, the meeting on the second evening was twice as large.
+[Text=Although CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=although NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=rained CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=VBD Lemma=rain NamedEntityTag=O]
+[Text=hard CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=RB Lemma=hard NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=meeting CharacterOffsetBegin=76 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=meeting NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=THIS PT1S INTERSECT EV Timex=<TIMEX3 alt_value="THIS PT1S INTERSECT EV" anchorTimeID="t3" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">the second evening</TIMEX3>]
+[Text=second CharacterOffsetBegin=91 CharacterOffsetEnd=97 PartOfSpeech=JJ Lemma=second NamedEntityTag=TIME NormalizedNamedEntityTag=THIS PT1S INTERSECT EV Timex=<TIMEX3 alt_value="THIS PT1S INTERSECT EV" anchorTimeID="t3" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">the second evening</TIMEX3>]
+[Text=evening CharacterOffsetBegin=98 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=THIS PT1S INTERSECT EV Timex=<TIMEX3 alt_value="THIS PT1S INTERSECT EV" anchorTimeID="t3" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">the second evening</TIMEX3>]
+[Text=was CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=twice CharacterOffsetBegin=110 CharacterOffsetEnd=115 PartOfSpeech=RB Lemma=twice NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=large CharacterOffsetBegin=119 CharacterOffsetEnd=124 PartOfSpeech=JJ Lemma=large NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN Although)
+      (S
+        (NP (PRP it))
+        (VP (VBD rained)
+          (ADVP (RB hard)))))
+    (, ,)
+    (NP
+      (NP (DT the) (NN meeting))
+      (PP (IN on)
+        (NP (DT the) (JJ second) (NN evening))))
+    (VP (VBD was)
+      (ADVP (RB twice))
+      (ADJP (RB as) (JJ large)))
+    (. .)))
+
+root(ROOT-0, large-15)
+mark(rained-3, Although-1)
+nsubj(rained-3, it-2)
+advcl:although(large-15, rained-3)
+advmod(rained-3, hard-4)
+punct(large-15, ,-5)
+det(meeting-7, the-6)
+nsubj(large-15, meeting-7)
+case(evening-11, on-8)
+det(evening-11, the-9)
+amod(evening-11, second-10)
+nmod:on(meeting-7, evening-11)
+cop(large-15, was-12)
+advmod(large-15, twice-13)
+advmod(large-15, as-14)
+punct(large-15, .-16)
+
+Sentence #3 (47 tokens):
+As Mr. Bliss sang his own ' Almost Persuaded,' with a heart yearning to bring wavering ones to decision for Christ, the impression was so irresistible that many arose while he sang, unable to withhold their craving for the help of prayer.
+[Text=As CharacterOffsetBegin=126 CharacterOffsetEnd=128 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Bliss CharacterOffsetBegin=133 CharacterOffsetEnd=138 PartOfSpeech=NNP Lemma=Bliss NamedEntityTag=PERSON]
+[Text=sang CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=144 CharacterOffsetEnd=147 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=148 CharacterOffsetEnd=151 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=Almost CharacterOffsetBegin=154 CharacterOffsetEnd=160 PartOfSpeech=RB Lemma=almost NamedEntityTag=O]
+[Text=Persuaded CharacterOffsetBegin=161 CharacterOffsetEnd=170 PartOfSpeech=VBN Lemma=persuade NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=170 CharacterOffsetEnd=171 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=171 CharacterOffsetEnd=172 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=173 CharacterOffsetEnd=177 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=178 CharacterOffsetEnd=179 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=heart CharacterOffsetBegin=180 CharacterOffsetEnd=185 PartOfSpeech=NN Lemma=heart NamedEntityTag=O]
+[Text=yearning CharacterOffsetBegin=186 CharacterOffsetEnd=194 PartOfSpeech=NN Lemma=yearning NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=195 CharacterOffsetEnd=197 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=bring CharacterOffsetBegin=198 CharacterOffsetEnd=203 PartOfSpeech=VB Lemma=bring NamedEntityTag=O]
+[Text=wavering CharacterOffsetBegin=204 CharacterOffsetEnd=212 PartOfSpeech=VBG Lemma=waver NamedEntityTag=O]
+[Text=ones CharacterOffsetBegin=213 CharacterOffsetEnd=217 PartOfSpeech=NNS Lemma=one NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=218 CharacterOffsetEnd=220 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=decision CharacterOffsetBegin=221 CharacterOffsetEnd=229 PartOfSpeech=NN Lemma=decision NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=230 CharacterOffsetEnd=233 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Christ CharacterOffsetBegin=234 CharacterOffsetEnd=240 PartOfSpeech=NNP Lemma=Christ NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=240 CharacterOffsetEnd=241 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=242 CharacterOffsetEnd=245 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=impression CharacterOffsetBegin=246 CharacterOffsetEnd=256 PartOfSpeech=NN Lemma=impression NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=261 CharacterOffsetEnd=263 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=irresistible CharacterOffsetBegin=264 CharacterOffsetEnd=276 PartOfSpeech=JJ Lemma=irresistible NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=277 CharacterOffsetEnd=281 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=282 CharacterOffsetEnd=286 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=arose CharacterOffsetBegin=287 CharacterOffsetEnd=292 PartOfSpeech=VBD Lemma=arise NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=293 CharacterOffsetEnd=298 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=299 CharacterOffsetEnd=301 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=sang CharacterOffsetBegin=302 CharacterOffsetEnd=306 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=306 CharacterOffsetEnd=307 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=unable CharacterOffsetBegin=308 CharacterOffsetEnd=314 PartOfSpeech=JJ Lemma=unable NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=315 CharacterOffsetEnd=317 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=withhold CharacterOffsetBegin=318 CharacterOffsetEnd=326 PartOfSpeech=VB Lemma=withhold NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=327 CharacterOffsetEnd=332 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=craving CharacterOffsetBegin=333 CharacterOffsetEnd=340 PartOfSpeech=NN Lemma=craving NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=341 CharacterOffsetEnd=344 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=345 CharacterOffsetEnd=348 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=349 CharacterOffsetEnd=353 PartOfSpeech=NN Lemma=help NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=354 CharacterOffsetEnd=356 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=prayer CharacterOffsetBegin=357 CharacterOffsetEnd=363 PartOfSpeech=NN Lemma=prayer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=363 CharacterOffsetEnd=364 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (NNP Mr.) (NNP Bliss))
+        (VP (VBD sang)
+          (NP (PRP$ his) (JJ own))
+          ('' ')
+          (NP (RB Almost)
+            (S
+              (VP (VBN Persuaded))))
+          (, ,) ('' ')
+          (PP (IN with)
+            (NP (DT a) (NN heart) (NN yearning)
+              (S
+                (VP (TO to)
+                  (VP (VB bring)
+                    (NP (VBG wavering) (NNS ones))
+                    (PP (TO to)
+                      (NP
+                        (NP (NN decision))
+                        (PP (IN for)
+                          (NP (NNP Christ)))))))))))))
+    (, ,)
+    (NP (DT the) (NN impression))
+    (VP (VBD was)
+      (ADJP (RB so) (JJ irresistible))
+      (SBAR (IN that)
+        (S
+          (NP (JJ many))
+          (VP (VBD arose)
+            (SBAR (IN while)
+              (S
+                (NP (PRP he))
+                (VP (VBD sang) (, ,)
+                  (S
+                    (ADJP (JJ unable)
+                      (S
+                        (VP (TO to)
+                          (VP (VB withhold)
+                            (NP (PRP$ their) (NN craving))
+                            (PP (IN for)
+                              (NP
+                                (NP (DT the) (NN help))
+                                (PP (IN of)
+                                  (NP (NN prayer)))))))))))))))))
+    (. .)))
+
+root(ROOT-0, irresistible-29)
+mark(sang-4, As-1)
+compound(Bliss-3, Mr.-2)
+nsubj(sang-4, Bliss-3)
+advcl:as(irresistible-29, sang-4)
+nmod:poss(own-6, his-5)
+dobj(sang-4, own-6)
+punct(sang-4, '-7)
+dobj(sang-4, Almost-8)
+dep(Almost-8, Persuaded-9)
+punct(sang-4, ,-10)
+punct(sang-4, '-11)
+case(yearning-15, with-12)
+det(yearning-15, a-13)
+compound(yearning-15, heart-14)
+nmod:with(sang-4, yearning-15)
+mark(bring-17, to-16)
+acl:to(yearning-15, bring-17)
+amod(ones-19, wavering-18)
+dobj(bring-17, ones-19)
+case(decision-21, to-20)
+nmod:to(bring-17, decision-21)
+case(Christ-23, for-22)
+nmod:for(decision-21, Christ-23)
+punct(irresistible-29, ,-24)
+det(impression-26, the-25)
+nsubj(irresistible-29, impression-26)
+cop(irresistible-29, was-27)
+advmod(irresistible-29, so-28)
+mark(arose-32, that-30)
+nsubj(arose-32, many-31)
+ccomp(irresistible-29, arose-32)
+mark(sang-35, while-33)
+nsubj(sang-35, he-34)
+advcl:while(arose-32, sang-35)
+punct(sang-35, ,-36)
+xcomp(sang-35, unable-37)
+mark(withhold-39, to-38)
+xcomp(unable-37, withhold-39)
+nmod:poss(craving-41, their-40)
+dobj(withhold-39, craving-41)
+case(help-44, for-42)
+det(help-44, the-43)
+nmod:for(withhold-39, help-44)
+case(prayer-46, of-45)
+nmod:of(help-44, prayer-46)
+punct(irresistible-29, .-47)
+
+Sentence #4 (32 tokens):
+That night there was the joy in Waukegan of those who had come to Christ with full purpose of heart, and had found the new bliss of accepting His love.
+[Text=That CharacterOffsetBegin=365 CharacterOffsetEnd=369 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=night CharacterOffsetBegin=370 CharacterOffsetEnd=375 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t4" type="TIME" value="TNI">night</TIMEX3>]
+[Text=there CharacterOffsetBegin=376 CharacterOffsetEnd=381 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=382 CharacterOffsetEnd=385 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=386 CharacterOffsetEnd=389 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=joy CharacterOffsetBegin=390 CharacterOffsetEnd=393 PartOfSpeech=NN Lemma=joy NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=394 CharacterOffsetEnd=396 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Waukegan CharacterOffsetBegin=397 CharacterOffsetEnd=405 PartOfSpeech=NNP Lemma=Waukegan NamedEntityTag=LOCATION]
+[Text=of CharacterOffsetBegin=406 CharacterOffsetEnd=408 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=409 CharacterOffsetEnd=414 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=415 CharacterOffsetEnd=418 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=419 CharacterOffsetEnd=422 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=come CharacterOffsetBegin=423 CharacterOffsetEnd=427 PartOfSpeech=VBN Lemma=come NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=428 CharacterOffsetEnd=430 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Christ CharacterOffsetBegin=431 CharacterOffsetEnd=437 PartOfSpeech=NNP Lemma=Christ NamedEntityTag=PERSON]
+[Text=with CharacterOffsetBegin=438 CharacterOffsetEnd=442 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=443 CharacterOffsetEnd=447 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=purpose CharacterOffsetBegin=448 CharacterOffsetEnd=455 PartOfSpeech=NN Lemma=purpose NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=456 CharacterOffsetEnd=458 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=heart CharacterOffsetBegin=459 CharacterOffsetEnd=464 PartOfSpeech=NN Lemma=heart NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=464 CharacterOffsetEnd=465 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=466 CharacterOffsetEnd=469 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=470 CharacterOffsetEnd=473 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=found CharacterOffsetBegin=474 CharacterOffsetEnd=479 PartOfSpeech=VBN Lemma=find NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=480 CharacterOffsetEnd=483 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=484 CharacterOffsetEnd=487 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=bliss CharacterOffsetBegin=488 CharacterOffsetEnd=493 PartOfSpeech=NN Lemma=bliss NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=494 CharacterOffsetEnd=496 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=accepting CharacterOffsetBegin=497 CharacterOffsetEnd=506 PartOfSpeech=VBG Lemma=accept NamedEntityTag=O]
+[Text=His CharacterOffsetBegin=507 CharacterOffsetEnd=510 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=love CharacterOffsetBegin=511 CharacterOffsetEnd=515 PartOfSpeech=NN Lemma=love NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=515 CharacterOffsetEnd=516 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (DT That) (NN night))
+    (NP (EX there))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NN joy))
+        (PP (IN in)
+          (NP
+            (NP (NNP Waukegan))
+            (PP (IN of)
+              (NP
+                (NP (DT those))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP
+                      (VP (VBD had)
+                        (VP (VBN come)
+                          (PP (TO to)
+                            (NP (NNP Christ)))
+                          (PP (IN with)
+                            (NP
+                              (NP (JJ full) (NN purpose))
+                              (PP (IN of)
+                                (NP (NN heart)))))))
+                      (, ,)
+                      (CC and)
+                      (VP (VBD had)
+                        (VP (VBN found)
+                          (NP
+                            (NP (DT the) (JJ new) (NN bliss))
+                            (PP (IN of)
+                              (S
+                                (VP (VBG accepting)
+                                  (NP (PRP$ His) (NN love)))))))))))))))))
+    (. .)))
+
+root(ROOT-0, was-4)
+det(night-2, That-1)
+nmod:tmod(was-4, night-2)
+expl(was-4, there-3)
+det(joy-6, the-5)
+nsubj(was-4, joy-6)
+case(Waukegan-8, in-7)
+nmod:in(joy-6, Waukegan-8)
+case(those-10, of-9)
+nmod:of(Waukegan-8, those-10)
+nsubj(come-13, those-10)
+nsubj(found-24, those-10)
+ref(those-10, who-11)
+aux(come-13, had-12)
+acl:relcl(those-10, come-13)
+case(Christ-15, to-14)
+nmod:to(come-13, Christ-15)
+case(purpose-18, with-16)
+amod(purpose-18, full-17)
+nmod:with(come-13, purpose-18)
+case(heart-20, of-19)
+nmod:of(purpose-18, heart-20)
+punct(come-13, ,-21)
+cc(come-13, and-22)
+aux(found-24, had-23)
+acl:relcl(those-10, found-24)
+conj:and(come-13, found-24)
+det(bliss-27, the-25)
+amod(bliss-27, new-26)
+dobj(found-24, bliss-27)
+mark(accepting-29, of-28)
+acl:of(bliss-27, accepting-29)
+nmod:poss(love-31, His-30)
+dobj(accepting-29, love-31)
+punct(was-4, .-32)
+
+Coreference set:
+	(2,2,[2,3]) -> (1,4,[2,5]), that is: "it" -> "The first evening"
+Coreference set:
+	(4,15,[15,16]) -> (3,23,[23,24]), that is: "Christ" -> "Christ"
+	(4,30,[30,31]) -> (3,23,[23,24]), that is: "His" -> "Christ"
+Coreference set:
+	(3,5,[5,6]) -> (3,3,[2,4]), that is: "his" -> "Mr. Bliss"
+Coreference set:
+	(3,40,[40,41]) -> (3,8,[8,10]), that is: "their" -> "Almost Persuaded"
+Coreference set:
+	(3,34,[34,35]) -> (3,31,[31,32]), that is: "he" -> "many"

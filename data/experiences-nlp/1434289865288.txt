@@ -1,0 +1,58 @@
+Sentence #1 (17 tokens):
+On the 7th, listened to a baritone, Dick Frisch, on behalf of Shirley.
+[Text=On CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=7th CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=JJ Lemma=7th NamedEntityTag=ORDINAL NormalizedNamedEntityTag=7.0]
+[Text=, CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=listened CharacterOffsetBegin=12 CharacterOffsetEnd=20 PartOfSpeech=VBD Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=baritone CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=baritone NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Dick CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Dick NamedEntityTag=PERSON]
+[Text=Frisch CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Frisch NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=behalf CharacterOffsetBegin=52 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=behalf NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Shirley CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Shirley NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (DT the) (JJ 7th)))
+    (, ,)
+    (VP (VBD listened)
+      (PP (TO to)
+        (NP
+          (NP (DT a) (NN baritone))
+          (, ,)
+          (NP (NNP Dick) (NNP Frisch))
+          (, ,)))
+      (PP (IN on)
+        (NP
+          (NP (NN behalf))
+          (PP (IN of)
+            (NP (NNP Shirley))))))
+    (. .)))
+
+root(ROOT-0, listened-5)
+case(7th-3, On-1)
+det(7th-3, the-2)
+nmod:on(listened-5, 7th-3)
+punct(listened-5, ,-4)
+case(baritone-8, to-6)
+det(baritone-8, a-7)
+nmod:to(listened-5, baritone-8)
+punct(baritone-8, ,-9)
+compound(Frisch-11, Dick-10)
+appos(baritone-8, Frisch-11)
+punct(baritone-8, ,-12)
+case(Shirley-16, on-13)
+mwe(on-13, behalf-14)
+mwe(on-13, of-15)
+nmod:on_behalf_of(listened-5, Shirley-16)
+punct(listened-5, .-17)
+
+Coreference set:
+	(1,8,[7,9]) -> (1,11,[10,12]), that is: "a baritone" -> "Dick Frisch"

@@ -1,0 +1,257 @@
+Sentence #1 (17 tokens):
+Dear Camilla
+
+I enjoyed my week at Worcester Three Choirs (Festival), as ever.
+[Text=Dear CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Dear NamedEntityTag=O]
+[Text=Camilla CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Camilla NamedEntityTag=PERSON]
+[Text=I CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=enjoyed CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=VBD Lemma=enjoy NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=week CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=week NamedEntityTag=DURATION NormalizedNamedEntityTag=P1W Timex=<TIMEX3 tid="t1" type="DURATION" value="P1W">week</TIMEX3>]
+[Text=at CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Worcester CharacterOffsetBegin=37 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Worcester NamedEntityTag=LOCATION]
+[Text=Three CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=Choirs CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Choirs NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Festival CharacterOffsetBegin=61 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Festival NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Dear) (NNP Camilla))
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBD enjoyed)
+            (NP (PRP$ my) (NN week))
+            (PP (IN at)
+              (NP (NNP Worcester) (CD Three)))))))
+    (NP
+      (NP (NNP Choirs))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP Festival))
+        (-RRB- -RRB-))
+      (, ,)
+      (PP (IN as)
+        (NP (RB ever))))
+    (. .)))
+
+root(ROOT-0, Camilla-2)
+compound(Camilla-2, Dear-1)
+nsubj(enjoyed-4, I-3)
+acl:relcl(Camilla-2, enjoyed-4)
+nmod:poss(week-6, my-5)
+nmod:tmod(enjoyed-4, week-6)
+case(Worcester-8, at-7)
+nmod:at(enjoyed-4, Worcester-8)
+nummod(Worcester-8, Three-9)
+dep(Camilla-2, Choirs-10)
+punct(Festival-12, -LRB--11)
+appos(Choirs-10, Festival-12)
+punct(Festival-12, -RRB--13)
+punct(Choirs-10, ,-14)
+case(ever-16, as-15)
+nmod:as(Choirs-10, ever-16)
+punct(Camilla-2, .-17)
+
+Sentence #2 (11 tokens):
+A great mix of wonderful music, in fine performances.
+[Text=A CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=mix CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=mix NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=wonderful CharacterOffsetBegin=97 CharacterOffsetEnd=106 PartOfSpeech=JJ Lemma=wonderful NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=117 CharacterOffsetEnd=121 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=performances CharacterOffsetBegin=122 CharacterOffsetEnd=134 PartOfSpeech=NNS Lemma=performance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (DT A) (JJ great) (NN mix))
+    (PP (IN of)
+      (NP (JJ wonderful) (NN music)))
+    (, ,)
+    (PP (IN in)
+      (NP (JJ fine) (NNS performances)))
+    (. .)))
+
+root(ROOT-0, mix-3)
+det(mix-3, A-1)
+amod(mix-3, great-2)
+case(music-6, of-4)
+amod(music-6, wonderful-5)
+nmod:of(mix-3, music-6)
+punct(mix-3, ,-7)
+case(performances-10, in-8)
+amod(performances-10, fine-9)
+nmod:in(mix-3, performances-10)
+punct(mix-3, .-11)
+
+Sentence #3 (10 tokens):
+To pick a ‘highlight’ is well-nigh impossible.
+[Text=To CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=pick CharacterOffsetBegin=140 CharacterOffsetEnd=144 PartOfSpeech=VB Lemma=pick NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=highlight CharacterOffsetBegin=148 CharacterOffsetEnd=157 PartOfSpeech=NN Lemma=highlight NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=157 CharacterOffsetEnd=158 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=159 CharacterOffsetEnd=161 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=well-nigh CharacterOffsetBegin=162 CharacterOffsetEnd=171 PartOfSpeech=JJ Lemma=well-nigh NamedEntityTag=O]
+[Text=impossible CharacterOffsetBegin=172 CharacterOffsetEnd=182 PartOfSpeech=JJ Lemma=impossible NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=182 CharacterOffsetEnd=183 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (VP (TO To)
+        (VP (VB pick)
+          (NP (DT a) (`` `) (NN highlight) ('' ')))))
+    (VP (VBZ is)
+      (ADJP
+        (NP (JJ well-nigh))
+        (JJ impossible)))
+    (. .)))
+
+root(ROOT-0, impossible-9)
+mark(pick-2, To-1)
+csubj(impossible-9, pick-2)
+det(highlight-5, a-3)
+punct(highlight-5, `-4)
+dobj(pick-2, highlight-5)
+punct(highlight-5, '-6)
+cop(impossible-9, is-7)
+nmod:npmod(impossible-9, well-nigh-8)
+punct(impossible-9, .-10)
+
+Sentence #4 (5 tokens):
+Gerontius ‘special’.
+[Text=Gerontius CharacterOffsetBegin=185 CharacterOffsetEnd=194 PartOfSpeech=NNP Lemma=Gerontius NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=195 CharacterOffsetEnd=196 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=special CharacterOffsetBegin=196 CharacterOffsetEnd=203 PartOfSpeech=JJ Lemma=special NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=203 CharacterOffsetEnd=204 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=204 CharacterOffsetEnd=205 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Gerontius))
+    (ADJP (`` `) (JJ special) ('' '))
+    (. .)))
+
+root(ROOT-0, special-3)
+dep(special-3, Gerontius-1)
+punct(special-3, `-2)
+punct(special-3, '-4)
+punct(special-3, .-5)
+
+Sentence #5 (12 tokens):
+Caractacus excellently sung + played, very committed, I thought.
+[Text=Caractacus CharacterOffsetBegin=207 CharacterOffsetEnd=217 PartOfSpeech=NNP Lemma=Caractacus NamedEntityTag=MISC]
+[Text=excellently CharacterOffsetBegin=218 CharacterOffsetEnd=229 PartOfSpeech=RB Lemma=excellently NamedEntityTag=O]
+[Text=sung CharacterOffsetBegin=230 CharacterOffsetEnd=234 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=+ CharacterOffsetBegin=235 CharacterOffsetEnd=236 PartOfSpeech=CC Lemma=+ NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=237 CharacterOffsetEnd=243 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=243 CharacterOffsetEnd=244 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=245 CharacterOffsetEnd=249 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=committed CharacterOffsetBegin=250 CharacterOffsetEnd=259 PartOfSpeech=VBN Lemma=commit NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=259 CharacterOffsetEnd=260 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=261 CharacterOffsetEnd=262 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=263 CharacterOffsetEnd=270 PartOfSpeech=VBD Lemma=think NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=270 CharacterOffsetEnd=271 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Caractacus))
+      (ADVP (RB excellently))
+      (VP
+        (VP (VBD sung))
+        (CC +)
+        (VP (VBD played))
+        (, ,)
+        (S
+          (ADJP (RB very) (VBN committed)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD thought))
+    (. .)))
+
+root(ROOT-0, thought-11)
+nsubj(sung-3, Caractacus-1)
+nsubj(played-5, Caractacus-1)
+advmod(sung-3, excellently-2)
+ccomp(thought-11, sung-3)
+cc(sung-3, +-4)
+conj:+(sung-3, played-5)
+ccomp(thought-11, played-5)
+punct(sung-3, ,-6)
+advmod(committed-8, very-7)
+xcomp(sung-3, committed-8)
+punct(thought-11, ,-9)
+nsubj(thought-11, I-10)
+punct(thought-11, .-12)
+
+Sentence #6 (12 tokens):
+Mahler 3 outstanding, Brahms Requiem very moving I felt….
+[Text=Mahler CharacterOffsetBegin=273 CharacterOffsetEnd=279 PartOfSpeech=NNP Lemma=Mahler NamedEntityTag=ORGANIZATION]
+[Text=3 CharacterOffsetBegin=280 CharacterOffsetEnd=281 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=outstanding CharacterOffsetBegin=282 CharacterOffsetEnd=293 PartOfSpeech=JJ Lemma=outstanding NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=293 CharacterOffsetEnd=294 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Brahms CharacterOffsetBegin=295 CharacterOffsetEnd=301 PartOfSpeech=NNP Lemma=Brahms NamedEntityTag=ORGANIZATION]
+[Text=Requiem CharacterOffsetBegin=302 CharacterOffsetEnd=309 PartOfSpeech=NNP Lemma=Requiem NamedEntityTag=ORGANIZATION]
+[Text=very CharacterOffsetBegin=310 CharacterOffsetEnd=314 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=moving CharacterOffsetBegin=315 CharacterOffsetEnd=321 PartOfSpeech=VBG Lemma=move NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=322 CharacterOffsetEnd=323 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=felt CharacterOffsetBegin=324 CharacterOffsetEnd=328 PartOfSpeech=VBD Lemma=feel NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=328 CharacterOffsetEnd=329 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=329 CharacterOffsetEnd=330 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Mahler))
+        (ADJP (CD 3) (JJ outstanding)))
+      (PRN (, ,)
+        (NP
+          (NP (NNP Brahms) (NNP Requiem))
+          (ADJP (RB very)
+            (S
+              (VP (VBG moving)
+                (NP (PRP I))))))))
+    (VP (VBD felt))
+    (: ...) (. .)))
+
+root(ROOT-0, felt-10)
+nsubj(felt-10, Mahler-1)
+compound(outstanding-3, 3-2)
+amod(Mahler-1, outstanding-3)
+punct(Requiem-6, ,-4)
+compound(Requiem-6, Brahms-5)
+dep(Mahler-1, Requiem-6)
+amod(Requiem-6, very-7)
+dep(very-7, moving-8)
+dobj(moving-8, I-9)
+punct(felt-10, ...-11)
+punct(felt-10, .-12)
+
+Sentence #7 (4 tokens):
+with all best wishes
+[Text=with CharacterOffsetBegin=330 CharacterOffsetEnd=334 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=335 CharacterOffsetEnd=338 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=339 CharacterOffsetEnd=343 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=wishes CharacterOffsetBegin=344 CharacterOffsetEnd=350 PartOfSpeech=NNS Lemma=wish NamedEntityTag=O]
+(ROOT
+  (PP (IN with)
+    (NP (DT all) (JJS best) (NNS wishes))))
+
+root(ROOT-0, wishes-4)
+case(wishes-4, with-1)
+det(wishes-4, all-2)
+amod(wishes-4, best-3)
+
+Coreference set:
+	(1,5,[5,6]) -> (1,3,[3,4]), that is: "my" -> "I"
+	(5,10,[10,11]) -> (1,3,[3,4]), that is: "I" -> "I"
+	(6,9,[9,10]) -> (1,3,[3,4]), that is: "I" -> "I"

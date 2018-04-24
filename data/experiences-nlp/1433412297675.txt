@@ -1,0 +1,48 @@
+Sentence #1 (15 tokens):
+Tonight Myrna came over again, for leftovers, then to the Balanchine-Ravel soirée.
+[Text=Tonight CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Tonight NamedEntityTag=DATE NormalizedNamedEntityTag=THIS NI Timex=<TIMEX3 alt_value="THIS NI" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Tonight</TIMEX3>]
+[Text=Myrna CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Myrna NamedEntityTag=PERSON]
+[Text=came CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=RP Lemma=over NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=leftovers CharacterOffsetBegin=35 CharacterOffsetEnd=44 PartOfSpeech=NNS Lemma=leftovers NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Balanchine-Ravel CharacterOffsetBegin=58 CharacterOffsetEnd=74 PartOfSpeech=JJ Lemma=balanchine-ravel NamedEntityTag=LOCATION]
+[Text=soirée CharacterOffsetBegin=75 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=soirée NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Tonight) (NNP Myrna))
+    (VP (VBD came)
+      (PRT (RP over))
+      (ADVP (RB again))
+      (, ,)
+      (PP
+        (PP (IN for)
+          (NP (NNS leftovers)))
+        (, ,) (RB then)
+        (PP (TO to)
+          (NP (DT the) (JJ Balanchine-Ravel) (NN soirée)))))
+    (. .)))
+
+root(ROOT-0, came-3)
+compound(Myrna-2, Tonight-1)
+nsubj(came-3, Myrna-2)
+compound:prt(came-3, over-4)
+advmod(came-3, again-5)
+punct(came-3, ,-6)
+case(leftovers-8, for-7)
+advcl:for(came-3, leftovers-8)
+punct(leftovers-8, ,-9)
+advmod(soirée-14, then-10)
+case(soirée-14, to-11)
+det(soirée-14, the-12)
+amod(soirée-14, Balanchine-Ravel-13)
+nmod:to(leftovers-8, soirée-14)
+punct(came-3, .-15)
+

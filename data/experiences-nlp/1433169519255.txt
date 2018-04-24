@@ -1,0 +1,112 @@
+Sentence #1 (29 tokens):
+A critic at the time said : 
+" The choruses are grand, the subjects of the fugues most impressive, and worked out with consummate skill."
+[Text=A CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=critic CharacterOffsetBegin=2 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=critic NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=time NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">time</TIMEX3>]
+[Text=said CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=choruses CharacterOffsetBegin=36 CharacterOffsetEnd=44 PartOfSpeech=NNS Lemma=chorus NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=grand CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=grand NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=subjects CharacterOffsetBegin=60 CharacterOffsetEnd=68 PartOfSpeech=NNS Lemma=subject NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fugues CharacterOffsetBegin=76 CharacterOffsetEnd=82 PartOfSpeech=NNS Lemma=fugue NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=impressive CharacterOffsetBegin=88 CharacterOffsetEnd=98 PartOfSpeech=JJ Lemma=impressive NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=worked CharacterOffsetBegin=104 CharacterOffsetEnd=110 PartOfSpeech=VBD Lemma=work NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=115 CharacterOffsetEnd=119 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=consummate CharacterOffsetBegin=120 CharacterOffsetEnd=130 PartOfSpeech=JJ Lemma=consummate NamedEntityTag=O]
+[Text=skill CharacterOffsetBegin=131 CharacterOffsetEnd=136 PartOfSpeech=NN Lemma=skill NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=137 CharacterOffsetEnd=138 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT A) (NN critic))
+        (PP (IN at)
+          (NP (DT the) (NN time))))
+      (VP (VBD said)))
+    (: :) ('' '')
+    (S
+      (NP (DT The) (NNS choruses))
+      (VP (VBP are)
+        (NP
+          (NP (JJ grand))
+          (, ,)
+          (NP
+            (NP (DT the) (NNS subjects))
+            (PP (IN of)
+              (NP (DT the) (NNS fugues)))
+            (UCP
+              (ADJP (RBS most) (JJ impressive))
+              (, ,)
+              (CC and)
+              (VP (VBD worked)
+                (PRT (RP out))
+                (PP (IN with)
+                  (NP (JJ consummate) (NN skill)))))))))
+    (. .) ('' '')))
+
+root(ROOT-0, said-6)
+det(critic-2, A-1)
+nsubj(said-6, critic-2)
+case(time-5, at-3)
+det(time-5, the-4)
+nmod:at(critic-2, time-5)
+punct(said-6, :-7)
+punct(said-6, ''-8)
+det(choruses-10, The-9)
+nsubj(grand-12, choruses-10)
+cop(grand-12, are-11)
+parataxis(said-6, grand-12)
+punct(grand-12, ,-13)
+det(subjects-15, the-14)
+appos(grand-12, subjects-15)
+case(fugues-18, of-16)
+det(fugues-18, the-17)
+nmod:of(subjects-15, fugues-18)
+advmod(impressive-20, most-19)
+amod(subjects-15, impressive-20)
+punct(impressive-20, ,-21)
+cc(impressive-20, and-22)
+amod(subjects-15, worked-23)
+conj:and(impressive-20, worked-23)
+compound:prt(worked-23, out-24)
+case(skill-27, with-25)
+amod(skill-27, consummate-26)
+nmod:with(worked-23, skill-27)
+punct(said-6, .-28)
+punct(said-6, ''-29)
+
+Sentence #2 (4 tokens):
+Warm praise indeed !
+[Text=Warm CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=JJ Lemma=warm NamedEntityTag=O]
+[Text=praise CharacterOffsetBegin=144 CharacterOffsetEnd=150 PartOfSpeech=NN Lemma=praise NamedEntityTag=O]
+[Text=indeed CharacterOffsetBegin=151 CharacterOffsetEnd=157 PartOfSpeech=RB Lemma=indeed NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (JJ Warm) (NN praise))
+    (ADVP (RB indeed))
+    (. !)))
+
+root(ROOT-0, praise-2)
+amod(praise-2, Warm-1)
+dep(praise-2, indeed-3)
+punct(praise-2, !-4)
+
+Coreference set:
+	(1,12,[12,28]) -> (1,10,[9,11]), that is: "grand , the subjects of the fugues most impressive , and worked out with consummate skill" -> "The choruses"
+	(1,12,[12,13]) -> (1,10,[9,11]), that is: "grand" -> "The choruses"

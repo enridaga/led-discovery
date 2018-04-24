@@ -1,0 +1,70 @@
+Sentence #1 (20 tokens):
+He played me three new 'Lieder ohne Worte', which are worthy successors to those already written.
+[Text=He CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=3 CharacterOffsetEnd=9 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=new CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Lieder CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Lieder NamedEntityTag=O]
+[Text=ohne CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=ohne NamedEntityTag=O]
+[Text=Worte CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Worte NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=worthy CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=worthy NamedEntityTag=O]
+[Text=successors CharacterOffsetBegin=61 CharacterOffsetEnd=71 PartOfSpeech=NNS Lemma=successor NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=already CharacterOffsetBegin=81 CharacterOffsetEnd=88 PartOfSpeech=RB Lemma=already NamedEntityTag=O]
+[Text=written CharacterOffsetBegin=89 CharacterOffsetEnd=96 PartOfSpeech=VBN Lemma=write NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD played)
+      (NP (PRP me))
+      (NP
+        (NP (CD three))
+        (PP
+          (NP
+            (NP (JJ new))
+            (`` `) (NNP Lieder) (NNP ohne))
+          (NP
+            (NP (NNP Worte) (POS '))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBP are)
+                  (NP
+                    (NP (JJ worthy) (NNS successors))
+                    (PP (TO to)
+                      (NP
+                        (NP (DT those))
+                        (ADJP (RB already) (VBN written))))))))))))
+    (. .)))
+
+root(ROOT-0, played-2)
+nsubj(played-2, He-1)
+iobj(played-2, me-3)
+dobj(played-2, three-4)
+compound(ohne-8, new-5)
+punct(ohne-8, `-6)
+compound(ohne-8, Lieder-7)
+nmod(three-4, ohne-8)
+dep(ohne-8, Worte-9)
+nsubj(successors-15, Worte-9)
+case(Worte-9, '-10)
+punct(Worte-9, ,-11)
+ref(Worte-9, which-12)
+cop(successors-15, are-13)
+amod(successors-15, worthy-14)
+acl:relcl(Worte-9, successors-15)
+case(those-17, to-16)
+nmod:to(successors-15, those-17)
+advmod(written-19, already-18)
+amod(those-17, written-19)
+punct(played-2, .-20)
+

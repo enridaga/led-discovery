@@ -1,0 +1,191 @@
+Sentence #1 (24 tokens):
+After supper write letters & Grace comes in to hear wireless; Henry Wood conducting slack & incompetent perfs of Haydn Drum Symp.
+[Text=After CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=supper CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=supper NamedEntityTag=DATE NormalizedNamedEntityTag=supper ]
+[Text=write CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=VB Lemma=write NamedEntityTag=O]
+[Text=letters CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=NNS Lemma=letter NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Grace CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Grace NamedEntityTag=O]
+[Text=comes CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=VBZ Lemma=come NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=wireless CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=wireless NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=Henry CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Henry NamedEntityTag=PERSON]
+[Text=Wood CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Wood NamedEntityTag=PERSON]
+[Text=conducting CharacterOffsetBegin=73 CharacterOffsetEnd=83 PartOfSpeech=VBG Lemma=conduct NamedEntityTag=O]
+[Text=slack CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=slack NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=incompetent CharacterOffsetBegin=92 CharacterOffsetEnd=103 PartOfSpeech=JJ Lemma=incompetent NamedEntityTag=O]
+[Text=perfs CharacterOffsetBegin=104 CharacterOffsetEnd=109 PartOfSpeech=NNS Lemma=perf NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Haydn CharacterOffsetBegin=113 CharacterOffsetEnd=118 PartOfSpeech=NNP Lemma=Haydn NamedEntityTag=O]
+[Text=Drum CharacterOffsetBegin=119 CharacterOffsetEnd=123 PartOfSpeech=NNP Lemma=Drum NamedEntityTag=O]
+[Text=Symp CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=NNP Lemma=Symp NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN After)
+      (NP (NN supper)))
+    (S
+      (VP (VB write)
+        (NP
+          (NP (NNS letters))
+          (CC &)
+          (NP (NNP Grace)))))
+    (VP (VBZ comes)
+      (PP (IN in)
+        (NP
+          (S
+            (VP (TO to)
+              (VP (VB hear)
+                (NP (NN wireless)))))
+          (: ;)
+          (NP
+            (NP (NNP Henry) (NNP Wood))
+            (VP (VBG conducting)
+              (NP
+                (NP (NN slack))
+                (CC &)
+                (NP
+                  (NP (JJ incompetent) (NNS perfs))
+                  (PP (IN of)
+                    (NP (NNP Haydn) (NNP Drum) (NNP Symp))))))))))
+    (. .)))
+
+root(ROOT-0, comes-7)
+case(supper-2, After-1)
+nmod:after(comes-7, supper-2)
+csubj(comes-7, write-3)
+dobj(write-3, letters-4)
+cc(letters-4, &-5)
+dobj(write-3, Grace-6)
+conj:&(letters-4, Grace-6)
+case(Wood-14, in-8)
+mark(hear-10, to-9)
+dep(Wood-14, hear-10)
+dobj(hear-10, wireless-11)
+punct(Wood-14, ;-12)
+compound(Wood-14, Henry-13)
+nmod:in(comes-7, Wood-14)
+acl(Wood-14, conducting-15)
+dobj(conducting-15, slack-16)
+cc(slack-16, &-17)
+amod(perfs-19, incompetent-18)
+dobj(conducting-15, perfs-19)
+conj:&(slack-16, perfs-19)
+case(Symp-23, of-20)
+compound(Symp-23, Haydn-21)
+compound(Symp-23, Drum-22)
+nmod:of(perfs-19, Symp-23)
+punct(comes-7, .-24)
+
+Sentence #2 (28 tokens):
+Hindemith's Vla Concerto (with H.), which has some awfully fine & exhilarating things in it; & L'oiseau de feu, 1st Suite.
+[Text=Hindemith CharacterOffsetBegin=130 CharacterOffsetEnd=139 PartOfSpeech=NNP Lemma=Hindemith NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=139 CharacterOffsetEnd=141 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Vla CharacterOffsetBegin=142 CharacterOffsetEnd=145 PartOfSpeech=NNP Lemma=Vla NamedEntityTag=O]
+[Text=Concerto CharacterOffsetBegin=146 CharacterOffsetEnd=154 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=155 CharacterOffsetEnd=156 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=156 CharacterOffsetEnd=160 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=H. CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=NN Lemma=h. NamedEntityTag=MISC]
+[Text=-RRB- CharacterOffsetBegin=163 CharacterOffsetEnd=164 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=164 CharacterOffsetEnd=165 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=166 CharacterOffsetEnd=171 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=172 CharacterOffsetEnd=175 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=176 CharacterOffsetEnd=180 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=awfully CharacterOffsetBegin=181 CharacterOffsetEnd=188 PartOfSpeech=RB Lemma=awfully NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=189 CharacterOffsetEnd=193 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=194 CharacterOffsetEnd=195 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=exhilarating CharacterOffsetBegin=196 CharacterOffsetEnd=208 PartOfSpeech=JJ Lemma=exhilarating NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=209 CharacterOffsetEnd=215 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=216 CharacterOffsetEnd=218 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=219 CharacterOffsetEnd=221 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=221 CharacterOffsetEnd=222 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=223 CharacterOffsetEnd=224 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=L'oiseau CharacterOffsetBegin=225 CharacterOffsetEnd=233 PartOfSpeech=NNP Lemma=L'oiseau NamedEntityTag=O]
+[Text=de CharacterOffsetBegin=234 CharacterOffsetEnd=236 PartOfSpeech=FW Lemma=de NamedEntityTag=O]
+[Text=feu CharacterOffsetBegin=237 CharacterOffsetEnd=240 PartOfSpeech=FW Lemma=feu NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=240 CharacterOffsetEnd=241 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=1st CharacterOffsetBegin=242 CharacterOffsetEnd=245 PartOfSpeech=JJ Lemma=1st NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=Suite CharacterOffsetBegin=246 CharacterOffsetEnd=251 PartOfSpeech=NN Lemma=suite NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=251 CharacterOffsetEnd=252 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP
+          (NP (NNP Hindemith) (POS 's))
+          (NNP Vla) (NNP Concerto))
+        (PRN (-LRB- -LRB-)
+          (PP (IN with)
+            (NP (NN H.)))
+          (-RRB- -RRB-)))
+      (, ,)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBZ has)
+            (NP
+              (NP
+                (NP
+                  (NP (DT some))
+                  (ADJP (RB awfully) (JJ fine)))
+                (CC &)
+                (NP
+                  (NP (JJ exhilarating) (NNS things))
+                  (PP (IN in)
+                    (NP (PRP it)))))
+              (: ;)
+              (CC &)
+              (NP
+                (NP (NNP L'oiseau))
+                (NP (FW de) (FW feu)))))))
+      (, ,))
+    (VP (JJ 1st)
+      (NP (NN Suite)))
+    (. .)))
+
+root(ROOT-0, 1st-26)
+nmod:poss(Concerto-4, Hindemith-1)
+case(Hindemith-1, 's-2)
+compound(Concerto-4, Vla-3)
+nsubj(has-11, Concerto-4)
+nsubj(1st-26, Concerto-4)
+punct(H.-7, -LRB--5)
+case(H.-7, with-6)
+nmod:with(Concerto-4, H.-7)
+punct(H.-7, -RRB--8)
+punct(Concerto-4, ,-9)
+ref(Concerto-4, which-10)
+acl:relcl(Concerto-4, has-11)
+dobj(has-11, some-12)
+advmod(fine-14, awfully-13)
+amod(some-12, fine-14)
+cc(some-12, &-15)
+amod(things-17, exhilarating-16)
+dobj(has-11, things-17)
+conj:&(some-12, things-17)
+case(it-19, in-18)
+nmod:in(things-17, it-19)
+punct(some-12, ;-20)
+cc(some-12, &-21)
+dobj(has-11, L'oiseau-22)
+conj:&(some-12, L'oiseau-22)
+compound(feu-24, de-23)
+dep(L'oiseau-22, feu-24)
+punct(Concerto-4, ,-25)
+dobj(1st-26, Suite-27)
+punct(1st-26, .-28)
+
+Sentence #3 (1 tokens):
+*
+[Text=* CharacterOffsetBegin=252 CharacterOffsetEnd=253 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+(ROOT
+  (X (SYM *)))
+
+root(ROOT-0, *-1)
+
+Coreference set:
+	(2,19,[19,20]) -> (2,12,[12,15]), that is: "it" -> "some awfully fine"

@@ -1,0 +1,122 @@
+Sentence #1 (5 tokens):
+Music at Zelter's.
+[Text=Music CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Zelter CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Zelter NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NN Music))
+    (PP (IN at)
+      (NP (NNP Zelter) (POS 's)))
+    (. .)))
+
+root(ROOT-0, Music-1)
+case(Zelter-3, at-2)
+nmod:'s(Music-1, Zelter-3)
+case(Zelter-3, 's-4)
+punct(Music-1, .-5)
+
+Sentence #2 (19 tokens):
+Fanny Mendelssohn played the D minor Concerto by S. Bach, which I saw in the original manuscript.
+[Text=Fanny CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Fanny NamedEntityTag=PERSON]
+[Text=Mendelssohn CharacterOffsetBegin=25 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Mendelssohn NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=D CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=d NamedEntityTag=O]
+[Text=minor CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=JJ Lemma=minor NamedEntityTag=O]
+[Text=Concerto CharacterOffsetBegin=56 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=S. CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=S. NamedEntityTag=PERSON]
+[Text=Bach CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Bach NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=saw CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=VBD Lemma=see NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=original CharacterOffsetBegin=96 CharacterOffsetEnd=104 PartOfSpeech=JJ Lemma=original NamedEntityTag=O]
+[Text=manuscript CharacterOffsetBegin=105 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=manuscript NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Fanny) (NNP Mendelssohn))
+    (VP (VBD played)
+      (NP (DT the) (NN D))
+      (NP (JJ minor) (NNP Concerto))
+      (PP (IN by)
+        (NP
+          (NP (NNP S.) (NNP Bach))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (NP (PRP I))
+              (VP (VBD saw)
+                (PP (IN in)
+                  (NP (DT the) (JJ original) (NN manuscript)))))))))
+    (. .)))
+
+root(ROOT-0, played-3)
+compound(Mendelssohn-2, Fanny-1)
+nsubj(played-3, Mendelssohn-2)
+det(D-5, the-4)
+iobj(played-3, D-5)
+amod(Concerto-7, minor-6)
+dobj(played-3, Concerto-7)
+case(Bach-10, by-8)
+compound(Bach-10, S.-9)
+nmod:by(played-3, Bach-10)
+dobj(saw-14, Bach-10)
+punct(Bach-10, ,-11)
+ref(Bach-10, which-12)
+nsubj(saw-14, I-13)
+acl:relcl(Bach-10, saw-14)
+case(manuscript-18, in-15)
+det(manuscript-18, the-16)
+amod(manuscript-18, original-17)
+nmod:in(saw-14, manuscript-18)
+punct(played-3, .-19)
+
+Sentence #3 (11 tokens):
+A mass in five parts by S. Bach was performed.
+[Text=A CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=mass CharacterOffsetBegin=119 CharacterOffsetEnd=123 PartOfSpeech=NN Lemma=mass NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=124 CharacterOffsetEnd=126 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=five CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=CD Lemma=five NamedEntityTag=NUMBER NormalizedNamedEntityTag=5.0]
+[Text=parts CharacterOffsetBegin=132 CharacterOffsetEnd=137 PartOfSpeech=NNS Lemma=part NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=138 CharacterOffsetEnd=140 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=S. CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=NNP Lemma=S. NamedEntityTag=PERSON]
+[Text=Bach CharacterOffsetBegin=144 CharacterOffsetEnd=148 PartOfSpeech=NNP Lemma=Bach NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=149 CharacterOffsetEnd=152 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=performed CharacterOffsetBegin=153 CharacterOffsetEnd=162 PartOfSpeech=VBN Lemma=perform NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=162 CharacterOffsetEnd=163 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN mass))
+      (PP (IN in)
+        (NP
+          (NP (CD five) (NNS parts))
+          (PP (IN by)
+            (NP (NNP S.) (NNP Bach))))))
+    (VP (VBD was)
+      (VP (VBN performed)))
+    (. .)))
+
+root(ROOT-0, performed-10)
+det(mass-2, A-1)
+nsubjpass(performed-10, mass-2)
+case(parts-5, in-3)
+nummod(parts-5, five-4)
+nmod:in(mass-2, parts-5)
+case(Bach-8, by-6)
+compound(Bach-8, S.-7)
+nmod:by(parts-5, Bach-8)
+auxpass(performed-10, was-9)
+punct(performed-10, .-11)
+
+Coreference set:
+	(2,10,[9,11]) -> (2,10,[9,19]), that is: "S. Bach" -> "S. Bach , which I saw in the original manuscript"
+	(3,8,[7,9]) -> (2,10,[9,19]), that is: "S. Bach" -> "S. Bach , which I saw in the original manuscript"

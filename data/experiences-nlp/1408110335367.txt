@@ -1,0 +1,313 @@
+Sentence #1 (17 tokens):
+Write a bit in morning, & then go to Patron’s Fund rehearsal in morning.
+[Text=Write CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=VB Lemma=write NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=morning CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=TMO Timex=<TIMEX3 tid="t1" type="TIME" value="TMO">morning</TIMEX3>]
+[Text=, CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Patron CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=patron NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Fund CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Fund NamedEntityTag=O]
+[Text=rehearsal CharacterOffsetBegin=51 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=rehearsal NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=morning CharacterOffsetBegin=64 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=TMO Timex=<TIMEX3 tid="t2" type="TIME" value="TMO">morning</TIMEX3>]
+[Text=. CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Write)
+      (NP
+        (NP
+          (NP (DT a) (NN bit))
+          (PP (IN in)
+            (NP (NN morning))))
+        (, ,)
+        (CC &)
+        (NP
+          (VP
+            (ADVP (RB then))
+            (VB go)
+            (PP (TO to)
+              (NP
+                (NP (NN Patron) (POS 's))
+                (NNP Fund) (NN rehearsal))))
+          (PP (IN in)
+            (NP (NN morning))))))
+    (. .)))
+
+root(ROOT-0, Write-1)
+det(bit-3, a-2)
+dobj(Write-1, bit-3)
+case(morning-5, in-4)
+nmod:in(bit-3, morning-5)
+punct(bit-3, ,-6)
+cc(bit-3, &-7)
+advmod(go-9, then-8)
+dobj(Write-1, go-9)
+conj:&(bit-3, go-9)
+case(rehearsal-14, to-10)
+nmod:poss(rehearsal-14, Patron-11)
+case(Patron-11, 's-12)
+compound(rehearsal-14, Fund-13)
+nmod:to(go-9, rehearsal-14)
+case(morning-16, in-15)
+nmod:in(go-9, morning-16)
+punct(Write-1, .-17)
+
+Sentence #2 (13 tokens):
+Only new work is Howard Ferguson’s Short Symphony in D minor.
+[Text=Only CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Howard CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=NNP Lemma=Howard NamedEntityTag=PERSON]
+[Text=Ferguson CharacterOffsetBegin=97 CharacterOffsetEnd=105 PartOfSpeech=NNP Lemma=Ferguson NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Short CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=JJ Lemma=short NamedEntityTag=O]
+[Text=Symphony CharacterOffsetBegin=114 CharacterOffsetEnd=122 PartOfSpeech=NNP Lemma=Symphony NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=D CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=NNP Lemma=D NamedEntityTag=O]
+[Text=minor CharacterOffsetBegin=128 CharacterOffsetEnd=133 PartOfSpeech=JJ Lemma=minor NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=133 CharacterOffsetEnd=134 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (RB Only) (JJ new) (NN work))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (NNP Howard) (NNP Ferguson) (POS 's))
+          (JJ Short) (NNP Symphony))
+        (PP (IN in)
+          (NP (NNP D) (JJ minor)))))
+    (. .)))
+
+root(ROOT-0, Symphony-9)
+advmod(work-3, Only-1)
+amod(work-3, new-2)
+nsubj(Symphony-9, work-3)
+cop(Symphony-9, is-4)
+compound(Ferguson-6, Howard-5)
+nmod:poss(Symphony-9, Ferguson-6)
+case(Ferguson-6, 's-7)
+amod(Symphony-9, Short-8)
+case(D-11, in-10)
+nmod:in(Symphony-9, D-11)
+amod(D-11, minor-12)
+punct(Symphony-9, .-13)
+
+Sentence #3 (13 tokens):
+V. fine work not too well played by N[ational].
+[Text=V. CharacterOffsetBegin=135 CharacterOffsetEnd=137 PartOfSpeech=NNP Lemma=V. NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=138 CharacterOffsetEnd=142 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=143 CharacterOffsetEnd=147 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=148 CharacterOffsetEnd=151 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=152 CharacterOffsetEnd=155 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=156 CharacterOffsetEnd=160 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=161 CharacterOffsetEnd=167 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=168 CharacterOffsetEnd=170 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=N CharacterOffsetBegin=171 CharacterOffsetEnd=172 PartOfSpeech=NN Lemma=n NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=172 CharacterOffsetEnd=173 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=ational CharacterOffsetBegin=173 CharacterOffsetEnd=180 PartOfSpeech=NN Lemma=ational NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP V.) (JJ fine) (NN work))
+    (VP (RB not)
+      (ADVP (RB too) (RB well))
+      (VBN played)
+      (PP (IN by)
+        (NP (NN N) (-LRB- -LSB-) (NN ational) (-RRB- -RSB-))))
+    (. .)))
+
+root(ROOT-0, played-7)
+compound(work-3, V.-1)
+amod(work-3, fine-2)
+nsubj(played-7, work-3)
+neg(played-7, not-4)
+advmod(well-6, too-5)
+advmod(played-7, well-6)
+case(ational-11, by-8)
+compound(ational-11, N-9)
+punct(ational-11, -LSB--10)
+nmod:by(played-7, ational-11)
+punct(ational-11, -RSB--12)
+punct(played-7, .-13)
+
+Sentence #4 (2 tokens):
+Symph.
+[Text=Symph CharacterOffsetBegin=183 CharacterOffsetEnd=188 PartOfSpeech=NNP Lemma=Symph NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=188 CharacterOffsetEnd=189 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (NNP Symph))
+    (. .)))
+
+root(ROOT-0, Symph-1)
+punct(Symph-1, .-2)
+
+Sentence #5 (4 tokens):
+Orch under Sargent.
+[Text=Orch CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=NNP Lemma=Orch NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=195 CharacterOffsetEnd=200 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=Sargent CharacterOffsetBegin=201 CharacterOffsetEnd=208 PartOfSpeech=NNP Lemma=Sargent NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=208 CharacterOffsetEnd=209 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Orch))
+    (PP (IN under)
+      (NP (NNP Sargent)))
+    (. .)))
+
+root(ROOT-0, Orch-1)
+case(Sargent-3, under-2)
+nmod:under(Orch-1, Sargent-3)
+punct(Orch-1, .-4)
+
+Sentence #6 (6 tokens):
+Schuman’s ineffective Vlc conc.
+[Text=Schuman CharacterOffsetBegin=210 CharacterOffsetEnd=217 PartOfSpeech=NNP Lemma=Schuman NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=217 CharacterOffsetEnd=219 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=ineffective CharacterOffsetBegin=220 CharacterOffsetEnd=231 PartOfSpeech=JJ Lemma=ineffective NamedEntityTag=O]
+[Text=Vlc CharacterOffsetBegin=232 CharacterOffsetEnd=235 PartOfSpeech=NNP Lemma=Vlc NamedEntityTag=ORGANIZATION]
+[Text=conc CharacterOffsetBegin=236 CharacterOffsetEnd=240 PartOfSpeech=NN Lemma=conc NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=240 CharacterOffsetEnd=241 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Schuman) (POS 's))
+      (JJ ineffective))
+    (NP
+      (NP (NNP Vlc))
+      (NP (NN conc)))
+    (. .)))
+
+root(ROOT-0, Schuman-1)
+case(Schuman-1, 's-2)
+amod(Schuman-1, ineffective-3)
+dep(Schuman-1, Vlc-4)
+dep(Vlc-4, conc-5)
+punct(Schuman-1, .-6)
+
+Sentence #7 (29 tokens):
+(Audrey Piggott), Chausson’s Chanson Perpétuelle (well sung by Veronica Mansfield) & Strauss’s v. long & meandering Burlesque for Pft & orch.
+[Text=-LRB- CharacterOffsetBegin=242 CharacterOffsetEnd=243 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Audrey CharacterOffsetBegin=243 CharacterOffsetEnd=249 PartOfSpeech=NNP Lemma=Audrey NamedEntityTag=PERSON]
+[Text=Piggott CharacterOffsetBegin=250 CharacterOffsetEnd=257 PartOfSpeech=NNP Lemma=Piggott NamedEntityTag=PERSON]
+[Text=-RRB- CharacterOffsetBegin=257 CharacterOffsetEnd=258 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=258 CharacterOffsetEnd=259 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Chausson CharacterOffsetBegin=260 CharacterOffsetEnd=268 PartOfSpeech=NNP Lemma=Chausson NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=268 CharacterOffsetEnd=270 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Chanson CharacterOffsetBegin=271 CharacterOffsetEnd=278 PartOfSpeech=NNP Lemma=Chanson NamedEntityTag=PERSON]
+[Text=Perpétuelle CharacterOffsetBegin=279 CharacterOffsetEnd=290 PartOfSpeech=NNP Lemma=Perpétuelle NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=291 CharacterOffsetEnd=292 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=292 CharacterOffsetEnd=296 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=sung CharacterOffsetBegin=297 CharacterOffsetEnd=301 PartOfSpeech=VBN Lemma=sing NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=302 CharacterOffsetEnd=304 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Veronica CharacterOffsetBegin=305 CharacterOffsetEnd=313 PartOfSpeech=NNP Lemma=Veronica NamedEntityTag=PERSON]
+[Text=Mansfield CharacterOffsetBegin=314 CharacterOffsetEnd=323 PartOfSpeech=NNP Lemma=Mansfield NamedEntityTag=PERSON]
+[Text=-RRB- CharacterOffsetBegin=323 CharacterOffsetEnd=324 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=325 CharacterOffsetEnd=326 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Strauss CharacterOffsetBegin=327 CharacterOffsetEnd=334 PartOfSpeech=NNP Lemma=Strauss NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=334 CharacterOffsetEnd=336 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=v. CharacterOffsetBegin=337 CharacterOffsetEnd=339 PartOfSpeech=CC Lemma=v. NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=340 CharacterOffsetEnd=344 PartOfSpeech=JJ Lemma=long NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=345 CharacterOffsetEnd=346 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=meandering CharacterOffsetBegin=347 CharacterOffsetEnd=357 PartOfSpeech=JJ Lemma=meandering NamedEntityTag=O]
+[Text=Burlesque CharacterOffsetBegin=358 CharacterOffsetEnd=367 PartOfSpeech=NN Lemma=burlesque NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=368 CharacterOffsetEnd=371 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Pft CharacterOffsetBegin=372 CharacterOffsetEnd=375 PartOfSpeech=NNP Lemma=Pft NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=376 CharacterOffsetEnd=377 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=orch CharacterOffsetBegin=378 CharacterOffsetEnd=382 PartOfSpeech=NN Lemma=orch NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=382 CharacterOffsetEnd=383 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (-LRB- -LRB-) (NNP Audrey) (NNP Piggott) (-RRB- -RRB-))
+    (, ,)
+    (NP
+      (NP
+        (NP (NNP Chausson) (POS 's))
+        (NNP Chanson) (NNP Perpétuelle))
+      (PRN (-LRB- -LRB-)
+        (VP
+          (ADVP (RB well))
+          (VBN sung)
+          (PP (IN by)
+            (NP (NNP Veronica) (NNP Mansfield))))
+        (-RRB- -RRB-))
+      (CC &)
+      (NP
+        (NP
+          (NP (NNP Strauss) (POS 's))
+          (PP (CC v.)
+            (NP (JJ long))))
+        (CC &)
+        (NP
+          (NP (JJ meandering) (NN Burlesque))
+          (PP (IN for)
+            (NP
+              (NP (NNP Pft))
+              (CC &)
+              (NP (NN orch)))))))
+    (. .)))
+
+root(ROOT-0, Piggott-3)
+punct(Piggott-3, -LRB--1)
+compound(Piggott-3, Audrey-2)
+punct(Piggott-3, -RRB--4)
+punct(Piggott-3, ,-5)
+nmod:poss(Perpétuelle-9, Chausson-6)
+case(Chausson-6, 's-7)
+compound(Perpétuelle-9, Chanson-8)
+appos(Piggott-3, Perpétuelle-9)
+punct(sung-12, -LRB--10)
+advmod(sung-12, well-11)
+dep(Perpétuelle-9, sung-12)
+case(Mansfield-15, by-13)
+compound(Mansfield-15, Veronica-14)
+nmod:by(sung-12, Mansfield-15)
+punct(sung-12, -RRB--16)
+cc(Perpétuelle-9, &-17)
+appos(Piggott-3, Strauss-18)
+conj:&(Perpétuelle-9, Strauss-18)
+case(Strauss-18, 's-19)
+case(long-21, v.-20)
+nmod:v.(Strauss-18, long-21)
+cc(Strauss-18, &-22)
+amod(Burlesque-24, meandering-23)
+conj:&(Perpétuelle-9, Burlesque-24)
+conj:&(Strauss-18, Burlesque-24)
+case(Pft-26, for-25)
+nmod:for(Burlesque-24, Pft-26)
+cc(Pft-26, &-27)
+nmod:for(Burlesque-24, orch-28)
+conj:&(Pft-26, orch-28)
+punct(Piggott-3, .-29)
+
+Sentence #8 (4 tokens):
+Practise in aft.
+[Text=Practise CharacterOffsetBegin=384 CharacterOffsetEnd=392 PartOfSpeech=RB Lemma=practise NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=393 CharacterOffsetEnd=395 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=aft CharacterOffsetBegin=396 CharacterOffsetEnd=399 PartOfSpeech=NN Lemma=aft NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=399 CharacterOffsetEnd=400 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP
+      (ADVP (RB Practise))
+      (IN in)
+      (NP (NN aft)))
+    (. .)))
+
+root(ROOT-0, aft-3)
+advmod(aft-3, Practise-1)
+case(aft-3, in-2)
+punct(aft-3, .-4)
+
+Coreference set:
+	(1,16,[16,17]) -> (1,5,[5,6]), that is: "morning" -> "morning"
+Coreference set:
+	(2,3,[1,4]) -> (2,9,[5,13]), that is: "Only new work" -> "Howard Ferguson 's Short Symphony in D minor"

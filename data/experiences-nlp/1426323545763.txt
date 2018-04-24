@@ -1,0 +1,363 @@
+Sentence #1 (24 tokens):
+The first thing upon arrival in Vienna, I called Otto Schulhof, with whom I was to play the concert that night.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=thing CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=upon CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=upon NamedEntityTag=O]
+[Text=arrival CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=arrival NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Vienna CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Vienna NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=VBD Lemma=call NamedEntityTag=O]
+[Text=Otto CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Otto NamedEntityTag=PERSON]
+[Text=Schulhof CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Schulhof NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=whom CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=WP Lemma=whom NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=92 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=night CharacterOffsetBegin=105 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t1" type="TIME" value="TNI">night</TIMEX3>]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (JJ first) (NN thing))
+        (PP (IN upon)
+          (NP
+            (NP (NN arrival))
+            (PP (IN in)
+              (NP (NNP Vienna)))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD called)
+      (NP
+        (NP (NNP Otto) (NNP Schulhof))
+        (, ,)
+        (SBAR
+          (WHPP (IN with)
+            (WHNP (WP whom)))
+          (S
+            (NP (PRP I))
+            (VP (VBD was)
+              (S
+                (VP (TO to)
+                  (VP (VB play)
+                    (NP
+                      (NP (DT the) (NN concert))
+                      (SBAR
+                        (WHNP (WDT that))))
+                    (NP-TMP (NN night))))))))))
+    (. .)))
+
+root(ROOT-0, called-10)
+det(thing-3, The-1)
+amod(thing-3, first-2)
+ccomp(called-10, thing-3)
+case(arrival-5, upon-4)
+nmod:upon(thing-3, arrival-5)
+case(Vienna-7, in-6)
+nmod:in(arrival-5, Vienna-7)
+punct(called-10, ,-8)
+nsubj(called-10, I-9)
+compound(Schulhof-12, Otto-11)
+dobj(called-10, Schulhof-12)
+nmod:with(was-17, Schulhof-12)
+punct(Schulhof-12, ,-13)
+case(whom-15, with-14)
+ref(Schulhof-12, whom-15)
+nsubj(was-17, I-16)
+nsubj:xsubj(play-19, I-16)
+acl:relcl(Schulhof-12, was-17)
+mark(play-19, to-18)
+xcomp(was-17, play-19)
+det(concert-21, the-20)
+dobj(play-19, concert-21)
+acl:relcl(concert-21, that-22)
+nmod:tmod(play-19, night-23)
+punct(called-10, .-24)
+
+Sentence #2 (21 tokens):
+He was a remarkable fellow who knew as only a few know how to blend his piano with the cello.
+[Text=He CharacterOffsetBegin=112 CharacterOffsetEnd=114 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=remarkable CharacterOffsetBegin=121 CharacterOffsetEnd=131 PartOfSpeech=JJ Lemma=remarkable NamedEntityTag=O]
+[Text=fellow CharacterOffsetBegin=132 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=fellow NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=knew CharacterOffsetBegin=143 CharacterOffsetEnd=147 PartOfSpeech=VBD Lemma=know NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=148 CharacterOffsetEnd=150 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=151 CharacterOffsetEnd=155 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=156 CharacterOffsetEnd=157 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=few CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=JJ Lemma=few NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=162 CharacterOffsetEnd=166 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=171 CharacterOffsetEnd=173 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=blend CharacterOffsetBegin=174 CharacterOffsetEnd=179 PartOfSpeech=VB Lemma=blend NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=180 CharacterOffsetEnd=183 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=184 CharacterOffsetEnd=189 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=cello CharacterOffsetBegin=199 CharacterOffsetEnd=204 PartOfSpeech=NN Lemma=cello NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=204 CharacterOffsetEnd=205 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ remarkable) (NN fellow))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD knew)
+              (PP (IN as)
+                (NP
+                  (QP (RB only) (DT a) (JJ few))))
+              (S
+                (VP (VB know)
+                  (SBAR
+                    (WHADVP (WRB how))
+                    (S
+                      (VP (TO to)
+                        (VP (VB blend)
+                          (NP (PRP$ his) (NN piano))
+                          (PP (IN with)
+                            (NP (DT the) (NN cello))))))))))))))
+    (. .)))
+
+root(ROOT-0, fellow-5)
+nsubj(fellow-5, He-1)
+cop(fellow-5, was-2)
+det(fellow-5, a-3)
+amod(fellow-5, remarkable-4)
+nsubj(knew-7, fellow-5)
+ref(fellow-5, who-6)
+acl:relcl(fellow-5, knew-7)
+case(few-11, as-8)
+advmod(few-11, only-9)
+advmod(few-11, a-10)
+nmod:as(knew-7, few-11)
+ccomp(knew-7, know-12)
+advmod(blend-15, how-13)
+mark(blend-15, to-14)
+ccomp(know-12, blend-15)
+nmod:poss(piano-17, his-16)
+dobj(blend-15, piano-17)
+case(cello-20, with-18)
+det(cello-20, the-19)
+nmod:with(blend-15, cello-20)
+punct(fellow-5, .-21)
+
+Sentence #3 (19 tokens):
+Strictly a professional, he would play with anyone, anywhere, and anything, for his fee.
+[Text=Strictly CharacterOffsetBegin=206 CharacterOffsetEnd=214 PartOfSpeech=RB Lemma=strictly NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=215 CharacterOffsetEnd=216 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=professional CharacterOffsetBegin=217 CharacterOffsetEnd=229 PartOfSpeech=JJ Lemma=professional NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=229 CharacterOffsetEnd=230 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=231 CharacterOffsetEnd=233 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=234 CharacterOffsetEnd=239 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=240 CharacterOffsetEnd=244 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=245 CharacterOffsetEnd=249 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=250 CharacterOffsetEnd=256 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=256 CharacterOffsetEnd=257 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=anywhere CharacterOffsetBegin=258 CharacterOffsetEnd=266 PartOfSpeech=RB Lemma=anywhere NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=266 CharacterOffsetEnd=267 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=268 CharacterOffsetEnd=271 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=272 CharacterOffsetEnd=280 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=280 CharacterOffsetEnd=281 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=282 CharacterOffsetEnd=285 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=286 CharacterOffsetEnd=289 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=fee CharacterOffsetBegin=290 CharacterOffsetEnd=293 PartOfSpeech=NN Lemma=fee NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=293 CharacterOffsetEnd=294 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (ADVP (RB Strictly))
+      (NP (DT a) (JJ professional)))
+    (, ,)
+    (NP (PRP he))
+    (VP (MD would)
+      (VP (VB play)
+        (PP (IN with)
+          (NP
+            (NP (NN anyone))
+            (, ,)
+            (NP (RB anywhere))
+            (, ,)
+            (CC and)
+            (NP (NN anything))))
+        (, ,)
+        (PP (IN for)
+          (NP (PRP$ his) (NN fee)))))
+    (. .)))
+
+root(ROOT-0, play-7)
+advmod(professional-3, Strictly-1)
+det(professional-3, a-2)
+ccomp(play-7, professional-3)
+punct(play-7, ,-4)
+nsubj(play-7, he-5)
+aux(play-7, would-6)
+case(anyone-9, with-8)
+nmod:with(play-7, anyone-9)
+punct(anyone-9, ,-10)
+nmod:with(play-7, anywhere-11)
+conj:and(anyone-9, anywhere-11)
+punct(anyone-9, ,-12)
+cc(anyone-9, and-13)
+nmod:with(play-7, anything-14)
+conj:and(anyone-9, anything-14)
+punct(play-7, ,-15)
+case(fee-18, for-16)
+nmod:poss(fee-18, his-17)
+nmod:for(play-7, fee-18)
+punct(play-7, .-19)
+
+Sentence #4 (21 tokens):
+But this did not reflect on his great sensitivity as an artist, which made playing with him a joy.
+[Text=But CharacterOffsetBegin=295 CharacterOffsetEnd=298 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=299 CharacterOffsetEnd=303 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=304 CharacterOffsetEnd=307 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=308 CharacterOffsetEnd=311 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=reflect CharacterOffsetBegin=312 CharacterOffsetEnd=319 PartOfSpeech=VB Lemma=reflect NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=320 CharacterOffsetEnd=322 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=323 CharacterOffsetEnd=326 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=327 CharacterOffsetEnd=332 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=sensitivity CharacterOffsetBegin=333 CharacterOffsetEnd=344 PartOfSpeech=NN Lemma=sensitivity NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=345 CharacterOffsetEnd=347 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=348 CharacterOffsetEnd=350 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=artist CharacterOffsetBegin=351 CharacterOffsetEnd=357 PartOfSpeech=NN Lemma=artist NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=357 CharacterOffsetEnd=358 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=359 CharacterOffsetEnd=364 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=365 CharacterOffsetEnd=369 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=370 CharacterOffsetEnd=377 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=378 CharacterOffsetEnd=382 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=383 CharacterOffsetEnd=386 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=387 CharacterOffsetEnd=388 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=joy CharacterOffsetBegin=389 CharacterOffsetEnd=392 PartOfSpeech=NN Lemma=joy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=392 CharacterOffsetEnd=393 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC But)
+    (NP (DT this))
+    (VP (VBD did) (RB not)
+      (VP (VB reflect)
+        (PP (IN on)
+          (NP (PRP$ his) (JJ great) (NN sensitivity)))
+        (PP (IN as)
+          (NP
+            (NP (DT an) (NN artist))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBD made)
+                  (S
+                    (VP (VBG playing)
+                      (PP (IN with)
+                        (NP (PRP him)))
+                      (NP (DT a) (NN joy)))))))))))
+    (. .)))
+
+root(ROOT-0, reflect-5)
+cc(reflect-5, But-1)
+nsubj(reflect-5, this-2)
+aux(reflect-5, did-3)
+neg(reflect-5, not-4)
+case(sensitivity-9, on-6)
+nmod:poss(sensitivity-9, his-7)
+amod(sensitivity-9, great-8)
+nmod:on(reflect-5, sensitivity-9)
+case(artist-12, as-10)
+det(artist-12, an-11)
+nmod:as(reflect-5, artist-12)
+nsubj(made-15, artist-12)
+punct(artist-12, ,-13)
+ref(artist-12, which-14)
+acl:relcl(artist-12, made-15)
+xcomp(made-15, playing-16)
+case(him-18, with-17)
+nmod:with(playing-16, him-18)
+det(joy-20, a-19)
+dobj(playing-16, joy-20)
+punct(reflect-5, .-21)
+
+Sentence #5 (18 tokens):
+I played with him many times in different countries and had never needed more than one rehearsal.
+[Text=I CharacterOffsetBegin=394 CharacterOffsetEnd=395 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=396 CharacterOffsetEnd=402 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=403 CharacterOffsetEnd=407 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=408 CharacterOffsetEnd=411 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=412 CharacterOffsetEnd=416 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=times CharacterOffsetBegin=417 CharacterOffsetEnd=422 PartOfSpeech=NNS Lemma=time NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=423 CharacterOffsetEnd=425 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=426 CharacterOffsetEnd=435 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=countries CharacterOffsetBegin=436 CharacterOffsetEnd=445 PartOfSpeech=NNS Lemma=country NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=446 CharacterOffsetEnd=449 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=450 CharacterOffsetEnd=453 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=454 CharacterOffsetEnd=459 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=needed CharacterOffsetBegin=460 CharacterOffsetEnd=466 PartOfSpeech=VBN Lemma=need NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=467 CharacterOffsetEnd=471 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=472 CharacterOffsetEnd=476 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=477 CharacterOffsetEnd=480 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=>1.0]
+[Text=rehearsal CharacterOffsetBegin=481 CharacterOffsetEnd=490 PartOfSpeech=NN Lemma=rehearsal NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=490 CharacterOffsetEnd=491 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBD played)
+        (PP (IN with)
+          (NP (PRP him)))
+        (NP-TMP (JJ many) (NNS times))
+        (PP (IN in)
+          (NP (JJ different) (NNS countries))))
+      (CC and)
+      (VP (VBD had)
+        (VP
+          (ADVP (RB never))
+          (VBN needed)
+          (NP
+            (QP (JJR more) (IN than) (CD one))
+            (NN rehearsal)))))
+    (. .)))
+
+root(ROOT-0, played-2)
+nsubj(played-2, I-1)
+nsubj(needed-13, I-1)
+case(him-4, with-3)
+nmod:with(played-2, him-4)
+amod(times-6, many-5)
+nmod:tmod(played-2, times-6)
+case(countries-9, in-7)
+amod(countries-9, different-8)
+nmod:in(played-2, countries-9)
+cc(played-2, and-10)
+aux(needed-13, had-11)
+neg(needed-13, never-12)
+conj:and(played-2, needed-13)
+advmod(one-16, more-14)
+mwe(more-14, than-15)
+nummod(rehearsal-17, one-16)
+dobj(needed-13, rehearsal-17)
+punct(played-2, .-18)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,12,[11,13]), that is: "He" -> "Otto Schulhof"
+	(2,5,[3,21]) -> (1,12,[11,13]), that is: "a remarkable fellow who knew as only a few know how to blend his piano with the cello" -> "Otto Schulhof"
+Coreference set:
+	(1,16,[16,17]) -> (1,9,[9,10]), that is: "I" -> "I"
+	(5,1,[1,2]) -> (1,9,[9,10]), that is: "I" -> "I"
+Coreference set:
+	(2,16,[16,17]) -> (2,11,[9,12]), that is: "his" -> "only a few"
+Coreference set:
+	(3,5,[5,6]) -> (3,3,[2,4]), that is: "he" -> "a professional"
+	(3,17,[17,18]) -> (3,3,[2,4]), that is: "his" -> "a professional"
+	(4,7,[7,8]) -> (3,3,[2,4]), that is: "his" -> "a professional"
+	(4,18,[18,19]) -> (3,3,[2,4]), that is: "him" -> "a professional"
+	(5,4,[4,5]) -> (3,3,[2,4]), that is: "him" -> "a professional"

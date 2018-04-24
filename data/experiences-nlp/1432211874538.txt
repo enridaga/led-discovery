@@ -1,0 +1,348 @@
+Sentence #1 (25 tokens):
+Fanny Crosby wrote the words of this hymn in 1869, and it was set to music by W. H. Doane two years later.
+[Text=Fanny CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Fanny NamedEntityTag=PERSON]
+[Text=Crosby CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Crosby NamedEntityTag=PERSON]
+[Text=wrote CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=VBD Lemma=write NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=words CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NNS Lemma=word NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=hymn CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=hymn NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=1869 CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=CD Lemma=1869 NamedEntityTag=DATE NormalizedNamedEntityTag=1869 Timex=<TIMEX3 tid="t1" type="DATE" value="1869">1869</TIMEX3>]
+[Text=, CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=VBN Lemma=set NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=W. CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=NNP Lemma=W. NamedEntityTag=PERSON]
+[Text=H. CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=H. NamedEntityTag=PERSON]
+[Text=Doane CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=Doane NamedEntityTag=PERSON]
+[Text=two CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=CD Lemma=two NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P2Y Timex=<TIMEX3 alt_value="OFFSET P2Y" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">two years later</TIMEX3>]
+[Text=years CharacterOffsetBegin=94 CharacterOffsetEnd=99 PartOfSpeech=NNS Lemma=year NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P2Y Timex=<TIMEX3 alt_value="OFFSET P2Y" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">two years later</TIMEX3>]
+[Text=later CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=RB Lemma=later NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P2Y Timex=<TIMEX3 alt_value="OFFSET P2Y" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">two years later</TIMEX3>]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Fanny) (NNP Crosby))
+      (VP (VBD wrote)
+        (NP
+          (NP (DT the) (NNS words))
+          (PP (IN of)
+            (NP (DT this) (NN hymn))))
+        (PP (IN in)
+          (NP (CD 1869)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBD was)
+        (VP (VBN set)
+          (PP (TO to)
+            (NP (NN music)))
+          (PP (IN by)
+            (NP
+              (NP (NNP W.) (NNP H.) (NNP Doane))
+              (ADVP
+                (NP (CD two) (NNS years))
+                (RB later)))))))
+    (. .)))
+
+root(ROOT-0, wrote-3)
+compound(Crosby-2, Fanny-1)
+nsubj(wrote-3, Crosby-2)
+det(words-5, the-4)
+dobj(wrote-3, words-5)
+case(hymn-8, of-6)
+det(hymn-8, this-7)
+nmod:of(words-5, hymn-8)
+case(1869-10, in-9)
+nmod:in(wrote-3, 1869-10)
+punct(wrote-3, ,-11)
+cc(wrote-3, and-12)
+nsubjpass(set-15, it-13)
+auxpass(set-15, was-14)
+conj:and(wrote-3, set-15)
+case(music-17, to-16)
+nmod:to(set-15, music-17)
+case(Doane-21, by-18)
+compound(Doane-21, W.-19)
+compound(Doane-21, H.-20)
+nmod:agent(set-15, Doane-21)
+nummod(years-23, two-22)
+nmod:npmod(later-24, years-23)
+advmod(Doane-21, later-24)
+punct(wrote-3, .-25)
+
+Sentence #2 (21 tokens):
+I sang it for the first time in the home of Mr. and Mrs. J. B. Cornell at Long Branch.
+[Text=I CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=sang CharacterOffsetBegin=109 CharacterOffsetEnd=113 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=125 CharacterOffsetEnd=130 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=time CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=home CharacterOffsetBegin=143 CharacterOffsetEnd=147 PartOfSpeech=NN Lemma=home NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=148 CharacterOffsetEnd=150 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=151 CharacterOffsetEnd=154 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=155 CharacterOffsetEnd=158 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Mrs. CharacterOffsetBegin=159 CharacterOffsetEnd=163 PartOfSpeech=NNP Lemma=Mrs. NamedEntityTag=O]
+[Text=J. CharacterOffsetBegin=164 CharacterOffsetEnd=166 PartOfSpeech=NNP Lemma=J. NamedEntityTag=PERSON]
+[Text=B. CharacterOffsetBegin=167 CharacterOffsetEnd=169 PartOfSpeech=NNP Lemma=B. NamedEntityTag=PERSON]
+[Text=Cornell CharacterOffsetBegin=170 CharacterOffsetEnd=177 PartOfSpeech=NNP Lemma=Cornell NamedEntityTag=PERSON]
+[Text=at CharacterOffsetBegin=178 CharacterOffsetEnd=180 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Long CharacterOffsetBegin=181 CharacterOffsetEnd=185 PartOfSpeech=NNP Lemma=Long NamedEntityTag=LOCATION]
+[Text=Branch CharacterOffsetBegin=186 CharacterOffsetEnd=192 PartOfSpeech=NNP Lemma=Branch NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=192 CharacterOffsetEnd=193 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD sang)
+      (NP (PRP it))
+      (PP (IN for)
+        (NP (DT the) (JJ first) (NN time)))
+      (PP (IN in)
+        (NP
+          (NP
+            (NP (DT the) (NN home))
+            (PP (IN of)
+              (NP (NNP Mr.))))
+          (CC and)
+          (NP
+            (NP (NNP Mrs.) (NNP J.) (NNP B.) (NNP Cornell))
+            (PP (IN at)
+              (NP (NNP Long) (NNP Branch)))))))
+    (. .)))
+
+root(ROOT-0, sang-2)
+nsubj(sang-2, I-1)
+dobj(sang-2, it-3)
+case(time-7, for-4)
+det(time-7, the-5)
+amod(time-7, first-6)
+nmod:for(sang-2, time-7)
+case(home-10, in-8)
+det(home-10, the-9)
+nmod:in(sang-2, home-10)
+case(Mr.-12, of-11)
+nmod:of(home-10, Mr.-12)
+cc(home-10, and-13)
+compound(Cornell-17, Mrs.-14)
+compound(Cornell-17, J.-15)
+compound(Cornell-17, B.-16)
+nmod:in(sang-2, Cornell-17)
+conj:and(home-10, Cornell-17)
+case(Branch-20, at-18)
+compound(Branch-20, Long-19)
+nmod:at(Cornell-17, Branch-20)
+punct(sang-2, .-21)
+
+Sentence #3 (24 tokens):
+The servants gathered from all parts of the house while I was singing, and looked into the parlour where I was seated.
+[Text=The CharacterOffsetBegin=194 CharacterOffsetEnd=197 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=servants CharacterOffsetBegin=198 CharacterOffsetEnd=206 PartOfSpeech=NNS Lemma=servant NamedEntityTag=O]
+[Text=gathered CharacterOffsetBegin=207 CharacterOffsetEnd=215 PartOfSpeech=VBN Lemma=gather NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=216 CharacterOffsetEnd=220 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=221 CharacterOffsetEnd=224 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=parts CharacterOffsetBegin=225 CharacterOffsetEnd=230 PartOfSpeech=NNS Lemma=part NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=231 CharacterOffsetEnd=233 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=234 CharacterOffsetEnd=237 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=house CharacterOffsetBegin=238 CharacterOffsetEnd=243 PartOfSpeech=NN Lemma=house NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=244 CharacterOffsetEnd=249 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=250 CharacterOffsetEnd=251 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=252 CharacterOffsetEnd=255 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=256 CharacterOffsetEnd=263 PartOfSpeech=NN Lemma=singing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=263 CharacterOffsetEnd=264 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=265 CharacterOffsetEnd=268 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=looked CharacterOffsetBegin=269 CharacterOffsetEnd=275 PartOfSpeech=VBD Lemma=look NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=276 CharacterOffsetEnd=280 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=281 CharacterOffsetEnd=284 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=parlour CharacterOffsetBegin=285 CharacterOffsetEnd=292 PartOfSpeech=NN Lemma=parlour NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=293 CharacterOffsetEnd=298 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=299 CharacterOffsetEnd=300 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=301 CharacterOffsetEnd=304 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=seated CharacterOffsetBegin=305 CharacterOffsetEnd=311 PartOfSpeech=VBN Lemma=seat NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=311 CharacterOffsetEnd=312 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NNS servants))
+    (VP
+      (VP (VBN gathered)
+        (PP (IN from)
+          (NP
+            (NP (DT all) (NNS parts))
+            (PP (IN of)
+              (NP (DT the) (NN house)))))
+        (SBAR (IN while)
+          (S
+            (NP (PRP I))
+            (VP (VBD was)
+              (NP (NN singing))))))
+      (, ,)
+      (CC and)
+      (VP (VBD looked)
+        (PP (IN into)
+          (NP (DT the) (NN parlour)))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP I))
+            (VP (VBD was)
+              (VP (VBN seated)))))))
+    (. .)))
+
+root(ROOT-0, gathered-3)
+det(servants-2, The-1)
+nsubj(gathered-3, servants-2)
+nsubj(looked-16, servants-2)
+case(parts-6, from-4)
+det(parts-6, all-5)
+nmod:from(gathered-3, parts-6)
+case(house-9, of-7)
+det(house-9, the-8)
+nmod:of(parts-6, house-9)
+mark(singing-13, while-10)
+nsubj(singing-13, I-11)
+cop(singing-13, was-12)
+advcl:while(gathered-3, singing-13)
+punct(gathered-3, ,-14)
+cc(gathered-3, and-15)
+conj:and(gathered-3, looked-16)
+case(parlour-19, into-17)
+det(parlour-19, the-18)
+nmod:into(looked-16, parlour-19)
+advmod(seated-23, where-20)
+nsubjpass(seated-23, I-21)
+auxpass(seated-23, was-22)
+advcl(looked-16, seated-23)
+punct(gathered-3, .-24)
+
+Sentence #4 (34 tokens):
+When I had finished, one of them said : " That is the finest hymn I have heard for a long time ; won't you please sing it over again? "
+[Text=When CharacterOffsetBegin=313 CharacterOffsetEnd=317 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=318 CharacterOffsetEnd=319 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=320 CharacterOffsetEnd=323 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=finished CharacterOffsetBegin=324 CharacterOffsetEnd=332 PartOfSpeech=VBN Lemma=finish NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=332 CharacterOffsetEnd=333 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=334 CharacterOffsetEnd=337 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=338 CharacterOffsetEnd=340 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=341 CharacterOffsetEnd=345 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=346 CharacterOffsetEnd=350 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=351 CharacterOffsetEnd=352 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=353 CharacterOffsetEnd=354 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=That CharacterOffsetBegin=355 CharacterOffsetEnd=359 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=360 CharacterOffsetEnd=362 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=363 CharacterOffsetEnd=366 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=finest CharacterOffsetBegin=367 CharacterOffsetEnd=373 PartOfSpeech=JJS Lemma=finest NamedEntityTag=O]
+[Text=hymn CharacterOffsetBegin=374 CharacterOffsetEnd=378 PartOfSpeech=NN Lemma=hymn NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=379 CharacterOffsetEnd=380 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=381 CharacterOffsetEnd=385 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=386 CharacterOffsetEnd=391 PartOfSpeech=VBN Lemma=hear NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=392 CharacterOffsetEnd=395 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=396 CharacterOffsetEnd=397 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=398 CharacterOffsetEnd=402 PartOfSpeech=JJ Lemma=long NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=403 CharacterOffsetEnd=407 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=408 CharacterOffsetEnd=409 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=wo CharacterOffsetBegin=410 CharacterOffsetEnd=412 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=412 CharacterOffsetEnd=415 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=416 CharacterOffsetEnd=419 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=420 CharacterOffsetEnd=426 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=sing CharacterOffsetBegin=427 CharacterOffsetEnd=431 PartOfSpeech=VB Lemma=sing NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=432 CharacterOffsetEnd=434 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=435 CharacterOffsetEnd=439 PartOfSpeech=RP Lemma=over NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=440 CharacterOffsetEnd=445 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=445 CharacterOffsetEnd=446 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=447 CharacterOffsetEnd=448 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (SBAR
+        (WHADVP (WRB When))
+        (S
+          (NP (PRP I))
+          (VP (VBD had)
+            (VP (VBN finished)))))
+      (, ,)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP (PRP them))))
+      (VP (VBD said)))
+    (: :) ('' '')
+    (S
+      (NP (DT That))
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (JJS finest) (NN hymn))
+          (SBAR
+            (S
+              (NP (PRP I))
+              (VP (VBP have)
+                (VP (VBN heard)
+                  (PP (IN for)
+                    (NP
+                      (NP (DT a) (JJ long) (NN time))
+                      (: ;)
+                      (SQ (MD wo) (RB n't)
+                        (NP (PRP you))
+                        (VP (VB please)
+                          (VP (VB sing)
+                            (NP (PRP it))
+                            (PRT (RP over))
+                            (ADVP (RB again))))))))))))))
+    (. ?) ('' '')))
+
+root(ROOT-0, said-9)
+advmod(finished-4, When-1)
+nsubj(finished-4, I-2)
+aux(finished-4, had-3)
+advcl(said-9, finished-4)
+punct(said-9, ,-5)
+det:qmod(them-8, one-6)
+mwe(one-6, of-7)
+nsubj(said-9, them-8)
+punct(said-9, :-10)
+punct(said-9, ''-11)
+nsubj(hymn-16, That-12)
+cop(hymn-16, is-13)
+det(hymn-16, the-14)
+amod(hymn-16, finest-15)
+parataxis(said-9, hymn-16)
+nsubj(heard-19, I-17)
+aux(heard-19, have-18)
+acl:relcl(hymn-16, heard-19)
+case(time-23, for-20)
+det(time-23, a-21)
+amod(time-23, long-22)
+nmod:for(heard-19, time-23)
+punct(time-23, ;-24)
+aux(please-28, wo-25)
+neg(please-28, n't-26)
+nsubj(please-28, you-27)
+dep(time-23, please-28)
+xcomp(please-28, sing-29)
+dobj(sing-29, it-30)
+compound:prt(sing-29, over-31)
+advmod(sing-29, again-32)
+punct(said-9, ?-33)
+punct(said-9, ''-34)
+
+Coreference set:
+	(1,13,[13,14]) -> (1,8,[7,9]), that is: "it" -> "this hymn"
+	(2,3,[3,4]) -> (1,8,[7,9]), that is: "it" -> "this hymn"
+Coreference set:
+	(3,11,[11,12]) -> (2,1,[1,2]), that is: "I" -> "I"
+	(3,21,[21,22]) -> (2,1,[1,2]), that is: "I" -> "I"
+	(4,2,[2,3]) -> (2,1,[1,2]), that is: "I" -> "I"
+	(4,17,[17,18]) -> (2,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(4,12,[12,13]) -> (4,6,[6,9]), that is: "That" -> "one of them"
+	(4,16,[14,33]) -> (4,6,[6,9]), that is: "the finest hymn I have heard for a long time ; wo n't you please sing it over again" -> "one of them"
+	(4,30,[30,31]) -> (4,6,[6,9]), that is: "it" -> "one of them"

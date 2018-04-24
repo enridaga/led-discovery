@@ -1,0 +1,219 @@
+Sentence #1 (23 tokens):
+In my early years in London I was a regular attendant at the concerts of the (now Royal) Philharmonic Society.
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=early CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=JJ Lemma=early NamedEntityTag=DURATION NormalizedNamedEntityTag=P1Y Timex=<TIMEX3 mod="EARLY" tid="t1" type="DURATION" value="P1Y">early years</TIMEX3>]
+[Text=years CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P1Y Timex=<TIMEX3 mod="EARLY" tid="t1" type="DURATION" value="P1Y">early years</TIMEX3>]
+[Text=in CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=London CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=London NamedEntityTag=LOCATION]
+[Text=I CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=regular CharacterOffsetBegin=36 CharacterOffsetEnd=43 PartOfSpeech=JJ Lemma=regular NamedEntityTag=O]
+[Text=attendant CharacterOffsetBegin=44 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=attendant NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=concerts CharacterOffsetBegin=61 CharacterOffsetEnd=69 PartOfSpeech=NNS Lemma=concert NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t2" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=Royal CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=Royal NamedEntityTag=ORGANIZATION]
+[Text=-RRB- CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=ORGANIZATION]
+[Text=Philharmonic CharacterOffsetBegin=89 CharacterOffsetEnd=101 PartOfSpeech=NNP Lemma=Philharmonic NamedEntityTag=ORGANIZATION]
+[Text=Society CharacterOffsetBegin=102 CharacterOffsetEnd=109 PartOfSpeech=NNP Lemma=Society NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (PRP$ my) (JJ early) (NNS years))
+        (PP (IN in)
+          (NP (NNP London)))))
+    (NP (PRP I))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ regular) (NN attendant))
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNS concerts))
+            (PP (IN of)
+              (NP
+                (ADJP (DT the)
+                  (PRN (-LRB- -LRB-)
+                    (NP
+                      (ADVP (RB now))
+                      (NNP Royal))
+                    (-RRB- -RRB-)))
+                (NNP Philharmonic) (NNP Society)))))))
+    (. .)))
+
+root(ROOT-0, attendant-11)
+case(years-4, In-1)
+nmod:poss(years-4, my-2)
+amod(years-4, early-3)
+nmod:in(attendant-11, years-4)
+case(London-6, in-5)
+nmod:in(years-4, London-6)
+nsubj(attendant-11, I-7)
+cop(attendant-11, was-8)
+det(attendant-11, a-9)
+amod(attendant-11, regular-10)
+case(concerts-14, at-12)
+det(concerts-14, the-13)
+nmod:at(attendant-11, concerts-14)
+case(Society-22, of-15)
+amod(Society-22, the-16)
+punct(Royal-19, -LRB--17)
+advmod(Royal-19, now-18)
+dep(the-16, Royal-19)
+punct(Royal-19, -RRB--20)
+compound(Society-22, Philharmonic-21)
+nmod:of(concerts-14, Society-22)
+punct(attendant-11, .-23)
+
+Sentence #2 (17 tokens):
+Cusins was then the conductor, and I always thought that he did his work well.
+[Text=Cusins CharacterOffsetBegin=111 CharacterOffsetEnd=117 PartOfSpeech=NNS Lemma=cusin NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=conductor CharacterOffsetBegin=131 CharacterOffsetEnd=140 PartOfSpeech=NN Lemma=conductor NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=142 CharacterOffsetEnd=145 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=148 CharacterOffsetEnd=154 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=155 CharacterOffsetEnd=162 PartOfSpeech=VBD Lemma=think NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=163 CharacterOffsetEnd=167 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=168 CharacterOffsetEnd=170 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=175 CharacterOffsetEnd=178 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=179 CharacterOffsetEnd=183 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=188 CharacterOffsetEnd=189 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNS Cusins))
+      (VP (VBD was) (RB then)
+        (NP (DT the) (NN conductor))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (ADVP (RB always))
+      (VP (VBD thought)
+        (SBAR (IN that)
+          (S
+            (NP (PRP he))
+            (VP (VBD did)
+              (NP (PRP$ his) (NN work))
+              (ADVP (RB well)))))))
+    (. .)))
+
+root(ROOT-0, conductor-5)
+nsubj(conductor-5, Cusins-1)
+cop(conductor-5, was-2)
+advmod(conductor-5, then-3)
+det(conductor-5, the-4)
+punct(conductor-5, ,-6)
+cc(conductor-5, and-7)
+nsubj(thought-10, I-8)
+advmod(thought-10, always-9)
+conj:and(conductor-5, thought-10)
+mark(did-13, that-11)
+nsubj(did-13, he-12)
+ccomp(thought-10, did-13)
+nmod:poss(work-15, his-14)
+dobj(did-13, work-15)
+advmod(did-13, well-16)
+punct(conductor-5, .-17)
+
+Sentence #3 (24 tokens):
+Among my very clear recollections are some hot
+disputes over the merits of the "Meistersinger" Overture when it was first played.
+[Text=Among CharacterOffsetBegin=190 CharacterOffsetEnd=195 PartOfSpeech=IN Lemma=among NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=196 CharacterOffsetEnd=198 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=199 CharacterOffsetEnd=203 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=clear CharacterOffsetBegin=204 CharacterOffsetEnd=209 PartOfSpeech=JJ Lemma=clear NamedEntityTag=O]
+[Text=recollections CharacterOffsetBegin=210 CharacterOffsetEnd=223 PartOfSpeech=NNS Lemma=recollection NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=224 CharacterOffsetEnd=227 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=228 CharacterOffsetEnd=232 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=hot CharacterOffsetBegin=233 CharacterOffsetEnd=236 PartOfSpeech=JJ Lemma=hot NamedEntityTag=O]
+[Text=disputes CharacterOffsetBegin=238 CharacterOffsetEnd=246 PartOfSpeech=NNS Lemma=dispute NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=247 CharacterOffsetEnd=251 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=252 CharacterOffsetEnd=255 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=merits CharacterOffsetBegin=256 CharacterOffsetEnd=262 PartOfSpeech=NNS Lemma=merit NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=263 CharacterOffsetEnd=265 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=266 CharacterOffsetEnd=269 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=270 CharacterOffsetEnd=271 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Meistersinger CharacterOffsetBegin=271 CharacterOffsetEnd=284 PartOfSpeech=NNP Lemma=Meistersinger NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=284 CharacterOffsetEnd=285 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=Overture CharacterOffsetBegin=286 CharacterOffsetEnd=294 PartOfSpeech=NNP Lemma=Overture NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=295 CharacterOffsetEnd=299 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=300 CharacterOffsetEnd=302 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=303 CharacterOffsetEnd=306 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=307 CharacterOffsetEnd=312 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=played CharacterOffsetBegin=313 CharacterOffsetEnd=319 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=319 CharacterOffsetEnd=320 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (SINV
+    (PP (IN Among)
+      (NP (PRP$ my)
+        (ADJP (RB very) (JJ clear))
+        (NNS recollections)))
+    (VP (VBP are))
+    (NP
+      (NP (DT some) (JJ hot) (NNS disputes))
+      (PP (IN over)
+        (NP (DT the) (NNS merits)))
+      (PP (IN of)
+        (NP (DT the) (`` ``) (NNP Meistersinger) ('' '') (NNP Overture)))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP it))
+          (VP (VBD was)
+            (VP
+              (ADVP (JJ first))
+              (VBN played))))))
+    (. .)))
+
+root(ROOT-0, are-6)
+case(recollections-5, Among-1)
+nmod:poss(recollections-5, my-2)
+advmod(clear-4, very-3)
+amod(recollections-5, clear-4)
+nmod:among(are-6, recollections-5)
+det(disputes-9, some-7)
+amod(disputes-9, hot-8)
+nsubj(are-6, disputes-9)
+case(merits-12, over-10)
+det(merits-12, the-11)
+nmod:over(disputes-9, merits-12)
+case(Overture-18, of-13)
+det(Overture-18, the-14)
+punct(Overture-18, ``-15)
+compound(Overture-18, Meistersinger-16)
+punct(Overture-18, ''-17)
+nmod:of(disputes-9, Overture-18)
+advmod(played-23, when-19)
+nsubjpass(played-23, it-20)
+auxpass(played-23, was-21)
+advmod(played-23, first-22)
+acl:relcl(disputes-9, played-23)
+punct(are-6, .-24)
+
+Coreference set:
+	(1,19,[19,23]) -> (1,19,[18,20]), that is: "Royal -RRB- Philharmonic Society" -> "now Royal"
+Coreference set:
+	(1,2,[2,3]) -> (1,11,[9,23]), that is: "my" -> "a regular attendant at the concerts of the -LRB- now Royal -RRB- Philharmonic Society"
+	(1,7,[7,8]) -> (1,11,[9,23]), that is: "I" -> "a regular attendant at the concerts of the -LRB- now Royal -RRB- Philharmonic Society"
+	(2,8,[8,9]) -> (1,11,[9,23]), that is: "I" -> "a regular attendant at the concerts of the -LRB- now Royal -RRB- Philharmonic Society"
+	(3,2,[2,3]) -> (1,11,[9,23]), that is: "my" -> "a regular attendant at the concerts of the -LRB- now Royal -RRB- Philharmonic Society"
+Coreference set:
+	(2,5,[4,6]) -> (2,1,[1,2]), that is: "the conductor" -> "Cusins"
+	(2,12,[12,13]) -> (2,1,[1,2]), that is: "he" -> "Cusins"
+	(2,14,[14,15]) -> (2,1,[1,2]), that is: "his" -> "Cusins"
+Coreference set:
+	(3,20,[20,21]) -> (3,18,[14,19]), that is: "it" -> "the `` Meistersinger '' Overture"

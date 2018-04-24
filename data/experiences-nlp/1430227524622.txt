@@ -1,0 +1,503 @@
+Sentence #1 (27 tokens):
+[Louis] Armstrong had been to New York to play with Fletcher Henderson, who had one of the best dance bands of the period.
+[Text=-LSB- CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Louis CharacterOffsetBegin=1 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Louis NamedEntityTag=PERSON]
+[Text=-RSB- CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=PERSON]
+[Text=Armstrong CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Armstrong NamedEntityTag=PERSON]
+[Text=had CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=New NamedEntityTag=LOCATION]
+[Text=York CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=York NamedEntityTag=LOCATION]
+[Text=to CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Fletcher CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Fletcher NamedEntityTag=PERSON]
+[Text=Henderson CharacterOffsetBegin=61 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Henderson NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=dance CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=dance NamedEntityTag=O]
+[Text=bands CharacterOffsetBegin=102 CharacterOffsetEnd=107 PartOfSpeech=NNS Lemma=band NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=period CharacterOffsetBegin=115 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=period NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (-LRB- -LSB-) (NNP Louis) (-RRB- -RSB-) (NNP Armstrong))
+    (VP (VBD had)
+      (VP (VBN been)
+        (PP (TO to)
+          (NP
+            (NP (NNP New) (NNP York))
+            (SBAR
+              (S
+                (VP (TO to)
+                  (VP (VB play)
+                    (PP (IN with)
+                      (NP
+                        (NP (NNP Fletcher) (NNP Henderson))
+                        (, ,)
+                        (SBAR
+                          (WHNP (WP who))
+                          (S
+                            (VP (VBD had)
+                              (NP
+                                (NP (CD one))
+                                (PP (IN of)
+                                  (NP
+                                    (NP (DT the) (JJS best) (NN dance) (NNS bands))
+                                    (PP (IN of)
+                                      (NP (DT the) (NN period)))))))))))))))))))
+    (. .)))
+
+root(ROOT-0, York-9)
+punct(Armstrong-4, -LSB--1)
+compound(Armstrong-4, Louis-2)
+punct(Armstrong-4, -RSB--3)
+nsubj(York-9, Armstrong-4)
+aux(York-9, had-5)
+cop(York-9, been-6)
+case(York-9, to-7)
+compound(York-9, New-8)
+mark(play-11, to-10)
+acl:to(York-9, play-11)
+case(Henderson-14, with-12)
+compound(Henderson-14, Fletcher-13)
+nmod:with(play-11, Henderson-14)
+nsubj(had-17, Henderson-14)
+punct(Henderson-14, ,-15)
+ref(Henderson-14, who-16)
+acl:relcl(Henderson-14, had-17)
+det:qmod(bands-23, one-18)
+mwe(one-18, of-19)
+det(bands-23, the-20)
+amod(bands-23, best-21)
+compound(bands-23, dance-22)
+dobj(had-17, bands-23)
+case(period-26, of-24)
+det(period-26, the-25)
+nmod:of(bands-23, period-26)
+punct(York-9, .-27)
+
+Sentence #2 (21 tokens):
+It was bigger than the usual New Orleans group, and because it had more instruments written arrangements were necessary.
+[Text=It CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=bigger CharacterOffsetBegin=130 CharacterOffsetEnd=136 PartOfSpeech=JJR Lemma=bigger NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=142 CharacterOffsetEnd=145 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=usual CharacterOffsetBegin=146 CharacterOffsetEnd=151 PartOfSpeech=JJ Lemma=usual NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=152 CharacterOffsetEnd=155 PartOfSpeech=NNP Lemma=New NamedEntityTag=LOCATION]
+[Text=Orleans CharacterOffsetBegin=156 CharacterOffsetEnd=163 PartOfSpeech=NNP Lemma=Orleans NamedEntityTag=LOCATION]
+[Text=group CharacterOffsetBegin=164 CharacterOffsetEnd=169 PartOfSpeech=NN Lemma=group NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=169 CharacterOffsetEnd=170 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=175 CharacterOffsetEnd=182 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=183 CharacterOffsetEnd=185 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=186 CharacterOffsetEnd=189 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=instruments CharacterOffsetBegin=195 CharacterOffsetEnd=206 PartOfSpeech=NNS Lemma=instrument NamedEntityTag=O]
+[Text=written CharacterOffsetBegin=207 CharacterOffsetEnd=214 PartOfSpeech=VBN Lemma=write NamedEntityTag=O]
+[Text=arrangements CharacterOffsetBegin=215 CharacterOffsetEnd=227 PartOfSpeech=NNS Lemma=arrangement NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=228 CharacterOffsetEnd=232 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=necessary CharacterOffsetBegin=233 CharacterOffsetEnd=242 PartOfSpeech=JJ Lemma=necessary NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=242 CharacterOffsetEnd=243 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBD was)
+        (ADJP (JJR bigger))
+        (PP (IN than)
+          (NP (DT the) (JJ usual) (NNP New) (NNP Orleans) (NN group)))))
+    (, ,)
+    (CC and)
+    (S
+      (SBAR (IN because)
+        (S
+          (NP (PRP it))
+          (VP (VBD had)
+            (ADVP (RBR more)
+              (NP (NNS instruments)))
+            (VP (VBN written)))))
+      (NP (NNS arrangements))
+      (VP (VBD were)
+        (ADJP (JJ necessary))))
+    (. .)))
+
+root(ROOT-0, bigger-3)
+nsubj(bigger-3, It-1)
+cop(bigger-3, was-2)
+case(group-9, than-4)
+det(group-9, the-5)
+amod(group-9, usual-6)
+compound(group-9, New-7)
+compound(group-9, Orleans-8)
+nmod:than(bigger-3, group-9)
+punct(bigger-3, ,-10)
+cc(bigger-3, and-11)
+mark(written-17, because-12)
+nsubj(written-17, it-13)
+aux(written-17, had-14)
+advmod(written-17, more-15)
+nmod:npmod(more-15, instruments-16)
+advcl:because(necessary-20, written-17)
+nsubj(necessary-20, arrangements-18)
+cop(necessary-20, were-19)
+conj:and(bigger-3, necessary-20)
+punct(bigger-3, .-21)
+
+Sentence #3 (36 tokens):
+There were three trumpets, a trombone, and three saxophones, and it was not possible for all these men to memorize or merely improvise their different parts as was done in New Orleans.
+[Text=There CharacterOffsetBegin=244 CharacterOffsetEnd=249 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=250 CharacterOffsetEnd=254 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=255 CharacterOffsetEnd=260 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=trumpets CharacterOffsetBegin=261 CharacterOffsetEnd=269 PartOfSpeech=VBZ Lemma=trumpet NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=269 CharacterOffsetEnd=270 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=271 CharacterOffsetEnd=272 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=trombone CharacterOffsetBegin=273 CharacterOffsetEnd=281 PartOfSpeech=NN Lemma=trombone NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=281 CharacterOffsetEnd=282 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=283 CharacterOffsetEnd=286 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=287 CharacterOffsetEnd=292 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=saxophones CharacterOffsetBegin=293 CharacterOffsetEnd=303 PartOfSpeech=NNS Lemma=saxophone NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=303 CharacterOffsetEnd=304 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=305 CharacterOffsetEnd=308 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=309 CharacterOffsetEnd=311 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=312 CharacterOffsetEnd=315 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=316 CharacterOffsetEnd=319 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=possible CharacterOffsetBegin=320 CharacterOffsetEnd=328 PartOfSpeech=JJ Lemma=possible NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=329 CharacterOffsetEnd=332 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=333 CharacterOffsetEnd=336 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=337 CharacterOffsetEnd=342 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=343 CharacterOffsetEnd=346 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=347 CharacterOffsetEnd=349 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=memorize CharacterOffsetBegin=350 CharacterOffsetEnd=358 PartOfSpeech=VB Lemma=memorize NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=359 CharacterOffsetEnd=361 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=merely CharacterOffsetBegin=362 CharacterOffsetEnd=368 PartOfSpeech=RB Lemma=merely NamedEntityTag=O]
+[Text=improvise CharacterOffsetBegin=369 CharacterOffsetEnd=378 PartOfSpeech=VB Lemma=improvise NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=379 CharacterOffsetEnd=384 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=385 CharacterOffsetEnd=394 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=parts CharacterOffsetBegin=395 CharacterOffsetEnd=400 PartOfSpeech=NNS Lemma=part NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=401 CharacterOffsetEnd=403 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=404 CharacterOffsetEnd=407 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=408 CharacterOffsetEnd=412 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=413 CharacterOffsetEnd=415 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=416 CharacterOffsetEnd=419 PartOfSpeech=NNP Lemma=New NamedEntityTag=LOCATION]
+[Text=Orleans CharacterOffsetBegin=420 CharacterOffsetEnd=427 PartOfSpeech=NNP Lemma=Orleans NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=427 CharacterOffsetEnd=428 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (EX There))
+      (VP (VBD were)
+        (NP
+          (NP (CD three))
+          (SBAR
+            (S
+              (VP (VBZ trumpets))))
+          (, ,)
+          (NP (DT a) (NN trombone))
+          (, ,)
+          (CC and)
+          (NP (CD three) (NNS saxophones)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBD was) (RB not)
+        (ADJP (JJ possible)
+          (PP (IN for)
+            (NP (DT all) (DT these) (NNS men))))
+        (S
+          (VP (TO to)
+            (VP
+              (VP (VB memorize))
+              (CC or)
+              (VP
+                (ADVP (RB merely))
+                (VB improvise)
+                (NP (PRP$ their) (JJ different) (NNS parts))))))
+        (SBAR (IN as)
+          (S
+            (VP (VBD was)
+              (VP (VBN done)
+                (PP (IN in)
+                  (NP (NNP New) (NNP Orleans)))))))))
+    (. .)))
+
+root(ROOT-0, were-2)
+expl(were-2, There-1)
+nsubj(were-2, three-3)
+acl:relcl(three-3, trumpets-4)
+punct(three-3, ,-5)
+det(trombone-7, a-6)
+nsubj(were-2, trombone-7)
+conj:and(three-3, trombone-7)
+punct(three-3, ,-8)
+cc(three-3, and-9)
+nummod(saxophones-11, three-10)
+nsubj(were-2, saxophones-11)
+conj:and(three-3, saxophones-11)
+punct(were-2, ,-12)
+cc(were-2, and-13)
+nsubj(possible-17, it-14)
+nsubj:xsubj(memorize-23, it-14)
+nsubj:xsubj(improvise-26, it-14)
+cop(possible-17, was-15)
+neg(possible-17, not-16)
+conj:and(were-2, possible-17)
+case(men-21, for-18)
+det:predet(men-21, all-19)
+det(men-21, these-20)
+nmod:for(possible-17, men-21)
+mark(memorize-23, to-22)
+xcomp(possible-17, memorize-23)
+cc(memorize-23, or-24)
+advmod(improvise-26, merely-25)
+xcomp(possible-17, improvise-26)
+conj:or(memorize-23, improvise-26)
+nmod:poss(parts-29, their-27)
+amod(parts-29, different-28)
+dobj(improvise-26, parts-29)
+mark(done-32, as-30)
+auxpass(done-32, was-31)
+advcl:as(possible-17, done-32)
+case(Orleans-35, in-33)
+compound(Orleans-35, New-34)
+nmod:in(done-32, Orleans-35)
+punct(were-2, .-36)
+
+Sentence #4 (30 tokens):
+So Henderson and his chief arranger, Don Redman, both schooled musicians, wrote the music for the band to play, leaving gaps or choruses for improvisation.
+[Text=So CharacterOffsetBegin=429 CharacterOffsetEnd=431 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=Henderson CharacterOffsetBegin=432 CharacterOffsetEnd=441 PartOfSpeech=NNP Lemma=Henderson NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=442 CharacterOffsetEnd=445 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=446 CharacterOffsetEnd=449 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=chief CharacterOffsetBegin=450 CharacterOffsetEnd=455 PartOfSpeech=JJ Lemma=chief NamedEntityTag=O]
+[Text=arranger CharacterOffsetBegin=456 CharacterOffsetEnd=464 PartOfSpeech=NN Lemma=arranger NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=464 CharacterOffsetEnd=465 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Don CharacterOffsetBegin=466 CharacterOffsetEnd=469 PartOfSpeech=NNP Lemma=Don NamedEntityTag=PERSON]
+[Text=Redman CharacterOffsetBegin=470 CharacterOffsetEnd=476 PartOfSpeech=NNP Lemma=Redman NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=476 CharacterOffsetEnd=477 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=478 CharacterOffsetEnd=482 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=schooled CharacterOffsetBegin=483 CharacterOffsetEnd=491 PartOfSpeech=VBD Lemma=school NamedEntityTag=O]
+[Text=musicians CharacterOffsetBegin=492 CharacterOffsetEnd=501 PartOfSpeech=NNS Lemma=musician NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=501 CharacterOffsetEnd=502 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=wrote CharacterOffsetBegin=503 CharacterOffsetEnd=508 PartOfSpeech=VBD Lemma=write NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=509 CharacterOffsetEnd=512 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=513 CharacterOffsetEnd=518 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=519 CharacterOffsetEnd=522 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=523 CharacterOffsetEnd=526 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=band CharacterOffsetBegin=527 CharacterOffsetEnd=531 PartOfSpeech=NN Lemma=band NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=532 CharacterOffsetEnd=534 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=535 CharacterOffsetEnd=539 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=539 CharacterOffsetEnd=540 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=leaving CharacterOffsetBegin=541 CharacterOffsetEnd=548 PartOfSpeech=VBG Lemma=leave NamedEntityTag=O]
+[Text=gaps CharacterOffsetBegin=549 CharacterOffsetEnd=553 PartOfSpeech=NNS Lemma=gap NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=554 CharacterOffsetEnd=556 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=choruses CharacterOffsetBegin=557 CharacterOffsetEnd=565 PartOfSpeech=NNS Lemma=chorus NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=566 CharacterOffsetEnd=569 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=improvisation CharacterOffsetBegin=570 CharacterOffsetEnd=583 PartOfSpeech=NN Lemma=improvisation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=583 CharacterOffsetEnd=584 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB So))
+    (NP
+      (NP
+        (NP (NNP Henderson))
+        (CC and)
+        (NP (PRP$ his) (JJ chief) (NN arranger)))
+      (, ,)
+      (NP (NNP Don) (NNP Redman))
+      (, ,))
+    (DT both)
+    (VP
+      (VP (VBD schooled)
+        (NP (NNS musicians)))
+      (, ,)
+      (VP (VBD wrote)
+        (NP (DT the) (NN music))
+        (PP (IN for)
+          (NP (DT the) (NN band)
+            (S
+              (VP (TO to)
+                (VP (VB play)))))))
+      (, ,)
+      (S
+        (VP (VBG leaving)
+          (NP (NNS gaps)
+            (CC or)
+            (NNS choruses))
+          (PP (IN for)
+            (NP (NN improvisation))))))
+    (. .)))
+
+root(ROOT-0, schooled-12)
+advmod(schooled-12, So-1)
+nsubj(schooled-12, Henderson-2)
+cc(Henderson-2, and-3)
+nmod:poss(arranger-6, his-4)
+amod(arranger-6, chief-5)
+conj:and(Henderson-2, arranger-6)
+nsubj(schooled-12, arranger-6)
+punct(Henderson-2, ,-7)
+compound(Redman-9, Don-8)
+appos(Henderson-2, Redman-9)
+punct(Henderson-2, ,-10)
+dep(schooled-12, both-11)
+dobj(schooled-12, musicians-13)
+punct(schooled-12, ,-14)
+dep(schooled-12, wrote-15)
+det(music-17, the-16)
+dobj(wrote-15, music-17)
+case(band-20, for-18)
+det(band-20, the-19)
+nmod:for(wrote-15, band-20)
+mark(play-22, to-21)
+acl:to(band-20, play-22)
+punct(schooled-12, ,-23)
+advcl(schooled-12, leaving-24)
+dobj(leaving-24, gaps-25)
+cc(gaps-25, or-26)
+dobj(leaving-24, choruses-27)
+conj:or(gaps-25, choruses-27)
+case(improvisation-29, for-28)
+nmod:for(leaving-24, improvisation-29)
+punct(schooled-12, .-30)
+
+Sentence #5 (37 tokens):
+The rhythmic effect created by Armstrong in his solo choruses was stirring--an extra lift above and beyond the basic beat--and this sort of thing was what became known as "swinging."
+[Text=The CharacterOffsetBegin=585 CharacterOffsetEnd=588 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rhythmic CharacterOffsetBegin=589 CharacterOffsetEnd=597 PartOfSpeech=JJ Lemma=rhythmic NamedEntityTag=O]
+[Text=effect CharacterOffsetBegin=598 CharacterOffsetEnd=604 PartOfSpeech=NN Lemma=effect NamedEntityTag=O]
+[Text=created CharacterOffsetBegin=605 CharacterOffsetEnd=612 PartOfSpeech=VBN Lemma=create NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=613 CharacterOffsetEnd=615 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Armstrong CharacterOffsetBegin=616 CharacterOffsetEnd=625 PartOfSpeech=NNP Lemma=Armstrong NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=626 CharacterOffsetEnd=628 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=629 CharacterOffsetEnd=632 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=solo CharacterOffsetBegin=633 CharacterOffsetEnd=637 PartOfSpeech=NN Lemma=solo NamedEntityTag=O]
+[Text=choruses CharacterOffsetBegin=638 CharacterOffsetEnd=646 PartOfSpeech=NNS Lemma=chorus NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=647 CharacterOffsetEnd=650 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=stirring CharacterOffsetBegin=651 CharacterOffsetEnd=659 PartOfSpeech=VBG Lemma=stir NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=659 CharacterOffsetEnd=661 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=661 CharacterOffsetEnd=663 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=extra CharacterOffsetBegin=664 CharacterOffsetEnd=669 PartOfSpeech=JJ Lemma=extra NamedEntityTag=O]
+[Text=lift CharacterOffsetBegin=670 CharacterOffsetEnd=674 PartOfSpeech=NN Lemma=lift NamedEntityTag=O]
+[Text=above CharacterOffsetBegin=675 CharacterOffsetEnd=680 PartOfSpeech=IN Lemma=above NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=681 CharacterOffsetEnd=684 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=beyond CharacterOffsetBegin=685 CharacterOffsetEnd=691 PartOfSpeech=IN Lemma=beyond NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=692 CharacterOffsetEnd=695 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=basic CharacterOffsetBegin=696 CharacterOffsetEnd=701 PartOfSpeech=JJ Lemma=basic NamedEntityTag=O]
+[Text=beat CharacterOffsetBegin=702 CharacterOffsetEnd=706 PartOfSpeech=NN Lemma=beat NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=706 CharacterOffsetEnd=708 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=708 CharacterOffsetEnd=711 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=712 CharacterOffsetEnd=716 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=sort CharacterOffsetBegin=717 CharacterOffsetEnd=721 PartOfSpeech=NN Lemma=sort NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=722 CharacterOffsetEnd=724 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=725 CharacterOffsetEnd=730 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=731 CharacterOffsetEnd=734 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=735 CharacterOffsetEnd=739 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=became CharacterOffsetBegin=740 CharacterOffsetEnd=746 PartOfSpeech=VBD Lemma=become NamedEntityTag=O]
+[Text=known CharacterOffsetBegin=747 CharacterOffsetEnd=752 PartOfSpeech=VBN Lemma=know NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=753 CharacterOffsetEnd=755 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=756 CharacterOffsetEnd=757 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=swinging CharacterOffsetBegin=757 CharacterOffsetEnd=765 PartOfSpeech=NN Lemma=swinging NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=765 CharacterOffsetEnd=766 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=766 CharacterOffsetEnd=767 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (JJ rhythmic) (NN effect))
+        (VP (VBN created)
+          (PP (IN by)
+            (NP (NNP Armstrong)))
+          (PP (IN in)
+            (NP (PRP$ his) (NN solo) (NNS choruses)))))
+      (VP (VBD was)
+        (S
+          (VP (VBG stirring)
+            (PRN (: --)
+              (NP
+                (NP (DT an) (JJ extra) (NN lift))
+                (PP (IN above)
+                  (CC and)
+                  (IN beyond)
+                  (NP (DT the) (JJ basic) (NN beat))))
+              (: --))))))
+    (CC and)
+    (S
+      (NP
+        (NP (DT this) (NN sort))
+        (PP (IN of)
+          (NP (NN thing))))
+      (VP (VBD was)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBD became)
+              (VP (VBN known)
+                (PP (IN as) (`` ``)
+                  (NP (NN swinging)))))))))
+    (. .) ('' '')))
+
+root(ROOT-0, was-11)
+det(effect-3, The-1)
+amod(effect-3, rhythmic-2)
+nsubj(was-11, effect-3)
+acl(effect-3, created-4)
+case(Armstrong-6, by-5)
+nmod:by(created-4, Armstrong-6)
+case(choruses-10, in-7)
+nmod:poss(choruses-10, his-8)
+compound(choruses-10, solo-9)
+nmod:in(created-4, choruses-10)
+xcomp(was-11, stirring-12)
+punct(lift-16, ---13)
+det(lift-16, an-14)
+amod(lift-16, extra-15)
+dep(stirring-12, lift-16)
+dep(stirring-12, lift-16')
+conj:and(lift-16, lift-16')
+case(beat-22, above-17)
+cc(above-17, and-18)
+conj:and(above-17, beyond-19)
+det(beat-22, the-20)
+amod(beat-22, basic-21)
+nmod:above(lift-16, beat-22)
+nmod:beyond(lift-16', beat-22)
+punct(lift-16, ---23)
+cc(was-11, and-24)
+det(sort-26, this-25)
+nsubj(was-29, sort-26)
+case(thing-28, of-27)
+nmod:of(sort-26, thing-28)
+conj:and(was-11, was-29)
+nsubj(became-31, what-30)
+ccomp(was-29, became-31)
+xcomp(became-31, known-32)
+case(swinging-35, as-33)
+punct(swinging-35, ``-34)
+nmod:as(known-32, swinging-35)
+punct(was-11, .-36)
+punct(was-11, ''-37)
+
+Coreference set:
+	(4,2,[2,3]) -> (1,14,[13,15]), that is: "Henderson" -> "Fletcher Henderson"
+	(4,4,[4,5]) -> (1,14,[13,15]), that is: "his" -> "Fletcher Henderson"
+Coreference set:
+	(5,6,[6,7]) -> (1,4,[1,5]), that is: "Armstrong" -> "-LSB- Louis -RSB- Armstrong"
+	(5,8,[8,9]) -> (1,4,[1,5]), that is: "his" -> "-LSB- Louis -RSB- Armstrong"
+Coreference set:
+	(2,1,[1,2]) -> (1,18,[18,27]), that is: "It" -> "one of the best dance bands of the period"
+	(2,13,[13,14]) -> (1,18,[18,27]), that is: "it" -> "one of the best dance bands of the period"
+Coreference set:
+	(3,35,[34,36]) -> (2,8,[7,9]), that is: "New Orleans" -> "New Orleans"
+Coreference set:
+	(3,27,[27,28]) -> (3,11,[10,12]), that is: "their" -> "three saxophones"

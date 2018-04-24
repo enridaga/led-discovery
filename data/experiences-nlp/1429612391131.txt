@@ -1,0 +1,145 @@
+Sentence #1 (28 tokens):
+When we were playing the Booker T. Washington theatre in Kansas City, we went to hear Joe Turner sing the blues every night, all night.
+[Text=When CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Booker CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Booker NamedEntityTag=O]
+[Text=T. CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=T. NamedEntityTag=O]
+[Text=Washington CharacterOffsetBegin=35 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Washington NamedEntityTag=LOCATION]
+[Text=theatre CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=theatre NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Kansas CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=Kansas NamedEntityTag=LOCATION]
+[Text=City CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=City NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=Joe CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=Joe NamedEntityTag=PERSON]
+[Text=Turner CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=NNP Lemma=Turner NamedEntityTag=PERSON]
+[Text=sing CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=VB Lemma=sing NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=blues CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=NNS Lemma=blues NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=DT Lemma=every NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1D" quant="every" tid="t1" type="SET" value="TNI">every night</TIMEX3>]
+[Text=night CharacterOffsetBegin=118 CharacterOffsetEnd=123 PartOfSpeech=NN Lemma=night NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1D" quant="every" tid="t1" type="SET" value="TNI">every night</TIMEX3>]
+[Text=, CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=night CharacterOffsetBegin=129 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t2" type="TIME" value="TNI">night</TIMEX3>]
+[Text=. CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP we))
+        (VP (VBD were)
+          (VP (VBG playing)
+            (NP
+              (NP (DT the) (NNP Booker) (NNP T.) (NNP Washington) (NN theatre))
+              (PP (IN in)
+                (NP (NNP Kansas) (NNP City))))))))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBD went)
+      (S
+        (VP (TO to)
+          (VP (VB hear)
+            (S
+              (NP (NNP Joe) (NNP Turner))
+              (VP (VB sing)
+                (NP (DT the) (NNS blues))
+                (NP-TMP (DT every) (NN night))
+                (, ,)
+                (NP (DT all) (NN night))))))))
+    (. .)))
+
+root(ROOT-0, went-15)
+advmod(playing-4, When-1)
+nsubj(playing-4, we-2)
+aux(playing-4, were-3)
+advcl(went-15, playing-4)
+det(theatre-9, the-5)
+compound(theatre-9, Booker-6)
+compound(theatre-9, T.-7)
+compound(theatre-9, Washington-8)
+dobj(playing-4, theatre-9)
+case(City-12, in-10)
+compound(City-12, Kansas-11)
+nmod:in(theatre-9, City-12)
+punct(went-15, ,-13)
+nsubj(went-15, we-14)
+nsubj:xsubj(hear-17, we-14)
+mark(hear-17, to-16)
+xcomp(went-15, hear-17)
+compound(Turner-19, Joe-18)
+nsubj(sing-20, Turner-19)
+ccomp(hear-17, sing-20)
+det(blues-22, the-21)
+dobj(sing-20, blues-22)
+det(night-24, every-23)
+nmod:tmod(sing-20, night-24)
+punct(sing-20, ,-25)
+det(night-27, all-26)
+nmod:tmod(sing-20, night-27)
+punct(went-15, .-28)
+
+Sentence #2 (15 tokens):
+Pete Johnson was playing piano for him, and it was a great kick.
+[Text=Pete CharacterOffsetBegin=136 CharacterOffsetEnd=140 PartOfSpeech=NNP Lemma=Pete NamedEntityTag=PERSON]
+[Text=Johnson CharacterOffsetBegin=141 CharacterOffsetEnd=148 PartOfSpeech=NNP Lemma=Johnson NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=149 CharacterOffsetEnd=152 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=153 CharacterOffsetEnd=160 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=161 CharacterOffsetEnd=166 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=174 CharacterOffsetEnd=175 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=176 CharacterOffsetEnd=179 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=180 CharacterOffsetEnd=182 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=183 CharacterOffsetEnd=186 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=189 CharacterOffsetEnd=194 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=kick CharacterOffsetBegin=195 CharacterOffsetEnd=199 PartOfSpeech=NN Lemma=kick NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=199 CharacterOffsetEnd=200 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Pete) (NNP Johnson))
+      (VP (VBD was)
+        (VP (VBG playing)
+          (NP
+            (NP (NN piano))
+            (PP (IN for)
+              (NP (PRP him)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBD was)
+        (NP (DT a) (JJ great) (NN kick))))
+    (. .)))
+
+root(ROOT-0, playing-4)
+compound(Johnson-2, Pete-1)
+nsubj(playing-4, Johnson-2)
+aux(playing-4, was-3)
+dobj(playing-4, piano-5)
+case(him-7, for-6)
+nmod:for(piano-5, him-7)
+punct(playing-4, ,-8)
+cc(playing-4, and-9)
+nsubj(kick-14, it-10)
+cop(kick-14, was-11)
+det(kick-14, a-12)
+amod(kick-14, great-13)
+conj:and(playing-4, kick-14)
+punct(playing-4, .-15)
+
+Coreference set:
+	(1,14,[14,15]) -> (1,2,[2,3]), that is: "we" -> "we"
+Coreference set:
+	(2,7,[7,8]) -> (2,2,[1,3]), that is: "him" -> "Pete Johnson"
+Coreference set:
+	(2,5,[5,8]) -> (2,14,[12,15]), that is: "piano for him" -> "a great kick"
+	(2,10,[10,11]) -> (2,14,[12,15]), that is: "it" -> "a great kick"

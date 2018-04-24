@@ -1,0 +1,79 @@
+Sentence #1 (24 tokens):
+JH's Poulenc concert at the Chapel, including four choruses from Dialogues des Carmélites, as grand with organ as with orchestra.
+[Text=JH CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NN Lemma=jh NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Poulenc CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Poulenc NamedEntityTag=MISC]
+[Text=concert CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Chapel CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=chapel NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=including CharacterOffsetBegin=36 CharacterOffsetEnd=45 PartOfSpeech=VBG Lemma=include NamedEntityTag=O]
+[Text=four CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=CD Lemma=four NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.0]
+[Text=choruses CharacterOffsetBegin=51 CharacterOffsetEnd=59 PartOfSpeech=NNS Lemma=chorus NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Dialogues CharacterOffsetBegin=65 CharacterOffsetEnd=74 PartOfSpeech=NNPS Lemma=Dialogues NamedEntityTag=O]
+[Text=des CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=FW Lemma=des NamedEntityTag=O]
+[Text=Carmélites CharacterOffsetBegin=79 CharacterOffsetEnd=89 PartOfSpeech=FW Lemma=carmélites NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=grand CharacterOffsetBegin=94 CharacterOffsetEnd=99 PartOfSpeech=JJ Lemma=grand NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=organ CharacterOffsetBegin=105 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=organ NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=114 CharacterOffsetEnd=118 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=orchestra CharacterOffsetBegin=119 CharacterOffsetEnd=128 PartOfSpeech=NN Lemma=orchestra NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP (NN JH) (POS 's))
+      (NNP Poulenc) (NN concert))
+    (PP (IN at)
+      (NP
+        (NP (DT the) (NN Chapel))
+        (, ,)
+        (PP (VBG including)
+          (NP
+            (NP (CD four) (NNS choruses))
+            (PP (IN from)
+              (NP
+                (NP (NNPS Dialogues))
+                (NP (FW des) (FW Carmélites))))))))
+    (, ,)
+    (PP (IN as)
+      (NP
+        (NP (JJ grand))
+        (PP (IN with)
+          (NP
+            (NP (NN organ))
+            (PP (IN as)
+              (PP (IN with)
+                (NP (NN orchestra))))))))
+    (. .)))
+
+root(ROOT-0, concert-4)
+nmod:poss(concert-4, JH-1)
+case(JH-1, 's-2)
+compound(concert-4, Poulenc-3)
+case(Chapel-7, at-5)
+det(Chapel-7, the-6)
+nmod:at(concert-4, Chapel-7)
+punct(Chapel-7, ,-8)
+case(choruses-11, including-9)
+nummod(choruses-11, four-10)
+nmod:including(Chapel-7, choruses-11)
+case(Dialogues-13, from-12)
+nmod:from(choruses-11, Dialogues-13)
+compound(Carmélites-15, des-14)
+dep(Dialogues-13, Carmélites-15)
+punct(concert-4, ,-16)
+case(grand-18, as-17)
+nmod:as(concert-4, grand-18)
+case(organ-20, with-19)
+nmod:with(grand-18, organ-20)
+case(orchestra-23, as-21)
+case(orchestra-23, with-22)
+nmod:with(organ-20, orchestra-23)
+punct(concert-4, .-24)
+

@@ -1,0 +1,34 @@
+Sentence #1 (10 tokens):
+Joachim played with him the 'Kreutzer Sonata.'
+[Text=Joachim CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Joachim NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Kreutzer CharacterOffsetBegin=29 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Kreutzer NamedEntityTag=PERSON]
+[Text=Sonata CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Sonata NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Joachim))
+    (VP (VBD played)
+      (PP (IN with)
+        (NP (PRP him)))
+      (NP (DT the) (`` `) (NNP Kreutzer) (NNP Sonata)))
+    (. .) ('' ')))
+
+root(ROOT-0, played-2)
+nsubj(played-2, Joachim-1)
+case(him-4, with-3)
+nmod:with(played-2, him-4)
+det(Sonata-8, the-5)
+punct(Sonata-8, `-6)
+compound(Sonata-8, Kreutzer-7)
+dobj(played-2, Sonata-8)
+punct(played-2, .-9)
+punct(played-2, '-10)
+
+Coreference set:
+	(1,4,[4,5]) -> (1,1,[1,2]), that is: "him" -> "Joachim"

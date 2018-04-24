@@ -1,0 +1,101 @@
+Sentence #1 (16 tokens):
+Mum has a singing aft - they do my songs* & some Beethoven canons.
+[Text=Mum CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Mum NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=singing NamedEntityTag=O]
+[Text=aft CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=aft NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=songs CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NNS Lemma=song NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=Beethoven CharacterOffsetBegin=49 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=PERSON]
+[Text=canons CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NNS Lemma=canon NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Mum))
+    (VP (VBZ has)
+      (S
+        (NP
+          (NP
+            (NP (DT a) (NN singing) (NN aft))
+            (: -)
+            (S
+              (NP (PRP they))
+              (VP (VBP do)
+                (NP
+                  (NP
+                    (NP (PRP$ my))
+                    (NP (NNS songs)))
+                  (X (SYM *))))))
+          (NP (CC &)
+            (DT some) (NNP Beethoven) (NNS canons)))))
+    (. .)))
+
+root(ROOT-0, has-2)
+nsubj(has-2, Mum-1)
+det(aft-5, a-3)
+compound(aft-5, singing-4)
+xcomp(has-2, aft-5)
+punct(aft-5, --6)
+nsubj(do-8, they-7)
+dep(aft-5, do-8)
+dobj(do-8, my-9)
+dep(my-9, songs-10)
+dep(my-9, *-11)
+cc(canons-15, &-12)
+det(canons-15, some-13)
+compound(canons-15, Beethoven-14)
+dep(aft-5, canons-15)
+punct(has-2, .-16)
+
+Sentence #2 (13 tokens):
+Only Mrs Owles, Mrs. Back & Miss Newsum come tho'.
+[Text=Only CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=Mrs CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Mrs NamedEntityTag=O]
+[Text=Owles CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Owles NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Mrs. CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=Mrs. NamedEntityTag=O]
+[Text=Back CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=Back NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Miss CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=NNP Lemma=Miss NamedEntityTag=O]
+[Text=Newsum CharacterOffsetBegin=100 CharacterOffsetEnd=106 PartOfSpeech=NNP Lemma=Newsum NamedEntityTag=LOCATION]
+[Text=come CharacterOffsetBegin=107 CharacterOffsetEnd=111 PartOfSpeech=VB Lemma=come NamedEntityTag=O]
+[Text=tho CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=tho NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (RB Only)
+      (NP (NNP Mrs) (NNP Owles))
+      (, ,)
+      (NP (NNP Mrs.) (NNP Back))
+      (CC &)
+      (NP (NNP Miss) (NNP Newsum)))
+    (VP (VB come)
+      (NP (NN tho) ('' ')))
+    (. .)))
+
+root(ROOT-0, come-10)
+advmod(Owles-3, Only-1)
+compound(Owles-3, Mrs-2)
+nsubj(come-10, Owles-3)
+punct(Owles-3, ,-4)
+compound(Back-6, Mrs.-5)
+conj:&(Owles-3, Back-6)
+nsubj(come-10, Back-6)
+cc(Owles-3, &-7)
+compound(Newsum-9, Miss-8)
+conj:&(Owles-3, Newsum-9)
+nsubj(come-10, Newsum-9)
+dobj(come-10, tho-11)
+punct(tho-11, '-12)
+punct(come-10, .-13)
+
+Coreference set:
+	(1,9,[9,12]) -> (1,1,[1,2]), that is: "my songs *" -> "Mum"

@@ -1,0 +1,208 @@
+Sentence #1 (20 tokens):
+After dinner I go with F. May (his tickets) to Oriane Madrigal Society concert at Aeolian Hall.
+[Text=After CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=F. CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=F. NamedEntityTag=PERSON]
+[Text=May CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=May NamedEntityTag=PERSON Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-05">May</TIMEX3>]
+[Text=-LRB- CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=tickets CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=NNS Lemma=ticket NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Oriane CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Oriane NamedEntityTag=ORGANIZATION]
+[Text=Madrigal CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Madrigal NamedEntityTag=ORGANIZATION]
+[Text=Society CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Society NamedEntityTag=ORGANIZATION]
+[Text=concert CharacterOffsetBegin=71 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Aeolian CharacterOffsetBegin=82 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=Aeolian NamedEntityTag=LOCATION]
+[Text=Hall CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=Hall NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN After)
+      (NP (NN dinner)))
+    (NP (PRP I))
+    (VP (VBP go)
+      (PP (IN with)
+        (NP
+          (NP
+            (NP (NNP F.) (NNP May))
+            (PRN (-LRB- -LRB-)
+              (NP (PRP$ his) (NNS tickets))
+              (-RRB- -RRB-)))
+          (PP (TO to)
+            (NP (NNP Oriane) (NNP Madrigal) (NNP Society) (NN concert)))))
+      (PP (IN at)
+        (NP (NNP Aeolian) (NNP Hall))))
+    (. .)))
+
+root(ROOT-0, go-4)
+case(dinner-2, After-1)
+nmod:after(go-4, dinner-2)
+nsubj(go-4, I-3)
+case(May-7, with-5)
+compound(May-7, F.-6)
+nmod:with(go-4, May-7)
+punct(tickets-10, -LRB--8)
+nmod:poss(tickets-10, his-9)
+appos(May-7, tickets-10)
+punct(tickets-10, -RRB--11)
+case(concert-16, to-12)
+compound(concert-16, Oriane-13)
+compound(concert-16, Madrigal-14)
+compound(concert-16, Society-15)
+nmod:to(May-7, concert-16)
+case(Hall-19, at-17)
+compound(Hall-19, Aeolian-18)
+nmod:at(go-4, Hall-19)
+punct(go-4, .-20)
+
+Sentence #2 (4 tokens):
+under C.K. Scott.
+[Text=under CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=C.K. CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=NNP Lemma=C.K. NamedEntityTag=PERSON]
+[Text=Scott CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=NNP Lemma=Scott NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN under)
+      (NP (NNP C.K.) (NNP Scott)))
+    (. .)))
+
+root(ROOT-0, Scott-3)
+case(Scott-3, under-1)
+compound(Scott-3, C.K.-2)
+punct(Scott-3, .-4)
+
+Sentence #3 (16 tokens):
+This choir sings quite well - but no remarkable tone, ensemble, or intonation.
+[Text=This CharacterOffsetBegin=114 CharacterOffsetEnd=118 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=choir CharacterOffsetBegin=119 CharacterOffsetEnd=124 PartOfSpeech=NN Lemma=choir NamedEntityTag=O]
+[Text=sings CharacterOffsetBegin=125 CharacterOffsetEnd=130 PartOfSpeech=VBZ Lemma=sing NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=131 CharacterOffsetEnd=136 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=144 CharacterOffsetEnd=147 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=148 CharacterOffsetEnd=150 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=remarkable CharacterOffsetBegin=151 CharacterOffsetEnd=161 PartOfSpeech=JJ Lemma=remarkable NamedEntityTag=O]
+[Text=tone CharacterOffsetBegin=162 CharacterOffsetEnd=166 PartOfSpeech=NN Lemma=tone NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=166 CharacterOffsetEnd=167 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=ensemble CharacterOffsetBegin=168 CharacterOffsetEnd=176 PartOfSpeech=NN Lemma=ensemble NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=176 CharacterOffsetEnd=177 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=178 CharacterOffsetEnd=180 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=intonation CharacterOffsetBegin=181 CharacterOffsetEnd=191 PartOfSpeech=NN Lemma=intonation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=191 CharacterOffsetEnd=192 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT This) (NN choir))
+    (VP (VBZ sings)
+      (ADVP (RB quite) (RB well))
+      (: -)
+      (PP (CC but)
+        (NP
+          (NP (DT no) (JJ remarkable) (NN tone))
+          (, ,)
+          (NP (NN ensemble))
+          (, ,)
+          (CC or)
+          (NP (NN intonation)))))
+    (. .)))
+
+root(ROOT-0, sings-3)
+det(choir-2, This-1)
+nsubj(sings-3, choir-2)
+advmod(well-5, quite-4)
+advmod(sings-3, well-5)
+punct(sings-3, --6)
+case(tone-10, but-7)
+neg(tone-10, no-8)
+amod(tone-10, remarkable-9)
+nmod:but(sings-3, tone-10)
+punct(tone-10, ,-11)
+nmod:but(sings-3, ensemble-12)
+conj:or(tone-10, ensemble-12)
+punct(tone-10, ,-13)
+cc(tone-10, or-14)
+nmod:but(sings-3, intonation-15)
+conj:or(tone-10, intonation-15)
+punct(sings-3, .-16)
+
+Sentence #4 (21 tokens):
+Although pitch was maintained well, as in Harrison's interminable & dull-as-ditchwater "Blessed Damsel" for female voices.
+[Text=Although CharacterOffsetBegin=193 CharacterOffsetEnd=201 PartOfSpeech=IN Lemma=although NamedEntityTag=O]
+[Text=pitch CharacterOffsetBegin=202 CharacterOffsetEnd=207 PartOfSpeech=NN Lemma=pitch NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=208 CharacterOffsetEnd=211 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=maintained CharacterOffsetBegin=212 CharacterOffsetEnd=222 PartOfSpeech=VBN Lemma=maintain NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=223 CharacterOffsetEnd=227 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=227 CharacterOffsetEnd=228 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=229 CharacterOffsetEnd=231 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=232 CharacterOffsetEnd=234 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Harrison CharacterOffsetBegin=235 CharacterOffsetEnd=243 PartOfSpeech=NNP Lemma=Harrison NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=243 CharacterOffsetEnd=245 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=interminable CharacterOffsetBegin=246 CharacterOffsetEnd=258 PartOfSpeech=JJ Lemma=interminable NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=259 CharacterOffsetEnd=260 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=dull-as-ditchwater CharacterOffsetBegin=261 CharacterOffsetEnd=279 PartOfSpeech=JJ Lemma=dull-as-ditchwater NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=280 CharacterOffsetEnd=281 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Blessed CharacterOffsetBegin=281 CharacterOffsetEnd=288 PartOfSpeech=JJ Lemma=blessed NamedEntityTag=O]
+[Text=Damsel CharacterOffsetBegin=289 CharacterOffsetEnd=295 PartOfSpeech=NN Lemma=damsel NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=295 CharacterOffsetEnd=296 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=297 CharacterOffsetEnd=300 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=female CharacterOffsetBegin=301 CharacterOffsetEnd=307 PartOfSpeech=JJ Lemma=female NamedEntityTag=O]
+[Text=voices CharacterOffsetBegin=308 CharacterOffsetEnd=314 PartOfSpeech=NNS Lemma=voice NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=314 CharacterOffsetEnd=315 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (SBAR (IN Although)
+      (S
+        (NP (NN pitch))
+        (VP (VBD was)
+          (VP (VBN maintained)
+            (PP
+              (ADVP (RB well))
+              (, ,) (IN as) (IN in)
+              (NP
+                (NP (NNP Harrison) (POS 's))
+                (NP
+                  (NP (JJ interminable))
+                  (CC &)
+                  (NP (JJ dull-as-ditchwater)
+                    (NP
+                      (NP (`` ``) (JJ Blessed) (NN Damsel) ('' ''))
+                      (PP (IN for)
+                        (NP (JJ female) (NNS voices))))))))))))
+    (. .)))
+
+root(ROOT-0, maintained-4)
+mark(maintained-4, Although-1)
+nsubjpass(maintained-4, pitch-2)
+auxpass(maintained-4, was-3)
+advmod(Harrison-9, well-5)
+punct(Harrison-9, ,-6)
+case(Harrison-9, as-7)
+case(Harrison-9, in-8)
+nmod:in(maintained-4, Harrison-9)
+case(Harrison-9, 's-10)
+dep(Harrison-9, interminable-11)
+cc(interminable-11, &-12)
+amod(Damsel-16, dull-as-ditchwater-13)
+punct(Damsel-16, ``-14)
+amod(Damsel-16, Blessed-15)
+dep(Harrison-9, Damsel-16)
+conj:&(interminable-11, Damsel-16)
+punct(Damsel-16, ''-17)
+case(voices-20, for-18)
+amod(voices-20, female-19)
+nmod:for(Damsel-16, voices-20)
+punct(maintained-4, .-21)
+
+Sentence #5 (1 tokens):
+*
+[Text=* CharacterOffsetBegin=315 CharacterOffsetEnd=316 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+(ROOT
+  (X (SYM *)))
+
+root(ROOT-0, *-1)
+

@@ -1,0 +1,323 @@
+Sentence #1 (29 tokens):
+... Regina Horowitz was at that time probably a more advanced pianist than Volodya, but she played the standard repertoire, like Chopin’s ballades and mazurkas.
+[Text=... CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=Regina CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Regina NamedEntityTag=PERSON]
+[Text=Horowitz CharacterOffsetBegin=11 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Horowitz NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=probably CharacterOffsetBegin=37 CharacterOffsetEnd=45 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=advanced CharacterOffsetBegin=53 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=advanced NamedEntityTag=O]
+[Text=pianist CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=pianist NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=Volodya CharacterOffsetBegin=75 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Volodya NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=92 CharacterOffsetEnd=98 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=standard CharacterOffsetBegin=103 CharacterOffsetEnd=111 PartOfSpeech=JJ Lemma=standard NamedEntityTag=O]
+[Text=repertoire CharacterOffsetBegin=112 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=repertoire NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=Chopin CharacterOffsetBegin=129 CharacterOffsetEnd=135 PartOfSpeech=NNP Lemma=Chopin NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=135 CharacterOffsetEnd=137 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=ballades CharacterOffsetBegin=138 CharacterOffsetEnd=146 PartOfSpeech=NNS Lemma=ballade NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=mazurkas CharacterOffsetBegin=151 CharacterOffsetEnd=159 PartOfSpeech=NNS Lemma=mazurka NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (: ...)
+    (S
+      (NP (NNP Regina) (NNP Horowitz))
+      (VP (VBD was)
+        (PP (IN at)
+          (NP (DT that) (NN time)))
+        (ADVP (RB probably))
+        (NP
+          (NP (DT a)
+            (ADJP (RBR more) (JJ advanced))
+            (NN pianist))
+          (PP (IN than)
+            (NP (NNP Volodya))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP she))
+      (VP (VBD played)
+        (NP (DT the) (JJ standard) (NN repertoire))
+        (, ,)
+        (PP (IN like)
+          (NP
+            (NP (NNP Chopin) (POS 's))
+            (NNS ballades)
+            (CC and)
+            (NNS mazurkas)))))
+    (. .)))
+
+root(ROOT-0, pianist-12)
+punct(pianist-12, ...-1)
+compound(Horowitz-3, Regina-2)
+nsubj(pianist-12, Horowitz-3)
+cop(pianist-12, was-4)
+case(time-7, at-5)
+det(time-7, that-6)
+nmod:at(pianist-12, time-7)
+advmod(pianist-12, probably-8)
+det(pianist-12, a-9)
+advmod(advanced-11, more-10)
+amod(pianist-12, advanced-11)
+case(Volodya-14, than-13)
+nmod:than(pianist-12, Volodya-14)
+punct(pianist-12, ,-15)
+cc(pianist-12, but-16)
+nsubj(played-18, she-17)
+conj:but(pianist-12, played-18)
+det(repertoire-21, the-19)
+amod(repertoire-21, standard-20)
+dobj(played-18, repertoire-21)
+punct(played-18, ,-22)
+case(ballades-26, like-23)
+nmod:poss(ballades-26, Chopin-24)
+case(Chopin-24, 's-25)
+nmod:like(played-18, ballades-26)
+cc(ballades-26, and-27)
+nmod:like(played-18, mazurkas-28)
+conj:and(ballades-26, mazurkas-28)
+punct(pianist-12, .-29)
+
+Sentence #2 (45 tokens):
+When Volodya sat down at the piano, he played something totally unusual: his own version of the sword-forging scene from Wagner’s Sigfried, or improvisations on themes from Tristan und Isolde, or enormous chunks from Rimsky-Korsakov’s opera Coq d’Or.
+[Text=When CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=Volodya CharacterOffsetBegin=166 CharacterOffsetEnd=173 PartOfSpeech=NNP Lemma=Volodya NamedEntityTag=PERSON]
+[Text=sat CharacterOffsetBegin=174 CharacterOffsetEnd=177 PartOfSpeech=VBD Lemma=sit NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=178 CharacterOffsetEnd=182 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=183 CharacterOffsetEnd=185 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=186 CharacterOffsetEnd=189 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=190 CharacterOffsetEnd=195 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=195 CharacterOffsetEnd=196 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=197 CharacterOffsetEnd=199 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=200 CharacterOffsetEnd=206 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=207 CharacterOffsetEnd=216 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=totally CharacterOffsetBegin=217 CharacterOffsetEnd=224 PartOfSpeech=RB Lemma=totally NamedEntityTag=O]
+[Text=unusual CharacterOffsetBegin=225 CharacterOffsetEnd=232 PartOfSpeech=JJ Lemma=unusual NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=232 CharacterOffsetEnd=233 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=234 CharacterOffsetEnd=237 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=238 CharacterOffsetEnd=241 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=version CharacterOffsetBegin=242 CharacterOffsetEnd=249 PartOfSpeech=NN Lemma=version NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=250 CharacterOffsetEnd=252 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=253 CharacterOffsetEnd=256 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sword-forging CharacterOffsetBegin=257 CharacterOffsetEnd=270 PartOfSpeech=JJ Lemma=sword-forging NamedEntityTag=O]
+[Text=scene CharacterOffsetBegin=271 CharacterOffsetEnd=276 PartOfSpeech=NN Lemma=scene NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=277 CharacterOffsetEnd=281 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Wagner CharacterOffsetBegin=282 CharacterOffsetEnd=288 PartOfSpeech=NNP Lemma=Wagner NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=288 CharacterOffsetEnd=290 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Sigfried CharacterOffsetBegin=291 CharacterOffsetEnd=299 PartOfSpeech=NNP Lemma=Sigfried NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=299 CharacterOffsetEnd=300 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=301 CharacterOffsetEnd=303 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=improvisations CharacterOffsetBegin=304 CharacterOffsetEnd=318 PartOfSpeech=NNS Lemma=improvisation NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=319 CharacterOffsetEnd=321 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=themes CharacterOffsetBegin=322 CharacterOffsetEnd=328 PartOfSpeech=NNS Lemma=theme NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=329 CharacterOffsetEnd=333 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Tristan CharacterOffsetBegin=334 CharacterOffsetEnd=341 PartOfSpeech=NNP Lemma=Tristan NamedEntityTag=O]
+[Text=und CharacterOffsetBegin=342 CharacterOffsetEnd=345 PartOfSpeech=NNP Lemma=und NamedEntityTag=O]
+[Text=Isolde CharacterOffsetBegin=346 CharacterOffsetEnd=352 PartOfSpeech=NNP Lemma=Isolde NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=352 CharacterOffsetEnd=353 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=354 CharacterOffsetEnd=356 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=enormous CharacterOffsetBegin=357 CharacterOffsetEnd=365 PartOfSpeech=JJ Lemma=enormous NamedEntityTag=O]
+[Text=chunks CharacterOffsetBegin=366 CharacterOffsetEnd=372 PartOfSpeech=NNS Lemma=chunk NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=373 CharacterOffsetEnd=377 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Rimsky-Korsakov CharacterOffsetBegin=378 CharacterOffsetEnd=393 PartOfSpeech=NNP Lemma=Rimsky-Korsakov NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=393 CharacterOffsetEnd=395 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=opera CharacterOffsetBegin=396 CharacterOffsetEnd=401 PartOfSpeech=NN Lemma=opera NamedEntityTag=O]
+[Text=Coq CharacterOffsetBegin=402 CharacterOffsetEnd=405 PartOfSpeech=NNP Lemma=Coq NamedEntityTag=O]
+[Text=d'Or CharacterOffsetBegin=406 CharacterOffsetEnd=410 PartOfSpeech=NNP Lemma=d'Or NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=410 CharacterOffsetEnd=411 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (NNP Volodya))
+        (VP (VBD sat)
+          (PRT (RP down))
+          (PP (IN at)
+            (NP (DT the) (NN piano))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD played)
+      (NP
+        (NP
+          (NP (NN something))
+          (ADJP (RB totally) (JJ unusual)))
+        (: :)
+        (NP
+          (NP (PRP$ his) (JJ own) (NN version))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (JJ sword-forging) (NN scene))
+              (PP (IN from)
+                (NP
+                  (NP
+                    (NP (NNP Wagner) (POS 's))
+                    (NNP Sigfried))
+                  (, ,)
+                  (CC or)
+                  (NP
+                    (NP (NNS improvisations))
+                    (PP (IN on)
+                      (NP
+                        (NP (NNS themes))
+                        (PP (IN from)
+                          (NP (NNP Tristan) (NNP und) (NNP Isolde)))))))))))
+        (, ,)
+        (CC or)
+        (NP
+          (NP (JJ enormous) (NNS chunks))
+          (PP (IN from)
+            (NP
+              (NP (NNP Rimsky-Korsakov) (POS 's))
+              (NN opera) (NNP Coq) (NNP d'Or))))))
+    (. .)))
+
+root(ROOT-0, played-10)
+advmod(sat-3, When-1)
+nsubj(sat-3, Volodya-2)
+advcl(played-10, sat-3)
+compound:prt(sat-3, down-4)
+case(piano-7, at-5)
+det(piano-7, the-6)
+nmod:at(sat-3, piano-7)
+punct(played-10, ,-8)
+nsubj(played-10, he-9)
+dobj(played-10, something-11)
+advmod(unusual-13, totally-12)
+amod(something-11, unusual-13)
+punct(something-11, :-14)
+nmod:poss(version-17, his-15)
+amod(version-17, own-16)
+dobj(played-10, version-17)
+conj:or(something-11, version-17)
+case(scene-21, of-18)
+det(scene-21, the-19)
+amod(scene-21, sword-forging-20)
+nmod:of(version-17, scene-21)
+case(Sigfried-25, from-22)
+nmod:poss(Sigfried-25, Wagner-23)
+case(Wagner-23, 's-24)
+nmod:from(scene-21, Sigfried-25)
+punct(Sigfried-25, ,-26)
+cc(Sigfried-25, or-27)
+nmod:from(scene-21, improvisations-28)
+conj:or(Sigfried-25, improvisations-28)
+case(themes-30, on-29)
+nmod:on(improvisations-28, themes-30)
+case(Isolde-34, from-31)
+compound(Isolde-34, Tristan-32)
+compound(Isolde-34, und-33)
+nmod:from(themes-30, Isolde-34)
+punct(something-11, ,-35)
+cc(something-11, or-36)
+amod(chunks-38, enormous-37)
+dobj(played-10, chunks-38)
+conj:or(something-11, chunks-38)
+case(d'Or-44, from-39)
+nmod:poss(d'Or-44, Rimsky-Korsakov-40)
+case(Rimsky-Korsakov-40, 's-41)
+compound(d'Or-44, opera-42)
+compound(d'Or-44, Coq-43)
+nmod:from(chunks-38, d'Or-44)
+punct(played-10, .-45)
+
+Sentence #3 (9 tokens):
+Pianists never performed things like this in concerts!
+[Text=Pianists CharacterOffsetBegin=412 CharacterOffsetEnd=420 PartOfSpeech=NNPS Lemma=Pianists NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=421 CharacterOffsetEnd=426 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=performed CharacterOffsetBegin=427 CharacterOffsetEnd=436 PartOfSpeech=VBN Lemma=perform NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=437 CharacterOffsetEnd=443 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=444 CharacterOffsetEnd=448 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=449 CharacterOffsetEnd=453 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=454 CharacterOffsetEnd=456 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=concerts CharacterOffsetBegin=457 CharacterOffsetEnd=465 PartOfSpeech=NNS Lemma=concert NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=465 CharacterOffsetEnd=466 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNPS Pianists))
+    (ADVP (RB never))
+    (VP (VBN performed)
+      (NP (NNS things))
+      (PP (IN like)
+        (NP (DT this)))
+      (PP (IN in)
+        (NP (NNS concerts))))
+    (. !)))
+
+root(ROOT-0, performed-3)
+nsubj(performed-3, Pianists-1)
+neg(performed-3, never-2)
+dobj(performed-3, things-4)
+case(this-6, like-5)
+nmod:like(performed-3, this-6)
+case(concerts-8, in-7)
+nmod:in(performed-3, concerts-8)
+punct(performed-3, !-9)
+
+Sentence #4 (6 tokens):
+I was stunned, astonished.
+[Text=I CharacterOffsetBegin=467 CharacterOffsetEnd=468 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=469 CharacterOffsetEnd=472 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=stunned CharacterOffsetBegin=473 CharacterOffsetEnd=480 PartOfSpeech=JJ Lemma=stunned NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=480 CharacterOffsetEnd=481 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=astonished CharacterOffsetBegin=482 CharacterOffsetEnd=492 PartOfSpeech=JJ Lemma=astonished NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=492 CharacterOffsetEnd=493 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (ADJP
+        (ADJP (JJ stunned))
+        (, ,)
+        (ADJP (JJ astonished))))
+    (. .)))
+
+root(ROOT-0, stunned-3)
+nsubj(stunned-3, I-1)
+cop(stunned-3, was-2)
+punct(stunned-3, ,-4)
+dep(stunned-3, astonished-5)
+punct(stunned-3, .-6)
+
+Sentence #5 (6 tokens):
+It was a musical hurricane.
+[Text=It CharacterOffsetBegin=494 CharacterOffsetEnd=496 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=497 CharacterOffsetEnd=500 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=501 CharacterOffsetEnd=502 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=musical CharacterOffsetBegin=503 CharacterOffsetEnd=510 PartOfSpeech=JJ Lemma=musical NamedEntityTag=O]
+[Text=hurricane CharacterOffsetBegin=511 CharacterOffsetEnd=520 PartOfSpeech=NN Lemma=hurricane NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=520 CharacterOffsetEnd=521 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (NP (DT a) (JJ musical) (NN hurricane)))
+    (. .)))
+
+root(ROOT-0, hurricane-5)
+nsubj(hurricane-5, It-1)
+cop(hurricane-5, was-2)
+det(hurricane-5, a-3)
+amod(hurricane-5, musical-4)
+punct(hurricane-5, .-6)
+
+Coreference set:
+	(1,17,[17,18]) -> (1,3,[2,4]), that is: "she" -> "Regina Horowitz"
+Coreference set:
+	(2,2,[2,3]) -> (1,14,[14,15]), that is: "Volodya" -> "Volodya"
+	(2,9,[9,10]) -> (1,14,[14,15]), that is: "he" -> "Volodya"
+	(2,15,[15,16]) -> (1,14,[14,15]), that is: "his" -> "Volodya"
+Coreference set:
+	(3,6,[6,7]) -> (5,5,[3,6]), that is: "this" -> "a musical hurricane"
+	(5,1,[1,2]) -> (5,5,[3,6]), that is: "It" -> "a musical hurricane"

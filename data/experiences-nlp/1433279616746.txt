@@ -1,0 +1,383 @@
+Sentence #1 (11 tokens):
+I recollect Tremazzani, Naldi, and Ambro- getti.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=recollect CharacterOffsetBegin=2 CharacterOffsetEnd=11 PartOfSpeech=VBP Lemma=recollect NamedEntityTag=O]
+[Text=Tremazzani CharacterOffsetBegin=12 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Tremazzani NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Naldi CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Naldi NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Ambro CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Ambro NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=getti CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=gettus NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP recollect)
+      (NP (NNP Tremazzani) (, ,) (NNP Naldi) (, ,)
+        (CC and)
+        (NNP Ambro))
+      (: -)
+      (NP (NNS getti)))
+    (. .)))
+
+root(ROOT-0, recollect-2)
+nsubj(recollect-2, I-1)
+dobj(recollect-2, Tremazzani-3)
+punct(Tremazzani-3, ,-4)
+dobj(recollect-2, Naldi-5)
+conj:and(Tremazzani-3, Naldi-5)
+punct(Tremazzani-3, ,-6)
+cc(Tremazzani-3, and-7)
+dobj(recollect-2, Ambro-8)
+conj:and(Tremazzani-3, Ambro-8)
+punct(recollect-2, --9)
+parataxis(recollect-2, getti-10)
+punct(recollect-2, .-11)
+
+Sentence #2 (12 tokens):
+They were fine actors, but not so preeminent in song.
+[Text=They CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=actors CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=NNS Lemma=actor NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=preeminent CharacterOffsetBegin=83 CharacterOffsetEnd=93 PartOfSpeech=JJ Lemma=preeminent NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=song CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=song NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBD were)
+        (NP (JJ fine) (NNS actors))))
+    (, ,)
+    (CC but)
+    (FRAG (RB not)
+      (ADJP (RB so) (JJ preeminent)
+        (PP (IN in)
+          (NP (NN song)))))
+    (. .)))
+
+root(ROOT-0, actors-4)
+nsubj(actors-4, They-1)
+cop(actors-4, were-2)
+amod(actors-4, fine-3)
+punct(actors-4, ,-5)
+cc(actors-4, but-6)
+conj:but(actors-4, not-7)
+advmod(preeminent-9, so-8)
+dep(not-7, preeminent-9)
+case(song-11, in-10)
+nmod:in(preeminent-9, song-11)
+punct(actors-4, .-12)
+
+Sentence #3 (9 tokens):
+The greatest now on the stage is Lablache.
+[Text=The CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=greatest CharacterOffsetBegin=107 CharacterOffsetEnd=115 PartOfSpeech=JJS Lemma=greatest NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=116 CharacterOffsetEnd=119 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=on CharacterOffsetBegin=120 CharacterOffsetEnd=122 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=stage CharacterOffsetBegin=127 CharacterOffsetEnd=132 PartOfSpeech=NN Lemma=stage NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Lablache CharacterOffsetBegin=136 CharacterOffsetEnd=144 PartOfSpeech=NNP Lemma=Lablache NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJS greatest))
+      (PP
+        (ADVP (RB now))
+        (IN on)
+        (NP (DT the) (NN stage))))
+    (VP (VBZ is)
+      (NP (NNP Lablache)))
+    (. .)))
+
+root(ROOT-0, Lablache-8)
+det(greatest-2, The-1)
+nsubj(Lablache-8, greatest-2)
+advmod(stage-6, now-3)
+case(stage-6, on-4)
+det(stage-6, the-5)
+nmod:on(greatest-2, stage-6)
+cop(Lablache-8, is-7)
+punct(Lablache-8, .-9)
+
+Sentence #4 (50 tokens):
+Considered merely as a singer, however, he could not be placed in the front rank ; but the peculiar force of his voice, and his gigantic figure, combined with a remarkable neatness of enunciation and lightness of step, render his performance unique and grand.
+[Text=Considered CharacterOffsetBegin=146 CharacterOffsetEnd=156 PartOfSpeech=VBN Lemma=consider NamedEntityTag=O]
+[Text=merely CharacterOffsetBegin=157 CharacterOffsetEnd=163 PartOfSpeech=RB Lemma=merely NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=164 CharacterOffsetEnd=166 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=167 CharacterOffsetEnd=168 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=singer CharacterOffsetBegin=169 CharacterOffsetEnd=175 PartOfSpeech=NN Lemma=singer NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=175 CharacterOffsetEnd=176 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=however CharacterOffsetBegin=177 CharacterOffsetEnd=184 PartOfSpeech=RB Lemma=however NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=184 CharacterOffsetEnd=185 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=186 CharacterOffsetEnd=188 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=189 CharacterOffsetEnd=194 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=199 CharacterOffsetEnd=201 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=placed CharacterOffsetBegin=202 CharacterOffsetEnd=208 PartOfSpeech=VBN Lemma=place NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=209 CharacterOffsetEnd=211 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=212 CharacterOffsetEnd=215 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=front CharacterOffsetBegin=216 CharacterOffsetEnd=221 PartOfSpeech=JJ Lemma=front NamedEntityTag=O]
+[Text=rank CharacterOffsetBegin=222 CharacterOffsetEnd=226 PartOfSpeech=NN Lemma=rank NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=227 CharacterOffsetEnd=228 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=229 CharacterOffsetEnd=232 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=233 CharacterOffsetEnd=236 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=peculiar CharacterOffsetBegin=237 CharacterOffsetEnd=245 PartOfSpeech=JJ Lemma=peculiar NamedEntityTag=O]
+[Text=force CharacterOffsetBegin=246 CharacterOffsetEnd=251 PartOfSpeech=NN Lemma=force NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=252 CharacterOffsetEnd=254 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=255 CharacterOffsetEnd=258 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=voice CharacterOffsetBegin=259 CharacterOffsetEnd=264 PartOfSpeech=NN Lemma=voice NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=264 CharacterOffsetEnd=265 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=266 CharacterOffsetEnd=269 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=270 CharacterOffsetEnd=273 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=gigantic CharacterOffsetBegin=274 CharacterOffsetEnd=282 PartOfSpeech=JJ Lemma=gigantic NamedEntityTag=O]
+[Text=figure CharacterOffsetBegin=283 CharacterOffsetEnd=289 PartOfSpeech=NN Lemma=figure NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=289 CharacterOffsetEnd=290 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=combined CharacterOffsetBegin=291 CharacterOffsetEnd=299 PartOfSpeech=VBN Lemma=combine NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=300 CharacterOffsetEnd=304 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=305 CharacterOffsetEnd=306 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=remarkable CharacterOffsetBegin=307 CharacterOffsetEnd=317 PartOfSpeech=JJ Lemma=remarkable NamedEntityTag=O]
+[Text=neatness CharacterOffsetBegin=318 CharacterOffsetEnd=326 PartOfSpeech=NN Lemma=neatness NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=327 CharacterOffsetEnd=329 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=enunciation CharacterOffsetBegin=330 CharacterOffsetEnd=341 PartOfSpeech=NN Lemma=enunciation NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=342 CharacterOffsetEnd=345 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=lightness CharacterOffsetBegin=346 CharacterOffsetEnd=355 PartOfSpeech=NN Lemma=lightness NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=356 CharacterOffsetEnd=358 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=step CharacterOffsetBegin=359 CharacterOffsetEnd=363 PartOfSpeech=NN Lemma=step NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=363 CharacterOffsetEnd=364 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=render CharacterOffsetBegin=365 CharacterOffsetEnd=371 PartOfSpeech=VBP Lemma=render NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=372 CharacterOffsetEnd=375 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=376 CharacterOffsetEnd=387 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=unique CharacterOffsetBegin=388 CharacterOffsetEnd=394 PartOfSpeech=JJ Lemma=unique NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=395 CharacterOffsetEnd=398 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=grand CharacterOffsetBegin=399 CharacterOffsetEnd=404 PartOfSpeech=JJ Lemma=grand NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=404 CharacterOffsetEnd=405 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (VP (VBN Considered)
+        (ADVP (RB merely))
+        (PP (IN as)
+          (NP (DT a) (NN singer)))
+        (, ,)
+        (S
+          (S
+            (ADVP (RB however))
+            (, ,)
+            (NP (PRP he))
+            (VP (MD could) (RB not)
+              (VP (VB be)
+                (VP (VBN placed)
+                  (PP (IN in)
+                    (NP (DT the) (JJ front) (NN rank)))))))
+          (: ;)
+          (CC but)
+          (FRAG
+            (NP
+              (NP (DT the) (JJ peculiar) (NN force))
+              (PP (IN of)
+                (NP (PRP$ his) (NN voice))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (PRP$ his) (JJ gigantic) (NN figure))
+        (, ,)
+        (VP (VBN combined)
+          (PP (IN with)
+            (NP
+              (NP (DT a) (JJ remarkable) (NN neatness))
+              (PP (IN of)
+                (NP
+                  (NP (NN enunciation)
+                    (CC and)
+                    (NN lightness))
+                  (PP (IN of)
+                    (NP (NN step))))))))
+        (, ,))
+      (VP (VBP render)
+        (NP
+          (NP (PRP$ his) (NN performance))
+          (ADJP (JJ unique)
+            (CC and)
+            (JJ grand)))))
+    (. .)))
+
+root(ROOT-0, Considered-1)
+advmod(Considered-1, merely-2)
+case(singer-5, as-3)
+det(singer-5, a-4)
+nmod:as(Considered-1, singer-5)
+punct(Considered-1, ,-6)
+advmod(placed-13, however-7)
+punct(placed-13, ,-8)
+nsubjpass(placed-13, he-9)
+aux(placed-13, could-10)
+neg(placed-13, not-11)
+auxpass(placed-13, be-12)
+xcomp(Considered-1, placed-13)
+case(rank-17, in-14)
+det(rank-17, the-15)
+amod(rank-17, front-16)
+nmod:in(placed-13, rank-17)
+punct(placed-13, ;-18)
+cc(placed-13, but-19)
+det(force-22, the-20)
+amod(force-22, peculiar-21)
+xcomp(Considered-1, force-22)
+conj:but(placed-13, force-22)
+case(voice-25, of-23)
+nmod:poss(voice-25, his-24)
+nmod:of(force-22, voice-25)
+punct(Considered-1, ,-26)
+cc(Considered-1, and-27)
+nmod:poss(figure-30, his-28)
+amod(figure-30, gigantic-29)
+nsubj(render-44, figure-30)
+punct(figure-30, ,-31)
+acl(figure-30, combined-32)
+case(neatness-36, with-33)
+det(neatness-36, a-34)
+amod(neatness-36, remarkable-35)
+nmod:with(combined-32, neatness-36)
+case(enunciation-38, of-37)
+nmod:of(neatness-36, enunciation-38)
+cc(enunciation-38, and-39)
+nmod:of(neatness-36, lightness-40)
+conj:and(enunciation-38, lightness-40)
+case(step-42, of-41)
+nmod:of(enunciation-38, step-42)
+punct(figure-30, ,-43)
+conj:and(Considered-1, render-44)
+nmod:poss(performance-46, his-45)
+dobj(render-44, performance-46)
+amod(performance-46, unique-47)
+cc(unique-47, and-48)
+amod(performance-46, grand-49)
+conj:and(unique-47, grand-49)
+punct(Considered-1, .-50)
+
+Sentence #5 (29 tokens):
+The volume of sound which he pours out upon the notes C, D, and E above the lines, makes him the Stentor of the stage.
+[Text=The CharacterOffsetBegin=406 CharacterOffsetEnd=409 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=volume CharacterOffsetBegin=410 CharacterOffsetEnd=416 PartOfSpeech=NN Lemma=volume NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=417 CharacterOffsetEnd=419 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=sound CharacterOffsetBegin=420 CharacterOffsetEnd=425 PartOfSpeech=NN Lemma=sound NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=426 CharacterOffsetEnd=431 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=432 CharacterOffsetEnd=434 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=pours CharacterOffsetBegin=435 CharacterOffsetEnd=440 PartOfSpeech=VBZ Lemma=pour NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=441 CharacterOffsetEnd=444 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=upon CharacterOffsetBegin=445 CharacterOffsetEnd=449 PartOfSpeech=IN Lemma=upon NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=450 CharacterOffsetEnd=453 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=notes CharacterOffsetBegin=454 CharacterOffsetEnd=459 PartOfSpeech=NNS Lemma=note NamedEntityTag=O]
+[Text=C CharacterOffsetBegin=460 CharacterOffsetEnd=461 PartOfSpeech=NN Lemma=c NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=461 CharacterOffsetEnd=462 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=D CharacterOffsetBegin=463 CharacterOffsetEnd=464 PartOfSpeech=NN Lemma=d NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=464 CharacterOffsetEnd=465 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=466 CharacterOffsetEnd=469 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=E CharacterOffsetBegin=470 CharacterOffsetEnd=471 PartOfSpeech=NN Lemma=e NamedEntityTag=O]
+[Text=above CharacterOffsetBegin=472 CharacterOffsetEnd=477 PartOfSpeech=IN Lemma=above NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=478 CharacterOffsetEnd=481 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=lines CharacterOffsetBegin=482 CharacterOffsetEnd=487 PartOfSpeech=NNS Lemma=line NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=487 CharacterOffsetEnd=488 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=makes CharacterOffsetBegin=489 CharacterOffsetEnd=494 PartOfSpeech=VBZ Lemma=make NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=495 CharacterOffsetEnd=498 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=499 CharacterOffsetEnd=502 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Stentor CharacterOffsetBegin=503 CharacterOffsetEnd=510 PartOfSpeech=NNP Lemma=Stentor NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=511 CharacterOffsetEnd=513 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=514 CharacterOffsetEnd=517 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=stage CharacterOffsetBegin=518 CharacterOffsetEnd=523 PartOfSpeech=NN Lemma=stage NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=523 CharacterOffsetEnd=524 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT The) (NN volume))
+        (PP (IN of)
+          (NP (NN sound)))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (NP (PRP he))
+            (VP (VBZ pours)
+              (PRT (RP out))
+              (PP (IN upon)
+                (NP
+                  (NP (DT the) (NNS notes) (NN C))
+                  (, ,)
+                  (NP (NN D))))))))
+      (, ,)
+      (CC and)
+      (NP
+        (NP (NN E))
+        (PP (IN above)
+          (NP (DT the) (NNS lines))))
+      (, ,))
+    (VP (VBZ makes)
+      (S
+        (NP (PRP him))
+        (NP
+          (NP (DT the) (NNP Stentor))
+          (PP (IN of)
+            (NP (DT the) (NN stage))))))
+    (. .)))
+
+root(ROOT-0, makes-22)
+det(volume-2, The-1)
+dobj(pours-7, volume-2)
+nsubj(makes-22, volume-2)
+case(sound-4, of-3)
+nmod:of(volume-2, sound-4)
+ref(volume-2, which-5)
+nsubj(pours-7, he-6)
+acl:relcl(volume-2, pours-7)
+compound:prt(pours-7, out-8)
+case(C-12, upon-9)
+det(C-12, the-10)
+compound(C-12, notes-11)
+nmod:upon(pours-7, C-12)
+punct(C-12, ,-13)
+appos(C-12, D-14)
+punct(volume-2, ,-15)
+cc(volume-2, and-16)
+conj:and(volume-2, E-17)
+dobj(pours-7, E-17)
+nsubj(makes-22, E-17)
+case(lines-20, above-18)
+det(lines-20, the-19)
+nmod:above(E-17, lines-20)
+punct(volume-2, ,-21)
+nsubj(Stentor-25, him-23)
+det(Stentor-25, the-24)
+xcomp(makes-22, Stentor-25)
+case(stage-28, of-26)
+det(stage-28, the-27)
+nmod:of(Stentor-25, stage-28)
+punct(makes-22, .-29)
+
+Coreference set:
+	(1,3,[3,9]) -> (2,4,[3,5]), that is: "Tremazzani , Naldi , and Ambro" -> "fine actors"
+	(2,1,[1,2]) -> (2,4,[3,5]), that is: "They" -> "fine actors"
+Coreference set:
+	(3,2,[1,7]) -> (3,8,[8,9]), that is: "The greatest now on the stage" -> "Lablache"
+Coreference set:
+	(5,28,[27,29]) -> (3,6,[5,7]), that is: "the stage" -> "the stage"
+Coreference set:
+	(4,9,[9,10]) -> (4,5,[4,6]), that is: "he" -> "a singer"
+	(4,24,[24,25]) -> (4,5,[4,6]), that is: "his" -> "a singer"
+	(4,28,[28,29]) -> (4,5,[4,6]), that is: "his" -> "a singer"
+	(4,45,[45,46]) -> (4,5,[4,6]), that is: "his" -> "a singer"
+	(5,6,[6,7]) -> (4,5,[4,6]), that is: "he" -> "a singer"
+	(5,23,[23,24]) -> (4,5,[4,6]), that is: "him" -> "a singer"
+Coreference set:
+	(5,17,[17,21]) -> (5,2,[1,15]), that is: "E above the lines" -> "The volume of sound which he pours out upon the notes C , D"

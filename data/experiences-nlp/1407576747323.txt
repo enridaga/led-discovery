@@ -1,0 +1,184 @@
+Sentence #1 (3 tokens):
+Lords day.
+[Text=Lords CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNPS Lemma=Lords NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t1" type="DURATION" value="P1D">day</TIMEX3>]
+[Text=. CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNPS Lords))
+    (NP (NN day))
+    (. .)))
+
+root(ROOT-0, Lords-1)
+dep(Lords-1, day-2)
+punct(Lords-1, .-3)
+
+Sentence #2 (21 tokens):
+To Whitehall to chapel, where I got in with ease by going before the Lord Chancellor with Mr. Kipps.
+[Text=To CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Whitehall CharacterOffsetBegin=14 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Whitehall NamedEntityTag=ORGANIZATION]
+[Text=to CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=chapel CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=VB Lemma=chapel NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=ease CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=ease NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Lord CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=NNP Lemma=Lord NamedEntityTag=O]
+[Text=Chancellor CharacterOffsetBegin=85 CharacterOffsetEnd=95 PartOfSpeech=NNP Lemma=Chancellor NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Kipps CharacterOffsetBegin=105 CharacterOffsetEnd=110 PartOfSpeech=NNP Lemma=Kipps NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (TO To)
+      (NP
+        (NP (NNP Whitehall))
+        (SBAR
+          (S
+            (VP (TO to)
+              (VP (VB chapel)))))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP I))
+            (VP (VBD got)
+              (PP (IN in)
+                (PP (IN with)
+                  (VP (NN ease)
+                    (PP (IN by)
+                      (S
+                        (VP (VBG going)
+                          (PP (IN before)
+                            (NP (DT the)
+                              (NAC (NNP Lord) (NNP Chancellor)
+                                (PP (IN with)
+                                  (NP (NNP Mr.))))
+                              (NNP Kipps))))))))))))))
+    (. .)))
+
+root(ROOT-0, Whitehall-2)
+case(Whitehall-2, To-1)
+mark(chapel-4, to-3)
+acl:to(Whitehall-2, chapel-4)
+punct(Whitehall-2, ,-5)
+advmod(got-8, where-6)
+nsubj(got-8, I-7)
+acl:relcl(Whitehall-2, got-8)
+case(ease-11, in-9)
+case(ease-11, with-10)
+dep(got-8, ease-11)
+mark(going-13, by-12)
+advcl:by(ease-11, going-13)
+case(Kipps-20, before-14)
+det(Kipps-20, the-15)
+dep(Kipps-20, Lord-16)
+dep(Lord-16, Chancellor-17)
+case(Mr.-19, with-18)
+nmod:with(Lord-16, Mr.-19)
+nmod:before(going-13, Kipps-20)
+punct(Whitehall-2, .-21)
+
+Sentence #3 (27 tokens):
+Here I heard very good Musique, the first time that I remember ever to have heard the Organs and singing-men in Surplices in my life.
+[Text=Here CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=119 CharacterOffsetEnd=124 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=Musique CharacterOffsetBegin=135 CharacterOffsetEnd=142 PartOfSpeech=NNP Lemma=Musique NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=144 CharacterOffsetEnd=147 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=148 CharacterOffsetEnd=153 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=time CharacterOffsetBegin=154 CharacterOffsetEnd=158 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=159 CharacterOffsetEnd=163 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=164 CharacterOffsetEnd=165 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=remember CharacterOffsetBegin=166 CharacterOffsetEnd=174 PartOfSpeech=VBP Lemma=remember NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=175 CharacterOffsetEnd=179 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=180 CharacterOffsetEnd=182 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=183 CharacterOffsetEnd=187 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=188 CharacterOffsetEnd=193 PartOfSpeech=VBN Lemma=hear NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=194 CharacterOffsetEnd=197 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Organs CharacterOffsetBegin=198 CharacterOffsetEnd=204 PartOfSpeech=NNS Lemma=organ NamedEntityTag=MISC]
+[Text=and CharacterOffsetBegin=205 CharacterOffsetEnd=208 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=singing-men CharacterOffsetBegin=209 CharacterOffsetEnd=220 PartOfSpeech=NNS Lemma=singing-man NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=221 CharacterOffsetEnd=223 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Surplices CharacterOffsetBegin=224 CharacterOffsetEnd=233 PartOfSpeech=NNP Lemma=Surplices NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=234 CharacterOffsetEnd=236 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=237 CharacterOffsetEnd=239 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=life CharacterOffsetBegin=240 CharacterOffsetEnd=244 PartOfSpeech=NN Lemma=life NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=244 CharacterOffsetEnd=245 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Here))
+    (NP (PRP I))
+    (VP (VBD heard)
+      (ADJP (RB very) (JJ good))
+      (NP-TMP
+        (NP (NNP Musique))
+        (, ,)
+        (NP
+          (NP (DT the) (JJ first) (NN time))
+          (SBAR (IN that)
+            (S
+              (NP (PRP I))
+              (VP (VBP remember)
+                (ADVP (RB ever))
+                (S
+                  (VP (TO to)
+                    (VP (VB have)
+                      (VP (VBN heard)
+                        (NP
+                          (NP (DT the) (NNS Organs)
+                            (CC and)
+                            (NNS singing-men))
+                          (PP (IN in)
+                            (NP (NNP Surplices))))
+                        (PP (IN in)
+                          (NP (PRP$ my) (NN life)))))))))))))
+    (. .)))
+
+root(ROOT-0, heard-3)
+advmod(heard-3, Here-1)
+nsubj(heard-3, I-2)
+advmod(good-5, very-4)
+xcomp(heard-3, good-5)
+nmod:tmod(heard-3, Musique-6)
+punct(Musique-6, ,-7)
+det(time-10, the-8)
+amod(time-10, first-9)
+appos(Musique-6, time-10)
+mark(remember-13, that-11)
+nsubj(remember-13, I-12)
+nsubj:xsubj(heard-17, I-12)
+dep(time-10, remember-13)
+advmod(remember-13, ever-14)
+mark(heard-17, to-15)
+aux(heard-17, have-16)
+xcomp(remember-13, heard-17)
+det(Organs-19, the-18)
+dobj(heard-17, Organs-19)
+cc(Organs-19, and-20)
+dobj(heard-17, singing-men-21)
+conj:and(Organs-19, singing-men-21)
+case(Surplices-23, in-22)
+nmod:in(Organs-19, Surplices-23)
+case(life-26, in-24)
+nmod:poss(life-26, my-25)
+nmod:in(heard-17, life-26)
+punct(heard-3, .-27)
+
+Coreference set:
+	(3,2,[2,3]) -> (2,7,[7,8]), that is: "I" -> "I"
+	(3,12,[12,13]) -> (2,7,[7,8]), that is: "I" -> "I"
+	(3,25,[25,26]) -> (2,7,[7,8]), that is: "my" -> "I"
+Coreference set:
+	(3,10,[8,27]) -> (3,6,[6,7]), that is: "the first time that I remember ever to have heard the Organs and singing-men in Surplices in my life" -> "Musique"

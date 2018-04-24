@@ -1,0 +1,407 @@
+Sentence #1 (6 tokens):
+Go out afterwards to Phil.
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=afterwards CharacterOffsetBegin=7 CharacterOffsetEnd=17 PartOfSpeech=RB Lemma=afterwards NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Phil CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Phil NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PRT (RP out))
+      (PP
+        (ADVP (RB afterwards))
+        (TO to)
+        (NP (NNP Phil))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+compound:prt(Go-1, out-2)
+advmod(Phil-5, afterwards-3)
+case(Phil-5, to-4)
+nmod:to(Go-1, Phil-5)
+punct(Go-1, .-6)
+
+Sentence #2 (13 tokens):
+concert (Queen's Hall) - Malcolme Sargent - Idomeneo ov.
+[Text=concert CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Queen CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=queen NamedEntityTag=LOCATION]
+[Text='s CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=POS Lemma='s NamedEntityTag=LOCATION]
+[Text=Hall CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=hall NamedEntityTag=LOCATION]
+[Text=-RRB- CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Malcolme CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Malcolme NamedEntityTag=O]
+[Text=Sargent CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=Sargent NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Idomeneo CharacterOffsetBegin=71 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Idomeneo NamedEntityTag=O]
+[Text=ov CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=ov NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NN concert))
+    (PRN (-LRB- -LRB-)
+      (NP
+        (NP (NN Queen) (POS 's))
+        (NN Hall))
+      (-RRB- -RRB-))
+    (: -)
+    (NP
+      (NP (NNP Malcolme) (NNP Sargent))
+      (: -)
+      (NP (NNP Idomeneo) (NN ov)))
+    (. .)))
+
+root(ROOT-0, concert-1)
+punct(Hall-5, -LRB--2)
+nmod:poss(Hall-5, Queen-3)
+case(Queen-3, 's-4)
+appos(concert-1, Hall-5)
+punct(Hall-5, -RRB--6)
+punct(concert-1, --7)
+compound(Sargent-9, Malcolme-8)
+dep(concert-1, Sargent-9)
+punct(Sargent-9, --10)
+compound(ov-12, Idomeneo-11)
+dep(Sargent-9, ov-12)
+punct(concert-1, .-13)
+
+Sentence #3 (12 tokens):
+& Surprise Symphony - tepid performances - rather bad in detail.
+[Text=& CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Surprise CharacterOffsetBegin=86 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=Surprise NamedEntityTag=O]
+[Text=Symphony CharacterOffsetBegin=95 CharacterOffsetEnd=103 PartOfSpeech=NNP Lemma=Symphony NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=tepid CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=JJ Lemma=tepid NamedEntityTag=O]
+[Text=performances CharacterOffsetBegin=112 CharacterOffsetEnd=124 PartOfSpeech=NNS Lemma=performance NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=127 CharacterOffsetEnd=133 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=134 CharacterOffsetEnd=137 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=138 CharacterOffsetEnd=140 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=detail CharacterOffsetBegin=141 CharacterOffsetEnd=147 PartOfSpeech=NN Lemma=detail NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (CC &)
+      (NP
+        (NP (NNP Surprise) (NNP Symphony))
+        (: -)
+        (NP
+          (NP (JJ tepid) (NNS performances))
+          (: -)
+          (ADJP (RB rather) (JJ bad)
+            (PP (IN in))))))
+    (VP (NN detail))
+    (. .)))
+
+root(ROOT-0, detail-11)
+cc(Symphony-3, &-1)
+compound(Symphony-3, Surprise-2)
+nsubj(detail-11, Symphony-3)
+punct(Symphony-3, --4)
+amod(performances-6, tepid-5)
+dep(Symphony-3, performances-6)
+punct(performances-6, --7)
+advmod(bad-9, rather-8)
+amod(performances-6, bad-9)
+nmod(bad-9, in-10)
+punct(detail-11, .-12)
+
+Sentence #4 (6 tokens):
+* Ravel's New pft.
+[Text=* CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=Ravel CharacterOffsetBegin=150 CharacterOffsetEnd=155 PartOfSpeech=NNP Lemma=Ravel NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=155 CharacterOffsetEnd=157 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=NNP Lemma=New NamedEntityTag=O]
+[Text=pft CharacterOffsetBegin=162 CharacterOffsetEnd=165 PartOfSpeech=NN Lemma=pft NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (X (SYM *))
+    (NP
+      (NP (NNP Ravel) (POS 's))
+      (NNP New))
+    (VP (NN pft))
+    (. .)))
+
+root(ROOT-0, pft-5)
+dep(pft-5, *-1)
+nmod:poss(New-4, Ravel-2)
+case(Ravel-2, 's-3)
+nsubj(pft-5, New-4)
+punct(pft-5, .-6)
+
+Sentence #5 (8 tokens):
+concerto which I cannot take seriously.
+[Text=concerto CharacterOffsetBegin=167 CharacterOffsetEnd=175 PartOfSpeech=NN Lemma=concerto NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=176 CharacterOffsetEnd=181 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=182 CharacterOffsetEnd=183 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=184 CharacterOffsetEnd=187 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=187 CharacterOffsetEnd=190 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=191 CharacterOffsetEnd=195 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=seriously CharacterOffsetBegin=196 CharacterOffsetEnd=205 PartOfSpeech=RB Lemma=seriously NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=205 CharacterOffsetEnd=206 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP
+      (NP (NN concerto))
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (NP (PRP I))
+          (VP (MD can) (RB not)
+            (VP (VB take)
+              (ADVP (RB seriously)))))))
+    (. .)))
+
+root(ROOT-0, concerto-1)
+dobj(take-6, concerto-1)
+ref(concerto-1, which-2)
+nsubj(take-6, I-3)
+aux(take-6, can-4)
+neg(take-6, not-5)
+acl:relcl(concerto-1, take-6)
+advmod(take-6, seriously-7)
+punct(concerto-1, .-8)
+
+Sentence #6 (11 tokens):
+Brilliantly played by Marguérite Long & inefficiently conducted by Ravel.
+[Text=Brilliantly CharacterOffsetBegin=207 CharacterOffsetEnd=218 PartOfSpeech=RB Lemma=brilliantly NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=219 CharacterOffsetEnd=225 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=226 CharacterOffsetEnd=228 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Marguérite CharacterOffsetBegin=229 CharacterOffsetEnd=239 PartOfSpeech=NNP Lemma=Marguérite NamedEntityTag=PERSON]
+[Text=Long CharacterOffsetBegin=240 CharacterOffsetEnd=244 PartOfSpeech=NNP Lemma=Long NamedEntityTag=PERSON]
+[Text=& CharacterOffsetBegin=245 CharacterOffsetEnd=246 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=inefficiently CharacterOffsetBegin=247 CharacterOffsetEnd=260 PartOfSpeech=RB Lemma=inefficiently NamedEntityTag=O]
+[Text=conducted CharacterOffsetBegin=261 CharacterOffsetEnd=270 PartOfSpeech=VBN Lemma=conduct NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=271 CharacterOffsetEnd=273 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Ravel CharacterOffsetBegin=274 CharacterOffsetEnd=279 PartOfSpeech=NNP Lemma=Ravel NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=279 CharacterOffsetEnd=280 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP
+      (ADVP (RB Brilliantly))
+      (VBN played)
+      (PP (IN by)
+        (NP
+          (NP (NNP Marguérite) (NNP Long))
+          (SBAR
+            (S
+              (NP (CC &))
+              (ADVP (RB inefficiently))
+              (VP (VBN conducted)
+                (PP (IN by)
+                  (NP (NNP Ravel)))))))))
+    (. .)))
+
+root(ROOT-0, played-2)
+advmod(played-2, Brilliantly-1)
+case(Long-5, by-3)
+compound(Long-5, Marguérite-4)
+nmod:by(played-2, Long-5)
+nsubj(conducted-8, &-6)
+advmod(conducted-8, inefficiently-7)
+acl:relcl(Long-5, conducted-8)
+case(Ravel-10, by-9)
+nmod:by(conducted-8, Ravel-10)
+punct(played-2, .-11)
+
+Sentence #7 (7 tokens):
+** The slow movement is piffle!
+[Text=** CharacterOffsetBegin=280 CharacterOffsetEnd=282 PartOfSpeech=SYM Lemma=** NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=283 CharacterOffsetEnd=286 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=slow CharacterOffsetBegin=287 CharacterOffsetEnd=291 PartOfSpeech=JJ Lemma=slow NamedEntityTag=O]
+[Text=movement CharacterOffsetBegin=292 CharacterOffsetEnd=300 PartOfSpeech=NN Lemma=movement NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=301 CharacterOffsetEnd=303 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=piffle CharacterOffsetBegin=304 CharacterOffsetEnd=310 PartOfSpeech=NN Lemma=piffle NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=310 CharacterOffsetEnd=311 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (X
+      (X (SYM **))
+      (NP (DT The) (JJ slow) (NN movement)))
+    (VP (VBZ is)
+      (NP (NN piffle)))
+    (. !)))
+
+root(ROOT-0, piffle-6)
+dep(movement-4, **-1)
+det(movement-4, The-2)
+amod(movement-4, slow-3)
+dep(piffle-6, movement-4)
+cop(piffle-6, is-5)
+punct(piffle-6, !-7)
+
+Sentence #8 (9 tokens):
+Léon plays Eugene Goosen's attractive Oboe Conc.
+[Text=Léon CharacterOffsetBegin=312 CharacterOffsetEnd=316 PartOfSpeech=NN Lemma=léon NamedEntityTag=PERSON]
+[Text=plays CharacterOffsetBegin=317 CharacterOffsetEnd=322 PartOfSpeech=VBZ Lemma=play NamedEntityTag=O]
+[Text=Eugene CharacterOffsetBegin=323 CharacterOffsetEnd=329 PartOfSpeech=NNP Lemma=Eugene NamedEntityTag=PERSON]
+[Text=Goosen CharacterOffsetBegin=330 CharacterOffsetEnd=336 PartOfSpeech=NNP Lemma=Goosen NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=336 CharacterOffsetEnd=338 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=attractive CharacterOffsetBegin=339 CharacterOffsetEnd=349 PartOfSpeech=JJ Lemma=attractive NamedEntityTag=O]
+[Text=Oboe CharacterOffsetBegin=350 CharacterOffsetEnd=354 PartOfSpeech=NNP Lemma=Oboe NamedEntityTag=O]
+[Text=Conc CharacterOffsetBegin=355 CharacterOffsetEnd=359 PartOfSpeech=NNP Lemma=Conc NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=359 CharacterOffsetEnd=360 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NN Léon))
+    (VP (VBZ plays)
+      (NP
+        (NP (NNP Eugene) (NNP Goosen) (POS 's))
+        (JJ attractive) (NNP Oboe) (NNP Conc)))
+    (. .)))
+
+root(ROOT-0, plays-2)
+nsubj(plays-2, Léon-1)
+compound(Goosen-4, Eugene-3)
+nmod:poss(Conc-8, Goosen-4)
+case(Goosen-4, 's-5)
+amod(Conc-8, attractive-6)
+compound(Conc-8, Oboe-7)
+dobj(plays-2, Conc-8)
+punct(plays-2, .-9)
+
+Sentence #9 (7 tokens):
+*** superbly as can only he.
+[Text=*** CharacterOffsetBegin=360 CharacterOffsetEnd=363 PartOfSpeech=NN Lemma=*** NamedEntityTag=O]
+[Text=superbly CharacterOffsetBegin=364 CharacterOffsetEnd=372 PartOfSpeech=RB Lemma=superbly NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=373 CharacterOffsetEnd=375 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=376 CharacterOffsetEnd=379 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=380 CharacterOffsetEnd=384 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=385 CharacterOffsetEnd=387 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=387 CharacterOffsetEnd=388 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NN ***))
+    (ADVP (RB superbly))
+    (ADVP (IN as))
+    (VP (MD can)
+      (VP
+        (ADVP (RB only))
+        (NP (PRP he))))
+    (. .)))
+
+root(ROOT-0, he-6)
+nsubj(he-6, ***-1)
+advmod(he-6, superbly-2)
+advmod(he-6, as-3)
+aux(he-6, can-4)
+advmod(he-6, only-5)
+punct(he-6, .-7)
+
+Sentence #10 (18 tokens):
+De Falla's El Amor Brujo, which wears very well, to end an interesting concert.
+[Text=De CharacterOffsetBegin=389 CharacterOffsetEnd=391 PartOfSpeech=NNP Lemma=De NamedEntityTag=PERSON]
+[Text=Falla CharacterOffsetBegin=392 CharacterOffsetEnd=397 PartOfSpeech=NNP Lemma=Falla NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=397 CharacterOffsetEnd=399 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=El CharacterOffsetBegin=400 CharacterOffsetEnd=402 PartOfSpeech=NNP Lemma=El NamedEntityTag=ORGANIZATION]
+[Text=Amor CharacterOffsetBegin=403 CharacterOffsetEnd=407 PartOfSpeech=NNP Lemma=Amor NamedEntityTag=ORGANIZATION]
+[Text=Brujo CharacterOffsetBegin=408 CharacterOffsetEnd=413 PartOfSpeech=NNP Lemma=Brujo NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=413 CharacterOffsetEnd=414 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=415 CharacterOffsetEnd=420 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=wears CharacterOffsetBegin=421 CharacterOffsetEnd=426 PartOfSpeech=VBZ Lemma=wear NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=427 CharacterOffsetEnd=431 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=432 CharacterOffsetEnd=436 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=436 CharacterOffsetEnd=437 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=438 CharacterOffsetEnd=440 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=441 CharacterOffsetEnd=444 PartOfSpeech=VB Lemma=end NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=445 CharacterOffsetEnd=447 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=interesting CharacterOffsetBegin=448 CharacterOffsetEnd=459 PartOfSpeech=JJ Lemma=interesting NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=460 CharacterOffsetEnd=467 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=467 CharacterOffsetEnd=468 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP (NNP De) (NNP Falla) (POS 's))
+      (NNP El))
+    (NP
+      (NP (NNP Amor) (NNP Brujo))
+      (, ,)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBZ wears)
+            (ADVP (RB very) (RB well))
+            (, ,)
+            (S
+              (VP (TO to)
+                (VP (VB end)
+                  (NP (DT an) (JJ interesting) (NN concert)))))))))
+    (. .)))
+
+root(ROOT-0, El-4)
+compound(Falla-2, De-1)
+nmod:poss(El-4, Falla-2)
+case(Falla-2, 's-3)
+compound(Brujo-6, Amor-5)
+dep(El-4, Brujo-6)
+nsubj(wears-9, Brujo-6)
+nsubj:xsubj(end-14, Brujo-6)
+punct(Brujo-6, ,-7)
+ref(Brujo-6, which-8)
+acl:relcl(Brujo-6, wears-9)
+advmod(well-11, very-10)
+advmod(wears-9, well-11)
+punct(wears-9, ,-12)
+mark(end-14, to-13)
+xcomp(wears-9, end-14)
+det(concert-17, an-15)
+amod(concert-17, interesting-16)
+dobj(end-14, concert-17)
+punct(El-4, .-18)
+
+Sentence #11 (14 tokens):
+Sargent not too bad in modern works seemed out of place in classical.
+[Text=Sargent CharacterOffsetBegin=469 CharacterOffsetEnd=476 PartOfSpeech=NNP Lemma=Sargent NamedEntityTag=PERSON]
+[Text=not CharacterOffsetBegin=477 CharacterOffsetEnd=480 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=481 CharacterOffsetEnd=484 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=485 CharacterOffsetEnd=488 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=489 CharacterOffsetEnd=491 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=modern CharacterOffsetBegin=492 CharacterOffsetEnd=498 PartOfSpeech=JJ Lemma=modern NamedEntityTag=O]
+[Text=works CharacterOffsetBegin=499 CharacterOffsetEnd=504 PartOfSpeech=NNS Lemma=work NamedEntityTag=O]
+[Text=seemed CharacterOffsetBegin=505 CharacterOffsetEnd=511 PartOfSpeech=VBD Lemma=seem NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=512 CharacterOffsetEnd=515 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=516 CharacterOffsetEnd=518 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=519 CharacterOffsetEnd=524 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=525 CharacterOffsetEnd=527 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=classical CharacterOffsetBegin=528 CharacterOffsetEnd=537 PartOfSpeech=JJ Lemma=classical NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=537 CharacterOffsetEnd=538 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP Sargent))
+      (ADJP
+        (ADJP (RB not) (RB too) (JJ bad))
+        (PP (IN in)
+          (NP (JJ modern) (NNS works)))))
+    (VP (VBD seemed)
+      (ADVP (IN out)
+        (PP (IN of)
+          (NP (NN place))))
+      (PP (IN in)
+        (NP (JJ classical))))
+    (. .)))
+
+root(ROOT-0, seemed-8)
+nsubj(seemed-8, Sargent-1)
+neg(bad-4, not-2)
+advmod(bad-4, too-3)
+amod(Sargent-1, bad-4)
+case(works-7, in-5)
+amod(works-7, modern-6)
+nmod:in(bad-4, works-7)
+case(place-11, out-9)
+mwe(out-9, of-10)
+nmod:out_of(seemed-8, place-11)
+case(classical-13, in-12)
+nmod:in(seemed-8, classical-13)
+punct(seemed-8, .-14)
+
+Coreference set:
+	(6,10,[10,11]) -> (4,2,[2,4]), that is: "Ravel" -> "Ravel 's"
+Coreference set:
+	(9,6,[6,7]) -> (8,8,[3,9]), that is: "he" -> "Eugene Goosen 's attractive Oboe Conc"
+Coreference set:
+	(10,6,[5,18]) -> (10,6,[4,7]), that is: "Amor Brujo , which wears very well , to end an interesting concert" -> "El Amor Brujo"

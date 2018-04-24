@@ -1,0 +1,128 @@
+Sentence #1 (7 tokens):
+I walk with Caesar in aft.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=walk CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=walk NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Caesar CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Caesar NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=aft CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=aft NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP walk)
+      (PP (IN with)
+        (NP (NNP Caesar)))
+      (PP (IN in)
+        (NP (NN aft))))
+    (. .)))
+
+root(ROOT-0, walk-2)
+nsubj(walk-2, I-1)
+case(Caesar-4, with-3)
+nmod:with(walk-2, Caesar-4)
+case(aft-6, in-5)
+nmod:in(walk-2, aft-6)
+punct(walk-2, .-7)
+
+Sentence #2 (7 tokens):
+before Listening to Lauricella playing Tschaikov.
+[Text=before CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=Listening CharacterOffsetBegin=34 CharacterOffsetEnd=43 PartOfSpeech=VBG Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Lauricella CharacterOffsetBegin=47 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=Lauricella NamedEntityTag=PERSON]
+[Text=playing CharacterOffsetBegin=58 CharacterOffsetEnd=65 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=Tschaikov CharacterOffsetBegin=66 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Tschaikov NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (PP (IN before)
+    (S
+      (VP (VBG Listening)
+        (PP (TO to)
+          (NP (NNP Lauricella)))
+        (S
+          (VP (VBG playing)
+            (NP (NNP Tschaikov))))))
+    (. .)))
+
+root(ROOT-0, Listening-2)
+mark(Listening-2, before-1)
+case(Lauricella-4, to-3)
+nmod:to(Listening-2, Lauricella-4)
+advcl(Listening-2, playing-5)
+dobj(playing-5, Tschaikov-6)
+punct(Listening-2, .-7)
+
+Sentence #3 (2 tokens):
+conc.
+[Text=conc CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=conc NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (NN conc) (. .)))
+
+root(ROOT-0, conc-1)
+punct(conc-1, .-2)
+
+Sentence #4 (3 tokens):
+from Bournemouth.
+[Text=from CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Bournemouth CharacterOffsetBegin=88 CharacterOffsetEnd=99 PartOfSpeech=NNP Lemma=Bournemouth NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN from)
+      (NP (NNP Bournemouth)))
+    (. .)))
+
+root(ROOT-0, Bournemouth-2)
+case(Bournemouth-2, from-1)
+punct(Bournemouth-2, .-3)
+
+Sentence #5 (14 tokens):
+He is not a fiddler yet, but may be a fine one.
+[Text=He CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=104 CharacterOffsetEnd=106 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fiddler CharacterOffsetBegin=113 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=fiddler NamedEntityTag=O]
+[Text=yet CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=RB Lemma=yet NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=130 CharacterOffsetEnd=133 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=134 CharacterOffsetEnd=136 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=137 CharacterOffsetEnd=138 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=144 CharacterOffsetEnd=147 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBZ is) (RB not)
+        (NP
+          (NP (DT a) (NN fiddler))
+          (ADVP (RB yet))))
+      (, ,)
+      (CC but)
+      (VP (MD may)
+        (VP (VB be)
+          (NP (DT a) (JJ fine) (CD one)))))
+    (. .)))
+
+root(ROOT-0, fiddler-5)
+nsubj(fiddler-5, He-1)
+cop(fiddler-5, is-2)
+neg(fiddler-5, not-3)
+det(fiddler-5, a-4)
+advmod(fiddler-5, yet-6)
+punct(fiddler-5, ,-7)
+cc(fiddler-5, but-8)
+aux(one-13, may-9)
+cop(one-13, be-10)
+det(one-13, a-11)
+amod(one-13, fine-12)
+conj:but(fiddler-5, one-13)
+punct(fiddler-5, .-14)
+
+Coreference set:
+	(5,1,[1,2]) -> (3,1,[1,3]), that is: "He" -> "conc ."

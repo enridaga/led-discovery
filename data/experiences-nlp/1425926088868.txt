@@ -1,0 +1,116 @@
+Sentence #1 (15 tokens):
+The only musical news is that every Friday we have music at Kessler's.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=JJ Lemma=only NamedEntityTag=O]
+[Text=musical CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=musical NamedEntityTag=O]
+[Text=news CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=news NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=every NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1W" quant="every" tid="t1" type="SET" value="XXXX-WXX-5">every Friday</TIMEX3>]
+[Text=Friday CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Friday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-5 Timex=<TIMEX3 periodicity="P1W" quant="every" tid="t1" type="SET" value="XXXX-WXX-5">every Friday</TIMEX3>]
+[Text=we CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Kessler CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Kessler NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (JJ only) (JJ musical) (NN news))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP-TMP (DT every) (NNP Friday))
+          (NP (PRP we))
+          (VP (VBP have)
+            (NP (NN music))
+            (PP (IN at)
+              (NP (NNP Kessler) (POS 's)))))))
+    (. .)))
+
+root(ROOT-0, is-5)
+det(news-4, The-1)
+amod(news-4, only-2)
+amod(news-4, musical-3)
+nsubj(is-5, news-4)
+mark(have-10, that-6)
+det(Friday-8, every-7)
+nmod:tmod(have-10, Friday-8)
+nsubj(have-10, we-9)
+ccomp(is-5, have-10)
+dobj(have-10, music-11)
+case(Kessler-13, at-12)
+nmod:'s(have-10, Kessler-13)
+case(Kessler-13, 's-14)
+punct(is-5, .-15)
+
+Sentence #2 (13 tokens):
+Yesterday they played among other things Spohr's Octet wonderful, glorious !
+[Text=Yesterday CharacterOffsetBegin=71 CharacterOffsetEnd=80 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1D Timex=<TIMEX3 alt_value="OFFSET P-1D" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">Yesterday</TIMEX3>]
+[Text=they CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=86 CharacterOffsetEnd=92 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=among CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=among NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=105 CharacterOffsetEnd=111 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=Spohr CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=NNP Lemma=Spohr NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Octet CharacterOffsetBegin=120 CharacterOffsetEnd=125 PartOfSpeech=NNP Lemma=Octet NamedEntityTag=O]
+[Text=wonderful CharacterOffsetBegin=126 CharacterOffsetEnd=135 PartOfSpeech=JJ Lemma=wonderful NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=glorious CharacterOffsetBegin=137 CharacterOffsetEnd=145 PartOfSpeech=JJ Lemma=glorious NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (NN Yesterday))
+    (NP (PRP they))
+    (VP (VBD played)
+      (PP (IN among)
+        (NP (JJ other) (NNS things)))
+      (NP
+        (NP
+          (NP (NNP Spohr) (POS 's))
+          (NNP Octet))
+        (ADJP (JJ wonderful) (, ,) (JJ glorious))))
+    (. !)))
+
+root(ROOT-0, played-3)
+nmod:tmod(played-3, Yesterday-1)
+nsubj(played-3, they-2)
+case(things-6, among-4)
+amod(things-6, other-5)
+nmod:among(played-3, things-6)
+nmod:poss(Octet-9, Spohr-7)
+case(Spohr-7, 's-8)
+dobj(played-3, Octet-9)
+amod(glorious-12, wonderful-10)
+punct(glorious-12, ,-11)
+amod(Octet-9, glorious-12)
+punct(played-3, !-13)
+
+Sentence #3 (7 tokens):
+Sowan gave a soiree a bore.
+[Text=Sowan CharacterOffsetBegin=148 CharacterOffsetEnd=153 PartOfSpeech=NNP Lemma=Sowan NamedEntityTag=PERSON]
+[Text=gave CharacterOffsetBegin=154 CharacterOffsetEnd=158 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=soiree CharacterOffsetBegin=161 CharacterOffsetEnd=167 PartOfSpeech=NN Lemma=soiree NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=168 CharacterOffsetEnd=169 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bore CharacterOffsetBegin=170 CharacterOffsetEnd=174 PartOfSpeech=VBN Lemma=bear NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=174 CharacterOffsetEnd=175 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Sowan))
+    (VP (VBD gave)
+      (S
+        (NP (DT a) (NN soiree))
+        (NP (DT a) (VBN bore))))
+    (. .)))
+
+root(ROOT-0, gave-2)
+nsubj(gave-2, Sowan-1)
+det(soiree-4, a-3)
+nsubj(a-5, soiree-4)
+xcomp(gave-2, a-5)
+amod(a-5, bore-6)
+punct(gave-2, .-7)
+

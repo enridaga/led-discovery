@@ -1,0 +1,224 @@
+Sentence #1 (7 tokens):
+After dinner listen to Amar Quart.
+[Text=After CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=VBP Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Amar CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Amar NamedEntityTag=PERSON]
+[Text=Quart CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Quart NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (IN After) (NN dinner))
+    (VP (VBP listen)
+      (PP (TO to)
+        (NP (NNP Amar) (NNP Quart))))
+    (. .)))
+
+root(ROOT-0, listen-3)
+amod(dinner-2, After-1)
+nsubj(listen-3, dinner-2)
+case(Quart-6, to-4)
+compound(Quart-6, Amar-5)
+nmod:to(listen-3, Quart-6)
+punct(listen-3, .-7)
+
+Sentence #2 (13 tokens):
+playing Brahms C min* & Mozart F. (K.590).
+[Text=playing CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=Brahms CharacterOffsetBegin=43 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Brahms NamedEntityTag=ORGANIZATION]
+[Text=C CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=C NamedEntityTag=ORGANIZATION]
+[Text=min CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=min NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1M Timex=<TIMEX3 tid="t1" type="DURATION" value="PT1M">min</TIMEX3>]
+[Text=* CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Mozart CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Mozart NamedEntityTag=O]
+[Text=F. CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=F. NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=K. CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=K. NamedEntityTag=O]
+[Text=590 CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=CD Lemma=590 NamedEntityTag=NUMBER NormalizedNamedEntityTag=590.0]
+[Text=-RRB- CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBG playing)
+      (NP
+        (NP
+          (NP
+            (NP (NNP Brahms))
+            (PP (NNP C)
+              (NP (NN min)))
+            (X (SYM *)))
+          (CC &)
+          (NP (NNP Mozart) (NNP F.)))
+        (PRN (-LRB- -LRB-)
+          (NP (NNP K.) (CD 590))
+          (-RRB- -RRB-))))
+    (. .)))
+
+root(ROOT-0, playing-1)
+dobj(playing-1, Brahms-2)
+dep(min-4, C-3)
+nmod(Brahms-2, min-4)
+dep(Brahms-2, *-5)
+cc(Brahms-2, &-6)
+compound(F.-8, Mozart-7)
+dobj(playing-1, F.-8)
+conj:&(Brahms-2, F.-8)
+punct(K.-10, -LRB--9)
+appos(Brahms-2, K.-10)
+nummod(K.-10, 590-11)
+punct(K.-10, -RRB--12)
+punct(playing-1, .-13)
+
+Sentence #3 (7 tokens):
+Efficient playing - that's all.
+[Text=Efficient CharacterOffsetBegin=78 CharacterOffsetEnd=87 PartOfSpeech=JJ Lemma=efficient NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=88 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (X
+    (NP (JJ Efficient) (NN playing))
+    (: -)
+    (FRAG
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBZ 's)
+            (NP (DT all))))))
+    (. .)))
+
+root(ROOT-0, playing-2)
+amod(playing-2, Efficient-1)
+punct(playing-2, --3)
+nsubj(all-6, that-4)
+cop(all-6, 's-5)
+dep(playing-2, all-6)
+punct(playing-2, .-7)
+
+Sentence #4 (13 tokens):
+Not superlative ensemble, tone balance, or to my mind interpretation.
+[Text=Not CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=superlative CharacterOffsetBegin=114 CharacterOffsetEnd=125 PartOfSpeech=JJ Lemma=superlative NamedEntityTag=O]
+[Text=ensemble CharacterOffsetBegin=126 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=ensemble NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=tone CharacterOffsetBegin=136 CharacterOffsetEnd=140 PartOfSpeech=NN Lemma=tone NamedEntityTag=O]
+[Text=balance CharacterOffsetBegin=141 CharacterOffsetEnd=148 PartOfSpeech=NN Lemma=balance NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=153 CharacterOffsetEnd=155 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=156 CharacterOffsetEnd=158 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=mind CharacterOffsetBegin=159 CharacterOffsetEnd=163 PartOfSpeech=NN Lemma=mind NamedEntityTag=O]
+[Text=interpretation CharacterOffsetBegin=164 CharacterOffsetEnd=178 PartOfSpeech=NN Lemma=interpretation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=178 CharacterOffsetEnd=179 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (RB Not) (JJ superlative))
+    (NP
+      (NP (NN ensemble))
+      (, ,)
+      (UCP
+        (NP
+          (NP (NN tone))
+          (NP (NN balance)))
+        (, ,)
+        (CC or)
+        (PP (TO to)
+          (NP (PRP$ my) (NN mind) (NN interpretation)))))
+    (. .)))
+
+root(ROOT-0, superlative-2)
+neg(superlative-2, Not-1)
+dep(superlative-2, ensemble-3)
+punct(ensemble-3, ,-4)
+appos(ensemble-3, tone-5)
+dep(tone-5, balance-6)
+punct(tone-5, ,-7)
+cc(tone-5, or-8)
+case(interpretation-12, to-9)
+nmod:poss(interpretation-12, my-10)
+compound(interpretation-12, mind-11)
+appos(ensemble-3, interpretation-12)
+conj:or(tone-5, interpretation-12)
+punct(superlative-2, .-13)
+
+Sentence #5 (6 tokens):
+The Brahms was very stuffy.
+[Text=The CharacterOffsetBegin=180 CharacterOffsetEnd=183 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Brahms CharacterOffsetBegin=184 CharacterOffsetEnd=190 PartOfSpeech=NNP Lemma=Brahms NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=191 CharacterOffsetEnd=194 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=195 CharacterOffsetEnd=199 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=stuffy CharacterOffsetBegin=200 CharacterOffsetEnd=206 PartOfSpeech=JJ Lemma=stuffy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=206 CharacterOffsetEnd=207 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NNP Brahms))
+    (VP (VBD was)
+      (ADJP (RB very) (JJ stuffy)))
+    (. .)))
+
+root(ROOT-0, stuffy-5)
+det(Brahms-2, The-1)
+nsubj(stuffy-5, Brahms-2)
+cop(stuffy-5, was-3)
+advmod(stuffy-5, very-4)
+punct(stuffy-5, .-6)
+
+Sentence #6 (14 tokens):
+The Mozart was delicious after it - some of it they played well.
+[Text=The CharacterOffsetBegin=208 CharacterOffsetEnd=211 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Mozart CharacterOffsetBegin=212 CharacterOffsetEnd=218 PartOfSpeech=NNP Lemma=Mozart NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=219 CharacterOffsetEnd=222 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=delicious CharacterOffsetBegin=223 CharacterOffsetEnd=232 PartOfSpeech=JJ Lemma=delicious NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=233 CharacterOffsetEnd=238 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=239 CharacterOffsetEnd=241 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=242 CharacterOffsetEnd=243 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=244 CharacterOffsetEnd=248 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=249 CharacterOffsetEnd=251 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=252 CharacterOffsetEnd=254 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=255 CharacterOffsetEnd=259 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=260 CharacterOffsetEnd=266 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=267 CharacterOffsetEnd=271 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=271 CharacterOffsetEnd=272 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NNP Mozart))
+    (VP (VBD was)
+      (UCP
+        (ADJP (JJ delicious)
+          (PP (IN after)
+            (NP (PRP it))))
+        (: -)
+        (NP
+          (NP (DT some))
+          (SBAR
+            (WHPP (IN of)
+              (WHNP (PRP it)))
+            (S
+              (NP (PRP they))
+              (VP (VBD played)
+                (ADVP (RB well))))))))
+    (. .)))
+
+root(ROOT-0, delicious-4)
+det(Mozart-2, The-1)
+nsubj(delicious-4, Mozart-2)
+cop(delicious-4, was-3)
+case(it-6, after-5)
+nmod:after(delicious-4, it-6)
+punct(delicious-4, --7)
+dep(delicious-4, some-8)
+case(it-10, of-9)
+nmod:of(played-12, it-10)
+nsubj(played-12, they-11)
+acl:relcl(some-8, played-12)
+advmod(played-12, well-13)
+punct(delicious-4, .-14)
+
+Coreference set:
+	(2,2,[2,6]) -> (5,2,[1,3]), that is: "Brahms C min *" -> "The Brahms"
+	(6,6,[6,7]) -> (5,2,[1,3]), that is: "it" -> "The Brahms"
+	(6,10,[10,11]) -> (5,2,[1,3]), that is: "it" -> "The Brahms"

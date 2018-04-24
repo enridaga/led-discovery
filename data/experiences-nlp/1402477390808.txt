@@ -1,0 +1,321 @@
+Sentence #1 (29 tokens):
+Breakfast [was] at 9.00 am [followed by] a stroll around the city until noon, dinner, and more ‘doing the sights’.
+[Text=Breakfast CharacterOffsetBegin=5 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=breakfast NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=9.00 CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=CD Lemma=9.00 NamedEntityTag=NUMBER NormalizedNamedEntityTag=9.0]
+[Text=am CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=followed CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=VBN Lemma=follow NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=stroll CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=VB Lemma=stroll NamedEntityTag=O]
+[Text=around CharacterOffsetBegin=55 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=around NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=city CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=city NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=noon CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=noon NamedEntityTag=TIME NormalizedNamedEntityTag=T12:00 Timex=<TIMEX3 tid="t1" type="TIME" value="T12:00">noon</TIMEX3>]
+[Text=, CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=83 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=doing CharacterOffsetBegin=101 CharacterOffsetEnd=106 PartOfSpeech=VBG Lemma=do NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sights CharacterOffsetBegin=111 CharacterOffsetEnd=117 PartOfSpeech=NNS Lemma=sight NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NN Breakfast))
+      (SBAR
+        (WHNP (-LRB- -LSB-))
+        (S
+          (VP (VBD was)
+            (VP (-RRB- -RSB-)
+              (PP (IN at)
+                (NP (CD 9.00))))))))
+    (VP (VBP am)
+      (ADVP (-LRB- -LSB-))
+      (VP (VBN followed)
+        (PP (IN by)
+          (NP
+            (NP (-RRB- -RSB-) (DT a))
+            (VP (VB stroll)
+              (ADVP (IN around)
+                (NP (DT the) (NN city)))
+              (PP (IN until)
+                (NP
+                  (NP (NN noon))
+                  (, ,)
+                  (NP (NN dinner))
+                  (, ,)
+                  (CC and)
+                  (NP (RBR more))))
+              (`` `)
+              (S
+                (VP (VBG doing)
+                  (NP (DT the) (NNS sights) (POS ')))))))))
+    (. .)))
+
+root(ROOT-0, followed-9)
+nsubjpass(followed-9, Breakfast-1)
+nsubj(9.00-6, -LSB--2)
+aux(9.00-6, was-3)
+punct(9.00-6, -RSB--4)
+case(9.00-6, at-5)
+acl:relcl(Breakfast-1, 9.00-6)
+auxpass(followed-9, am-7)
+advmod(followed-9, -LSB--8)
+case(a-12, by-10)
+punct(a-12, -RSB--11)
+nmod:agent(followed-9, a-12)
+dep(a-12, stroll-13)
+case(city-16, around-14)
+det(city-16, the-15)
+advmod(stroll-13, city-16)
+case(noon-18, until-17)
+nmod:until(stroll-13, noon-18)
+punct(noon-18, ,-19)
+nmod:until(stroll-13, dinner-20)
+conj:and(noon-18, dinner-20)
+punct(noon-18, ,-21)
+cc(noon-18, and-22)
+nmod:until(stroll-13, more-23)
+conj:and(noon-18, more-23)
+punct(stroll-13, `-24)
+xcomp(stroll-13, doing-25)
+det(sights-27, the-26)
+dobj(doing-25, sights-27)
+case(sights-27, '-28)
+punct(followed-9, .-29)
+
+Sentence #2 (14 tokens):
+It was the first time I had a real good walk around Dublin.
+[Text=It CharacterOffsetBegin=120 CharacterOffsetEnd=122 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=131 CharacterOffsetEnd=136 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=time CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=144 CharacterOffsetEnd=147 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=real CharacterOffsetBegin=150 CharacterOffsetEnd=154 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=155 CharacterOffsetEnd=159 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=walk CharacterOffsetBegin=160 CharacterOffsetEnd=164 PartOfSpeech=NN Lemma=walk NamedEntityTag=O]
+[Text=around CharacterOffsetBegin=165 CharacterOffsetEnd=171 PartOfSpeech=IN Lemma=around NamedEntityTag=O]
+[Text=Dublin CharacterOffsetBegin=172 CharacterOffsetEnd=178 PartOfSpeech=NNP Lemma=Dublin NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=178 CharacterOffsetEnd=179 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (JJ first) (NN time))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBD had)
+              (NP
+                (NP (DT a) (JJ real) (JJ good) (NN walk))
+                (PP (IN around)
+                  (NP (NNP Dublin)))))))))
+    (. .)))
+
+root(ROOT-0, time-5)
+nsubj(time-5, It-1)
+cop(time-5, was-2)
+det(time-5, the-3)
+amod(time-5, first-4)
+nsubj(had-7, I-6)
+acl:relcl(time-5, had-7)
+det(walk-11, a-8)
+amod(walk-11, real-9)
+amod(walk-11, good-10)
+dobj(had-7, walk-11)
+case(Dublin-13, around-12)
+nmod:around(walk-11, Dublin-13)
+punct(time-5, .-14)
+
+Sentence #3 (32 tokens):
+Leave for the docks at 6.00 pm, embark at 7.00 pm... Violins, mouth organs, concertinas, melodeons and other musical instruments enliven a calm six hours crossing.
+[Text=Leave CharacterOffsetBegin=186 CharacterOffsetEnd=191 PartOfSpeech=VB Lemma=leave NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=192 CharacterOffsetEnd=195 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=196 CharacterOffsetEnd=199 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=docks CharacterOffsetBegin=200 CharacterOffsetEnd=205 PartOfSpeech=VBZ Lemma=dock NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=206 CharacterOffsetEnd=208 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=6.00 CharacterOffsetBegin=209 CharacterOffsetEnd=213 PartOfSpeech=CD Lemma=6.00 NamedEntityTag=NUMBER NormalizedNamedEntityTag=6.0]
+[Text=pm CharacterOffsetBegin=214 CharacterOffsetEnd=216 PartOfSpeech=NN Lemma=pm NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=embark CharacterOffsetBegin=218 CharacterOffsetEnd=224 PartOfSpeech=VBP Lemma=embark NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=7.00 CharacterOffsetBegin=228 CharacterOffsetEnd=232 PartOfSpeech=CD Lemma=7.00 NamedEntityTag=NUMBER NormalizedNamedEntityTag=7.0]
+[Text=pm CharacterOffsetBegin=233 CharacterOffsetEnd=235 PartOfSpeech=NN Lemma=pm NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=235 CharacterOffsetEnd=238 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=Violins CharacterOffsetBegin=239 CharacterOffsetEnd=246 PartOfSpeech=NNS Lemma=violin NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=246 CharacterOffsetEnd=247 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=mouth CharacterOffsetBegin=248 CharacterOffsetEnd=253 PartOfSpeech=NN Lemma=mouth NamedEntityTag=O]
+[Text=organs CharacterOffsetBegin=254 CharacterOffsetEnd=260 PartOfSpeech=NNS Lemma=organ NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=260 CharacterOffsetEnd=261 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=concertinas CharacterOffsetBegin=262 CharacterOffsetEnd=273 PartOfSpeech=NNS Lemma=concertina NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=273 CharacterOffsetEnd=274 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=melodeons CharacterOffsetBegin=275 CharacterOffsetEnd=284 PartOfSpeech=NNS Lemma=melodeon NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=285 CharacterOffsetEnd=288 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=289 CharacterOffsetEnd=294 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=musical CharacterOffsetBegin=295 CharacterOffsetEnd=302 PartOfSpeech=JJ Lemma=musical NamedEntityTag=O]
+[Text=instruments CharacterOffsetBegin=303 CharacterOffsetEnd=314 PartOfSpeech=NNS Lemma=instrument NamedEntityTag=O]
+[Text=enliven CharacterOffsetBegin=315 CharacterOffsetEnd=322 PartOfSpeech=VBP Lemma=enliven NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=323 CharacterOffsetEnd=324 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=calm CharacterOffsetBegin=325 CharacterOffsetEnd=329 PartOfSpeech=JJ Lemma=calm NamedEntityTag=O]
+[Text=six CharacterOffsetBegin=330 CharacterOffsetEnd=333 PartOfSpeech=CD Lemma=six NamedEntityTag=DURATION NormalizedNamedEntityTag=PT6H Timex=<TIMEX3 tid="t2" type="DURATION" value="PT6H">six hours</TIMEX3>]
+[Text=hours CharacterOffsetBegin=334 CharacterOffsetEnd=339 PartOfSpeech=NNS Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PT6H Timex=<TIMEX3 tid="t2" type="DURATION" value="PT6H">six hours</TIMEX3>]
+[Text=crossing CharacterOffsetBegin=340 CharacterOffsetEnd=348 PartOfSpeech=VBG Lemma=cross NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=348 CharacterOffsetEnd=349 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (S
+        (VP (VB Leave)
+          (SBAR (IN for)
+            (S
+              (NP (DT the))
+              (VP (VBZ docks)
+                (PP (IN at)
+                  (NP (CD 6.00) (NN pm))))))))
+      (, ,)
+      (S
+        (VP (VBP embark)
+          (PP (IN at)
+            (NP (CD 7.00) (NN pm))))))
+    (: ...)
+    (S
+      (NP
+        (NP (NNS Violins))
+        (, ,)
+        (NP (NN mouth) (NNS organs))
+        (, ,)
+        (NP (NNS concertinas))
+        (, ,)
+        (NP (NNS melodeons))
+        (CC and)
+        (NP (JJ other) (JJ musical) (NNS instruments)))
+      (VP (VBP enliven)
+        (NP
+          (NP (DT a)
+            (ADJP (JJ calm)
+              (NP-TMP (CD six)))
+            (NNS hours))
+          (VP (VBG crossing)))))
+    (. .)))
+
+root(ROOT-0, Leave-1)
+mark(docks-4, for-2)
+nsubj(docks-4, the-3)
+advcl:for(Leave-1, docks-4)
+case(pm-7, at-5)
+nummod(pm-7, 6.00-6)
+nmod:at(docks-4, pm-7)
+punct(Leave-1, ,-8)
+parataxis(Leave-1, embark-9)
+case(pm-12, at-10)
+nummod(pm-12, 7.00-11)
+nmod:at(embark-9, pm-12)
+punct(Leave-1, ...-13)
+nsubj(enliven-26, Violins-14)
+punct(Violins-14, ,-15)
+compound(organs-17, mouth-16)
+conj:and(Violins-14, organs-17)
+nsubj(enliven-26, organs-17)
+punct(Violins-14, ,-18)
+conj:and(Violins-14, concertinas-19)
+nsubj(enliven-26, concertinas-19)
+punct(Violins-14, ,-20)
+conj:and(Violins-14, melodeons-21)
+nsubj(enliven-26, melodeons-21)
+cc(Violins-14, and-22)
+amod(instruments-25, other-23)
+amod(instruments-25, musical-24)
+conj:and(Violins-14, instruments-25)
+nsubj(enliven-26, instruments-25)
+parataxis(Leave-1, enliven-26)
+det(hours-30, a-27)
+amod(hours-30, calm-28)
+nmod:tmod(calm-28, six-29)
+dobj(enliven-26, hours-30)
+acl(hours-30, crossing-31)
+punct(Leave-1, .-32)
+
+Sentence #4 (20 tokens):
+One would imagine that we were coming home after winning a war instead of going out to fight one.
+[Text=One CharacterOffsetBegin=350 CharacterOffsetEnd=353 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=would CharacterOffsetBegin=354 CharacterOffsetEnd=359 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=imagine CharacterOffsetBegin=360 CharacterOffsetEnd=367 PartOfSpeech=VB Lemma=imagine NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=368 CharacterOffsetEnd=372 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=373 CharacterOffsetEnd=375 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=376 CharacterOffsetEnd=380 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=coming CharacterOffsetBegin=381 CharacterOffsetEnd=387 PartOfSpeech=VBG Lemma=come NamedEntityTag=O]
+[Text=home CharacterOffsetBegin=388 CharacterOffsetEnd=392 PartOfSpeech=NN Lemma=home NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=393 CharacterOffsetEnd=398 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=winning CharacterOffsetBegin=399 CharacterOffsetEnd=406 PartOfSpeech=VBG Lemma=win NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=407 CharacterOffsetEnd=408 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=409 CharacterOffsetEnd=412 PartOfSpeech=NN Lemma=war NamedEntityTag=O]
+[Text=instead CharacterOffsetBegin=413 CharacterOffsetEnd=420 PartOfSpeech=RB Lemma=instead NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=421 CharacterOffsetEnd=423 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=424 CharacterOffsetEnd=429 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=430 CharacterOffsetEnd=433 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=434 CharacterOffsetEnd=436 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=fight CharacterOffsetBegin=437 CharacterOffsetEnd=442 PartOfSpeech=VB Lemma=fight NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=443 CharacterOffsetEnd=446 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=446 CharacterOffsetEnd=447 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (CD One))
+    (VP (MD would)
+      (VP (VB imagine)
+        (SBAR (IN that)
+          (S
+            (NP (PRP we))
+            (VP (VBD were)
+              (VP (VBG coming)
+                (NP (NN home))
+                (PP (IN after)
+                  (S
+                    (VP
+                      (VP (VBG winning)
+                        (NP (DT a) (NN war)))
+                      (CONJP (RB instead) (IN of))
+                      (VP (VBG going)
+                        (PRT (RP out))
+                        (S
+                          (VP (TO to)
+                            (VP (VB fight)
+                              (NP (CD one)))))))))))))))
+    (. .)))
+
+root(ROOT-0, imagine-3)
+nsubj(imagine-3, One-1)
+aux(imagine-3, would-2)
+mark(coming-7, that-4)
+nsubj(coming-7, we-5)
+aux(coming-7, were-6)
+ccomp(imagine-3, coming-7)
+dobj(coming-7, home-8)
+mark(winning-10, after-9)
+advcl:after(coming-7, winning-10)
+det(war-12, a-11)
+dobj(winning-10, war-12)
+cc(winning-10, instead-13)
+mwe(instead-13, of-14)
+advcl:after(coming-7, going-15)
+conj:negcc(winning-10, going-15)
+compound:prt(going-15, out-16)
+mark(fight-18, to-17)
+xcomp(going-15, fight-18)
+dobj(fight-18, one-19)
+punct(imagine-3, .-20)
+

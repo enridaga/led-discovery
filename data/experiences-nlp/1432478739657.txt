@@ -1,0 +1,420 @@
+Sentence #1 (29 tokens):
+In compliance with the wish of several members of the orchestra, it was proposed to give a posthumous work by Mendelssohn, the 'Reformation Symphony.'
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=compliance CharacterOffsetBegin=3 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=compliance NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=wish CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=wish NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=several CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=several NamedEntityTag=O]
+[Text=members CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=NNS Lemma=member NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=orchestra CharacterOffsetBegin=54 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=orchestra NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=proposed CharacterOffsetBegin=72 CharacterOffsetEnd=80 PartOfSpeech=VBN Lemma=propose NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=posthumous CharacterOffsetBegin=91 CharacterOffsetEnd=101 PartOfSpeech=JJ Lemma=posthumous NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=107 CharacterOffsetEnd=109 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Mendelssohn CharacterOffsetBegin=110 CharacterOffsetEnd=121 PartOfSpeech=NNP Lemma=Mendelssohn NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Reformation CharacterOffsetBegin=128 CharacterOffsetEnd=139 PartOfSpeech=NNP Lemma=Reformation NamedEntityTag=O]
+[Text=Symphony CharacterOffsetBegin=140 CharacterOffsetEnd=148 PartOfSpeech=NNP Lemma=Symphony NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (NN compliance))
+        (PP (IN with)
+          (NP
+            (NP (DT the) (NN wish))
+            (PP (IN of)
+              (NP
+                (NP (JJ several) (NNS members))
+                (PP (IN of)
+                  (NP (DT the) (NN orchestra)))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (VP (VBN proposed)
+        (S
+          (VP (TO to)
+            (VP (VB give)
+              (NP (DT a) (JJ posthumous) (NN work))
+              (PP (IN by)
+                (NP (NNP Mendelssohn)))
+              (, ,)
+              (NP (DT the) (`` `) (NNP Reformation) (NNP Symphony)))))))
+    (. .) ('' ')))
+
+root(ROOT-0, proposed-15)
+case(compliance-2, In-1)
+nmod:in(proposed-15, compliance-2)
+case(wish-5, with-3)
+det(wish-5, the-4)
+nmod:with(compliance-2, wish-5)
+case(members-8, of-6)
+amod(members-8, several-7)
+nmod:of(wish-5, members-8)
+case(orchestra-11, of-9)
+det(orchestra-11, the-10)
+nmod:of(members-8, orchestra-11)
+punct(proposed-15, ,-12)
+nsubjpass(proposed-15, it-13)
+nsubj:xsubj(give-17, it-13)
+auxpass(proposed-15, was-14)
+mark(give-17, to-16)
+xcomp(proposed-15, give-17)
+det(work-20, a-18)
+amod(work-20, posthumous-19)
+dobj(give-17, work-20)
+case(Mendelssohn-22, by-21)
+nmod:by(give-17, Mendelssohn-22)
+punct(give-17, ,-23)
+det(Symphony-27, the-24)
+punct(Symphony-27, `-25)
+compound(Symphony-27, Reformation-26)
+dobj(give-17, Symphony-27)
+punct(proposed-15, .-28)
+punct(proposed-15, '-29)
+
+Sentence #2 (42 tokens):
+Felix himself was dissatisfied with this composition, and did not wish to publish it; his brother, whom we consulted about the performance, left the question to be decided by Rietz, David, Hauptmann, and myself.
+[Text=Felix CharacterOffsetBegin=151 CharacterOffsetEnd=156 PartOfSpeech=NNP Lemma=Felix NamedEntityTag=PERSON]
+[Text=himself CharacterOffsetBegin=157 CharacterOffsetEnd=164 PartOfSpeech=PRP Lemma=himself NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=165 CharacterOffsetEnd=168 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=dissatisfied CharacterOffsetBegin=169 CharacterOffsetEnd=181 PartOfSpeech=VBN Lemma=dissatisfy NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=182 CharacterOffsetEnd=186 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=187 CharacterOffsetEnd=191 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=composition CharacterOffsetBegin=192 CharacterOffsetEnd=203 PartOfSpeech=NN Lemma=composition NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=203 CharacterOffsetEnd=204 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=205 CharacterOffsetEnd=208 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=209 CharacterOffsetEnd=212 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=213 CharacterOffsetEnd=216 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=wish CharacterOffsetBegin=217 CharacterOffsetEnd=221 PartOfSpeech=VB Lemma=wish NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=222 CharacterOffsetEnd=224 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=publish CharacterOffsetBegin=225 CharacterOffsetEnd=232 PartOfSpeech=VB Lemma=publish NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=233 CharacterOffsetEnd=235 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=235 CharacterOffsetEnd=236 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=237 CharacterOffsetEnd=240 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=brother CharacterOffsetBegin=241 CharacterOffsetEnd=248 PartOfSpeech=NN Lemma=brother NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=248 CharacterOffsetEnd=249 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=whom CharacterOffsetBegin=250 CharacterOffsetEnd=254 PartOfSpeech=WP Lemma=whom NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=255 CharacterOffsetEnd=257 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=consulted CharacterOffsetBegin=258 CharacterOffsetEnd=267 PartOfSpeech=VBD Lemma=consult NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=268 CharacterOffsetEnd=273 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=274 CharacterOffsetEnd=277 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=278 CharacterOffsetEnd=289 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=289 CharacterOffsetEnd=290 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=291 CharacterOffsetEnd=295 PartOfSpeech=VBD Lemma=leave NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=296 CharacterOffsetEnd=299 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=question CharacterOffsetBegin=300 CharacterOffsetEnd=308 PartOfSpeech=NN Lemma=question NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=309 CharacterOffsetEnd=311 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=312 CharacterOffsetEnd=314 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=decided CharacterOffsetBegin=315 CharacterOffsetEnd=322 PartOfSpeech=VBN Lemma=decide NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=323 CharacterOffsetEnd=325 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Rietz CharacterOffsetBegin=326 CharacterOffsetEnd=331 PartOfSpeech=NNP Lemma=Rietz NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=331 CharacterOffsetEnd=332 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=David CharacterOffsetBegin=333 CharacterOffsetEnd=338 PartOfSpeech=NNP Lemma=David NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=338 CharacterOffsetEnd=339 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Hauptmann CharacterOffsetBegin=340 CharacterOffsetEnd=349 PartOfSpeech=NNP Lemma=Hauptmann NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=349 CharacterOffsetEnd=350 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=351 CharacterOffsetEnd=354 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=myself CharacterOffsetBegin=355 CharacterOffsetEnd=361 PartOfSpeech=PRP Lemma=myself NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=361 CharacterOffsetEnd=362 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Felix) (PRP himself))
+      (VP
+        (VP (VBD was)
+          (VP (VBN dissatisfied)
+            (PP (IN with)
+              (NP (DT this) (NN composition)))))
+        (, ,)
+        (CC and)
+        (VP (VBD did) (RB not)
+          (VP (VB wish)
+            (S
+              (VP (TO to)
+                (VP (VB publish)
+                  (NP (PRP it)))))))))
+    (: ;)
+    (S
+      (NP
+        (NP (PRP$ his) (NN brother))
+        (, ,)
+        (SBAR
+          (WHNP (WP whom))
+          (S
+            (NP (PRP we))
+            (VP (VBD consulted)
+              (PP (IN about)
+                (NP (DT the) (NN performance))))))
+        (, ,))
+      (VP (VBD left)
+        (NP (DT the) (NN question)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (VP (VBN decided)
+                  (PP (IN by)
+                    (NP
+                      (NP (NNP Rietz) (, ,) (NNP David) (, ,) (NNP Hauptmann) (, ,))
+                      (CC and)
+                      (NP (PRP myself)))))))))))
+    (. .)))
+
+root(ROOT-0, dissatisfied-4)
+nsubjpass(dissatisfied-4, Felix-1)
+nsubj(wish-12, Felix-1)
+nsubj:xsubj(publish-14, Felix-1)
+nmod:npmod(Felix-1, himself-2)
+auxpass(dissatisfied-4, was-3)
+case(composition-7, with-5)
+det(composition-7, this-6)
+nmod:with(dissatisfied-4, composition-7)
+punct(dissatisfied-4, ,-8)
+cc(dissatisfied-4, and-9)
+aux(wish-12, did-10)
+neg(wish-12, not-11)
+conj:and(dissatisfied-4, wish-12)
+mark(publish-14, to-13)
+xcomp(wish-12, publish-14)
+dobj(publish-14, it-15)
+punct(dissatisfied-4, ;-16)
+nmod:poss(brother-18, his-17)
+dobj(consulted-22, brother-18)
+nsubj(left-27, brother-18)
+punct(brother-18, ,-19)
+ref(brother-18, whom-20)
+nsubj(consulted-22, we-21)
+acl:relcl(brother-18, consulted-22)
+case(performance-25, about-23)
+det(performance-25, the-24)
+nmod:about(consulted-22, performance-25)
+punct(brother-18, ,-26)
+parataxis(dissatisfied-4, left-27)
+det(question-29, the-28)
+dobj(left-27, question-29)
+mark(decided-32, to-30)
+auxpass(decided-32, be-31)
+acl:to(question-29, decided-32)
+case(Hauptmann-38, by-33)
+compound(Hauptmann-38, Rietz-34)
+punct(Hauptmann-38, ,-35)
+appos(Hauptmann-38, David-36)
+punct(Hauptmann-38, ,-37)
+nmod:agent(decided-32, Hauptmann-38)
+punct(Hauptmann-38, ,-39)
+cc(Hauptmann-38, and-40)
+nmod:agent(decided-32, myself-41)
+conj:and(Hauptmann-38, myself-41)
+punct(dissatisfied-4, .-42)
+
+Sentence #3 (7 tokens):
+We tried it at a rehearsal.
+[Text=We CharacterOffsetBegin=363 CharacterOffsetEnd=365 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=tried CharacterOffsetBegin=366 CharacterOffsetEnd=371 PartOfSpeech=VBD Lemma=try NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=372 CharacterOffsetEnd=374 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=375 CharacterOffsetEnd=377 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=378 CharacterOffsetEnd=379 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=rehearsal CharacterOffsetBegin=380 CharacterOffsetEnd=389 PartOfSpeech=NN Lemma=rehearsal NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=389 CharacterOffsetEnd=390 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBD tried)
+      (NP (PRP it))
+      (PP (IN at)
+        (NP (DT a) (NN rehearsal))))
+    (. .)))
+
+root(ROOT-0, tried-2)
+nsubj(tried-2, We-1)
+dobj(tried-2, it-3)
+case(rehearsal-6, at-4)
+det(rehearsal-6, a-5)
+nmod:at(tried-2, rehearsal-6)
+punct(tried-2, .-7)
+
+Sentence #4 (49 tokens):
+In spite of many beauties which the work contains, we resolved not to give it, as the whole symphony does not stand on the same high level with Mendelssohn's other compositions, and we were afraid that the work might have to encounter unfriendly criticism.
+[Text=In CharacterOffsetBegin=391 CharacterOffsetEnd=393 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=spite CharacterOffsetBegin=394 CharacterOffsetEnd=399 PartOfSpeech=NN Lemma=spite NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=400 CharacterOffsetEnd=402 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=403 CharacterOffsetEnd=407 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=beauties CharacterOffsetBegin=408 CharacterOffsetEnd=416 PartOfSpeech=NNS Lemma=beauty NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=417 CharacterOffsetEnd=422 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=423 CharacterOffsetEnd=426 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=427 CharacterOffsetEnd=431 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=contains CharacterOffsetBegin=432 CharacterOffsetEnd=440 PartOfSpeech=VBZ Lemma=contain NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=440 CharacterOffsetEnd=441 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=442 CharacterOffsetEnd=444 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=resolved CharacterOffsetBegin=445 CharacterOffsetEnd=453 PartOfSpeech=VBD Lemma=resolve NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=454 CharacterOffsetEnd=457 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=458 CharacterOffsetEnd=460 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=461 CharacterOffsetEnd=465 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=466 CharacterOffsetEnd=468 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=468 CharacterOffsetEnd=469 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=470 CharacterOffsetEnd=472 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=473 CharacterOffsetEnd=476 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=477 CharacterOffsetEnd=482 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=symphony CharacterOffsetBegin=483 CharacterOffsetEnd=491 PartOfSpeech=NN Lemma=symphony NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=492 CharacterOffsetEnd=496 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=497 CharacterOffsetEnd=500 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=stand CharacterOffsetBegin=501 CharacterOffsetEnd=506 PartOfSpeech=VB Lemma=stand NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=507 CharacterOffsetEnd=509 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=510 CharacterOffsetEnd=513 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=514 CharacterOffsetEnd=518 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=high CharacterOffsetBegin=519 CharacterOffsetEnd=523 PartOfSpeech=JJ Lemma=high NamedEntityTag=O]
+[Text=level CharacterOffsetBegin=524 CharacterOffsetEnd=529 PartOfSpeech=NN Lemma=level NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=530 CharacterOffsetEnd=534 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Mendelssohn CharacterOffsetBegin=535 CharacterOffsetEnd=546 PartOfSpeech=NNP Lemma=Mendelssohn NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=546 CharacterOffsetEnd=548 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=549 CharacterOffsetEnd=554 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=compositions CharacterOffsetBegin=555 CharacterOffsetEnd=567 PartOfSpeech=NNS Lemma=composition NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=567 CharacterOffsetEnd=568 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=569 CharacterOffsetEnd=572 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=573 CharacterOffsetEnd=575 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=576 CharacterOffsetEnd=580 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=afraid CharacterOffsetBegin=581 CharacterOffsetEnd=587 PartOfSpeech=JJ Lemma=afraid NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=588 CharacterOffsetEnd=592 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=593 CharacterOffsetEnd=596 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=597 CharacterOffsetEnd=601 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=602 CharacterOffsetEnd=607 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=608 CharacterOffsetEnd=612 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=613 CharacterOffsetEnd=615 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=encounter CharacterOffsetBegin=616 CharacterOffsetEnd=625 PartOfSpeech=VB Lemma=encounter NamedEntityTag=O]
+[Text=unfriendly CharacterOffsetBegin=626 CharacterOffsetEnd=636 PartOfSpeech=JJ Lemma=unfriendly NamedEntityTag=O]
+[Text=criticism CharacterOffsetBegin=637 CharacterOffsetEnd=646 PartOfSpeech=NN Lemma=criticism NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=646 CharacterOffsetEnd=647 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (NN spite))
+        (PP (IN of)
+          (NP (JJ many) (NNS beauties)))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (NP (DT the) (NN work))
+            (VP (VBZ contains))))))
+    (, ,)
+    (S
+      (NP (PRP we))
+      (VP (VBD resolved)
+        (S (RB not)
+          (VP (TO to)
+            (VP (VB give)
+              (NP (PRP it))
+              (, ,)
+              (SBAR (IN as)
+                (S
+                  (NP (DT the) (JJ whole) (NN symphony))
+                  (VP (VBZ does) (RB not)
+                    (VP (VB stand)
+                      (PP (IN on)
+                        (NP
+                          (NP (DT the) (JJ same) (JJ high) (NN level))
+                          (PP (IN with)
+                            (NP
+                              (NP (NNP Mendelssohn) (POS 's))
+                              (JJ other) (NNS compositions))))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP we))
+      (VP (VBD were)
+        (ADJP (JJ afraid))
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (NN work))
+            (VP (MD might)
+              (VP (VB have)
+                (S
+                  (VP (TO to)
+                    (VP (VB encounter)
+                      (NP (JJ unfriendly) (NN criticism)))))))))))
+    (. .)))
+
+root(ROOT-0, resolved-12)
+case(beauties-5, In-1)
+mwe(In-1, spite-2)
+mwe(In-1, of-3)
+amod(beauties-5, many-4)
+dobj(contains-9, beauties-5)
+nmod:in_spite_of(resolved-12, beauties-5)
+ref(beauties-5, which-6)
+det(work-8, the-7)
+nsubj(contains-9, work-8)
+acl:relcl(beauties-5, contains-9)
+punct(resolved-12, ,-10)
+nsubj(resolved-12, we-11)
+nsubj:xsubj(give-15, we-11)
+neg(give-15, not-13)
+mark(give-15, to-14)
+xcomp(resolved-12, give-15)
+dobj(give-15, it-16)
+punct(give-15, ,-17)
+mark(stand-24, as-18)
+det(symphony-21, the-19)
+amod(symphony-21, whole-20)
+nsubj(stand-24, symphony-21)
+aux(stand-24, does-22)
+neg(stand-24, not-23)
+advcl:as(give-15, stand-24)
+case(level-29, on-25)
+det(level-29, the-26)
+amod(level-29, same-27)
+amod(level-29, high-28)
+nmod:on(stand-24, level-29)
+case(compositions-34, with-30)
+nmod:poss(compositions-34, Mendelssohn-31)
+case(Mendelssohn-31, 's-32)
+amod(compositions-34, other-33)
+nmod:with(level-29, compositions-34)
+punct(resolved-12, ,-35)
+cc(resolved-12, and-36)
+nsubj(afraid-39, we-37)
+cop(afraid-39, were-38)
+conj:and(resolved-12, afraid-39)
+mark(have-44, that-40)
+det(work-42, the-41)
+nsubj(have-44, work-42)
+nsubj:xsubj(encounter-46, work-42)
+aux(have-44, might-43)
+ccomp(afraid-39, have-44)
+mark(encounter-46, to-45)
+xcomp(have-44, encounter-46)
+amod(criticism-48, unfriendly-47)
+dobj(encounter-46, criticism-48)
+punct(resolved-12, .-49)
+
+Coreference set:
+	(2,2,[2,3]) -> (1,22,[22,23]), that is: "himself" -> "Mendelssohn"
+	(4,31,[31,33]) -> (1,22,[22,23]), that is: "Mendelssohn 's" -> "Mendelssohn"
+Coreference set:
+	(4,8,[7,9]) -> (1,20,[18,21]), that is: "the work" -> "a posthumous work"
+	(4,42,[41,43]) -> (1,20,[18,21]), that is: "the work" -> "a posthumous work"
+Coreference set:
+	(2,17,[17,18]) -> (2,1,[1,3]), that is: "his" -> "Felix himself"
+Coreference set:
+	(2,15,[15,16]) -> (2,7,[6,8]), that is: "it" -> "this composition"
+	(3,3,[3,4]) -> (2,7,[6,8]), that is: "it" -> "this composition"
+Coreference set:
+	(3,1,[1,2]) -> (2,21,[21,22]), that is: "We" -> "we"
+	(4,11,[11,12]) -> (2,21,[21,22]), that is: "we" -> "we"
+	(4,37,[37,38]) -> (2,21,[21,22]), that is: "we" -> "we"
+Coreference set:
+	(4,16,[16,17]) -> (4,2,[2,10]), that is: "it" -> "spite of many beauties which the work contains"

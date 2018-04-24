@@ -1,0 +1,79 @@
+Sentence #1 (25 tokens):
+In the evening Lenny Bernstein gave a concert with his new fiddle Serenade (built from Plato's Dialogues) played by Isaac Stern.
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t1" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=Lenny CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Lenny NamedEntityTag=PERSON]
+[Text=Bernstein CharacterOffsetBegin=21 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Bernstein NamedEntityTag=PERSON]
+[Text=gave CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=fiddle CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=fiddle NamedEntityTag=O]
+[Text=Serenade CharacterOffsetBegin=66 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Serenade NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=built CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=VBN Lemma=build NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Plato CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=Plato NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Dialogues CharacterOffsetBegin=95 CharacterOffsetEnd=104 PartOfSpeech=NNPS Lemma=Dialogues NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=106 CharacterOffsetEnd=112 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Isaac CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=NNP Lemma=Isaac NamedEntityTag=PERSON]
+[Text=Stern CharacterOffsetBegin=122 CharacterOffsetEnd=127 PartOfSpeech=NNP Lemma=Stern NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NN evening)))
+    (NP (NNP Lenny) (NNP Bernstein))
+    (VP (VBD gave)
+      (NP
+        (NP (DT a) (NN concert))
+        (PP (IN with)
+          (NP (PRP$ his) (JJ new) (NN fiddle))))
+      (NP
+        (NP (NNP Serenade))
+        (PRN (-LRB- -LRB-)
+          (VP (VBN built)
+            (PP (IN from)
+              (NP
+                (NP (NNP Plato) (POS 's))
+                (NNPS Dialogues))))
+          (-RRB- -RRB-))
+        (VP (VBN played)
+          (PP (IN by)
+            (NP (NNP Isaac) (NNP Stern))))))
+    (. .)))
+
+root(ROOT-0, gave-6)
+case(evening-3, In-1)
+det(evening-3, the-2)
+nmod:in(gave-6, evening-3)
+compound(Bernstein-5, Lenny-4)
+nsubj(gave-6, Bernstein-5)
+det(concert-8, a-7)
+iobj(gave-6, concert-8)
+case(fiddle-12, with-9)
+nmod:poss(fiddle-12, his-10)
+amod(fiddle-12, new-11)
+nmod:with(concert-8, fiddle-12)
+dobj(gave-6, Serenade-13)
+punct(built-15, -LRB--14)
+dep(Serenade-13, built-15)
+case(Dialogues-19, from-16)
+nmod:poss(Dialogues-19, Plato-17)
+case(Plato-17, 's-18)
+nmod:from(built-15, Dialogues-19)
+punct(built-15, -RRB--20)
+acl(Serenade-13, played-21)
+case(Stern-24, by-22)
+compound(Stern-24, Isaac-23)
+nmod:by(played-21, Stern-24)
+punct(gave-6, .-25)
+
+Coreference set:
+	(1,10,[10,11]) -> (1,5,[4,6]), that is: "his" -> "Lenny Bernstein"

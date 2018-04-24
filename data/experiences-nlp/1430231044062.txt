@@ -1,0 +1,337 @@
+Sentence #1 (15 tokens):
+Q: You are said to have been influenced by the English composer Delius.
+[Text=Q CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=NNP Lemma=Q NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=1 CharacterOffsetEnd=2 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=You CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=influenced CharacterOffsetBegin=29 CharacterOffsetEnd=39 PartOfSpeech=VBN Lemma=influence NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=English CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=English NamedEntityTag=MISC]
+[Text=composer CharacterOffsetBegin=55 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=composer NamedEntityTag=O]
+[Text=Delius CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Delius NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (NNP Q))
+    (: :)
+    (S
+      (NP (PRP You))
+      (VP (VBP are)
+        (VP (VBD said)
+          (S
+            (VP (TO to)
+              (VP (VB have)
+                (VP (VBN been)
+                  (VP (VBN influenced)
+                    (PP (IN by)
+                      (NP (DT the) (NNP English) (NN composer) (NNP Delius)))))))))))
+    (. .)))
+
+root(ROOT-0, Q-1)
+punct(Q-1, :-2)
+nsubjpass(said-5, You-3)
+nsubjpass:xsubj(influenced-9, You-3)
+auxpass(said-5, are-4)
+parataxis(Q-1, said-5)
+mark(influenced-9, to-6)
+aux(influenced-9, have-7)
+auxpass(influenced-9, been-8)
+xcomp(said-5, influenced-9)
+case(Delius-14, by-10)
+det(Delius-14, the-11)
+compound(Delius-14, English-12)
+compound(Delius-14, composer-13)
+nmod:agent(influenced-9, Delius-14)
+punct(Q-1, .-15)
+
+Sentence #2 (8 tokens):
+Have you ever listened to his music?
+[Text=Have CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=listened CharacterOffsetBegin=86 CharacterOffsetEnd=94 PartOfSpeech=VBD Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=102 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (SQ (VBP Have)
+    (NP (PRP you))
+    (VP
+      (ADJP (RB ever)
+        (SBAR
+          (S
+            (VP (VBD listened)))))
+      (PP (TO to)
+        (NP (PRP$ his) (NN music))))
+    (. ?)))
+
+root(ROOT-0, ever-3)
+aux(ever-3, Have-1)
+nsubj(ever-3, you-2)
+ccomp(ever-3, listened-4)
+case(music-7, to-5)
+nmod:poss(music-7, his-6)
+nmod:to(ever-3, music-7)
+punct(ever-3, ?-8)
+
+Sentence #3 (12 tokens):
+A: [Duke Ellington] In 1933, in England.
+[Text=A CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Duke CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=NNP Lemma=Duke NamedEntityTag=PERSON]
+[Text=Ellington CharacterOffsetBegin=121 CharacterOffsetEnd=130 PartOfSpeech=NNP Lemma=Ellington NamedEntityTag=PERSON]
+[Text=-RSB- CharacterOffsetBegin=130 CharacterOffsetEnd=131 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=1933 CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=CD Lemma=1933 NamedEntityTag=DATE NormalizedNamedEntityTag=1933 Timex=<TIMEX3 tid="t1" type="DATE" value="1933">1933</TIMEX3>]
+[Text=, CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=England CharacterOffsetBegin=144 CharacterOffsetEnd=151 PartOfSpeech=NNP Lemma=England NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (DT A) (: :) (-LRB- -LSB-))
+    (NP
+      (NP
+        (NP (NNP Duke) (NNP Ellington))
+        (PRN (-RRB- -RSB-)
+          (PP (IN In)
+            (NP (CD 1933)))
+          (, ,)))
+      (PP (IN in)
+        (NP (NNP England))))
+    (. .)))
+
+root(ROOT-0, A-1)
+punct(A-1, :-2)
+punct(A-1, -LSB--3)
+compound(Ellington-5, Duke-4)
+dep(A-1, Ellington-5)
+punct(1933-8, -RSB--6)
+case(1933-8, In-7)
+nmod:in(Ellington-5, 1933-8)
+punct(1933-8, ,-9)
+case(England-11, in-10)
+nmod:in(Ellington-5, England-11)
+punct(A-1, .-12)
+
+Sentence #4 (43 tokens):
+When I got there people were saying some of our music sounded like Delius, and when I told them I had never heard Delius, they brought me presents of Delius records by the London Philharmonic, Sir Thomas Beecham conducting.
+[Text=When CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=160 CharacterOffsetEnd=163 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=164 CharacterOffsetEnd=169 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=170 CharacterOffsetEnd=176 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=177 CharacterOffsetEnd=181 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=saying CharacterOffsetBegin=182 CharacterOffsetEnd=188 PartOfSpeech=VBG Lemma=say NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=189 CharacterOffsetEnd=193 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=194 CharacterOffsetEnd=196 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=197 CharacterOffsetEnd=200 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=201 CharacterOffsetEnd=206 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=sounded CharacterOffsetBegin=207 CharacterOffsetEnd=214 PartOfSpeech=VBD Lemma=sound NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=215 CharacterOffsetEnd=219 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=Delius CharacterOffsetBegin=220 CharacterOffsetEnd=226 PartOfSpeech=NNP Lemma=Delius NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=226 CharacterOffsetEnd=227 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=232 CharacterOffsetEnd=236 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=237 CharacterOffsetEnd=238 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=told CharacterOffsetBegin=239 CharacterOffsetEnd=243 PartOfSpeech=VBD Lemma=tell NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=244 CharacterOffsetEnd=248 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=249 CharacterOffsetEnd=250 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=251 CharacterOffsetEnd=254 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=255 CharacterOffsetEnd=260 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=261 CharacterOffsetEnd=266 PartOfSpeech=VBN Lemma=hear NamedEntityTag=O]
+[Text=Delius CharacterOffsetBegin=267 CharacterOffsetEnd=273 PartOfSpeech=NNP Lemma=Delius NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=273 CharacterOffsetEnd=274 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=275 CharacterOffsetEnd=279 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=brought CharacterOffsetBegin=280 CharacterOffsetEnd=287 PartOfSpeech=VBD Lemma=bring NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=288 CharacterOffsetEnd=290 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=presents CharacterOffsetBegin=291 CharacterOffsetEnd=299 PartOfSpeech=VBZ Lemma=present NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=300 CharacterOffsetEnd=302 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Delius CharacterOffsetBegin=303 CharacterOffsetEnd=309 PartOfSpeech=NNP Lemma=Delius NamedEntityTag=MISC]
+[Text=records CharacterOffsetBegin=310 CharacterOffsetEnd=317 PartOfSpeech=NNS Lemma=record NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=318 CharacterOffsetEnd=320 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=321 CharacterOffsetEnd=324 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=London CharacterOffsetBegin=325 CharacterOffsetEnd=331 PartOfSpeech=NNP Lemma=London NamedEntityTag=ORGANIZATION]
+[Text=Philharmonic CharacterOffsetBegin=332 CharacterOffsetEnd=344 PartOfSpeech=NNP Lemma=Philharmonic NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=344 CharacterOffsetEnd=345 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Sir CharacterOffsetBegin=346 CharacterOffsetEnd=349 PartOfSpeech=NNP Lemma=Sir NamedEntityTag=O]
+[Text=Thomas CharacterOffsetBegin=350 CharacterOffsetEnd=356 PartOfSpeech=NNP Lemma=Thomas NamedEntityTag=PERSON]
+[Text=Beecham CharacterOffsetBegin=357 CharacterOffsetEnd=364 PartOfSpeech=NNP Lemma=Beecham NamedEntityTag=PERSON]
+[Text=conducting CharacterOffsetBegin=365 CharacterOffsetEnd=375 PartOfSpeech=VBG Lemma=conduct NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=375 CharacterOffsetEnd=376 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (SBAR
+        (WHADVP (WRB When))
+        (S
+          (NP (PRP I))
+          (VP (VBD got)
+            (NP (EX there))
+            (SBAR
+              (S
+                (NP (NNS people))
+                (VP (VBD were)
+                  (VP (VBG saying)
+                    (NP
+                      (NP (DT some))
+                      (PP (IN of)
+                        (NP (PRP$ our) (NN music)))))))))))
+      (VP (VBD sounded)
+        (PP (IN like)
+          (NP (NNP Delius)))))
+    (, ,)
+    (CC and)
+    (S
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP I))
+          (VP (VBD told)
+            (NP (PRP them))
+            (SBAR
+              (S
+                (NP (PRP I))
+                (VP (VBD had)
+                  (ADVP (RB never))
+                  (VP (VBN heard)
+                    (NP (NNP Delius)))))))))
+      (, ,)
+      (NP (PRP they))
+      (VP (VBD brought)
+        (SBAR
+          (S
+            (NP (PRP me))
+            (VP (VBZ presents)
+              (PP (IN of)
+                (NP (NNP Delius) (NNS records)))
+              (PP (IN by)
+                (NP
+                  (NP (DT the) (NNP London) (NNP Philharmonic))
+                  (, ,)
+                  (NP
+                    (NP (NNP Sir) (NNP Thomas) (NNP Beecham))
+                    (VP (VBG conducting))))))))))
+    (. .)))
+
+root(ROOT-0, sounded-12)
+advmod(got-3, When-1)
+nsubj(got-3, I-2)
+advcl(sounded-12, got-3)
+dobj(got-3, there-4)
+nsubj(saying-7, people-5)
+aux(saying-7, were-6)
+dep(got-3, saying-7)
+dobj(saying-7, some-8)
+case(music-11, of-9)
+nmod:poss(music-11, our-10)
+nmod:of(some-8, music-11)
+case(Delius-14, like-13)
+nmod:like(sounded-12, Delius-14)
+punct(sounded-12, ,-15)
+cc(sounded-12, and-16)
+advmod(told-19, when-17)
+nsubj(told-19, I-18)
+advcl(brought-28, told-19)
+dobj(told-19, them-20)
+nsubj(heard-24, I-21)
+aux(heard-24, had-22)
+neg(heard-24, never-23)
+ccomp(told-19, heard-24)
+dobj(heard-24, Delius-25)
+punct(brought-28, ,-26)
+nsubj(brought-28, they-27)
+conj:and(sounded-12, brought-28)
+nsubj(presents-30, me-29)
+ccomp(brought-28, presents-30)
+case(records-33, of-31)
+compound(records-33, Delius-32)
+nmod:of(presents-30, records-33)
+case(Philharmonic-37, by-34)
+det(Philharmonic-37, the-35)
+compound(Philharmonic-37, London-36)
+nmod:by(presents-30, Philharmonic-37)
+punct(Philharmonic-37, ,-38)
+compound(Beecham-41, Sir-39)
+compound(Beecham-41, Thomas-40)
+appos(Philharmonic-37, Beecham-41)
+acl(Beecham-41, conducting-42)
+punct(sounded-12, .-43)
+
+Sentence #5 (15 tokens):
+I was hooked on listening, but could not copy a bit of it.
+[Text=I CharacterOffsetBegin=377 CharacterOffsetEnd=378 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=379 CharacterOffsetEnd=382 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=hooked CharacterOffsetBegin=383 CharacterOffsetEnd=389 PartOfSpeech=VBN Lemma=hook NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=390 CharacterOffsetEnd=392 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=listening CharacterOffsetBegin=393 CharacterOffsetEnd=402 PartOfSpeech=VBG Lemma=listen NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=402 CharacterOffsetEnd=403 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=404 CharacterOffsetEnd=407 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=408 CharacterOffsetEnd=413 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=414 CharacterOffsetEnd=417 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=copy CharacterOffsetBegin=418 CharacterOffsetEnd=422 PartOfSpeech=VB Lemma=copy NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=423 CharacterOffsetEnd=424 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=425 CharacterOffsetEnd=428 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=429 CharacterOffsetEnd=431 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=432 CharacterOffsetEnd=434 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=434 CharacterOffsetEnd=435 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBD was)
+        (VP (VBN hooked)
+          (PP (IN on)
+            (S
+              (VP (VBG listening))))))
+      (, ,)
+      (CC but)
+      (VP (MD could) (RB not)
+        (VP (VB copy)
+          (NP
+            (NP (DT a) (NN bit))
+            (PP (IN of)
+              (NP (PRP it)))))))
+    (. .)))
+
+root(ROOT-0, hooked-3)
+nsubjpass(hooked-3, I-1)
+nsubj(copy-10, I-1)
+auxpass(hooked-3, was-2)
+mark(listening-5, on-4)
+advcl:on(hooked-3, listening-5)
+punct(hooked-3, ,-6)
+cc(hooked-3, but-7)
+aux(copy-10, could-8)
+neg(copy-10, not-9)
+conj:but(hooked-3, copy-10)
+det:qmod(it-14, a-11)
+mwe(a-11, bit-12)
+mwe(a-11, of-13)
+dobj(copy-10, it-14)
+punct(hooked-3, .-15)
+
+Coreference set:
+	(2,6,[6,7]) -> (1,14,[11,15]), that is: "his" -> "the English composer Delius"
+	(4,14,[14,15]) -> (1,14,[11,15]), that is: "Delius" -> "the English composer Delius"
+	(4,25,[25,26]) -> (1,14,[11,15]), that is: "Delius" -> "the English composer Delius"
+	(4,32,[32,33]) -> (1,14,[11,15]), that is: "Delius" -> "the English composer Delius"
+Coreference set:
+	(4,11,[10,12]) -> (2,7,[6,8]), that is: "our music" -> "his music"
+Coreference set:
+	(4,18,[18,19]) -> (4,2,[2,3]), that is: "I" -> "I"
+	(4,21,[21,22]) -> (4,2,[2,3]), that is: "I" -> "I"
+	(4,29,[29,30]) -> (4,2,[2,3]), that is: "me" -> "I"
+	(5,1,[1,2]) -> (4,2,[2,3]), that is: "I" -> "I"
+Coreference set:
+	(4,20,[20,21]) -> (4,5,[5,6]), that is: "them" -> "people"
+	(4,27,[27,28]) -> (4,5,[5,6]), that is: "they" -> "people"
+Coreference set:
+	(5,14,[14,15]) -> (4,8,[8,12]), that is: "it" -> "some of our music"

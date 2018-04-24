@@ -1,0 +1,294 @@
+Sentence #1 (23 tokens):
+Walk with Beth up town in morning to Mornings to choose records (to hire) to play on hired Radio gram.
+[Text=Walk CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=walk NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Beth CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Beth NamedEntityTag=PERSON]
+[Text=up CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=up NamedEntityTag=O]
+[Text=town CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=town NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=morning CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=TMO Timex=<TIMEX3 tid="t1" type="TIME" value="TMO">morning</TIMEX3>]
+[Text=to CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Mornings CharacterOffsetBegin=37 CharacterOffsetEnd=45 PartOfSpeech=NNS Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=TMO Timex=<TIMEX3 tid="t2" type="TIME" value="TMO">Mornings</TIMEX3>]
+[Text=to CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=choose CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=VB Lemma=choose NamedEntityTag=O]
+[Text=records CharacterOffsetBegin=56 CharacterOffsetEnd=63 PartOfSpeech=NNS Lemma=record NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hire CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=VB Lemma=hire NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=hired CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=VBN Lemma=hire NamedEntityTag=O]
+[Text=Radio CharacterOffsetBegin=91 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=radio NamedEntityTag=O]
+[Text=gram CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=gram NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Walk)
+      (PP (IN with)
+        (NP (NNP Beth)))
+      (PP (IN up)
+        (NP
+          (NP (NN town))
+          (PP (IN in)
+            (NP (NN morning)))))
+      (PP (TO to)
+        (NP (NNS Mornings)
+          (S
+            (VP (TO to)
+              (VP (VB choose)
+                (S
+                  (NP
+                    (NP (NNS records))
+                    (PRN (-LRB- -LRB-)
+                      (S
+                        (VP (TO to)
+                          (VP (VB hire))))
+                      (-RRB- -RRB-)))
+                  (VP (TO to)
+                    (VP (VB play)
+                      (PP (IN on)
+                        (NP (VBN hired) (NN Radio) (NN gram))))))))))))
+    (. .)))
+
+root(ROOT-0, Walk-1)
+case(Beth-3, with-2)
+nmod:with(Walk-1, Beth-3)
+case(town-5, up-4)
+nmod:up(Walk-1, town-5)
+case(morning-7, in-6)
+nmod:in(town-5, morning-7)
+case(Mornings-9, to-8)
+nmod:to(Walk-1, Mornings-9)
+mark(choose-11, to-10)
+acl:to(Mornings-9, choose-11)
+dobj(choose-11, records-12)
+nsubj:xsubj(play-18, records-12)
+punct(hire-15, -LRB--13)
+mark(hire-15, to-14)
+dep(records-12, hire-15)
+punct(hire-15, -RRB--16)
+mark(play-18, to-17)
+xcomp(choose-11, play-18)
+case(gram-22, on-19)
+amod(gram-22, hired-20)
+compound(gram-22, Radio-21)
+nmod:on(play-18, gram-22)
+punct(Walk-1, .-23)
+
+Sentence #2 (3 tokens):
+for to-night.
+[Text=for CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=to-night CharacterOffsetBegin=107 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=to-night NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN for)
+      (NP (NN to-night)))
+    (. .)))
+
+root(ROOT-0, to-night-2)
+case(to-night-2, for-1)
+punct(to-night-2, .-3)
+
+Sentence #3 (11 tokens):
+Various odd jobs - final movings for dance in aft.
+[Text=Various CharacterOffsetBegin=117 CharacterOffsetEnd=124 PartOfSpeech=JJ Lemma=various NamedEntityTag=O]
+[Text=odd CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=JJ Lemma=odd NamedEntityTag=O]
+[Text=jobs CharacterOffsetBegin=129 CharacterOffsetEnd=133 PartOfSpeech=NNS Lemma=job NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=final CharacterOffsetBegin=136 CharacterOffsetEnd=141 PartOfSpeech=JJ Lemma=final NamedEntityTag=O]
+[Text=movings CharacterOffsetBegin=142 CharacterOffsetEnd=149 PartOfSpeech=NNS Lemma=moving NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=dance CharacterOffsetBegin=154 CharacterOffsetEnd=159 PartOfSpeech=NN Lemma=dance NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=aft CharacterOffsetBegin=163 CharacterOffsetEnd=166 PartOfSpeech=NN Lemma=aft NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=166 CharacterOffsetEnd=167 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (JJ Various) (JJ odd) (NNS jobs))
+    (: -)
+    (NP
+      (NP (JJ final) (NNS movings))
+      (PP (IN for)
+        (NP
+          (NP (NN dance))
+          (PP (IN in)
+            (NP (NN aft))))))
+    (. .)))
+
+root(ROOT-0, jobs-3)
+amod(jobs-3, Various-1)
+amod(jobs-3, odd-2)
+punct(jobs-3, --4)
+amod(movings-6, final-5)
+dep(jobs-3, movings-6)
+case(dance-8, for-7)
+nmod:for(movings-6, dance-8)
+case(aft-10, in-9)
+nmod:in(dance-8, aft-10)
+punct(jobs-3, .-11)
+
+Sentence #4 (4 tokens):
+& after tea.
+[Text=& CharacterOffsetBegin=168 CharacterOffsetEnd=169 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=170 CharacterOffsetEnd=175 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=tea CharacterOffsetBegin=176 CharacterOffsetEnd=179 PartOfSpeech=NN Lemma=tea NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=179 CharacterOffsetEnd=180 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (CC &))
+    (PP (IN after)
+      (NP (NN tea)))
+    (. .)))
+
+root(ROOT-0, &-1)
+case(tea-3, after-2)
+dep(&-1, tea-3)
+punct(&-1, .-4)
+
+Sentence #5 (7 tokens):
+dance 8-1.0 In dining room.
+[Text=dance CharacterOffsetBegin=181 CharacterOffsetEnd=186 PartOfSpeech=NN Lemma=dance NamedEntityTag=O]
+[Text=8-1 CharacterOffsetBegin=187 CharacterOffsetEnd=190 PartOfSpeech=CD Lemma=8-1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=8.0 - 1.0]
+[Text=.0 CharacterOffsetBegin=190 CharacterOffsetEnd=192 PartOfSpeech=CD Lemma=.0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.0]
+[Text=In CharacterOffsetBegin=193 CharacterOffsetEnd=195 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=dining CharacterOffsetBegin=196 CharacterOffsetEnd=202 PartOfSpeech=NN Lemma=dining NamedEntityTag=O]
+[Text=room CharacterOffsetBegin=203 CharacterOffsetEnd=207 PartOfSpeech=NN Lemma=room NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NN dance))
+    (PP
+      (NP (CD 8-1) (CD .0))
+      (IN In)
+      (NP (NN dining) (NN room)))
+    (. .)))
+
+root(ROOT-0, dance-1)
+nummod(.0-3, 8-1-2)
+dep(dance-1, .0-3)
+case(.0-3, In-4)
+compound(room-6, dining-5)
+dep(.0-3, room-6)
+punct(dance-1, .-7)
+
+Sentence #6 (2 tokens):
+abt.
+[Text=abt CharacterOffsetBegin=209 CharacterOffsetEnd=212 PartOfSpeech=NN Lemma=abt NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=212 CharacterOffsetEnd=213 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (NN abt) (. .)))
+
+root(ROOT-0, abt-1)
+punct(abt-1, .-2)
+
+Sentence #7 (4 tokens):
+33 people come.
+[Text=33 CharacterOffsetBegin=214 CharacterOffsetEnd=216 PartOfSpeech=CD Lemma=33 NamedEntityTag=NUMBER NormalizedNamedEntityTag=33.0]
+[Text=people CharacterOffsetBegin=217 CharacterOffsetEnd=223 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=come CharacterOffsetBegin=224 CharacterOffsetEnd=228 PartOfSpeech=VBP Lemma=come NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=228 CharacterOffsetEnd=229 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (CD 33) (NNS people))
+    (VP (VBP come))
+    (. .)))
+
+root(ROOT-0, come-3)
+nummod(people-2, 33-1)
+nsubj(come-3, people-2)
+punct(come-3, .-4)
+
+Sentence #8 (7 tokens):
+I think it goes pretty well.
+[Text=I CharacterOffsetBegin=230 CharacterOffsetEnd=231 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=232 CharacterOffsetEnd=237 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=238 CharacterOffsetEnd=240 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=goes CharacterOffsetBegin=241 CharacterOffsetEnd=245 PartOfSpeech=VBZ Lemma=go NamedEntityTag=O]
+[Text=pretty CharacterOffsetBegin=246 CharacterOffsetEnd=252 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=253 CharacterOffsetEnd=257 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=257 CharacterOffsetEnd=258 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ goes)
+            (ADVP (RB pretty) (RB well))))))
+    (. .)))
+
+root(ROOT-0, think-2)
+nsubj(think-2, I-1)
+nsubj(goes-4, it-3)
+ccomp(think-2, goes-4)
+advmod(well-6, pretty-5)
+advmod(goes-4, well-6)
+punct(think-2, .-7)
+
+Sentence #9 (17 tokens):
+After they have gone we put back majority of furniture getting to bed at 2.30 abt.
+[Text=After CharacterOffsetBegin=259 CharacterOffsetEnd=264 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=265 CharacterOffsetEnd=269 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=270 CharacterOffsetEnd=274 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=gone CharacterOffsetBegin=275 CharacterOffsetEnd=279 PartOfSpeech=VBN Lemma=go NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=280 CharacterOffsetEnd=282 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=283 CharacterOffsetEnd=286 PartOfSpeech=VBD Lemma=put NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=287 CharacterOffsetEnd=291 PartOfSpeech=RP Lemma=back NamedEntityTag=O]
+[Text=majority CharacterOffsetBegin=292 CharacterOffsetEnd=300 PartOfSpeech=NN Lemma=majority NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=301 CharacterOffsetEnd=303 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=furniture CharacterOffsetBegin=304 CharacterOffsetEnd=313 PartOfSpeech=NN Lemma=furniture NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=314 CharacterOffsetEnd=321 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=322 CharacterOffsetEnd=324 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=bed CharacterOffsetBegin=325 CharacterOffsetEnd=328 PartOfSpeech=NN Lemma=bed NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=329 CharacterOffsetEnd=331 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=2.30 CharacterOffsetBegin=332 CharacterOffsetEnd=336 PartOfSpeech=CD Lemma=2.30 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.3]
+[Text=abt CharacterOffsetBegin=337 CharacterOffsetEnd=340 PartOfSpeech=NN Lemma=abt NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=340 CharacterOffsetEnd=341 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN After)
+      (S
+        (NP (PRP they))
+        (VP (VBP have)
+          (VP (VBN gone)))))
+    (NP (PRP we))
+    (VP (VBD put)
+      (PRT (RP back))
+      (NP
+        (NP (NN majority))
+        (PP (IN of)
+          (NP
+            (NP (NN furniture))
+            (VP (VBG getting)
+              (PP (TO to)
+                (NP (NN bed)))
+              (PP (IN at)
+                (NP (CD 2.30) (NN abt))))))))
+    (. .)))
+
+root(ROOT-0, put-6)
+mark(gone-4, After-1)
+nsubj(gone-4, they-2)
+aux(gone-4, have-3)
+advcl:after(put-6, gone-4)
+nsubj(put-6, we-5)
+compound:prt(put-6, back-7)
+dobj(put-6, majority-8)
+case(furniture-10, of-9)
+nmod:of(majority-8, furniture-10)
+acl(furniture-10, getting-11)
+case(bed-13, to-12)
+nmod:to(getting-11, bed-13)
+case(abt-16, at-14)
+nummod(abt-16, 2.30-15)
+nmod:at(getting-11, abt-16)
+punct(put-6, .-17)
+
+Coreference set:
+	(8,3,[3,4]) -> (7,1,[1,2]), that is: "it" -> "33"
+Coreference set:
+	(9,2,[2,3]) -> (7,2,[1,3]), that is: "they" -> "33 people"

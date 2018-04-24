@@ -1,0 +1,411 @@
+Sentence #1 (27 tokens):
+I remember in the ‘prehistoric’ days of gramophone recording hearing on a cylindrical Edison record a lovely melody that Kreisler had played into it.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=remember CharacterOffsetBegin=2 CharacterOffsetEnd=10 PartOfSpeech=VBP Lemma=remember NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=prehistoric CharacterOffsetBegin=19 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=prehistoric NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=days CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t1" type="DURATION" value="PXD">days</TIMEX3>]
+[Text=of CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=gramophone CharacterOffsetBegin=40 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=gramophone NamedEntityTag=O]
+[Text=recording CharacterOffsetBegin=51 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=recording NamedEntityTag=O]
+[Text=hearing CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=hearing NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=cylindrical CharacterOffsetBegin=74 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=cylindrical NamedEntityTag=O]
+[Text=Edison CharacterOffsetBegin=86 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=edison NamedEntityTag=PERSON]
+[Text=record CharacterOffsetBegin=93 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=record NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lovely CharacterOffsetBegin=102 CharacterOffsetEnd=108 PartOfSpeech=JJ Lemma=lovely NamedEntityTag=O]
+[Text=melody CharacterOffsetBegin=109 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=melody NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=Kreisler CharacterOffsetBegin=121 CharacterOffsetEnd=129 PartOfSpeech=NNP Lemma=Kreisler NamedEntityTag=PERSON]
+[Text=had CharacterOffsetBegin=130 CharacterOffsetEnd=133 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=134 CharacterOffsetEnd=140 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=141 CharacterOffsetEnd=145 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=146 CharacterOffsetEnd=148 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP remember)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (`` `) (JJ prehistoric) ('' ') (NNS days))
+          (PP (IN of)
+            (NP
+              (NP (NN gramophone) (NN recording) (NN hearing))
+              (PP (IN on)
+                (NP (DT a) (JJ cylindrical) (NN Edison) (NN record)))))))
+      (NP
+        (NP (DT a) (JJ lovely) (NN melody))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (NP (NNP Kreisler))
+            (VP (VBD had)
+              (VP (VBN played)
+                (PP (IN into)
+                  (NP (PRP it)))))))))
+    (. .)))
+
+root(ROOT-0, remember-2)
+nsubj(remember-2, I-1)
+case(days-8, in-3)
+det(days-8, the-4)
+punct(days-8, `-5)
+amod(days-8, prehistoric-6)
+punct(days-8, '-7)
+nmod:in(remember-2, days-8)
+case(hearing-12, of-9)
+compound(hearing-12, gramophone-10)
+compound(hearing-12, recording-11)
+nmod:of(days-8, hearing-12)
+case(record-17, on-13)
+det(record-17, a-14)
+amod(record-17, cylindrical-15)
+compound(record-17, Edison-16)
+nmod:on(hearing-12, record-17)
+det(melody-20, a-18)
+amod(melody-20, lovely-19)
+dobj(remember-2, melody-20)
+dobj(played-24, melody-20)
+ref(melody-20, that-21)
+nsubj(played-24, Kreisler-22)
+aux(played-24, had-23)
+acl:relcl(melody-20, played-24)
+case(it-26, into-25)
+nmod:into(played-24, it-26)
+punct(remember-2, .-27)
+
+Sentence #2 (26 tokens):
+It was not published and I recollect taking it down bit by bit, a laborious process which involved many hours of really concentrated listening.
+[Text=It CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=153 CharacterOffsetEnd=156 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=157 CharacterOffsetEnd=160 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=published CharacterOffsetBegin=161 CharacterOffsetEnd=170 PartOfSpeech=VBN Lemma=publish NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=175 CharacterOffsetEnd=176 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=recollect CharacterOffsetBegin=177 CharacterOffsetEnd=186 PartOfSpeech=VBP Lemma=recollect NamedEntityTag=O]
+[Text=taking CharacterOffsetBegin=187 CharacterOffsetEnd=193 PartOfSpeech=VBG Lemma=take NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=194 CharacterOffsetEnd=196 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=197 CharacterOffsetEnd=201 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=202 CharacterOffsetEnd=205 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=206 CharacterOffsetEnd=208 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=209 CharacterOffsetEnd=212 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=212 CharacterOffsetEnd=213 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=laborious CharacterOffsetBegin=216 CharacterOffsetEnd=225 PartOfSpeech=JJ Lemma=laborious NamedEntityTag=O]
+[Text=process CharacterOffsetBegin=226 CharacterOffsetEnd=233 PartOfSpeech=NN Lemma=process NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=234 CharacterOffsetEnd=239 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=involved CharacterOffsetBegin=240 CharacterOffsetEnd=248 PartOfSpeech=VBD Lemma=involve NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=249 CharacterOffsetEnd=253 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=hours CharacterOffsetBegin=254 CharacterOffsetEnd=259 PartOfSpeech=NNS Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PTXH Timex=<TIMEX3 tid="t2" type="DURATION" value="PTXH">hours</TIMEX3>]
+[Text=of CharacterOffsetBegin=260 CharacterOffsetEnd=262 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=263 CharacterOffsetEnd=269 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=concentrated CharacterOffsetBegin=270 CharacterOffsetEnd=282 PartOfSpeech=JJ Lemma=concentrated NamedEntityTag=O]
+[Text=listening CharacterOffsetBegin=283 CharacterOffsetEnd=292 PartOfSpeech=NN Lemma=listening NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=292 CharacterOffsetEnd=293 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBD was) (RB not)
+        (VP (VBN published))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP recollect)
+        (S
+          (VP (VBG taking)
+            (NP (PRP it))
+            (PRT (RP down))
+            (PP
+              (NP (NN bit))
+              (IN by)
+              (NP
+                (NP (NN bit))
+                (, ,)
+                (NP
+                  (NP (DT a) (JJ laborious) (NN process))
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBD involved)
+                        (NP
+                          (NP (JJ many) (NNS hours))
+                          (PP (IN of)
+                            (NP
+                              (ADJP (RB really) (JJ concentrated))
+                              (NN listening))))))))))))))
+    (. .)))
+
+root(ROOT-0, published-4)
+nsubjpass(published-4, It-1)
+auxpass(published-4, was-2)
+neg(published-4, not-3)
+cc(published-4, and-5)
+nsubj(recollect-7, I-6)
+conj:and(published-4, recollect-7)
+xcomp(recollect-7, taking-8)
+dobj(taking-8, it-9)
+compound:prt(taking-8, down-10)
+nmod:by(taking-8, bit-11)
+case(bit-11, by-12)
+dep(bit-11, bit-13)
+punct(bit-13, ,-14)
+det(process-17, a-15)
+amod(process-17, laborious-16)
+appos(bit-13, process-17)
+nsubj(involved-19, process-17)
+ref(process-17, which-18)
+acl:relcl(process-17, involved-19)
+amod(hours-21, many-20)
+dobj(involved-19, hours-21)
+case(listening-25, of-22)
+advmod(concentrated-24, really-23)
+amod(listening-25, concentrated-24)
+nmod:of(hours-21, listening-25)
+punct(published-4, .-26)
+
+Sentence #3 (23 tokens):
+Eventually I produced this melody as an ‘Air on the G string’ which I have to this day in manuscript.
+[Text=Eventually CharacterOffsetBegin=294 CharacterOffsetEnd=304 PartOfSpeech=RB Lemma=eventually NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=305 CharacterOffsetEnd=306 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=produced CharacterOffsetBegin=307 CharacterOffsetEnd=315 PartOfSpeech=VBD Lemma=produce NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=316 CharacterOffsetEnd=320 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=melody CharacterOffsetBegin=321 CharacterOffsetEnd=327 PartOfSpeech=NN Lemma=melody NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=328 CharacterOffsetEnd=330 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=331 CharacterOffsetEnd=333 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=334 CharacterOffsetEnd=335 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Air CharacterOffsetBegin=335 CharacterOffsetEnd=338 PartOfSpeech=NN Lemma=air NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=339 CharacterOffsetEnd=341 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=342 CharacterOffsetEnd=345 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=G CharacterOffsetBegin=346 CharacterOffsetEnd=347 PartOfSpeech=NN Lemma=g NamedEntityTag=O]
+[Text=string CharacterOffsetBegin=348 CharacterOffsetEnd=354 PartOfSpeech=NN Lemma=string NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=354 CharacterOffsetEnd=355 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=356 CharacterOffsetEnd=361 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=362 CharacterOffsetEnd=363 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=364 CharacterOffsetEnd=368 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=369 CharacterOffsetEnd=371 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=372 CharacterOffsetEnd=376 PartOfSpeech=DT Lemma=this NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf0">this day</TIMEX3>]
+[Text=day CharacterOffsetBegin=377 CharacterOffsetEnd=380 PartOfSpeech=NN Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf0">this day</TIMEX3>]
+[Text=in CharacterOffsetBegin=381 CharacterOffsetEnd=383 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=manuscript CharacterOffsetBegin=384 CharacterOffsetEnd=394 PartOfSpeech=NN Lemma=manuscript NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=394 CharacterOffsetEnd=395 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Eventually))
+    (NP (PRP I))
+    (VP (VBD produced)
+      (NP (DT this) (NN melody))
+      (PP (IN as)
+        (NP (DT an) (`` `)
+          (NX
+            (NX (NN Air))
+            (PP (IN on)
+              (NP (DT the) (NN G) (NN string))))
+          ('' ')))
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (NP (PRP I))
+          (VP (VBP have)
+            (VP
+              (PP (TO to)
+                (NP
+                  (NP (DT this) (NN day))
+                  (PP (IN in)
+                    (NP (NN manuscript))))))))))
+    (. .)))
+
+root(ROOT-0, produced-3)
+advmod(produced-3, Eventually-1)
+nsubj(produced-3, I-2)
+det(melody-5, this-4)
+dobj(produced-3, melody-5)
+case(Air-9, as-6)
+det(Air-9, an-7)
+punct(Air-9, `-8)
+nmod:as(produced-3, Air-9)
+case(string-13, on-10)
+det(string-13, the-11)
+compound(string-13, G-12)
+nmod:on(Air-9, string-13)
+punct(Air-9, '-14)
+dobj(day-20, which-15)
+nsubj(day-20, I-16)
+aux(day-20, have-17)
+case(day-20, to-18)
+det(day-20, this-19)
+dep(produced-3, day-20)
+case(manuscript-22, in-21)
+nmod:in(day-20, manuscript-22)
+punct(produced-3, .-23)
+
+Sentence #4 (22 tokens):
+Ultimately Kreisler’s playing of it into this Edison contraption was published and turned out to be entitled Sarabande by Sulzer.
+[Text=Ultimately CharacterOffsetBegin=396 CharacterOffsetEnd=406 PartOfSpeech=RB Lemma=ultimately NamedEntityTag=O]
+[Text=Kreisler CharacterOffsetBegin=407 CharacterOffsetEnd=415 PartOfSpeech=NNP Lemma=Kreisler NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=415 CharacterOffsetEnd=417 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=418 CharacterOffsetEnd=425 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=426 CharacterOffsetEnd=428 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=429 CharacterOffsetEnd=431 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=432 CharacterOffsetEnd=436 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=437 CharacterOffsetEnd=441 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=Edison CharacterOffsetBegin=442 CharacterOffsetEnd=448 PartOfSpeech=NNP Lemma=Edison NamedEntityTag=PERSON]
+[Text=contraption CharacterOffsetBegin=449 CharacterOffsetEnd=460 PartOfSpeech=NN Lemma=contraption NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=461 CharacterOffsetEnd=464 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=published CharacterOffsetBegin=465 CharacterOffsetEnd=474 PartOfSpeech=VBN Lemma=publish NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=475 CharacterOffsetEnd=478 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=turned CharacterOffsetBegin=479 CharacterOffsetEnd=485 PartOfSpeech=VBN Lemma=turn NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=486 CharacterOffsetEnd=489 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=490 CharacterOffsetEnd=492 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=493 CharacterOffsetEnd=495 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=entitled CharacterOffsetBegin=496 CharacterOffsetEnd=504 PartOfSpeech=VBN Lemma=entitle NamedEntityTag=O]
+[Text=Sarabande CharacterOffsetBegin=505 CharacterOffsetEnd=514 PartOfSpeech=NNP Lemma=Sarabande NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=515 CharacterOffsetEnd=517 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Sulzer CharacterOffsetBegin=518 CharacterOffsetEnd=524 PartOfSpeech=NNP Lemma=Sulzer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=524 CharacterOffsetEnd=525 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Ultimately))
+    (NP
+      (NP
+        (NP (NNP Kreisler) (POS 's))
+        (NN playing))
+      (PP (IN of)
+        (NP (PRP it)))
+      (PP (IN into)
+        (NP (DT this) (NNP Edison) (NN contraption))))
+    (VP (VBD was)
+      (VP
+        (VP (VBN published))
+        (CC and)
+        (VP (VBN turned)
+          (PRT (RP out))
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (VP (VBN entitled)
+                  (NP (NNP Sarabande))
+                  (PP (IN by)
+                    (NP (NNP Sulzer))))))))))
+    (. .)))
+
+root(ROOT-0, published-12)
+advmod(published-12, Ultimately-1)
+nmod:poss(playing-4, Kreisler-2)
+case(Kreisler-2, 's-3)
+nsubjpass(published-12, playing-4)
+nsubjpass(turned-14, playing-4)
+nsubjpass:xsubj(entitled-18, playing-4)
+case(it-6, of-5)
+nmod:of(playing-4, it-6)
+case(contraption-10, into-7)
+det(contraption-10, this-8)
+compound(contraption-10, Edison-9)
+nmod:into(playing-4, contraption-10)
+auxpass(published-12, was-11)
+cc(published-12, and-13)
+conj:and(published-12, turned-14)
+compound:prt(turned-14, out-15)
+mark(entitled-18, to-16)
+auxpass(entitled-18, be-17)
+xcomp(turned-14, entitled-18)
+dobj(entitled-18, Sarabande-19)
+case(Sulzer-21, by-20)
+nmod:agent(entitled-18, Sulzer-21)
+punct(published-12, .-22)
+
+Sentence #5 (24 tokens):
+My version was in a different key with variations in the piano part and slight alterations here and there in the solo part.
+[Text=My CharacterOffsetBegin=526 CharacterOffsetEnd=528 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=version CharacterOffsetBegin=529 CharacterOffsetEnd=536 PartOfSpeech=NN Lemma=version NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=537 CharacterOffsetEnd=540 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=541 CharacterOffsetEnd=543 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=544 CharacterOffsetEnd=545 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=546 CharacterOffsetEnd=555 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=key CharacterOffsetBegin=556 CharacterOffsetEnd=559 PartOfSpeech=NN Lemma=key NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=560 CharacterOffsetEnd=564 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=variations CharacterOffsetBegin=565 CharacterOffsetEnd=575 PartOfSpeech=NNS Lemma=variation NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=576 CharacterOffsetEnd=578 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=579 CharacterOffsetEnd=582 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=583 CharacterOffsetEnd=588 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=589 CharacterOffsetEnd=593 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=594 CharacterOffsetEnd=597 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=slight CharacterOffsetBegin=598 CharacterOffsetEnd=604 PartOfSpeech=JJ Lemma=slight NamedEntityTag=O]
+[Text=alterations CharacterOffsetBegin=605 CharacterOffsetEnd=616 PartOfSpeech=NNS Lemma=alteration NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=617 CharacterOffsetEnd=621 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=622 CharacterOffsetEnd=625 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=626 CharacterOffsetEnd=631 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=632 CharacterOffsetEnd=634 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=635 CharacterOffsetEnd=638 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=solo CharacterOffsetBegin=639 CharacterOffsetEnd=643 PartOfSpeech=NN Lemma=solo NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=644 CharacterOffsetEnd=648 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=648 CharacterOffsetEnd=649 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP$ My) (NN version))
+    (VP (VBD was)
+      (PP (IN in)
+        (NP
+          (NP (DT a) (JJ different) (NN key))
+          (PP (IN with)
+            (NP
+              (NP (NNS variations))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NN piano) (NN part))
+                  (CC and)
+                  (NP (JJ slight) (NNS alterations))))))))
+      (ADVP (RB here)
+        (CC and)
+        (RB there))
+      (PP (IN in)
+        (NP (DT the) (NN solo) (NN part))))
+    (. .)))
+
+root(ROOT-0, key-7)
+nmod:poss(version-2, My-1)
+nsubj(key-7, version-2)
+cop(key-7, was-3)
+case(key-7, in-4)
+det(key-7, a-5)
+amod(key-7, different-6)
+case(variations-9, with-8)
+nmod:with(key-7, variations-9)
+case(part-13, in-10)
+det(part-13, the-11)
+compound(part-13, piano-12)
+nmod:in(variations-9, part-13)
+cc(part-13, and-14)
+amod(alterations-16, slight-15)
+nmod:in(variations-9, alterations-16)
+conj:and(part-13, alterations-16)
+advmod(key-7, here-17)
+cc(here-17, and-18)
+advmod(key-7, there-19)
+conj:and(here-17, there-19)
+case(part-23, in-20)
+det(part-23, the-21)
+compound(part-23, solo-22)
+nmod:in(key-7, part-23)
+punct(key-7, .-24)
+
+Coreference set:
+	(4,2,[2,4]) -> (1,22,[22,23]), that is: "Kreisler 's" -> "Kreisler"
+Coreference set:
+	(2,6,[6,7]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(3,2,[2,3]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(3,16,[16,17]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(5,1,[1,2]) -> (1,1,[1,2]), that is: "My" -> "I"
+Coreference set:
+	(1,26,[26,27]) -> (1,8,[4,18]), that is: "it" -> "the ` prehistoric ' days of gramophone recording hearing on a cylindrical Edison record"
+	(2,1,[1,2]) -> (1,8,[4,18]), that is: "It" -> "the ` prehistoric ' days of gramophone recording hearing on a cylindrical Edison record"
+	(2,9,[9,10]) -> (1,8,[4,18]), that is: "it" -> "the ` prehistoric ' days of gramophone recording hearing on a cylindrical Edison record"
+Coreference set:
+	(3,5,[4,6]) -> (1,20,[18,27]), that is: "this melody" -> "a lovely melody that Kreisler had played into it"
+	(4,6,[6,7]) -> (1,20,[18,27]), that is: "it" -> "a lovely melody that Kreisler had played into it"

@@ -1,0 +1,58 @@
+Sentence #1 (17 tokens):
+[what I admired most was] the charming Ronzi de Begnis and her exquisite singing.
+[Text=-LSB- CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=1 CharacterOffsetEnd=5 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=admired CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=VBD Lemma=admire NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=charming CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=charming NamedEntityTag=O]
+[Text=Ronzi CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Ronzi NamedEntityTag=PERSON]
+[Text=de CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=de NamedEntityTag=PERSON]
+[Text=Begnis CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Begnis NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=exquisite CharacterOffsetBegin=63 CharacterOffsetEnd=72 PartOfSpeech=JJ Lemma=exquisite NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=73 CharacterOffsetEnd=80 PartOfSpeech=NN Lemma=singing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (-LRB- -LSB-))
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (PRP I))
+          (VP (VBD admired)
+            (ADVP (RBS most))))))
+    (VP (VBD was)
+      (PP (-RRB- -RSB-)
+        (NP
+          (NP (DT the) (JJ charming) (NNP Ronzi) (IN de) (NNP Begnis))
+          (CC and)
+          (NP (PRP$ her) (JJ exquisite) (NN singing)))))
+    (. .)))
+
+root(ROOT-0, Begnis-12)
+dobj(admired-4, -LSB--1)
+nsubj(Begnis-12, -LSB--1)
+ref(-LSB--1, what-2)
+nsubj(admired-4, I-3)
+acl:relcl(-LSB--1, admired-4)
+advmod(admired-4, most-5)
+cop(Begnis-12, was-6)
+punct(Begnis-12, -RSB--7)
+det(Begnis-12, the-8)
+amod(Begnis-12, charming-9)
+compound(Begnis-12, Ronzi-10)
+amod(Begnis-12, de-11)
+cc(Begnis-12, and-13)
+nmod:poss(singing-16, her-14)
+amod(singing-16, exquisite-15)
+conj:and(Begnis-12, singing-16)
+punct(Begnis-12, .-17)
+
+Coreference set:
+	(1,14,[14,15]) -> (1,1,[1,6]), that is: "her" -> "-LSB- what I admired most"

@@ -1,0 +1,141 @@
+Sentence #1 (26 tokens):
+Choir practice tonight and I must go in a minute or two and attend a function and help Wall Jacobs to support the female voices.
+[Text=Choir CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=choir NamedEntityTag=O]
+[Text=practice CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=practice NamedEntityTag=O]
+[Text=tonight CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=tonight NamedEntityTag=DATE NormalizedNamedEntityTag=THIS NI Timex=<TIMEX3 alt_value="THIS NI" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">tonight</TIMEX3>]
+[Text=and CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1M Timex=<TIMEX3 tid="t2" type="DURATION" value="PT1M">a minute</TIMEX3>]
+[Text=minute CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=minute NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1M Timex=<TIMEX3 tid="t2" type="DURATION" value="PT1M">a minute</TIMEX3>]
+[Text=or CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=and CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=attend CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=VB Lemma=attend NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=function CharacterOffsetBegin=69 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=function NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=help NamedEntityTag=O]
+[Text=Wall CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=wall NamedEntityTag=PERSON]
+[Text=Jacobs CharacterOffsetBegin=92 CharacterOffsetEnd=98 PartOfSpeech=NNP Lemma=Jacobs NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=support CharacterOffsetBegin=102 CharacterOffsetEnd=109 PartOfSpeech=VB Lemma=support NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=female CharacterOffsetBegin=114 CharacterOffsetEnd=120 PartOfSpeech=JJ Lemma=female NamedEntityTag=O]
+[Text=voices CharacterOffsetBegin=121 CharacterOffsetEnd=127 PartOfSpeech=NNS Lemma=voice NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NN Choir) (NN practice) (NN tonight))
+      (CC and)
+      (NP (PRP I)))
+    (VP (MD must)
+      (VP
+        (VP (VB go)
+          (PP (IN in)
+            (NP
+              (NP (DT a) (NN minute))
+              (CC or)
+              (NP (CD two)))))
+        (CC and)
+        (VP (VB attend)
+          (NP
+            (NP (DT a) (NN function)
+              (CC and)
+              (NN help) (NN Wall))
+            (SBAR
+              (S
+                (NP (NNP Jacobs))
+                (VP (TO to)
+                  (VP (VB support)
+                    (NP (DT the) (JJ female) (NNS voices))))))))))
+    (. .)))
+
+root(ROOT-0, go-7)
+compound(tonight-3, Choir-1)
+compound(tonight-3, practice-2)
+nsubj(go-7, tonight-3)
+nsubj(attend-14, tonight-3)
+cc(tonight-3, and-4)
+conj:and(tonight-3, I-5)
+nsubj(go-7, I-5)
+aux(go-7, must-6)
+case(minute-10, in-8)
+det(minute-10, a-9)
+nmod:in(go-7, minute-10)
+cc(minute-10, or-11)
+nmod:in(go-7, two-12)
+conj:or(minute-10, two-12)
+cc(go-7, and-13)
+conj:and(go-7, attend-14)
+det(Wall-19, a-15)
+compound(Wall-19, function-16)
+cc(function-16, and-17)
+conj:and(function-16, help-18)
+compound(Wall-19, help-18)
+dobj(attend-14, Wall-19)
+nsubj(support-22, Jacobs-20)
+mark(support-22, to-21)
+acl:to(Wall-19, support-22)
+det(voices-25, the-23)
+amod(voices-25, female-24)
+dobj(support-22, voices-25)
+punct(go-7, .-26)
+
+Sentence #2 (15 tokens):
+We seem fated to be always left to do our best with the singing.
+[Text=We CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=seem CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=VBP Lemma=seem NamedEntityTag=O]
+[Text=fated CharacterOffsetBegin=137 CharacterOffsetEnd=142 PartOfSpeech=VBN Lemma=fate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=143 CharacterOffsetEnd=145 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=146 CharacterOffsetEnd=148 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=149 CharacterOffsetEnd=155 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=156 CharacterOffsetEnd=160 PartOfSpeech=VBN Lemma=leave NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=164 CharacterOffsetEnd=166 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=171 CharacterOffsetEnd=175 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=176 CharacterOffsetEnd=180 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=181 CharacterOffsetEnd=184 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=185 CharacterOffsetEnd=192 PartOfSpeech=NN Lemma=singing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=192 CharacterOffsetEnd=193 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP seem)
+      (VP (VBN fated)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP
+                (ADVP (RB always))
+                (VBN left)
+                (S
+                  (VP (TO to)
+                    (VP (VB do)
+                      (NP (PRP$ our) (JJS best))
+                      (PP (IN with)
+                        (NP (DT the) (NN singing))))))))))))
+    (. .)))
+
+root(ROOT-0, seem-2)
+nsubj(seem-2, We-1)
+xcomp(seem-2, fated-3)
+mark(left-7, to-4)
+auxpass(left-7, be-5)
+advmod(left-7, always-6)
+xcomp(fated-3, left-7)
+mark(do-9, to-8)
+xcomp(left-7, do-9)
+nmod:poss(best-11, our-10)
+dobj(do-9, best-11)
+case(singing-14, with-12)
+det(singing-14, the-13)
+nmod:with(do-9, singing-14)
+punct(seem-2, .-15)
+
+Coreference set:
+	(2,10,[10,11]) -> (2,1,[1,2]), that is: "our" -> "We"

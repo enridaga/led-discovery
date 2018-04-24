@@ -1,0 +1,407 @@
+Sentence #1 (14 tokens):
+Every day I would hear my father playing the piano or the organ.
+[Text=Every CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=DT Lemma=every NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1D" quant="every" tid="t1" type="SET" value="P1D">Every day</TIMEX3>]
+[Text=day CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=day NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1D" quant="every" tid="t1" type="SET" value="P1D">Every day</TIMEX3>]
+[Text=I CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=father CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=father NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=organ CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=organ NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (DT Every) (NN day))
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB hear)
+        (NP (PRP$ my) (NN father))
+        (S
+          (VP (VBG playing)
+            (NP
+              (NP (DT the) (NN piano))
+              (CC or)
+              (NP (DT the) (NN organ)))))))
+    (. .)))
+
+root(ROOT-0, hear-5)
+det(day-2, Every-1)
+nmod:tmod(hear-5, day-2)
+nsubj(hear-5, I-3)
+aux(hear-5, would-4)
+nmod:poss(father-7, my-6)
+dobj(hear-5, father-7)
+xcomp(hear-5, playing-8)
+det(piano-10, the-9)
+dobj(playing-8, piano-10)
+cc(piano-10, or-11)
+det(organ-13, the-12)
+dobj(playing-8, organ-13)
+conj:or(piano-10, organ-13)
+punct(hear-5, .-14)
+
+Sentence #2 (13 tokens):
+There were his songs and church music and compositions of the masters.
+[Text=There CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=songs CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NNS Lemma=song NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=church CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=church NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=compositions CharacterOffsetBegin=107 CharacterOffsetEnd=119 PartOfSpeech=NNS Lemma=composition NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=120 CharacterOffsetEnd=122 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=masters CharacterOffsetBegin=127 CharacterOffsetEnd=134 PartOfSpeech=NNS Lemma=master NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD were)
+      (NP
+        (NP
+          (NP (PRP$ his) (NNS songs))
+          (CC and)
+          (NP (NN church) (NN music)))
+        (CC and)
+        (NP
+          (NP (NNS compositions))
+          (PP (IN of)
+            (NP (DT the) (NNS masters))))))
+    (. .)))
+
+root(ROOT-0, were-2)
+expl(were-2, There-1)
+nmod:poss(songs-4, his-3)
+nsubj(were-2, songs-4)
+cc(songs-4, and-5)
+compound(music-7, church-6)
+nsubj(were-2, music-7)
+conj:and(songs-4, music-7)
+cc(songs-4, and-8)
+nsubj(were-2, compositions-9)
+conj:and(songs-4, compositions-9)
+case(masters-12, of-10)
+det(masters-12, the-11)
+nmod:of(compositions-9, masters-12)
+punct(were-2, .-13)
+
+Sentence #3 (28 tokens):
+He took me to all the services at the church – the Gregorian chant, the chorals and the organ voluntaries became part of my daily life.
+[Text=He CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=took CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=VBD Lemma=take NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=144 CharacterOffsetEnd=146 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=services CharacterOffsetBegin=158 CharacterOffsetEnd=166 PartOfSpeech=NNS Lemma=service NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=167 CharacterOffsetEnd=169 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=170 CharacterOffsetEnd=173 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=church CharacterOffsetBegin=174 CharacterOffsetEnd=180 PartOfSpeech=NN Lemma=church NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=183 CharacterOffsetEnd=186 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Gregorian CharacterOffsetBegin=187 CharacterOffsetEnd=196 PartOfSpeech=NNP Lemma=Gregorian NamedEntityTag=MISC]
+[Text=chant CharacterOffsetBegin=197 CharacterOffsetEnd=202 PartOfSpeech=NN Lemma=chant NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=202 CharacterOffsetEnd=203 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=204 CharacterOffsetEnd=207 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=chorals CharacterOffsetBegin=208 CharacterOffsetEnd=215 PartOfSpeech=NNS Lemma=choral NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=216 CharacterOffsetEnd=219 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=organ CharacterOffsetBegin=224 CharacterOffsetEnd=229 PartOfSpeech=NN Lemma=organ NamedEntityTag=O]
+[Text=voluntaries CharacterOffsetBegin=230 CharacterOffsetEnd=241 PartOfSpeech=NNS Lemma=voluntary NamedEntityTag=O]
+[Text=became CharacterOffsetBegin=242 CharacterOffsetEnd=248 PartOfSpeech=VBD Lemma=become NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=249 CharacterOffsetEnd=253 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=254 CharacterOffsetEnd=256 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=257 CharacterOffsetEnd=259 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=daily CharacterOffsetBegin=260 CharacterOffsetEnd=265 PartOfSpeech=JJ Lemma=daily NamedEntityTag=SET Timex=<TIMEX3 freq="P1X" periodicity="P1D" quant="EVERY" tid="t2" type="SET" value="P1D">daily</TIMEX3>]
+[Text=life CharacterOffsetBegin=266 CharacterOffsetEnd=270 PartOfSpeech=NN Lemma=life NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=270 CharacterOffsetEnd=271 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD took)
+        (NP (PRP me))
+        (PP (TO to)
+          (NP (PDT all) (DT the) (NNS services)))
+        (PP (IN at)
+          (NP (DT the) (NN church)))))
+    (: --)
+    (S
+      (NP
+        (NP (DT the) (NNP Gregorian) (NN chant))
+        (, ,)
+        (NP (DT the) (NNS chorals))
+        (CC and)
+        (NP (DT the) (NN organ) (NNS voluntaries)))
+      (VP (VBD became)
+        (NP
+          (NP (NN part))
+          (PP (IN of)
+            (NP (PRP$ my) (JJ daily) (NN life))))))
+    (. .)))
+
+root(ROOT-0, took-2)
+nsubj(took-2, He-1)
+dobj(took-2, me-3)
+case(services-7, to-4)
+det:predet(services-7, all-5)
+det(services-7, the-6)
+nmod:to(took-2, services-7)
+case(church-10, at-8)
+det(church-10, the-9)
+nmod:at(took-2, church-10)
+punct(took-2, ---11)
+det(chant-14, the-12)
+compound(chant-14, Gregorian-13)
+nsubj(became-22, chant-14)
+punct(chant-14, ,-15)
+det(chorals-17, the-16)
+conj:and(chant-14, chorals-17)
+nsubj(became-22, chorals-17)
+cc(chant-14, and-18)
+det(voluntaries-21, the-19)
+compound(voluntaries-21, organ-20)
+conj:and(chant-14, voluntaries-21)
+nsubj(became-22, voluntaries-21)
+parataxis(took-2, became-22)
+xcomp(became-22, part-23)
+case(life-27, of-24)
+nmod:poss(life-27, my-25)
+amod(life-27, daily-26)
+nmod:of(part-23, life-27)
+punct(took-2, .-28)
+
+Sentence #4 (54 tokens):
+And then, too, there were always the wonderful sounds of nature, the sound of the sea, the sound of the wind moving through the trees, the delicate singing of the birds, the infinitely varied melody of the human voice, not only in song but in speech.
+[Text=And CharacterOffsetBegin=272 CharacterOffsetEnd=275 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=276 CharacterOffsetEnd=280 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=280 CharacterOffsetEnd=281 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=282 CharacterOffsetEnd=285 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=285 CharacterOffsetEnd=286 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=287 CharacterOffsetEnd=292 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=293 CharacterOffsetEnd=297 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=298 CharacterOffsetEnd=304 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=305 CharacterOffsetEnd=308 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=wonderful CharacterOffsetBegin=309 CharacterOffsetEnd=318 PartOfSpeech=JJ Lemma=wonderful NamedEntityTag=O]
+[Text=sounds CharacterOffsetBegin=319 CharacterOffsetEnd=325 PartOfSpeech=NNS Lemma=sound NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=326 CharacterOffsetEnd=328 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=nature CharacterOffsetBegin=329 CharacterOffsetEnd=335 PartOfSpeech=NN Lemma=nature NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=335 CharacterOffsetEnd=336 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=337 CharacterOffsetEnd=340 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sound CharacterOffsetBegin=341 CharacterOffsetEnd=346 PartOfSpeech=NN Lemma=sound NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=347 CharacterOffsetEnd=349 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=350 CharacterOffsetEnd=353 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sea CharacterOffsetBegin=354 CharacterOffsetEnd=357 PartOfSpeech=NN Lemma=sea NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=357 CharacterOffsetEnd=358 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=359 CharacterOffsetEnd=362 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sound CharacterOffsetBegin=363 CharacterOffsetEnd=368 PartOfSpeech=NN Lemma=sound NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=369 CharacterOffsetEnd=371 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=372 CharacterOffsetEnd=375 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=wind CharacterOffsetBegin=376 CharacterOffsetEnd=380 PartOfSpeech=NN Lemma=wind NamedEntityTag=O]
+[Text=moving CharacterOffsetBegin=381 CharacterOffsetEnd=387 PartOfSpeech=VBG Lemma=move NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=388 CharacterOffsetEnd=395 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=396 CharacterOffsetEnd=399 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=trees CharacterOffsetBegin=400 CharacterOffsetEnd=405 PartOfSpeech=NNS Lemma=tree NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=405 CharacterOffsetEnd=406 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=407 CharacterOffsetEnd=410 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=delicate CharacterOffsetBegin=411 CharacterOffsetEnd=419 PartOfSpeech=JJ Lemma=delicate NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=420 CharacterOffsetEnd=427 PartOfSpeech=NN Lemma=singing NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=428 CharacterOffsetEnd=430 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=431 CharacterOffsetEnd=434 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=birds CharacterOffsetBegin=435 CharacterOffsetEnd=440 PartOfSpeech=NNS Lemma=bird NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=440 CharacterOffsetEnd=441 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=442 CharacterOffsetEnd=445 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=infinitely CharacterOffsetBegin=446 CharacterOffsetEnd=456 PartOfSpeech=RB Lemma=infinitely NamedEntityTag=O]
+[Text=varied CharacterOffsetBegin=457 CharacterOffsetEnd=463 PartOfSpeech=JJ Lemma=varied NamedEntityTag=O]
+[Text=melody CharacterOffsetBegin=464 CharacterOffsetEnd=470 PartOfSpeech=NN Lemma=melody NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=471 CharacterOffsetEnd=473 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=474 CharacterOffsetEnd=477 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=human CharacterOffsetBegin=478 CharacterOffsetEnd=483 PartOfSpeech=JJ Lemma=human NamedEntityTag=O]
+[Text=voice CharacterOffsetBegin=484 CharacterOffsetEnd=489 PartOfSpeech=NN Lemma=voice NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=489 CharacterOffsetEnd=490 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=491 CharacterOffsetEnd=494 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=495 CharacterOffsetEnd=499 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=500 CharacterOffsetEnd=502 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=song CharacterOffsetBegin=503 CharacterOffsetEnd=507 PartOfSpeech=NN Lemma=song NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=508 CharacterOffsetEnd=511 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=512 CharacterOffsetEnd=514 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=speech CharacterOffsetBegin=515 CharacterOffsetEnd=521 PartOfSpeech=NN Lemma=speech NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=521 CharacterOffsetEnd=522 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC And)
+    (ADVP (RB then))
+    (, ,)
+    (ADVP (RB too))
+    (, ,)
+    (NP (EX there))
+    (VP (VBD were)
+      (ADVP (RB always))
+      (NP
+        (NP (DT the) (JJ wonderful) (NNS sounds))
+        (PP (IN of)
+          (NP
+            (NP (NN nature))
+            (, ,)
+            (NP
+              (NP (DT the) (NN sound))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NN sea))
+                  (, ,)
+                  (NP
+                    (NP (DT the) (NN sound))
+                    (PP (IN of)
+                      (NP
+                        (NP (DT the) (NN wind))
+                        (VP (VBG moving)
+                          (PP (IN through)
+                            (NP
+                              (NP (DT the) (NNS trees))
+                              (, ,)
+                              (NP
+                                (NP (DT the) (JJ delicate) (NN singing))
+                                (PP (IN of)
+                                  (NP
+                                    (NP (DT the) (NNS birds))
+                                    (, ,)
+                                    (NP
+                                      (NP (DT the)
+                                        (ADJP (RB infinitely) (JJ varied))
+                                        (NN melody))
+                                      (PP (IN of)
+                                        (NP (DT the) (JJ human) (NN voice))))
+                                    (, ,))))))
+                          (PP
+                            (CONJP (RB not) (RB only))
+                            (PP (IN in)
+                              (NP (NN song)))
+                            (CC but)
+                            (PP (IN in)
+                              (NP (NN speech)))))))))))))))
+    (. .)))
+
+root(ROOT-0, were-7)
+cc(were-7, And-1)
+advmod(were-7, then-2)
+punct(were-7, ,-3)
+advmod(were-7, too-4)
+punct(were-7, ,-5)
+expl(were-7, there-6)
+advmod(were-7, always-8)
+det(sounds-11, the-9)
+amod(sounds-11, wonderful-10)
+nsubj(were-7, sounds-11)
+case(nature-13, of-12)
+nmod:of(sounds-11, nature-13)
+punct(nature-13, ,-14)
+det(sound-16, the-15)
+appos(nature-13, sound-16)
+case(sea-19, of-17)
+det(sea-19, the-18)
+nmod:of(sound-16, sea-19)
+punct(sea-19, ,-20)
+det(sound-22, the-21)
+appos(sea-19, sound-22)
+case(wind-25, of-23)
+det(wind-25, the-24)
+nmod:of(sound-22, wind-25)
+acl(wind-25, moving-26)
+acl(wind-25, moving-26')
+conj:but(moving-26, moving-26')
+case(trees-29, through-27)
+det(trees-29, the-28)
+nmod:through(moving-26, trees-29)
+punct(trees-29, ,-30)
+det(singing-33, the-31)
+amod(singing-33, delicate-32)
+appos(trees-29, singing-33)
+case(birds-36, of-34)
+det(birds-36, the-35)
+nmod:of(singing-33, birds-36)
+punct(birds-36, ,-37)
+det(melody-41, the-38)
+advmod(varied-40, infinitely-39)
+amod(melody-41, varied-40)
+appos(birds-36, melody-41)
+case(voice-45, of-42)
+det(voice-45, the-43)
+amod(voice-45, human-44)
+nmod:of(melody-41, voice-45)
+punct(birds-36, ,-46)
+neg(only-48, not-47)
+cc:preconj(song-50, only-48)
+case(song-50, in-49)
+nmod:in(moving-26, song-50)
+cc(moving-26, but-51)
+case(speech-53, in-52)
+nmod:in(moving-26', speech-53)
+punct(were-7, .-54)
+
+Sentence #5 (6 tokens):
+What a wealth of music!
+[Text=What CharacterOffsetBegin=523 CharacterOffsetEnd=527 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=528 CharacterOffsetEnd=529 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=wealth CharacterOffsetBegin=530 CharacterOffsetEnd=536 PartOfSpeech=NN Lemma=wealth NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=537 CharacterOffsetEnd=539 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=540 CharacterOffsetEnd=545 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=545 CharacterOffsetEnd=546 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (WHNP (WP What)
+      (NP (DT a) (NN wealth)))
+    (PP (IN of)
+      (NP (NN music)))
+    (. !)))
+
+root(ROOT-0, What-1)
+det(wealth-3, a-2)
+dep(What-1, wealth-3)
+case(music-5, of-4)
+nmod:of(What-1, music-5)
+punct(What-1, !-6)
+
+Sentence #6 (6 tokens):
+It sustained and nourished me.
+[Text=It CharacterOffsetBegin=547 CharacterOffsetEnd=549 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=sustained CharacterOffsetBegin=550 CharacterOffsetEnd=559 PartOfSpeech=VBD Lemma=sustain NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=560 CharacterOffsetEnd=563 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=nourished CharacterOffsetBegin=564 CharacterOffsetEnd=573 PartOfSpeech=VBD Lemma=nourish NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=574 CharacterOffsetEnd=576 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=576 CharacterOffsetEnd=577 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBD sustained))
+      (CC and)
+      (VP (VBD nourished)
+        (NP (PRP me))))
+    (. .)))
+
+root(ROOT-0, sustained-2)
+nsubj(sustained-2, It-1)
+nsubj(nourished-4, It-1)
+cc(sustained-2, and-3)
+conj:and(sustained-2, nourished-4)
+dobj(nourished-4, me-5)
+punct(sustained-2, .-6)
+
+Coreference set:
+	(1,6,[6,7]) -> (1,3,[3,4]), that is: "my" -> "I"
+	(3,3,[3,4]) -> (1,3,[3,4]), that is: "me" -> "I"
+	(3,25,[25,26]) -> (1,3,[3,4]), that is: "my" -> "I"
+	(6,5,[5,6]) -> (1,3,[3,4]), that is: "me" -> "I"
+Coreference set:
+	(2,3,[3,4]) -> (1,7,[6,8]), that is: "his" -> "my father"
+	(3,1,[1,2]) -> (1,7,[6,8]), that is: "He" -> "my father"
+Coreference set:
+	(4,22,[21,54]) -> (4,19,[18,20]), that is: "the sound of the wind moving through the trees , the delicate singing of the birds , the infinitely varied melody of the human voice , not only in song but in speech" -> "the sea"
+Coreference set:
+	(6,1,[1,2]) -> (5,3,[2,4]), that is: "It" -> "a wealth"

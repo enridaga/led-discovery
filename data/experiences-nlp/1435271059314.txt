@@ -1,0 +1,160 @@
+Sentence #1 (5 tokens):
+Listen to Maestersinger Ov.
+[Text=Listen CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Maestersinger CharacterOffsetBegin=10 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Maestersinger NamedEntityTag=O]
+[Text=Ov CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Ov NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Listen)
+      (PP (TO to)
+        (NP (NNP Maestersinger) (NNP Ov))))
+    (. .)))
+
+root(ROOT-0, Listen-1)
+case(Ov-4, to-2)
+compound(Ov-4, Maestersinger-3)
+nmod:to(Listen-1, Ov-4)
+punct(Listen-1, .-5)
+
+Sentence #2 (6 tokens):
+after supper - Adrian Boult.
+[Text=after CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=supper CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=supper NamedEntityTag=DATE NormalizedNamedEntityTag=supper ]
+[Text=- CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Adrian CharacterOffsetBegin=43 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Adrian NamedEntityTag=PERSON]
+[Text=Boult CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Boult NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN after)
+      (NP (NN supper)))
+    (: -)
+    (NP (NNP Adrian) (NNP Boult))
+    (. .)))
+
+root(ROOT-0, Boult-5)
+case(supper-2, after-1)
+nmod:after(Boult-5, supper-2)
+punct(Boult-5, --3)
+compound(Boult-5, Adrian-4)
+punct(Boult-5, .-6)
+
+Sentence #3 (11 tokens):
+This perf, like the Eroica, an absolute disgrace.
+[Text=This CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=perf CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=perf NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Eroica CharacterOffsetBegin=77 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=Eroica NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=absolute CharacterOffsetBegin=88 CharacterOffsetEnd=96 PartOfSpeech=JJ Lemma=absolute NamedEntityTag=O]
+[Text=disgrace CharacterOffsetBegin=97 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=disgrace NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (DT This) (NN perf))
+    (, ,)
+    (PP (IN like)
+      (NP
+        (NP (DT the) (NNP Eroica))
+        (, ,)
+        (NP (DT an) (JJ absolute) (NN disgrace))))
+    (. .)))
+
+root(ROOT-0, perf-2)
+det(perf-2, This-1)
+punct(perf-2, ,-3)
+case(Eroica-6, like-4)
+det(Eroica-6, the-5)
+nmod:like(perf-2, Eroica-6)
+punct(Eroica-6, ,-7)
+det(disgrace-10, an-8)
+amod(disgrace-10, absolute-9)
+appos(Eroica-6, disgrace-10)
+punct(perf-2, .-11)
+
+Sentence #4 (25 tokens):
+Of course the notes were correctly played, & more or less together but - tempo, phrasing dynamics, shape, etc. etc!!!
+[Text=Of CharacterOffsetBegin=107 CharacterOffsetEnd=109 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=110 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=course NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=notes CharacterOffsetBegin=121 CharacterOffsetEnd=126 PartOfSpeech=NNS Lemma=note NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=correctly CharacterOffsetBegin=132 CharacterOffsetEnd=141 PartOfSpeech=RB Lemma=correctly NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=142 CharacterOffsetEnd=148 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=150 CharacterOffsetEnd=151 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=152 CharacterOffsetEnd=156 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=157 CharacterOffsetEnd=159 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=less CharacterOffsetBegin=160 CharacterOffsetEnd=164 PartOfSpeech=RBR Lemma=less NamedEntityTag=O]
+[Text=together CharacterOffsetBegin=165 CharacterOffsetEnd=173 PartOfSpeech=RB Lemma=together NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=174 CharacterOffsetEnd=177 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=178 CharacterOffsetEnd=179 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=tempo CharacterOffsetBegin=180 CharacterOffsetEnd=185 PartOfSpeech=NN Lemma=tempo NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=185 CharacterOffsetEnd=186 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=phrasing CharacterOffsetBegin=187 CharacterOffsetEnd=195 PartOfSpeech=NN Lemma=phrasing NamedEntityTag=O]
+[Text=dynamics CharacterOffsetBegin=196 CharacterOffsetEnd=204 PartOfSpeech=NNS Lemma=dynamics NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=204 CharacterOffsetEnd=205 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=shape CharacterOffsetBegin=206 CharacterOffsetEnd=211 PartOfSpeech=NN Lemma=shape NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=211 CharacterOffsetEnd=212 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=etc. CharacterOffsetBegin=213 CharacterOffsetEnd=217 PartOfSpeech=FW Lemma=etc. NamedEntityTag=O]
+[Text=etc CharacterOffsetBegin=218 CharacterOffsetEnd=221 PartOfSpeech=FW Lemma=etc NamedEntityTag=O]
+[Text=!!! CharacterOffsetBegin=221 CharacterOffsetEnd=224 PartOfSpeech=FW Lemma=!!! NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN Of)
+      (NP (NN course)))
+    (NP (DT the) (NNS notes))
+    (VP (VBD were)
+      (ADVP (RB correctly))
+      (VP (VBN played) (, ,)
+        (NP
+          (NP
+            (NP (CC &)
+              (NP (RBR more))
+              (CC or)
+              (NP (RBR less)))
+            (ADVP (RB together)))
+          (PP (CC but)
+            (NP (: -)
+              (NP
+                (NP (NN tempo))
+                (, ,)
+                (NP (NN phrasing) (NNS dynamics)))
+              (, ,)
+              (NP
+                (NP (NN shape))
+                (, ,)
+                (NP (FW etc.) (FW etc) (FW !!!))))))))))
+
+root(ROOT-0, played-7)
+case(course-2, Of-1)
+nmod:of(played-7, course-2)
+det(notes-4, the-3)
+nsubjpass(played-7, notes-4)
+auxpass(played-7, were-5)
+advmod(played-7, correctly-6)
+punct(played-7, ,-8)
+cc(more-10, &-9)
+dobj(played-7, more-10)
+cc(more-10, or-11)
+dobj(played-7, less-12)
+conj:or(more-10, less-12)
+advmod(more-10, together-13)
+case(tempo-16, but-14)
+punct(tempo-16, --15)
+nmod:but(more-10, tempo-16)
+punct(tempo-16, ,-17)
+compound(dynamics-19, phrasing-18)
+appos(tempo-16, dynamics-19)
+punct(tempo-16, ,-20)
+appos(tempo-16, shape-21)
+punct(shape-21, ,-22)
+compound(!!!-25, etc.-23)
+compound(!!!-25, etc-24)
+appos(shape-21, !!!-25)
+

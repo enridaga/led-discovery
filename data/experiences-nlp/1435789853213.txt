@@ -1,0 +1,73 @@
+Sentence #1 (23 tokens):
+Friday, the voice of Frederica von Stade with the Chamber Music Society contains both the famous tear and the infamous waver.
+[Text=Friday CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Friday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-5 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-WXX-5">Friday</TIMEX3>]
+[Text=, CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=voice CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=voice NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Frederica CharacterOffsetBegin=21 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Frederica NamedEntityTag=PERSON]
+[Text=von CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=von NamedEntityTag=PERSON]
+[Text=Stade CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Stade NamedEntityTag=PERSON]
+[Text=with CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Chamber CharacterOffsetBegin=50 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=Chamber NamedEntityTag=ORGANIZATION]
+[Text=Music CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=Music NamedEntityTag=ORGANIZATION]
+[Text=Society CharacterOffsetBegin=64 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Society NamedEntityTag=ORGANIZATION]
+[Text=contains CharacterOffsetBegin=72 CharacterOffsetEnd=80 PartOfSpeech=VBZ Lemma=contain NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=CC Lemma=both NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=famous CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=JJ Lemma=famous NamedEntityTag=O]
+[Text=tear CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=VB Lemma=tear NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=infamous CharacterOffsetBegin=110 CharacterOffsetEnd=118 PartOfSpeech=JJ Lemma=infamous NamedEntityTag=O]
+[Text=waver CharacterOffsetBegin=119 CharacterOffsetEnd=124 PartOfSpeech=NN Lemma=waver NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (NNP Friday))
+    (, ,)
+    (NP
+      (NP (DT the) (NN voice))
+      (PP (IN of)
+        (NP
+          (NP (NNP Frederica) (NNP von) (NNP Stade))
+          (PP (IN with)
+            (NP (DT the) (NNP Chamber) (NNP Music) (NNP Society))))))
+    (VP (VBZ contains)
+      (PP (CC both)
+        (NP
+          (NP
+            (NP (DT the) (JJ famous))
+            (SBAR
+              (S
+                (VP (VB tear)))))
+          (CC and)
+          (NP (DT the) (JJ infamous) (NN waver)))))
+    (. .)))
+
+root(ROOT-0, contains-14)
+nmod:tmod(contains-14, Friday-1)
+punct(contains-14, ,-2)
+det(voice-4, the-3)
+nsubj(contains-14, voice-4)
+case(Stade-8, of-5)
+compound(Stade-8, Frederica-6)
+compound(Stade-8, von-7)
+nmod:of(voice-4, Stade-8)
+case(Society-13, with-9)
+det(Society-13, the-10)
+compound(Society-13, Chamber-11)
+compound(Society-13, Music-12)
+nmod:with(Stade-8, Society-13)
+case(famous-17, both-15)
+det(famous-17, the-16)
+nmod:both(contains-14, famous-17)
+acl:relcl(famous-17, tear-18)
+cc(famous-17, and-19)
+det(waver-22, the-20)
+amod(waver-22, infamous-21)
+nmod:both(contains-14, waver-22)
+conj:and(famous-17, waver-22)
+punct(contains-14, .-23)
+

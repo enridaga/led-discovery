@@ -1,0 +1,242 @@
+Sentence #1 (8 tokens):
+After dinner R.C.M. Chamber Concert at 8.15.
+[Text=After CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=R.C.M. CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=R.C.M. NamedEntityTag=O]
+[Text=Chamber CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Chamber NamedEntityTag=O]
+[Text=Concert CharacterOffsetBegin=28 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Concert NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=8.15 CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=CD Lemma=8.15 NamedEntityTag=NUMBER NormalizedNamedEntityTag=8.15]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN After)
+      (NP
+        (NP (NN dinner) (NNP R.C.M.) (NNP Chamber) (NNP Concert))
+        (PP (IN at)
+          (NP (CD 8.15)))))
+    (. .)))
+
+root(ROOT-0, Concert-5)
+case(Concert-5, After-1)
+compound(Concert-5, dinner-2)
+compound(Concert-5, R.C.M.-3)
+compound(Concert-5, Chamber-4)
+case(8.15-7, at-6)
+nmod:at(Concert-5, 8.15-7)
+punct(Concert-5, .-8)
+
+Sentence #2 (5 tokens):
+Mum & Beth go.
+[Text=Mum CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Mum NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Beth CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Beth NamedEntityTag=PERSON]
+[Text=go CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Mum)
+      (CC &)
+      (NNP Beth))
+    (VP (VBP go))
+    (. .)))
+
+root(ROOT-0, go-4)
+nsubj(go-4, Mum-1)
+cc(Mum-1, &-2)
+conj:&(Mum-1, Beth-3)
+nsubj(go-4, Beth-3)
+punct(go-4, .-5)
+
+Sentence #3 (6 tokens):
+Bridges & Brosas also there.
+[Text=Bridges CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Bridges NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Brosas CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Brosas NamedEntityTag=PERSON]
+[Text=also CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Bridges)
+      (CC &)
+      (NNP Brosas))
+    (PP (RB also)
+      (ADVP (RB there)))
+    (. .)))
+
+root(ROOT-0, Bridges-1)
+cc(Bridges-1, &-2)
+conj:&(Bridges-1, Brosas-3)
+advmod(there-5, also-4)
+acl(Bridges-1, there-5)
+punct(Bridges-1, .-6)
+
+Sentence #4 (13 tokens):
+Beethoven C# min quart competently but dully played; an atrocious perf.
+[Text=Beethoven CharacterOffsetBegin=89 CharacterOffsetEnd=98 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=PERSON]
+[Text=C# CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=NNP Lemma=C# NamedEntityTag=O]
+[Text=min CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=min NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1M Timex=<TIMEX3 tid="t1" type="DURATION" value="PT1M">min</TIMEX3>]
+[Text=quart CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=quart NamedEntityTag=O]
+[Text=competently CharacterOffsetBegin=112 CharacterOffsetEnd=123 PartOfSpeech=RB Lemma=competently NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=124 CharacterOffsetEnd=127 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=dully CharacterOffsetBegin=128 CharacterOffsetEnd=133 PartOfSpeech=RB Lemma=dully NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=134 CharacterOffsetEnd=140 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=142 CharacterOffsetEnd=144 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=atrocious CharacterOffsetBegin=145 CharacterOffsetEnd=154 PartOfSpeech=JJ Lemma=atrocious NamedEntityTag=O]
+[Text=perf CharacterOffsetBegin=155 CharacterOffsetEnd=159 PartOfSpeech=NN Lemma=perf NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP
+        (NP (NNP Beethoven) (NNP C#) (NN min) (NN quart))
+        (VP
+          (ADVP
+            (ADVP (RB competently))
+            (PRN (CC but)
+              (ADVP (RB dully))))
+          (VBN played)))
+      (: ;)
+      (NP (DT an)
+        (ADJP (JJ atrocious))
+        (NN perf)))
+    (. .)))
+
+root(ROOT-0, quart-4)
+compound(quart-4, Beethoven-1)
+compound(quart-4, C#-2)
+compound(quart-4, min-3)
+advmod(played-8, competently-5)
+cc(dully-7, but-6)
+dep(competently-5, dully-7)
+acl(quart-4, played-8)
+punct(quart-4, ;-9)
+det(perf-12, an-10)
+amod(perf-12, atrocious-11)
+dep(quart-4, perf-12)
+punct(quart-4, .-13)
+
+Sentence #5 (4 tokens):
+of Delius Vl.
+[Text=of CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Delius CharacterOffsetBegin=164 CharacterOffsetEnd=170 PartOfSpeech=NNP Lemma=Delius NamedEntityTag=O]
+[Text=Vl CharacterOffsetBegin=171 CharacterOffsetEnd=173 PartOfSpeech=NNP Lemma=Vl NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=173 CharacterOffsetEnd=174 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN of)
+      (NP (NNP Delius) (NNP Vl)))
+    (. .)))
+
+root(ROOT-0, Vl-3)
+case(Vl-3, of-1)
+compound(Vl-3, Delius-2)
+punct(Vl-3, .-4)
+
+Sentence #6 (4 tokens):
+Sonata no. 1.
+[Text=Sonata CharacterOffsetBegin=175 CharacterOffsetEnd=181 PartOfSpeech=NNP Lemma=Sonata NamedEntityTag=O]
+[Text=no. CharacterOffsetBegin=182 CharacterOffsetEnd=185 PartOfSpeech=NNP Lemma=no. NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=186 CharacterOffsetEnd=187 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Sonata) (NNP no.))
+    (NP (CD 1))
+    (. .)))
+
+root(ROOT-0, no.-2)
+compound(no.-2, Sonata-1)
+dep(no.-2, 1-3)
+punct(no.-2, .-4)
+
+Sentence #7 (4 tokens):
+F. May plays.
+[Text=F. CharacterOffsetBegin=189 CharacterOffsetEnd=191 PartOfSpeech=NNP Lemma=F. NamedEntityTag=O]
+[Text=May CharacterOffsetBegin=192 CharacterOffsetEnd=195 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-05 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-05">May</TIMEX3>]
+[Text=plays CharacterOffsetBegin=196 CharacterOffsetEnd=201 PartOfSpeech=VBZ Lemma=play NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=201 CharacterOffsetEnd=202 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP F.) (NNP May))
+    (VP (VBZ plays))
+    (. .)))
+
+root(ROOT-0, plays-3)
+compound(May-2, F.-1)
+nsubj(plays-3, May-2)
+punct(plays-3, .-4)
+
+Sentence #8 (19 tokens):
+bit of Phantasy of Schuman, & I conduct a show of my Sinfonietta which goes quite well.
+[Text=bit CharacterOffsetBegin=203 CharacterOffsetEnd=206 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=207 CharacterOffsetEnd=209 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Phantasy CharacterOffsetBegin=210 CharacterOffsetEnd=218 PartOfSpeech=NNP Lemma=Phantasy NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=219 CharacterOffsetEnd=221 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Schuman CharacterOffsetBegin=222 CharacterOffsetEnd=229 PartOfSpeech=NNP Lemma=Schuman NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=229 CharacterOffsetEnd=230 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=231 CharacterOffsetEnd=232 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=233 CharacterOffsetEnd=234 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=conduct CharacterOffsetBegin=235 CharacterOffsetEnd=242 PartOfSpeech=VBP Lemma=conduct NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=243 CharacterOffsetEnd=244 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=show CharacterOffsetBegin=245 CharacterOffsetEnd=249 PartOfSpeech=NN Lemma=show NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=250 CharacterOffsetEnd=252 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=253 CharacterOffsetEnd=255 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=Sinfonietta CharacterOffsetBegin=256 CharacterOffsetEnd=267 PartOfSpeech=NNP Lemma=Sinfonietta NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=268 CharacterOffsetEnd=273 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=goes CharacterOffsetBegin=274 CharacterOffsetEnd=278 PartOfSpeech=VBZ Lemma=go NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=279 CharacterOffsetEnd=284 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=285 CharacterOffsetEnd=289 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=289 CharacterOffsetEnd=290 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NN bit))
+      (PP (IN of)
+        (NP
+          (NP (NNP Phantasy))
+          (PP (IN of)
+            (NP
+              (NP (NNP Schuman))
+              (, ,)
+              (CC &)
+              (NP (PRP I)))))))
+    (VP (VBP conduct)
+      (NP
+        (NP (DT a) (NN show))
+        (PP (IN of)
+          (NP
+            (NP (PRP$ my) (NNP Sinfonietta))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ goes)
+                  (ADVP (RB quite) (RB well)))))))))
+    (. .)))
+
+root(ROOT-0, conduct-9)
+nsubj(conduct-9, bit-1)
+case(Phantasy-3, of-2)
+nmod:of(bit-1, Phantasy-3)
+case(Schuman-5, of-4)
+nmod:of(Phantasy-3, Schuman-5)
+punct(Schuman-5, ,-6)
+cc(Schuman-5, &-7)
+nmod:of(Phantasy-3, I-8)
+conj:&(Schuman-5, I-8)
+det(show-11, a-10)
+dobj(conduct-9, show-11)
+case(Sinfonietta-14, of-12)
+nmod:poss(Sinfonietta-14, my-13)
+nmod:of(show-11, Sinfonietta-14)
+nsubj(goes-16, Sinfonietta-14)
+ref(Sinfonietta-14, which-15)
+acl:relcl(Sinfonietta-14, goes-16)
+advmod(well-18, quite-17)
+advmod(goes-16, well-18)
+punct(conduct-9, .-19)
+
+Coreference set:
+	(8,13,[13,14]) -> (8,8,[8,9]), that is: "my" -> "I"

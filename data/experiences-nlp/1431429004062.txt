@@ -1,0 +1,86 @@
+Sentence #1 (26 tokens):
+Spohr's 'Nonet' was a great treat so finely played too by the author, now a man of fifty-nine years of age!
+[Text=Spohr CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Spohr NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=`` Lemma=` NamedEntityTag=MISC]
+[Text=Nonet CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Nonet NamedEntityTag=MISC]
+[Text=' CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=treat CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=treat NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=finely CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=finely NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=author CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=author NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=a CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=fifty-nine CharacterOffsetBegin=83 CharacterOffsetEnd=93 PartOfSpeech=CD Lemma=fifty-nine NamedEntityTag=DURATION NormalizedNamedEntityTag=P59Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P59Y">fifty-nine years</TIMEX3>]
+[Text=years CharacterOffsetBegin=94 CharacterOffsetEnd=99 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P59Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P59Y">fifty-nine years</TIMEX3>]
+[Text=of CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=age CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=age NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (VP
+      (NP
+        (NP (NNP Spohr) (POS 's))
+        (PP
+          (PP
+            (NP (`` `)
+              (NP (NNP Nonet))
+              ('' ')
+              (SBAR
+                (S
+                  (VP (VBD was)
+                    (NP
+                      (NP (DT a) (JJ great) (NN treat))
+                      (SBAR (IN so)
+                        (S
+                          (ADVP (RB finely))
+                          (VP (VBN played)
+                            (ADVP (RB too))
+                            (PP (IN by)
+                              (NP (DT the) (NN author)))
+                            (, ,)
+                            (ADVP (RB now)
+                              (NP (DT a) (NN man)))))))))))
+            (IN of)
+            (NP (CD fifty-nine) (NNS years)))
+          (PP (IN of)
+            (NP (NN age))))))
+    (. !)))
+
+root(ROOT-0, Spohr-1)
+case(Spohr-1, 's-2)
+punct(Nonet-4, `-3)
+nmod:of(Spohr-1, Nonet-4)
+punct(Nonet-4, '-5)
+cop(treat-9, was-6)
+det(treat-9, a-7)
+amod(treat-9, great-8)
+acl:relcl(Nonet-4, treat-9)
+mark(played-12, so-10)
+advmod(played-12, finely-11)
+dep(treat-9, played-12)
+advmod(played-12, too-13)
+case(author-16, by-14)
+det(author-16, the-15)
+nmod:by(played-12, author-16)
+punct(played-12, ,-17)
+advmod(played-12, now-18)
+det(man-20, a-19)
+nmod:npmod(now-18, man-20)
+case(Nonet-4, of-21)
+nummod(years-23, fifty-nine-22)
+dep(Nonet-4, years-23)
+case(age-25, of-24)
+nmod:of(Nonet-4, age-25)
+punct(Spohr-1, !-26)
+

@@ -1,0 +1,252 @@
+Sentence #1 (18 tokens):
+To our great surprise, who, late in the Evening, should Enter, but Omiah!
+[Text=To CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=surprise CharacterOffsetBegin=13 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=surprise NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=late CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=RB Lemma=late NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Evening CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t1" type="TIME" value="TEV">Evening</TIMEX3>]
+[Text=, CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=Enter CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=VB Lemma=enter NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=Omiah CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Omiah NamedEntityTag=PERSON]
+[Text=! CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (TO To)
+      (NP
+        (NP (PRP$ our) (JJ great) (NN surprise))
+        (, ,)
+        (SBAR
+          (WHNP (WP who))
+          (S (, ,)
+            (PP
+              (ADVP (RB late))
+              (IN in)
+              (NP (DT the) (NNP Evening)))
+            (, ,)
+            (VP (MD should)
+              (VP (VB Enter)))))))
+    (, ,)
+    (PP (CC but)
+      (NP (NNP Omiah)))
+    (. !)))
+
+root(ROOT-0, surprise-4)
+case(surprise-4, To-1)
+nmod:poss(surprise-4, our-2)
+amod(surprise-4, great-3)
+nsubj(Enter-14, surprise-4)
+punct(surprise-4, ,-5)
+ref(surprise-4, who-6)
+punct(Enter-14, ,-7)
+advmod(Evening-11, late-8)
+case(Evening-11, in-9)
+det(Evening-11, the-10)
+nmod:in(Enter-14, Evening-11)
+punct(Enter-14, ,-12)
+aux(Enter-14, should-13)
+acl:relcl(surprise-4, Enter-14)
+punct(surprise-4, ,-15)
+case(Omiah-17, but-16)
+nmod:but(surprise-4, Omiah-17)
+punct(surprise-4, !-18)
+
+Sentence #2 (11 tokens):
+... We asked if he had been to the Opera?
+[Text=... CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=We CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Opera CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=NNP Lemma=Opera NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (S (: ...)
+    (NP (PRP We))
+    (VP (VBD asked)
+      (SBAR (IN if)
+        (S
+          (NP (PRP he))
+          (VP (VBD had)
+            (VP (VBN been)
+              (PP (TO to)
+                (NP (DT the) (NNP Opera))))))))
+    (. ?)))
+
+root(ROOT-0, asked-3)
+punct(asked-3, ...-1)
+nsubj(asked-3, We-2)
+mark(Opera-10, if-4)
+nsubj(Opera-10, he-5)
+aux(Opera-10, had-6)
+cop(Opera-10, been-7)
+case(Opera-10, to-8)
+det(Opera-10, the-9)
+advcl:to(asked-3, Opera-10)
+punct(asked-3, ?-11)
+
+Sentence #3 (41 tokens):
+He immediately began a squeak, by way of imitation, which was very ridiculous; however, he told us he thought the music was very fine; which, when he first heard it, he thought detestable.
+[Text=He CharacterOffsetBegin=122 CharacterOffsetEnd=124 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=immediately CharacterOffsetBegin=125 CharacterOffsetEnd=136 PartOfSpeech=RB Lemma=immediately NamedEntityTag=O]
+[Text=began CharacterOffsetBegin=137 CharacterOffsetEnd=142 PartOfSpeech=VBD Lemma=begin NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=squeak CharacterOffsetBegin=145 CharacterOffsetEnd=151 PartOfSpeech=NN Lemma=squeak NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=153 CharacterOffsetEnd=155 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=156 CharacterOffsetEnd=159 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=imitation CharacterOffsetBegin=163 CharacterOffsetEnd=172 PartOfSpeech=NN Lemma=imitation NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=172 CharacterOffsetEnd=173 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=174 CharacterOffsetEnd=179 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=180 CharacterOffsetEnd=183 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=ridiculous CharacterOffsetBegin=189 CharacterOffsetEnd=199 PartOfSpeech=JJ Lemma=ridiculous NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=199 CharacterOffsetEnd=200 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=however CharacterOffsetBegin=201 CharacterOffsetEnd=208 PartOfSpeech=RB Lemma=however NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=208 CharacterOffsetEnd=209 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=210 CharacterOffsetEnd=212 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=told CharacterOffsetBegin=213 CharacterOffsetEnd=217 PartOfSpeech=VBD Lemma=tell NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=218 CharacterOffsetEnd=220 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=221 CharacterOffsetEnd=223 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=224 CharacterOffsetEnd=231 PartOfSpeech=VBD Lemma=think NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=232 CharacterOffsetEnd=235 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=236 CharacterOffsetEnd=241 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=242 CharacterOffsetEnd=245 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=246 CharacterOffsetEnd=250 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=251 CharacterOffsetEnd=255 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=255 CharacterOffsetEnd=256 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=257 CharacterOffsetEnd=262 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=262 CharacterOffsetEnd=263 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=264 CharacterOffsetEnd=268 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=269 CharacterOffsetEnd=271 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=272 CharacterOffsetEnd=277 PartOfSpeech=RB Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=heard CharacterOffsetBegin=278 CharacterOffsetEnd=283 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=284 CharacterOffsetEnd=286 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=286 CharacterOffsetEnd=287 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=288 CharacterOffsetEnd=290 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=291 CharacterOffsetEnd=298 PartOfSpeech=VBD Lemma=think NamedEntityTag=O]
+[Text=detestable CharacterOffsetBegin=299 CharacterOffsetEnd=309 PartOfSpeech=JJ Lemma=detestable NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=309 CharacterOffsetEnd=310 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (ADVP (RB immediately))
+      (VP (VBD began)
+        (NP (DT a) (NN squeak))
+        (, ,)
+        (PP (IN by)
+          (NP
+            (NP (NN way))
+            (PP (IN of)
+              (NP
+                (NP (NN imitation))
+                (, ,)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBD was)
+                      (ADJP (RB very) (JJ ridiculous)))))))))))
+    (: ;)
+    (S
+      (ADVP (RB however))
+      (, ,)
+      (NP (PRP he))
+      (VP (VBD told)
+        (NP (PRP us))
+        (SBAR
+          (S
+            (NP (PRP he))
+            (VP (VBD thought)
+              (SBAR
+                (S
+                  (NP (DT the) (NN music))
+                  (VP (VBD was)
+                    (ADJP (RB very) (JJ fine))))))))))
+    (: ;)
+    (S
+      (NP (WDT which))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP he))
+          (ADVP (RB first))
+          (VP (VBD heard)
+            (NP (PRP it)))))
+      (, ,)
+      (NP (PRP he))
+      (VP (VBD thought)
+        (ADJP (JJ detestable))))
+    (. .)))
+
+root(ROOT-0, began-3)
+nsubj(began-3, He-1)
+advmod(began-3, immediately-2)
+det(squeak-5, a-4)
+dobj(began-3, squeak-5)
+punct(began-3, ,-6)
+case(way-8, by-7)
+nmod:by(began-3, way-8)
+case(imitation-10, of-9)
+nmod:of(way-8, imitation-10)
+nsubj(ridiculous-15, imitation-10)
+punct(imitation-10, ,-11)
+ref(imitation-10, which-12)
+cop(ridiculous-15, was-13)
+advmod(ridiculous-15, very-14)
+acl:relcl(imitation-10, ridiculous-15)
+punct(began-3, ;-16)
+advmod(told-20, however-17)
+punct(told-20, ,-18)
+nsubj(told-20, he-19)
+parataxis(began-3, told-20)
+dobj(told-20, us-21)
+nsubj(thought-23, he-22)
+ccomp(told-20, thought-23)
+det(music-25, the-24)
+nsubj(fine-28, music-25)
+cop(fine-28, was-26)
+advmod(fine-28, very-27)
+ccomp(thought-23, fine-28)
+punct(began-3, ;-29)
+nsubj(thought-39, which-30)
+punct(thought-39, ,-31)
+advmod(heard-35, when-32)
+nsubj(heard-35, he-33)
+advmod(heard-35, first-34)
+advcl(thought-39, heard-35)
+dobj(heard-35, it-36)
+punct(thought-39, ,-37)
+nsubj(thought-39, he-38)
+parataxis(began-3, thought-39)
+xcomp(thought-39, detestable-40)
+punct(began-3, .-41)
+
+Coreference set:
+	(2,5,[5,6]) -> (1,17,[17,18]), that is: "he" -> "Omiah"
+	(3,1,[1,2]) -> (1,17,[17,18]), that is: "He" -> "Omiah"
+	(3,19,[19,20]) -> (1,17,[17,18]), that is: "he" -> "Omiah"
+	(3,22,[22,23]) -> (1,17,[17,18]), that is: "he" -> "Omiah"
+	(3,33,[33,34]) -> (1,17,[17,18]), that is: "he" -> "Omiah"
+	(3,38,[38,39]) -> (1,17,[17,18]), that is: "he" -> "Omiah"
+Coreference set:
+	(3,30,[30,31]) -> (3,25,[24,26]), that is: "which" -> "the music"
+Coreference set:
+	(2,2,[2,3]) -> (1,2,[2,3]), that is: "We" -> "our"
+	(3,21,[21,22]) -> (1,2,[2,3]), that is: "us" -> "our"
+Coreference set:
+	(3,36,[36,37]) -> (3,34,[34,35]), that is: "it" -> "first"

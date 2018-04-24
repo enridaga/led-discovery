@@ -1,0 +1,92 @@
+Sentence #1 (19 tokens):
+On Friday Liszt came and paid me a visit, and even played a little on my piano.
+[Text=On CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Friday CharacterOffsetBegin=3 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Friday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-5 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-WXX-5">Friday</TIMEX3>]
+[Text=Liszt CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Liszt NamedEntityTag=O]
+[Text=came CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VBD Lemma=pay NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=visit CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=visit NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NNP Friday)))
+    (NP (NNP Liszt))
+    (VP
+      (VP (VBD came))
+      (CC and)
+      (VP (VBD paid)
+        (NP (PRP me))
+        (NP (DT a) (NN visit)))
+      (, ,)
+      (CC and)
+      (ADVP (RB even))
+      (VP (VBD played)
+        (NP (DT a) (JJ little))
+        (PP (IN on)
+          (NP (PRP$ my) (NN piano)))))
+    (. .)))
+
+root(ROOT-0, came-4)
+case(Friday-2, On-1)
+nmod:on(came-4, Friday-2)
+nsubj(came-4, Liszt-3)
+nsubj(paid-6, Liszt-3)
+nsubj(played-13, Liszt-3)
+cc(came-4, and-5)
+conj:and(came-4, paid-6)
+iobj(paid-6, me-7)
+det(visit-9, a-8)
+dobj(paid-6, visit-9)
+punct(came-4, ,-10)
+cc(came-4, and-11)
+advmod(played-13, even-12)
+conj:and(came-4, played-13)
+det(little-15, a-14)
+dobj(played-13, little-15)
+case(piano-18, on-16)
+nmod:poss(piano-18, my-17)
+nmod:on(played-13, piano-18)
+punct(came-4, .-19)
+
+Sentence #2 (7 tokens):
+—Only think what an honour!
+[Text=-- CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=Only CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=honour CharacterOffsetBegin=99 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=honour NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (FRAG (: --)
+    (VP
+      (ADVP (RB Only))
+      (VBP think)
+      (NP
+        (NP (WP what))
+        (NP (DT an) (NN honour))))
+    (. !)))
+
+root(ROOT-0, think-3)
+punct(think-3, ---1)
+advmod(think-3, Only-2)
+dobj(think-3, what-4)
+det(honour-6, an-5)
+dep(what-4, honour-6)
+punct(think-3, !-7)
+
+Coreference set:
+	(1,17,[17,18]) -> (1,7,[7,8]), that is: "my" -> "me"

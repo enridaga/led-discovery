@@ -1,0 +1,43 @@
+Sentence #1 (11 tokens):
+How gloriously he played again yesterday, enchanting us all.
+[Text=How CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=gloriously CharacterOffsetBegin=4 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=gloriously NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=yesterday CharacterOffsetBegin=31 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1D Timex=<TIMEX3 alt_value="OFFSET P-1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">yesterday</TIMEX3>]
+[Text=, CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=enchanting CharacterOffsetBegin=42 CharacterOffsetEnd=52 PartOfSpeech=VBG Lemma=enchant NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (SBAR
+      (WHADVP (WRB How))
+      (S
+        (ADVP (RB gloriously))
+        (NP (PRP he))
+        (VP (VBD played)
+          (ADVP (RB again))
+          (NP-TMP (NN yesterday))
+          (, ,)
+          (S
+            (VP (VBG enchanting)
+              (S
+                (NP (PRP us))
+                (NP (DT all))))))))
+    (. .)))
+
+root(ROOT-0, played-4)
+advmod(played-4, How-1)
+advmod(played-4, gloriously-2)
+nsubj(played-4, he-3)
+advmod(played-4, again-5)
+nmod:tmod(played-4, yesterday-6)
+punct(played-4, ,-7)
+advcl(played-4, enchanting-8)
+nsubj(all-10, us-9)
+xcomp(enchanting-8, all-10)
+punct(played-4, .-11)
+

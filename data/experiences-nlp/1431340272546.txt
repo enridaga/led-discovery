@@ -1,0 +1,178 @@
+Sentence #1 (13 tokens):
+Were there any particular musicians you were listening to at the time?
+[Text=Were CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=particular CharacterOffsetBegin=15 CharacterOffsetEnd=25 PartOfSpeech=JJ Lemma=particular NamedEntityTag=O]
+[Text=musicians CharacterOffsetBegin=26 CharacterOffsetEnd=35 PartOfSpeech=NNS Lemma=musician NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=listening CharacterOffsetBegin=45 CharacterOffsetEnd=54 PartOfSpeech=VBG Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=time NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">time</TIMEX3>]
+[Text=? CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (SQ (VBD Were)
+    (NP (EX there))
+    (NP (DT any))
+    (SBAR
+      (WHNP
+        (ADJP (JJ particular))
+        (NNS musicians))
+      (S
+        (NP (PRP you))
+        (VP (VBD were)
+          (VP (VBG listening)
+            (PP (TO to))
+            (PP (IN at)
+              (NP (DT the) (NN time)))))))
+    (. ?)))
+
+root(ROOT-0, Were-1)
+expl(Were-1, there-2)
+nsubj(Were-1, any-3)
+amod(musicians-5, particular-4)
+nmod:to(listening-8, musicians-5)
+nsubj(listening-8, you-6)
+aux(listening-8, were-7)
+dep(Were-1, listening-8)
+case(musicians-5, to-9)
+case(time-12, at-10)
+det(time-12, the-11)
+nmod:at(listening-8, time-12)
+punct(Were-1, ?-13)
+
+Sentence #2 (10 tokens):
+Well, I didn't have a record collection.
+[Text=Well CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=record CharacterOffsetBegin=96 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=record NamedEntityTag=O]
+[Text=collection CharacterOffsetBegin=103 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=collection NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (INTJ (RB Well))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD did) (RB n't)
+      (VP (VB have)
+        (NP (DT a) (NN record) (NN collection))))
+    (. .)))
+
+root(ROOT-0, have-6)
+discourse(have-6, Well-1)
+punct(have-6, ,-2)
+nsubj(have-6, I-3)
+aux(have-6, did-4)
+neg(have-6, n't-5)
+det(collection-9, a-7)
+compound(collection-9, record-8)
+dobj(have-6, collection-9)
+punct(have-6, .-10)
+
+Sentence #3 (6 tokens):
+I couldn't afford it.
+[Text=I CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=117 CharacterOffsetEnd=122 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=122 CharacterOffsetEnd=125 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=afford CharacterOffsetBegin=126 CharacterOffsetEnd=132 PartOfSpeech=VB Lemma=afford NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD could) (RB n't)
+      (VP (VB afford)
+        (NP (PRP it))))
+    (. .)))
+
+root(ROOT-0, afford-4)
+nsubj(afford-4, I-1)
+aux(afford-4, could-2)
+neg(afford-4, n't-3)
+dobj(afford-4, it-5)
+punct(afford-4, .-6)
+
+Sentence #4 (22 tokens):
+I had a string quartet on a seventy-eight [rpm] record, and somebody gave me a Miles Davis record.
+[Text=I CharacterOffsetBegin=137 CharacterOffsetEnd=138 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=string CharacterOffsetBegin=145 CharacterOffsetEnd=151 PartOfSpeech=NN Lemma=string NamedEntityTag=O]
+[Text=quartet CharacterOffsetBegin=152 CharacterOffsetEnd=159 PartOfSpeech=NN Lemma=quartet NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=163 CharacterOffsetEnd=164 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=seventy-eight CharacterOffsetBegin=165 CharacterOffsetEnd=178 PartOfSpeech=CD Lemma=seventy-eight NamedEntityTag=NUMBER NormalizedNamedEntityTag=78.0]
+[Text=-LSB- CharacterOffsetBegin=179 CharacterOffsetEnd=180 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=rpm CharacterOffsetBegin=180 CharacterOffsetEnd=183 PartOfSpeech=NN Lemma=rpm NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=183 CharacterOffsetEnd=184 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=record CharacterOffsetBegin=185 CharacterOffsetEnd=191 PartOfSpeech=NN Lemma=record NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=191 CharacterOffsetEnd=192 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=193 CharacterOffsetEnd=196 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=somebody CharacterOffsetBegin=197 CharacterOffsetEnd=205 PartOfSpeech=NN Lemma=somebody NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=206 CharacterOffsetEnd=210 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=211 CharacterOffsetEnd=213 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Miles CharacterOffsetBegin=216 CharacterOffsetEnd=221 PartOfSpeech=NNP Lemma=Miles NamedEntityTag=PERSON]
+[Text=Davis CharacterOffsetBegin=222 CharacterOffsetEnd=227 PartOfSpeech=NNP Lemma=Davis NamedEntityTag=PERSON]
+[Text=record CharacterOffsetBegin=228 CharacterOffsetEnd=234 PartOfSpeech=NN Lemma=record NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=234 CharacterOffsetEnd=235 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD had)
+        (NP
+          (NP (DT a) (NN string) (NN quartet))
+          (PP (IN on)
+            (NP
+              (NP (DT a)
+                (ADJP (CD seventy-eight) (-LRB- -LSB-))
+                (NN rpm))
+              (PP (-RRB- -RSB-)
+                (NP (NN record))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NN somebody))
+      (VP (VBD gave)
+        (NP (PRP me))
+        (NP (DT a) (NNP Miles) (NNP Davis) (NN record))))
+    (. .)))
+
+root(ROOT-0, had-2)
+nsubj(had-2, I-1)
+det(quartet-5, a-3)
+compound(quartet-5, string-4)
+dobj(had-2, quartet-5)
+case(rpm-10, on-6)
+det(rpm-10, a-7)
+amod(rpm-10, seventy-eight-8)
+punct(seventy-eight-8, -LSB--9)
+nmod:on(quartet-5, rpm-10)
+punct(record-12, -RSB--11)
+nmod(rpm-10, record-12)
+punct(had-2, ,-13)
+cc(had-2, and-14)
+nsubj(gave-16, somebody-15)
+conj:and(had-2, gave-16)
+iobj(gave-16, me-17)
+det(record-21, a-18)
+compound(record-21, Miles-19)
+compound(record-21, Davis-20)
+dobj(gave-16, record-21)
+punct(had-2, .-22)
+
+Coreference set:
+	(3,1,[1,2]) -> (2,3,[3,4]), that is: "I" -> "I"
+	(4,1,[1,2]) -> (2,3,[3,4]), that is: "I" -> "I"
+	(4,17,[17,18]) -> (2,3,[3,4]), that is: "me" -> "I"
+Coreference set:
+	(3,5,[5,6]) -> (2,9,[7,10]), that is: "it" -> "a record collection"

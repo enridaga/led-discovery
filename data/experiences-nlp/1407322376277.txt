@@ -1,0 +1,471 @@
+Sentence #1 (3 tokens):
+Lords day.
+[Text=Lords CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNPS Lemma=Lords NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t1" type="DURATION" value="P1D">day</TIMEX3>]
+[Text=. CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNPS Lords))
+    (NP (NN day))
+    (. .)))
+
+root(ROOT-0, Lords-1)
+dep(Lords-1, day-2)
+punct(Lords-1, .-3)
+
+Sentence #2 (9 tokens):
+Up and to church alone in the morning.
+[Text=Up CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=up NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=church CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=church NamedEntityTag=O]
+[Text=alone CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=RB Lemma=alone NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=morning CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=TMO Timex=<TIMEX3 tid="t2" type="TIME" value="TMO">morning</TIMEX3>]
+[Text=. CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP
+      (PP (IN Up))
+      (CC and)
+      (PP (TO to)
+        (NP
+          (NP (NN church) (RB alone))
+          (PP (IN in)
+            (NP (DT the) (NN morning))))))
+    (. .)))
+
+root(ROOT-0, Up-1)
+cc(Up-1, and-2)
+case(church-4, to-3)
+conj:and(Up-1, church-4)
+advmod(church-4, alone-5)
+case(morning-8, in-6)
+det(morning-8, the-7)
+nmod:in(church-4, morning-8)
+punct(Up-1, .-9)
+
+Sentence #3 (73 tokens):
+Dined at home mighty pleasantly ; in the afternoon I to the French church - where much pleased with the three sisters of the parson, very handsome; especially in their noses - and sing prettily... So home, and there found Mr. Andrews and his lady, a well-bred and a tolerable pretty woman, and by and by Mr. Hill; and to singing and then to supper.
+[Text=Dined CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=VBN Lemma=dine NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=home CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=home NamedEntityTag=O]
+[Text=mighty CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=mighty NamedEntityTag=O]
+[Text=pleasantly CharacterOffsetBegin=71 CharacterOffsetEnd=81 PartOfSpeech=RB Lemma=pleasantly NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=afternoon CharacterOffsetBegin=91 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 tid="t3" type="TIME" value="TAF">afternoon</TIMEX3>]
+[Text=I CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=French CharacterOffsetBegin=110 CharacterOffsetEnd=116 PartOfSpeech=JJ Lemma=french NamedEntityTag=MISC]
+[Text=church CharacterOffsetBegin=117 CharacterOffsetEnd=123 PartOfSpeech=NN Lemma=church NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=126 CharacterOffsetEnd=131 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=pleased CharacterOffsetBegin=137 CharacterOffsetEnd=144 PartOfSpeech=JJ Lemma=pleased NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=145 CharacterOffsetEnd=149 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=154 CharacterOffsetEnd=159 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=sisters CharacterOffsetBegin=160 CharacterOffsetEnd=167 PartOfSpeech=NNS Lemma=sister NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=168 CharacterOffsetEnd=170 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=parson CharacterOffsetBegin=175 CharacterOffsetEnd=181 PartOfSpeech=NN Lemma=parson NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=183 CharacterOffsetEnd=187 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=handsome CharacterOffsetBegin=188 CharacterOffsetEnd=196 PartOfSpeech=JJ Lemma=handsome NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=especially CharacterOffsetBegin=198 CharacterOffsetEnd=208 PartOfSpeech=RB Lemma=especially NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=209 CharacterOffsetEnd=211 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=212 CharacterOffsetEnd=217 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=noses CharacterOffsetBegin=218 CharacterOffsetEnd=223 PartOfSpeech=NNS Lemma=nose NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=224 CharacterOffsetEnd=225 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=226 CharacterOffsetEnd=229 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sing CharacterOffsetBegin=230 CharacterOffsetEnd=234 PartOfSpeech=VB Lemma=sing NamedEntityTag=O]
+[Text=prettily CharacterOffsetBegin=235 CharacterOffsetEnd=243 PartOfSpeech=RB Lemma=prettily NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=243 CharacterOffsetEnd=246 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=So CharacterOffsetBegin=247 CharacterOffsetEnd=249 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=home CharacterOffsetBegin=250 CharacterOffsetEnd=254 PartOfSpeech=NN Lemma=home NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=254 CharacterOffsetEnd=255 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=256 CharacterOffsetEnd=259 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=260 CharacterOffsetEnd=265 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=found CharacterOffsetBegin=266 CharacterOffsetEnd=271 PartOfSpeech=VBD Lemma=find NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=272 CharacterOffsetEnd=275 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Andrews CharacterOffsetBegin=276 CharacterOffsetEnd=283 PartOfSpeech=NNP Lemma=Andrews NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=284 CharacterOffsetEnd=287 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=288 CharacterOffsetEnd=291 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=lady CharacterOffsetBegin=292 CharacterOffsetEnd=296 PartOfSpeech=NN Lemma=lady NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=296 CharacterOffsetEnd=297 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=298 CharacterOffsetEnd=299 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=well-bred CharacterOffsetBegin=300 CharacterOffsetEnd=309 PartOfSpeech=JJ Lemma=well-bred NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=310 CharacterOffsetEnd=313 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=314 CharacterOffsetEnd=315 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=tolerable CharacterOffsetBegin=316 CharacterOffsetEnd=325 PartOfSpeech=JJ Lemma=tolerable NamedEntityTag=O]
+[Text=pretty CharacterOffsetBegin=326 CharacterOffsetEnd=332 PartOfSpeech=JJ Lemma=pretty NamedEntityTag=O]
+[Text=woman CharacterOffsetBegin=333 CharacterOffsetEnd=338 PartOfSpeech=NN Lemma=woman NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=338 CharacterOffsetEnd=339 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=340 CharacterOffsetEnd=343 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=344 CharacterOffsetEnd=346 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=347 CharacterOffsetEnd=350 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=351 CharacterOffsetEnd=353 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=354 CharacterOffsetEnd=357 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Hill CharacterOffsetBegin=358 CharacterOffsetEnd=362 PartOfSpeech=NNP Lemma=Hill NamedEntityTag=PERSON]
+[Text=; CharacterOffsetBegin=362 CharacterOffsetEnd=363 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=364 CharacterOffsetEnd=367 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=368 CharacterOffsetEnd=370 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=371 CharacterOffsetEnd=378 PartOfSpeech=NN Lemma=singing NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=379 CharacterOffsetEnd=382 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=383 CharacterOffsetEnd=387 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=388 CharacterOffsetEnd=390 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=supper CharacterOffsetBegin=391 CharacterOffsetEnd=397 PartOfSpeech=NN Lemma=supper NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=397 CharacterOffsetEnd=398 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBN Dined)
+      (PP
+        (PP (IN at)
+          (NP (NN home) (JJ mighty))
+          (ADVP (RB pleasantly)))
+        (PRN (: ;)
+          (PP (IN in)
+            (UCP
+              (NP
+                (NP (DT the) (NN afternoon))
+                (SBAR
+                  (S
+                    (S
+                      (NP (PRP I))
+                      (PP (TO to)
+                        (NP
+                          (NP (DT the) (JJ French) (NN church))
+                          (: -)
+                          (SBAR
+                            (WHADVP (WRB where) (JJ much))
+                            (S
+                              (S
+                                (ADJP (JJ pleased)
+                                  (PP (IN with)
+                                    (NP
+                                      (NP (DT the) (CD three) (NNS sisters))
+                                      (PP (IN of)
+                                        (NP
+                                          (NP
+                                            (NP (DT the) (NN parson))
+                                            (, ,)
+                                            (NP (RB very) (JJ handsome))
+                                            (: ;))
+                                          (PP (RB especially) (IN in)
+                                            (NP (PRP$ their) (NNS noses)))))))))
+                              (: -)
+                              (CC and)
+                              (S
+                                (VP (VB sing)
+                                  (ADVP (RB prettily))))))
+                          (: ...))))
+                    (IN So)
+                    (S
+                      (NP
+                        (NP (NN home))
+                        (, ,)
+                        (CC and)
+                        (NP (RB there)))
+                      (VP (VBD found)
+                        (NP
+                          (NP
+                            (NP (NNP Mr.) (NNP Andrews))
+                            (CC and)
+                            (NP (PRP$ his) (NN lady)))
+                          (, ,)
+                          (NP (DT a) (JJ well-bred))
+                          (CC and)
+                          (NP (DT a)
+                            (ADJP (JJ tolerable) (JJ pretty))
+                            (NN woman))))))))
+              (, ,)
+              (CC and)
+              (FRAG
+                (PP (IN by))))))
+        (CC and)
+        (PP (IN by)
+          (NP (NNP Mr.) (NNP Hill)))
+        (: ;)
+        (CC and)
+        (PP (TO to)
+          (NP (NN singing)))
+        (CC and)
+        (PP
+          (ADVP (RB then))
+          (TO to)
+          (NP (NN supper)))))
+    (. .)))
+
+root(ROOT-0, Dined-1)
+conj:and(Dined-1, Dined-1')
+conj:and(Dined-1, Dined-1'')
+conj:and(Dined-1, Dined-1''')
+conj:and(Dined-1, Dined-1'''')
+conj:and(Dined-1, Dined-1''''')
+conj:and(Dined-1, Dined-1'''''')
+conj:and(Dined-1, Dined-1''''''')
+conj:and(Dined-1, Dined-1'''''''')
+conj:and(Dined-1, Dined-1''''''''')
+case(home-3, at-2)
+nmod:at(Dined-1, home-3)
+amod(home-3, mighty-4)
+advmod(home-3, pleasantly-5)
+punct(afternoon-9, ;-6)
+case(afternoon-9, in-7)
+det(afternoon-9, the-8)
+dep(home-3, afternoon-9)
+acl:relcl(afternoon-9, I-10)
+case(church-14, to-11)
+det(church-14, the-12)
+amod(church-14, French-13)
+dep(I-10, church-14)
+punct(church-14, --15)
+advmod(much-17, where-16)
+advmod(pleased-18, much-17)
+acl:relcl(church-14, pleased-18)
+case(sisters-22, with-19)
+det(sisters-22, the-20)
+nummod(sisters-22, three-21)
+nmod:with(pleased-18, sisters-22)
+case(parson-25, of-23)
+det(parson-25, the-24)
+nmod:of(sisters-22, parson-25)
+punct(parson-25, ,-26)
+advmod(handsome-28, very-27)
+appos(parson-25, handsome-28)
+punct(parson-25, ;-29)
+advmod(noses-33, especially-30)
+case(noses-33, in-31)
+nmod:poss(noses-33, their-32)
+nmod:in(parson-25, noses-33)
+punct(pleased-18, --34)
+cc(pleased-18, and-35)
+acl:relcl(church-14, sing-36)
+conj:and(pleased-18, sing-36)
+advmod(sing-36, prettily-37)
+punct(church-14, ...-38)
+dep(I-10, So-39)
+nsubj(found-44, home-40)
+punct(home-40, ,-41)
+cc(home-40, and-42)
+conj:and(home-40, there-43)
+nsubj(found-44, there-43)
+parataxis(I-10, found-44)
+compound(Andrews-46, Mr.-45)
+dobj(found-44, Andrews-46)
+cc(Andrews-46, and-47)
+nmod:poss(lady-49, his-48)
+dobj(found-44, lady-49)
+conj:and(Andrews-46, lady-49)
+punct(Andrews-46, ,-50)
+det(well-bred-52, a-51)
+dobj(found-44, well-bred-52)
+conj:and(Andrews-46, well-bred-52)
+cc(Andrews-46, and-53)
+det(woman-57, a-54)
+amod(pretty-56, tolerable-55)
+amod(woman-57, pretty-56)
+dobj(found-44, woman-57)
+conj:and(Andrews-46, woman-57)
+punct(afternoon-9, ,-58)
+cc(afternoon-9, and-59)
+dep(home-3, by-60)
+conj:and(afternoon-9, by-60)
+cc(Dined-1, and-61)
+case(Hill-64, by-62)
+compound(Hill-64, Mr.-63)
+nmod:by(Dined-1'', Hill-64)
+punct(home-3, ;-65)
+cc(Dined-1, and-66)
+case(singing-68, to-67)
+nmod:to(Dined-1''', singing-68)
+cc(Dined-1, and-69)
+advmod(supper-72, then-70)
+case(supper-72, to-71)
+nmod:to(Dined-1', supper-72)
+punct(Dined-1, .-73)
+
+Sentence #4 (9 tokens):
+Then to sing again, and so goodnight.
+[Text=Then CharacterOffsetBegin=399 CharacterOffsetEnd=403 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=404 CharacterOffsetEnd=406 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=sing CharacterOffsetBegin=407 CharacterOffsetEnd=411 PartOfSpeech=VB Lemma=sing NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=412 CharacterOffsetEnd=417 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=417 CharacterOffsetEnd=418 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=419 CharacterOffsetEnd=422 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=423 CharacterOffsetEnd=425 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=goodnight CharacterOffsetBegin=426 CharacterOffsetEnd=435 PartOfSpeech=NN Lemma=goodnight NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=435 CharacterOffsetEnd=436 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (RB Then)
+    (VP (TO to)
+      (VP (VB sing)
+        (ADVP
+          (ADVP (RB again))
+          (, ,)
+          (CC and)
+          (ADVP (RB so)))
+        (NP (NN goodnight))))
+    (. .)))
+
+root(ROOT-0, sing-3)
+advmod(sing-3, Then-1)
+mark(sing-3, to-2)
+advmod(and-6, again-4)
+punct(and-6, ,-5)
+advmod(sing-3, and-6)
+advmod(and-6, so-7)
+dobj(sing-3, goodnight-8)
+punct(sing-3, .-9)
+
+Sentence #5 (5 tokens):
+To prayers and bed.
+[Text=To CharacterOffsetBegin=437 CharacterOffsetEnd=439 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=prayers CharacterOffsetBegin=440 CharacterOffsetEnd=447 PartOfSpeech=NNS Lemma=prayer NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=448 CharacterOffsetEnd=451 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=bed CharacterOffsetBegin=452 CharacterOffsetEnd=455 PartOfSpeech=NN Lemma=bed NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=455 CharacterOffsetEnd=456 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (TO To)
+      (NP (NNS prayers)
+        (CC and)
+        (NN bed)))
+    (. .)))
+
+root(ROOT-0, prayers-2)
+case(prayers-2, To-1)
+cc(prayers-2, and-3)
+conj:and(prayers-2, bed-4)
+punct(prayers-2, .-5)
+
+Sentence #6 (34 tokens):
+It is a little strange how these psalms of Ravenscroft, after two or three times singing, prove but the same again, though good - no diversity appearing at all almost.
+[Text=It CharacterOffsetBegin=457 CharacterOffsetEnd=459 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=460 CharacterOffsetEnd=462 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=463 CharacterOffsetEnd=464 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=465 CharacterOffsetEnd=471 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=strange CharacterOffsetBegin=472 CharacterOffsetEnd=479 PartOfSpeech=JJ Lemma=strange NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=480 CharacterOffsetEnd=483 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=484 CharacterOffsetEnd=489 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=psalms CharacterOffsetBegin=490 CharacterOffsetEnd=496 PartOfSpeech=NNS Lemma=psalm NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=497 CharacterOffsetEnd=499 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Ravenscroft CharacterOffsetBegin=500 CharacterOffsetEnd=511 PartOfSpeech=NNP Lemma=Ravenscroft NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=511 CharacterOffsetEnd=512 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=513 CharacterOffsetEnd=518 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=519 CharacterOffsetEnd=522 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=or CharacterOffsetBegin=523 CharacterOffsetEnd=525 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=526 CharacterOffsetEnd=531 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=times CharacterOffsetBegin=532 CharacterOffsetEnd=537 PartOfSpeech=NNS Lemma=time NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=538 CharacterOffsetEnd=545 PartOfSpeech=NN Lemma=singing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=545 CharacterOffsetEnd=546 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=prove CharacterOffsetBegin=547 CharacterOffsetEnd=552 PartOfSpeech=VBP Lemma=prove NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=553 CharacterOffsetEnd=556 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=557 CharacterOffsetEnd=560 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=561 CharacterOffsetEnd=565 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=566 CharacterOffsetEnd=571 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=571 CharacterOffsetEnd=572 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=though CharacterOffsetBegin=573 CharacterOffsetEnd=579 PartOfSpeech=IN Lemma=though NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=580 CharacterOffsetEnd=584 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=585 CharacterOffsetEnd=586 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=587 CharacterOffsetEnd=589 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=diversity CharacterOffsetBegin=590 CharacterOffsetEnd=599 PartOfSpeech=NN Lemma=diversity NamedEntityTag=O]
+[Text=appearing CharacterOffsetBegin=600 CharacterOffsetEnd=609 PartOfSpeech=VBG Lemma=appear NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=610 CharacterOffsetEnd=612 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=613 CharacterOffsetEnd=616 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=almost CharacterOffsetBegin=617 CharacterOffsetEnd=623 PartOfSpeech=RB Lemma=almost NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=623 CharacterOffsetEnd=624 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ is)
+        (UCP
+          (ADJP
+            (ADJP
+              (NP (DT a) (JJ little))
+              (JJ strange))
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (NP
+                  (NP (DT these) (NNS psalms))
+                  (PP (IN of)
+                    (NP (NNP Ravenscroft))))
+                (, ,)
+                (PP (IN after)
+                  (NP
+                    (QP (CD two)
+                      (CC or)
+                      (CD three) (NNS times))
+                    (NN singing)))
+                (, ,)
+                (VP (VBP prove)))))
+          (CC but)
+          (NP
+            (NP (DT the) (JJ same))
+            (ADVP (RB again))))
+        (, ,)
+        (ADVP (IN though))
+        (ADJP (JJ good))))
+    (: -)
+    (S
+      (NP (DT no) (NN diversity))
+      (VP (VBG appearing)
+        (ADVP (IN at) (DT all))
+        (ADVP (RB almost))))
+    (. .)))
+
+root(ROOT-0, strange-5)
+nsubj(strange-5, It-1)
+nsubj(same-22, It-1)
+cop(strange-5, is-2)
+det(little-4, a-3)
+nmod:npmod(strange-5, little-4)
+advmod(prove-19, how-6)
+det(psalms-8, these-7)
+nsubj(prove-19, psalms-8)
+case(Ravenscroft-10, of-9)
+nmod:of(psalms-8, Ravenscroft-10)
+punct(prove-19, ,-11)
+case(singing-17, after-12)
+nummod(singing-17, two-13)
+cc(two-13, or-14)
+nummod(times-16, three-15)
+conj:or(two-13, times-16)
+nummod(singing-17, times-16)
+nmod:after(prove-19, singing-17)
+punct(prove-19, ,-18)
+ccomp(strange-5, prove-19)
+cc(strange-5, but-20)
+det(same-22, the-21)
+conj:but(strange-5, same-22)
+advmod(same-22, again-23)
+punct(strange-5, ,-24)
+advmod(strange-5, though-25)
+xcomp(strange-5, good-26)
+punct(strange-5, --27)
+neg(diversity-29, no-28)
+nsubj(appearing-30, diversity-29)
+parataxis(strange-5, appearing-30)
+case(all-32, at-31)
+nmod:at(appearing-30, all-32)
+advmod(appearing-30, almost-33)
+punct(strange-5, .-34)
+
+Coreference set:
+	(3,32,[32,33]) -> (1,1,[1,4]), that is: "their" -> "Lords day ."
+Coreference set:
+	(6,15,[15,16]) -> (3,21,[21,22]), that is: "three" -> "three"
+Coreference set:
+	(3,48,[48,49]) -> (3,46,[46,47]), that is: "his" -> "Andrews"
+Coreference set:
+	(3,40,[40,44]) -> (3,3,[3,5]), that is: "home , and there" -> "home mighty"
+	(6,1,[1,2]) -> (3,3,[3,5]), that is: "It" -> "home mighty"
+Coreference set:
+	(3,46,[45,50]) -> (3,52,[51,53]), that is: "Mr. Andrews and his lady" -> "a well-bred"

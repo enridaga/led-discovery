@@ -1,0 +1,264 @@
+Sentence #1 (9 tokens):
+Go to St John's Institute at 5.0.
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=St CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=St NamedEntityTag=ORGANIZATION]
+[Text=John CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=John NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=POS Lemma='s NamedEntityTag=ORGANIZATION]
+[Text=Institute CharacterOffsetBegin=16 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Institute NamedEntityTag=ORGANIZATION]
+[Text=at CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=5.0 CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=CD Lemma=5.0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=5.0]
+[Text=. CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PP (TO to)
+        (NP
+          (NP (NNP St) (NNP John) (POS 's))
+          (NNP Institute)))
+      (PP (IN at)
+        (NP (CD 5.0))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+case(Institute-6, to-2)
+compound(John-4, St-3)
+nmod:poss(Institute-6, John-4)
+case(John-4, 's-5)
+nmod:to(Go-1, Institute-6)
+case(5.0-8, at-7)
+nmod:at(Go-1, 5.0-8)
+punct(Go-1, .-9)
+
+Sentence #2 (15 tokens):
+for a Concert of the Music Club: - Mangeot's International St. Quart.
+[Text=for CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Concert CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Music CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Music NamedEntityTag=O]
+[Text=Club CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Club NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Mangeot CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Mangeot NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=International CharacterOffsetBegin=79 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=International NamedEntityTag=O]
+[Text=St. CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=NNP Lemma=St. NamedEntityTag=O]
+[Text=Quart CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=NNP Lemma=Quart NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (PP (IN for)
+        (NP (DT a) (NN Concert)))
+      (PP (IN of)
+        (NP (DT the) (NNP Music) (NNP Club))
+        (: :)))
+    (: -)
+    (NP
+      (NP (NNP Mangeot) (POS 's))
+      (NP (NNP International) (NNP St.) (NNP Quart)))
+    (. .)))
+
+root(ROOT-0, Concert-3)
+case(Concert-3, for-1)
+det(Concert-3, a-2)
+case(Club-7, of-4)
+det(Club-7, the-5)
+compound(Club-7, Music-6)
+nmod:of(Concert-3, Club-7)
+punct(Club-7, :-8)
+punct(Concert-3, --9)
+dep(Concert-3, Mangeot-10)
+case(Mangeot-10, 's-11)
+compound(Quart-14, International-12)
+compound(Quart-14, St.-13)
+dep(Mangeot-10, Quart-14)
+punct(Concert-3, .-15)
+
+Sentence #3 (39 tokens):
+(pretty poor) play some Locke & Purcell & then with B.B.C. wind a long meandering Pastoral Phantasy by Helen Perkin who plays Ireland's fine Sonatina rather poorly, & with Mangeot Delius' 3rd Sonata.
+[Text=-LRB- CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=pretty CharacterOffsetBegin=105 CharacterOffsetEnd=111 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O]
+[Text=poor CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=JJ Lemma=poor NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=VBP Lemma=play NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=123 CharacterOffsetEnd=127 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=Locke CharacterOffsetBegin=128 CharacterOffsetEnd=133 PartOfSpeech=NNP Lemma=Locke NamedEntityTag=ORGANIZATION]
+[Text=& CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=CC Lemma=& NamedEntityTag=ORGANIZATION]
+[Text=Purcell CharacterOffsetBegin=136 CharacterOffsetEnd=143 PartOfSpeech=NNP Lemma=Purcell NamedEntityTag=ORGANIZATION]
+[Text=& CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=CC Lemma=& NamedEntityTag=ORGANIZATION]
+[Text=then CharacterOffsetBegin=146 CharacterOffsetEnd=150 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=151 CharacterOffsetEnd=155 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=B.B.C. CharacterOffsetBegin=156 CharacterOffsetEnd=162 PartOfSpeech=NN Lemma=b.b.c. NamedEntityTag=O]
+[Text=wind CharacterOffsetBegin=163 CharacterOffsetEnd=167 PartOfSpeech=NN Lemma=wind NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=168 CharacterOffsetEnd=169 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=170 CharacterOffsetEnd=174 PartOfSpeech=JJ Lemma=long NamedEntityTag=O]
+[Text=meandering CharacterOffsetBegin=175 CharacterOffsetEnd=185 PartOfSpeech=VBG Lemma=meander NamedEntityTag=O]
+[Text=Pastoral CharacterOffsetBegin=186 CharacterOffsetEnd=194 PartOfSpeech=NNP Lemma=Pastoral NamedEntityTag=O]
+[Text=Phantasy CharacterOffsetBegin=195 CharacterOffsetEnd=203 PartOfSpeech=NNP Lemma=Phantasy NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=204 CharacterOffsetEnd=206 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Helen CharacterOffsetBegin=207 CharacterOffsetEnd=212 PartOfSpeech=NNP Lemma=Helen NamedEntityTag=PERSON]
+[Text=Perkin CharacterOffsetBegin=213 CharacterOffsetEnd=219 PartOfSpeech=NNP Lemma=Perkin NamedEntityTag=PERSON]
+[Text=who CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=plays CharacterOffsetBegin=224 CharacterOffsetEnd=229 PartOfSpeech=VBZ Lemma=play NamedEntityTag=O]
+[Text=Ireland CharacterOffsetBegin=230 CharacterOffsetEnd=237 PartOfSpeech=NNP Lemma=Ireland NamedEntityTag=LOCATION]
+[Text='s CharacterOffsetBegin=237 CharacterOffsetEnd=239 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=240 CharacterOffsetEnd=244 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=Sonatina CharacterOffsetBegin=245 CharacterOffsetEnd=253 PartOfSpeech=NNP Lemma=Sonatina NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=254 CharacterOffsetEnd=260 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=poorly CharacterOffsetBegin=261 CharacterOffsetEnd=267 PartOfSpeech=RB Lemma=poorly NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=267 CharacterOffsetEnd=268 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=269 CharacterOffsetEnd=270 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=271 CharacterOffsetEnd=275 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Mangeot CharacterOffsetBegin=276 CharacterOffsetEnd=283 PartOfSpeech=NNP Lemma=Mangeot NamedEntityTag=PERSON]
+[Text=Delius CharacterOffsetBegin=284 CharacterOffsetEnd=290 PartOfSpeech=NNP Lemma=Delius NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=290 CharacterOffsetEnd=291 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=3rd CharacterOffsetBegin=292 CharacterOffsetEnd=295 PartOfSpeech=JJ Lemma=3rd NamedEntityTag=ORDINAL NormalizedNamedEntityTag=3.0]
+[Text=Sonata CharacterOffsetBegin=296 CharacterOffsetEnd=302 PartOfSpeech=NN Lemma=sonata NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=302 CharacterOffsetEnd=303 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (PRN (-LRB- -LRB-)
+          (ADJP (RB pretty) (JJ poor))
+          (-RRB- -RRB-)))
+      (VP (VBP play)
+        (S
+          (NP (DT some)
+            (NP (NNP Locke)
+              (CC &)
+              (NNP Purcell))
+            (CC &)
+            (NP
+              (NP (RB then))
+              (PP (IN with)
+                (NP (NN B.B.C.) (NN wind)))))
+          (NP
+            (NP (DT a) (JJ long))
+            (VP (VBG meandering)
+              (NP (NNP Pastoral) (NNP Phantasy))
+              (PP (IN by)
+                (NP
+                  (NP (NNP Helen) (NNP Perkin))
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBZ plays)
+                        (NP
+                          (NP (NNP Ireland) (POS 's))
+                          (JJ fine) (NNP Sonatina))
+                        (ADVP (RB rather) (RB poorly))))))))))))
+    (, ,)
+    (S
+      (NP (CC &))
+      (PP (IN with)
+        (NP
+          (NP (NNP Mangeot) (NNP Delius) (POS '))
+          (JJ 3rd) (NN Sonata))))
+    (. .)))
+
+root(ROOT-0, play-5)
+punct(poor-3, -LRB--1)
+advmod(poor-3, pretty-2)
+nsubj(play-5, poor-3)
+punct(poor-3, -RRB--4)
+dep(Locke-7, some-6)
+nsubj(long-16, Locke-7)
+cc(Locke-7, &-8)
+conj:&(Locke-7, Purcell-9)
+nsubj(long-16, Purcell-9)
+cc(Locke-7, &-10)
+conj:&(Locke-7, then-11)
+nsubj(long-16, then-11)
+case(wind-14, with-12)
+compound(wind-14, B.B.C.-13)
+nmod:with(then-11, wind-14)
+det(long-16, a-15)
+xcomp(play-5, long-16)
+acl(long-16, meandering-17)
+compound(Phantasy-19, Pastoral-18)
+dobj(meandering-17, Phantasy-19)
+case(Perkin-22, by-20)
+compound(Perkin-22, Helen-21)
+nmod:by(meandering-17, Perkin-22)
+nsubj(plays-24, Perkin-22)
+ref(Perkin-22, who-23)
+acl:relcl(Perkin-22, plays-24)
+nmod:poss(Sonatina-28, Ireland-25)
+case(Ireland-25, 's-26)
+amod(Sonatina-28, fine-27)
+dobj(plays-24, Sonatina-28)
+advmod(poorly-30, rather-29)
+advmod(plays-24, poorly-30)
+punct(play-5, ,-31)
+parataxis(play-5, &-32)
+case(Sonata-38, with-33)
+compound(Delius-35, Mangeot-34)
+nmod:poss(Sonata-38, Delius-35)
+case(Delius-35, '-36)
+amod(Sonata-38, 3rd-37)
+dep(&-32, Sonata-38)
+punct(play-5, .-39)
+
+Sentence #4 (16 tokens):
+* Also a work by Van Dieran in memory of Warlock with John Goss etc.**
+[Text=* CharacterOffsetBegin=303 CharacterOffsetEnd=304 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=Also CharacterOffsetBegin=305 CharacterOffsetEnd=309 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=310 CharacterOffsetEnd=311 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=312 CharacterOffsetEnd=316 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=317 CharacterOffsetEnd=319 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Van CharacterOffsetBegin=320 CharacterOffsetEnd=323 PartOfSpeech=NNP Lemma=Van NamedEntityTag=PERSON]
+[Text=Dieran CharacterOffsetBegin=324 CharacterOffsetEnd=330 PartOfSpeech=NNP Lemma=Dieran NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=331 CharacterOffsetEnd=333 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=memory CharacterOffsetBegin=334 CharacterOffsetEnd=340 PartOfSpeech=NN Lemma=memory NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=341 CharacterOffsetEnd=343 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Warlock CharacterOffsetBegin=344 CharacterOffsetEnd=351 PartOfSpeech=NN Lemma=warlock NamedEntityTag=LOCATION]
+[Text=with CharacterOffsetBegin=352 CharacterOffsetEnd=356 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=John CharacterOffsetBegin=357 CharacterOffsetEnd=361 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=Goss CharacterOffsetBegin=362 CharacterOffsetEnd=366 PartOfSpeech=NNP Lemma=Goss NamedEntityTag=PERSON]
+[Text=etc. CharacterOffsetBegin=367 CharacterOffsetEnd=371 PartOfSpeech=FW Lemma=etc. NamedEntityTag=O]
+[Text=** CharacterOffsetBegin=371 CharacterOffsetEnd=373 PartOfSpeech=SYM Lemma=** NamedEntityTag=O]
+(ROOT
+  (X
+    (X (SYM *))
+    (NP
+      (NP
+        (ADVP (RB Also))
+        (DT a) (NN work))
+      (PP (IN by)
+        (NP
+          (NP (NNP Van) (NNP Dieran))
+          (PP (IN in)
+            (VP
+              (NP
+                (NP (NN memory))
+                (PP (IN of)
+                  (NP (NN Warlock))))
+              (PP (IN with)
+                (NP (NNP John) (NNP Goss))
+                (NP
+                  (NP (FW etc.))
+                  (X (SYM **)))))))))))
+
+root(ROOT-0, work-4)
+dep(work-4, *-1)
+advmod(work-4, Also-2)
+det(work-4, a-3)
+case(Dieran-7, by-5)
+compound(Dieran-7, Van-6)
+nmod:by(work-4, Dieran-7)
+case(memory-9, in-8)
+acl:in(Dieran-7, memory-9)
+case(Warlock-11, of-10)
+nmod:of(memory-9, Warlock-11)
+case(Goss-14, with-12)
+compound(Goss-14, John-13)
+nmod:with(memory-9, Goss-14)
+dep(Goss-14, etc.-15)
+dep(etc.-15, **-16)
+
+Coreference set:
+	(3,32,[32,33]) -> (3,10,[7,11]), that is: "&" -> "Locke & Purcell &"

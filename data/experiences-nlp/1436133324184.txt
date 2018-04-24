@@ -1,0 +1,84 @@
+Sentence #1 (25 tokens):
+I stopped in [Trinity Church] to listen to a very beautiful rehearsal of Larry King's choir, pure as spring water.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=stopped CharacterOffsetBegin=2 CharacterOffsetEnd=9 PartOfSpeech=VBD Lemma=stop NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=RP Lemma=in NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Trinity CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Trinity NamedEntityTag=ORGANIZATION]
+[Text=Church CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Church NamedEntityTag=ORGANIZATION]
+[Text=-RSB- CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=beautiful CharacterOffsetBegin=50 CharacterOffsetEnd=59 PartOfSpeech=JJ Lemma=beautiful NamedEntityTag=O]
+[Text=rehearsal CharacterOffsetBegin=60 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=rehearsal NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Larry CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=Larry NamedEntityTag=PERSON]
+[Text=King CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=King NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=choir CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=choir NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=pure CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=JJ Lemma=pure NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=spring CharacterOffsetBegin=101 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=spring NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-SP Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-SP">spring</TIMEX3>]
+[Text=water CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=water NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD stopped)
+      (PRT (RP in))
+      (PP (-LRB- -LSB-)
+        (NP (NNP Trinity) (NNP Church)))
+      (-RRB- -RSB-)
+      (S
+        (VP (TO to)
+          (VP (VB listen)
+            (PP (TO to)
+              (NP
+                (NP (DT a)
+                  (ADJP (RB very) (JJ beautiful))
+                  (NN rehearsal))
+                (PP (IN of)
+                  (NP
+                    (NP
+                      (NP (NNP Larry) (NNP King) (POS 's))
+                      (NN choir))
+                    (, ,)
+                    (NP
+                      (NP (JJ pure))
+                      (PP (IN as)
+                        (NP (NN spring) (NN water))))))))))))
+    (. .)))
+
+root(ROOT-0, stopped-2)
+nsubj(stopped-2, I-1)
+nsubj:xsubj(listen-9, I-1)
+compound:prt(stopped-2, in-3)
+punct(Church-6, -LSB--4)
+compound(Church-6, Trinity-5)
+nmod(stopped-2, Church-6)
+punct(stopped-2, -RSB--7)
+mark(listen-9, to-8)
+xcomp(stopped-2, listen-9)
+case(rehearsal-14, to-10)
+det(rehearsal-14, a-11)
+advmod(beautiful-13, very-12)
+amod(rehearsal-14, beautiful-13)
+nmod:to(listen-9, rehearsal-14)
+case(choir-19, of-15)
+compound(King-17, Larry-16)
+nmod:poss(choir-19, King-17)
+case(King-17, 's-18)
+nmod:of(rehearsal-14, choir-19)
+punct(choir-19, ,-20)
+appos(choir-19, pure-21)
+case(water-24, as-22)
+compound(water-24, spring-23)
+nmod:as(pure-21, water-24)
+punct(stopped-2, .-25)
+
+Coreference set:
+	(1,21,[21,25]) -> (1,19,[16,20]), that is: "pure as spring water" -> "Larry King 's choir"

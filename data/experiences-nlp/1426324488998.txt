@@ -1,0 +1,330 @@
+Sentence #1 (17 tokens):
+To find a sensitive musician and an agreeable companion with whom to travel was not easy.
+[Text=To CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=VB Lemma=find NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=sensitive CharacterOffsetBegin=10 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=sensitive NamedEntityTag=O]
+[Text=musician CharacterOffsetBegin=20 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=musician NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=agreeable CharacterOffsetBegin=36 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=agreeable NamedEntityTag=O]
+[Text=companion CharacterOffsetBegin=46 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=companion NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=whom CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=WP Lemma=whom NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=travel CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=VB Lemma=travel NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=easy CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=JJ Lemma=easy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (VP (TO To)
+        (VP (VB find)
+          (NP
+            (NP (DT a) (JJ sensitive) (NN musician))
+            (CC and)
+            (NP (DT an) (JJ agreeable) (NN companion)))
+          (PP (IN with)
+            (SBAR
+              (WHNP (WP whom))
+              (S
+                (VP (TO to)
+                  (VP (VB travel)))))))))
+    (VP (VBD was) (RB not)
+      (ADJP (JJ easy)))
+    (. .)))
+
+root(ROOT-0, easy-16)
+mark(find-2, To-1)
+csubj(easy-16, find-2)
+det(musician-5, a-3)
+amod(musician-5, sensitive-4)
+dobj(find-2, musician-5)
+cc(musician-5, and-6)
+det(companion-9, an-7)
+amod(companion-9, agreeable-8)
+dobj(find-2, companion-9)
+conj:and(musician-5, companion-9)
+mark(travel-13, with-10)
+nsubj(travel-13, whom-11)
+mark(travel-13, to-12)
+advcl:to(find-2, travel-13)
+cop(easy-16, was-14)
+neg(easy-16, not-15)
+punct(easy-16, .-17)
+
+Sentence #2 (13 tokens):
+There was a pianist who knew violin repertoire: another, opera.
+[Text=There CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=pianist CharacterOffsetBegin=102 CharacterOffsetEnd=109 PartOfSpeech=NN Lemma=pianist NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=knew CharacterOffsetBegin=114 CharacterOffsetEnd=118 PartOfSpeech=VBD Lemma=know NamedEntityTag=O]
+[Text=violin CharacterOffsetBegin=119 CharacterOffsetEnd=125 PartOfSpeech=NN Lemma=violin NamedEntityTag=O]
+[Text=repertoire CharacterOffsetBegin=126 CharacterOffsetEnd=136 PartOfSpeech=NN Lemma=repertoire NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=another CharacterOffsetBegin=138 CharacterOffsetEnd=145 PartOfSpeech=DT Lemma=another NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=opera CharacterOffsetBegin=147 CharacterOffsetEnd=152 PartOfSpeech=NN Lemma=opera NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN pianist))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD knew)
+              (NP
+                (NP (NN violin) (NN repertoire))
+                (: :)
+                (NP
+                  (NP (DT another))
+                  (, ,)
+                  (NP (NN opera)))))))))
+    (. .)))
+
+root(ROOT-0, was-2)
+expl(was-2, There-1)
+det(pianist-4, a-3)
+nsubj(was-2, pianist-4)
+nsubj(knew-6, pianist-4)
+ref(pianist-4, who-5)
+acl:relcl(pianist-4, knew-6)
+compound(repertoire-8, violin-7)
+dobj(knew-6, repertoire-8)
+punct(repertoire-8, :-9)
+dep(repertoire-8, another-10)
+punct(another-10, ,-11)
+appos(another-10, opera-12)
+punct(was-2, .-13)
+
+Sentence #3 (39 tokens):
+Only two of them had played with a cello at all, but one of them had black teeth and a sour smell, and the other breathed with a wheeze that was audible when I played softly.
+[Text=Only CharacterOffsetBegin=154 CharacterOffsetEnd=158 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=159 CharacterOffsetEnd=162 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=of CharacterOffsetBegin=163 CharacterOffsetEnd=165 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=166 CharacterOffsetEnd=170 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=175 CharacterOffsetEnd=181 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=182 CharacterOffsetEnd=186 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=cello CharacterOffsetBegin=189 CharacterOffsetEnd=194 PartOfSpeech=NN Lemma=cello NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=195 CharacterOffsetEnd=197 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=198 CharacterOffsetEnd=201 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=201 CharacterOffsetEnd=202 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=203 CharacterOffsetEnd=206 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=207 CharacterOffsetEnd=210 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=211 CharacterOffsetEnd=213 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=214 CharacterOffsetEnd=218 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=219 CharacterOffsetEnd=222 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=black CharacterOffsetBegin=223 CharacterOffsetEnd=228 PartOfSpeech=JJ Lemma=black NamedEntityTag=O]
+[Text=teeth CharacterOffsetBegin=229 CharacterOffsetEnd=234 PartOfSpeech=NNS Lemma=tooth NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=235 CharacterOffsetEnd=238 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=239 CharacterOffsetEnd=240 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=sour CharacterOffsetBegin=241 CharacterOffsetEnd=245 PartOfSpeech=JJ Lemma=sour NamedEntityTag=O]
+[Text=smell CharacterOffsetBegin=246 CharacterOffsetEnd=251 PartOfSpeech=NN Lemma=smell NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=251 CharacterOffsetEnd=252 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=253 CharacterOffsetEnd=256 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=261 CharacterOffsetEnd=266 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=breathed CharacterOffsetBegin=267 CharacterOffsetEnd=275 PartOfSpeech=VBN Lemma=breathe NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=276 CharacterOffsetEnd=280 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=281 CharacterOffsetEnd=282 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=wheeze CharacterOffsetBegin=283 CharacterOffsetEnd=289 PartOfSpeech=NN Lemma=wheeze NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=290 CharacterOffsetEnd=294 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=295 CharacterOffsetEnd=298 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=audible CharacterOffsetBegin=299 CharacterOffsetEnd=306 PartOfSpeech=JJ Lemma=audible NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=307 CharacterOffsetEnd=311 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=312 CharacterOffsetEnd=313 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=314 CharacterOffsetEnd=320 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=softly CharacterOffsetBegin=321 CharacterOffsetEnd=327 PartOfSpeech=RB Lemma=softly NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=327 CharacterOffsetEnd=328 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (RB Only) (CD two))
+        (PP (IN of)
+          (NP (PRP them))))
+      (VP (VBD had)
+        (VP (VBN played)
+          (PP (IN with)
+            (NP
+              (NP (DT a) (NN cello))
+              (ADVP (IN at) (DT all)))))))
+    (, ,)
+    (CC but)
+    (S
+      (S
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP (PRP them))))
+        (VP (VBD had)
+          (NP
+            (NP (JJ black) (NNS teeth))
+            (CC and)
+            (NP (DT a) (JJ sour) (NN smell)))))
+      (, ,)
+      (CC and)
+      (S
+        (NP (DT the) (JJ other))
+        (VP (VBN breathed)
+          (PP (IN with)
+            (NP
+              (NP (DT a) (NN wheeze))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBD was)
+                    (ADJP (JJ audible))
+                    (SBAR
+                      (WHADVP (WRB when))
+                      (S
+                        (NP (PRP I))
+                        (VP (VBD played)
+                          (ADVP (RB softly)))))))))))))
+    (. .)))
+
+root(ROOT-0, played-6)
+advmod(two-2, Only-1)
+det:qmod(them-4, two-2)
+mwe(two-2, of-3)
+nsubj(played-6, them-4)
+aux(played-6, had-5)
+case(cello-9, with-7)
+det(cello-9, a-8)
+nmod:with(played-6, cello-9)
+case(all-11, at-10)
+nmod:at(cello-9, all-11)
+punct(played-6, ,-12)
+cc(played-6, but-13)
+det:qmod(them-16, one-14)
+mwe(one-14, of-15)
+nsubj(had-17, them-16)
+conj:but(played-6, had-17)
+amod(teeth-19, black-18)
+dobj(had-17, teeth-19)
+cc(teeth-19, and-20)
+det(smell-23, a-21)
+amod(smell-23, sour-22)
+dobj(had-17, smell-23)
+conj:and(teeth-19, smell-23)
+punct(had-17, ,-24)
+cc(had-17, and-25)
+det(other-27, the-26)
+nsubj(breathed-28, other-27)
+conj:but(played-6, breathed-28)
+conj:and(had-17, breathed-28)
+case(wheeze-31, with-29)
+det(wheeze-31, a-30)
+nmod:with(breathed-28, wheeze-31)
+nsubj(audible-34, wheeze-31)
+ref(wheeze-31, that-32)
+cop(audible-34, was-33)
+acl:relcl(wheeze-31, audible-34)
+advmod(played-37, when-35)
+nsubj(played-37, I-36)
+advcl(audible-34, played-37)
+advmod(played-37, softly-38)
+punct(played-6, .-39)
+
+Sentence #4 (25 tokens):
+I was impressed with one superb musician, but he wore two ties and on the Sunday we met insisted that it was Tuesday.
+[Text=I CharacterOffsetBegin=329 CharacterOffsetEnd=330 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=331 CharacterOffsetEnd=334 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=impressed CharacterOffsetBegin=335 CharacterOffsetEnd=344 PartOfSpeech=VBN Lemma=impress NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=345 CharacterOffsetEnd=349 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=350 CharacterOffsetEnd=353 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=superb CharacterOffsetBegin=354 CharacterOffsetEnd=360 PartOfSpeech=JJ Lemma=superb NamedEntityTag=O]
+[Text=musician CharacterOffsetBegin=361 CharacterOffsetEnd=369 PartOfSpeech=NN Lemma=musician NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=369 CharacterOffsetEnd=370 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=371 CharacterOffsetEnd=374 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=375 CharacterOffsetEnd=377 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=wore CharacterOffsetBegin=378 CharacterOffsetEnd=382 PartOfSpeech=VBD Lemma=wear NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=383 CharacterOffsetEnd=386 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=ties CharacterOffsetBegin=387 CharacterOffsetEnd=391 PartOfSpeech=NNS Lemma=tie NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=392 CharacterOffsetEnd=395 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=396 CharacterOffsetEnd=398 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=399 CharacterOffsetEnd=402 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Sunday CharacterOffsetBegin=403 CharacterOffsetEnd=409 PartOfSpeech=NNP Lemma=Sunday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-7 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-WXX-7">Sunday</TIMEX3>]
+[Text=we CharacterOffsetBegin=410 CharacterOffsetEnd=412 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=met CharacterOffsetBegin=413 CharacterOffsetEnd=416 PartOfSpeech=VBD Lemma=meet NamedEntityTag=O]
+[Text=insisted CharacterOffsetBegin=417 CharacterOffsetEnd=425 PartOfSpeech=VBD Lemma=insist NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=426 CharacterOffsetEnd=430 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=431 CharacterOffsetEnd=433 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=434 CharacterOffsetEnd=437 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=Tuesday CharacterOffsetBegin=438 CharacterOffsetEnd=445 PartOfSpeech=NNP Lemma=Tuesday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-2 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-WXX-2">Tuesday</TIMEX3>]
+[Text=. CharacterOffsetBegin=445 CharacterOffsetEnd=446 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD was)
+        (VP (VBN impressed)
+          (PP (IN with)
+            (NP (CD one) (JJ superb) (NN musician))))))
+    (, ,)
+    (CC but)
+    (S
+      (S
+        (NP (PRP he))
+        (VP (VBD wore)
+          (NP (CD two) (NNS ties))))
+      (CC and)
+      (S
+        (PP (IN on)
+          (NP (DT the) (NNP Sunday)))
+        (NP (PRP we))
+        (VP (VBD met)
+          (SBAR
+            (S
+              (VP (VBD insisted)
+                (SBAR (IN that)
+                  (S
+                    (NP (PRP it))
+                    (VP (VBD was)
+                      (NP-TMP (NNP Tuesday)))))))))))
+    (. .)))
+
+root(ROOT-0, impressed-3)
+nsubjpass(impressed-3, I-1)
+auxpass(impressed-3, was-2)
+case(musician-7, with-4)
+nummod(musician-7, one-5)
+amod(musician-7, superb-6)
+nmod:with(impressed-3, musician-7)
+punct(impressed-3, ,-8)
+cc(impressed-3, but-9)
+nsubj(wore-11, he-10)
+conj:but(impressed-3, wore-11)
+nummod(ties-13, two-12)
+dobj(wore-11, ties-13)
+cc(wore-11, and-14)
+case(Sunday-17, on-15)
+det(Sunday-17, the-16)
+nmod:on(met-19, Sunday-17)
+nsubj(met-19, we-18)
+conj:but(impressed-3, met-19)
+conj:and(wore-11, met-19)
+ccomp(met-19, insisted-20)
+mark(was-23, that-21)
+nsubj(was-23, it-22)
+ccomp(insisted-20, was-23)
+nmod:tmod(was-23, Tuesday-24)
+punct(impressed-3, .-25)
+
+Coreference set:
+	(4,12,[12,13]) -> (3,2,[1,5]), that is: "two" -> "Only two of them"
+Coreference set:
+	(4,1,[1,2]) -> (3,36,[36,37]), that is: "I" -> "I"
+Coreference set:
+	(4,10,[10,11]) -> (4,7,[5,8]), that is: "he" -> "one superb musician"
+Coreference set:
+	(4,22,[22,23]) -> (4,17,[16,18]), that is: "it" -> "the Sunday"

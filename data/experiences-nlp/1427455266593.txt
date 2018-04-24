@@ -1,0 +1,250 @@
+Sentence #1 (9 tokens):
+We had one family link...with prostitution.
+[Text=We CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=family CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=family NamedEntityTag=O]
+[Text=link CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=link NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=prostitution CharacterOffsetBegin=30 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=prostitution NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBD had)
+      (NP
+        (NP (CD one) (NN family) (NN link))
+        (: ...)
+        (PP (IN with)
+          (NP (NN prostitution)))))
+    (. .)))
+
+root(ROOT-0, had-2)
+nsubj(had-2, We-1)
+nummod(link-5, one-3)
+compound(link-5, family-4)
+dobj(had-2, link-5)
+punct(link-5, ...-6)
+case(prostitution-8, with-7)
+nmod:with(link-5, prostitution-8)
+punct(had-2, .-9)
+
+Sentence #2 (21 tokens):
+This was Blanche, one of Mom's nieces, who was only seven or eight years older than I..
+[Text=This CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=Blanche CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Blanche NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Mom CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=mom NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=nieces CharacterOffsetBegin=75 CharacterOffsetEnd=81 PartOfSpeech=NNS Lemma=niece NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=seven CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=CD Lemma=seven NamedEntityTag=NUMBER NormalizedNamedEntityTag=7.0]
+[Text=or CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=eight CharacterOffsetBegin=105 CharacterOffsetEnd=110 PartOfSpeech=CD Lemma=eight NamedEntityTag=DURATION NormalizedNamedEntityTag=P8Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P8Y">eight years</TIMEX3>]
+[Text=years CharacterOffsetBegin=111 CharacterOffsetEnd=116 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P8Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P8Y">eight years</TIMEX3>]
+[Text=older CharacterOffsetBegin=117 CharacterOffsetEnd=122 PartOfSpeech=JJR Lemma=older NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=123 CharacterOffsetEnd=127 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=I. CharacterOffsetBegin=128 CharacterOffsetEnd=130 PartOfSpeech=NN Lemma=i. NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=130 CharacterOffsetEnd=131 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBD was)
+      (NP
+        (NP (NNP Blanche))
+        (, ,)
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP
+              (NP (NN Mom) (POS 's))
+              (NNS nieces))))
+        (, ,)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD was)
+              (ADJP
+                (ADJP
+                  (NP
+                    (QP (RB only) (CD seven)
+                      (CC or)
+                      (CD eight))
+                    (NNS years))
+                  (JJR older))
+                (PP (IN than)
+                  (NP (NN I.)))))))))
+    (. .)))
+
+root(ROOT-0, Blanche-3)
+nsubj(Blanche-3, This-1)
+cop(Blanche-3, was-2)
+nsubj(older-18, Blanche-3)
+punct(Blanche-3, ,-4)
+appos(Blanche-3, one-5)
+case(nieces-9, of-6)
+nmod:poss(nieces-9, Mom-7)
+case(Mom-7, 's-8)
+nmod:of(one-5, nieces-9)
+punct(Blanche-3, ,-10)
+ref(Blanche-3, who-11)
+cop(older-18, was-12)
+advmod(seven-14, only-13)
+nummod(years-17, seven-14)
+cc(seven-14, or-15)
+conj:or(seven-14, eight-16)
+nummod(years-17, eight-16)
+nmod:npmod(older-18, years-17)
+acl:relcl(Blanche-3, older-18)
+case(I.-20, than-19)
+nmod:than(older-18, I.-20)
+punct(Blanche-3, .-21)
+
+Sentence #3 (1 tokens):
+.
+[Text=. CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (. .)))
+
+root(ROOT-0, .-1)
+
+Sentence #4 (25 tokens):
+Being hardly more than a child herself, Blanche often played with me, read me stories, and sang little songs with me.
+[Text=Being CharacterOffsetBegin=136 CharacterOffsetEnd=141 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=hardly CharacterOffsetBegin=142 CharacterOffsetEnd=148 PartOfSpeech=RB Lemma=hardly NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=149 CharacterOffsetEnd=153 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=154 CharacterOffsetEnd=158 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=child CharacterOffsetBegin=161 CharacterOffsetEnd=166 PartOfSpeech=NN Lemma=child NamedEntityTag=O]
+[Text=herself CharacterOffsetBegin=167 CharacterOffsetEnd=174 PartOfSpeech=PRP Lemma=herself NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=174 CharacterOffsetEnd=175 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Blanche CharacterOffsetBegin=176 CharacterOffsetEnd=183 PartOfSpeech=NNP Lemma=Blanche NamedEntityTag=O]
+[Text=often CharacterOffsetBegin=184 CharacterOffsetEnd=189 PartOfSpeech=RB Lemma=often NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=190 CharacterOffsetEnd=196 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=197 CharacterOffsetEnd=201 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=202 CharacterOffsetEnd=204 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=204 CharacterOffsetEnd=205 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=read CharacterOffsetBegin=206 CharacterOffsetEnd=210 PartOfSpeech=VB Lemma=read NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=211 CharacterOffsetEnd=213 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=stories CharacterOffsetBegin=214 CharacterOffsetEnd=221 PartOfSpeech=NNS Lemma=story NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=221 CharacterOffsetEnd=222 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=223 CharacterOffsetEnd=226 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sang CharacterOffsetBegin=227 CharacterOffsetEnd=231 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=232 CharacterOffsetEnd=238 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=songs CharacterOffsetBegin=239 CharacterOffsetEnd=244 PartOfSpeech=NNS Lemma=song NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=245 CharacterOffsetEnd=249 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=250 CharacterOffsetEnd=252 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=252 CharacterOffsetEnd=253 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (VP (VBG Being)
+        (ADJP (RB hardly) (JJR more))
+        (PP (IN than)
+          (NP (DT a) (NN child) (PRP herself)))))
+    (, ,)
+    (NP (NNP Blanche))
+    (VP
+      (VP
+        (ADVP (RB often))
+        (VBD played)
+        (PP (IN with)
+          (NP (PRP me)))
+        (, ,)
+        (S
+          (VP (VB read)
+            (S
+              (NP (PRP me))
+              (NP (NNS stories))))))
+      (, ,)
+      (CC and)
+      (VP (VBD sang)
+        (NP (JJ little) (NNS songs))
+        (PP (IN with)
+          (NP (PRP me)))))
+    (. .)))
+
+root(ROOT-0, played-11)
+cop(more-3, Being-1)
+advmod(more-3, hardly-2)
+advcl(played-11, more-3)
+case(child-6, than-4)
+det(child-6, a-5)
+nmod:than(more-3, child-6)
+nmod:npmod(child-6, herself-7)
+punct(played-11, ,-8)
+nsubj(played-11, Blanche-9)
+nsubj(sang-20, Blanche-9)
+advmod(played-11, often-10)
+case(me-13, with-12)
+nmod:with(played-11, me-13)
+punct(played-11, ,-14)
+ccomp(played-11, read-15)
+nsubj(stories-17, me-16)
+xcomp(read-15, stories-17)
+punct(played-11, ,-18)
+cc(played-11, and-19)
+conj:and(played-11, sang-20)
+amod(songs-22, little-21)
+dobj(sang-20, songs-22)
+case(me-24, with-23)
+nmod:with(sang-20, me-24)
+punct(played-11, .-25)
+
+Sentence #5 (5 tokens):
+Her beauty fascinated me.
+[Text=Her CharacterOffsetBegin=254 CharacterOffsetEnd=257 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=beauty CharacterOffsetBegin=258 CharacterOffsetEnd=264 PartOfSpeech=NN Lemma=beauty NamedEntityTag=O]
+[Text=fascinated CharacterOffsetBegin=265 CharacterOffsetEnd=275 PartOfSpeech=VBD Lemma=fascinate NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=276 CharacterOffsetEnd=278 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=278 CharacterOffsetEnd=279 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP$ Her) (NN beauty))
+    (VP (VBD fascinated)
+      (NP (PRP me)))
+    (. .)))
+
+root(ROOT-0, fascinated-3)
+nmod:poss(beauty-2, Her-1)
+nsubj(fascinated-3, beauty-2)
+dobj(fascinated-3, me-4)
+punct(fascinated-3, .-5)
+
+Sentence #6 (4 tokens):
+I loved her.
+[Text=I CharacterOffsetBegin=280 CharacterOffsetEnd=281 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=loved CharacterOffsetBegin=282 CharacterOffsetEnd=287 PartOfSpeech=VBD Lemma=love NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=288 CharacterOffsetEnd=291 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=291 CharacterOffsetEnd=292 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD loved)
+      (NP (PRP her)))
+    (. .)))
+
+root(ROOT-0, loved-2)
+nsubj(loved-2, I-1)
+dobj(loved-2, her-3)
+punct(loved-2, .-4)
+
+Coreference set:
+	(4,9,[9,10]) -> (2,3,[3,4]), that is: "Blanche" -> "Blanche"
+Coreference set:
+	(4,7,[7,8]) -> (3,1,[1,2]), that is: "herself" -> "."
+Coreference set:
+	(5,1,[1,2]) -> (4,6,[5,8]), that is: "Her" -> "a child herself"
+	(6,3,[3,4]) -> (4,6,[5,8]), that is: "her" -> "a child herself"
+Coreference set:
+	(4,16,[16,17]) -> (4,13,[13,14]), that is: "me" -> "me"
+	(4,24,[24,25]) -> (4,13,[13,14]), that is: "me" -> "me"
+	(5,4,[4,5]) -> (4,13,[13,14]), that is: "me" -> "me"
+	(6,1,[1,2]) -> (4,13,[13,14]), that is: "I" -> "me"

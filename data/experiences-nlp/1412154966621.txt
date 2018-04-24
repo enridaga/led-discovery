@@ -1,0 +1,528 @@
+Sentence #1 (12 tokens):
+In the late 1950s, my parents bought a record player.
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=late CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=JJ Lemma=late NamedEntityTag=DATE NormalizedNamedEntityTag=late ]
+[Text=1950s CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=NNS Lemma=1950 NamedEntityTag=DATE NormalizedNamedEntityTag=195X Timex=<TIMEX3 tid="t1" type="SET" value="195X">1950s</TIMEX3>]
+[Text=, CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=parents CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NNS Lemma=parent NamedEntityTag=O]
+[Text=bought CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=VBD Lemma=buy NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=record CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=record NamedEntityTag=O]
+[Text=player CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=player NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (JJ late) (NNS 1950s)))
+    (, ,)
+    (NP (PRP$ my) (NNS parents))
+    (VP (VBD bought)
+      (NP (DT a) (NN record) (NN player)))
+    (. .)))
+
+root(ROOT-0, bought-8)
+case(1950s-4, In-1)
+det(1950s-4, the-2)
+amod(1950s-4, late-3)
+nmod:in(bought-8, 1950s-4)
+punct(bought-8, ,-5)
+nmod:poss(parents-7, my-6)
+nsubj(bought-8, parents-7)
+det(player-11, a-9)
+compound(player-11, record-10)
+dobj(bought-8, player-11)
+punct(bought-8, .-12)
+
+Sentence #2 (13 tokens):
+Then, ten years later, they bought a proper stereo system.
+[Text=Then CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=ten CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=CD Lemma=ten NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P10Y Timex=<TIMEX3 alt_value="OFFSET P10Y" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">ten years later</TIMEX3>]
+[Text=years CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=NNS Lemma=year NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P10Y Timex=<TIMEX3 alt_value="OFFSET P10Y" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">ten years later</TIMEX3>]
+[Text=later CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=RB Lemma=later NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P10Y Timex=<TIMEX3 alt_value="OFFSET P10Y" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">ten years later</TIMEX3>]
+[Text=, CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=bought CharacterOffsetBegin=82 CharacterOffsetEnd=88 PartOfSpeech=VBD Lemma=buy NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=proper CharacterOffsetBegin=91 CharacterOffsetEnd=97 PartOfSpeech=JJ Lemma=proper NamedEntityTag=O]
+[Text=stereo CharacterOffsetBegin=98 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=stereo NamedEntityTag=O]
+[Text=system CharacterOffsetBegin=105 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=system NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Then))
+    (, ,)
+    (ADVP
+      (NP (CD ten) (NNS years))
+      (RB later))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBD bought)
+      (NP (DT a) (JJ proper) (NN stereo) (NN system)))
+    (. .)))
+
+root(ROOT-0, bought-8)
+advmod(bought-8, Then-1)
+punct(bought-8, ,-2)
+nummod(years-4, ten-3)
+nmod:npmod(later-5, years-4)
+advmod(bought-8, later-5)
+punct(bought-8, ,-6)
+nsubj(bought-8, they-7)
+det(system-12, a-9)
+amod(system-12, proper-10)
+compound(system-12, stereo-11)
+dobj(bought-8, system-12)
+punct(bought-8, .-13)
+
+Sentence #3 (14 tokens):
+I inherited the old record player, which I had in my bedroom.
+[Text=I CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=inherited CharacterOffsetBegin=115 CharacterOffsetEnd=124 PartOfSpeech=VBD Lemma=inherit NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=record CharacterOffsetBegin=133 CharacterOffsetEnd=139 PartOfSpeech=NN Lemma=record NamedEntityTag=O]
+[Text=player CharacterOffsetBegin=140 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=player NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=148 CharacterOffsetEnd=153 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=156 CharacterOffsetEnd=159 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=163 CharacterOffsetEnd=165 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=bedroom CharacterOffsetBegin=166 CharacterOffsetEnd=173 PartOfSpeech=NN Lemma=bedroom NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=173 CharacterOffsetEnd=174 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD inherited)
+      (NP
+        (NP (DT the) (JJ old) (NN record) (NN player))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (NP (PRP I))
+            (VP (VBD had)
+              (PP (IN in)
+                (NP (PRP$ my) (NN bedroom))))))))
+    (. .)))
+
+root(ROOT-0, inherited-2)
+nsubj(inherited-2, I-1)
+det(player-6, the-3)
+amod(player-6, old-4)
+compound(player-6, record-5)
+dobj(inherited-2, player-6)
+dobj(had-10, player-6)
+punct(player-6, ,-7)
+ref(player-6, which-8)
+nsubj(had-10, I-9)
+acl:relcl(player-6, had-10)
+case(bedroom-13, in-11)
+nmod:poss(bedroom-13, my-12)
+nmod:in(had-10, bedroom-13)
+punct(inherited-2, .-14)
+
+Sentence #4 (13 tokens):
+It was a pretty primitive thing really, it was just mono.
+[Text=It CharacterOffsetBegin=175 CharacterOffsetEnd=177 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=178 CharacterOffsetEnd=181 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=182 CharacterOffsetEnd=183 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=pretty CharacterOffsetBegin=184 CharacterOffsetEnd=190 PartOfSpeech=RB Lemma=pretty NamedEntityTag=O]
+[Text=primitive CharacterOffsetBegin=191 CharacterOffsetEnd=200 PartOfSpeech=JJ Lemma=primitive NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=201 CharacterOffsetEnd=206 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=207 CharacterOffsetEnd=213 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=213 CharacterOffsetEnd=214 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=215 CharacterOffsetEnd=217 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=218 CharacterOffsetEnd=221 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=222 CharacterOffsetEnd=226 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=mono CharacterOffsetBegin=227 CharacterOffsetEnd=231 PartOfSpeech=NN Lemma=mono NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=231 CharacterOffsetEnd=232 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBD was)
+        (NP (DT a)
+          (ADJP (RB pretty) (JJ primitive))
+          (NN thing))
+        (ADVP (RB really))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (ADVP (RB just))
+      (NP (NN mono)))
+    (. .)))
+
+root(ROOT-0, mono-12)
+nsubj(thing-6, It-1)
+cop(thing-6, was-2)
+det(thing-6, a-3)
+advmod(primitive-5, pretty-4)
+amod(thing-6, primitive-5)
+ccomp(mono-12, thing-6)
+advmod(thing-6, really-7)
+punct(mono-12, ,-8)
+nsubj(mono-12, it-9)
+cop(mono-12, was-10)
+advmod(mono-12, just-11)
+punct(mono-12, .-13)
+
+Sentence #5 (22 tokens):
+Even so, I thought it wonderful that I could actually sit in my room and choose what I listened to.
+[Text=Even CharacterOffsetBegin=233 CharacterOffsetEnd=237 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=238 CharacterOffsetEnd=240 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=240 CharacterOffsetEnd=241 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=242 CharacterOffsetEnd=243 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=244 CharacterOffsetEnd=251 PartOfSpeech=VBD Lemma=think NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=252 CharacterOffsetEnd=254 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=wonderful CharacterOffsetBegin=255 CharacterOffsetEnd=264 PartOfSpeech=JJ Lemma=wonderful NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=265 CharacterOffsetEnd=269 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=270 CharacterOffsetEnd=271 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=272 CharacterOffsetEnd=277 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=actually CharacterOffsetBegin=278 CharacterOffsetEnd=286 PartOfSpeech=RB Lemma=actually NamedEntityTag=O]
+[Text=sit CharacterOffsetBegin=287 CharacterOffsetEnd=290 PartOfSpeech=VB Lemma=sit NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=291 CharacterOffsetEnd=293 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=294 CharacterOffsetEnd=296 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=room CharacterOffsetBegin=297 CharacterOffsetEnd=301 PartOfSpeech=NN Lemma=room NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=302 CharacterOffsetEnd=305 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=choose CharacterOffsetBegin=306 CharacterOffsetEnd=312 PartOfSpeech=VB Lemma=choose NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=313 CharacterOffsetEnd=317 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=318 CharacterOffsetEnd=319 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=listened CharacterOffsetBegin=320 CharacterOffsetEnd=328 PartOfSpeech=VBD Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=329 CharacterOffsetEnd=331 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=331 CharacterOffsetEnd=332 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Even) (RB so))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD thought)
+      (S
+        (NP (PRP it))
+        (ADJP (JJ wonderful)
+          (SBAR (IN that)
+            (S
+              (NP (PRP I))
+              (VP (MD could)
+                (ADVP (RB actually))
+                (VP
+                  (VP (VB sit)
+                    (PP (IN in)
+                      (NP (PRP$ my) (NN room))))
+                  (CC and)
+                  (VP (VB choose)
+                    (SBAR
+                      (WHNP (WP what))
+                      (S
+                        (NP (PRP I))
+                        (VP (VBD listened)
+                          (PP (TO to)))))))))))))
+    (. .)))
+
+root(ROOT-0, thought-5)
+advmod(so-2, Even-1)
+advmod(thought-5, so-2)
+punct(thought-5, ,-3)
+nsubj(thought-5, I-4)
+nsubj(wonderful-7, it-6)
+xcomp(thought-5, wonderful-7)
+mark(sit-12, that-8)
+nsubj(sit-12, I-9)
+nsubj(choose-17, I-9)
+aux(sit-12, could-10)
+advmod(sit-12, actually-11)
+ccomp(wonderful-7, sit-12)
+case(room-15, in-13)
+nmod:poss(room-15, my-14)
+nmod:in(sit-12, room-15)
+cc(sit-12, and-16)
+ccomp(wonderful-7, choose-17)
+conj:and(sit-12, choose-17)
+nmod:to(listened-20, what-18)
+nsubj(listened-20, I-19)
+ccomp(choose-17, listened-20)
+case(what-18, to-21)
+punct(thought-5, .-22)
+
+Sentence #6 (18 tokens):
+I got a Saturday job after that, mainly so that I could afford to buy records.
+[Text=I CharacterOffsetBegin=333 CharacterOffsetEnd=334 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=335 CharacterOffsetEnd=338 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=339 CharacterOffsetEnd=340 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Saturday CharacterOffsetBegin=341 CharacterOffsetEnd=349 PartOfSpeech=NNP Lemma=Saturday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-6 Timex=<TIMEX3 tid="t3" type="DATE" value="XXXX-WXX-6">Saturday</TIMEX3>]
+[Text=job CharacterOffsetBegin=350 CharacterOffsetEnd=353 PartOfSpeech=NN Lemma=job NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=354 CharacterOffsetEnd=359 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=360 CharacterOffsetEnd=364 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=364 CharacterOffsetEnd=365 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=mainly CharacterOffsetBegin=366 CharacterOffsetEnd=372 PartOfSpeech=RB Lemma=mainly NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=373 CharacterOffsetEnd=375 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=376 CharacterOffsetEnd=380 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=381 CharacterOffsetEnd=382 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=383 CharacterOffsetEnd=388 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=afford CharacterOffsetBegin=389 CharacterOffsetEnd=395 PartOfSpeech=VB Lemma=afford NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=396 CharacterOffsetEnd=398 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=buy CharacterOffsetBegin=399 CharacterOffsetEnd=402 PartOfSpeech=VB Lemma=buy NamedEntityTag=O]
+[Text=records CharacterOffsetBegin=403 CharacterOffsetEnd=410 PartOfSpeech=NNS Lemma=record NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=410 CharacterOffsetEnd=411 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD got)
+      (NP (DT a) (NNP Saturday) (NN job))
+      (PP (IN after)
+        (NP (DT that)))
+      (, ,)
+      (SBAR (RB mainly) (IN so) (IN that)
+        (S
+          (NP (PRP I))
+          (VP (MD could)
+            (VP (VB afford)
+              (S
+                (VP (TO to)
+                  (VP (VB buy)
+                    (NP (NNS records))))))))))
+    (. .)))
+
+root(ROOT-0, got-2)
+nsubj(got-2, I-1)
+det(job-5, a-3)
+compound(job-5, Saturday-4)
+dobj(got-2, job-5)
+case(that-7, after-6)
+nmod:after(got-2, that-7)
+punct(got-2, ,-8)
+advmod(afford-14, mainly-9)
+mark(afford-14, so-10)
+mwe(so-10, that-11)
+nsubj(afford-14, I-12)
+nsubj:xsubj(buy-16, I-12)
+aux(afford-14, could-13)
+advcl:so_that(got-2, afford-14)
+mark(buy-16, to-15)
+xcomp(afford-14, buy-16)
+dobj(buy-16, records-17)
+punct(got-2, .-18)
+
+Sentence #7 (33 tokens):
+Simon and Garfunkel, James Taylor, Joni Mitchell; my friends used to come round and we would just sit there in my room listening to our favourite singers and talking.
+[Text=Simon CharacterOffsetBegin=412 CharacterOffsetEnd=417 PartOfSpeech=NNP Lemma=Simon NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=418 CharacterOffsetEnd=421 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Garfunkel CharacterOffsetBegin=422 CharacterOffsetEnd=431 PartOfSpeech=NNP Lemma=Garfunkel NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=431 CharacterOffsetEnd=432 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=James CharacterOffsetBegin=433 CharacterOffsetEnd=438 PartOfSpeech=NNP Lemma=James NamedEntityTag=PERSON]
+[Text=Taylor CharacterOffsetBegin=439 CharacterOffsetEnd=445 PartOfSpeech=NNP Lemma=Taylor NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=445 CharacterOffsetEnd=446 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Joni CharacterOffsetBegin=447 CharacterOffsetEnd=451 PartOfSpeech=NNP Lemma=Joni NamedEntityTag=PERSON]
+[Text=Mitchell CharacterOffsetBegin=452 CharacterOffsetEnd=460 PartOfSpeech=NNP Lemma=Mitchell NamedEntityTag=PERSON]
+[Text=; CharacterOffsetBegin=460 CharacterOffsetEnd=461 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=462 CharacterOffsetEnd=464 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=friends CharacterOffsetBegin=465 CharacterOffsetEnd=472 PartOfSpeech=NNS Lemma=friend NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=473 CharacterOffsetEnd=477 PartOfSpeech=VBN Lemma=use NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=478 CharacterOffsetEnd=480 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=come CharacterOffsetBegin=481 CharacterOffsetEnd=485 PartOfSpeech=VB Lemma=come NamedEntityTag=O]
+[Text=round CharacterOffsetBegin=486 CharacterOffsetEnd=491 PartOfSpeech=NN Lemma=round NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=492 CharacterOffsetEnd=495 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=496 CharacterOffsetEnd=498 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=499 CharacterOffsetEnd=504 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=505 CharacterOffsetEnd=509 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=sit CharacterOffsetBegin=510 CharacterOffsetEnd=513 PartOfSpeech=VB Lemma=sit NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=514 CharacterOffsetEnd=519 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=520 CharacterOffsetEnd=522 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=523 CharacterOffsetEnd=525 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=room CharacterOffsetBegin=526 CharacterOffsetEnd=530 PartOfSpeech=NN Lemma=room NamedEntityTag=O]
+[Text=listening CharacterOffsetBegin=531 CharacterOffsetEnd=540 PartOfSpeech=VBG Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=541 CharacterOffsetEnd=543 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=544 CharacterOffsetEnd=547 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=favourite CharacterOffsetBegin=548 CharacterOffsetEnd=557 PartOfSpeech=JJ Lemma=favourite NamedEntityTag=O]
+[Text=singers CharacterOffsetBegin=558 CharacterOffsetEnd=565 PartOfSpeech=NNS Lemma=singer NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=566 CharacterOffsetEnd=569 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=570 CharacterOffsetEnd=577 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=577 CharacterOffsetEnd=578 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (FRAG
+      (NP
+        (NP (NNP Simon)
+          (CC and)
+          (NNP Garfunkel))
+        (, ,)
+        (NP (NNP James) (NNP Taylor))
+        (, ,)
+        (NP (NNP Joni) (NNP Mitchell))))
+    (: ;)
+    (S
+      (S
+        (NP (PRP$ my) (NNS friends))
+        (VP (VBN used)
+          (S
+            (VP (TO to)
+              (VP (VB come)
+                (NP (NN round)))))))
+      (CC and)
+      (S
+        (NP (PRP we))
+        (VP (MD would)
+          (ADVP (RB just))
+          (VP (VB sit)
+            (ADVP (RB there))
+            (PP (IN in)
+              (NP (PRP$ my) (NN room)))
+            (S
+              (VP
+                (VP (VBG listening)
+                  (PP (TO to)
+                    (NP (PRP$ our) (JJ favourite) (NNS singers))))
+                (CC and)
+                (VP (VBG talking))))))))
+    (. .)))
+
+root(ROOT-0, used-13)
+dep(used-13, Simon-1)
+cc(Simon-1, and-2)
+conj:and(Simon-1, Garfunkel-3)
+dep(used-13, Garfunkel-3)
+punct(Simon-1, ,-4)
+compound(Taylor-6, James-5)
+appos(Simon-1, Taylor-6)
+punct(Simon-1, ,-7)
+compound(Mitchell-9, Joni-8)
+appos(Simon-1, Mitchell-9)
+punct(used-13, ;-10)
+nmod:poss(friends-12, my-11)
+nsubj(used-13, friends-12)
+nsubj:xsubj(come-15, friends-12)
+mark(come-15, to-14)
+xcomp(used-13, come-15)
+dobj(come-15, round-16)
+cc(used-13, and-17)
+nsubj(sit-21, we-18)
+aux(sit-21, would-19)
+advmod(sit-21, just-20)
+conj:and(used-13, sit-21)
+advmod(sit-21, there-22)
+case(room-25, in-23)
+nmod:poss(room-25, my-24)
+nmod:in(sit-21, room-25)
+ccomp(sit-21, listening-26)
+case(singers-30, to-27)
+nmod:poss(singers-30, our-28)
+amod(singers-30, favourite-29)
+nmod:to(listening-26, singers-30)
+cc(listening-26, and-31)
+ccomp(sit-21, talking-32)
+conj:and(listening-26, talking-32)
+punct(used-13, .-33)
+
+Sentence #8 (27 tokens):
+This was the biggest part of our social lives in the seventies, just sitting in each other’s bedrooms and listening to old record players.
+[Text=This CharacterOffsetBegin=579 CharacterOffsetEnd=583 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=584 CharacterOffsetEnd=587 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=588 CharacterOffsetEnd=591 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=biggest CharacterOffsetBegin=592 CharacterOffsetEnd=599 PartOfSpeech=JJS Lemma=biggest NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=600 CharacterOffsetEnd=604 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=605 CharacterOffsetEnd=607 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=608 CharacterOffsetEnd=611 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=social CharacterOffsetBegin=612 CharacterOffsetEnd=618 PartOfSpeech=JJ Lemma=social NamedEntityTag=O]
+[Text=lives CharacterOffsetBegin=619 CharacterOffsetEnd=624 PartOfSpeech=NNS Lemma=life NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=625 CharacterOffsetEnd=627 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=628 CharacterOffsetEnd=631 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=seventies CharacterOffsetBegin=632 CharacterOffsetEnd=641 PartOfSpeech=NNS Lemma=seventy NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=641 CharacterOffsetEnd=642 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=643 CharacterOffsetEnd=647 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=sitting CharacterOffsetBegin=648 CharacterOffsetEnd=655 PartOfSpeech=VBG Lemma=sit NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=656 CharacterOffsetEnd=658 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=659 CharacterOffsetEnd=663 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=664 CharacterOffsetEnd=669 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=669 CharacterOffsetEnd=671 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=bedrooms CharacterOffsetBegin=672 CharacterOffsetEnd=680 PartOfSpeech=NNS Lemma=bedroom NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=681 CharacterOffsetEnd=684 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=listening CharacterOffsetBegin=685 CharacterOffsetEnd=694 PartOfSpeech=VBG Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=695 CharacterOffsetEnd=697 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=698 CharacterOffsetEnd=701 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=record CharacterOffsetBegin=702 CharacterOffsetEnd=708 PartOfSpeech=NN Lemma=record NamedEntityTag=O]
+[Text=players CharacterOffsetBegin=709 CharacterOffsetEnd=716 PartOfSpeech=NNS Lemma=player NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=716 CharacterOffsetEnd=717 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (JJS biggest) (NN part))
+        (PP (IN of)
+          (NP (PRP$ our) (JJ social) (NNS lives))))
+      (PP (IN in)
+        (NP (DT the) (NNS seventies)))
+      (, ,)
+      (ADVP (RB just))
+      (VP
+        (VP (VBG sitting)
+          (PP (IN in)
+            (NP
+              (NP (DT each) (JJ other) (POS 's))
+              (NNS bedrooms))))
+        (CC and)
+        (VP (VBG listening)
+          (PP (TO to)
+            (NP (JJ old) (NN record) (NNS players))))))
+    (. .)))
+
+root(ROOT-0, sitting-15)
+nsubj(sitting-15, This-1)
+nsubj(listening-22, This-1)
+cop(sitting-15, was-2)
+det(part-5, the-3)
+amod(part-5, biggest-4)
+dep(sitting-15, part-5)
+case(lives-9, of-6)
+nmod:poss(lives-9, our-7)
+amod(lives-9, social-8)
+nmod:of(part-5, lives-9)
+case(seventies-12, in-10)
+det(seventies-12, the-11)
+nmod:in(sitting-15, seventies-12)
+punct(sitting-15, ,-13)
+advmod(sitting-15, just-14)
+case(bedrooms-20, in-16)
+det(other-18, each-17)
+nmod:poss(bedrooms-20, other-18)
+case(other-18, 's-19)
+nmod:in(sitting-15, bedrooms-20)
+cc(sitting-15, and-21)
+conj:and(sitting-15, listening-22)
+case(players-26, to-23)
+amod(players-26, old-24)
+compound(players-26, record-25)
+nmod:to(listening-22, players-26)
+punct(sitting-15, .-27)
+
+Coreference set:
+	(2,7,[7,8]) -> (1,7,[6,8]), that is: "they" -> "my parents"
+Coreference set:
+	(3,1,[1,2]) -> (1,6,[6,7]), that is: "I" -> "my"
+	(3,9,[9,10]) -> (1,6,[6,7]), that is: "I" -> "my"
+	(3,12,[12,13]) -> (1,6,[6,7]), that is: "my" -> "my"
+	(5,4,[4,5]) -> (1,6,[6,7]), that is: "I" -> "my"
+	(5,9,[9,10]) -> (1,6,[6,7]), that is: "I" -> "my"
+	(5,14,[14,15]) -> (1,6,[6,7]), that is: "my" -> "my"
+	(5,19,[19,20]) -> (1,6,[6,7]), that is: "I" -> "my"
+	(6,1,[1,2]) -> (1,6,[6,7]), that is: "I" -> "my"
+	(6,12,[12,13]) -> (1,6,[6,7]), that is: "I" -> "my"
+	(7,11,[11,12]) -> (1,6,[6,7]), that is: "my" -> "my"
+	(7,24,[24,25]) -> (1,6,[6,7]), that is: "my" -> "my"
+Coreference set:
+	(3,13,[12,14]) -> (4,6,[3,7]), that is: "my bedroom" -> "a pretty primitive thing"
+	(4,1,[1,2]) -> (4,6,[3,7]), that is: "It" -> "a pretty primitive thing"
+	(4,9,[9,10]) -> (4,6,[3,7]), that is: "it" -> "a pretty primitive thing"
+	(5,6,[6,7]) -> (4,6,[3,7]), that is: "it" -> "a pretty primitive thing"
+Coreference set:
+	(7,25,[24,26]) -> (5,15,[14,16]), that is: "my room" -> "my room"
+Coreference set:
+	(6,7,[7,8]) -> (6,5,[3,6]), that is: "that" -> "a Saturday job"
+Coreference set:
+	(7,28,[28,29]) -> (7,18,[18,19]), that is: "our" -> "we"
+	(8,7,[7,8]) -> (7,18,[18,19]), that is: "our" -> "we"
+Coreference set:
+	(8,1,[1,2]) -> (8,5,[3,10]), that is: "This" -> "the biggest part of our social lives"

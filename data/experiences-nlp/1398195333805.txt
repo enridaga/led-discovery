@@ -1,0 +1,96 @@
+Sentence #1 (16 tokens):
+Last night we saw The Goddess, for which Virgil's music is a flaw.
+[Text=Last CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=last NamedEntityTag=DATE NormalizedNamedEntityTag=TNI OFFSET P-1D Timex=<TIMEX3 alt_value="TNI OFFSET P-1D" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Last night</TIMEX3>]
+[Text=night CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=night NamedEntityTag=DATE NormalizedNamedEntityTag=TNI OFFSET P-1D Timex=<TIMEX3 alt_value="TNI OFFSET P-1D" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Last night</TIMEX3>]
+[Text=we CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=saw CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=VBD Lemma=see NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Goddess CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Goddess NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=Virgil CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Virgil NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=flaw CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=flaw NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (JJ Last) (NN night))
+    (NP (PRP we))
+    (VP (VBD saw)
+      (NP
+        (NP (DT The) (NNP Goddess))
+        (, ,)
+        (SBAR
+          (WHPP (IN for)
+            (WHNP (WDT which)))
+          (S
+            (NP
+              (NP (NNP Virgil) (POS 's))
+              (NN music))
+            (VP (VBZ is)
+              (NP (DT a) (NN flaw)))))))
+    (. .)))
+
+root(ROOT-0, saw-4)
+amod(night-2, Last-1)
+nmod:tmod(saw-4, night-2)
+nsubj(saw-4, we-3)
+det(Goddess-6, The-5)
+dobj(saw-4, Goddess-6)
+nmod:for(flaw-15, Goddess-6)
+punct(Goddess-6, ,-7)
+case(which-9, for-8)
+ref(Goddess-6, which-9)
+nmod:poss(music-12, Virgil-10)
+case(Virgil-10, 's-11)
+nsubj(flaw-15, music-12)
+cop(flaw-15, is-13)
+det(flaw-15, a-14)
+acl:relcl(Goddess-6, flaw-15)
+punct(saw-4, .-16)
+
+Sentence #2 (10 tokens):
+His defences are more brilliant than what he defends.
+[Text=His CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=defences CharacterOffsetBegin=71 CharacterOffsetEnd=79 PartOfSpeech=NNS Lemma=defence NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=brilliant CharacterOffsetBegin=89 CharacterOffsetEnd=98 PartOfSpeech=JJ Lemma=brilliant NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=defends CharacterOffsetBegin=112 CharacterOffsetEnd=119 PartOfSpeech=VBZ Lemma=defend NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP$ His) (NNS defences))
+    (VP (VBP are)
+      (ADJP (RBR more) (JJ brilliant)
+        (PP (IN than)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (PRP he))
+              (VP (VBZ defends)))))))
+    (. .)))
+
+root(ROOT-0, brilliant-5)
+nmod:poss(defences-2, His-1)
+nsubj(brilliant-5, defences-2)
+cop(brilliant-5, are-3)
+advmod(brilliant-5, more-4)
+mark(defends-9, than-6)
+dobj(defends-9, what-7)
+nsubj(defends-9, he-8)
+advcl:than(brilliant-5, defends-9)
+punct(brilliant-5, .-10)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,10,[10,12]), that is: "His" -> "Virgil 's"
+	(2,8,[8,9]) -> (1,10,[10,12]), that is: "he" -> "Virgil 's"
+Coreference set:
+	(1,15,[14,16]) -> (1,12,[10,13]), that is: "a flaw" -> "Virgil 's music"

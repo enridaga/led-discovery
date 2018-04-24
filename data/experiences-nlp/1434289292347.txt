@@ -1,0 +1,177 @@
+Sentence #1 (14 tokens):
+Go to tea with John Nicholson at 3.0 for his gramophone & records.
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=tea CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=tea NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=John CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=Nicholson CharacterOffsetBegin=20 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Nicholson NamedEntityTag=PERSON]
+[Text=at CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=3.0 CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=CD Lemma=3.0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=for CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=gramophone CharacterOffsetBegin=45 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=gramophone NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=records CharacterOffsetBegin=58 CharacterOffsetEnd=65 PartOfSpeech=NNS Lemma=record NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PP (TO to)
+        (NP (NN tea)))
+      (PP (IN with)
+        (NP
+          (NP (NNP John) (NNP Nicholson))
+          (PP (IN at)
+            (NP (CD 3.0)))))
+      (PP (IN for)
+        (NP
+          (NP (PRP$ his) (NN gramophone))
+          (CC &)
+          (NP (NNS records)))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+case(tea-3, to-2)
+nmod:to(Go-1, tea-3)
+case(Nicholson-6, with-4)
+compound(Nicholson-6, John-5)
+nmod:with(Go-1, Nicholson-6)
+case(3.0-8, at-7)
+nmod:at(Nicholson-6, 3.0-8)
+case(gramophone-11, for-9)
+nmod:poss(gramophone-11, his-10)
+nmod:for(Go-1, gramophone-11)
+cc(gramophone-11, &-12)
+nmod:for(Go-1, records-13)
+conj:&(gramophone-11, records-13)
+punct(Go-1, .-14)
+
+Sentence #2 (22 tokens):
+Hear Beethoven Bb (op 90 odd) Trio* (Cortot, Thibaud, Casals) Superb music & playing.
+[Text=Hear CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=Beethoven CharacterOffsetBegin=72 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=O]
+[Text=Bb CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=bb NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=op CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=op NamedEntityTag=O]
+[Text=90 CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=CD Lemma=90 NamedEntityTag=NUMBER NormalizedNamedEntityTag=90.0]
+[Text=odd CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=JJ Lemma=odd NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=Trio CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=trio NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Cortot CharacterOffsetBegin=104 CharacterOffsetEnd=110 PartOfSpeech=NNP Lemma=Cortot NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Thibaud CharacterOffsetBegin=112 CharacterOffsetEnd=119 PartOfSpeech=NNP Lemma=Thibaud NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Casals CharacterOffsetBegin=121 CharacterOffsetEnd=127 PartOfSpeech=NNP Lemma=Casals NamedEntityTag=PERSON]
+[Text=-RRB- CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=Superb CharacterOffsetBegin=129 CharacterOffsetEnd=135 PartOfSpeech=JJ Lemma=superb NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=136 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=144 CharacterOffsetEnd=151 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Hear)
+      (S
+        (NP
+          (NP
+            (NP (NNP Beethoven))
+            (SBAR
+              (S
+                (VP
+                  (NP
+                    (NP
+                      (NP (NN Bb))
+                      (PRN (-LRB- -LRB-)
+                        (ADJP
+                          (NP (NN op) (CD 90))
+                          (JJ odd))
+                        (-RRB- -RRB-))
+                      (NP (NN Trio)))
+                    (X (SYM *)))))))
+          (PRN (-LRB- -LRB-)
+            (NP (NNP Cortot))
+            (, ,)
+            (NP (NNP Thibaud))
+            (, ,)
+            (NP (NNP Casals))
+            (-RRB- -RRB-)))
+        (NP
+          (NP (JJ Superb) (NN music))
+          (CC &)
+          (NP (NN playing)))))
+    (. .)))
+
+root(ROOT-0, Hear-1)
+nsubj(music-19, Beethoven-2)
+acl:relcl(Beethoven-2, Bb-3)
+punct(odd-7, -LRB--4)
+nmod:npmod(odd-7, op-5)
+nummod(op-5, 90-6)
+dep(Bb-3, odd-7)
+punct(odd-7, -RRB--8)
+dep(Bb-3, Trio-9)
+dep(Bb-3, *-10)
+punct(Cortot-12, -LRB--11)
+appos(Beethoven-2, Cortot-12)
+punct(Cortot-12, ,-13)
+dep(Cortot-12, Thibaud-14)
+punct(Cortot-12, ,-15)
+dep(Cortot-12, Casals-16)
+punct(Cortot-12, -RRB--17)
+amod(music-19, Superb-18)
+xcomp(Hear-1, music-19)
+cc(music-19, &-20)
+xcomp(Hear-1, playing-21)
+conj:&(music-19, playing-21)
+punct(Hear-1, .-22)
+
+Sentence #3 (12 tokens):
+Also Mendelssohn Concerto (Kreisler) - of course efficiently played.
+[Text=Also CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=Mendelssohn CharacterOffsetBegin=158 CharacterOffsetEnd=169 PartOfSpeech=NNP Lemma=Mendelssohn NamedEntityTag=O]
+[Text=Concerto CharacterOffsetBegin=170 CharacterOffsetEnd=178 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=179 CharacterOffsetEnd=180 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Kreisler CharacterOffsetBegin=180 CharacterOffsetEnd=188 PartOfSpeech=NNP Lemma=Kreisler NamedEntityTag=PERSON]
+[Text=-RRB- CharacterOffsetBegin=188 CharacterOffsetEnd=189 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=190 CharacterOffsetEnd=191 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=192 CharacterOffsetEnd=194 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=195 CharacterOffsetEnd=201 PartOfSpeech=NN Lemma=course NamedEntityTag=O]
+[Text=efficiently CharacterOffsetBegin=202 CharacterOffsetEnd=213 PartOfSpeech=RB Lemma=efficiently NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=214 CharacterOffsetEnd=220 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=220 CharacterOffsetEnd=221 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (NP (NNP Mendelssohn))
+    (VP
+      (ADVP
+        (NP
+          (NP (NNP Concerto))
+          (PRN (-LRB- -LRB-)
+            (NP (NNP Kreisler))
+            (-RRB- -RRB-))
+          (PRN (: -)
+            (PP (IN of)
+              (NP (NN course)))))
+        (RB efficiently))
+      (VBD played))
+    (. .)))
+
+root(ROOT-0, played-11)
+advmod(played-11, Also-1)
+nsubj(played-11, Mendelssohn-2)
+nmod:npmod(efficiently-10, Concerto-3)
+punct(Kreisler-5, -LRB--4)
+appos(Concerto-3, Kreisler-5)
+punct(Kreisler-5, -RRB--6)
+punct(course-9, --7)
+case(course-9, of-8)
+nmod:of(Concerto-3, course-9)
+advmod(played-11, efficiently-10)
+punct(played-11, .-12)
+
+Coreference set:
+	(1,10,[10,11]) -> (1,6,[5,9]), that is: "his" -> "John Nicholson at 3.0"

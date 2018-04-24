@@ -1,0 +1,262 @@
+Sentence #1 (6 tokens):
+A bright lovely Spring day.
+[Text=A CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bright CharacterOffsetBegin=2 CharacterOffsetEnd=8 PartOfSpeech=JJ Lemma=bright NamedEntityTag=O]
+[Text=lovely CharacterOffsetBegin=9 CharacterOffsetEnd=15 PartOfSpeech=JJ Lemma=lovely NamedEntityTag=O]
+[Text=Spring CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=spring NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-SP Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-SP">Spring</TIMEX3>]
+[Text=day CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t2" type="DURATION" value="P1D">day</TIMEX3>]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (DT A)
+      (ADJP (JJ bright)
+        (NP-TMP (JJ lovely) (NN Spring)))
+      (NN day))
+    (. .)))
+
+root(ROOT-0, day-5)
+det(day-5, A-1)
+amod(day-5, bright-2)
+amod(Spring-4, lovely-3)
+nmod:tmod(bright-2, Spring-4)
+punct(day-5, .-6)
+
+Sentence #2 (25 tokens):
+I went down the green lane between the orchards and through a gate which brought me under the gable of a small farmhouse....
+[Text=I CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=down NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=green CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=green NamedEntityTag=O]
+[Text=lane CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=lane NamedEntityTag=O]
+[Text=between CharacterOffsetBegin=58 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=orchards CharacterOffsetBegin=70 CharacterOffsetEnd=78 PartOfSpeech=NNS Lemma=orchard NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=83 CharacterOffsetEnd=90 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=gate CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=gate NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=brought CharacterOffsetBegin=104 CharacterOffsetEnd=111 PartOfSpeech=VBD Lemma=bring NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=112 CharacterOffsetEnd=114 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=115 CharacterOffsetEnd=120 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gable CharacterOffsetBegin=125 CharacterOffsetEnd=130 PartOfSpeech=NN Lemma=gable NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=131 CharacterOffsetEnd=133 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=small CharacterOffsetBegin=136 CharacterOffsetEnd=141 PartOfSpeech=JJ Lemma=small NamedEntityTag=O]
+[Text=farmhouse CharacterOffsetBegin=142 CharacterOffsetEnd=151 PartOfSpeech=NN Lemma=farmhouse NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=151 CharacterOffsetEnd=154 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD went)
+      (PP
+        (PP (IN down)
+          (NP
+            (NP (DT the) (JJ green) (NN lane))
+            (PP (IN between)
+              (NP (DT the) (NNS orchards)))))
+        (CC and)
+        (PP (IN through)
+          (NP
+            (NP (DT a) (NN gate))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBD brought)
+                  (NP (PRP me))
+                  (PP (IN under)
+                    (NP
+                      (NP (DT the) (NN gable))
+                      (PP (IN of)
+                        (NP (DT a) (JJ small) (NN farmhouse))))))))))))
+    (: ...) (. .)))
+
+root(ROOT-0, went-2)
+nsubj(went-2, I-1)
+nsubj(went-2', I-1)
+conj:and(went-2, went-2')
+case(lane-6, down-3)
+det(lane-6, the-4)
+amod(lane-6, green-5)
+nmod:down(went-2, lane-6)
+case(orchards-9, between-7)
+det(orchards-9, the-8)
+nmod:between(lane-6, orchards-9)
+cc(went-2, and-10)
+case(gate-13, through-11)
+det(gate-13, a-12)
+nmod:through(went-2', gate-13)
+nsubj(brought-15, gate-13)
+ref(gate-13, which-14)
+acl:relcl(gate-13, brought-15)
+dobj(brought-15, me-16)
+case(gable-19, under-17)
+det(gable-19, the-18)
+nmod:under(brought-15, gable-19)
+case(farmhouse-23, of-20)
+det(farmhouse-23, a-21)
+amod(farmhouse-23, small-22)
+nmod:of(gable-19, farmhouse-23)
+punct(went-2, ...-24)
+punct(went-2, .-25)
+
+Sentence #3 (29 tokens):
+In the door stood a tall fair comely girl with a clear fresh open face, kind grey eyes, and golden brown hair, Annie Abberley....
+[Text=In CharacterOffsetBegin=156 CharacterOffsetEnd=158 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=159 CharacterOffsetEnd=162 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=door CharacterOffsetBegin=163 CharacterOffsetEnd=167 PartOfSpeech=NN Lemma=door NamedEntityTag=O]
+[Text=stood CharacterOffsetBegin=168 CharacterOffsetEnd=173 PartOfSpeech=VBD Lemma=stand NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=174 CharacterOffsetEnd=175 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=tall CharacterOffsetBegin=176 CharacterOffsetEnd=180 PartOfSpeech=JJ Lemma=tall NamedEntityTag=O]
+[Text=fair CharacterOffsetBegin=181 CharacterOffsetEnd=185 PartOfSpeech=JJ Lemma=fair NamedEntityTag=O]
+[Text=comely CharacterOffsetBegin=186 CharacterOffsetEnd=192 PartOfSpeech=JJ Lemma=comely NamedEntityTag=O]
+[Text=girl CharacterOffsetBegin=193 CharacterOffsetEnd=197 PartOfSpeech=NN Lemma=girl NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=198 CharacterOffsetEnd=202 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=203 CharacterOffsetEnd=204 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=clear CharacterOffsetBegin=205 CharacterOffsetEnd=210 PartOfSpeech=JJ Lemma=clear NamedEntityTag=O]
+[Text=fresh CharacterOffsetBegin=211 CharacterOffsetEnd=216 PartOfSpeech=JJ Lemma=fresh NamedEntityTag=O]
+[Text=open CharacterOffsetBegin=217 CharacterOffsetEnd=221 PartOfSpeech=JJ Lemma=open NamedEntityTag=O]
+[Text=face CharacterOffsetBegin=222 CharacterOffsetEnd=226 PartOfSpeech=NN Lemma=face NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=226 CharacterOffsetEnd=227 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=kind CharacterOffsetBegin=228 CharacterOffsetEnd=232 PartOfSpeech=NN Lemma=kind NamedEntityTag=O]
+[Text=grey CharacterOffsetBegin=233 CharacterOffsetEnd=237 PartOfSpeech=JJ Lemma=grey NamedEntityTag=O]
+[Text=eyes CharacterOffsetBegin=238 CharacterOffsetEnd=242 PartOfSpeech=NNS Lemma=eye NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=242 CharacterOffsetEnd=243 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=244 CharacterOffsetEnd=247 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=golden CharacterOffsetBegin=248 CharacterOffsetEnd=254 PartOfSpeech=JJ Lemma=golden NamedEntityTag=O]
+[Text=brown CharacterOffsetBegin=255 CharacterOffsetEnd=260 PartOfSpeech=JJ Lemma=brown NamedEntityTag=O]
+[Text=hair CharacterOffsetBegin=261 CharacterOffsetEnd=265 PartOfSpeech=NN Lemma=hair NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=265 CharacterOffsetEnd=266 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Annie CharacterOffsetBegin=267 CharacterOffsetEnd=272 PartOfSpeech=NNP Lemma=Annie NamedEntityTag=PERSON]
+[Text=Abberley CharacterOffsetBegin=273 CharacterOffsetEnd=281 PartOfSpeech=NNP Lemma=Abberley NamedEntityTag=PERSON]
+[Text=... CharacterOffsetBegin=281 CharacterOffsetEnd=284 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=284 CharacterOffsetEnd=285 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (SINV
+    (PP (IN In)
+      (NP (DT the) (NN door)))
+    (VP (VBD stood)
+      (NP (DT a) (JJ tall) (JJ fair) (JJ comely) (NN girl))
+      (PP (IN with)
+        (NP
+          (NP (DT a) (JJ clear) (JJ fresh) (JJ open) (NN face))
+          (, ,)
+          (ADVP (NN kind))
+          (NP (JJ grey) (NNS eyes))
+          (, ,)
+          (CC and)
+          (NP (JJ golden) (JJ brown) (NN hair))
+          (, ,))))
+    (NP (NNP Annie) (NNP Abberley))
+    (: ...) (. .)))
+
+root(ROOT-0, stood-4)
+case(door-3, In-1)
+det(door-3, the-2)
+nmod:in(stood-4, door-3)
+det(girl-9, a-5)
+amod(girl-9, tall-6)
+amod(girl-9, fair-7)
+amod(girl-9, comely-8)
+dobj(stood-4, girl-9)
+case(face-15, with-10)
+det(face-15, a-11)
+amod(face-15, clear-12)
+amod(face-15, fresh-13)
+amod(face-15, open-14)
+nmod:with(stood-4, face-15)
+punct(face-15, ,-16)
+advmod(face-15, kind-17)
+amod(eyes-19, grey-18)
+dep(face-15, eyes-19)
+punct(face-15, ,-20)
+cc(face-15, and-21)
+amod(hair-24, golden-22)
+amod(hair-24, brown-23)
+nmod:with(stood-4, hair-24)
+conj:and(face-15, hair-24)
+punct(face-15, ,-25)
+compound(Abberley-27, Annie-26)
+nsubj(stood-4, Abberley-27)
+punct(stood-4, ...-28)
+punct(stood-4, .-29)
+
+Sentence #4 (25 tokens):
+As we stood at the door talking a voice floated up from the Lower Cwm through the evening air singing the Canadian Boat Song.
+[Text=As CharacterOffsetBegin=286 CharacterOffsetEnd=288 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=289 CharacterOffsetEnd=291 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=stood CharacterOffsetBegin=292 CharacterOffsetEnd=297 PartOfSpeech=VBD Lemma=stand NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=298 CharacterOffsetEnd=300 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=301 CharacterOffsetEnd=304 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=door CharacterOffsetBegin=305 CharacterOffsetEnd=309 PartOfSpeech=NN Lemma=door NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=310 CharacterOffsetEnd=317 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=318 CharacterOffsetEnd=319 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=voice CharacterOffsetBegin=320 CharacterOffsetEnd=325 PartOfSpeech=NN Lemma=voice NamedEntityTag=O]
+[Text=floated CharacterOffsetBegin=326 CharacterOffsetEnd=333 PartOfSpeech=VBD Lemma=float NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=334 CharacterOffsetEnd=336 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=337 CharacterOffsetEnd=341 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=342 CharacterOffsetEnd=345 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Lower CharacterOffsetBegin=346 CharacterOffsetEnd=351 PartOfSpeech=NNP Lemma=Lower NamedEntityTag=O]
+[Text=Cwm CharacterOffsetBegin=352 CharacterOffsetEnd=355 PartOfSpeech=NNP Lemma=Cwm NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=356 CharacterOffsetEnd=363 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=364 CharacterOffsetEnd=367 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=368 CharacterOffsetEnd=375 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t3" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=air CharacterOffsetBegin=376 CharacterOffsetEnd=379 PartOfSpeech=NN Lemma=air NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=380 CharacterOffsetEnd=387 PartOfSpeech=NN Lemma=singing NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=388 CharacterOffsetEnd=391 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Canadian CharacterOffsetBegin=392 CharacterOffsetEnd=400 PartOfSpeech=JJ Lemma=canadian NamedEntityTag=MISC]
+[Text=Boat CharacterOffsetBegin=401 CharacterOffsetEnd=405 PartOfSpeech=NNP Lemma=Boat NamedEntityTag=O]
+[Text=Song CharacterOffsetBegin=406 CharacterOffsetEnd=410 PartOfSpeech=NN Lemma=song NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=410 CharacterOffsetEnd=411 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP we))
+        (VP (VBD stood)
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NN door))
+              (VP (VBG talking)
+                (NP (DT a) (NN voice))))))))
+    (VP (VBD floated)
+      (PRT (RP up))
+      (PP (IN from)
+        (NP (DT the) (NNP Lower) (NNP Cwm)))
+      (PP (IN through)
+        (NP
+          (NP (DT the) (NN evening) (NN air) (NN singing))
+          (NP (DT the) (JJ Canadian) (NNP Boat) (NN Song)))))
+    (. .)))
+
+root(ROOT-0, floated-10)
+mark(stood-3, As-1)
+nsubj(stood-3, we-2)
+csubj(floated-10, stood-3)
+case(door-6, at-4)
+det(door-6, the-5)
+nmod:at(stood-3, door-6)
+acl(door-6, talking-7)
+det(voice-9, a-8)
+dobj(talking-7, voice-9)
+compound:prt(floated-10, up-11)
+case(Cwm-15, from-12)
+det(Cwm-15, the-13)
+compound(Cwm-15, Lower-14)
+nmod:from(floated-10, Cwm-15)
+case(singing-20, through-16)
+det(singing-20, the-17)
+compound(singing-20, evening-18)
+compound(singing-20, air-19)
+nmod:through(floated-10, singing-20)
+det(Song-24, the-21)
+amod(Song-24, Canadian-22)
+compound(Song-24, Boat-23)
+dep(singing-20, Song-24)
+punct(floated-10, .-25)
+
+Coreference set:
+	(2,16,[16,17]) -> (2,1,[1,2]), that is: "me" -> "I"

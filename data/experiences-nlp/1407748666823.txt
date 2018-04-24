@@ -1,0 +1,352 @@
+Sentence #1 (3 tokens):
+...I..
+[Text=... CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=I. CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=i. NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (: ...) (NN I.) (. .)))
+
+root(ROOT-0, I.-2)
+punct(I.-2, ...-1)
+punct(I.-2, .-3)
+
+Sentence #2 (1 tokens):
+.
+[Text=. CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (. .)))
+
+root(ROOT-0, .-1)
+
+Sentence #3 (20 tokens):
+carried my wife and Mrs. Pierce to Cloathworkers hall to dinner, where Mr. Pierce the purser met us.
+[Text=carried CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=VBD Lemma=carry NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=wife CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=wife NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Mrs. CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Mrs. NamedEntityTag=O]
+[Text=Pierce CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Pierce NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Cloathworkers CharacterOffsetBegin=43 CharacterOffsetEnd=56 PartOfSpeech=NNPS Lemma=Cloathworkers NamedEntityTag=O]
+[Text=hall CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=hall NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Pierce CharacterOffsetBegin=83 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=Pierce NamedEntityTag=PERSON]
+[Text=the CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=purser CharacterOffsetBegin=94 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=purser NamedEntityTag=O]
+[Text=met CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=VBD Lemma=meet NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBD carried)
+      (NP
+        (NP (PRP$ my) (NN wife))
+        (CC and)
+        (NP (NNP Mrs.) (NNP Pierce)))
+      (PP (TO to)
+        (NP (NNPS Cloathworkers) (NN hall)))
+      (PP (TO to)
+        (NP (NN dinner)))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP
+            (NP (NNP Mr.) (NNP Pierce))
+            (NP (DT the) (NN purser)))
+          (VP (VBD met)
+            (NP (PRP us))))))
+    (. .)))
+
+root(ROOT-0, carried-1)
+nmod:poss(wife-3, my-2)
+dobj(carried-1, wife-3)
+cc(wife-3, and-4)
+compound(Pierce-6, Mrs.-5)
+dobj(carried-1, Pierce-6)
+conj:and(wife-3, Pierce-6)
+case(hall-9, to-7)
+compound(hall-9, Cloathworkers-8)
+nmod:to(carried-1, hall-9)
+case(dinner-11, to-10)
+nmod:to(carried-1, dinner-11)
+punct(carried-1, ,-12)
+advmod(met-18, where-13)
+compound(Pierce-15, Mr.-14)
+nsubj(met-18, Pierce-15)
+det(purser-17, the-16)
+dep(Pierce-15, purser-17)
+advcl(carried-1, met-18)
+dobj(met-18, us-19)
+punct(carried-1, .-20)
+
+Sentence #4 (12 tokens):
+We were invited by Mr. Chaplin the victualler, where Nich.
+[Text=We CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=invited CharacterOffsetBegin=117 CharacterOffsetEnd=124 PartOfSpeech=VBN Lemma=invite NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Chaplin CharacterOffsetBegin=132 CharacterOffsetEnd=139 PartOfSpeech=NNP Lemma=Chaplin NamedEntityTag=PERSON]
+[Text=the CharacterOffsetBegin=140 CharacterOffsetEnd=143 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=victualler CharacterOffsetBegin=144 CharacterOffsetEnd=154 PartOfSpeech=NN Lemma=victualler NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=156 CharacterOffsetEnd=161 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=Nich CharacterOffsetBegin=162 CharacterOffsetEnd=166 PartOfSpeech=NNP Lemma=Nich NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=166 CharacterOffsetEnd=167 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VBD were)
+        (VP (VBN invited)
+          (PP (IN by)
+            (NP
+              (NP (NNP Mr.) (NNP Chaplin))
+              (NP (DT the) (NN victualler)))))))
+    (, ,)
+    (FRAG
+      (WHADVP (WRB where)
+        (NP (NNP Nich))))
+    (. .)))
+
+root(ROOT-0, invited-3)
+nsubjpass(invited-3, We-1)
+auxpass(invited-3, were-2)
+case(Chaplin-6, by-4)
+compound(Chaplin-6, Mr.-5)
+nmod:agent(invited-3, Chaplin-6)
+det(victualler-8, the-7)
+dep(Chaplin-6, victualler-8)
+punct(invited-3, ,-9)
+parataxis(invited-3, where-10)
+dep(where-10, Nich-11)
+punct(invited-3, .-12)
+
+Sentence #5 (3 tokens):
+Osborne was.
+[Text=Osborne CharacterOffsetBegin=168 CharacterOffsetEnd=175 PartOfSpeech=NNP Lemma=Osborne NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=176 CharacterOffsetEnd=179 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=179 CharacterOffsetEnd=180 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Osborne))
+    (VP (VBD was))
+    (. .)))
+
+root(ROOT-0, was-2)
+nsubj(was-2, Osborne-1)
+punct(was-2, .-3)
+
+Sentence #6 (5 tokens):
+Our entertainment very good.
+[Text=Our CharacterOffsetBegin=181 CharacterOffsetEnd=184 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=entertainment CharacterOffsetBegin=185 CharacterOffsetEnd=198 PartOfSpeech=NN Lemma=entertainment NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=199 CharacterOffsetEnd=203 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=204 CharacterOffsetEnd=208 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=208 CharacterOffsetEnd=209 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP$ Our) (NN entertainment))
+    (ADJP (RB very) (JJ good))
+    (. .)))
+
+root(ROOT-0, good-4)
+nmod:poss(entertainment-2, Our-1)
+dep(good-4, entertainment-2)
+advmod(good-4, very-3)
+punct(good-4, .-5)
+
+Sentence #7 (4 tokens):
+A brave hall.
+[Text=A CharacterOffsetBegin=210 CharacterOffsetEnd=211 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=brave CharacterOffsetBegin=212 CharacterOffsetEnd=217 PartOfSpeech=VBP Lemma=brave NamedEntityTag=O]
+[Text=hall CharacterOffsetBegin=218 CharacterOffsetEnd=222 PartOfSpeech=NN Lemma=hall NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=222 CharacterOffsetEnd=223 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT A))
+    (VP (VBP brave)
+      (NP (NN hall)))
+    (. .)))
+
+root(ROOT-0, brave-2)
+nsubj(brave-2, A-1)
+dobj(brave-2, hall-3)
+punct(brave-2, .-4)
+
+Sentence #8 (7 tokens):
+Good company and very good Musique.
+[Text=Good CharacterOffsetBegin=224 CharacterOffsetEnd=228 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=229 CharacterOffsetEnd=236 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=237 CharacterOffsetEnd=240 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=241 CharacterOffsetEnd=245 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=246 CharacterOffsetEnd=250 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=Musique CharacterOffsetBegin=251 CharacterOffsetEnd=258 PartOfSpeech=NNP Lemma=Musique NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=258 CharacterOffsetEnd=259 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP (JJ Good) (NN company))
+      (CC and)
+      (NP
+        (ADJP (RB very) (JJ good))
+        (NNP Musique)))
+    (. .)))
+
+root(ROOT-0, company-2)
+amod(company-2, Good-1)
+cc(company-2, and-3)
+advmod(good-5, very-4)
+amod(Musique-6, good-5)
+conj:and(company-2, Musique-6)
+punct(company-2, .-7)
+
+Sentence #9 (41 tokens):
+Where among other things, I was pleased that I could find out a man by his voice, whom I had never seen before, to be one that sung behind the Curtaine formerly at Sir W. Davenants opera.
+[Text=Where CharacterOffsetBegin=260 CharacterOffsetEnd=265 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=among CharacterOffsetBegin=266 CharacterOffsetEnd=271 PartOfSpeech=IN Lemma=among NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=272 CharacterOffsetEnd=277 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=278 CharacterOffsetEnd=284 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=284 CharacterOffsetEnd=285 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=286 CharacterOffsetEnd=287 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=288 CharacterOffsetEnd=291 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=pleased CharacterOffsetBegin=292 CharacterOffsetEnd=299 PartOfSpeech=JJ Lemma=pleased NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=300 CharacterOffsetEnd=304 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=305 CharacterOffsetEnd=306 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=307 CharacterOffsetEnd=312 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=313 CharacterOffsetEnd=317 PartOfSpeech=VB Lemma=find NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=318 CharacterOffsetEnd=321 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=322 CharacterOffsetEnd=323 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=324 CharacterOffsetEnd=327 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=328 CharacterOffsetEnd=330 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=331 CharacterOffsetEnd=334 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=voice CharacterOffsetBegin=335 CharacterOffsetEnd=340 PartOfSpeech=NN Lemma=voice NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=340 CharacterOffsetEnd=341 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=whom CharacterOffsetBegin=342 CharacterOffsetEnd=346 PartOfSpeech=WP Lemma=whom NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=347 CharacterOffsetEnd=348 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=349 CharacterOffsetEnd=352 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=353 CharacterOffsetEnd=358 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=seen CharacterOffsetBegin=359 CharacterOffsetEnd=363 PartOfSpeech=VBN Lemma=see NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=364 CharacterOffsetEnd=370 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=370 CharacterOffsetEnd=371 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=372 CharacterOffsetEnd=374 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=375 CharacterOffsetEnd=377 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=378 CharacterOffsetEnd=381 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=that CharacterOffsetBegin=382 CharacterOffsetEnd=386 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=sung CharacterOffsetBegin=387 CharacterOffsetEnd=391 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=behind CharacterOffsetBegin=392 CharacterOffsetEnd=398 PartOfSpeech=IN Lemma=behind NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=399 CharacterOffsetEnd=402 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Curtaine CharacterOffsetBegin=403 CharacterOffsetEnd=411 PartOfSpeech=NNP Lemma=Curtaine NamedEntityTag=MISC]
+[Text=formerly CharacterOffsetBegin=412 CharacterOffsetEnd=420 PartOfSpeech=RB Lemma=formerly NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=421 CharacterOffsetEnd=423 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Sir CharacterOffsetBegin=424 CharacterOffsetEnd=427 PartOfSpeech=NNP Lemma=Sir NamedEntityTag=O]
+[Text=W. CharacterOffsetBegin=428 CharacterOffsetEnd=430 PartOfSpeech=NNP Lemma=W. NamedEntityTag=PERSON]
+[Text=Davenants CharacterOffsetBegin=431 CharacterOffsetEnd=440 PartOfSpeech=NNP Lemma=Davenants NamedEntityTag=PERSON]
+[Text=opera CharacterOffsetBegin=441 CharacterOffsetEnd=446 PartOfSpeech=NN Lemma=opera NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=446 CharacterOffsetEnd=447 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB Where))
+      (FRAG
+        (PP (IN among)
+          (NP (JJ other) (NNS things)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD was)
+      (ADJP (JJ pleased))
+      (SBAR (IN that)
+        (S
+          (NP (PRP I))
+          (VP (MD could)
+            (VP (VB find)
+              (PRT (RP out))
+              (NP (DT a) (NN man))
+              (PP (IN by)
+                (NP
+                  (NP (PRP$ his) (NN voice))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WP whom))
+                    (S
+                      (NP (PRP I))
+                      (VP (VBD had)
+                        (ADVP (RB never))
+                        (VP (VBN seen)
+                          (PP (IN before))))))))
+              (, ,)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (NP
+                      (NP (CD one))
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (VP (VBD sung)
+                            (PP (IN behind)
+                              (NP (DT the) (NNP Curtaine)))
+                            (PP
+                              (ADVP (RB formerly))
+                              (IN at)
+                              (NP (NNP Sir) (NNP W.) (NNP Davenants) (NN opera)))))))))))))))
+    (. .)))
+
+root(ROOT-0, pleased-8)
+advmod(things-4, Where-1)
+case(things-4, among-2)
+amod(things-4, other-3)
+advcl:among(pleased-8, things-4)
+punct(pleased-8, ,-5)
+nsubj(pleased-8, I-6)
+cop(pleased-8, was-7)
+mark(find-12, that-9)
+nsubj(find-12, I-10)
+aux(find-12, could-11)
+ccomp(pleased-8, find-12)
+compound:prt(find-12, out-13)
+det(man-15, a-14)
+dobj(find-12, man-15)
+case(voice-18, by-16)
+nmod:poss(voice-18, his-17)
+nmod:by(find-12, voice-18)
+nmod:before(seen-24, voice-18)
+punct(voice-18, ,-19)
+ref(voice-18, whom-20)
+nsubj(seen-24, I-21)
+aux(seen-24, had-22)
+neg(seen-24, never-23)
+acl:relcl(voice-18, seen-24)
+case(whom-20, before-25)
+punct(find-12, ,-26)
+mark(one-29, to-27)
+cop(one-29, be-28)
+advcl:to(find-12, one-29)
+nsubj(sung-31, one-29)
+ref(one-29, that-30)
+acl:relcl(one-29, sung-31)
+case(Curtaine-34, behind-32)
+det(Curtaine-34, the-33)
+nmod:behind(sung-31, Curtaine-34)
+advmod(opera-40, formerly-35)
+case(opera-40, at-36)
+compound(opera-40, Sir-37)
+compound(opera-40, W.-38)
+compound(opera-40, Davenants-39)
+nmod:at(sung-31, opera-40)
+punct(pleased-8, .-41)
+
+Coreference set:
+	(9,6,[6,7]) -> (3,2,[2,3]), that is: "I" -> "my"
+	(9,10,[10,11]) -> (3,2,[2,3]), that is: "I" -> "my"
+	(9,21,[21,22]) -> (3,2,[2,3]), that is: "I" -> "my"
+Coreference set:
+	(4,1,[1,2]) -> (3,19,[19,20]), that is: "We" -> "us"
+	(6,1,[1,2]) -> (3,19,[19,20]), that is: "Our" -> "us"
+Coreference set:
+	(9,17,[17,18]) -> (9,15,[14,16]), that is: "his" -> "a man"

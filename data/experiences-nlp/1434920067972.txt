@@ -1,0 +1,222 @@
+Sentence #1 (17 tokens):
+Listen to wireless all afternoon (Mum & Pop are having a Marconiphone on approval).
+[Text=Listen CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=wireless CharacterOffsetBegin=10 CharacterOffsetEnd=18 PartOfSpeech=VB Lemma=wireless NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=afternoon CharacterOffsetBegin=23 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 tid="t1" type="TIME" value="TAF">afternoon</TIMEX3>]
+[Text=-LRB- CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Mum CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Mum NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Pop CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Pop NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=having CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=VBG Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Marconiphone CharacterOffsetBegin=57 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=marconiphone NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=approval CharacterOffsetBegin=73 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=approval NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Listen)
+      (S
+        (VP (TO to)
+          (VP (VB wireless)
+            (NP
+              (NP (DT all) (NN afternoon))
+              (PRN (-LRB- -LRB-)
+                (S
+                  (NP (NNP Mum)
+                    (CC &)
+                    (NNP Pop))
+                  (VP (VBP are)
+                    (VP (VBG having)
+                      (NP
+                        (NP (DT a) (NN Marconiphone))
+                        (PP (IN on)
+                          (NP (NN approval)))))))
+                (-RRB- -RRB-)))))))
+    (. .)))
+
+root(ROOT-0, Listen-1)
+mark(wireless-3, to-2)
+xcomp(Listen-1, wireless-3)
+det(afternoon-5, all-4)
+dobj(wireless-3, afternoon-5)
+punct(having-11, -LRB--6)
+nsubj(having-11, Mum-7)
+cc(Mum-7, &-8)
+conj:&(Mum-7, Pop-9)
+nsubj(having-11, Pop-9)
+aux(having-11, are-10)
+dep(afternoon-5, having-11)
+det(Marconiphone-13, a-12)
+dobj(having-11, Marconiphone-13)
+case(approval-15, on-14)
+nmod:on(Marconiphone-13, approval-15)
+punct(having-11, -RRB--16)
+punct(Listen-1, .-17)
+
+Sentence #2 (4 tokens):
+Mengelberg from Hilversum.
+[Text=Mengelberg CharacterOffsetBegin=84 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=Mengelberg NamedEntityTag=PERSON]
+[Text=from CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Hilversum CharacterOffsetBegin=100 CharacterOffsetEnd=109 PartOfSpeech=NNP Lemma=Hilversum NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Mengelberg))
+    (PP (IN from)
+      (NP (NNP Hilversum)))
+    (. .)))
+
+root(ROOT-0, Mengelberg-1)
+case(Hilversum-3, from-2)
+nmod:from(Mengelberg-1, Hilversum-3)
+punct(Mengelberg-1, .-4)
+
+Sentence #3 (20 tokens):
+An excellent performance of Mozart G min* Thibaud plays Lalo's Symph Espagnol very well, but sentimentally.
+[Text=An CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=excellent CharacterOffsetBegin=114 CharacterOffsetEnd=123 PartOfSpeech=JJ Lemma=excellent NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=124 CharacterOffsetEnd=135 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Mozart CharacterOffsetBegin=139 CharacterOffsetEnd=145 PartOfSpeech=NNP Lemma=Mozart NamedEntityTag=ORGANIZATION]
+[Text=G CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=NNP Lemma=G NamedEntityTag=ORGANIZATION]
+[Text=min CharacterOffsetBegin=148 CharacterOffsetEnd=151 PartOfSpeech=NN Lemma=min NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1M Timex=<TIMEX3 tid="t2" type="DURATION" value="PT1M">min</TIMEX3>]
+[Text=* CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=Thibaud CharacterOffsetBegin=153 CharacterOffsetEnd=160 PartOfSpeech=NNP Lemma=Thibaud NamedEntityTag=PERSON]
+[Text=plays CharacterOffsetBegin=161 CharacterOffsetEnd=166 PartOfSpeech=VBZ Lemma=play NamedEntityTag=O]
+[Text=Lalo CharacterOffsetBegin=167 CharacterOffsetEnd=171 PartOfSpeech=NNP Lemma=Lalo NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=171 CharacterOffsetEnd=173 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Symph CharacterOffsetBegin=174 CharacterOffsetEnd=179 PartOfSpeech=NNP Lemma=Symph NamedEntityTag=O]
+[Text=Espagnol CharacterOffsetBegin=180 CharacterOffsetEnd=188 PartOfSpeech=NNP Lemma=Espagnol NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=189 CharacterOffsetEnd=193 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=194 CharacterOffsetEnd=198 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=198 CharacterOffsetEnd=199 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=200 CharacterOffsetEnd=203 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=sentimentally CharacterOffsetBegin=204 CharacterOffsetEnd=217 PartOfSpeech=RB Lemma=sentimentally NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=217 CharacterOffsetEnd=218 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT An) (JJ excellent) (NN performance))
+      (PP (IN of)
+        (NP (NNP Mozart) (NNP G) (NN min))
+        (X
+          (X (SYM *))
+          (NP (NNP Thibaud)))))
+    (VP (VBZ plays)
+      (NP
+        (NP
+          (NP (NNP Lalo) (POS 's))
+          (NNP Symph) (NNP Espagnol))
+        (ADVP
+          (ADVP (RB very) (RB well))
+          (, ,)
+          (CC but)
+          (ADVP (RB sentimentally)))))
+    (. .)))
+
+root(ROOT-0, plays-10)
+det(performance-3, An-1)
+amod(performance-3, excellent-2)
+nsubj(plays-10, performance-3)
+case(min-7, of-4)
+compound(min-7, Mozart-5)
+compound(min-7, G-6)
+nmod:of(performance-3, min-7)
+dep(Thibaud-9, *-8)
+dep(min-7, Thibaud-9)
+nmod:poss(Espagnol-14, Lalo-11)
+case(Lalo-11, 's-12)
+compound(Espagnol-14, Symph-13)
+dobj(plays-10, Espagnol-14)
+advmod(well-16, very-15)
+advmod(but-18, well-16)
+punct(but-18, ,-17)
+advmod(Espagnol-14, but-18)
+advmod(but-18, sentimentally-19)
+punct(plays-10, .-20)
+
+Sentence #4 (14 tokens):
+Walk with Pop & Mum after tea, & with Pop before bed.
+[Text=Walk CharacterOffsetBegin=219 CharacterOffsetEnd=223 PartOfSpeech=VB Lemma=walk NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=224 CharacterOffsetEnd=228 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Pop CharacterOffsetBegin=229 CharacterOffsetEnd=232 PartOfSpeech=NNP Lemma=Pop NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=233 CharacterOffsetEnd=234 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Mum CharacterOffsetBegin=235 CharacterOffsetEnd=238 PartOfSpeech=NNP Lemma=Mum NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=239 CharacterOffsetEnd=244 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=tea CharacterOffsetBegin=245 CharacterOffsetEnd=248 PartOfSpeech=NN Lemma=tea NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=248 CharacterOffsetEnd=249 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=250 CharacterOffsetEnd=251 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=252 CharacterOffsetEnd=256 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Pop CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=NN Lemma=pop NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=261 CharacterOffsetEnd=267 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=bed CharacterOffsetBegin=268 CharacterOffsetEnd=271 PartOfSpeech=NN Lemma=bed NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=271 CharacterOffsetEnd=272 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Walk)
+      (PP (IN with)
+        (NP
+          (NP
+            (NP (NNP Pop)
+              (CC &)
+              (NNP Mum))
+            (PP (IN after)
+              (NP (NN tea))))
+          (, ,)
+          (CC &)
+          (NP
+            (PP (IN with)
+              (NP (NN Pop)))
+            (PP (IN before)
+              (NP (NN bed)))))))
+    (. .)))
+
+root(ROOT-0, Walk-1)
+conj:&(Walk-1, Walk-1')
+conj:&(Walk-1, Walk-1'')
+case(Pop-3, with-2)
+nmod:with(Walk-1, Pop-3)
+cc(Walk-1, &-4)
+conj(Pop-3, Mum-5)
+case(tea-7, after-6)
+nmod:after(Pop-3, tea-7)
+punct(Pop-3, ,-8)
+cc(Walk-1, &-9)
+case(Pop-11, with-10)
+nmod:with(Walk-1', Pop-11)
+case(bed-13, before-12)
+nmod:before(Pop-11, bed-13)
+punct(Walk-1, .-14)
+
+Sentence #5 (6 tokens):
+Wireless & gramophone as well.
+[Text=Wireless CharacterOffsetBegin=273 CharacterOffsetEnd=281 PartOfSpeech=NNP Lemma=Wireless NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=282 CharacterOffsetEnd=283 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=gramophone CharacterOffsetBegin=284 CharacterOffsetEnd=294 PartOfSpeech=NN Lemma=gramophone NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=295 CharacterOffsetEnd=297 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=298 CharacterOffsetEnd=302 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=302 CharacterOffsetEnd=303 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Wireless)
+      (CC &)
+      (NP (NN gramophone)))
+    (ADJP (RB as) (RB well))
+    (. .)))
+
+root(ROOT-0, Wireless-1)
+cc(Wireless-1, &-2)
+conj:&(Wireless-1, gramophone-3)
+advmod(well-5, as-4)
+amod(Wireless-1, well-5)
+punct(Wireless-1, .-6)
+
+Coreference set:
+	(4,3,[3,4]) -> (1,9,[9,10]), that is: "Pop" -> "Pop"
+Coreference set:
+	(4,5,[5,6]) -> (1,7,[7,8]), that is: "Mum" -> "Mum"

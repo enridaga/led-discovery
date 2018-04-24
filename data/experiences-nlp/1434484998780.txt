@@ -1,0 +1,239 @@
+Sentence #1 (7 tokens):
+Lauricella & Richards come in aft.
+[Text=Lauricella CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Lauricella NamedEntityTag=PERSON]
+[Text=& CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Richards CharacterOffsetBegin=13 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Richards NamedEntityTag=PERSON]
+[Text=come CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=VBP Lemma=come NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=aft CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=aft NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Lauricella)
+      (CC &)
+      (NNP Richards))
+    (VP (VBP come)
+      (PP (IN in)
+        (NP (NN aft))))
+    (. .)))
+
+root(ROOT-0, come-4)
+nsubj(come-4, Lauricella-1)
+cc(Lauricella-1, &-2)
+conj:&(Lauricella-1, Richards-3)
+nsubj(come-4, Richards-3)
+case(aft-6, in-5)
+nmod:in(come-4, aft-6)
+punct(come-4, .-7)
+
+Sentence #2 (8 tokens):
+We practise my Phantasy Scherzo all time.
+[Text=We CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=practise CharacterOffsetBegin=38 CharacterOffsetEnd=46 PartOfSpeech=VBP Lemma=practise NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=Phantasy CharacterOffsetBegin=50 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Phantasy NamedEntityTag=O]
+[Text=Scherzo CharacterOffsetBegin=59 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Scherzo NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP practise)
+      (NP (PRP$ my) (NNP Phantasy) (NNP Scherzo))
+      (NP-TMP (DT all) (NN time)))
+    (. .)))
+
+root(ROOT-0, practise-2)
+nsubj(practise-2, We-1)
+nmod:poss(Scherzo-5, my-3)
+compound(Scherzo-5, Phantasy-4)
+dobj(practise-2, Scherzo-5)
+det(time-7, all-6)
+nmod:tmod(practise-2, time-7)
+punct(practise-2, .-8)
+
+Sentence #3 (12 tokens):
+Listen to Act, I of Mastersingers on wireless after dinner.
+[Text=Listen CharacterOffsetBegin=77 CharacterOffsetEnd=83 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Act CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=Act NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Mastersingers CharacterOffsetBegin=97 CharacterOffsetEnd=110 PartOfSpeech=NNPS Lemma=Mastersingers NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=wireless CharacterOffsetBegin=114 CharacterOffsetEnd=122 PartOfSpeech=JJ Lemma=wireless NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=123 CharacterOffsetEnd=128 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=129 CharacterOffsetEnd=135 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Listen)
+      (PP (TO to)
+        (NP
+          (NP (NNP Act))
+          (, ,)
+          (NP
+            (NP (PRP I))
+            (PP (IN of)
+              (NP (NNPS Mastersingers))))))
+      (PP (IN on)
+        (NP
+          (NP (JJ wireless))
+          (PP (IN after)
+            (NP (NN dinner))))))
+    (. .)))
+
+root(ROOT-0, Listen-1)
+case(Act-3, to-2)
+nmod:to(Listen-1, Act-3)
+punct(Act-3, ,-4)
+appos(Act-3, I-5)
+case(Mastersingers-7, of-6)
+nmod:of(I-5, Mastersingers-7)
+case(wireless-9, on-8)
+nmod:on(Listen-1, wireless-9)
+case(dinner-11, after-10)
+nmod:after(wireless-9, dinner-11)
+punct(Listen-1, .-12)
+
+Sentence #4 (16 tokens):
+* What struck me most is what little attention anyone paid to the written music.
+[Text=* CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=What CharacterOffsetBegin=138 CharacterOffsetEnd=142 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=struck CharacterOffsetBegin=143 CharacterOffsetEnd=149 PartOfSpeech=VBD Lemma=strike NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=158 CharacterOffsetEnd=160 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=166 CharacterOffsetEnd=172 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=attention CharacterOffsetBegin=173 CharacterOffsetEnd=182 PartOfSpeech=NN Lemma=attention NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=183 CharacterOffsetEnd=189 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=195 CharacterOffsetEnd=197 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=198 CharacterOffsetEnd=201 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=written CharacterOffsetBegin=202 CharacterOffsetEnd=209 PartOfSpeech=VBN Lemma=write NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=210 CharacterOffsetEnd=215 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=215 CharacterOffsetEnd=216 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR
+      (X (SYM *))
+      (S
+        (NP (WP What))
+        (VP (VBD struck)
+          (NP (PRP me))
+          (ADVP (RBS most)))))
+    (VP (VBZ is)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (JJ little) (NN attention) (NN anyone))
+          (VP (VBN paid)
+            (PP (TO to)
+              (NP (DT the) (VBN written) (NN music)))))))
+    (. .)))
+
+root(ROOT-0, is-6)
+dep(struck-3, *-1)
+nsubj(struck-3, What-2)
+csubj(is-6, struck-3)
+dobj(struck-3, me-4)
+advmod(struck-3, most-5)
+dobj(paid-11, what-7)
+amod(anyone-10, little-8)
+compound(anyone-10, attention-9)
+nsubj(paid-11, anyone-10)
+ccomp(is-6, paid-11)
+case(music-15, to-12)
+det(music-15, the-13)
+amod(music-15, written-14)
+nmod:to(paid-11, music-15)
+punct(is-6, .-16)
+
+Sentence #5 (22 tokens):
+Beckmesser v. good - Habich; & Schorr as Sachs & Lehman as Eva - what little I heard of them.
+[Text=Beckmesser CharacterOffsetBegin=217 CharacterOffsetEnd=227 PartOfSpeech=NNP Lemma=Beckmesser NamedEntityTag=O]
+[Text=v. CharacterOffsetBegin=228 CharacterOffsetEnd=230 PartOfSpeech=CC Lemma=v. NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=231 CharacterOffsetEnd=235 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=236 CharacterOffsetEnd=237 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Habich CharacterOffsetBegin=238 CharacterOffsetEnd=244 PartOfSpeech=NN Lemma=habich NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=244 CharacterOffsetEnd=245 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=246 CharacterOffsetEnd=247 PartOfSpeech=CC Lemma=& NamedEntityTag=ORGANIZATION]
+[Text=Schorr CharacterOffsetBegin=248 CharacterOffsetEnd=254 PartOfSpeech=NNP Lemma=Schorr NamedEntityTag=ORGANIZATION]
+[Text=as CharacterOffsetBegin=255 CharacterOffsetEnd=257 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=Sachs CharacterOffsetBegin=258 CharacterOffsetEnd=263 PartOfSpeech=NNP Lemma=Sachs NamedEntityTag=ORGANIZATION]
+[Text=& CharacterOffsetBegin=264 CharacterOffsetEnd=265 PartOfSpeech=CC Lemma=& NamedEntityTag=ORGANIZATION]
+[Text=Lehman CharacterOffsetBegin=266 CharacterOffsetEnd=272 PartOfSpeech=NNP Lemma=Lehman NamedEntityTag=ORGANIZATION]
+[Text=as CharacterOffsetBegin=273 CharacterOffsetEnd=275 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=Eva CharacterOffsetBegin=276 CharacterOffsetEnd=279 PartOfSpeech=NNP Lemma=Eva NamedEntityTag=PERSON]
+[Text=- CharacterOffsetBegin=280 CharacterOffsetEnd=281 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=282 CharacterOffsetEnd=286 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=287 CharacterOffsetEnd=293 PartOfSpeech=RB Lemma=little NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=294 CharacterOffsetEnd=295 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=296 CharacterOffsetEnd=301 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=302 CharacterOffsetEnd=304 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=305 CharacterOffsetEnd=309 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=309 CharacterOffsetEnd=310 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP
+        (NP (NNP Beckmesser))
+        (PP (CC v.)
+          (NP
+            (NP (JJ good))
+            (: -)
+            (NP (NN Habich))
+            (: ;))))
+      (CC &)
+      (NP
+        (NP (NNP Schorr) (IN as) (NNP Sachs)
+          (CC &)
+          (NNP Lehman))
+        (PP (IN as)
+          (NP (NNP Eva)))))
+    (: -)
+    (SBAR
+      (WHNP (WP what))
+      (S
+        (NP (RB little) (PRP I))
+        (VP (VBD heard)
+          (PP (IN of)
+            (NP (PRP them))))))
+    (. .)))
+
+root(ROOT-0, Beckmesser-1)
+dobj(heard-19, Beckmesser-1)
+case(good-3, v.-2)
+nmod:v.(Beckmesser-1, good-3)
+punct(good-3, --4)
+dep(good-3, Habich-5)
+punct(good-3, ;-6)
+cc(Beckmesser-1, &-7)
+compound(Sachs-10, Schorr-8)
+amod(Sachs-10, as-9)
+conj:&(Beckmesser-1, Sachs-10)
+dobj(heard-19, Sachs-10)
+cc(Sachs-10, &-11)
+conj:&(Beckmesser-1, Lehman-12)
+conj:&(Sachs-10, Lehman-12)
+case(Eva-14, as-13)
+nmod:as(Sachs-10, Eva-14)
+punct(Beckmesser-1, --15)
+ref(Beckmesser-1, what-16)
+advmod(I-18, little-17)
+nsubj(heard-19, I-18)
+acl:relcl(Beckmesser-1, heard-19)
+case(them-21, of-20)
+nmod:of(heard-19, them-21)
+punct(Beckmesser-1, .-22)
+
+Coreference set:
+	(3,5,[5,8]) -> (2,3,[3,4]), that is: "I of Mastersingers" -> "my"
+	(4,4,[4,5]) -> (2,3,[3,4]), that is: "me" -> "my"
+Coreference set:
+	(5,21,[21,22]) -> (4,2,[2,3]), that is: "them" -> "What"
+Coreference set:
+	(5,8,[7,9]) -> (5,10,[8,15]), that is: "& Schorr" -> "Schorr as Sachs & Lehman as Eva"

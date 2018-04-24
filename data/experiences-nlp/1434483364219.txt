@@ -1,0 +1,325 @@
+Sentence #1 (8 tokens):
+Mum & I both go to Norwich.
+[Text=Mum CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Mum NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Norwich CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Norwich NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP Mum))
+      (CC &)
+      (NP (PRP I)))
+    (DT both)
+    (VP (VBP go)
+      (PP (TO to)
+        (NP (NNP Norwich))))
+    (. .)))
+
+root(ROOT-0, go-5)
+nsubj(go-5, Mum-1)
+cc(Mum-1, &-2)
+conj:&(Mum-1, I-3)
+nsubj(go-5, I-3)
+dep(go-5, both-4)
+case(Norwich-7, to-6)
+nmod:to(go-5, Norwich-7)
+punct(go-5, .-8)
+
+Sentence #2 (21 tokens):
+Mum with Mrs. Dance (in her car) & Mrs. Owles & I with John Nicholson in his car.
+[Text=Mum CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=mum NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Mrs. CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Mrs. NamedEntityTag=O]
+[Text=Dance CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Dance NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=car CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=car NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Mrs. CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Mrs. NamedEntityTag=O]
+[Text=Owles CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Owles NamedEntityTag=PERSON]
+[Text=& CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=John CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=Nicholson CharacterOffsetBegin=88 CharacterOffsetEnd=97 PartOfSpeech=NNP Lemma=Nicholson NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=car CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=car NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP
+        (NP (NN Mum))
+        (PP (IN with)
+          (NP
+            (NP (NNP Mrs.) (NNP Dance))
+            (PRN (-LRB- -LRB-)
+              (PP (IN in)
+                (NP (PRP$ her) (NN car)))
+              (-RRB- -RRB-)))))
+      (CC &)
+      (NP
+        (NP (NNP Mrs.) (NNP Owles))
+        (CC &)
+        (NP
+          (NP (PRP I))
+          (PP (IN with)
+            (NP
+              (NP (NNP John) (NNP Nicholson))
+              (PP (IN in)
+                (NP (PRP$ his) (NN car))))))))
+    (. .)))
+
+root(ROOT-0, Mum-1)
+case(Dance-4, with-2)
+compound(Dance-4, Mrs.-3)
+nmod:with(Mum-1, Dance-4)
+punct(car-8, -LRB--5)
+case(car-8, in-6)
+nmod:poss(car-8, her-7)
+nmod:in(Dance-4, car-8)
+punct(car-8, -RRB--9)
+cc(Mum-1, &-10)
+compound(Owles-12, Mrs.-11)
+conj:&(Mum-1, Owles-12)
+cc(Owles-12, &-13)
+conj:&(Mum-1, I-14)
+conj:&(Owles-12, I-14)
+case(Nicholson-17, with-15)
+compound(Nicholson-17, John-16)
+nmod:with(I-14, Nicholson-17)
+case(car-20, in-18)
+nmod:poss(car-20, his-19)
+nmod:in(Nicholson-17, car-20)
+punct(Mum-1, .-21)
+
+Sentence #3 (6 tokens):
+We go to N.S.Q.C. concert.
+[Text=We CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=N.S.Q.C. CharacterOffsetBegin=119 CharacterOffsetEnd=127 PartOfSpeech=NNP Lemma=N.S.Q.C. NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=128 CharacterOffsetEnd=135 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP go)
+      (PP (TO to)
+        (NP (NNP N.S.Q.C.) (NN concert))))
+    (. .)))
+
+root(ROOT-0, go-2)
+nsubj(go-2, We-1)
+case(concert-5, to-3)
+compound(concert-5, N.S.Q.C.-4)
+nmod:to(go-2, concert-5)
+punct(go-2, .-6)
+
+Sentence #4 (2 tokens):
+2.45.
+[Text=2.45 CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=CD Lemma=2.45 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.45]
+[Text=. CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (CD 2.45))
+    (. .)))
+
+root(ROOT-0, 2.45-1)
+punct(2.45-1, .-2)
+
+Sentence #5 (4 tokens):
+Beethoven no. 1.
+[Text=Beethoven CharacterOffsetBegin=143 CharacterOffsetEnd=152 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=PERSON]
+[Text=no. CharacterOffsetBegin=153 CharacterOffsetEnd=156 PartOfSpeech=NNP Lemma=no. NamedEntityTag=O]
+[Text=1 CharacterOffsetBegin=157 CharacterOffsetEnd=158 PartOfSpeech=CD Lemma=1 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Beethoven) (NNP no.))
+    (NP (CD 1))
+    (. .)))
+
+root(ROOT-0, no.-2)
+compound(no.-2, Beethoven-1)
+dep(no.-2, 1-3)
+punct(no.-2, .-4)
+
+Sentence #6 (8 tokens):
+in F; Dittersdorf Eb; Elgar.
+[Text=in CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=F CharacterOffsetBegin=163 CharacterOffsetEnd=164 PartOfSpeech=NN Lemma=f NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=164 CharacterOffsetEnd=165 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=Dittersdorf CharacterOffsetBegin=166 CharacterOffsetEnd=177 PartOfSpeech=NNP Lemma=Dittersdorf NamedEntityTag=PERSON]
+[Text=Eb CharacterOffsetBegin=178 CharacterOffsetEnd=180 PartOfSpeech=NNP Lemma=Eb NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=Elgar CharacterOffsetBegin=182 CharacterOffsetEnd=187 PartOfSpeech=NNP Lemma=Elgar NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN in)
+      (NP (NN F)))
+    (: ;)
+    (NP
+      (NP (NNP Dittersdorf) (NNP Eb))
+      (: ;)
+      (NP (NNP Elgar)))
+    (. .)))
+
+root(ROOT-0, Eb-5)
+case(F-2, in-1)
+nmod:in(Eb-5, F-2)
+punct(Eb-5, ;-3)
+compound(Eb-5, Dittersdorf-4)
+punct(Eb-5, ;-6)
+dep(Eb-5, Elgar-7)
+punct(Eb-5, .-8)
+
+Sentence #7 (7 tokens):
+* Playing rather ragged & lifeless.
+[Text=* CharacterOffsetBegin=188 CharacterOffsetEnd=189 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=Playing CharacterOffsetBegin=190 CharacterOffsetEnd=197 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=198 CharacterOffsetEnd=204 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=ragged CharacterOffsetBegin=205 CharacterOffsetEnd=211 PartOfSpeech=JJ Lemma=ragged NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=212 CharacterOffsetEnd=213 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=lifeless CharacterOffsetBegin=214 CharacterOffsetEnd=222 PartOfSpeech=JJ Lemma=lifeless NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=222 CharacterOffsetEnd=223 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (X (SYM *))
+    (VP (VBG Playing)
+      (NP
+        (NP (RB rather) (JJ ragged))
+        (CC &)
+        (NP (JJ lifeless))))
+    (. .)))
+
+root(ROOT-0, Playing-2)
+dep(Playing-2, *-1)
+advmod(ragged-4, rather-3)
+dobj(Playing-2, ragged-4)
+cc(ragged-4, &-5)
+dobj(Playing-2, lifeless-6)
+conj:&(ragged-4, lifeless-6)
+punct(Playing-2, .-7)
+
+Sentence #8 (14 tokens):
+Mrs. Alston is by the far the best in a rather bad team.
+[Text=Mrs. CharacterOffsetBegin=224 CharacterOffsetEnd=228 PartOfSpeech=NNP Lemma=Mrs. NamedEntityTag=O]
+[Text=Alston CharacterOffsetBegin=229 CharacterOffsetEnd=235 PartOfSpeech=NNP Lemma=Alston NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=236 CharacterOffsetEnd=238 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=239 CharacterOffsetEnd=241 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=242 CharacterOffsetEnd=245 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=far CharacterOffsetBegin=246 CharacterOffsetEnd=249 PartOfSpeech=RB Lemma=far NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=250 CharacterOffsetEnd=253 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=254 CharacterOffsetEnd=258 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=259 CharacterOffsetEnd=261 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=262 CharacterOffsetEnd=263 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=264 CharacterOffsetEnd=270 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=271 CharacterOffsetEnd=274 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=team CharacterOffsetBegin=275 CharacterOffsetEnd=279 PartOfSpeech=NN Lemma=team NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=279 CharacterOffsetEnd=280 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Mrs.) (NNP Alston))
+    (VP (VBZ is)
+      (PP (IN by)
+        (NP (DT the)
+          (NP
+            (NP (RB far) (DT the) (JJS best))
+            (PP (IN in)
+              (NP (DT a)
+                (ADJP (RB rather) (JJ bad))
+                (NN team)))))))
+    (. .)))
+
+root(ROOT-0, best-8)
+compound(Alston-2, Mrs.-1)
+nsubj(best-8, Alston-2)
+cop(best-8, is-3)
+case(best-8, by-4)
+det(best-8, the-5)
+advmod(best-8, far-6)
+det(best-8, the-7)
+case(team-13, in-9)
+det(team-13, a-10)
+advmod(bad-12, rather-11)
+amod(team-13, bad-12)
+nmod:in(best-8, team-13)
+punct(best-8, .-14)
+
+Sentence #9 (11 tokens):
+Elgar I didn't like - the Dittersdorf was amusing.
+[Text=Elgar CharacterOffsetBegin=281 CharacterOffsetEnd=286 PartOfSpeech=NNP Lemma=Elgar NamedEntityTag=PERSON]
+[Text=I CharacterOffsetBegin=287 CharacterOffsetEnd=288 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=289 CharacterOffsetEnd=292 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=292 CharacterOffsetEnd=295 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=296 CharacterOffsetEnd=300 PartOfSpeech=VB Lemma=like NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=301 CharacterOffsetEnd=302 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=303 CharacterOffsetEnd=306 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Dittersdorf CharacterOffsetBegin=307 CharacterOffsetEnd=318 PartOfSpeech=NNP Lemma=Dittersdorf NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=319 CharacterOffsetEnd=322 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=amusing CharacterOffsetBegin=323 CharacterOffsetEnd=330 PartOfSpeech=JJ Lemma=amusing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=330 CharacterOffsetEnd=331 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Elgar) (PRP I))
+      (VP (VBD did) (RB n't)
+        (VP (VB like))))
+    (: -)
+    (S
+      (NP (DT the) (NNP Dittersdorf))
+      (VP (VBD was)
+        (ADJP (JJ amusing))))
+    (. .)))
+
+root(ROOT-0, like-5)
+nsubj(like-5, Elgar-1)
+dep(Elgar-1, I-2)
+aux(like-5, did-3)
+neg(like-5, n't-4)
+punct(like-5, --6)
+det(Dittersdorf-8, the-7)
+nsubj(amusing-10, Dittersdorf-8)
+cop(amusing-10, was-9)
+parataxis(like-5, amusing-10)
+punct(like-5, .-11)
+
+Sentence #10 (4 tokens):
+Back by 6.15.
+[Text=Back CharacterOffsetBegin=332 CharacterOffsetEnd=336 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=337 CharacterOffsetEnd=339 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=6.15 CharacterOffsetBegin=340 CharacterOffsetEnd=344 PartOfSpeech=CD Lemma=6.15 NamedEntityTag=NUMBER NormalizedNamedEntityTag=6.15]
+[Text=. CharacterOffsetBegin=344 CharacterOffsetEnd=345 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (ADVP (RB Back)
+      (PP (IN by)
+        (NP (CD 6.15))))
+    (. .)))
+
+root(ROOT-0, Back-1)
+case(6.15-3, by-2)
+nmod:by(Back-1, 6.15-3)
+punct(Back-1, .-4)
+
+Coreference set:
+	(2,7,[7,8]) -> (1,1,[1,2]), that is: "her" -> "Mum"
+	(2,14,[14,21]) -> (1,1,[1,2]), that is: "I with John Nicholson in his car" -> "Mum"
+Coreference set:
+	(9,2,[2,3]) -> (1,3,[3,4]), that is: "I" -> "I"
+Coreference set:
+	(2,20,[19,21]) -> (2,8,[7,9]), that is: "his car" -> "her car"
+Coreference set:
+	(6,4,[4,5]) -> (9,8,[7,9]), that is: "Dittersdorf" -> "the Dittersdorf"
+Coreference set:
+	(9,1,[1,3]) -> (6,7,[7,8]), that is: "Elgar I" -> "Elgar"

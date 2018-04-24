@@ -1,0 +1,249 @@
+Sentence #1 (6 tokens):
+Randy’s playing was incredible.
+[Text=Randy CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Randy NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=incredible CharacterOffsetBegin=25 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=incredible NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP Randy) (POS 's))
+      (NN playing))
+    (VP (VBD was)
+      (ADJP (JJ incredible)))
+    (. .)))
+
+root(ROOT-0, incredible-5)
+nmod:poss(playing-3, Randy-1)
+case(Randy-1, 's-2)
+nsubj(incredible-5, playing-3)
+cop(incredible-5, was-4)
+punct(incredible-5, .-6)
+
+Sentence #2 (12 tokens):
+I didn’t realize he’d held back at the rehearsals.
+[Text=I CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=realize CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=VB Lemma=realize NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='d CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=held CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=VBN Lemma=hold NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rehearsals CharacterOffsetBegin=76 CharacterOffsetEnd=86 PartOfSpeech=NNS Lemma=rehearsal NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD did) (RB n't)
+      (VP (VB realize)
+        (SBAR
+          (S
+            (NP (PRP he))
+            (VP (MD 'd)
+              (VP (VBN held)
+                (ADVP (RB back))
+                (PP (IN at)
+                  (NP (DT the) (NNS rehearsals)))))))))
+    (. .)))
+
+root(ROOT-0, realize-4)
+nsubj(realize-4, I-1)
+aux(realize-4, did-2)
+neg(realize-4, n't-3)
+nsubj(held-7, he-5)
+aux(held-7, 'd-6)
+ccomp(realize-4, held-7)
+advmod(held-7, back-8)
+case(rehearsals-11, at-9)
+det(rehearsals-11, the-10)
+nmod:at(held-7, rehearsals-11)
+punct(realize-4, .-12)
+
+Sentence #3 (11 tokens):
+His big sound, range, and jazz were overwhelming.
+[Text=His CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=sound CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=sound NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=range CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=range NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=jazz CharacterOffsetBegin=114 CharacterOffsetEnd=118 PartOfSpeech=NN Lemma=jazz NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=119 CharacterOffsetEnd=123 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=overwhelming CharacterOffsetBegin=124 CharacterOffsetEnd=136 PartOfSpeech=JJ Lemma=overwhelming NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ His) (JJ big) (NN sound))
+      (, ,)
+      (NP (NN range))
+      (, ,)
+      (CC and)
+      (NP (NN jazz)))
+    (VP (VBD were)
+      (ADJP (JJ overwhelming)))
+    (. .)))
+
+root(ROOT-0, overwhelming-10)
+nmod:poss(sound-3, His-1)
+amod(sound-3, big-2)
+nsubj(overwhelming-10, sound-3)
+punct(sound-3, ,-4)
+conj:and(sound-3, range-5)
+nsubj(overwhelming-10, range-5)
+punct(sound-3, ,-6)
+cc(sound-3, and-7)
+conj:and(sound-3, jazz-8)
+nsubj(overwhelming-10, jazz-8)
+cop(overwhelming-10, were-9)
+punct(overwhelming-10, .-11)
+
+Sentence #4 (25 tokens):
+He played about eight choruses of “Groovin High,” slowly building in intensity until he reached a climax on the eighth chorus.
+[Text=He CharacterOffsetBegin=138 CharacterOffsetEnd=140 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=141 CharacterOffsetEnd=147 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=148 CharacterOffsetEnd=153 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=eight CharacterOffsetBegin=154 CharacterOffsetEnd=159 PartOfSpeech=CD Lemma=eight NamedEntityTag=NUMBER NormalizedNamedEntityTag=~8.0]
+[Text=choruses CharacterOffsetBegin=160 CharacterOffsetEnd=168 PartOfSpeech=NNS Lemma=chorus NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=169 CharacterOffsetEnd=171 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=172 CharacterOffsetEnd=173 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Groovin CharacterOffsetBegin=173 CharacterOffsetEnd=180 PartOfSpeech=NNP Lemma=Groovin NamedEntityTag=O]
+[Text=High CharacterOffsetBegin=181 CharacterOffsetEnd=185 PartOfSpeech=NNP Lemma=High NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=185 CharacterOffsetEnd=186 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=186 CharacterOffsetEnd=187 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=slowly CharacterOffsetBegin=188 CharacterOffsetEnd=194 PartOfSpeech=RB Lemma=slowly NamedEntityTag=O]
+[Text=building CharacterOffsetBegin=195 CharacterOffsetEnd=203 PartOfSpeech=VBG Lemma=build NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=204 CharacterOffsetEnd=206 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=intensity CharacterOffsetBegin=207 CharacterOffsetEnd=216 PartOfSpeech=NN Lemma=intensity NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=217 CharacterOffsetEnd=222 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=223 CharacterOffsetEnd=225 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=reached CharacterOffsetBegin=226 CharacterOffsetEnd=233 PartOfSpeech=VBD Lemma=reach NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=234 CharacterOffsetEnd=235 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=climax CharacterOffsetBegin=236 CharacterOffsetEnd=242 PartOfSpeech=NN Lemma=climax NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=243 CharacterOffsetEnd=245 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=246 CharacterOffsetEnd=249 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=eighth CharacterOffsetBegin=250 CharacterOffsetEnd=256 PartOfSpeech=JJ Lemma=eighth NamedEntityTag=ORDINAL NormalizedNamedEntityTag=8.0]
+[Text=chorus CharacterOffsetBegin=257 CharacterOffsetEnd=263 PartOfSpeech=NN Lemma=chorus NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=263 CharacterOffsetEnd=264 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD played)
+      (PP (IN about)
+        (NP
+          (NP (CD eight) (NNS choruses))
+          (PP (IN of)
+            (NP (`` ``)
+              (NP (NNP Groovin) (NNP High))
+              (, ,) ('' '')
+              (VP
+                (ADVP (RB slowly))
+                (VBG building)
+                (PP (IN in)
+                  (NP (NN intensity))))))))
+      (SBAR (IN until)
+        (S
+          (NP (PRP he))
+          (VP (VBD reached)
+            (NP (DT a) (NN climax))
+            (PP (IN on)
+              (NP (DT the) (JJ eighth) (NN chorus)))))))
+    (. .)))
+
+root(ROOT-0, played-2)
+nsubj(played-2, He-1)
+case(choruses-5, about-3)
+nummod(choruses-5, eight-4)
+nmod:about(played-2, choruses-5)
+case(High-9, of-6)
+punct(High-9, ``-7)
+compound(High-9, Groovin-8)
+nmod:of(choruses-5, High-9)
+punct(High-9, ,-10)
+punct(High-9, ''-11)
+advmod(building-13, slowly-12)
+acl(High-9, building-13)
+case(intensity-15, in-14)
+nmod:in(building-13, intensity-15)
+mark(reached-18, until-16)
+nsubj(reached-18, he-17)
+advcl:until(played-2, reached-18)
+det(climax-20, a-19)
+dobj(reached-18, climax-20)
+case(chorus-24, on-21)
+det(chorus-24, the-22)
+amod(chorus-24, eighth-23)
+nmod:on(reached-18, chorus-24)
+punct(played-2, .-25)
+
+Sentence #5 (15 tokens):
+I never got tired of listening to him and he greatly influenced my playing.
+[Text=I CharacterOffsetBegin=265 CharacterOffsetEnd=266 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=267 CharacterOffsetEnd=272 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=273 CharacterOffsetEnd=276 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=tired CharacterOffsetBegin=277 CharacterOffsetEnd=282 PartOfSpeech=VBN Lemma=tire NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=283 CharacterOffsetEnd=285 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=listening CharacterOffsetBegin=286 CharacterOffsetEnd=295 PartOfSpeech=VBG Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=296 CharacterOffsetEnd=298 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=299 CharacterOffsetEnd=302 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=303 CharacterOffsetEnd=306 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=307 CharacterOffsetEnd=309 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=greatly CharacterOffsetBegin=310 CharacterOffsetEnd=317 PartOfSpeech=RB Lemma=greatly NamedEntityTag=O]
+[Text=influenced CharacterOffsetBegin=318 CharacterOffsetEnd=328 PartOfSpeech=VBD Lemma=influence NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=329 CharacterOffsetEnd=331 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=332 CharacterOffsetEnd=339 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=339 CharacterOffsetEnd=340 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (ADVP (RB never))
+      (VP (VBD got)
+        (ADJP (VBN tired)
+          (PP (IN of)
+            (S
+              (VP (VBG listening)
+                (PP (TO to)
+                  (NP (PRP him)))))))))
+    (CC and)
+    (S
+      (NP (PRP he))
+      (ADVP (RB greatly))
+      (VP (VBD influenced)
+        (NP (PRP$ my) (NN playing))))
+    (. .)))
+
+root(ROOT-0, got-3)
+nsubj(got-3, I-1)
+neg(got-3, never-2)
+xcomp(got-3, tired-4)
+mark(listening-6, of-5)
+advcl:of(tired-4, listening-6)
+case(him-8, to-7)
+nmod:to(listening-6, him-8)
+cc(got-3, and-9)
+nsubj(influenced-12, he-10)
+advmod(influenced-12, greatly-11)
+conj:and(got-3, influenced-12)
+nmod:poss(playing-14, my-13)
+dobj(influenced-12, playing-14)
+punct(got-3, .-15)
+
+Coreference set:
+	(2,5,[5,6]) -> (1,1,[1,3]), that is: "he" -> "Randy 's"
+	(3,1,[1,2]) -> (1,1,[1,3]), that is: "His" -> "Randy 's"
+	(4,1,[1,2]) -> (1,1,[1,3]), that is: "He" -> "Randy 's"
+	(4,17,[17,18]) -> (1,1,[1,3]), that is: "he" -> "Randy 's"
+	(5,8,[8,9]) -> (1,1,[1,3]), that is: "him" -> "Randy 's"
+	(5,10,[10,11]) -> (1,1,[1,3]), that is: "he" -> "Randy 's"
+Coreference set:
+	(5,14,[13,15]) -> (1,3,[1,4]), that is: "my playing" -> "Randy 's playing"
+Coreference set:
+	(5,1,[1,2]) -> (2,1,[1,2]), that is: "I" -> "I"
+	(5,13,[13,14]) -> (2,1,[1,2]), that is: "my" -> "I"

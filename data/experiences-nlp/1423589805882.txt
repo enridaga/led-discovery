@@ -1,0 +1,300 @@
+Sentence #1 (10 tokens):
+I knew I was surrounded by first class musicians.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=knew CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBD Lemma=know NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=surrounded CharacterOffsetBegin=13 CharacterOffsetEnd=23 PartOfSpeech=VBN Lemma=surround NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=class CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=class NamedEntityTag=O]
+[Text=musicians CharacterOffsetBegin=39 CharacterOffsetEnd=48 PartOfSpeech=NNS Lemma=musician NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD knew)
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBD was)
+            (VP (VBN surrounded)
+              (PP (IN by)
+                (NP (JJ first) (NN class) (NNS musicians))))))))
+    (. .)))
+
+root(ROOT-0, knew-2)
+nsubj(knew-2, I-1)
+nsubjpass(surrounded-5, I-3)
+auxpass(surrounded-5, was-4)
+ccomp(knew-2, surrounded-5)
+case(musicians-9, by-6)
+amod(musicians-9, first-7)
+compound(musicians-9, class-8)
+nmod:agent(surrounded-5, musicians-9)
+punct(knew-2, .-10)
+
+Sentence #2 (16 tokens):
+Like myself, they'd been classically trained and had years of big band experience.
+[Text=Like CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=myself CharacterOffsetBegin=55 CharacterOffsetEnd=61 PartOfSpeech=PRP Lemma=myself NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text='d CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=classically CharacterOffsetBegin=75 CharacterOffsetEnd=86 PartOfSpeech=RB Lemma=classically NamedEntityTag=O]
+[Text=trained CharacterOffsetBegin=87 CharacterOffsetEnd=94 PartOfSpeech=VBN Lemma=train NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=years CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=PXY Timex=<TIMEX3 tid="t1" type="DURATION" value="PXY">years</TIMEX3>]
+[Text=of CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=band CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=band NamedEntityTag=O]
+[Text=experience CharacterOffsetBegin=121 CharacterOffsetEnd=131 PartOfSpeech=NN Lemma=experience NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN Like)
+      (NP (PRP myself)))
+    (, ,)
+    (NP (PRP they))
+    (VP (MD 'd)
+      (VP (VBN been)
+        (VP
+          (VP
+            (ADVP (RB classically))
+            (VBN trained))
+          (CC and)
+          (VP (VBD had)
+            (NP
+              (NP (NNS years))
+              (PP (IN of)
+                (NP (JJ big) (NN band) (NN experience))))))))
+    (. .)))
+
+root(ROOT-0, trained-8)
+case(myself-2, Like-1)
+nmod:like(trained-8, myself-2)
+punct(trained-8, ,-3)
+nsubjpass(trained-8, they-4)
+nsubjpass(had-10, they-4)
+aux(trained-8, 'd-5)
+auxpass(trained-8, been-6)
+advmod(trained-8, classically-7)
+cc(trained-8, and-9)
+conj:and(trained-8, had-10)
+dobj(had-10, years-11)
+case(experience-15, of-12)
+amod(experience-15, big-13)
+compound(experience-15, band-14)
+nmod:of(years-11, experience-15)
+punct(trained-8, .-16)
+
+Sentence #3 (10 tokens):
+A few of them were also great jazz players.
+[Text=A CharacterOffsetBegin=133 CharacterOffsetEnd=134 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=few CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=JJ Lemma=few NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=139 CharacterOffsetEnd=141 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=147 CharacterOffsetEnd=151 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=152 CharacterOffsetEnd=156 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=157 CharacterOffsetEnd=162 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=jazz CharacterOffsetBegin=163 CharacterOffsetEnd=167 PartOfSpeech=NN Lemma=jazz NamedEntityTag=O]
+[Text=players CharacterOffsetBegin=168 CharacterOffsetEnd=175 PartOfSpeech=NNS Lemma=player NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=175 CharacterOffsetEnd=176 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (JJ few))
+      (PP (IN of)
+        (NP (PRP them))))
+    (VP (VBD were)
+      (ADVP (RB also))
+      (NP (JJ great) (NN jazz) (NNS players)))
+    (. .)))
+
+root(ROOT-0, players-9)
+det(few-2, A-1)
+nsubj(players-9, few-2)
+case(them-4, of-3)
+nmod:of(few-2, them-4)
+cop(players-9, were-5)
+advmod(players-9, also-6)
+amod(players-9, great-7)
+compound(players-9, jazz-8)
+punct(players-9, .-10)
+
+Sentence #4 (17 tokens):
+Fred [Waring] had the new singers perform their audition material before the entire group.
+[Text=Fred CharacterOffsetBegin=177 CharacterOffsetEnd=181 PartOfSpeech=NNP Lemma=Fred NamedEntityTag=PERSON]
+[Text=-LSB- CharacterOffsetBegin=182 CharacterOffsetEnd=183 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=PERSON]
+[Text=Waring CharacterOffsetBegin=183 CharacterOffsetEnd=189 PartOfSpeech=NNP Lemma=Waring NamedEntityTag=PERSON]
+[Text=-RSB- CharacterOffsetBegin=189 CharacterOffsetEnd=190 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=191 CharacterOffsetEnd=194 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=singers CharacterOffsetBegin=203 CharacterOffsetEnd=210 PartOfSpeech=NNS Lemma=singer NamedEntityTag=O]
+[Text=perform CharacterOffsetBegin=211 CharacterOffsetEnd=218 PartOfSpeech=VBP Lemma=perform NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=219 CharacterOffsetEnd=224 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=audition CharacterOffsetBegin=225 CharacterOffsetEnd=233 PartOfSpeech=NN Lemma=audition NamedEntityTag=O]
+[Text=material CharacterOffsetBegin=234 CharacterOffsetEnd=242 PartOfSpeech=NN Lemma=material NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=243 CharacterOffsetEnd=249 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=250 CharacterOffsetEnd=253 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=entire CharacterOffsetBegin=254 CharacterOffsetEnd=260 PartOfSpeech=JJ Lemma=entire NamedEntityTag=O]
+[Text=group CharacterOffsetBegin=261 CharacterOffsetEnd=266 PartOfSpeech=NN Lemma=group NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=266 CharacterOffsetEnd=267 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Fred) (-LRB- -LSB-) (NNP Waring) (-RRB- -RSB-))
+    (VP (VBD had)
+      (NP
+        (NP (DT the) (JJ new) (NNS singers))
+        (SBAR
+          (S
+            (VP (VBP perform)
+              (NP (PRP$ their) (NN audition) (NN material))
+              (PP (IN before)
+                (NP (DT the) (JJ entire) (NN group))))))))
+    (. .)))
+
+root(ROOT-0, had-5)
+compound(Waring-3, Fred-1)
+punct(Waring-3, -LSB--2)
+nsubj(had-5, Waring-3)
+punct(Waring-3, -RSB--4)
+det(singers-8, the-6)
+amod(singers-8, new-7)
+dobj(had-5, singers-8)
+acl:relcl(singers-8, perform-9)
+nmod:poss(material-12, their-10)
+compound(material-12, audition-11)
+dobj(perform-9, material-12)
+case(group-16, before-13)
+det(group-16, the-14)
+amod(group-16, entire-15)
+nmod:before(perform-9, group-16)
+punct(had-5, .-17)
+
+Sentence #5 (8 tokens):
+It was scary but they did beautifully.
+[Text=It CharacterOffsetBegin=268 CharacterOffsetEnd=270 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=271 CharacterOffsetEnd=274 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=scary CharacterOffsetBegin=275 CharacterOffsetEnd=280 PartOfSpeech=JJ Lemma=scary NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=281 CharacterOffsetEnd=284 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=285 CharacterOffsetEnd=289 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=290 CharacterOffsetEnd=293 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=beautifully CharacterOffsetBegin=294 CharacterOffsetEnd=305 PartOfSpeech=RB Lemma=beautifully NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=305 CharacterOffsetEnd=306 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBD was)
+        (ADJP (JJ scary))))
+    (CC but)
+    (S
+      (NP (PRP they))
+      (VP (VBD did)
+        (ADVP (RB beautifully))))
+    (. .)))
+
+root(ROOT-0, scary-3)
+nsubj(scary-3, It-1)
+cop(scary-3, was-2)
+cc(scary-3, but-4)
+nsubj(did-6, they-5)
+conj:but(scary-3, did-6)
+advmod(did-6, beautifully-7)
+punct(scary-3, .-8)
+
+Sentence #6 (7 tokens):
+Naturally, they were all talented.
+[Text=Naturally CharacterOffsetBegin=307 CharacterOffsetEnd=316 PartOfSpeech=RB Lemma=naturally NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=316 CharacterOffsetEnd=317 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=318 CharacterOffsetEnd=322 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=323 CharacterOffsetEnd=327 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=328 CharacterOffsetEnd=331 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=talented CharacterOffsetBegin=332 CharacterOffsetEnd=340 PartOfSpeech=JJ Lemma=talented NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=340 CharacterOffsetEnd=341 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Naturally))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBD were)
+      (ADJP (DT all) (JJ talented)))
+    (. .)))
+
+root(ROOT-0, talented-6)
+advmod(talented-6, Naturally-1)
+punct(talented-6, ,-2)
+nsubj(talented-6, they-3)
+cop(talented-6, were-4)
+det(talented-6, all-5)
+punct(talented-6, .-7)
+
+Sentence #7 (15 tokens):
+Almost every member of the choir was a graduate of Eastman School of Music.
+[Text=Almost CharacterOffsetBegin=342 CharacterOffsetEnd=348 PartOfSpeech=RB Lemma=almost NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=349 CharacterOffsetEnd=354 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=member CharacterOffsetBegin=355 CharacterOffsetEnd=361 PartOfSpeech=NN Lemma=member NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=362 CharacterOffsetEnd=364 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=365 CharacterOffsetEnd=368 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=choir CharacterOffsetBegin=369 CharacterOffsetEnd=374 PartOfSpeech=NN Lemma=choir NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=375 CharacterOffsetEnd=378 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=379 CharacterOffsetEnd=380 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=graduate CharacterOffsetBegin=381 CharacterOffsetEnd=389 PartOfSpeech=NN Lemma=graduate NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=390 CharacterOffsetEnd=392 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Eastman CharacterOffsetBegin=393 CharacterOffsetEnd=400 PartOfSpeech=NNP Lemma=Eastman NamedEntityTag=ORGANIZATION]
+[Text=School CharacterOffsetBegin=401 CharacterOffsetEnd=407 PartOfSpeech=NNP Lemma=School NamedEntityTag=ORGANIZATION]
+[Text=of CharacterOffsetBegin=408 CharacterOffsetEnd=410 PartOfSpeech=IN Lemma=of NamedEntityTag=ORGANIZATION]
+[Text=Music CharacterOffsetBegin=411 CharacterOffsetEnd=416 PartOfSpeech=NNP Lemma=Music NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=416 CharacterOffsetEnd=417 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (RB Almost) (DT every) (NN member))
+      (PP (IN of)
+        (NP (DT the) (NN choir))))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN graduate))
+        (PP (IN of)
+          (NP
+            (NP (NNP Eastman) (NNP School))
+            (PP (IN of)
+              (NP (NNP Music)))))))
+    (. .)))
+
+root(ROOT-0, graduate-9)
+advmod(member-3, Almost-1)
+det(member-3, every-2)
+nsubj(graduate-9, member-3)
+case(choir-6, of-4)
+det(choir-6, the-5)
+nmod:of(member-3, choir-6)
+cop(graduate-9, was-7)
+det(graduate-9, a-8)
+case(School-12, of-10)
+compound(School-12, Eastman-11)
+nmod:of(graduate-9, School-12)
+case(Music-14, of-13)
+nmod:of(School-12, Music-14)
+punct(graduate-9, .-15)
+
+Coreference set:
+	(1,3,[3,4]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(2,2,[2,3]) -> (1,1,[1,2]), that is: "myself" -> "I"
+Coreference set:
+	(2,4,[4,5]) -> (1,9,[7,10]), that is: "they" -> "first class musicians"
+	(3,4,[4,5]) -> (1,9,[7,10]), that is: "them" -> "first class musicians"
+Coreference set:
+	(7,9,[8,15]) -> (7,3,[1,7]), that is: "a graduate of Eastman School of Music" -> "Almost every member of the choir"
+Coreference set:
+	(3,2,[1,5]) -> (3,9,[7,10]), that is: "A few of them" -> "great jazz players"
+	(4,10,[10,11]) -> (3,9,[7,10]), that is: "their" -> "great jazz players"
+Coreference set:
+	(5,5,[5,6]) -> (4,8,[6,17]), that is: "they" -> "the new singers perform their audition material before the entire group"
+	(6,3,[3,4]) -> (4,8,[6,17]), that is: "they" -> "the new singers perform their audition material before the entire group"
+Coreference set:
+	(5,1,[1,2]) -> (4,12,[10,13]), that is: "It" -> "their audition material"

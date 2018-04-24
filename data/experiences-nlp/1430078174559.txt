@@ -1,0 +1,356 @@
+Sentence #1 (16 tokens):
+Molique arrived towards four o'clock and accompanied me in the evening to the Concert Hall.
+[Text=Molique CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Molique NamedEntityTag=PERSON]
+[Text=arrived CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=VBD Lemma=arrive NamedEntityTag=O]
+[Text=towards CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=towards NamedEntityTag=O]
+[Text=four CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=CD Lemma=four NamedEntityTag=TIME NormalizedNamedEntityTag=T04:00 Timex=<TIMEX3 tid="t1" type="TIME" value="T04:00">four o'clock</TIMEX3>]
+[Text=o'clock CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=RB Lemma=o'clock NamedEntityTag=TIME NormalizedNamedEntityTag=T04:00 Timex=<TIMEX3 tid="t1" type="TIME" value="T04:00">four o'clock</TIMEX3>]
+[Text=and CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=accompanied CharacterOffsetBegin=41 CharacterOffsetEnd=52 PartOfSpeech=VBN Lemma=accompany NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t2" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=to CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Concert CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Concert NamedEntityTag=O]
+[Text=Hall CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=Hall NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Molique))
+    (VP
+      (VP (VBD arrived)
+        (PP (IN towards)
+          (NP (CD four) (RB o'clock))))
+      (CC and)
+      (VP (VBN accompanied)
+        (NP (PRP me))
+        (PP (IN in)
+          (NP (DT the) (NN evening)))
+        (PP (TO to)
+          (NP (DT the) (NNP Concert) (NNP Hall)))))
+    (. .)))
+
+root(ROOT-0, arrived-2)
+nsubj(arrived-2, Molique-1)
+nsubj(accompanied-7, Molique-1)
+case(four-4, towards-3)
+nmod:towards(arrived-2, four-4)
+advmod(four-4, o'clock-5)
+cc(arrived-2, and-6)
+conj:and(arrived-2, accompanied-7)
+dobj(accompanied-7, me-8)
+case(evening-11, in-9)
+det(evening-11, the-10)
+nmod:in(accompanied-7, evening-11)
+case(Hall-15, to-12)
+det(Hall-15, the-13)
+compound(Hall-15, Concert-14)
+nmod:to(accompanied-7, Hall-15)
+punct(arrived-2, .-16)
+
+Sentence #2 (14 tokens):
+His presence fired the violinists, and altogether the performance was not unsatisfactory.
+[Text=His CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=presence CharacterOffsetBegin=96 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=presence NamedEntityTag=O]
+[Text=fired CharacterOffsetBegin=105 CharacterOffsetEnd=110 PartOfSpeech=VBD Lemma=fire NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=violinists CharacterOffsetBegin=115 CharacterOffsetEnd=125 PartOfSpeech=NNS Lemma=violinist NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=altogether CharacterOffsetBegin=131 CharacterOffsetEnd=141 PartOfSpeech=RB Lemma=altogether NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=142 CharacterOffsetEnd=145 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=146 CharacterOffsetEnd=157 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=162 CharacterOffsetEnd=165 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=unsatisfactory CharacterOffsetBegin=166 CharacterOffsetEnd=180 PartOfSpeech=JJ Lemma=unsatisfactory NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP$ His) (NN presence))
+      (VP (VBD fired)
+        (NP (DT the) (NNS violinists))))
+    (, ,)
+    (CC and)
+    (S
+      (ADVP (RB altogether))
+      (NP (DT the) (NN performance))
+      (VP (VBD was) (RB not)
+        (ADJP (JJ unsatisfactory))))
+    (. .)))
+
+root(ROOT-0, fired-3)
+nmod:poss(presence-2, His-1)
+nsubj(fired-3, presence-2)
+det(violinists-5, the-4)
+dobj(fired-3, violinists-5)
+punct(fired-3, ,-6)
+cc(fired-3, and-7)
+advmod(unsatisfactory-13, altogether-8)
+det(performance-10, the-9)
+nsubj(unsatisfactory-13, performance-10)
+cop(unsatisfactory-13, was-11)
+neg(unsatisfactory-13, not-12)
+conj:and(fired-3, unsatisfactory-13)
+punct(fired-3, .-14)
+
+Sentence #3 (26 tokens):
+The effect of the whole was marred by the laughable figure and manners of the singer, which were not redeemed by any artistic qualities.
+[Text=The CharacterOffsetBegin=182 CharacterOffsetEnd=185 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=effect CharacterOffsetBegin=186 CharacterOffsetEnd=192 PartOfSpeech=NN Lemma=effect NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=193 CharacterOffsetEnd=195 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=196 CharacterOffsetEnd=199 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=200 CharacterOffsetEnd=205 PartOfSpeech=NN Lemma=whole NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=206 CharacterOffsetEnd=209 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=marred CharacterOffsetBegin=210 CharacterOffsetEnd=216 PartOfSpeech=VBN Lemma=mar NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=217 CharacterOffsetEnd=219 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=laughable CharacterOffsetBegin=224 CharacterOffsetEnd=233 PartOfSpeech=JJ Lemma=laughable NamedEntityTag=O]
+[Text=figure CharacterOffsetBegin=234 CharacterOffsetEnd=240 PartOfSpeech=NN Lemma=figure NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=241 CharacterOffsetEnd=244 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=manners CharacterOffsetBegin=245 CharacterOffsetEnd=252 PartOfSpeech=NNS Lemma=manners NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=253 CharacterOffsetEnd=255 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=256 CharacterOffsetEnd=259 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=singer CharacterOffsetBegin=260 CharacterOffsetEnd=266 PartOfSpeech=NN Lemma=singer NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=266 CharacterOffsetEnd=267 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=268 CharacterOffsetEnd=273 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=274 CharacterOffsetEnd=278 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=redeemed CharacterOffsetBegin=283 CharacterOffsetEnd=291 PartOfSpeech=VBN Lemma=redeem NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=292 CharacterOffsetEnd=294 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=295 CharacterOffsetEnd=298 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=artistic CharacterOffsetBegin=299 CharacterOffsetEnd=307 PartOfSpeech=JJ Lemma=artistic NamedEntityTag=O]
+[Text=qualities CharacterOffsetBegin=308 CharacterOffsetEnd=317 PartOfSpeech=NNS Lemma=quality NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=317 CharacterOffsetEnd=318 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN effect))
+      (PP (IN of)
+        (NP (DT the) (NN whole))))
+    (VP (VBD was)
+      (VP (VBN marred)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (JJ laughable) (NN figure))
+            (CC and)
+            (NP
+              (NP (NNS manners))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NN singer))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBD were) (RB not)
+                        (VP (VBN redeemed)
+                          (PP (IN by)
+                            (NP (DT any) (JJ artistic) (NNS qualities))))))))))))))
+    (. .)))
+
+root(ROOT-0, marred-7)
+det(effect-2, The-1)
+nsubjpass(marred-7, effect-2)
+case(whole-5, of-3)
+det(whole-5, the-4)
+nmod:of(effect-2, whole-5)
+auxpass(marred-7, was-6)
+case(figure-11, by-8)
+det(figure-11, the-9)
+amod(figure-11, laughable-10)
+nmod:agent(marred-7, figure-11)
+cc(figure-11, and-12)
+nmod:agent(marred-7, manners-13)
+conj:and(figure-11, manners-13)
+case(singer-16, of-14)
+det(singer-16, the-15)
+nmod:of(manners-13, singer-16)
+nsubjpass(redeemed-21, singer-16)
+punct(singer-16, ,-17)
+ref(singer-16, which-18)
+auxpass(redeemed-21, were-19)
+neg(redeemed-21, not-20)
+acl:relcl(singer-16, redeemed-21)
+case(qualities-25, by-22)
+det(qualities-25, any-23)
+amod(qualities-25, artistic-24)
+nmod:agent(redeemed-21, qualities-25)
+punct(marred-7, .-26)
+
+Sentence #4 (17 tokens):
+A clarinet concerto in A by Mozart was capitally played by our excellent clarinetist, Grosse.
+[Text=A CharacterOffsetBegin=319 CharacterOffsetEnd=320 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=clarinet CharacterOffsetBegin=321 CharacterOffsetEnd=329 PartOfSpeech=NN Lemma=clarinet NamedEntityTag=O]
+[Text=concerto CharacterOffsetBegin=330 CharacterOffsetEnd=338 PartOfSpeech=NN Lemma=concerto NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=339 CharacterOffsetEnd=341 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=342 CharacterOffsetEnd=343 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=344 CharacterOffsetEnd=346 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Mozart CharacterOffsetBegin=347 CharacterOffsetEnd=353 PartOfSpeech=NNP Lemma=Mozart NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=354 CharacterOffsetEnd=357 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=capitally CharacterOffsetBegin=358 CharacterOffsetEnd=367 PartOfSpeech=RB Lemma=capitally NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=368 CharacterOffsetEnd=374 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=375 CharacterOffsetEnd=377 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=378 CharacterOffsetEnd=381 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=excellent CharacterOffsetBegin=382 CharacterOffsetEnd=391 PartOfSpeech=JJ Lemma=excellent NamedEntityTag=O]
+[Text=clarinetist CharacterOffsetBegin=392 CharacterOffsetEnd=403 PartOfSpeech=NN Lemma=clarinetist NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=403 CharacterOffsetEnd=404 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Grosse CharacterOffsetBegin=405 CharacterOffsetEnd=411 PartOfSpeech=NNP Lemma=Grosse NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=411 CharacterOffsetEnd=412 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT A) (NN clarinet) (NN concerto))
+        (ADJP
+          (ADVP (IN in))
+          (DT A)))
+      (PP (IN by)
+        (NP (NNP Mozart))))
+    (VP (VBD was)
+      (ADVP (RB capitally))
+      (VP (VBN played)
+        (PP (IN by)
+          (NP
+            (NP (PRP$ our) (JJ excellent) (NN clarinetist))
+            (, ,)
+            (NP (NNP Grosse))))))
+    (. .)))
+
+root(ROOT-0, played-10)
+det(concerto-3, A-1)
+compound(concerto-3, clarinet-2)
+nsubjpass(played-10, concerto-3)
+advmod(A-5, in-4)
+amod(concerto-3, A-5)
+case(Mozart-7, by-6)
+nmod:by(concerto-3, Mozart-7)
+auxpass(played-10, was-8)
+advmod(played-10, capitally-9)
+case(clarinetist-14, by-11)
+nmod:poss(clarinetist-14, our-12)
+amod(clarinetist-14, excellent-13)
+nmod:agent(played-10, clarinetist-14)
+punct(clarinetist-14, ,-15)
+appos(clarinetist-14, Grosse-16)
+punct(played-10, .-17)
+
+Sentence #5 (35 tokens):
+The composition, although by Mozart, is such a grandfatherly production and so lengthy that the finale had to be left out, not to try the patience of the public beyond endurance.
+[Text=The CharacterOffsetBegin=413 CharacterOffsetEnd=416 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=composition CharacterOffsetBegin=417 CharacterOffsetEnd=428 PartOfSpeech=NN Lemma=composition NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=428 CharacterOffsetEnd=429 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=although CharacterOffsetBegin=430 CharacterOffsetEnd=438 PartOfSpeech=IN Lemma=although NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=439 CharacterOffsetEnd=441 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Mozart CharacterOffsetBegin=442 CharacterOffsetEnd=448 PartOfSpeech=NNP Lemma=Mozart NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=448 CharacterOffsetEnd=449 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=450 CharacterOffsetEnd=452 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=453 CharacterOffsetEnd=457 PartOfSpeech=JJ Lemma=such NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=458 CharacterOffsetEnd=459 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=grandfatherly CharacterOffsetBegin=460 CharacterOffsetEnd=473 PartOfSpeech=JJ Lemma=grandfatherly NamedEntityTag=O]
+[Text=production CharacterOffsetBegin=474 CharacterOffsetEnd=484 PartOfSpeech=NN Lemma=production NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=485 CharacterOffsetEnd=488 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=489 CharacterOffsetEnd=491 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=lengthy CharacterOffsetBegin=492 CharacterOffsetEnd=499 PartOfSpeech=JJ Lemma=lengthy NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=500 CharacterOffsetEnd=504 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=505 CharacterOffsetEnd=508 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=finale CharacterOffsetBegin=509 CharacterOffsetEnd=515 PartOfSpeech=NN Lemma=finale NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=516 CharacterOffsetEnd=519 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=520 CharacterOffsetEnd=522 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=523 CharacterOffsetEnd=525 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=526 CharacterOffsetEnd=530 PartOfSpeech=VBN Lemma=leave NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=531 CharacterOffsetEnd=534 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=534 CharacterOffsetEnd=535 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=536 CharacterOffsetEnd=539 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=540 CharacterOffsetEnd=542 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=try CharacterOffsetBegin=543 CharacterOffsetEnd=546 PartOfSpeech=VB Lemma=try NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=547 CharacterOffsetEnd=550 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=patience CharacterOffsetBegin=551 CharacterOffsetEnd=559 PartOfSpeech=NN Lemma=patience NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=560 CharacterOffsetEnd=562 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=563 CharacterOffsetEnd=566 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=public CharacterOffsetBegin=567 CharacterOffsetEnd=573 PartOfSpeech=JJ Lemma=public NamedEntityTag=O]
+[Text=beyond CharacterOffsetBegin=574 CharacterOffsetEnd=580 PartOfSpeech=IN Lemma=beyond NamedEntityTag=O]
+[Text=endurance CharacterOffsetBegin=581 CharacterOffsetEnd=590 PartOfSpeech=JJ Lemma=endurance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=590 CharacterOffsetEnd=591 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NN composition))
+    (, ,)
+    (SBAR (IN although)
+      (FRAG
+        (PP (IN by)
+          (NP (NNP Mozart)))))
+    (, ,)
+    (VP (VBZ is)
+      (PP (JJ such)
+        (NP
+          (NP (DT a) (JJ grandfatherly) (NN production))
+          (CC and)
+          (NP (RB so) (JJ lengthy))))
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN finale))
+          (VP (VBD had)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (VP (VBN left)
+                    (PRT (RP out))
+                    (, ,)
+                    (S (RB not)
+                      (VP (TO to)
+                        (VP (VB try)
+                          (NP
+                            (NP (DT the) (NN patience))
+                            (PP (IN of)
+                              (NP (DT the) (JJ public))))
+                          (PP (IN beyond)
+                            (NP (JJ endurance))))))))))))))
+    (. .)))
+
+root(ROOT-0, production-12)
+det(composition-2, The-1)
+nsubj(production-12, composition-2)
+nsubj(lengthy-15, composition-2)
+punct(production-12, ,-3)
+mark(Mozart-6, although-4)
+case(Mozart-6, by-5)
+dep(production-12, Mozart-6)
+punct(production-12, ,-7)
+cop(production-12, is-8)
+case(production-12, such-9)
+det(production-12, a-10)
+amod(production-12, grandfatherly-11)
+cc(production-12, and-13)
+advmod(lengthy-15, so-14)
+conj:and(production-12, lengthy-15)
+mark(had-19, that-16)
+det(finale-18, the-17)
+nsubj(had-19, finale-18)
+nsubjpass:xsubj(left-22, finale-18)
+ccomp(production-12, had-19)
+mark(left-22, to-20)
+auxpass(left-22, be-21)
+xcomp(had-19, left-22)
+compound:prt(left-22, out-23)
+punct(left-22, ,-24)
+neg(try-27, not-25)
+mark(try-27, to-26)
+xcomp(left-22, try-27)
+det(patience-29, the-28)
+dobj(try-27, patience-29)
+case(public-32, of-30)
+det(public-32, the-31)
+nmod:of(patience-29, public-32)
+case(endurance-34, beyond-33)
+nmod:beyond(try-27, endurance-34)
+punct(production-12, .-35)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,1,[1,2]), that is: "His" -> "Molique"
+Coreference set:
+	(5,6,[6,7]) -> (4,7,[7,8]), that is: "Mozart" -> "Mozart"
+Coreference set:
+	(4,14,[12,15]) -> (4,16,[16,17]), that is: "our excellent clarinetist" -> "Grosse"

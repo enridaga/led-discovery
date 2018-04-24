@@ -1,0 +1,139 @@
+Sentence #1 (13 tokens):
+Tomorrow night I am to hear some music at Prof. Hague’s.
+[Text=Tomorrow CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=tomorrow NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P1D INTERSECT NI Timex=<TIMEX3 alt_value="OFFSET P1D INTERSECT NI" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Tomorrow night</TIMEX3>]
+[Text=night CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=night NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P1D INTERSECT NI Timex=<TIMEX3 alt_value="OFFSET P1D INTERSECT NI" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Tomorrow night</TIMEX3>]
+[Text=I CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Prof. CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Prof. NamedEntityTag=LOCATION]
+[Text=Hague CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Hague NamedEntityTag=LOCATION]
+[Text='s CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (NN Tomorrow) (NN night))
+    (NP (PRP I))
+    (VP (VBP am)
+      (S
+        (VP (TO to)
+          (VP (VB hear)
+            (NP (DT some) (NN music))
+            (PP (IN at)
+              (NP (NNP Prof.) (NNP Hague) (POS 's)))))))
+    (. .)))
+
+root(ROOT-0, am-4)
+compound(night-2, Tomorrow-1)
+nmod:tmod(am-4, night-2)
+nsubj(am-4, I-3)
+nsubj:xsubj(hear-6, I-3)
+mark(hear-6, to-5)
+xcomp(am-4, hear-6)
+det(music-8, some-7)
+dobj(hear-6, music-8)
+case(Hague-11, at-9)
+compound(Hague-11, Prof.-10)
+nmod:'s(hear-6, Hague-11)
+case(Hague-11, 's-12)
+punct(am-4, .-13)
+
+Sentence #2 (4 tokens):
+This afternoon Danl.
+[Text=This CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=this NamedEntityTag=DATE NormalizedNamedEntityTag=THIS AF Timex=<TIMEX3 alt_value="THIS AF" anchorTimeID="t0" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf1">This afternoon</TIMEX3>]
+[Text=afternoon CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=DATE NormalizedNamedEntityTag=THIS AF Timex=<TIMEX3 alt_value="THIS AF" anchorTimeID="t0" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf1">This afternoon</TIMEX3>]
+[Text=Danl CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=danl NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (DT This) (NN afternoon))
+    (NP (NN Danl))
+    (. .)))
+
+root(ROOT-0, afternoon-2)
+det(afternoon-2, This-1)
+dep(afternoon-2, Danl-3)
+punct(afternoon-2, .-4)
+
+Sentence #3 (22 tokens):
+& I went to St. Mary’s & from thence I went to King’s Chapel & heard the new organ.
+[Text=& CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=St. CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=NNP Lemma=St. NamedEntityTag=ORGANIZATION]
+[Text=Mary CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=NNP Lemma=Mary NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=thence CharacterOffsetBegin=108 CharacterOffsetEnd=114 PartOfSpeech=RB Lemma=thence NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=117 CharacterOffsetEnd=121 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=122 CharacterOffsetEnd=124 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=King CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=NNP Lemma=King NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Chapel CharacterOffsetBegin=132 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=chapel NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=141 CharacterOffsetEnd=146 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=151 CharacterOffsetEnd=154 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=organ CharacterOffsetBegin=155 CharacterOffsetEnd=160 PartOfSpeech=NN Lemma=organ NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=160 CharacterOffsetEnd=161 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (CC &))
+    (PRN
+      (S
+        (NP (PRP I))
+        (VP (VBD went)
+          (PP (TO to)
+            (NP
+              (NP (NNP St.) (NNP Mary) (POS 's))
+              (SBAR
+                (S
+                  (NP (CC &))
+                  (PP (IN from)
+                    (ADVP (RB thence)))
+                  (NP (PRP I))
+                  (VP (VBD went)
+                    (PP (TO to)
+                      (NP
+                        (NP (NNP King) (POS 's))
+                        (NN Chapel)))))))))))
+    (NP (CC &))
+    (VP (VBD heard)
+      (NP (DT the) (JJ new) (NN organ)))
+    (. .)))
+
+root(ROOT-0, heard-18)
+nsubj(heard-18, &-1)
+nsubj(went-3, I-2)
+parataxis(heard-18, went-3)
+case(Mary-6, to-4)
+compound(Mary-6, St.-5)
+nmod:to(went-3, Mary-6)
+case(Mary-6, 's-7)
+nsubj(went-12, &-8)
+case(thence-10, from-9)
+advcl:from(went-12, thence-10)
+nsubj(went-12, I-11)
+acl:relcl(Mary-6, went-12)
+case(Chapel-16, to-13)
+nmod:poss(Chapel-16, King-14)
+case(King-14, 's-15)
+nmod:to(went-12, Chapel-16)
+nsubj(heard-18, &-17)
+det(organ-21, the-19)
+amod(organ-21, new-20)
+dobj(heard-18, organ-21)
+punct(heard-18, .-22)
+
+Coreference set:
+	(3,2,[2,3]) -> (1,3,[3,4]), that is: "I" -> "I"
+	(3,11,[11,12]) -> (1,3,[3,4]), that is: "I" -> "I"
+Coreference set:
+	(3,8,[8,9]) -> (3,1,[1,2]), that is: "&" -> "&"
+	(3,17,[17,18]) -> (3,1,[1,2]), that is: "&" -> "&"

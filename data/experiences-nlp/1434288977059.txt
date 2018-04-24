@@ -1,0 +1,88 @@
+Sentence #1 (23 tokens):
+Go up to Mornings with Aunt Q before lunch to get 2 records of Petrouchka, marvellous music - playing quite good.
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Mornings CharacterOffsetBegin=9 CharacterOffsetEnd=17 PartOfSpeech=NNS Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=TMO Timex=<TIMEX3 tid="t1" type="TIME" value="TMO">Mornings</TIMEX3>]
+[Text=with CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Aunt CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Aunt NamedEntityTag=O]
+[Text=Q CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Q NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=lunch CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=lunch NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=records CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=NNS Lemma=record NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Petrouchka CharacterOffsetBegin=63 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Petrouchka NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=marvellous CharacterOffsetBegin=75 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=marvellous NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=94 CharacterOffsetEnd=101 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=102 CharacterOffsetEnd=107 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=108 CharacterOffsetEnd=112 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PRT (RP up))
+      (PP (TO to)
+        (NP
+          (NP (NNS Mornings))
+          (PP (IN with)
+            (NP (NNP Aunt) (NNP Q)))))
+      (PP (IN before)
+        (NP (NN lunch)
+          (S
+            (VP (TO to)
+              (VP (VB get)
+                (NP
+                  (NP (CD 2) (NNS records))
+                  (PP (IN of)
+                    (NP
+                      (NP
+                        (NP (NNP Petrouchka))
+                        (, ,)
+                        (NP (JJ marvellous) (NN music))
+                        (: -))
+                      (VP (VBG playing)
+                        (ADJP (RB quite) (JJ good))))))))))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+compound:prt(Go-1, up-2)
+case(Mornings-4, to-3)
+nmod:to(Go-1, Mornings-4)
+case(Q-7, with-5)
+compound(Q-7, Aunt-6)
+nmod:with(Mornings-4, Q-7)
+case(lunch-9, before-8)
+nmod:before(Go-1, lunch-9)
+mark(get-11, to-10)
+acl:to(lunch-9, get-11)
+nummod(records-13, 2-12)
+dobj(get-11, records-13)
+case(Petrouchka-15, of-14)
+nmod:of(records-13, Petrouchka-15)
+punct(Petrouchka-15, ,-16)
+amod(music-18, marvellous-17)
+appos(Petrouchka-15, music-18)
+punct(Petrouchka-15, --19)
+acl(Petrouchka-15, playing-20)
+advmod(good-22, quite-21)
+xcomp(playing-20, good-22)
+punct(Go-1, .-23)
+
+Sentence #2 (3 tokens):
+L.S.O. Coates.
+[Text=L.S.O. CharacterOffsetBegin=114 CharacterOffsetEnd=120 PartOfSpeech=NNP Lemma=L.S.O. NamedEntityTag=PERSON]
+[Text=Coates CharacterOffsetBegin=121 CharacterOffsetEnd=127 PartOfSpeech=NNP Lemma=Coates NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (NNP L.S.O.) (NNP Coates) (. .)))
+
+root(ROOT-0, Coates-2)
+compound(Coates-2, L.S.O.-1)
+punct(Coates-2, .-3)
+

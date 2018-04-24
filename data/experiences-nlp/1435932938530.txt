@@ -1,0 +1,104 @@
+Sentence #1 (31 tokens):
+At the concert of the student composers I allow myself to criticise their works with the aplomb of Jaques Fath approaching Marie Laure during an intermission and adjusting her décolletage.
+[Text=At CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=student CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=student NamedEntityTag=O]
+[Text=composers CharacterOffsetBegin=30 CharacterOffsetEnd=39 PartOfSpeech=NNS Lemma=composer NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=allow CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=VBP Lemma=allow NamedEntityTag=O]
+[Text=myself CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=PRP Lemma=myself NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=criticise CharacterOffsetBegin=58 CharacterOffsetEnd=67 PartOfSpeech=VB Lemma=criticise NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=works CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=NNS Lemma=work NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=aplomb CharacterOffsetBegin=89 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=aplomb NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Jaques CharacterOffsetBegin=99 CharacterOffsetEnd=105 PartOfSpeech=NNP Lemma=Jaques NamedEntityTag=PERSON]
+[Text=Fath CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=NNP Lemma=Fath NamedEntityTag=PERSON]
+[Text=approaching CharacterOffsetBegin=111 CharacterOffsetEnd=122 PartOfSpeech=VBG Lemma=approach NamedEntityTag=O]
+[Text=Marie CharacterOffsetBegin=123 CharacterOffsetEnd=128 PartOfSpeech=NNP Lemma=Marie NamedEntityTag=PERSON]
+[Text=Laure CharacterOffsetBegin=129 CharacterOffsetEnd=134 PartOfSpeech=NNP Lemma=Laure NamedEntityTag=PERSON]
+[Text=during CharacterOffsetBegin=135 CharacterOffsetEnd=141 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=142 CharacterOffsetEnd=144 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=intermission CharacterOffsetBegin=145 CharacterOffsetEnd=157 PartOfSpeech=NN Lemma=intermission NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=adjusting CharacterOffsetBegin=162 CharacterOffsetEnd=171 PartOfSpeech=VBG Lemma=adjust NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=172 CharacterOffsetEnd=175 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=décolletage CharacterOffsetBegin=176 CharacterOffsetEnd=187 PartOfSpeech=NN Lemma=décolletage NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (DT the) (NN concert))
+        (PP (IN of)
+          (NP (DT the) (NN student) (NNS composers)))))
+    (NP (PRP I))
+    (VP (VBP allow)
+      (S
+        (NP (PRP myself))
+        (VP (TO to)
+          (VP (VB criticise)
+            (NP (PRP$ their) (NNS works))
+            (PP (IN with)
+              (NP
+                (NP (DT the) (NN aplomb))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Jaques) (NNP Fath))
+                    (VP
+                      (VP (VBG approaching)
+                        (NP
+                          (NP (NNP Marie) (NNP Laure))
+                          (PP (IN during)
+                            (NP (DT an) (NN intermission)))))
+                      (CC and)
+                      (VP (VBG adjusting)
+                        (NP (PRP$ her) (NN décolletage))))))))))))
+    (. .)))
+
+root(ROOT-0, allow-9)
+case(concert-3, At-1)
+det(concert-3, the-2)
+nmod:at(allow-9, concert-3)
+case(composers-7, of-4)
+det(composers-7, the-5)
+compound(composers-7, student-6)
+nmod:of(concert-3, composers-7)
+nsubj(allow-9, I-8)
+dobj(allow-9, myself-10)
+nsubj:xsubj(criticise-12, myself-10)
+mark(criticise-12, to-11)
+xcomp(allow-9, criticise-12)
+nmod:poss(works-14, their-13)
+dobj(criticise-12, works-14)
+case(aplomb-17, with-15)
+det(aplomb-17, the-16)
+nmod:with(criticise-12, aplomb-17)
+case(Fath-20, of-18)
+compound(Fath-20, Jaques-19)
+nmod:of(aplomb-17, Fath-20)
+dep(Fath-20, approaching-21)
+compound(Laure-23, Marie-22)
+dobj(approaching-21, Laure-23)
+case(intermission-26, during-24)
+det(intermission-26, an-25)
+nmod:during(Laure-23, intermission-26)
+cc(approaching-21, and-27)
+dep(Fath-20, adjusting-28)
+conj:and(approaching-21, adjusting-28)
+nmod:poss(décolletage-30, her-29)
+dobj(adjusting-28, décolletage-30)
+punct(allow-9, .-31)
+
+Coreference set:
+	(1,13,[13,14]) -> (1,7,[5,8]), that is: "their" -> "the student composers"
+Coreference set:
+	(1,10,[10,11]) -> (1,8,[8,9]), that is: "myself" -> "I"
+Coreference set:
+	(1,29,[29,30]) -> (1,23,[22,27]), that is: "her" -> "Marie Laure during an intermission"

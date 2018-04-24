@@ -1,0 +1,73 @@
+Sentence #1 (21 tokens):
+Called Aaron out of the blue because his Organ Concerto on the radio pleased me, and what does anymore?
+[Text=Called CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VBN Lemma=call NamedEntityTag=O]
+[Text=Aaron CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Aaron NamedEntityTag=PERSON]
+[Text=out CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=blue CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=blue NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=Organ CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Organ NamedEntityTag=O]
+[Text=Concerto CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=radio CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=radio NamedEntityTag=O]
+[Text=pleased CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=JJ Lemma=pleased NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=anymore CharacterOffsetBegin=95 CharacterOffsetEnd=102 PartOfSpeech=RB Lemma=anymore NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBN Called)
+      (NP (NNP Aaron))
+      (PP (IN out)
+        (PP (IN of)
+          (NP (DT the) (JJ blue))))
+      (SBAR (IN because)
+        (S
+          (NP
+            (NP (PRP$ his) (NNP Organ) (NNP Concerto))
+            (PP (IN on)
+              (NP (DT the) (NN radio))))
+          (VP (JJ pleased)
+            (NP
+              (NP (PRP me))
+              (, ,)
+              (CC and)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (VP (VBZ does)
+                    (ADVP (RB anymore))))))))))
+    (. ?)))
+
+root(ROOT-0, Called-1)
+dobj(Called-1, Aaron-2)
+case(blue-6, out-3)
+mwe(out-3, of-4)
+det(blue-6, the-5)
+nmod:out_of(Called-1, blue-6)
+mark(pleased-14, because-7)
+nmod:poss(Concerto-10, his-8)
+compound(Concerto-10, Organ-9)
+nsubj(pleased-14, Concerto-10)
+case(radio-13, on-11)
+det(radio-13, the-12)
+nmod:on(Concerto-10, radio-13)
+advcl:because(Called-1, pleased-14)
+dobj(pleased-14, me-15)
+punct(me-15, ,-16)
+cc(me-15, and-17)
+nsubj(does-19, what-18)
+dobj(pleased-14, does-19)
+conj:and(me-15, does-19)
+advmod(does-19, anymore-20)
+punct(Called-1, ?-21)
+
+Coreference set:
+	(1,8,[8,9]) -> (1,2,[2,3]), that is: "his" -> "Aaron"

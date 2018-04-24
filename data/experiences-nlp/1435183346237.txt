@@ -1,0 +1,75 @@
+Sentence #1 (23 tokens):
+Listen to bits of Messiah sung by Sheffield Union from Prom - v. strong voices - tho' not especially well trained.
+[Text=Listen CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=bits CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NNS Lemma=bit NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Messiah CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Messiah NamedEntityTag=O]
+[Text=sung CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=VBN Lemma=sing NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Sheffield CharacterOffsetBegin=34 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Sheffield NamedEntityTag=ORGANIZATION]
+[Text=Union CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Union NamedEntityTag=ORGANIZATION]
+[Text=from CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Prom CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Prom NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=v. CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=CC Lemma=v. NamedEntityTag=O]
+[Text=strong CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=strong NamedEntityTag=O]
+[Text=voices CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=NNS Lemma=voice NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=tho CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=tho NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=especially CharacterOffsetBegin=90 CharacterOffsetEnd=100 PartOfSpeech=RB Lemma=especially NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=trained CharacterOffsetBegin=106 CharacterOffsetEnd=113 PartOfSpeech=VBN Lemma=train NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Listen)
+      (PP (TO to)
+        (NP
+          (NP (NNS bits))
+          (PP (IN of)
+            (NP
+              (NP (NNP Messiah))
+              (VP (VBN sung)
+                (PP (IN by)
+                  (NP
+                    (NP (NNP Sheffield) (NNP Union))
+                    (PP (IN from)
+                      (NP (NNP Prom)
+                        (PRN (: -)
+                          (PP (CC v.)
+                            (NP (JJ strong) (NNS voices)))
+                          (: -))
+                        (NN tho))))))))
+          ('' ')
+          (VP (RB not)
+            (ADVP (RB especially) (RB well))
+            (VBN trained)))))
+    (. .)))
+
+root(ROOT-0, Listen-1)
+case(bits-3, to-2)
+nmod:to(Listen-1, bits-3)
+case(Messiah-5, of-4)
+nmod:of(bits-3, Messiah-5)
+acl(Messiah-5, sung-6)
+case(Union-9, by-7)
+compound(Union-9, Sheffield-8)
+nmod:by(sung-6, Union-9)
+case(tho-17, from-10)
+compound(tho-17, Prom-11)
+punct(voices-15, --12)
+case(voices-15, v.-13)
+amod(voices-15, strong-14)
+nmod:v.(tho-17, voices-15)
+punct(voices-15, --16)
+nmod:from(Union-9, tho-17)
+punct(bits-3, '-18)
+neg(trained-22, not-19)
+advmod(well-21, especially-20)
+advmod(trained-22, well-21)
+acl(bits-3, trained-22)
+punct(Listen-1, .-23)
+

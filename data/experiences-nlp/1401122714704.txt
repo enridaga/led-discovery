@@ -1,0 +1,487 @@
+Sentence #1 (15 tokens):
+I first visited the Royal Festival Hall during the Festival of Britain in 1951.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=RB Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=visited CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=VBD Lemma=visit NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Royal CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Royal NamedEntityTag=O]
+[Text=Festival CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Festival NamedEntityTag=O]
+[Text=Hall CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Hall NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Festival CharacterOffsetBegin=51 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Festival NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Britain CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Britain NamedEntityTag=LOCATION]
+[Text=in CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=1951 CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=CD Lemma=1951 NamedEntityTag=DATE NormalizedNamedEntityTag=1951 Timex=<TIMEX3 tid="t1" type="DATE" value="1951">1951</TIMEX3>]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB first))
+    (VP (VBD visited)
+      (NP (DT the) (NNP Royal) (NNP Festival) (NNP Hall))
+      (PP (IN during)
+        (NP
+          (NP (DT the) (NNP Festival))
+          (PP (IN of)
+            (NP (NNP Britain)))))
+      (PP (IN in)
+        (NP (CD 1951))))
+    (. .)))
+
+root(ROOT-0, visited-3)
+nsubj(visited-3, I-1)
+advmod(visited-3, first-2)
+det(Hall-7, the-4)
+compound(Hall-7, Royal-5)
+compound(Hall-7, Festival-6)
+dobj(visited-3, Hall-7)
+case(Festival-10, during-8)
+det(Festival-10, the-9)
+nmod:during(visited-3, Festival-10)
+case(Britain-12, of-11)
+nmod:of(Festival-10, Britain-12)
+case(1951-14, in-13)
+nmod:in(visited-3, 1951-14)
+punct(visited-3, .-15)
+
+Sentence #2 (28 tokens):
+"Palm Court Orchestra" - style recitals were held for about an hour each day with about four players, open to visitors to the Festival.
+[Text=`` CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Palm CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Palm NamedEntityTag=O]
+[Text=Court CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=Court NamedEntityTag=O]
+[Text=Orchestra CharacterOffsetBegin=92 CharacterOffsetEnd=101 PartOfSpeech=NNP Lemma=Orchestra NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=style CharacterOffsetBegin=105 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=style NamedEntityTag=O]
+[Text=recitals CharacterOffsetBegin=111 CharacterOffsetEnd=119 PartOfSpeech=NNS Lemma=recital NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=120 CharacterOffsetEnd=124 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=held CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=VBN Lemma=hold NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=130 CharacterOffsetEnd=133 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=134 CharacterOffsetEnd=139 PartOfSpeech=IN Lemma=about NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1H Timex=<TIMEX3 tid="t2" type="DURATION" value="PT1H">about an hour</TIMEX3>]
+[Text=an CharacterOffsetBegin=140 CharacterOffsetEnd=142 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1H Timex=<TIMEX3 tid="t2" type="DURATION" value="PT1H">about an hour</TIMEX3>]
+[Text=hour CharacterOffsetBegin=143 CharacterOffsetEnd=147 PartOfSpeech=NN Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1H Timex=<TIMEX3 tid="t2" type="DURATION" value="PT1H">about an hour</TIMEX3>]
+[Text=each CharacterOffsetBegin=148 CharacterOffsetEnd=152 PartOfSpeech=DT Lemma=each NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1D" quant="each" tid="t3" type="SET" value="P1D">each day</TIMEX3>]
+[Text=day CharacterOffsetBegin=153 CharacterOffsetEnd=156 PartOfSpeech=NN Lemma=day NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1D" quant="each" tid="t3" type="SET" value="P1D">each day</TIMEX3>]
+[Text=with CharacterOffsetBegin=157 CharacterOffsetEnd=161 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=162 CharacterOffsetEnd=167 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=four CharacterOffsetBegin=168 CharacterOffsetEnd=172 PartOfSpeech=CD Lemma=four NamedEntityTag=NUMBER NormalizedNamedEntityTag=~4.0]
+[Text=players CharacterOffsetBegin=173 CharacterOffsetEnd=180 PartOfSpeech=NNS Lemma=player NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=open CharacterOffsetBegin=182 CharacterOffsetEnd=186 PartOfSpeech=JJ Lemma=open NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=187 CharacterOffsetEnd=189 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=visitors CharacterOffsetBegin=190 CharacterOffsetEnd=198 PartOfSpeech=NNS Lemma=visitor NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=199 CharacterOffsetEnd=201 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=202 CharacterOffsetEnd=205 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Festival CharacterOffsetBegin=206 CharacterOffsetEnd=214 PartOfSpeech=NNP Lemma=Festival NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (`` ``)
+      (NP (NNP Palm) (NNP Court) (NNP Orchestra))
+      ('' '')
+      (PRN (: -)
+        (S
+          (NP (NN style) (NNS recitals))
+          (VP (VBD were)
+            (VP (VBN held)
+              (PP (IN for) (IN about)
+                (NP
+                  (NP (DT an) (NN hour))
+                  (NP (DT each) (NN day))))
+              (PP (IN with)
+                (PP (IN about)
+                  (NP (CD four) (NNS players))))))
+          (, ,))))
+    (VP (JJ open)
+      (PP (TO to)
+        (NP (NNS visitors)))
+      (PP (TO to)
+        (NP (DT the) (NNP Festival))))
+    (. .)))
+
+root(ROOT-0, open-22)
+punct(Orchestra-4, ``-1)
+compound(Orchestra-4, Palm-2)
+compound(Orchestra-4, Court-3)
+nsubj(open-22, Orchestra-4)
+punct(Orchestra-4, ''-5)
+punct(held-10, --6)
+compound(recitals-8, style-7)
+nsubjpass(held-10, recitals-8)
+auxpass(held-10, were-9)
+dep(Orchestra-4, held-10)
+case(hour-14, for-11)
+case(hour-14, about-12)
+det(hour-14, an-13)
+nmod:about(held-10, hour-14)
+det(day-16, each-15)
+dep(hour-14, day-16)
+case(players-20, with-17)
+case(players-20, about-18)
+nummod(players-20, four-19)
+nmod:about(held-10, players-20)
+punct(held-10, ,-21)
+case(visitors-24, to-23)
+nmod:to(open-22, visitors-24)
+case(Festival-27, to-25)
+det(Festival-27, the-26)
+nmod:to(open-22, Festival-27)
+punct(open-22, .-28)
+
+Sentence #3 (25 tokens):
+I went to a concert either in the Autumn of '51 or Spring of '52 which included a performance of Brahms' double concerto.
+[Text=I CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=218 CharacterOffsetEnd=222 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=223 CharacterOffsetEnd=225 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=226 CharacterOffsetEnd=227 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=228 CharacterOffsetEnd=235 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=either CharacterOffsetBegin=236 CharacterOffsetEnd=242 PartOfSpeech=CC Lemma=either NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=243 CharacterOffsetEnd=245 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=246 CharacterOffsetEnd=249 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=XX51-FA Timex=<TIMEX3 tid="t4" type="DATE" value="XX51-FA">the Autumn of '51</TIMEX3>]
+[Text=Autumn CharacterOffsetBegin=250 CharacterOffsetEnd=256 PartOfSpeech=NN Lemma=autumn NamedEntityTag=DATE NormalizedNamedEntityTag=XX51-FA Timex=<TIMEX3 tid="t4" type="DATE" value="XX51-FA">the Autumn of '51</TIMEX3>]
+[Text=of CharacterOffsetBegin=257 CharacterOffsetEnd=259 PartOfSpeech=IN Lemma=of NamedEntityTag=DATE NormalizedNamedEntityTag=XX51-FA Timex=<TIMEX3 tid="t4" type="DATE" value="XX51-FA">the Autumn of '51</TIMEX3>]
+[Text='51 CharacterOffsetBegin=260 CharacterOffsetEnd=263 PartOfSpeech=CD Lemma='51 NamedEntityTag=DATE NormalizedNamedEntityTag=XX51-FA Timex=<TIMEX3 tid="t4" type="DATE" value="XX51-FA">the Autumn of '51</TIMEX3>]
+[Text=or CharacterOffsetBegin=264 CharacterOffsetEnd=266 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=Spring CharacterOffsetBegin=267 CharacterOffsetEnd=273 PartOfSpeech=NN Lemma=spring NamedEntityTag=DATE NormalizedNamedEntityTag=XX52-SP Timex=<TIMEX3 tid="t5" type="DATE" value="XX52-SP">Spring of '52</TIMEX3>]
+[Text=of CharacterOffsetBegin=274 CharacterOffsetEnd=276 PartOfSpeech=IN Lemma=of NamedEntityTag=DATE NormalizedNamedEntityTag=XX52-SP Timex=<TIMEX3 tid="t5" type="DATE" value="XX52-SP">Spring of '52</TIMEX3>]
+[Text='52 CharacterOffsetBegin=277 CharacterOffsetEnd=280 PartOfSpeech=CD Lemma='52 NamedEntityTag=DATE NormalizedNamedEntityTag=XX52-SP Timex=<TIMEX3 tid="t5" type="DATE" value="XX52-SP">Spring of '52</TIMEX3>]
+[Text=which CharacterOffsetBegin=281 CharacterOffsetEnd=286 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=included CharacterOffsetBegin=287 CharacterOffsetEnd=295 PartOfSpeech=VBD Lemma=include NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=296 CharacterOffsetEnd=297 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=298 CharacterOffsetEnd=309 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=310 CharacterOffsetEnd=312 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Brahms CharacterOffsetBegin=313 CharacterOffsetEnd=319 PartOfSpeech=NNP Lemma=Brahms NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=319 CharacterOffsetEnd=320 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=double CharacterOffsetBegin=321 CharacterOffsetEnd=327 PartOfSpeech=JJ Lemma=double NamedEntityTag=O]
+[Text=concerto CharacterOffsetBegin=328 CharacterOffsetEnd=336 PartOfSpeech=NN Lemma=concerto NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=336 CharacterOffsetEnd=337 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD went)
+      (PP
+        (PP (TO to)
+          (NP (DT a) (NN concert)))
+        (CC either)
+        (PP (IN in)
+          (NP
+            (NP
+              (NP (DT the) (NN Autumn))
+              (PP (IN of)
+                (NP (CD '51))))
+            (CC or)
+            (NP
+              (NP (NN Spring))
+              (PP (IN of)
+                (NP (CD '52)))))))
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBD included)
+            (NP
+              (NP (DT a) (NN performance))
+              (PP (IN of)
+                (NP
+                  (NP (NNP Brahms) (POS '))
+                  (JJ double) (NN concerto))))))))
+    (. .)))
+
+root(ROOT-0, went-2)
+nsubj(went-2, I-1)
+case(concert-5, to-3)
+det(concert-5, a-4)
+nmod:to(went-2, concert-5)
+dep(concert-5, either-6)
+case(Autumn-9, in-7)
+det(Autumn-9, the-8)
+conj(concert-5, Autumn-9)
+case('51-11, of-10)
+nmod:of(Autumn-9, '51-11)
+cc(Autumn-9, or-12)
+conj(concert-5, Spring-13)
+conj:or(Autumn-9, Spring-13)
+case('52-15, of-14)
+nmod:of(Spring-13, '52-15)
+nsubj(included-17, which-16)
+ccomp(went-2, included-17)
+det(performance-19, a-18)
+dobj(included-17, performance-19)
+case(concerto-24, of-20)
+nmod:poss(concerto-24, Brahms-21)
+case(Brahms-21, '-22)
+amod(concerto-24, double-23)
+nmod:of(performance-19, concerto-24)
+punct(went-2, .-25)
+
+Sentence #4 (20 tokens):
+When I came to live in London in October '53 I regularly attended concerts, about 2 a month.
+[Text=When CharacterOffsetBegin=338 CharacterOffsetEnd=342 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=343 CharacterOffsetEnd=344 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=came CharacterOffsetBegin=345 CharacterOffsetEnd=349 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=350 CharacterOffsetEnd=352 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=live CharacterOffsetBegin=353 CharacterOffsetEnd=357 PartOfSpeech=VB Lemma=live NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=358 CharacterOffsetEnd=360 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=London CharacterOffsetBegin=361 CharacterOffsetEnd=367 PartOfSpeech=NNP Lemma=London NamedEntityTag=LOCATION]
+[Text=in CharacterOffsetBegin=368 CharacterOffsetEnd=370 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=October CharacterOffsetBegin=371 CharacterOffsetEnd=378 PartOfSpeech=NNP Lemma=October NamedEntityTag=DATE NormalizedNamedEntityTag=XX53-10 Timex=<TIMEX3 tid="t6" type="DATE" value="XX53-10">October '53</TIMEX3>]
+[Text='53 CharacterOffsetBegin=379 CharacterOffsetEnd=382 PartOfSpeech=CD Lemma='53 NamedEntityTag=DATE NormalizedNamedEntityTag=XX53-10 Timex=<TIMEX3 tid="t6" type="DATE" value="XX53-10">October '53</TIMEX3>]
+[Text=I CharacterOffsetBegin=383 CharacterOffsetEnd=384 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=regularly CharacterOffsetBegin=385 CharacterOffsetEnd=394 PartOfSpeech=RB Lemma=regularly NamedEntityTag=O]
+[Text=attended CharacterOffsetBegin=395 CharacterOffsetEnd=403 PartOfSpeech=VBD Lemma=attend NamedEntityTag=O]
+[Text=concerts CharacterOffsetBegin=404 CharacterOffsetEnd=412 PartOfSpeech=NNS Lemma=concert NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=412 CharacterOffsetEnd=413 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=414 CharacterOffsetEnd=419 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=420 CharacterOffsetEnd=421 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=~2.0]
+[Text=a CharacterOffsetBegin=422 CharacterOffsetEnd=423 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=P1M Timex=<TIMEX3 tid="t7" type="DURATION" value="P1M">a month</TIMEX3>]
+[Text=month CharacterOffsetBegin=424 CharacterOffsetEnd=429 PartOfSpeech=NN Lemma=month NamedEntityTag=DURATION NormalizedNamedEntityTag=P1M Timex=<TIMEX3 tid="t7" type="DURATION" value="P1M">a month</TIMEX3>]
+[Text=. CharacterOffsetBegin=429 CharacterOffsetEnd=430 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP I))
+        (VP (VBD came)
+          (S
+            (VP (TO to)
+              (VP (VB live)
+                (PP (IN in)
+                  (NP (NNP London)))
+                (PP (IN in)
+                  (NP (NNP October) (CD '53)))))))))
+    (NP (PRP I))
+    (ADVP (RB regularly))
+    (VP (VBD attended)
+      (NP (NNS concerts))
+      (, ,)
+      (PP (IN about)
+        (NP (CD 2)))
+      (NP-TMP (DT a) (NN month)))
+    (. .)))
+
+root(ROOT-0, attended-13)
+advmod(came-3, When-1)
+nsubj(came-3, I-2)
+nsubj:xsubj(live-5, I-2)
+advcl(attended-13, came-3)
+mark(live-5, to-4)
+xcomp(came-3, live-5)
+case(London-7, in-6)
+nmod:in(live-5, London-7)
+case(October-9, in-8)
+nmod:in(live-5, October-9)
+nummod(October-9, '53-10)
+nsubj(attended-13, I-11)
+advmod(attended-13, regularly-12)
+dobj(attended-13, concerts-14)
+punct(attended-13, ,-15)
+case(2-17, about-16)
+nmod:about(attended-13, 2-17)
+det(month-19, a-18)
+nmod:tmod(attended-13, month-19)
+punct(attended-13, .-20)
+
+Sentence #5 (28 tokens):
+In 1967 I sang with Croydon Philharmonic Society in a Royal Philharmonic Society concert where Kodaly was due to collect his gold medal but had died earlier.
+[Text=In CharacterOffsetBegin=431 CharacterOffsetEnd=433 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=1967 CharacterOffsetBegin=434 CharacterOffsetEnd=438 PartOfSpeech=CD Lemma=1967 NamedEntityTag=DATE NormalizedNamedEntityTag=1967 Timex=<TIMEX3 tid="t8" type="DATE" value="1967">1967</TIMEX3>]
+[Text=I CharacterOffsetBegin=439 CharacterOffsetEnd=440 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=sang CharacterOffsetBegin=441 CharacterOffsetEnd=445 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=446 CharacterOffsetEnd=450 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Croydon CharacterOffsetBegin=451 CharacterOffsetEnd=458 PartOfSpeech=NNP Lemma=Croydon NamedEntityTag=ORGANIZATION]
+[Text=Philharmonic CharacterOffsetBegin=459 CharacterOffsetEnd=471 PartOfSpeech=NNP Lemma=Philharmonic NamedEntityTag=ORGANIZATION]
+[Text=Society CharacterOffsetBegin=472 CharacterOffsetEnd=479 PartOfSpeech=NNP Lemma=Society NamedEntityTag=ORGANIZATION]
+[Text=in CharacterOffsetBegin=480 CharacterOffsetEnd=482 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=483 CharacterOffsetEnd=484 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Royal CharacterOffsetBegin=485 CharacterOffsetEnd=490 PartOfSpeech=NNP Lemma=Royal NamedEntityTag=ORGANIZATION]
+[Text=Philharmonic CharacterOffsetBegin=491 CharacterOffsetEnd=503 PartOfSpeech=NNP Lemma=Philharmonic NamedEntityTag=ORGANIZATION]
+[Text=Society CharacterOffsetBegin=504 CharacterOffsetEnd=511 PartOfSpeech=NNP Lemma=Society NamedEntityTag=ORGANIZATION]
+[Text=concert CharacterOffsetBegin=512 CharacterOffsetEnd=519 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=520 CharacterOffsetEnd=525 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=Kodaly CharacterOffsetBegin=526 CharacterOffsetEnd=532 PartOfSpeech=NNP Lemma=Kodaly NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=533 CharacterOffsetEnd=536 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=537 CharacterOffsetEnd=540 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=541 CharacterOffsetEnd=543 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=collect CharacterOffsetBegin=544 CharacterOffsetEnd=551 PartOfSpeech=VB Lemma=collect NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=552 CharacterOffsetEnd=555 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=gold CharacterOffsetBegin=556 CharacterOffsetEnd=560 PartOfSpeech=NN Lemma=gold NamedEntityTag=O]
+[Text=medal CharacterOffsetBegin=561 CharacterOffsetEnd=566 PartOfSpeech=NN Lemma=medal NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=567 CharacterOffsetEnd=570 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=571 CharacterOffsetEnd=574 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=died CharacterOffsetBegin=575 CharacterOffsetEnd=579 PartOfSpeech=VBN Lemma=die NamedEntityTag=O]
+[Text=earlier CharacterOffsetBegin=580 CharacterOffsetEnd=587 PartOfSpeech=RBR Lemma=earlier NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=587 CharacterOffsetEnd=588 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1967)))
+    (NP (PRP I))
+    (VP (VBD sang)
+      (PP (IN with)
+        (NP
+          (NP (NNP Croydon) (NNP Philharmonic) (NNP Society))
+          (PP (IN in)
+            (NP (DT a) (NNP Royal) (NNP Philharmonic) (NNP Society) (NN concert)))))
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (NNP Kodaly))
+          (VP
+            (VP (VBD was)
+              (ADJP (JJ due)
+                (S
+                  (VP (TO to)
+                    (VP (VB collect)
+                      (NP (PRP$ his) (NN gold) (NN medal)))))))
+            (CC but)
+            (VP (VBD had)
+              (VP (VBN died)
+                (ADVP (RBR earlier))))))))
+    (. .)))
+
+root(ROOT-0, sang-4)
+case(1967-2, In-1)
+nmod:in(sang-4, 1967-2)
+nsubj(sang-4, I-3)
+case(Society-8, with-5)
+compound(Society-8, Croydon-6)
+compound(Society-8, Philharmonic-7)
+nmod:with(sang-4, Society-8)
+case(concert-14, in-9)
+det(concert-14, a-10)
+compound(concert-14, Royal-11)
+compound(concert-14, Philharmonic-12)
+compound(concert-14, Society-13)
+nmod:in(Society-8, concert-14)
+advmod(due-18, where-15)
+nsubj(due-18, Kodaly-16)
+nsubj:xsubj(collect-20, Kodaly-16)
+nsubj(died-26, Kodaly-16)
+cop(due-18, was-17)
+advcl(sang-4, due-18)
+mark(collect-20, to-19)
+xcomp(due-18, collect-20)
+nmod:poss(medal-23, his-21)
+compound(medal-23, gold-22)
+dobj(collect-20, medal-23)
+cc(due-18, but-24)
+aux(died-26, had-25)
+advcl(sang-4, died-26)
+conj:but(due-18, died-26)
+advmod(died-26, earlier-27)
+punct(sang-4, .-28)
+
+Sentence #6 (16 tokens):
+From 1968 to 1998 I regularly sang with the London Philharmonic Choir in many concerts.
+[Text=From CharacterOffsetBegin=589 CharacterOffsetEnd=593 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=1968 CharacterOffsetBegin=594 CharacterOffsetEnd=598 PartOfSpeech=CD Lemma=1968 NamedEntityTag=DATE NormalizedNamedEntityTag=1968 Timex=<TIMEX3 tid="t9" type="DATE" value="1968">1968</TIMEX3>]
+[Text=to CharacterOffsetBegin=599 CharacterOffsetEnd=601 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=1998 CharacterOffsetBegin=602 CharacterOffsetEnd=606 PartOfSpeech=CD Lemma=1998 NamedEntityTag=DATE NormalizedNamedEntityTag=1998 Timex=<TIMEX3 tid="t10" type="DATE" value="1998">1998</TIMEX3>]
+[Text=I CharacterOffsetBegin=607 CharacterOffsetEnd=608 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=regularly CharacterOffsetBegin=609 CharacterOffsetEnd=618 PartOfSpeech=RB Lemma=regularly NamedEntityTag=O]
+[Text=sang CharacterOffsetBegin=619 CharacterOffsetEnd=623 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=624 CharacterOffsetEnd=628 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=629 CharacterOffsetEnd=632 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=London CharacterOffsetBegin=633 CharacterOffsetEnd=639 PartOfSpeech=NNP Lemma=London NamedEntityTag=ORGANIZATION]
+[Text=Philharmonic CharacterOffsetBegin=640 CharacterOffsetEnd=652 PartOfSpeech=NNP Lemma=Philharmonic NamedEntityTag=ORGANIZATION]
+[Text=Choir CharacterOffsetBegin=653 CharacterOffsetEnd=658 PartOfSpeech=NNP Lemma=Choir NamedEntityTag=ORGANIZATION]
+[Text=in CharacterOffsetBegin=659 CharacterOffsetEnd=661 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=662 CharacterOffsetEnd=666 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=concerts CharacterOffsetBegin=667 CharacterOffsetEnd=675 PartOfSpeech=NNS Lemma=concert NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=675 CharacterOffsetEnd=676 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN From)
+      (NP (CD 1968) (TO to) (CD 1998)))
+    (NP (PRP I))
+    (ADVP (RB regularly))
+    (VP (VBD sang)
+      (PP (IN with)
+        (NP (DT the) (NNP London) (NNP Philharmonic) (NNP Choir)))
+      (PP (IN in)
+        (NP (JJ many) (NNS concerts))))
+    (. .)))
+
+root(ROOT-0, sang-7)
+case(1998-4, From-1)
+nummod(1998-4, 1968-2)
+dep(1998-4, to-3)
+nmod:from(sang-7, 1998-4)
+nsubj(sang-7, I-5)
+advmod(sang-7, regularly-6)
+case(Choir-12, with-8)
+det(Choir-12, the-9)
+compound(Choir-12, London-10)
+compound(Choir-12, Philharmonic-11)
+nmod:with(sang-7, Choir-12)
+case(concerts-15, in-13)
+amod(concerts-15, many-14)
+nmod:in(sang-7, concerts-15)
+punct(sang-7, .-16)
+
+Sentence #7 (15 tokens):
+I am now a benefactor of the LPO and attend about 15 concerts annually.
+[Text=I CharacterOffsetBegin=678 CharacterOffsetEnd=679 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=680 CharacterOffsetEnd=682 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=683 CharacterOffsetEnd=686 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t11" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=a CharacterOffsetBegin=687 CharacterOffsetEnd=688 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=benefactor CharacterOffsetBegin=689 CharacterOffsetEnd=699 PartOfSpeech=NN Lemma=benefactor NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=700 CharacterOffsetEnd=702 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=703 CharacterOffsetEnd=706 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=LPO CharacterOffsetBegin=707 CharacterOffsetEnd=710 PartOfSpeech=NN Lemma=lpo NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=711 CharacterOffsetEnd=714 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=attend CharacterOffsetBegin=715 CharacterOffsetEnd=721 PartOfSpeech=VB Lemma=attend NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=722 CharacterOffsetEnd=727 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=15 CharacterOffsetBegin=728 CharacterOffsetEnd=730 PartOfSpeech=CD Lemma=15 NamedEntityTag=NUMBER NormalizedNamedEntityTag=~15.0]
+[Text=concerts CharacterOffsetBegin=731 CharacterOffsetEnd=739 PartOfSpeech=NNS Lemma=concert NamedEntityTag=O]
+[Text=annually CharacterOffsetBegin=740 CharacterOffsetEnd=748 PartOfSpeech=RB Lemma=annually NamedEntityTag=SET Timex=<TIMEX3 freq="P1X" periodicity="P1Y" quant="EVERY" tid="t12" type="SET" value="P1Y">annually</TIMEX3>]
+[Text=. CharacterOffsetBegin=748 CharacterOffsetEnd=749 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP am)
+        (ADVP (RB now))
+        (NP
+          (NP (DT a) (NN benefactor))
+          (PP (IN of)
+            (NP (DT the) (NN LPO))))))
+    (CC and)
+    (S
+      (VP (VB attend)
+        (PP (IN about)
+          (NP (CD 15) (NNS concerts)))
+        (ADVP (RB annually))))
+    (. .)))
+
+root(ROOT-0, benefactor-5)
+nsubj(benefactor-5, I-1)
+nsubj(attend-10, I-1)
+cop(benefactor-5, am-2)
+advmod(benefactor-5, now-3)
+det(benefactor-5, a-4)
+case(LPO-8, of-6)
+det(LPO-8, the-7)
+nmod:of(benefactor-5, LPO-8)
+cc(benefactor-5, and-9)
+conj:and(benefactor-5, attend-10)
+case(concerts-13, about-11)
+nummod(concerts-13, 15-12)
+nmod:about(attend-10, concerts-13)
+advmod(attend-10, annually-14)
+punct(benefactor-5, .-15)
+
+Coreference set:
+	(1,1,[1,2]) -> (7,5,[4,9]), that is: "I" -> "a benefactor of the LPO"
+	(3,1,[1,2]) -> (7,5,[4,9]), that is: "I" -> "a benefactor of the LPO"
+	(4,2,[2,3]) -> (7,5,[4,9]), that is: "I" -> "a benefactor of the LPO"
+	(4,11,[11,12]) -> (7,5,[4,9]), that is: "I" -> "a benefactor of the LPO"
+	(5,3,[3,4]) -> (7,5,[4,9]), that is: "I" -> "a benefactor of the LPO"
+	(6,5,[5,6]) -> (7,5,[4,9]), that is: "I" -> "a benefactor of the LPO"
+	(7,1,[1,2]) -> (7,5,[4,9]), that is: "I" -> "a benefactor of the LPO"
+Coreference set:
+	(2,27,[26,28]) -> (1,10,[9,13]), that is: "the Festival" -> "the Festival of Britain"
+Coreference set:
+	(5,21,[21,22]) -> (5,16,[16,17]), that is: "his" -> "Kodaly"

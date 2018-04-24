@@ -1,0 +1,53 @@
+Sentence #1 (16 tokens):
+Played the record of my piano concerto for young Philippe Entremont, George's protégé.
+[Text=Played CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=record CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=record NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=concerto CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=concerto NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=young CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=young NamedEntityTag=O]
+[Text=Philippe CharacterOffsetBegin=49 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=Philippe NamedEntityTag=PERSON]
+[Text=Entremont CharacterOffsetBegin=58 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Entremont NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=George CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=George NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=protégé CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=protégé NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBN Played)
+      (NP
+        (NP (DT the) (NN record))
+        (PP (IN of)
+          (NP (PRP$ my) (NN piano) (NN concerto))))
+      (PP (IN for)
+        (NP
+          (NP (JJ young) (NNP Philippe) (NNP Entremont))
+          (, ,)
+          (NP
+            (NP (NNP George) (POS 's))
+            (NN protégé)))))
+    (. .)))
+
+root(ROOT-0, Played-1)
+det(record-3, the-2)
+dobj(Played-1, record-3)
+case(concerto-7, of-4)
+nmod:poss(concerto-7, my-5)
+compound(concerto-7, piano-6)
+nmod:of(record-3, concerto-7)
+case(Entremont-11, for-8)
+amod(Entremont-11, young-9)
+compound(Entremont-11, Philippe-10)
+nmod:for(Played-1, Entremont-11)
+punct(Entremont-11, ,-12)
+nmod:poss(protégé-15, George-13)
+case(George-13, 's-14)
+appos(Entremont-11, protégé-15)
+punct(Played-1, .-16)
+
+Coreference set:
+	(1,15,[13,16]) -> (1,11,[10,12]), that is: "George 's protégé" -> "Philippe Entremont"

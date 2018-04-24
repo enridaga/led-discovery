@@ -1,0 +1,594 @@
+Sentence #1 (13 tokens):
+One evening Salieri proposed to me to accompany him to the Prater.
+[Text=One CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=evening CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t1" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=Salieri CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=salierus NamedEntityTag=PERSON]
+[Text=proposed CharacterOffsetBegin=20 CharacterOffsetEnd=28 PartOfSpeech=VBN Lemma=propose NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=accompany CharacterOffsetBegin=38 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=accompany NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Prater CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Prater NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (CD One) (NN evening) (NNS Salieri))
+    (VP (VBN proposed)
+      (PP (TO to)
+        (NP (PRP me)))
+      (S
+        (VP (TO to)
+          (VP (VB accompany)
+            (NP (PRP him))
+            (PP (TO to)
+              (NP (DT the) (NNP Prater)))))))
+    (. .)))
+
+root(ROOT-0, proposed-4)
+nummod(Salieri-3, One-1)
+compound(Salieri-3, evening-2)
+nsubj(proposed-4, Salieri-3)
+nsubj:xsubj(accompany-8, Salieri-3)
+case(me-6, to-5)
+nmod:to(proposed-4, me-6)
+mark(accompany-8, to-7)
+xcomp(proposed-4, accompany-8)
+dobj(accompany-8, him-9)
+case(Prater-12, to-10)
+det(Prater-12, the-11)
+nmod:to(accompany-8, Prater-12)
+punct(proposed-4, .-13)
+
+Sentence #2 (19 tokens):
+At this time he was composing his opera of Tarrare, for the grand Opera House at Paris.
+[Text=At CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=composing CharacterOffsetBegin=87 CharacterOffsetEnd=96 PartOfSpeech=VBG Lemma=compose NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=opera CharacterOffsetBegin=101 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=opera NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=107 CharacterOffsetEnd=109 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Tarrare CharacterOffsetBegin=110 CharacterOffsetEnd=117 PartOfSpeech=NNP Lemma=Tarrare NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=grand CharacterOffsetBegin=127 CharacterOffsetEnd=132 PartOfSpeech=JJ Lemma=grand NamedEntityTag=O]
+[Text=Opera CharacterOffsetBegin=133 CharacterOffsetEnd=138 PartOfSpeech=NNP Lemma=Opera NamedEntityTag=ORGANIZATION]
+[Text=House CharacterOffsetBegin=139 CharacterOffsetEnd=144 PartOfSpeech=NNP Lemma=House NamedEntityTag=ORGANIZATION]
+[Text=at CharacterOffsetBegin=145 CharacterOffsetEnd=147 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Paris CharacterOffsetBegin=148 CharacterOffsetEnd=153 PartOfSpeech=NNP Lemma=Paris NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=153 CharacterOffsetEnd=154 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (DT this) (NN time)))
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBG composing)
+        (NP
+          (NP (PRP$ his) (NN opera))
+          (PP (IN of)
+            (NP (NNP Tarrare))))
+        (, ,)
+        (PP (IN for)
+          (NP
+            (NP (DT the) (JJ grand) (NNP Opera) (NNP House))
+            (PP (IN at)
+              (NP (NNP Paris)))))))
+    (. .)))
+
+root(ROOT-0, composing-6)
+case(time-3, At-1)
+det(time-3, this-2)
+nmod:at(composing-6, time-3)
+nsubj(composing-6, he-4)
+aux(composing-6, was-5)
+nmod:poss(opera-8, his-7)
+dobj(composing-6, opera-8)
+case(Tarrare-10, of-9)
+nmod:of(opera-8, Tarrare-10)
+punct(composing-6, ,-11)
+case(House-16, for-12)
+det(House-16, the-13)
+amod(House-16, grand-14)
+compound(House-16, Opera-15)
+nmod:for(composing-6, House-16)
+case(Paris-18, at-17)
+nmod:at(House-16, Paris-18)
+punct(composing-6, .-19)
+
+Sentence #3 (49 tokens):
+At the back of the cabaret where we had been taking refreshments, 
+near the banks of the Danube, we seated ourselves by the river side ; he took from his pocket a sketch of that subsequently popular air which he had that 
+morning composed, Ah !
+[Text=At CharacterOffsetBegin=155 CharacterOffsetEnd=157 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=162 CharacterOffsetEnd=166 PartOfSpeech=NN Lemma=back NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=167 CharacterOffsetEnd=169 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=170 CharacterOffsetEnd=173 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=cabaret CharacterOffsetBegin=174 CharacterOffsetEnd=181 PartOfSpeech=NN Lemma=cabaret NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=182 CharacterOffsetEnd=187 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=188 CharacterOffsetEnd=190 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=191 CharacterOffsetEnd=194 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=195 CharacterOffsetEnd=199 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=taking CharacterOffsetBegin=200 CharacterOffsetEnd=206 PartOfSpeech=VBG Lemma=take NamedEntityTag=O]
+[Text=refreshments CharacterOffsetBegin=207 CharacterOffsetEnd=219 PartOfSpeech=NNS Lemma=refreshment NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=219 CharacterOffsetEnd=220 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=near CharacterOffsetBegin=223 CharacterOffsetEnd=227 PartOfSpeech=IN Lemma=near NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=banks CharacterOffsetBegin=232 CharacterOffsetEnd=237 PartOfSpeech=NNS Lemma=bank NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=238 CharacterOffsetEnd=240 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=241 CharacterOffsetEnd=244 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Danube CharacterOffsetBegin=245 CharacterOffsetEnd=251 PartOfSpeech=NNP Lemma=Danube NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=251 CharacterOffsetEnd=252 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=253 CharacterOffsetEnd=255 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=seated CharacterOffsetBegin=256 CharacterOffsetEnd=262 PartOfSpeech=VBD Lemma=seat NamedEntityTag=O]
+[Text=ourselves CharacterOffsetBegin=263 CharacterOffsetEnd=272 PartOfSpeech=PRP Lemma=ourselves NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=273 CharacterOffsetEnd=275 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=276 CharacterOffsetEnd=279 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=river CharacterOffsetBegin=280 CharacterOffsetEnd=285 PartOfSpeech=NN Lemma=river NamedEntityTag=O]
+[Text=side CharacterOffsetBegin=286 CharacterOffsetEnd=290 PartOfSpeech=NN Lemma=side NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=291 CharacterOffsetEnd=292 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=293 CharacterOffsetEnd=295 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=took CharacterOffsetBegin=296 CharacterOffsetEnd=300 PartOfSpeech=VBD Lemma=take NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=301 CharacterOffsetEnd=305 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=306 CharacterOffsetEnd=309 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=pocket CharacterOffsetBegin=310 CharacterOffsetEnd=316 PartOfSpeech=NN Lemma=pocket NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=317 CharacterOffsetEnd=318 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=sketch CharacterOffsetBegin=319 CharacterOffsetEnd=325 PartOfSpeech=NN Lemma=sketch NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=326 CharacterOffsetEnd=328 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=329 CharacterOffsetEnd=333 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=subsequently CharacterOffsetBegin=334 CharacterOffsetEnd=346 PartOfSpeech=RB Lemma=subsequently NamedEntityTag=O]
+[Text=popular CharacterOffsetBegin=347 CharacterOffsetEnd=354 PartOfSpeech=JJ Lemma=popular NamedEntityTag=O]
+[Text=air CharacterOffsetBegin=355 CharacterOffsetEnd=358 PartOfSpeech=NN Lemma=air NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=359 CharacterOffsetEnd=364 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=365 CharacterOffsetEnd=367 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=368 CharacterOffsetEnd=371 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=372 CharacterOffsetEnd=376 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=morning CharacterOffsetBegin=379 CharacterOffsetEnd=386 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=TMO Timex=<TIMEX3 tid="t2" type="TIME" value="TMO">morning</TIMEX3>]
+[Text=composed CharacterOffsetBegin=387 CharacterOffsetEnd=395 PartOfSpeech=VBN Lemma=compose NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=395 CharacterOffsetEnd=396 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Ah CharacterOffsetBegin=397 CharacterOffsetEnd=399 PartOfSpeech=UH Lemma=ah NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=400 CharacterOffsetEnd=401 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (S
+        (PP (IN At)
+          (NP
+            (NP (DT the) (NN back))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN cabaret))
+                (SBAR
+                  (WHADVP (WRB where))
+                  (S
+                    (NP (PRP we))
+                    (VP (VBD had)
+                      (VP (VBN been)
+                        (VP (VBG taking)
+                          (NP (NNS refreshments))
+                          (, ,)
+                          (PP (IN near)
+                            (NP
+                              (NP (DT the) (NNS banks))
+                              (PP (IN of)
+                                (NP (DT the) (NNP Danube))))))))))))))
+        (, ,)
+        (NP (PRP we))
+        (VP (VBD seated)
+          (NP (PRP ourselves))
+          (PP (IN by)
+            (NP (DT the) (NN river) (NN side)))))
+      (: ;)
+      (S
+        (NP (PRP he))
+        (VP (VBD took)
+          (PP (IN from)
+            (NP (PRP$ his) (NN pocket)))
+          (NP
+            (NP (DT a) (NN sketch))
+            (PP (IN of)
+              (NP
+                (NP (DT that)
+                  (ADJP
+                    (ADVP (RB subsequently))
+                    (JJ popular))
+                  (NN air))
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (NP (PRP he))
+                    (VP (VBD had)
+                      (SBAR (IN that)
+                        (S
+                          (NP-TMP (NN morning))
+                          (VP (VBN composed)))))))))))))
+    (, ,)
+    (FRAG
+      (INTJ (UH Ah)))
+    (. !)))
+
+root(ROOT-0, seated-22)
+case(back-3, At-1)
+det(back-3, the-2)
+nmod:at(seated-22, back-3)
+case(cabaret-6, of-4)
+det(cabaret-6, the-5)
+nmod:of(back-3, cabaret-6)
+advmod(taking-11, where-7)
+nsubj(taking-11, we-8)
+aux(taking-11, had-9)
+aux(taking-11, been-10)
+acl:relcl(cabaret-6, taking-11)
+dobj(taking-11, refreshments-12)
+punct(taking-11, ,-13)
+case(banks-16, near-14)
+det(banks-16, the-15)
+nmod:near(taking-11, banks-16)
+case(Danube-19, of-17)
+det(Danube-19, the-18)
+nmod:of(banks-16, Danube-19)
+punct(seated-22, ,-20)
+nsubj(seated-22, we-21)
+dobj(seated-22, ourselves-23)
+case(side-27, by-24)
+det(side-27, the-25)
+compound(side-27, river-26)
+nmod:by(seated-22, side-27)
+punct(seated-22, ;-28)
+nsubj(took-30, he-29)
+parataxis(seated-22, took-30)
+case(pocket-33, from-31)
+nmod:poss(pocket-33, his-32)
+nmod:from(took-30, pocket-33)
+det(sketch-35, a-34)
+dobj(took-30, sketch-35)
+case(air-40, of-36)
+det(air-40, that-37)
+advmod(popular-39, subsequently-38)
+amod(air-40, popular-39)
+nmod:of(sketch-35, air-40)
+dobj(had-43, air-40)
+ref(air-40, which-41)
+nsubj(had-43, he-42)
+acl:relcl(air-40, had-43)
+mark(composed-46, that-44)
+dep(composed-46, morning-45)
+ccomp(had-43, composed-46)
+punct(seated-22, ,-47)
+parataxis(seated-22, Ah-48)
+punct(seated-22, !-49)
+
+Sentence #4 (3 tokens):
+povero Calpigi.
+[Text=povero CharacterOffsetBegin=402 CharacterOffsetEnd=408 PartOfSpeech=NN Lemma=povero NamedEntityTag=O]
+[Text=Calpigi CharacterOffsetBegin=409 CharacterOffsetEnd=416 PartOfSpeech=NN Lemma=calpigi NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=416 CharacterOffsetEnd=417 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NN povero))
+    (NP (NN Calpigi))
+    (. .)))
+
+root(ROOT-0, povero-1)
+dep(povero-1, Calpigi-2)
+punct(povero-1, .-3)
+
+Sentence #5 (39 tokens):
+While , he was singing it to me with great earnestness and gesticulation, I cast my eyes towards the river, and spied a large wild boar crossing it, near the place where we were seated.
+[Text=While CharacterOffsetBegin=418 CharacterOffsetEnd=423 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=424 CharacterOffsetEnd=425 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=426 CharacterOffsetEnd=428 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=429 CharacterOffsetEnd=432 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=433 CharacterOffsetEnd=440 PartOfSpeech=VBG Lemma=sing NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=441 CharacterOffsetEnd=443 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=444 CharacterOffsetEnd=446 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=447 CharacterOffsetEnd=449 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=450 CharacterOffsetEnd=454 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=455 CharacterOffsetEnd=460 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=earnestness CharacterOffsetBegin=461 CharacterOffsetEnd=472 PartOfSpeech=NN Lemma=earnestness NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=473 CharacterOffsetEnd=476 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=gesticulation CharacterOffsetBegin=477 CharacterOffsetEnd=490 PartOfSpeech=NN Lemma=gesticulation NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=490 CharacterOffsetEnd=491 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=492 CharacterOffsetEnd=493 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=cast CharacterOffsetBegin=494 CharacterOffsetEnd=498 PartOfSpeech=VBD Lemma=cast NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=499 CharacterOffsetEnd=501 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=eyes CharacterOffsetBegin=502 CharacterOffsetEnd=506 PartOfSpeech=NNS Lemma=eye NamedEntityTag=O]
+[Text=towards CharacterOffsetBegin=507 CharacterOffsetEnd=514 PartOfSpeech=IN Lemma=towards NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=515 CharacterOffsetEnd=518 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=river CharacterOffsetBegin=519 CharacterOffsetEnd=524 PartOfSpeech=NN Lemma=river NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=524 CharacterOffsetEnd=525 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=526 CharacterOffsetEnd=529 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=spied CharacterOffsetBegin=530 CharacterOffsetEnd=535 PartOfSpeech=VBD Lemma=spy NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=536 CharacterOffsetEnd=537 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=large CharacterOffsetBegin=538 CharacterOffsetEnd=543 PartOfSpeech=JJ Lemma=large NamedEntityTag=O]
+[Text=wild CharacterOffsetBegin=544 CharacterOffsetEnd=548 PartOfSpeech=JJ Lemma=wild NamedEntityTag=O]
+[Text=boar CharacterOffsetBegin=549 CharacterOffsetEnd=553 PartOfSpeech=NN Lemma=boar NamedEntityTag=O]
+[Text=crossing CharacterOffsetBegin=554 CharacterOffsetEnd=562 PartOfSpeech=VBG Lemma=cross NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=563 CharacterOffsetEnd=565 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=565 CharacterOffsetEnd=566 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=near CharacterOffsetBegin=567 CharacterOffsetEnd=571 PartOfSpeech=IN Lemma=near NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=572 CharacterOffsetEnd=575 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=576 CharacterOffsetEnd=581 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=582 CharacterOffsetEnd=587 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=588 CharacterOffsetEnd=590 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=591 CharacterOffsetEnd=595 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=seated CharacterOffsetBegin=596 CharacterOffsetEnd=602 PartOfSpeech=VBN Lemma=seat NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=602 CharacterOffsetEnd=603 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN While) (, ,)
+      (S
+        (NP (PRP he))
+        (VP (VBD was)
+          (VP (VBG singing)
+            (NP (PRP it))
+            (PP (TO to)
+              (NP (PRP me)))
+            (PP (IN with)
+              (NP (JJ great) (NN earnestness)
+                (CC and)
+                (NN gesticulation)))))))
+    (, ,)
+    (NP (PRP I))
+    (VP
+      (VP (VBD cast)
+        (NP (PRP$ my) (NNS eyes))
+        (PP (IN towards)
+          (NP (DT the) (NN river))))
+      (, ,)
+      (CC and)
+      (VP (VBD spied)
+        (NP (DT a) (JJ large) (JJ wild) (NN boar))
+        (S
+          (VP (VBG crossing)
+            (NP (PRP it)))))
+      (, ,)
+      (PP (IN near)
+        (NP
+          (NP (DT the) (NN place))
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP (PRP we))
+              (VP (VBD were)
+                (VP (VBN seated))))))))
+    (. .)))
+
+root(ROOT-0, cast-16)
+mark(singing-5, While-1)
+punct(singing-5, ,-2)
+nsubj(singing-5, he-3)
+aux(singing-5, was-4)
+advcl:while(cast-16, singing-5)
+dobj(singing-5, it-6)
+case(me-8, to-7)
+nmod:to(singing-5, me-8)
+case(earnestness-11, with-9)
+amod(earnestness-11, great-10)
+nmod:with(singing-5, earnestness-11)
+cc(earnestness-11, and-12)
+nmod:with(singing-5, gesticulation-13)
+conj:and(earnestness-11, gesticulation-13)
+punct(cast-16, ,-14)
+nsubj(cast-16, I-15)
+nsubj(spied-24, I-15)
+nmod:poss(eyes-18, my-17)
+dobj(cast-16, eyes-18)
+case(river-21, towards-19)
+det(river-21, the-20)
+nmod:towards(cast-16, river-21)
+punct(cast-16, ,-22)
+cc(cast-16, and-23)
+conj:and(cast-16, spied-24)
+det(boar-28, a-25)
+amod(boar-28, large-26)
+amod(boar-28, wild-27)
+dobj(spied-24, boar-28)
+xcomp(spied-24, crossing-29)
+dobj(crossing-29, it-30)
+punct(cast-16, ,-31)
+case(place-34, near-32)
+det(place-34, the-33)
+conj:and(cast-16, place-34)
+advmod(seated-38, where-35)
+nsubjpass(seated-38, we-36)
+auxpass(seated-38, were-37)
+acl:relcl(place-34, seated-38)
+punct(cast-16, .-39)
+
+Sentence #6 (51 tokens):
+I took to my heels, and the composer followed me, leaving " Povero Calpigi," and (what was worse) a flagon of excellent Rhenish wine behind us, which was to me a greater bore than the bristly animal whose visit seemed intended for us.
+[Text=I CharacterOffsetBegin=604 CharacterOffsetEnd=605 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=took CharacterOffsetBegin=606 CharacterOffsetEnd=610 PartOfSpeech=VBD Lemma=take NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=611 CharacterOffsetEnd=613 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=614 CharacterOffsetEnd=616 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=heels CharacterOffsetBegin=617 CharacterOffsetEnd=622 PartOfSpeech=NNS Lemma=heel NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=622 CharacterOffsetEnd=623 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=624 CharacterOffsetEnd=627 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=628 CharacterOffsetEnd=631 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=composer CharacterOffsetBegin=632 CharacterOffsetEnd=640 PartOfSpeech=NN Lemma=composer NamedEntityTag=O]
+[Text=followed CharacterOffsetBegin=641 CharacterOffsetEnd=649 PartOfSpeech=VBD Lemma=follow NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=650 CharacterOffsetEnd=652 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=652 CharacterOffsetEnd=653 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=leaving CharacterOffsetBegin=654 CharacterOffsetEnd=661 PartOfSpeech=VBG Lemma=leave NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=662 CharacterOffsetEnd=663 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=Povero CharacterOffsetBegin=664 CharacterOffsetEnd=670 PartOfSpeech=NNP Lemma=Povero NamedEntityTag=PERSON]
+[Text=Calpigi CharacterOffsetBegin=671 CharacterOffsetEnd=678 PartOfSpeech=NNP Lemma=Calpigi NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=678 CharacterOffsetEnd=679 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=679 CharacterOffsetEnd=680 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=681 CharacterOffsetEnd=684 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=685 CharacterOffsetEnd=686 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=686 CharacterOffsetEnd=690 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=691 CharacterOffsetEnd=694 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=worse CharacterOffsetBegin=695 CharacterOffsetEnd=700 PartOfSpeech=JJR Lemma=worse NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=700 CharacterOffsetEnd=701 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=702 CharacterOffsetEnd=703 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=flagon CharacterOffsetBegin=704 CharacterOffsetEnd=710 PartOfSpeech=NN Lemma=flagon NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=711 CharacterOffsetEnd=713 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=excellent CharacterOffsetBegin=714 CharacterOffsetEnd=723 PartOfSpeech=JJ Lemma=excellent NamedEntityTag=O]
+[Text=Rhenish CharacterOffsetBegin=724 CharacterOffsetEnd=731 PartOfSpeech=NNP Lemma=Rhenish NamedEntityTag=MISC]
+[Text=wine CharacterOffsetBegin=732 CharacterOffsetEnd=736 PartOfSpeech=NN Lemma=wine NamedEntityTag=O]
+[Text=behind CharacterOffsetBegin=737 CharacterOffsetEnd=743 PartOfSpeech=IN Lemma=behind NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=744 CharacterOffsetEnd=746 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=746 CharacterOffsetEnd=747 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=748 CharacterOffsetEnd=753 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=754 CharacterOffsetEnd=757 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=758 CharacterOffsetEnd=760 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=761 CharacterOffsetEnd=763 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=764 CharacterOffsetEnd=765 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=greater CharacterOffsetBegin=766 CharacterOffsetEnd=773 PartOfSpeech=JJR Lemma=greater NamedEntityTag=O]
+[Text=bore CharacterOffsetBegin=774 CharacterOffsetEnd=778 PartOfSpeech=VBD Lemma=bear NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=779 CharacterOffsetEnd=783 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=784 CharacterOffsetEnd=787 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bristly CharacterOffsetBegin=788 CharacterOffsetEnd=795 PartOfSpeech=JJ Lemma=bristly NamedEntityTag=O]
+[Text=animal CharacterOffsetBegin=796 CharacterOffsetEnd=802 PartOfSpeech=NN Lemma=animal NamedEntityTag=O]
+[Text=whose CharacterOffsetBegin=803 CharacterOffsetEnd=808 PartOfSpeech=WP$ Lemma=whose NamedEntityTag=O]
+[Text=visit CharacterOffsetBegin=809 CharacterOffsetEnd=814 PartOfSpeech=NN Lemma=visit NamedEntityTag=O]
+[Text=seemed CharacterOffsetBegin=815 CharacterOffsetEnd=821 PartOfSpeech=VBD Lemma=seem NamedEntityTag=O]
+[Text=intended CharacterOffsetBegin=822 CharacterOffsetEnd=830 PartOfSpeech=VBN Lemma=intend NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=831 CharacterOffsetEnd=834 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=835 CharacterOffsetEnd=837 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=837 CharacterOffsetEnd=838 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (S
+        (NP (PRP I))
+        (VP (VBD took)
+          (PP (TO to)
+            (NP (PRP$ my) (NNS heels)))))
+      (, ,)
+      (CC and)
+      (S
+        (NP (DT the) (NN composer))
+        (VP (VBD followed)
+          (NP (PRP me))
+          (, ,)
+          (S
+            (VP (VBG leaving) ('' '')
+              (NP
+                (NP (NNP Povero) (NNP Calpigi) (, ,))
+                ('' '')
+                (CC and)
+                (PRN (-LRB- -LRB-)
+                  (SBAR
+                    (WHNP (WP what))
+                    (S
+                      (VP (VBD was)
+                        (ADJP (JJR worse)))))
+                  (-RRB- -RRB-))
+                (NP
+                  (NP (DT a) (NN flagon))
+                  (PP (IN of)
+                    (NP (JJ excellent) (NNP Rhenish) (NN wine)))
+                  (PP (IN behind)
+                    (NP (PRP us)))))))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBD was)
+                (PP (TO to)
+                  (NP (PRP me)))))))))
+    (NP (DT a) (JJR greater))
+    (VP (VBD bore)
+      (PP (IN than)
+        (NP
+          (NP (DT the) (JJ bristly) (NN animal))
+          (SBAR
+            (WHNP (WP$ whose) (NN visit))
+            (S
+              (VP (VBD seemed)
+                (VP (VBN intended)
+                  (PP (IN for)
+                    (NP (PRP us))))))))))
+    (. .)))
+
+root(ROOT-0, bore-40)
+nsubj(took-2, I-1)
+dep(bore-40, took-2)
+case(heels-5, to-3)
+nmod:poss(heels-5, my-4)
+nmod:to(took-2, heels-5)
+punct(took-2, ,-6)
+cc(took-2, and-7)
+det(composer-9, the-8)
+nsubj(followed-10, composer-9)
+conj:and(took-2, followed-10)
+dep(bore-40, followed-10)
+dobj(followed-10, me-11)
+punct(followed-10, ,-12)
+advcl(followed-10, leaving-13)
+punct(leaving-13, ''-14)
+compound(Calpigi-16, Povero-15)
+dobj(leaving-13, Calpigi-16)
+punct(Calpigi-16, ,-17)
+punct(Calpigi-16, ''-18)
+cc(Calpigi-16, and-19)
+punct(worse-23, -LRB--20)
+nsubj(worse-23, what-21)
+cop(worse-23, was-22)
+dep(Calpigi-16, worse-23)
+punct(worse-23, -RRB--24)
+det(flagon-26, a-25)
+dobj(leaving-13, flagon-26)
+conj:and(Calpigi-16, flagon-26)
+case(wine-30, of-27)
+amod(wine-30, excellent-28)
+compound(wine-30, Rhenish-29)
+nmod:of(flagon-26, wine-30)
+case(us-32, behind-31)
+nmod:behind(flagon-26, us-32)
+punct(followed-10, ,-33)
+nsubj(me-37, which-34)
+cop(me-37, was-35)
+case(me-37, to-36)
+dep(followed-10, me-37)
+det(greater-39, a-38)
+nsubj(bore-40, greater-39)
+case(animal-44, than-41)
+det(animal-44, the-42)
+amod(animal-44, bristly-43)
+nmod:than(bore-40, animal-44)
+nmod:poss(visit-46, animal-44)
+ref(animal-44, whose-45)
+nsubj(seemed-47, visit-46)
+acl:relcl(animal-44, seemed-47)
+xcomp(seemed-47, intended-48)
+case(us-50, for-49)
+nmod:for(intended-48, us-50)
+punct(bore-40, .-51)
+
+Coreference set:
+	(1,9,[9,10]) -> (1,3,[1,4]), that is: "him" -> "One evening Salieri"
+	(2,4,[4,5]) -> (1,3,[1,4]), that is: "he" -> "One evening Salieri"
+	(2,7,[7,8]) -> (1,3,[1,4]), that is: "his" -> "One evening Salieri"
+	(3,29,[29,30]) -> (1,3,[1,4]), that is: "he" -> "One evening Salieri"
+	(3,32,[32,33]) -> (1,3,[1,4]), that is: "his" -> "One evening Salieri"
+	(3,42,[42,43]) -> (1,3,[1,4]), that is: "he" -> "One evening Salieri"
+Coreference set:
+	(5,8,[8,9]) -> (1,6,[6,7]), that is: "me" -> "me"
+	(5,15,[15,16]) -> (1,6,[6,7]), that is: "I" -> "me"
+	(5,17,[17,18]) -> (1,6,[6,7]), that is: "my" -> "me"
+	(6,1,[1,2]) -> (1,6,[6,7]), that is: "I" -> "me"
+	(6,4,[4,5]) -> (1,6,[6,7]), that is: "my" -> "me"
+	(6,11,[11,12]) -> (1,6,[6,7]), that is: "me" -> "me"
+	(6,37,[37,38]) -> (1,6,[6,7]), that is: "me" -> "me"
+Coreference set:
+	(5,6,[6,7]) -> (3,3,[2,20]), that is: "it" -> "the back of the cabaret where we had been taking refreshments , near the banks of the Danube"
+	(5,30,[30,31]) -> (3,3,[2,20]), that is: "it" -> "the back of the cabaret where we had been taking refreshments , near the banks of the Danube"
+Coreference set:
+	(3,21,[21,22]) -> (3,8,[8,9]), that is: "we" -> "we"
+	(3,23,[23,24]) -> (3,8,[8,9]), that is: "ourselves" -> "we"
+	(5,36,[36,37]) -> (3,8,[8,9]), that is: "we" -> "we"
+	(6,32,[32,33]) -> (3,8,[8,9]), that is: "us" -> "we"
+	(6,50,[50,51]) -> (3,8,[8,9]), that is: "us" -> "we"
+Coreference set:
+	(5,3,[3,4]) -> (4,1,[1,4]), that is: "he" -> "povero Calpigi ."

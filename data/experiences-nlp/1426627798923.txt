@@ -1,0 +1,773 @@
+Sentence #1 (6 tokens):
+Yesterday we heard Henri Herz.
+[Text=Yesterday CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1D Timex=<TIMEX3 alt_value="OFFSET P-1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Yesterday</TIMEX3>]
+[Text=we CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=Henri CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Henri NamedEntityTag=PERSON]
+[Text=Herz CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Herz NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (NN Yesterday))
+    (NP (PRP we))
+    (VP (VBD heard)
+      (NP (NNP Henri) (NNP Herz)))
+    (. .)))
+
+root(ROOT-0, heard-3)
+nmod:tmod(heard-3, Yesterday-1)
+nsubj(heard-3, we-2)
+compound(Herz-5, Henri-4)
+dobj(heard-3, Herz-5)
+punct(heard-3, .-6)
+
+Sentence #2 (13 tokens):
+His execution is elegant, agreeable and coquettish, but without nobility.
+[Text=His CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=execution CharacterOffsetBegin=35 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=execution NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=elegant CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=JJ Lemma=elegant NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=agreeable CharacterOffsetBegin=57 CharacterOffsetEnd=66 PartOfSpeech=JJ Lemma=agreeable NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=coquettish CharacterOffsetBegin=71 CharacterOffsetEnd=81 PartOfSpeech=JJ Lemma=coquettish NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=87 CharacterOffsetEnd=94 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=nobility CharacterOffsetBegin=95 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=nobility NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP$ His) (NN execution))
+    (VP
+      (VP (VBZ is)
+        (ADJP (JJ elegant) (, ,) (JJ agreeable)
+          (CC and)
+          (JJ coquettish)))
+      (, ,)
+      (CC but)
+      (VP
+        (PP (IN without)
+          (NP (NN nobility)))))
+    (. .)))
+
+root(ROOT-0, elegant-4)
+nmod:poss(execution-2, His-1)
+nsubj(elegant-4, execution-2)
+nsubj(agreeable-6, execution-2)
+nsubj(coquettish-8, execution-2)
+cop(elegant-4, is-3)
+punct(elegant-4, ,-5)
+conj:and(elegant-4, agreeable-6)
+cc(elegant-4, and-7)
+conj:and(elegant-4, coquettish-8)
+punct(elegant-4, ,-9)
+cc(elegant-4, but-10)
+case(nobility-12, without-11)
+conj:but(elegant-4, nobility-12)
+punct(elegant-4, .-13)
+
+Sentence #3 (27 tokens):
+What a difference between him and Chopin, whose fingers sing and bring tears to your eyes, making anyone who is sensitive tremble with emotion.
+[Text=What CharacterOffsetBegin=105 CharacterOffsetEnd=109 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=difference CharacterOffsetBegin=112 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=difference NamedEntityTag=O]
+[Text=between CharacterOffsetBegin=123 CharacterOffsetEnd=130 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Chopin CharacterOffsetBegin=139 CharacterOffsetEnd=145 PartOfSpeech=NNP Lemma=Chopin NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=whose CharacterOffsetBegin=147 CharacterOffsetEnd=152 PartOfSpeech=WP$ Lemma=whose NamedEntityTag=O]
+[Text=fingers CharacterOffsetBegin=153 CharacterOffsetEnd=160 PartOfSpeech=NNS Lemma=finger NamedEntityTag=O]
+[Text=sing CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=VB Lemma=sing NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=166 CharacterOffsetEnd=169 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=bring CharacterOffsetBegin=170 CharacterOffsetEnd=175 PartOfSpeech=VB Lemma=bring NamedEntityTag=O]
+[Text=tears CharacterOffsetBegin=176 CharacterOffsetEnd=181 PartOfSpeech=NNS Lemma=tear NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=182 CharacterOffsetEnd=184 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=185 CharacterOffsetEnd=189 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=eyes CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=NNS Lemma=eye NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=194 CharacterOffsetEnd=195 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=making CharacterOffsetBegin=196 CharacterOffsetEnd=202 PartOfSpeech=VBG Lemma=make NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=203 CharacterOffsetEnd=209 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=210 CharacterOffsetEnd=213 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=214 CharacterOffsetEnd=216 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=sensitive CharacterOffsetBegin=217 CharacterOffsetEnd=226 PartOfSpeech=JJ Lemma=sensitive NamedEntityTag=O]
+[Text=tremble CharacterOffsetBegin=227 CharacterOffsetEnd=234 PartOfSpeech=VBP Lemma=tremble NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=235 CharacterOffsetEnd=239 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=emotion CharacterOffsetBegin=240 CharacterOffsetEnd=247 PartOfSpeech=NN Lemma=emotion NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=247 CharacterOffsetEnd=248 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (NP
+          (NP
+            (NP (DT a) (NN difference))
+            (PP (IN between)
+              (NP (PRP him))))
+          (CC and)
+          (NP
+            (NP (NNP Chopin))
+            (, ,)
+            (SBAR
+              (WHNP (WP$ whose) (NNS fingers))
+              (S
+                (VP (VB sing)
+                  (CC and)
+                  (VB bring)
+                  (NP (NNS tears))
+                  (PP (TO to)
+                    (NP (PRP$ your) (NNS eyes)))
+                  (, ,)
+                  (S
+                    (VP (VBG making)
+                      (NP
+                        (NP (NN anyone))
+                        (SBAR
+                          (WHNP (WP who))
+                          (S
+                            (VP (VBZ is)
+                              (ADJP (JJ sensitive)))))))))))))
+        (VP (VBP tremble)
+          (PP (IN with)
+            (NP (NN emotion))))))
+    (. .)))
+
+root(ROOT-0, tremble-24)
+dobj(tremble-24, What-1)
+det(difference-3, a-2)
+nsubj(tremble-24, difference-3)
+case(him-5, between-4)
+nmod:between(difference-3, him-5)
+cc(difference-3, and-6)
+conj:and(difference-3, Chopin-7)
+nmod:poss(fingers-10, Chopin-7)
+nsubj(tremble-24, Chopin-7)
+punct(Chopin-7, ,-8)
+ref(Chopin-7, whose-9)
+nsubj(sing-11, fingers-10)
+nsubj(bring-13, fingers-10)
+acl:relcl(Chopin-7, sing-11)
+cc(sing-11, and-12)
+acl:relcl(Chopin-7, bring-13)
+conj:and(sing-11, bring-13)
+dobj(sing-11, tears-14)
+case(eyes-17, to-15)
+nmod:poss(eyes-17, your-16)
+nmod:to(sing-11, eyes-17)
+punct(sing-11, ,-18)
+advcl(sing-11, making-19)
+dobj(making-19, anyone-20)
+nsubj(sensitive-23, anyone-20)
+ref(anyone-20, who-21)
+cop(sensitive-23, is-22)
+acl:relcl(anyone-20, sensitive-23)
+case(emotion-26, with-25)
+nmod:with(tremble-24, emotion-26)
+punct(tremble-24, .-27)
+
+Sentence #4 (44 tokens):
+His delicate and slender hands cover wide stretches and skips with a fabulous lightness, and his finger agility is so marvellous that I am ready to believe the amusing story that he has been seen to put his foot around his neck!
+[Text=His CharacterOffsetBegin=249 CharacterOffsetEnd=252 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=delicate CharacterOffsetBegin=253 CharacterOffsetEnd=261 PartOfSpeech=JJ Lemma=delicate NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=262 CharacterOffsetEnd=265 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=slender CharacterOffsetBegin=266 CharacterOffsetEnd=273 PartOfSpeech=JJ Lemma=slender NamedEntityTag=O]
+[Text=hands CharacterOffsetBegin=274 CharacterOffsetEnd=279 PartOfSpeech=NNS Lemma=hand NamedEntityTag=O]
+[Text=cover CharacterOffsetBegin=280 CharacterOffsetEnd=285 PartOfSpeech=VBP Lemma=cover NamedEntityTag=O]
+[Text=wide CharacterOffsetBegin=286 CharacterOffsetEnd=290 PartOfSpeech=JJ Lemma=wide NamedEntityTag=O]
+[Text=stretches CharacterOffsetBegin=291 CharacterOffsetEnd=300 PartOfSpeech=NNS Lemma=stretch NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=301 CharacterOffsetEnd=304 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=skips CharacterOffsetBegin=305 CharacterOffsetEnd=310 PartOfSpeech=VBZ Lemma=skip NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=311 CharacterOffsetEnd=315 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=316 CharacterOffsetEnd=317 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fabulous CharacterOffsetBegin=318 CharacterOffsetEnd=326 PartOfSpeech=JJ Lemma=fabulous NamedEntityTag=O]
+[Text=lightness CharacterOffsetBegin=327 CharacterOffsetEnd=336 PartOfSpeech=NN Lemma=lightness NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=336 CharacterOffsetEnd=337 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=338 CharacterOffsetEnd=341 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=342 CharacterOffsetEnd=345 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=finger CharacterOffsetBegin=346 CharacterOffsetEnd=352 PartOfSpeech=NN Lemma=finger NamedEntityTag=O]
+[Text=agility CharacterOffsetBegin=353 CharacterOffsetEnd=360 PartOfSpeech=NN Lemma=agility NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=361 CharacterOffsetEnd=363 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=364 CharacterOffsetEnd=366 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=marvellous CharacterOffsetBegin=367 CharacterOffsetEnd=377 PartOfSpeech=JJ Lemma=marvellous NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=378 CharacterOffsetEnd=382 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=383 CharacterOffsetEnd=384 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=385 CharacterOffsetEnd=387 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=ready CharacterOffsetBegin=388 CharacterOffsetEnd=393 PartOfSpeech=JJ Lemma=ready NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=394 CharacterOffsetEnd=396 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=believe CharacterOffsetBegin=397 CharacterOffsetEnd=404 PartOfSpeech=VB Lemma=believe NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=405 CharacterOffsetEnd=408 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=amusing CharacterOffsetBegin=409 CharacterOffsetEnd=416 PartOfSpeech=JJ Lemma=amusing NamedEntityTag=O]
+[Text=story CharacterOffsetBegin=417 CharacterOffsetEnd=422 PartOfSpeech=NN Lemma=story NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=423 CharacterOffsetEnd=427 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=428 CharacterOffsetEnd=430 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=431 CharacterOffsetEnd=434 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=435 CharacterOffsetEnd=439 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=seen CharacterOffsetBegin=440 CharacterOffsetEnd=444 PartOfSpeech=VBN Lemma=see NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=445 CharacterOffsetEnd=447 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=448 CharacterOffsetEnd=451 PartOfSpeech=VB Lemma=put NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=452 CharacterOffsetEnd=455 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=foot CharacterOffsetBegin=456 CharacterOffsetEnd=460 PartOfSpeech=NN Lemma=foot NamedEntityTag=O]
+[Text=around CharacterOffsetBegin=461 CharacterOffsetEnd=467 PartOfSpeech=IN Lemma=around NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=468 CharacterOffsetEnd=471 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=neck CharacterOffsetBegin=472 CharacterOffsetEnd=476 PartOfSpeech=NN Lemma=neck NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=476 CharacterOffsetEnd=477 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP$ His) (JJ delicate)
+        (CC and)
+        (JJ slender) (NNS hands))
+      (VP
+        (VP (VBP cover)
+          (NP (JJ wide) (NNS stretches)))
+        (CC and)
+        (VP (VBZ skips)
+          (PP (IN with)
+            (NP (DT a) (JJ fabulous) (NN lightness))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP$ his) (NN finger) (NN agility))
+      (VP (VBZ is)
+        (ADJP (RB so) (JJ marvellous))
+        (SBAR (IN that)
+          (S
+            (NP (PRP I))
+            (VP (VBP am)
+              (ADJP (JJ ready)
+                (S
+                  (VP (TO to)
+                    (VP (VB believe)
+                      (NP (DT the) (JJ amusing) (NN story))
+                      (SBAR (IN that)
+                        (S
+                          (NP (PRP he))
+                          (VP (VBZ has)
+                            (VP (VBN been)
+                              (VP (VBN seen)
+                                (S
+                                  (VP (TO to)
+                                    (VP (VB put)
+                                      (NP (PRP$ his) (NN foot))
+                                      (PP (IN around)
+                                        (NP (PRP$ his) (NN neck))))))))))))))))))))
+    (. !)))
+
+root(ROOT-0, cover-6)
+nmod:poss(delicate-2, His-1)
+nsubj(cover-6, delicate-2)
+nsubj(skips-10, delicate-2)
+cc(delicate-2, and-3)
+amod(hands-5, slender-4)
+conj:and(delicate-2, hands-5)
+nsubj(cover-6, hands-5)
+amod(stretches-8, wide-7)
+dobj(cover-6, stretches-8)
+cc(cover-6, and-9)
+conj:and(cover-6, skips-10)
+case(lightness-14, with-11)
+det(lightness-14, a-12)
+amod(lightness-14, fabulous-13)
+nmod:with(skips-10, lightness-14)
+punct(cover-6, ,-15)
+cc(cover-6, and-16)
+nmod:poss(agility-19, his-17)
+compound(agility-19, finger-18)
+nsubj(marvellous-22, agility-19)
+cop(marvellous-22, is-20)
+advmod(marvellous-22, so-21)
+conj:and(cover-6, marvellous-22)
+mark(ready-26, that-23)
+nsubj(ready-26, I-24)
+nsubj:xsubj(believe-28, I-24)
+cop(ready-26, am-25)
+ccomp(marvellous-22, ready-26)
+mark(believe-28, to-27)
+xcomp(ready-26, believe-28)
+det(story-31, the-29)
+amod(story-31, amusing-30)
+dobj(believe-28, story-31)
+mark(seen-36, that-32)
+nsubjpass(seen-36, he-33)
+nsubj:xsubj(put-38, he-33)
+aux(seen-36, has-34)
+auxpass(seen-36, been-35)
+ccomp(believe-28, seen-36)
+mark(put-38, to-37)
+xcomp(seen-36, put-38)
+nmod:poss(foot-40, his-39)
+dobj(put-38, foot-40)
+case(neck-43, around-41)
+nmod:poss(neck-43, his-42)
+nmod:around(put-38, neck-43)
+punct(cover-6, !-44)
+
+Sentence #5 (43 tokens):
+Moreover, it is only thanks to this flexibility that he can play black notes with his thumb or whole series of notes with two fingers only, passing the longer finger over the shorter and sliding from one note to another.
+[Text=Moreover CharacterOffsetBegin=478 CharacterOffsetEnd=486 PartOfSpeech=RB Lemma=moreover NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=486 CharacterOffsetEnd=487 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=488 CharacterOffsetEnd=490 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=491 CharacterOffsetEnd=493 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=494 CharacterOffsetEnd=498 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=thanks CharacterOffsetBegin=499 CharacterOffsetEnd=505 PartOfSpeech=NNS Lemma=thanks NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=506 CharacterOffsetEnd=508 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=509 CharacterOffsetEnd=513 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=flexibility CharacterOffsetBegin=514 CharacterOffsetEnd=525 PartOfSpeech=NN Lemma=flexibility NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=526 CharacterOffsetEnd=530 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=531 CharacterOffsetEnd=533 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=534 CharacterOffsetEnd=537 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=538 CharacterOffsetEnd=542 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=black CharacterOffsetBegin=543 CharacterOffsetEnd=548 PartOfSpeech=JJ Lemma=black NamedEntityTag=O]
+[Text=notes CharacterOffsetBegin=549 CharacterOffsetEnd=554 PartOfSpeech=NNS Lemma=note NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=555 CharacterOffsetEnd=559 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=560 CharacterOffsetEnd=563 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=thumb CharacterOffsetBegin=564 CharacterOffsetEnd=569 PartOfSpeech=NN Lemma=thumb NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=570 CharacterOffsetEnd=572 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=573 CharacterOffsetEnd=578 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=series CharacterOffsetBegin=579 CharacterOffsetEnd=585 PartOfSpeech=NN Lemma=series NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=586 CharacterOffsetEnd=588 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=notes CharacterOffsetBegin=589 CharacterOffsetEnd=594 PartOfSpeech=NNS Lemma=note NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=595 CharacterOffsetEnd=599 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=600 CharacterOffsetEnd=603 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=fingers CharacterOffsetBegin=604 CharacterOffsetEnd=611 PartOfSpeech=NNS Lemma=finger NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=612 CharacterOffsetEnd=616 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=616 CharacterOffsetEnd=617 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=passing CharacterOffsetBegin=618 CharacterOffsetEnd=625 PartOfSpeech=VBG Lemma=pass NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=626 CharacterOffsetEnd=629 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=longer CharacterOffsetBegin=630 CharacterOffsetEnd=636 PartOfSpeech=JJR Lemma=longer NamedEntityTag=O]
+[Text=finger CharacterOffsetBegin=637 CharacterOffsetEnd=643 PartOfSpeech=NN Lemma=finger NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=644 CharacterOffsetEnd=648 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=649 CharacterOffsetEnd=652 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=shorter CharacterOffsetBegin=653 CharacterOffsetEnd=660 PartOfSpeech=JJR Lemma=shorter NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=661 CharacterOffsetEnd=664 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sliding CharacterOffsetBegin=665 CharacterOffsetEnd=672 PartOfSpeech=VBG Lemma=slide NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=673 CharacterOffsetEnd=677 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=678 CharacterOffsetEnd=681 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=note CharacterOffsetBegin=682 CharacterOffsetEnd=686 PartOfSpeech=NN Lemma=note NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=687 CharacterOffsetEnd=689 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=another CharacterOffsetBegin=690 CharacterOffsetEnd=697 PartOfSpeech=DT Lemma=another NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=697 CharacterOffsetEnd=698 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Moreover))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADVP (RB only))
+      (ADVP (NNS thanks)
+        (PP (TO to)
+          (NP (DT this) (NN flexibility))))
+      (SBAR (IN that)
+        (S
+          (NP (PRP he))
+          (VP (MD can)
+            (VP (VB play)
+              (NP (JJ black) (NNS notes))
+              (PP (IN with)
+                (NP
+                  (NP (PRP$ his) (NN thumb)
+                    (CC or)
+                    (JJ whole) (NN series))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNS notes))
+                      (PP (IN with)
+                        (NP (CD two) (NNS fingers) (RB only)))))))
+              (, ,)
+              (S
+                (VP
+                  (VP (VBG passing)
+                    (NP
+                      (NP (DT the) (JJR longer) (NN finger))
+                      (PP (IN over)
+                        (NP (DT the) (JJR shorter)))))
+                  (CC and)
+                  (VP (VBG sliding)
+                    (PP (IN from)
+                      (NP (CD one) (NN note)))
+                    (PP (TO to)
+                      (NP (DT another)))))))))))
+    (. .)))
+
+root(ROOT-0, is-4)
+advmod(is-4, Moreover-1)
+punct(is-4, ,-2)
+nsubj(is-4, it-3)
+advmod(is-4, only-5)
+advmod(is-4, thanks-6)
+case(flexibility-9, to-7)
+det(flexibility-9, this-8)
+nmod:to(thanks-6, flexibility-9)
+mark(play-13, that-10)
+nsubj(play-13, he-11)
+aux(play-13, can-12)
+ccomp(is-4, play-13)
+amod(notes-15, black-14)
+dobj(play-13, notes-15)
+case(thumb-18, with-16)
+nmod:poss(thumb-18, his-17)
+nmod:with(play-13, thumb-18)
+cc(thumb-18, or-19)
+amod(series-21, whole-20)
+nmod:with(play-13, series-21)
+conj:or(thumb-18, series-21)
+case(notes-23, of-22)
+nmod:of(thumb-18, notes-23)
+case(fingers-26, with-24)
+nummod(fingers-26, two-25)
+nmod:with(notes-23, fingers-26)
+advmod(fingers-26, only-27)
+punct(play-13, ,-28)
+dep(play-13, passing-29)
+det(finger-32, the-30)
+amod(finger-32, longer-31)
+dobj(passing-29, finger-32)
+case(shorter-35, over-33)
+det(shorter-35, the-34)
+nmod:over(finger-32, shorter-35)
+cc(passing-29, and-36)
+dep(play-13, sliding-37)
+conj:and(passing-29, sliding-37)
+case(note-40, from-38)
+nummod(note-40, one-39)
+nmod:from(sliding-37, note-40)
+case(another-42, to-41)
+nmod:to(sliding-37, another-42)
+punct(is-4, .-43)
+
+Sentence #6 (49 tokens):
+His pianissimo is so delicate that he can produce the greatest effects of crescendo without requiring the strength of the muscular virtuosi of the modern school, and he produces marvels of nuance by 
+the use of the pedal, both pedals together and by his unique legato.
+[Text=His CharacterOffsetBegin=699 CharacterOffsetEnd=702 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=pianissimo CharacterOffsetBegin=703 CharacterOffsetEnd=713 PartOfSpeech=NN Lemma=pianissimo NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=714 CharacterOffsetEnd=716 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=717 CharacterOffsetEnd=719 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=delicate CharacterOffsetBegin=720 CharacterOffsetEnd=728 PartOfSpeech=JJ Lemma=delicate NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=729 CharacterOffsetEnd=733 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=734 CharacterOffsetEnd=736 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=737 CharacterOffsetEnd=740 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=produce CharacterOffsetBegin=741 CharacterOffsetEnd=748 PartOfSpeech=VB Lemma=produce NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=749 CharacterOffsetEnd=752 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=greatest CharacterOffsetBegin=753 CharacterOffsetEnd=761 PartOfSpeech=JJS Lemma=greatest NamedEntityTag=O]
+[Text=effects CharacterOffsetBegin=762 CharacterOffsetEnd=769 PartOfSpeech=NNS Lemma=effect NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=770 CharacterOffsetEnd=772 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=crescendo CharacterOffsetBegin=773 CharacterOffsetEnd=782 PartOfSpeech=NN Lemma=crescendo NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=783 CharacterOffsetEnd=790 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=requiring CharacterOffsetBegin=791 CharacterOffsetEnd=800 PartOfSpeech=VBG Lemma=require NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=801 CharacterOffsetEnd=804 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=strength CharacterOffsetBegin=805 CharacterOffsetEnd=813 PartOfSpeech=NN Lemma=strength NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=814 CharacterOffsetEnd=816 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=817 CharacterOffsetEnd=820 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=muscular CharacterOffsetBegin=821 CharacterOffsetEnd=829 PartOfSpeech=JJ Lemma=muscular NamedEntityTag=O]
+[Text=virtuosi CharacterOffsetBegin=830 CharacterOffsetEnd=838 PartOfSpeech=NN Lemma=virtuosi NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=839 CharacterOffsetEnd=841 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=842 CharacterOffsetEnd=845 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=modern CharacterOffsetBegin=846 CharacterOffsetEnd=852 PartOfSpeech=JJ Lemma=modern NamedEntityTag=O]
+[Text=school CharacterOffsetBegin=853 CharacterOffsetEnd=859 PartOfSpeech=NN Lemma=school NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=859 CharacterOffsetEnd=860 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=861 CharacterOffsetEnd=864 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=865 CharacterOffsetEnd=867 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=produces CharacterOffsetBegin=868 CharacterOffsetEnd=876 PartOfSpeech=VBZ Lemma=produce NamedEntityTag=O]
+[Text=marvels CharacterOffsetBegin=877 CharacterOffsetEnd=884 PartOfSpeech=NNS Lemma=marvel NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=885 CharacterOffsetEnd=887 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=nuance CharacterOffsetBegin=888 CharacterOffsetEnd=894 PartOfSpeech=NN Lemma=nuance NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=895 CharacterOffsetEnd=897 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=900 CharacterOffsetEnd=903 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=904 CharacterOffsetEnd=907 PartOfSpeech=NN Lemma=use NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=908 CharacterOffsetEnd=910 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=911 CharacterOffsetEnd=914 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pedal CharacterOffsetBegin=915 CharacterOffsetEnd=920 PartOfSpeech=NN Lemma=pedal NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=920 CharacterOffsetEnd=921 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=922 CharacterOffsetEnd=926 PartOfSpeech=CC Lemma=both NamedEntityTag=O]
+[Text=pedals CharacterOffsetBegin=927 CharacterOffsetEnd=933 PartOfSpeech=NNS Lemma=pedal NamedEntityTag=O]
+[Text=together CharacterOffsetBegin=934 CharacterOffsetEnd=942 PartOfSpeech=RB Lemma=together NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=943 CharacterOffsetEnd=946 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=947 CharacterOffsetEnd=949 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=950 CharacterOffsetEnd=953 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=unique CharacterOffsetBegin=954 CharacterOffsetEnd=960 PartOfSpeech=JJ Lemma=unique NamedEntityTag=O]
+[Text=legato CharacterOffsetBegin=961 CharacterOffsetEnd=967 PartOfSpeech=NN Lemma=legato NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=967 CharacterOffsetEnd=968 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP$ His) (NN pianissimo))
+      (VP (VBZ is)
+        (ADJP (RB so) (JJ delicate))
+        (SBAR (IN that)
+          (S
+            (NP (PRP he))
+            (VP (MD can)
+              (VP (VB produce)
+                (NP
+                  (NP (DT the) (JJS greatest) (NNS effects))
+                  (PP (IN of)
+                    (NP (NN crescendo))))
+                (PP (IN without)
+                  (S
+                    (VP (VBG requiring)
+                      (NP
+                        (NP (DT the) (NN strength))
+                        (PP (IN of)
+                          (NP
+                            (NP (DT the) (JJ muscular) (NN virtuosi))
+                            (PP (IN of)
+                              (NP (DT the) (JJ modern) (NN school)))))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBZ produces)
+        (NP
+          (NP (NNS marvels))
+          (PP (IN of)
+            (NP (NN nuance))))
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NN use))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN pedal))
+                (, ,)
+                (CC both)
+                (NP (NNS pedals))))
+            (UCP
+              (ADVP (RB together))
+              (CC and)
+              (PP (IN by)
+                (NP (PRP$ his) (JJ unique) (NN legato))))))))
+    (. .)))
+
+root(ROOT-0, delicate-5)
+nmod:poss(pianissimo-2, His-1)
+nsubj(delicate-5, pianissimo-2)
+cop(delicate-5, is-3)
+advmod(delicate-5, so-4)
+mark(produce-9, that-6)
+nsubj(produce-9, he-7)
+aux(produce-9, can-8)
+ccomp(delicate-5, produce-9)
+det(effects-12, the-10)
+amod(effects-12, greatest-11)
+dobj(produce-9, effects-12)
+case(crescendo-14, of-13)
+nmod:of(effects-12, crescendo-14)
+mark(requiring-16, without-15)
+advcl:without(produce-9, requiring-16)
+det(strength-18, the-17)
+dobj(requiring-16, strength-18)
+case(virtuosi-22, of-19)
+det(virtuosi-22, the-20)
+amod(virtuosi-22, muscular-21)
+nmod:of(strength-18, virtuosi-22)
+case(school-26, of-23)
+det(school-26, the-24)
+amod(school-26, modern-25)
+nmod:of(virtuosi-22, school-26)
+punct(delicate-5, ,-27)
+cc(delicate-5, and-28)
+nsubj(produces-30, he-29)
+conj:and(delicate-5, produces-30)
+dobj(produces-30, marvels-31)
+case(nuance-33, of-32)
+nmod:of(marvels-31, nuance-33)
+case(use-36, by-34)
+det(use-36, the-35)
+nmod:by(produces-30, use-36)
+case(pedal-39, of-37)
+det(pedal-39, the-38)
+nmod:of(use-36, pedal-39)
+punct(pedal-39, ,-40)
+dep(pedal-39, both-41)
+conj(pedal-39, pedals-42)
+advmod(and-44, together-43)
+advmod(use-36, and-44)
+case(legato-48, by-45)
+nmod:poss(legato-48, his-46)
+amod(legato-48, unique-47)
+conj(and-44, legato-48)
+punct(delicate-5, .-49)
+
+Sentence #7 (20 tokens):
+To his pupils he says: "Let your left hand be your conductor and keep strict time'.
+[Text=To CharacterOffsetBegin=969 CharacterOffsetEnd=971 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=972 CharacterOffsetEnd=975 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=pupils CharacterOffsetBegin=976 CharacterOffsetEnd=982 PartOfSpeech=NNS Lemma=pupil NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=983 CharacterOffsetEnd=985 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=says CharacterOffsetBegin=986 CharacterOffsetEnd=990 PartOfSpeech=VBZ Lemma=say NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=990 CharacterOffsetEnd=991 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=992 CharacterOffsetEnd=993 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Let CharacterOffsetBegin=993 CharacterOffsetEnd=996 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=997 CharacterOffsetEnd=1001 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=1002 CharacterOffsetEnd=1006 PartOfSpeech=JJ Lemma=left NamedEntityTag=O]
+[Text=hand CharacterOffsetBegin=1007 CharacterOffsetEnd=1011 PartOfSpeech=NN Lemma=hand NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=1012 CharacterOffsetEnd=1014 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=1015 CharacterOffsetEnd=1019 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=conductor CharacterOffsetBegin=1020 CharacterOffsetEnd=1029 PartOfSpeech=NN Lemma=conductor NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1030 CharacterOffsetEnd=1033 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=keep CharacterOffsetBegin=1034 CharacterOffsetEnd=1038 PartOfSpeech=VB Lemma=keep NamedEntityTag=O]
+[Text=strict CharacterOffsetBegin=1039 CharacterOffsetEnd=1045 PartOfSpeech=JJ Lemma=strict NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=1046 CharacterOffsetEnd=1050 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=1050 CharacterOffsetEnd=1051 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1051 CharacterOffsetEnd=1052 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (TO To)
+      (NP (PRP$ his) (NNS pupils)))
+    (NP (PRP he))
+    (VP (VBZ says) (: :) (`` ``)
+      (S
+        (S
+          (VP (VB Let)
+            (NP (PRP$ your) (JJ left) (NN hand))
+            (VP (VB be)
+              (NP (PRP$ your) (NN conductor)))))
+        (CC and)
+        (S
+          (VP (VB keep)
+            (NP (JJ strict) (NN time)))))
+      ('' '))
+    (. .)))
+
+root(ROOT-0, says-5)
+case(pupils-3, To-1)
+nmod:poss(pupils-3, his-2)
+nmod:to(says-5, pupils-3)
+nsubj(says-5, he-4)
+punct(says-5, :-6)
+punct(says-5, ``-7)
+xcomp(says-5, Let-8)
+nmod:poss(hand-11, your-9)
+amod(hand-11, left-10)
+dobj(Let-8, hand-11)
+cop(conductor-14, be-12)
+nmod:poss(conductor-14, your-13)
+dep(Let-8, conductor-14)
+cc(Let-8, and-15)
+xcomp(says-5, keep-16)
+conj:and(Let-8, keep-16)
+amod(time-18, strict-17)
+dobj(keep-16, time-18)
+punct(says-5, '-19)
+punct(says-5, .-20)
+
+Sentence #8 (30 tokens):
+And so his right hand, now hesitant, now impatient, is nevertheless constrained to follow this great rule and never weakens the rhythm of the left hand.
+[Text=And CharacterOffsetBegin=1053 CharacterOffsetEnd=1056 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=1057 CharacterOffsetEnd=1059 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=1060 CharacterOffsetEnd=1063 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=1064 CharacterOffsetEnd=1069 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=hand CharacterOffsetBegin=1070 CharacterOffsetEnd=1074 PartOfSpeech=NN Lemma=hand NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1074 CharacterOffsetEnd=1075 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=1076 CharacterOffsetEnd=1079 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t2" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=hesitant CharacterOffsetBegin=1080 CharacterOffsetEnd=1088 PartOfSpeech=JJ Lemma=hesitant NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1088 CharacterOffsetEnd=1089 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=1090 CharacterOffsetEnd=1093 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t3" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=impatient CharacterOffsetBegin=1094 CharacterOffsetEnd=1103 PartOfSpeech=JJ Lemma=impatient NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1103 CharacterOffsetEnd=1104 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=1105 CharacterOffsetEnd=1107 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=nevertheless CharacterOffsetBegin=1108 CharacterOffsetEnd=1120 PartOfSpeech=RB Lemma=nevertheless NamedEntityTag=O]
+[Text=constrained CharacterOffsetBegin=1121 CharacterOffsetEnd=1132 PartOfSpeech=VBN Lemma=constrain NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1133 CharacterOffsetEnd=1135 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=follow CharacterOffsetBegin=1136 CharacterOffsetEnd=1142 PartOfSpeech=VB Lemma=follow NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=1143 CharacterOffsetEnd=1147 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=1148 CharacterOffsetEnd=1153 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=rule CharacterOffsetBegin=1154 CharacterOffsetEnd=1158 PartOfSpeech=NN Lemma=rule NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1159 CharacterOffsetEnd=1162 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=1163 CharacterOffsetEnd=1168 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=weakens CharacterOffsetBegin=1169 CharacterOffsetEnd=1176 PartOfSpeech=VBZ Lemma=weaken NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1177 CharacterOffsetEnd=1180 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rhythm CharacterOffsetBegin=1181 CharacterOffsetEnd=1187 PartOfSpeech=NN Lemma=rhythm NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1188 CharacterOffsetEnd=1190 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1191 CharacterOffsetEnd=1194 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=1195 CharacterOffsetEnd=1199 PartOfSpeech=JJ Lemma=left NamedEntityTag=O]
+[Text=hand CharacterOffsetBegin=1200 CharacterOffsetEnd=1204 PartOfSpeech=NN Lemma=hand NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1204 CharacterOffsetEnd=1205 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC And)
+    (ADVP (RB so))
+    (NP
+      (NP (PRP$ his) (JJ right) (NN hand))
+      (, ,)
+      (ADJP
+        (ADVP (RB now))
+        (ADJP (JJ hesitant))
+        (, ,)
+        (ADJP (RB now) (JJ impatient)))
+      (, ,))
+    (VP
+      (VP (VBZ is)
+        (ADVP (RB nevertheless))
+        (ADJP (VBN constrained)
+          (S
+            (VP (TO to)
+              (VP (VB follow)
+                (NP (DT this) (JJ great) (NN rule)))))))
+      (CC and)
+      (VP
+        (ADVP (RB never))
+        (VBZ weakens)
+        (NP
+          (NP (DT the) (NN rhythm))
+          (PP (IN of)
+            (NP (DT the) (JJ left) (NN hand))))))
+    (. .)))
+
+root(ROOT-0, constrained-15)
+cc(constrained-15, And-1)
+advmod(constrained-15, so-2)
+nmod:poss(hand-5, his-3)
+amod(hand-5, right-4)
+nsubjpass(constrained-15, hand-5)
+nsubj:xsubj(follow-17, hand-5)
+nsubj(weakens-23, hand-5)
+punct(hand-5, ,-6)
+advmod(hesitant-8, now-7)
+amod(hand-5, hesitant-8)
+punct(hesitant-8, ,-9)
+advmod(impatient-11, now-10)
+dep(hesitant-8, impatient-11)
+punct(hand-5, ,-12)
+auxpass(constrained-15, is-13)
+advmod(constrained-15, nevertheless-14)
+mark(follow-17, to-16)
+xcomp(constrained-15, follow-17)
+det(rule-20, this-18)
+amod(rule-20, great-19)
+dobj(follow-17, rule-20)
+cc(constrained-15, and-21)
+neg(weakens-23, never-22)
+conj:and(constrained-15, weakens-23)
+det(rhythm-25, the-24)
+dobj(weakens-23, rhythm-25)
+case(hand-29, of-26)
+det(hand-29, the-27)
+amod(hand-29, left-28)
+nmod:of(rhythm-25, hand-29)
+punct(constrained-15, .-30)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,5,[4,6]), that is: "His" -> "Henri Herz"
+	(3,5,[5,6]) -> (1,5,[4,6]), that is: "him" -> "Henri Herz"
+	(4,1,[1,2]) -> (1,5,[4,6]), that is: "His" -> "Henri Herz"
+	(4,17,[17,18]) -> (1,5,[4,6]), that is: "his" -> "Henri Herz"
+	(4,33,[33,34]) -> (1,5,[4,6]), that is: "he" -> "Henri Herz"
+	(4,39,[39,40]) -> (1,5,[4,6]), that is: "his" -> "Henri Herz"
+	(4,42,[42,43]) -> (1,5,[4,6]), that is: "his" -> "Henri Herz"
+	(5,11,[11,12]) -> (1,5,[4,6]), that is: "he" -> "Henri Herz"
+	(5,17,[17,18]) -> (1,5,[4,6]), that is: "his" -> "Henri Herz"
+	(6,1,[1,2]) -> (1,5,[4,6]), that is: "His" -> "Henri Herz"
+Coreference set:
+	(5,3,[3,4]) -> (4,14,[12,15]), that is: "it" -> "a fabulous lightness"
+Coreference set:
+	(6,7,[7,8]) -> (6,2,[1,3]), that is: "he" -> "His pianissimo"
+	(6,29,[29,30]) -> (6,2,[1,3]), that is: "he" -> "His pianissimo"
+	(6,46,[46,47]) -> (6,2,[1,3]), that is: "his" -> "His pianissimo"
+	(7,2,[2,3]) -> (6,2,[1,3]), that is: "his" -> "His pianissimo"
+	(7,4,[4,5]) -> (6,2,[1,3]), that is: "he" -> "His pianissimo"
+	(8,3,[3,4]) -> (6,2,[1,3]), that is: "his" -> "His pianissimo"
+Coreference set:
+	(8,29,[27,30]) -> (7,11,[9,12]), that is: "the left hand" -> "your left hand"
+Coreference set:
+	(7,13,[13,14]) -> (7,9,[9,10]), that is: "your" -> "your"

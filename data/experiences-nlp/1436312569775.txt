@@ -1,0 +1,93 @@
+Sentence #1 (29 tokens):
+Tea party here Saturday, so that David Diamond and I, who had both missed her 80th-birthday concert last month, could hear Louise Talma's tapes.
+[Text=Tea CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Tea NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=Saturday CharacterOffsetBegin=15 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Saturday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-6 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-WXX-6">Saturday</TIMEX3>]
+[Text=, CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=David CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=David NamedEntityTag=PERSON]
+[Text=Diamond CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Diamond NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=missed CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=VBD Lemma=miss NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=80th-birthday CharacterOffsetBegin=78 CharacterOffsetEnd=91 PartOfSpeech=JJ Lemma=80th-birthday NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=92 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=JJ Lemma=last NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1M OFFSET P-1M Timex=<TIMEX3 alt_value="THIS P1M OFFSET P-1M" anchorTimeID="t3" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">last month</TIMEX3>]
+[Text=month CharacterOffsetBegin=105 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=month NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1M OFFSET P-1M Timex=<TIMEX3 alt_value="THIS P1M OFFSET P-1M" anchorTimeID="t3" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">last month</TIMEX3>]
+[Text=, CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=Louise CharacterOffsetBegin=123 CharacterOffsetEnd=129 PartOfSpeech=NNP Lemma=Louise NamedEntityTag=PERSON]
+[Text=Talma CharacterOffsetBegin=130 CharacterOffsetEnd=135 PartOfSpeech=NNP Lemma=Talma NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=135 CharacterOffsetEnd=137 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=tapes CharacterOffsetBegin=138 CharacterOffsetEnd=143 PartOfSpeech=NNS Lemma=tape NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Tea) (NN party))
+        (NP-TMP (RB here) (NNP Saturday)))
+      (, ,) (RB so) (IN that)
+      (NP
+        (NP (NNP David) (NNP Diamond))
+        (CC and)
+        (NP
+          (NP (PRP I))
+          (, ,)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD had) (DT both)
+                (VP (VBD missed)
+                  (NP (PRP$ her) (JJ 80th-birthday) (NN concert))
+                  (NP-TMP (JJ last) (NN month))))))))
+      (, ,))
+    (VP (MD could)
+      (VP (VB hear)
+        (NP
+          (NP (NNP Louise) (NNP Talma) (POS 's))
+          (NNS tapes))))
+    (. .)))
+
+root(ROOT-0, hear-24)
+compound(party-2, Tea-1)
+nsubj(hear-24, party-2)
+advmod(Saturday-4, here-3)
+nmod:tmod(party-2, Saturday-4)
+punct(party-2, ,-5)
+advmod(party-2, so-6)
+amod(party-2, that-7)
+compound(Diamond-9, David-8)
+dep(party-2, Diamond-9)
+cc(Diamond-9, and-10)
+dep(party-2, I-11)
+conj:and(Diamond-9, I-11)
+nsubj(missed-16, I-11)
+punct(I-11, ,-12)
+ref(I-11, who-13)
+aux(missed-16, had-14)
+dep(missed-16, both-15)
+acl:relcl(I-11, missed-16)
+nmod:poss(concert-19, her-17)
+amod(concert-19, 80th-birthday-18)
+dobj(missed-16, concert-19)
+amod(month-21, last-20)
+nmod:tmod(missed-16, month-21)
+punct(party-2, ,-22)
+aux(hear-24, could-23)
+compound(Talma-26, Louise-25)
+nmod:poss(tapes-28, Talma-26)
+case(Talma-26, 's-27)
+dobj(hear-24, tapes-28)
+punct(hear-24, .-29)
+
+Coreference set:
+	(1,11,[11,22]) -> (1,2,[1,5]), that is: "I , who had both missed her 80th-birthday concert last month" -> "Tea party here Saturday"

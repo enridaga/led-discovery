@@ -1,0 +1,228 @@
+Sentence #1 (18 tokens):
+[Thelonius] Monk had his own ideas about things, as far as harmonies were concerned.
+[Text=-LSB- CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Thelonius CharacterOffsetBegin=1 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=thelonius NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=Monk CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=monk NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=ideas CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNS Lemma=idea NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=far CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=RB Lemma=far NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=harmonies CharacterOffsetBegin=59 CharacterOffsetEnd=68 PartOfSpeech=NNS Lemma=harmony NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=concerned CharacterOffsetBegin=74 CharacterOffsetEnd=83 PartOfSpeech=VBN Lemma=concern NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (-LRB- -LSB-) (NN Thelonius) (-RRB- -RSB-))
+      (NN Monk))
+    (VP (VBD had)
+      (NP
+        (NP (PRP$ his) (JJ own) (NNS ideas))
+        (PP (IN about)
+          (NP (NNS things))))
+      (, ,)
+      (ADVP (IN as) (RB far))
+      (SBAR (IN as)
+        (S
+          (NP (NNS harmonies))
+          (VP (VBD were)
+            (VP (VBN concerned))))))
+    (. .)))
+
+root(ROOT-0, had-5)
+punct(Thelonius-2, -LSB--1)
+compound(Monk-4, Thelonius-2)
+punct(Thelonius-2, -RSB--3)
+nsubj(had-5, Monk-4)
+nmod:poss(ideas-8, his-6)
+amod(ideas-8, own-7)
+dobj(had-5, ideas-8)
+case(things-10, about-9)
+nmod:about(ideas-8, things-10)
+punct(had-5, ,-11)
+case(far-13, as-12)
+advmod(had-5, far-13)
+mark(concerned-17, as-14)
+nsubjpass(concerned-17, harmonies-15)
+auxpass(concerned-17, were-16)
+advcl:as(had-5, concerned-17)
+punct(had-5, .-18)
+
+Sentence #2 (10 tokens):
+But Dizzy was more advanced than any of them.
+[Text=But CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=Dizzy CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=Dizzy NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=advanced CharacterOffsetBegin=104 CharacterOffsetEnd=112 PartOfSpeech=JJ Lemma=advanced NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=122 CharacterOffsetEnd=124 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC But)
+    (NP (NNP Dizzy))
+    (VP (VBD was)
+      (ADJP (RBR more) (JJ advanced))
+      (PP (IN than)
+        (NP
+          (NP (DT any))
+          (PP (IN of)
+            (NP (PRP them))))))
+    (. .)))
+
+root(ROOT-0, advanced-5)
+cc(advanced-5, But-1)
+nsubj(advanced-5, Dizzy-2)
+cop(advanced-5, was-3)
+advmod(advanced-5, more-4)
+case(any-7, than-6)
+nmod:than(advanced-5, any-7)
+case(them-9, of-8)
+nmod:of(any-7, them-9)
+punct(advanced-5, .-10)
+
+Sentence #3 (36 tokens):
+Diz, by the way, was the first one I heard play "How High the Moon" in any other tempo than what had been the usual slow tempo up to that point.
+[Text=Diz CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=diz NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=143 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=148 CharacterOffsetEnd=151 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=152 CharacterOffsetEnd=155 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=156 CharacterOffsetEnd=161 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=one CharacterOffsetBegin=162 CharacterOffsetEnd=165 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=I CharacterOffsetBegin=166 CharacterOffsetEnd=167 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=168 CharacterOffsetEnd=173 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=174 CharacterOffsetEnd=178 PartOfSpeech=NN Lemma=play NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=179 CharacterOffsetEnd=180 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=How CharacterOffsetBegin=180 CharacterOffsetEnd=183 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=High CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=JJ Lemma=high NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=189 CharacterOffsetEnd=192 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Moon CharacterOffsetBegin=193 CharacterOffsetEnd=197 PartOfSpeech=NNP Lemma=Moon NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=197 CharacterOffsetEnd=198 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=199 CharacterOffsetEnd=201 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=202 CharacterOffsetEnd=205 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=206 CharacterOffsetEnd=211 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=tempo CharacterOffsetBegin=212 CharacterOffsetEnd=217 PartOfSpeech=NN Lemma=tempo NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=218 CharacterOffsetEnd=222 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=223 CharacterOffsetEnd=227 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=232 CharacterOffsetEnd=236 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=237 CharacterOffsetEnd=240 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=usual CharacterOffsetBegin=241 CharacterOffsetEnd=246 PartOfSpeech=JJ Lemma=usual NamedEntityTag=O]
+[Text=slow CharacterOffsetBegin=247 CharacterOffsetEnd=251 PartOfSpeech=JJ Lemma=slow NamedEntityTag=O]
+[Text=tempo CharacterOffsetBegin=252 CharacterOffsetEnd=257 PartOfSpeech=NN Lemma=tempo NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=258 CharacterOffsetEnd=260 PartOfSpeech=IN Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=261 CharacterOffsetEnd=263 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=264 CharacterOffsetEnd=268 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=269 CharacterOffsetEnd=274 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=274 CharacterOffsetEnd=275 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NN Diz))
+      (, ,)
+      (PP (IN by)
+        (NP (DT the) (NN way)))
+      (, ,))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (JJ first) (CD one))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBD heard)
+              (NP (NN play))
+              (`` ``)
+              (SBAR
+                (WHADJP (WRB How) (JJ High))
+                (S
+                  (NP
+                    (NP (DT the) (NNP Moon))
+                    ('' '')
+                    (PP (IN in)
+                      (NP (DT any) (JJ other) (NN tempo)))
+                    (PP (IN than)
+                      (NP (WP what))))
+                  (VP (VBD had)
+                    (VP (VBN been)
+                      (NP (DT the) (JJ usual) (JJ slow) (NN tempo))
+                      (ADVP (IN up)
+                        (PP (TO to)
+                          (NP (DT that) (NN point)))))))))))))
+    (. .)))
+
+root(ROOT-0, one-10)
+nsubj(one-10, Diz-1)
+punct(Diz-1, ,-2)
+case(way-5, by-3)
+det(way-5, the-4)
+nmod:by(Diz-1, way-5)
+punct(Diz-1, ,-6)
+cop(one-10, was-7)
+det(one-10, the-8)
+amod(one-10, first-9)
+nsubj(heard-12, I-11)
+acl:relcl(one-10, heard-12)
+dobj(heard-12, play-13)
+punct(heard-12, ``-14)
+advmod(High-16, How-15)
+dep(tempo-31, High-16)
+det(Moon-18, the-17)
+nsubj(tempo-31, Moon-18)
+punct(Moon-18, ''-19)
+case(tempo-23, in-20)
+det(tempo-23, any-21)
+amod(tempo-23, other-22)
+nmod:in(Moon-18, tempo-23)
+case(what-25, than-24)
+nmod:than(Moon-18, what-25)
+aux(tempo-31, had-26)
+cop(tempo-31, been-27)
+det(tempo-31, the-28)
+amod(tempo-31, usual-29)
+amod(tempo-31, slow-30)
+dep(heard-12, tempo-31)
+advmod(tempo-31, up-32)
+case(point-35, to-33)
+det(point-35, that-34)
+nmod:to(up-32, point-35)
+punct(one-10, .-36)
+
+Sentence #4 (5 tokens):
+That was about 1941.
+[Text=That CharacterOffsetBegin=276 CharacterOffsetEnd=280 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=281 CharacterOffsetEnd=284 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=285 CharacterOffsetEnd=290 PartOfSpeech=IN Lemma=about NamedEntityTag=DATE NormalizedNamedEntityTag=1941 Timex=<TIMEX3 tid="t1" type="DATE" value="1941">about 1941</TIMEX3>]
+[Text=1941 CharacterOffsetBegin=291 CharacterOffsetEnd=295 PartOfSpeech=CD Lemma=1941 NamedEntityTag=DATE NormalizedNamedEntityTag=1941 Timex=<TIMEX3 tid="t1" type="DATE" value="1941">about 1941</TIMEX3>]
+[Text=. CharacterOffsetBegin=295 CharacterOffsetEnd=296 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBD was)
+      (PP (IN about)
+        (NP (CD 1941))))
+    (. .)))
+
+root(ROOT-0, 1941-4)
+nsubj(1941-4, That-1)
+cop(1941-4, was-2)
+case(1941-4, about-3)
+punct(1941-4, .-5)
+
+Coreference set:
+	(1,6,[6,7]) -> (1,4,[1,5]), that is: "his" -> "-LSB- Thelonius -RSB- Monk"
+Coreference set:
+	(4,1,[1,2]) -> (3,5,[4,6]), that is: "That" -> "the way"

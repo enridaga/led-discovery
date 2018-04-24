@@ -1,0 +1,269 @@
+Sentence #1 (11 tokens):
+My first reaction to Sonny’s trumpet playing was negative.
+[Text=My CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=reaction CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=reaction NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Sonny CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Sonny NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=trumpet CharacterOffsetBegin=34 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=trumpet NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=negative CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=JJ Lemma=negative NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ My) (JJ first) (NN reaction))
+      (PP (TO to)
+        (NP
+          (NP (NNP Sonny) (POS 's))
+          (NN trumpet) (NN playing))))
+    (VP (VBD was)
+      (ADJP (JJ negative)))
+    (. .)))
+
+root(ROOT-0, negative-10)
+nmod:poss(reaction-3, My-1)
+amod(reaction-3, first-2)
+nsubj(negative-10, reaction-3)
+case(playing-8, to-4)
+nmod:poss(playing-8, Sonny-5)
+case(Sonny-5, 's-6)
+compound(playing-8, trumpet-7)
+nmod:to(reaction-3, playing-8)
+cop(negative-10, was-9)
+punct(negative-10, .-11)
+
+Sentence #2 (16 tokens):
+I didn’t care for his sound and what I considered a nanny goat vibrato.
+[Text=I CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=care CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=VB Lemma=care NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=sound CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=sound NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=considered CharacterOffsetBegin=103 CharacterOffsetEnd=113 PartOfSpeech=VBD Lemma=consider NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=nanny CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=nanny NamedEntityTag=O]
+[Text=goat CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=NN Lemma=goat NamedEntityTag=O]
+[Text=vibrato CharacterOffsetBegin=127 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=vibrato NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD did) (RB n't)
+      (VP (VB care)
+        (UCP
+          (PP (IN for)
+            (NP (PRP$ his) (NN sound)))
+          (CC and)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (PRP I))
+              (VP (VBD considered)
+                (NP (DT a) (NN nanny) (NN goat) (NN vibrato))))))))
+    (. .)))
+
+root(ROOT-0, care-4)
+nsubj(care-4, I-1)
+aux(care-4, did-2)
+neg(care-4, n't-3)
+case(sound-7, for-5)
+nmod:poss(sound-7, his-6)
+dep(care-4, sound-7)
+cc(sound-7, and-8)
+dobj(considered-11, what-9)
+nsubj(considered-11, I-10)
+dep(care-4, considered-11)
+conj:and(sound-7, considered-11)
+det(vibrato-15, a-12)
+compound(vibrato-15, nanny-13)
+compound(vibrato-15, goat-14)
+dobj(considered-11, vibrato-15)
+punct(care-4, .-16)
+
+Sentence #3 (5 tokens):
+How wrong I was!
+[Text=How CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=wrong CharacterOffsetBegin=140 CharacterOffsetEnd=145 PartOfSpeech=JJ Lemma=wrong NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=148 CharacterOffsetEnd=151 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (ADJP (WRB How) (JJ wrong))
+    (NP (PRP I))
+    (VP (VBD was))
+    (. !)))
+
+root(ROOT-0, was-4)
+advmod(wrong-2, How-1)
+dep(was-4, wrong-2)
+nsubj(was-4, I-3)
+punct(was-4, !-5)
+
+Sentence #4 (21 tokens):
+After a couple of nights, I realized he was a fine player and was amazed with his creative ideas.
+[Text=After CharacterOffsetBegin=153 CharacterOffsetEnd=158 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=couple CharacterOffsetBegin=161 CharacterOffsetEnd=167 PartOfSpeech=NN Lemma=couple NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=168 CharacterOffsetEnd=170 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=nights CharacterOffsetBegin=171 CharacterOffsetEnd=177 PartOfSpeech=NNS Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t1" type="TIME" value="TNI">nights</TIMEX3>]
+[Text=, CharacterOffsetBegin=177 CharacterOffsetEnd=178 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=179 CharacterOffsetEnd=180 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=realized CharacterOffsetBegin=181 CharacterOffsetEnd=189 PartOfSpeech=VBD Lemma=realize NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=190 CharacterOffsetEnd=192 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=193 CharacterOffsetEnd=196 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=197 CharacterOffsetEnd=198 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=199 CharacterOffsetEnd=203 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=player CharacterOffsetBegin=204 CharacterOffsetEnd=210 PartOfSpeech=NN Lemma=player NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=211 CharacterOffsetEnd=214 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=215 CharacterOffsetEnd=218 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=amazed CharacterOffsetBegin=219 CharacterOffsetEnd=225 PartOfSpeech=VBN Lemma=amaze NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=226 CharacterOffsetEnd=230 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=231 CharacterOffsetEnd=234 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=creative CharacterOffsetBegin=235 CharacterOffsetEnd=243 PartOfSpeech=JJ Lemma=creative NamedEntityTag=O]
+[Text=ideas CharacterOffsetBegin=244 CharacterOffsetEnd=249 PartOfSpeech=NNS Lemma=idea NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=249 CharacterOffsetEnd=250 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP (DT a) (NN couple))
+        (PP (IN of)
+          (NP (NNS nights)))))
+    (, ,)
+    (NP (PRP I))
+    (VP
+      (VP (VBD realized)
+        (SBAR
+          (S
+            (NP (PRP he))
+            (VP (VBD was)
+              (NP (DT a) (JJ fine) (NN player))))))
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN amazed)
+          (PP (IN with)
+            (NP (PRP$ his) (JJ creative) (NNS ideas))))))
+    (. .)))
+
+root(ROOT-0, realized-8)
+case(couple-3, After-1)
+det:qmod(nights-5, a-2)
+mwe(a-2, couple-3)
+mwe(a-2, of-4)
+nmod(realized-8, nights-5)
+punct(realized-8, ,-6)
+nsubj(realized-8, I-7)
+nsubjpass(amazed-16, I-7)
+nsubj(player-13, he-9)
+cop(player-13, was-10)
+det(player-13, a-11)
+amod(player-13, fine-12)
+ccomp(realized-8, player-13)
+cc(realized-8, and-14)
+auxpass(amazed-16, was-15)
+conj:and(realized-8, amazed-16)
+case(ideas-20, with-17)
+nmod:poss(ideas-20, his-18)
+amod(ideas-20, creative-19)
+nmod:with(amazed-16, ideas-20)
+punct(realized-8, .-21)
+
+Sentence #5 (21 tokens):
+He’d switch from trumpet to trombone with ease and after awhile I loved to hear him play both horns.
+[Text=He CharacterOffsetBegin=251 CharacterOffsetEnd=253 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='d CharacterOffsetBegin=253 CharacterOffsetEnd=255 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=switch CharacterOffsetBegin=256 CharacterOffsetEnd=262 PartOfSpeech=VB Lemma=switch NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=263 CharacterOffsetEnd=267 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=trumpet CharacterOffsetBegin=268 CharacterOffsetEnd=275 PartOfSpeech=NN Lemma=trumpet NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=276 CharacterOffsetEnd=278 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=trombone CharacterOffsetBegin=279 CharacterOffsetEnd=287 PartOfSpeech=VB Lemma=trombone NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=288 CharacterOffsetEnd=292 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=ease CharacterOffsetBegin=293 CharacterOffsetEnd=297 PartOfSpeech=NN Lemma=ease NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=298 CharacterOffsetEnd=301 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=302 CharacterOffsetEnd=307 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=awhile CharacterOffsetBegin=308 CharacterOffsetEnd=314 PartOfSpeech=RB Lemma=awhile NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=315 CharacterOffsetEnd=316 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=loved CharacterOffsetBegin=317 CharacterOffsetEnd=322 PartOfSpeech=VBD Lemma=love NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=323 CharacterOffsetEnd=325 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=326 CharacterOffsetEnd=330 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=331 CharacterOffsetEnd=334 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=335 CharacterOffsetEnd=339 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=340 CharacterOffsetEnd=344 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=horns CharacterOffsetBegin=345 CharacterOffsetEnd=350 PartOfSpeech=NNS Lemma=horn NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=350 CharacterOffsetEnd=351 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (MD 'd)
+      (VP (VB switch)
+        (PP (IN from)
+          (NP (NN trumpet)))
+        (SBAR
+          (SBAR
+            (S
+              (VP (TO to)
+                (VP (VB trombone)
+                  (PP (IN with)
+                    (NP (NN ease)))))))
+          (CC and)
+          (SBAR (IN after)
+            (S
+              (ADVP (RB awhile))
+              (NP (PRP I))
+              (VP (VBD loved)
+                (S
+                  (VP (TO to)
+                    (VP (VB hear)
+                      (S
+                        (NP (PRP him))
+                        (VP (VB play)
+                          (NP (DT both) (NNS horns)))))))))))))
+    (. .)))
+
+root(ROOT-0, switch-3)
+nsubj(switch-3, He-1)
+aux(switch-3, 'd-2)
+case(trumpet-5, from-4)
+nmod:from(switch-3, trumpet-5)
+mark(trombone-7, to-6)
+advcl:to(switch-3, trombone-7)
+case(ease-9, with-8)
+nmod:with(trombone-7, ease-9)
+cc(trombone-7, and-10)
+mark(loved-14, after-11)
+advmod(loved-14, awhile-12)
+nsubj(loved-14, I-13)
+nsubj:xsubj(hear-16, I-13)
+advcl:to(switch-3, loved-14)
+conj:and(trombone-7, loved-14)
+mark(hear-16, to-15)
+xcomp(loved-14, hear-16)
+nsubj(play-18, him-17)
+ccomp(hear-16, play-18)
+det(horns-20, both-19)
+dobj(play-18, horns-20)
+punct(switch-3, .-21)
+
+Coreference set:
+	(2,6,[6,7]) -> (1,5,[5,7]), that is: "his" -> "Sonny 's"
+Coreference set:
+	(2,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "My"
+	(2,10,[10,11]) -> (1,1,[1,2]), that is: "I" -> "My"
+	(3,3,[3,4]) -> (1,1,[1,2]), that is: "I" -> "My"
+	(4,7,[7,8]) -> (1,1,[1,2]), that is: "I" -> "My"
+	(5,13,[13,14]) -> (1,1,[1,2]), that is: "I" -> "My"
+Coreference set:
+	(4,3,[2,6]) -> (4,13,[11,14]), that is: "a couple of nights" -> "a fine player"
+	(4,9,[9,10]) -> (4,13,[11,14]), that is: "he" -> "a fine player"
+	(4,18,[18,19]) -> (4,13,[11,14]), that is: "his" -> "a fine player"
+	(5,1,[1,2]) -> (4,13,[11,14]), that is: "He" -> "a fine player"
+	(5,17,[17,18]) -> (4,13,[11,14]), that is: "him" -> "a fine player"

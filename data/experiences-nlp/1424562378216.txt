@@ -1,0 +1,107 @@
+Sentence #1 (23 tokens):
+“Only recently I was listening to one of Sarasate’s old records, made at the turn of the century….
+[Text=`` CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Only CharacterOffsetBegin=1 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=recently CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=recently NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">recently</TIMEX3>]
+[Text=I CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=listening CharacterOffsetBegin=21 CharacterOffsetEnd=30 PartOfSpeech=VBG Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Sarasate CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Sarasate NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=records CharacterOffsetBegin=56 CharacterOffsetEnd=63 PartOfSpeech=NNS Lemma=record NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=turn CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=turn NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P100Y Timex=<TIMEX3 alt_value="THIS P100Y" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">the century</TIMEX3>]
+[Text=century CharacterOffsetBegin=89 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=century NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P100Y Timex=<TIMEX3 alt_value="THIS P100Y" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">the century</TIMEX3>]
+[Text=... CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (`` ``)
+    (ADVP (RB Only) (RB recently))
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBG listening)
+        (PP (TO to)
+          (NP
+            (NP (CD one))
+            (PP (IN of)
+              (NP
+                (NP (NNP Sarasate) (POS 's))
+                (JJ old) (NNS records)))
+            (, ,)
+            (VP (VBN made)
+              (PP (IN at)
+                (NP
+                  (NP (DT the) (NN turn))
+                  (PP (IN of)
+                    (NP (DT the) (NN century))
+                    (: ...)))))))))
+    (. .)))
+
+root(ROOT-0, listening-6)
+punct(listening-6, ``-1)
+advmod(recently-3, Only-2)
+advmod(listening-6, recently-3)
+nsubj(listening-6, I-4)
+aux(listening-6, was-5)
+case(one-8, to-7)
+nmod:to(listening-6, one-8)
+case(records-13, of-9)
+nmod:poss(records-13, Sarasate-10)
+case(Sarasate-10, 's-11)
+amod(records-13, old-12)
+nmod:of(one-8, records-13)
+punct(one-8, ,-14)
+acl(one-8, made-15)
+case(turn-18, at-16)
+det(turn-18, the-17)
+nmod:at(made-15, turn-18)
+case(century-21, of-19)
+det(century-21, the-20)
+nmod:of(turn-18, century-21)
+punct(century-21, ...-22)
+punct(listening-6, .-23)
+
+Sentence #2 (9 tokens):
+/What an extraordinary virtuoso he was!”
+[Text=/ CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=: Lemma=/ NamedEntityTag=O]
+[Text=What CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=104 CharacterOffsetEnd=106 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=extraordinary CharacterOffsetBegin=107 CharacterOffsetEnd=120 PartOfSpeech=JJ Lemma=extraordinary NamedEntityTag=O]
+[Text=virtuoso CharacterOffsetBegin=121 CharacterOffsetEnd=129 PartOfSpeech=JJ Lemma=virtuoso NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=130 CharacterOffsetEnd=132 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=133 CharacterOffsetEnd=136 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=137 CharacterOffsetEnd=138 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (PRN (: /)
+    (NP
+      (NP (WP What))
+      (SBAR
+        (FRAG
+          (NP
+            (NP (DT an) (JJ extraordinary) (JJ virtuoso))
+            (SBAR
+              (S
+                (NP (PRP he))
+                (VP (VBD was)))))
+          (. !) ('' ''))))))
+
+root(ROOT-0, What-2)
+punct(What-2, /-1)
+det(virtuoso-5, an-3)
+amod(virtuoso-5, extraordinary-4)
+dep(What-2, virtuoso-5)
+nsubj(was-7, he-6)
+acl:relcl(virtuoso-5, was-7)
+punct(virtuoso-5, !-8)
+punct(virtuoso-5, ''-9)
+

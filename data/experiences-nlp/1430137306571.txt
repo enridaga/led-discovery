@@ -1,0 +1,93 @@
+Sentence #1 (13 tokens):
+There probably never was a happier christening fète than that of today.
+[Text=There CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=probably CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=happier CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=JJR Lemma=happier NamedEntityTag=O]
+[Text=christening CharacterOffsetBegin=35 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=christening NamedEntityTag=O]
+[Text=fète CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=fète NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=today NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">today</TIMEX3>]
+[Text=. CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (EX There))
+    (ADVP (RB probably))
+    (ADVP (RB never))
+    (VP (VBD was)
+      (NP (DT a)
+        (ADJP (JJR happier))
+        (NN christening) (NN fète))
+      (PP (IN than)
+        (NP
+          (NP (DT that))
+          (PP (IN of)
+            (NP (NN today))))))
+    (. .)))
+
+root(ROOT-0, was-4)
+expl(was-4, There-1)
+advmod(was-4, probably-2)
+neg(was-4, never-3)
+det(fète-8, a-5)
+amod(fète-8, happier-6)
+compound(fète-8, christening-7)
+nsubj(was-4, fète-8)
+case(that-10, than-9)
+nmod:than(was-4, that-10)
+case(today-12, of-11)
+nmod:of(that-10, today-12)
+punct(was-4, .-13)
+
+Sentence #2 (13 tokens):
+Our friends Neukomm and Barry Cornwall celebrated it with music and poetry.
+[Text=Our CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=friends CharacterOffsetBegin=76 CharacterOffsetEnd=83 PartOfSpeech=NNS Lemma=friend NamedEntityTag=O]
+[Text=Neukomm CharacterOffsetBegin=84 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=Neukomm NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Barry CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=NNP Lemma=Barry NamedEntityTag=PERSON]
+[Text=Cornwall CharacterOffsetBegin=102 CharacterOffsetEnd=110 PartOfSpeech=NNP Lemma=Cornwall NamedEntityTag=PERSON]
+[Text=celebrated CharacterOffsetBegin=111 CharacterOffsetEnd=121 PartOfSpeech=VBD Lemma=celebrate NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=122 CharacterOffsetEnd=124 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=130 CharacterOffsetEnd=135 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=poetry CharacterOffsetBegin=140 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=poetry NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Our) (NNS friends))
+      (NP (NNP Neukomm)
+        (CC and)
+        (NNP Barry) (NNP Cornwall)))
+    (VP (VBD celebrated)
+      (NP (PRP it))
+      (PP (IN with)
+        (NP (NN music)
+          (CC and)
+          (NN poetry))))
+    (. .)))
+
+root(ROOT-0, celebrated-7)
+nmod:poss(friends-2, Our-1)
+nsubj(celebrated-7, friends-2)
+compound(Cornwall-6, Neukomm-3)
+cc(Neukomm-3, and-4)
+conj:and(Neukomm-3, Barry-5)
+compound(Cornwall-6, Barry-5)
+dep(friends-2, Cornwall-6)
+dobj(celebrated-7, it-8)
+case(music-10, with-9)
+nmod:with(celebrated-7, music-10)
+cc(music-10, and-11)
+nmod:with(celebrated-7, poetry-12)
+conj:and(music-10, poetry-12)
+punct(celebrated-7, .-13)
+
+Coreference set:
+	(2,8,[8,9]) -> (1,8,[5,9]), that is: "it" -> "a happier christening fète"

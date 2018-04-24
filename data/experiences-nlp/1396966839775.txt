@@ -1,0 +1,311 @@
+Sentence #1 (9 tokens):
+Go to John Ireland's Studio at 10.0.
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=John CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=Ireland CharacterOffsetBegin=11 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Ireland NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Studio CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Studio NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=10.0 CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=CD Lemma=10.0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.0]
+[Text=. CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PP (TO to)
+        (NP
+          (NP (NNP John) (NNP Ireland) (POS 's))
+          (NNP Studio)))
+      (PP (IN at)
+        (NP (CD 10.0))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+case(Studio-6, to-2)
+compound(Ireland-4, John-3)
+nmod:poss(Studio-6, Ireland-4)
+case(Ireland-4, 's-5)
+nmod:to(Go-1, Studio-6)
+case(10.0-8, at-7)
+nmod:at(Go-1, 10.0-8)
+punct(Go-1, .-9)
+
+Sentence #2 (19 tokens):
+He is quite pleased with my work (more or less i.e.) except for numerous consecutive firths.
+[Text=He CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=pleased CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=pleased NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=less CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=JJR Lemma=less NamedEntityTag=O]
+[Text=i.e. CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=FW Lemma=i.e. NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=except CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=except NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=numerous CharacterOffsetBegin=101 CharacterOffsetEnd=109 PartOfSpeech=JJ Lemma=numerous NamedEntityTag=O]
+[Text=consecutive CharacterOffsetBegin=110 CharacterOffsetEnd=121 PartOfSpeech=JJ Lemma=consecutive NamedEntityTag=O]
+[Text=firths CharacterOffsetBegin=122 CharacterOffsetEnd=128 PartOfSpeech=NNS Lemma=firth NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP
+          (ADJP (RB quite) (JJ pleased)
+            (PP (IN with)
+              (NP (PRP$ my) (NN work))))
+          (PRN (-LRB- -LRB-)
+            (FRAG
+              (ADJP
+                (ADJP (JJR more))
+                (CC or)
+                (ADJP (JJR less)))
+              (ADJP (FW i.e.)))
+            (-RRB- -RRB-)))
+        (PP (IN except)
+          (PP (IN for)
+            (NP (JJ numerous) (JJ consecutive) (NNS firths))))))
+    (. .)))
+
+root(ROOT-0, pleased-4)
+nsubj(pleased-4, He-1)
+cop(pleased-4, is-2)
+advmod(pleased-4, quite-3)
+case(work-7, with-5)
+nmod:poss(work-7, my-6)
+nmod:with(pleased-4, work-7)
+punct(more-9, -LRB--8)
+dep(pleased-4, more-9)
+cc(more-9, or-10)
+dep(pleased-4, less-11)
+conj:or(more-9, less-11)
+dep(more-9, i.e.-12)
+punct(more-9, -RRB--13)
+case(firths-18, except-14)
+mwe(except-14, for-15)
+amod(firths-18, numerous-16)
+amod(firths-18, consecutive-17)
+nmod:except_for(pleased-4, firths-18)
+punct(pleased-4, .-19)
+
+Sentence #3 (3 tokens):
+Walk back.
+[Text=Walk CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=VB Lemma=walk NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Walk)
+      (ADVP (RB back)))
+    (. .)))
+
+root(ROOT-0, Walk-1)
+advmod(Walk-1, back-2)
+punct(Walk-1, .-3)
+
+Sentence #4 (24 tokens):
+Practise in afternoon, & then meet Barbara at Selfridges & have something in the Soda Fountain business with her & Miss Gibson.
+[Text=Practise CharacterOffsetBegin=141 CharacterOffsetEnd=149 PartOfSpeech=RB Lemma=practise NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=afternoon CharacterOffsetBegin=153 CharacterOffsetEnd=162 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 tid="t1" type="TIME" value="TAF">afternoon</TIMEX3>]
+[Text=, CharacterOffsetBegin=162 CharacterOffsetEnd=163 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=164 CharacterOffsetEnd=165 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=166 CharacterOffsetEnd=170 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=meet CharacterOffsetBegin=171 CharacterOffsetEnd=175 PartOfSpeech=VB Lemma=meet NamedEntityTag=O]
+[Text=Barbara CharacterOffsetBegin=176 CharacterOffsetEnd=183 PartOfSpeech=NNP Lemma=Barbara NamedEntityTag=PERSON]
+[Text=at CharacterOffsetBegin=184 CharacterOffsetEnd=186 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Selfridges CharacterOffsetBegin=187 CharacterOffsetEnd=197 PartOfSpeech=NNP Lemma=Selfridges NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=198 CharacterOffsetEnd=199 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=200 CharacterOffsetEnd=204 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=205 CharacterOffsetEnd=214 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=215 CharacterOffsetEnd=217 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=218 CharacterOffsetEnd=221 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Soda CharacterOffsetBegin=222 CharacterOffsetEnd=226 PartOfSpeech=NNP Lemma=Soda NamedEntityTag=O]
+[Text=Fountain CharacterOffsetBegin=227 CharacterOffsetEnd=235 PartOfSpeech=NNP Lemma=Fountain NamedEntityTag=O]
+[Text=business CharacterOffsetBegin=236 CharacterOffsetEnd=244 PartOfSpeech=NN Lemma=business NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=245 CharacterOffsetEnd=249 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=250 CharacterOffsetEnd=253 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=254 CharacterOffsetEnd=255 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Miss CharacterOffsetBegin=256 CharacterOffsetEnd=260 PartOfSpeech=NNP Lemma=Miss NamedEntityTag=O]
+[Text=Gibson CharacterOffsetBegin=261 CharacterOffsetEnd=267 PartOfSpeech=NNP Lemma=Gibson NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=267 CharacterOffsetEnd=268 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP
+      (ADVP (RB Practise))
+      (IN in)
+      (NP (NN afternoon)))
+    (, ,)
+    (NP (CC &))
+    (ADVP (RB then))
+    (VP (VB meet)
+      (NP
+        (NP (NNP Barbara))
+        (PP (IN at)
+          (NP (NNP Selfridges)))
+        (SBAR
+          (S
+            (NP (CC &))
+            (VP (VBP have)
+              (NP
+                (NP (NN something))
+                (PP (IN in)
+                  (NP (DT the) (NNP Soda) (NNP Fountain) (NN business))))
+              (PP (IN with)
+                (NP
+                  (NP (PRP$ her))
+                  (CC &)
+                  (NP (NNP Miss) (NNP Gibson)))))))))
+    (. .)))
+
+root(ROOT-0, meet-7)
+advmod(afternoon-3, Practise-1)
+case(afternoon-3, in-2)
+nmod:in(meet-7, afternoon-3)
+punct(meet-7, ,-4)
+nsubj(meet-7, &-5)
+advmod(meet-7, then-6)
+dobj(meet-7, Barbara-8)
+case(Selfridges-10, at-9)
+nmod:at(Barbara-8, Selfridges-10)
+nsubj(have-12, &-11)
+acl:relcl(Barbara-8, have-12)
+dobj(have-12, something-13)
+case(business-18, in-14)
+det(business-18, the-15)
+compound(business-18, Soda-16)
+compound(business-18, Fountain-17)
+nmod:in(something-13, business-18)
+case(her-20, with-19)
+nmod:with(have-12, her-20)
+cc(her-20, &-21)
+compound(Gibson-23, Miss-22)
+nmod:with(have-12, Gibson-23)
+conj:&(her-20, Gibson-23)
+punct(meet-7, .-24)
+
+Sentence #5 (5 tokens):
+Go to Madrigals afterwards.
+[Text=Go CharacterOffsetBegin=269 CharacterOffsetEnd=271 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=272 CharacterOffsetEnd=274 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Madrigals CharacterOffsetBegin=275 CharacterOffsetEnd=284 PartOfSpeech=NNS Lemma=madrigal NamedEntityTag=O]
+[Text=afterwards CharacterOffsetBegin=285 CharacterOffsetEnd=295 PartOfSpeech=RB Lemma=afterwards NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=295 CharacterOffsetEnd=296 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PP (TO to)
+        (NP (NNS Madrigals)))
+      (ADVP (RB afterwards)))
+    (. .)))
+
+root(ROOT-0, Go-1)
+case(Madrigals-3, to-2)
+nmod:to(Go-1, Madrigals-3)
+advmod(Go-1, afterwards-4)
+punct(Go-1, .-5)
+
+Sentence #6 (9 tokens):
+Listen to a bit of Appalachia after dinner.
+[Text=Listen CharacterOffsetBegin=298 CharacterOffsetEnd=304 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=305 CharacterOffsetEnd=307 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=308 CharacterOffsetEnd=309 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=310 CharacterOffsetEnd=313 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=314 CharacterOffsetEnd=316 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Appalachia CharacterOffsetBegin=317 CharacterOffsetEnd=327 PartOfSpeech=NNP Lemma=Appalachia NamedEntityTag=LOCATION]
+[Text=after CharacterOffsetBegin=328 CharacterOffsetEnd=333 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=334 CharacterOffsetEnd=340 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=340 CharacterOffsetEnd=341 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Listen)
+      (PP (TO to)
+        (NP
+          (NP (DT a) (NN bit))
+          (PP (IN of)
+            (NP (NNP Appalachia)))))
+      (PP (IN after)
+        (NP (NN dinner))))
+    (. .)))
+
+root(ROOT-0, Listen-1)
+case(bit-4, to-2)
+det:qmod(Appalachia-6, a-3)
+mwe(a-3, bit-4)
+mwe(a-3, of-5)
+nmod(Listen-1, Appalachia-6)
+case(dinner-8, after-7)
+nmod:after(Listen-1, dinner-8)
+punct(Listen-1, .-9)
+
+Sentence #7 (9 tokens):
+Luxurious monotony; rather
+disconnected, I thought.
+[Text=Luxurious CharacterOffsetBegin=342 CharacterOffsetEnd=351 PartOfSpeech=JJ Lemma=luxurious NamedEntityTag=O]
+[Text=monotony CharacterOffsetBegin=352 CharacterOffsetEnd=360 PartOfSpeech=NN Lemma=monotony NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=360 CharacterOffsetEnd=361 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=362 CharacterOffsetEnd=368 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=disconnected CharacterOffsetBegin=370 CharacterOffsetEnd=382 PartOfSpeech=VBN Lemma=disconnect NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=382 CharacterOffsetEnd=383 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=384 CharacterOffsetEnd=385 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=386 CharacterOffsetEnd=393 PartOfSpeech=VBD Lemma=think NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=393 CharacterOffsetEnd=394 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (JJ Luxurious) (NN monotony))
+    (: ;)
+    (S
+      (S
+        (VP
+          (ADVP (RB rather))
+          (VBN disconnected)))
+      (, ,)
+      (NP (PRP I))
+      (VP (VBD thought)))
+    (. .)))
+
+root(ROOT-0, monotony-2)
+amod(monotony-2, Luxurious-1)
+punct(monotony-2, ;-3)
+advmod(disconnected-5, rather-4)
+advcl(thought-8, disconnected-5)
+punct(thought-8, ,-6)
+nsubj(thought-8, I-7)
+dep(monotony-2, thought-8)
+punct(monotony-2, .-9)
+
+Sentence #8 (5 tokens):
+hallé chorus & orchestra.
+[Text=hallé CharacterOffsetBegin=395 CharacterOffsetEnd=400 PartOfSpeech=NN Lemma=hallé NamedEntityTag=O]
+[Text=chorus CharacterOffsetBegin=401 CharacterOffsetEnd=407 PartOfSpeech=NN Lemma=chorus NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=408 CharacterOffsetEnd=409 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=orchestra CharacterOffsetBegin=410 CharacterOffsetEnd=419 PartOfSpeech=NN Lemma=orchestra NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=419 CharacterOffsetEnd=420 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NN hallé))
+    (NP
+      (NP (NN chorus))
+      (CC &)
+      (NP (NN orchestra)))
+    (. .)))
+
+root(ROOT-0, hallé-1)
+dep(hallé-1, chorus-2)
+cc(chorus-2, &-3)
+dep(hallé-1, orchestra-4)
+conj:&(chorus-2, orchestra-4)
+punct(hallé-1, .-5)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,4,[3,6]), that is: "He" -> "John Ireland 's"
+Coreference set:
+	(7,7,[7,8]) -> (2,6,[6,7]), that is: "I" -> "my"
+Coreference set:
+	(4,11,[11,12]) -> (4,5,[5,6]), that is: "&" -> "&"

@@ -1,0 +1,45 @@
+Sentence #1 (14 tokens):
+The teenaged male performers on the Curtis stage Friday all sported neat-fitting tuxedos.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=teenaged CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=teenaged NamedEntityTag=O]
+[Text=male CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=male NamedEntityTag=O]
+[Text=performers CharacterOffsetBegin=18 CharacterOffsetEnd=28 PartOfSpeech=NNS Lemma=performer NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Curtis CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Curtis NamedEntityTag=O]
+[Text=stage CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=stage NamedEntityTag=O]
+[Text=Friday CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Friday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-5 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-WXX-5">Friday</TIMEX3>]
+[Text=all CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=sported CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=VBD Lemma=sport NamedEntityTag=O]
+[Text=neat-fitting CharacterOffsetBegin=68 CharacterOffsetEnd=80 PartOfSpeech=JJ Lemma=neat-fitting NamedEntityTag=O]
+[Text=tuxedos CharacterOffsetBegin=81 CharacterOffsetEnd=88 PartOfSpeech=NNS Lemma=tuxedo NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The)
+        (ADJP (JJ teenaged) (NN male))
+        (NNS performers))
+      (PP (IN on)
+        (NP (DT the) (NNP Curtis) (NN stage)))
+      (NP-TMP (NNP Friday)))
+    (ADVP (DT all))
+    (VP (VBD sported)
+      (NP (JJ neat-fitting) (NNS tuxedos)))
+    (. .)))
+
+root(ROOT-0, sported-11)
+det(performers-4, The-1)
+dep(male-3, teenaged-2)
+amod(performers-4, male-3)
+nsubj(sported-11, performers-4)
+case(stage-8, on-5)
+det(stage-8, the-6)
+compound(stage-8, Curtis-7)
+nmod:on(performers-4, stage-8)
+nmod:tmod(performers-4, Friday-9)
+advmod(sported-11, all-10)
+amod(tuxedos-13, neat-fitting-12)
+dobj(sported-11, tuxedos-13)
+punct(sported-11, .-14)
+

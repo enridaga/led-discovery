@@ -1,0 +1,399 @@
+Sentence #1 (24 tokens):
+The day ends with a splendid performance of Beethoven's C sharp minor quartet opus 131, by the Vanburgh Quartet from Ireland.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">The day</TIMEX3>]
+[Text=day CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">The day</TIMEX3>]
+[Text=ends CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=VBZ Lemma=end NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=splendid CharacterOffsetBegin=20 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=splendid NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=29 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Beethoven CharacterOffsetBegin=44 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=C CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=c NamedEntityTag=O]
+[Text=sharp CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=JJ Lemma=sharp NamedEntityTag=O]
+[Text=minor CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=JJ Lemma=minor NamedEntityTag=O]
+[Text=quartet CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=quartet NamedEntityTag=O]
+[Text=opus CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=opus NamedEntityTag=O]
+[Text=131 CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=CD Lemma=131 NamedEntityTag=NUMBER NormalizedNamedEntityTag=131.0]
+[Text=, CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Vanburgh CharacterOffsetBegin=95 CharacterOffsetEnd=103 PartOfSpeech=NNP Lemma=Vanburgh NamedEntityTag=O]
+[Text=Quartet CharacterOffsetBegin=104 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=quartet NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Ireland CharacterOffsetBegin=117 CharacterOffsetEnd=124 PartOfSpeech=NNP Lemma=Ireland NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NN day))
+    (VP (VBZ ends)
+      (PP (IN with)
+        (NP
+          (NP (DT a) (JJ splendid) (NN performance))
+          (PP (IN of)
+            (NP
+              (NP
+                (NP (NNP Beethoven) (POS 's))
+                (NN C)
+                (ADJP (JJ sharp) (JJ minor))
+                (NN quartet))
+              (NP (NN opus) (CD 131))
+              (, ,)
+              (PP (IN by)
+                (NP
+                  (NP (DT the) (NNP Vanburgh) (NN Quartet))
+                  (PP (IN from)
+                    (NP (NNP Ireland))))))))))
+    (. .)))
+
+root(ROOT-0, ends-3)
+det(day-2, The-1)
+nsubj(ends-3, day-2)
+case(performance-7, with-4)
+det(performance-7, a-5)
+amod(performance-7, splendid-6)
+nmod:with(ends-3, performance-7)
+case(quartet-14, of-8)
+nmod:poss(quartet-14, Beethoven-9)
+case(Beethoven-9, 's-10)
+compound(quartet-14, C-11)
+amod(minor-13, sharp-12)
+amod(quartet-14, minor-13)
+nmod:of(performance-7, quartet-14)
+dep(quartet-14, opus-15)
+nummod(opus-15, 131-16)
+punct(quartet-14, ,-17)
+case(Quartet-21, by-18)
+det(Quartet-21, the-19)
+compound(Quartet-21, Vanburgh-20)
+nmod:by(quartet-14, Quartet-21)
+case(Ireland-23, from-22)
+nmod:from(Quartet-21, Ireland-23)
+punct(ends-3, .-24)
+
+Sentence #2 (18 tokens):
+After working all evening on new music, Beethoven manages to seem even newer and more inventive.
+[Text=After CharacterOffsetBegin=126 CharacterOffsetEnd=131 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=working CharacterOffsetBegin=132 CharacterOffsetEnd=139 PartOfSpeech=VBG Lemma=work NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=140 CharacterOffsetEnd=143 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=144 CharacterOffsetEnd=151 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t2" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=on CharacterOffsetBegin=152 CharacterOffsetEnd=154 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=155 CharacterOffsetEnd=158 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=159 CharacterOffsetEnd=164 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=164 CharacterOffsetEnd=165 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Beethoven CharacterOffsetBegin=166 CharacterOffsetEnd=175 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=PERSON]
+[Text=manages CharacterOffsetBegin=176 CharacterOffsetEnd=183 PartOfSpeech=VBZ Lemma=manage NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=184 CharacterOffsetEnd=186 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=seem CharacterOffsetBegin=187 CharacterOffsetEnd=191 PartOfSpeech=VB Lemma=seem NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=192 CharacterOffsetEnd=196 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=newer CharacterOffsetBegin=197 CharacterOffsetEnd=202 PartOfSpeech=JJR Lemma=newer NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=203 CharacterOffsetEnd=206 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=207 CharacterOffsetEnd=211 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=inventive CharacterOffsetBegin=212 CharacterOffsetEnd=221 PartOfSpeech=JJ Lemma=inventive NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=221 CharacterOffsetEnd=222 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN After)
+      (S
+        (VP (VBG working)
+          (NP (DT all) (NN evening))
+          (PP (IN on)
+            (NP (JJ new) (NN music))))))
+    (, ,)
+    (NP (NNP Beethoven))
+    (VP (VBZ manages)
+      (S
+        (VP (TO to)
+          (VP (VB seem)
+            (ADJP
+              (ADJP (RB even) (JJR newer))
+              (CC and)
+              (ADJP (RBR more) (JJ inventive)))))))
+    (. .)))
+
+root(ROOT-0, manages-10)
+mark(working-2, After-1)
+advcl:after(manages-10, working-2)
+det(evening-4, all-3)
+nmod:tmod(working-2, evening-4)
+case(music-7, on-5)
+amod(music-7, new-6)
+nmod:on(working-2, music-7)
+punct(manages-10, ,-8)
+nsubj(manages-10, Beethoven-9)
+nsubj:xsubj(seem-12, Beethoven-9)
+mark(seem-12, to-11)
+xcomp(manages-10, seem-12)
+advmod(newer-14, even-13)
+xcomp(seem-12, newer-14)
+cc(newer-14, and-15)
+advmod(inventive-17, more-16)
+xcomp(seem-12, inventive-17)
+conj:and(newer-14, inventive-17)
+punct(manages-10, .-18)
+
+Sentence #3 (6 tokens):
+How does he do it?
+[Text=How CharacterOffsetBegin=223 CharacterOffsetEnd=226 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=227 CharacterOffsetEnd=231 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=232 CharacterOffsetEnd=234 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=235 CharacterOffsetEnd=237 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=238 CharacterOffsetEnd=240 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=240 CharacterOffsetEnd=241 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBZ does)
+      (NP (PRP he))
+      (VP (VB do)
+        (NP (PRP it))))
+    (. ?)))
+
+root(ROOT-0, do-4)
+advmod(do-4, How-1)
+aux(do-4, does-2)
+nsubj(do-4, he-3)
+dobj(do-4, it-5)
+punct(do-4, ?-6)
+
+Sentence #4 (20 tokens):
+He seems to have thought of every gesture, every sonority, every layering process, every shocking contrast.
+[Text=He CharacterOffsetBegin=242 CharacterOffsetEnd=244 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=seems CharacterOffsetBegin=245 CharacterOffsetEnd=250 PartOfSpeech=VBZ Lemma=seem NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=251 CharacterOffsetEnd=253 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=254 CharacterOffsetEnd=258 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=259 CharacterOffsetEnd=266 PartOfSpeech=VBN Lemma=think NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=267 CharacterOffsetEnd=269 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=270 CharacterOffsetEnd=275 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=gesture CharacterOffsetBegin=276 CharacterOffsetEnd=283 PartOfSpeech=NN Lemma=gesture NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=283 CharacterOffsetEnd=284 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=285 CharacterOffsetEnd=290 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=sonority CharacterOffsetBegin=291 CharacterOffsetEnd=299 PartOfSpeech=NN Lemma=sonority NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=299 CharacterOffsetEnd=300 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=301 CharacterOffsetEnd=306 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=layering CharacterOffsetBegin=307 CharacterOffsetEnd=315 PartOfSpeech=NN Lemma=layering NamedEntityTag=O]
+[Text=process CharacterOffsetBegin=316 CharacterOffsetEnd=323 PartOfSpeech=NN Lemma=process NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=323 CharacterOffsetEnd=324 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=325 CharacterOffsetEnd=330 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=shocking CharacterOffsetBegin=331 CharacterOffsetEnd=339 PartOfSpeech=JJ Lemma=shocking NamedEntityTag=O]
+[Text=contrast CharacterOffsetBegin=340 CharacterOffsetEnd=348 PartOfSpeech=NN Lemma=contrast NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=348 CharacterOffsetEnd=349 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ seems)
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (VP (VBN thought)
+              (PP (IN of)
+                (NP
+                  (NP (DT every) (NN gesture))
+                  (, ,)
+                  (NP (DT every) (NN sonority))
+                  (, ,)
+                  (NP (DT every) (NN layering) (NN process))
+                  (, ,)
+                  (NP (DT every) (JJ shocking) (NN contrast)))))))))
+    (. .)))
+
+root(ROOT-0, seems-2)
+nsubj(seems-2, He-1)
+nsubj:xsubj(thought-5, He-1)
+mark(thought-5, to-3)
+aux(thought-5, have-4)
+xcomp(seems-2, thought-5)
+case(gesture-8, of-6)
+det(gesture-8, every-7)
+nmod:of(thought-5, gesture-8)
+punct(gesture-8, ,-9)
+det(sonority-11, every-10)
+appos(gesture-8, sonority-11)
+punct(gesture-8, ,-12)
+det(process-15, every-13)
+compound(process-15, layering-14)
+appos(gesture-8, process-15)
+punct(gesture-8, ,-16)
+det(contrast-19, every-17)
+amod(contrast-19, shocking-18)
+appos(gesture-8, contrast-19)
+punct(seems-2, .-20)
+
+Sentence #5 (11 tokens):
+And yet he does it all within a tonal language.
+[Text=And CharacterOffsetBegin=350 CharacterOffsetEnd=353 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=yet CharacterOffsetBegin=354 CharacterOffsetEnd=357 PartOfSpeech=RB Lemma=yet NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=358 CharacterOffsetEnd=360 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=361 CharacterOffsetEnd=365 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=366 CharacterOffsetEnd=368 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=369 CharacterOffsetEnd=372 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=within CharacterOffsetBegin=373 CharacterOffsetEnd=379 PartOfSpeech=IN Lemma=within NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=380 CharacterOffsetEnd=381 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=tonal CharacterOffsetBegin=382 CharacterOffsetEnd=387 PartOfSpeech=JJ Lemma=tonal NamedEntityTag=O]
+[Text=language CharacterOffsetBegin=388 CharacterOffsetEnd=396 PartOfSpeech=NN Lemma=language NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=396 CharacterOffsetEnd=397 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC And)
+    (ADVP (RB yet))
+    (NP (PRP he))
+    (VP (VBZ does)
+      (NP (PRP it))
+      (PP (DT all) (IN within)
+        (NP (DT a) (JJ tonal) (NN language))))
+    (. .)))
+
+root(ROOT-0, does-4)
+cc(does-4, And-1)
+advmod(does-4, yet-2)
+nsubj(does-4, he-3)
+dobj(does-4, it-5)
+dep(language-10, all-6)
+case(language-10, within-7)
+det(language-10, a-8)
+amod(language-10, tonal-9)
+nmod:within(does-4, language-10)
+punct(does-4, .-11)
+
+Sentence #6 (19 tokens):
+As ever, the most touching things are the simplest, though their simplicity has a complex effect.
+[Text=As CharacterOffsetBegin=398 CharacterOffsetEnd=400 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=401 CharacterOffsetEnd=405 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=405 CharacterOffsetEnd=406 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=407 CharacterOffsetEnd=410 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=411 CharacterOffsetEnd=415 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=touching CharacterOffsetBegin=416 CharacterOffsetEnd=424 PartOfSpeech=JJ Lemma=touching NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=425 CharacterOffsetEnd=431 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=432 CharacterOffsetEnd=435 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=436 CharacterOffsetEnd=439 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=simplest CharacterOffsetBegin=440 CharacterOffsetEnd=448 PartOfSpeech=JJS Lemma=simplest NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=448 CharacterOffsetEnd=449 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=though CharacterOffsetBegin=450 CharacterOffsetEnd=456 PartOfSpeech=IN Lemma=though NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=457 CharacterOffsetEnd=462 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=simplicity CharacterOffsetBegin=463 CharacterOffsetEnd=473 PartOfSpeech=NN Lemma=simplicity NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=474 CharacterOffsetEnd=477 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=478 CharacterOffsetEnd=479 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=complex CharacterOffsetBegin=480 CharacterOffsetEnd=487 PartOfSpeech=JJ Lemma=complex NamedEntityTag=O]
+[Text=effect CharacterOffsetBegin=488 CharacterOffsetEnd=494 PartOfSpeech=NN Lemma=effect NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=494 CharacterOffsetEnd=495 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN As)
+      (ADVP (RB ever)))
+    (, ,)
+    (NP (DT the) (RBS most) (JJ touching) (NNS things))
+    (VP (VBP are)
+      (NP (DT the) (JJS simplest))
+      (, ,)
+      (SBAR (IN though)
+        (S
+          (NP (PRP$ their) (NN simplicity))
+          (VP (VBZ has)
+            (NP (DT a) (JJ complex) (NN effect))))))
+    (. .)))
+
+root(ROOT-0, simplest-10)
+case(ever-2, As-1)
+advcl:as(simplest-10, ever-2)
+punct(simplest-10, ,-3)
+det(things-7, the-4)
+advmod(things-7, most-5)
+amod(things-7, touching-6)
+nsubj(simplest-10, things-7)
+cop(simplest-10, are-8)
+det(simplest-10, the-9)
+punct(simplest-10, ,-11)
+mark(has-15, though-12)
+nmod:poss(simplicity-14, their-13)
+nsubj(has-15, simplicity-14)
+advcl:though(simplest-10, has-15)
+det(effect-18, a-16)
+amod(effect-18, complex-17)
+dobj(has-15, effect-18)
+punct(simplest-10, .-19)
+
+Sentence #7 (22 tokens):
+There are still passages where, although I've known this work for twenty years, tears spring into my eyes.
+[Text=There CharacterOffsetBegin=496 CharacterOffsetEnd=501 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=502 CharacterOffsetEnd=505 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=506 CharacterOffsetEnd=511 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=passages CharacterOffsetBegin=512 CharacterOffsetEnd=520 PartOfSpeech=NNS Lemma=passage NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=521 CharacterOffsetEnd=526 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=526 CharacterOffsetEnd=527 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=although CharacterOffsetBegin=528 CharacterOffsetEnd=536 PartOfSpeech=IN Lemma=although NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=537 CharacterOffsetEnd=538 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=538 CharacterOffsetEnd=541 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=known CharacterOffsetBegin=542 CharacterOffsetEnd=547 PartOfSpeech=VBN Lemma=know NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=548 CharacterOffsetEnd=552 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=553 CharacterOffsetEnd=557 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=558 CharacterOffsetEnd=561 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=twenty CharacterOffsetBegin=562 CharacterOffsetEnd=568 PartOfSpeech=CD Lemma=twenty NamedEntityTag=DURATION NormalizedNamedEntityTag=P20Y Timex=<TIMEX3 tid="t3" type="DURATION" value="P20Y">twenty years</TIMEX3>]
+[Text=years CharacterOffsetBegin=569 CharacterOffsetEnd=574 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P20Y Timex=<TIMEX3 tid="t3" type="DURATION" value="P20Y">twenty years</TIMEX3>]
+[Text=, CharacterOffsetBegin=574 CharacterOffsetEnd=575 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=tears CharacterOffsetBegin=576 CharacterOffsetEnd=581 PartOfSpeech=NNS Lemma=tear NamedEntityTag=O]
+[Text=spring CharacterOffsetBegin=582 CharacterOffsetEnd=588 PartOfSpeech=NN Lemma=spring NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-SP Timex=<TIMEX3 tid="t4" type="DATE" value="XXXX-SP">spring</TIMEX3>]
+[Text=into CharacterOffsetBegin=589 CharacterOffsetEnd=593 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=594 CharacterOffsetEnd=596 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=eyes CharacterOffsetBegin=597 CharacterOffsetEnd=601 PartOfSpeech=NNS Lemma=eye NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=601 CharacterOffsetEnd=602 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (RB still) (NNS passages))
+        (FRAG
+          (WHADVP (WRB where))))
+      (, ,)
+      (SBAR (IN although)
+        (S
+          (NP (PRP I))
+          (VP (VBP 've)
+            (VP (VBN known)
+              (NP
+                (NP (DT this) (NN work))
+                (PP (IN for)
+                  (NP
+                    (NP (CD twenty) (NNS years))
+                    (, ,)
+                    (NP (NNS tears)))))
+              (NP-TMP (NN spring))
+              (PP (IN into)
+                (NP (PRP$ my) (NNS eyes))))))))
+    (. .)))
+
+root(ROOT-0, are-2)
+expl(are-2, There-1)
+advmod(passages-4, still-3)
+nsubj(are-2, passages-4)
+dep(passages-4, where-5)
+punct(are-2, ,-6)
+mark(known-10, although-7)
+nsubj(known-10, I-8)
+aux(known-10, 've-9)
+advcl:although(are-2, known-10)
+det(work-12, this-11)
+dobj(known-10, work-12)
+case(years-15, for-13)
+nummod(years-15, twenty-14)
+nmod:for(work-12, years-15)
+punct(years-15, ,-16)
+appos(years-15, tears-17)
+nmod:tmod(known-10, spring-18)
+case(eyes-21, into-19)
+nmod:poss(eyes-21, my-20)
+nmod:into(known-10, eyes-21)
+punct(are-2, .-22)
+
+Coreference set:
+	(2,9,[9,10]) -> (1,9,[9,11]), that is: "Beethoven" -> "Beethoven 's"
+	(3,3,[3,4]) -> (1,9,[9,11]), that is: "he" -> "Beethoven 's"
+	(4,1,[1,2]) -> (1,9,[9,11]), that is: "He" -> "Beethoven 's"
+	(5,3,[3,4]) -> (1,9,[9,11]), that is: "he" -> "Beethoven 's"
+Coreference set:
+	(3,5,[5,6]) -> (1,2,[1,3]), that is: "it" -> "The day"
+	(5,5,[5,6]) -> (1,2,[1,3]), that is: "it" -> "The day"
+Coreference set:
+	(6,10,[9,11]) -> (6,7,[4,8]), that is: "the simplest" -> "the most touching things"
+Coreference set:
+	(7,20,[20,21]) -> (7,8,[8,9]), that is: "my" -> "I"

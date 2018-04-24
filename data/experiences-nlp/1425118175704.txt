@@ -1,0 +1,259 @@
+Sentence #1 (29 tokens):
+...Le petit chaperon rouge and La dame blanche, of which I saw the premieres,  were  welcomed  with  enthusiasm by his countless admirers of both sexes.
+[Text=... CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=Le CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Le NamedEntityTag=O]
+[Text=petit CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=petit NamedEntityTag=O]
+[Text=chaperon CharacterOffsetBegin=12 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=chaperon NamedEntityTag=O]
+[Text=rouge CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=rouge NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=La CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=La NamedEntityTag=O]
+[Text=dame CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=VBP Lemma=dame NamedEntityTag=O]
+[Text=blanche CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=blanche NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=saw CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=VBD Lemma=see NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=premieres CharacterOffsetBegin=67 CharacterOffsetEnd=76 PartOfSpeech=NNS Lemma=premiere NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=welcomed CharacterOffsetBegin=85 CharacterOffsetEnd=93 PartOfSpeech=VBN Lemma=welcome NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=enthusiasm CharacterOffsetBegin=101 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=enthusiasm NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=112 CharacterOffsetEnd=114 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=countless CharacterOffsetBegin=119 CharacterOffsetEnd=128 PartOfSpeech=JJ Lemma=countless NamedEntityTag=O]
+[Text=admirers CharacterOffsetBegin=129 CharacterOffsetEnd=137 PartOfSpeech=NNS Lemma=admirer NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=138 CharacterOffsetEnd=140 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=141 CharacterOffsetEnd=145 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=sexes CharacterOffsetBegin=146 CharacterOffsetEnd=151 PartOfSpeech=NNS Lemma=sex NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (: ...)
+    (NP
+      (NP (NNP Le) (NN petit) (NN chaperon) (NN rouge))
+      (CC and)
+      (NP (NNP La)))
+    (VP (VBP dame)
+      (SBAR
+        (S
+          (NP
+            (NP (NN blanche))
+            (, ,)
+            (SBAR
+              (WHPP (IN of)
+                (WHNP (WDT which)))
+              (S
+                (NP (PRP I))
+                (VP (VBD saw)
+                  (NP (DT the) (NNS premieres)))))
+            (, ,))
+          (VP (VBD were)
+            (VP (VBN welcomed)
+              (PP (IN with)
+                (NP (NN enthusiasm)))
+              (PP (IN by)
+                (NP
+                  (NP (PRP$ his) (JJ countless) (NNS admirers))
+                  (PP (IN of)
+                    (NP (DT both) (NNS sexes))))))))))
+    (. .)))
+
+root(ROOT-0, dame-8)
+punct(dame-8, ...-1)
+compound(rouge-5, Le-2)
+compound(rouge-5, petit-3)
+compound(rouge-5, chaperon-4)
+nsubj(dame-8, rouge-5)
+cc(rouge-5, and-6)
+conj:and(rouge-5, La-7)
+nsubj(dame-8, La-7)
+nmod:of(saw-14, blanche-9)
+nsubjpass(welcomed-19, blanche-9)
+punct(blanche-9, ,-10)
+case(which-12, of-11)
+ref(blanche-9, which-12)
+nsubj(saw-14, I-13)
+acl:relcl(blanche-9, saw-14)
+det(premieres-16, the-15)
+dobj(saw-14, premieres-16)
+punct(blanche-9, ,-17)
+auxpass(welcomed-19, were-18)
+ccomp(dame-8, welcomed-19)
+case(enthusiasm-21, with-20)
+nmod:with(welcomed-19, enthusiasm-21)
+case(admirers-25, by-22)
+nmod:poss(admirers-25, his-23)
+amod(admirers-25, countless-24)
+nmod:agent(welcomed-19, admirers-25)
+case(sexes-28, of-26)
+det(sexes-28, both-27)
+nmod:of(admirers-25, sexes-28)
+punct(dame-8, .-29)
+
+Sentence #2 (52 tokens):
+Though he had made some slight concessions to the prevailing fashion by introducing ballad stanzas and peasant rondos, the two operas last mentioned were, on the whole, in the best tradition, containing, as they did, an abundance of delightful ideas, carefully and competently elaborated.
+[Text=Though CharacterOffsetBegin=153 CharacterOffsetEnd=159 PartOfSpeech=IN Lemma=though NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=163 CharacterOffsetEnd=166 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=167 CharacterOffsetEnd=171 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=172 CharacterOffsetEnd=176 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=slight CharacterOffsetBegin=177 CharacterOffsetEnd=183 PartOfSpeech=JJ Lemma=slight NamedEntityTag=O]
+[Text=concessions CharacterOffsetBegin=184 CharacterOffsetEnd=195 PartOfSpeech=NNS Lemma=concession NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=196 CharacterOffsetEnd=198 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=prevailing CharacterOffsetBegin=203 CharacterOffsetEnd=213 PartOfSpeech=VBG Lemma=prevail NamedEntityTag=O]
+[Text=fashion CharacterOffsetBegin=214 CharacterOffsetEnd=221 PartOfSpeech=NN Lemma=fashion NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=222 CharacterOffsetEnd=224 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=introducing CharacterOffsetBegin=225 CharacterOffsetEnd=236 PartOfSpeech=VBG Lemma=introduce NamedEntityTag=O]
+[Text=ballad CharacterOffsetBegin=237 CharacterOffsetEnd=243 PartOfSpeech=NN Lemma=ballad NamedEntityTag=O]
+[Text=stanzas CharacterOffsetBegin=244 CharacterOffsetEnd=251 PartOfSpeech=NNS Lemma=stanza NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=252 CharacterOffsetEnd=255 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=peasant CharacterOffsetBegin=256 CharacterOffsetEnd=263 PartOfSpeech=NN Lemma=peasant NamedEntityTag=O]
+[Text=rondos CharacterOffsetBegin=264 CharacterOffsetEnd=270 PartOfSpeech=NNS Lemma=rondo NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=270 CharacterOffsetEnd=271 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=272 CharacterOffsetEnd=275 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=276 CharacterOffsetEnd=279 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=operas CharacterOffsetBegin=280 CharacterOffsetEnd=286 PartOfSpeech=NNS Lemma=opera NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=287 CharacterOffsetEnd=291 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=mentioned CharacterOffsetBegin=292 CharacterOffsetEnd=301 PartOfSpeech=VBN Lemma=mention NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=302 CharacterOffsetEnd=306 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=306 CharacterOffsetEnd=307 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=308 CharacterOffsetEnd=310 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=311 CharacterOffsetEnd=314 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=315 CharacterOffsetEnd=320 PartOfSpeech=NN Lemma=whole NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=320 CharacterOffsetEnd=321 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=322 CharacterOffsetEnd=324 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=325 CharacterOffsetEnd=328 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=329 CharacterOffsetEnd=333 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=tradition CharacterOffsetBegin=334 CharacterOffsetEnd=343 PartOfSpeech=NN Lemma=tradition NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=343 CharacterOffsetEnd=344 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=containing CharacterOffsetBegin=345 CharacterOffsetEnd=355 PartOfSpeech=VBG Lemma=contain NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=355 CharacterOffsetEnd=356 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=357 CharacterOffsetEnd=359 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=360 CharacterOffsetEnd=364 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=365 CharacterOffsetEnd=368 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=368 CharacterOffsetEnd=369 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=370 CharacterOffsetEnd=372 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=abundance CharacterOffsetBegin=373 CharacterOffsetEnd=382 PartOfSpeech=NN Lemma=abundance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=383 CharacterOffsetEnd=385 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=delightful CharacterOffsetBegin=386 CharacterOffsetEnd=396 PartOfSpeech=JJ Lemma=delightful NamedEntityTag=O]
+[Text=ideas CharacterOffsetBegin=397 CharacterOffsetEnd=402 PartOfSpeech=NNS Lemma=idea NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=402 CharacterOffsetEnd=403 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=carefully CharacterOffsetBegin=404 CharacterOffsetEnd=413 PartOfSpeech=RB Lemma=carefully NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=414 CharacterOffsetEnd=417 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=competently CharacterOffsetBegin=418 CharacterOffsetEnd=429 PartOfSpeech=RB Lemma=competently NamedEntityTag=O]
+[Text=elaborated CharacterOffsetBegin=430 CharacterOffsetEnd=440 PartOfSpeech=VBD Lemma=elaborate NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=440 CharacterOffsetEnd=441 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN Though)
+      (S
+        (NP (PRP he))
+        (VP (VBD had)
+          (VP (VBN made)
+            (NP (DT some) (JJ slight) (NNS concessions))
+            (PP (TO to)
+              (NP
+                (NP (DT the) (VBG prevailing) (NN fashion))
+                (PP (IN by)
+                  (S
+                    (VP (VBG introducing)
+                      (NP (NN ballad) (NNS stanzas)
+                        (CC and)
+                        (NN peasant) (NNS rondos)))))))))))
+    (, ,)
+    (NP
+      (NP (DT the) (CD two) (NNS operas))
+      (VP
+        (ADVP (JJ last))
+        (VBN mentioned)))
+    (VP (VBD were) (, ,)
+      (PP (IN on)
+        (NP (DT the) (NN whole)))
+      (, ,)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (JJS best) (NN tradition))
+          (, ,)
+          (UCP
+            (VP (VBG containing)
+              (PRN (, ,)
+                (SBAR (IN as)
+                  (S
+                    (NP (PRP they))
+                    (VP (VBD did))))
+                (, ,))
+              (NP
+                (NP (DT an) (NN abundance))
+                (PP (IN of)
+                  (NP (JJ delightful) (NNS ideas)))
+                (, ,)
+                (ADVP (RB carefully))))
+            (CC and)
+            (ADJP (RB competently)
+              (SBAR
+                (S
+                  (VP (VBD elaborated)))))))))
+    (. .)))
+
+root(ROOT-0, whole-29)
+mark(made-4, Though-1)
+nsubj(made-4, he-2)
+aux(made-4, had-3)
+advcl:though(whole-29, made-4)
+det(concessions-7, some-5)
+amod(concessions-7, slight-6)
+dobj(made-4, concessions-7)
+case(fashion-11, to-8)
+det(fashion-11, the-9)
+amod(fashion-11, prevailing-10)
+nmod:to(made-4, fashion-11)
+mark(introducing-13, by-12)
+acl:by(fashion-11, introducing-13)
+compound(stanzas-15, ballad-14)
+dobj(introducing-13, stanzas-15)
+cc(stanzas-15, and-16)
+compound(rondos-18, peasant-17)
+dobj(introducing-13, rondos-18)
+conj:and(stanzas-15, rondos-18)
+punct(whole-29, ,-19)
+det(operas-22, the-20)
+nummod(operas-22, two-21)
+nsubj(whole-29, operas-22)
+advmod(mentioned-24, last-23)
+acl(operas-22, mentioned-24)
+cop(whole-29, were-25)
+punct(whole-29, ,-26)
+case(whole-29, on-27)
+det(whole-29, the-28)
+punct(whole-29, ,-30)
+case(tradition-34, in-31)
+det(tradition-34, the-32)
+amod(tradition-34, best-33)
+nmod:in(whole-29, tradition-34)
+punct(tradition-34, ,-35)
+dep(tradition-34, containing-36)
+punct(did-40, ,-37)
+mark(did-40, as-38)
+nsubj(did-40, they-39)
+parataxis(containing-36, did-40)
+punct(did-40, ,-41)
+det(abundance-43, an-42)
+dobj(containing-36, abundance-43)
+case(ideas-46, of-44)
+amod(ideas-46, delightful-45)
+nmod:of(abundance-43, ideas-46)
+punct(abundance-43, ,-47)
+advmod(abundance-43, carefully-48)
+cc(containing-36, and-49)
+dep(tradition-34, competently-50)
+conj:and(containing-36, competently-50)
+ccomp(competently-50, elaborated-51)
+punct(whole-29, .-52)
+
+Coreference set:
+	(2,2,[2,3]) -> (1,23,[23,24]), that is: "he" -> "his"
+Coreference set:
+	(2,39,[39,40]) -> (2,18,[14,19]), that is: "they" -> "ballad stanzas and peasant rondos"

@@ -1,0 +1,402 @@
+Sentence #1 (28 tokens):
+He often used to laugh over one of the early morning concerts, when the choir went up to the rooms of the Crown Princess of Prussia.
+[Text=He CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=often CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=RB Lemma=often NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=VBD Lemma=use NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=laugh CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=laugh NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=>1.0]
+[Text=of CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=the NamedEntityTag=TIME NormalizedNamedEntityTag=TMO Timex=<TIMEX3 mod="EARLY" tid="t1" type="TIME" value="TMO">the early morning</TIMEX3>]
+[Text=early CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=JJ Lemma=early NamedEntityTag=TIME NormalizedNamedEntityTag=TMO Timex=<TIMEX3 mod="EARLY" tid="t1" type="TIME" value="TMO">the early morning</TIMEX3>]
+[Text=morning CharacterOffsetBegin=45 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=TMO Timex=<TIMEX3 mod="EARLY" tid="t1" type="TIME" value="TMO">the early morning</TIMEX3>]
+[Text=concerts CharacterOffsetBegin=53 CharacterOffsetEnd=61 PartOfSpeech=NNS Lemma=concert NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=choir CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=choir NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=RB Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rooms CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=NNS Lemma=room NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Crown CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=NNP Lemma=Crown NamedEntityTag=O]
+[Text=Princess CharacterOffsetBegin=112 CharacterOffsetEnd=120 PartOfSpeech=NNP Lemma=Princess NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Prussia CharacterOffsetBegin=124 CharacterOffsetEnd=131 PartOfSpeech=NNP Lemma=Prussia NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB often))
+    (VP (VBD used)
+      (S
+        (VP (TO to)
+          (VP (NN laugh)
+            (PP (IN over)
+              (NP
+                (NP (CD one))
+                (PP (IN of)
+                  (NP (DT the) (JJ early) (NN morning) (NNS concerts))))))))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (DT the) (NN choir))
+          (VP (VBD went)
+            (ADVP (RB up))
+            (PP (TO to)
+              (NP
+                (NP (DT the) (NNS rooms))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NNP Crown) (NNP Princess))
+                    (PP (IN of)
+                      (NP (NNP Prussia)))))))))))
+    (. .)))
+
+root(ROOT-0, used-3)
+nsubj(used-3, He-1)
+nsubj:xsubj(laugh-5, He-1)
+advmod(used-3, often-2)
+mark(laugh-5, to-4)
+xcomp(used-3, laugh-5)
+case(one-7, over-6)
+det:qmod(concerts-12, one-7)
+mwe(one-7, of-8)
+det(concerts-12, the-9)
+amod(concerts-12, early-10)
+compound(concerts-12, morning-11)
+nmod(laugh-5, concerts-12)
+punct(used-3, ,-13)
+advmod(went-17, when-14)
+det(choir-16, the-15)
+nsubj(went-17, choir-16)
+advcl(used-3, went-17)
+advmod(went-17, up-18)
+case(rooms-21, to-19)
+det(rooms-21, the-20)
+nmod:to(went-17, rooms-21)
+case(Princess-25, of-22)
+det(Princess-25, the-23)
+compound(Princess-25, Crown-24)
+nmod:of(rooms-21, Princess-25)
+case(Prussia-27, of-26)
+nmod:of(Princess-25, Prussia-27)
+punct(used-3, .-28)
+
+Sentence #2 (68 tokens):
+It was in November, and as the affair was fixed for 7 a.m. the day had scarcely broken when the men crept quietly to their allotted positions, Added to this, it was pouring with rain, and the light was just sufficient to show that the Long Walk was almost under water, but utterly inadequate for anyone to see a note of music.
+[Text=It CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=140 CharacterOffsetEnd=142 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=November CharacterOffsetBegin=143 CharacterOffsetEnd=151 PartOfSpeech=NNP Lemma=November NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-11 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-11">November</TIMEX3>]
+[Text=, CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=153 CharacterOffsetEnd=156 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=157 CharacterOffsetEnd=159 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=160 CharacterOffsetEnd=163 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=affair CharacterOffsetBegin=164 CharacterOffsetEnd=170 PartOfSpeech=NN Lemma=affair NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=fixed CharacterOffsetBegin=175 CharacterOffsetEnd=180 PartOfSpeech=VBN Lemma=fix NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=181 CharacterOffsetEnd=184 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=7 CharacterOffsetBegin=185 CharacterOffsetEnd=186 PartOfSpeech=CD Lemma=7 NamedEntityTag=TIME NormalizedNamedEntityTag=THIS P1D INTERSECT T07:00 Timex=<TIMEX3 alt_value="THIS P1D INTERSECT T07:00" anchorTimeID="t4" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf0">7 a.m. the day</TIMEX3>]
+[Text=a.m. CharacterOffsetBegin=187 CharacterOffsetEnd=191 PartOfSpeech=RB Lemma=a.m. NamedEntityTag=TIME NormalizedNamedEntityTag=THIS P1D INTERSECT T07:00 Timex=<TIMEX3 alt_value="THIS P1D INTERSECT T07:00" anchorTimeID="t4" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf0">7 a.m. the day</TIMEX3>]
+[Text=the CharacterOffsetBegin=192 CharacterOffsetEnd=195 PartOfSpeech=DT Lemma=the NamedEntityTag=TIME NormalizedNamedEntityTag=THIS P1D INTERSECT T07:00 Timex=<TIMEX3 alt_value="THIS P1D INTERSECT T07:00" anchorTimeID="t4" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf0">7 a.m. the day</TIMEX3>]
+[Text=day CharacterOffsetBegin=196 CharacterOffsetEnd=199 PartOfSpeech=NN Lemma=day NamedEntityTag=TIME NormalizedNamedEntityTag=THIS P1D INTERSECT T07:00 Timex=<TIMEX3 alt_value="THIS P1D INTERSECT T07:00" anchorTimeID="t4" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf0">7 a.m. the day</TIMEX3>]
+[Text=had CharacterOffsetBegin=200 CharacterOffsetEnd=203 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=scarcely CharacterOffsetBegin=204 CharacterOffsetEnd=212 PartOfSpeech=RB Lemma=scarcely NamedEntityTag=O]
+[Text=broken CharacterOffsetBegin=213 CharacterOffsetEnd=219 PartOfSpeech=VBN Lemma=break NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=220 CharacterOffsetEnd=224 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=225 CharacterOffsetEnd=228 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=229 CharacterOffsetEnd=232 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=crept CharacterOffsetBegin=233 CharacterOffsetEnd=238 PartOfSpeech=VBD Lemma=creep NamedEntityTag=O]
+[Text=quietly CharacterOffsetBegin=239 CharacterOffsetEnd=246 PartOfSpeech=RB Lemma=quietly NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=247 CharacterOffsetEnd=249 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=250 CharacterOffsetEnd=255 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=allotted CharacterOffsetBegin=256 CharacterOffsetEnd=264 PartOfSpeech=JJ Lemma=allotted NamedEntityTag=O]
+[Text=positions CharacterOffsetBegin=265 CharacterOffsetEnd=274 PartOfSpeech=NNS Lemma=position NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=274 CharacterOffsetEnd=275 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Added CharacterOffsetBegin=276 CharacterOffsetEnd=281 PartOfSpeech=VBD Lemma=add NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=282 CharacterOffsetEnd=284 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=285 CharacterOffsetEnd=289 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=289 CharacterOffsetEnd=290 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=291 CharacterOffsetEnd=293 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=294 CharacterOffsetEnd=297 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=pouring CharacterOffsetBegin=298 CharacterOffsetEnd=305 PartOfSpeech=VBG Lemma=pour NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=306 CharacterOffsetEnd=310 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=rain CharacterOffsetBegin=311 CharacterOffsetEnd=315 PartOfSpeech=NN Lemma=rain NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=315 CharacterOffsetEnd=316 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=317 CharacterOffsetEnd=320 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=321 CharacterOffsetEnd=324 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=light CharacterOffsetBegin=325 CharacterOffsetEnd=330 PartOfSpeech=NN Lemma=light NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=331 CharacterOffsetEnd=334 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=335 CharacterOffsetEnd=339 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=sufficient CharacterOffsetBegin=340 CharacterOffsetEnd=350 PartOfSpeech=JJ Lemma=sufficient NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=351 CharacterOffsetEnd=353 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=show CharacterOffsetBegin=354 CharacterOffsetEnd=358 PartOfSpeech=VB Lemma=show NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=359 CharacterOffsetEnd=363 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=364 CharacterOffsetEnd=367 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Long CharacterOffsetBegin=368 CharacterOffsetEnd=372 PartOfSpeech=JJ Lemma=long NamedEntityTag=LOCATION]
+[Text=Walk CharacterOffsetBegin=373 CharacterOffsetEnd=377 PartOfSpeech=VBP Lemma=walk NamedEntityTag=LOCATION]
+[Text=was CharacterOffsetBegin=378 CharacterOffsetEnd=381 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=almost CharacterOffsetBegin=382 CharacterOffsetEnd=388 PartOfSpeech=RB Lemma=almost NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=389 CharacterOffsetEnd=394 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=water CharacterOffsetBegin=395 CharacterOffsetEnd=400 PartOfSpeech=NN Lemma=water NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=400 CharacterOffsetEnd=401 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=402 CharacterOffsetEnd=405 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=utterly CharacterOffsetBegin=406 CharacterOffsetEnd=413 PartOfSpeech=RB Lemma=utterly NamedEntityTag=O]
+[Text=inadequate CharacterOffsetBegin=414 CharacterOffsetEnd=424 PartOfSpeech=JJ Lemma=inadequate NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=425 CharacterOffsetEnd=428 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=429 CharacterOffsetEnd=435 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=436 CharacterOffsetEnd=438 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=439 CharacterOffsetEnd=442 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=443 CharacterOffsetEnd=444 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=note CharacterOffsetBegin=445 CharacterOffsetEnd=449 PartOfSpeech=NN Lemma=note NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=450 CharacterOffsetEnd=452 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=453 CharacterOffsetEnd=458 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=458 CharacterOffsetEnd=459 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBD was)
+        (PP (IN in)
+          (NP (NNP November)))))
+    (, ,)
+    (CC and)
+    (S
+      (SBAR (IN as)
+        (S
+          (NP (DT the) (NN affair))
+          (VP (VBD was)
+            (VP (VBN fixed)
+              (PP (IN for)
+                (NP (CD 7)))
+              (NP-TMP (RB a.m.) (DT the) (NN day))))))
+      (VP (VBD had)
+        (ADVP (RB scarcely))
+        (VP (VBN broken)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (DT the) (NNS men))
+              (VP
+                (VP (VBD crept)
+                  (ADVP (RB quietly))
+                  (PP (TO to)
+                    (NP (PRP$ their) (JJ allotted) (NNS positions))))
+                (, ,)
+                (VP (VBD Added)
+                  (PP (TO to)
+                    (NP (DT this))))))))))
+    (, ,)
+    (S
+      (NP (PRP it))
+      (VP (VBD was)
+        (VP (VBG pouring)
+          (PP (IN with)
+            (NP (NN rain))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT the) (NN light))
+      (VP (VBD was)
+        (ADJP
+          (ADJP (RB just) (JJ sufficient)
+            (S
+              (VP (TO to)
+                (VP (VB show)
+                  (SBAR (IN that)
+                    (S
+                      (NP (DT the) (JJ Long))
+                      (VP (VBP Walk)
+                        (SBAR
+                          (S
+                            (VP (VBD was)
+                              (ADVP (RB almost))
+                              (PP (IN under)
+                                (NP (NN water)))))))))))))
+          (, ,)
+          (CC but)
+          (RB utterly)
+          (ADJP (JJ inadequate)
+            (PP (IN for)
+              (NP (NN anyone)
+                (S
+                  (VP (TO to)
+                    (VP (VB see)
+                      (NP
+                        (NP (DT a) (NN note))
+                        (PP (IN of)
+                          (NP (NN music)))))))))))))
+    (. .)))
+
+root(ROOT-0, November-4)
+nsubj(November-4, It-1)
+cop(November-4, was-2)
+case(November-4, in-3)
+punct(November-4, ,-5)
+cc(November-4, and-6)
+mark(fixed-11, as-7)
+det(affair-9, the-8)
+nsubjpass(fixed-11, affair-9)
+auxpass(fixed-11, was-10)
+csubj(broken-19, fixed-11)
+case(7-13, for-12)
+nmod:for(fixed-11, 7-13)
+advmod(day-16, a.m.-14)
+det(day-16, the-15)
+nmod:tmod(fixed-11, day-16)
+aux(broken-19, had-17)
+advmod(broken-19, scarcely-18)
+conj:and(November-4, broken-19)
+advmod(crept-23, when-20)
+det(men-22, the-21)
+nsubj(crept-23, men-22)
+advcl(broken-19, crept-23)
+advmod(crept-23, quietly-24)
+case(positions-28, to-25)
+nmod:poss(positions-28, their-26)
+amod(positions-28, allotted-27)
+nmod:to(crept-23, positions-28)
+punct(crept-23, ,-29)
+dep(crept-23, Added-30)
+case(this-32, to-31)
+nmod:to(Added-30, this-32)
+punct(November-4, ,-33)
+nsubj(pouring-36, it-34)
+aux(pouring-36, was-35)
+ccomp(November-4, pouring-36)
+case(rain-38, with-37)
+nmod:with(pouring-36, rain-38)
+punct(November-4, ,-39)
+cc(November-4, and-40)
+det(light-42, the-41)
+nsubj(sufficient-45, light-42)
+nsubj:xsubj(show-47, light-42)
+cop(sufficient-45, was-43)
+advmod(sufficient-45, just-44)
+conj:and(November-4, sufficient-45)
+mark(show-47, to-46)
+xcomp(sufficient-45, show-47)
+mark(Walk-51, that-48)
+det(Long-50, the-49)
+nsubj(Walk-51, Long-50)
+ccomp(show-47, Walk-51)
+cop(water-55, was-52)
+advmod(water-55, almost-53)
+case(water-55, under-54)
+ccomp(Walk-51, water-55)
+punct(sufficient-45, ,-56)
+cc(sufficient-45, but-57)
+advmod(sufficient-45, utterly-58)
+dep(sufficient-45, inadequate-59)
+case(anyone-61, for-60)
+nmod:for(inadequate-59, anyone-61)
+mark(see-63, to-62)
+acl:to(anyone-61, see-63)
+det(note-65, a-64)
+dobj(see-63, note-65)
+case(music-67, of-66)
+nmod:of(note-65, music-67)
+punct(November-4, .-68)
+
+Sentence #3 (19 tokens):
+As if in irony of the unpropitious elements, the first piece on the programme was "Hail!
+[Text=As CharacterOffsetBegin=460 CharacterOffsetEnd=462 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=463 CharacterOffsetEnd=465 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=466 CharacterOffsetEnd=468 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=irony CharacterOffsetBegin=469 CharacterOffsetEnd=474 PartOfSpeech=NN Lemma=irony NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=475 CharacterOffsetEnd=477 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=478 CharacterOffsetEnd=481 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=unpropitious CharacterOffsetBegin=482 CharacterOffsetEnd=494 PartOfSpeech=JJ Lemma=unpropitious NamedEntityTag=O]
+[Text=elements CharacterOffsetBegin=495 CharacterOffsetEnd=503 PartOfSpeech=NNS Lemma=element NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=503 CharacterOffsetEnd=504 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=505 CharacterOffsetEnd=508 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=509 CharacterOffsetEnd=514 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=piece CharacterOffsetBegin=515 CharacterOffsetEnd=520 PartOfSpeech=NN Lemma=piece NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=521 CharacterOffsetEnd=523 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=524 CharacterOffsetEnd=527 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=programme CharacterOffsetBegin=528 CharacterOffsetEnd=537 PartOfSpeech=NN Lemma=programme NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=538 CharacterOffsetEnd=541 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=542 CharacterOffsetEnd=543 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Hail CharacterOffsetBegin=543 CharacterOffsetEnd=547 PartOfSpeech=NN Lemma=hail NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=547 CharacterOffsetEnd=548 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN As)
+      (FRAG
+        (SBAR (IN if)
+          (FRAG
+            (PP (IN in)
+              (NP
+                (NP (NN irony))
+                (PP (IN of)
+                  (NP (DT the) (JJ unpropitious) (NNS elements)))))))))
+    (, ,)
+    (NP
+      (NP (DT the) (JJ first) (NN piece))
+      (PP (IN on)
+        (NP (DT the) (NN programme))))
+    (VP (VBD was) (`` ``)
+      (NP (NN Hail)))
+    (. !)))
+
+root(ROOT-0, Hail-18)
+mark(irony-4, As-1)
+mark(irony-4, if-2)
+case(irony-4, in-3)
+advcl:in(Hail-18, irony-4)
+case(elements-8, of-5)
+det(elements-8, the-6)
+amod(elements-8, unpropitious-7)
+nmod:of(irony-4, elements-8)
+punct(Hail-18, ,-9)
+det(piece-12, the-10)
+amod(piece-12, first-11)
+nsubj(Hail-18, piece-12)
+case(programme-15, on-13)
+det(programme-15, the-14)
+nmod:on(piece-12, programme-15)
+cop(Hail-18, was-16)
+punct(Hail-18, ``-17)
+punct(Hail-18, !-19)
+
+Sentence #4 (7 tokens):
+Smiling Morn" (Spofforth).
+[Text=Smiling CharacterOffsetBegin=549 CharacterOffsetEnd=556 PartOfSpeech=VBG Lemma=smile NamedEntityTag=O]
+[Text=Morn CharacterOffsetBegin=557 CharacterOffsetEnd=561 PartOfSpeech=NNP Lemma=Morn NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=561 CharacterOffsetEnd=562 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=563 CharacterOffsetEnd=564 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Spofforth CharacterOffsetBegin=564 CharacterOffsetEnd=573 PartOfSpeech=NNP Lemma=Spofforth NamedEntityTag=LOCATION]
+[Text=-RRB- CharacterOffsetBegin=573 CharacterOffsetEnd=574 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=574 CharacterOffsetEnd=575 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP
+      (VP (VBG Smiling)
+        (NP (NNP Morn))
+        ('' ''))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP Spofforth))
+        (-RRB- -RRB-)))
+    (. .)))
+
+root(ROOT-0, Smiling-1)
+dobj(Smiling-1, Morn-2)
+punct(Smiling-1, ''-3)
+punct(Spofforth-5, -LRB--4)
+dep(Smiling-1, Spofforth-5)
+punct(Spofforth-5, -RRB--6)
+punct(Smiling-1, .-7)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,7,[7,13]), that is: "It" -> "one of the early morning concerts"
+	(2,34,[34,35]) -> (1,7,[7,13]), that is: "it" -> "one of the early morning concerts"
+Coreference set:
+	(2,50,[50,52]) -> (2,50,[49,51]), that is: "Long Walk" -> "the Long"
+Coreference set:
+	(2,26,[26,27]) -> (2,22,[21,23]), that is: "their" -> "the men"

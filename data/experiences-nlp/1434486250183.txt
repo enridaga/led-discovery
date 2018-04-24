@@ -1,0 +1,127 @@
+Sentence #1 (22 tokens):
+Walk with Beth after supper, & listen to Kutcher St. Quartet playing, raggedly, Haydn G min (74.
+[Text=Walk CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=walk NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Beth CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Beth NamedEntityTag=PERSON]
+[Text=after CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=supper CharacterOffsetBegin=21 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=supper NamedEntityTag=DATE NormalizedNamedEntityTag=supper ]
+[Text=, CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Kutcher CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Kutcher NamedEntityTag=PERSON]
+[Text=St. CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=St. NamedEntityTag=O]
+[Text=Quartet CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=quartet NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=raggedly CharacterOffsetBegin=70 CharacterOffsetEnd=78 PartOfSpeech=RB Lemma=raggedly NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Haydn CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Haydn NamedEntityTag=PERSON]
+[Text=G CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=G NamedEntityTag=O]
+[Text=min CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=min NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1M Timex=<TIMEX3 tid="t1" type="DURATION" value="PT1M">min</TIMEX3>]
+[Text=-LRB- CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=74 CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=CD Lemma=74 NamedEntityTag=NUMBER NormalizedNamedEntityTag=74.0]
+[Text=. CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Walk)
+      (PP (IN with)
+        (NP
+          (NP
+            (NP (NNP Beth))
+            (PP (IN after)
+              (NP (NN supper))))
+          (, ,)
+          (CC &)
+          (NP
+            (VP (VB listen)
+              (PP (TO to)
+                (NP (NNP Kutcher) (NNP St.) (NN Quartet) (NN playing)))
+              (, ,)
+              (ADVP (RB raggedly))
+              (, ,)
+              (S
+                (NP (NNP Haydn) (NNP G))
+                (ADJP (NN min))))
+            (PP (-LRB- -LRB-)
+              (NP (CD 74)))))))
+    (. .)))
+
+root(ROOT-0, Walk-1)
+case(Beth-3, with-2)
+nmod:with(Walk-1, Beth-3)
+case(supper-5, after-4)
+nmod:after(Beth-3, supper-5)
+punct(Beth-3, ,-6)
+cc(Beth-3, &-7)
+nmod:with(Walk-1, listen-8)
+conj:&(Beth-3, listen-8)
+case(playing-13, to-9)
+compound(playing-13, Kutcher-10)
+compound(playing-13, St.-11)
+compound(playing-13, Quartet-12)
+nmod:to(listen-8, playing-13)
+punct(listen-8, ,-14)
+advmod(listen-8, raggedly-15)
+punct(listen-8, ,-16)
+compound(G-18, Haydn-17)
+nsubj(min-19, G-18)
+xcomp(listen-8, min-19)
+punct(74-21, -LRB--20)
+nmod(listen-8, 74-21)
+punct(Walk-1, .-22)
+
+Sentence #2 (8 tokens):
+no 3) & Brahms A min.
+[Text=no CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=3 CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=LS Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=-RRB- CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Brahms CharacterOffsetBegin=105 CharacterOffsetEnd=111 PartOfSpeech=NNP Lemma=Brahms NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=NNP Lemma=A NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1M Timex=<TIMEX3 tid="t1" type="DURATION" value="PT1M">A min</TIMEX3>]
+[Text=min CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=min NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1M Timex=<TIMEX3 tid="t1" type="DURATION" value="PT1M">A min</TIMEX3>]
+[Text=. CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (DT no))
+    (NP
+      (LST (LS 3) (-RRB- -RRB-))
+      (NP (CC &)
+        (NNP Brahms))
+      (PP (NNP A)
+        (NP (NN min))))
+    (. .)))
+
+root(ROOT-0, no-1)
+dep(Brahms-5, 3-2)
+punct(3-2, -RRB--3)
+cc(Brahms-5, &-4)
+dep(no-1, Brahms-5)
+dep(min-7, A-6)
+nmod(Brahms-5, min-7)
+punct(no-1, .-8)
+
+Sentence #3 (6 tokens):
+* Sarah Fischer also sings.
+[Text=* CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=Sarah CharacterOffsetBegin=120 CharacterOffsetEnd=125 PartOfSpeech=NNP Lemma=Sarah NamedEntityTag=PERSON]
+[Text=Fischer CharacterOffsetBegin=126 CharacterOffsetEnd=133 PartOfSpeech=NNP Lemma=Fischer NamedEntityTag=PERSON]
+[Text=also CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=sings CharacterOffsetBegin=139 CharacterOffsetEnd=144 PartOfSpeech=VBZ Lemma=sing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (X (SYM *))
+    (NP
+      (NP (NNP Sarah) (NNP Fischer))
+      (ADVP (RB also)))
+    (VP (VBZ sings))
+    (. .)))
+
+root(ROOT-0, sings-5)
+dep(sings-5, *-1)
+compound(Fischer-3, Sarah-2)
+nsubj(sings-5, Fischer-3)
+advmod(Fischer-3, also-4)
+punct(sings-5, .-6)
+

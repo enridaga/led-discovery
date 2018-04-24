@@ -1,0 +1,82 @@
+Sentence #1 (27 tokens):
+In May, his anthem, "In that Day' was performed at Exeter Hall by the Sacred Harmonic Society, Dr. Elvey himself conducting.
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=May CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-05 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-05">May</TIMEX3>]
+[Text=, CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=anthem CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=anthem NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=Day CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t2" type="DURATION" value="P1D">Day</TIMEX3>]
+[Text=' CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=performed CharacterOffsetBegin=38 CharacterOffsetEnd=47 PartOfSpeech=VBN Lemma=perform NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Exeter CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=Exeter NamedEntityTag=ORGANIZATION]
+[Text=Hall CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Hall NamedEntityTag=ORGANIZATION]
+[Text=by CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Sacred CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=JJ Lemma=sacred NamedEntityTag=ORGANIZATION]
+[Text=Harmonic CharacterOffsetBegin=77 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Harmonic NamedEntityTag=ORGANIZATION]
+[Text=Society CharacterOffsetBegin=86 CharacterOffsetEnd=93 PartOfSpeech=NNP Lemma=Society NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Dr. CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=NNP Lemma=Dr. NamedEntityTag=O]
+[Text=Elvey CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=Elvey NamedEntityTag=PERSON]
+[Text=himself CharacterOffsetBegin=105 CharacterOffsetEnd=112 PartOfSpeech=PRP Lemma=himself NamedEntityTag=O]
+[Text=conducting CharacterOffsetBegin=113 CharacterOffsetEnd=123 PartOfSpeech=VBG Lemma=conduct NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (NNP May))
+        (, ,)
+        (NP (PRP$ his) (NN anthem))))
+    (, ,) (`` ``)
+    (SBAR (IN In)
+      (S
+        (NP (DT that) (NNP Day) (POS '))
+        (VP (VBD was)
+          (VP (VBN performed)
+            (PP (IN at)
+              (NP (NNP Exeter) (NNP Hall)))
+            (PP (IN by)
+              (NP (DT the) (JJ Sacred) (NNP Harmonic) (NNP Society)))))))
+    (, ,)
+    (S
+      (NP (NNP Dr.) (NNP Elvey) (PRP himself))
+      (VP (VBG conducting)))
+    (. .)))
+
+root(ROOT-0, conducting-26)
+case(May-2, In-1)
+nmod:in(conducting-26, May-2)
+punct(May-2, ,-3)
+nmod:poss(anthem-5, his-4)
+appos(May-2, anthem-5)
+punct(conducting-26, ,-6)
+punct(conducting-26, ``-7)
+mark(performed-13, In-8)
+det(Day-10, that-9)
+nsubjpass(performed-13, Day-10)
+case(Day-10, '-11)
+auxpass(performed-13, was-12)
+advcl:in(conducting-26, performed-13)
+case(Hall-16, at-14)
+compound(Hall-16, Exeter-15)
+nmod:at(performed-13, Hall-16)
+case(Society-21, by-17)
+det(Society-21, the-18)
+amod(Society-21, Sacred-19)
+compound(Society-21, Harmonic-20)
+nmod:agent(performed-13, Society-21)
+punct(conducting-26, ,-22)
+compound(Elvey-24, Dr.-23)
+nsubj(conducting-26, Elvey-24)
+nmod:npmod(Elvey-24, himself-25)
+punct(conducting-26, .-27)
+
+Coreference set:
+	(1,25,[25,26]) -> (1,4,[4,5]), that is: "himself" -> "his"

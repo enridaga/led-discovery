@@ -1,0 +1,446 @@
+Sentence #1 (16 tokens):
+The great Wagner gave the first of a series of concerts in the Albert Hall.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=Wagner CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Wagner NamedEntityTag=PERSON]
+[Text=gave CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=series CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=series NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=concerts CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=NNS Lemma=concert NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Albert CharacterOffsetBegin=63 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Albert NamedEntityTag=LOCATION]
+[Text=Hall CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Hall NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (JJ great) (NNP Wagner))
+    (VP (VBD gave)
+      (NP
+        (NP (DT the) (JJ first))
+        (PP (IN of)
+          (NP
+            (NP (DT a) (NN series))
+            (PP (IN of)
+              (NP (NNS concerts))))))
+      (PP (IN in)
+        (NP (DT the) (NNP Albert) (NNP Hall))))
+    (. .)))
+
+root(ROOT-0, gave-4)
+det(Wagner-3, The-1)
+amod(Wagner-3, great-2)
+nsubj(gave-4, Wagner-3)
+det(first-6, the-5)
+dobj(gave-4, first-6)
+case(series-9, of-7)
+det:qmod(concerts-11, a-8)
+mwe(a-8, series-9)
+mwe(a-8, of-10)
+nmod(first-6, concerts-11)
+case(Hall-15, in-12)
+det(Hall-15, the-13)
+compound(Hall-15, Albert-14)
+nmod:in(gave-4, Hall-15)
+punct(gave-4, .-16)
+
+Sentence #2 (14 tokens):
+Bertha [Collier] & I went (price 15/-).
+[Text=Bertha CharacterOffsetBegin=76 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Bertha NamedEntityTag=PERSON]
+[Text=-LSB- CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=PERSON]
+[Text=Collier CharacterOffsetBegin=84 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=Collier NamedEntityTag=PERSON]
+[Text=-RSB- CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=price CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=price NamedEntityTag=O]
+[Text=15 CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=CD Lemma=15 NamedEntityTag=NUMBER NormalizedNamedEntityTag=15.0]
+[Text=/ CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=: Lemma=/ NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP Bertha) (-LRB- -LSB-) (NNP Collier) (-RRB- -RSB-))
+      (CC &)
+      (NP (PRP I)))
+    (VP (VBD went)
+      (PRN (-LRB- -LRB-)
+        (FRAG
+          (ADJP
+            (NP (NN price) (CD 15))
+            (: /))
+          (: -))
+        (-RRB- -RRB-)))
+    (. .)))
+
+root(ROOT-0, went-7)
+compound(Collier-3, Bertha-1)
+punct(Collier-3, -LSB--2)
+nsubj(went-7, Collier-3)
+punct(Collier-3, -RSB--4)
+cc(Collier-3, &-5)
+conj:&(Collier-3, I-6)
+nsubj(went-7, I-6)
+punct(price-9, -LRB--8)
+dep(went-7, price-9)
+nummod(price-9, 15-10)
+punct(price-9, /-11)
+punct(price-9, --12)
+punct(price-9, -RRB--13)
+punct(went-7, .-14)
+
+Sentence #3 (30 tokens):
+I was much interested to see the old boy, the idol of so many hearts including Mr. Dannreuther’s [a well-known music master of the period].
+[Text=I CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=interested CharacterOffsetBegin=127 CharacterOffsetEnd=137 PartOfSpeech=JJ Lemma=interested NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=138 CharacterOffsetEnd=140 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=141 CharacterOffsetEnd=144 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=145 CharacterOffsetEnd=148 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=149 CharacterOffsetEnd=152 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=boy CharacterOffsetBegin=153 CharacterOffsetEnd=156 PartOfSpeech=NN Lemma=boy NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=156 CharacterOffsetEnd=157 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=idol CharacterOffsetBegin=162 CharacterOffsetEnd=166 PartOfSpeech=NN Lemma=idol NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=167 CharacterOffsetEnd=169 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=170 CharacterOffsetEnd=172 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=173 CharacterOffsetEnd=177 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=hearts CharacterOffsetBegin=178 CharacterOffsetEnd=184 PartOfSpeech=NNS Lemma=heart NamedEntityTag=O]
+[Text=including CharacterOffsetBegin=185 CharacterOffsetEnd=194 PartOfSpeech=VBG Lemma=include NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Dannreuther CharacterOffsetBegin=199 CharacterOffsetEnd=210 PartOfSpeech=NNP Lemma=Dannreuther NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=210 CharacterOffsetEnd=212 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=213 CharacterOffsetEnd=214 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=well-known CharacterOffsetBegin=216 CharacterOffsetEnd=226 PartOfSpeech=JJ Lemma=well-known NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=227 CharacterOffsetEnd=232 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=master CharacterOffsetBegin=233 CharacterOffsetEnd=239 PartOfSpeech=NN Lemma=master NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=240 CharacterOffsetEnd=242 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=243 CharacterOffsetEnd=246 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=period CharacterOffsetBegin=247 CharacterOffsetEnd=253 PartOfSpeech=NN Lemma=period NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=253 CharacterOffsetEnd=254 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=254 CharacterOffsetEnd=255 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (ADVP (JJ much))
+      (ADJP (JJ interested)
+        (S
+          (VP (TO to)
+            (VP (VB see)
+              (NP
+                (NP (DT the) (JJ old) (NN boy))
+                (, ,)
+                (NP
+                  (NP (DT the) (NN idol))
+                  (PP (IN of)
+                    (NP
+                      (NP
+                        (ADJP (RB so) (JJ many))
+                        (NNS hearts))
+                      (PP (VBG including)
+                        (NP
+                          (NP (NNP Mr.) (NNP Dannreuther) (POS 's))
+                          (-LRB- -LSB-)
+                          (NP
+                            (NP (DT a) (JJ well-known) (NN music) (NN master))
+                            (PP (IN of)
+                              (NP (DT the) (NN period) (-RRB- -RSB-)))))))))))))))
+    (. .)))
+
+root(ROOT-0, interested-4)
+nsubj(interested-4, I-1)
+nsubj:xsubj(see-6, I-1)
+cop(interested-4, was-2)
+advmod(interested-4, much-3)
+mark(see-6, to-5)
+xcomp(interested-4, see-6)
+det(boy-9, the-7)
+amod(boy-9, old-8)
+dobj(see-6, boy-9)
+punct(boy-9, ,-10)
+det(idol-12, the-11)
+appos(boy-9, idol-12)
+case(hearts-16, of-13)
+advmod(many-15, so-14)
+amod(hearts-16, many-15)
+nmod:of(idol-12, hearts-16)
+case(Dannreuther-19, including-17)
+compound(Dannreuther-19, Mr.-18)
+nmod:'s(hearts-16, Dannreuther-19)
+case(Dannreuther-19, 's-20)
+punct(Dannreuther-19, -LSB--21)
+det(master-25, a-22)
+amod(master-25, well-known-23)
+compound(master-25, music-24)
+dep(Dannreuther-19, master-25)
+case(period-28, of-26)
+det(period-28, the-27)
+nmod:of(master-25, period-28)
+punct(period-28, -RSB--29)
+punct(interested-4, .-30)
+
+Sentence #4 (17 tokens):
+He is about 60—short with a hooked nose, & thick short grey hair.
+[Text=He CharacterOffsetBegin=256 CharacterOffsetEnd=258 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=259 CharacterOffsetEnd=261 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=262 CharacterOffsetEnd=267 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=60 CharacterOffsetBegin=268 CharacterOffsetEnd=270 PartOfSpeech=CD Lemma=60 NamedEntityTag=NUMBER NormalizedNamedEntityTag=~60.0]
+[Text=-- CharacterOffsetBegin=270 CharacterOffsetEnd=271 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=short CharacterOffsetBegin=271 CharacterOffsetEnd=276 PartOfSpeech=JJ Lemma=short NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=277 CharacterOffsetEnd=281 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=282 CharacterOffsetEnd=283 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=hooked CharacterOffsetBegin=284 CharacterOffsetEnd=290 PartOfSpeech=JJ Lemma=hooked NamedEntityTag=O]
+[Text=nose CharacterOffsetBegin=291 CharacterOffsetEnd=295 PartOfSpeech=NN Lemma=nose NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=295 CharacterOffsetEnd=296 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=297 CharacterOffsetEnd=298 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=thick CharacterOffsetBegin=299 CharacterOffsetEnd=304 PartOfSpeech=JJ Lemma=thick NamedEntityTag=O]
+[Text=short CharacterOffsetBegin=305 CharacterOffsetEnd=310 PartOfSpeech=JJ Lemma=short NamedEntityTag=O]
+[Text=grey CharacterOffsetBegin=311 CharacterOffsetEnd=315 PartOfSpeech=JJ Lemma=grey NamedEntityTag=O]
+[Text=hair CharacterOffsetBegin=316 CharacterOffsetEnd=320 PartOfSpeech=NN Lemma=hair NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=320 CharacterOffsetEnd=321 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (QP (RB about) (CD 60)))
+        (: --)
+        (NP
+          (NP (JJ short))
+          (PP (IN with)
+            (NP
+              (NP (DT a) (JJ hooked) (NN nose))
+              (, ,)
+              (CC &)
+              (NP
+                (ADJP (JJ thick) (JJ short))
+                (JJ grey) (NN hair)))))))
+    (. .)))
+
+root(ROOT-0, 60-4)
+nsubj(60-4, He-1)
+cop(60-4, is-2)
+advmod(60-4, about-3)
+punct(60-4, ---5)
+dep(60-4, short-6)
+case(nose-10, with-7)
+det(nose-10, a-8)
+amod(nose-10, hooked-9)
+nmod:with(short-6, nose-10)
+punct(nose-10, ,-11)
+cc(nose-10, &-12)
+amod(short-14, thick-13)
+amod(hair-16, short-14)
+amod(hair-16, grey-15)
+nmod:with(short-6, hair-16)
+conj:&(nose-10, hair-16)
+punct(60-4, .-17)
+
+Sentence #5 (8 tokens):
+He conducted—the cheered him immensely.
+[Text=He CharacterOffsetBegin=322 CharacterOffsetEnd=324 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=conducted CharacterOffsetBegin=325 CharacterOffsetEnd=334 PartOfSpeech=VBD Lemma=conduct NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=334 CharacterOffsetEnd=335 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=335 CharacterOffsetEnd=338 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=cheered CharacterOffsetBegin=339 CharacterOffsetEnd=346 PartOfSpeech=VBD Lemma=cheer NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=347 CharacterOffsetEnd=350 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=immensely CharacterOffsetBegin=351 CharacterOffsetEnd=360 PartOfSpeech=RB Lemma=immensely NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=360 CharacterOffsetEnd=361 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD conducted)))
+    (: --)
+    (S
+      (NP (DT the))
+      (VP (VBD cheered)
+        (NP (PRP him))
+        (ADVP (RB immensely))))
+    (. .)))
+
+root(ROOT-0, conducted-2)
+nsubj(conducted-2, He-1)
+punct(conducted-2, ---3)
+nsubj(cheered-5, the-4)
+parataxis(conducted-2, cheered-5)
+dobj(cheered-5, him-6)
+advmod(cheered-5, immensely-7)
+punct(conducted-2, .-8)
+
+Sentence #6 (21 tokens):
+The Modern School feel for him as their ancestors felt for Beethoven, a dangerous innovator & a surpassing genius.
+[Text=The CharacterOffsetBegin=362 CharacterOffsetEnd=365 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Modern CharacterOffsetBegin=366 CharacterOffsetEnd=372 PartOfSpeech=NNP Lemma=Modern NamedEntityTag=ORGANIZATION]
+[Text=School CharacterOffsetBegin=373 CharacterOffsetEnd=379 PartOfSpeech=NNP Lemma=School NamedEntityTag=ORGANIZATION]
+[Text=feel CharacterOffsetBegin=380 CharacterOffsetEnd=384 PartOfSpeech=VB Lemma=feel NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=385 CharacterOffsetEnd=388 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=389 CharacterOffsetEnd=392 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=393 CharacterOffsetEnd=395 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=396 CharacterOffsetEnd=401 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=ancestors CharacterOffsetBegin=402 CharacterOffsetEnd=411 PartOfSpeech=NNS Lemma=ancestor NamedEntityTag=O]
+[Text=felt CharacterOffsetBegin=412 CharacterOffsetEnd=416 PartOfSpeech=VBD Lemma=feel NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=417 CharacterOffsetEnd=420 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Beethoven CharacterOffsetBegin=421 CharacterOffsetEnd=430 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=430 CharacterOffsetEnd=431 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=432 CharacterOffsetEnd=433 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=dangerous CharacterOffsetBegin=434 CharacterOffsetEnd=443 PartOfSpeech=JJ Lemma=dangerous NamedEntityTag=O]
+[Text=innovator CharacterOffsetBegin=444 CharacterOffsetEnd=453 PartOfSpeech=NN Lemma=innovator NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=454 CharacterOffsetEnd=455 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=456 CharacterOffsetEnd=457 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=surpassing CharacterOffsetBegin=458 CharacterOffsetEnd=468 PartOfSpeech=VBG Lemma=surpass NamedEntityTag=O]
+[Text=genius CharacterOffsetBegin=469 CharacterOffsetEnd=475 PartOfSpeech=NN Lemma=genius NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=475 CharacterOffsetEnd=476 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NNP Modern) (NNP School))
+    (VP (VB feel)
+      (PP (IN for)
+        (NP (PRP him)))
+      (SBAR (IN as)
+        (S
+          (NP (PRP$ their) (NNS ancestors))
+          (VP (VBD felt)
+            (PP (IN for)
+              (NP
+                (NP
+                  (NP (NNP Beethoven))
+                  (, ,)
+                  (NP (DT a) (JJ dangerous) (NN innovator)))
+                (CC &)
+                (NP (DT a)
+                  (ADJP (VBG surpassing))
+                  (NN genius))))))))
+    (. .)))
+
+root(ROOT-0, feel-4)
+det(School-3, The-1)
+compound(School-3, Modern-2)
+nsubj(feel-4, School-3)
+case(him-6, for-5)
+nmod:for(feel-4, him-6)
+mark(felt-10, as-7)
+nmod:poss(ancestors-9, their-8)
+nsubj(felt-10, ancestors-9)
+advcl:as(feel-4, felt-10)
+case(Beethoven-12, for-11)
+nmod:for(felt-10, Beethoven-12)
+punct(Beethoven-12, ,-13)
+det(innovator-16, a-14)
+amod(innovator-16, dangerous-15)
+appos(Beethoven-12, innovator-16)
+cc(Beethoven-12, &-17)
+det(genius-20, a-18)
+amod(genius-20, surpassing-19)
+nmod:for(felt-10, genius-20)
+conj:&(Beethoven-12, genius-20)
+punct(feel-4, .-21)
+
+Sentence #7 (24 tokens):
+They played parts of Rienzi, Tannhäuser, & the Rhine Gold—this last I am free to confess was beyond me.
+[Text=They CharacterOffsetBegin=477 CharacterOffsetEnd=481 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=482 CharacterOffsetEnd=488 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=parts CharacterOffsetBegin=489 CharacterOffsetEnd=494 PartOfSpeech=NNS Lemma=part NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=495 CharacterOffsetEnd=497 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Rienzi CharacterOffsetBegin=498 CharacterOffsetEnd=504 PartOfSpeech=NNP Lemma=Rienzi NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=504 CharacterOffsetEnd=505 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Tannhäuser CharacterOffsetBegin=506 CharacterOffsetEnd=516 PartOfSpeech=NNP Lemma=Tannhäuser NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=516 CharacterOffsetEnd=517 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=518 CharacterOffsetEnd=519 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=520 CharacterOffsetEnd=523 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Rhine CharacterOffsetBegin=524 CharacterOffsetEnd=529 PartOfSpeech=NNP Lemma=Rhine NamedEntityTag=O]
+[Text=Gold CharacterOffsetBegin=530 CharacterOffsetEnd=534 PartOfSpeech=NNP Lemma=Gold NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=534 CharacterOffsetEnd=535 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=535 CharacterOffsetEnd=539 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=540 CharacterOffsetEnd=544 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=545 CharacterOffsetEnd=546 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=547 CharacterOffsetEnd=549 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=free CharacterOffsetBegin=550 CharacterOffsetEnd=554 PartOfSpeech=JJ Lemma=free NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=555 CharacterOffsetEnd=557 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=confess CharacterOffsetBegin=558 CharacterOffsetEnd=565 PartOfSpeech=VB Lemma=confess NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=566 CharacterOffsetEnd=569 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=beyond CharacterOffsetBegin=570 CharacterOffsetEnd=576 PartOfSpeech=IN Lemma=beyond NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=577 CharacterOffsetEnd=579 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=579 CharacterOffsetEnd=580 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD played)
+      (SBAR
+        (S
+          (NP
+            (NP
+              (NP (NNS parts))
+              (PP (IN of)
+                (NP (NNP Rienzi) (, ,) (NNP Tannhäuser))))
+            (, ,)
+            (CC &)
+            (NP
+              (NP (DT the) (NNP Rhine) (NNP Gold))
+              (: --)
+              (NP
+                (NP (DT this) (JJ last))
+                (SBAR
+                  (S
+                    (NP (PRP I))
+                    (VP (VBP am)
+                      (ADJP (JJ free)
+                        (S
+                          (VP (TO to)
+                            (VP (VB confess)))))))))))
+          (VP (VBD was)
+            (PP (IN beyond)
+              (NP (PRP me)))))))
+    (. .)))
+
+root(ROOT-0, played-2)
+nsubj(played-2, They-1)
+nsubj(me-23, parts-3)
+case(Tannhäuser-7, of-4)
+compound(Tannhäuser-7, Rienzi-5)
+punct(Tannhäuser-7, ,-6)
+nmod:of(parts-3, Tannhäuser-7)
+punct(parts-3, ,-8)
+cc(parts-3, &-9)
+det(Gold-12, the-10)
+compound(Gold-12, Rhine-11)
+conj:&(parts-3, Gold-12)
+nsubj(me-23, Gold-12)
+punct(Gold-12, ---13)
+det(last-15, this-14)
+dep(Gold-12, last-15)
+nsubj(free-18, I-16)
+nsubj:xsubj(confess-20, I-16)
+cop(free-18, am-17)
+acl:relcl(last-15, free-18)
+mark(confess-20, to-19)
+xcomp(free-18, confess-20)
+cop(me-23, was-21)
+case(me-23, beyond-22)
+ccomp(played-2, me-23)
+punct(played-2, .-24)
+
+Coreference set:
+	(3,1,[1,2]) -> (2,6,[6,7]), that is: "I" -> "I"
+	(7,16,[16,17]) -> (2,6,[6,7]), that is: "I" -> "I"
+	(7,23,[23,24]) -> (2,6,[6,7]), that is: "me" -> "I"
+Coreference set:
+	(4,1,[1,2]) -> (3,9,[7,10]), that is: "He" -> "the old boy"
+	(5,1,[1,2]) -> (3,9,[7,10]), that is: "He" -> "the old boy"
+	(5,6,[6,7]) -> (3,9,[7,10]), that is: "him" -> "the old boy"
+	(6,6,[6,7]) -> (3,9,[7,10]), that is: "him" -> "the old boy"
+Coreference set:
+	(6,8,[8,9]) -> (5,4,[4,5]), that is: "their" -> "the"
+Coreference set:
+	(7,1,[1,2]) -> (6,9,[8,10]), that is: "They" -> "their ancestors"

@@ -1,0 +1,70 @@
+Sentence #1 (21 tokens):
+He played to me a part of his new pianoforte quintet, dedicated to me - a genuine Cramer composition.
+[Text=He CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=3 CharacterOffsetEnd=9 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=pianoforte CharacterOffsetBegin=34 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=pianoforte NamedEntityTag=O]
+[Text=quintet CharacterOffsetBegin=45 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=quintet NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=dedicated CharacterOffsetBegin=54 CharacterOffsetEnd=63 PartOfSpeech=VBN Lemma=dedicate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=genuine CharacterOffsetBegin=74 CharacterOffsetEnd=81 PartOfSpeech=JJ Lemma=genuine NamedEntityTag=O]
+[Text=Cramer CharacterOffsetBegin=82 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=Cramer NamedEntityTag=PERSON]
+[Text=composition CharacterOffsetBegin=89 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=composition NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD played)
+      (PP (TO to)
+        (NP (PRP me)))
+      (NP
+        (NP (DT a) (NN part))
+        (PP (IN of)
+          (NP
+            (NP (PRP$ his) (JJ new) (NN pianoforte) (NN quintet))
+            (, ,)
+            (VP (VBN dedicated)
+              (PP (TO to)
+                (NP (PRP me))))
+            (: -)
+            (NP (DT a) (JJ genuine) (NNP Cramer) (NN composition))))))
+    (. .)))
+
+root(ROOT-0, played-2)
+nsubj(played-2, He-1)
+case(me-4, to-3)
+nmod:to(played-2, me-4)
+det(part-6, a-5)
+dobj(played-2, part-6)
+case(quintet-11, of-7)
+nmod:poss(quintet-11, his-8)
+amod(quintet-11, new-9)
+compound(quintet-11, pianoforte-10)
+nmod:of(part-6, quintet-11)
+punct(quintet-11, ,-12)
+acl(quintet-11, dedicated-13)
+case(me-15, to-14)
+nmod:to(dedicated-13, me-15)
+punct(quintet-11, --16)
+det(composition-20, a-17)
+amod(composition-20, genuine-18)
+compound(composition-20, Cramer-19)
+dep(quintet-11, composition-20)
+punct(played-2, .-21)
+
+Coreference set:
+	(1,8,[8,9]) -> (1,1,[1,2]), that is: "his" -> "He"
+Coreference set:
+	(1,15,[15,16]) -> (1,4,[4,5]), that is: "me" -> "me"
+Coreference set:
+	(1,20,[17,21]) -> (1,11,[8,12]), that is: "a genuine Cramer composition" -> "his new pianoforte quintet"

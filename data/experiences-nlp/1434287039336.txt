@@ -1,0 +1,364 @@
+Sentence #1 (11 tokens):
+Go to B.B.C. concert (area ticket) at 8.15.
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=B.B.C. CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=B.B.C. NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=area CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=area NamedEntityTag=O]
+[Text=ticket CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=ticket NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=8.15 CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=CD Lemma=8.15 NamedEntityTag=NUMBER NormalizedNamedEntityTag=8.15]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PP (TO to)
+        (NP
+          (NP (NNP B.B.C.) (NN concert))
+          (PRN (-LRB- -LRB-)
+            (NP (NN area) (NN ticket))
+            (-RRB- -RRB-))))
+      (PP (IN at)
+        (NP (CD 8.15))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+case(concert-4, to-2)
+compound(concert-4, B.B.C.-3)
+nmod:to(Go-1, concert-4)
+punct(ticket-7, -LRB--5)
+compound(ticket-7, area-6)
+appos(concert-4, ticket-7)
+punct(ticket-7, -RRB--8)
+case(8.15-10, at-9)
+nmod:at(Go-1, 8.15-10)
+punct(Go-1, .-11)
+
+Sentence #2 (3 tokens):
+Henry Wood.
+[Text=Henry CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Henry NamedEntityTag=PERSON]
+[Text=Wood CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Wood NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (NNP Henry) (NNP Wood) (. .)))
+
+root(ROOT-0, Wood-2)
+compound(Wood-2, Henry-1)
+punct(Wood-2, .-3)
+
+Sentence #3 (44 tokens):
+Haydn symphony (at usual break-neck speed & with usual battalion of strings) - Bach concerto E maj (Thibaud) - disgraceful performance - bad technically (rhythm out of control & intonation bad) & interpretively (impossible portamento).
+[Text=Haydn CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=Haydn NamedEntityTag=O]
+[Text=symphony CharacterOffsetBegin=62 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=symphony NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=usual CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=JJ Lemma=usual NamedEntityTag=O]
+[Text=break-neck CharacterOffsetBegin=81 CharacterOffsetEnd=91 PartOfSpeech=JJ Lemma=break-neck NamedEntityTag=O]
+[Text=speed CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=speed NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=usual CharacterOffsetBegin=105 CharacterOffsetEnd=110 PartOfSpeech=JJ Lemma=usual NamedEntityTag=O]
+[Text=battalion CharacterOffsetBegin=111 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=battalion NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=strings CharacterOffsetBegin=124 CharacterOffsetEnd=131 PartOfSpeech=NNS Lemma=string NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=133 CharacterOffsetEnd=134 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Bach CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=NNP Lemma=Bach NamedEntityTag=PERSON]
+[Text=concerto CharacterOffsetBegin=140 CharacterOffsetEnd=148 PartOfSpeech=NN Lemma=concerto NamedEntityTag=O]
+[Text=E CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech=NN Lemma=e NamedEntityTag=O]
+[Text=maj CharacterOffsetBegin=151 CharacterOffsetEnd=154 PartOfSpeech=NN Lemma=maj NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=155 CharacterOffsetEnd=156 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Thibaud CharacterOffsetBegin=156 CharacterOffsetEnd=163 PartOfSpeech=NN Lemma=thibaud NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=163 CharacterOffsetEnd=164 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=disgraceful CharacterOffsetBegin=167 CharacterOffsetEnd=178 PartOfSpeech=JJ Lemma=disgraceful NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=179 CharacterOffsetEnd=190 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=191 CharacterOffsetEnd=192 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=193 CharacterOffsetEnd=196 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=technically CharacterOffsetBegin=197 CharacterOffsetEnd=208 PartOfSpeech=RB Lemma=technically NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=209 CharacterOffsetEnd=210 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=rhythm CharacterOffsetBegin=210 CharacterOffsetEnd=216 PartOfSpeech=NN Lemma=rhythm NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=217 CharacterOffsetEnd=220 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=221 CharacterOffsetEnd=223 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=control CharacterOffsetBegin=224 CharacterOffsetEnd=231 PartOfSpeech=NN Lemma=control NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=232 CharacterOffsetEnd=233 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=intonation CharacterOffsetBegin=234 CharacterOffsetEnd=244 PartOfSpeech=NN Lemma=intonation NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=245 CharacterOffsetEnd=248 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=248 CharacterOffsetEnd=249 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=250 CharacterOffsetEnd=251 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=interpretively CharacterOffsetBegin=252 CharacterOffsetEnd=266 PartOfSpeech=RB Lemma=interpretively NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=267 CharacterOffsetEnd=268 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=impossible CharacterOffsetBegin=268 CharacterOffsetEnd=278 PartOfSpeech=JJ Lemma=impossible NamedEntityTag=O]
+[Text=portamento CharacterOffsetBegin=279 CharacterOffsetEnd=289 PartOfSpeech=NN Lemma=portamento NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=289 CharacterOffsetEnd=290 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=290 CharacterOffsetEnd=291 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Haydn))
+    (NP
+      (NP
+        (NP
+          (NP
+            (NP (NN symphony))
+            (PRN (-LRB- -LRB-)
+              (PP (IN at)
+                (NP
+                  (NP (JJ usual) (JJ break-neck) (NN speed))
+                  (CC &)
+                  (NP
+                    (NP (IN with) (JJ usual) (NN battalion))
+                    (PP (IN of)
+                      (NP (NNS strings))))))
+              (-RRB- -RRB-)))
+          (PRN (: -)
+            (S
+              (NP
+                (NP
+                  (NP
+                    (NP (NNP Bach) (NN concerto) (NN E) (NN maj))
+                    (PRN (-LRB- -LRB-)
+                      (NP (NN Thibaud))
+                      (-RRB- -RRB-)))
+                  (PRN (: -)
+                    (NP (JJ disgraceful) (NN performance))
+                    (: -)))
+                (ADJP
+                  (ADJP (JJ bad) (RB technically))
+                  (PRN (-LRB- -LRB-)
+                    (ADVP
+                      (ADVP (NN rhythm) (IN out))
+                      (PP (IN of)
+                        (NP
+                          (NP (NN control))
+                          (CC &)
+                          (NP (NN intonation)))))
+                    (ADJP (JJ bad))
+                    (-RRB- -RRB-))))
+              (NP (CC &)))))
+        (ADVP (RB interpretively)))
+      (PRN (-LRB- -LRB-)
+        (NP (JJ impossible) (NN portamento))
+        (-RRB- -RRB-)))
+    (. .)))
+
+root(ROOT-0, Haydn-1)
+dep(Haydn-1, symphony-2)
+punct(speed-7, -LRB--3)
+case(speed-7, at-4)
+amod(speed-7, usual-5)
+amod(speed-7, break-neck-6)
+nmod:at(symphony-2, speed-7)
+cc(speed-7, &-8)
+amod(battalion-11, with-9)
+amod(battalion-11, usual-10)
+nmod:at(symphony-2, battalion-11)
+conj:&(speed-7, battalion-11)
+case(strings-13, of-12)
+nmod:of(battalion-11, strings-13)
+punct(speed-7, -RRB--14)
+punct(&-38, --15)
+compound(maj-19, Bach-16)
+compound(maj-19, concerto-17)
+compound(maj-19, E-18)
+dep(&-38, maj-19)
+punct(Thibaud-21, -LRB--20)
+appos(maj-19, Thibaud-21)
+punct(Thibaud-21, -RRB--22)
+punct(performance-25, --23)
+amod(performance-25, disgraceful-24)
+dep(maj-19, performance-25)
+punct(performance-25, --26)
+amod(maj-19, bad-27)
+advmod(bad-27, technically-28)
+punct(bad-36, -LRB--29)
+dep(bad-36, rhythm-30)
+case(rhythm-30, out-31)
+case(control-33, of-32)
+nmod:of(rhythm-30, control-33)
+cc(control-33, &-34)
+nmod:of(rhythm-30, intonation-35)
+conj:&(control-33, intonation-35)
+dep(bad-27, bad-36)
+punct(bad-36, -RRB--37)
+dep(symphony-2, &-38)
+advmod(symphony-2, interpretively-39)
+punct(portamento-42, -LRB--40)
+amod(portamento-42, impossible-41)
+appos(symphony-2, portamento-42)
+punct(portamento-42, -RRB--43)
+punct(Haydn-1, .-44)
+
+Sentence #4 (13 tokens):
+Thibaud was better in Chausson's long & sentimental Poem with orchestra.
+[Text=Thibaud CharacterOffsetBegin=292 CharacterOffsetEnd=299 PartOfSpeech=NNP Lemma=Thibaud NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=300 CharacterOffsetEnd=303 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=304 CharacterOffsetEnd=310 PartOfSpeech=RBR Lemma=better NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=311 CharacterOffsetEnd=313 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Chausson CharacterOffsetBegin=314 CharacterOffsetEnd=322 PartOfSpeech=NNP Lemma=Chausson NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=322 CharacterOffsetEnd=324 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=325 CharacterOffsetEnd=329 PartOfSpeech=JJ Lemma=long NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=330 CharacterOffsetEnd=331 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=sentimental CharacterOffsetBegin=332 CharacterOffsetEnd=343 PartOfSpeech=JJ Lemma=sentimental NamedEntityTag=O]
+[Text=Poem CharacterOffsetBegin=344 CharacterOffsetEnd=348 PartOfSpeech=NN Lemma=poem NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=349 CharacterOffsetEnd=353 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=orchestra CharacterOffsetBegin=354 CharacterOffsetEnd=363 PartOfSpeech=NN Lemma=orchestra NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=363 CharacterOffsetEnd=364 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Thibaud))
+    (VP (VBD was)
+      (ADVP
+        (ADVP (RBR better))
+        (PP (IN in)
+          (NP (NNP Chausson) (POS 's))))
+      (NP
+        (NP (JJ long))
+        (CC &)
+        (NP
+          (NP
+            (ADJP (JJ sentimental))
+            (NN Poem))
+          (PP (IN with)
+            (NP (NN orchestra))))))
+    (. .)))
+
+root(ROOT-0, long-7)
+nsubj(long-7, Thibaud-1)
+cop(long-7, was-2)
+advmod(long-7, better-3)
+case(Chausson-5, in-4)
+nmod:'s(better-3, Chausson-5)
+case(Chausson-5, 's-6)
+cc(long-7, &-8)
+amod(Poem-10, sentimental-9)
+conj:&(long-7, Poem-10)
+case(orchestra-12, with-11)
+nmod:with(Poem-10, orchestra-12)
+punct(long-7, .-13)
+
+Sentence #5 (26 tokens):
+Delius' Song of High Hills - amazingly beautiful - incredibly long & monotonous even for Delius - but what marvellous sounds, he creates!
+[Text=Delius CharacterOffsetBegin=365 CharacterOffsetEnd=371 PartOfSpeech=NNP Lemma=Delius NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=371 CharacterOffsetEnd=372 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=Song CharacterOffsetBegin=373 CharacterOffsetEnd=377 PartOfSpeech=NN Lemma=song NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=378 CharacterOffsetEnd=380 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=High CharacterOffsetBegin=381 CharacterOffsetEnd=385 PartOfSpeech=NNP Lemma=High NamedEntityTag=O]
+[Text=Hills CharacterOffsetBegin=386 CharacterOffsetEnd=391 PartOfSpeech=NNP Lemma=Hills NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=392 CharacterOffsetEnd=393 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=amazingly CharacterOffsetBegin=394 CharacterOffsetEnd=403 PartOfSpeech=RB Lemma=amazingly NamedEntityTag=O]
+[Text=beautiful CharacterOffsetBegin=404 CharacterOffsetEnd=413 PartOfSpeech=JJ Lemma=beautiful NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=414 CharacterOffsetEnd=415 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=incredibly CharacterOffsetBegin=416 CharacterOffsetEnd=426 PartOfSpeech=RB Lemma=incredibly NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=427 CharacterOffsetEnd=431 PartOfSpeech=JJ Lemma=long NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=432 CharacterOffsetEnd=433 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=monotonous CharacterOffsetBegin=434 CharacterOffsetEnd=444 PartOfSpeech=JJ Lemma=monotonous NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=445 CharacterOffsetEnd=449 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=450 CharacterOffsetEnd=453 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Delius CharacterOffsetBegin=454 CharacterOffsetEnd=460 PartOfSpeech=NNP Lemma=Delius NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=461 CharacterOffsetEnd=462 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=463 CharacterOffsetEnd=466 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=467 CharacterOffsetEnd=471 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=marvellous CharacterOffsetBegin=472 CharacterOffsetEnd=482 PartOfSpeech=JJ Lemma=marvellous NamedEntityTag=O]
+[Text=sounds CharacterOffsetBegin=483 CharacterOffsetEnd=489 PartOfSpeech=NNS Lemma=sound NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=489 CharacterOffsetEnd=490 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=491 CharacterOffsetEnd=493 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=creates CharacterOffsetBegin=494 CharacterOffsetEnd=501 PartOfSpeech=VBZ Lemma=create NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=501 CharacterOffsetEnd=502 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP
+          (NP
+            (NP (NNP Delius) (POS '))
+            (NN Song))
+          (PP (IN of)
+            (NP
+              (NP
+                (NP (NNP High) (NNP Hills))
+                (PRN (: -)
+                  (ADJP (RB amazingly) (JJ beautiful))
+                  (: -)))
+              (ADJP (RB incredibly) (JJ long)))))
+        (CC &)
+        (NP
+          (NP (JJ monotonous) (RB even))
+          (PP (IN for)
+            (NP (NNP Delius)))))
+      (PRN (: -)
+        (PP (CC but)
+          (NP (WP what)))
+        (NP
+          (NP (JJ marvellous) (NNS sounds))
+          (, ,)
+          (NP (PRP he)))))
+    (VP (VBZ creates))
+    (. !)))
+
+root(ROOT-0, creates-25)
+nmod:poss(Song-3, Delius-1)
+case(Delius-1, '-2)
+nsubj(creates-25, Song-3)
+case(Hills-6, of-4)
+compound(Hills-6, High-5)
+nmod:of(Song-3, Hills-6)
+punct(beautiful-9, --7)
+advmod(beautiful-9, amazingly-8)
+dep(Hills-6, beautiful-9)
+punct(beautiful-9, --10)
+advmod(long-12, incredibly-11)
+amod(Hills-6, long-12)
+cc(Song-3, &-13)
+conj:&(Song-3, monotonous-14)
+nsubj(creates-25, monotonous-14)
+advmod(monotonous-14, even-15)
+case(Delius-17, for-16)
+nmod:for(monotonous-14, Delius-17)
+punct(sounds-22, --18)
+case(what-20, but-19)
+nmod:but(sounds-22, what-20)
+amod(sounds-22, marvellous-21)
+dep(Song-3, sounds-22)
+punct(sounds-22, ,-23)
+appos(sounds-22, he-24)
+punct(creates-25, !-26)
+
+Sentence #6 (9 tokens):
+Chorus (National) helped admirably in these.
+[Text=Chorus CharacterOffsetBegin=503 CharacterOffsetEnd=509 PartOfSpeech=NN Lemma=chorus NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=510 CharacterOffsetEnd=511 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=National CharacterOffsetBegin=511 CharacterOffsetEnd=519 PartOfSpeech=NNP Lemma=National NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=519 CharacterOffsetEnd=520 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=helped CharacterOffsetBegin=521 CharacterOffsetEnd=527 PartOfSpeech=VBD Lemma=help NamedEntityTag=O]
+[Text=admirably CharacterOffsetBegin=528 CharacterOffsetEnd=537 PartOfSpeech=RB Lemma=admirably NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=538 CharacterOffsetEnd=540 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=541 CharacterOffsetEnd=546 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=546 CharacterOffsetEnd=547 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NN Chorus))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP National))
+        (-RRB- -RRB-)))
+    (VP (VBD helped)
+      (ADJP (RB admirably)
+        (PP (IN in)
+          (NP (DT these)))))
+    (. .)))
+
+root(ROOT-0, helped-5)
+nsubj(helped-5, Chorus-1)
+punct(National-3, -LRB--2)
+appos(Chorus-1, National-3)
+punct(National-3, -RRB--4)
+xcomp(helped-5, admirably-6)
+case(these-8, in-7)
+nmod:in(admirably-6, these-8)
+punct(helped-5, .-9)
+
+Coreference set:
+	(5,17,[17,18]) -> (5,1,[1,3]), that is: "Delius" -> "Delius '"
+	(5,24,[24,25]) -> (5,1,[1,3]), that is: "he" -> "Delius '"

@@ -1,0 +1,138 @@
+Sentence #1 (3 tokens):
+In aft.
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=aft CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=aft NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN In)
+      (NP (NN aft)))
+    (. .)))
+
+root(ROOT-0, aft-2)
+case(aft-2, In-1)
+punct(aft-2, .-3)
+
+Sentence #2 (22 tokens):
+rewrite a bit of quartet & also listen to wireless (Bournemouth) Beethoven Concerto (Syble Eaton - disgraceful).
+[Text=rewrite CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=VB Lemma=rewrite NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=quartet CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=quartet NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=VBP Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=wireless CharacterOffsetBegin=50 CharacterOffsetEnd=58 PartOfSpeech=JJ Lemma=wireless NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Bournemouth CharacterOffsetBegin=60 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Bournemouth NamedEntityTag=LOCATION]
+[Text=-RRB- CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=Beethoven CharacterOffsetBegin=73 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=O]
+[Text=Concerto CharacterOffsetBegin=83 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Syble CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=NNP Lemma=Syble NamedEntityTag=PERSON]
+[Text=Eaton CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=Eaton NamedEntityTag=PERSON]
+[Text=- CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=disgraceful CharacterOffsetBegin=107 CharacterOffsetEnd=118 PartOfSpeech=JJ Lemma=disgraceful NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB rewrite)
+      (NP
+        (NP (DT a) (NN bit))
+        (PP (IN of)
+          (NP (NN quartet)))
+        (SBAR
+          (S
+            (NP (CC &))
+            (ADVP (RB also))
+            (VP (VBP listen)
+              (PP (TO to)
+                (NP
+                  (ADJP
+                    (ADJP (JJ wireless))
+                    (PRN (-LRB- -LRB-)
+                      (NP (NNP Bournemouth))
+                      (-RRB- -RRB-)))
+                  (NNP Beethoven) (NNP Concerto)
+                  (PRN (-LRB- -LRB-)
+                    (NP
+                      (NP (NNP Syble) (NNP Eaton))
+                      (: -)
+                      (NP (JJ disgraceful)))
+                    (-RRB- -RRB-)))))))))
+    (. .)))
+
+root(ROOT-0, rewrite-1)
+det:qmod(quartet-5, a-2)
+mwe(a-2, bit-3)
+mwe(a-2, of-4)
+dobj(rewrite-1, quartet-5)
+nsubj(listen-8, &-6)
+advmod(listen-8, also-7)
+acl:relcl(bit-3, listen-8)
+case(Concerto-15, to-9)
+amod(Concerto-15, wireless-10)
+punct(Bournemouth-12, -LRB--11)
+dep(wireless-10, Bournemouth-12)
+punct(Bournemouth-12, -RRB--13)
+compound(Concerto-15, Beethoven-14)
+nmod:to(listen-8, Concerto-15)
+punct(Eaton-18, -LRB--16)
+compound(Eaton-18, Syble-17)
+dep(Concerto-15, Eaton-18)
+punct(Eaton-18, --19)
+dep(Eaton-18, disgraceful-20)
+punct(Eaton-18, -RRB--21)
+punct(rewrite-1, .-22)
+
+Sentence #3 (4 tokens):
+& Bràhms-Haydn Variations.
+[Text=& CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Bràhms-Haydn CharacterOffsetBegin=123 CharacterOffsetEnd=135 PartOfSpeech=NNP Lemma=Bràhms-Haydn NamedEntityTag=O]
+[Text=Variations CharacterOffsetBegin=136 CharacterOffsetEnd=146 PartOfSpeech=NNPS Lemma=Variations NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (CC &))
+    (VP
+      (NP
+        (NP (NNP Bràhms-Haydn))
+        (NP (NNPS Variations))))
+    (. .)))
+
+root(ROOT-0, Bràhms-Haydn-2)
+nsubj(Bràhms-Haydn-2, &-1)
+dep(Bràhms-Haydn-2, Variations-3)
+punct(Bràhms-Haydn-2, .-4)
+
+Sentence #4 (7 tokens):
+Go for long walk after tea.
+[Text=Go CharacterOffsetBegin=148 CharacterOffsetEnd=150 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=151 CharacterOffsetEnd=154 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=155 CharacterOffsetEnd=159 PartOfSpeech=JJ Lemma=long NamedEntityTag=O]
+[Text=walk CharacterOffsetBegin=160 CharacterOffsetEnd=164 PartOfSpeech=NN Lemma=walk NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=165 CharacterOffsetEnd=170 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=tea CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=NN Lemma=tea NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=174 CharacterOffsetEnd=175 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PP (IN for)
+        (NP (JJ long) (NN walk)))
+      (PP (IN after)
+        (NP (NN tea))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+case(walk-4, for-2)
+amod(walk-4, long-3)
+nmod:for(Go-1, walk-4)
+case(tea-6, after-5)
+nmod:after(Go-1, tea-6)
+punct(Go-1, .-7)
+
+Coreference set:
+	(3,1,[1,2]) -> (2,6,[6,7]), that is: "&" -> "&"

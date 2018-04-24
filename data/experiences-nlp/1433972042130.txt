@@ -1,0 +1,51 @@
+Sentence #1 (15 tokens):
+Here with Donald for a recital on the campus and a series of classes.
+[Text=Here CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Donald CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Donald NamedEntityTag=PERSON]
+[Text=for CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=recital CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=recital NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=campus CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=campus NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=series CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=series NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=classes CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=NNS Lemma=class NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (RB Here))
+    (PP (IN with)
+      (NP (NNP Donald)))
+    (PP (IN for)
+      (NP
+        (NP (DT a) (NN recital))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN campus))
+            (CC and)
+            (NP (DT a) (NN series))))))
+    (PP (IN of)
+      (NP (NNS classes)))
+    (. .)))
+
+root(ROOT-0, Here-1)
+case(Donald-3, with-2)
+nmod:with(Here-1, Donald-3)
+case(recital-6, for-4)
+det(recital-6, a-5)
+nmod:for(Here-1, recital-6)
+case(campus-9, on-7)
+det(campus-9, the-8)
+nmod:on(recital-6, campus-9)
+cc(campus-9, and-10)
+det(series-12, a-11)
+nmod:on(recital-6, series-12)
+conj:and(campus-9, series-12)
+case(classes-14, of-13)
+nmod:of(Here-1, classes-14)
+punct(Here-1, .-15)
+

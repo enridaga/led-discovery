@@ -1,0 +1,69 @@
+Sentence #1 (20 tokens):
+Organ recital today by Leonard Raver at Riverside Church, during which I grew hypnotised by the stained glass.
+[Text=Organ CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=organ NamedEntityTag=O]
+[Text=recital CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=recital NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=today NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">today</TIMEX3>]
+[Text=by CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Leonard CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Leonard NamedEntityTag=PERSON]
+[Text=Raver CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Raver NamedEntityTag=PERSON]
+[Text=at CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Riverside CharacterOffsetBegin=40 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Riverside NamedEntityTag=ORGANIZATION]
+[Text=Church CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Church NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=58 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=grew CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=VBD Lemma=grow NamedEntityTag=O]
+[Text=hypnotised CharacterOffsetBegin=78 CharacterOffsetEnd=88 PartOfSpeech=VBN Lemma=hypnotise NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=stained CharacterOffsetBegin=96 CharacterOffsetEnd=103 PartOfSpeech=VBN Lemma=stain NamedEntityTag=O]
+[Text=glass CharacterOffsetBegin=104 CharacterOffsetEnd=109 PartOfSpeech=NN Lemma=glass NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NN Organ) (NN recital) (NN today))
+      (PP (IN by)
+        (NP
+          (NP (NNP Leonard) (NNP Raver))
+          (PP (IN at)
+            (NP
+              (NP (NNP Riverside) (NNP Church))
+              (, ,)
+              (SBAR
+                (WHPP (IN during)
+                  (WHNP (WDT which)))
+                (S
+                  (NP (PRP I))
+                  (VP (VBD grew)))))))))
+    (VP (VBN hypnotised)
+      (PP (IN by)
+        (NP
+          (NP (DT the))
+          (VP (VBN stained)
+            (NP (NN glass))))))
+    (. .)))
+
+root(ROOT-0, hypnotised-15)
+compound(today-3, Organ-1)
+compound(today-3, recital-2)
+nsubj(hypnotised-15, today-3)
+case(Raver-6, by-4)
+compound(Raver-6, Leonard-5)
+nmod:by(today-3, Raver-6)
+case(Church-9, at-7)
+compound(Church-9, Riverside-8)
+nmod:at(Raver-6, Church-9)
+nmod:during(grew-14, Church-9)
+punct(Church-9, ,-10)
+case(which-12, during-11)
+ref(Church-9, which-12)
+nsubj(grew-14, I-13)
+acl:relcl(Church-9, grew-14)
+case(the-17, by-16)
+nmod:by(hypnotised-15, the-17)
+acl(the-17, stained-18)
+dobj(stained-18, glass-19)
+punct(hypnotised-15, .-20)
+

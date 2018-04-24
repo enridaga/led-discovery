@@ -1,0 +1,379 @@
+Sentence #1 (28 tokens):
+...I met with Mr. Lock and Pursell, Maisters of Musique; and with them to the Coffee-house into a room next the Water by ourselfs.
+[Text=... CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=met CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=VBD Lemma=meet NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Lock CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Lock NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Pursell CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Pursell NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Maisters CharacterOffsetBegin=36 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Maisters NamedEntityTag=ORGANIZATION]
+[Text=of CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=of NamedEntityTag=ORGANIZATION]
+[Text=Musique CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Musique NamedEntityTag=ORGANIZATION]
+[Text=; CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Coffee-house CharacterOffsetBegin=78 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=coffee-house NamedEntityTag=MISC]
+[Text=into CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=room CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=room NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=IN Lemma=next NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Water CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=water NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=ourselfs CharacterOffsetBegin=121 CharacterOffsetEnd=129 PartOfSpeech=NNS Lemma=ourself NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (: ...)
+    (NP (PRP I))
+    (VP (VBD met)
+      (PP
+        (PP (IN with)
+          (NP
+            (NP
+              (NP (NNP Mr.) (NNP Lock))
+              (CC and)
+              (NP (NNP Pursell)))
+            (, ,)
+            (NP
+              (NP (NNP Maisters))
+              (PP (IN of)
+                (NP (NNP Musique))))
+            (: ;)))
+        (CC and)
+        (PP (IN with)
+          (NP (PRP them))))
+      (PP (TO to)
+        (NP (DT the) (NN Coffee-house)))
+      (PP (IN into)
+        (NP
+          (NP (DT a) (NN room))
+          (PP (IN next)
+            (NP
+              (NP (DT the) (NN Water))
+              (PP (IN by)
+                (NP (NNS ourselfs))))))))
+    (. .)))
+
+root(ROOT-0, met-3)
+punct(met-3, ...-1)
+nsubj(met-3, I-2)
+nsubj(met-3', I-2)
+nsubj(met-3'', I-2)
+conj:and(met-3, met-3')
+conj:and(met-3, met-3'')
+case(Lock-6, with-4)
+compound(Lock-6, Mr.-5)
+nmod:with(met-3, Lock-6)
+cc(met-3, and-7)
+conj(Lock-6, Pursell-8)
+punct(Lock-6, ,-9)
+appos(Lock-6, Maisters-10)
+case(Musique-12, of-11)
+nmod:of(Maisters-10, Musique-12)
+punct(Lock-6, ;-13)
+cc(met-3, and-14)
+case(them-16, with-15)
+nmod:with(met-3', them-16)
+case(Coffee-house-19, to-17)
+det(Coffee-house-19, the-18)
+nmod:to(met-3, Coffee-house-19)
+case(room-22, into-20)
+det(room-22, a-21)
+nmod:into(met-3, room-22)
+case(Water-25, next-23)
+det(Water-25, the-24)
+nmod:next(room-22, Water-25)
+case(ourselfs-27, by-26)
+nmod:by(Water-25, ourselfs-27)
+punct(met-3, .-28)
+
+Sentence #2 (37 tokens):
+Here we had variety of brave Italian and Spanish songs and a Canon for 8 Voc:, which Mr. Lock had newly made on these words: Domine salvum fac Regem, an admirable thing.
+[Text=Here CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=variety CharacterOffsetBegin=143 CharacterOffsetEnd=150 PartOfSpeech=NN Lemma=variety NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=151 CharacterOffsetEnd=153 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=brave CharacterOffsetBegin=154 CharacterOffsetEnd=159 PartOfSpeech=VB Lemma=brave NamedEntityTag=O]
+[Text=Italian CharacterOffsetBegin=160 CharacterOffsetEnd=167 PartOfSpeech=JJ Lemma=italian NamedEntityTag=MISC]
+[Text=and CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Spanish CharacterOffsetBegin=172 CharacterOffsetEnd=179 PartOfSpeech=JJ Lemma=spanish NamedEntityTag=MISC]
+[Text=songs CharacterOffsetBegin=180 CharacterOffsetEnd=185 PartOfSpeech=NNS Lemma=song NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=186 CharacterOffsetEnd=189 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=190 CharacterOffsetEnd=191 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Canon CharacterOffsetBegin=192 CharacterOffsetEnd=197 PartOfSpeech=NNP Lemma=Canon NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=198 CharacterOffsetEnd=201 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=8 CharacterOffsetBegin=202 CharacterOffsetEnd=203 PartOfSpeech=CD Lemma=8 NamedEntityTag=NUMBER NormalizedNamedEntityTag=8.0]
+[Text=Voc CharacterOffsetBegin=204 CharacterOffsetEnd=207 PartOfSpeech=NN Lemma=voc NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=208 CharacterOffsetEnd=209 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=210 CharacterOffsetEnd=215 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=216 CharacterOffsetEnd=219 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Lock CharacterOffsetBegin=220 CharacterOffsetEnd=224 PartOfSpeech=NNP Lemma=Lock NamedEntityTag=PERSON]
+[Text=had CharacterOffsetBegin=225 CharacterOffsetEnd=228 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=newly CharacterOffsetBegin=229 CharacterOffsetEnd=234 PartOfSpeech=RB Lemma=newly NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=235 CharacterOffsetEnd=239 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=240 CharacterOffsetEnd=242 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=243 CharacterOffsetEnd=248 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=words CharacterOffsetBegin=249 CharacterOffsetEnd=254 PartOfSpeech=NNS Lemma=word NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=254 CharacterOffsetEnd=255 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Domine CharacterOffsetBegin=256 CharacterOffsetEnd=262 PartOfSpeech=NN Lemma=domine NamedEntityTag=O]
+[Text=salvum CharacterOffsetBegin=263 CharacterOffsetEnd=269 PartOfSpeech=NN Lemma=salvum NamedEntityTag=O]
+[Text=fac CharacterOffsetBegin=270 CharacterOffsetEnd=273 PartOfSpeech=NN Lemma=fac NamedEntityTag=O]
+[Text=Regem CharacterOffsetBegin=274 CharacterOffsetEnd=279 PartOfSpeech=NNP Lemma=Regem NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=279 CharacterOffsetEnd=280 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=281 CharacterOffsetEnd=283 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=admirable CharacterOffsetBegin=284 CharacterOffsetEnd=293 PartOfSpeech=JJ Lemma=admirable NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=294 CharacterOffsetEnd=299 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=299 CharacterOffsetEnd=300 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Here))
+    (NP (PRP we))
+    (VP (VBD had)
+      (NP
+        (NP (NN variety))
+        (PP (IN of)
+          (NP
+            (S
+              (VP (VB brave)
+                (NP (JJ Italian)
+                  (CC and)
+                  (JJ Spanish) (NNS songs))))
+            (CC and)
+            (NP
+              (NP
+                (NP (DT a) (NNP Canon))
+                (PP (IN for)
+                  (NP (CD 8) (NN Voc))
+                  (: :))
+                (, ,)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (NP (NNP Mr.) (NNP Lock))
+                    (VP (VBD had)
+                      (ADVP (RB newly))
+                      (VP (VBN made)
+                        (PP (IN on)
+                          (NP (DT these) (NNS words))))))))
+              (: :)
+              (NP
+                (NP (NN Domine) (NN salvum) (NN fac) (NNP Regem))
+                (, ,)
+                (NP (DT an) (JJ admirable) (NN thing))))))))
+    (. .)))
+
+root(ROOT-0, had-3)
+advmod(had-3, Here-1)
+nsubj(had-3, we-2)
+dobj(had-3, variety-4)
+case(brave-6, of-5)
+nmod:of(variety-4, brave-6)
+amod(songs-10, Italian-7)
+cc(Italian-7, and-8)
+conj:and(Italian-7, Spanish-9)
+amod(songs-10, Spanish-9)
+dobj(brave-6, songs-10)
+cc(brave-6, and-11)
+det(Canon-13, a-12)
+nmod:of(variety-4, Canon-13)
+conj:and(brave-6, Canon-13)
+dobj(made-24, Canon-13)
+case(Voc-16, for-14)
+nummod(Voc-16, 8-15)
+nmod:for(Canon-13, Voc-16)
+punct(Voc-16, :-17)
+punct(Canon-13, ,-18)
+ref(Canon-13, which-19)
+compound(Lock-21, Mr.-20)
+nsubj(made-24, Lock-21)
+aux(made-24, had-22)
+advmod(made-24, newly-23)
+acl:relcl(Canon-13, made-24)
+case(words-27, on-25)
+det(words-27, these-26)
+nmod:on(made-24, words-27)
+punct(Canon-13, :-28)
+compound(Regem-32, Domine-29)
+compound(Regem-32, salvum-30)
+compound(Regem-32, fac-31)
+dep(Canon-13, Regem-32)
+punct(Regem-32, ,-33)
+det(thing-36, an-34)
+amod(thing-36, admirable-35)
+appos(Regem-32, thing-36)
+punct(had-3, .-37)
+
+Sentence #3 (51 tokens):
+Here, out of the window it was a most pleasant sight to see the City from [one] end to the other with a glory about it, so high was the light of the Bonefires and so thick round the City, and the bells rang everywhere.
+[Text=Here CharacterOffsetBegin=301 CharacterOffsetEnd=305 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=305 CharacterOffsetEnd=306 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=307 CharacterOffsetEnd=310 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=311 CharacterOffsetEnd=313 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=314 CharacterOffsetEnd=317 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=window CharacterOffsetBegin=318 CharacterOffsetEnd=324 PartOfSpeech=NN Lemma=window NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=325 CharacterOffsetEnd=327 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=328 CharacterOffsetEnd=331 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=332 CharacterOffsetEnd=333 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=334 CharacterOffsetEnd=338 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=pleasant CharacterOffsetBegin=339 CharacterOffsetEnd=347 PartOfSpeech=JJ Lemma=pleasant NamedEntityTag=O]
+[Text=sight CharacterOffsetBegin=348 CharacterOffsetEnd=353 PartOfSpeech=NN Lemma=sight NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=354 CharacterOffsetEnd=356 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=357 CharacterOffsetEnd=360 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=361 CharacterOffsetEnd=364 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=City CharacterOffsetBegin=365 CharacterOffsetEnd=369 PartOfSpeech=NNP Lemma=City NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=370 CharacterOffsetEnd=374 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=375 CharacterOffsetEnd=376 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=376 CharacterOffsetEnd=379 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=-RSB- CharacterOffsetBegin=379 CharacterOffsetEnd=380 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=381 CharacterOffsetEnd=384 PartOfSpeech=NN Lemma=end NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=385 CharacterOffsetEnd=387 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=388 CharacterOffsetEnd=391 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=392 CharacterOffsetEnd=397 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=398 CharacterOffsetEnd=402 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=403 CharacterOffsetEnd=404 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=glory CharacterOffsetBegin=405 CharacterOffsetEnd=410 PartOfSpeech=NN Lemma=glory NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=411 CharacterOffsetEnd=416 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=417 CharacterOffsetEnd=419 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=419 CharacterOffsetEnd=420 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=421 CharacterOffsetEnd=423 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=high CharacterOffsetBegin=424 CharacterOffsetEnd=428 PartOfSpeech=JJ Lemma=high NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=429 CharacterOffsetEnd=432 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=433 CharacterOffsetEnd=436 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=light CharacterOffsetBegin=437 CharacterOffsetEnd=442 PartOfSpeech=NN Lemma=light NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=443 CharacterOffsetEnd=445 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=446 CharacterOffsetEnd=449 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Bonefires CharacterOffsetBegin=450 CharacterOffsetEnd=459 PartOfSpeech=NNPS Lemma=Bonefires NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=460 CharacterOffsetEnd=463 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=464 CharacterOffsetEnd=466 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=thick CharacterOffsetBegin=467 CharacterOffsetEnd=472 PartOfSpeech=JJ Lemma=thick NamedEntityTag=O]
+[Text=round CharacterOffsetBegin=473 CharacterOffsetEnd=478 PartOfSpeech=NN Lemma=round NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=479 CharacterOffsetEnd=482 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=City CharacterOffsetBegin=483 CharacterOffsetEnd=487 PartOfSpeech=NNP Lemma=City NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=487 CharacterOffsetEnd=488 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=489 CharacterOffsetEnd=492 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=493 CharacterOffsetEnd=496 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bells CharacterOffsetBegin=497 CharacterOffsetEnd=502 PartOfSpeech=NNS Lemma=bell NamedEntityTag=O]
+[Text=rang CharacterOffsetBegin=503 CharacterOffsetEnd=507 PartOfSpeech=VBD Lemma=ring NamedEntityTag=O]
+[Text=everywhere CharacterOffsetBegin=508 CharacterOffsetEnd=518 PartOfSpeech=RB Lemma=everywhere NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=518 CharacterOffsetEnd=519 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Here))
+    (, ,)
+    (S
+      (ADVP (IN out)
+        (PP (IN of)
+          (NP (DT the) (NN window))))
+      (NP (PRP it))
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (RBS most) (JJ pleasant) (NN sight))
+          (SBAR
+            (S
+              (VP (TO to)
+                (VP (VB see)
+                  (NP-TMP
+                    (NP
+                      (NP (DT the)
+                        (NAC (NNP City)
+                          (PP (IN from)
+                            (NP (-LRB- -LSB-) (CD one))))
+                        (-RRB- -RSB-) (NN end))
+                      (PP (TO to)
+                        (NP (DT the)
+                          (ADJP
+                            (ADJP (JJ other)
+                              (PP (IN with)
+                                (NP
+                                  (NP (DT a) (NN glory))
+                                  (PP (IN about)
+                                    (NP (PRP it))))))
+                            (, ,)
+                            (ADJP (RB so) (JJ high)
+                              (SBAR
+                                (S
+                                  (VP (VBD was)
+                                    (NP
+                                      (NP (DT the) (NN light))
+                                      (PP (IN of)
+                                        (NP (DT the) (NNPS Bonefires))))))))
+                            (CC and)
+                            (ADJP (RB so) (JJ thick)))
+                          (NN round))))
+                    (NP (DT the) (NNP City))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT the) (NNS bells))
+      (VP (VBD rang)
+        (ADVP (RB everywhere))))
+    (. .)))
+
+root(ROOT-0, sight-12)
+advmod(sight-12, Here-1)
+punct(sight-12, ,-2)
+case(window-6, out-3)
+mwe(out-3, of-4)
+det(window-6, the-5)
+nmod:out_of(sight-12, window-6)
+nsubj(sight-12, it-7)
+cop(sight-12, was-8)
+det(sight-12, a-9)
+advmod(sight-12, most-10)
+amod(sight-12, pleasant-11)
+mark(see-14, to-13)
+acl:to(sight-12, see-14)
+det(end-21, the-15)
+dep(end-21, City-16)
+case(one-19, from-17)
+punct(one-19, -LSB--18)
+nmod:from(City-16, one-19)
+punct(end-21, -RSB--20)
+nmod:tmod(see-14, end-21)
+case(round-42, to-22)
+det(round-42, the-23)
+amod(round-42, other-24)
+case(glory-27, with-25)
+det(glory-27, a-26)
+nmod:with(other-24, glory-27)
+case(it-29, about-28)
+nmod:about(glory-27, it-29)
+punct(other-24, ,-30)
+advmod(high-32, so-31)
+conj:and(other-24, high-32)
+amod(round-42, high-32)
+cop(light-35, was-33)
+det(light-35, the-34)
+ccomp(high-32, light-35)
+case(Bonefires-38, of-36)
+det(Bonefires-38, the-37)
+nmod:of(light-35, Bonefires-38)
+cc(other-24, and-39)
+advmod(thick-41, so-40)
+conj:and(other-24, thick-41)
+amod(round-42, thick-41)
+nmod:to(end-21, round-42)
+det(City-44, the-43)
+dep(end-21, City-44)
+punct(sight-12, ,-45)
+cc(sight-12, and-46)
+det(bells-48, the-47)
+nsubj(rang-49, bells-48)
+conj:and(sight-12, rang-49)
+advmod(rang-49, everywhere-50)
+punct(sight-12, .-51)
+
+Coreference set:
+	(1,16,[16,17]) -> (1,6,[5,9]), that is: "them" -> "Mr. Lock and Pursell"
+Coreference set:
+	(2,21,[20,22]) -> (1,6,[5,7]), that is: "Mr. Lock" -> "Mr. Lock"
+Coreference set:
+	(3,29,[29,30]) -> (3,19,[18,20]), that is: "it" -> "-LSB- one"

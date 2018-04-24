@@ -1,0 +1,67 @@
+Sentence #1 (10 tokens):
+I have got to know Basner’s violin concerto.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=VBN Lemma=get NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=Basner CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Basner NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=violin CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=violin NamedEntityTag=O]
+[Text=concerto CharacterOffsetBegin=35 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=concerto NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (VP (VBN got)
+        (S
+          (VP (TO to)
+            (VP (VB know)
+              (NP
+                (NP (NNP Basner) (POS 's))
+                (NN violin) (NN concerto)))))))
+    (. .)))
+
+root(ROOT-0, got-3)
+nsubj(got-3, I-1)
+nsubj:xsubj(know-5, I-1)
+aux(got-3, have-2)
+mark(know-5, to-4)
+xcomp(got-3, know-5)
+nmod:poss(concerto-9, Basner-6)
+case(Basner-6, 's-7)
+compound(concerto-9, violin-8)
+dobj(know-5, concerto-9)
+punct(got-3, .-10)
+
+Sentence #2 (7 tokens):
+I find it an excellent work.
+[Text=I CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=VBP Lemma=find NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=excellent CharacterOffsetBegin=58 CharacterOffsetEnd=67 PartOfSpeech=JJ Lemma=excellent NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP find)
+      (S
+        (NP (PRP it))
+        (NP (DT an) (JJ excellent) (NN work))))
+    (. .)))
+
+root(ROOT-0, find-2)
+nsubj(find-2, I-1)
+nsubj(work-6, it-3)
+det(work-6, an-4)
+amod(work-6, excellent-5)
+xcomp(find-2, work-6)
+punct(find-2, .-7)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(2,3,[3,4]) -> (1,9,[6,10]), that is: "it" -> "Basner 's violin concerto"

@@ -1,0 +1,338 @@
+Sentence #1 (22 tokens):
+I drove to Troy, New York, to visit my brother Simon, who was attending Rensselaer School Of Engineering.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=drove CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=VBD Lemma=drive NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Troy CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Troy NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=New NamedEntityTag=LOCATION]
+[Text=York CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=York NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=visit CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=VB Lemma=visit NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=brother CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=brother NamedEntityTag=O]
+[Text=Simon CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Simon NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=attending CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=VBG Lemma=attend NamedEntityTag=O]
+[Text=Rensselaer CharacterOffsetBegin=72 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Rensselaer NamedEntityTag=ORGANIZATION]
+[Text=School CharacterOffsetBegin=83 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=School NamedEntityTag=ORGANIZATION]
+[Text=Of CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=of NamedEntityTag=ORGANIZATION]
+[Text=Engineering CharacterOffsetBegin=93 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=Engineering NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD drove)
+      (PP (TO to)
+        (NP
+          (NP (NNP Troy))
+          (, ,)
+          (NP (NNP New) (NNP York))
+          (, ,)))
+      (S
+        (VP (TO to)
+          (VP (VB visit)
+            (NP (PRP$ my) (NN brother))
+            (NP-TMP
+              (NP (NNP Simon))
+              (, ,)
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD was)
+                    (VP (VBG attending)
+                      (S
+                        (NP (NNP Rensselaer) (NNP School))
+                        (PP (IN Of)
+                          (NP (NNP Engineering)))))))))))))
+    (. .)))
+
+root(ROOT-0, drove-2)
+nsubj(drove-2, I-1)
+nsubj:xsubj(visit-10, I-1)
+case(Troy-4, to-3)
+nmod:to(drove-2, Troy-4)
+punct(Troy-4, ,-5)
+compound(York-7, New-6)
+appos(Troy-4, York-7)
+punct(Troy-4, ,-8)
+mark(visit-10, to-9)
+xcomp(drove-2, visit-10)
+nmod:poss(brother-12, my-11)
+dobj(visit-10, brother-12)
+nmod:tmod(visit-10, Simon-13)
+nsubj(attending-17, Simon-13)
+punct(Simon-13, ,-14)
+ref(Simon-13, who-15)
+aux(attending-17, was-16)
+acl:relcl(Simon-13, attending-17)
+compound(School-19, Rensselaer-18)
+xcomp(attending-17, School-19)
+case(Engineering-21, Of-20)
+dep(School-19, Engineering-21)
+punct(drove-2, .-22)
+
+Sentence #2 (18 tokens):
+While there, I sat in and played trombone at a club with his small jazz combo.
+[Text=While CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=sat CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=VBD Lemma=sit NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=132 CharacterOffsetEnd=138 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=trombone CharacterOffsetBegin=139 CharacterOffsetEnd=147 PartOfSpeech=NN Lemma=trombone NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=148 CharacterOffsetEnd=150 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=club CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=NN Lemma=club NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=158 CharacterOffsetEnd=162 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=163 CharacterOffsetEnd=166 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=small CharacterOffsetBegin=167 CharacterOffsetEnd=172 PartOfSpeech=JJ Lemma=small NamedEntityTag=O]
+[Text=jazz CharacterOffsetBegin=173 CharacterOffsetEnd=177 PartOfSpeech=NN Lemma=jazz NamedEntityTag=O]
+[Text=combo CharacterOffsetBegin=178 CharacterOffsetEnd=183 PartOfSpeech=NN Lemma=combo NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=183 CharacterOffsetEnd=184 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN While)
+      (FRAG
+        (ADVP (RB there))))
+    (, ,)
+    (NP (PRP I))
+    (VP
+      (VP (VBD sat)
+        (PP (IN in)))
+      (CC and)
+      (VP (VBD played)
+        (NP (NN trombone))
+        (PP (IN at)
+          (NP
+            (NP (DT a) (NN club))
+            (PP (IN with)
+              (NP (PRP$ his) (JJ small) (NN jazz) (NN combo)))))))
+    (. .)))
+
+root(ROOT-0, sat-5)
+mark(there-2, While-1)
+advcl:while(sat-5, there-2)
+punct(sat-5, ,-3)
+nsubj(sat-5, I-4)
+nsubj(played-8, I-4)
+nmod(sat-5, in-6)
+cc(sat-5, and-7)
+conj:and(sat-5, played-8)
+dobj(played-8, trombone-9)
+case(club-12, at-10)
+det(club-12, a-11)
+nmod:at(played-8, club-12)
+case(combo-17, with-13)
+nmod:poss(combo-17, his-14)
+amod(combo-17, small-15)
+compound(combo-17, jazz-16)
+nmod:with(club-12, combo-17)
+punct(sat-5, .-18)
+
+Sentence #3 (35 tokens):
+My trombone playing began at 16, so I had a lot of catching up to do as far as jazz improvisation was concerned, but I was slowly improving as a jazz player.
+[Text=My CharacterOffsetBegin=185 CharacterOffsetEnd=187 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=trombone CharacterOffsetBegin=188 CharacterOffsetEnd=196 PartOfSpeech=JJ Lemma=trombone NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=197 CharacterOffsetEnd=204 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=began CharacterOffsetBegin=205 CharacterOffsetEnd=210 PartOfSpeech=VBD Lemma=begin NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=211 CharacterOffsetEnd=213 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=16 CharacterOffsetBegin=214 CharacterOffsetEnd=216 PartOfSpeech=CD Lemma=16 NamedEntityTag=NUMBER NormalizedNamedEntityTag=16.0]
+[Text=, CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=218 CharacterOffsetEnd=220 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=221 CharacterOffsetEnd=222 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=223 CharacterOffsetEnd=226 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=227 CharacterOffsetEnd=228 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=229 CharacterOffsetEnd=232 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=233 CharacterOffsetEnd=235 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=catching CharacterOffsetBegin=236 CharacterOffsetEnd=244 PartOfSpeech=VBG Lemma=catch NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=245 CharacterOffsetEnd=247 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=248 CharacterOffsetEnd=250 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=251 CharacterOffsetEnd=253 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=254 CharacterOffsetEnd=256 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=far CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=RB Lemma=far NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=261 CharacterOffsetEnd=263 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=jazz CharacterOffsetBegin=264 CharacterOffsetEnd=268 PartOfSpeech=NN Lemma=jazz NamedEntityTag=O]
+[Text=improvisation CharacterOffsetBegin=269 CharacterOffsetEnd=282 PartOfSpeech=NN Lemma=improvisation NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=283 CharacterOffsetEnd=286 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=concerned CharacterOffsetBegin=287 CharacterOffsetEnd=296 PartOfSpeech=VBN Lemma=concern NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=296 CharacterOffsetEnd=297 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=298 CharacterOffsetEnd=301 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=302 CharacterOffsetEnd=303 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=304 CharacterOffsetEnd=307 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=slowly CharacterOffsetBegin=308 CharacterOffsetEnd=314 PartOfSpeech=RB Lemma=slowly NamedEntityTag=O]
+[Text=improving CharacterOffsetBegin=315 CharacterOffsetEnd=324 PartOfSpeech=VBG Lemma=improve NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=325 CharacterOffsetEnd=327 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=328 CharacterOffsetEnd=329 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=jazz CharacterOffsetBegin=330 CharacterOffsetEnd=334 PartOfSpeech=NN Lemma=jazz NamedEntityTag=O]
+[Text=player CharacterOffsetBegin=335 CharacterOffsetEnd=341 PartOfSpeech=NN Lemma=player NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=341 CharacterOffsetEnd=342 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (S
+        (NP (PRP$ My) (JJ trombone) (NN playing))
+        (VP (VBD began)
+          (PP (IN at)
+            (NP (CD 16)))))
+      (, ,) (RB so)
+      (S
+        (NP (PRP I))
+        (VP (VBD had)
+          (NP
+            (NP (DT a) (NN lot))
+            (PP (IN of)
+              (S
+                (VP (VBG catching)
+                  (PRT (RP up))
+                  (S
+                    (VP (TO to)
+                      (VP (VB do)
+                        (ADVP
+                          (ADVP (RB as) (RB far))
+                          (SBAR (IN as)
+                            (S
+                              (NP (NN jazz) (NN improvisation))
+                              (VP (VBD was)
+                                (VP (VBN concerned))))))))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBD was)
+        (ADVP (RB slowly))
+        (VP (VBG improving)
+          (PP (IN as)
+            (NP (DT a) (NN jazz) (NN player))))))
+    (. .)))
+
+root(ROOT-0, began-4)
+nmod:poss(playing-3, My-1)
+amod(playing-3, trombone-2)
+nsubj(began-4, playing-3)
+case(16-6, at-5)
+nmod:at(began-4, 16-6)
+punct(began-4, ,-7)
+advmod(began-4, so-8)
+nsubj(had-10, I-9)
+parataxis(began-4, had-10)
+det(lot-12, a-11)
+dobj(had-10, lot-12)
+mark(catching-14, of-13)
+acl:of(lot-12, catching-14)
+compound:prt(catching-14, up-15)
+mark(do-17, to-16)
+xcomp(catching-14, do-17)
+advmod(far-19, as-18)
+advmod(do-17, far-19)
+mark(concerned-24, as-20)
+compound(improvisation-22, jazz-21)
+nsubjpass(concerned-24, improvisation-22)
+auxpass(concerned-24, was-23)
+advcl:as(far-19, concerned-24)
+punct(began-4, ,-25)
+cc(began-4, but-26)
+nsubj(improving-30, I-27)
+aux(improving-30, was-28)
+advmod(improving-30, slowly-29)
+conj:but(began-4, improving-30)
+case(player-34, as-31)
+det(player-34, a-32)
+compound(player-34, jazz-33)
+nmod:as(improving-30, player-34)
+punct(began-4, .-35)
+
+Sentence #4 (16 tokens):
+Listening nightly to Sonny and all those fine jazz musicians in our band really helped.
+[Text=Listening CharacterOffsetBegin=343 CharacterOffsetEnd=352 PartOfSpeech=VBG Lemma=listen NamedEntityTag=O]
+[Text=nightly CharacterOffsetBegin=353 CharacterOffsetEnd=360 PartOfSpeech=JJ Lemma=nightly NamedEntityTag=SET Timex=<TIMEX3 freq="P1X" periodicity="P1D" quant="EVERY" tid="t1" type="SET" value="TNI">nightly</TIMEX3>]
+[Text=to CharacterOffsetBegin=361 CharacterOffsetEnd=363 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Sonny CharacterOffsetBegin=364 CharacterOffsetEnd=369 PartOfSpeech=NNP Lemma=Sonny NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=370 CharacterOffsetEnd=373 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=374 CharacterOffsetEnd=377 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=378 CharacterOffsetEnd=383 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=384 CharacterOffsetEnd=388 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=jazz CharacterOffsetBegin=389 CharacterOffsetEnd=393 PartOfSpeech=NN Lemma=jazz NamedEntityTag=O]
+[Text=musicians CharacterOffsetBegin=394 CharacterOffsetEnd=403 PartOfSpeech=NNS Lemma=musician NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=404 CharacterOffsetEnd=406 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=407 CharacterOffsetEnd=410 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=band CharacterOffsetBegin=411 CharacterOffsetEnd=415 PartOfSpeech=NN Lemma=band NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=416 CharacterOffsetEnd=422 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=helped CharacterOffsetBegin=423 CharacterOffsetEnd=429 PartOfSpeech=VBD Lemma=help NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=429 CharacterOffsetEnd=430 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (VP (VBG Listening)
+        (NP (JJ nightly))
+        (PP (TO to)
+          (NP (NNP Sonny)))))
+    (CC and)
+    (S
+      (NP
+        (NP (PDT all) (DT those) (JJ fine) (NN jazz) (NNS musicians))
+        (PP (IN in)
+          (NP (PRP$ our) (NN band))))
+      (ADVP (RB really))
+      (VP (VBD helped)))
+    (. .)))
+
+root(ROOT-0, Listening-1)
+dobj(Listening-1, nightly-2)
+case(Sonny-4, to-3)
+nmod:to(Listening-1, Sonny-4)
+cc(Listening-1, and-5)
+det:predet(musicians-10, all-6)
+det(musicians-10, those-7)
+amod(musicians-10, fine-8)
+compound(musicians-10, jazz-9)
+nsubj(helped-15, musicians-10)
+case(band-13, in-11)
+nmod:poss(band-13, our-12)
+nmod:in(musicians-10, band-13)
+advmod(helped-15, really-14)
+conj:and(Listening-1, helped-15)
+punct(Listening-1, .-16)
+
+Sentence #5 (7 tokens):
+It was a marvelous learning opportunity.
+[Text=It CharacterOffsetBegin=431 CharacterOffsetEnd=433 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=434 CharacterOffsetEnd=437 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=438 CharacterOffsetEnd=439 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=marvelous CharacterOffsetBegin=440 CharacterOffsetEnd=449 PartOfSpeech=JJ Lemma=marvelous NamedEntityTag=O]
+[Text=learning CharacterOffsetBegin=450 CharacterOffsetEnd=458 PartOfSpeech=NN Lemma=learning NamedEntityTag=O]
+[Text=opportunity CharacterOffsetBegin=459 CharacterOffsetEnd=470 PartOfSpeech=NN Lemma=opportunity NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=470 CharacterOffsetEnd=471 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (NP (DT a)
+        (ADJP (JJ marvelous))
+        (NN learning) (NN opportunity)))
+    (. .)))
+
+root(ROOT-0, opportunity-6)
+nsubj(opportunity-6, It-1)
+cop(opportunity-6, was-2)
+det(opportunity-6, a-3)
+amod(opportunity-6, marvelous-4)
+compound(opportunity-6, learning-5)
+punct(opportunity-6, .-7)
+
+Coreference set:
+	(1,11,[11,12]) -> (1,1,[1,2]), that is: "my" -> "I"
+	(2,4,[4,5]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(3,1,[1,2]) -> (1,1,[1,2]), that is: "My" -> "I"
+	(3,9,[9,10]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(3,27,[27,28]) -> (1,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(2,14,[14,15]) -> (1,12,[11,13]), that is: "his" -> "my brother"
+Coreference set:
+	(5,1,[1,2]) -> (4,2,[2,3]), that is: "It" -> "nightly"
+	(5,6,[3,7]) -> (4,2,[2,3]), that is: "a marvelous learning opportunity" -> "nightly"

@@ -1,0 +1,115 @@
+Sentence #1 (6 tokens):
+Walk with Beth before supper.
+[Text=Walk CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VB Lemma=walk NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Beth CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Beth NamedEntityTag=PERSON]
+[Text=before CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=supper CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=supper NamedEntityTag=DATE NormalizedNamedEntityTag=supper ]
+[Text=. CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Walk)
+      (PP (IN with)
+        (NP (NNP Beth)))
+      (PP (IN before)
+        (NP (NN supper))))
+    (. .)))
+
+root(ROOT-0, Walk-1)
+case(Beth-3, with-2)
+nmod:with(Walk-1, Beth-3)
+case(supper-5, before-4)
+nmod:before(Walk-1, supper-5)
+punct(Walk-1, .-6)
+
+Sentence #2 (7 tokens):
+Listen to wireless after - inc.
+[Text=Listen CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=wireless CharacterOffsetBegin=40 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=wireless NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=inc. CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=inc. NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Listen)
+      (PP (TO to)
+        (NP
+          (NP
+            (NP (JJ wireless))
+            (PP (IN after)))
+          (: -)
+          (NP (NN inc.)))))
+    (. .)))
+
+root(ROOT-0, Listen-1)
+case(wireless-3, to-2)
+nmod:to(Listen-1, wireless-3)
+acl(wireless-3, after-4)
+punct(wireless-3, --5)
+dep(wireless-3, inc.-6)
+punct(Listen-1, .-7)
+
+Sentence #3 (15 tokens):
+Elgar's Falstaff* which contains some v. fine stuff - also some. . . . . .!!!
+[Text=Elgar CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Elgar NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Falstaff CharacterOffsetBegin=70 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=Falstaff NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=contains CharacterOffsetBegin=86 CharacterOffsetEnd=94 PartOfSpeech=VBZ Lemma=contain NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=v. CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=CC Lemma=v. NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=stuff CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=stuff NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=125 CharacterOffsetEnd=136 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=!!! CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=CD Lemma=!!! NamedEntityTag=NUMBER]
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Elgar) (POS 's))
+        (NNP Falstaff))
+      (SBAR
+        (S
+          (UCP
+            (SBAR
+              (X (SYM *))
+              (S
+                (NP (WDT which))
+                (VP (VBZ contains))))
+            (NP
+              (NP (DT some))
+              (PP (CC v.)
+                (NP
+                  (NP (JJ fine) (NN stuff))
+                  (: -)
+                  (ADVP (RB also))
+                  (NP
+                    (NP (DT some))
+                    (: ...)
+                    (NP (CD !!!))))))))))))
+
+root(ROOT-0, Falstaff-3)
+nmod:poss(Falstaff-3, Elgar-1)
+case(Elgar-1, 's-2)
+nsubj(contains-6, Falstaff-3)
+dep(contains-6, *-4)
+ref(Falstaff-3, which-5)
+acl:relcl(Falstaff-3, contains-6)
+dep(contains-6, some-7)
+case(stuff-10, v.-8)
+amod(stuff-10, fine-9)
+nmod:v.(some-7, stuff-10)
+punct(stuff-10, --11)
+advmod(stuff-10, also-12)
+dep(stuff-10, some-13)
+punct(some-13, ...-14)
+dep(some-13, !!!-15)
+
+Coreference set:
+	(3,5,[5,6]) -> (2,3,[3,7]), that is: "which" -> "wireless after - inc."

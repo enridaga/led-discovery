@@ -1,0 +1,130 @@
+Sentence #1 (7 tokens):
+Go up to Augeners in aft.
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Augeners CharacterOffsetBegin=9 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Augeners NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=aft CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=aft NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PRT (RP up))
+      (PP (TO to)
+        (NP
+          (NP (NNP Augeners))
+          (PP (IN in)
+            (NP (NN aft))))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+compound:prt(Go-1, up-2)
+case(Augeners-4, to-3)
+nmod:to(Go-1, Augeners-4)
+case(aft-6, in-5)
+nmod:in(Augeners-4, aft-6)
+punct(Go-1, .-7)
+
+Sentence #2 (5 tokens):
+to get some music.
+[Text=to CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (TO to)
+      (VP (VB get)
+        (NP (DT some) (NN music))))
+    (. .)))
+
+root(ROOT-0, get-2)
+mark(get-2, to-1)
+det(music-4, some-3)
+dobj(get-2, music-4)
+punct(get-2, .-5)
+
+Sentence #3 (5 tokens):
+Listen to Irelands Pft.
+[Text=Listen CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Irelands CharacterOffsetBegin=55 CharacterOffsetEnd=63 PartOfSpeech=NNPS Lemma=Irelands NamedEntityTag=O]
+[Text=Pft CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Pft NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Listen)
+      (PP (TO to)
+        (NP (NNPS Irelands) (NNP Pft))))
+    (. .)))
+
+root(ROOT-0, Listen-1)
+case(Pft-4, to-2)
+compound(Pft-4, Irelands-3)
+nmod:to(Listen-1, Pft-4)
+punct(Listen-1, .-5)
+
+Sentence #4 (2 tokens):
+conc.
+[Text=conc CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=conc NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (NN conc) (. .)))
+
+root(ROOT-0, conc-1)
+punct(conc-1, .-2)
+
+Sentence #5 (5 tokens):
+from Bournemouth before tea.
+[Text=from CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Bournemouth CharacterOffsetBegin=80 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=Bournemouth NamedEntityTag=LOCATION]
+[Text=before CharacterOffsetBegin=92 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=tea CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=tea NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN from)
+      (NP
+        (NP (NNP Bournemouth))
+        (PP (IN before)
+          (NP (NN tea)))))
+    (. .)))
+
+root(ROOT-0, Bournemouth-2)
+case(Bournemouth-2, from-1)
+case(tea-4, before-3)
+nmod:before(Bournemouth-2, tea-4)
+punct(Bournemouth-2, .-5)
+
+Sentence #6 (3 tokens):
+Practice Pft.
+[Text=Practice CharacterOffsetBegin=104 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=practice NamedEntityTag=O]
+[Text=Pft CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=pft NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NN Practice))
+    (NP (NN Pft))
+    (. .)))
+
+root(ROOT-0, Practice-1)
+dep(Practice-1, Pft-2)
+punct(Practice-1, .-3)
+
+Sentence #7 (3 tokens):
+after tea.
+[Text=after CharacterOffsetBegin=118 CharacterOffsetEnd=123 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=tea CharacterOffsetBegin=124 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=tea NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN after)
+      (NP (NN tea)))
+    (. .)))
+
+root(ROOT-0, tea-2)
+case(tea-2, after-1)
+punct(tea-2, .-3)
+

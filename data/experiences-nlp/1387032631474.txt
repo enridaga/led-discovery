@@ -1,0 +1,47 @@
+Sentence #1 (7 tokens):
+'We saw Faust last night.
+[Text=` CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=We CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=saw CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=VBD Lemma=see NamedEntityTag=O]
+[Text=Faust CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Faust NamedEntityTag=PERSON]
+[Text=last CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=JJ Lemma=last NamedEntityTag=TIME NormalizedNamedEntityTag=TNI OFFSET P-1D Timex=<TIMEX3 alt_value="TNI OFFSET P-1D" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">last night</TIMEX3>]
+[Text=night CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI OFFSET P-1D Timex=<TIMEX3 alt_value="TNI OFFSET P-1D" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">last night</TIMEX3>]
+[Text=. CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (`` `)
+    (NP (PRP We))
+    (VP (VBD saw)
+      (NP (NNP Faust))
+      (NP-TMP (JJ last) (NN night)))
+    (. .)))
+
+root(ROOT-0, saw-3)
+punct(saw-3, `-1)
+nsubj(saw-3, We-2)
+dobj(saw-3, Faust-4)
+amod(night-6, last-5)
+nmod:tmod(saw-3, night-6)
+punct(saw-3, .-7)
+
+Sentence #2 (6 tokens):
+A very decent performance.'
+[Text=A CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=decent CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=decent NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=40 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (DT A) (RB very))
+    (PP (JJ decent)
+      (NP (NN performance)))
+    (. .) ('' ')))
+
+root(ROOT-0, very-2)
+det(very-2, A-1)
+case(performance-4, decent-3)
+nmod:decent(very-2, performance-4)
+punct(very-2, .-5)
+punct(very-2, '-6)
+

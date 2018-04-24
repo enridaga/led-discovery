@@ -1,0 +1,631 @@
+Sentence #1 (6 tokens):
+Another Christmas over and gone.
+[Text=Another CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=another NamedEntityTag=O]
+[Text=Christmas CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Christmas NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-12-25 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-12-25">Christmas</TIMEX3>]
+[Text=over CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=gone CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=VBN Lemma=go NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT Another)
+      (NX
+        (NX
+          (NX (NNP Christmas))
+          (PP (IN over)))
+        (CC and)))
+    (VP (VBN gone))
+    (. .)))
+
+root(ROOT-0, gone-5)
+det(Christmas-2, Another-1)
+nsubj(gone-5, Christmas-2)
+acl(Christmas-2, over-3)
+cc(Christmas-2, and-4)
+punct(gone-5, .-6)
+
+Sentence #2 (19 tokens):
+Last night's fancy dress party was a first-class affair, a quite brilliant display of costumes....
+[Text=Last CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=last NamedEntityTag=DATE NormalizedNamedEntityTag=TNI OFFSET P-1D Timex=<TIMEX3 alt_value="TNI OFFSET P-1D" anchorTimeID="t3" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">Last night</TIMEX3>]
+[Text=night CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=night NamedEntityTag=DATE NormalizedNamedEntityTag=TNI OFFSET P-1D Timex=<TIMEX3 alt_value="TNI OFFSET P-1D" anchorTimeID="t3" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">Last night</TIMEX3>]
+[Text='s CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=fancy CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=JJ Lemma=fancy NamedEntityTag=O]
+[Text=dress CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=dress NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=first-class CharacterOffsetBegin=70 CharacterOffsetEnd=81 PartOfSpeech=JJ Lemma=first-class NamedEntityTag=O]
+[Text=affair CharacterOffsetBegin=82 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=affair NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=brilliant CharacterOffsetBegin=98 CharacterOffsetEnd=107 PartOfSpeech=JJ Lemma=brilliant NamedEntityTag=O]
+[Text=display CharacterOffsetBegin=108 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=display NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=costumes CharacterOffsetBegin=119 CharacterOffsetEnd=127 PartOfSpeech=NNS Lemma=costume NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=130 CharacterOffsetEnd=131 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (JJ Last) (NN night) (POS 's))
+      (JJ fancy) (NN dress) (NN party))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ first-class) (NN affair))
+        (, ,)
+        (NP
+          (NP (DT a)
+            (ADJP (RB quite) (JJ brilliant))
+            (NN display))
+          (PP (IN of)
+            (NP (NNS costumes))))))
+    (: ...) (. .)))
+
+root(ROOT-0, affair-10)
+amod(night-2, Last-1)
+nmod:poss(party-6, night-2)
+case(night-2, 's-3)
+amod(party-6, fancy-4)
+compound(party-6, dress-5)
+nsubj(affair-10, party-6)
+cop(affair-10, was-7)
+det(affair-10, a-8)
+amod(affair-10, first-class-9)
+punct(affair-10, ,-11)
+det(display-15, a-12)
+advmod(brilliant-14, quite-13)
+amod(display-15, brilliant-14)
+appos(affair-10, display-15)
+case(costumes-17, of-16)
+nmod:of(display-15, costumes-17)
+punct(affair-10, ...-18)
+punct(affair-10, .-19)
+
+Sentence #3 (29 tokens):
+A large proportion of the company were in male dress of some sort, but being a ‘hers’ party, it didn’t matter the least.
+[Text=A CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=large CharacterOffsetBegin=134 CharacterOffsetEnd=139 PartOfSpeech=JJ Lemma=large NamedEntityTag=O]
+[Text=proportion CharacterOffsetBegin=140 CharacterOffsetEnd=150 PartOfSpeech=NN Lemma=proportion NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=151 CharacterOffsetEnd=153 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=158 CharacterOffsetEnd=165 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=166 CharacterOffsetEnd=170 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=171 CharacterOffsetEnd=173 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=male CharacterOffsetBegin=174 CharacterOffsetEnd=178 PartOfSpeech=JJ Lemma=male NamedEntityTag=O]
+[Text=dress CharacterOffsetBegin=179 CharacterOffsetEnd=184 PartOfSpeech=NN Lemma=dress NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=185 CharacterOffsetEnd=187 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=188 CharacterOffsetEnd=192 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=sort CharacterOffsetBegin=193 CharacterOffsetEnd=197 PartOfSpeech=NN Lemma=sort NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=197 CharacterOffsetEnd=198 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=203 CharacterOffsetEnd=208 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=209 CharacterOffsetEnd=210 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=211 CharacterOffsetEnd=212 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=hers CharacterOffsetBegin=212 CharacterOffsetEnd=216 PartOfSpeech=NNS Lemma=hers NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=218 CharacterOffsetEnd=223 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=223 CharacterOffsetEnd=224 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=231 CharacterOffsetEnd=234 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=matter CharacterOffsetBegin=235 CharacterOffsetEnd=241 PartOfSpeech=VB Lemma=matter NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=242 CharacterOffsetEnd=245 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=least CharacterOffsetBegin=246 CharacterOffsetEnd=251 PartOfSpeech=JJS Lemma=least NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=251 CharacterOffsetEnd=252 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT A) (JJ large) (NN proportion))
+        (PP (IN of)
+          (NP (DT the) (NN company))))
+      (VP (VBD were)
+        (PP (IN in)
+          (NP
+            (NP (JJ male) (NN dress))
+            (PP (IN of)
+              (NP (DT some) (NN sort)))))))
+    (, ,)
+    (CC but)
+    (S
+      (S
+        (VP (VBG being)
+          (NP
+            (NP (DT a) (`` `) (NNS hers) (POS '))
+            (NN party))))
+      (, ,)
+      (NP (PRP it))
+      (VP (VBD did) (RB n't)
+        (VP (VB matter)
+          (NP (DT the) (JJS least)))))
+    (. .)))
+
+root(ROOT-0, dress-10)
+det(proportion-3, A-1)
+amod(proportion-3, large-2)
+nsubj(dress-10, proportion-3)
+case(company-6, of-4)
+det(company-6, the-5)
+nmod:of(proportion-3, company-6)
+cop(dress-10, were-7)
+case(dress-10, in-8)
+amod(dress-10, male-9)
+case(sort-13, of-11)
+det(sort-13, some-12)
+nmod:of(dress-10, sort-13)
+punct(dress-10, ,-14)
+cc(dress-10, but-15)
+cop(party-21, being-16)
+det(hers-19, a-17)
+punct(hers-19, `-18)
+nmod:poss(party-21, hers-19)
+case(hers-19, '-20)
+advcl(matter-26, party-21)
+punct(matter-26, ,-22)
+nsubj(matter-26, it-23)
+aux(matter-26, did-24)
+neg(matter-26, n't-25)
+conj:but(dress-10, matter-26)
+det(least-28, the-27)
+dobj(matter-26, least-28)
+punct(dress-10, .-29)
+
+Sentence #4 (24 tokens):
+All the windows were well covered over and the curtains pinned down to prevent any peeping Toms from spying on our goings on.
+[Text=All CharacterOffsetBegin=253 CharacterOffsetEnd=256 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=windows CharacterOffsetBegin=261 CharacterOffsetEnd=268 PartOfSpeech=NNS Lemma=window NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=269 CharacterOffsetEnd=273 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=274 CharacterOffsetEnd=278 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=covered CharacterOffsetBegin=279 CharacterOffsetEnd=286 PartOfSpeech=VBN Lemma=cover NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=287 CharacterOffsetEnd=291 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=292 CharacterOffsetEnd=295 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=296 CharacterOffsetEnd=299 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=curtains CharacterOffsetBegin=300 CharacterOffsetEnd=308 PartOfSpeech=NNS Lemma=curtain NamedEntityTag=O]
+[Text=pinned CharacterOffsetBegin=309 CharacterOffsetEnd=315 PartOfSpeech=VBD Lemma=pin NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=316 CharacterOffsetEnd=320 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=321 CharacterOffsetEnd=323 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=prevent CharacterOffsetBegin=324 CharacterOffsetEnd=331 PartOfSpeech=VB Lemma=prevent NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=332 CharacterOffsetEnd=335 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=peeping CharacterOffsetBegin=336 CharacterOffsetEnd=343 PartOfSpeech=NN Lemma=peeping NamedEntityTag=O]
+[Text=Toms CharacterOffsetBegin=344 CharacterOffsetEnd=348 PartOfSpeech=NNP Lemma=Toms NamedEntityTag=PERSON]
+[Text=from CharacterOffsetBegin=349 CharacterOffsetEnd=353 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=spying CharacterOffsetBegin=354 CharacterOffsetEnd=360 PartOfSpeech=VBG Lemma=spy NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=361 CharacterOffsetEnd=363 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=364 CharacterOffsetEnd=367 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=goings CharacterOffsetBegin=368 CharacterOffsetEnd=374 PartOfSpeech=NNS Lemma=going NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=375 CharacterOffsetEnd=377 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=377 CharacterOffsetEnd=378 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PDT All) (DT the) (NNS windows))
+      (VP (VBD were)
+        (ADVP (RB well))
+        (VP (VBN covered)
+          (PP (IN over)))))
+    (CC and)
+    (S
+      (NP (DT the) (NNS curtains))
+      (VP (VBD pinned)
+        (PRT (RP down))
+        (S
+          (VP (TO to)
+            (VP (VB prevent)
+              (NP (DT any) (NN peeping) (NNP Toms))
+              (PP (IN from)
+                (NP
+                  (NP (VBG spying))
+                  (PP (IN on)
+                    (NP (PRP$ our) (NNS goings))))))))
+        (PP (IN on))))
+    (. .)))
+
+root(ROOT-0, covered-6)
+det:predet(windows-3, All-1)
+det(windows-3, the-2)
+nsubjpass(covered-6, windows-3)
+auxpass(covered-6, were-4)
+advmod(covered-6, well-5)
+nmod(covered-6, over-7)
+cc(covered-6, and-8)
+det(curtains-10, the-9)
+nsubj(pinned-11, curtains-10)
+nsubj:xsubj(prevent-14, curtains-10)
+conj:and(covered-6, pinned-11)
+compound:prt(pinned-11, down-12)
+mark(prevent-14, to-13)
+xcomp(pinned-11, prevent-14)
+det(Toms-17, any-15)
+compound(Toms-17, peeping-16)
+dobj(prevent-14, Toms-17)
+case(spying-19, from-18)
+nmod:from(prevent-14, spying-19)
+case(goings-22, on-20)
+nmod:poss(goings-22, our-21)
+nmod:on(spying-19, goings-22)
+nmod(pinned-11, on-23)
+punct(covered-6, .-24)
+
+Sentence #5 (26 tokens):
+If it got about widely that Matron had dressed up, especially in Colonel’s clothes, there might be a great commotion at headquarters.
+[Text=If CharacterOffsetBegin=379 CharacterOffsetEnd=381 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=382 CharacterOffsetEnd=384 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=385 CharacterOffsetEnd=388 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=389 CharacterOffsetEnd=394 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=widely CharacterOffsetBegin=395 CharacterOffsetEnd=401 PartOfSpeech=RB Lemma=widely NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=402 CharacterOffsetEnd=406 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=Matron CharacterOffsetBegin=407 CharacterOffsetEnd=413 PartOfSpeech=NN Lemma=matron NamedEntityTag=MISC]
+[Text=had CharacterOffsetBegin=414 CharacterOffsetEnd=417 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=dressed CharacterOffsetBegin=418 CharacterOffsetEnd=425 PartOfSpeech=VBN Lemma=dress NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=426 CharacterOffsetEnd=428 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=428 CharacterOffsetEnd=429 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=especially CharacterOffsetBegin=430 CharacterOffsetEnd=440 PartOfSpeech=RB Lemma=especially NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=441 CharacterOffsetEnd=443 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Colonel CharacterOffsetBegin=444 CharacterOffsetEnd=451 PartOfSpeech=NNP Lemma=Colonel NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=451 CharacterOffsetEnd=453 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=clothes CharacterOffsetBegin=454 CharacterOffsetEnd=461 PartOfSpeech=NNS Lemma=clothes NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=461 CharacterOffsetEnd=462 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=463 CharacterOffsetEnd=468 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=469 CharacterOffsetEnd=474 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=475 CharacterOffsetEnd=477 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=478 CharacterOffsetEnd=479 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=480 CharacterOffsetEnd=485 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=commotion CharacterOffsetBegin=486 CharacterOffsetEnd=495 PartOfSpeech=NN Lemma=commotion NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=496 CharacterOffsetEnd=498 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=headquarters CharacterOffsetBegin=499 CharacterOffsetEnd=511 PartOfSpeech=NN Lemma=headquarters NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=511 CharacterOffsetEnd=512 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBD got)
+          (S
+            (ADJP (IN about) (RB widely))
+            (SBAR
+              (S
+                (NP (DT that) (NN Matron))
+                (VP (VBD had)
+                  (VP (VBN dressed)
+                    (PRT (RP up))
+                    (, ,)
+                    (PP
+                      (ADVP (RB especially))
+                      (IN in)
+                      (NP
+                        (NP (NNP Colonel) (POS 's))
+                        (NNS clothes)))))))))))
+    (, ,)
+    (NP (EX there))
+    (VP (MD might)
+      (VP (VB be)
+        (NP
+          (NP (DT a) (JJ great) (NN commotion))
+          (PP (IN at)
+            (NP (NN headquarters))))))
+    (. .)))
+
+root(ROOT-0, commotion-23)
+mark(got-3, If-1)
+nsubj(got-3, it-2)
+advcl:if(commotion-23, got-3)
+dep(widely-5, about-4)
+dep(dressed-9, widely-5)
+det(Matron-7, that-6)
+nsubj(dressed-9, Matron-7)
+aux(dressed-9, had-8)
+xcomp(got-3, dressed-9)
+compound:prt(dressed-9, up-10)
+punct(dressed-9, ,-11)
+advmod(clothes-16, especially-12)
+case(clothes-16, in-13)
+nmod:poss(clothes-16, Colonel-14)
+case(Colonel-14, 's-15)
+nmod:in(dressed-9, clothes-16)
+punct(commotion-23, ,-17)
+expl(commotion-23, there-18)
+aux(commotion-23, might-19)
+cop(commotion-23, be-20)
+det(commotion-23, a-21)
+amod(commotion-23, great-22)
+case(headquarters-25, at-24)
+nmod:at(commotion-23, headquarters-25)
+punct(commotion-23, .-26)
+
+Sentence #6 (12 tokens):
+Sister Robertson and Sister Blandy dressed up as ‘Scotties’.
+[Text=Sister CharacterOffsetBegin=513 CharacterOffsetEnd=519 PartOfSpeech=NNP Lemma=Sister NamedEntityTag=O]
+[Text=Robertson CharacterOffsetBegin=520 CharacterOffsetEnd=529 PartOfSpeech=NNP Lemma=Robertson NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=530 CharacterOffsetEnd=533 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Sister CharacterOffsetBegin=534 CharacterOffsetEnd=540 PartOfSpeech=NNP Lemma=Sister NamedEntityTag=O]
+[Text=Blandy CharacterOffsetBegin=541 CharacterOffsetEnd=547 PartOfSpeech=NNP Lemma=Blandy NamedEntityTag=PERSON]
+[Text=dressed CharacterOffsetBegin=548 CharacterOffsetEnd=555 PartOfSpeech=VBD Lemma=dress NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=556 CharacterOffsetEnd=558 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=559 CharacterOffsetEnd=561 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=562 CharacterOffsetEnd=563 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Scotties CharacterOffsetBegin=563 CharacterOffsetEnd=571 PartOfSpeech=NNS Lemma=scotty NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=571 CharacterOffsetEnd=572 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=572 CharacterOffsetEnd=573 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Sister) (NNP Robertson)
+      (CC and)
+      (NNP Sister) (NNP Blandy))
+    (VP (VBD dressed)
+      (PRT (RP up))
+      (PP (IN as) (`` `)
+        (NP (NNS Scotties))
+        (POS ')))
+    (. .)))
+
+root(ROOT-0, dressed-6)
+compound(Robertson-2, Sister-1)
+nsubj(dressed-6, Robertson-2)
+cc(Robertson-2, and-3)
+compound(Blandy-5, Sister-4)
+conj:and(Robertson-2, Blandy-5)
+nsubj(dressed-6, Blandy-5)
+compound:prt(dressed-6, up-7)
+case(Scotties-10, as-8)
+punct(Scotties-10, `-9)
+nmod:as(dressed-6, Scotties-10)
+dep(Scotties-10, '-11)
+punct(dressed-6, .-12)
+
+Sentence #7 (6 tokens):
+Kilts both very good too.
+[Text=Kilts CharacterOffsetBegin=574 CharacterOffsetEnd=579 PartOfSpeech=NNP Lemma=Kilts NamedEntityTag=PERSON]
+[Text=both CharacterOffsetBegin=580 CharacterOffsetEnd=584 PartOfSpeech=CC Lemma=both NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=585 CharacterOffsetEnd=589 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=590 CharacterOffsetEnd=594 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=595 CharacterOffsetEnd=598 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=598 CharacterOffsetEnd=599 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Kilts))
+    (PP (CC both)
+      (NP
+        (NP
+          (ADJP (RB very) (JJ good)))
+        (ADVP (RB too))))
+    (. .)))
+
+root(ROOT-0, Kilts-1)
+case(good-4, both-2)
+advmod(good-4, very-3)
+nmod:both(Kilts-1, good-4)
+advmod(good-4, too-5)
+punct(Kilts-1, .-6)
+
+Sentence #8 (27 tokens):
+We danced in the big Mess room, cleared of tables and chairs, to the tune of the gramophone and had refreshments in the anteroom.
+[Text=We CharacterOffsetBegin=600 CharacterOffsetEnd=602 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=danced CharacterOffsetBegin=603 CharacterOffsetEnd=609 PartOfSpeech=VBD Lemma=dance NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=610 CharacterOffsetEnd=612 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=613 CharacterOffsetEnd=616 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=617 CharacterOffsetEnd=620 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=Mess CharacterOffsetBegin=621 CharacterOffsetEnd=625 PartOfSpeech=NN Lemma=mess NamedEntityTag=O]
+[Text=room CharacterOffsetBegin=626 CharacterOffsetEnd=630 PartOfSpeech=NN Lemma=room NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=630 CharacterOffsetEnd=631 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=cleared CharacterOffsetBegin=632 CharacterOffsetEnd=639 PartOfSpeech=VBN Lemma=clear NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=640 CharacterOffsetEnd=642 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=tables CharacterOffsetBegin=643 CharacterOffsetEnd=649 PartOfSpeech=NNS Lemma=table NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=650 CharacterOffsetEnd=653 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=chairs CharacterOffsetBegin=654 CharacterOffsetEnd=660 PartOfSpeech=NNS Lemma=chair NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=660 CharacterOffsetEnd=661 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=662 CharacterOffsetEnd=664 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=665 CharacterOffsetEnd=668 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=tune CharacterOffsetBegin=669 CharacterOffsetEnd=673 PartOfSpeech=NN Lemma=tune NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=674 CharacterOffsetEnd=676 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=677 CharacterOffsetEnd=680 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gramophone CharacterOffsetBegin=681 CharacterOffsetEnd=691 PartOfSpeech=NN Lemma=gramophone NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=692 CharacterOffsetEnd=695 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=696 CharacterOffsetEnd=699 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=refreshments CharacterOffsetBegin=700 CharacterOffsetEnd=712 PartOfSpeech=NNS Lemma=refreshment NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=713 CharacterOffsetEnd=715 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=716 CharacterOffsetEnd=719 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=anteroom CharacterOffsetBegin=720 CharacterOffsetEnd=728 PartOfSpeech=NN Lemma=anteroom NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=728 CharacterOffsetEnd=729 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP
+      (VP (VBD danced)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (JJ big) (NN Mess) (NN room))
+            (, ,)
+            (VP (VBN cleared)
+              (PP (IN of)
+                (NP (NNS tables)
+                  (CC and)
+                  (NNS chairs))))
+            (, ,)))
+        (PP (TO to)
+          (NP
+            (NP (DT the) (NN tune))
+            (PP (IN of)
+              (NP (DT the) (NN gramophone))))))
+      (CC and)
+      (VP (VBD had)
+        (NP
+          (NP (NNS refreshments))
+          (PP (IN in)
+            (NP (DT the) (NN anteroom))))))
+    (. .)))
+
+root(ROOT-0, danced-2)
+nsubj(danced-2, We-1)
+nsubj(had-22, We-1)
+case(room-7, in-3)
+det(room-7, the-4)
+amod(room-7, big-5)
+compound(room-7, Mess-6)
+nmod:in(danced-2, room-7)
+punct(room-7, ,-8)
+acl(room-7, cleared-9)
+case(tables-11, of-10)
+nmod:of(cleared-9, tables-11)
+cc(tables-11, and-12)
+nmod:of(cleared-9, chairs-13)
+conj:and(tables-11, chairs-13)
+punct(room-7, ,-14)
+case(tune-17, to-15)
+det(tune-17, the-16)
+nmod:to(danced-2, tune-17)
+case(gramophone-20, of-18)
+det(gramophone-20, the-19)
+nmod:of(tune-17, gramophone-20)
+cc(danced-2, and-21)
+conj:and(danced-2, had-22)
+dobj(had-22, refreshments-23)
+case(anteroom-26, in-24)
+det(anteroom-26, the-25)
+nmod:in(refreshments-23, anteroom-26)
+punct(danced-2, .-27)
+
+Sentence #9 (10 tokens):
+Really enjoyed ourselves immensely and had a ripping time.
+[Text=Really CharacterOffsetBegin=730 CharacterOffsetEnd=736 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=enjoyed CharacterOffsetBegin=737 CharacterOffsetEnd=744 PartOfSpeech=VBN Lemma=enjoy NamedEntityTag=O]
+[Text=ourselves CharacterOffsetBegin=745 CharacterOffsetEnd=754 PartOfSpeech=PRP Lemma=ourselves NamedEntityTag=O]
+[Text=immensely CharacterOffsetBegin=755 CharacterOffsetEnd=764 PartOfSpeech=RB Lemma=immensely NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=765 CharacterOffsetEnd=768 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=769 CharacterOffsetEnd=772 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=773 CharacterOffsetEnd=774 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=ripping CharacterOffsetBegin=775 CharacterOffsetEnd=782 PartOfSpeech=VBG Lemma=rip NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=783 CharacterOffsetEnd=787 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=787 CharacterOffsetEnd=788 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP
+      (VP
+        (ADVP (RB Really))
+        (VP (VBN enjoyed)
+          (S
+            (NP (PRP ourselves))
+            (ADVP (RB immensely)))))
+      (CC and)
+      (VP (VBD had)
+        (NP (DT a) (VBG ripping))
+        (NP-TMP (NN time))))
+    (. .)))
+
+root(ROOT-0, enjoyed-2)
+advmod(enjoyed-2, Really-1)
+xcomp(enjoyed-2, ourselves-3)
+advmod(ourselves-3, immensely-4)
+cc(enjoyed-2, and-5)
+conj:and(enjoyed-2, had-6)
+dobj(had-6, a-7)
+amod(a-7, ripping-8)
+nmod:tmod(had-6, time-9)
+punct(enjoyed-2, .-10)
+
+Sentence #10 (11 tokens):
+Feeling now rather as though we had several nights out.
+[Text=Feeling CharacterOffsetBegin=789 CharacterOffsetEnd=796 PartOfSpeech=VBG Lemma=feel NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=797 CharacterOffsetEnd=800 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t4" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=rather CharacterOffsetBegin=801 CharacterOffsetEnd=807 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=808 CharacterOffsetEnd=810 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=though CharacterOffsetBegin=811 CharacterOffsetEnd=817 PartOfSpeech=IN Lemma=though NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=818 CharacterOffsetEnd=820 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=821 CharacterOffsetEnd=824 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=several CharacterOffsetBegin=825 CharacterOffsetEnd=832 PartOfSpeech=JJ Lemma=several NamedEntityTag=O]
+[Text=nights CharacterOffsetBegin=833 CharacterOffsetEnd=839 PartOfSpeech=NNS Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t5" type="TIME" value="TNI">nights</TIMEX3>]
+[Text=out CharacterOffsetBegin=840 CharacterOffsetEnd=843 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=843 CharacterOffsetEnd=844 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBG Feeling)
+      (ADVP (RB now))
+      (PP (RB rather) (IN as)
+        (SBAR (IN though)
+          (S
+            (NP (PRP we))
+            (VP (VBD had)
+              (NP (JJ several) (NNS nights))
+              (ADVP (IN out)))))))
+    (. .)))
+
+root(ROOT-0, Feeling-1)
+advmod(Feeling-1, now-2)
+advmod(had-7, rather-3)
+mark(had-7, as-4)
+mark(had-7, though-5)
+nsubj(had-7, we-6)
+advcl:though(Feeling-1, had-7)
+amod(nights-9, several-8)
+nmod:tmod(had-7, nights-9)
+advmod(had-7, out-10)
+punct(Feeling-1, .-11)
+
+Sentence #11 (7 tokens):
+Weary about the feet and eyes.
+[Text=Weary CharacterOffsetBegin=845 CharacterOffsetEnd=850 PartOfSpeech=JJ Lemma=weary NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=851 CharacterOffsetEnd=856 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=857 CharacterOffsetEnd=860 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=feet CharacterOffsetBegin=861 CharacterOffsetEnd=865 PartOfSpeech=NNS Lemma=foot NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=866 CharacterOffsetEnd=869 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=eyes CharacterOffsetBegin=870 CharacterOffsetEnd=874 PartOfSpeech=NNS Lemma=eye NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=874 CharacterOffsetEnd=875 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (JJ Weary))
+    (PP (IN about)
+      (NP (DT the) (NNS feet)
+        (CC and)
+        (NNS eyes)))
+    (. .)))
+
+root(ROOT-0, Weary-1)
+case(feet-4, about-2)
+det(feet-4, the-3)
+nmod:about(Weary-1, feet-4)
+cc(feet-4, and-5)
+nmod:about(Weary-1, eyes-6)
+conj:and(feet-4, eyes-6)
+punct(Weary-1, .-7)
+
+Sentence #12 (8 tokens):
+Anteroom this p.m. a very soporific place.
+[Text=Anteroom CharacterOffsetBegin=876 CharacterOffsetEnd=884 PartOfSpeech=NN Lemma=anteroom NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=885 CharacterOffsetEnd=889 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=p.m. CharacterOffsetBegin=890 CharacterOffsetEnd=894 PartOfSpeech=NN Lemma=p.m. NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=895 CharacterOffsetEnd=896 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=897 CharacterOffsetEnd=901 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=soporific CharacterOffsetBegin=902 CharacterOffsetEnd=911 PartOfSpeech=JJ Lemma=soporific NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=912 CharacterOffsetEnd=917 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=917 CharacterOffsetEnd=918 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NN Anteroom))
+    (NP
+      (NP (DT this) (NN p.m.))
+      (NP (DT a)
+        (ADJP (RB very) (JJ soporific))
+        (NN place)))
+    (. .)))
+
+root(ROOT-0, Anteroom-1)
+det(p.m.-3, this-2)
+dep(Anteroom-1, p.m.-3)
+det(place-7, a-4)
+advmod(soporific-6, very-5)
+amod(place-7, soporific-6)
+dep(p.m.-3, place-7)
+punct(Anteroom-1, .-8)
+
+Coreference set:
+	(2,10,[8,11]) -> (2,15,[12,18]), that is: "a first-class affair" -> "a quite brilliant display of costumes"
+Coreference set:
+	(3,23,[23,24]) -> (3,6,[5,7]), that is: "it" -> "the company"
+Coreference set:
+	(5,2,[2,3]) -> (4,19,[19,23]), that is: "it" -> "spying on our goings"
+Coreference set:
+	(6,4,[4,5]) -> (6,1,[1,2]), that is: "Sister" -> "Sister"
+Coreference set:
+	(9,3,[3,4]) -> (8,1,[1,2]), that is: "ourselves" -> "We"
+	(10,6,[6,7]) -> (8,1,[1,2]), that is: "we" -> "We"

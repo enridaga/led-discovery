@@ -1,0 +1,231 @@
+Sentence #1 (20 tokens):
+I get tickets from B.B.C. for Broadcasting House Chamber concert at 8.0, to which I take Grace Williams.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=VBP Lemma=get NamedEntityTag=O]
+[Text=tickets CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=ticket NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=B.B.C. CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=B.B.C. NamedEntityTag=ORGANIZATION]
+[Text=for CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=for NamedEntityTag=ORGANIZATION]
+[Text=Broadcasting CharacterOffsetBegin=30 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Broadcasting NamedEntityTag=ORGANIZATION]
+[Text=House CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=House NamedEntityTag=ORGANIZATION]
+[Text=Chamber CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Chamber NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=8.0 CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=CD Lemma=8.0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=8.0]
+[Text=, CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=VBP Lemma=take NamedEntityTag=O]
+[Text=Grace CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=Grace NamedEntityTag=PERSON]
+[Text=Williams CharacterOffsetBegin=95 CharacterOffsetEnd=103 PartOfSpeech=NNP Lemma=Williams NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP get)
+      (NP
+        (NP (NNS tickets))
+        (PP (IN from)
+          (NP
+            (NP (NNP B.B.C.))
+            (PP (IN for)
+              (NP (NNP Broadcasting) (NNP House) (NNP Chamber) (NN concert))))))
+      (PP (IN at)
+        (NP
+          (NP (CD 8.0))
+          (, ,)
+          (SBAR
+            (WHPP (TO to)
+              (WHNP (WDT which)))
+            (S
+              (NP (PRP I))
+              (VP (VBP take)
+                (NP (NNP Grace) (NNP Williams))))))))
+    (. .)))
+
+root(ROOT-0, get-2)
+nsubj(get-2, I-1)
+dobj(get-2, tickets-3)
+case(B.B.C.-5, from-4)
+nmod:from(tickets-3, B.B.C.-5)
+case(concert-10, for-6)
+compound(concert-10, Broadcasting-7)
+compound(concert-10, House-8)
+compound(concert-10, Chamber-9)
+nmod:for(B.B.C.-5, concert-10)
+case(8.0-12, at-11)
+nmod:at(get-2, 8.0-12)
+nmod:to(take-17, 8.0-12)
+punct(8.0-12, ,-13)
+case(which-15, to-14)
+ref(8.0-12, which-15)
+nsubj(take-17, I-16)
+acl:relcl(8.0-12, take-17)
+compound(Williams-19, Grace-18)
+dobj(take-17, Williams-19)
+punct(get-2, .-20)
+
+Sentence #2 (4 tokens):
+Stravinsky & Dushkin.
+[Text=Stravinsky CharacterOffsetBegin=105 CharacterOffsetEnd=115 PartOfSpeech=NNP Lemma=Stravinsky NamedEntityTag=PERSON]
+[Text=& CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Dushkin CharacterOffsetBegin=118 CharacterOffsetEnd=125 PartOfSpeech=NNP Lemma=Dushkin NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (NNP Stravinsky)
+    (CC &)
+    (NNP Dushkin) (. .)))
+
+root(ROOT-0, Stravinsky-1)
+cc(Stravinsky-1, &-2)
+conj:&(Stravinsky-1, Dushkin-3)
+punct(Stravinsky-1, .-4)
+
+Sentence #3 (3 tokens):
+Pergolesi transcripts.
+[Text=Pergolesi CharacterOffsetBegin=127 CharacterOffsetEnd=136 PartOfSpeech=NN Lemma=pergolesi NamedEntityTag=PERSON]
+[Text=transcripts CharacterOffsetBegin=137 CharacterOffsetEnd=148 PartOfSpeech=NNS Lemma=transcript NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (NN Pergolesi) (NNS transcripts) (. .)))
+
+root(ROOT-0, transcripts-2)
+compound(transcripts-2, Pergolesi-1)
+punct(transcripts-2, .-3)
+
+Sentence #4 (20 tokens):
+Duo Concertante (2ce performed) & some incredible arrangements from the Ballets - all for Vln & Pft.
+[Text=Duo CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=NN Lemma=duo NamedEntityTag=O]
+[Text=Concertante CharacterOffsetBegin=154 CharacterOffsetEnd=165 PartOfSpeech=NNP Lemma=Concertante NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=166 CharacterOffsetEnd=167 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=2ce CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=JJ Lemma=2ce NamedEntityTag=O]
+[Text=performed CharacterOffsetBegin=171 CharacterOffsetEnd=180 PartOfSpeech=VBN Lemma=perform NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=182 CharacterOffsetEnd=183 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=incredible CharacterOffsetBegin=189 CharacterOffsetEnd=199 PartOfSpeech=JJ Lemma=incredible NamedEntityTag=O]
+[Text=arrangements CharacterOffsetBegin=200 CharacterOffsetEnd=212 PartOfSpeech=NNS Lemma=arrangement NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=213 CharacterOffsetEnd=217 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=218 CharacterOffsetEnd=221 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Ballets CharacterOffsetBegin=222 CharacterOffsetEnd=229 PartOfSpeech=NNPS Lemma=Ballets NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=230 CharacterOffsetEnd=231 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=232 CharacterOffsetEnd=235 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=236 CharacterOffsetEnd=239 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Vln CharacterOffsetBegin=240 CharacterOffsetEnd=243 PartOfSpeech=NNP Lemma=Vln NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=244 CharacterOffsetEnd=245 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Pft CharacterOffsetBegin=246 CharacterOffsetEnd=249 PartOfSpeech=NNP Lemma=Pft NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=249 CharacterOffsetEnd=250 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP
+        (NP (NN Duo))
+        (NNP Concertante))
+      (PRN (-LRB- -LRB-)
+        (NP
+          (NP (JJ 2ce))
+          (VP (VBN performed)))
+        (-RRB- -RRB-))
+      (CC &)
+      (NP
+        (NP (DT some) (JJ incredible) (NNS arrangements))
+        (PP (IN from)
+          (NP (DT the) (NNPS Ballets)))))
+    (: -)
+    (NP
+      (NP (DT all))
+      (PP (IN for)
+        (NP (NNP Vln)
+          (CC &)
+          (NNP Pft))))
+    (. .)))
+
+root(ROOT-0, Concertante-2)
+compound(Concertante-2, Duo-1)
+punct(2ce-4, -LRB--3)
+dep(Concertante-2, 2ce-4)
+acl(2ce-4, performed-5)
+punct(2ce-4, -RRB--6)
+cc(Concertante-2, &-7)
+det(arrangements-10, some-8)
+amod(arrangements-10, incredible-9)
+conj:&(Concertante-2, arrangements-10)
+case(Ballets-13, from-11)
+det(Ballets-13, the-12)
+nmod:from(arrangements-10, Ballets-13)
+punct(Concertante-2, --14)
+dep(Concertante-2, all-15)
+case(Vln-17, for-16)
+nmod:for(all-15, Vln-17)
+cc(Vln-17, &-18)
+nmod:for(all-15, Pft-19)
+conj:&(Vln-17, Pft-19)
+punct(Concertante-2, .-20)
+
+Sentence #5 (18 tokens):
+* Dushkin is a fine fiddler, but I am not so impressed with Stravinsky as pianist.
+[Text=* CharacterOffsetBegin=250 CharacterOffsetEnd=251 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=Dushkin CharacterOffsetBegin=252 CharacterOffsetEnd=259 PartOfSpeech=NNP Lemma=Dushkin NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=260 CharacterOffsetEnd=262 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=263 CharacterOffsetEnd=264 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=265 CharacterOffsetEnd=269 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=fiddler CharacterOffsetBegin=270 CharacterOffsetEnd=277 PartOfSpeech=NN Lemma=fiddler NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=277 CharacterOffsetEnd=278 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=283 CharacterOffsetEnd=284 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=285 CharacterOffsetEnd=287 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=288 CharacterOffsetEnd=291 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=292 CharacterOffsetEnd=294 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=impressed CharacterOffsetBegin=295 CharacterOffsetEnd=304 PartOfSpeech=JJ Lemma=impressed NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=305 CharacterOffsetEnd=309 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Stravinsky CharacterOffsetBegin=310 CharacterOffsetEnd=320 PartOfSpeech=NNP Lemma=Stravinsky NamedEntityTag=PERSON]
+[Text=as CharacterOffsetBegin=321 CharacterOffsetEnd=323 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=pianist CharacterOffsetBegin=324 CharacterOffsetEnd=331 PartOfSpeech=NN Lemma=pianist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=331 CharacterOffsetEnd=332 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (X (SYM *))
+      (NP (NNP Dushkin))
+      (VP (VBZ is)
+        (NP (DT a) (JJ fine) (NN fiddler))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP am) (RB not)
+        (ADJP (RB so) (JJ impressed)
+          (PP (IN with)
+            (NP (NNP Stravinsky))))
+        (PP (IN as)
+          (NP (NN pianist)))))
+    (. .)))
+
+root(ROOT-0, fiddler-6)
+dep(fiddler-6, *-1)
+nsubj(fiddler-6, Dushkin-2)
+cop(fiddler-6, is-3)
+det(fiddler-6, a-4)
+amod(fiddler-6, fine-5)
+punct(fiddler-6, ,-7)
+cc(fiddler-6, but-8)
+nsubj(impressed-13, I-9)
+cop(impressed-13, am-10)
+neg(impressed-13, not-11)
+advmod(impressed-13, so-12)
+conj:but(fiddler-6, impressed-13)
+case(Stravinsky-15, with-14)
+nmod:with(impressed-13, Stravinsky-15)
+case(pianist-17, as-16)
+nmod:as(impressed-13, pianist-17)
+punct(fiddler-6, .-18)
+
+Coreference set:
+	(1,16,[16,17]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(5,9,[9,10]) -> (1,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(5,15,[15,16]) -> (2,1,[1,2]), that is: "Stravinsky" -> "Stravinsky"
+Coreference set:
+	(5,2,[2,3]) -> (2,3,[3,4]), that is: "Dushkin" -> "Dushkin"
+	(5,6,[4,7]) -> (2,3,[3,4]), that is: "a fine fiddler" -> "Dushkin"

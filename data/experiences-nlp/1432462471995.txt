@@ -1,0 +1,95 @@
+Sentence #1 (26 tokens):
+Bodenstedt has written some words for me; I have set these to music, and his wife (our prima donna) sings them.
+[Text=Bodenstedt CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Bodenstedt NamedEntityTag=PERSON]
+[Text=has CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=written CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=VBN Lemma=write NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=words CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NNS Lemma=word NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=VBN Lemma=set NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=wife CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=wife NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=prima CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=prima NamedEntityTag=O]
+[Text=donna CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=donna NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=sings CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=VBZ Lemma=sing NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Bodenstedt))
+      (VP (VBZ has)
+        (VP (VBN written)
+          (NP
+            (NP (DT some) (NNS words))
+            (PP (IN for)
+              (NP (PRP me)))))))
+    (: ;)
+    (S
+      (S
+        (NP (PRP I))
+        (VP (VBP have)
+          (VP (VBN set)
+            (NP (DT these))
+            (PP (TO to)
+              (NP (NN music))))))
+      (, ,)
+      (CC and)
+      (S
+        (NP
+          (NP (PRP$ his) (NN wife))
+          (PRN (-LRB- -LRB-)
+            (NP
+              (NP (PRP$ our) (NN prima))
+              (NP (NN donna)))
+            (-RRB- -RRB-)))
+        (VP (VBZ sings)
+          (NP (PRP them)))))
+    (. .)))
+
+root(ROOT-0, written-3)
+nsubj(written-3, Bodenstedt-1)
+aux(written-3, has-2)
+det(words-5, some-4)
+dobj(written-3, words-5)
+case(me-7, for-6)
+nmod:for(words-5, me-7)
+punct(written-3, ;-8)
+nsubj(set-11, I-9)
+aux(set-11, have-10)
+parataxis(written-3, set-11)
+dobj(set-11, these-12)
+case(music-14, to-13)
+nmod:to(set-11, music-14)
+punct(set-11, ,-15)
+cc(set-11, and-16)
+nmod:poss(wife-18, his-17)
+nsubj(sings-24, wife-18)
+punct(prima-21, -LRB--19)
+nmod:poss(prima-21, our-20)
+dep(wife-18, prima-21)
+dep(prima-21, donna-22)
+punct(prima-21, -RRB--23)
+parataxis(written-3, sings-24)
+conj:and(set-11, sings-24)
+dobj(sings-24, them-25)
+punct(written-3, .-26)
+
+Coreference set:
+	(1,17,[17,18]) -> (1,1,[1,2]), that is: "his" -> "Bodenstedt"
+Coreference set:
+	(1,9,[9,10]) -> (1,7,[7,8]), that is: "I" -> "me"
+Coreference set:
+	(1,25,[25,26]) -> (1,12,[12,13]), that is: "them" -> "these"

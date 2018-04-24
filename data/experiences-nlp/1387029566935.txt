@@ -1,0 +1,58 @@
+Sentence #1 (17 tokens):
+'[...] and Paderewski's playing (in the phonograph) [...].
+[Text=' CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=1 CharacterOffsetEnd=2 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Paderewski CharacterOffsetBegin=11 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Paderewski NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=phonograph CharacterOffsetBegin=40 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=phonograph NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S ('' ')
+    (S
+      (S
+        (VP (-LRB- -LSB-))
+        (: ...))
+      (VP (-RRB- -RSB-)))
+    (CC and)
+    (S
+      (NP
+        (NP
+          (NP (NNP Paderewski) (POS 's))
+          (NN playing))
+        (PRN (-LRB- -LRB-)
+          (PP (IN in)
+            (NP (DT the) (NN phonograph)))
+          (-RRB- -RRB-)))
+      (VP (-LRB- -LSB-) (: ...)
+        (VP (-RRB- -RSB-))))
+    (. .)))
+
+root(ROOT-0, -RSB--4)
+punct(-RSB--4, '-1)
+csubj(-RSB--4, -LSB--2)
+punct(-LSB--2, ...-3)
+cc(-RSB--4, and-5)
+nmod:poss(playing-8, Paderewski-6)
+case(Paderewski-6, 's-7)
+nsubj(-RSB--16, playing-8)
+punct(phonograph-12, -LRB--9)
+case(phonograph-12, in-10)
+det(phonograph-12, the-11)
+nmod:in(playing-8, phonograph-12)
+punct(phonograph-12, -RRB--13)
+punct(-RSB--16, -LSB--14)
+punct(-RSB--16, ...-15)
+conj:and(-RSB--4, -RSB--16)
+punct(-RSB--4, .-17)
+

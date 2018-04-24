@@ -1,0 +1,212 @@
+Sentence #1 (15 tokens):
+The Mendelssohns gave an evening party, when David's quartet playing was admirable.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Mendelssohns CharacterOffsetBegin=4 CharacterOffsetEnd=16 PartOfSpeech=NNPS Lemma=Mendelssohns NamedEntityTag=MISC]
+[Text=gave CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t1" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=party CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=David CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=David NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=quartet CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=quartet NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=admirable CharacterOffsetBegin=73 CharacterOffsetEnd=82 PartOfSpeech=JJ Lemma=admirable NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NNPS Mendelssohns))
+    (VP (VBD gave)
+      (NP (DT an) (NN evening))
+      (NP
+        (NP (NN party))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP
+              (NP (NNP David) (POS 's))
+              (NN quartet) (NN playing))
+            (VP (VBD was)
+              (ADJP (JJ admirable)))))))
+    (. .)))
+
+root(ROOT-0, gave-3)
+det(Mendelssohns-2, The-1)
+nsubj(gave-3, Mendelssohns-2)
+det(evening-5, an-4)
+nmod:tmod(gave-3, evening-5)
+dobj(gave-3, party-6)
+punct(party-6, ,-7)
+advmod(admirable-14, when-8)
+nmod:poss(playing-12, David-9)
+case(David-9, 's-10)
+compound(playing-12, quartet-11)
+nsubj(admirable-14, playing-12)
+cop(admirable-14, was-13)
+acl:relcl(party-6, admirable-14)
+punct(gave-3, .-15)
+
+Sentence #2 (13 tokens):
+I played my 'E major Concerto' and 'Studies.'
+[Text=I CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=86 CharacterOffsetEnd=92 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=E CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=e NamedEntityTag=O]
+[Text=major CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=JJ Lemma=major NamedEntityTag=O]
+[Text=Concerto CharacterOffsetBegin=105 CharacterOffsetEnd=113 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Studies CharacterOffsetBegin=120 CharacterOffsetEnd=127 PartOfSpeech=NNS Lemma=study NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD played)
+      (NP (PRP$ my))
+      ('' ')
+      (PP
+        (NP (NN E))
+        (NP
+          (NP (JJ major) (NNP Concerto) (POS '))
+          (CC and)
+          (NP (`` `) (NNS Studies)))))
+    (. .) ('' ')))
+
+root(ROOT-0, played-2)
+nsubj(played-2, I-1)
+dobj(played-2, my-3)
+punct(played-2, '-4)
+nmod(played-2, E-5)
+amod(Concerto-7, major-6)
+dep(E-5, Concerto-7)
+case(Concerto-7, '-8)
+cc(Concerto-7, and-9)
+punct(Studies-11, `-10)
+dep(E-5, Studies-11)
+conj:and(Concerto-7, Studies-11)
+punct(played-2, .-12)
+punct(played-2, '-13)
+
+Sentence #3 (35 tokens):
+To end up, Felix called for my repertoire of tricks on the piano, and we extemporized together as a finale, a production quite as good as our last effort in London.
+[Text=To CharacterOffsetBegin=130 CharacterOffsetEnd=132 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=133 CharacterOffsetEnd=136 PartOfSpeech=VB Lemma=end NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Felix CharacterOffsetBegin=141 CharacterOffsetEnd=146 PartOfSpeech=NNP Lemma=Felix NamedEntityTag=PERSON]
+[Text=called CharacterOffsetBegin=147 CharacterOffsetEnd=153 PartOfSpeech=VBD Lemma=call NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=158 CharacterOffsetEnd=160 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=repertoire CharacterOffsetBegin=161 CharacterOffsetEnd=171 PartOfSpeech=NN Lemma=repertoire NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=172 CharacterOffsetEnd=174 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=tricks CharacterOffsetBegin=175 CharacterOffsetEnd=181 PartOfSpeech=NNS Lemma=trick NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=182 CharacterOffsetEnd=184 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=185 CharacterOffsetEnd=188 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=189 CharacterOffsetEnd=194 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=194 CharacterOffsetEnd=195 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=196 CharacterOffsetEnd=199 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=200 CharacterOffsetEnd=202 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=extemporized CharacterOffsetBegin=203 CharacterOffsetEnd=215 PartOfSpeech=VBD Lemma=extemporize NamedEntityTag=O]
+[Text=together CharacterOffsetBegin=216 CharacterOffsetEnd=224 PartOfSpeech=RB Lemma=together NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=228 CharacterOffsetEnd=229 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=finale CharacterOffsetBegin=230 CharacterOffsetEnd=236 PartOfSpeech=NN Lemma=finale NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=236 CharacterOffsetEnd=237 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=238 CharacterOffsetEnd=239 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=production CharacterOffsetBegin=240 CharacterOffsetEnd=250 PartOfSpeech=NN Lemma=production NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=251 CharacterOffsetEnd=256 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=257 CharacterOffsetEnd=259 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=260 CharacterOffsetEnd=264 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=265 CharacterOffsetEnd=267 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=268 CharacterOffsetEnd=271 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=272 CharacterOffsetEnd=276 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=effort CharacterOffsetBegin=277 CharacterOffsetEnd=283 PartOfSpeech=NN Lemma=effort NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=284 CharacterOffsetEnd=286 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=London CharacterOffsetBegin=287 CharacterOffsetEnd=293 PartOfSpeech=NNP Lemma=London NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=293 CharacterOffsetEnd=294 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (S
+        (VP (TO To)
+          (VP (VB end)
+            (PRT (RP up)))))
+      (, ,)
+      (NP (NNP Felix))
+      (VP (VBD called)
+        (PP (IN for)
+          (NP
+            (NP (PRP$ my) (NN repertoire))
+            (PP (IN of)
+              (NP (NNS tricks)))))
+        (PP (IN on)
+          (NP (DT the) (NN piano)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP we))
+      (VP (VBD extemporized)
+        (ADVP (RB together))
+        (PP (IN as)
+          (NP (DT a) (NN finale)))
+        (, ,)
+        (PP
+          (ADVP
+            (NP (DT a) (NN production))
+            (RB quite))
+          (RB as)
+          (ADJP (JJ good)))
+        (PP (IN as)
+          (NP
+            (NP (PRP$ our) (JJ last) (NN effort))
+            (PP (IN in)
+              (NP (NNP London)))))))
+    (. .)))
+
+root(ROOT-0, called-6)
+mark(end-2, To-1)
+advcl:to(called-6, end-2)
+compound:prt(end-2, up-3)
+punct(called-6, ,-4)
+nsubj(called-6, Felix-5)
+case(repertoire-9, for-7)
+nmod:poss(repertoire-9, my-8)
+nmod:for(called-6, repertoire-9)
+case(tricks-11, of-10)
+nmod:of(repertoire-9, tricks-11)
+case(piano-14, on-12)
+det(piano-14, the-13)
+nmod:on(called-6, piano-14)
+punct(called-6, ,-15)
+cc(called-6, and-16)
+nsubj(extemporized-18, we-17)
+conj:and(called-6, extemporized-18)
+advmod(extemporized-18, together-19)
+case(finale-22, as-20)
+det(finale-22, a-21)
+nmod:as(extemporized-18, finale-22)
+punct(extemporized-18, ,-23)
+det(production-25, a-24)
+nmod:npmod(quite-26, production-25)
+advcl(extemporized-18, quite-26)
+dep(quite-26, as-27)
+dep(quite-26, good-28)
+case(effort-32, as-29)
+nmod:poss(effort-32, our-30)
+amod(effort-32, last-31)
+nmod:as(extemporized-18, effort-32)
+case(London-34, in-33)
+nmod:in(effort-32, London-34)
+punct(called-6, .-35)
+
+Coreference set:
+	(2,3,[3,4]) -> (2,1,[1,2]), that is: "my" -> "I"
+	(3,8,[8,9]) -> (2,1,[1,2]), that is: "my" -> "I"
+Coreference set:
+	(3,30,[30,31]) -> (3,17,[17,18]), that is: "our" -> "we"

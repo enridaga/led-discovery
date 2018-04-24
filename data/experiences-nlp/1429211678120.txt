@@ -1,0 +1,130 @@
+Sentence #1 (28 tokens):
+I took Horst Walter to Hampstead Heath to see a splendid display of pyrotechnics with massed bands playing Handel's "Music for the Royal Fireworks".
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=took CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBD Lemma=take NamedEntityTag=O]
+[Text=Horst CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Horst NamedEntityTag=PERSON]
+[Text=Walter CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Walter NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Hampstead CharacterOffsetBegin=23 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Hampstead NamedEntityTag=PERSON]
+[Text=Heath CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Heath NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=splendid CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=splendid NamedEntityTag=O]
+[Text=display CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=display NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=pyrotechnics CharacterOffsetBegin=68 CharacterOffsetEnd=80 PartOfSpeech=NNS Lemma=pyrotechnics NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=massed CharacterOffsetBegin=86 CharacterOffsetEnd=92 PartOfSpeech=VBN Lemma=mass NamedEntityTag=O]
+[Text=bands CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=NNS Lemma=band NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=99 CharacterOffsetEnd=106 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=Handel CharacterOffsetBegin=107 CharacterOffsetEnd=113 PartOfSpeech=NNP Lemma=Handel NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Music CharacterOffsetBegin=117 CharacterOffsetEnd=122 PartOfSpeech=NNP Lemma=Music NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Royal CharacterOffsetBegin=131 CharacterOffsetEnd=136 PartOfSpeech=NNP Lemma=Royal NamedEntityTag=O]
+[Text=Fireworks CharacterOffsetBegin=137 CharacterOffsetEnd=146 PartOfSpeech=NNPS Lemma=Fireworks NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD took)
+      (NP (NNP Horst) (NNP Walter))
+      (PP (TO to)
+        (NP (NNP Hampstead) (NNP Heath)))
+      (S
+        (VP (TO to)
+          (VP (VB see)
+            (NP
+              (NP (DT a) (JJ splendid) (NN display))
+              (PP (IN of)
+                (NP (NNS pyrotechnics))))
+            (PP (IN with)
+              (NP
+                (NP (VBN massed) (NNS bands))
+                (VP (VBG playing)
+                  (NP
+                    (NP (NNP Handel) (POS 's))
+                    (`` ``) (NNP Music))
+                  (PP (IN for)
+                    (NP (DT the) (NNP Royal) (NNPS Fireworks) ('' ''))))))))))
+    (. .)))
+
+root(ROOT-0, took-2)
+nsubj(took-2, I-1)
+compound(Walter-4, Horst-3)
+dobj(took-2, Walter-4)
+case(Heath-7, to-5)
+compound(Heath-7, Hampstead-6)
+nmod:to(took-2, Heath-7)
+mark(see-9, to-8)
+advcl:to(took-2, see-9)
+det(display-12, a-10)
+amod(display-12, splendid-11)
+dobj(see-9, display-12)
+case(pyrotechnics-14, of-13)
+nmod:of(display-12, pyrotechnics-14)
+case(bands-17, with-15)
+amod(bands-17, massed-16)
+nmod:with(see-9, bands-17)
+acl(bands-17, playing-18)
+nmod:poss(Music-22, Handel-19)
+case(Handel-19, 's-20)
+punct(Music-22, ``-21)
+dobj(playing-18, Music-22)
+case(Fireworks-26, for-23)
+det(Fireworks-26, the-24)
+compound(Fireworks-26, Royal-25)
+nmod:for(playing-18, Fireworks-26)
+punct(Fireworks-26, ''-27)
+punct(took-2, .-28)
+
+Sentence #2 (12 tokens):
+It was a wonderful summer night and he was greatly impressed...
+[Text=It CharacterOffsetBegin=149 CharacterOffsetEnd=151 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=152 CharacterOffsetEnd=155 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=156 CharacterOffsetEnd=157 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=wonderful CharacterOffsetBegin=158 CharacterOffsetEnd=167 PartOfSpeech=JJ Lemma=wonderful NamedEntityTag=O]
+[Text=summer CharacterOffsetBegin=168 CharacterOffsetEnd=174 PartOfSpeech=NN Lemma=summer NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-SU Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-SU">summer</TIMEX3>]
+[Text=night CharacterOffsetBegin=175 CharacterOffsetEnd=180 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t2" type="TIME" value="TNI">night</TIMEX3>]
+[Text=and CharacterOffsetBegin=181 CharacterOffsetEnd=184 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=185 CharacterOffsetEnd=187 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=188 CharacterOffsetEnd=191 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=greatly CharacterOffsetBegin=192 CharacterOffsetEnd=199 PartOfSpeech=RB Lemma=greatly NamedEntityTag=O]
+[Text=impressed CharacterOffsetBegin=200 CharacterOffsetEnd=209 PartOfSpeech=JJ Lemma=impressed NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=209 CharacterOffsetEnd=212 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ wonderful) (NN summer))
+        (SBAR
+          (S
+            (NP
+              (NP (NN night))
+              (CC and)
+              (NP (PRP he)))
+            (VP (VBD was)
+              (ADJP (RB greatly) (JJ impressed)))))))
+    (: ...)))
+
+root(ROOT-0, summer-5)
+nsubj(summer-5, It-1)
+cop(summer-5, was-2)
+det(summer-5, a-3)
+amod(summer-5, wonderful-4)
+nsubj(impressed-11, night-6)
+cc(night-6, and-7)
+conj:and(night-6, he-8)
+nsubj(impressed-11, he-8)
+cop(impressed-11, was-9)
+advmod(impressed-11, greatly-10)
+acl:relcl(summer-5, impressed-11)
+punct(summer-5, ...-12)
+
+Coreference set:
+	(2,8,[8,9]) -> (1,4,[3,5]), that is: "he" -> "Horst Walter"

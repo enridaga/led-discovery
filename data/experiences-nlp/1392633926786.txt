@@ -1,0 +1,328 @@
+Sentence #1 (12 tokens):
+About noon the English legate commenced the high mass De Trinitate.
+[Text=About CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=about NamedEntityTag=TIME NormalizedNamedEntityTag=T12:00 Timex=<TIMEX3 tid="t1" type="TIME" value="T12:00">About noon</TIMEX3>]
+[Text=noon CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=noon NamedEntityTag=TIME NormalizedNamedEntityTag=T12:00 Timex=<TIMEX3 tid="t1" type="TIME" value="T12:00">About noon</TIMEX3>]
+[Text=the CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=English CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=English NamedEntityTag=MISC]
+[Text=legate CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=legate NamedEntityTag=O]
+[Text=commenced CharacterOffsetBegin=30 CharacterOffsetEnd=39 PartOfSpeech=VBD Lemma=commence NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=high CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=high NamedEntityTag=O]
+[Text=mass CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=mass NamedEntityTag=O]
+[Text=De CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=De NamedEntityTag=O]
+[Text=Trinitate CharacterOffsetBegin=57 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Trinitate NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN About)
+      (NP (NN noon)))
+    (NP (DT the) (NNP English) (NN legate))
+    (VP (VBD commenced)
+      (NP (DT the) (JJ high) (NN mass) (NNP De) (NNP Trinitate)))
+    (. .)))
+
+root(ROOT-0, commenced-6)
+case(noon-2, About-1)
+nmod:about(commenced-6, noon-2)
+det(legate-5, the-3)
+compound(legate-5, English-4)
+nsubj(commenced-6, legate-5)
+det(Trinitate-11, the-7)
+amod(Trinitate-11, high-8)
+compound(Trinitate-11, mass-9)
+compound(Trinitate-11, De-10)
+dobj(commenced-6, Trinitate-11)
+punct(commenced-6, .-12)
+
+Sentence #2 (16 tokens):
+The first introit was sung by the English chanters, the second by the French.
+[Text=The CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=introit CharacterOffsetBegin=79 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=introit NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=sung CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=VBN Lemma=sing NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=English CharacterOffsetBegin=103 CharacterOffsetEnd=110 PartOfSpeech=NNP Lemma=English NamedEntityTag=MISC]
+[Text=chanters CharacterOffsetBegin=111 CharacterOffsetEnd=119 PartOfSpeech=NNS Lemma=chanter NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=second CharacterOffsetBegin=125 CharacterOffsetEnd=131 PartOfSpeech=JJ Lemma=second NamedEntityTag=ORDINAL NormalizedNamedEntityTag=2.0]
+[Text=by CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=French CharacterOffsetBegin=139 CharacterOffsetEnd=145 PartOfSpeech=NNP Lemma=French NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (JJ first) (NN introit))
+    (VP (VBD was)
+      (VP (VBN sung)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NNP English) (NNS chanters))
+            (, ,)
+            (NP (DT the) (JJ second))))
+        (PP (IN by)
+          (NP (DT the) (NNP French)))))
+    (. .)))
+
+root(ROOT-0, sung-5)
+det(introit-3, The-1)
+amod(introit-3, first-2)
+nsubjpass(sung-5, introit-3)
+auxpass(sung-5, was-4)
+case(chanters-9, by-6)
+det(chanters-9, the-7)
+compound(chanters-9, English-8)
+nmod:agent(sung-5, chanters-9)
+punct(chanters-9, ,-10)
+det(second-12, the-11)
+appos(chanters-9, second-12)
+case(French-15, by-13)
+det(French-15, the-14)
+nmod:agent(sung-5, French-15)
+punct(sung-5, .-16)
+
+Sentence #3 (20 tokens):
+They had arranged that when the French organist played, the French chanters should sing, and vice versa.
+[Text=They CharacterOffsetBegin=148 CharacterOffsetEnd=152 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=153 CharacterOffsetEnd=156 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=arranged CharacterOffsetBegin=157 CharacterOffsetEnd=165 PartOfSpeech=VBN Lemma=arrange NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=166 CharacterOffsetEnd=170 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=171 CharacterOffsetEnd=175 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=176 CharacterOffsetEnd=179 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=French CharacterOffsetBegin=180 CharacterOffsetEnd=186 PartOfSpeech=JJ Lemma=french NamedEntityTag=MISC]
+[Text=organist CharacterOffsetBegin=187 CharacterOffsetEnd=195 PartOfSpeech=NN Lemma=organist NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=196 CharacterOffsetEnd=202 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=202 CharacterOffsetEnd=203 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=204 CharacterOffsetEnd=207 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=French CharacterOffsetBegin=208 CharacterOffsetEnd=214 PartOfSpeech=JJ Lemma=french NamedEntityTag=MISC]
+[Text=chanters CharacterOffsetBegin=215 CharacterOffsetEnd=223 PartOfSpeech=NNS Lemma=chanter NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=224 CharacterOffsetEnd=230 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=sing CharacterOffsetBegin=231 CharacterOffsetEnd=235 PartOfSpeech=VB Lemma=sing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=235 CharacterOffsetEnd=236 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=237 CharacterOffsetEnd=240 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=vice CharacterOffsetBegin=241 CharacterOffsetEnd=245 PartOfSpeech=NN Lemma=vice NamedEntityTag=O]
+[Text=versa CharacterOffsetBegin=246 CharacterOffsetEnd=251 PartOfSpeech=RB Lemma=versa NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=251 CharacterOffsetEnd=252 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD had)
+      (VP
+        (VP (VBN arranged)
+          (SBAR (IN that)
+            (S
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (DT the) (JJ French) (NN organist))
+                  (VP (VBD played))))
+              (, ,)
+              (NP (DT the) (JJ French) (NNS chanters))
+              (VP (MD should)
+                (VP (VB sing))))))
+        (, ,)
+        (CC and)
+        (VP
+          (NP (NN vice))
+          (ADVP (RB versa)))))
+    (. .)))
+
+root(ROOT-0, arranged-3)
+nsubj(arranged-3, They-1)
+aux(arranged-3, had-2)
+mark(sing-15, that-4)
+advmod(played-9, when-5)
+det(organist-8, the-6)
+amod(organist-8, French-7)
+nsubj(played-9, organist-8)
+advcl(sing-15, played-9)
+punct(sing-15, ,-10)
+det(chanters-13, the-11)
+amod(chanters-13, French-12)
+nsubj(sing-15, chanters-13)
+aux(sing-15, should-14)
+ccomp(arranged-3, sing-15)
+punct(arranged-3, ,-16)
+cc(arranged-3, and-17)
+conj:and(arranged-3, vice-18)
+advmod(vice-18, versa-19)
+punct(arranged-3, .-20)
+
+Sentence #4 (54 tokens):
+Pierre Mouton played the Kyrie, then the English the Gloria in Excelsis; the Patrem was sung by the French, with the King's band of cors de sabuttes and fifes, the Sanctus by the English, and the Agnus Dei by the French, who concluded with several motetts.
+[Text=Pierre CharacterOffsetBegin=254 CharacterOffsetEnd=260 PartOfSpeech=NNP Lemma=Pierre NamedEntityTag=PERSON]
+[Text=Mouton CharacterOffsetBegin=261 CharacterOffsetEnd=267 PartOfSpeech=NNP Lemma=Mouton NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=268 CharacterOffsetEnd=274 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=275 CharacterOffsetEnd=278 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Kyrie CharacterOffsetBegin=279 CharacterOffsetEnd=284 PartOfSpeech=NNP Lemma=Kyrie NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=284 CharacterOffsetEnd=285 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=286 CharacterOffsetEnd=290 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=291 CharacterOffsetEnd=294 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=English CharacterOffsetBegin=295 CharacterOffsetEnd=302 PartOfSpeech=NNP Lemma=English NamedEntityTag=MISC]
+[Text=the CharacterOffsetBegin=303 CharacterOffsetEnd=306 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Gloria CharacterOffsetBegin=307 CharacterOffsetEnd=313 PartOfSpeech=NNP Lemma=Gloria NamedEntityTag=LOCATION]
+[Text=in CharacterOffsetBegin=314 CharacterOffsetEnd=316 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Excelsis CharacterOffsetBegin=317 CharacterOffsetEnd=325 PartOfSpeech=NNP Lemma=Excelsis NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=325 CharacterOffsetEnd=326 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=327 CharacterOffsetEnd=330 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Patrem CharacterOffsetBegin=331 CharacterOffsetEnd=337 PartOfSpeech=NNP Lemma=Patrem NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=338 CharacterOffsetEnd=341 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=sung CharacterOffsetBegin=342 CharacterOffsetEnd=346 PartOfSpeech=VBN Lemma=sing NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=347 CharacterOffsetEnd=349 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=350 CharacterOffsetEnd=353 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=French CharacterOffsetBegin=354 CharacterOffsetEnd=360 PartOfSpeech=NNP Lemma=French NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=360 CharacterOffsetEnd=361 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=362 CharacterOffsetEnd=366 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=367 CharacterOffsetEnd=370 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=King CharacterOffsetBegin=371 CharacterOffsetEnd=375 PartOfSpeech=NNP Lemma=King NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=375 CharacterOffsetEnd=377 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=band CharacterOffsetBegin=378 CharacterOffsetEnd=382 PartOfSpeech=NN Lemma=band NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=383 CharacterOffsetEnd=385 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=cors CharacterOffsetBegin=386 CharacterOffsetEnd=390 PartOfSpeech=NNS Lemma=cor NamedEntityTag=O]
+[Text=de CharacterOffsetBegin=391 CharacterOffsetEnd=393 PartOfSpeech=IN Lemma=de NamedEntityTag=O]
+[Text=sabuttes CharacterOffsetBegin=394 CharacterOffsetEnd=402 PartOfSpeech=NNS Lemma=sabutte NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=403 CharacterOffsetEnd=406 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=fifes CharacterOffsetBegin=407 CharacterOffsetEnd=412 PartOfSpeech=NNS Lemma=fife NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=412 CharacterOffsetEnd=413 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=414 CharacterOffsetEnd=417 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Sanctus CharacterOffsetBegin=418 CharacterOffsetEnd=425 PartOfSpeech=NNP Lemma=Sanctus NamedEntityTag=MISC]
+[Text=by CharacterOffsetBegin=426 CharacterOffsetEnd=428 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=429 CharacterOffsetEnd=432 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=English CharacterOffsetBegin=433 CharacterOffsetEnd=440 PartOfSpeech=NNP Lemma=English NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=440 CharacterOffsetEnd=441 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=442 CharacterOffsetEnd=445 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=446 CharacterOffsetEnd=449 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Agnus CharacterOffsetBegin=450 CharacterOffsetEnd=455 PartOfSpeech=NNP Lemma=Agnus NamedEntityTag=PERSON]
+[Text=Dei CharacterOffsetBegin=456 CharacterOffsetEnd=459 PartOfSpeech=NNP Lemma=Dei NamedEntityTag=PERSON]
+[Text=by CharacterOffsetBegin=460 CharacterOffsetEnd=462 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=463 CharacterOffsetEnd=466 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=French CharacterOffsetBegin=467 CharacterOffsetEnd=473 PartOfSpeech=NNP Lemma=French NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=473 CharacterOffsetEnd=474 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=475 CharacterOffsetEnd=478 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=concluded CharacterOffsetBegin=479 CharacterOffsetEnd=488 PartOfSpeech=VBD Lemma=conclude NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=489 CharacterOffsetEnd=493 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=several CharacterOffsetBegin=494 CharacterOffsetEnd=501 PartOfSpeech=JJ Lemma=several NamedEntityTag=O]
+[Text=motetts CharacterOffsetBegin=502 CharacterOffsetEnd=509 PartOfSpeech=NNS Lemma=motett NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=509 CharacterOffsetEnd=510 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Pierre) (NNP Mouton))
+      (VP (VBD played)
+        (NP
+          (NP (DT the) (NNP Kyrie))
+          (, ,) (RB then)
+          (NP (DT the) (NNP English)))
+        (NP
+          (NP (DT the) (NNP Gloria))
+          (PP (IN in)
+            (NP (NNP Excelsis))))))
+    (: ;)
+    (S
+      (NP (DT the) (NNP Patrem))
+      (VP (VBD was)
+        (VP (VBN sung)
+          (PP (IN by)
+            (NP (DT the) (NNP French)))
+          (, ,)
+          (PP (IN with)
+            (NP
+              (NP
+                (NP (DT the) (NNP King) (POS 's))
+                (NN band))
+              (PP (IN of)
+                (NP
+                  (NP
+                    (NP (NNS cors))
+                    (PP (IN de)
+                      (NP (NNS sabuttes)
+                        (CC and)
+                        (NNS fifes))))
+                  (, ,)
+                  (NP
+                    (NP (DT the) (NNP Sanctus))
+                    (PP (IN by)
+                      (NP (DT the) (NNP English))))
+                  (, ,)
+                  (CC and)
+                  (NP
+                    (NP (DT the) (NNP Agnus) (NNP Dei))
+                    (PP (IN by)
+                      (NP (DT the) (NNP French))))))
+              (, ,)
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD concluded)
+                    (PP (IN with)
+                      (NP (JJ several) (NNS motetts)))))))))))
+    (. .)))
+
+root(ROOT-0, played-3)
+compound(Mouton-2, Pierre-1)
+nsubj(played-3, Mouton-2)
+det(Kyrie-5, the-4)
+iobj(played-3, Kyrie-5)
+punct(Kyrie-5, ,-6)
+advmod(English-9, then-7)
+det(English-9, the-8)
+appos(Kyrie-5, English-9)
+det(Gloria-11, the-10)
+dobj(played-3, Gloria-11)
+case(Excelsis-13, in-12)
+nmod:in(Gloria-11, Excelsis-13)
+punct(played-3, ;-14)
+det(Patrem-16, the-15)
+nsubjpass(sung-18, Patrem-16)
+auxpass(sung-18, was-17)
+parataxis(played-3, sung-18)
+case(French-21, by-19)
+det(French-21, the-20)
+nmod:agent(sung-18, French-21)
+punct(sung-18, ,-22)
+case(band-27, with-23)
+det(King-25, the-24)
+nmod:poss(band-27, King-25)
+case(King-25, 's-26)
+nmod:with(sung-18, band-27)
+nsubj(concluded-50, band-27)
+case(cors-29, of-28)
+nmod:of(band-27, cors-29)
+case(sabuttes-31, de-30)
+nmod:de(cors-29, sabuttes-31)
+cc(sabuttes-31, and-32)
+nmod:de(cors-29, fifes-33)
+conj:and(sabuttes-31, fifes-33)
+punct(cors-29, ,-34)
+det(Sanctus-36, the-35)
+nmod:of(band-27, Sanctus-36)
+conj:and(cors-29, Sanctus-36)
+case(English-39, by-37)
+det(English-39, the-38)
+nmod:by(Sanctus-36, English-39)
+punct(cors-29, ,-40)
+cc(cors-29, and-41)
+det(Dei-44, the-42)
+compound(Dei-44, Agnus-43)
+nmod:of(band-27, Dei-44)
+conj:and(cors-29, Dei-44)
+case(French-47, by-45)
+det(French-47, the-46)
+nmod:by(Dei-44, French-47)
+punct(band-27, ,-48)
+ref(band-27, who-49)
+acl:relcl(band-27, concluded-50)
+case(motetts-53, with-51)
+amod(motetts-53, several-52)
+nmod:with(concluded-50, motetts-53)
+punct(played-3, .-54)
+
+Coreference set:
+	(3,1,[1,2]) -> (2,9,[7,10]), that is: "They" -> "the English chanters"
+Coreference set:
+	(4,21,[20,22]) -> (2,15,[14,16]), that is: "the French" -> "the French"
+	(4,47,[46,48]) -> (2,15,[14,16]), that is: "the French" -> "the French"
+Coreference set:
+	(4,39,[38,40]) -> (4,9,[8,10]), that is: "the English" -> "the English"

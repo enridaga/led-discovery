@@ -1,0 +1,351 @@
+Sentence #1 (15 tokens):
+There was a record shop where we all used to go on Saturday mornings.
+[Text=There CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=record CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=record NamedEntityTag=O]
+[Text=shop CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=shop NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=VBN Lemma=use NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Saturday CharacterOffsetBegin=51 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Saturday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-6TMO Timex=<TIMEX3 tid="t1" type="TIME" value="XXXX-WXX-6TMO">Saturday mornings</TIMEX3>]
+[Text=mornings CharacterOffsetBegin=60 CharacterOffsetEnd=68 PartOfSpeech=NNS Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=XXXX-WXX-6TMO Timex=<TIMEX3 tid="t1" type="TIME" value="XXXX-WXX-6TMO">Saturday mornings</TIMEX3>]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN record) (NN shop))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP we))
+            (ADVP (DT all))
+            (VP (VBN used)
+              (S
+                (VP (TO to)
+                  (VP (VB go)
+                    (PP (IN on)
+                      (NP (NNP Saturday) (NNS mornings)))))))))))
+    (. .)))
+
+root(ROOT-0, was-2)
+expl(was-2, There-1)
+det(shop-5, a-3)
+compound(shop-5, record-4)
+nsubj(was-2, shop-5)
+advmod(used-9, where-6)
+nsubj(used-9, we-7)
+nsubj:xsubj(go-11, we-7)
+advmod(used-9, all-8)
+acl:relcl(shop-5, used-9)
+mark(go-11, to-10)
+xcomp(used-9, go-11)
+case(mornings-14, on-12)
+compound(mornings-14, Saturday-13)
+nmod:on(go-11, mornings-14)
+punct(was-2, .-15)
+
+Sentence #2 (14 tokens):
+You could ask to listen to a record in one of the booths.
+[Text=You CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=ask CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=VB Lemma=ask NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=87 CharacterOffsetEnd=93 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=record CharacterOffsetBegin=99 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=record NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=116 CharacterOffsetEnd=119 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=booths CharacterOffsetBegin=120 CharacterOffsetEnd=126 PartOfSpeech=NNS Lemma=booth NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD could)
+      (VP (VB ask)
+        (S
+          (VP (TO to)
+            (VP (VB listen)
+              (PP (TO to)
+                (NP
+                  (NP (DT a) (NN record))
+                  (PP (IN in)
+                    (NP
+                      (NP (CD one))
+                      (PP (IN of)
+                        (NP (DT the) (NNS booths))))))))))))
+    (. .)))
+
+root(ROOT-0, ask-3)
+nsubj(ask-3, You-1)
+nsubj:xsubj(listen-5, You-1)
+aux(ask-3, could-2)
+mark(listen-5, to-4)
+xcomp(ask-3, listen-5)
+case(record-8, to-6)
+det(record-8, a-7)
+nmod:to(listen-5, record-8)
+case(one-10, in-9)
+det:qmod(booths-13, one-10)
+mwe(one-10, of-11)
+det(booths-13, the-12)
+nmod(record-8, booths-13)
+punct(ask-3, .-14)
+
+Sentence #3 (36 tokens):
+These were not closed off and more than one person could squeeze in... It was the whole thing, looking through the racks of records together, talking about the singers and so on.
+[Text=These CharacterOffsetBegin=128 CharacterOffsetEnd=133 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=closed CharacterOffsetBegin=143 CharacterOffsetEnd=149 PartOfSpeech=VBN Lemma=close NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=RB Lemma=off NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=158 CharacterOffsetEnd=162 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=163 CharacterOffsetEnd=167 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=>1.0]
+[Text=person CharacterOffsetBegin=172 CharacterOffsetEnd=178 PartOfSpeech=NN Lemma=person NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=179 CharacterOffsetEnd=184 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=squeeze CharacterOffsetBegin=185 CharacterOffsetEnd=192 PartOfSpeech=VB Lemma=squeeze NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=193 CharacterOffsetEnd=195 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=It CharacterOffsetBegin=199 CharacterOffsetEnd=201 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=202 CharacterOffsetEnd=205 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=206 CharacterOffsetEnd=209 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=210 CharacterOffsetEnd=215 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=216 CharacterOffsetEnd=221 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=221 CharacterOffsetEnd=222 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=looking CharacterOffsetBegin=223 CharacterOffsetEnd=230 PartOfSpeech=VBG Lemma=look NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=231 CharacterOffsetEnd=238 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=239 CharacterOffsetEnd=242 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=racks CharacterOffsetBegin=243 CharacterOffsetEnd=248 PartOfSpeech=NNS Lemma=rack NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=249 CharacterOffsetEnd=251 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=records CharacterOffsetBegin=252 CharacterOffsetEnd=259 PartOfSpeech=NNS Lemma=record NamedEntityTag=O]
+[Text=together CharacterOffsetBegin=260 CharacterOffsetEnd=268 PartOfSpeech=RB Lemma=together NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=268 CharacterOffsetEnd=269 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=270 CharacterOffsetEnd=277 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=278 CharacterOffsetEnd=283 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=284 CharacterOffsetEnd=287 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=singers CharacterOffsetBegin=288 CharacterOffsetEnd=295 PartOfSpeech=NNS Lemma=singer NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=296 CharacterOffsetEnd=299 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=300 CharacterOffsetEnd=302 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=303 CharacterOffsetEnd=305 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=305 CharacterOffsetEnd=306 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (S
+        (NP (DT These))
+        (VP (VBD were) (RB not)
+          (VP (VBN closed)
+            (ADVP (RB off)))))
+      (CC and)
+      (S
+        (NP
+          (QP (JJR more) (IN than) (CD one))
+          (NN person))
+        (VP (MD could)
+          (VP (VB squeeze)
+            (PP (IN in))))))
+    (: ...)
+    (S
+      (NP (PRP It))
+      (VP (VBD was)
+        (NP (DT the) (JJ whole) (NN thing))
+        (, ,)
+        (S
+          (VP
+            (VP (VBG looking)
+              (PP (IN through)
+                (NP
+                  (NP (DT the) (NNS racks))
+                  (PP (IN of)
+                    (NP (NNS records)))))
+              (ADVP (RB together)))
+            (, ,)
+            (VP (VBG talking)
+              (PP (IN about)
+                (NP (DT the) (NNS singers)))
+              (ADVP (CC and)
+                (RB so) (IN on)))))))
+    (. .)))
+
+root(ROOT-0, closed-4)
+nsubjpass(closed-4, These-1)
+auxpass(closed-4, were-2)
+neg(closed-4, not-3)
+advmod(closed-4, off-5)
+cc(closed-4, and-6)
+advmod(one-9, more-7)
+mwe(more-7, than-8)
+nummod(person-10, one-9)
+nsubj(squeeze-12, person-10)
+aux(squeeze-12, could-11)
+conj:and(closed-4, squeeze-12)
+nmod(squeeze-12, in-13)
+punct(closed-4, ...-14)
+nsubj(thing-19, It-15)
+cop(thing-19, was-16)
+det(thing-19, the-17)
+amod(thing-19, whole-18)
+parataxis(closed-4, thing-19)
+punct(thing-19, ,-20)
+dep(thing-19, looking-21)
+case(racks-24, through-22)
+det(racks-24, the-23)
+nmod:through(looking-21, racks-24)
+case(records-26, of-25)
+nmod:of(racks-24, records-26)
+advmod(looking-21, together-27)
+punct(looking-21, ,-28)
+dep(looking-21, talking-29)
+case(singers-32, about-30)
+det(singers-32, the-31)
+nmod:about(talking-29, singers-32)
+cc(so-34, and-33)
+advmod(talking-29, so-34)
+case(so-34, on-35)
+punct(closed-4, .-36)
+
+Sentence #4 (16 tokens):
+It was how I spent most of my Saturday mornings during 1971 and ’72.
+[Text=It CharacterOffsetBegin=307 CharacterOffsetEnd=309 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=310 CharacterOffsetEnd=313 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=314 CharacterOffsetEnd=317 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=318 CharacterOffsetEnd=319 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=spent CharacterOffsetBegin=320 CharacterOffsetEnd=325 PartOfSpeech=VBD Lemma=spend NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=326 CharacterOffsetEnd=330 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=331 CharacterOffsetEnd=333 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=334 CharacterOffsetEnd=336 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=Saturday CharacterOffsetBegin=337 CharacterOffsetEnd=345 PartOfSpeech=NNP Lemma=Saturday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-6TMO Timex=<TIMEX3 tid="t2" type="TIME" value="XXXX-WXX-6TMO">Saturday mornings</TIMEX3>]
+[Text=mornings CharacterOffsetBegin=346 CharacterOffsetEnd=354 PartOfSpeech=NNS Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=XXXX-WXX-6TMO Timex=<TIMEX3 tid="t2" type="TIME" value="XXXX-WXX-6TMO">Saturday mornings</TIMEX3>]
+[Text=during CharacterOffsetBegin=355 CharacterOffsetEnd=361 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=1971 CharacterOffsetBegin=362 CharacterOffsetEnd=366 PartOfSpeech=CD Lemma=1971 NamedEntityTag=DATE NormalizedNamedEntityTag=1971 Timex=<TIMEX3 tid="t3" type="DATE" value="1971">1971</TIMEX3>]
+[Text=and CharacterOffsetBegin=367 CharacterOffsetEnd=370 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=371 CharacterOffsetEnd=372 PartOfSpeech='' Lemma=' NamedEntityTag=DATE NormalizedNamedEntityTag=XX72 Timex=<TIMEX3 tid="t4" type="DATE" value="XX72">￢ﾀﾙ72</TIMEX3>]
+[Text=72 CharacterOffsetBegin=372 CharacterOffsetEnd=374 PartOfSpeech=CD Lemma=72 NamedEntityTag=DATE NormalizedNamedEntityTag=XX72 Timex=<TIMEX3 tid="t4" type="DATE" value="XX72">￢ﾀﾙ72</TIMEX3>]
+[Text=. CharacterOffsetBegin=374 CharacterOffsetEnd=375 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (PRP I))
+          (VP
+            (VP (VBD spent)
+              (NP
+                (NP (JJS most))
+                (PP (IN of)
+                  (NP (PRP$ my) (NNP Saturday) (NNS mornings))))
+              (PP (IN during)
+                (NP (CD 1971))))
+            (CC and)
+            (VP ('' ')
+              (NP-TMP (CD 72)))))))
+    (. .)))
+
+root(ROOT-0, was-2)
+nsubj(was-2, It-1)
+advmod(spent-5, how-3)
+nsubj(spent-5, I-4)
+ccomp(was-2, spent-5)
+dobj(spent-5, most-6)
+case(mornings-10, of-7)
+nmod:poss(mornings-10, my-8)
+compound(mornings-10, Saturday-9)
+nmod:of(most-6, mornings-10)
+case(1971-12, during-11)
+nmod:during(spent-5, 1971-12)
+cc(spent-5, and-13)
+punct(72-15, '-14)
+ccomp(was-2, 72-15)
+conj:and(spent-5, 72-15)
+punct(was-2, .-16)
+
+Sentence #5 (19 tokens):
+We couldn’t often afford LPs and even buying single 45s was not something we did every week.
+[Text=We CharacterOffsetBegin=376 CharacterOffsetEnd=378 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=379 CharacterOffsetEnd=384 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=384 CharacterOffsetEnd=387 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=often CharacterOffsetBegin=388 CharacterOffsetEnd=393 PartOfSpeech=RB Lemma=often NamedEntityTag=O]
+[Text=afford CharacterOffsetBegin=394 CharacterOffsetEnd=400 PartOfSpeech=VB Lemma=afford NamedEntityTag=O]
+[Text=LPs CharacterOffsetBegin=401 CharacterOffsetEnd=404 PartOfSpeech=NNS Lemma=lp NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=405 CharacterOffsetEnd=408 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=409 CharacterOffsetEnd=413 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=buying CharacterOffsetBegin=414 CharacterOffsetEnd=420 PartOfSpeech=VBG Lemma=buy NamedEntityTag=O]
+[Text=single CharacterOffsetBegin=421 CharacterOffsetEnd=427 PartOfSpeech=JJ Lemma=single NamedEntityTag=O]
+[Text=45s CharacterOffsetBegin=428 CharacterOffsetEnd=431 PartOfSpeech=NNS Lemma=45 NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=432 CharacterOffsetEnd=435 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=436 CharacterOffsetEnd=439 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=440 CharacterOffsetEnd=449 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=450 CharacterOffsetEnd=452 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=453 CharacterOffsetEnd=456 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=457 CharacterOffsetEnd=462 PartOfSpeech=DT Lemma=every NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1W" quant="every" tid="t5" type="SET" value="P1W">every week</TIMEX3>]
+[Text=week CharacterOffsetBegin=463 CharacterOffsetEnd=467 PartOfSpeech=NN Lemma=week NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1W" quant="every" tid="t5" type="SET" value="P1W">every week</TIMEX3>]
+[Text=. CharacterOffsetBegin=467 CharacterOffsetEnd=468 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (MD could) (RB n't)
+        (ADVP (RB often))
+        (VP (VB afford)
+          (NP (NNS LPs)))))
+    (CC and)
+    (S
+      (ADVP (RB even))
+      (VP (VBG buying)
+        (SBAR
+          (S
+            (NP (JJ single) (NNS 45s))
+            (VP (VBD was) (RB not)
+              (NP
+                (NP (NN something))
+                (SBAR
+                  (S
+                    (NP (PRP we))
+                    (VP (VBD did)
+                      (NP-TMP (DT every) (NN week)))))))))))
+    (. .)))
+
+root(ROOT-0, afford-5)
+nsubj(afford-5, We-1)
+nsubj(buying-9, We-1)
+aux(afford-5, could-2)
+neg(afford-5, n't-3)
+advmod(afford-5, often-4)
+dobj(afford-5, LPs-6)
+cc(afford-5, and-7)
+advmod(buying-9, even-8)
+conj:and(afford-5, buying-9)
+amod(45s-11, single-10)
+nsubj(something-14, 45s-11)
+cop(something-14, was-12)
+neg(something-14, not-13)
+ccomp(buying-9, something-14)
+nsubj(did-16, we-15)
+acl:relcl(something-14, did-16)
+det(week-18, every-17)
+nmod:tmod(did-16, week-18)
+punct(afford-5, .-19)
+
+Coreference set:
+	(1,14,[13,15]) -> (4,10,[8,11]), that is: "Saturday mornings" -> "my Saturday mornings"
+Coreference set:
+	(3,1,[1,2]) -> (3,19,[17,20]), that is: "These" -> "the whole thing"
+	(3,15,[15,16]) -> (3,19,[17,20]), that is: "It" -> "the whole thing"
+	(4,1,[1,2]) -> (3,19,[17,20]), that is: "It" -> "the whole thing"
+Coreference set:
+	(4,8,[8,9]) -> (4,4,[4,5]), that is: "my" -> "I"
+Coreference set:
+	(5,15,[15,16]) -> (5,1,[1,2]), that is: "we" -> "We"

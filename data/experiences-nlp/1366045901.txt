@@ -1,0 +1,155 @@
+Sentence #1 (25 tokens):
+Listen on radio at 9.25 to band of Polish Rifle Brigade playing some rousing marches, good folk dances and some waltzes equalling Strauss.
+[Text=Listen CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=radio CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=radio NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=9.25 CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=CD Lemma=9.25 NamedEntityTag=NUMBER NormalizedNamedEntityTag=9.25]
+[Text=to CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=band CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=band NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Polish CharacterOffsetBegin=35 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=polish NamedEntityTag=O]
+[Text=Rifle CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Rifle NamedEntityTag=O]
+[Text=Brigade CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=brigade NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=56 CharacterOffsetEnd=63 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=rousing CharacterOffsetBegin=69 CharacterOffsetEnd=76 PartOfSpeech=JJ Lemma=rousing NamedEntityTag=O]
+[Text=marches CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=NNS Lemma=march NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=folk CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=folk NamedEntityTag=O]
+[Text=dances CharacterOffsetBegin=96 CharacterOffsetEnd=102 PartOfSpeech=NNS Lemma=dance NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=107 CharacterOffsetEnd=111 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=waltzes CharacterOffsetBegin=112 CharacterOffsetEnd=119 PartOfSpeech=NNS Lemma=waltz NamedEntityTag=O]
+[Text=equalling CharacterOffsetBegin=120 CharacterOffsetEnd=129 PartOfSpeech=VBG Lemma=equal NamedEntityTag=O]
+[Text=Strauss CharacterOffsetBegin=130 CharacterOffsetEnd=137 PartOfSpeech=NNP Lemma=Strauss NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=137 CharacterOffsetEnd=138 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Listen)
+      (PP (IN on)
+        (NP
+          (NP (NN radio))
+          (PP (IN at)
+            (NP (CD 9.25)))))
+      (PP (TO to)
+        (NP
+          (NP (NN band))
+          (PP (IN of)
+            (NP (JJ Polish) (NNP Rifle) (NN Brigade)))
+          (VP (VBG playing)
+            (NP
+              (NP (DT some) (JJ rousing) (NNS marches))
+              (, ,)
+              (NP (JJ good) (NN folk) (NNS dances))
+              (CC and)
+              (NP (DT some) (NNS waltzes)))
+            (S
+              (VP (VBG equalling)
+                (NP (NNP Strauss))))))))
+    (. .)))
+
+root(ROOT-0, Listen-1)
+case(radio-3, on-2)
+nmod:on(Listen-1, radio-3)
+case(9.25-5, at-4)
+nmod:at(radio-3, 9.25-5)
+case(band-7, to-6)
+nmod:to(Listen-1, band-7)
+case(Brigade-11, of-8)
+amod(Brigade-11, Polish-9)
+compound(Brigade-11, Rifle-10)
+nmod:of(band-7, Brigade-11)
+acl(band-7, playing-12)
+det(marches-15, some-13)
+amod(marches-15, rousing-14)
+dobj(playing-12, marches-15)
+punct(marches-15, ,-16)
+amod(dances-19, good-17)
+compound(dances-19, folk-18)
+dobj(playing-12, dances-19)
+conj:and(marches-15, dances-19)
+cc(marches-15, and-20)
+det(waltzes-22, some-21)
+dobj(playing-12, waltzes-22)
+conj:and(marches-15, waltzes-22)
+advcl(playing-12, equalling-23)
+dobj(equalling-23, Strauss-24)
+punct(Listen-1, .-25)
+
+Sentence #2 (23 tokens):
+Wanted to hear Beethoven's 5th Symphony (for first time) on Home Service but wd not switch the Band off.
+[Text=Wanted CharacterOffsetBegin=139 CharacterOffsetEnd=145 PartOfSpeech=VBN Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=146 CharacterOffsetEnd=148 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=149 CharacterOffsetEnd=153 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=Beethoven CharacterOffsetBegin=154 CharacterOffsetEnd=163 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=163 CharacterOffsetEnd=165 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=5th CharacterOffsetBegin=166 CharacterOffsetEnd=169 PartOfSpeech=JJ Lemma=5th NamedEntityTag=ORDINAL NormalizedNamedEntityTag=5.0]
+[Text=Symphony CharacterOffsetBegin=170 CharacterOffsetEnd=178 PartOfSpeech=NNP Lemma=Symphony NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=179 CharacterOffsetEnd=180 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=180 CharacterOffsetEnd=183 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=184 CharacterOffsetEnd=189 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=time CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=194 CharacterOffsetEnd=195 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=196 CharacterOffsetEnd=198 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Home CharacterOffsetBegin=199 CharacterOffsetEnd=203 PartOfSpeech=NNP Lemma=Home NamedEntityTag=O]
+[Text=Service CharacterOffsetBegin=204 CharacterOffsetEnd=211 PartOfSpeech=NNP Lemma=Service NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=212 CharacterOffsetEnd=215 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=wd CharacterOffsetBegin=216 CharacterOffsetEnd=218 PartOfSpeech=VBD Lemma=wd NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=219 CharacterOffsetEnd=222 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=switch CharacterOffsetBegin=223 CharacterOffsetEnd=229 PartOfSpeech=VB Lemma=switch NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=230 CharacterOffsetEnd=233 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Band CharacterOffsetBegin=234 CharacterOffsetEnd=238 PartOfSpeech=NN Lemma=band NamedEntityTag=MISC]
+[Text=off CharacterOffsetBegin=239 CharacterOffsetEnd=242 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=242 CharacterOffsetEnd=243 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP
+      (VP (VBN Wanted)
+        (S
+          (VP (TO to)
+            (VP (VB hear)
+              (NP
+                (NP
+                  (NP (NNP Beethoven) (POS 's))
+                  (JJ 5th) (NNP Symphony))
+                (PRN (-LRB- -LRB-)
+                  (PP (IN for)
+                    (NP (JJ first) (NN time)))
+                  (-RRB- -RRB-)))
+              (PP (IN on)
+                (NP (NNP Home) (NNP Service)))))))
+      (CC but)
+      (VP (VBD wd) (RB not)
+        (VP (VB switch)
+          (NP (DT the) (NN Band))
+          (PRT (RP off)))))
+    (. .)))
+
+root(ROOT-0, Wanted-1)
+mark(hear-3, to-2)
+xcomp(Wanted-1, hear-3)
+nmod:poss(Symphony-7, Beethoven-4)
+case(Beethoven-4, 's-5)
+amod(Symphony-7, 5th-6)
+dobj(hear-3, Symphony-7)
+punct(time-11, -LRB--8)
+case(time-11, for-9)
+amod(time-11, first-10)
+nmod:for(Symphony-7, time-11)
+punct(time-11, -RRB--12)
+case(Service-15, on-13)
+compound(Service-15, Home-14)
+nmod:on(hear-3, Service-15)
+cc(Wanted-1, but-16)
+conj:but(Wanted-1, wd-17)
+neg(wd-17, not-18)
+dep(wd-17, switch-19)
+det(Band-21, the-20)
+dobj(switch-19, Band-21)
+compound:prt(switch-19, off-22)
+punct(Wanted-1, .-23)
+
+Coreference set:
+	(1,7,[7,25]) -> (2,21,[20,22]), that is: "band of Polish Rifle Brigade playing some rousing marches , good folk dances and some waltzes equalling Strauss" -> "the Band"

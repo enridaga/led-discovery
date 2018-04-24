@@ -1,0 +1,413 @@
+Sentence #1 (14 tokens):
+A wild young soldier was induced to attend a Gospel meeting in London.
+[Text=A CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=wild CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=JJ Lemma=wild NamedEntityTag=O]
+[Text=young CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=young NamedEntityTag=O]
+[Text=soldier CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=soldier NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=induced CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=VBN Lemma=induce NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=attend CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=VB Lemma=attend NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Gospel CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=gospel NamedEntityTag=O]
+[Text=meeting CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=meeting NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=London CharacterOffsetBegin=63 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=London NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT A) (JJ wild) (JJ young) (NN soldier))
+    (VP (VBD was)
+      (VP (VBN induced)
+        (S
+          (VP (TO to)
+            (VP (VB attend)
+              (NP (DT a) (NN Gospel) (NN meeting))
+              (PP (IN in)
+                (NP (NNP London))))))))
+    (. .)))
+
+root(ROOT-0, induced-6)
+det(soldier-4, A-1)
+amod(soldier-4, wild-2)
+amod(soldier-4, young-3)
+nsubjpass(induced-6, soldier-4)
+nsubj:xsubj(attend-8, soldier-4)
+auxpass(induced-6, was-5)
+mark(attend-8, to-7)
+xcomp(induced-6, attend-8)
+det(meeting-11, a-9)
+compound(meeting-11, Gospel-10)
+dobj(attend-8, meeting-11)
+case(London-13, in-12)
+nmod:in(attend-8, London-13)
+punct(induced-6, .-14)
+
+Sentence #2 (16 tokens):
+As he entered, the congregation was singing " Are you coming Home to-night ? "
+[Text=As CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=entered CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=VBD Lemma=enter NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=congregation CharacterOffsetBegin=90 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=congregation NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=107 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=singing NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=Are CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=coming CharacterOffsetBegin=125 CharacterOffsetEnd=131 PartOfSpeech=VBG Lemma=come NamedEntityTag=O]
+[Text=Home CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=NNP Lemma=Home NamedEntityTag=O]
+[Text=to-night CharacterOffsetBegin=137 CharacterOffsetEnd=145 PartOfSpeech=NN Lemma=to-night NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP he))
+        (VP (VBD entered))))
+    (, ,)
+    (NP (DT the) (NN congregation))
+    (VP (VBD was)
+      (NP
+        (NP (NN singing))
+        ('' '')
+        (SBAR
+          (S
+            (VP (VBP Are)
+              (S
+                (NP (PRP you))
+                (VP (VBG coming)
+                  (NP (NNP Home) (NN to-night)))))))))
+    (. ?) ('' '')))
+
+root(ROOT-0, singing-8)
+mark(entered-3, As-1)
+nsubj(entered-3, he-2)
+advcl:as(singing-8, entered-3)
+punct(singing-8, ,-4)
+det(congregation-6, the-5)
+nsubj(singing-8, congregation-6)
+cop(singing-8, was-7)
+punct(singing-8, ''-9)
+acl:relcl(singing-8, Are-10)
+nsubj(coming-12, you-11)
+dep(Are-10, coming-12)
+compound(to-night-14, Home-13)
+dobj(coming-12, to-night-14)
+punct(singing-8, ?-15)
+punct(singing-8, ''-16)
+
+Sentence #3 (9 tokens):
+The song made a deep impression upon him.
+[Text=The CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=song CharacterOffsetBegin=154 CharacterOffsetEnd=158 PartOfSpeech=NN Lemma=song NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=159 CharacterOffsetEnd=163 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=164 CharacterOffsetEnd=165 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=deep CharacterOffsetBegin=166 CharacterOffsetEnd=170 PartOfSpeech=JJ Lemma=deep NamedEntityTag=O]
+[Text=impression CharacterOffsetBegin=171 CharacterOffsetEnd=181 PartOfSpeech=NN Lemma=impression NamedEntityTag=O]
+[Text=upon CharacterOffsetBegin=182 CharacterOffsetEnd=186 PartOfSpeech=IN Lemma=upon NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=187 CharacterOffsetEnd=190 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=190 CharacterOffsetEnd=191 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NN song))
+    (VP (VBD made)
+      (NP (DT a) (JJ deep) (NN impression))
+      (PP (IN upon)
+        (NP (PRP him))))
+    (. .)))
+
+root(ROOT-0, made-3)
+det(song-2, The-1)
+nsubj(made-3, song-2)
+det(impression-6, a-4)
+amod(impression-6, deep-5)
+dobj(made-3, impression-6)
+case(him-8, upon-7)
+nmod:upon(made-3, him-8)
+punct(made-3, .-9)
+
+Sentence #4 (18 tokens):
+He came back the next night, and he continued to attend until he was saved. "
+[Text=He CharacterOffsetBegin=192 CharacterOffsetEnd=194 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=came CharacterOffsetBegin=195 CharacterOffsetEnd=199 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=200 CharacterOffsetEnd=204 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=205 CharacterOffsetEnd=208 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=NEXT_IMMEDIATE NI Timex=<TIMEX3 alt_value="NEXT_IMMEDIATE NI" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the next night</TIMEX3>]
+[Text=next CharacterOffsetBegin=209 CharacterOffsetEnd=213 PartOfSpeech=JJ Lemma=next NamedEntityTag=TIME NormalizedNamedEntityTag=NEXT_IMMEDIATE NI Timex=<TIMEX3 alt_value="NEXT_IMMEDIATE NI" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the next night</TIMEX3>]
+[Text=night CharacterOffsetBegin=214 CharacterOffsetEnd=219 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=NEXT_IMMEDIATE NI Timex=<TIMEX3 alt_value="NEXT_IMMEDIATE NI" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the next night</TIMEX3>]
+[Text=, CharacterOffsetBegin=219 CharacterOffsetEnd=220 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=221 CharacterOffsetEnd=224 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=continued CharacterOffsetBegin=228 CharacterOffsetEnd=237 PartOfSpeech=VBD Lemma=continue NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=238 CharacterOffsetEnd=240 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=attend CharacterOffsetBegin=241 CharacterOffsetEnd=247 PartOfSpeech=VB Lemma=attend NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=248 CharacterOffsetEnd=253 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=254 CharacterOffsetEnd=256 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=saved CharacterOffsetBegin=261 CharacterOffsetEnd=266 PartOfSpeech=VBN Lemma=save NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=266 CharacterOffsetEnd=267 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=268 CharacterOffsetEnd=269 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD came)
+        (ADVP (RB back))
+        (NP-TMP (DT the) (JJ next) (NN night))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBD continued)
+        (S
+          (VP (TO to)
+            (VP (VB attend)
+              (SBAR (IN until)
+                (S
+                  (NP (PRP he))
+                  (VP (VBD was)
+                    (VP (VBN saved))))))))))
+    (. .) ('' '')))
+
+root(ROOT-0, came-2)
+nsubj(came-2, He-1)
+advmod(came-2, back-3)
+det(night-6, the-4)
+amod(night-6, next-5)
+nmod:tmod(came-2, night-6)
+punct(came-2, ,-7)
+cc(came-2, and-8)
+nsubj(continued-10, he-9)
+nsubj:xsubj(attend-12, he-9)
+conj:and(came-2, continued-10)
+mark(attend-12, to-11)
+xcomp(continued-10, attend-12)
+mark(saved-16, until-13)
+nsubjpass(saved-16, he-14)
+auxpass(saved-16, was-15)
+advcl:until(attend-12, saved-16)
+punct(came-2, .-17)
+punct(came-2, ''-18)
+
+Sentence #5 (19 tokens):
+I had to come," he said ; " that hymn would not let me stay away.
+[Text=I CharacterOffsetBegin=270 CharacterOffsetEnd=271 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=272 CharacterOffsetEnd=275 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=276 CharacterOffsetEnd=278 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=come CharacterOffsetBegin=279 CharacterOffsetEnd=283 PartOfSpeech=VB Lemma=come NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=283 CharacterOffsetEnd=284 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=284 CharacterOffsetEnd=285 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=286 CharacterOffsetEnd=288 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=289 CharacterOffsetEnd=293 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=294 CharacterOffsetEnd=295 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=296 CharacterOffsetEnd=297 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=298 CharacterOffsetEnd=302 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=hymn CharacterOffsetBegin=303 CharacterOffsetEnd=307 PartOfSpeech=NN Lemma=hymn NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=308 CharacterOffsetEnd=313 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=314 CharacterOffsetEnd=317 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=318 CharacterOffsetEnd=321 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=322 CharacterOffsetEnd=324 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=stay CharacterOffsetBegin=325 CharacterOffsetEnd=329 PartOfSpeech=VB Lemma=stay NamedEntityTag=O]
+[Text=away CharacterOffsetBegin=330 CharacterOffsetEnd=334 PartOfSpeech=RB Lemma=away NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=334 CharacterOffsetEnd=335 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (S
+        (NP (PRP I))
+        (VP (VBD had)
+          (S
+            (VP (TO to)
+              (VP (VB come))))))
+      (, ,) ('' '')
+      (NP (PRP he))
+      (VP (VBD said)))
+    (: ;) ('' '')
+    (PRN
+      (SBAR (IN that)
+        (S
+          (NP (NN hymn))
+          (VP (MD would) (RB not)
+            (VP (VB let)
+              (S
+                (NP (PRP me))
+                (VP (VB stay)
+                  (ADVP (RB away)))))))))
+    (. .)))
+
+root(ROOT-0, said-8)
+nsubj(had-2, I-1)
+nsubj:xsubj(come-4, I-1)
+ccomp(said-8, had-2)
+mark(come-4, to-3)
+xcomp(had-2, come-4)
+punct(said-8, ,-5)
+punct(said-8, ''-6)
+nsubj(said-8, he-7)
+punct(said-8, ;-9)
+punct(said-8, ''-10)
+mark(let-15, that-11)
+nsubj(let-15, hymn-12)
+aux(let-15, would-13)
+neg(let-15, not-14)
+dep(said-8, let-15)
+nsubj(stay-17, me-16)
+ccomp(let-15, stay-17)
+advmod(stay-17, away-18)
+punct(said-8, .-19)
+
+Sentence #6 (7 tokens):
+I could not sleep at night.
+[Text=I CharacterOffsetBegin=336 CharacterOffsetEnd=337 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=338 CharacterOffsetEnd=343 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=344 CharacterOffsetEnd=347 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=sleep CharacterOffsetBegin=348 CharacterOffsetEnd=353 PartOfSpeech=VB Lemma=sleep NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=354 CharacterOffsetEnd=356 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=night CharacterOffsetBegin=357 CharacterOffsetEnd=362 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t2" type="TIME" value="TNI">night</TIMEX3>]
+[Text=. CharacterOffsetBegin=362 CharacterOffsetEnd=363 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD could) (RB not)
+      (VP (VB sleep)
+        (PP (IN at)
+          (NP (NN night)))))
+    (. .)))
+
+root(ROOT-0, sleep-4)
+nsubj(sleep-4, I-1)
+aux(sleep-4, could-2)
+neg(sleep-4, not-3)
+case(night-6, at-5)
+nmod:at(sleep-4, night-6)
+punct(sleep-4, .-7)
+
+Sentence #7 (34 tokens):
+All night long that question of the song, both in the words and music, kept returning to me, demanding an answer : ' Are you coming Home to-night ? ' "
+[Text=All CharacterOffsetBegin=364 CharacterOffsetEnd=367 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=night CharacterOffsetBegin=368 CharacterOffsetEnd=373 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t3" type="TIME" value="TNI">night</TIMEX3>]
+[Text=long CharacterOffsetBegin=374 CharacterOffsetEnd=378 PartOfSpeech=RB Lemma=long NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=379 CharacterOffsetEnd=383 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=question CharacterOffsetBegin=384 CharacterOffsetEnd=392 PartOfSpeech=NN Lemma=question NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=393 CharacterOffsetEnd=395 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=396 CharacterOffsetEnd=399 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=song CharacterOffsetBegin=400 CharacterOffsetEnd=404 PartOfSpeech=NN Lemma=song NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=404 CharacterOffsetEnd=405 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=406 CharacterOffsetEnd=410 PartOfSpeech=CC Lemma=both NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=411 CharacterOffsetEnd=413 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=414 CharacterOffsetEnd=417 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=words CharacterOffsetBegin=418 CharacterOffsetEnd=423 PartOfSpeech=NNS Lemma=word NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=424 CharacterOffsetEnd=427 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=428 CharacterOffsetEnd=433 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=433 CharacterOffsetEnd=434 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=kept CharacterOffsetBegin=435 CharacterOffsetEnd=439 PartOfSpeech=VBD Lemma=keep NamedEntityTag=O]
+[Text=returning CharacterOffsetBegin=440 CharacterOffsetEnd=449 PartOfSpeech=VBG Lemma=return NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=450 CharacterOffsetEnd=452 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=453 CharacterOffsetEnd=455 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=455 CharacterOffsetEnd=456 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=demanding CharacterOffsetBegin=457 CharacterOffsetEnd=466 PartOfSpeech=VBG Lemma=demand NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=467 CharacterOffsetEnd=469 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=answer CharacterOffsetBegin=470 CharacterOffsetEnd=476 PartOfSpeech=NN Lemma=answer NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=477 CharacterOffsetEnd=478 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=479 CharacterOffsetEnd=480 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=Are CharacterOffsetBegin=481 CharacterOffsetEnd=484 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=485 CharacterOffsetEnd=488 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=coming CharacterOffsetBegin=489 CharacterOffsetEnd=495 PartOfSpeech=VBG Lemma=come NamedEntityTag=O]
+[Text=Home CharacterOffsetBegin=496 CharacterOffsetEnd=500 PartOfSpeech=NNP Lemma=Home NamedEntityTag=O]
+[Text=to-night CharacterOffsetBegin=501 CharacterOffsetEnd=509 PartOfSpeech=NN Lemma=to-night NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=510 CharacterOffsetEnd=511 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=512 CharacterOffsetEnd=513 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=514 CharacterOffsetEnd=515 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT All) (NN night))
+      (PP
+        (ADVP (RB long))
+        (IN that)
+        (NP
+          (NP (NN question))
+          (PP (IN of)
+            (NP
+              (NP
+                (NP
+                  (NP (DT the) (NN song))
+                  (, ,)
+                  (ADVP (CC both)))
+                (PP (IN in)
+                  (NP
+                    (NP (DT the) (NNS words))
+                    (CC and)
+                    (NP (NN music))))
+                (, ,)
+                (VP (VBD kept)
+                  (S
+                    (VP (VBG returning)
+                      (PP (TO to)
+                        (NP (PRP me))))))
+                (, ,))
+              (VP (VBG demanding)
+                (NP (DT an) (NN answer)))))
+          (: :) ('' '))))
+    (VP (VBP Are)
+      (S
+        (NP (PRP you))
+        (VP (VBG coming)
+          (NP (NNP Home) (NN to-night)))))
+    (. ?) ('' ') ('' '')))
+
+root(ROOT-0, Are-27)
+det(night-2, All-1)
+nsubj(Are-27, night-2)
+advmod(question-5, long-3)
+case(question-5, that-4)
+nmod:that(night-2, question-5)
+case(song-8, of-6)
+det(song-8, the-7)
+nmod:of(question-5, song-8)
+punct(song-8, ,-9)
+advmod(song-8, both-10)
+case(words-13, in-11)
+det(words-13, the-12)
+nmod:in(song-8, words-13)
+cc(words-13, and-14)
+nmod:in(song-8, music-15)
+conj:and(words-13, music-15)
+punct(song-8, ,-16)
+acl(song-8, kept-17)
+xcomp(kept-17, returning-18)
+case(me-20, to-19)
+nmod:to(returning-18, me-20)
+punct(song-8, ,-21)
+acl(song-8, demanding-22)
+det(answer-24, an-23)
+dobj(demanding-22, answer-24)
+punct(question-5, :-25)
+punct(question-5, '-26)
+nsubj(coming-29, you-28)
+dep(Are-27, coming-29)
+compound(to-night-31, Home-30)
+dobj(coming-29, to-night-31)
+punct(Are-27, ?-32)
+punct(Are-27, '-33)
+punct(Are-27, ''-34)
+
+Coreference set:
+	(2,2,[2,3]) -> (1,4,[1,5]), that is: "he" -> "A wild young soldier"
+	(3,8,[8,9]) -> (1,4,[1,5]), that is: "him" -> "A wild young soldier"
+	(4,1,[1,2]) -> (1,4,[1,5]), that is: "He" -> "A wild young soldier"
+	(4,9,[9,10]) -> (1,4,[1,5]), that is: "he" -> "A wild young soldier"
+	(4,14,[14,15]) -> (1,4,[1,5]), that is: "he" -> "A wild young soldier"
+	(5,7,[7,8]) -> (1,4,[1,5]), that is: "he" -> "A wild young soldier"
+Coreference set:
+	(7,31,[30,32]) -> (2,14,[13,15]), that is: "Home to-night" -> "Home to-night"
+Coreference set:
+	(7,8,[7,9]) -> (3,2,[1,3]), that is: "the song" -> "The song"
+Coreference set:
+	(6,6,[6,7]) -> (4,6,[4,7]), that is: "night" -> "the next night"
+Coreference set:
+	(5,16,[16,17]) -> (5,1,[1,2]), that is: "me" -> "I"
+	(6,1,[1,2]) -> (5,1,[1,2]), that is: "I" -> "I"
+	(7,20,[20,21]) -> (5,1,[1,2]), that is: "me" -> "I"

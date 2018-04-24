@@ -1,0 +1,60 @@
+Sentence #1 (17 tokens):
+That Fantasia of Liszt’s was the most wonderful thing I have ever heard you play.
+[Text=That CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=Fantasia CharacterOffsetBegin=5 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Fantasia NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Liszt CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Liszt NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=wonderful CharacterOffsetBegin=38 CharacterOffsetEnd=47 PartOfSpeech=JJ Lemma=wonderful NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=VBN Lemma=hear NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=VBP Lemma=play NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT That) (NNP Fantasia))
+      (PP (IN of)
+        (NP (NNP Liszt) (POS 's))))
+    (VP (VBD was)
+      (NP
+        (NP (DT the)
+          (ADJP (RBS most) (JJ wonderful))
+          (NN thing))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP have)
+              (ADVP (RB ever))
+              (VP (VBN heard)
+                (SBAR
+                  (S
+                    (NP (PRP you))
+                    (VP (VBP play))))))))))
+    (. .)))
+
+root(ROOT-0, thing-10)
+det(Fantasia-2, That-1)
+nsubj(thing-10, Fantasia-2)
+case(Liszt-4, of-3)
+nmod:'s(Fantasia-2, Liszt-4)
+case(Liszt-4, 's-5)
+cop(thing-10, was-6)
+det(thing-10, the-7)
+advmod(wonderful-9, most-8)
+amod(thing-10, wonderful-9)
+nsubj(heard-14, I-11)
+aux(heard-14, have-12)
+advmod(heard-14, ever-13)
+acl:relcl(thing-10, heard-14)
+nsubj(play-16, you-15)
+ccomp(heard-14, play-16)
+punct(thing-10, .-17)
+

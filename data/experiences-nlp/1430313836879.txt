@@ -1,0 +1,357 @@
+Sentence #1 (28 tokens):
+Back in the city [New York, 1970s], I took on the job of road manager for my former band, Rat Race Choir.
+[Text=Back CharacterOffsetBegin=1 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=city CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=city NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=New NamedEntityTag=LOCATION]
+[Text=York CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=York NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=1970s CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=CD Lemma=1970s NamedEntityTag=DATE NormalizedNamedEntityTag=197X Timex=<TIMEX3 tid="t1" type="DATE" value="197X">1970s</TIMEX3>]
+[Text=-RSB- CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=took CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=VBD Lemma=take NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=RP Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=job CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=job NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=road CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=road NamedEntityTag=O]
+[Text=manager CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=manager NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=former CharacterOffsetBegin=78 CharacterOffsetEnd=84 PartOfSpeech=JJ Lemma=former NamedEntityTag=O]
+[Text=band CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=band NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Rat CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=rat NamedEntityTag=O]
+[Text=Race CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=NNP Lemma=Race NamedEntityTag=O]
+[Text=Choir CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=NNP Lemma=Choir NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Back)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN city))
+          (PP (-LRB- -LSB-)
+            (NP (NNP New) (NNP York))))
+        (, ,)
+        (ADVP
+          (NP (CD 1970s))
+          (-RRB- -RSB-))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD took)
+      (PRT (RP on))
+      (NP
+        (NP (DT the) (NN job))
+        (PP (IN of)
+          (NP (NN road) (NN manager))))
+      (PP (IN for)
+        (NP
+          (NP (PRP$ my) (JJ former) (NN band))
+          (, ,)
+          (NP (NN Rat) (NNP Race) (NNP Choir)))))
+    (. .)))
+
+root(ROOT-0, took-13)
+advmod(took-13, Back-1)
+case(city-4, in-2)
+det(city-4, the-3)
+nmod:in(Back-1, city-4)
+punct(York-7, -LSB--5)
+compound(York-7, New-6)
+nmod(city-4, York-7)
+punct(city-4, ,-8)
+advmod(city-4, 1970s-9)
+punct(1970s-9, -RSB--10)
+punct(took-13, ,-11)
+nsubj(took-13, I-12)
+compound:prt(took-13, on-14)
+det(job-16, the-15)
+dobj(took-13, job-16)
+case(manager-19, of-17)
+compound(manager-19, road-18)
+nmod:of(job-16, manager-19)
+case(band-23, for-20)
+nmod:poss(band-23, my-21)
+amod(band-23, former-22)
+nmod:for(took-13, band-23)
+punct(band-23, ,-24)
+compound(Choir-27, Rat-25)
+compound(Choir-27, Race-26)
+appos(band-23, Choir-27)
+punct(took-13, .-28)
+
+Sentence #2 (23 tokens):
+I was beginning to accept the fact that I would never be as good a guitar player as I wanted to be.
+[Text=I CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=beginning CharacterOffsetBegin=113 CharacterOffsetEnd=122 PartOfSpeech=VBG Lemma=begin NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=accept CharacterOffsetBegin=126 CharacterOffsetEnd=132 PartOfSpeech=VB Lemma=accept NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=133 CharacterOffsetEnd=136 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fact CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=fact NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=149 CharacterOffsetEnd=154 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=155 CharacterOffsetEnd=160 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=164 CharacterOffsetEnd=166 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=167 CharacterOffsetEnd=171 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=172 CharacterOffsetEnd=173 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=guitar CharacterOffsetBegin=174 CharacterOffsetEnd=180 PartOfSpeech=NN Lemma=guitar NamedEntityTag=O]
+[Text=player CharacterOffsetBegin=181 CharacterOffsetEnd=187 PartOfSpeech=NN Lemma=player NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=188 CharacterOffsetEnd=190 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=191 CharacterOffsetEnd=192 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=wanted CharacterOffsetBegin=193 CharacterOffsetEnd=199 PartOfSpeech=VBD Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=200 CharacterOffsetEnd=202 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=203 CharacterOffsetEnd=205 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=205 CharacterOffsetEnd=206 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBG beginning)
+        (S
+          (VP (TO to)
+            (VP (VB accept)
+              (NP (DT the) (NN fact))
+              (SBAR (IN that)
+                (S
+                  (NP (PRP I))
+                  (VP (MD would)
+                    (ADVP (RB never))
+                    (VP (VB be)
+                      (ADJP (RB as) (JJ good))
+                      (NP-TMP
+                        (NP (DT a) (NN guitar) (NN player))
+                        (SBAR (IN as)
+                          (S
+                            (NP (PRP I))
+                            (VP (VBD wanted)
+                              (S
+                                (VP (TO to)
+                                  (VP (VB be)))))))))))))))))
+    (. .)))
+
+root(ROOT-0, beginning-3)
+nsubj(beginning-3, I-1)
+nsubj:xsubj(accept-5, I-1)
+aux(beginning-3, was-2)
+mark(accept-5, to-4)
+xcomp(beginning-3, accept-5)
+det(fact-7, the-6)
+dobj(accept-5, fact-7)
+mark(good-14, that-8)
+nsubj(good-14, I-9)
+aux(good-14, would-10)
+neg(good-14, never-11)
+cop(good-14, be-12)
+advmod(good-14, as-13)
+ccomp(accept-5, good-14)
+det(player-17, a-15)
+compound(player-17, guitar-16)
+nmod:tmod(good-14, player-17)
+mark(wanted-20, as-18)
+nsubj(wanted-20, I-19)
+nsubj:xsubj(be-22, I-19)
+dep(player-17, wanted-20)
+mark(be-22, to-21)
+xcomp(wanted-20, be-22)
+punct(beginning-3, .-23)
+
+Sentence #3 (45 tokens):
+I'd heard John McLaughlin playing on Miles Davis's 'A Tribute to Jack Johnson' [album] and also saw him perform live with the The Mahavishnu Orchestra, and he made me want to cut my fingers off in frustration.
+[Text=I CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='d CharacterOffsetBegin=208 CharacterOffsetEnd=210 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=211 CharacterOffsetEnd=216 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=John CharacterOffsetBegin=217 CharacterOffsetEnd=221 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=McLaughlin CharacterOffsetBegin=222 CharacterOffsetEnd=232 PartOfSpeech=NNP Lemma=McLaughlin NamedEntityTag=PERSON]
+[Text=playing CharacterOffsetBegin=233 CharacterOffsetEnd=240 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=241 CharacterOffsetEnd=243 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Miles CharacterOffsetBegin=244 CharacterOffsetEnd=249 PartOfSpeech=NNP Lemma=Miles NamedEntityTag=PERSON]
+[Text=Davis CharacterOffsetBegin=250 CharacterOffsetEnd=255 PartOfSpeech=NNP Lemma=Davis NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=255 CharacterOffsetEnd=257 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=258 CharacterOffsetEnd=259 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=259 CharacterOffsetEnd=260 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Tribute CharacterOffsetBegin=261 CharacterOffsetEnd=268 PartOfSpeech=NN Lemma=tribute NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=269 CharacterOffsetEnd=271 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Jack CharacterOffsetBegin=272 CharacterOffsetEnd=276 PartOfSpeech=NNP Lemma=Jack NamedEntityTag=PERSON]
+[Text=Johnson CharacterOffsetBegin=277 CharacterOffsetEnd=284 PartOfSpeech=NNP Lemma=Johnson NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=284 CharacterOffsetEnd=285 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=286 CharacterOffsetEnd=287 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=album CharacterOffsetBegin=287 CharacterOffsetEnd=292 PartOfSpeech=NN Lemma=album NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=292 CharacterOffsetEnd=293 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=294 CharacterOffsetEnd=297 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=298 CharacterOffsetEnd=302 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=saw CharacterOffsetBegin=303 CharacterOffsetEnd=306 PartOfSpeech=VBD Lemma=see NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=307 CharacterOffsetEnd=310 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=perform CharacterOffsetBegin=311 CharacterOffsetEnd=318 PartOfSpeech=VB Lemma=perform NamedEntityTag=O]
+[Text=live CharacterOffsetBegin=319 CharacterOffsetEnd=323 PartOfSpeech=VB Lemma=live NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=324 CharacterOffsetEnd=328 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=329 CharacterOffsetEnd=332 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=333 CharacterOffsetEnd=336 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Mahavishnu CharacterOffsetBegin=337 CharacterOffsetEnd=347 PartOfSpeech=NNP Lemma=Mahavishnu NamedEntityTag=O]
+[Text=Orchestra CharacterOffsetBegin=348 CharacterOffsetEnd=357 PartOfSpeech=NNP Lemma=Orchestra NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=357 CharacterOffsetEnd=358 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=359 CharacterOffsetEnd=362 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=363 CharacterOffsetEnd=365 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=366 CharacterOffsetEnd=370 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=371 CharacterOffsetEnd=373 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=374 CharacterOffsetEnd=378 PartOfSpeech=VB Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=379 CharacterOffsetEnd=381 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=cut CharacterOffsetBegin=382 CharacterOffsetEnd=385 PartOfSpeech=VB Lemma=cut NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=386 CharacterOffsetEnd=388 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=fingers CharacterOffsetBegin=389 CharacterOffsetEnd=396 PartOfSpeech=NNS Lemma=finger NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=397 CharacterOffsetEnd=400 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=401 CharacterOffsetEnd=403 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=frustration CharacterOffsetBegin=404 CharacterOffsetEnd=415 PartOfSpeech=NN Lemma=frustration NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=415 CharacterOffsetEnd=416 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD 'd)
+        (VP (VBD heard)
+          (NP
+            (NP (NNP John) (NNP McLaughlin))
+            (VP (VBG playing)
+              (PP (IN on)
+                (NP (NNP Miles) (NNP Davis) (POS 's)))
+              ('' ')
+              (NP (DT A) (NN Tribute))))
+          (PP (TO to)
+            (NP
+              (NP (NNP Jack) (NNP Johnson) (POS '))
+              (-LRB- -LSB-) (NN album)))))
+      (-RRB- -RSB-)
+      (CC and)
+      (SINV
+        (ADVP (RB also))
+        (VP (VBD saw)
+          (S
+            (NP (PRP him))
+            (VP (VB perform)
+              (VP (VB live)
+                (PP (IN with)
+                  (NP (DT the) (DT The)))))))
+        (NP (NNP Mahavishnu) (NNP Orchestra)))
+      (, ,))
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBD made)
+        (S
+          (NP (PRP me))
+          (VP (VB want)
+            (S
+              (VP (TO to)
+                (VP (VB cut)
+                  (NP (PRP$ my) (NNS fingers))
+                  (PRT (RP off))
+                  (PP (IN in)
+                    (NP (NN frustration))))))))))
+    (. .)))
+
+root(ROOT-0, heard-3)
+nsubj(heard-3, I-1)
+aux(heard-3, 'd-2)
+compound(McLaughlin-5, John-4)
+dobj(heard-3, McLaughlin-5)
+acl(McLaughlin-5, playing-6)
+case(Davis-9, on-7)
+compound(Davis-9, Miles-8)
+nmod:'s(playing-6, Davis-9)
+case(Davis-9, 's-10)
+punct(playing-6, '-11)
+det(Tribute-13, A-12)
+dobj(playing-6, Tribute-13)
+case(album-19, to-14)
+compound(Johnson-16, Jack-15)
+nmod:poss(album-19, Johnson-16)
+case(Johnson-16, '-17)
+punct(album-19, -LSB--18)
+nmod:to(heard-3, album-19)
+punct(heard-3, -RSB--20)
+cc(heard-3, and-21)
+advmod(saw-23, also-22)
+conj:and(heard-3, saw-23)
+nsubj(perform-25, him-24)
+ccomp(saw-23, perform-25)
+xcomp(perform-25, live-26)
+case(The-29, with-27)
+dep(The-29, the-28)
+nmod:with(live-26, The-29)
+compound(Orchestra-31, Mahavishnu-30)
+nsubj(saw-23, Orchestra-31)
+punct(heard-3, ,-32)
+cc(heard-3, and-33)
+nsubj(made-35, he-34)
+conj:and(heard-3, made-35)
+nsubj(want-37, me-36)
+nsubj:xsubj(cut-39, me-36)
+ccomp(made-35, want-37)
+mark(cut-39, to-38)
+xcomp(want-37, cut-39)
+nmod:poss(fingers-41, my-40)
+dobj(cut-39, fingers-41)
+compound:prt(cut-39, off-42)
+case(frustration-44, in-43)
+nmod:in(cut-39, frustration-44)
+punct(heard-3, .-45)
+
+Sentence #4 (10 tokens):
+How could anyone play that fast, I wondered?
+[Text=How CharacterOffsetBegin=417 CharacterOffsetEnd=420 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=421 CharacterOffsetEnd=426 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=anyone CharacterOffsetBegin=427 CharacterOffsetEnd=433 PartOfSpeech=NN Lemma=anyone NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=434 CharacterOffsetEnd=438 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=439 CharacterOffsetEnd=443 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=fast CharacterOffsetBegin=444 CharacterOffsetEnd=448 PartOfSpeech=RB Lemma=fast NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=448 CharacterOffsetEnd=449 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=450 CharacterOffsetEnd=451 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=wondered CharacterOffsetBegin=452 CharacterOffsetEnd=460 PartOfSpeech=VBD Lemma=wonder NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=460 CharacterOffsetEnd=461 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (MD could)
+      (NP (NN anyone))
+      (VP (VB play)
+        (NP (DT that))
+        (ADVP (RB fast))
+        (, ,)
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBD wondered))))))
+    (. ?)))
+
+root(ROOT-0, play-4)
+advmod(play-4, How-1)
+aux(play-4, could-2)
+nsubj(play-4, anyone-3)
+dobj(play-4, that-5)
+advmod(play-4, fast-6)
+punct(play-4, ,-7)
+nsubj(wondered-9, I-8)
+dep(play-4, wondered-9)
+punct(play-4, ?-10)
+
+Coreference set:
+	(1,21,[21,22]) -> (1,12,[12,13]), that is: "my" -> "I"
+	(2,1,[1,2]) -> (1,12,[12,13]), that is: "I" -> "I"
+	(2,9,[9,10]) -> (1,12,[12,13]), that is: "I" -> "I"
+	(2,19,[19,20]) -> (1,12,[12,13]), that is: "I" -> "I"
+	(3,1,[1,2]) -> (1,12,[12,13]), that is: "I" -> "I"
+	(3,36,[36,37]) -> (1,12,[12,13]), that is: "me" -> "I"
+	(3,40,[40,41]) -> (1,12,[12,13]), that is: "my" -> "I"
+	(4,5,[5,6]) -> (1,12,[12,13]), that is: "that" -> "I"
+	(4,8,[8,9]) -> (1,12,[12,13]), that is: "I" -> "I"
+Coreference set:
+	(1,23,[21,24]) -> (1,27,[25,28]), that is: "my former band" -> "Rat Race Choir"
+Coreference set:
+	(3,24,[24,25]) -> (3,5,[4,14]), that is: "him" -> "John McLaughlin playing on Miles Davis 's ' A Tribute"
+	(3,34,[34,35]) -> (3,5,[4,14]), that is: "he" -> "John McLaughlin playing on Miles Davis 's ' A Tribute"

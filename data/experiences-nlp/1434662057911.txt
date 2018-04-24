@@ -1,0 +1,99 @@
+Sentence #1 (11 tokens):
+Go to R.C.M. to find Ireland not there at 10.0.
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=R.C.M. CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=R.C.M. NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VB Lemma=find NamedEntityTag=O]
+[Text=Ireland CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Ireland NamedEntityTag=LOCATION]
+[Text=not CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=10.0 CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=CD Lemma=10.0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.0]
+[Text=. CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PP (TO to)
+        (NP (NNP R.C.M.)))
+      (S
+        (VP (TO to)
+          (VP (VB find)
+            (NP (NNP Ireland))
+            (ADVP (RB not) (RB there))
+            (PP (IN at)
+              (NP (CD 10.0)))))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+case(R.C.M.-3, to-2)
+nmod:to(Go-1, R.C.M.-3)
+mark(find-5, to-4)
+xcomp(Go-1, find-5)
+dobj(find-5, Ireland-6)
+dep(there-8, not-7)
+advmod(find-5, there-8)
+case(10.0-10, at-9)
+nmod:at(find-5, 10.0-10)
+punct(Go-1, .-11)
+
+Sentence #2 (18 tokens):
+Return, after listening to a bit of a Patron's Fund Rehearsal, to pft practise.
+[Text=Return CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=return NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=listening CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=VBG Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Patron CharacterOffsetBegin=86 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=patron NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Fund CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=NNP Lemma=Fund NamedEntityTag=O]
+[Text=Rehearsal CharacterOffsetBegin=100 CharacterOffsetEnd=109 PartOfSpeech=NNP Lemma=Rehearsal NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=pft CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=VB Lemma=pft NamedEntityTag=O]
+[Text=practise CharacterOffsetBegin=118 CharacterOffsetEnd=126 PartOfSpeech=NN Lemma=practise NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (NN Return))
+    (, ,)
+    (PP (IN after)
+      (S
+        (VP (VBG listening)
+          (PP (TO to)
+            (NP
+              (NP (DT a) (NN bit))
+              (PP (IN of)
+                (NP
+                  (NP (DT a) (NN Patron) (POS 's))
+                  (NNP Fund) (NNP Rehearsal)))))
+          (, ,)
+          (S
+            (VP (TO to)
+              (VP (VB pft)
+                (NP (NN practise))))))))
+    (. .)))
+
+root(ROOT-0, Return-1)
+punct(Return-1, ,-2)
+mark(listening-4, after-3)
+dep(Return-1, listening-4)
+case(bit-7, to-5)
+det:qmod(Rehearsal-13, a-6)
+mwe(a-6, bit-7)
+mwe(a-6, of-8)
+det(Patron-10, a-9)
+nmod:poss(Rehearsal-13, Patron-10)
+case(Patron-10, 's-11)
+compound(Rehearsal-13, Fund-12)
+nmod(listening-4, Rehearsal-13)
+punct(listening-4, ,-14)
+mark(pft-16, to-15)
+xcomp(listening-4, pft-16)
+dobj(pft-16, practise-17)
+punct(Return-1, .-18)
+

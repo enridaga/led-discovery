@@ -1,0 +1,108 @@
+Sentence #1 (10 tokens):
+This morning Mr. Hague & his pupil went off.
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=DATE NormalizedNamedEntityTag=THIS MO Timex=<TIMEX3 alt_value="THIS MO" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">This morning</TIMEX3>]
+[Text=morning CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=morning NamedEntityTag=DATE NormalizedNamedEntityTag=THIS MO Timex=<TIMEX3 alt_value="THIS MO" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">This morning</TIMEX3>]
+[Text=Mr. CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Hague CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Hague NamedEntityTag=PERSON]
+[Text=& CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=pupil CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=pupil NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=off NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT This)
+      (NP (NN morning) (NNP Mr.) (NNP Hague))
+      (CC &)
+      (NP (PRP$ his) (NN pupil)))
+    (VP (VBD went)
+      (ADVP (RB off)))
+    (. .)))
+
+root(ROOT-0, went-8)
+dep(Hague-4, This-1)
+compound(Hague-4, morning-2)
+compound(Hague-4, Mr.-3)
+nsubj(went-8, Hague-4)
+cc(Hague-4, &-5)
+nmod:poss(pupil-7, his-6)
+conj:&(Hague-4, pupil-7)
+nsubj(went-8, pupil-7)
+advmod(went-8, off-9)
+punct(went-8, .-10)
+
+Sentence #2 (21 tokens):
+They were gone to Rugby, where there is a concert to night, for Mr. Marshall the Rugby Organist.
+[Text=They CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=gone CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=VBN Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Rugby CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=Rugby NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=87 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=night CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t2" type="TIME" value="TNI">night</TIMEX3>]
+[Text=, CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Marshall CharacterOffsetBegin=113 CharacterOffsetEnd=121 PartOfSpeech=NNP Lemma=Marshall NamedEntityTag=PERSON]
+[Text=the CharacterOffsetBegin=122 CharacterOffsetEnd=125 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Rugby CharacterOffsetBegin=126 CharacterOffsetEnd=131 PartOfSpeech=NNP Lemma=Rugby NamedEntityTag=ORGANIZATION]
+[Text=Organist CharacterOffsetBegin=132 CharacterOffsetEnd=140 PartOfSpeech=NNP Lemma=Organist NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD were)
+      (VP (VBN gone)
+        (PP (TO to)
+          (NP
+            (NP (NNP Rugby))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (EX there))
+                (VP (VBZ is)
+                  (NP
+                    (NP (DT a) (NN concert))
+                    (PP
+                      (PP (TO to)
+                        (NP (NN night)))
+                      (, ,)
+                      (PP (IN for)
+                        (NP (NNP Mr.) (NNP Marshall)))
+                      (NP (DT the) (NNP Rugby) (NNP Organist)))))))))))
+    (. .)))
+
+root(ROOT-0, gone-3)
+nsubjpass(gone-3, They-1)
+auxpass(gone-3, were-2)
+case(Rugby-5, to-4)
+nmod:to(gone-3, Rugby-5)
+punct(Rugby-5, ,-6)
+advmod(is-9, where-7)
+expl(is-9, there-8)
+acl:relcl(Rugby-5, is-9)
+det(concert-11, a-10)
+nsubj(is-9, concert-11)
+case(night-13, to-12)
+nmod:to(Organist-20, night-13)
+punct(Organist-20, ,-14)
+case(Marshall-17, for-15)
+compound(Marshall-17, Mr.-16)
+nmod:for(Organist-20, Marshall-17)
+det(Organist-20, the-18)
+compound(Organist-20, Rugby-19)
+nmod(concert-11, Organist-20)
+punct(gone-3, .-21)
+
+Coreference set:
+	(1,6,[6,7]) -> (1,4,[4,5]), that is: "his" -> "Hague"
+Coreference set:
+	(2,1,[1,2]) -> (1,4,[1,8]), that is: "They" -> "This morning Mr. Hague & his pupil"

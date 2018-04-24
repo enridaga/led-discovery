@@ -1,0 +1,397 @@
+Sentence #1 (5 tokens):
+I go to Amb.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Amb CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Amb NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP go)
+      (PP (TO to)
+        (NP (NNP Amb))))
+    (. .)))
+
+root(ROOT-0, go-2)
+nsubj(go-2, I-1)
+case(Amb-4, to-3)
+nmod:to(go-2, Amb-4)
+punct(go-2, .-5)
+
+Sentence #2 (2 tokens):
+Th.
+[Text=Th CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=th NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (NN Th) (. .)))
+
+root(ROOT-0, Th-1)
+punct(Th-1, .-2)
+
+Sentence #3 (21 tokens):
+at 8.45 - ticket paid for by Miss Fass - to see Uday Shan-Kar & his Hindu dances (inc.
+[Text=at CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=8.45 CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=CD Lemma=8.45 NamedEntityTag=NUMBER NormalizedNamedEntityTag=8.45]
+[Text=- CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=ticket CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=ticket NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Miss CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Miss NamedEntityTag=O]
+[Text=Fass CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Fass NamedEntityTag=PERSON]
+[Text=- CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=Uday CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Uday NamedEntityTag=PERSON]
+[Text=Shan-Kar CharacterOffsetBegin=70 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=Shan-Kar NamedEntityTag=PERSON]
+[Text=& CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=Hindu CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=Hindu NamedEntityTag=MISC]
+[Text=dances CharacterOffsetBegin=91 CharacterOffsetEnd=97 PartOfSpeech=NNS Lemma=dance NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=inc. CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=inc. NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN at)
+      (NP (CD 8.45)))
+    (: -)
+    (NP
+      (NP (NN ticket))
+      (VP (VBN paid)
+        (PP (IN for) (IN by)
+          (NP
+            (NP (NNP Miss) (NNP Fass))
+            (: -)
+            (S
+              (VP (TO to)
+                (VP (VB see)
+                  (NP
+                    (NP (NNP Uday) (NNP Shan-Kar))
+                    (CC &)
+                    (NP
+                      (NP (PRP$ his) (NNP Hindu))
+                      (NP (NNS dances) (-LRB- -LRB-) (NN inc.)))))))))))
+    (. .)))
+
+root(ROOT-0, ticket-4)
+case(8.45-2, at-1)
+nmod:at(ticket-4, 8.45-2)
+punct(ticket-4, --3)
+acl(ticket-4, paid-5)
+case(Fass-9, for-6)
+case(Fass-9, by-7)
+compound(Fass-9, Miss-8)
+nmod:by(paid-5, Fass-9)
+punct(Fass-9, --10)
+mark(see-12, to-11)
+acl:to(Fass-9, see-12)
+compound(Shan-Kar-14, Uday-13)
+dobj(see-12, Shan-Kar-14)
+cc(Shan-Kar-14, &-15)
+nmod:poss(Hindu-17, his-16)
+dobj(see-12, Hindu-17)
+conj:&(Shan-Kar-14, Hindu-17)
+compound(inc.-20, dances-18)
+punct(inc.-20, -LRB--19)
+dep(Hindu-17, inc.-20)
+punct(ticket-4, .-21)
+
+Sentence #4 (21 tokens):
+Simkie & Robindra - quite young) & musicians (inc Vishnu Dass - marvellous drummer & Timir Bewan).
+[Text=Simkie CharacterOffsetBegin=104 CharacterOffsetEnd=110 PartOfSpeech=NNP Lemma=Simkie NamedEntityTag=ORGANIZATION]
+[Text=& CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=CC Lemma=& NamedEntityTag=ORGANIZATION]
+[Text=Robindra CharacterOffsetBegin=113 CharacterOffsetEnd=121 PartOfSpeech=NNP Lemma=Robindra NamedEntityTag=ORGANIZATION]
+[Text=- CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=124 CharacterOffsetEnd=129 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=young CharacterOffsetBegin=130 CharacterOffsetEnd=135 PartOfSpeech=JJ Lemma=young NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=137 CharacterOffsetEnd=138 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=musicians CharacterOffsetBegin=139 CharacterOffsetEnd=148 PartOfSpeech=NNS Lemma=musician NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=inc CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=NN Lemma=inc NamedEntityTag=O]
+[Text=Vishnu CharacterOffsetBegin=154 CharacterOffsetEnd=160 PartOfSpeech=NNP Lemma=Vishnu NamedEntityTag=O]
+[Text=Dass CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=NNP Lemma=Dass NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=166 CharacterOffsetEnd=167 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=marvellous CharacterOffsetBegin=168 CharacterOffsetEnd=178 PartOfSpeech=JJ Lemma=marvellous NamedEntityTag=O]
+[Text=drummer CharacterOffsetBegin=179 CharacterOffsetEnd=186 PartOfSpeech=NN Lemma=drummer NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Timir CharacterOffsetBegin=189 CharacterOffsetEnd=194 PartOfSpeech=NNP Lemma=Timir NamedEntityTag=PERSON]
+[Text=Bewan CharacterOffsetBegin=195 CharacterOffsetEnd=200 PartOfSpeech=NNP Lemma=Bewan NamedEntityTag=PERSON]
+[Text=-RRB- CharacterOffsetBegin=200 CharacterOffsetEnd=201 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=201 CharacterOffsetEnd=202 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP
+        (NP (NNP Simkie)
+          (CC &)
+          (NNP Robindra))
+        (PRN (: -)
+          (ADVP (RB quite))
+          (NP (JJ young))
+          (-RRB- -RRB-)))
+      (CC &)
+      (NP
+        (NP (NNS musicians))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (NN inc) (NNP Vishnu) (NNP Dass))
+            (: -)
+            (NP
+              (NP (JJ marvellous) (NN drummer))
+              (CC &)
+              (NP (NNP Timir) (NNP Bewan))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+root(ROOT-0, Simkie-1)
+cc(Simkie-1, &-2)
+conj:&(Simkie-1, Robindra-3)
+punct(young-6, --4)
+dep(young-6, quite-5)
+dep(Simkie-1, young-6)
+punct(young-6, -RRB--7)
+cc(Simkie-1, &-8)
+conj:&(Simkie-1, musicians-9)
+punct(Dass-13, -LRB--10)
+compound(Dass-13, inc-11)
+compound(Dass-13, Vishnu-12)
+dep(musicians-9, Dass-13)
+punct(Dass-13, --14)
+amod(drummer-16, marvellous-15)
+dep(Dass-13, drummer-16)
+cc(drummer-16, &-17)
+compound(Bewan-19, Timir-18)
+dep(Dass-13, Bewan-19)
+conj:&(drummer-16, Bewan-19)
+punct(Dass-13, -RRB--20)
+punct(Simkie-1, .-21)
+
+Sentence #5 (14 tokens):
+* I haven't seen anything for ages which has thrilled me more.
+[Text=* CharacterOffsetBegin=202 CharacterOffsetEnd=203 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=204 CharacterOffsetEnd=205 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=206 CharacterOffsetEnd=210 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=210 CharacterOffsetEnd=213 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=seen CharacterOffsetBegin=214 CharacterOffsetEnd=218 PartOfSpeech=VBN Lemma=see NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=219 CharacterOffsetEnd=227 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=ages CharacterOffsetBegin=232 CharacterOffsetEnd=236 PartOfSpeech=NNS Lemma=age NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=237 CharacterOffsetEnd=242 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=243 CharacterOffsetEnd=246 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=thrilled CharacterOffsetBegin=247 CharacterOffsetEnd=255 PartOfSpeech=VBN Lemma=thrill NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=256 CharacterOffsetEnd=258 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=259 CharacterOffsetEnd=263 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=263 CharacterOffsetEnd=264 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (SBAR
+      (X (SYM *))
+      (S
+        (NP (PRP I))
+        (VP (VBP have) (RB n't)
+          (VP (VBN seen)
+            (NP (NN anything))
+            (PP (IN for)
+              (NP
+                (NP (NNS ages))
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBZ has)
+                      (VP (VBN thrilled)
+                        (S
+                          (NP (PRP me))
+                          (ADJP (RBR more)))))))))))))
+    (. .)))
+
+root(ROOT-0, seen-5)
+dep(seen-5, *-1)
+nsubj(seen-5, I-2)
+aux(seen-5, have-3)
+neg(seen-5, n't-4)
+dobj(seen-5, anything-6)
+case(ages-8, for-7)
+nmod:for(seen-5, ages-8)
+nsubj(thrilled-11, ages-8)
+ref(ages-8, which-9)
+aux(thrilled-11, has-10)
+acl:relcl(ages-8, thrilled-11)
+nsubj(more-13, me-12)
+xcomp(thrilled-11, more-13)
+punct(seen-5, .-14)
+
+Sentence #6 (7 tokens):
+Marvellously intellectual & perfectly wrought dancing.
+[Text=Marvellously CharacterOffsetBegin=265 CharacterOffsetEnd=277 PartOfSpeech=RB Lemma=marvellously NamedEntityTag=O]
+[Text=intellectual CharacterOffsetBegin=278 CharacterOffsetEnd=290 PartOfSpeech=JJ Lemma=intellectual NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=291 CharacterOffsetEnd=292 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=perfectly CharacterOffsetBegin=293 CharacterOffsetEnd=302 PartOfSpeech=RB Lemma=perfectly NamedEntityTag=O]
+[Text=wrought CharacterOffsetBegin=303 CharacterOffsetEnd=310 PartOfSpeech=VBD Lemma=work NamedEntityTag=O]
+[Text=dancing CharacterOffsetBegin=311 CharacterOffsetEnd=318 PartOfSpeech=NN Lemma=dancing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=318 CharacterOffsetEnd=319 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (ADJP (RB Marvellously) (JJ intellectual))
+    (S
+      (NP (CC &))
+      (ADVP (RB perfectly))
+      (VP (VBD wrought)
+        (NP (NN dancing))))
+    (. .)))
+
+root(ROOT-0, intellectual-2)
+advmod(intellectual-2, Marvellously-1)
+nsubj(wrought-5, &-3)
+advmod(wrought-5, perfectly-4)
+dep(intellectual-2, wrought-5)
+dobj(wrought-5, dancing-6)
+punct(intellectual-2, .-7)
+
+Sentence #7 (15 tokens):
+Finest I have yet seen Music, full of variety, rhythmically & tonally.
+[Text=Finest CharacterOffsetBegin=320 CharacterOffsetEnd=326 PartOfSpeech=JJS Lemma=finest NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=327 CharacterOffsetEnd=328 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=329 CharacterOffsetEnd=333 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=yet CharacterOffsetBegin=334 CharacterOffsetEnd=337 PartOfSpeech=RB Lemma=yet NamedEntityTag=O]
+[Text=seen CharacterOffsetBegin=338 CharacterOffsetEnd=342 PartOfSpeech=VBN Lemma=see NamedEntityTag=O]
+[Text=Music CharacterOffsetBegin=343 CharacterOffsetEnd=348 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=348 CharacterOffsetEnd=349 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=350 CharacterOffsetEnd=354 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=355 CharacterOffsetEnd=357 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=variety CharacterOffsetBegin=358 CharacterOffsetEnd=365 PartOfSpeech=NN Lemma=variety NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=365 CharacterOffsetEnd=366 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=rhythmically CharacterOffsetBegin=367 CharacterOffsetEnd=379 PartOfSpeech=RB Lemma=rhythmically NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=380 CharacterOffsetEnd=381 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=tonally CharacterOffsetBegin=382 CharacterOffsetEnd=389 PartOfSpeech=RB Lemma=tonally NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=389 CharacterOffsetEnd=390 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (JJS Finest))
+    (SBAR
+      (S
+        (NP (PRP I))
+        (VP (VBP have)
+          (ADVP (RB yet))
+          (VP (VBN seen)
+            (NP
+              (NP (NN Music))
+              (, ,)
+              (NP
+                (NP (JJ full))
+                (PP (IN of)
+                  (NP (NN variety))))
+              (, ,)
+              (ADVP (RB rhythmically)))
+            (S
+              (NP (CC &)))))
+        (ADVP (RB tonally))))
+    (. .)))
+
+root(ROOT-0, Finest-1)
+nsubj(seen-5, I-2)
+aux(seen-5, have-3)
+advmod(seen-5, yet-4)
+acl:relcl(Finest-1, seen-5)
+dobj(seen-5, Music-6)
+punct(Music-6, ,-7)
+appos(Music-6, full-8)
+case(variety-10, of-9)
+nmod:of(full-8, variety-10)
+punct(Music-6, ,-11)
+advmod(Music-6, rhythmically-12)
+xcomp(seen-5, &-13)
+advmod(seen-5, tonally-14)
+punct(Finest-1, .-15)
+
+Sentence #8 (10 tokens):
+one perfect creation of Shan-kar - an ecstatic dance.
+[Text=one CharacterOffsetBegin=391 CharacterOffsetEnd=394 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=perfect CharacterOffsetBegin=395 CharacterOffsetEnd=402 PartOfSpeech=JJ Lemma=perfect NamedEntityTag=O]
+[Text=creation CharacterOffsetBegin=403 CharacterOffsetEnd=411 PartOfSpeech=NN Lemma=creation NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=412 CharacterOffsetEnd=414 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Shan-kar CharacterOffsetBegin=415 CharacterOffsetEnd=423 PartOfSpeech=JJ Lemma=shan-kar NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=424 CharacterOffsetEnd=425 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=426 CharacterOffsetEnd=428 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=ecstatic CharacterOffsetBegin=429 CharacterOffsetEnd=437 PartOfSpeech=JJ Lemma=ecstatic NamedEntityTag=O]
+[Text=dance CharacterOffsetBegin=438 CharacterOffsetEnd=443 PartOfSpeech=NN Lemma=dance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=443 CharacterOffsetEnd=444 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP (CD one) (JJ perfect) (NN creation))
+      (PP (IN of)
+        (NP (JJ Shan-kar))))
+    (: -)
+    (NP (DT an) (JJ ecstatic) (NN dance))
+    (. .)))
+
+root(ROOT-0, creation-3)
+nummod(creation-3, one-1)
+amod(creation-3, perfect-2)
+case(Shan-kar-5, of-4)
+nmod:of(creation-3, Shan-kar-5)
+punct(creation-3, --6)
+det(dance-9, an-7)
+amod(dance-9, ecstatic-8)
+dep(creation-3, dance-9)
+punct(creation-3, .-10)
+
+Sentence #9 (12 tokens):
+Tandava Nrittya was a longer ballet with a very exciting fight.
+[Text=Tandava CharacterOffsetBegin=445 CharacterOffsetEnd=452 PartOfSpeech=NNP Lemma=Tandava NamedEntityTag=PERSON]
+[Text=Nrittya CharacterOffsetBegin=453 CharacterOffsetEnd=460 PartOfSpeech=NNP Lemma=Nrittya NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=461 CharacterOffsetEnd=464 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=465 CharacterOffsetEnd=466 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=longer CharacterOffsetBegin=467 CharacterOffsetEnd=473 PartOfSpeech=RBR Lemma=longer NamedEntityTag=O]
+[Text=ballet CharacterOffsetBegin=474 CharacterOffsetEnd=480 PartOfSpeech=JJ Lemma=ballet NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=481 CharacterOffsetEnd=485 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=486 CharacterOffsetEnd=487 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=488 CharacterOffsetEnd=492 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=exciting CharacterOffsetBegin=493 CharacterOffsetEnd=501 PartOfSpeech=JJ Lemma=exciting NamedEntityTag=O]
+[Text=fight CharacterOffsetBegin=502 CharacterOffsetEnd=507 PartOfSpeech=NN Lemma=fight NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=507 CharacterOffsetEnd=508 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Tandava) (NNP Nrittya))
+    (VP (VBD was)
+      (ADVP (DT a) (RBR longer))
+      (ADJP (JJ ballet)
+        (PP (IN with)
+          (NP (DT a)
+            (ADJP (RB very) (JJ exciting))
+            (NN fight)))))
+    (. .)))
+
+root(ROOT-0, ballet-6)
+compound(Nrittya-2, Tandava-1)
+nsubj(ballet-6, Nrittya-2)
+cop(ballet-6, was-3)
+dep(longer-5, a-4)
+advmod(ballet-6, longer-5)
+case(fight-11, with-7)
+det(fight-11, a-8)
+advmod(exciting-10, very-9)
+amod(fight-11, exciting-10)
+nmod:with(ballet-6, fight-11)
+punct(ballet-6, .-12)
+
+Sentence #10 (1 tokens):
+**
+[Text=** CharacterOffsetBegin=508 CharacterOffsetEnd=510 PartOfSpeech=SYM Lemma=** NamedEntityTag=O]
+(ROOT
+  (X (SYM **)))
+
+root(ROOT-0, **-1)
+
+Coreference set:
+	(5,2,[2,3]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(5,12,[12,13]) -> (1,1,[1,2]), that is: "me" -> "I"
+	(7,2,[2,3]) -> (1,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(3,16,[16,17]) -> (3,14,[13,15]), that is: "his" -> "Uday Shan-Kar"
+	(8,5,[5,6]) -> (3,14,[13,15]), that is: "Shan-kar" -> "Uday Shan-Kar"
+Coreference set:
+	(7,13,[13,14]) -> (6,3,[3,4]), that is: "&" -> "&"

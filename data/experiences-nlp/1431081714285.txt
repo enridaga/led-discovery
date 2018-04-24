@@ -1,0 +1,312 @@
+Sentence #1 (15 tokens):
+I got a harmony book from a music store and studied basic root positions.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=harmony CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=harmony NamedEntityTag=O]
+[Text=book CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=book NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=store CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=store NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=studied CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=VBN Lemma=study NamedEntityTag=O]
+[Text=basic CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=JJ Lemma=basic NamedEntityTag=O]
+[Text=root CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=root NamedEntityTag=O]
+[Text=positions CharacterOffsetBegin=63 CharacterOffsetEnd=72 PartOfSpeech=NNS Lemma=position NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBD got)
+        (NP (DT a) (NN harmony) (NN book))
+        (PP (IN from)
+          (NP (DT a) (NN music) (NN store))))
+      (CC and)
+      (VP (VBN studied)
+        (NP (JJ basic) (NN root) (NNS positions))))
+    (. .)))
+
+root(ROOT-0, got-2)
+nsubj(got-2, I-1)
+nsubj(studied-11, I-1)
+det(book-5, a-3)
+compound(book-5, harmony-4)
+dobj(got-2, book-5)
+case(store-9, from-6)
+det(store-9, a-7)
+compound(store-9, music-8)
+nmod:from(got-2, store-9)
+cc(got-2, and-10)
+conj:and(got-2, studied-11)
+amod(positions-14, basic-12)
+compound(positions-14, root-13)
+dobj(studied-11, positions-14)
+punct(got-2, .-15)
+
+Sentence #2 (12 tokens):
+An older musician in Norwalk showed me how to embellish chords.
+[Text=An CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=older CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=JJR Lemma=older NamedEntityTag=O]
+[Text=musician CharacterOffsetBegin=83 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=musician NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Norwalk CharacterOffsetBegin=95 CharacterOffsetEnd=102 PartOfSpeech=NNP Lemma=Norwalk NamedEntityTag=LOCATION]
+[Text=showed CharacterOffsetBegin=103 CharacterOffsetEnd=109 PartOfSpeech=VBD Lemma=show NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=embellish CharacterOffsetBegin=120 CharacterOffsetEnd=129 PartOfSpeech=VB Lemma=embellish NamedEntityTag=O]
+[Text=chords CharacterOffsetBegin=130 CharacterOffsetEnd=136 PartOfSpeech=NNS Lemma=chord NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT An) (JJR older) (NN musician))
+      (PP (IN in)
+        (NP (NNP Norwalk))))
+    (VP (VBD showed)
+      (NP (PRP me))
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (VP (TO to)
+            (VP (VB embellish)
+              (NP (NNS chords)))))))
+    (. .)))
+
+root(ROOT-0, showed-6)
+det(musician-3, An-1)
+amod(musician-3, older-2)
+nsubj(showed-6, musician-3)
+case(Norwalk-5, in-4)
+nmod:in(musician-3, Norwalk-5)
+dobj(showed-6, me-7)
+nsubj:xsubj(embellish-10, me-7)
+advmod(embellish-10, how-8)
+mark(embellish-10, to-9)
+xcomp(showed-6, embellish-10)
+dobj(embellish-10, chords-11)
+punct(showed-6, .-12)
+
+Sentence #3 (41 tokens):
+Then, having a good ear, I used to take those Charlie Parker, Bud Powell, and [saxophonist] Dexter Gordon records on Savoy and put them on an old windup machine and slow the speed down.
+[Text=Then CharacterOffsetBegin=138 CharacterOffsetEnd=142 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=having CharacterOffsetBegin=144 CharacterOffsetEnd=150 PartOfSpeech=VBG Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=ear CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=NN Lemma=ear NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=161 CharacterOffsetEnd=162 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=163 CharacterOffsetEnd=164 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=165 CharacterOffsetEnd=169 PartOfSpeech=VBD Lemma=use NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=170 CharacterOffsetEnd=172 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=173 CharacterOffsetEnd=177 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=178 CharacterOffsetEnd=183 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=Charlie CharacterOffsetBegin=184 CharacterOffsetEnd=191 PartOfSpeech=NNP Lemma=Charlie NamedEntityTag=PERSON]
+[Text=Parker CharacterOffsetBegin=192 CharacterOffsetEnd=198 PartOfSpeech=NNP Lemma=Parker NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=198 CharacterOffsetEnd=199 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Bud CharacterOffsetBegin=200 CharacterOffsetEnd=203 PartOfSpeech=NNP Lemma=Bud NamedEntityTag=PERSON]
+[Text=Powell CharacterOffsetBegin=204 CharacterOffsetEnd=210 PartOfSpeech=NNP Lemma=Powell NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=210 CharacterOffsetEnd=211 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=212 CharacterOffsetEnd=215 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=saxophonist CharacterOffsetBegin=217 CharacterOffsetEnd=228 PartOfSpeech=NN Lemma=saxophonist NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=228 CharacterOffsetEnd=229 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=Dexter CharacterOffsetBegin=230 CharacterOffsetEnd=236 PartOfSpeech=NNP Lemma=Dexter NamedEntityTag=PERSON]
+[Text=Gordon CharacterOffsetBegin=237 CharacterOffsetEnd=243 PartOfSpeech=NNP Lemma=Gordon NamedEntityTag=PERSON]
+[Text=records CharacterOffsetBegin=244 CharacterOffsetEnd=251 PartOfSpeech=NNS Lemma=record NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=252 CharacterOffsetEnd=254 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Savoy CharacterOffsetBegin=255 CharacterOffsetEnd=260 PartOfSpeech=NNP Lemma=Savoy NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=261 CharacterOffsetEnd=264 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=265 CharacterOffsetEnd=268 PartOfSpeech=VBD Lemma=put NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=269 CharacterOffsetEnd=273 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=274 CharacterOffsetEnd=276 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=277 CharacterOffsetEnd=279 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=280 CharacterOffsetEnd=283 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=windup CharacterOffsetBegin=284 CharacterOffsetEnd=290 PartOfSpeech=NN Lemma=windup NamedEntityTag=O]
+[Text=machine CharacterOffsetBegin=291 CharacterOffsetEnd=298 PartOfSpeech=NN Lemma=machine NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=299 CharacterOffsetEnd=302 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=slow CharacterOffsetBegin=303 CharacterOffsetEnd=307 PartOfSpeech=VB Lemma=slow NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=308 CharacterOffsetEnd=311 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=speed CharacterOffsetBegin=312 CharacterOffsetEnd=317 PartOfSpeech=NN Lemma=speed NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=318 CharacterOffsetEnd=322 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=322 CharacterOffsetEnd=323 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Then))
+    (, ,)
+    (S
+      (VP (VBG having)
+        (NP (DT a) (JJ good) (NN ear))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD used)
+      (S
+        (VP (TO to)
+          (VP
+            (VP (VB take)
+              (NP
+                (NP (DT those) (NNP Charlie) (NNP Parker))
+                (, ,)
+                (NP (NNP Bud) (NNP Powell))
+                (, ,)
+                (CC and)
+                (NP
+                  (NP (-LRB- -LSB-) (NN saxophonist))
+                  (PP (-RRB- -RSB-)
+                    (NP (NNP Dexter) (NNP Gordon) (NNS records)))))
+              (PP (IN on)
+                (NP (NNP Savoy))))
+            (CC and)
+            (VP (VBD put)
+              (NP (PRP them))
+              (PP (IN on)
+                (NP (DT an) (JJ old) (NN windup) (NN machine))))
+            (CC and)
+            (VP (VB slow)
+              (NP (DT the) (NN speed))
+              (PRT (RP down)))))))
+    (. .)))
+
+root(ROOT-0, used-9)
+advmod(used-9, Then-1)
+punct(used-9, ,-2)
+advcl(used-9, having-3)
+det(ear-6, a-4)
+amod(ear-6, good-5)
+dobj(having-3, ear-6)
+punct(used-9, ,-7)
+nsubj(used-9, I-8)
+nsubj:xsubj(take-11, I-8)
+nsubj:xsubj(put-29, I-8)
+nsubj:xsubj(slow-37, I-8)
+mark(take-11, to-10)
+xcomp(used-9, take-11)
+det(Parker-14, those-12)
+compound(Parker-14, Charlie-13)
+dobj(take-11, Parker-14)
+punct(Parker-14, ,-15)
+compound(Powell-17, Bud-16)
+dobj(take-11, Powell-17)
+conj:and(Parker-14, Powell-17)
+punct(Parker-14, ,-18)
+cc(Parker-14, and-19)
+punct(saxophonist-21, -LSB--20)
+dobj(take-11, saxophonist-21)
+conj:and(Parker-14, saxophonist-21)
+punct(records-25, -RSB--22)
+compound(records-25, Dexter-23)
+compound(records-25, Gordon-24)
+nmod(saxophonist-21, records-25)
+case(Savoy-27, on-26)
+nmod:on(take-11, Savoy-27)
+cc(take-11, and-28)
+xcomp(used-9, put-29)
+conj:and(take-11, put-29)
+dobj(put-29, them-30)
+case(machine-35, on-31)
+det(machine-35, an-32)
+amod(machine-35, old-33)
+compound(machine-35, windup-34)
+nmod:on(put-29, machine-35)
+cc(take-11, and-36)
+xcomp(used-9, slow-37)
+conj:and(take-11, slow-37)
+det(speed-39, the-38)
+dobj(slow-37, speed-39)
+compound:prt(slow-37, down-40)
+punct(used-9, .-41)
+
+Sentence #4 (24 tokens):
+That would put everything in another key, but I'd hear the chords that way and pick them out note by note.
+[Text=That CharacterOffsetBegin=324 CharacterOffsetEnd=328 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=329 CharacterOffsetEnd=334 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=put CharacterOffsetBegin=335 CharacterOffsetEnd=338 PartOfSpeech=VB Lemma=put NamedEntityTag=O]
+[Text=everything CharacterOffsetBegin=339 CharacterOffsetEnd=349 PartOfSpeech=NN Lemma=everything NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=350 CharacterOffsetEnd=352 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=another CharacterOffsetBegin=353 CharacterOffsetEnd=360 PartOfSpeech=DT Lemma=another NamedEntityTag=O]
+[Text=key CharacterOffsetBegin=361 CharacterOffsetEnd=364 PartOfSpeech=NN Lemma=key NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=364 CharacterOffsetEnd=365 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=366 CharacterOffsetEnd=369 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=370 CharacterOffsetEnd=371 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='d CharacterOffsetBegin=371 CharacterOffsetEnd=373 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=374 CharacterOffsetEnd=378 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=379 CharacterOffsetEnd=382 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=chords CharacterOffsetBegin=383 CharacterOffsetEnd=389 PartOfSpeech=NNS Lemma=chord NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=390 CharacterOffsetEnd=394 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=395 CharacterOffsetEnd=398 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=399 CharacterOffsetEnd=402 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=pick CharacterOffsetBegin=403 CharacterOffsetEnd=407 PartOfSpeech=VB Lemma=pick NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=408 CharacterOffsetEnd=412 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=413 CharacterOffsetEnd=416 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=note CharacterOffsetBegin=417 CharacterOffsetEnd=421 PartOfSpeech=NN Lemma=note NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=422 CharacterOffsetEnd=424 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=note CharacterOffsetBegin=425 CharacterOffsetEnd=429 PartOfSpeech=NN Lemma=note NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=429 CharacterOffsetEnd=430 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (DT That))
+      (VP (MD would)
+        (VP (VB put)
+          (NP (NN everything))
+          (PP (IN in)
+            (NP (DT another) (NN key))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (MD 'd)
+        (VP
+          (VP (VB hear)
+            (NP (DT the) (NNS chords))
+            (FRAG
+              (WHNP (WDT that) (NN way))))
+          (CC and)
+          (VP (VB pick)
+            (NP (PRP them))
+            (PRT (RP out)))
+          (NP (NN note))
+          (PP (IN by)
+            (NP (NN note))))))
+    (. .)))
+
+root(ROOT-0, put-3)
+nsubj(put-3, That-1)
+aux(put-3, would-2)
+dobj(put-3, everything-4)
+case(key-7, in-5)
+det(key-7, another-6)
+nmod:in(put-3, key-7)
+punct(put-3, ,-8)
+cc(put-3, but-9)
+nsubj(hear-12, I-10)
+nsubj(pick-18, I-10)
+aux(hear-12, 'd-11)
+conj:but(put-3, hear-12)
+det(chords-14, the-13)
+dobj(hear-12, chords-14)
+det(way-16, that-15)
+dep(hear-12, way-16)
+cc(hear-12, and-17)
+conj:but(put-3, pick-18)
+conj:and(hear-12, pick-18)
+dobj(pick-18, them-19)
+compound:prt(pick-18, out-20)
+dobj(hear-12, note-21)
+case(note-23, by-22)
+nmod:by(hear-12, note-23)
+punct(put-3, .-24)
+
+Coreference set:
+	(2,7,[7,8]) -> (1,1,[1,2]), that is: "me" -> "I"
+	(3,8,[8,9]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(4,10,[10,11]) -> (1,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(2,11,[11,12]) -> (4,14,[13,15]), that is: "chords" -> "the chords"
+Coreference set:
+	(4,1,[1,2]) -> (3,6,[4,7]), that is: "That" -> "a good ear"
+Coreference set:
+	(3,30,[30,31]) -> (3,14,[12,26]), that is: "them" -> "those Charlie Parker , Bud Powell , and -LSB- saxophonist -RSB- Dexter Gordon records"
+	(4,19,[19,20]) -> (3,14,[12,26]), that is: "them" -> "those Charlie Parker , Bud Powell , and -LSB- saxophonist -RSB- Dexter Gordon records"

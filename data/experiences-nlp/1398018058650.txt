@@ -1,0 +1,392 @@
+Sentence #1 (4 tokens):
+A nice autumn.
+[Text=A CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=nice CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=JJ Lemma=nice NamedEntityTag=O]
+[Text=autumn CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=autumn NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-FA Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-FA">autumn</TIMEX3>]
+[Text=. CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (DT A) (JJ nice) (NN autumn) (. .)))
+
+root(ROOT-0, autumn-3)
+det(autumn-3, A-1)
+amod(autumn-3, nice-2)
+punct(autumn-3, .-4)
+
+Sentence #2 (19 tokens):
+Even prettier as seen from Poulenc's apartment overlooking the Luxembourg at the fall of a clear day.
+[Text=Even CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=prettier CharacterOffsetBegin=20 CharacterOffsetEnd=28 PartOfSpeech=JJR Lemma=prettier NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=seen CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=VBN Lemma=see NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Poulenc CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=Poulenc NamedEntityTag=LOCATION]
+[Text='s CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=apartment CharacterOffsetBegin=52 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=apartment NamedEntityTag=O]
+[Text=overlooking CharacterOffsetBegin=62 CharacterOffsetEnd=73 PartOfSpeech=VBG Lemma=overlook NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Luxembourg CharacterOffsetBegin=78 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=Luxembourg NamedEntityTag=LOCATION]
+[Text=at CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fall CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=fall NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-FA Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-FA">fall</TIMEX3>]
+[Text=of CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=clear CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=JJ Lemma=clear NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t3" type="DURATION" value="P1D">day</TIMEX3>]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (ADJP (RB Even) (JJR prettier))
+    (SBAR (IN as)
+      (S
+        (VP (VBN seen)
+          (PP (IN from)
+            (NP
+              (NP (NNP Poulenc) (POS 's))
+              (NN apartment)
+              (S
+                (VP (VBG overlooking)
+                  (NP (DT the) (NNP Luxembourg))
+                  (PP (IN at)
+                    (NP
+                      (NP (DT the) (NN fall))
+                      (PP (IN of)
+                        (NP (DT a) (JJ clear) (NN day))))))))))))
+    (. .)))
+
+root(ROOT-0, prettier-2)
+advmod(prettier-2, Even-1)
+mark(seen-4, as-3)
+dep(prettier-2, seen-4)
+case(apartment-8, from-5)
+nmod:poss(apartment-8, Poulenc-6)
+case(Poulenc-6, 's-7)
+nmod:from(seen-4, apartment-8)
+dep(apartment-8, overlooking-9)
+det(Luxembourg-11, the-10)
+dobj(overlooking-9, Luxembourg-11)
+case(fall-14, at-12)
+det(fall-14, the-13)
+nmod:at(overlooking-9, fall-14)
+case(day-18, of-15)
+det(day-18, a-16)
+amod(day-18, clear-17)
+nmod:of(fall-14, day-18)
+punct(prettier-2, .-19)
+
+Sentence #3 (44 tokens):
+I spent the late afternoon there yesterday with Henri Hell in order to hear the maître sing us the first three and a half tableaux of his opera... Then Francis played us what's written of the Carmélites and I was disappointed.
+[Text=I CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=spent CharacterOffsetBegin=119 CharacterOffsetEnd=124 PartOfSpeech=VBD Lemma=spend NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=DT Lemma=the NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 mod="LATE" tid="t4" type="TIME" value="TAF">the late afternoon</TIMEX3>]
+[Text=late CharacterOffsetBegin=129 CharacterOffsetEnd=133 PartOfSpeech=JJ Lemma=late NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 mod="LATE" tid="t4" type="TIME" value="TAF">the late afternoon</TIMEX3>]
+[Text=afternoon CharacterOffsetBegin=134 CharacterOffsetEnd=143 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 mod="LATE" tid="t4" type="TIME" value="TAF">the late afternoon</TIMEX3>]
+[Text=there CharacterOffsetBegin=144 CharacterOffsetEnd=149 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=yesterday CharacterOffsetBegin=150 CharacterOffsetEnd=159 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1D Timex=<TIMEX3 alt_value="OFFSET P-1D" anchorTimeID="t0" temporalFunction="true" tid="t5" type="DATE" valueFromFunction="tf0">yesterday</TIMEX3>]
+[Text=with CharacterOffsetBegin=160 CharacterOffsetEnd=164 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Henri CharacterOffsetBegin=165 CharacterOffsetEnd=170 PartOfSpeech=NNP Lemma=Henri NamedEntityTag=PERSON]
+[Text=Hell CharacterOffsetBegin=171 CharacterOffsetEnd=175 PartOfSpeech=NNP Lemma=Hell NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=176 CharacterOffsetEnd=178 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=order CharacterOffsetBegin=179 CharacterOffsetEnd=184 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=185 CharacterOffsetEnd=187 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=188 CharacterOffsetEnd=192 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=193 CharacterOffsetEnd=196 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=maître CharacterOffsetBegin=197 CharacterOffsetEnd=203 PartOfSpeech=JJ Lemma=maître NamedEntityTag=O]
+[Text=sing CharacterOffsetBegin=204 CharacterOffsetEnd=208 PartOfSpeech=VB Lemma=sing NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=209 CharacterOffsetEnd=211 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=212 CharacterOffsetEnd=215 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=216 CharacterOffsetEnd=221 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=three CharacterOffsetBegin=222 CharacterOffsetEnd=227 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=and CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=232 CharacterOffsetEnd=233 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=half CharacterOffsetBegin=234 CharacterOffsetEnd=238 PartOfSpeech=NN Lemma=half NamedEntityTag=O]
+[Text=tableaux CharacterOffsetBegin=239 CharacterOffsetEnd=247 PartOfSpeech=NN Lemma=tableaux NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=248 CharacterOffsetEnd=250 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=251 CharacterOffsetEnd=254 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=opera CharacterOffsetBegin=255 CharacterOffsetEnd=260 PartOfSpeech=NN Lemma=opera NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=260 CharacterOffsetEnd=263 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=Then CharacterOffsetBegin=264 CharacterOffsetEnd=268 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=Francis CharacterOffsetBegin=269 CharacterOffsetEnd=276 PartOfSpeech=NNP Lemma=Francis NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=277 CharacterOffsetEnd=283 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=284 CharacterOffsetEnd=286 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=287 CharacterOffsetEnd=291 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=291 CharacterOffsetEnd=293 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=written CharacterOffsetBegin=294 CharacterOffsetEnd=301 PartOfSpeech=VBN Lemma=write NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=302 CharacterOffsetEnd=304 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=305 CharacterOffsetEnd=308 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Carmélites CharacterOffsetBegin=309 CharacterOffsetEnd=319 PartOfSpeech=NNPS Lemma=Carmélites NamedEntityTag=MISC]
+[Text=and CharacterOffsetBegin=320 CharacterOffsetEnd=323 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=324 CharacterOffsetEnd=325 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=326 CharacterOffsetEnd=329 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=disappointed CharacterOffsetBegin=330 CharacterOffsetEnd=342 PartOfSpeech=VBN Lemma=disappoint NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=342 CharacterOffsetEnd=343 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (S
+        (NP (PRP I))
+        (VP (VBD spent)
+          (NP (DT the) (JJ late) (NN afternoon))
+          (ADVP (RB there))
+          (NP-TMP (NN yesterday))
+          (PP (IN with)
+            (NP
+              (NP (NNP Henri) (NNP Hell))
+              (PP (IN in)
+                (NP (NN order)))))
+          (S
+            (VP (TO to)
+              (VP (VB hear)
+                (S
+                  (NP (DT the) (JJ maître))
+                  (VP (VB sing)
+                    (S
+                      (NP (PRP us))
+                      (NP
+                        (NP (DT the) (JJ first) (CD three))
+                        (CC and)
+                        (NP
+                          (NP (DT a) (NN half) (NN tableaux))
+                          (PP (IN of)
+                            (NP (PRP$ his) (NN opera)))))))))))))
+      (: ...) (RB Then)
+      (S
+        (NP (NNP Francis))
+        (VP (VBD played)
+          (NP (PRP us))
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (VP (VBZ 's)
+                (VP (VBN written)
+                  (PP (IN of)
+                    (NP (DT the) (NNPS Carmélites))))))))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBD was)
+        (VP (VBN disappointed))))
+    (. .)))
+
+root(ROOT-0, spent-2)
+nsubj(spent-2, I-1)
+det(afternoon-5, the-3)
+amod(afternoon-5, late-4)
+dobj(spent-2, afternoon-5)
+advmod(spent-2, there-6)
+nmod:tmod(spent-2, yesterday-7)
+case(Hell-10, with-8)
+compound(Hell-10, Henri-9)
+nmod:with(spent-2, Hell-10)
+acl(Hell-10, in-11)
+mwe(in-11, order-12)
+mark(hear-14, to-13)
+advcl:to(spent-2, hear-14)
+det(maître-16, the-15)
+nsubj(sing-17, maître-16)
+ccomp(hear-14, sing-17)
+nsubj(three-21, us-18)
+det(three-21, the-19)
+amod(three-21, first-20)
+xcomp(sing-17, three-21)
+cc(three-21, and-22)
+det(tableaux-25, a-23)
+compound(tableaux-25, half-24)
+xcomp(sing-17, tableaux-25)
+conj:and(three-21, tableaux-25)
+case(opera-28, of-26)
+nmod:poss(opera-28, his-27)
+nmod:of(tableaux-25, opera-28)
+punct(spent-2, ...-29)
+advmod(spent-2, Then-30)
+nsubj(played-32, Francis-31)
+parataxis(spent-2, played-32)
+dobj(played-32, us-33)
+nsubjpass(written-36, what-34)
+auxpass(written-36, 's-35)
+dep(played-32, written-36)
+case(Carmélites-39, of-37)
+det(Carmélites-39, the-38)
+nmod:of(written-36, Carmélites-39)
+cc(spent-2, and-40)
+nsubjpass(disappointed-43, I-41)
+auxpass(disappointed-43, was-42)
+conj:and(spent-2, disappointed-43)
+punct(spent-2, .-44)
+
+Sentence #4 (23 tokens):
+Usually I love his music and feel he's the only one here who has not tumbled into that touchy masterpiece-complex trap.
+[Text=Usually CharacterOffsetBegin=344 CharacterOffsetEnd=351 PartOfSpeech=RB Lemma=usually NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=352 CharacterOffsetEnd=353 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=love CharacterOffsetBegin=354 CharacterOffsetEnd=358 PartOfSpeech=VBP Lemma=love NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=359 CharacterOffsetEnd=362 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=363 CharacterOffsetEnd=368 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=369 CharacterOffsetEnd=372 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=feel CharacterOffsetBegin=373 CharacterOffsetEnd=377 PartOfSpeech=VB Lemma=feel NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=378 CharacterOffsetEnd=380 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=380 CharacterOffsetEnd=382 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=383 CharacterOffsetEnd=386 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=387 CharacterOffsetEnd=391 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=392 CharacterOffsetEnd=395 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=here CharacterOffsetBegin=396 CharacterOffsetEnd=400 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=401 CharacterOffsetEnd=404 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=405 CharacterOffsetEnd=408 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=409 CharacterOffsetEnd=412 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=tumbled CharacterOffsetBegin=413 CharacterOffsetEnd=420 PartOfSpeech=VBN Lemma=tumble NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=421 CharacterOffsetEnd=425 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=426 CharacterOffsetEnd=430 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=touchy CharacterOffsetBegin=431 CharacterOffsetEnd=437 PartOfSpeech=JJ Lemma=touchy NamedEntityTag=O]
+[Text=masterpiece-complex CharacterOffsetBegin=438 CharacterOffsetEnd=457 PartOfSpeech=JJ Lemma=masterpiece-complex NamedEntityTag=O]
+[Text=trap CharacterOffsetBegin=458 CharacterOffsetEnd=462 PartOfSpeech=NN Lemma=trap NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=462 CharacterOffsetEnd=463 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Usually))
+    (NP (PRP I))
+    (VP
+      (VP (VBP love)
+        (NP (PRP$ his) (NN music)))
+      (CC and)
+      (VP (VB feel)
+        (SBAR
+          (S
+            (NP (PRP he))
+            (VP (VBZ 's)
+              (NP
+                (NP
+                  (NP (DT the)
+                    (QP (RB only) (CD one)))
+                  (ADVP (RB here)))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBZ has) (RB not)
+                      (VP (VBN tumbled)
+                        (PP (IN into)
+                          (NP (DT that) (JJ touchy) (JJ masterpiece-complex) (NN trap)))))))))))))
+    (. .)))
+
+root(ROOT-0, love-3)
+advmod(love-3, Usually-1)
+nsubj(love-3, I-2)
+nsubj(feel-7, I-2)
+nmod:poss(music-5, his-4)
+dobj(love-3, music-5)
+cc(love-3, and-6)
+conj:and(love-3, feel-7)
+nsubj(one-12, he-8)
+cop(one-12, 's-9)
+det(one-12, the-10)
+advmod(one-12, only-11)
+ccomp(feel-7, one-12)
+nsubj(tumbled-17, one-12)
+advmod(one-12, here-13)
+ref(one-12, who-14)
+aux(tumbled-17, has-15)
+neg(tumbled-17, not-16)
+acl:relcl(one-12, tumbled-17)
+case(trap-22, into-18)
+det(trap-22, that-19)
+amod(trap-22, touchy-20)
+amod(trap-22, masterpiece-complex-21)
+nmod:into(tumbled-17, trap-22)
+punct(love-3, .-23)
+
+Sentence #5 (18 tokens):
+Yet this whole Carmelite idea seems so Catholic and wearisome that I just can't be moved.
+[Text=Yet CharacterOffsetBegin=464 CharacterOffsetEnd=467 PartOfSpeech=RB Lemma=yet NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=468 CharacterOffsetEnd=472 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=473 CharacterOffsetEnd=478 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=Carmelite CharacterOffsetBegin=479 CharacterOffsetEnd=488 PartOfSpeech=NNP Lemma=Carmelite NamedEntityTag=MISC]
+[Text=idea CharacterOffsetBegin=489 CharacterOffsetEnd=493 PartOfSpeech=NN Lemma=idea NamedEntityTag=O]
+[Text=seems CharacterOffsetBegin=494 CharacterOffsetEnd=499 PartOfSpeech=VBZ Lemma=seem NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=500 CharacterOffsetEnd=502 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=Catholic CharacterOffsetBegin=503 CharacterOffsetEnd=511 PartOfSpeech=JJ Lemma=catholic NamedEntityTag=MISC]
+[Text=and CharacterOffsetBegin=512 CharacterOffsetEnd=515 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=wearisome CharacterOffsetBegin=516 CharacterOffsetEnd=525 PartOfSpeech=JJ Lemma=wearisome NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=526 CharacterOffsetEnd=530 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=531 CharacterOffsetEnd=532 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=533 CharacterOffsetEnd=537 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=538 CharacterOffsetEnd=540 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=540 CharacterOffsetEnd=543 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=544 CharacterOffsetEnd=546 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=moved CharacterOffsetBegin=547 CharacterOffsetEnd=552 PartOfSpeech=VBN Lemma=move NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=552 CharacterOffsetEnd=553 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (RB Yet)
+    (NP (DT this) (JJ whole) (NNP Carmelite) (NN idea))
+    (VP (VBZ seems)
+      (ADJP (RB so) (JJ Catholic)
+        (CC and)
+        (JJ wearisome)
+        (SBAR (IN that)
+          (S
+            (NP (PRP I))
+            (ADVP (RB just))
+            (VP (MD ca) (RB n't)
+              (VP (VB be)
+                (VP (VBN moved))))))))
+    (. .)))
+
+root(ROOT-0, seems-6)
+advmod(seems-6, Yet-1)
+det(idea-5, this-2)
+amod(idea-5, whole-3)
+compound(idea-5, Carmelite-4)
+nsubj(seems-6, idea-5)
+advmod(Catholic-8, so-7)
+xcomp(seems-6, Catholic-8)
+cc(Catholic-8, and-9)
+xcomp(seems-6, wearisome-10)
+conj:and(Catholic-8, wearisome-10)
+mark(moved-17, that-11)
+nsubjpass(moved-17, I-12)
+advmod(moved-17, just-13)
+aux(moved-17, ca-14)
+neg(moved-17, n't-15)
+auxpass(moved-17, be-16)
+ccomp(Catholic-8, moved-17)
+punct(seems-6, .-18)
+
+Sentence #6 (8 tokens):
+I didn't know what to say...
+[Text=I CharacterOffsetBegin=554 CharacterOffsetEnd=555 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=556 CharacterOffsetEnd=559 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=559 CharacterOffsetEnd=562 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=563 CharacterOffsetEnd=567 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=568 CharacterOffsetEnd=572 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=573 CharacterOffsetEnd=575 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=576 CharacterOffsetEnd=579 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=579 CharacterOffsetEnd=582 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD did) (RB n't)
+      (VP (VB know)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (TO to)
+              (VP (VB say)))))))
+    (: ...)))
+
+root(ROOT-0, know-4)
+nsubj(know-4, I-1)
+aux(know-4, did-2)
+neg(know-4, n't-3)
+nsubj(say-7, what-5)
+mark(say-7, to-6)
+ccomp(know-4, say-7)
+punct(know-4, ...-8)
+
+Coreference set:
+	(3,41,[41,42]) -> (3,1,[1,2]), that is: "I" -> "I"
+	(4,2,[2,3]) -> (3,1,[1,2]), that is: "I" -> "I"
+	(5,12,[12,13]) -> (3,1,[1,2]), that is: "I" -> "I"
+	(6,1,[1,2]) -> (3,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(4,4,[4,5]) -> (3,10,[9,13]), that is: "his" -> "Henri Hell in order"
+	(4,8,[8,9]) -> (3,10,[9,13]), that is: "he" -> "Henri Hell in order"
+Coreference set:
+	(3,27,[27,28]) -> (3,16,[15,17]), that is: "his" -> "the maître"
+Coreference set:
+	(3,33,[33,34]) -> (3,18,[18,19]), that is: "us" -> "us"

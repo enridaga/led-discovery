@@ -1,0 +1,339 @@
+Sentence #1 (29 tokens):
+In another club on Bourbon [Street], Oscar "Papa" Cellestin, now well into his seventies, has the jazz world on its toes.
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=another CharacterOffsetBegin=3 CharacterOffsetEnd=10 PartOfSpeech=DT Lemma=another NamedEntityTag=O]
+[Text=club CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=club NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Bourbon CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=bourbon NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Street CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=street NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Oscar CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Oscar NamedEntityTag=PERSON]
+[Text=`` CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Papa CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=papa NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=Cellestin CharacterOffsetBegin=50 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Cellestin NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=well CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=seventies CharacterOffsetBegin=79 CharacterOffsetEnd=88 PartOfSpeech=NNS Lemma=seventy NamedEntityTag=SET Timex=<TIMEX3 tid="t2" type="SET" value="XX7X">seventies</TIMEX3>]
+[Text=, CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=jazz CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=jazz NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=toes CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=NNS Lemma=toe NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (DT another) (NN club))
+        (PP (IN on)
+          (NP (NN Bourbon)))))
+    (-LRB- -LSB-)
+    (NP
+      (NP (NN Street) (-RRB- -RSB-))
+      (, ,)
+      (NP
+        (NP (NNP Oscar) (`` ``) (NN Papa) ('' ''))
+        (NP (NNP Cellestin))
+        (, ,)
+        (ADVP (RB now) (RB well)
+          (PP (IN into)
+            (NP (PRP$ his) (NNS seventies)))))
+      (, ,))
+    (VP (VBZ has)
+      (NP
+        (NP (DT the) (NN jazz) (NN world))
+        (PP (IN on)
+          (NP (PRP$ its) (NNS toes)))))
+    (. .)))
+
+root(ROOT-0, has-22)
+case(club-3, In-1)
+det(club-3, another-2)
+nmod:in(has-22, club-3)
+case(Bourbon-5, on-4)
+nmod:on(club-3, Bourbon-5)
+punct(has-22, -LSB--6)
+nsubj(has-22, Street-7)
+punct(Street-7, -RSB--8)
+punct(Street-7, ,-9)
+compound(Papa-12, Oscar-10)
+punct(Papa-12, ``-11)
+appos(Street-7, Papa-12)
+punct(Papa-12, ''-13)
+appos(Papa-12, Cellestin-14)
+punct(Papa-12, ,-15)
+advmod(well-17, now-16)
+advmod(Papa-12, well-17)
+case(seventies-20, into-18)
+nmod:poss(seventies-20, his-19)
+nmod:into(well-17, seventies-20)
+punct(Street-7, ,-21)
+det(world-25, the-23)
+compound(world-25, jazz-24)
+dobj(has-22, world-25)
+case(toes-28, on-26)
+nmod:poss(toes-28, its-27)
+nmod:on(world-25, toes-28)
+punct(has-22, .-29)
+
+Sentence #2 (54 tokens):
+Believe it or not, Papa Celestin today is just the same great trouper that he was in the early 'nineties [1890's], when jazz fans couldn't agree as to which of the two between himself and the immortal Manuel Perez produced the better tone on the cornet.
+[Text=Believe CharacterOffsetBegin=122 CharacterOffsetEnd=129 PartOfSpeech=VB Lemma=believe NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=130 CharacterOffsetEnd=132 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Papa CharacterOffsetBegin=141 CharacterOffsetEnd=145 PartOfSpeech=NN Lemma=papa NamedEntityTag=PERSON]
+[Text=Celestin CharacterOffsetBegin=146 CharacterOffsetEnd=154 PartOfSpeech=NN Lemma=celestin NamedEntityTag=PERSON]
+[Text=today CharacterOffsetBegin=155 CharacterOffsetEnd=160 PartOfSpeech=NN Lemma=today NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf0">today</TIMEX3>]
+[Text=is CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=164 CharacterOffsetEnd=168 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=169 CharacterOffsetEnd=172 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=173 CharacterOffsetEnd=177 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=178 CharacterOffsetEnd=183 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=trouper CharacterOffsetBegin=184 CharacterOffsetEnd=191 PartOfSpeech=NN Lemma=trouper NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=192 CharacterOffsetEnd=196 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=197 CharacterOffsetEnd=199 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=200 CharacterOffsetEnd=203 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=204 CharacterOffsetEnd=206 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=207 CharacterOffsetEnd=210 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=early CharacterOffsetBegin=211 CharacterOffsetEnd=216 PartOfSpeech=JJ Lemma=early NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=217 CharacterOffsetEnd=218 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=nineties CharacterOffsetBegin=218 CharacterOffsetEnd=226 PartOfSpeech=NNS Lemma=ninety NamedEntityTag=SET Timex=<TIMEX3 tid="t4" type="SET" value="XX9X">nineties</TIMEX3>]
+[Text=-LSB- CharacterOffsetBegin=227 CharacterOffsetEnd=228 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=1890 CharacterOffsetBegin=228 CharacterOffsetEnd=232 PartOfSpeech=CD Lemma=1890 NamedEntityTag=DATE NormalizedNamedEntityTag=1890 Timex=<TIMEX3 tid="t5" type="DATE" value="1890">1890</TIMEX3>]
+[Text='s CharacterOffsetBegin=232 CharacterOffsetEnd=234 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=234 CharacterOffsetEnd=235 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=235 CharacterOffsetEnd=236 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=237 CharacterOffsetEnd=241 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=jazz CharacterOffsetBegin=242 CharacterOffsetEnd=246 PartOfSpeech=NN Lemma=jazz NamedEntityTag=O]
+[Text=fans CharacterOffsetBegin=247 CharacterOffsetEnd=251 PartOfSpeech=NNS Lemma=fan NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=252 CharacterOffsetEnd=257 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=agree CharacterOffsetBegin=261 CharacterOffsetEnd=266 PartOfSpeech=VB Lemma=agree NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=267 CharacterOffsetEnd=269 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=270 CharacterOffsetEnd=272 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=273 CharacterOffsetEnd=278 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=279 CharacterOffsetEnd=281 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=282 CharacterOffsetEnd=285 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=286 CharacterOffsetEnd=289 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=between CharacterOffsetBegin=290 CharacterOffsetEnd=297 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=himself CharacterOffsetBegin=298 CharacterOffsetEnd=305 PartOfSpeech=PRP Lemma=himself NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=306 CharacterOffsetEnd=309 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=310 CharacterOffsetEnd=313 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=immortal CharacterOffsetBegin=314 CharacterOffsetEnd=322 PartOfSpeech=JJ Lemma=immortal NamedEntityTag=O]
+[Text=Manuel CharacterOffsetBegin=323 CharacterOffsetEnd=329 PartOfSpeech=NNP Lemma=Manuel NamedEntityTag=PERSON]
+[Text=Perez CharacterOffsetBegin=330 CharacterOffsetEnd=335 PartOfSpeech=NNP Lemma=Perez NamedEntityTag=PERSON]
+[Text=produced CharacterOffsetBegin=336 CharacterOffsetEnd=344 PartOfSpeech=VBD Lemma=produce NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=345 CharacterOffsetEnd=348 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=349 CharacterOffsetEnd=355 PartOfSpeech=JJR Lemma=better NamedEntityTag=O]
+[Text=tone CharacterOffsetBegin=356 CharacterOffsetEnd=360 PartOfSpeech=NN Lemma=tone NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=361 CharacterOffsetEnd=363 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=364 CharacterOffsetEnd=367 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=cornet CharacterOffsetBegin=368 CharacterOffsetEnd=374 PartOfSpeech=NN Lemma=cornet NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=374 CharacterOffsetEnd=375 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (VP (VB Believe)
+        (NP (PRP it))
+        (CC or)
+        (RB not)))
+    (, ,)
+    (NP (NN Papa) (NN Celestin))
+    (NP-TMP (NN today))
+    (VP (VBZ is)
+      (ADVP (RB just))
+      (NP (DT the) (JJ same) (JJ great) (NN trouper))
+      (SBAR (IN that)
+        (S
+          (S
+            (NP (PRP he))
+            (VP (VBD was)
+              (PP (IN in)
+                (NP (DT the) (JJ early)))
+              (`` `)
+              (NP
+                (NP (NNS nineties))
+                (PP (-LRB- -LSB-)
+                  (NP
+                    (NP
+                      (NP (CD 1890) (POS 's))
+                      (-RRB- -RSB-))
+                    (, ,)
+                    (SBAR
+                      (WHADVP (WRB when))
+                      (S
+                        (NP (NN jazz) (NNS fans))
+                        (VP (MD could) (RB n't)
+                          (VP (VB agree)
+                            (SBAR (IN as)
+                              (FRAG
+                                (WHPP (TO to)
+                                  (WHNP (WDT which)))))))))))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (CD two))
+                    (PP (IN between)
+                      (NP (PRP himself))))))))
+          (CC and)
+          (S
+            (NP (DT the) (JJ immortal) (NNP Manuel) (NNP Perez))
+            (VP (VBD produced)
+              (NP (DT the) (JJR better) (NN tone))
+              (PP (IN on)
+                (NP (DT the) (NN cornet))))))))
+    (. .)))
+
+root(ROOT-0, trouper-14)
+ccomp(trouper-14, Believe-1)
+dobj(Believe-1, it-2)
+cc(Believe-1, or-3)
+conj:or(Believe-1, not-4)
+ccomp(trouper-14, not-4)
+punct(trouper-14, ,-5)
+compound(Celestin-7, Papa-6)
+nsubj(trouper-14, Celestin-7)
+nmod:tmod(trouper-14, today-8)
+cop(trouper-14, is-9)
+advmod(trouper-14, just-10)
+det(trouper-14, the-11)
+amod(trouper-14, same-12)
+amod(trouper-14, great-13)
+mark(nineties-22, that-15)
+nsubj(nineties-22, he-16)
+cop(nineties-22, was-17)
+case(early-20, in-18)
+det(early-20, the-19)
+nmod:in(nineties-22, early-20)
+punct(nineties-22, `-21)
+ccomp(trouper-14, nineties-22)
+punct(1890-24, -LSB--23)
+nmod:'s(nineties-22, 1890-24)
+advcl:as(agree-33, 1890-24)
+case(1890-24, 's-25)
+punct(1890-24, -RSB--26)
+punct(1890-24, ,-27)
+advmod(agree-33, when-28)
+compound(fans-30, jazz-29)
+nsubj(agree-33, fans-30)
+aux(agree-33, could-31)
+neg(agree-33, n't-32)
+acl:relcl(1890-24, agree-33)
+mark(which-36, as-34)
+case(which-36, to-35)
+ref(1890-24, which-36)
+case(two-39, of-37)
+det(two-39, the-38)
+nmod:of(nineties-22, two-39)
+case(himself-41, between-40)
+nmod:between(two-39, himself-41)
+cc(nineties-22, and-42)
+det(Perez-46, the-43)
+amod(Perez-46, immortal-44)
+compound(Perez-46, Manuel-45)
+nsubj(produced-47, Perez-46)
+ccomp(trouper-14, produced-47)
+conj:and(nineties-22, produced-47)
+det(tone-50, the-48)
+amod(tone-50, better-49)
+dobj(produced-47, tone-50)
+case(cornet-53, on-51)
+det(cornet-53, the-52)
+nmod:on(produced-47, cornet-53)
+punct(trouper-14, .-54)
+
+Sentence #3 (24 tokens):
+Perez has gone to his Maker, but the other representative of the real New Orleans jazz music is fortunately still with us.
+[Text=Perez CharacterOffsetBegin=376 CharacterOffsetEnd=381 PartOfSpeech=NNP Lemma=Perez NamedEntityTag=PERSON]
+[Text=has CharacterOffsetBegin=382 CharacterOffsetEnd=385 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=gone CharacterOffsetBegin=386 CharacterOffsetEnd=390 PartOfSpeech=VBN Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=391 CharacterOffsetEnd=393 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=394 CharacterOffsetEnd=397 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=Maker CharacterOffsetBegin=398 CharacterOffsetEnd=403 PartOfSpeech=NN Lemma=maker NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=403 CharacterOffsetEnd=404 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=405 CharacterOffsetEnd=408 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=409 CharacterOffsetEnd=412 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=413 CharacterOffsetEnd=418 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=representative CharacterOffsetBegin=419 CharacterOffsetEnd=433 PartOfSpeech=NN Lemma=representative NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=434 CharacterOffsetEnd=436 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=437 CharacterOffsetEnd=440 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=real CharacterOffsetBegin=441 CharacterOffsetEnd=445 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=446 CharacterOffsetEnd=449 PartOfSpeech=NNP Lemma=New NamedEntityTag=LOCATION]
+[Text=Orleans CharacterOffsetBegin=450 CharacterOffsetEnd=457 PartOfSpeech=NNP Lemma=Orleans NamedEntityTag=LOCATION]
+[Text=jazz CharacterOffsetBegin=458 CharacterOffsetEnd=462 PartOfSpeech=NN Lemma=jazz NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=463 CharacterOffsetEnd=468 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=469 CharacterOffsetEnd=471 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=fortunately CharacterOffsetBegin=472 CharacterOffsetEnd=483 PartOfSpeech=RB Lemma=fortunately NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=484 CharacterOffsetEnd=489 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=490 CharacterOffsetEnd=494 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=495 CharacterOffsetEnd=497 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=497 CharacterOffsetEnd=498 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Perez))
+      (VP (VBZ has)
+        (VP (VBN gone)
+          (PP (TO to)
+            (NP (PRP$ his) (NN Maker))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (DT the) (JJ other) (NN representative))
+        (PP (IN of)
+          (NP (DT the) (JJ real) (NNP New) (NNP Orleans) (NN jazz) (NN music))))
+      (VP (VBZ is)
+        (ADVP (RB fortunately))
+        (ADVP (RB still))
+        (PP (IN with)
+          (NP (PRP us)))))
+    (. .)))
+
+root(ROOT-0, gone-3)
+nsubj(gone-3, Perez-1)
+aux(gone-3, has-2)
+case(Maker-6, to-4)
+nmod:poss(Maker-6, his-5)
+nmod:to(gone-3, Maker-6)
+punct(gone-3, ,-7)
+cc(gone-3, but-8)
+det(representative-11, the-9)
+amod(representative-11, other-10)
+nsubj(us-23, representative-11)
+case(music-18, of-12)
+det(music-18, the-13)
+amod(music-18, real-14)
+compound(music-18, New-15)
+compound(music-18, Orleans-16)
+compound(music-18, jazz-17)
+nmod:of(representative-11, music-18)
+cop(us-23, is-19)
+advmod(us-23, fortunately-20)
+advmod(us-23, still-21)
+case(us-23, with-22)
+conj:but(gone-3, us-23)
+punct(gone-3, .-24)
+
+Coreference set:
+	(1,19,[19,20]) -> (1,10,[10,11]), that is: "his" -> "Oscar"
+Coreference set:
+	(1,27,[27,28]) -> (1,3,[2,6]), that is: "its" -> "another club on Bourbon"
+	(2,2,[2,3]) -> (1,3,[2,6]), that is: "it" -> "another club on Bourbon"
+Coreference set:
+	(2,14,[11,15]) -> (2,7,[6,8]), that is: "the same great trouper" -> "Papa Celestin"
+	(2,16,[16,17]) -> (2,7,[6,8]), that is: "he" -> "Papa Celestin"
+	(2,41,[41,42]) -> (2,7,[6,8]), that is: "himself" -> "Papa Celestin"
+Coreference set:
+	(3,1,[1,2]) -> (2,46,[43,47]), that is: "Perez" -> "the immortal Manuel Perez"
+	(3,5,[5,6]) -> (2,46,[43,47]), that is: "his" -> "the immortal Manuel Perez"

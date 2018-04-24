@@ -1,0 +1,73 @@
+Sentence #1 (21 tokens):
+Today with Mendelssohn at a dinner party, where he would not play, and Field was a poor substitute.
+[Text=Today CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=today NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Today</TIMEX3>]
+[Text=with CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Mendelssohn CharacterOffsetBegin=11 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=mendelssohn NamedEntityTag=PERSON]
+[Text=at CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Field CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=field NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=poor CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=JJ Lemma=poor NamedEntityTag=O]
+[Text=substitute CharacterOffsetBegin=88 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=substitute NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NN Today))
+      (PP (IN with)
+        (NP
+          (NP (NN Mendelssohn))
+          (PP (IN at)
+            (NP
+              (NP
+                (NP (DT a) (NN dinner) (NN party))
+                (, ,)
+                (SBAR
+                  (WHADVP (WRB where))
+                  (S
+                    (NP (PRP he))
+                    (VP (MD would) (RB not)
+                      (VP (VB play)))))
+                (, ,))
+              (CC and)
+              (NP (NN Field)))))))
+    (VP (VBD was)
+      (NP (DT a) (JJ poor) (NN substitute)))
+    (. .)))
+
+root(ROOT-0, substitute-20)
+nsubj(substitute-20, Today-1)
+case(Mendelssohn-3, with-2)
+nmod:with(Today-1, Mendelssohn-3)
+case(party-7, at-4)
+det(party-7, a-5)
+compound(party-7, dinner-6)
+nmod:at(Mendelssohn-3, party-7)
+punct(party-7, ,-8)
+advmod(play-13, where-9)
+nsubj(play-13, he-10)
+aux(play-13, would-11)
+neg(play-13, not-12)
+acl:relcl(party-7, play-13)
+punct(party-7, ,-14)
+cc(party-7, and-15)
+nmod:at(Mendelssohn-3, Field-16)
+conj:and(party-7, Field-16)
+cop(substitute-20, was-17)
+det(substitute-20, a-18)
+amod(substitute-20, poor-19)
+punct(substitute-20, .-21)
+
+Coreference set:
+	(1,20,[18,21]) -> (1,1,[1,17]), that is: "a poor substitute" -> "Today with Mendelssohn at a dinner party , where he would not play , and Field"

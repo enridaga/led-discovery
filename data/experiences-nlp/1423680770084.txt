@@ -1,0 +1,294 @@
+Sentence #1 (14 tokens):
+Mabel Ritchie sings my 3 songs before going off by train at 9.48.
+[Text=Mabel CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Mabel NamedEntityTag=PERSON]
+[Text=Ritchie CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Ritchie NamedEntityTag=PERSON]
+[Text=sings CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=VBZ Lemma=sing NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=3 CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=songs CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=NNS Lemma=song NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=train CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=train NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=9.48 CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=CD Lemma=9.48 NamedEntityTag=NUMBER NormalizedNamedEntityTag=9.48]
+[Text=. CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Mabel) (NNP Ritchie))
+    (VP (VBZ sings)
+      (NP (PRP$ my) (CD 3) (NNS songs))
+      (PP (IN before)
+        (S
+          (VP (VBG going)
+            (PRT (RP off))
+            (PP (IN by)
+              (NP (NN train)))
+            (PP (IN at)
+              (NP (CD 9.48)))))))
+    (. .)))
+
+root(ROOT-0, sings-3)
+compound(Ritchie-2, Mabel-1)
+nsubj(sings-3, Ritchie-2)
+nmod:poss(songs-6, my-4)
+nummod(songs-6, 3-5)
+dobj(sings-3, songs-6)
+mark(going-8, before-7)
+advcl:before(sings-3, going-8)
+compound:prt(going-8, off-9)
+case(train-11, by-10)
+nmod:by(going-8, train-11)
+case(9.48-13, at-12)
+nmod:at(going-8, 9.48-13)
+punct(sings-3, .-14)
+
+Sentence #2 (14 tokens):
+Walk with Mummy, Beth, & Caesar, & pack in morning.
+[Text=Walk CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=VB Lemma=walk NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Mummy CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=mummy NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Beth CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=Beth NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Caesar CharacterOffsetBegin=91 CharacterOffsetEnd=97 PartOfSpeech=NNP Lemma=Caesar NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=pack CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=pack NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=morning CharacterOffsetBegin=109 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=TMO Timex=<TIMEX3 tid="t1" type="TIME" value="TMO">morning</TIMEX3>]
+[Text=. CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Walk)
+      (PP (IN with)
+        (NP
+          (NP
+            (NP
+              (NP (NN Mummy))
+              (, ,)
+              (NP (NNP Beth))
+              (, ,))
+            (CC &)
+            (NP (NNP Caesar)))
+          (, ,)
+          (CC &)
+          (NP
+            (NP (NN pack))
+            (PP (IN in)
+              (NP (NN morning)))))))
+    (. .)))
+
+root(ROOT-0, Walk-1)
+case(Mummy-3, with-2)
+nmod:with(Walk-1, Mummy-3)
+punct(Mummy-3, ,-4)
+appos(Mummy-3, Beth-5)
+punct(Mummy-3, ,-6)
+cc(Mummy-3, &-7)
+nmod:with(Walk-1, Caesar-8)
+conj:&(Mummy-3, Caesar-8)
+punct(Mummy-3, ,-9)
+cc(Mummy-3, &-10)
+nmod:with(Walk-1, pack-11)
+conj:&(Mummy-3, pack-11)
+case(morning-13, in-12)
+nmod:in(pack-11, morning-13)
+punct(Walk-1, .-14)
+
+Sentence #3 (5 tokens):
+Catch 2.31 to London.
+[Text=Catch CharacterOffsetBegin=118 CharacterOffsetEnd=123 PartOfSpeech=VB Lemma=catch NamedEntityTag=O]
+[Text=2.31 CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=CD Lemma=2.31 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.31]
+[Text=to CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=London CharacterOffsetBegin=132 CharacterOffsetEnd=138 PartOfSpeech=NNP Lemma=London NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Catch)
+      (NP (CD 2.31))
+      (PP (TO to)
+        (NP (NNP London))))
+    (. .)))
+
+root(ROOT-0, Catch-1)
+dobj(Catch-1, 2.31-2)
+case(London-4, to-3)
+nmod:to(Catch-1, London-4)
+punct(Catch-1, .-5)
+
+Sentence #4 (10 tokens):
+Mum & Pop bring me to station in car.
+[Text=Mum CharacterOffsetBegin=140 CharacterOffsetEnd=143 PartOfSpeech=NNP Lemma=Mum NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Pop CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=NNP Lemma=Pop NamedEntityTag=O]
+[Text=bring CharacterOffsetBegin=150 CharacterOffsetEnd=155 PartOfSpeech=VB Lemma=bring NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=156 CharacterOffsetEnd=158 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=159 CharacterOffsetEnd=161 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=station CharacterOffsetBegin=162 CharacterOffsetEnd=169 PartOfSpeech=NN Lemma=station NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=170 CharacterOffsetEnd=172 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=car CharacterOffsetBegin=173 CharacterOffsetEnd=176 PartOfSpeech=NN Lemma=car NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=176 CharacterOffsetEnd=177 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Mum)
+      (CC &)
+      (NNP Pop))
+    (VP (VB bring)
+      (NP (PRP me))
+      (PP (TO to)
+        (NP
+          (NP (NN station))
+          (PP (IN in)
+            (NP (NN car))))))
+    (. .)))
+
+root(ROOT-0, bring-4)
+nsubj(bring-4, Mum-1)
+cc(Mum-1, &-2)
+conj:&(Mum-1, Pop-3)
+nsubj(bring-4, Pop-3)
+dobj(bring-4, me-5)
+case(station-7, to-6)
+nmod:to(bring-4, station-7)
+case(car-9, in-8)
+nmod:in(station-7, car-9)
+punct(bring-4, .-10)
+
+Sentence #5 (7 tokens):
+Pretty good journey, on time.
+[Text=Pretty CharacterOffsetBegin=178 CharacterOffsetEnd=184 PartOfSpeech=NNP Lemma=Pretty NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=185 CharacterOffsetEnd=189 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=journey CharacterOffsetBegin=190 CharacterOffsetEnd=197 PartOfSpeech=NN Lemma=journey NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=197 CharacterOffsetEnd=198 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=199 CharacterOffsetEnd=201 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=202 CharacterOffsetEnd=206 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=206 CharacterOffsetEnd=207 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Pretty))
+    (NP (JJ good) (NN journey))
+    (, ,)
+    (PP (IN on)
+      (NP (NN time)))
+    (. .)))
+
+root(ROOT-0, Pretty-1)
+amod(journey-3, good-2)
+dep(Pretty-1, journey-3)
+punct(Pretty-1, ,-4)
+case(time-6, on-5)
+nmod:on(Pretty-1, time-6)
+punct(Pretty-1, .-7)
+
+Sentence #6 (13 tokens):
+Meet Barbara, by accident, in Metropolitan, at Nottinghill Gate.
+[Text=Meet CharacterOffsetBegin=208 CharacterOffsetEnd=212 PartOfSpeech=NNP Lemma=Meet NamedEntityTag=O]
+[Text=Barbara CharacterOffsetBegin=213 CharacterOffsetEnd=220 PartOfSpeech=NNP Lemma=Barbara NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=220 CharacterOffsetEnd=221 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=222 CharacterOffsetEnd=224 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=accident CharacterOffsetBegin=225 CharacterOffsetEnd=233 PartOfSpeech=NN Lemma=accident NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=233 CharacterOffsetEnd=234 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=235 CharacterOffsetEnd=237 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Metropolitan CharacterOffsetBegin=238 CharacterOffsetEnd=250 PartOfSpeech=NNP Lemma=Metropolitan NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=250 CharacterOffsetEnd=251 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=252 CharacterOffsetEnd=254 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Nottinghill CharacterOffsetBegin=255 CharacterOffsetEnd=266 PartOfSpeech=NNP Lemma=Nottinghill NamedEntityTag=LOCATION]
+[Text=Gate CharacterOffsetBegin=267 CharacterOffsetEnd=271 PartOfSpeech=NNP Lemma=Gate NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=271 CharacterOffsetEnd=272 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (NNP Meet) (NNP Barbara))
+    (, ,)
+    (PP (IN by)
+      (NP (NN accident)))
+    (, ,)
+    (PP (IN in)
+      (NP (NNP Metropolitan)))
+    (, ,)
+    (PP (IN at)
+      (NP (NNP Nottinghill) (NNP Gate)))
+    (. .)))
+
+root(ROOT-0, Barbara-2)
+compound(Barbara-2, Meet-1)
+punct(Barbara-2, ,-3)
+case(accident-5, by-4)
+nmod:by(Barbara-2, accident-5)
+punct(Barbara-2, ,-6)
+case(Metropolitan-8, in-7)
+nmod:in(Barbara-2, Metropolitan-8)
+punct(Barbara-2, ,-9)
+case(Gate-12, at-10)
+compound(Gate-12, Nottinghill-11)
+nmod:at(Barbara-2, Gate-12)
+punct(Barbara-2, .-13)
+
+Sentence #7 (19 tokens):
+Attempt to write in evening, but am driven to desperation by a loud wireless on landing outside.
+[Text=Attempt CharacterOffsetBegin=273 CharacterOffsetEnd=280 PartOfSpeech=VB Lemma=attempt NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=281 CharacterOffsetEnd=283 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=write CharacterOffsetBegin=284 CharacterOffsetEnd=289 PartOfSpeech=VB Lemma=write NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=290 CharacterOffsetEnd=292 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=293 CharacterOffsetEnd=300 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t2" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=, CharacterOffsetBegin=300 CharacterOffsetEnd=301 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=302 CharacterOffsetEnd=305 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=306 CharacterOffsetEnd=308 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=driven CharacterOffsetBegin=309 CharacterOffsetEnd=315 PartOfSpeech=VBN Lemma=drive NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=316 CharacterOffsetEnd=318 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=desperation CharacterOffsetBegin=319 CharacterOffsetEnd=330 PartOfSpeech=NN Lemma=desperation NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=331 CharacterOffsetEnd=333 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=334 CharacterOffsetEnd=335 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=loud CharacterOffsetBegin=336 CharacterOffsetEnd=340 PartOfSpeech=JJ Lemma=loud NamedEntityTag=O]
+[Text=wireless CharacterOffsetBegin=341 CharacterOffsetEnd=349 PartOfSpeech=NN Lemma=wireless NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=350 CharacterOffsetEnd=352 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=landing CharacterOffsetBegin=353 CharacterOffsetEnd=360 PartOfSpeech=NN Lemma=landing NamedEntityTag=O]
+[Text=outside CharacterOffsetBegin=361 CharacterOffsetEnd=368 PartOfSpeech=NN Lemma=outside NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=368 CharacterOffsetEnd=369 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Attempt)
+      (S
+        (VP (TO to)
+          (VP
+            (VP (VB write)
+              (PP (IN in)
+                (NP (NN evening))))
+            (, ,)
+            (CC but)
+            (VP (VBP am)
+              (VP (VBN driven)
+                (PP (TO to)
+                  (NP (NN desperation)))
+                (PP (IN by)
+                  (NP
+                    (NP (DT a) (JJ loud) (NN wireless))
+                    (PP (IN on)
+                      (NP (NN landing) (NN outside)))))))))))
+    (. .)))
+
+root(ROOT-0, Attempt-1)
+mark(write-3, to-2)
+xcomp(Attempt-1, write-3)
+case(evening-5, in-4)
+nmod:in(write-3, evening-5)
+punct(write-3, ,-6)
+cc(write-3, but-7)
+auxpass(driven-9, am-8)
+xcomp(Attempt-1, driven-9)
+conj:but(write-3, driven-9)
+case(desperation-11, to-10)
+nmod:to(driven-9, desperation-11)
+case(wireless-15, by-12)
+det(wireless-15, a-13)
+amod(wireless-15, loud-14)
+nmod:agent(driven-9, wireless-15)
+case(outside-18, on-16)
+compound(outside-18, landing-17)
+nmod:on(wireless-15, outside-18)
+punct(Attempt-1, .-19)
+
+Coreference set:
+	(4,5,[5,6]) -> (1,4,[4,5]), that is: "me" -> "my"

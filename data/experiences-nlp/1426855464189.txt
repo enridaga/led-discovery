@@ -1,0 +1,603 @@
+Sentence #1 (13 tokens):
+Sometimes I'm asked about my biggest musical influence as a kid.
+[Text=Sometimes CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=sometimes NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=VBN Lemma=ask NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=biggest CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=JJS Lemma=biggest NamedEntityTag=O]
+[Text=musical CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=JJ Lemma=musical NamedEntityTag=O]
+[Text=influence CharacterOffsetBegin=45 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=influence NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=kid CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=kid NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Sometimes))
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBN asked)
+        (PP (IN about)
+          (NP (PRP$ my) (JJS biggest) (JJ musical) (NN influence)))
+        (PP (IN as)
+          (NP (DT a) (NN kid)))))
+    (. .)))
+
+root(ROOT-0, asked-4)
+advmod(asked-4, Sometimes-1)
+nsubjpass(asked-4, I-2)
+auxpass(asked-4, 'm-3)
+case(influence-9, about-5)
+nmod:poss(influence-9, my-6)
+amod(influence-9, biggest-7)
+amod(influence-9, musical-8)
+nmod:about(asked-4, influence-9)
+case(kid-12, as-10)
+det(kid-12, a-11)
+nmod:as(asked-4, kid-12)
+punct(asked-4, .-13)
+
+Sentence #2 (10 tokens):
+I always give one name: Mr. Wylie Pitman.
+[Text=I CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=VBP Lemma=give NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=name CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Wylie CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=NNP Lemma=Wylie NamedEntityTag=PERSON]
+[Text=Pitman CharacterOffsetBegin=99 CharacterOffsetEnd=105 PartOfSpeech=NNP Lemma=Pitman NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB always))
+    (VP (VBP give)
+      (NP
+        (NP (CD one) (NN name))
+        (: :)
+        (NP (NNP Mr.) (NNP Wylie) (NNP Pitman))))
+    (. .)))
+
+root(ROOT-0, give-3)
+nsubj(give-3, I-1)
+advmod(give-3, always-2)
+nummod(name-5, one-4)
+dobj(give-3, name-5)
+punct(name-5, :-6)
+compound(Pitman-9, Mr.-7)
+compound(Pitman-9, Wylie-8)
+dep(name-5, Pitman-9)
+punct(give-3, .-10)
+
+Sentence #3 (6 tokens):
+I called him Mr. Pit.
+[Text=I CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=109 CharacterOffsetEnd=115 PartOfSpeech=VBD Lemma=call NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=116 CharacterOffsetEnd=119 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Pit CharacterOffsetBegin=124 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=pit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD called)
+      (S
+        (NP (PRP him))
+        (NP (NNP Mr.) (NN Pit))))
+    (. .)))
+
+root(ROOT-0, called-2)
+nsubj(called-2, I-1)
+nsubj(Pit-5, him-3)
+compound(Pit-5, Mr.-4)
+xcomp(called-2, Pit-5)
+punct(called-2, .-6)
+
+Sentence #4 (26 tokens):
+Now you won't find Mr. Pit in any history of Jazz, and the man's not in the Down Beat Hall of Fame.
+[Text=Now CharacterOffsetBegin=133 CharacterOffsetEnd=136 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+[Text=you CharacterOffsetBegin=137 CharacterOffsetEnd=140 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=wo CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=143 CharacterOffsetEnd=146 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=147 CharacterOffsetEnd=151 PartOfSpeech=VB Lemma=find NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=152 CharacterOffsetEnd=155 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Pit CharacterOffsetBegin=156 CharacterOffsetEnd=159 PartOfSpeech=NN Lemma=pit NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=163 CharacterOffsetEnd=166 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=history CharacterOffsetBegin=167 CharacterOffsetEnd=174 PartOfSpeech=NN Lemma=history NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=175 CharacterOffsetEnd=177 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Jazz CharacterOffsetBegin=178 CharacterOffsetEnd=182 PartOfSpeech=NN Lemma=jazz NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=182 CharacterOffsetEnd=183 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=184 CharacterOffsetEnd=187 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=188 CharacterOffsetEnd=191 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=192 CharacterOffsetEnd=195 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=195 CharacterOffsetEnd=197 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=198 CharacterOffsetEnd=201 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=202 CharacterOffsetEnd=204 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=205 CharacterOffsetEnd=208 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Down CharacterOffsetBegin=209 CharacterOffsetEnd=213 PartOfSpeech=NN Lemma=down NamedEntityTag=LOCATION]
+[Text=Beat CharacterOffsetBegin=214 CharacterOffsetEnd=218 PartOfSpeech=NN Lemma=beat NamedEntityTag=LOCATION]
+[Text=Hall CharacterOffsetBegin=219 CharacterOffsetEnd=223 PartOfSpeech=NN Lemma=hall NamedEntityTag=LOCATION]
+[Text=of CharacterOffsetBegin=224 CharacterOffsetEnd=226 PartOfSpeech=IN Lemma=of NamedEntityTag=LOCATION]
+[Text=Fame CharacterOffsetBegin=227 CharacterOffsetEnd=231 PartOfSpeech=NNP Lemma=Fame NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=231 CharacterOffsetEnd=232 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Now))
+    (NP (PRP you))
+    (VP (MD wo) (RB n't)
+      (VP (VB find)
+        (NP (NNP Mr.) (NN Pit))
+        (PP (IN in)
+          (NP
+            (NP
+              (NP (DT any) (NN history))
+              (PP (IN of)
+                (NP (NN Jazz))))
+            (, ,)
+            (CC and)
+            (NP
+              (NP
+                (NP (DT the) (NN man) (POS 's))
+                (ADJP (RB not)
+                  (PP (IN in)
+                    (NP (DT the) (NN Down) (NN Beat))))
+                (NN Hall))
+              (PP (IN of)
+                (NP (NNP Fame))))))))
+    (. .)))
+
+root(ROOT-0, find-5)
+advmod(find-5, Now-1)
+nsubj(find-5, you-2)
+aux(find-5, wo-3)
+neg(find-5, n't-4)
+compound(Pit-7, Mr.-6)
+dobj(find-5, Pit-7)
+case(history-10, in-8)
+det(history-10, any-9)
+nmod:in(find-5, history-10)
+case(Jazz-12, of-11)
+nmod:of(history-10, Jazz-12)
+punct(history-10, ,-13)
+cc(history-10, and-14)
+det(man-16, the-15)
+nmod:poss(Hall-23, man-16)
+case(man-16, 's-17)
+amod(Hall-23, not-18)
+case(Beat-22, in-19)
+det(Beat-22, the-20)
+compound(Beat-22, Down-21)
+nmod:in(not-18, Beat-22)
+nmod:in(find-5, Hall-23)
+conj:and(history-10, Hall-23)
+case(Fame-25, of-24)
+nmod:of(Hall-23, Fame-25)
+punct(find-5, .-26)
+
+Sentence #5 (20 tokens):
+But sweethearts, you can take my word for it: Mr. Pit could play some sure-enough boogie-woogie piano.
+[Text=But CharacterOffsetBegin=233 CharacterOffsetEnd=236 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=sweethearts CharacterOffsetBegin=237 CharacterOffsetEnd=248 PartOfSpeech=NNS Lemma=sweetheart NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=248 CharacterOffsetEnd=249 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=250 CharacterOffsetEnd=253 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=254 CharacterOffsetEnd=257 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=258 CharacterOffsetEnd=262 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=263 CharacterOffsetEnd=265 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=word CharacterOffsetBegin=266 CharacterOffsetEnd=270 PartOfSpeech=NN Lemma=word NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=271 CharacterOffsetEnd=274 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=275 CharacterOffsetEnd=277 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=277 CharacterOffsetEnd=278 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Pit CharacterOffsetBegin=283 CharacterOffsetEnd=286 PartOfSpeech=NN Lemma=pit NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=287 CharacterOffsetEnd=292 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=293 CharacterOffsetEnd=297 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=298 CharacterOffsetEnd=302 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=sure-enough CharacterOffsetBegin=303 CharacterOffsetEnd=314 PartOfSpeech=JJ Lemma=sure-enough NamedEntityTag=O]
+[Text=boogie-woogie CharacterOffsetBegin=315 CharacterOffsetEnd=328 PartOfSpeech=NN Lemma=boogie-woogie NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=329 CharacterOffsetEnd=334 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=334 CharacterOffsetEnd=335 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC But)
+    (S
+      (NP (NNS sweethearts))
+      (, ,)
+      (NP (PRP you))
+      (VP (MD can)
+        (VP (VB take)
+          (NP (PRP$ my) (NN word))
+          (PP (IN for)
+            (NP (PRP it))))))
+    (: :)
+    (S
+      (NP (NNP Mr.) (NN Pit))
+      (VP (MD could)
+        (VP (VB play)
+          (NP (DT some) (JJ sure-enough) (NN boogie-woogie) (NN piano)))))
+    (. .)))
+
+root(ROOT-0, take-6)
+cc(take-6, But-1)
+nsubj(take-6, sweethearts-2)
+punct(take-6, ,-3)
+nsubj(take-6, you-4)
+aux(take-6, can-5)
+nmod:poss(word-8, my-7)
+dobj(take-6, word-8)
+case(it-10, for-9)
+nmod:for(take-6, it-10)
+punct(take-6, :-11)
+compound(Pit-13, Mr.-12)
+nsubj(play-15, Pit-13)
+aux(play-15, could-14)
+parataxis(take-6, play-15)
+det(piano-19, some-16)
+amod(piano-19, sure-enough-17)
+compound(piano-19, boogie-woogie-18)
+dobj(play-15, piano-19)
+punct(take-6, .-20)
+
+Sentence #6 (13 tokens):
+And best of all, he lived down the road from us.
+[Text=And CharacterOffsetBegin=336 CharacterOffsetEnd=339 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=340 CharacterOffsetEnd=344 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=345 CharacterOffsetEnd=347 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=348 CharacterOffsetEnd=351 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=351 CharacterOffsetEnd=352 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=353 CharacterOffsetEnd=355 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=lived CharacterOffsetBegin=356 CharacterOffsetEnd=361 PartOfSpeech=VBD Lemma=live NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=362 CharacterOffsetEnd=366 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=367 CharacterOffsetEnd=370 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=road CharacterOffsetBegin=371 CharacterOffsetEnd=375 PartOfSpeech=NN Lemma=road NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=376 CharacterOffsetEnd=380 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=381 CharacterOffsetEnd=383 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=383 CharacterOffsetEnd=384 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC And)
+    (NP
+      (NP (JJS best))
+      (PP (IN of)
+        (NP
+          (NP (DT all))
+          (, ,)
+          (NP (PRP he)))))
+    (VP (VBD lived)
+      (PRT (RP down))
+      (NP (DT the) (NN road))
+      (PP (IN from)
+        (NP (PRP us))))
+    (. .)))
+
+root(ROOT-0, lived-7)
+cc(lived-7, And-1)
+nsubj(lived-7, best-2)
+case(all-4, of-3)
+nmod:of(best-2, all-4)
+punct(all-4, ,-5)
+appos(all-4, he-6)
+compound:prt(lived-7, down-8)
+det(road-10, the-9)
+dobj(lived-7, road-10)
+case(us-12, from-11)
+nmod:from(lived-7, us-12)
+punct(lived-7, .-13)
+
+Sentence #7 (4 tokens):
+Red Wing Cafe.
+[Text=Red CharacterOffsetBegin=389 CharacterOffsetEnd=392 PartOfSpeech=NNP Lemma=Red NamedEntityTag=ORGANIZATION]
+[Text=Wing CharacterOffsetBegin=393 CharacterOffsetEnd=397 PartOfSpeech=NNP Lemma=Wing NamedEntityTag=ORGANIZATION]
+[Text=Cafe CharacterOffsetBegin=398 CharacterOffsetEnd=402 PartOfSpeech=NNP Lemma=Cafe NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=402 CharacterOffsetEnd=403 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (NNP Red) (NNP Wing) (NNP Cafe) (. .)))
+
+root(ROOT-0, Cafe-3)
+compound(Cafe-3, Red-1)
+compound(Cafe-3, Wing-2)
+punct(Cafe-3, .-4)
+
+Sentence #8 (16 tokens):
+I can see the big ol' red sign smack in front of me right now.
+[Text=I CharacterOffsetBegin=404 CharacterOffsetEnd=405 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=406 CharacterOffsetEnd=409 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=410 CharacterOffsetEnd=413 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=414 CharacterOffsetEnd=417 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=418 CharacterOffsetEnd=421 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=ol' CharacterOffsetBegin=422 CharacterOffsetEnd=425 PartOfSpeech=JJ Lemma=ol' NamedEntityTag=O]
+[Text=red CharacterOffsetBegin=426 CharacterOffsetEnd=429 PartOfSpeech=JJ Lemma=red NamedEntityTag=O]
+[Text=sign CharacterOffsetBegin=430 CharacterOffsetEnd=434 PartOfSpeech=NN Lemma=sign NamedEntityTag=O]
+[Text=smack CharacterOffsetBegin=435 CharacterOffsetEnd=440 PartOfSpeech=VBP Lemma=smack NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=441 CharacterOffsetEnd=443 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=front CharacterOffsetBegin=444 CharacterOffsetEnd=449 PartOfSpeech=NN Lemma=front NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=450 CharacterOffsetEnd=452 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=453 CharacterOffsetEnd=455 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=456 CharacterOffsetEnd=461 PartOfSpeech=RB Lemma=right NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t2" type="DATE" value="PRESENT_REF">right now</TIMEX3>]
+[Text=now CharacterOffsetBegin=462 CharacterOffsetEnd=465 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t2" type="DATE" value="PRESENT_REF">right now</TIMEX3>]
+[Text=. CharacterOffsetBegin=465 CharacterOffsetEnd=466 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD can)
+      (VP (VB see)
+        (NP
+          (NP (DT the) (JJ big) (JJ ol') (JJ red) (NN sign))
+          (SBAR
+            (S
+              (VP (VBP smack)
+                (PP (IN in)
+                  (NP
+                    (NP (NN front))
+                    (PP (IN of)
+                      (NP (PRP me)))))
+                (ADVP (RB right) (RB now))))))))
+    (. .)))
+
+root(ROOT-0, see-3)
+nsubj(see-3, I-1)
+aux(see-3, can-2)
+det(sign-8, the-4)
+amod(sign-8, big-5)
+amod(sign-8, ol'-6)
+amod(sign-8, red-7)
+dobj(see-3, sign-8)
+acl:relcl(sign-8, smack-9)
+case(me-13, in-10)
+mwe(in-10, front-11)
+mwe(in-10, of-12)
+nmod:in_front_of(smack-9, me-13)
+advmod(now-15, right-14)
+advmod(smack-9, now-15)
+punct(see-3, .-16)
+
+Sentence #9 (7 tokens):
+That was Mr. Pit's place.
+[Text=That CharacterOffsetBegin=467 CharacterOffsetEnd=471 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=472 CharacterOffsetEnd=475 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=476 CharacterOffsetEnd=479 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Pit CharacterOffsetBegin=480 CharacterOffsetEnd=483 PartOfSpeech=NN Lemma=pit NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=483 CharacterOffsetEnd=485 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=486 CharacterOffsetEnd=491 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=491 CharacterOffsetEnd=492 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBD was)
+      (NP
+        (NP (NNP Mr.) (NN Pit) (POS 's))
+        (NN place)))
+    (. .)))
+
+root(ROOT-0, place-6)
+nsubj(place-6, That-1)
+cop(place-6, was-2)
+compound(Pit-4, Mr.-3)
+nmod:poss(place-6, Pit-4)
+case(Pit-4, 's-5)
+punct(place-6, .-7)
+
+Sentence #10 (25 tokens):
+It was a little general store where he and his wife, Miss Georgia, sold items... [and] rented out rooms.
+[Text=It CharacterOffsetBegin=493 CharacterOffsetEnd=495 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=496 CharacterOffsetEnd=499 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=500 CharacterOffsetEnd=501 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=502 CharacterOffsetEnd=508 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=general CharacterOffsetBegin=509 CharacterOffsetEnd=516 PartOfSpeech=JJ Lemma=general NamedEntityTag=O]
+[Text=store CharacterOffsetBegin=517 CharacterOffsetEnd=522 PartOfSpeech=NN Lemma=store NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=523 CharacterOffsetEnd=528 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=529 CharacterOffsetEnd=531 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=532 CharacterOffsetEnd=535 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=536 CharacterOffsetEnd=539 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=wife CharacterOffsetBegin=540 CharacterOffsetEnd=544 PartOfSpeech=NN Lemma=wife NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=544 CharacterOffsetEnd=545 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Miss CharacterOffsetBegin=546 CharacterOffsetEnd=550 PartOfSpeech=NNP Lemma=Miss NamedEntityTag=LOCATION]
+[Text=Georgia CharacterOffsetBegin=551 CharacterOffsetEnd=558 PartOfSpeech=NNP Lemma=Georgia NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=558 CharacterOffsetEnd=559 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=sold CharacterOffsetBegin=560 CharacterOffsetEnd=564 PartOfSpeech=VBD Lemma=sell NamedEntityTag=O]
+[Text=items CharacterOffsetBegin=565 CharacterOffsetEnd=570 PartOfSpeech=NNS Lemma=item NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=570 CharacterOffsetEnd=573 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=574 CharacterOffsetEnd=575 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=575 CharacterOffsetEnd=578 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=578 CharacterOffsetEnd=579 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=rented CharacterOffsetBegin=580 CharacterOffsetEnd=586 PartOfSpeech=VBD Lemma=rent NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=587 CharacterOffsetEnd=590 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=rooms CharacterOffsetBegin=591 CharacterOffsetEnd=596 PartOfSpeech=NNS Lemma=room NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=596 CharacterOffsetEnd=597 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (JJ little) (JJ general) (NN store))
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP
+                (NP (PRP he))
+                (CC and)
+                (NP
+                  (NP (PRP$ his) (NN wife))
+                  (, ,)
+                  (NP (NNP Miss) (NNP Georgia))
+                  (, ,)))
+              (VP (VBD sold)
+                (NP (NNS items))))))))
+    (: ...)
+    (S
+      (NP (-LRB- -LSB-)
+        (CC and)
+        (-RRB- -RSB-))
+      (VP (VBD rented)
+        (PRT (RP out))
+        (NP (NNS rooms))))
+    (. .)))
+
+root(ROOT-0, store-6)
+nsubj(store-6, It-1)
+cop(store-6, was-2)
+det(store-6, a-3)
+amod(store-6, little-4)
+amod(store-6, general-5)
+advmod(sold-16, where-7)
+nsubj(sold-16, he-8)
+cc(he-8, and-9)
+nmod:poss(wife-11, his-10)
+conj:and(he-8, wife-11)
+nsubj(sold-16, wife-11)
+punct(wife-11, ,-12)
+compound(Georgia-14, Miss-13)
+appos(wife-11, Georgia-14)
+punct(wife-11, ,-15)
+acl:relcl(store-6, sold-16)
+dobj(sold-16, items-17)
+punct(store-6, ...-18)
+punct(and-20, -LSB--19)
+nsubj(rented-22, and-20)
+punct(and-20, -RSB--21)
+parataxis(store-6, rented-22)
+compound:prt(rented-22, out-23)
+dobj(rented-22, rooms-24)
+punct(store-6, .-25)
+
+Sentence #11 (34 tokens):
+Mama and me were always welcome there and, in fact, during one period when we were really down and out, we lived at the Red Wing Cafe for a while.
+[Text=Mama CharacterOffsetBegin=602 CharacterOffsetEnd=606 PartOfSpeech=NN Lemma=mama NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=607 CharacterOffsetEnd=610 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=611 CharacterOffsetEnd=613 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=614 CharacterOffsetEnd=618 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=619 CharacterOffsetEnd=625 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=welcome CharacterOffsetBegin=626 CharacterOffsetEnd=633 PartOfSpeech=JJ Lemma=welcome NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=634 CharacterOffsetEnd=639 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=640 CharacterOffsetEnd=643 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=643 CharacterOffsetEnd=644 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=645 CharacterOffsetEnd=647 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=fact CharacterOffsetBegin=648 CharacterOffsetEnd=652 PartOfSpeech=NN Lemma=fact NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=652 CharacterOffsetEnd=653 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=654 CharacterOffsetEnd=660 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=661 CharacterOffsetEnd=664 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=period CharacterOffsetBegin=665 CharacterOffsetEnd=671 PartOfSpeech=NN Lemma=period NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=672 CharacterOffsetEnd=676 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=677 CharacterOffsetEnd=679 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=680 CharacterOffsetEnd=684 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=685 CharacterOffsetEnd=691 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=692 CharacterOffsetEnd=696 PartOfSpeech=RB Lemma=down NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=697 CharacterOffsetEnd=700 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=701 CharacterOffsetEnd=704 PartOfSpeech=RB Lemma=out NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=704 CharacterOffsetEnd=705 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=706 CharacterOffsetEnd=708 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=lived CharacterOffsetBegin=709 CharacterOffsetEnd=714 PartOfSpeech=VBD Lemma=live NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=715 CharacterOffsetEnd=717 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=718 CharacterOffsetEnd=721 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Red CharacterOffsetBegin=722 CharacterOffsetEnd=725 PartOfSpeech=NNP Lemma=Red NamedEntityTag=LOCATION]
+[Text=Wing CharacterOffsetBegin=726 CharacterOffsetEnd=730 PartOfSpeech=NNP Lemma=Wing NamedEntityTag=LOCATION]
+[Text=Cafe CharacterOffsetBegin=731 CharacterOffsetEnd=735 PartOfSpeech=NNP Lemma=Cafe NamedEntityTag=LOCATION]
+[Text=for CharacterOffsetBegin=736 CharacterOffsetEnd=739 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=740 CharacterOffsetEnd=741 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=742 CharacterOffsetEnd=747 PartOfSpeech=NN Lemma=while NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=747 CharacterOffsetEnd=748 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NN Mama))
+        (CC and)
+        (NP (PRP me)))
+      (VP (VBD were)
+        (S
+          (ADJP (RB always) (JJ welcome))
+          (NP (EX there)))))
+    (CC and)
+    (, ,)
+    (S
+      (PP (IN in)
+        (NP
+          (NP (NN fact))
+          (, ,)
+          (PP (IN during)
+            (NP
+              (NP (CD one) (NN period))
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (PRP we))
+                  (VP (VBD were)
+                    (ADVP (RB really))
+                    (ADVP (RB down)
+                      (CC and)
+                      (RB out)))))))))
+      (, ,)
+      (NP (PRP we))
+      (VP (VBD lived)
+        (PP (IN at)
+          (NP (DT the) (NNP Red) (NNP Wing) (NNP Cafe)))
+        (PP (IN for)
+          (NP (DT a) (NN while)))))
+    (. .)))
+
+root(ROOT-0, were-4)
+nsubj(were-4, Mama-1)
+cc(Mama-1, and-2)
+conj:and(Mama-1, me-3)
+nsubj(were-4, me-3)
+advmod(welcome-6, always-5)
+xcomp(were-4, welcome-6)
+expl(welcome-6, there-7)
+cc(were-4, and-8)
+punct(were-4, ,-9)
+case(fact-11, in-10)
+nmod:in(lived-25, fact-11)
+punct(fact-11, ,-12)
+case(period-15, during-13)
+nummod(period-15, one-14)
+nmod:during(fact-11, period-15)
+advmod(were-18, when-16)
+nsubj(were-18, we-17)
+acl:relcl(period-15, were-18)
+advmod(were-18, really-19)
+advmod(were-18, down-20)
+cc(down-20, and-21)
+advmod(were-18, out-22)
+conj:and(down-20, out-22)
+punct(lived-25, ,-23)
+nsubj(lived-25, we-24)
+conj:and(were-4, lived-25)
+case(Cafe-30, at-26)
+det(Cafe-30, the-27)
+compound(Cafe-30, Red-28)
+compound(Cafe-30, Wing-29)
+nmod:at(lived-25, Cafe-30)
+case(while-33, for-31)
+det(while-33, a-32)
+nmod:for(lived-25, while-33)
+punct(were-4, .-34)
+
+Coreference set:
+	(1,6,[6,7]) -> (1,2,[2,3]), that is: "my" -> "I"
+	(2,1,[1,2]) -> (1,2,[2,3]), that is: "I" -> "I"
+	(3,1,[1,2]) -> (1,2,[2,3]), that is: "I" -> "I"
+	(5,7,[7,8]) -> (1,2,[2,3]), that is: "my" -> "I"
+	(8,1,[1,2]) -> (1,2,[2,3]), that is: "I" -> "I"
+	(8,13,[13,14]) -> (1,2,[2,3]), that is: "me" -> "I"
+	(11,3,[3,4]) -> (1,2,[2,3]), that is: "me" -> "I"
+Coreference set:
+	(3,3,[3,4]) -> (2,9,[7,10]), that is: "him" -> "Mr. Wylie Pitman"
+Coreference set:
+	(3,5,[4,6]) -> (9,4,[3,6]), that is: "Mr. Pit" -> "Mr. Pit 's"
+	(4,7,[6,8]) -> (9,4,[3,6]), that is: "Mr. Pit" -> "Mr. Pit 's"
+	(5,13,[12,14]) -> (9,4,[3,6]), that is: "Mr. Pit" -> "Mr. Pit 's"
+	(6,6,[6,7]) -> (9,4,[3,6]), that is: "he" -> "Mr. Pit 's"
+	(10,8,[8,9]) -> (9,4,[3,6]), that is: "he" -> "Mr. Pit 's"
+	(10,10,[10,11]) -> (9,4,[3,6]), that is: "his" -> "Mr. Pit 's"
+Coreference set:
+	(5,10,[10,11]) -> (5,8,[7,9]), that is: "it" -> "my word"
+Coreference set:
+	(7,3,[1,5]) -> (11,30,[27,31]), that is: "Red Wing Cafe ." -> "the Red Wing Cafe"
+Coreference set:
+	(9,1,[1,2]) -> (8,8,[4,16]), that is: "That" -> "the big ol' red sign smack in front of me right now"
+	(9,6,[3,7]) -> (8,8,[4,16]), that is: "Mr. Pit 's place" -> "the big ol' red sign smack in front of me right now"
+Coreference set:
+	(11,24,[24,25]) -> (11,17,[17,18]), that is: "we" -> "we"

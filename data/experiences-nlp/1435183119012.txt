@@ -1,0 +1,141 @@
+Sentence #1 (7 tokens):
+Wisten to Wagner 'Prom'.
+[Text=Wisten CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Wisten NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Wagner CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Wagner NamedEntityTag=PERSON]
+[Text=` CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Prom CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Prom NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Wisten))
+    (PP (TO to)
+      (NP
+        (NP (NNP Wagner))
+        (`` `) (NNP Prom) ('' ')))
+    (. .)))
+
+root(ROOT-0, Wisten-1)
+case(Prom-5, to-2)
+compound(Prom-5, Wagner-3)
+punct(Prom-5, `-4)
+nmod:to(Wisten-1, Prom-5)
+punct(Prom-5, '-6)
+punct(Wisten-1, .-7)
+
+Sentence #2 (5 tokens):
+on wireless in evening.
+[Text=on CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=wireless CharacterOffsetBegin=28 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=wireless NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t1" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN on)
+      (NP
+        (NP (NN wireless))
+        (PP (IN in)
+          (NP (NN evening)))))
+    (. .)))
+
+root(ROOT-0, wireless-2)
+case(wireless-2, on-1)
+case(evening-4, in-3)
+nmod:in(wireless-2, evening-4)
+punct(wireless-2, .-5)
+
+Sentence #3 (20 tokens):
+H.J. Wood's usual eccentricies & meaningless vandalism - but he must be getting tired - poor old man!
+[Text=H.J. CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=H.J. NamedEntityTag=PERSON]
+[Text=Wood CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Wood NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=usual CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=JJ Lemma=usual NamedEntityTag=O]
+[Text=eccentricies CharacterOffsetBegin=67 CharacterOffsetEnd=79 PartOfSpeech=NNS Lemma=eccentricy NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=meaningless CharacterOffsetBegin=82 CharacterOffsetEnd=93 PartOfSpeech=JJ Lemma=meaningless NamedEntityTag=O]
+[Text=vandalism CharacterOffsetBegin=94 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=vandalism NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=getting CharacterOffsetBegin=121 CharacterOffsetEnd=128 PartOfSpeech=VBG Lemma=get NamedEntityTag=O]
+[Text=tired CharacterOffsetBegin=129 CharacterOffsetEnd=134 PartOfSpeech=JJ Lemma=tired NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=poor CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=JJ Lemma=poor NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=142 CharacterOffsetEnd=145 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP
+          (NP (NNP H.J.) (NNP Wood) (POS 's))
+          (JJ usual) (NNS eccentricies))
+        (CC &)
+        (NP (JJ meaningless) (NN vandalism)))
+      (PRN (: -)
+        (FRAG (CC but)
+          (NP (PRP he)))))
+    (VP (MD must)
+      (VP (VB be)
+        (VP (VBG getting)
+          (NP
+            (NP (JJ tired))
+            (: -)
+            (NP (JJ poor) (JJ old) (NN man))))))
+    (. !)))
+
+root(ROOT-0, getting-14)
+compound(Wood-2, H.J.-1)
+nmod:poss(eccentricies-5, Wood-2)
+case(Wood-2, 's-3)
+amod(eccentricies-5, usual-4)
+nsubj(getting-14, eccentricies-5)
+cc(eccentricies-5, &-6)
+amod(vandalism-8, meaningless-7)
+conj:&(eccentricies-5, vandalism-8)
+nsubj(getting-14, vandalism-8)
+punct(he-11, --9)
+cc(he-11, but-10)
+dep(eccentricies-5, he-11)
+aux(getting-14, must-12)
+aux(getting-14, be-13)
+dobj(getting-14, tired-15)
+punct(tired-15, --16)
+amod(man-19, poor-17)
+amod(man-19, old-18)
+dep(tired-15, man-19)
+punct(getting-14, !-20)
+
+Sentence #4 (3 tokens):
+Usual pop.
+[Text=Usual CharacterOffsetBegin=151 CharacterOffsetEnd=156 PartOfSpeech=JJ Lemma=usual NamedEntityTag=O]
+[Text=pop CharacterOffsetBegin=157 CharacterOffsetEnd=160 PartOfSpeech=NN Lemma=pop NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=160 CharacterOffsetEnd=161 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (JJ Usual) (NN pop) (. .)))
+
+root(ROOT-0, pop-2)
+amod(pop-2, Usual-1)
+punct(pop-2, .-3)
+
+Sentence #5 (2 tokens):
+Wagner.
+[Text=Wagner CharacterOffsetBegin=162 CharacterOffsetEnd=168 PartOfSpeech=NNP Lemma=Wagner NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=168 CharacterOffsetEnd=169 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (NNP Wagner))
+    (. .)))
+
+root(ROOT-0, Wagner-1)
+punct(Wagner-1, .-2)
+
+Coreference set:
+	(5,1,[1,2]) -> (1,3,[3,7]), that is: "Wagner" -> "Wagner ` Prom '"
+Coreference set:
+	(3,11,[11,12]) -> (3,2,[1,4]), that is: "he" -> "H.J. Wood 's"

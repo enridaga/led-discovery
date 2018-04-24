@@ -1,0 +1,440 @@
+Sentence #1 (8 tokens):
+Had such a frivolous evening last night!
+[Text=Had CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=PDT Lemma=such NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=frivolous CharacterOffsetBegin=11 CharacterOffsetEnd=20 PartOfSpeech=JJ Lemma=frivolous NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TNI OFFSET P-1D INTERSECT EV Timex=<TIMEX3 alt_value="TNI OFFSET P-1D INTERSECT EV" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">evening last night</TIMEX3>]
+[Text=last CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=last NamedEntityTag=TIME NormalizedNamedEntityTag=TNI OFFSET P-1D INTERSECT EV Timex=<TIMEX3 alt_value="TNI OFFSET P-1D INTERSECT EV" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">evening last night</TIMEX3>]
+[Text=night CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI OFFSET P-1D INTERSECT EV Timex=<TIMEX3 alt_value="TNI OFFSET P-1D INTERSECT EV" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">evening last night</TIMEX3>]
+[Text=! CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBD Had)
+      (NP
+        (NP (PDT such) (DT a) (JJ frivolous) (NN evening))
+        (NP-TMP (JJ last) (NN night))))
+    (. !)))
+
+root(ROOT-0, Had-1)
+det:predet(evening-5, such-2)
+det(evening-5, a-3)
+amod(evening-5, frivolous-4)
+dobj(Had-1, evening-5)
+amod(night-7, last-6)
+nmod:tmod(evening-5, night-7)
+punct(Had-1, !-8)
+
+Sentence #2 (10 tokens):
+There was a musical soirée in the recreation tent.
+[Text=There CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=musical CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=musical NamedEntityTag=O]
+[Text=soirée CharacterOffsetBegin=61 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=soirée NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=recreation CharacterOffsetBegin=75 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=recreation NamedEntityTag=O]
+[Text=tent CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=tent NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ musical) (NN soirée))
+        (PP (IN in)
+          (NP (DT the) (NN recreation) (NN tent)))))
+    (. .)))
+
+root(ROOT-0, was-2)
+expl(was-2, There-1)
+det(soirée-5, a-3)
+amod(soirée-5, musical-4)
+nsubj(was-2, soirée-5)
+case(tent-9, in-6)
+det(tent-9, the-7)
+compound(tent-9, recreation-8)
+nmod:in(soirée-5, tent-9)
+punct(was-2, .-10)
+
+Sentence #3 (12 tokens):
+All the officers were invited and a good number turned up.
+[Text=All CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=officers CharacterOffsetBegin=100 CharacterOffsetEnd=108 PartOfSpeech=NNS Lemma=officer NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=109 CharacterOffsetEnd=113 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=invited CharacterOffsetBegin=114 CharacterOffsetEnd=121 PartOfSpeech=VBN Lemma=invite NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=122 CharacterOffsetEnd=125 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=128 CharacterOffsetEnd=132 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=number CharacterOffsetBegin=133 CharacterOffsetEnd=139 PartOfSpeech=NN Lemma=number NamedEntityTag=O]
+[Text=turned CharacterOffsetBegin=140 CharacterOffsetEnd=146 PartOfSpeech=VBD Lemma=turn NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PDT All) (DT the) (NNS officers))
+      (VP (VBD were)
+        (VP (VBN invited))))
+    (CC and)
+    (S
+      (NP (DT a) (JJ good) (NN number))
+      (VP (VBD turned)
+        (PRT (RP up))))
+    (. .)))
+
+root(ROOT-0, invited-5)
+det:predet(officers-3, All-1)
+det(officers-3, the-2)
+nsubjpass(invited-5, officers-3)
+auxpass(invited-5, were-4)
+cc(invited-5, and-6)
+det(number-9, a-7)
+amod(number-9, good-8)
+nsubj(turned-10, number-9)
+conj:and(invited-5, turned-10)
+compound:prt(turned-10, up-11)
+punct(invited-5, .-12)
+
+Sentence #4 (12 tokens):
+We all came in best bib and tucker to receive them.
+[Text=We CharacterOffsetBegin=151 CharacterOffsetEnd=153 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=came CharacterOffsetBegin=158 CharacterOffsetEnd=162 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=163 CharacterOffsetEnd=165 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=166 CharacterOffsetEnd=170 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=bib CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=NN Lemma=bib NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=175 CharacterOffsetEnd=178 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=tucker CharacterOffsetBegin=179 CharacterOffsetEnd=185 PartOfSpeech=NN Lemma=tucker NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=186 CharacterOffsetEnd=188 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=receive CharacterOffsetBegin=189 CharacterOffsetEnd=196 PartOfSpeech=VB Lemma=receive NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=197 CharacterOffsetEnd=201 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=201 CharacterOffsetEnd=202 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (ADVP (DT all))
+    (VP (VBD came)
+      (PP (IN in)
+        (NP
+          (NP (JJS best) (NN bib))
+          (CC and)
+          (NP (NN tucker))))
+      (S
+        (VP (TO to)
+          (VP (VB receive)
+            (NP (PRP them))))))
+    (. .)))
+
+root(ROOT-0, came-3)
+nsubj(came-3, We-1)
+nsubj:xsubj(receive-10, We-1)
+advmod(came-3, all-2)
+case(bib-6, in-4)
+amod(bib-6, best-5)
+nmod:in(came-3, bib-6)
+cc(bib-6, and-7)
+nmod:in(came-3, tucker-8)
+conj:and(bib-6, tucker-8)
+mark(receive-10, to-9)
+xcomp(came-3, receive-10)
+dobj(receive-10, them-11)
+punct(came-3, .-12)
+
+Sentence #5 (8 tokens):
+Our music and refreshments were much appreciated.
+[Text=Our CharacterOffsetBegin=203 CharacterOffsetEnd=206 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=207 CharacterOffsetEnd=212 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=213 CharacterOffsetEnd=216 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=refreshments CharacterOffsetBegin=217 CharacterOffsetEnd=229 PartOfSpeech=NNS Lemma=refreshment NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=230 CharacterOffsetEnd=234 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=235 CharacterOffsetEnd=239 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=appreciated CharacterOffsetBegin=240 CharacterOffsetEnd=251 PartOfSpeech=VBN Lemma=appreciate NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=251 CharacterOffsetEnd=252 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP$ Our) (NN music)
+      (CC and)
+      (NNS refreshments))
+    (VP (VBD were)
+      (VP
+        (ADVP (JJ much))
+        (VBN appreciated)))
+    (. .)))
+
+root(ROOT-0, appreciated-7)
+nmod:poss(music-2, Our-1)
+nsubjpass(appreciated-7, music-2)
+cc(music-2, and-3)
+conj:and(music-2, refreshments-4)
+nsubjpass(appreciated-7, refreshments-4)
+auxpass(appreciated-7, were-5)
+advmod(appreciated-7, much-6)
+punct(appreciated-7, .-8)
+
+Sentence #6 (29 tokens):
+The coffee and cakes were provided by ourselves, the music by C[hristie], Miss Huntley, Miss Urquart, Miss Laird and three MOs.
+[Text=The CharacterOffsetBegin=253 CharacterOffsetEnd=256 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=coffee CharacterOffsetBegin=257 CharacterOffsetEnd=263 PartOfSpeech=NN Lemma=coffee NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=264 CharacterOffsetEnd=267 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=cakes CharacterOffsetBegin=268 CharacterOffsetEnd=273 PartOfSpeech=NNS Lemma=cake NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=274 CharacterOffsetEnd=278 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=provided CharacterOffsetBegin=279 CharacterOffsetEnd=287 PartOfSpeech=VBN Lemma=provide NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=288 CharacterOffsetEnd=290 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=ourselves CharacterOffsetBegin=291 CharacterOffsetEnd=300 PartOfSpeech=PRP Lemma=ourselves NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=300 CharacterOffsetEnd=301 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=302 CharacterOffsetEnd=305 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=306 CharacterOffsetEnd=311 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=312 CharacterOffsetEnd=314 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=C CharacterOffsetBegin=315 CharacterOffsetEnd=316 PartOfSpeech=NN Lemma=c NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=316 CharacterOffsetEnd=317 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=hristie CharacterOffsetBegin=317 CharacterOffsetEnd=324 PartOfSpeech=NN Lemma=hristie NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=324 CharacterOffsetEnd=325 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=325 CharacterOffsetEnd=326 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Miss CharacterOffsetBegin=327 CharacterOffsetEnd=331 PartOfSpeech=NNP Lemma=Miss NamedEntityTag=O]
+[Text=Huntley CharacterOffsetBegin=332 CharacterOffsetEnd=339 PartOfSpeech=NNP Lemma=Huntley NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=339 CharacterOffsetEnd=340 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Miss CharacterOffsetBegin=341 CharacterOffsetEnd=345 PartOfSpeech=NNP Lemma=Miss NamedEntityTag=O]
+[Text=Urquart CharacterOffsetBegin=346 CharacterOffsetEnd=353 PartOfSpeech=NNP Lemma=Urquart NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=353 CharacterOffsetEnd=354 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Miss CharacterOffsetBegin=355 CharacterOffsetEnd=359 PartOfSpeech=NNP Lemma=Miss NamedEntityTag=O]
+[Text=Laird CharacterOffsetBegin=360 CharacterOffsetEnd=365 PartOfSpeech=NNP Lemma=Laird NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=366 CharacterOffsetEnd=369 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=370 CharacterOffsetEnd=375 PartOfSpeech=CD Lemma=three NamedEntityTag=DURATION NormalizedNamedEntityTag=P3M Timex=<TIMEX3 tid="t3" type="DURATION" value="P3M">three MOs</TIMEX3>]
+[Text=MOs CharacterOffsetBegin=376 CharacterOffsetEnd=379 PartOfSpeech=NNS Lemma=mo NamedEntityTag=DURATION NormalizedNamedEntityTag=P3M Timex=<TIMEX3 tid="t3" type="DURATION" value="P3M">three MOs</TIMEX3>]
+[Text=. CharacterOffsetBegin=379 CharacterOffsetEnd=380 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN coffee))
+      (CC and)
+      (NP (NNS cakes)))
+    (VP (VBD were)
+      (VP (VBN provided)
+        (PP (IN by)
+          (NP
+            (NP (PRP ourselves))
+            (, ,)
+            (NP (DT the) (NN music))))
+        (PP (IN by)
+          (NP
+            (NP (NN C) (-LRB- -LSB-) (NN hristie) (-RRB- -RSB-))
+            (, ,)
+            (NP (NNP Miss) (NNP Huntley))
+            (, ,)
+            (NP (NNP Miss) (NNP Urquart))
+            (, ,)
+            (NP (NNP Miss) (NNP Laird))
+            (CC and)
+            (NP (CD three) (NNS MOs))))))
+    (. .)))
+
+root(ROOT-0, provided-6)
+det(coffee-2, The-1)
+nsubjpass(provided-6, coffee-2)
+cc(coffee-2, and-3)
+conj:and(coffee-2, cakes-4)
+nsubjpass(provided-6, cakes-4)
+auxpass(provided-6, were-5)
+case(ourselves-8, by-7)
+nmod:agent(provided-6, ourselves-8)
+punct(ourselves-8, ,-9)
+det(music-11, the-10)
+appos(ourselves-8, music-11)
+case(hristie-15, by-12)
+compound(hristie-15, C-13)
+punct(hristie-15, -LSB--14)
+nmod:agent(provided-6, hristie-15)
+punct(hristie-15, -RSB--16)
+punct(hristie-15, ,-17)
+compound(Huntley-19, Miss-18)
+nmod:agent(provided-6, Huntley-19)
+conj:and(hristie-15, Huntley-19)
+punct(hristie-15, ,-20)
+compound(Urquart-22, Miss-21)
+nmod:agent(provided-6, Urquart-22)
+conj:and(hristie-15, Urquart-22)
+punct(hristie-15, ,-23)
+compound(Laird-25, Miss-24)
+nmod:agent(provided-6, Laird-25)
+conj:and(hristie-15, Laird-25)
+cc(hristie-15, and-26)
+nummod(MOs-28, three-27)
+nmod:agent(provided-6, MOs-28)
+conj:and(hristie-15, MOs-28)
+punct(provided-6, .-29)
+
+Sentence #7 (25 tokens):
+We all sat round and talked and listened and amused ourselves very much if only by considering what a joke the whole affair was.
+[Text=We CharacterOffsetBegin=381 CharacterOffsetEnd=383 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=384 CharacterOffsetEnd=387 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=sat CharacterOffsetBegin=388 CharacterOffsetEnd=391 PartOfSpeech=VBD Lemma=sit NamedEntityTag=O]
+[Text=round CharacterOffsetBegin=392 CharacterOffsetEnd=397 PartOfSpeech=NN Lemma=round NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=398 CharacterOffsetEnd=401 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=talked CharacterOffsetBegin=402 CharacterOffsetEnd=408 PartOfSpeech=VBD Lemma=talk NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=409 CharacterOffsetEnd=412 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=listened CharacterOffsetBegin=413 CharacterOffsetEnd=421 PartOfSpeech=VBD Lemma=listen NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=422 CharacterOffsetEnd=425 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=amused CharacterOffsetBegin=426 CharacterOffsetEnd=432 PartOfSpeech=VBD Lemma=amuse NamedEntityTag=O]
+[Text=ourselves CharacterOffsetBegin=433 CharacterOffsetEnd=442 PartOfSpeech=PRP Lemma=ourselves NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=443 CharacterOffsetEnd=447 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=448 CharacterOffsetEnd=452 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=453 CharacterOffsetEnd=455 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=456 CharacterOffsetEnd=460 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=461 CharacterOffsetEnd=463 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=considering CharacterOffsetBegin=464 CharacterOffsetEnd=475 PartOfSpeech=VBG Lemma=consider NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=476 CharacterOffsetEnd=480 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=481 CharacterOffsetEnd=482 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=joke CharacterOffsetBegin=483 CharacterOffsetEnd=487 PartOfSpeech=NN Lemma=joke NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=488 CharacterOffsetEnd=491 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=492 CharacterOffsetEnd=497 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=affair CharacterOffsetBegin=498 CharacterOffsetEnd=504 PartOfSpeech=NN Lemma=affair NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=505 CharacterOffsetEnd=508 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=508 CharacterOffsetEnd=509 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP
+      (VP
+        (ADVP (DT all))
+        (VP (VBD sat)
+          (NP (NN round)))
+        (CC and)
+        (VP (VBD talked)))
+      (CC and)
+      (VP (VBD listened)
+        (CC and)
+        (VBD amused)
+        (NP (PRP ourselves))
+        (PP
+          (ADVP
+            (ADVP (RB very) (RB much) (IN if))
+            (RB only))
+          (IN by)
+          (S
+            (VP (VBG considering)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP
+                    (NP (DT a) (NN joke))
+                    (NP (DT the) (JJ whole) (NN affair)))
+                  (VP (VBD was)))))))))
+    (. .)))
+
+root(ROOT-0, sat-3)
+nsubj(sat-3, We-1)
+nsubj(talked-6, We-1)
+nsubj(listened-8, We-1)
+advmod(sat-3, all-2)
+dobj(sat-3, round-4)
+cc(sat-3, and-5)
+conj:and(sat-3, talked-6)
+cc(sat-3, and-7)
+conj:and(sat-3, listened-8)
+cc(listened-8, and-9)
+conj:and(sat-3, amused-10)
+conj:and(listened-8, amused-10)
+dobj(listened-8, ourselves-11)
+advmod(much-13, very-12)
+advmod(only-15, much-13)
+case(much-13, if-14)
+advmod(considering-17, only-15)
+mark(considering-17, by-16)
+advcl:by(listened-8, considering-17)
+dobj(was-24, what-18)
+det(joke-20, a-19)
+nsubj(was-24, joke-20)
+det(affair-23, the-21)
+amod(affair-23, whole-22)
+dep(joke-20, affair-23)
+ccomp(considering-17, was-24)
+punct(sat-3, .-25)
+
+Sentence #8 (22 tokens):
+Our guests all went or were cleared out by Matron at about 10, and then we went off to bed.
+[Text=Our CharacterOffsetBegin=510 CharacterOffsetEnd=513 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=guests CharacterOffsetBegin=514 CharacterOffsetEnd=520 PartOfSpeech=NNS Lemma=guest NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=521 CharacterOffsetEnd=524 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=525 CharacterOffsetEnd=529 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=530 CharacterOffsetEnd=532 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=533 CharacterOffsetEnd=537 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=cleared CharacterOffsetBegin=538 CharacterOffsetEnd=545 PartOfSpeech=VBN Lemma=clear NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=546 CharacterOffsetEnd=549 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=550 CharacterOffsetEnd=552 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Matron CharacterOffsetBegin=553 CharacterOffsetEnd=559 PartOfSpeech=NN Lemma=matron NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=560 CharacterOffsetEnd=562 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=563 CharacterOffsetEnd=568 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=10 CharacterOffsetBegin=569 CharacterOffsetEnd=571 PartOfSpeech=CD Lemma=10 NamedEntityTag=NUMBER NormalizedNamedEntityTag=~10.0]
+[Text=, CharacterOffsetBegin=571 CharacterOffsetEnd=572 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=573 CharacterOffsetEnd=576 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=577 CharacterOffsetEnd=581 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=582 CharacterOffsetEnd=584 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=585 CharacterOffsetEnd=589 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=590 CharacterOffsetEnd=593 PartOfSpeech=RB Lemma=off NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=594 CharacterOffsetEnd=596 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=bed CharacterOffsetBegin=597 CharacterOffsetEnd=600 PartOfSpeech=NN Lemma=bed NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=600 CharacterOffsetEnd=601 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP$ Our) (NNS guests))
+      (ADVP (DT all))
+      (VP
+        (VP (VBD went))
+        (CC or)
+        (VP (VBD were)
+          (VP (VBN cleared)
+            (PRT (RP out))
+            (PP (IN by)
+              (NP (NN Matron)))
+            (PP (IN at)
+              (PP (IN about)
+                (NP (CD 10))))))))
+    (, ,)
+    (CC and)
+    (S
+      (ADVP (RB then))
+      (NP (PRP we))
+      (VP (VBD went)
+        (ADVP (RB off))
+        (PP (TO to)
+          (NP (NN bed)))))
+    (. .)))
+
+root(ROOT-0, went-4)
+nmod:poss(guests-2, Our-1)
+nsubj(went-4, guests-2)
+nsubjpass(cleared-7, guests-2)
+advmod(went-4, all-3)
+cc(went-4, or-5)
+auxpass(cleared-7, were-6)
+conj:or(went-4, cleared-7)
+compound:prt(cleared-7, out-8)
+case(Matron-10, by-9)
+nmod:agent(cleared-7, Matron-10)
+case(10-13, at-11)
+case(10-13, about-12)
+nmod:about(cleared-7, 10-13)
+punct(went-4, ,-14)
+cc(went-4, and-15)
+advmod(went-18, then-16)
+nsubj(went-18, we-17)
+conj:and(went-4, went-18)
+advmod(went-18, off-19)
+case(bed-21, to-20)
+nmod:to(went-18, bed-21)
+punct(went-4, .-22)
+
+Coreference set:
+	(5,1,[1,2]) -> (4,1,[1,2]), that is: "Our" -> "We"
+	(6,8,[8,12]) -> (4,1,[1,2]), that is: "ourselves , the music" -> "We"
+	(6,8,[8,9]) -> (4,1,[1,2]), that is: "ourselves" -> "We"
+	(7,1,[1,2]) -> (4,1,[1,2]), that is: "We" -> "We"
+	(7,11,[11,12]) -> (4,1,[1,2]), that is: "ourselves" -> "We"
+	(8,1,[1,2]) -> (4,1,[1,2]), that is: "Our" -> "We"
+	(8,17,[17,18]) -> (4,1,[1,2]), that is: "we" -> "We"
+Coreference set:
+	(5,2,[1,5]) -> (6,11,[10,12]), that is: "Our music and refreshments" -> "the music"

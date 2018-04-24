@@ -1,0 +1,84 @@
+Sentence #1 (26 tokens):
+He [Schrey] is a musical enthusiast, with a fine tenor voice, and sang a couple of delightful new Lieder by Felix.
+[Text=He CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Schrey CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=schrey NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=musical CharacterOffsetBegin=17 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=musical NamedEntityTag=O]
+[Text=enthusiast CharacterOffsetBegin=25 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=enthusiast NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=tenor CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=tenor NamedEntityTag=O]
+[Text=voice CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=voice NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sang CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=couple CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=couple NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=delightful CharacterOffsetBegin=83 CharacterOffsetEnd=93 PartOfSpeech=JJ Lemma=delightful NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=Lieder CharacterOffsetBegin=98 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=lieder NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Felix CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=NNP Lemma=Felix NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (-LRB- -LSB-)
+        (SBAR
+          (S
+            (NP (NN Schrey) (-RRB- -RSB-))
+            (VP (VBZ is)
+              (NP
+                (NP (DT a) (JJ musical) (NN enthusiast))
+                (, ,)
+                (PP (IN with)
+                  (NP (DT a) (JJ fine) (NN tenor) (NN voice)))
+                (, ,))))))
+      (CC and)
+      (VP (VBD sang)
+        (NP
+          (NP (DT a) (NN couple))
+          (PP (IN of)
+            (NP (JJ delightful) (JJ new) (NN Lieder))))
+        (PP (IN by)
+          (NP (NNP Felix)))))
+    (. .)))
+
+root(ROOT-0, enthusiast-8)
+nsubj(enthusiast-8, He-1)
+nsubj(sang-17, He-1)
+punct(enthusiast-8, -LSB--2)
+nsubj(enthusiast-8, Schrey-3)
+punct(Schrey-3, -RSB--4)
+cop(enthusiast-8, is-5)
+det(enthusiast-8, a-6)
+amod(enthusiast-8, musical-7)
+punct(enthusiast-8, ,-9)
+case(voice-14, with-10)
+det(voice-14, a-11)
+amod(voice-14, fine-12)
+compound(voice-14, tenor-13)
+nmod:with(enthusiast-8, voice-14)
+punct(enthusiast-8, ,-15)
+cc(enthusiast-8, and-16)
+conj:and(enthusiast-8, sang-17)
+det:qmod(Lieder-23, a-18)
+mwe(a-18, couple-19)
+mwe(a-18, of-20)
+amod(Lieder-23, delightful-21)
+amod(Lieder-23, new-22)
+dobj(sang-17, Lieder-23)
+case(Felix-25, by-24)
+nmod:by(sang-17, Felix-25)
+punct(enthusiast-8, .-26)
+
+Coreference set:
+	(1,3,[3,5]) -> (1,8,[6,9]), that is: "Schrey -RSB-" -> "a musical enthusiast"
+	(1,8,[6,15]) -> (1,8,[6,9]), that is: "a musical enthusiast , with a fine tenor voice" -> "a musical enthusiast"

@@ -1,0 +1,214 @@
+Sentence #1 (28 tokens):
+Garcia's Don Giovanni, Fodor's Contessa (in Figaro) were gratifications that may be mentioned in retrospect; to describe them would be impossible.
+[Text=Garcia CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Garcia NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Don CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Don NamedEntityTag=PERSON]
+[Text=Giovanni CharacterOffsetBegin=13 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Giovanni NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Fodor CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Fodor NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Contessa CharacterOffsetBegin=31 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Contessa NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Figaro CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Figaro NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=gratifications CharacterOffsetBegin=57 CharacterOffsetEnd=71 PartOfSpeech=NNS Lemma=gratification NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=mentioned CharacterOffsetBegin=84 CharacterOffsetEnd=93 PartOfSpeech=VBN Lemma=mention NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=retrospect CharacterOffsetBegin=97 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=retrospect NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=describe CharacterOffsetBegin=112 CharacterOffsetEnd=120 PartOfSpeech=VB Lemma=describe NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=126 CharacterOffsetEnd=131 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=impossible CharacterOffsetBegin=135 CharacterOffsetEnd=145 PartOfSpeech=JJ Lemma=impossible NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Garcia) (POS 's))
+        (NNP Don) (NNP Giovanni))
+      (, ,)
+      (NP
+        (NP
+          (NP (NNP Fodor) (POS 's))
+          (NNP Contessa))
+        (PRN (-LRB- -LRB-)
+          (PP (IN in)
+            (NP (NNP Figaro)))
+          (-RRB- -RRB-))))
+    (VP (VBD were)
+      (NP
+        (NP (NNS gratifications))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (MD may)
+              (VP (VB be)
+                (VP (VBN mentioned)
+                  (PP (IN in)
+                    (NP (NN retrospect))))))))
+        (: ;)
+        (S
+          (VP (TO to)
+            (VP (VB describe)
+              (SBAR
+                (S
+                  (NP (PRP them))
+                  (VP (MD would)
+                    (VP (VB be)
+                      (ADJP (JJ impossible)))))))))))
+    (. .)))
+
+root(ROOT-0, gratifications-14)
+nmod:poss(Giovanni-4, Garcia-1)
+case(Garcia-1, 's-2)
+compound(Giovanni-4, Don-3)
+nsubj(gratifications-14, Giovanni-4)
+punct(Giovanni-4, ,-5)
+nmod:poss(Contessa-8, Fodor-6)
+case(Fodor-6, 's-7)
+appos(Giovanni-4, Contessa-8)
+punct(Figaro-11, -LRB--9)
+case(Figaro-11, in-10)
+nmod:in(Contessa-8, Figaro-11)
+punct(Figaro-11, -RRB--12)
+cop(gratifications-14, were-13)
+nsubjpass(mentioned-18, gratifications-14)
+ref(gratifications-14, that-15)
+aux(mentioned-18, may-16)
+auxpass(mentioned-18, be-17)
+acl:relcl(gratifications-14, mentioned-18)
+case(retrospect-20, in-19)
+nmod:in(mentioned-18, retrospect-20)
+punct(gratifications-14, ;-21)
+mark(describe-23, to-22)
+acl:to(gratifications-14, describe-23)
+nsubj(impossible-27, them-24)
+aux(impossible-27, would-25)
+cop(impossible-27, be-26)
+ccomp(describe-23, impossible-27)
+punct(gratifications-14, .-28)
+
+Sentence #2 (37 tokens):
+Nor, for that matter, could one do justice to Pasta's classic beauty, to her taste in matters artistic, to her characterization of solemn resignation in Zingarelli's "Ombra adorata."
+[Text=Nor CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=CC Lemma=nor NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=150 CharacterOffsetEnd=151 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=152 CharacterOffsetEnd=155 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=156 CharacterOffsetEnd=160 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=matter CharacterOffsetBegin=161 CharacterOffsetEnd=167 PartOfSpeech=NN Lemma=matter NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=167 CharacterOffsetEnd=168 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=169 CharacterOffsetEnd=174 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=175 CharacterOffsetEnd=178 PartOfSpeech=PRP Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=do CharacterOffsetBegin=179 CharacterOffsetEnd=181 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=justice CharacterOffsetBegin=182 CharacterOffsetEnd=189 PartOfSpeech=NN Lemma=justice NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=190 CharacterOffsetEnd=192 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Pasta CharacterOffsetBegin=193 CharacterOffsetEnd=198 PartOfSpeech=NNP Lemma=Pasta NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=198 CharacterOffsetEnd=200 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=classic CharacterOffsetBegin=201 CharacterOffsetEnd=208 PartOfSpeech=JJ Lemma=classic NamedEntityTag=O]
+[Text=beauty CharacterOffsetBegin=209 CharacterOffsetEnd=215 PartOfSpeech=NN Lemma=beauty NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=215 CharacterOffsetEnd=216 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=217 CharacterOffsetEnd=219 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=taste CharacterOffsetBegin=224 CharacterOffsetEnd=229 PartOfSpeech=NN Lemma=taste NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=230 CharacterOffsetEnd=232 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=matters CharacterOffsetBegin=233 CharacterOffsetEnd=240 PartOfSpeech=NNS Lemma=matter NamedEntityTag=O]
+[Text=artistic CharacterOffsetBegin=241 CharacterOffsetEnd=249 PartOfSpeech=JJ Lemma=artistic NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=249 CharacterOffsetEnd=250 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=251 CharacterOffsetEnd=253 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=254 CharacterOffsetEnd=257 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=characterization CharacterOffsetBegin=258 CharacterOffsetEnd=274 PartOfSpeech=NN Lemma=characterization NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=275 CharacterOffsetEnd=277 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=solemn CharacterOffsetBegin=278 CharacterOffsetEnd=284 PartOfSpeech=JJ Lemma=solemn NamedEntityTag=O]
+[Text=resignation CharacterOffsetBegin=285 CharacterOffsetEnd=296 PartOfSpeech=NN Lemma=resignation NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=297 CharacterOffsetEnd=299 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Zingarelli CharacterOffsetBegin=300 CharacterOffsetEnd=310 PartOfSpeech=NNP Lemma=Zingarelli NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=310 CharacterOffsetEnd=312 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=313 CharacterOffsetEnd=314 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Ombra CharacterOffsetBegin=314 CharacterOffsetEnd=319 PartOfSpeech=FW Lemma=ombra NamedEntityTag=O]
+[Text=adorata CharacterOffsetBegin=320 CharacterOffsetEnd=327 PartOfSpeech=FW Lemma=adorata NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=327 CharacterOffsetEnd=328 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=328 CharacterOffsetEnd=329 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S (CC Nor)
+    (, ,)
+    (PP (IN for)
+      (NP (DT that) (NN matter)))
+    (, ,)
+    (VP (MD could)
+      (NP (PRP one))
+      (S
+        (VP (VB do)
+          (NP (NN justice))
+          (PP (TO to)
+            (NP
+              (NP (NNP Pasta) (POS 's))
+              (JJ classic) (NN beauty))
+            (PP (, ,)
+              (PP (TO to)
+                (NP
+                  (NP (PRP$ her) (NN taste))
+                  (PP (IN in)
+                    (NP
+                      (NP (NNS matters))
+                      (ADJP (JJ artistic))))))
+              (, ,) (TO to)
+              (NP
+                (NP (PRP$ her) (NN characterization))
+                (PP (IN of)
+                  (NP
+                    (NP (JJ solemn) (NN resignation))
+                    (PP (IN in)
+                      (NP
+                        (NP (NNP Zingarelli) (POS 's))
+                        (`` ``)
+                        (NP (FW Ombra) (FW adorata))))))))))))
+    (. .) ('' '')))
+
+root(ROOT-0, could-7)
+cc(could-7, Nor-1)
+punct(could-7, ,-2)
+case(matter-5, for-3)
+det(matter-5, that-4)
+nmod:for(could-7, matter-5)
+punct(could-7, ,-6)
+dobj(could-7, one-8)
+dep(could-7, do-9)
+dobj(do-9, justice-10)
+case(beauty-15, to-11)
+nmod:poss(beauty-15, Pasta-12)
+case(Pasta-12, 's-13)
+amod(beauty-15, classic-14)
+nmod:to(do-9, beauty-15)
+punct(characterization-26, ,-16)
+case(taste-19, to-17)
+nmod:poss(taste-19, her-18)
+nmod:to(characterization-26, taste-19)
+case(matters-21, in-20)
+nmod:in(taste-19, matters-21)
+amod(matters-21, artistic-22)
+punct(characterization-26, ,-23)
+case(characterization-26, to-24)
+nmod:poss(characterization-26, her-25)
+nmod:to(beauty-15, characterization-26)
+case(resignation-29, of-27)
+amod(resignation-29, solemn-28)
+nmod:of(characterization-26, resignation-29)
+case(Zingarelli-31, in-30)
+nmod:'s(resignation-29, Zingarelli-31)
+case(Zingarelli-31, 's-32)
+punct(Zingarelli-31, ``-33)
+compound(adorata-35, Ombra-34)
+dep(Zingarelli-31, adorata-35)
+punct(could-7, .-36)
+punct(could-7, ''-37)
+
+Coreference set:
+	(2,18,[18,19]) -> (2,8,[8,9]), that is: "her" -> "one"
+	(2,25,[25,26]) -> (2,8,[8,9]), that is: "her" -> "one"

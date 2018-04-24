@@ -1,0 +1,164 @@
+Sentence #1 (4 tokens):
+Go to RCM.
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=RCM CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=RCM NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PP (TO to)
+        (NP (NNP RCM))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+case(RCM-3, to-2)
+nmod:to(Go-1, RCM-3)
+punct(Go-1, .-4)
+
+Sentence #2 (21 tokens):
+in evening for 3rd performance of Bridge's Christmas Rose & Armstrong Gibbs' Blue Peter (awful tripe).
+[Text=in CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t1" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=for CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=3rd CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=3rd NamedEntityTag=ORDINAL NormalizedNamedEntityTag=3.0]
+[Text=performance CharacterOffsetBegin=30 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Bridge CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Bridge NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=POS Lemma='s NamedEntityTag=ORGANIZATION]
+[Text=Christmas CharacterOffsetBegin=54 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=Christmas NamedEntityTag=ORGANIZATION Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-12-25">Christmas</TIMEX3>]
+[Text=Rose CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=Rose NamedEntityTag=ORGANIZATION]
+[Text=& CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=CC Lemma=& NamedEntityTag=ORGANIZATION]
+[Text=Armstrong CharacterOffsetBegin=71 CharacterOffsetEnd=80 PartOfSpeech=NNP Lemma=Armstrong NamedEntityTag=ORGANIZATION]
+[Text=Gibbs CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=NNP Lemma=Gibbs NamedEntityTag=ORGANIZATION]
+[Text=' CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=POS Lemma=' NamedEntityTag=ORGANIZATION]
+[Text=Blue CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=JJ Lemma=blue NamedEntityTag=ORGANIZATION]
+[Text=Peter CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=NNP Lemma=Peter NamedEntityTag=ORGANIZATION]
+[Text=-LRB- CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=awful CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=JJ Lemma=awful NamedEntityTag=O]
+[Text=tripe CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=tripe NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN in)
+      (NP
+        (NP (NN evening))
+        (PP (IN for)
+          (NP
+            (NP (JJ 3rd) (NN performance))
+            (PP (IN of)
+              (NP
+                (NP (NNP Bridge) (POS 's))
+                (NP
+                  (NP
+                    (NP (NNP Christmas) (NNP Rose)
+                      (CC &)
+                      (NNP Armstrong) (NNP Gibbs) (POS '))
+                    (JJ Blue) (NNP Peter))
+                  (PRN (-LRB- -LRB-)
+                    (NP (JJ awful) (NN tripe))
+                    (-RRB- -RRB-)))))))))
+    (. .)))
+
+root(ROOT-0, evening-2)
+case(evening-2, in-1)
+case(performance-5, for-3)
+amod(performance-5, 3rd-4)
+nmod:for(evening-2, performance-5)
+case(Bridge-7, of-6)
+nmod:'s(performance-5, Bridge-7)
+case(Bridge-7, 's-8)
+compound(Rose-10, Christmas-9)
+nmod:poss(Peter-16, Rose-10)
+cc(Rose-10, &-11)
+compound(Gibbs-13, Armstrong-12)
+conj:&(Rose-10, Gibbs-13)
+nmod:poss(Peter-16, Gibbs-13)
+case(Gibbs-13, '-14)
+amod(Peter-16, Blue-15)
+dep(Bridge-7, Peter-16)
+punct(tripe-19, -LRB--17)
+amod(tripe-19, awful-18)
+appos(Peter-16, tripe-19)
+punct(tripe-19, -RRB--20)
+punct(evening-2, .-21)
+
+Sentence #3 (26 tokens):
+I like the Xmas R. more than ever - altho' the second Miriam was not as good as the first (Eugenie Walmsley).
+[Text=I CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=VBP Lemma=like NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Xmas CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=NNP Lemma=Xmas NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-12-25 Timex=<TIMEX3 tid="t3" type="DATE" value="XXXX-12-25">Xmas</TIMEX3>]
+[Text=R. CharacterOffsetBegin=130 CharacterOffsetEnd=132 PartOfSpeech=NNP Lemma=R. NamedEntityTag=MISC]
+[Text=more CharacterOffsetBegin=133 CharacterOffsetEnd=137 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=138 CharacterOffsetEnd=142 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=143 CharacterOffsetEnd=147 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=altho CharacterOffsetBegin=150 CharacterOffsetEnd=155 PartOfSpeech=NN Lemma=altho NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=155 CharacterOffsetEnd=156 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=157 CharacterOffsetEnd=160 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=second CharacterOffsetBegin=161 CharacterOffsetEnd=167 PartOfSpeech=JJ Lemma=second NamedEntityTag=ORDINAL NormalizedNamedEntityTag=2.0]
+[Text=Miriam CharacterOffsetBegin=168 CharacterOffsetEnd=174 PartOfSpeech=NNP Lemma=Miriam NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=175 CharacterOffsetEnd=178 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=179 CharacterOffsetEnd=182 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=183 CharacterOffsetEnd=185 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=186 CharacterOffsetEnd=190 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=191 CharacterOffsetEnd=193 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=194 CharacterOffsetEnd=197 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=198 CharacterOffsetEnd=203 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=-LRB- CharacterOffsetBegin=204 CharacterOffsetEnd=205 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Eugenie CharacterOffsetBegin=205 CharacterOffsetEnd=212 PartOfSpeech=NNP Lemma=Eugenie NamedEntityTag=PERSON]
+[Text=Walmsley CharacterOffsetBegin=213 CharacterOffsetEnd=221 PartOfSpeech=NNP Lemma=Walmsley NamedEntityTag=PERSON]
+[Text=-RRB- CharacterOffsetBegin=221 CharacterOffsetEnd=222 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=222 CharacterOffsetEnd=223 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP like)
+        (NP (DT the) (NNP Xmas) (NNP R.))
+        (ADVP (JJR more) (IN than))
+        (ADVP (RB ever))))
+    (: -)
+    (S
+      (NP
+        (NP (NN altho) ('' '))
+        (NP (DT the) (JJ second) (NNP Miriam)))
+      (VP (VBD was) (RB not)
+        (ADJP (RB as) (JJ good)
+          (PP (IN as)
+            (NP
+              (NP (DT the) (JJ first))
+              (PRN (-LRB- -LRB-)
+                (NP (NNP Eugenie) (NNP Walmsley))
+                (-RRB- -RRB-)))))))
+    (. .)))
+
+root(ROOT-0, like-2)
+nsubj(like-2, I-1)
+det(R.-5, the-3)
+compound(R.-5, Xmas-4)
+dobj(like-2, R.-5)
+advmod(like-2, more-6)
+case(more-6, than-7)
+advmod(like-2, ever-8)
+punct(like-2, --9)
+nsubj(good-18, altho-10)
+punct(altho-10, '-11)
+det(Miriam-14, the-12)
+amod(Miriam-14, second-13)
+dep(altho-10, Miriam-14)
+cop(good-18, was-15)
+neg(good-18, not-16)
+advmod(good-18, as-17)
+parataxis(like-2, good-18)
+case(first-21, as-19)
+det(first-21, the-20)
+nmod:as(good-18, first-21)
+punct(Walmsley-24, -LRB--22)
+compound(Walmsley-24, Eugenie-23)
+appos(first-21, Walmsley-24)
+punct(Walmsley-24, -RRB--25)
+punct(like-2, .-26)
+

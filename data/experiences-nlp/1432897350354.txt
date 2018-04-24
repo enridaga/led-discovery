@@ -1,0 +1,94 @@
+Sentence #1 (28 tokens):
+When sixteen years later (1837) I went to Paris I found his playing rather wild and confused in every respect, the enormous bravura notwithstanding.
+[Text=When CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=sixteen CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=CD Lemma=sixteen NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P16Y Timex=<TIMEX3 alt_value="OFFSET P16Y" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">sixteen years later</TIMEX3>]
+[Text=years CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NNS Lemma=year NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P16Y Timex=<TIMEX3 alt_value="OFFSET P16Y" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">sixteen years later</TIMEX3>]
+[Text=later CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=RB Lemma=later NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P16Y Timex=<TIMEX3 alt_value="OFFSET P16Y" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">sixteen years later</TIMEX3>]
+[Text=-LRB- CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=1837 CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=CD Lemma=1837 NamedEntityTag=DATE NormalizedNamedEntityTag=1837 Timex=<TIMEX3 tid="t2" type="DATE" value="1837">1837</TIMEX3>]
+[Text=-RRB- CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Paris CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Paris NamedEntityTag=LOCATION]
+[Text=I CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=found CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=VBD Lemma=find NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=68 CharacterOffsetEnd=74 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=wild CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=JJ Lemma=wild NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=confused CharacterOffsetBegin=84 CharacterOffsetEnd=92 PartOfSpeech=VBN Lemma=confuse NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=respect CharacterOffsetBegin=102 CharacterOffsetEnd=109 PartOfSpeech=NN Lemma=respect NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=enormous CharacterOffsetBegin=115 CharacterOffsetEnd=123 PartOfSpeech=JJ Lemma=enormous NamedEntityTag=O]
+[Text=bravura CharacterOffsetBegin=124 CharacterOffsetEnd=131 PartOfSpeech=NN Lemma=bravura NamedEntityTag=O]
+[Text=notwithstanding CharacterOffsetBegin=132 CharacterOffsetEnd=147 PartOfSpeech=IN Lemma=notwithstanding NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When)
+        (NP
+          (NP (CD sixteen) (NNS years))
+          (NP
+            (NP (RB later))
+            (PRN (-LRB- -LRB-)
+              (NP (CD 1837))
+              (-RRB- -RRB-)))))
+      (S
+        (NP (PRP I))
+        (VP (VBD went)
+          (PP (TO to)
+            (NP (NNP Paris))))))
+    (NP (PRP I))
+    (VP (VBD found)
+      (NP (PRP$ his) (NN playing))
+      (UCP
+        (ADJP (RB rather) (JJ wild))
+        (CC and)
+        (VP (VBN confused)
+          (PP (IN in)
+            (NP
+              (NP (DT every) (NN respect))
+              (, ,)
+              (ADVP
+                (NP (DT the) (JJ enormous) (NN bravura))
+                (IN notwithstanding)))))))
+    (. .)))
+
+root(ROOT-0, found-13)
+advmod(went-9, When-1)
+nummod(years-3, sixteen-2)
+dep(When-1, years-3)
+dep(years-3, later-4)
+punct(1837-6, -LRB--5)
+appos(later-4, 1837-6)
+punct(1837-6, -RRB--7)
+nsubj(went-9, I-8)
+advcl(found-13, went-9)
+case(Paris-11, to-10)
+nmod:to(went-9, Paris-11)
+nsubj(found-13, I-12)
+nmod:poss(playing-15, his-14)
+dobj(found-13, playing-15)
+advmod(wild-17, rather-16)
+xcomp(found-13, wild-17)
+cc(wild-17, and-18)
+xcomp(found-13, confused-19)
+conj:and(wild-17, confused-19)
+case(respect-22, in-20)
+det(respect-22, every-21)
+nmod:in(confused-19, respect-22)
+punct(respect-22, ,-23)
+det(bravura-26, the-24)
+amod(bravura-26, enormous-25)
+advmod(respect-22, bravura-26)
+case(bravura-26, notwithstanding-27)
+punct(found-13, .-28)
+
+Coreference set:
+	(1,12,[12,13]) -> (1,8,[8,9]), that is: "I" -> "I"

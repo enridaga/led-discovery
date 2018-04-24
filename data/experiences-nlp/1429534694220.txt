@@ -1,0 +1,83 @@
+Sentence #1 (26 tokens):
+Although it was rot a remarkable exhibition of his powers, he made his performance deeply interesting by introducing some subjects from ' Freyschütz.'
+[Text=Although CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=although NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=rot CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=rot NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=remarkable CharacterOffsetBegin=22 CharacterOffsetEnd=32 PartOfSpeech=JJ Lemma=remarkable NamedEntityTag=O]
+[Text=exhibition CharacterOffsetBegin=33 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=exhibition NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=powers CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=NNS Lemma=power NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=71 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=deeply CharacterOffsetBegin=83 CharacterOffsetEnd=89 PartOfSpeech=RB Lemma=deeply NamedEntityTag=O]
+[Text=interesting CharacterOffsetBegin=90 CharacterOffsetEnd=101 PartOfSpeech=JJ Lemma=interesting NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=introducing CharacterOffsetBegin=105 CharacterOffsetEnd=116 PartOfSpeech=VBG Lemma=introduce NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=117 CharacterOffsetEnd=121 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=subjects CharacterOffsetBegin=122 CharacterOffsetEnd=130 PartOfSpeech=NNS Lemma=subject NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=Freyschütz CharacterOffsetBegin=138 CharacterOffsetEnd=148 PartOfSpeech=NNP Lemma=Freyschütz NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN Although)
+      (S
+        (NP (PRP it))
+        (VP (VBD was)
+          (VP (NN rot)
+            (NP
+              (NP (DT a) (JJ remarkable) (NN exhibition))
+              (PP (IN of)
+                (NP (PRP$ his) (NNS powers))))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD made)
+      (S
+        (NP (PRP$ his) (NN performance))
+        (ADJP (RB deeply) (JJ interesting)
+          (PP (IN by)
+            (S
+              (VP (VBG introducing)
+                (NP (DT some) (NNS subjects))
+                (PP (IN from) ('' ')
+                  (NP (NNP Freyschütz)))))))))
+    (. .) ('' ')))
+
+root(ROOT-0, made-13)
+mark(rot-4, Although-1)
+nsubj(rot-4, it-2)
+aux(rot-4, was-3)
+advcl:although(made-13, rot-4)
+det(exhibition-7, a-5)
+amod(exhibition-7, remarkable-6)
+dobj(rot-4, exhibition-7)
+case(powers-10, of-8)
+nmod:poss(powers-10, his-9)
+nmod:of(exhibition-7, powers-10)
+punct(made-13, ,-11)
+nsubj(made-13, he-12)
+nmod:poss(performance-15, his-14)
+nsubj(interesting-17, performance-15)
+advmod(interesting-17, deeply-16)
+xcomp(made-13, interesting-17)
+mark(introducing-19, by-18)
+advcl:by(interesting-17, introducing-19)
+det(subjects-21, some-20)
+dobj(introducing-19, subjects-21)
+case(Freyschütz-24, from-22)
+punct(Freyschütz-24, '-23)
+nmod:from(introducing-19, Freyschütz-24)
+punct(made-13, .-25)
+punct(made-13, '-26)
+
+Coreference set:
+	(1,12,[12,13]) -> (1,9,[9,10]), that is: "he" -> "his"
+	(1,14,[14,15]) -> (1,9,[9,10]), that is: "his" -> "his"

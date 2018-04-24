@@ -1,0 +1,372 @@
+Sentence #1 (5 tokens):
+Wonderful concert last Thursday.
+[Text=Wonderful CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=wonderful NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=JJ Lemma=last NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-4 OFFSET P-1W Timex=<TIMEX3 alt_value="XXXX-WXX-4 OFFSET P-1W" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">last Thursday</TIMEX3>]
+[Text=Thursday CharacterOffsetBegin=23 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Thursday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-4 OFFSET P-1W Timex=<TIMEX3 alt_value="XXXX-WXX-4 OFFSET P-1W" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">last Thursday</TIMEX3>]
+[Text=. CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP (JJ Wonderful) (NN concert))
+      (NP-TMP (JJ last) (NNP Thursday)))
+    (. .)))
+
+root(ROOT-0, concert-2)
+amod(concert-2, Wonderful-1)
+amod(Thursday-4, last-3)
+nmod:tmod(concert-2, Thursday-4)
+punct(concert-2, .-5)
+
+Sentence #2 (14 tokens):
+The Brahms and Schoenberg were
+exhilarating (sic), but the Beethoven!!!
+[Text=The CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Brahms CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Brahms NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Schoenberg CharacterOffsetBegin=48 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Schoenberg NamedEntityTag=PERSON]
+[Text=were CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=exhilarating CharacterOffsetBegin=65 CharacterOffsetEnd=77 PartOfSpeech=JJ Lemma=exhilarating NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=sic CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=JJ Lemma=sic NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Beethoven CharacterOffsetBegin=93 CharacterOffsetEnd=102 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=PERSON]
+[Text=!!! CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=CD Lemma=!!! NamedEntityTag=NUMBER]
+(ROOT
+  (S
+    (NP (DT The) (NNP Brahms)
+      (CC and)
+      (NNP Schoenberg))
+    (VP (VBD were)
+      (ADJP
+        (ADJP (JJ exhilarating))
+        (PRN (-LRB- -LRB-)
+          (ADJP (JJ sic))
+          (-RRB- -RRB-)))
+      (, ,)
+      (PP (CC but)
+        (NP (DT the) (NNP Beethoven) (CD !!!))))))
+
+root(ROOT-0, exhilarating-6)
+det(Brahms-2, The-1)
+nsubj(exhilarating-6, Brahms-2)
+cc(Brahms-2, and-3)
+conj:and(Brahms-2, Schoenberg-4)
+nsubj(exhilarating-6, Schoenberg-4)
+cop(exhilarating-6, were-5)
+punct(sic-8, -LRB--7)
+dep(exhilarating-6, sic-8)
+punct(sic-8, -RRB--9)
+punct(exhilarating-6, ,-10)
+case(Beethoven-13, but-11)
+det(Beethoven-13, the-12)
+nmod:but(exhilarating-6, Beethoven-13)
+nummod(Beethoven-13, !!!-14)
+
+Sentence #3 (22 tokens):
+The seventh is not just my favourite piece of music, but I think the finest artefact made by a man.
+[Text=The CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=seventh CharacterOffsetBegin=110 CharacterOffsetEnd=117 PartOfSpeech=JJ Lemma=seventh NamedEntityTag=ORDINAL NormalizedNamedEntityTag=7.0]
+[Text=is CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=130 CharacterOffsetEnd=132 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=favourite CharacterOffsetBegin=133 CharacterOffsetEnd=142 PartOfSpeech=JJ Lemma=favourite NamedEntityTag=O]
+[Text=piece CharacterOffsetBegin=143 CharacterOffsetEnd=148 PartOfSpeech=NN Lemma=piece NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=149 CharacterOffsetEnd=151 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=152 CharacterOffsetEnd=157 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=157 CharacterOffsetEnd=158 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=159 CharacterOffsetEnd=162 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=163 CharacterOffsetEnd=164 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=165 CharacterOffsetEnd=170 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=finest CharacterOffsetBegin=175 CharacterOffsetEnd=181 PartOfSpeech=JJS Lemma=finest NamedEntityTag=O]
+[Text=artefact CharacterOffsetBegin=182 CharacterOffsetEnd=190 PartOfSpeech=NN Lemma=artefact NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=191 CharacterOffsetEnd=195 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=196 CharacterOffsetEnd=198 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=199 CharacterOffsetEnd=200 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=204 CharacterOffsetEnd=205 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJ seventh))
+      (VP (VBZ is) (RB not)
+        (ADVP (RB just))
+        (NP
+          (NP (PRP$ my) (JJ favourite) (NN piece))
+          (PP (IN of)
+            (NP (NN music))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP think)
+        (NP
+          (NP (DT the) (JJS finest) (NN artefact))
+          (VP (VBN made)
+            (PP (IN by)
+              (NP (DT a) (NN man)))))))
+    (. .)))
+
+root(ROOT-0, piece-8)
+det(seventh-2, The-1)
+nsubj(piece-8, seventh-2)
+cop(piece-8, is-3)
+neg(piece-8, not-4)
+advmod(piece-8, just-5)
+nmod:poss(piece-8, my-6)
+amod(piece-8, favourite-7)
+case(music-10, of-9)
+nmod:of(piece-8, music-10)
+punct(piece-8, ,-11)
+cc(piece-8, but-12)
+nsubj(think-14, I-13)
+conj:but(piece-8, think-14)
+det(artefact-17, the-15)
+amod(artefact-17, finest-16)
+dobj(think-14, artefact-17)
+acl(artefact-17, made-18)
+case(man-21, by-19)
+det(man-21, a-20)
+nmod:by(made-18, man-21)
+punct(piece-8, .-22)
+
+Sentence #4 (30 tokens):
+I've been listening to it for over sixty years, first in albums when albums were albums- i.e. files of 78 discs- probably conducted by Toscanini.
+[Text=I CharacterOffsetBegin=206 CharacterOffsetEnd=207 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='ve CharacterOffsetBegin=207 CharacterOffsetEnd=210 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=211 CharacterOffsetEnd=215 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=listening CharacterOffsetBegin=216 CharacterOffsetEnd=225 PartOfSpeech=VBG Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=226 CharacterOffsetEnd=228 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=229 CharacterOffsetEnd=231 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=232 CharacterOffsetEnd=235 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=236 CharacterOffsetEnd=240 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=sixty CharacterOffsetBegin=241 CharacterOffsetEnd=246 PartOfSpeech=CD Lemma=sixty NamedEntityTag=DURATION NormalizedNamedEntityTag=P60Y Timex=<TIMEX3 tid="t3" type="DURATION" value="P60Y">sixty years</TIMEX3>]
+[Text=years CharacterOffsetBegin=247 CharacterOffsetEnd=252 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P60Y Timex=<TIMEX3 tid="t3" type="DURATION" value="P60Y">sixty years</TIMEX3>]
+[Text=, CharacterOffsetBegin=252 CharacterOffsetEnd=253 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=254 CharacterOffsetEnd=259 PartOfSpeech=RB Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=in CharacterOffsetBegin=260 CharacterOffsetEnd=262 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=albums CharacterOffsetBegin=263 CharacterOffsetEnd=269 PartOfSpeech=NNS Lemma=album NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=270 CharacterOffsetEnd=274 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=albums CharacterOffsetBegin=275 CharacterOffsetEnd=281 PartOfSpeech=NNS Lemma=album NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=282 CharacterOffsetEnd=286 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=albums CharacterOffsetBegin=287 CharacterOffsetEnd=293 PartOfSpeech=NNS Lemma=album NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=293 CharacterOffsetEnd=294 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=i.e. CharacterOffsetBegin=295 CharacterOffsetEnd=299 PartOfSpeech=FW Lemma=i.e. NamedEntityTag=O]
+[Text=files CharacterOffsetBegin=300 CharacterOffsetEnd=305 PartOfSpeech=NNS Lemma=file NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=306 CharacterOffsetEnd=308 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=78 CharacterOffsetBegin=309 CharacterOffsetEnd=311 PartOfSpeech=CD Lemma=78 NamedEntityTag=NUMBER NormalizedNamedEntityTag=78.0]
+[Text=discs CharacterOffsetBegin=312 CharacterOffsetEnd=317 PartOfSpeech=NNS Lemma=disc NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=317 CharacterOffsetEnd=318 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=probably CharacterOffsetBegin=319 CharacterOffsetEnd=327 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=conducted CharacterOffsetBegin=328 CharacterOffsetEnd=337 PartOfSpeech=VBN Lemma=conduct NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=338 CharacterOffsetEnd=340 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Toscanini CharacterOffsetBegin=341 CharacterOffsetEnd=350 PartOfSpeech=NNP Lemma=Toscanini NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=350 CharacterOffsetEnd=351 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 've)
+      (VP (VBN been)
+        (VP (VBG listening)
+          (PP (TO to)
+            (NP
+              (NP (PRP it))
+              (PP (IN for)
+                (NP (IN over) (CD sixty) (NNS years)))))
+          (, ,)
+          (ADVP (RB first))
+          (PP (IN in)
+            (NP
+              (NP (NNS albums))
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (NNS albums))
+                  (VP (VBD were)
+                    (NP
+                      (NP (NNS albums))
+                      (PRN (: -)
+                        (NP
+                          (NP (FW i.e.))
+                          (NP
+                            (NP (NNS files))
+                            (PP (IN of)
+                              (NP (CD 78) (NNS discs)))))
+                        (: -))
+                      (VP
+                        (ADVP (RB probably))
+                        (VBN conducted)
+                        (PP (IN by)
+                          (NP (NNP Toscanini)))))))))))))
+    (. .)))
+
+root(ROOT-0, listening-4)
+nsubj(listening-4, I-1)
+aux(listening-4, 've-2)
+aux(listening-4, been-3)
+case(it-6, to-5)
+nmod:to(listening-4, it-6)
+case(years-10, for-7)
+amod(years-10, over-8)
+nummod(years-10, sixty-9)
+nmod:for(it-6, years-10)
+punct(listening-4, ,-11)
+advmod(albums-14, first-12)
+case(albums-14, in-13)
+nmod:in(listening-4, albums-14)
+advmod(albums-18, when-15)
+nsubj(albums-18, albums-16)
+cop(albums-18, were-17)
+acl:relcl(albums-14, albums-18)
+punct(i.e.-20, --19)
+dep(albums-18, i.e.-20)
+dep(i.e.-20, files-21)
+case(discs-24, of-22)
+nummod(discs-24, 78-23)
+nmod:of(files-21, discs-24)
+punct(i.e.-20, --25)
+advmod(conducted-27, probably-26)
+acl(albums-18, conducted-27)
+case(Toscanini-29, by-28)
+nmod:by(conducted-27, Toscanini-29)
+punct(listening-4, .-30)
+
+Sentence #5 (10 tokens):
+This was the best performance I have ever heard.
+[Text=This CharacterOffsetBegin=352 CharacterOffsetEnd=356 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=357 CharacterOffsetEnd=360 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=361 CharacterOffsetEnd=364 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=365 CharacterOffsetEnd=369 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=370 CharacterOffsetEnd=381 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=382 CharacterOffsetEnd=383 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=384 CharacterOffsetEnd=388 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=389 CharacterOffsetEnd=393 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=394 CharacterOffsetEnd=399 PartOfSpeech=VBN Lemma=hear NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=399 CharacterOffsetEnd=400 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (JJS best) (NN performance))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP have)
+              (ADVP (RB ever))
+              (VP (VBN heard)))))))
+    (. .)))
+
+root(ROOT-0, performance-5)
+nsubj(performance-5, This-1)
+cop(performance-5, was-2)
+det(performance-5, the-3)
+amod(performance-5, best-4)
+nsubj(heard-9, I-6)
+aux(heard-9, have-7)
+advmod(heard-9, ever-8)
+acl:relcl(performance-5, heard-9)
+punct(performance-5, .-10)
+
+Sentence #6 (19 tokens):
+In the fourth movement, I felt like I was listening to lightning there was so much power.
+[Text=In CharacterOffsetBegin=401 CharacterOffsetEnd=403 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=404 CharacterOffsetEnd=407 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fourth CharacterOffsetBegin=408 CharacterOffsetEnd=414 PartOfSpeech=JJ Lemma=fourth NamedEntityTag=ORDINAL NormalizedNamedEntityTag=4.0]
+[Text=movement CharacterOffsetBegin=415 CharacterOffsetEnd=423 PartOfSpeech=NN Lemma=movement NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=423 CharacterOffsetEnd=424 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=425 CharacterOffsetEnd=426 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=felt CharacterOffsetBegin=427 CharacterOffsetEnd=431 PartOfSpeech=VBD Lemma=feel NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=432 CharacterOffsetEnd=436 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=437 CharacterOffsetEnd=438 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=439 CharacterOffsetEnd=442 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=listening CharacterOffsetBegin=443 CharacterOffsetEnd=452 PartOfSpeech=VBG Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=453 CharacterOffsetEnd=455 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=lightning CharacterOffsetBegin=456 CharacterOffsetEnd=465 PartOfSpeech=NN Lemma=lightning NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=466 CharacterOffsetEnd=471 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=472 CharacterOffsetEnd=475 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=476 CharacterOffsetEnd=478 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=479 CharacterOffsetEnd=483 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=power CharacterOffsetBegin=484 CharacterOffsetEnd=489 PartOfSpeech=NN Lemma=power NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=489 CharacterOffsetEnd=490 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (JJ fourth) (NN movement)))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD felt)
+      (SBAR (IN like)
+        (S
+          (NP (PRP I))
+          (VP (VBD was)
+            (VP (VBG listening)
+              (PP (TO to)
+                (NP
+                  (NP (NN lightning))
+                  (SBAR
+                    (S
+                      (NP (EX there))
+                      (VP (VBD was)
+                        (NP
+                          (ADJP (RB so) (JJ much))
+                          (NN power))))))))))))
+    (. .)))
+
+root(ROOT-0, felt-7)
+case(movement-4, In-1)
+det(movement-4, the-2)
+amod(movement-4, fourth-3)
+nmod:in(felt-7, movement-4)
+punct(felt-7, ,-5)
+nsubj(felt-7, I-6)
+mark(listening-11, like-8)
+nsubj(listening-11, I-9)
+aux(listening-11, was-10)
+advcl:like(felt-7, listening-11)
+case(lightning-13, to-12)
+nmod:to(listening-11, lightning-13)
+expl(was-15, there-14)
+acl:relcl(lightning-13, was-15)
+advmod(much-17, so-16)
+amod(power-18, much-17)
+nsubj(was-15, power-18)
+punct(felt-7, .-19)
+
+Sentence #7 (5 tokens):
+Thank you very much.
+[Text=Thank CharacterOffsetBegin=491 CharacterOffsetEnd=496 PartOfSpeech=VB Lemma=thank NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=497 CharacterOffsetEnd=500 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=501 CharacterOffsetEnd=505 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=506 CharacterOffsetEnd=510 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=510 CharacterOffsetEnd=511 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Thank)
+      (NP (PRP you))
+      (ADVP (RB very) (RB much)))
+    (. .)))
+
+root(ROOT-0, Thank-1)
+dobj(Thank-1, you-2)
+advmod(much-4, very-3)
+advmod(Thank-1, much-4)
+punct(Thank-1, .-5)
+
+Coreference set:
+	(4,6,[6,11]) -> (3,8,[6,11]), that is: "it for over sixty years" -> "my favourite piece of music"
+Coreference set:
+	(3,13,[13,14]) -> (3,6,[6,7]), that is: "I" -> "my"
+	(4,1,[1,2]) -> (3,6,[6,7]), that is: "I" -> "my"
+	(5,6,[6,7]) -> (3,6,[6,7]), that is: "I" -> "my"
+	(6,6,[6,7]) -> (3,6,[6,7]), that is: "I" -> "my"
+	(6,9,[9,10]) -> (3,6,[6,7]), that is: "I" -> "my"
+Coreference set:
+	(4,18,[18,30]) -> (4,16,[16,17]), that is: "albums - i.e. files of 78 discs - probably conducted by Toscanini" -> "albums"
+Coreference set:
+	(5,1,[1,2]) -> (5,5,[3,10]), that is: "This" -> "the best performance I have ever heard"

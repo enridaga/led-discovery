@@ -1,0 +1,258 @@
+Sentence #1 (9 tokens):
+Villa Piccolomini, 13 Oct., 1825....
+[Text=Villa CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Villa NamedEntityTag=PERSON]
+[Text=Piccolomini CharacterOffsetBegin=6 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Piccolomini NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=13 CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=CD Lemma=13 NamedEntityTag=DATE NormalizedNamedEntityTag=1825-10-13 Timex=<TIMEX3 tid="t1" type="DATE" value="1825-10-13">13 Oct., 1825</TIMEX3>]
+[Text=Oct. CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Oct. NamedEntityTag=DATE NormalizedNamedEntityTag=1825-10-13 Timex=<TIMEX3 tid="t1" type="DATE" value="1825-10-13">13 Oct., 1825</TIMEX3>]
+[Text=, CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=1825-10-13 Timex=<TIMEX3 tid="t1" type="DATE" value="1825-10-13">13 Oct., 1825</TIMEX3>]
+[Text=1825 CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=CD Lemma=1825 NamedEntityTag=DATE NormalizedNamedEntityTag=1825-10-13 Timex=<TIMEX3 tid="t1" type="DATE" value="1825-10-13">13 Oct., 1825</TIMEX3>]
+[Text=... CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Villa) (NNP Piccolomini))
+    (, ,)
+    (NP
+      (NP (CD 13))
+      (NP
+        (NP (NNP Oct.))
+        (, ,)
+        (NP (CD 1825))
+        (: ...)))
+    (. .)))
+
+root(ROOT-0, Piccolomini-2)
+compound(Piccolomini-2, Villa-1)
+punct(Piccolomini-2, ,-3)
+appos(Piccolomini-2, 13-4)
+dep(13-4, Oct.-5)
+punct(Oct.-5, ,-6)
+amod(Oct.-5, 1825-7)
+punct(Oct.-5, ...-8)
+punct(Piccolomini-2, .-9)
+
+Sentence #2 (14 tokens):
+We...received an invitation to hear an Improvisatore at the Casino Piccolomini.
+[Text=We CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=42 CharacterOffsetEnd=50 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=invitation CharacterOffsetBegin=54 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=invitation NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Improvisatore CharacterOffsetBegin=76 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=improvisatore NamedEntityTag=MISC]
+[Text=at CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Casino CharacterOffsetBegin=97 CharacterOffsetEnd=103 PartOfSpeech=NNP Lemma=Casino NamedEntityTag=O]
+[Text=Piccolomini CharacterOffsetBegin=104 CharacterOffsetEnd=115 PartOfSpeech=NNP Lemma=Piccolomini NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (: ...)
+    (VP (VBD received)
+      (NP (DT an) (NN invitation)
+        (S
+          (VP (TO to)
+            (VP (VB hear)
+              (NP (DT an) (NN Improvisatore))
+              (PP (IN at)
+                (NP (DT the) (NNP Casino) (NNP Piccolomini))))))))
+    (. .)))
+
+root(ROOT-0, received-3)
+nsubj(received-3, We-1)
+punct(received-3, ...-2)
+det(invitation-5, an-4)
+dobj(received-3, invitation-5)
+mark(hear-7, to-6)
+acl:to(invitation-5, hear-7)
+det(Improvisatore-9, an-8)
+dobj(hear-7, Improvisatore-9)
+case(Piccolomini-13, at-10)
+det(Piccolomini-13, the-11)
+compound(Piccolomini-13, Casino-12)
+nmod:at(hear-7, Piccolomini-13)
+punct(received-3, .-14)
+
+Sentence #3 (27 tokens):
+The name of our host is Angiolotti, a rich possidente, or farmer, from whom and his wife we have received great civilities....
+[Text=The CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=name CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=126 CharacterOffsetEnd=128 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=host CharacterOffsetBegin=133 CharacterOffsetEnd=137 PartOfSpeech=NN Lemma=host NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=138 CharacterOffsetEnd=140 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Angiolotti CharacterOffsetBegin=141 CharacterOffsetEnd=151 PartOfSpeech=NNP Lemma=Angiolotti NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=153 CharacterOffsetEnd=154 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=rich CharacterOffsetBegin=155 CharacterOffsetEnd=159 PartOfSpeech=JJ Lemma=rich NamedEntityTag=O]
+[Text=possidente CharacterOffsetBegin=160 CharacterOffsetEnd=170 PartOfSpeech=NN Lemma=possidente NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=170 CharacterOffsetEnd=171 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=172 CharacterOffsetEnd=174 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=farmer CharacterOffsetBegin=175 CharacterOffsetEnd=181 PartOfSpeech=NN Lemma=farmer NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=183 CharacterOffsetEnd=187 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=whom CharacterOffsetBegin=188 CharacterOffsetEnd=192 PartOfSpeech=WP Lemma=whom NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=193 CharacterOffsetEnd=196 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=197 CharacterOffsetEnd=200 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=wife CharacterOffsetBegin=201 CharacterOffsetEnd=205 PartOfSpeech=NN Lemma=wife NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=206 CharacterOffsetEnd=208 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=209 CharacterOffsetEnd=213 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=214 CharacterOffsetEnd=222 PartOfSpeech=VBN Lemma=receive NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=223 CharacterOffsetEnd=228 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=civilities CharacterOffsetBegin=229 CharacterOffsetEnd=239 PartOfSpeech=NNS Lemma=civility NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=239 CharacterOffsetEnd=242 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=242 CharacterOffsetEnd=243 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN name))
+      (PP (IN of)
+        (NP (PRP$ our) (NN host))))
+    (VP (VBZ is)
+      (NP
+        (NP (NNP Angiolotti))
+        (, ,)
+        (NP (DT a) (JJ rich) (NN possidente))
+        (, ,)
+        (CC or)
+        (NP (NN farmer)))
+      (, ,)
+      (PP (IN from)
+        (NP
+          (NP (WP whom))
+          (CC and)
+          (NP
+            (NP (PRP$ his) (NN wife))
+            (SBAR
+              (S
+                (NP (PRP we))
+                (VP (VBP have)
+                  (VP (VBN received)
+                    (NP (JJ great) (NNS civilities))))))))))
+    (: ...) (. .)))
+
+root(ROOT-0, Angiolotti-7)
+det(name-2, The-1)
+nsubj(Angiolotti-7, name-2)
+case(host-5, of-3)
+nmod:poss(host-5, our-4)
+nmod:of(name-2, host-5)
+cop(Angiolotti-7, is-6)
+punct(Angiolotti-7, ,-8)
+det(possidente-11, a-9)
+amod(possidente-11, rich-10)
+conj:or(Angiolotti-7, possidente-11)
+punct(Angiolotti-7, ,-12)
+cc(Angiolotti-7, or-13)
+conj:or(Angiolotti-7, farmer-14)
+punct(Angiolotti-7, ,-15)
+case(whom-17, from-16)
+nmod:from(Angiolotti-7, whom-17)
+cc(whom-17, and-18)
+nmod:poss(wife-20, his-19)
+nmod:from(Angiolotti-7, wife-20)
+conj:and(whom-17, wife-20)
+nsubj(received-23, we-21)
+aux(received-23, have-22)
+acl:relcl(wife-20, received-23)
+amod(civilities-25, great-24)
+dobj(received-23, civilities-25)
+punct(Angiolotti-7, ...-26)
+punct(Angiolotti-7, .-27)
+
+Sentence #4 (23 tokens):
+We had our friend Reisiger of the party, and he played, and sang German, and the vigneroli sang Italian.
+[Text=We CharacterOffsetBegin=244 CharacterOffsetEnd=246 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=247 CharacterOffsetEnd=250 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=251 CharacterOffsetEnd=254 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=friend CharacterOffsetBegin=255 CharacterOffsetEnd=261 PartOfSpeech=NN Lemma=friend NamedEntityTag=O]
+[Text=Reisiger CharacterOffsetBegin=262 CharacterOffsetEnd=270 PartOfSpeech=NNP Lemma=Reisiger NamedEntityTag=PERSON]
+[Text=of CharacterOffsetBegin=271 CharacterOffsetEnd=273 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=274 CharacterOffsetEnd=277 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=278 CharacterOffsetEnd=283 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=283 CharacterOffsetEnd=284 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=285 CharacterOffsetEnd=288 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=289 CharacterOffsetEnd=291 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=292 CharacterOffsetEnd=298 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=298 CharacterOffsetEnd=299 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=300 CharacterOffsetEnd=303 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sang CharacterOffsetBegin=304 CharacterOffsetEnd=308 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=German CharacterOffsetBegin=309 CharacterOffsetEnd=315 PartOfSpeech=JJ Lemma=german NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=315 CharacterOffsetEnd=316 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=317 CharacterOffsetEnd=320 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=321 CharacterOffsetEnd=324 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=vigneroli CharacterOffsetBegin=325 CharacterOffsetEnd=334 PartOfSpeech=NNS Lemma=vignerolus NamedEntityTag=O]
+[Text=sang CharacterOffsetBegin=335 CharacterOffsetEnd=339 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=Italian CharacterOffsetBegin=340 CharacterOffsetEnd=347 PartOfSpeech=JJ Lemma=italian NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=347 CharacterOffsetEnd=348 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VBD had)
+        (NP
+          (NP (PRP$ our) (NN friend) (NNP Reisiger))
+          (PP (IN of)
+            (NP (DT the) (NN party))))))
+    (, ,)
+    (CC and)
+    (S
+      (S
+        (NP (PRP he))
+        (VP
+          (VP (VBD played))
+          (, ,)
+          (CC and)
+          (VP (VBD sang)
+            (S
+              (ADJP (JJ German))))))
+      (, ,)
+      (CC and)
+      (S
+        (NP (DT the) (NNS vigneroli))
+        (VP (VBD sang)
+          (ADJP (JJ Italian)))))
+    (. .)))
+
+root(ROOT-0, had-2)
+nsubj(had-2, We-1)
+nmod:poss(Reisiger-5, our-3)
+compound(Reisiger-5, friend-4)
+dobj(had-2, Reisiger-5)
+case(party-8, of-6)
+det(party-8, the-7)
+nmod:of(Reisiger-5, party-8)
+punct(had-2, ,-9)
+cc(had-2, and-10)
+nsubj(played-12, he-11)
+nsubj(sang-15, he-11)
+conj:and(had-2, played-12)
+punct(played-12, ,-13)
+cc(played-12, and-14)
+conj:and(had-2, sang-15)
+conj:and(played-12, sang-15)
+xcomp(sang-15, German-16)
+punct(played-12, ,-17)
+cc(played-12, and-18)
+det(vigneroli-20, the-19)
+nsubj(sang-21, vigneroli-20)
+conj:and(had-2, sang-21)
+conj:and(played-12, sang-21)
+xcomp(sang-21, Italian-22)
+punct(had-2, .-23)
+
+Coreference set:
+	(3,4,[4,5]) -> (2,1,[1,2]), that is: "our" -> "We"
+	(3,21,[21,22]) -> (2,1,[1,2]), that is: "we" -> "We"
+	(4,1,[1,2]) -> (2,1,[1,2]), that is: "We" -> "We"
+	(4,3,[3,4]) -> (2,1,[1,2]), that is: "our" -> "We"
+Coreference set:
+	(3,19,[19,20]) -> (3,7,[7,8]), that is: "his" -> "Angiolotti"
+Coreference set:
+	(3,17,[17,18]) -> (3,11,[9,12]), that is: "whom" -> "a rich possidente"
+Coreference set:
+	(4,11,[11,12]) -> (4,5,[3,9]), that is: "he" -> "our friend Reisiger of the party"

@@ -1,0 +1,77 @@
+Sentence #1 (24 tokens):
+Heard Nicolai's opera 'Die Heimkehr der Verbannten,' good in a dramatic point of view, but too much Italianized.
+[Text=Heard CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Heard NamedEntityTag=O]
+[Text=Nicolai CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Nicolai NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=opera CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=opera NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Die CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=VB Lemma=die NamedEntityTag=O]
+[Text=Heimkehr CharacterOffsetBegin=27 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Heimkehr NamedEntityTag=PERSON]
+[Text=der CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=FW Lemma=der NamedEntityTag=PERSON]
+[Text=Verbannten CharacterOffsetBegin=40 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Verbannten NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=dramatic CharacterOffsetBegin=63 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=dramatic NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=view CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=view NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=Italianized CharacterOffsetBegin=100 CharacterOffsetEnd=111 PartOfSpeech=NNP Lemma=Italianized NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP
+      (NP
+        (NP (NNP Heard) (NNP Nicolai) (POS 's))
+        (NN opera)
+        (S (`` `)
+          (VP (VB Die)
+            (NP
+              (NP (NNP Heimkehr) (FW der) (NNP Verbannten))
+              (, ,) ('' ')
+              (ADJP (JJ good)
+                (PP (IN in)
+                  (NP
+                    (UCP
+                      (NP
+                        (NP (DT a) (JJ dramatic) (NN point))
+                        (PP (IN of)
+                          (NP (NN view))))
+                      (, ,)
+                      (CC but)
+                      (ADJP (RB too) (JJ much)))
+                    (NNP Italianized)))))))))
+    (. .)))
+
+root(ROOT-0, opera-4)
+compound(Nicolai-2, Heard-1)
+nmod:poss(opera-4, Nicolai-2)
+case(Nicolai-2, 's-3)
+punct(Die-6, `-5)
+dep(opera-4, Die-6)
+compound(Verbannten-9, Heimkehr-7)
+compound(Verbannten-9, der-8)
+dobj(Die-6, Verbannten-9)
+punct(Verbannten-9, ,-10)
+punct(Verbannten-9, '-11)
+amod(Verbannten-9, good-12)
+case(Italianized-23, in-13)
+det(point-16, a-14)
+amod(point-16, dramatic-15)
+compound(Italianized-23, point-16)
+case(view-18, of-17)
+nmod:of(point-16, view-18)
+punct(point-16, ,-19)
+cc(point-16, but-20)
+advmod(much-22, too-21)
+conj:but(point-16, much-22)
+compound(Italianized-23, much-22)
+nmod:in(good-12, Italianized-23)
+punct(opera-4, .-24)
+

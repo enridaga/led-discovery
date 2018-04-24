@@ -1,0 +1,239 @@
+Sentence #1 (12 tokens):
+The Organ Concerto uses only four brass, timpani and strings.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Organ CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Organ NamedEntityTag=O]
+[Text=Concerto CharacterOffsetBegin=10 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=uses CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=VBZ Lemma=use NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=four CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=CD Lemma=four NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.0]
+[Text=brass CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=brass NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=timpani CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=NNS Lemma=timpani NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=strings CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=NNS Lemma=string NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NNP Organ) (NNP Concerto))
+    (VP (VBZ uses)
+      (NP
+        (NP (RB only) (CD four) (NN brass))
+        (, ,)
+        (NP (NNS timpani))
+        (CC and)
+        (NP (NNS strings))))
+    (. .)))
+
+root(ROOT-0, uses-4)
+det(Concerto-3, The-1)
+compound(Concerto-3, Organ-2)
+nsubj(uses-4, Concerto-3)
+advmod(brass-7, only-5)
+nummod(brass-7, four-6)
+dobj(uses-4, brass-7)
+punct(brass-7, ,-8)
+dobj(uses-4, timpani-9)
+conj:and(brass-7, timpani-9)
+cc(brass-7, and-10)
+dobj(uses-4, strings-11)
+conj:and(brass-7, strings-11)
+punct(uses-4, .-12)
+
+Sentence #2 (9 tokens):
+It sounds exactly as I prayed it would.
+[Text=It CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=sounds CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=VBZ Lemma=sound NamedEntityTag=O]
+[Text=exactly CharacterOffsetBegin=72 CharacterOffsetEnd=79 PartOfSpeech=RB Lemma=exactly NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=prayed CharacterOffsetBegin=85 CharacterOffsetEnd=91 PartOfSpeech=VBD Lemma=pray NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ sounds)
+      (ADVP (RB exactly))
+      (SBAR (IN as)
+        (S
+          (NP (PRP I))
+          (VP (VBD prayed)
+            (SBAR
+              (S
+                (NP (PRP it))
+                (VP (MD would))))))))
+    (. .)))
+
+root(ROOT-0, sounds-2)
+nsubj(sounds-2, It-1)
+advmod(sounds-2, exactly-3)
+mark(prayed-6, as-4)
+nsubj(prayed-6, I-5)
+advcl:as(sounds-2, prayed-6)
+nsubj(would-8, it-7)
+ccomp(prayed-6, would-8)
+punct(sounds-2, .-9)
+
+Sentence #3 (16 tokens):
+The rehearsal went smoothly, commencing almost the minute we got off the plane Sunday.
+[Text=The CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rehearsal CharacterOffsetBegin=106 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=rehearsal NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=smoothly CharacterOffsetBegin=121 CharacterOffsetEnd=129 PartOfSpeech=RB Lemma=smoothly NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=commencing CharacterOffsetBegin=131 CharacterOffsetEnd=141 PartOfSpeech=VBG Lemma=commence NamedEntityTag=O]
+[Text=almost CharacterOffsetBegin=142 CharacterOffsetEnd=148 PartOfSpeech=RB Lemma=almost NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=149 CharacterOffsetEnd=152 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=THIS PT1M Timex=<TIMEX3 alt_value="THIS PT1M" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the minute</TIMEX3>]
+[Text=minute CharacterOffsetBegin=153 CharacterOffsetEnd=159 PartOfSpeech=NN Lemma=minute NamedEntityTag=DATE NormalizedNamedEntityTag=THIS PT1M Timex=<TIMEX3 alt_value="THIS PT1M" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the minute</TIMEX3>]
+[Text=we CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=163 CharacterOffsetEnd=166 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=plane CharacterOffsetBegin=175 CharacterOffsetEnd=180 PartOfSpeech=NN Lemma=plane NamedEntityTag=O]
+[Text=Sunday CharacterOffsetBegin=181 CharacterOffsetEnd=187 PartOfSpeech=NNP Lemma=Sunday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-7 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-WXX-7">Sunday</TIMEX3>]
+[Text=. CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NN rehearsal))
+    (VP (VBD went)
+      (ADVP (RB smoothly))
+      (, ,)
+      (S
+        (VP (VBG commencing)
+          (NP
+            (NP (RB almost) (DT the) (NN minute))
+            (SBAR
+              (S
+                (NP (PRP we))
+                (VP (VBD got)
+                  (PRT (RP off))
+                  (NP (DT the) (NN plane))
+                  (NP-TMP (NNP Sunday)))))))))
+    (. .)))
+
+root(ROOT-0, went-3)
+det(rehearsal-2, The-1)
+nsubj(went-3, rehearsal-2)
+advmod(went-3, smoothly-4)
+punct(went-3, ,-5)
+xcomp(went-3, commencing-6)
+advmod(minute-9, almost-7)
+det(minute-9, the-8)
+dobj(commencing-6, minute-9)
+nsubj(got-11, we-10)
+acl:relcl(minute-9, got-11)
+compound:prt(got-11, off-12)
+det(plane-14, the-13)
+dobj(got-11, plane-14)
+nmod:tmod(got-11, Sunday-15)
+punct(went-3, .-16)
+
+Sentence #4 (33 tokens):
+Leonard Raver knew his part cold, and Bruce Hangen, the dashing conductor, led the band enthusiastically in the overly live hall, almost drowning out the historic solo instrument.
+[Text=Leonard CharacterOffsetBegin=189 CharacterOffsetEnd=196 PartOfSpeech=NNP Lemma=Leonard NamedEntityTag=PERSON]
+[Text=Raver CharacterOffsetBegin=197 CharacterOffsetEnd=202 PartOfSpeech=NNP Lemma=Raver NamedEntityTag=PERSON]
+[Text=knew CharacterOffsetBegin=203 CharacterOffsetEnd=207 PartOfSpeech=VBD Lemma=know NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=208 CharacterOffsetEnd=211 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=212 CharacterOffsetEnd=216 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=cold CharacterOffsetBegin=217 CharacterOffsetEnd=221 PartOfSpeech=JJ Lemma=cold NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=221 CharacterOffsetEnd=222 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=223 CharacterOffsetEnd=226 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Bruce CharacterOffsetBegin=227 CharacterOffsetEnd=232 PartOfSpeech=NNP Lemma=Bruce NamedEntityTag=PERSON]
+[Text=Hangen CharacterOffsetBegin=233 CharacterOffsetEnd=239 PartOfSpeech=NNP Lemma=Hangen NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=239 CharacterOffsetEnd=240 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=241 CharacterOffsetEnd=244 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=dashing CharacterOffsetBegin=245 CharacterOffsetEnd=252 PartOfSpeech=VBG Lemma=dash NamedEntityTag=O]
+[Text=conductor CharacterOffsetBegin=253 CharacterOffsetEnd=262 PartOfSpeech=NN Lemma=conductor NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=262 CharacterOffsetEnd=263 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=led CharacterOffsetBegin=264 CharacterOffsetEnd=267 PartOfSpeech=VBD Lemma=lead NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=268 CharacterOffsetEnd=271 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=band CharacterOffsetBegin=272 CharacterOffsetEnd=276 PartOfSpeech=NN Lemma=band NamedEntityTag=O]
+[Text=enthusiastically CharacterOffsetBegin=277 CharacterOffsetEnd=293 PartOfSpeech=RB Lemma=enthusiastically NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=294 CharacterOffsetEnd=296 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=297 CharacterOffsetEnd=300 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=overly CharacterOffsetBegin=301 CharacterOffsetEnd=307 PartOfSpeech=RB Lemma=overly NamedEntityTag=O]
+[Text=live CharacterOffsetBegin=308 CharacterOffsetEnd=312 PartOfSpeech=JJ Lemma=live NamedEntityTag=O]
+[Text=hall CharacterOffsetBegin=313 CharacterOffsetEnd=317 PartOfSpeech=NN Lemma=hall NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=317 CharacterOffsetEnd=318 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=almost CharacterOffsetBegin=319 CharacterOffsetEnd=325 PartOfSpeech=RB Lemma=almost NamedEntityTag=O]
+[Text=drowning CharacterOffsetBegin=326 CharacterOffsetEnd=334 PartOfSpeech=VBG Lemma=drown NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=335 CharacterOffsetEnd=338 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=339 CharacterOffsetEnd=342 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=historic CharacterOffsetBegin=343 CharacterOffsetEnd=351 PartOfSpeech=JJ Lemma=historic NamedEntityTag=O]
+[Text=solo CharacterOffsetBegin=352 CharacterOffsetEnd=356 PartOfSpeech=NN Lemma=solo NamedEntityTag=O]
+[Text=instrument CharacterOffsetBegin=357 CharacterOffsetEnd=367 PartOfSpeech=NN Lemma=instrument NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=367 CharacterOffsetEnd=368 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Leonard) (NNP Raver))
+      (VP (VBD knew)
+        (S
+          (NP (PRP$ his) (NN part))
+          (ADJP (JJ cold)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (NNP Bruce) (NNP Hangen))
+        (, ,)
+        (NP (DT the) (VBG dashing) (NN conductor))
+        (, ,))
+      (VP (VBD led)
+        (NP (DT the) (NN band))
+        (PP
+          (ADVP (RB enthusiastically))
+          (IN in)
+          (NP (DT the)
+            (ADJP (RB overly) (JJ live))
+            (NN hall)))
+        (, ,)
+        (S
+          (ADVP (RB almost))
+          (VP (VBG drowning)
+            (PRT (RP out))
+            (NP (DT the) (JJ historic) (NN solo) (NN instrument))))))
+    (. .)))
+
+root(ROOT-0, knew-3)
+compound(Raver-2, Leonard-1)
+nsubj(knew-3, Raver-2)
+nmod:poss(part-5, his-4)
+nsubj(cold-6, part-5)
+xcomp(knew-3, cold-6)
+punct(knew-3, ,-7)
+cc(knew-3, and-8)
+compound(Hangen-10, Bruce-9)
+nsubj(led-16, Hangen-10)
+punct(Hangen-10, ,-11)
+det(conductor-14, the-12)
+amod(conductor-14, dashing-13)
+appos(Hangen-10, conductor-14)
+punct(Hangen-10, ,-15)
+conj:and(knew-3, led-16)
+det(band-18, the-17)
+dobj(led-16, band-18)
+advmod(hall-24, enthusiastically-19)
+case(hall-24, in-20)
+det(hall-24, the-21)
+advmod(live-23, overly-22)
+amod(hall-24, live-23)
+nmod:in(led-16, hall-24)
+punct(led-16, ,-25)
+advmod(drowning-27, almost-26)
+advcl(led-16, drowning-27)
+compound:prt(drowning-27, out-28)
+det(instrument-32, the-29)
+amod(instrument-32, historic-30)
+compound(instrument-32, solo-31)
+dobj(drowning-27, instrument-32)
+punct(knew-3, .-33)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,3,[1,4]), that is: "It" -> "The Organ Concerto"
+	(2,7,[7,8]) -> (1,3,[1,4]), that is: "it" -> "The Organ Concerto"
+Coreference set:
+	(4,4,[4,5]) -> (4,2,[1,3]), that is: "his" -> "Leonard Raver"
+Coreference set:
+	(4,14,[12,15]) -> (4,10,[9,11]), that is: "the dashing conductor" -> "Bruce Hangen"

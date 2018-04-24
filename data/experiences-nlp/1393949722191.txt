@@ -1,0 +1,92 @@
+Sentence #1 (28 tokens):
+The audience was obviously there for the music and was inclined to hush interruptions before they had arisen and to guard against applause occurring between the movements.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=audience CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=audience NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=obviously CharacterOffsetBegin=17 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=obviously NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=inclined CharacterOffsetBegin=55 CharacterOffsetEnd=63 PartOfSpeech=VBN Lemma=incline NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hush CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=hush NamedEntityTag=O]
+[Text=interruptions CharacterOffsetBegin=72 CharacterOffsetEnd=85 PartOfSpeech=NNS Lemma=interruption NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=86 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=arisen CharacterOffsetBegin=102 CharacterOffsetEnd=108 PartOfSpeech=VBN Lemma=arise NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=guard CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=VB Lemma=guard NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=122 CharacterOffsetEnd=129 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=applause CharacterOffsetBegin=130 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=applause NamedEntityTag=O]
+[Text=occurring CharacterOffsetBegin=139 CharacterOffsetEnd=148 PartOfSpeech=VBG Lemma=occur NamedEntityTag=O]
+[Text=between CharacterOffsetBegin=149 CharacterOffsetEnd=156 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=157 CharacterOffsetEnd=160 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=movements CharacterOffsetBegin=161 CharacterOffsetEnd=170 PartOfSpeech=NNS Lemma=movement NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=170 CharacterOffsetEnd=171 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN audience))
+      (VP
+        (VP (VBD was)
+          (ADVP (RB obviously) (RB there))
+          (PP (IN for)
+            (NP (DT the) (NN music))))
+        (CC and)
+        (VP (VBD was)
+          (VP (VBN inclined)
+            (PP (TO to)
+              (NP (JJ hush) (NNS interruptions)))
+            (SBAR (IN before)
+              (S
+                (NP (PRP they))
+                (VP (VBD had)
+                  (VP (VBN arisen)))))))))
+    (CC and)
+    (S
+      (VP (TO to)
+        (VP (VB guard)
+          (PP (IN against)
+            (NP
+              (NP (NN applause))
+              (VP (VBG occurring)
+                (PP (IN between)
+                  (NP (DT the) (NNS movements)))))))))
+    (. .)))
+
+root(ROOT-0, music-8)
+det(audience-2, The-1)
+nsubj(music-8, audience-2)
+nsubjpass(inclined-11, audience-2)
+nsubj(guard-21, audience-2)
+cop(music-8, was-3)
+advmod(there-5, obviously-4)
+advmod(music-8, there-5)
+case(music-8, for-6)
+det(music-8, the-7)
+cc(music-8, and-9)
+auxpass(inclined-11, was-10)
+conj:and(music-8, inclined-11)
+case(interruptions-14, to-12)
+amod(interruptions-14, hush-13)
+nmod:to(inclined-11, interruptions-14)
+mark(arisen-18, before-15)
+nsubj(arisen-18, they-16)
+aux(arisen-18, had-17)
+advcl:before(inclined-11, arisen-18)
+cc(music-8, and-19)
+mark(guard-21, to-20)
+conj:and(music-8, guard-21)
+case(applause-23, against-22)
+nmod:against(guard-21, applause-23)
+acl(applause-23, occurring-24)
+case(movements-27, between-25)
+det(movements-27, the-26)
+nmod:between(occurring-24, movements-27)
+punct(music-8, .-28)
+

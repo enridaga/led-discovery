@@ -1,0 +1,101 @@
+Sentence #1 (6 tokens):
+The performances rough but honest.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=performances CharacterOffsetBegin=4 CharacterOffsetEnd=16 PartOfSpeech=NNS Lemma=performance NamedEntityTag=O]
+[Text=rough CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=JJ Lemma=rough NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=honest CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=honest NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NNS performances))
+    (ADJP (JJ rough)
+      (CC but)
+      (JJ honest))
+    (. .)))
+
+root(ROOT-0, rough-3)
+det(performances-2, The-1)
+dep(rough-3, performances-2)
+cc(rough-3, but-4)
+conj:but(rough-3, honest-5)
+punct(rough-3, .-6)
+
+Sentence #2 (6 tokens):
+The piece monstrous but flashy.
+[Text=The CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=piece CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=piece NamedEntityTag=O]
+[Text=monstrous CharacterOffsetBegin=45 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=monstrous NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=flashy CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=JJ Lemma=flashy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NN piece))
+    (ADJP (JJ monstrous)
+      (CC but)
+      (JJ flashy))
+    (. .)))
+
+root(ROOT-0, monstrous-3)
+det(piece-2, The-1)
+dep(monstrous-3, piece-2)
+cc(monstrous-3, but-4)
+conj:but(monstrous-3, flashy-5)
+punct(monstrous-3, .-6)
+
+Sentence #3 (15 tokens):
+The conductors, Trautwein and Kucinski, valiant, as were Gubrud and Powers.
+[Text=The CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=conductors CharacterOffsetBegin=71 CharacterOffsetEnd=81 PartOfSpeech=NNS Lemma=conductor NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Trautwein CharacterOffsetBegin=83 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=Trautwein NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Kucinski CharacterOffsetBegin=97 CharacterOffsetEnd=105 PartOfSpeech=NNP Lemma=Kucinski NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=valiant CharacterOffsetBegin=107 CharacterOffsetEnd=114 PartOfSpeech=JJ Lemma=valiant NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=119 CharacterOffsetEnd=123 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=Gubrud CharacterOffsetBegin=124 CharacterOffsetEnd=130 PartOfSpeech=NNP Lemma=Gubrud NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Powers CharacterOffsetBegin=135 CharacterOffsetEnd=141 PartOfSpeech=NNP Lemma=Powers NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS conductors))
+      (, ,)
+      (NP
+        (NP (NNP Trautwein)
+          (CC and)
+          (NNP Kucinski))
+        (, ,)
+        (NP (JJ valiant)))
+      (, ,))
+    (ADVP (IN as))
+    (VP (VBD were)
+      (NP (NNP Gubrud)
+        (CC and)
+        (NNP Powers)))
+    (. .)))
+
+root(ROOT-0, Gubrud-12)
+det(conductors-2, The-1)
+nsubj(Gubrud-12, conductors-2)
+punct(conductors-2, ,-3)
+appos(conductors-2, Trautwein-4)
+cc(Trautwein-4, and-5)
+appos(conductors-2, Kucinski-6)
+conj:and(Trautwein-4, Kucinski-6)
+punct(Trautwein-4, ,-7)
+appos(Trautwein-4, valiant-8)
+punct(conductors-2, ,-9)
+advmod(Gubrud-12, as-10)
+cop(Gubrud-12, were-11)
+cc(Gubrud-12, and-13)
+conj:and(Gubrud-12, Powers-14)
+punct(Gubrud-12, .-15)
+
+Coreference set:
+	(3,4,[4,7]) -> (3,8,[8,9]), that is: "Trautwein and Kucinski" -> "valiant"

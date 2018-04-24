@@ -1,0 +1,412 @@
+Sentence #1 (11 tokens):
+A few months later, I met Horszowski  in Italy.
+[Text=A CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=DT Lemma=a NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET PXM Timex=<TIMEX3 alt_value="OFFSET PXM" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">A few months later</TIMEX3>]
+[Text=few CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=JJ Lemma=few NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET PXM Timex=<TIMEX3 alt_value="OFFSET PXM" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">A few months later</TIMEX3>]
+[Text=months CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNS Lemma=month NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET PXM Timex=<TIMEX3 alt_value="OFFSET PXM" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">A few months later</TIMEX3>]
+[Text=later CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=RB Lemma=later NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET PXM Timex=<TIMEX3 alt_value="OFFSET PXM" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">A few months later</TIMEX3>]
+[Text=, CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=met CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=VBD Lemma=meet NamedEntityTag=O]
+[Text=Horszowski CharacterOffsetBegin=26 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Horszowski NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Italy CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Italy NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP
+      (NP (DT A) (JJ few) (NNS months))
+      (RB later))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD met)
+      (NP
+        (NP (NNP Horszowski))
+        (PP (IN in)
+          (NP (NNP Italy)))))
+    (. .)))
+
+root(ROOT-0, met-7)
+det(months-3, A-1)
+amod(months-3, few-2)
+nmod:npmod(later-4, months-3)
+advmod(met-7, later-4)
+punct(met-7, ,-5)
+nsubj(met-7, I-6)
+dobj(met-7, Horszowski-8)
+case(Italy-10, in-9)
+nmod:in(Horszowski-8, Italy-10)
+punct(met-7, .-11)
+
+Sentence #2 (19 tokens):
+/ He was brought to see me at the house of a friend after one of my concerts.
+[Text=/ CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=: Lemma=/ NamedEntityTag=O]
+[Text=He CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=brought CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=VBN Lemma=bring NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=house CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=NN Lemma=house NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=friend CharacterOffsetBegin=93 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=friend NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=concerts CharacterOffsetBegin=116 CharacterOffsetEnd=124 PartOfSpeech=NNS Lemma=concert NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (PRN (: /)
+        (NP (PRP He))))
+    (VP (VBD was)
+      (VP (VBN brought)
+        (S
+          (VP (TO to)
+            (VP (VB see)
+              (NP (PRP me))
+              (PP (IN at)
+                (NP
+                  (NP (DT the) (NN house))
+                  (PP (IN of)
+                    (NP (DT a) (NN friend)))))
+              (PP (IN after)
+                (NP
+                  (NP (CD one))
+                  (PP (IN of)
+                    (NP (PRP$ my) (NNS concerts))))))))))
+    (. .)))
+
+root(ROOT-0, brought-4)
+punct(He-2, /-1)
+nsubjpass(brought-4, He-2)
+nsubj:xsubj(see-6, He-2)
+auxpass(brought-4, was-3)
+mark(see-6, to-5)
+xcomp(brought-4, see-6)
+dobj(see-6, me-7)
+case(house-10, at-8)
+det(house-10, the-9)
+nmod:at(see-6, house-10)
+case(friend-13, of-11)
+det(friend-13, a-12)
+nmod:of(house-10, friend-13)
+case(one-15, after-14)
+nmod:after(see-6, one-15)
+case(concerts-18, of-16)
+nmod:poss(concerts-18, my-17)
+nmod:of(one-15, concerts-18)
+punct(brought-4, .-19)
+
+Sentence #3 (7 tokens):
+I can vividly remember the occasion.
+[Text=I CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=vividly CharacterOffsetBegin=132 CharacterOffsetEnd=139 PartOfSpeech=RB Lemma=vividly NamedEntityTag=O]
+[Text=remember CharacterOffsetBegin=140 CharacterOffsetEnd=148 PartOfSpeech=VB Lemma=remember NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=149 CharacterOffsetEnd=152 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=occasion CharacterOffsetBegin=153 CharacterOffsetEnd=161 PartOfSpeech=NN Lemma=occasion NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=161 CharacterOffsetEnd=162 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD can)
+      (ADVP (RB vividly))
+      (VP (VB remember)
+        (NP (DT the) (NN occasion))))
+    (. .)))
+
+root(ROOT-0, remember-4)
+nsubj(remember-4, I-1)
+aux(remember-4, can-2)
+advmod(remember-4, vividly-3)
+det(occasion-6, the-5)
+dobj(remember-4, occasion-6)
+punct(remember-4, .-7)
+
+Sentence #4 (29 tokens):
+He was very small- diminutive-and very shy, and he was dressed in a sailor suit with short trousers and a large white collar trimmed with lace.
+[Text=He CharacterOffsetBegin=163 CharacterOffsetEnd=165 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=166 CharacterOffsetEnd=169 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=170 CharacterOffsetEnd=174 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=small CharacterOffsetBegin=175 CharacterOffsetEnd=180 PartOfSpeech=JJ Lemma=small NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=diminutive-and CharacterOffsetBegin=182 CharacterOffsetEnd=196 PartOfSpeech=JJ Lemma=diminutive-and NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=197 CharacterOffsetEnd=201 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=shy CharacterOffsetBegin=202 CharacterOffsetEnd=205 PartOfSpeech=JJ Lemma=shy NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=205 CharacterOffsetEnd=206 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=207 CharacterOffsetEnd=210 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=211 CharacterOffsetEnd=213 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=214 CharacterOffsetEnd=217 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=dressed CharacterOffsetBegin=218 CharacterOffsetEnd=225 PartOfSpeech=VBN Lemma=dress NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=226 CharacterOffsetEnd=228 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=229 CharacterOffsetEnd=230 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=sailor CharacterOffsetBegin=231 CharacterOffsetEnd=237 PartOfSpeech=NN Lemma=sailor NamedEntityTag=O]
+[Text=suit CharacterOffsetBegin=238 CharacterOffsetEnd=242 PartOfSpeech=NN Lemma=suit NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=243 CharacterOffsetEnd=247 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=short CharacterOffsetBegin=248 CharacterOffsetEnd=253 PartOfSpeech=JJ Lemma=short NamedEntityTag=O]
+[Text=trousers CharacterOffsetBegin=254 CharacterOffsetEnd=262 PartOfSpeech=NNS Lemma=trousers NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=263 CharacterOffsetEnd=266 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=267 CharacterOffsetEnd=268 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=large CharacterOffsetBegin=269 CharacterOffsetEnd=274 PartOfSpeech=JJ Lemma=large NamedEntityTag=O]
+[Text=white CharacterOffsetBegin=275 CharacterOffsetEnd=280 PartOfSpeech=JJ Lemma=white NamedEntityTag=O]
+[Text=collar CharacterOffsetBegin=281 CharacterOffsetEnd=287 PartOfSpeech=NN Lemma=collar NamedEntityTag=O]
+[Text=trimmed CharacterOffsetBegin=288 CharacterOffsetEnd=295 PartOfSpeech=VBD Lemma=trim NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=296 CharacterOffsetEnd=300 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=lace CharacterOffsetBegin=301 CharacterOffsetEnd=305 PartOfSpeech=NN Lemma=lace NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=305 CharacterOffsetEnd=306 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD was)
+        (ADJP
+          (ADJP (RB very) (JJ small))
+          (: -)
+          (ADJP
+            (ADJP (JJ diminutive-and))
+            (ADJP (RB very) (JJ shy))))))
+    (, ,)
+    (CC and)
+    (S
+      (S
+        (NP (PRP he))
+        (VP (VBD was)
+          (VP (VBN dressed)
+            (PP (IN in)
+              (NP (DT a) (NN sailor) (NN suit)))
+            (PP (IN with)
+              (NP (JJ short) (NNS trousers))))))
+      (CC and)
+      (S
+        (NP (DT a) (JJ large) (JJ white) (NN collar))
+        (VP (VBD trimmed)
+          (PP (IN with)
+            (NP (NN lace))))))
+    (. .)))
+
+root(ROOT-0, small-4)
+nsubj(small-4, He-1)
+cop(small-4, was-2)
+advmod(small-4, very-3)
+punct(small-4, --5)
+dep(small-4, diminutive-and-6)
+advmod(shy-8, very-7)
+dep(diminutive-and-6, shy-8)
+punct(small-4, ,-9)
+cc(small-4, and-10)
+nsubjpass(dressed-13, he-11)
+auxpass(dressed-13, was-12)
+conj:and(small-4, dressed-13)
+case(suit-17, in-14)
+det(suit-17, a-15)
+compound(suit-17, sailor-16)
+nmod:in(dressed-13, suit-17)
+case(trousers-20, with-18)
+amod(trousers-20, short-19)
+nmod:with(dressed-13, trousers-20)
+cc(dressed-13, and-21)
+det(collar-25, a-22)
+amod(collar-25, large-23)
+amod(collar-25, white-24)
+nsubj(trimmed-26, collar-25)
+conj:and(small-4, trimmed-26)
+conj:and(dressed-13, trimmed-26)
+case(lace-28, with-27)
+nmod:with(trimmed-26, lace-28)
+punct(small-4, .-29)
+
+Sentence #5 (30 tokens):
+He looked about ten years old, though he tells me he was thirteen; and this must be right, because he is always extremely precise and meticulous.
+[Text=He CharacterOffsetBegin=307 CharacterOffsetEnd=309 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=looked CharacterOffsetBegin=310 CharacterOffsetEnd=316 PartOfSpeech=VBD Lemma=look NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=317 CharacterOffsetEnd=322 PartOfSpeech=IN Lemma=about NamedEntityTag=DURATION NormalizedNamedEntityTag=P10Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P10Y">about ten years old</TIMEX3>]
+[Text=ten CharacterOffsetBegin=323 CharacterOffsetEnd=326 PartOfSpeech=CD Lemma=ten NamedEntityTag=DURATION NormalizedNamedEntityTag=P10Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P10Y">about ten years old</TIMEX3>]
+[Text=years CharacterOffsetBegin=327 CharacterOffsetEnd=332 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P10Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P10Y">about ten years old</TIMEX3>]
+[Text=old CharacterOffsetBegin=333 CharacterOffsetEnd=336 PartOfSpeech=JJ Lemma=old NamedEntityTag=DURATION NormalizedNamedEntityTag=P10Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P10Y">about ten years old</TIMEX3>]
+[Text=, CharacterOffsetBegin=336 CharacterOffsetEnd=337 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=though CharacterOffsetBegin=338 CharacterOffsetEnd=344 PartOfSpeech=IN Lemma=though NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=345 CharacterOffsetEnd=347 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=tells CharacterOffsetBegin=348 CharacterOffsetEnd=353 PartOfSpeech=VBZ Lemma=tell NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=354 CharacterOffsetEnd=356 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=357 CharacterOffsetEnd=359 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=360 CharacterOffsetEnd=363 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=thirteen CharacterOffsetBegin=364 CharacterOffsetEnd=372 PartOfSpeech=CD Lemma=thirteen NamedEntityTag=NUMBER NormalizedNamedEntityTag=13.0]
+[Text=; CharacterOffsetBegin=372 CharacterOffsetEnd=373 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=374 CharacterOffsetEnd=377 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=378 CharacterOffsetEnd=382 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=383 CharacterOffsetEnd=387 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=388 CharacterOffsetEnd=390 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=391 CharacterOffsetEnd=396 PartOfSpeech=RB Lemma=right NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=396 CharacterOffsetEnd=397 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=398 CharacterOffsetEnd=405 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=406 CharacterOffsetEnd=408 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=409 CharacterOffsetEnd=411 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=412 CharacterOffsetEnd=418 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=extremely CharacterOffsetBegin=419 CharacterOffsetEnd=428 PartOfSpeech=RB Lemma=extremely NamedEntityTag=O]
+[Text=precise CharacterOffsetBegin=429 CharacterOffsetEnd=436 PartOfSpeech=JJ Lemma=precise NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=437 CharacterOffsetEnd=440 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=meticulous CharacterOffsetBegin=441 CharacterOffsetEnd=451 PartOfSpeech=JJ Lemma=meticulous NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=451 CharacterOffsetEnd=452 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD looked)
+        (PP (IN about)
+          (ADJP
+            (NP (CD ten) (NNS years))
+            (JJ old)))
+        (, ,)
+        (SBAR (IN though)
+          (S
+            (NP (PRP he))
+            (VP (VBZ tells)
+              (NP (PRP me))
+              (SBAR
+                (S
+                  (NP (PRP he))
+                  (VP (VBD was)
+                    (NP (CD thirteen))))))))))
+    (: ;)
+    (CC and)
+    (S
+      (NP (DT this))
+      (VP (MD must)
+        (VP (VB be)
+          (ADJP (RB right))
+          (, ,)
+          (SBAR (IN because)
+            (S
+              (NP (PRP he))
+              (VP (VBZ is)
+                (ADVP (RB always))
+                (ADJP (RB extremely) (JJ precise)
+                  (CC and)
+                  (JJ meticulous))))))))
+    (. .)))
+
+root(ROOT-0, looked-2)
+nsubj(looked-2, He-1)
+case(old-6, about-3)
+nummod(years-5, ten-4)
+nmod:npmod(old-6, years-5)
+advcl:about(looked-2, old-6)
+punct(looked-2, ,-7)
+mark(tells-10, though-8)
+nsubj(tells-10, he-9)
+advcl:though(looked-2, tells-10)
+dobj(tells-10, me-11)
+nsubj(thirteen-14, he-12)
+cop(thirteen-14, was-13)
+ccomp(tells-10, thirteen-14)
+punct(looked-2, ;-15)
+cc(looked-2, and-16)
+nsubj(right-20, this-17)
+aux(right-20, must-18)
+cop(right-20, be-19)
+conj:and(looked-2, right-20)
+punct(right-20, ,-21)
+mark(precise-27, because-22)
+nsubj(precise-27, he-23)
+nsubj(meticulous-29, he-23)
+cop(precise-27, is-24)
+advmod(precise-27, always-25)
+advmod(precise-27, extremely-26)
+advcl:because(right-20, precise-27)
+cc(precise-27, and-28)
+advcl:because(right-20, meticulous-29)
+conj:and(precise-27, meticulous-29)
+punct(looked-2, .-30)
+
+Sentence #6 (11 tokens):
+He played for me, and I was deeply impressed.
+[Text=He CharacterOffsetBegin=453 CharacterOffsetEnd=455 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=456 CharacterOffsetEnd=462 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=463 CharacterOffsetEnd=466 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=467 CharacterOffsetEnd=469 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=469 CharacterOffsetEnd=470 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=471 CharacterOffsetEnd=474 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=475 CharacterOffsetEnd=476 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=477 CharacterOffsetEnd=480 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=deeply CharacterOffsetBegin=481 CharacterOffsetEnd=487 PartOfSpeech=RB Lemma=deeply NamedEntityTag=O]
+[Text=impressed CharacterOffsetBegin=488 CharacterOffsetEnd=497 PartOfSpeech=JJ Lemma=impressed NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=497 CharacterOffsetEnd=498 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD played)
+        (PP (IN for)
+          (NP (PRP me)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBD was)
+        (ADJP (RB deeply) (JJ impressed))))
+    (. .)))
+
+root(ROOT-0, played-2)
+nsubj(played-2, He-1)
+case(me-4, for-3)
+nmod:for(played-2, me-4)
+punct(played-2, ,-5)
+cc(played-2, and-6)
+nsubj(impressed-10, I-7)
+cop(impressed-10, was-8)
+advmod(impressed-10, deeply-9)
+conj:and(played-2, impressed-10)
+punct(played-2, .-11)
+
+Sentence #7 (8 tokens):
+I knew he had a great talent.
+[Text=I CharacterOffsetBegin=499 CharacterOffsetEnd=500 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=knew CharacterOffsetBegin=501 CharacterOffsetEnd=505 PartOfSpeech=VBD Lemma=know NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=506 CharacterOffsetEnd=508 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=509 CharacterOffsetEnd=512 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=513 CharacterOffsetEnd=514 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=515 CharacterOffsetEnd=520 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=talent CharacterOffsetBegin=521 CharacterOffsetEnd=527 PartOfSpeech=NN Lemma=talent NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=527 CharacterOffsetEnd=528 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD knew)
+      (SBAR
+        (S
+          (NP (PRP he))
+          (VP (VBD had)
+            (NP (DT a) (JJ great) (NN talent))))))
+    (. .)))
+
+root(ROOT-0, knew-2)
+nsubj(knew-2, I-1)
+nsubj(had-4, he-3)
+ccomp(knew-2, had-4)
+det(talent-7, a-5)
+amod(talent-7, great-6)
+dobj(had-4, talent-7)
+punct(knew-2, .-8)
+
+Coreference set:
+	(1,6,[6,7]) -> (2,2,[1,3]), that is: "I" -> "/ He"
+	(2,7,[7,8]) -> (2,2,[1,3]), that is: "me" -> "/ He"
+	(3,1,[1,2]) -> (2,2,[1,3]), that is: "I" -> "/ He"
+	(5,11,[11,12]) -> (2,2,[1,3]), that is: "me" -> "/ He"
+	(6,4,[4,5]) -> (2,2,[1,3]), that is: "me" -> "/ He"
+	(6,7,[7,8]) -> (2,2,[1,3]), that is: "I" -> "/ He"
+	(7,1,[1,2]) -> (2,2,[1,3]), that is: "I" -> "/ He"
+Coreference set:
+	(4,1,[1,2]) -> (2,13,[12,14]), that is: "He" -> "a friend"
+	(4,11,[11,12]) -> (2,13,[12,14]), that is: "he" -> "a friend"
+	(5,1,[1,2]) -> (2,13,[12,14]), that is: "He" -> "a friend"
+	(5,9,[9,10]) -> (2,13,[12,14]), that is: "he" -> "a friend"
+	(5,12,[12,13]) -> (2,13,[12,14]), that is: "he" -> "a friend"
+	(5,23,[23,24]) -> (2,13,[12,14]), that is: "he" -> "a friend"
+	(6,1,[1,2]) -> (2,13,[12,14]), that is: "He" -> "a friend"
+	(7,3,[3,4]) -> (2,13,[12,14]), that is: "he" -> "a friend"

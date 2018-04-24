@@ -1,0 +1,102 @@
+Sentence #1 (9 tokens):
+Church music was in a deplorably bad state.
+[Text=Church CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Church NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=deplorably CharacterOffsetBegin=22 CharacterOffsetEnd=32 PartOfSpeech=RB Lemma=deplorably NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=state CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=state NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Church) (NN music))
+    (VP (VBD was)
+      (PP (IN in)
+        (NP (DT a)
+          (ADJP (RB deplorably) (JJ bad))
+          (NN state))))
+    (. .)))
+
+root(ROOT-0, state-8)
+compound(music-2, Church-1)
+nsubj(state-8, music-2)
+cop(state-8, was-3)
+case(state-8, in-4)
+det(state-8, a-5)
+advmod(bad-7, deplorably-6)
+amod(state-8, bad-7)
+punct(state-8, .-9)
+
+Sentence #2 (22 tokens):
+I listened to an organist lumbering through the Spanish Cachucha, as a voluntary, in the Duomo, and fled!
+[Text=I CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=listened CharacterOffsetBegin=46 CharacterOffsetEnd=54 PartOfSpeech=VBD Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=organist CharacterOffsetBegin=61 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=organist NamedEntityTag=O]
+[Text=lumbering CharacterOffsetBegin=70 CharacterOffsetEnd=79 PartOfSpeech=VBG Lemma=lumber NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=80 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Spanish CharacterOffsetBegin=92 CharacterOffsetEnd=99 PartOfSpeech=JJ Lemma=spanish NamedEntityTag=MISC]
+[Text=Cachucha CharacterOffsetBegin=100 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=cachucha NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=voluntary CharacterOffsetBegin=115 CharacterOffsetEnd=124 PartOfSpeech=JJ Lemma=voluntary NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=126 CharacterOffsetEnd=128 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Duomo CharacterOffsetBegin=133 CharacterOffsetEnd=138 PartOfSpeech=NNP Lemma=Duomo NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=140 CharacterOffsetEnd=143 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=fled CharacterOffsetBegin=144 CharacterOffsetEnd=148 PartOfSpeech=VBD Lemma=flee NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBD listened)
+        (PP (TO to)
+          (NP
+            (NP (DT an) (NN organist))
+            (VP (VBG lumbering)
+              (PP (IN through)
+                (NP
+                  (NP (DT the) (JJ Spanish) (NN Cachucha))
+                  (, ,)
+                  (PP (IN as)
+                    (NP (DT a) (JJ voluntary)))
+                  (, ,)))
+              (PP (IN in)
+                (NP (DT the) (NNP Duomo)))))))
+      (, ,)
+      (CC and)
+      (VP (VBD fled)))
+    (. !)))
+
+root(ROOT-0, listened-2)
+nsubj(listened-2, I-1)
+nsubj(fled-21, I-1)
+case(organist-5, to-3)
+det(organist-5, an-4)
+nmod:to(listened-2, organist-5)
+acl(organist-5, lumbering-6)
+case(Cachucha-10, through-7)
+det(Cachucha-10, the-8)
+amod(Cachucha-10, Spanish-9)
+nmod:through(lumbering-6, Cachucha-10)
+punct(Cachucha-10, ,-11)
+case(voluntary-14, as-12)
+det(voluntary-14, a-13)
+nmod:as(Cachucha-10, voluntary-14)
+punct(Cachucha-10, ,-15)
+case(Duomo-18, in-16)
+det(Duomo-18, the-17)
+nmod:in(lumbering-6, Duomo-18)
+punct(listened-2, ,-19)
+cc(listened-2, and-20)
+conj:and(listened-2, fled-21)
+punct(listened-2, !-22)
+

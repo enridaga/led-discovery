@@ -1,0 +1,316 @@
+Sentence #1 (28 tokens):
+Once a year at the Fairmont Hotel, Anker’s budding virtuosi gave a concert, half display, half competition, to their friends and relations.
+[Text=Once CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=once NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">Once</TIMEX3>]
+[Text=a CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=P1Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P1Y">a year</TIMEX3>]
+[Text=year CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P1Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P1Y">a year</TIMEX3>]
+[Text=at CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Fairmont CharacterOffsetBegin=19 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Fairmont NamedEntityTag=ORGANIZATION]
+[Text=Hotel CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Hotel NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Anker CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Anker NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=budding CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=VBG Lemma=bud NamedEntityTag=O]
+[Text=virtuosi CharacterOffsetBegin=51 CharacterOffsetEnd=59 PartOfSpeech=NNS Lemma=virtuoso NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=67 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=half CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=NN Lemma=half NamedEntityTag=O]
+[Text=display CharacterOffsetBegin=81 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=display NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=half CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=half NamedEntityTag=O]
+[Text=competition CharacterOffsetBegin=95 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=competition NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=111 CharacterOffsetEnd=116 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=friends CharacterOffsetBegin=117 CharacterOffsetEnd=124 PartOfSpeech=NNS Lemma=friend NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=relations CharacterOffsetBegin=129 CharacterOffsetEnd=138 PartOfSpeech=NNS Lemma=relation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Once)
+      (NP (DT a) (NN year))
+      (PP (IN at)
+        (NP (DT the) (NNP Fairmont) (NNP Hotel))))
+    (, ,)
+    (NP
+      (NP (NNP Anker) (POS 's))
+      (VBG budding) (NNS virtuosi))
+    (VP (VBD gave)
+      (NP
+        (NP (DT a) (NN concert))
+        (, ,)
+        (NP (NN half) (NN display))
+        (, ,)
+        (NP (NN half) (NN competition))
+        (, ,)
+        (PP (TO to)
+          (NP (PRP$ their) (NNS friends)
+            (CC and)
+            (NNS relations)))))
+    (. .)))
+
+root(ROOT-0, gave-13)
+advmod(gave-13, Once-1)
+det(year-3, a-2)
+nmod:npmod(Once-1, year-3)
+case(Hotel-7, at-4)
+det(Hotel-7, the-5)
+compound(Hotel-7, Fairmont-6)
+nmod:at(Once-1, Hotel-7)
+punct(gave-13, ,-8)
+nmod:poss(virtuosi-12, Anker-9)
+case(Anker-9, 's-10)
+amod(virtuosi-12, budding-11)
+nsubj(gave-13, virtuosi-12)
+det(concert-15, a-14)
+dobj(gave-13, concert-15)
+punct(concert-15, ,-16)
+compound(display-18, half-17)
+appos(concert-15, display-18)
+punct(concert-15, ,-19)
+compound(competition-21, half-20)
+appos(concert-15, competition-21)
+punct(concert-15, ,-22)
+case(friends-25, to-23)
+nmod:poss(friends-25, their-24)
+nmod:to(concert-15, friends-25)
+cc(friends-25, and-26)
+nmod:to(concert-15, relations-27)
+conj:and(friends-25, relations-27)
+punct(gave-13, .-28)
+
+Sentence #2 (27 tokens):
+My turn came in November 1921, when I played a little piece called “Remembrance” and was placed second, to my slight chagrin.
+[Text=My CharacterOffsetBegin=140 CharacterOffsetEnd=142 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=turn CharacterOffsetBegin=143 CharacterOffsetEnd=147 PartOfSpeech=NN Lemma=turn NamedEntityTag=O]
+[Text=came CharacterOffsetBegin=148 CharacterOffsetEnd=152 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=153 CharacterOffsetEnd=155 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=November CharacterOffsetBegin=156 CharacterOffsetEnd=164 PartOfSpeech=NNP Lemma=November NamedEntityTag=DATE NormalizedNamedEntityTag=1921-11 Timex=<TIMEX3 tid="t3" type="DATE" value="1921-11">November 1921</TIMEX3>]
+[Text=1921 CharacterOffsetBegin=165 CharacterOffsetEnd=169 PartOfSpeech=CD Lemma=1921 NamedEntityTag=DATE NormalizedNamedEntityTag=1921-11 Timex=<TIMEX3 tid="t3" type="DATE" value="1921-11">November 1921</TIMEX3>]
+[Text=, CharacterOffsetBegin=169 CharacterOffsetEnd=170 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=171 CharacterOffsetEnd=175 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=176 CharacterOffsetEnd=177 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=178 CharacterOffsetEnd=184 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=185 CharacterOffsetEnd=186 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=187 CharacterOffsetEnd=193 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=piece CharacterOffsetBegin=194 CharacterOffsetEnd=199 PartOfSpeech=NN Lemma=piece NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=200 CharacterOffsetEnd=206 PartOfSpeech=VBN Lemma=call NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Remembrance CharacterOffsetBegin=208 CharacterOffsetEnd=219 PartOfSpeech=NN Lemma=remembrance NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=219 CharacterOffsetEnd=220 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=221 CharacterOffsetEnd=224 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=225 CharacterOffsetEnd=228 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=placed CharacterOffsetBegin=229 CharacterOffsetEnd=235 PartOfSpeech=VBN Lemma=place NamedEntityTag=O]
+[Text=second CharacterOffsetBegin=236 CharacterOffsetEnd=242 PartOfSpeech=JJ Lemma=second NamedEntityTag=ORDINAL NormalizedNamedEntityTag=2.0]
+[Text=, CharacterOffsetBegin=242 CharacterOffsetEnd=243 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=244 CharacterOffsetEnd=246 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=247 CharacterOffsetEnd=249 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=slight CharacterOffsetBegin=250 CharacterOffsetEnd=256 PartOfSpeech=JJ Lemma=slight NamedEntityTag=O]
+[Text=chagrin CharacterOffsetBegin=257 CharacterOffsetEnd=264 PartOfSpeech=NN Lemma=chagrin NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=264 CharacterOffsetEnd=265 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP$ My) (NN turn))
+    (VP (VBD came)
+      (PP (IN in)
+        (NP
+          (NP (NNP November) (CD 1921))
+          (, ,)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP I))
+              (VP
+                (VP (VBD played)
+                  (NP
+                    (NP (DT a) (JJ little) (NN piece))
+                    (VP (VBN called) (`` ``)
+                      (NP (NN Remembrance))
+                      ('' ''))))
+                (CC and)
+                (VP (VBD was)
+                  (VP (VBN placed)
+                    (S
+                      (ADJP (JJ second))))))))))
+      (, ,)
+      (PP (TO to)
+        (NP (PRP$ my) (JJ slight) (NN chagrin))))
+    (. .)))
+
+root(ROOT-0, came-3)
+nmod:poss(turn-2, My-1)
+nsubj(came-3, turn-2)
+case(November-5, in-4)
+nmod:in(came-3, November-5)
+nummod(November-5, 1921-6)
+punct(November-5, ,-7)
+advmod(played-10, when-8)
+nsubj(played-10, I-9)
+nsubjpass(placed-20, I-9)
+acl:relcl(November-5, played-10)
+det(piece-13, a-11)
+amod(piece-13, little-12)
+dobj(played-10, piece-13)
+acl(piece-13, called-14)
+punct(called-14, ``-15)
+dobj(called-14, Remembrance-16)
+punct(called-14, ''-17)
+cc(played-10, and-18)
+auxpass(placed-20, was-19)
+acl:relcl(November-5, placed-20)
+conj:and(played-10, placed-20)
+xcomp(placed-20, second-21)
+punct(came-3, ,-22)
+case(chagrin-26, to-23)
+nmod:poss(chagrin-26, my-24)
+amod(chagrin-26, slight-25)
+nmod:to(came-3, chagrin-26)
+punct(came-3, .-27)
+
+Sentence #3 (43 tokens):
+I have not the world’s best memory for names, but I recall my successful rival to this day, a girl of twelve called Sarah Kreindler, whose performance of Sarasate’s “Gypsy Airs” justly merited first place.
+[Text=I CharacterOffsetBegin=266 CharacterOffsetEnd=267 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=268 CharacterOffsetEnd=272 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=273 CharacterOffsetEnd=276 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=277 CharacterOffsetEnd=280 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=281 CharacterOffsetEnd=286 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=286 CharacterOffsetEnd=288 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=289 CharacterOffsetEnd=293 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=memory CharacterOffsetBegin=294 CharacterOffsetEnd=300 PartOfSpeech=NN Lemma=memory NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=301 CharacterOffsetEnd=304 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=names CharacterOffsetBegin=305 CharacterOffsetEnd=310 PartOfSpeech=NNS Lemma=name NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=310 CharacterOffsetEnd=311 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=312 CharacterOffsetEnd=315 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=316 CharacterOffsetEnd=317 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=recall CharacterOffsetBegin=318 CharacterOffsetEnd=324 PartOfSpeech=VBP Lemma=recall NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=325 CharacterOffsetEnd=327 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=successful CharacterOffsetBegin=328 CharacterOffsetEnd=338 PartOfSpeech=JJ Lemma=successful NamedEntityTag=O]
+[Text=rival CharacterOffsetBegin=339 CharacterOffsetEnd=344 PartOfSpeech=NN Lemma=rival NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=345 CharacterOffsetEnd=347 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=348 CharacterOffsetEnd=352 PartOfSpeech=DT Lemma=this NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t4" type="DATE" valueFromFunction="tf0">this day</TIMEX3>]
+[Text=day CharacterOffsetBegin=353 CharacterOffsetEnd=356 PartOfSpeech=NN Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t4" type="DATE" valueFromFunction="tf0">this day</TIMEX3>]
+[Text=, CharacterOffsetBegin=356 CharacterOffsetEnd=357 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=358 CharacterOffsetEnd=359 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=girl CharacterOffsetBegin=360 CharacterOffsetEnd=364 PartOfSpeech=NN Lemma=girl NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=365 CharacterOffsetEnd=367 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=twelve CharacterOffsetBegin=368 CharacterOffsetEnd=374 PartOfSpeech=CD Lemma=twelve NamedEntityTag=NUMBER NormalizedNamedEntityTag=12.0]
+[Text=called CharacterOffsetBegin=375 CharacterOffsetEnd=381 PartOfSpeech=VBN Lemma=call NamedEntityTag=O]
+[Text=Sarah CharacterOffsetBegin=382 CharacterOffsetEnd=387 PartOfSpeech=NNP Lemma=Sarah NamedEntityTag=PERSON]
+[Text=Kreindler CharacterOffsetBegin=388 CharacterOffsetEnd=397 PartOfSpeech=NNP Lemma=Kreindler NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=397 CharacterOffsetEnd=398 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=whose CharacterOffsetBegin=399 CharacterOffsetEnd=404 PartOfSpeech=WP$ Lemma=whose NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=405 CharacterOffsetEnd=416 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=417 CharacterOffsetEnd=419 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Sarasate CharacterOffsetBegin=420 CharacterOffsetEnd=428 PartOfSpeech=NNP Lemma=Sarasate NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=428 CharacterOffsetEnd=430 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=431 CharacterOffsetEnd=432 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Gypsy CharacterOffsetBegin=432 CharacterOffsetEnd=437 PartOfSpeech=NN Lemma=gypsy NamedEntityTag=O]
+[Text=Airs CharacterOffsetBegin=438 CharacterOffsetEnd=442 PartOfSpeech=VBZ Lemma=air NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=442 CharacterOffsetEnd=443 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=justly CharacterOffsetBegin=444 CharacterOffsetEnd=450 PartOfSpeech=RB Lemma=justly NamedEntityTag=O]
+[Text=merited CharacterOffsetBegin=451 CharacterOffsetEnd=458 PartOfSpeech=VBN Lemma=merit NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=459 CharacterOffsetEnd=464 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=place CharacterOffsetBegin=465 CharacterOffsetEnd=470 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=470 CharacterOffsetEnd=471 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP have)
+        (NP
+          (NP (RB not)
+            (NP (DT the) (NN world) (POS 's))
+            (JJS best) (NN memory))
+          (PP (IN for)
+            (NP (NNS names))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP recall)
+        (NP
+          (NP (PRP$ my) (JJ successful) (NN rival))
+          (PP (TO to)
+            (NP (DT this) (NN day)))
+          (, ,)
+          (NP
+            (NP (DT a) (NN girl))
+            (PP (IN of)
+              (NP (CD twelve)))
+            (VP (VBN called)
+              (NP
+                (NP (NNP Sarah) (NNP Kreindler))
+                (, ,)
+                (SBAR
+                  (WHNP (WP$ whose)
+                    (NP (NN performance)
+                      (PP (IN of)
+                        (NP
+                          (NP (NNP Sarasate) (POS 's))
+                          (`` ``) (NN Gypsy)))))
+                  (S
+                    (VP (VBZ Airs)))))))
+          ('' ''))
+        (S
+          (VP
+            (ADVP (RB justly))
+            (VBN merited)
+            (NP (JJ first) (NN place))))))
+    (. .)))
+
+root(ROOT-0, have-2)
+nsubj(have-2, I-1)
+neg(memory-8, not-3)
+det(world-5, the-4)
+nmod:poss(memory-8, world-5)
+case(world-5, 's-6)
+amod(memory-8, best-7)
+dobj(have-2, memory-8)
+case(names-10, for-9)
+nmod:for(memory-8, names-10)
+punct(have-2, ,-11)
+cc(have-2, but-12)
+nsubj(recall-14, I-13)
+conj:but(have-2, recall-14)
+nmod:poss(rival-17, my-15)
+amod(rival-17, successful-16)
+dobj(recall-14, rival-17)
+case(day-20, to-18)
+det(day-20, this-19)
+nmod:to(rival-17, day-20)
+punct(rival-17, ,-21)
+det(girl-23, a-22)
+appos(rival-17, girl-23)
+case(twelve-25, of-24)
+nmod:of(girl-23, twelve-25)
+acl(girl-23, called-26)
+compound(Kreindler-28, Sarah-27)
+dobj(called-26, Kreindler-28)
+nmod:poss(performance-31, Kreindler-28)
+punct(Kreindler-28, ,-29)
+ref(Kreindler-28, whose-30)
+nsubj(Airs-37, performance-31)
+case(Gypsy-36, of-32)
+nmod:poss(Gypsy-36, Sarasate-33)
+case(Sarasate-33, 's-34)
+punct(Gypsy-36, ``-35)
+nmod:of(performance-31, Gypsy-36)
+acl:relcl(Kreindler-28, Airs-37)
+punct(rival-17, ''-38)
+advmod(merited-40, justly-39)
+dep(recall-14, merited-40)
+amod(place-42, first-41)
+dobj(merited-40, place-42)
+punct(have-2, .-43)
+
+Coreference set:
+	(1,24,[24,25]) -> (1,12,[9,13]), that is: "their" -> "Anker 's budding virtuosi"
+Coreference set:
+	(2,9,[9,10]) -> (2,1,[1,2]), that is: "I" -> "My"
+	(2,24,[24,25]) -> (2,1,[1,2]), that is: "my" -> "My"
+	(3,1,[1,2]) -> (2,1,[1,2]), that is: "I" -> "My"
+	(3,13,[13,14]) -> (2,1,[1,2]), that is: "I" -> "My"
+	(3,15,[15,16]) -> (2,1,[1,2]), that is: "my" -> "My"

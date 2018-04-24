@@ -1,0 +1,100 @@
+Sentence #1 (19 tokens):
+Mum Pop Beth & I go to Marina in evening to see amateurs do "Rose Marie".
+[Text=Mum CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNP Lemma=Mum NamedEntityTag=O]
+[Text=Pop CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Pop NamedEntityTag=O]
+[Text=Beth CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Beth NamedEntityTag=PERSON]
+[Text=& CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Marina CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Marina NamedEntityTag=LOCATION]
+[Text=in CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t1" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=to CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=amateurs CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=NNS Lemma=amateur NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Rose CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Rose NamedEntityTag=O]
+[Text=Marie CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Marie NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP Mum) (NNP Pop) (NNP Beth))
+      (CC &)
+      (NP (PRP I)))
+    (VP (VBP go)
+      (PP (TO to)
+        (NP
+          (NP (NNP Marina))
+          (PP (IN in)
+            (NP (NN evening)))))
+      (S
+        (VP (TO to)
+          (VP (VB see)
+            (SBAR
+              (S
+                (NP (NNS amateurs))
+                (VP (VBP do)
+                  (S (`` ``)
+                    (NP (NNP Rose) (NNP Marie))
+                    ('' '')))))))))
+    (. .)))
+
+root(ROOT-0, go-6)
+compound(Beth-3, Mum-1)
+compound(Beth-3, Pop-2)
+nsubj(go-6, Beth-3)
+nsubj:xsubj(see-12, Beth-3)
+cc(Beth-3, &-4)
+conj:&(Beth-3, I-5)
+nsubj(go-6, I-5)
+nsubj:xsubj(see-12, I-5)
+case(Marina-8, to-7)
+nmod:to(go-6, Marina-8)
+case(evening-10, in-9)
+nmod:in(Marina-8, evening-10)
+mark(see-12, to-11)
+xcomp(go-6, see-12)
+nsubj(do-14, amateurs-13)
+ccomp(see-12, do-14)
+punct(Marie-17, ``-15)
+compound(Marie-17, Rose-16)
+xcomp(do-14, Marie-17)
+punct(Marie-17, ''-18)
+punct(go-6, .-19)
+
+Sentence #2 (9 tokens):
+* Quite good acting but some atrocious singing.
+[Text=* CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=Quite CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=acting CharacterOffsetBegin=86 CharacterOffsetEnd=92 PartOfSpeech=VBG Lemma=act NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=atrocious CharacterOffsetBegin=102 CharacterOffsetEnd=111 PartOfSpeech=JJ Lemma=atrocious NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=112 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=singing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (SBAR
+      (X (SYM *))
+      (S
+        (NP (RB Quite) (JJ good))
+        (VP (VBG acting)
+          (PP (CC but)
+            (NP (DT some) (JJ atrocious) (NN singing))))))
+    (. .)))
+
+root(ROOT-0, acting-4)
+dep(acting-4, *-1)
+advmod(good-3, Quite-2)
+nsubj(acting-4, good-3)
+case(singing-8, but-5)
+det(singing-8, some-6)
+amod(singing-8, atrocious-7)
+nmod:but(acting-4, singing-8)
+punct(acting-4, .-9)
+

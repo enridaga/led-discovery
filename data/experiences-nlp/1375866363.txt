@@ -1,0 +1,200 @@
+Sentence #1 (7 tokens):
+Marienberg, 30 July, 1844.
+[Text=Marienberg CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Marienberg NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=30 CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=CD Lemma=30 NamedEntityTag=DATE NormalizedNamedEntityTag=1844-07-30 Timex=<TIMEX3 tid="t1" type="DATE" value="1844-07-30">30 July, 1844</TIMEX3>]
+[Text=July CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=July NamedEntityTag=DATE NormalizedNamedEntityTag=1844-07-30 Timex=<TIMEX3 tid="t1" type="DATE" value="1844-07-30">30 July, 1844</TIMEX3>]
+[Text=, CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=1844-07-30 Timex=<TIMEX3 tid="t1" type="DATE" value="1844-07-30">30 July, 1844</TIMEX3>]
+[Text=1844 CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=CD Lemma=1844 NamedEntityTag=DATE NormalizedNamedEntityTag=1844-07-30 Timex=<TIMEX3 tid="t1" type="DATE" value="1844-07-30">30 July, 1844</TIMEX3>]
+[Text=. CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Marienberg))
+    (, ,)
+    (NP
+      (NP (CD 30))
+      (NP-TMP (NNP July)))
+    (, ,)
+    (NP (CD 1844))
+    (. .)))
+
+root(ROOT-0, Marienberg-1)
+punct(Marienberg-1, ,-2)
+appos(Marienberg-1, 30-3)
+nmod:tmod(30-3, July-4)
+punct(Marienberg-1, ,-5)
+amod(Marienberg-1, 1844-6)
+punct(Marienberg-1, .-7)
+
+Sentence #2 (13 tokens):
+– On Sunday we had a delightful drive to St. Goar….
+[Text=-- CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=On CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Sunday CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Sunday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-7 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-WXX-7">Sunday</TIMEX3>]
+[Text=we CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=delightful CharacterOffsetBegin=48 CharacterOffsetEnd=58 PartOfSpeech=JJ Lemma=delightful NamedEntityTag=O]
+[Text=drive CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=drive NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=St. CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=St. NamedEntityTag=ORGANIZATION]
+[Text=Goar CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Goar NamedEntityTag=ORGANIZATION]
+[Text=... CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (: --)
+    (PP (IN On)
+      (NP (NNP Sunday)))
+    (NP (PRP we))
+    (VP (VBD had)
+      (NP (DT a) (JJ delightful) (NN drive))
+      (PP (TO to)
+        (NP
+          (NP (NNP St.) (NNP Goar))
+          (: ...))))
+    (. .)))
+
+root(ROOT-0, had-5)
+punct(had-5, ---1)
+case(Sunday-3, On-2)
+nmod:on(had-5, Sunday-3)
+nsubj(had-5, we-4)
+det(drive-8, a-6)
+amod(drive-8, delightful-7)
+dobj(had-5, drive-8)
+case(Goar-11, to-9)
+compound(Goar-11, St.-10)
+nmod:to(had-5, Goar-11)
+punct(Goar-11, ...-12)
+punct(had-5, .-13)
+
+Sentence #3 (39 tokens):
+At St. Goar was a concert of amateurs, for the benefit of a village that had suffered from fire – a good selection of music, and a good performance, in an unpretending place and company.
+[Text=At CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=St. CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=St. NamedEntityTag=LOCATION]
+[Text=Goar CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=Goar NamedEntityTag=LOCATION]
+[Text=was CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=99 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=107 CharacterOffsetEnd=109 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=amateurs CharacterOffsetBegin=110 CharacterOffsetEnd=118 PartOfSpeech=NNS Lemma=amateur NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=124 CharacterOffsetEnd=127 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=benefit CharacterOffsetBegin=128 CharacterOffsetEnd=135 PartOfSpeech=NN Lemma=benefit NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=village CharacterOffsetBegin=141 CharacterOffsetEnd=148 PartOfSpeech=NN Lemma=village NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=149 CharacterOffsetEnd=153 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=suffered CharacterOffsetBegin=158 CharacterOffsetEnd=166 PartOfSpeech=VBN Lemma=suffer NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=167 CharacterOffsetEnd=171 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=fire CharacterOffsetBegin=172 CharacterOffsetEnd=176 PartOfSpeech=NN Lemma=fire NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=177 CharacterOffsetEnd=178 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=179 CharacterOffsetEnd=180 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=181 CharacterOffsetEnd=185 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=selection CharacterOffsetBegin=186 CharacterOffsetEnd=195 PartOfSpeech=NN Lemma=selection NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=196 CharacterOffsetEnd=198 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=199 CharacterOffsetEnd=204 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=204 CharacterOffsetEnd=205 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=206 CharacterOffsetEnd=209 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=210 CharacterOffsetEnd=211 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=212 CharacterOffsetEnd=216 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=217 CharacterOffsetEnd=228 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=228 CharacterOffsetEnd=229 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=230 CharacterOffsetEnd=232 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=233 CharacterOffsetEnd=235 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=unpretending CharacterOffsetBegin=236 CharacterOffsetEnd=248 PartOfSpeech=JJ Lemma=unpretending NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=249 CharacterOffsetEnd=254 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=255 CharacterOffsetEnd=258 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=259 CharacterOffsetEnd=266 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=266 CharacterOffsetEnd=267 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (NNP St.)))
+    (NP (NNP Goar))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN concert))
+        (PP (IN of)
+          (NP (NNS amateurs))))
+      (, ,)
+      (PP (IN for)
+        (NP
+          (NP (DT the) (NN benefit))
+          (PP (IN of)
+            (NP
+              (NP
+                (NP (DT a) (NN village))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBD had)
+                      (VP (VBN suffered)
+                        (PP (IN from)
+                          (NP (NN fire))))))))
+              (: --)
+              (NP
+                (NP (DT a) (JJ good) (NN selection))
+                (PP (IN of)
+                  (NP (NN music))))
+              (, ,)
+              (CC and)
+              (NP (DT a) (JJ good) (NN performance))))))
+      (, ,)
+      (PP (IN in)
+        (NP
+          (NP (DT an) (JJ unpretending) (NN place))
+          (CC and)
+          (NP (NN company)))))
+    (. .)))
+
+root(ROOT-0, concert-6)
+case(St.-2, At-1)
+nmod:at(concert-6, St.-2)
+nsubj(concert-6, Goar-3)
+cop(concert-6, was-4)
+det(concert-6, a-5)
+case(amateurs-8, of-7)
+nmod:of(concert-6, amateurs-8)
+punct(concert-6, ,-9)
+case(benefit-12, for-10)
+det(benefit-12, the-11)
+nmod:for(concert-6, benefit-12)
+case(village-15, of-13)
+det(village-15, a-14)
+nmod:of(benefit-12, village-15)
+nsubj(suffered-18, village-15)
+ref(village-15, that-16)
+aux(suffered-18, had-17)
+acl:relcl(village-15, suffered-18)
+case(fire-20, from-19)
+nmod:from(suffered-18, fire-20)
+punct(village-15, ---21)
+det(selection-24, a-22)
+amod(selection-24, good-23)
+nmod:of(benefit-12, selection-24)
+conj:and(village-15, selection-24)
+nsubj(suffered-18, selection-24)
+case(music-26, of-25)
+nmod:of(selection-24, music-26)
+punct(village-15, ,-27)
+cc(village-15, and-28)
+det(performance-31, a-29)
+amod(performance-31, good-30)
+nmod:of(benefit-12, performance-31)
+conj:and(village-15, performance-31)
+nsubj(suffered-18, performance-31)
+punct(concert-6, ,-32)
+case(place-36, in-33)
+det(place-36, an-34)
+amod(place-36, unpretending-35)
+nmod:in(concert-6, place-36)
+cc(place-36, and-37)
+nmod:in(concert-6, company-38)
+conj:and(place-36, company-38)
+punct(concert-6, .-39)
+
+Coreference set:
+	(3,3,[2,4]) -> (2,11,[10,13]), that is: "St. Goar" -> "St. Goar ..."

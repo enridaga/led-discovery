@@ -1,0 +1,86 @@
+Sentence #1 (28 tokens):
+Within a short time he played the scales in all keys with a masterful fluency made possible by a natural digital equipment especially well suited for piano-playing.
+[Text=Within CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=IN Lemma=within NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=short CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=short NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=scales CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=NNS Lemma=scale NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=keys CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=NNS Lemma=key NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=masterful CharacterOffsetBegin=60 CharacterOffsetEnd=69 PartOfSpeech=JJ Lemma=masterful NamedEntityTag=O]
+[Text=fluency CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=fluency NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=possible CharacterOffsetBegin=83 CharacterOffsetEnd=91 PartOfSpeech=JJ Lemma=possible NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=natural CharacterOffsetBegin=97 CharacterOffsetEnd=104 PartOfSpeech=JJ Lemma=natural NamedEntityTag=O]
+[Text=digital CharacterOffsetBegin=105 CharacterOffsetEnd=112 PartOfSpeech=JJ Lemma=digital NamedEntityTag=O]
+[Text=equipment CharacterOffsetBegin=113 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=equipment NamedEntityTag=O]
+[Text=especially CharacterOffsetBegin=123 CharacterOffsetEnd=133 PartOfSpeech=RB Lemma=especially NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=suited CharacterOffsetBegin=139 CharacterOffsetEnd=145 PartOfSpeech=VBN Lemma=suit NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=piano-playing CharacterOffsetBegin=150 CharacterOffsetEnd=163 PartOfSpeech=JJ Lemma=piano-playing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=163 CharacterOffsetEnd=164 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN Within)
+      (NP (DT a) (JJ short) (NN time)))
+    (NP (PRP he))
+    (VP (VBD played)
+      (SBAR
+        (S
+          (NP
+            (NP (DT the) (NNS scales))
+            (PP (IN in)
+              (NP
+                (NP (DT all) (NNS keys))
+                (PP (IN with)
+                  (NP (DT a) (JJ masterful) (NN fluency))))))
+          (VP (VBD made)
+            (ADJP (JJ possible))
+            (PP (IN by)
+              (NP
+                (NP (DT a) (JJ natural) (JJ digital) (NN equipment))
+                (VP
+                  (ADVP (RB especially) (RB well))
+                  (VBN suited)
+                  (PP (IN for)
+                    (NP (JJ piano-playing))))))))))
+    (. .)))
+
+root(ROOT-0, played-6)
+case(time-4, Within-1)
+det(time-4, a-2)
+amod(time-4, short-3)
+nmod:within(played-6, time-4)
+nsubj(played-6, he-5)
+det(scales-8, the-7)
+nsubj(made-16, scales-8)
+case(keys-11, in-9)
+det(keys-11, all-10)
+nmod:in(scales-8, keys-11)
+case(fluency-15, with-12)
+det(fluency-15, a-13)
+amod(fluency-15, masterful-14)
+nmod:with(keys-11, fluency-15)
+ccomp(played-6, made-16)
+xcomp(made-16, possible-17)
+case(equipment-22, by-18)
+det(equipment-22, a-19)
+amod(equipment-22, natural-20)
+amod(equipment-22, digital-21)
+nmod:by(made-16, equipment-22)
+advmod(well-24, especially-23)
+advmod(suited-25, well-24)
+acl(equipment-22, suited-25)
+case(piano-playing-27, for-26)
+nmod:for(suited-25, piano-playing-27)
+punct(played-6, .-28)
+

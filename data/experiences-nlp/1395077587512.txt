@@ -1,0 +1,150 @@
+Sentence #1 (5 tokens):
+A wild rainy night.
+[Text=A CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=wild CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=JJ Lemma=wild NamedEntityTag=O]
+[Text=rainy CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=rainy NamedEntityTag=O]
+[Text=night CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t1" type="TIME" value="TNI">night</TIMEX3>]
+[Text=. CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (DT A) (JJ wild) (JJ rainy) (NN night) (. .)))
+
+root(ROOT-0, night-4)
+det(night-4, A-1)
+amod(night-4, wild-2)
+amod(night-4, rainy-3)
+punct(night-4, .-5)
+
+Sentence #2 (11 tokens):
+They are holding Clyro Feast Ball at the Swan opposite.
+[Text=They CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=holding CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=VBG Lemma=hold NamedEntityTag=O]
+[Text=Clyro CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Clyro NamedEntityTag=LOCATION]
+[Text=Feast CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Feast NamedEntityTag=LOCATION]
+[Text=Ball CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Ball NamedEntityTag=LOCATION]
+[Text=at CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Swan CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=swan NamedEntityTag=O]
+[Text=opposite CharacterOffsetBegin=66 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=opposite NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are)
+      (VP (VBG holding)
+        (NP
+          (NP (NNP Clyro) (NNP Feast) (NNP Ball))
+          (PP (IN at)
+            (NP (DT the) (NN Swan) (NN opposite))))))
+    (. .)))
+
+root(ROOT-0, holding-3)
+nsubj(holding-3, They-1)
+aux(holding-3, are-2)
+compound(Ball-6, Clyro-4)
+compound(Ball-6, Feast-5)
+dobj(holding-3, Ball-6)
+case(opposite-10, at-7)
+det(opposite-10, the-8)
+compound(opposite-10, Swan-9)
+nmod:at(Ball-6, opposite-10)
+punct(holding-3, .-11)
+
+Sentence #3 (30 tokens):
+As I write I hear the scraping and squealing of the fiddle and the ceaseless heavy tramp of the dancers as they stamp the floor in a country dance.
+[Text=As CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=write CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=VBP Lemma=write NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=scraping CharacterOffsetBegin=98 CharacterOffsetEnd=106 PartOfSpeech=VBG Lemma=scrape NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=squealing CharacterOffsetBegin=111 CharacterOffsetEnd=120 PartOfSpeech=VBG Lemma=squeal NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=124 CharacterOffsetEnd=127 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fiddle CharacterOffsetBegin=128 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=fiddle NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ceaseless CharacterOffsetBegin=143 CharacterOffsetEnd=152 PartOfSpeech=JJ Lemma=ceaseless NamedEntityTag=O]
+[Text=heavy CharacterOffsetBegin=153 CharacterOffsetEnd=158 PartOfSpeech=JJ Lemma=heavy NamedEntityTag=O]
+[Text=tramp CharacterOffsetBegin=159 CharacterOffsetEnd=164 PartOfSpeech=NN Lemma=tramp NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=165 CharacterOffsetEnd=167 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=dancers CharacterOffsetBegin=172 CharacterOffsetEnd=179 PartOfSpeech=NNS Lemma=dancer NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=180 CharacterOffsetEnd=182 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=183 CharacterOffsetEnd=187 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=stamp CharacterOffsetBegin=188 CharacterOffsetEnd=193 PartOfSpeech=VBP Lemma=stamp NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=194 CharacterOffsetEnd=197 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=floor CharacterOffsetBegin=198 CharacterOffsetEnd=203 PartOfSpeech=NN Lemma=floor NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=204 CharacterOffsetEnd=206 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=country CharacterOffsetBegin=209 CharacterOffsetEnd=216 PartOfSpeech=NN Lemma=country NamedEntityTag=O]
+[Text=dance CharacterOffsetBegin=217 CharacterOffsetEnd=222 PartOfSpeech=NN Lemma=dance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=222 CharacterOffsetEnd=223 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP I))
+        (VP (VBP write)
+          (NP (PRP I)))))
+    (VP (VB hear)
+      (NP
+        (NP (DT the) (VBG scraping)
+          (CC and)
+          (VBG squealing))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN fiddle))
+            (CC and)
+            (NP (DT the) (JJ ceaseless) (JJ heavy) (NN tramp))))
+        (PP (IN of)
+          (NP (DT the) (NNS dancers))))
+      (SBAR (IN as)
+        (S
+          (NP (PRP they))
+          (VP (VBP stamp)
+            (NP
+              (NP (DT the) (NN floor))
+              (PP (IN in)
+                (NP (DT a) (NN country) (NN dance))))))))
+    (. .)))
+
+root(ROOT-0, hear-5)
+mark(write-3, As-1)
+nsubj(write-3, I-2)
+csubj(hear-5, write-3)
+dobj(write-3, I-4)
+dobj(hear-5, the-6)
+amod(the-6, scraping-7)
+cc(the-6, and-8)
+dobj(hear-5, squealing-9)
+conj:and(the-6, squealing-9)
+case(fiddle-12, of-10)
+det(fiddle-12, the-11)
+nmod:of(the-6, fiddle-12)
+cc(fiddle-12, and-13)
+det(tramp-17, the-14)
+amod(tramp-17, ceaseless-15)
+amod(tramp-17, heavy-16)
+nmod:of(the-6, tramp-17)
+conj:and(fiddle-12, tramp-17)
+case(dancers-20, of-18)
+det(dancers-20, the-19)
+nmod:of(the-6, dancers-20)
+mark(stamp-23, as-21)
+nsubj(stamp-23, they-22)
+advcl:as(hear-5, stamp-23)
+det(floor-25, the-24)
+dobj(stamp-23, floor-25)
+case(dance-29, in-26)
+det(dance-29, a-27)
+compound(dance-29, country-28)
+nmod:in(floor-25, dance-29)
+punct(hear-5, .-30)
+
+Coreference set:
+	(3,4,[4,5]) -> (3,2,[2,3]), that is: "I" -> "I"
+Coreference set:
+	(3,22,[22,23]) -> (3,6,[6,21]), that is: "they" -> "the scraping and squealing of the fiddle and the ceaseless heavy tramp of the dancers"

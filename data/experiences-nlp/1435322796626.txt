@@ -1,0 +1,49 @@
+Sentence #1 (3 tokens):
+Usual Sinf.
+[Text=Usual CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=JJ Lemma=usual NamedEntityTag=O]
+[Text=Sinf CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=sinf NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (JJ Usual) (NN Sinf) (. .)))
+
+root(ROOT-0, Sinf-2)
+amod(Sinf-2, Usual-1)
+punct(Sinf-2, .-3)
+
+Sentence #2 (10 tokens):
+rehearsal at 11.0 v. bad; 2 players missing!
+[Text=rehearsal CharacterOffsetBegin=12 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=rehearsal NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=11.0 CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=CD Lemma=11.0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=11.0]
+[Text=v. CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=CC Lemma=v. NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=players CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=player NamedEntityTag=O]
+[Text=missing CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=VBG Lemma=miss NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP (NN rehearsal))
+      (PP (IN at)
+        (NP (CD 11.0)))
+      (PP (CC v.)
+        (NP (JJ bad))))
+    (: ;)
+    (NP
+      (NP (CD 2) (NNS players))
+      (VP (VBG missing)))
+    (. !)))
+
+root(ROOT-0, rehearsal-1)
+case(11.0-3, at-2)
+nmod:at(rehearsal-1, 11.0-3)
+case(bad-5, v.-4)
+nmod:v.(rehearsal-1, bad-5)
+punct(rehearsal-1, ;-6)
+nummod(players-8, 2-7)
+dep(rehearsal-1, players-8)
+acl(players-8, missing-9)
+punct(rehearsal-1, !-10)
+

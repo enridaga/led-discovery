@@ -1,0 +1,219 @@
+Sentence #1 (13 tokens):
+Go to church at 11.0 with Miss Prior at St. Mark's.
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=church CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=church NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=11.0 CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=CD Lemma=11.0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=11.0]
+[Text=with CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Miss CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Miss NamedEntityTag=O]
+[Text=Prior CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=RB Lemma=prior NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=St. CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=St. NamedEntityTag=O]
+[Text=Mark CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Mark NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PP (TO to)
+        (NP
+          (NP (NN church))
+          (PP (IN at)
+            (NP (CD 11.0)))))
+      (PP (IN with)
+        (NP
+          (NP (NNP Miss))
+          (ADVP (RB Prior)
+            (PP (IN at)
+              (NP (NNP St.) (NNP Mark) (POS 's)))))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+case(church-3, to-2)
+nmod:to(Go-1, church-3)
+case(11.0-5, at-4)
+nmod:at(church-3, 11.0-5)
+case(Miss-7, with-6)
+nmod:with(Go-1, Miss-7)
+advmod(Miss-7, Prior-8)
+case(Mark-11, at-9)
+compound(Mark-11, St.-10)
+nmod:'s(Prior-8, Mark-11)
+case(Mark-11, 's-12)
+punct(Go-1, .-13)
+
+Sentence #2 (7 tokens):
+Have v. fine sermon by Bish.
+[Text=Have CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=v. CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=CC Lemma=v. NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=sermon CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=sermon NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Bish CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Bish NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBP Have)
+      (PP (CC v.)
+        (NP (JJ fine) (NN sermon)))
+      (PP (IN by)
+        (NP (NNP Bish))))
+    (. .)))
+
+root(ROOT-0, Have-1)
+case(sermon-4, v.-2)
+amod(sermon-4, fine-3)
+nmod:v.(Have-1, sermon-4)
+case(Bish-6, by-5)
+nmod:by(Have-1, Bish-6)
+punct(Have-1, .-7)
+
+Sentence #3 (17 tokens):
+of London, & v. fine Anthem "Many Waters" of Ireland v. well sung.
+[Text=of CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=London CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=London NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=v. CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=CC Lemma=v. NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=Anthem CharacterOffsetBegin=102 CharacterOffsetEnd=108 PartOfSpeech=NNP Lemma=Anthem NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Many CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=Waters CharacterOffsetBegin=115 CharacterOffsetEnd=121 PartOfSpeech=NNP Lemma=Waters NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Ireland CharacterOffsetBegin=126 CharacterOffsetEnd=133 PartOfSpeech=NNP Lemma=Ireland NamedEntityTag=LOCATION]
+[Text=v. CharacterOffsetBegin=134 CharacterOffsetEnd=136 PartOfSpeech=CC Lemma=v. NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=sung CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN of)
+      (NP
+        (NP (NNP London))
+        (, ,)
+        (CC &)
+        (NP
+          (PP (CC v.)
+            (NP
+              (NP (JJ fine) (NNP Anthem))
+              (`` ``)
+              (NP (JJ Many) (NNP Waters))
+              ('' '')))
+          (PP (IN of)
+            (NP (NNP Ireland))))))
+    (NP (CC v.))
+    (ADVP (RB well))
+    (VP (VBD sung))
+    (. .)))
+
+root(ROOT-0, sung-16)
+case(London-2, of-1)
+nmod:of(sung-16, London-2)
+punct(London-2, ,-3)
+cc(sung-16, &-4)
+case(Anthem-7, v.-5)
+amod(Anthem-7, fine-6)
+nmod:v.(sung-16', Anthem-7)
+punct(Anthem-7, ``-8)
+amod(Waters-10, Many-9)
+dep(Anthem-7, Waters-10)
+punct(Anthem-7, ''-11)
+case(Ireland-13, of-12)
+nmod:of(Anthem-7, Ireland-13)
+nsubj(sung-16, v.-14)
+nsubj(sung-16', v.-14)
+advmod(sung-16, well-15)
+conj:&(sung-16, sung-16')
+punct(sung-16, .-17)
+
+Sentence #4 (7 tokens):
+Walk with Miss Prior after dinner.
+[Text=Walk CharacterOffsetBegin=148 CharacterOffsetEnd=152 PartOfSpeech=VB Lemma=walk NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Miss CharacterOffsetBegin=158 CharacterOffsetEnd=162 PartOfSpeech=NNP Lemma=Miss NamedEntityTag=O]
+[Text=Prior CharacterOffsetBegin=163 CharacterOffsetEnd=168 PartOfSpeech=RB Lemma=prior NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=169 CharacterOffsetEnd=174 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=175 CharacterOffsetEnd=181 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Walk)
+      (PP (IN with)
+        (NP (NNP Miss)))
+      (PP (RB Prior) (IN after)
+        (NP (NN dinner))))
+    (. .)))
+
+root(ROOT-0, Walk-1)
+case(Miss-3, with-2)
+nmod:with(Walk-1, Miss-3)
+advmod(dinner-6, Prior-4)
+case(dinner-6, after-5)
+nmod:after(Walk-1, dinner-6)
+punct(Walk-1, .-7)
+
+Sentence #5 (16 tokens):
+Write letters for rest of afternoon & evening until supper at the Bridges at 7.30.
+[Text=Write CharacterOffsetBegin=183 CharacterOffsetEnd=188 PartOfSpeech=VB Lemma=write NamedEntityTag=O]
+[Text=letters CharacterOffsetBegin=189 CharacterOffsetEnd=196 PartOfSpeech=NNS Lemma=letter NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=197 CharacterOffsetEnd=200 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=rest CharacterOffsetBegin=201 CharacterOffsetEnd=205 PartOfSpeech=NN Lemma=rest NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=206 CharacterOffsetEnd=208 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=afternoon CharacterOffsetBegin=209 CharacterOffsetEnd=218 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 tid="t1" type="TIME" value="TAF">afternoon</TIMEX3>]
+[Text=& CharacterOffsetBegin=219 CharacterOffsetEnd=220 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=221 CharacterOffsetEnd=228 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t2" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=until CharacterOffsetBegin=229 CharacterOffsetEnd=234 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=supper CharacterOffsetBegin=235 CharacterOffsetEnd=241 PartOfSpeech=NN Lemma=supper NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=242 CharacterOffsetEnd=244 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=245 CharacterOffsetEnd=248 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Bridges CharacterOffsetBegin=249 CharacterOffsetEnd=256 PartOfSpeech=NNPS Lemma=Bridges NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=257 CharacterOffsetEnd=259 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=7.30 CharacterOffsetBegin=260 CharacterOffsetEnd=264 PartOfSpeech=CD Lemma=7.30 NamedEntityTag=NUMBER NormalizedNamedEntityTag=7.3]
+[Text=. CharacterOffsetBegin=264 CharacterOffsetEnd=265 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Write)
+      (NP
+        (NP (NNS letters))
+        (PP (IN for)
+          (NP
+            (NP (NN rest))
+            (PP (IN of)
+              (NP
+                (NP (NN afternoon))
+                (CC &)
+                (NP (NN evening)))))))
+      (PP (IN until)
+        (NP
+          (NP (NN supper))
+          (PP (IN at)
+            (NP (DT the) (NNPS Bridges)))))
+      (PP (IN at)
+        (NP (CD 7.30))))
+    (. .)))
+
+root(ROOT-0, Write-1)
+dobj(Write-1, letters-2)
+case(rest-4, for-3)
+nmod:for(letters-2, rest-4)
+case(afternoon-6, of-5)
+nmod:of(rest-4, afternoon-6)
+cc(afternoon-6, &-7)
+nmod:of(rest-4, evening-8)
+conj:&(afternoon-6, evening-8)
+case(supper-10, until-9)
+nmod:until(Write-1, supper-10)
+case(Bridges-13, at-11)
+det(Bridges-13, the-12)
+nmod:at(supper-10, Bridges-13)
+case(7.30-15, at-14)
+nmod:at(Write-1, 7.30-15)
+punct(Write-1, .-16)
+
+Coreference set:
+	(4,3,[3,4]) -> (1,7,[7,13]), that is: "Miss" -> "Miss Prior at St. Mark 's"
+Coreference set:
+	(3,14,[14,15]) -> (3,5,[5,14]), that is: "v." -> "v. fine Anthem `` Many Waters '' of Ireland"

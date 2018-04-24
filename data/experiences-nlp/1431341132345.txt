@@ -1,0 +1,69 @@
+Sentence #1 (23 tokens):
+I also listen to music from different parts of the world, from Japan, Turkey, North Africa, Central Africa.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=VBP Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=28 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=parts CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=NNS Lemma=part NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Japan CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=Japan NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Turkey CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Turkey NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=North CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=North NamedEntityTag=LOCATION]
+[Text=Africa CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=Africa NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Central CharacterOffsetBegin=92 CharacterOffsetEnd=99 PartOfSpeech=NNP Lemma=Central NamedEntityTag=LOCATION]
+[Text=Africa CharacterOffsetBegin=100 CharacterOffsetEnd=106 PartOfSpeech=NNP Lemma=Africa NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB also))
+    (VP (VBP listen)
+      (PP (TO to)
+        (NP (NN music)))
+      (PP (IN from)
+        (NP
+          (NP (JJ different) (NNS parts))
+          (PP (IN of)
+            (NP (DT the) (NN world)))))
+      (, ,)
+      (PP (IN from)
+        (NP
+          (NP (NNP Japan) (, ,) (NNP Turkey) (, ,) (NNP North) (NNP Africa))
+          (, ,)
+          (NP (NNP Central) (NNP Africa)))))
+    (. .)))
+
+root(ROOT-0, listen-3)
+nsubj(listen-3, I-1)
+advmod(listen-3, also-2)
+case(music-5, to-4)
+nmod:to(listen-3, music-5)
+case(parts-8, from-6)
+amod(parts-8, different-7)
+nmod:from(listen-3, parts-8)
+case(world-11, of-9)
+det(world-11, the-10)
+nmod:of(parts-8, world-11)
+punct(listen-3, ,-12)
+case(Africa-19, from-13)
+compound(Africa-19, Japan-14)
+punct(Africa-19, ,-15)
+appos(Africa-19, Turkey-16)
+punct(Africa-19, ,-17)
+appos(Africa-19, North-18)
+nmod:from(listen-3, Africa-19)
+punct(Africa-19, ,-20)
+compound(Africa-22, Central-21)
+appos(Africa-19, Africa-22)
+punct(listen-3, .-23)
+

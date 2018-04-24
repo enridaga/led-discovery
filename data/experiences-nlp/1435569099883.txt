@@ -1,0 +1,203 @@
+Sentence #1 (2 tokens):
+Afternoon.
+[Text=Afternoon CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 tid="t1" type="TIME" value="TAF">Afternoon</TIMEX3>]
+[Text=. CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (NN Afternoon) (. .)))
+
+root(ROOT-0, Afternoon-1)
+punct(Afternoon-1, .-2)
+
+Sentence #2 (22 tokens):
+The gramophone in the barn with the Company; an idea of mine which pleased them a bit, I think.
+[Text=The CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gramophone CharacterOffsetBegin=15 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=gramophone NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=barn CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=barn NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Company CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=idea CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=idea NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=mine CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=mine NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=pleased CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=VBD Lemma=please NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP (DT The) (NN gramophone))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN barn))
+          (PP (IN with)
+            (NP (DT the) (NN Company))))))
+    (: ;)
+    (NP
+      (NP (DT an) (NN idea))
+      (PP (IN of)
+        (NP (NN mine)))
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBD pleased)
+            (NP
+              (NP (PRP them))
+              (NP (DT a) (NN bit)))))))
+    (, ,)
+    (S
+      (NP (PRP I))
+      (VP (VBP think)))
+    (. .)))
+
+root(ROOT-0, gramophone-2)
+det(gramophone-2, The-1)
+case(barn-5, in-3)
+det(barn-5, the-4)
+nmod:in(gramophone-2, barn-5)
+case(Company-8, with-6)
+det(Company-8, the-7)
+nmod:with(barn-5, Company-8)
+punct(gramophone-2, ;-9)
+det(idea-11, an-10)
+dep(gramophone-2, idea-11)
+nsubj(pleased-15, idea-11)
+case(mine-13, of-12)
+nmod:of(idea-11, mine-13)
+ref(idea-11, which-14)
+acl:relcl(idea-11, pleased-15)
+dobj(pleased-15, them-16)
+det(bit-18, a-17)
+dep(them-16, bit-18)
+punct(gramophone-2, ,-19)
+nsubj(think-21, I-20)
+dep(gramophone-2, think-21)
+punct(gramophone-2, .-22)
+
+Sentence #3 (30 tokens):
+We sat listening to the Plantation Medleys and H. Lauder songs, etc., while the shells strafed the village, and the blue sky pierced through the roof.
+[Text=We CharacterOffsetBegin=107 CharacterOffsetEnd=109 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=sat CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=VBD Lemma=sit NamedEntityTag=O]
+[Text=listening CharacterOffsetBegin=114 CharacterOffsetEnd=123 PartOfSpeech=VBG Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=124 CharacterOffsetEnd=126 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Plantation CharacterOffsetBegin=131 CharacterOffsetEnd=141 PartOfSpeech=NNP Lemma=Plantation NamedEntityTag=O]
+[Text=Medleys CharacterOffsetBegin=142 CharacterOffsetEnd=149 PartOfSpeech=NNPS Lemma=Medleys NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=H. CharacterOffsetBegin=154 CharacterOffsetEnd=156 PartOfSpeech=NNP Lemma=H. NamedEntityTag=PERSON]
+[Text=Lauder CharacterOffsetBegin=157 CharacterOffsetEnd=163 PartOfSpeech=NNP Lemma=Lauder NamedEntityTag=PERSON]
+[Text=songs CharacterOffsetBegin=164 CharacterOffsetEnd=169 PartOfSpeech=NNS Lemma=song NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=169 CharacterOffsetEnd=170 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=etc. CharacterOffsetBegin=171 CharacterOffsetEnd=175 PartOfSpeech=FW Lemma=etc. NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=175 CharacterOffsetEnd=176 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=177 CharacterOffsetEnd=182 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=183 CharacterOffsetEnd=186 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=shells CharacterOffsetBegin=187 CharacterOffsetEnd=193 PartOfSpeech=NNS Lemma=shell NamedEntityTag=O]
+[Text=strafed CharacterOffsetBegin=194 CharacterOffsetEnd=201 PartOfSpeech=VBD Lemma=strafe NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=202 CharacterOffsetEnd=205 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=village CharacterOffsetBegin=206 CharacterOffsetEnd=213 PartOfSpeech=NN Lemma=village NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=213 CharacterOffsetEnd=214 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=215 CharacterOffsetEnd=218 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=219 CharacterOffsetEnd=222 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=blue CharacterOffsetBegin=223 CharacterOffsetEnd=227 PartOfSpeech=JJ Lemma=blue NamedEntityTag=O]
+[Text=sky CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=NN Lemma=sky NamedEntityTag=O]
+[Text=pierced CharacterOffsetBegin=232 CharacterOffsetEnd=239 PartOfSpeech=VBD Lemma=pierce NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=240 CharacterOffsetEnd=247 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=248 CharacterOffsetEnd=251 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=roof CharacterOffsetBegin=252 CharacterOffsetEnd=256 PartOfSpeech=NN Lemma=roof NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=256 CharacterOffsetEnd=257 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VBD sat)
+        (S
+          (VP (VBG listening)
+            (PP (TO to)
+              (NP (DT the) (NNP Plantation) (NNPS Medleys)
+                (CC and)
+                (NNP H.) (NNP Lauder)))
+            (NP
+              (NP (NNS songs))
+              (, ,)
+              (NP (FW etc.))
+              (, ,)
+              (SBAR (IN while)
+                (S
+                  (NP (DT the) (NNS shells))
+                  (VP (VBD strafed)
+                    (NP (DT the) (NN village))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT the) (JJ blue) (NN sky))
+      (VP (VBD pierced)
+        (PP (IN through)
+          (NP (DT the) (NN roof)))))
+    (. .)))
+
+root(ROOT-0, sat-2)
+nsubj(sat-2, We-1)
+xcomp(sat-2, listening-3)
+case(Medleys-7, to-4)
+det(Medleys-7, the-5)
+compound(Medleys-7, Plantation-6)
+nmod:to(listening-3, Medleys-7)
+cc(Medleys-7, and-8)
+compound(Lauder-10, H.-9)
+nmod:to(listening-3, Lauder-10)
+conj:and(Medleys-7, Lauder-10)
+dobj(listening-3, songs-11)
+punct(songs-11, ,-12)
+appos(songs-11, etc.-13)
+punct(songs-11, ,-14)
+mark(strafed-18, while-15)
+det(shells-17, the-16)
+nsubj(strafed-18, shells-17)
+dep(songs-11, strafed-18)
+det(village-20, the-19)
+dobj(strafed-18, village-20)
+punct(sat-2, ,-21)
+cc(sat-2, and-22)
+det(sky-25, the-23)
+amod(sky-25, blue-24)
+nsubj(pierced-26, sky-25)
+conj:and(sat-2, pierced-26)
+case(roof-29, through-27)
+det(roof-29, the-28)
+nmod:through(pierced-26, roof-29)
+punct(sat-2, .-30)
+
+Sentence #4 (5 tokens):
+It was worth doing.
+[Text=It CharacterOffsetBegin=258 CharacterOffsetEnd=260 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=261 CharacterOffsetEnd=264 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=worth CharacterOffsetBegin=265 CharacterOffsetEnd=270 PartOfSpeech=JJ Lemma=worth NamedEntityTag=O]
+[Text=doing CharacterOffsetBegin=271 CharacterOffsetEnd=276 PartOfSpeech=VBG Lemma=do NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=276 CharacterOffsetEnd=277 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (ADJP (JJ worth)
+        (S
+          (VP (VBG doing)))))
+    (. .)))
+
+root(ROOT-0, worth-3)
+nsubj(worth-3, It-1)
+cop(worth-3, was-2)
+dep(worth-3, doing-4)
+punct(worth-3, .-5)
+
+Coreference set:
+	(3,1,[1,2]) -> (2,16,[16,19]), that is: "We" -> "them a bit"

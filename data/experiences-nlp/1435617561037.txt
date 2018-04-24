@@ -1,0 +1,163 @@
+Sentence #1 (27 tokens):
+Tuesday at 6:00 with Roz gave a little concert, organised by John Myers at Jane Kitzelman's, of songs as memorial for Arthur Cady.
+[Text=Tuesday CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Tuesday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-2T06:00 Timex=<TIMEX3 tid="t1" type="TIME" value="XXXX-WXX-2T06:00">Tuesday at 6:00</TIMEX3>]
+[Text=at CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=at NamedEntityTag=TIME NormalizedNamedEntityTag=XXXX-WXX-2T06:00 Timex=<TIMEX3 tid="t1" type="TIME" value="XXXX-WXX-2T06:00">Tuesday at 6:00</TIMEX3>]
+[Text=6:00 CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=CD Lemma=6:00 NamedEntityTag=TIME NormalizedNamedEntityTag=XXXX-WXX-2T06:00 Timex=<TIMEX3 tid="t1" type="TIME" value="XXXX-WXX-2T06:00">Tuesday at 6:00</TIMEX3>]
+[Text=with CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Roz CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Roz NamedEntityTag=PERSON]
+[Text=gave CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=organised CharacterOffsetBegin=48 CharacterOffsetEnd=57 PartOfSpeech=VBN Lemma=organise NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=John CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=Myers CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Myers NamedEntityTag=PERSON]
+[Text=at CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Jane CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Jane NamedEntityTag=PERSON]
+[Text=Kitzelman CharacterOffsetBegin=80 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=Kitzelman NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=songs CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=NNS Lemma=song NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=memorial CharacterOffsetBegin=105 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=memorial NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Arthur CharacterOffsetBegin=118 CharacterOffsetEnd=124 PartOfSpeech=NNP Lemma=Arthur NamedEntityTag=PERSON]
+[Text=Cady CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=NNP Lemma=Cady NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP Tuesday))
+      (PP (IN at)
+        (NP
+          (NP (CD 6:00))
+          (PP (IN with)
+            (NP (NNP Roz))))))
+    (VP (VBD gave)
+      (NP
+        (NP (DT a) (JJ little) (NN concert))
+        (, ,)
+        (VP (VBN organised)
+          (PP (IN by)
+            (NP (NNP John) (NNP Myers)))
+          (PP (IN at)
+            (NP (NNP Jane) (NNP Kitzelman) (POS 's))))
+        (, ,)
+        (PP (IN of)
+          (NP
+            (NP (NNS songs))
+            (PP (IN as)
+              (NP
+                (NP (NN memorial))
+                (PP (IN for)
+                  (NP (NNP Arthur) (NNP Cady)))))))))
+    (. .)))
+
+root(ROOT-0, gave-6)
+nsubj(gave-6, Tuesday-1)
+case(6:00-3, at-2)
+nmod:at(Tuesday-1, 6:00-3)
+case(Roz-5, with-4)
+nmod:with(6:00-3, Roz-5)
+det(concert-9, a-7)
+amod(concert-9, little-8)
+dobj(gave-6, concert-9)
+punct(concert-9, ,-10)
+acl(concert-9, organised-11)
+case(Myers-14, by-12)
+compound(Myers-14, John-13)
+nmod:by(organised-11, Myers-14)
+case(Kitzelman-17, at-15)
+compound(Kitzelman-17, Jane-16)
+nmod:at(organised-11, Kitzelman-17)
+case(Kitzelman-17, 's-18)
+punct(concert-9, ,-19)
+case(songs-21, of-20)
+nmod:of(concert-9, songs-21)
+case(memorial-23, as-22)
+nmod:as(songs-21, memorial-23)
+case(Cady-26, for-24)
+compound(Cady-26, Arthur-25)
+nmod:for(memorial-23, Cady-26)
+punct(gave-6, .-27)
+
+Sentence #2 (22 tokens):
+John, in tears, maintains that Arthur died from pneumonia contracted during the blizzard at the O'Hara memorial in February.
+[Text=John CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=tears CharacterOffsetBegin=140 CharacterOffsetEnd=145 PartOfSpeech=NNS Lemma=tear NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=maintains CharacterOffsetBegin=147 CharacterOffsetEnd=156 PartOfSpeech=VBZ Lemma=maintain NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=157 CharacterOffsetEnd=161 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Arthur CharacterOffsetBegin=162 CharacterOffsetEnd=168 PartOfSpeech=NNP Lemma=Arthur NamedEntityTag=PERSON]
+[Text=died CharacterOffsetBegin=169 CharacterOffsetEnd=173 PartOfSpeech=VBD Lemma=die NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=174 CharacterOffsetEnd=178 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=pneumonia CharacterOffsetBegin=179 CharacterOffsetEnd=188 PartOfSpeech=NN Lemma=pneumonia NamedEntityTag=O]
+[Text=contracted CharacterOffsetBegin=189 CharacterOffsetEnd=199 PartOfSpeech=VBD Lemma=contract NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=200 CharacterOffsetEnd=206 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=207 CharacterOffsetEnd=210 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=blizzard CharacterOffsetBegin=211 CharacterOffsetEnd=219 PartOfSpeech=NN Lemma=blizzard NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=220 CharacterOffsetEnd=222 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=223 CharacterOffsetEnd=226 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=O'Hara CharacterOffsetBegin=227 CharacterOffsetEnd=233 PartOfSpeech=NNP Lemma=O'Hara NamedEntityTag=PERSON]
+[Text=memorial CharacterOffsetBegin=234 CharacterOffsetEnd=242 PartOfSpeech=NN Lemma=memorial NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=243 CharacterOffsetEnd=245 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=February CharacterOffsetBegin=246 CharacterOffsetEnd=254 PartOfSpeech=NNP Lemma=February NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-02 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-02">February</TIMEX3>]
+[Text=. CharacterOffsetBegin=254 CharacterOffsetEnd=255 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP John))
+      (, ,)
+      (PP (IN in)
+        (NP (NNS tears)))
+      (, ,))
+    (VP (VBZ maintains)
+      (SBAR (IN that)
+        (S
+          (NP (NNP Arthur))
+          (VP (VBD died)
+            (PP (IN from)
+              (NP
+                (NP (NN pneumonia))
+                (VP (VBD contracted)
+                  (PP (IN during)
+                    (NP
+                      (NP (DT the) (NN blizzard))
+                      (PP (IN at)
+                        (NP (DT the) (NNP O'Hara) (NN memorial)))))
+                  (PP (IN in)
+                    (NP (NNP February))))))))))
+    (. .)))
+
+root(ROOT-0, maintains-6)
+nsubj(maintains-6, John-1)
+punct(John-1, ,-2)
+case(tears-4, in-3)
+nmod:in(John-1, tears-4)
+punct(John-1, ,-5)
+mark(died-9, that-7)
+nsubj(died-9, Arthur-8)
+ccomp(maintains-6, died-9)
+case(pneumonia-11, from-10)
+nmod:from(died-9, pneumonia-11)
+acl(pneumonia-11, contracted-12)
+case(blizzard-15, during-13)
+det(blizzard-15, the-14)
+nmod:during(contracted-12, blizzard-15)
+case(memorial-19, at-16)
+det(memorial-19, the-17)
+compound(memorial-19, O'Hara-18)
+nmod:at(blizzard-15, memorial-19)
+case(February-21, in-20)
+nmod:in(contracted-12, February-21)
+punct(maintains-6, .-22)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,14,[13,15]), that is: "John" -> "John Myers"
+Coreference set:
+	(2,8,[8,9]) -> (1,26,[25,27]), that is: "Arthur" -> "Arthur Cady"

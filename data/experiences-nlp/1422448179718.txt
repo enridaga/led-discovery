@@ -1,0 +1,286 @@
+Sentence #1 (13 tokens):
+G. made it convenient to come in tonight for about two hours.
+[Text=G. CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=G. NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=convenient CharacterOffsetBegin=11 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=convenient NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=come CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VB Lemma=come NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=tonight CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=tonight NamedEntityTag=DATE NormalizedNamedEntityTag=THIS NI Timex=<TIMEX3 alt_value="THIS NI" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">tonight</TIMEX3>]
+[Text=for CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=about NamedEntityTag=DURATION NormalizedNamedEntityTag=PT2H Timex=<TIMEX3 tid="t2" type="DURATION" value="PT2H">about two hours</TIMEX3>]
+[Text=two CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=CD Lemma=two NamedEntityTag=DURATION NormalizedNamedEntityTag=PT2H Timex=<TIMEX3 tid="t2" type="DURATION" value="PT2H">about two hours</TIMEX3>]
+[Text=hours CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=NNS Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PT2H Timex=<TIMEX3 tid="t2" type="DURATION" value="PT2H">about two hours</TIMEX3>]
+[Text=. CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP G.))
+    (VP (VBD made)
+      (S
+        (NP (PRP it))
+        (ADJP (JJ convenient)
+          (S
+            (VP (TO to)
+              (VP (VB come)
+                (PP (IN in)
+                  (NP (NN tonight)))
+                (PP (IN for)
+                  (PP (IN about)
+                    (NP (CD two) (NNS hours))))))))))
+    (. .)))
+
+root(ROOT-0, made-2)
+nsubj(made-2, G.-1)
+nsubj(convenient-4, it-3)
+nsubj:xsubj(come-6, it-3)
+xcomp(made-2, convenient-4)
+mark(come-6, to-5)
+xcomp(convenient-4, come-6)
+case(tonight-8, in-7)
+nmod:in(come-6, tonight-8)
+case(hours-12, for-9)
+case(hours-12, about-10)
+nummod(hours-12, two-11)
+nmod:about(come-6, hours-12)
+punct(made-2, .-13)
+
+Sentence #2 (18 tokens):
+He brought some more music for me to practise, he keeps me going with new songs.
+[Text=He CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=brought CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=VBD Lemma=bring NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=practise CharacterOffsetBegin=99 CharacterOffsetEnd=107 PartOfSpeech=VB Lemma=practise NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=keeps CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=VBZ Lemma=keep NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=121 CharacterOffsetEnd=126 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=132 CharacterOffsetEnd=135 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=songs CharacterOffsetBegin=136 CharacterOffsetEnd=141 PartOfSpeech=NNS Lemma=song NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD brought)
+        (NP (DT some) (JJR more) (NN music))
+        (PP (IN for)
+          (NP (PRP me)))
+        (S
+          (VP (TO to)
+            (VP (VB practise))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBZ keeps)
+      (S
+        (NP (PRP me))
+        (VP (VBG going)
+          (PP (IN with)
+            (NP (JJ new) (NNS songs))))))
+    (. .)))
+
+root(ROOT-0, keeps-12)
+nsubj(brought-2, He-1)
+ccomp(keeps-12, brought-2)
+det(music-5, some-3)
+amod(music-5, more-4)
+dobj(brought-2, music-5)
+case(me-7, for-6)
+nmod:for(brought-2, me-7)
+mark(practise-9, to-8)
+advcl:to(brought-2, practise-9)
+punct(keeps-12, ,-10)
+nsubj(keeps-12, he-11)
+nsubj(going-14, me-13)
+dep(keeps-12, going-14)
+case(songs-17, with-15)
+amod(songs-17, new-16)
+nmod:with(going-14, songs-17)
+punct(keeps-12, .-18)
+
+Sentence #3 (19 tokens):
+He let me fall over singing, asked me to sing again, I said I could not.
+[Text=He CharacterOffsetBegin=143 CharacterOffsetEnd=145 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=VBD Lemma=let NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=fall CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=VB Lemma=fall NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=158 CharacterOffsetEnd=162 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=163 CharacterOffsetEnd=170 PartOfSpeech=NN Lemma=singing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=170 CharacterOffsetEnd=171 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=172 CharacterOffsetEnd=177 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=178 CharacterOffsetEnd=180 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=181 CharacterOffsetEnd=183 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=sing CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=VB Lemma=sing NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=189 CharacterOffsetEnd=194 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=194 CharacterOffsetEnd=195 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=198 CharacterOffsetEnd=202 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=203 CharacterOffsetEnd=204 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=205 CharacterOffsetEnd=210 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=211 CharacterOffsetEnd=214 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD let)
+        (S
+          (NP (PRP me))
+          (VP (VB fall)
+            (VP
+              (PP (IN over)
+                (NP (NN singing)))
+              (, ,) (VBD asked)
+              (S
+                (NP (PRP me))
+                (VP (TO to)
+                  (VP (VB sing)
+                    (ADVP (RB again))))))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD said)
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (MD could) (RB not)))))
+    (. .)))
+
+root(ROOT-0, said-15)
+nsubj(let-2, He-1)
+ccomp(said-15, let-2)
+nsubj(fall-4, me-3)
+ccomp(let-2, fall-4)
+case(singing-6, over-5)
+nmod:over(asked-8, singing-6)
+punct(asked-8, ,-7)
+dep(fall-4, asked-8)
+dobj(asked-8, me-9)
+nsubj:xsubj(sing-11, me-9)
+mark(sing-11, to-10)
+xcomp(asked-8, sing-11)
+advmod(sing-11, again-12)
+punct(said-15, ,-13)
+nsubj(said-15, I-14)
+nsubj(could-17, I-16)
+ccomp(said-15, could-17)
+neg(could-17, not-18)
+punct(said-15, .-19)
+
+Sentence #4 (27 tokens):
+He heard Elly and me singing on that Saturday night, he knew I was helping her, because he said Elly had not two voices.
+[Text=He CharacterOffsetBegin=216 CharacterOffsetEnd=218 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=219 CharacterOffsetEnd=224 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=Elly CharacterOffsetBegin=225 CharacterOffsetEnd=229 PartOfSpeech=NNP Lemma=Elly NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=230 CharacterOffsetEnd=233 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=234 CharacterOffsetEnd=236 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=237 CharacterOffsetEnd=244 PartOfSpeech=NN Lemma=singing NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=245 CharacterOffsetEnd=247 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=248 CharacterOffsetEnd=252 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=Saturday CharacterOffsetBegin=253 CharacterOffsetEnd=261 PartOfSpeech=NNP Lemma=Saturday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-6TNI Timex=<TIMEX3 tid="t3" type="TIME" value="XXXX-WXX-6TNI">Saturday night</TIMEX3>]
+[Text=night CharacterOffsetBegin=262 CharacterOffsetEnd=267 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=XXXX-WXX-6TNI Timex=<TIMEX3 tid="t3" type="TIME" value="XXXX-WXX-6TNI">Saturday night</TIMEX3>]
+[Text=, CharacterOffsetBegin=267 CharacterOffsetEnd=268 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=269 CharacterOffsetEnd=271 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=knew CharacterOffsetBegin=272 CharacterOffsetEnd=276 PartOfSpeech=VBD Lemma=know NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=277 CharacterOffsetEnd=278 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=helping CharacterOffsetBegin=283 CharacterOffsetEnd=290 PartOfSpeech=VBG Lemma=help NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=291 CharacterOffsetEnd=294 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=294 CharacterOffsetEnd=295 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=296 CharacterOffsetEnd=303 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=304 CharacterOffsetEnd=306 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=307 CharacterOffsetEnd=311 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=Elly CharacterOffsetBegin=312 CharacterOffsetEnd=316 PartOfSpeech=NNP Lemma=Elly NamedEntityTag=PERSON]
+[Text=had CharacterOffsetBegin=317 CharacterOffsetEnd=320 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=321 CharacterOffsetEnd=324 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=325 CharacterOffsetEnd=328 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=voices CharacterOffsetBegin=329 CharacterOffsetEnd=335 PartOfSpeech=NNS Lemma=voice NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=335 CharacterOffsetEnd=336 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD heard)
+        (S
+          (NP (NNP Elly)
+            (CC and)
+            (PRP me))
+          (NP
+            (NP (NN singing))
+            (PP (IN on)
+              (NP (DT that) (NNP Saturday) (NN night)))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD knew)
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBD was)
+            (VP (VBG helping)
+              (NP (PRP her))
+              (, ,)
+              (SBAR (IN because)
+                (S
+                  (NP (PRP he))
+                  (VP (VBD said)
+                    (SBAR
+                      (S
+                        (NP (NNP Elly))
+                        (VP (VBD had)
+                          (NP (RB not) (CD two) (NNS voices)))))))))))))
+    (. .)))
+
+root(ROOT-0, knew-13)
+nsubj(heard-2, He-1)
+ccomp(knew-13, heard-2)
+nsubj(singing-6, Elly-3)
+cc(Elly-3, and-4)
+conj:and(Elly-3, me-5)
+nsubj(singing-6, me-5)
+xcomp(heard-2, singing-6)
+case(night-10, on-7)
+det(night-10, that-8)
+compound(night-10, Saturday-9)
+nmod:on(singing-6, night-10)
+punct(knew-13, ,-11)
+nsubj(knew-13, he-12)
+nsubj(helping-16, I-14)
+aux(helping-16, was-15)
+ccomp(knew-13, helping-16)
+dobj(helping-16, her-17)
+punct(helping-16, ,-18)
+mark(said-21, because-19)
+nsubj(said-21, he-20)
+advcl:because(helping-16, said-21)
+nsubj(had-23, Elly-22)
+ccomp(said-21, had-23)
+neg(voices-26, not-24)
+nummod(voices-26, two-25)
+dobj(had-23, voices-26)
+punct(knew-13, .-27)
+
+Coreference set:
+	(1,3,[3,4]) -> (1,1,[1,2]), that is: "it" -> "G."
+Coreference set:
+	(2,11,[11,12]) -> (2,1,[1,2]), that is: "he" -> "He"
+	(3,1,[1,2]) -> (2,1,[1,2]), that is: "He" -> "He"
+	(4,1,[1,2]) -> (2,1,[1,2]), that is: "He" -> "He"
+	(4,12,[12,13]) -> (2,1,[1,2]), that is: "he" -> "He"
+	(4,20,[20,21]) -> (2,1,[1,2]), that is: "he" -> "He"
+Coreference set:
+	(2,13,[13,14]) -> (2,7,[7,8]), that is: "me" -> "me"
+	(3,3,[3,4]) -> (2,7,[7,8]), that is: "me" -> "me"
+	(3,9,[9,10]) -> (2,7,[7,8]), that is: "me" -> "me"
+	(3,14,[14,15]) -> (2,7,[7,8]), that is: "I" -> "me"
+	(3,16,[16,17]) -> (2,7,[7,8]), that is: "I" -> "me"
+	(4,5,[5,6]) -> (2,7,[7,8]), that is: "me" -> "me"
+	(4,14,[14,15]) -> (2,7,[7,8]), that is: "I" -> "me"
+Coreference set:
+	(4,17,[17,18]) -> (4,3,[3,4]), that is: "her" -> "Elly"
+	(4,22,[22,23]) -> (4,3,[3,4]), that is: "Elly" -> "Elly"

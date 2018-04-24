@@ -1,0 +1,217 @@
+Sentence #1 (7 tokens):
+Write abit of alteration in Var.
+[Text=Write CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=VB Lemma=write NamedEntityTag=O]
+[Text=abit CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=abit NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=alteration CharacterOffsetBegin=14 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=alteration NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Var CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Var NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Write)
+      (NP
+        (NP (NN abit))
+        (PP (IN of)
+          (NP
+            (NP (NN alteration))
+            (PP (IN in)
+              (NP (NNP Var)))))))
+    (. .)))
+
+root(ROOT-0, Write-1)
+dobj(Write-1, abit-2)
+case(alteration-4, of-3)
+nmod:of(abit-2, alteration-4)
+case(Var-6, in-5)
+nmod:in(alteration-4, Var-6)
+punct(Write-1, .-7)
+
+Sentence #2 (8 tokens):
+after dinner, & listen to wireless.
+[Text=after CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=wireless CharacterOffsetBegin=59 CharacterOffsetEnd=67 PartOfSpeech=JJ Lemma=wireless NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN after)
+      (NP (NN dinner)))
+    (, ,)
+    (NP (CC &))
+    (VP (VB listen)
+      (PP (TO to)
+        (NP (JJ wireless))))
+    (. .)))
+
+root(ROOT-0, listen-5)
+case(dinner-2, after-1)
+nmod:after(listen-5, dinner-2)
+punct(listen-5, ,-3)
+nsubj(listen-5, &-4)
+case(wireless-7, to-6)
+nmod:to(listen-5, wireless-7)
+punct(listen-5, .-8)
+
+Sentence #3 (15 tokens):
+1st (& I hope, last) broadcast perf of Bliss' Clar.
+[Text=1st CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=JJ Lemma=1st NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=-LRB- CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=hope CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=VBP Lemma=hope NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=broadcast CharacterOffsetBegin=90 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=broadcast NamedEntityTag=O]
+[Text=perf CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=perf NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Bliss CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=NNP Lemma=Bliss NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=Clar CharacterOffsetBegin=115 CharacterOffsetEnd=119 PartOfSpeech=NNP Lemma=Clar NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (JJ 1st))
+      (PRN (-LRB- -LRB-)
+        (S
+          (NP (CC &))
+          (VP
+            (ADVP (PRP I))
+            (VP (VBP hope))
+            (, ,)
+            (VP (JJ last))))
+        (-RRB- -RRB-)))
+    (VP (NN broadcast)
+      (NP
+        (NP (NN perf))
+        (PP (IN of)
+          (NP
+            (NP (NNP Bliss) (POS '))
+            (NNP Clar)))))
+    (. .)))
+
+root(ROOT-0, broadcast-9)
+nsubj(broadcast-9, 1st-1)
+punct(hope-5, -LRB--2)
+nsubj(hope-5, &-3)
+advmod(hope-5, I-4)
+dep(1st-1, hope-5)
+punct(hope-5, ,-6)
+dep(hope-5, last-7)
+punct(hope-5, -RRB--8)
+dobj(broadcast-9, perf-10)
+case(Clar-14, of-11)
+nmod:poss(Clar-14, Bliss-12)
+case(Bliss-12, '-13)
+nmod:of(perf-10, Clar-14)
+punct(broadcast-9, .-15)
+
+Sentence #4 (2 tokens):
+Quintet.
+[Text=Quintet CharacterOffsetBegin=121 CharacterOffsetEnd=128 PartOfSpeech=NNP Lemma=Quintet NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (NNP Quintet))
+    (. .)))
+
+root(ROOT-0, Quintet-1)
+punct(Quintet-1, .-2)
+
+Sentence #5 (8 tokens):
+* I only listened to 1 1/2 move.
+[Text=* CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=133 CharacterOffsetEnd=137 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=listened CharacterOffsetBegin=138 CharacterOffsetEnd=146 PartOfSpeech=VBD Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=1 1/2 CharacterOffsetBegin=150 CharacterOffsetEnd=155 PartOfSpeech=CD Lemma=1 1/2 NamedEntityTag=NUMBER]
+[Text=move CharacterOffsetBegin=156 CharacterOffsetEnd=160 PartOfSpeech=NN Lemma=move NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=160 CharacterOffsetEnd=161 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (SBAR
+      (X (SYM *))
+      (S
+        (NP (PRP I))
+        (ADVP (RB only))
+        (VP (VBD listened)
+          (PP (TO to)
+            (NP (CD 1 1/2) (NN move))))))
+    (. .)))
+
+root(ROOT-0, listened-4)
+dep(listened-4, *-1)
+nsubj(listened-4, I-2)
+advmod(listened-4, only-3)
+case(move-7, to-5)
+nummod(move-7, 1 1/2-6)
+nmod:to(listened-4, move-7)
+punct(listened-4, .-8)
+
+Sentence #6 (4 tokens):
+V. unoriginal piffle.
+[Text=V. CharacterOffsetBegin=162 CharacterOffsetEnd=164 PartOfSpeech=NNP Lemma=V. NamedEntityTag=O]
+[Text=unoriginal CharacterOffsetBegin=165 CharacterOffsetEnd=175 PartOfSpeech=JJ Lemma=unoriginal NamedEntityTag=O]
+[Text=piffle CharacterOffsetBegin=176 CharacterOffsetEnd=182 PartOfSpeech=NN Lemma=piffle NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=182 CharacterOffsetEnd=183 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP V.))
+    (NP (JJ unoriginal) (NN piffle))
+    (. .)))
+
+root(ROOT-0, V.-1)
+amod(piffle-3, unoriginal-2)
+dep(V.-1, piffle-3)
+punct(V.-1, .-4)
+
+Sentence #7 (10 tokens):
+& it wasn't even amusing, but intensely dull
+[Text=& CharacterOffsetBegin=184 CharacterOffsetEnd=185 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=186 CharacterOffsetEnd=188 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=189 CharacterOffsetEnd=192 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=192 CharacterOffsetEnd=195 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=196 CharacterOffsetEnd=200 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=amusing CharacterOffsetBegin=201 CharacterOffsetEnd=208 PartOfSpeech=JJ Lemma=amusing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=208 CharacterOffsetEnd=209 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=210 CharacterOffsetEnd=213 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=intensely CharacterOffsetBegin=214 CharacterOffsetEnd=223 PartOfSpeech=RB Lemma=intensely NamedEntityTag=O]
+[Text=dull CharacterOffsetBegin=224 CharacterOffsetEnd=228 PartOfSpeech=JJ Lemma=dull NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (S
+      (NP (CC &))
+      (ADVP (PRP it))
+      (VP (VBD was) (RB n't)
+        (ADJP
+          (ADJP (RB even) (JJ amusing))
+          (, ,)
+          (CC but)
+          (ADJP (RB intensely) (JJ dull)))))))
+
+root(ROOT-0, amusing-6)
+nsubj(amusing-6, &-1)
+nsubj(dull-10, &-1)
+advmod(amusing-6, it-2)
+cop(amusing-6, was-3)
+neg(amusing-6, n't-4)
+advmod(amusing-6, even-5)
+punct(amusing-6, ,-7)
+cc(amusing-6, but-8)
+advmod(dull-10, intensely-9)
+conj:but(amusing-6, dull-10)
+
+Coreference set:
+	(3,3,[3,4]) -> (2,4,[4,5]), that is: "&" -> "&"
+	(7,1,[1,2]) -> (2,4,[4,5]), that is: "&" -> "&"
+Coreference set:
+	(5,2,[2,3]) -> (3,4,[4,5]), that is: "I" -> "I"
+Coreference set:
+	(7,2,[2,3]) -> (6,1,[1,5]), that is: "it" -> "V. unoriginal piffle ."

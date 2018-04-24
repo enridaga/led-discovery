@@ -1,0 +1,64 @@
+Sentence #1 (20 tokens):
+Enjoyed myself at Miss Barthums (party symphony concert and German opera) but did not eat enough tea.
+[Text=Enjoyed CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=VBN Lemma=enjoy NamedEntityTag=O]
+[Text=myself CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=PRP Lemma=myself NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Miss CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Miss NamedEntityTag=O]
+[Text=Barthums CharacterOffsetBegin=23 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Barthums NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=symphony CharacterOffsetBegin=39 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=symphony NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=German CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=JJ Lemma=german NamedEntityTag=MISC]
+[Text=opera CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=opera NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=eat CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=VB Lemma=eat NamedEntityTag=O]
+[Text=enough CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=JJ Lemma=enough NamedEntityTag=O]
+[Text=tea CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=tea NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP
+      (VP (VBN Enjoyed)
+        (NP (PRP myself))
+        (PP (IN at)
+          (NP
+            (NP (NNP Miss) (NNP Barthums))
+            (PRN (-LRB- -LRB-)
+              (NP
+                (NP (NN party) (NN symphony) (NN concert))
+                (CC and)
+                (NP (JJ German) (NN opera)))
+              (-RRB- -RRB-)))))
+      (CC but)
+      (VP (VBD did) (RB not)
+        (VP (VB eat)
+          (NP (JJ enough) (NN tea)))))
+    (. .)))
+
+root(ROOT-0, Enjoyed-1)
+dobj(Enjoyed-1, myself-2)
+case(Barthums-5, at-3)
+compound(Barthums-5, Miss-4)
+nmod:at(Enjoyed-1, Barthums-5)
+punct(concert-9, -LRB--6)
+compound(concert-9, party-7)
+compound(concert-9, symphony-8)
+dep(Barthums-5, concert-9)
+cc(concert-9, and-10)
+amod(opera-12, German-11)
+dep(Barthums-5, opera-12)
+conj:and(concert-9, opera-12)
+punct(concert-9, -RRB--13)
+cc(Enjoyed-1, but-14)
+aux(eat-17, did-15)
+neg(eat-17, not-16)
+conj:but(Enjoyed-1, eat-17)
+amod(tea-19, enough-18)
+dobj(eat-17, tea-19)
+punct(Enjoyed-1, .-20)
+

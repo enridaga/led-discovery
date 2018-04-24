@@ -1,0 +1,370 @@
+Sentence #1 (29 tokens):
+So home by water to dinner, where comes Pelling and young Michell and his wife, whom I have not seen a great while, poor girl.
+[Text=So CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=home CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=home NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=water CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=water NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=comes CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=VBZ Lemma=come NamedEntityTag=O]
+[Text=Pelling CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Pelling NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=young CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=JJ Lemma=young NamedEntityTag=O]
+[Text=Michell CharacterOffsetBegin=58 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Michell NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=wife CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=wife NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=whom CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=WP Lemma=whom NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=seen CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=VBN Lemma=see NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=while NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=poor CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=JJ Lemma=poor NamedEntityTag=O]
+[Text=girl CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=NN Lemma=girl NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (FRAG (RB So)
+      (PP
+        (ADVP (NN home))
+        (IN by)
+        (NP
+          (NP (NN water))
+          (PP (TO to)
+            (NP
+              (NP (NN dinner))
+              (, ,)
+              (SBAR
+                (WHADVP (WRB where))
+                (S
+                  (VP (VBZ comes)
+                    (NP
+                      (NP (NNP Pelling))
+                      (CC and)
+                      (NP (JJ young) (NNP Michell)))))))))))
+    (CC and)
+    (FRAG
+      (NP (PRP$ his) (NN wife))
+      (, ,)
+      (SBAR
+        (WHNP (WP whom))
+        (S
+          (NP (PRP I))
+          (VP (VBP have) (RB not)
+            (VP (VBN seen)
+              (NP
+                (NP (DT a) (JJ great) (NN while))
+                (, ,)
+                (NP (JJ poor) (NN girl)))))))
+      (. .))))
+
+root(ROOT-0, So-1)
+advmod(water-4, home-2)
+case(water-4, by-3)
+nmod:by(So-1, water-4)
+case(dinner-6, to-5)
+nmod:to(water-4, dinner-6)
+punct(dinner-6, ,-7)
+advmod(comes-9, where-8)
+acl:relcl(dinner-6, comes-9)
+dobj(comes-9, Pelling-10)
+cc(Pelling-10, and-11)
+amod(Michell-13, young-12)
+dobj(comes-9, Michell-13)
+conj:and(Pelling-10, Michell-13)
+cc(So-1, and-14)
+nmod:poss(wife-16, his-15)
+dep(So-1, wife-16)
+punct(wife-16, ,-17)
+dobj(seen-22, whom-18)
+nsubj(seen-22, I-19)
+aux(seen-22, have-20)
+neg(seen-22, not-21)
+dep(wife-16, seen-22)
+det(while-25, a-23)
+amod(while-25, great-24)
+dobj(seen-22, while-25)
+punct(while-25, ,-26)
+amod(girl-28, poor-27)
+appos(while-25, girl-28)
+punct(wife-16, .-29)
+
+Sentence #2 (79 tokens):
+And then comes Mr. How, and all dined with me very merry; and spent all the afternoon, Pelling, How, I and my boy, sing[ing] of Locke’s Response to the Ten Commandments, which he hath set very finely, and was a good while since sung before the King and spoilt in the performance - which occasioned his printing them for his vindication, and are excellent good.
+[Text=And CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=comes CharacterOffsetBegin=136 CharacterOffsetEnd=141 PartOfSpeech=VBZ Lemma=come NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=142 CharacterOffsetEnd=145 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=How CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=151 CharacterOffsetEnd=154 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=155 CharacterOffsetEnd=158 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=dined CharacterOffsetBegin=159 CharacterOffsetEnd=164 PartOfSpeech=VBD Lemma=dine NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=165 CharacterOffsetEnd=169 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=170 CharacterOffsetEnd=172 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=173 CharacterOffsetEnd=177 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=merry CharacterOffsetBegin=178 CharacterOffsetEnd=183 PartOfSpeech=JJ Lemma=merry NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=183 CharacterOffsetEnd=184 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=185 CharacterOffsetEnd=188 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=spent CharacterOffsetBegin=189 CharacterOffsetEnd=194 PartOfSpeech=VBD Lemma=spend NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=afternoon CharacterOffsetBegin=203 CharacterOffsetEnd=212 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 tid="t1" type="TIME" value="TAF">afternoon</TIMEX3>]
+[Text=, CharacterOffsetBegin=212 CharacterOffsetEnd=213 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Pelling CharacterOffsetBegin=214 CharacterOffsetEnd=221 PartOfSpeech=NN Lemma=pelling NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=221 CharacterOffsetEnd=222 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=How CharacterOffsetBegin=223 CharacterOffsetEnd=226 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=226 CharacterOffsetEnd=227 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=228 CharacterOffsetEnd=229 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=230 CharacterOffsetEnd=233 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=234 CharacterOffsetEnd=236 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=boy CharacterOffsetBegin=237 CharacterOffsetEnd=240 PartOfSpeech=NN Lemma=boy NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=240 CharacterOffsetEnd=241 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=sing CharacterOffsetBegin=242 CharacterOffsetEnd=246 PartOfSpeech=VB Lemma=sing NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=246 CharacterOffsetEnd=247 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=ing CharacterOffsetBegin=247 CharacterOffsetEnd=250 PartOfSpeech=NN Lemma=ing NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=250 CharacterOffsetEnd=251 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=252 CharacterOffsetEnd=254 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Locke CharacterOffsetBegin=255 CharacterOffsetEnd=260 PartOfSpeech=NNP Lemma=Locke NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=260 CharacterOffsetEnd=262 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Response CharacterOffsetBegin=263 CharacterOffsetEnd=271 PartOfSpeech=NN Lemma=response NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=272 CharacterOffsetEnd=274 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=275 CharacterOffsetEnd=278 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Ten CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=CD Lemma=ten NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.0]
+[Text=Commandments CharacterOffsetBegin=283 CharacterOffsetEnd=295 PartOfSpeech=NNS Lemma=commandment NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=295 CharacterOffsetEnd=296 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=297 CharacterOffsetEnd=302 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=303 CharacterOffsetEnd=305 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=hath CharacterOffsetBegin=306 CharacterOffsetEnd=310 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=311 CharacterOffsetEnd=314 PartOfSpeech=VBN Lemma=set NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=315 CharacterOffsetEnd=319 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=finely CharacterOffsetBegin=320 CharacterOffsetEnd=326 PartOfSpeech=RB Lemma=finely NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=326 CharacterOffsetEnd=327 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=328 CharacterOffsetEnd=331 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=332 CharacterOffsetEnd=335 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=336 CharacterOffsetEnd=337 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=338 CharacterOffsetEnd=342 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=343 CharacterOffsetEnd=348 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=since CharacterOffsetBegin=349 CharacterOffsetEnd=354 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=sung CharacterOffsetBegin=355 CharacterOffsetEnd=359 PartOfSpeech=VBN Lemma=sing NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=360 CharacterOffsetEnd=366 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=367 CharacterOffsetEnd=370 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=King CharacterOffsetBegin=371 CharacterOffsetEnd=375 PartOfSpeech=NNP Lemma=King NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=376 CharacterOffsetEnd=379 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=spoilt CharacterOffsetBegin=380 CharacterOffsetEnd=386 PartOfSpeech=VBN Lemma=spoil NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=387 CharacterOffsetEnd=389 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=390 CharacterOffsetEnd=393 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=394 CharacterOffsetEnd=405 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=406 CharacterOffsetEnd=407 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=408 CharacterOffsetEnd=413 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=occasioned CharacterOffsetBegin=414 CharacterOffsetEnd=424 PartOfSpeech=VBD Lemma=occasion NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=425 CharacterOffsetEnd=428 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=printing CharacterOffsetBegin=429 CharacterOffsetEnd=437 PartOfSpeech=VBG Lemma=print NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=438 CharacterOffsetEnd=442 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=443 CharacterOffsetEnd=446 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=447 CharacterOffsetEnd=450 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=vindication CharacterOffsetBegin=451 CharacterOffsetEnd=462 PartOfSpeech=NN Lemma=vindication NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=462 CharacterOffsetEnd=463 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=464 CharacterOffsetEnd=467 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=468 CharacterOffsetEnd=471 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=excellent CharacterOffsetBegin=472 CharacterOffsetEnd=481 PartOfSpeech=JJ Lemma=excellent NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=482 CharacterOffsetEnd=486 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=486 CharacterOffsetEnd=487 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC And)
+    (ADVP (RB then))
+    (VP (VBZ comes)
+      (NP
+        (NP (NNP Mr.))
+        (FRAG
+          (WHADVP (WRB How)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT all))
+      (VP
+        (VP (VBD dined)
+          (PP (IN with)
+            (NP
+              (NP (PRP me))
+              (ADJP (RB very) (JJ merry)))))
+        (: ;)
+        (CC and)
+        (VP (VBD spent)
+          (NP
+            (NP (PDT all) (DT the) (NN afternoon))
+            (, ,)
+            (NP (NN Pelling))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB How))
+              (, ,)
+              (S
+                (NP
+                  (NP (PRP I))
+                  (CC and)
+                  (NP (PRP$ my) (NN boy))
+                  (, ,))
+                (VP (VB sing)
+                  (NP
+                    (NP (-LRB- -LSB-) (NN ing) (-RRB- -RSB-))
+                    (PP (IN of)
+                      (NP
+                        (NP (NNP Locke) (POS 's))
+                        (NN Response))))
+                  (PP (TO to)
+                    (NP
+                      (NP (DT the) (CD Ten) (NNS Commandments))
+                      (, ,)
+                      (SBAR
+                        (WHNP (WDT which))
+                        (S
+                          (NP (PRP he))
+                          (VP (VBP hath)
+                            (S
+                              (S
+                                (VP (VBN set)
+                                  (UCP
+                                    (UCP
+                                      (ADJP (RB very) (RB finely))
+                                      (, ,)
+                                      (CC and)
+                                      (VP (VBD was)
+                                        (ADJP (DT a) (JJ good))
+                                        (SBAR (IN while) (IN since)
+                                          (S
+                                            (S
+                                              (VP (VBN sung)
+                                                (PP (IN before)
+                                                  (NP (DT the) (NNP King)))))
+                                            (CC and)
+                                            (S
+                                              (VP (VBN spoilt)
+                                                (PP (IN in)
+                                                  (NP (DT the) (NN performance)))))))))
+                                    (: -)
+                                    (SBAR
+                                      (WHNP (WDT which))
+                                      (S
+                                        (VP
+                                          (VP (VBD occasioned)
+                                            (NP (PRP$ his))
+                                            (S
+                                              (VP (VBG printing)
+                                                (NP (PRP them))
+                                                (PP (IN for)
+                                                  (NP (PRP$ his) (NN vindication))))))
+                                          (, ,)
+                                          (CC and)
+                                          (VP (VBP are)
+                                            (ADJP (JJ excellent)))))))))
+                              (ADJP (JJ good)))))))))))))))
+    (. .)))
+
+root(ROOT-0, comes-3)
+cc(comes-3, And-1)
+advmod(comes-3, then-2)
+dobj(comes-3, Mr.-4)
+dep(Mr.-4, How-5)
+punct(comes-3, ,-6)
+cc(comes-3, and-7)
+nsubj(dined-9, all-8)
+nsubj(spent-16, all-8)
+conj:and(comes-3, dined-9)
+case(me-11, with-10)
+nmod:with(dined-9, me-11)
+advmod(merry-13, very-12)
+amod(me-11, merry-13)
+punct(dined-9, ;-14)
+cc(dined-9, and-15)
+conj:and(comes-3, spent-16)
+conj:and(dined-9, spent-16)
+det:predet(afternoon-19, all-17)
+det(afternoon-19, the-18)
+dobj(spent-16, afternoon-19)
+punct(afternoon-19, ,-20)
+appos(afternoon-19, Pelling-21)
+punct(afternoon-19, ,-22)
+advmod(sing-30, How-23)
+punct(sing-30, ,-24)
+nsubj(sing-30, I-25)
+cc(I-25, and-26)
+nmod:poss(boy-28, my-27)
+conj:and(I-25, boy-28)
+nsubj(sing-30, boy-28)
+punct(I-25, ,-29)
+dep(afternoon-19, sing-30)
+punct(ing-32, -LSB--31)
+dobj(sing-30, ing-32)
+punct(ing-32, -RSB--33)
+case(Response-37, of-34)
+nmod:poss(Response-37, Locke-35)
+case(Locke-35, 's-36)
+nmod:of(ing-32, Response-37)
+case(Commandments-41, to-38)
+det(Commandments-41, the-39)
+nummod(Commandments-41, Ten-40)
+nmod:to(sing-30, Commandments-41)
+dobj(set-46, Commandments-41)
+punct(Commandments-41, ,-42)
+ref(Commandments-41, which-43)
+nsubj(hath-45, he-44)
+acl:relcl(Commandments-41, hath-45)
+xcomp(hath-45, set-46)
+advmod(finely-48, very-47)
+xcomp(set-46, finely-48)
+punct(finely-48, ,-49)
+cc(finely-48, and-50)
+cop(good-53, was-51)
+det(good-53, a-52)
+xcomp(set-46, good-53)
+conj:and(finely-48, good-53)
+mark(sung-56, while-54)
+mark(sung-56, since-55)
+advcl:since(good-53, sung-56)
+case(King-59, before-57)
+det(King-59, the-58)
+nmod:before(sung-56, King-59)
+cc(sung-56, and-60)
+advcl:since(good-53, spoilt-61)
+conj:and(sung-56, spoilt-61)
+case(performance-64, in-62)
+det(performance-64, the-63)
+nmod:in(spoilt-61, performance-64)
+punct(finely-48, --65)
+nsubj(occasioned-67, which-66)
+nsubj(excellent-77, which-66)
+ccomp(finely-48, occasioned-67)
+dobj(occasioned-67, his-68)
+xcomp(occasioned-67, printing-69)
+dobj(printing-69, them-70)
+case(vindication-73, for-71)
+nmod:poss(vindication-73, his-72)
+nmod:for(printing-69, vindication-73)
+punct(occasioned-67, ,-74)
+cc(occasioned-67, and-75)
+cop(excellent-77, are-76)
+ccomp(finely-48, excellent-77)
+conj:and(occasioned-67, excellent-77)
+dep(set-46, good-78)
+punct(comes-3, .-79)
+
+Coreference set:
+	(2,70,[70,71]) -> (1,10,[10,14]), that is: "them" -> "Pelling and young Michell"
+Coreference set:
+	(2,25,[25,26]) -> (1,19,[19,20]), that is: "I" -> "I"
+	(2,27,[27,28]) -> (1,19,[19,20]), that is: "my" -> "I"
+Coreference set:
+	(2,11,[11,14]) -> (2,4,[4,6]), that is: "me very merry" -> "Mr. How"
+Coreference set:
+	(2,44,[44,45]) -> (2,28,[27,29]), that is: "he" -> "my boy"
+Coreference set:
+	(2,68,[68,69]) -> (2,59,[58,60]), that is: "his" -> "the King"
+	(2,72,[72,73]) -> (2,59,[58,60]), that is: "his" -> "the King"

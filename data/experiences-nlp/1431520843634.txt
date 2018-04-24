@@ -1,0 +1,85 @@
+Sentence #1 (24 tokens):
+Bach's Triple Concerto made a great sensation; Madame Schumann played a Cadenza composed by me, Hiller and I extemporized ours.
+[Text=Bach CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Bach NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Triple CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=JJ Lemma=triple NamedEntityTag=O]
+[Text=Concerto CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=sensation CharacterOffsetBegin=36 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=sensation NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=Madame CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Madame NamedEntityTag=PERSON]
+[Text=Schumann CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Schumann NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=63 CharacterOffsetEnd=69 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Cadenza CharacterOffsetBegin=72 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Cadenza NamedEntityTag=MISC]
+[Text=composed CharacterOffsetBegin=80 CharacterOffsetEnd=88 PartOfSpeech=VBN Lemma=compose NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Hiller CharacterOffsetBegin=96 CharacterOffsetEnd=102 PartOfSpeech=NNP Lemma=Hiller NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=extemporized CharacterOffsetBegin=109 CharacterOffsetEnd=121 PartOfSpeech=VBD Lemma=extemporize NamedEntityTag=O]
+[Text=ours CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=PRP Lemma=ours NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Bach) (POS 's))
+        (JJ Triple) (NNP Concerto))
+      (VP (VBD made)
+        (NP (DT a) (JJ great) (NN sensation))))
+    (: ;)
+    (S
+      (NP (NNP Madame) (NNP Schumann))
+      (VP (VBD played)
+        (SBAR
+          (S
+            (S
+              (NP (DT a) (NNP Cadenza))
+              (VP (VBN composed)
+                (PP (IN by)
+                  (NP
+                    (NP (PRP me))
+                    (, ,)
+                    (NP (NNP Hiller))))))
+            (CC and)
+            (S
+              (NP (PRP I))
+              (VP (VBD extemporized)
+                (NP (PRP ours))))))))
+    (. .)))
+
+root(ROOT-0, made-5)
+nmod:poss(Concerto-4, Bach-1)
+case(Bach-1, 's-2)
+amod(Concerto-4, Triple-3)
+nsubj(made-5, Concerto-4)
+det(sensation-8, a-6)
+amod(sensation-8, great-7)
+dobj(made-5, sensation-8)
+punct(made-5, ;-9)
+compound(Schumann-11, Madame-10)
+nsubj(played-12, Schumann-11)
+parataxis(made-5, played-12)
+det(Cadenza-14, a-13)
+nsubj(composed-15, Cadenza-14)
+dep(played-12, composed-15)
+case(me-17, by-16)
+nmod:by(composed-15, me-17)
+punct(me-17, ,-18)
+appos(me-17, Hiller-19)
+cc(composed-15, and-20)
+nsubj(extemporized-22, I-21)
+dep(played-12, extemporized-22)
+conj:and(composed-15, extemporized-22)
+dobj(extemporized-22, ours-23)
+punct(made-5, .-24)
+
+Coreference set:
+	(1,17,[17,20]) -> (1,19,[19,20]), that is: "me , Hiller" -> "Hiller"
+	(1,17,[17,18]) -> (1,19,[19,20]), that is: "me" -> "Hiller"
+	(1,21,[21,22]) -> (1,19,[19,20]), that is: "I" -> "Hiller"

@@ -1,0 +1,55 @@
+Sentence #1 (17 tokens):
+Yesterday we heard Divine service in the Nicolai Church - a good sermon and admirable organ.
+[Text=Yesterday CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1D Timex=<TIMEX3 alt_value="OFFSET P-1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Yesterday</TIMEX3>]
+[Text=we CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=Divine CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Divine NamedEntityTag=O]
+[Text=service CharacterOffsetBegin=26 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=service NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Nicolai CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Nicolai NamedEntityTag=ORGANIZATION]
+[Text=Church CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Church NamedEntityTag=ORGANIZATION]
+[Text=- CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=sermon CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=sermon NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=admirable CharacterOffsetBegin=76 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=admirable NamedEntityTag=O]
+[Text=organ CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=organ NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (NN Yesterday))
+    (NP (PRP we))
+    (VP (VBD heard)
+      (NP
+        (NP
+          (NP (NNP Divine) (NN service))
+          (PP (IN in)
+            (NP (DT the) (NNP Nicolai) (NNP Church))))
+        (: -)
+        (NP
+          (NP (DT a) (JJ good) (NN sermon))
+          (CC and)
+          (NP (JJ admirable) (NN organ)))))
+    (. .)))
+
+root(ROOT-0, heard-3)
+nmod:tmod(heard-3, Yesterday-1)
+nsubj(heard-3, we-2)
+compound(service-5, Divine-4)
+dobj(heard-3, service-5)
+case(Church-9, in-6)
+det(Church-9, the-7)
+compound(Church-9, Nicolai-8)
+nmod:in(service-5, Church-9)
+punct(service-5, --10)
+det(sermon-13, a-11)
+amod(sermon-13, good-12)
+dep(service-5, sermon-13)
+cc(sermon-13, and-14)
+amod(organ-16, admirable-15)
+dep(service-5, organ-16)
+conj:and(sermon-13, organ-16)
+punct(heard-3, .-17)
+

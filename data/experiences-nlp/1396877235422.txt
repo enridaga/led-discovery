@@ -1,0 +1,167 @@
+Sentence #1 (29 tokens):
+At the conclusion of the American war, the militia returned to Leicester, and I was highly delighted to hear the band play at the evening parade.
+[Text=At CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=conclusion CharacterOffsetBegin=7 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=conclusion NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=American CharacterOffsetBegin=25 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=american NamedEntityTag=MISC]
+[Text=war CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=war NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=militia CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=militia NamedEntityTag=O]
+[Text=returned CharacterOffsetBegin=51 CharacterOffsetEnd=59 PartOfSpeech=VBD Lemma=return NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Leicester CharacterOffsetBegin=63 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Leicester NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=highly CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=RB Lemma=highly NamedEntityTag=O]
+[Text=delighted CharacterOffsetBegin=91 CharacterOffsetEnd=100 PartOfSpeech=JJ Lemma=delighted NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=band CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=band NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=play NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=130 CharacterOffsetEnd=137 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t1" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=parade CharacterOffsetBegin=138 CharacterOffsetEnd=144 PartOfSpeech=NN Lemma=parade NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (DT the) (NN conclusion))
+        (PP (IN of)
+          (NP (DT the) (JJ American) (NN war)))))
+    (, ,)
+    (S
+      (NP (DT the) (NN militia))
+      (VP (VBD returned)
+        (PP (TO to)
+          (NP (NNP Leicester)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBD was)
+        (ADJP (RB highly) (JJ delighted)
+          (S
+            (VP (TO to)
+              (VP (VB hear)
+                (NP (DT the) (NN band) (NN play))
+                (PP (IN at)
+                  (NP (DT the) (NN evening) (NN parade)))))))))
+    (. .)))
+
+root(ROOT-0, returned-11)
+case(conclusion-3, At-1)
+det(conclusion-3, the-2)
+nmod:at(returned-11, conclusion-3)
+case(war-7, of-4)
+det(war-7, the-5)
+amod(war-7, American-6)
+nmod:of(conclusion-3, war-7)
+punct(returned-11, ,-8)
+det(militia-10, the-9)
+nsubj(returned-11, militia-10)
+case(Leicester-13, to-12)
+nmod:to(returned-11, Leicester-13)
+punct(returned-11, ,-14)
+cc(returned-11, and-15)
+nsubj(delighted-19, I-16)
+nsubj:xsubj(hear-21, I-16)
+cop(delighted-19, was-17)
+advmod(delighted-19, highly-18)
+conj:and(returned-11, delighted-19)
+mark(hear-21, to-20)
+xcomp(delighted-19, hear-21)
+det(play-24, the-22)
+compound(play-24, band-23)
+dobj(hear-21, play-24)
+case(parade-28, at-25)
+det(parade-28, the-26)
+compound(parade-28, evening-27)
+nmod:at(hear-21, parade-28)
+punct(returned-11, .-29)
+
+Sentence #2 (21 tokens):
+The instruments were quite new to me, especially the clarionets, which I had never seen or heard before.
+[Text=The CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=instruments CharacterOffsetBegin=150 CharacterOffsetEnd=161 PartOfSpeech=NNS Lemma=instrument NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=162 CharacterOffsetEnd=166 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=167 CharacterOffsetEnd=172 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=173 CharacterOffsetEnd=176 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=177 CharacterOffsetEnd=179 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=180 CharacterOffsetEnd=182 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=182 CharacterOffsetEnd=183 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=especially CharacterOffsetBegin=184 CharacterOffsetEnd=194 PartOfSpeech=RB Lemma=especially NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=clarionets CharacterOffsetBegin=199 CharacterOffsetEnd=209 PartOfSpeech=NNS Lemma=clarionet NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=209 CharacterOffsetEnd=210 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=211 CharacterOffsetEnd=216 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=217 CharacterOffsetEnd=218 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=219 CharacterOffsetEnd=222 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=223 CharacterOffsetEnd=228 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=seen CharacterOffsetBegin=229 CharacterOffsetEnd=233 PartOfSpeech=VBN Lemma=see NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=234 CharacterOffsetEnd=236 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=237 CharacterOffsetEnd=242 PartOfSpeech=VBN Lemma=hear NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=243 CharacterOffsetEnd=249 PartOfSpeech=RB Lemma=before NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=249 CharacterOffsetEnd=250 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NNS instruments))
+    (VP (VBD were)
+      (ADJP (RB quite) (JJ new))
+      (PP (TO to)
+        (NP (PRP me)))
+      (, ,)
+      (ADVP (RB especially))
+      (NP
+        (NP (DT the) (NNS clarionets))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (NP (PRP I))
+            (VP (VBD had)
+              (ADVP (RB never))
+              (VP (VBN seen)
+                (CC or)
+                (VBN heard)
+                (ADVP (RB before))))))))
+    (. .)))
+
+root(ROOT-0, new-5)
+det(instruments-2, The-1)
+nsubj(new-5, instruments-2)
+cop(new-5, were-3)
+advmod(new-5, quite-4)
+case(me-7, to-6)
+nmod:to(new-5, me-7)
+punct(new-5, ,-8)
+advmod(clarionets-11, especially-9)
+det(clarionets-11, the-10)
+dep(new-5, clarionets-11)
+dobj(seen-17, clarionets-11)
+punct(clarionets-11, ,-12)
+ref(clarionets-11, which-13)
+nsubj(seen-17, I-14)
+nsubj(heard-19, I-14)
+aux(seen-17, had-15)
+neg(seen-17, never-16)
+acl:relcl(clarionets-11, seen-17)
+cc(seen-17, or-18)
+acl:relcl(clarionets-11, heard-19)
+conj:or(seen-17, heard-19)
+advmod(seen-17, before-20)
+punct(new-5, .-21)
+
+Coreference set:
+	(2,7,[7,8]) -> (1,16,[16,17]), that is: "me" -> "I"
+	(2,14,[14,15]) -> (1,16,[16,17]), that is: "I" -> "I"
+Coreference set:
+	(2,11,[10,21]) -> (2,2,[1,3]), that is: "the clarionets , which I had never seen or heard before" -> "The instruments"
+	(2,11,[10,12]) -> (2,2,[1,3]), that is: "the clarionets" -> "The instruments"

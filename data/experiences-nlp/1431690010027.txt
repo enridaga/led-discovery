@@ -1,0 +1,83 @@
+Sentence #1 (26 tokens):
+I assure you that a cup of coffee and some music at the Countess Almasy's were very refreshing after the events of the afternoon.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=assure CharacterOffsetBegin=2 CharacterOffsetEnd=8 PartOfSpeech=VBP Lemma=assure NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=cup CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=cup NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=coffee CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=coffee NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Countess CharacterOffsetBegin=56 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Countess NamedEntityTag=O]
+[Text=Almasy CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Almasy NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=refreshing CharacterOffsetBegin=84 CharacterOffsetEnd=94 PartOfSpeech=JJ Lemma=refreshing NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=events CharacterOffsetBegin=105 CharacterOffsetEnd=111 PartOfSpeech=NNS Lemma=event NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=112 CharacterOffsetEnd=114 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=afternoon CharacterOffsetBegin=119 CharacterOffsetEnd=128 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 tid="t1" type="TIME" value="TAF">afternoon</TIMEX3>]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP assure)
+      (NP (PRP you))
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP
+              (NP (DT a) (NN cup))
+              (PP (IN of)
+                (NP (NN coffee))))
+            (CC and)
+            (ADVP
+              (NP (DT some) (NN music))
+              (IN at))
+            (NP (DT the)
+              (NP (NNP Countess) (NNP Almasy) (POS 's))))
+          (VP (VBD were)
+            (ADJP (RB very) (JJ refreshing))
+            (PP (IN after)
+              (NP
+                (NP (DT the) (NNS events))
+                (PP (IN of)
+                  (NP (DT the) (NN afternoon)))))))))
+    (. .)))
+
+root(ROOT-0, assure-2)
+nsubj(assure-2, I-1)
+dobj(assure-2, you-3)
+mark(refreshing-19, that-4)
+det(cup-6, a-5)
+nsubj(refreshing-19, cup-6)
+case(coffee-8, of-7)
+nmod:of(cup-6, coffee-8)
+cc(cup-6, and-9)
+det(music-11, some-10)
+advmod(cup-6, music-11)
+case(music-11, at-12)
+det(Almasy-15, the-13)
+compound(Almasy-15, Countess-14)
+conj:and(cup-6, Almasy-15)
+nsubj(refreshing-19, Almasy-15)
+case(Almasy-15, 's-16)
+cop(refreshing-19, were-17)
+advmod(refreshing-19, very-18)
+ccomp(assure-2, refreshing-19)
+case(events-22, after-20)
+det(events-22, the-21)
+nmod:after(refreshing-19, events-22)
+case(afternoon-25, of-23)
+det(afternoon-25, the-24)
+nmod:of(events-22, afternoon-25)
+punct(assure-2, .-26)
+

@@ -1,0 +1,241 @@
+Sentence #1 (15 tokens):
+One hour after our arrival in Moscow we are guests of the Bolshoi Ballet.
+[Text=One CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CD Lemma=one NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT1H">One hour</TIMEX3>]
+[Text=hour CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT1H">One hour</TIMEX3>]
+[Text=after CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=15 CharacterOffsetEnd=18 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=arrival CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=arrival NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Moscow CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Moscow NamedEntityTag=LOCATION]
+[Text=we CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=guests CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NNS Lemma=guest NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Bolshoi CharacterOffsetBegin=58 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Bolshoi NamedEntityTag=LOCATION]
+[Text=Ballet CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Ballet NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP
+      (NP (CD One) (NN hour))
+      (IN after)
+      (NP
+        (NP (PRP$ our) (NN arrival))
+        (PP (IN in)
+          (NP (NNP Moscow)))))
+    (NP (PRP we))
+    (VP (VBP are)
+      (NP
+        (NP (NNS guests))
+        (PP (IN of)
+          (NP (DT the) (NNP Bolshoi) (NNP Ballet)))))
+    (. .)))
+
+root(ROOT-0, guests-10)
+nummod(hour-2, One-1)
+nmod:after(guests-10, hour-2)
+case(hour-2, after-3)
+nmod:poss(arrival-5, our-4)
+dep(hour-2, arrival-5)
+case(Moscow-7, in-6)
+nmod:in(arrival-5, Moscow-7)
+nsubj(guests-10, we-8)
+cop(guests-10, are-9)
+case(Ballet-14, of-11)
+det(Ballet-14, the-12)
+compound(Ballet-14, Bolshoi-13)
+nmod:of(guests-10, Ballet-14)
+punct(guests-10, .-15)
+
+Sentence #2 (10 tokens):
+It is the young troupe--it is wonderful.
+[Text=It CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=young CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=JJ Lemma=young NamedEntityTag=O]
+[Text=troupe CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=troupe NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=wonderful CharacterOffsetBegin=104 CharacterOffsetEnd=113 PartOfSpeech=JJ Lemma=wonderful NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ is)
+        (NP (DT the) (JJ young) (NN troupe))))
+    (: --)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (ADJP (JJ wonderful))))
+    (. .)))
+
+root(ROOT-0, troupe-5)
+nsubj(troupe-5, It-1)
+cop(troupe-5, is-2)
+det(troupe-5, the-3)
+amod(troupe-5, young-4)
+punct(troupe-5, ---6)
+nsubj(wonderful-9, it-7)
+cop(wonderful-9, is-8)
+parataxis(troupe-5, wonderful-9)
+punct(troupe-5, .-10)
+
+Sentence #3 (45 tokens):
+Next day when we eventually arrive in Leningrad, we are met by a big band that marches across the airfield toward us playing Dixieland jazz, with trombones sliding, clarinets smearing off, and all the musicians blowing in the traditional manner.
+[Text=Next CharacterOffsetBegin=115 CharacterOffsetEnd=119 PartOfSpeech=JJ Lemma=next NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D OFFSET P1D Timex=<TIMEX3 alt_value="THIS P1D OFFSET P1D" anchorTimeID="t3" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">Next day</TIMEX3>]
+[Text=day CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=NN Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D OFFSET P1D Timex=<TIMEX3 alt_value="THIS P1D OFFSET P1D" anchorTimeID="t3" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">Next day</TIMEX3>]
+[Text=when CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=eventually CharacterOffsetBegin=132 CharacterOffsetEnd=142 PartOfSpeech=RB Lemma=eventually NamedEntityTag=O]
+[Text=arrive CharacterOffsetBegin=143 CharacterOffsetEnd=149 PartOfSpeech=VBP Lemma=arrive NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Leningrad CharacterOffsetBegin=153 CharacterOffsetEnd=162 PartOfSpeech=NNP Lemma=Leningrad NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=162 CharacterOffsetEnd=163 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=164 CharacterOffsetEnd=166 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=met CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=VBN Lemma=meet NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=175 CharacterOffsetEnd=177 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=178 CharacterOffsetEnd=179 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=180 CharacterOffsetEnd=183 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=band CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=NN Lemma=band NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=189 CharacterOffsetEnd=193 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=marches CharacterOffsetBegin=194 CharacterOffsetEnd=201 PartOfSpeech=NNS Lemma=march NamedEntityTag=O]
+[Text=across CharacterOffsetBegin=202 CharacterOffsetEnd=208 PartOfSpeech=IN Lemma=across NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=209 CharacterOffsetEnd=212 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=airfield CharacterOffsetBegin=213 CharacterOffsetEnd=221 PartOfSpeech=NN Lemma=airfield NamedEntityTag=O]
+[Text=toward CharacterOffsetBegin=222 CharacterOffsetEnd=228 PartOfSpeech=IN Lemma=toward NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=229 CharacterOffsetEnd=231 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=232 CharacterOffsetEnd=239 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=Dixieland CharacterOffsetBegin=240 CharacterOffsetEnd=249 PartOfSpeech=NNP Lemma=Dixieland NamedEntityTag=MISC]
+[Text=jazz CharacterOffsetBegin=250 CharacterOffsetEnd=254 PartOfSpeech=NN Lemma=jazz NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=254 CharacterOffsetEnd=255 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=256 CharacterOffsetEnd=260 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=trombones CharacterOffsetBegin=261 CharacterOffsetEnd=270 PartOfSpeech=NNS Lemma=trombone NamedEntityTag=O]
+[Text=sliding CharacterOffsetBegin=271 CharacterOffsetEnd=278 PartOfSpeech=VBG Lemma=slide NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=278 CharacterOffsetEnd=279 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=clarinets CharacterOffsetBegin=280 CharacterOffsetEnd=289 PartOfSpeech=NNS Lemma=clarinet NamedEntityTag=O]
+[Text=smearing CharacterOffsetBegin=290 CharacterOffsetEnd=298 PartOfSpeech=VBG Lemma=smear NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=299 CharacterOffsetEnd=302 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=302 CharacterOffsetEnd=303 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=304 CharacterOffsetEnd=307 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=308 CharacterOffsetEnd=311 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=312 CharacterOffsetEnd=315 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=musicians CharacterOffsetBegin=316 CharacterOffsetEnd=325 PartOfSpeech=NNS Lemma=musician NamedEntityTag=O]
+[Text=blowing CharacterOffsetBegin=326 CharacterOffsetEnd=333 PartOfSpeech=VBG Lemma=blow NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=334 CharacterOffsetEnd=336 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=337 CharacterOffsetEnd=340 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=traditional CharacterOffsetBegin=341 CharacterOffsetEnd=352 PartOfSpeech=JJ Lemma=traditional NamedEntityTag=O]
+[Text=manner CharacterOffsetBegin=353 CharacterOffsetEnd=359 PartOfSpeech=NN Lemma=manner NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=359 CharacterOffsetEnd=360 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (JJ Next) (NN day))
+    (SBAR
+      (WHADVP (WRB when))
+      (S
+        (NP (PRP we))
+        (ADVP (RB eventually))
+        (VP (VBP arrive)
+          (PP (IN in)
+            (NP (NNP Leningrad))))))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBP are)
+      (VP (VBN met)
+        (PP (IN by)
+          (NP
+            (NP (DT a) (JJ big) (NN band))
+            (SBAR
+              (WHNP
+                (NP (WDT that) (NNS marches))
+                (PP (IN across)
+                  (NP
+                    (NP (DT the) (NN airfield))
+                    (PP (IN toward)
+                      (NP (PRP us))))))
+              (S
+                (VP (VBG playing)
+                  (NP (NNP Dixieland) (NN jazz)))))))
+        (, ,)
+        (PP (IN with)
+          (NP
+            (NP
+              (NP (NNS trombones))
+              (VP (VBG sliding)))
+            (, ,)
+            (NP
+              (NP (NNS clarinets))
+              (VP (VBG smearing)
+                (PRT (RP off))))
+            (, ,)
+            (CC and)
+            (NP
+              (NP (PDT all) (DT the) (NNS musicians))
+              (VP (VBG blowing)
+                (PP (IN in)
+                  (NP (DT the) (JJ traditional) (NN manner)))))))))
+    (. .)))
+
+root(ROOT-0, met-12)
+amod(day-2, Next-1)
+nmod:tmod(met-12, day-2)
+advmod(arrive-6, when-3)
+nsubj(arrive-6, we-4)
+advmod(arrive-6, eventually-5)
+advcl(met-12, arrive-6)
+case(Leningrad-8, in-7)
+nmod:in(arrive-6, Leningrad-8)
+punct(met-12, ,-9)
+nsubjpass(met-12, we-10)
+auxpass(met-12, are-11)
+case(band-16, by-13)
+det(band-16, a-14)
+amod(band-16, big-15)
+nmod:agent(met-12, band-16)
+det(marches-18, band-16)
+ref(band-16, that-17)
+nsubj(playing-24, marches-18)
+case(airfield-21, across-19)
+det(airfield-21, the-20)
+nmod:across(marches-18, airfield-21)
+case(us-23, toward-22)
+nmod:toward(airfield-21, us-23)
+acl:relcl(band-16, playing-24)
+compound(jazz-26, Dixieland-25)
+dobj(playing-24, jazz-26)
+punct(met-12, ,-27)
+case(trombones-29, with-28)
+nmod:with(met-12, trombones-29)
+acl(trombones-29, sliding-30)
+punct(trombones-29, ,-31)
+nmod:with(met-12, clarinets-32)
+conj:and(trombones-29, clarinets-32)
+acl(clarinets-32, smearing-33)
+compound:prt(smearing-33, off-34)
+punct(trombones-29, ,-35)
+cc(trombones-29, and-36)
+det:predet(musicians-39, all-37)
+det(musicians-39, the-38)
+nmod:with(met-12, musicians-39)
+conj:and(trombones-29, musicians-39)
+acl(musicians-39, blowing-40)
+case(manner-44, in-41)
+det(manner-44, the-42)
+amod(manner-44, traditional-43)
+nmod:in(blowing-40, manner-44)
+punct(met-12, .-45)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,2,[1,3]), that is: "It" -> "One hour"
+	(2,5,[3,6]) -> (1,2,[1,3]), that is: "the young troupe" -> "One hour"
+	(2,7,[7,8]) -> (1,2,[1,3]), that is: "it" -> "One hour"
+Coreference set:
+	(3,4,[4,5]) -> (1,4,[4,5]), that is: "we" -> "our"
+	(3,10,[10,11]) -> (1,4,[4,5]), that is: "we" -> "our"
+	(3,23,[23,24]) -> (1,4,[4,5]), that is: "us" -> "our"
+Coreference set:
+	(1,8,[8,9]) -> (1,10,[10,15]), that is: "we" -> "guests of the Bolshoi Ballet"

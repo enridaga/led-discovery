@@ -1,0 +1,85 @@
+Sentence #1 (25 tokens):
+This morning, after rehearsing my Trio with David and Wittman, I heard Bach's glorious Motet (G minor, 3-4).
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=TIME NormalizedNamedEntityTag=THIS MO Timex=<TIMEX3 alt_value="THIS MO" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">This morning</TIMEX3>]
+[Text=morning CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=THIS MO Timex=<TIMEX3 alt_value="THIS MO" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">This morning</TIMEX3>]
+[Text=, CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=rehearsing CharacterOffsetBegin=20 CharacterOffsetEnd=30 PartOfSpeech=VBG Lemma=rehearse NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=Trio CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=trio NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=David CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=NNP Lemma=David NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Wittman CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=Wittman NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=Bach CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Bach NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=glorious CharacterOffsetBegin=78 CharacterOffsetEnd=86 PartOfSpeech=JJ Lemma=glorious NamedEntityTag=O]
+[Text=Motet CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=motet NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=G CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=g NamedEntityTag=O]
+[Text=minor CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=JJ Lemma=minor NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=3-4 CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=CD Lemma=3-4 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0 - 4.0]
+[Text=-RRB- CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (DT This) (NN morning))
+    (, ,)
+    (PP (IN after)
+      (S
+        (VP (VBG rehearsing)
+          (NP (PRP$ my) (NN Trio))
+          (PP (IN with)
+            (NP (NNP David)
+              (CC and)
+              (NNP Wittman))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD heard)
+      (NP
+        (NP
+          (NP (NNP Bach) (POS 's))
+          (JJ glorious) (NN Motet))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (NN G) (JJ minor))
+            (, ,)
+            (NP (CD 3-4)))
+          (-RRB- -RRB-))))
+    (. .)))
+
+root(ROOT-0, heard-14)
+det(morning-2, This-1)
+nmod:tmod(heard-14, morning-2)
+punct(heard-14, ,-3)
+mark(rehearsing-5, after-4)
+advcl:after(heard-14, rehearsing-5)
+nmod:poss(Trio-7, my-6)
+dobj(rehearsing-5, Trio-7)
+case(David-9, with-8)
+nmod:with(rehearsing-5, David-9)
+cc(David-9, and-10)
+nmod:with(rehearsing-5, Wittman-11)
+conj:and(David-9, Wittman-11)
+punct(heard-14, ,-12)
+nsubj(heard-14, I-13)
+nmod:poss(Motet-18, Bach-15)
+case(Bach-15, 's-16)
+amod(Motet-18, glorious-17)
+dobj(heard-14, Motet-18)
+punct(G-20, -LRB--19)
+dep(Motet-18, G-20)
+amod(G-20, minor-21)
+punct(G-20, ,-22)
+amod(G-20, 3-4-23)
+punct(G-20, -RRB--24)
+punct(heard-14, .-25)
+
+Coreference set:
+	(1,13,[13,14]) -> (1,6,[6,7]), that is: "I" -> "my"
+Coreference set:
+	(1,20,[20,22]) -> (1,23,[23,24]), that is: "G minor" -> "3-4"

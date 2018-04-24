@@ -1,0 +1,387 @@
+Sentence #1 (11 tokens):
+What do you mean by playing "without harmony"?
+[Text=What CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=mean CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VB Lemma=mean NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=harmony CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=harmony NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB mean)
+        (PP (IN by)
+          (S
+            (VP (VBG playing))))
+        (`` ``)
+        (PP (IN without)
+          (NP (NN harmony)))
+        ('' '')))
+    (. ?)))
+
+root(ROOT-0, mean-4)
+dobj(mean-4, What-1)
+aux(mean-4, do-2)
+nsubj(mean-4, you-3)
+mark(playing-6, by-5)
+advcl:by(mean-4, playing-6)
+punct(mean-4, ``-7)
+case(harmony-9, without-8)
+nmod:without(mean-4, harmony-9)
+punct(mean-4, ''-10)
+punct(mean-4, ?-11)
+
+Sentence #2 (18 tokens):
+Using a pedal tone, which Coltrane got into after a period of very dense harmonic playing.
+[Text=Using CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=VBG Lemma=use NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=pedal CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=pedal NamedEntityTag=O]
+[Text=tone CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=tone NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=Coltrane CharacterOffsetBegin=76 CharacterOffsetEnd=84 PartOfSpeech=NNP Lemma=Coltrane NamedEntityTag=PERSON]
+[Text=got CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=94 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=period CharacterOffsetBegin=102 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=period NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=dense CharacterOffsetBegin=117 CharacterOffsetEnd=122 PartOfSpeech=JJ Lemma=dense NamedEntityTag=O]
+[Text=harmonic CharacterOffsetBegin=123 CharacterOffsetEnd=131 PartOfSpeech=JJ Lemma=harmonic NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=132 CharacterOffsetEnd=139 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBG Using)
+      (NP
+        (NP (DT a) (NN pedal) (NN tone))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (NP (NNP Coltrane))
+            (VP (VBD got)
+              (PP (IN into) (IN after)
+                (NP
+                  (NP (DT a) (NN period))
+                  (PP (IN of)
+                    (NP
+                      (ADJP (RB very) (JJ dense))
+                      (ADJP (JJ harmonic))
+                      (NN playing))))))))))
+    (. .)))
+
+root(ROOT-0, Using-1)
+det(tone-4, a-2)
+compound(tone-4, pedal-3)
+dobj(Using-1, tone-4)
+dobj(got-8, tone-4)
+punct(tone-4, ,-5)
+ref(tone-4, which-6)
+nsubj(got-8, Coltrane-7)
+acl:relcl(tone-4, got-8)
+case(period-12, into-9)
+case(period-12, after-10)
+det(period-12, a-11)
+nmod:after(got-8, period-12)
+case(playing-17, of-13)
+advmod(dense-15, very-14)
+amod(playing-17, dense-15)
+amod(playing-17, harmonic-16)
+nmod:of(period-12, playing-17)
+punct(Using-1, .-18)
+
+Sentence #3 (33 tokens):
+He would use one or two harmonic references throughout a song, as he did on "So What" [from Miles Davis's Kind of Blue, on Columbia].
+[Text=He CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=144 CharacterOffsetEnd=149 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=use CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=VB Lemma=use NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=or CharacterOffsetBegin=158 CharacterOffsetEnd=160 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=161 CharacterOffsetEnd=164 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=harmonic CharacterOffsetBegin=165 CharacterOffsetEnd=173 PartOfSpeech=JJ Lemma=harmonic NamedEntityTag=O]
+[Text=references CharacterOffsetBegin=174 CharacterOffsetEnd=184 PartOfSpeech=NNS Lemma=reference NamedEntityTag=O]
+[Text=throughout CharacterOffsetBegin=185 CharacterOffsetEnd=195 PartOfSpeech=IN Lemma=throughout NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=song CharacterOffsetBegin=198 CharacterOffsetEnd=202 PartOfSpeech=NN Lemma=song NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=202 CharacterOffsetEnd=203 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=204 CharacterOffsetEnd=206 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=207 CharacterOffsetEnd=209 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=210 CharacterOffsetEnd=213 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=214 CharacterOffsetEnd=216 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=217 CharacterOffsetEnd=218 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=So CharacterOffsetBegin=218 CharacterOffsetEnd=220 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=What CharacterOffsetBegin=221 CharacterOffsetEnd=225 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=225 CharacterOffsetEnd=226 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=227 CharacterOffsetEnd=228 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=228 CharacterOffsetEnd=232 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Miles CharacterOffsetBegin=233 CharacterOffsetEnd=238 PartOfSpeech=NNP Lemma=Miles NamedEntityTag=PERSON]
+[Text=Davis CharacterOffsetBegin=239 CharacterOffsetEnd=244 PartOfSpeech=NNP Lemma=Davis NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=244 CharacterOffsetEnd=246 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Kind CharacterOffsetBegin=247 CharacterOffsetEnd=251 PartOfSpeech=NNP Lemma=Kind NamedEntityTag=ORGANIZATION]
+[Text=of CharacterOffsetBegin=252 CharacterOffsetEnd=254 PartOfSpeech=IN Lemma=of NamedEntityTag=ORGANIZATION]
+[Text=Blue CharacterOffsetBegin=255 CharacterOffsetEnd=259 PartOfSpeech=NNP Lemma=Blue NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=259 CharacterOffsetEnd=260 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=261 CharacterOffsetEnd=263 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Columbia CharacterOffsetBegin=264 CharacterOffsetEnd=272 PartOfSpeech=NNP Lemma=Columbia NamedEntityTag=ORGANIZATION]
+[Text=-RSB- CharacterOffsetBegin=272 CharacterOffsetEnd=273 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=273 CharacterOffsetEnd=274 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (MD would)
+      (VP (VB use)
+        (NP (CD one)
+          (CC or)
+          (CD two) (JJ harmonic) (NNS references))
+        (PP (IN throughout)
+          (NP (DT a) (NN song)))
+        (, ,)
+        (SBAR (IN as)
+          (S
+            (NP (PRP he))
+            (VP (VBD did)
+              (PP (IN on) (`` ``)
+                (S
+                  (VP (RB So)
+                    (NP (WP What))))
+                ('' ''))
+              (-LRB- -LSB-)
+              (PP (IN from)
+                (NP
+                  (NP
+                    (NP (NNP Miles) (NNP Davis) (POS 's))
+                    (NX (NNP Kind)))
+                  (PP (IN of)
+                    (NP (NNP Blue)))))
+              (, ,)
+              (PP (IN on)
+                (NP (NNP Columbia) (-RRB- -RSB-))))))))
+    (. .)))
+
+root(ROOT-0, use-3)
+nsubj(use-3, He-1)
+aux(use-3, would-2)
+compound(references-8, one-4)
+cc(one-4, or-5)
+conj:or(one-4, two-6)
+compound(references-8, two-6)
+amod(references-8, harmonic-7)
+dobj(use-3, references-8)
+case(song-11, throughout-9)
+det(song-11, a-10)
+nmod:throughout(use-3, song-11)
+punct(use-3, ,-12)
+mark(did-15, as-13)
+nsubj(did-15, he-14)
+advcl:as(use-3, did-15)
+case(What-19, on-16)
+punct(What-19, ``-17)
+advmod(What-19, So-18)
+advcl:on(did-15, What-19)
+punct(What-19, ''-20)
+punct(did-15, -LSB--21)
+case(Kind-26, from-22)
+compound(Davis-24, Miles-23)
+nmod:poss(Kind-26, Davis-24)
+case(Davis-24, 's-25)
+nmod:from(did-15, Kind-26)
+case(Blue-28, of-27)
+nmod:of(Kind-26, Blue-28)
+punct(did-15, ,-29)
+case(Columbia-31, on-30)
+nmod:on(did-15, Columbia-31)
+punct(Columbia-31, -RSB--32)
+punct(use-3, .-33)
+
+Sentence #4 (55 tokens):
+It was basically D for sixteen bars, E flat for eight bars, and then back to D. Ultimately, he worked with only one harmonic reference point, and then in "Ascension" [from Best of John Coltrane: His Greatest Years, on Impulse] there was nothing harmonically.
+[Text=It CharacterOffsetBegin=275 CharacterOffsetEnd=277 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=278 CharacterOffsetEnd=281 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=basically CharacterOffsetBegin=282 CharacterOffsetEnd=291 PartOfSpeech=RB Lemma=basically NamedEntityTag=O]
+[Text=D CharacterOffsetBegin=292 CharacterOffsetEnd=293 PartOfSpeech=NN Lemma=d NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=294 CharacterOffsetEnd=297 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=sixteen CharacterOffsetBegin=298 CharacterOffsetEnd=305 PartOfSpeech=CD Lemma=sixteen NamedEntityTag=NUMBER NormalizedNamedEntityTag=16.0]
+[Text=bars CharacterOffsetBegin=306 CharacterOffsetEnd=310 PartOfSpeech=NNS Lemma=bar NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=310 CharacterOffsetEnd=311 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=E CharacterOffsetBegin=312 CharacterOffsetEnd=313 PartOfSpeech=NN Lemma=e NamedEntityTag=O]
+[Text=flat CharacterOffsetBegin=314 CharacterOffsetEnd=318 PartOfSpeech=JJ Lemma=flat NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=319 CharacterOffsetEnd=322 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=eight CharacterOffsetBegin=323 CharacterOffsetEnd=328 PartOfSpeech=CD Lemma=eight NamedEntityTag=NUMBER NormalizedNamedEntityTag=8.0]
+[Text=bars CharacterOffsetBegin=329 CharacterOffsetEnd=333 PartOfSpeech=NNS Lemma=bar NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=333 CharacterOffsetEnd=334 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=335 CharacterOffsetEnd=338 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=339 CharacterOffsetEnd=343 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=344 CharacterOffsetEnd=348 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=349 CharacterOffsetEnd=351 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=D. CharacterOffsetBegin=352 CharacterOffsetEnd=354 PartOfSpeech=NNP Lemma=D. NamedEntityTag=O]
+[Text=Ultimately CharacterOffsetBegin=355 CharacterOffsetEnd=365 PartOfSpeech=RB Lemma=ultimately NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=365 CharacterOffsetEnd=366 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=367 CharacterOffsetEnd=369 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=worked CharacterOffsetBegin=370 CharacterOffsetEnd=376 PartOfSpeech=VBD Lemma=work NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=377 CharacterOffsetEnd=381 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=382 CharacterOffsetEnd=386 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=387 CharacterOffsetEnd=390 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=harmonic CharacterOffsetBegin=391 CharacterOffsetEnd=399 PartOfSpeech=JJ Lemma=harmonic NamedEntityTag=O]
+[Text=reference CharacterOffsetBegin=400 CharacterOffsetEnd=409 PartOfSpeech=NN Lemma=reference NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=410 CharacterOffsetEnd=415 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=415 CharacterOffsetEnd=416 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=417 CharacterOffsetEnd=420 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=421 CharacterOffsetEnd=425 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=426 CharacterOffsetEnd=428 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=429 CharacterOffsetEnd=430 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Ascension CharacterOffsetBegin=430 CharacterOffsetEnd=439 PartOfSpeech=NN Lemma=ascension NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=439 CharacterOffsetEnd=440 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=441 CharacterOffsetEnd=442 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=442 CharacterOffsetEnd=446 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Best CharacterOffsetBegin=447 CharacterOffsetEnd=451 PartOfSpeech=NN Lemma=best NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=452 CharacterOffsetEnd=454 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=John CharacterOffsetBegin=455 CharacterOffsetEnd=459 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=Coltrane CharacterOffsetBegin=460 CharacterOffsetEnd=468 PartOfSpeech=NNP Lemma=Coltrane NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=468 CharacterOffsetEnd=469 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=His CharacterOffsetBegin=470 CharacterOffsetEnd=473 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=Greatest CharacterOffsetBegin=474 CharacterOffsetEnd=482 PartOfSpeech=JJS Lemma=greatest NamedEntityTag=O]
+[Text=Years CharacterOffsetBegin=483 CharacterOffsetEnd=488 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=PXY Timex=<TIMEX3 tid="t1" type="DURATION" value="PXY">Years</TIMEX3>]
+[Text=, CharacterOffsetBegin=488 CharacterOffsetEnd=489 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=490 CharacterOffsetEnd=492 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Impulse CharacterOffsetBegin=493 CharacterOffsetEnd=500 PartOfSpeech=NN Lemma=impulse NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=500 CharacterOffsetEnd=501 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=502 CharacterOffsetEnd=507 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=508 CharacterOffsetEnd=511 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=nothing CharacterOffsetBegin=512 CharacterOffsetEnd=519 PartOfSpeech=NN Lemma=nothing NamedEntityTag=O]
+[Text=harmonically CharacterOffsetBegin=520 CharacterOffsetEnd=532 PartOfSpeech=RB Lemma=harmonically NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=532 CharacterOffsetEnd=533 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (ADVP (RB basically))
+      (NP
+        (NP (NN D))
+        (PP (IN for)
+          (NP (CD sixteen) (NNS bars))))
+      (, ,)
+      (S
+        (NP (NN E))
+        (ADJP (JJ flat)
+          (PP (IN for)
+            (NP
+              (NP (CD eight) (NNS bars))
+              (SBAR
+                (S
+                  (PRN (, ,)
+                    (CC and)
+                    (ADVP (RB then))
+                    (ADVP (RB back)
+                      (PP (TO to)
+                        (NP (NNP D.))))
+                    (ADVP (RB Ultimately))
+                    (, ,))
+                  (S
+                    (NP (PRP he))
+                    (VP (VBD worked)
+                      (PP (IN with)
+                        (NP
+                          (NP
+                            (QP (RB only) (CD one))
+                            (JJ harmonic) (NN reference) (NN point))
+                          (, ,)
+                          (CC and)
+                          (NP
+                            (NP (RB then))
+                            (PP (IN in) (`` ``)
+                              (NP (NN Ascension))
+                              ('' '')))
+                          (-LRB- -LSB-)))
+                      (PP (IN from)
+                        (NP
+                          (NP (NN Best))
+                          (PP (IN of)
+                            (NP (NNP John) (NNP Coltrane)))))))
+                  (: :)
+                  (S
+                    (NP (PRP$ His) (JJS Greatest) (NNS Years))
+                    (, ,)
+                    (PP (IN on)
+                      (NP (NN Impulse)))
+                    (-RRB- -RSB-)
+                    (NP (EX there))
+                    (VP (VBD was)
+                      (NP (NN nothing))
+                      (ADVP (RB harmonically)))))))))))
+    (. .)))
+
+root(ROOT-0, D-4)
+nsubj(D-4, It-1)
+cop(D-4, was-2)
+advmod(D-4, basically-3)
+case(bars-7, for-5)
+nummod(bars-7, sixteen-6)
+nmod:for(D-4, bars-7)
+punct(D-4, ,-8)
+nsubj(flat-10, E-9)
+xcomp(D-4, flat-10)
+case(bars-13, for-11)
+nummod(bars-13, eight-12)
+nmod:for(flat-10, bars-13)
+punct(then-16, ,-14)
+cc(then-16, and-15)
+dep(worked-23, then-16)
+dep(then-16, back-17)
+case(D.-19, to-18)
+nmod:to(back-17, D.-19)
+dep(then-16, Ultimately-20)
+punct(then-16, ,-21)
+nsubj(worked-23, he-22)
+acl:relcl(bars-13, worked-23)
+case(point-29, with-24)
+advmod(one-26, only-25)
+nummod(point-29, one-26)
+amod(point-29, harmonic-27)
+compound(point-29, reference-28)
+nmod:with(worked-23, point-29)
+punct(point-29, ,-30)
+cc(point-29, and-31)
+nmod:with(worked-23, then-32)
+conj:and(point-29, then-32)
+case(Ascension-35, in-33)
+punct(Ascension-35, ``-34)
+nmod:in(then-32, Ascension-35)
+punct(Ascension-35, ''-36)
+punct(point-29, -LSB--37)
+case(Best-39, from-38)
+nmod:from(worked-23, Best-39)
+case(Coltrane-42, of-40)
+compound(Coltrane-42, John-41)
+nmod:of(Best-39, Coltrane-42)
+punct(worked-23, :-43)
+nmod:poss(Years-46, His-44)
+amod(Years-46, Greatest-45)
+nmod:tmod(was-52, Years-46)
+punct(was-52, ,-47)
+case(Impulse-49, on-48)
+nmod:on(was-52, Impulse-49)
+punct(was-52, -RSB--50)
+expl(was-52, there-51)
+parataxis(worked-23, was-52)
+nsubj(was-52, nothing-53)
+advmod(was-52, harmonically-54)
+punct(D-4, .-55)
+
+Coreference set:
+	(2,7,[7,8]) -> (4,42,[41,43]), that is: "Coltrane" -> "John Coltrane"
+	(3,1,[1,2]) -> (4,42,[41,43]), that is: "He" -> "John Coltrane"
+	(3,14,[14,15]) -> (4,42,[41,43]), that is: "he" -> "John Coltrane"
+	(4,22,[22,23]) -> (4,42,[41,43]), that is: "he" -> "John Coltrane"
+	(4,44,[44,45]) -> (4,42,[41,43]), that is: "His" -> "John Coltrane"
+Coreference set:
+	(4,1,[1,2]) -> (3,4,[4,5]), that is: "It" -> "one"
+	(4,4,[4,8]) -> (3,4,[4,5]), that is: "D for sixteen bars" -> "one"

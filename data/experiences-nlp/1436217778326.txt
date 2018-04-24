@@ -1,0 +1,296 @@
+Sentence #1 (10 tokens):
+At the performance last night, a minor mishap.
+[Text=At CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=7 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=last NamedEntityTag=TIME NormalizedNamedEntityTag=TNI OFFSET P-1D Timex=<TIMEX3 alt_value="TNI OFFSET P-1D" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">last night</TIMEX3>]
+[Text=night CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI OFFSET P-1D Timex=<TIMEX3 alt_value="TNI OFFSET P-1D" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">last night</TIMEX3>]
+[Text=, CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=minor CharacterOffsetBegin=33 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=minor NamedEntityTag=O]
+[Text=mishap CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=mishap NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN At)
+      (NP
+        (NP (DT the) (NN performance))
+        (NP-TMP (JJ last) (NN night))))
+    (, ,)
+    (NP (DT a) (JJ minor) (NN mishap))
+    (. .)))
+
+root(ROOT-0, mishap-9)
+case(performance-3, At-1)
+det(performance-3, the-2)
+nmod:at(mishap-9, performance-3)
+amod(night-5, last-4)
+nmod:tmod(performance-3, night-5)
+punct(mishap-9, ,-6)
+det(mishap-9, a-7)
+amod(mishap-9, minor-8)
+punct(mishap-9, .-10)
+
+Sentence #2 (22 tokens):
+The concerto opens with six fortissimo blasts from the brass followed immediately by the organ's entrance, quiet and smooth.
+[Text=The CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=concerto CharacterOffsetBegin=51 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=concerto NamedEntityTag=O]
+[Text=opens CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=VBZ Lemma=open NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=six CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=CD Lemma=six NamedEntityTag=NUMBER NormalizedNamedEntityTag=6.0]
+[Text=fortissimo CharacterOffsetBegin=75 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=fortissimo NamedEntityTag=O]
+[Text=blasts CharacterOffsetBegin=86 CharacterOffsetEnd=92 PartOfSpeech=NNS Lemma=blast NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=brass CharacterOffsetBegin=102 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=brass NamedEntityTag=O]
+[Text=followed CharacterOffsetBegin=108 CharacterOffsetEnd=116 PartOfSpeech=VBD Lemma=follow NamedEntityTag=O]
+[Text=immediately CharacterOffsetBegin=117 CharacterOffsetEnd=128 PartOfSpeech=RB Lemma=immediately NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=132 CharacterOffsetEnd=135 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=organ CharacterOffsetBegin=136 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=organ NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=entrance CharacterOffsetBegin=144 CharacterOffsetEnd=152 PartOfSpeech=NN Lemma=entrance NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=quiet CharacterOffsetBegin=154 CharacterOffsetEnd=159 PartOfSpeech=JJ Lemma=quiet NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=160 CharacterOffsetEnd=163 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=smooth CharacterOffsetBegin=164 CharacterOffsetEnd=170 PartOfSpeech=JJ Lemma=smooth NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=170 CharacterOffsetEnd=171 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NN concerto))
+    (VP (VBZ opens)
+      (SBAR (IN with)
+        (S
+          (NP
+            (NP (CD six) (NN fortissimo) (NNS blasts))
+            (PP (IN from)
+              (NP (DT the) (NN brass))))
+          (VP (VBD followed)
+            (ADVP (RB immediately))
+            (PP (IN by)
+              (NP
+                (NP
+                  (NP (DT the) (NN organ) (POS 's))
+                  (NN entrance))
+                (, ,)
+                (ADJP (JJ quiet)
+                  (CC and)
+                  (JJ smooth))))))))
+    (. .)))
+
+root(ROOT-0, opens-3)
+det(concerto-2, The-1)
+nsubj(opens-3, concerto-2)
+mark(followed-11, with-4)
+nummod(blasts-7, six-5)
+compound(blasts-7, fortissimo-6)
+nsubj(followed-11, blasts-7)
+case(brass-10, from-8)
+det(brass-10, the-9)
+nmod:from(blasts-7, brass-10)
+advcl:with(opens-3, followed-11)
+advmod(followed-11, immediately-12)
+case(entrance-17, by-13)
+det(organ-15, the-14)
+nmod:poss(entrance-17, organ-15)
+case(organ-15, 's-16)
+nmod:by(followed-11, entrance-17)
+punct(entrance-17, ,-18)
+amod(entrance-17, quiet-19)
+cc(quiet-19, and-20)
+amod(entrance-17, smooth-21)
+conj:and(quiet-19, smooth-21)
+punct(opens-3, .-22)
+
+Sentence #3 (3 tokens):
+No organ!
+[Text=No CharacterOffsetBegin=172 CharacterOffsetEnd=174 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=organ CharacterOffsetBegin=175 CharacterOffsetEnd=180 PartOfSpeech=NN Lemma=organ NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (NP (DT No) (NN organ) (. !)))
+
+root(ROOT-0, organ-2)
+neg(organ-2, No-1)
+punct(organ-2, !-3)
+
+Sentence #4 (9 tokens):
+Leonard had forgotten to turn on the blowers.
+[Text=Leonard CharacterOffsetBegin=182 CharacterOffsetEnd=189 PartOfSpeech=NNP Lemma=Leonard NamedEntityTag=PERSON]
+[Text=had CharacterOffsetBegin=190 CharacterOffsetEnd=193 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=forgotten CharacterOffsetBegin=194 CharacterOffsetEnd=203 PartOfSpeech=VBN Lemma=forget NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=204 CharacterOffsetEnd=206 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=turn CharacterOffsetBegin=207 CharacterOffsetEnd=211 PartOfSpeech=VB Lemma=turn NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=212 CharacterOffsetEnd=214 PartOfSpeech=RP Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=215 CharacterOffsetEnd=218 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=blowers CharacterOffsetBegin=219 CharacterOffsetEnd=226 PartOfSpeech=NNS Lemma=blower NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=226 CharacterOffsetEnd=227 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Leonard))
+    (VP (VBD had)
+      (VP (VBN forgotten)
+        (S
+          (VP (TO to)
+            (VP (VB turn)
+              (PRT (RP on))
+              (NP (DT the) (NNS blowers)))))))
+    (. .)))
+
+root(ROOT-0, forgotten-3)
+nsubj(forgotten-3, Leonard-1)
+nsubj:xsubj(turn-5, Leonard-1)
+aux(forgotten-3, had-2)
+mark(turn-5, to-4)
+xcomp(forgotten-3, turn-5)
+compound:prt(turn-5, on-6)
+det(blowers-8, the-7)
+dobj(turn-5, blowers-8)
+punct(forgotten-3, .-9)
+
+Sentence #5 (12 tokens):
+A quick flick of the wrist, and all was well.
+[Text=A CharacterOffsetBegin=228 CharacterOffsetEnd=229 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=quick CharacterOffsetBegin=230 CharacterOffsetEnd=235 PartOfSpeech=JJ Lemma=quick NamedEntityTag=O]
+[Text=flick CharacterOffsetBegin=236 CharacterOffsetEnd=241 PartOfSpeech=NN Lemma=flick NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=242 CharacterOffsetEnd=244 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=245 CharacterOffsetEnd=248 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=wrist CharacterOffsetBegin=249 CharacterOffsetEnd=254 PartOfSpeech=NN Lemma=wrist NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=254 CharacterOffsetEnd=255 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=256 CharacterOffsetEnd=259 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=260 CharacterOffsetEnd=263 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=264 CharacterOffsetEnd=267 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=268 CharacterOffsetEnd=272 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=272 CharacterOffsetEnd=273 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (JJ quick) (NN flick))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN wrist))
+          (, ,)
+          (CC and)
+          (NP (DT all)))))
+    (VP (VBD was)
+      (ADVP (RB well)))
+    (. .)))
+
+root(ROOT-0, was-10)
+det(flick-3, A-1)
+amod(flick-3, quick-2)
+nsubj(was-10, flick-3)
+case(wrist-6, of-4)
+det(wrist-6, the-5)
+nmod:of(flick-3, wrist-6)
+punct(wrist-6, ,-7)
+cc(wrist-6, and-8)
+nmod:of(flick-3, all-9)
+conj:and(wrist-6, all-9)
+advmod(was-10, well-11)
+punct(was-10, .-12)
+
+Sentence #6 (11 tokens):
+But twixt the blast and the flick, and eternity.
+[Text=But CharacterOffsetBegin=274 CharacterOffsetEnd=277 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=twixt CharacterOffsetBegin=278 CharacterOffsetEnd=283 PartOfSpeech=VB Lemma=twixt NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=284 CharacterOffsetEnd=287 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=blast CharacterOffsetBegin=288 CharacterOffsetEnd=293 PartOfSpeech=NN Lemma=blast NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=294 CharacterOffsetEnd=297 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=298 CharacterOffsetEnd=301 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=flick CharacterOffsetBegin=302 CharacterOffsetEnd=307 PartOfSpeech=NN Lemma=flick NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=307 CharacterOffsetEnd=308 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=309 CharacterOffsetEnd=312 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=eternity CharacterOffsetBegin=313 CharacterOffsetEnd=321 PartOfSpeech=NN Lemma=eternity NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=321 CharacterOffsetEnd=322 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC But)
+    (VP (VB twixt)
+      (NP
+        (NP (DT the) (NN blast))
+        (CC and)
+        (NP (DT the) (NN flick) (, ,)
+          (CC and)
+          (NN eternity))))
+    (. .)))
+
+root(ROOT-0, twixt-2)
+cc(twixt-2, But-1)
+det(blast-4, the-3)
+dobj(twixt-2, blast-4)
+cc(blast-4, and-5)
+det(flick-7, the-6)
+dobj(twixt-2, flick-7)
+conj:and(blast-4, flick-7)
+punct(flick-7, ,-8)
+cc(flick-7, and-9)
+conj:and(blast-4, eternity-10)
+conj:and(flick-7, eternity-10)
+punct(twixt-2, .-11)
+
+Sentence #7 (19 tokens):
+I was very, very pleased with Leonard, with Hangen, and with the whole young orchestra.
+[Text=I CharacterOffsetBegin=323 CharacterOffsetEnd=324 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=325 CharacterOffsetEnd=328 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=329 CharacterOffsetEnd=333 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=333 CharacterOffsetEnd=334 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=335 CharacterOffsetEnd=339 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=pleased CharacterOffsetBegin=340 CharacterOffsetEnd=347 PartOfSpeech=JJ Lemma=pleased NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=348 CharacterOffsetEnd=352 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Leonard CharacterOffsetBegin=353 CharacterOffsetEnd=360 PartOfSpeech=NNP Lemma=Leonard NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=360 CharacterOffsetEnd=361 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=362 CharacterOffsetEnd=366 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Hangen CharacterOffsetBegin=367 CharacterOffsetEnd=373 PartOfSpeech=NNP Lemma=Hangen NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=373 CharacterOffsetEnd=374 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=375 CharacterOffsetEnd=378 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=379 CharacterOffsetEnd=383 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=384 CharacterOffsetEnd=387 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=388 CharacterOffsetEnd=393 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=young CharacterOffsetBegin=394 CharacterOffsetEnd=399 PartOfSpeech=JJ Lemma=young NamedEntityTag=O]
+[Text=orchestra CharacterOffsetBegin=400 CharacterOffsetEnd=409 PartOfSpeech=NN Lemma=orchestra NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=409 CharacterOffsetEnd=410 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (ADJP (RB very) (, ,) (RB very) (JJ pleased))
+      (PP
+        (PP (IN with)
+          (NP (NNP Leonard)))
+        (, ,)
+        (PP (IN with)
+          (NP (NNP Hangen)))
+        (, ,)
+        (CC and)
+        (PP (IN with)
+          (NP (DT the) (JJ whole) (JJ young) (NN orchestra)))))
+    (. .)))
+
+root(ROOT-0, pleased-6)
+nsubj(pleased-6, I-1)
+nsubj(pleased-6', I-1)
+nsubj(pleased-6'', I-1)
+cop(pleased-6, was-2)
+advmod(pleased-6, very-3)
+punct(pleased-6, ,-4)
+advmod(pleased-6, very-5)
+conj:and(pleased-6, pleased-6')
+conj:and(pleased-6, pleased-6'')
+case(Leonard-8, with-7)
+nmod:with(pleased-6, Leonard-8)
+punct(Leonard-8, ,-9)
+case(Hangen-11, with-10)
+nmod:with(pleased-6'', Hangen-11)
+punct(Leonard-8, ,-12)
+cc(pleased-6, and-13)
+case(orchestra-18, with-14)
+det(orchestra-18, the-15)
+amod(orchestra-18, whole-16)
+amod(orchestra-18, young-17)
+nmod:with(pleased-6', orchestra-18)
+punct(pleased-6, .-19)
+
+Coreference set:
+	(3,2,[1,4]) -> (2,15,[14,17]), that is: "No organ !" -> "the organ 's"
+Coreference set:
+	(7,8,[8,9]) -> (4,1,[1,2]), that is: "Leonard" -> "Leonard"

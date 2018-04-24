@@ -1,0 +1,288 @@
+Sentence #1 (6 tokens):
+I hear many mediocre musicians.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=hear NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=mediocre CharacterOffsetBegin=12 CharacterOffsetEnd=20 PartOfSpeech=JJ Lemma=mediocre NamedEntityTag=O]
+[Text=musicians CharacterOffsetBegin=21 CharacterOffsetEnd=30 PartOfSpeech=NNS Lemma=musician NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP hear)
+      (NP (JJ many) (JJ mediocre) (NNS musicians)))
+    (. .)))
+
+root(ROOT-0, hear-2)
+nsubj(hear-2, I-1)
+amod(musicians-5, many-3)
+amod(musicians-5, mediocre-4)
+dobj(hear-2, musicians-5)
+punct(hear-2, .-6)
+
+Sentence #2 (4 tokens):
+A great many.
+[Text=A CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT A) (JJ great))
+    (ADJP (JJ many))
+    (. .)))
+
+root(ROOT-0, many-3)
+det(great-2, A-1)
+dep(many-3, great-2)
+punct(many-3, .-4)
+
+Sentence #3 (8 tokens):
+But they have the right to live.
+[Text=But CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=right NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=live CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=VB Lemma=live NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC But)
+    (NP (PRP they))
+    (VP (VBP have)
+      (NP (DT the) (NN right)
+        (S
+          (VP (TO to)
+            (VP (VB live))))))
+    (. .)))
+
+root(ROOT-0, have-3)
+cc(have-3, But-1)
+nsubj(have-3, they-2)
+det(right-5, the-4)
+dobj(have-3, right-5)
+mark(live-7, to-6)
+acl:to(right-5, live-7)
+punct(have-3, .-8)
+
+Sentence #4 (17 tokens):
+It’s only song and dance ensembles like the Red Army chorus that drive me mad.
+[Text=It CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=song CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=song NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=dance CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=dance NamedEntityTag=O]
+[Text=ensembles CharacterOffsetBegin=104 CharacterOffsetEnd=113 PartOfSpeech=NNS Lemma=ensemble NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=114 CharacterOffsetEnd=118 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Red CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=NNP Lemma=Red NamedEntityTag=ORGANIZATION]
+[Text=Army CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=NNP Lemma=Army NamedEntityTag=ORGANIZATION]
+[Text=chorus CharacterOffsetBegin=132 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=chorus NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=drive CharacterOffsetBegin=144 CharacterOffsetEnd=149 PartOfSpeech=VBP Lemma=drive NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=mad CharacterOffsetBegin=153 CharacterOffsetEnd=156 PartOfSpeech=JJ Lemma=mad NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=156 CharacterOffsetEnd=157 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (ADVP (RB only))
+      (NP
+        (NP (NN song)
+          (CC and)
+          (NN dance) (NNS ensembles))
+        (PP (IN like)
+          (NP (DT the) (NNP Red) (NNP Army) (NN chorus)))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP drive)
+              (S
+                (NP (PRP me))
+                (ADJP (JJ mad))))))))
+    (. .)))
+
+root(ROOT-0, ensembles-7)
+nsubj(ensembles-7, It-1)
+cop(ensembles-7, 's-2)
+advmod(ensembles-7, only-3)
+compound(ensembles-7, song-4)
+cc(song-4, and-5)
+conj:and(song-4, dance-6)
+compound(ensembles-7, dance-6)
+nsubj(drive-14, ensembles-7)
+case(chorus-12, like-8)
+det(chorus-12, the-9)
+compound(chorus-12, Red-10)
+compound(chorus-12, Army-11)
+nmod:like(ensembles-7, chorus-12)
+ref(ensembles-7, that-13)
+acl:relcl(ensembles-7, drive-14)
+nsubj(mad-16, me-15)
+xcomp(drive-14, mad-16)
+punct(ensembles-7, .-17)
+
+Sentence #5 (18 tokens):
+If I were suddenly to become minister of culture, I would immediately disband all these ensembles.
+[Text=If CharacterOffsetBegin=158 CharacterOffsetEnd=160 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=161 CharacterOffsetEnd=162 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=163 CharacterOffsetEnd=167 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=suddenly CharacterOffsetBegin=168 CharacterOffsetEnd=176 PartOfSpeech=RB Lemma=suddenly NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=177 CharacterOffsetEnd=179 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=become CharacterOffsetBegin=180 CharacterOffsetEnd=186 PartOfSpeech=VB Lemma=become NamedEntityTag=O]
+[Text=minister CharacterOffsetBegin=187 CharacterOffsetEnd=195 PartOfSpeech=NN Lemma=minister NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=196 CharacterOffsetEnd=198 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=culture CharacterOffsetBegin=199 CharacterOffsetEnd=206 PartOfSpeech=NN Lemma=culture NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=206 CharacterOffsetEnd=207 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=208 CharacterOffsetEnd=209 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=210 CharacterOffsetEnd=215 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=immediately CharacterOffsetBegin=216 CharacterOffsetEnd=227 PartOfSpeech=RB Lemma=immediately NamedEntityTag=O]
+[Text=disband CharacterOffsetBegin=228 CharacterOffsetEnd=235 PartOfSpeech=VB Lemma=disband NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=236 CharacterOffsetEnd=239 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=240 CharacterOffsetEnd=245 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=ensembles CharacterOffsetBegin=246 CharacterOffsetEnd=255 PartOfSpeech=NNS Lemma=ensemble NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=255 CharacterOffsetEnd=256 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP I))
+        (VP (VBD were)
+          (ADVP (RB suddenly))
+          (S
+            (VP (TO to)
+              (VP (VB become)
+                (NP
+                  (NP (NN minister))
+                  (PP (IN of)
+                    (NP (NN culture))))))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD would)
+      (ADVP (RB immediately))
+      (VP (VB disband)
+        (NP (PDT all) (DT these) (NNS ensembles))))
+    (. .)))
+
+root(ROOT-0, disband-14)
+mark(were-3, If-1)
+nsubj(were-3, I-2)
+nsubj:xsubj(become-6, I-2)
+advcl:if(disband-14, were-3)
+advmod(were-3, suddenly-4)
+mark(become-6, to-5)
+xcomp(were-3, become-6)
+xcomp(become-6, minister-7)
+case(culture-9, of-8)
+nmod:of(minister-7, culture-9)
+punct(disband-14, ,-10)
+nsubj(disband-14, I-11)
+aux(disband-14, would-12)
+advmod(disband-14, immediately-13)
+det:predet(ensembles-17, all-15)
+det(ensembles-17, these-16)
+dobj(disband-14, ensembles-17)
+punct(disband-14, .-18)
+
+Sentence #6 (7 tokens):
+That would be my first order.
+[Text=That CharacterOffsetBegin=257 CharacterOffsetEnd=261 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=262 CharacterOffsetEnd=267 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=268 CharacterOffsetEnd=270 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=271 CharacterOffsetEnd=273 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=274 CharacterOffsetEnd=279 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=order CharacterOffsetBegin=280 CharacterOffsetEnd=285 PartOfSpeech=NN Lemma=order NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=285 CharacterOffsetEnd=286 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (MD would)
+      (VP (VB be)
+        (NP (PRP$ my) (JJ first) (NN order))))
+    (. .)))
+
+root(ROOT-0, order-6)
+nsubj(order-6, That-1)
+aux(order-6, would-2)
+cop(order-6, be-3)
+nmod:poss(order-6, my-4)
+amod(order-6, first-5)
+punct(order-6, .-7)
+
+Sentence #7 (18 tokens):
+I would naturally be arrested immediately for sabotage, but they would never reorganize the scattered ensembles.
+[Text=I CharacterOffsetBegin=287 CharacterOffsetEnd=288 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=289 CharacterOffsetEnd=294 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=naturally CharacterOffsetBegin=295 CharacterOffsetEnd=304 PartOfSpeech=RB Lemma=naturally NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=305 CharacterOffsetEnd=307 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=arrested CharacterOffsetBegin=308 CharacterOffsetEnd=316 PartOfSpeech=VBN Lemma=arrest NamedEntityTag=O]
+[Text=immediately CharacterOffsetBegin=317 CharacterOffsetEnd=328 PartOfSpeech=RB Lemma=immediately NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=329 CharacterOffsetEnd=332 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=sabotage CharacterOffsetBegin=333 CharacterOffsetEnd=341 PartOfSpeech=NN Lemma=sabotage NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=341 CharacterOffsetEnd=342 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=343 CharacterOffsetEnd=346 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=347 CharacterOffsetEnd=351 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=352 CharacterOffsetEnd=357 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=358 CharacterOffsetEnd=363 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=reorganize CharacterOffsetBegin=364 CharacterOffsetEnd=374 PartOfSpeech=VB Lemma=reorganize NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=375 CharacterOffsetEnd=378 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=scattered CharacterOffsetBegin=379 CharacterOffsetEnd=388 PartOfSpeech=VBN Lemma=scatter NamedEntityTag=O]
+[Text=ensembles CharacterOffsetBegin=389 CharacterOffsetEnd=398 PartOfSpeech=NNS Lemma=ensemble NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=398 CharacterOffsetEnd=399 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD would)
+        (ADVP (RB naturally))
+        (VP (VB be)
+          (VP (VBN arrested)
+            (ADVP (RB immediately))
+            (PP (IN for)
+              (NP (NN sabotage)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP they))
+      (VP (MD would)
+        (ADVP (RB never))
+        (VP (VB reorganize)
+          (NP (DT the)
+            (ADJP (VBN scattered))
+            (NNS ensembles)))))
+    (. .)))
+
+root(ROOT-0, arrested-5)
+nsubjpass(arrested-5, I-1)
+aux(arrested-5, would-2)
+advmod(arrested-5, naturally-3)
+auxpass(arrested-5, be-4)
+advmod(arrested-5, immediately-6)
+case(sabotage-8, for-7)
+nmod:for(arrested-5, sabotage-8)
+punct(arrested-5, ,-9)
+cc(arrested-5, but-10)
+nsubj(reorganize-14, they-11)
+aux(reorganize-14, would-12)
+neg(reorganize-14, never-13)
+conj:but(arrested-5, reorganize-14)
+det(ensembles-17, the-15)
+amod(ensembles-17, scattered-16)
+dobj(reorganize-14, ensembles-17)
+punct(arrested-5, .-18)
+
+Coreference set:
+	(4,15,[15,16]) -> (1,1,[1,2]), that is: "me" -> "I"
+	(5,2,[2,3]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(5,11,[11,12]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(6,4,[4,5]) -> (1,1,[1,2]), that is: "my" -> "I"
+	(7,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(3,2,[2,3]) -> (1,5,[3,6]), that is: "they" -> "many mediocre musicians"
+Coreference set:
+	(3,5,[4,8]) -> (6,6,[4,7]), that is: "the right to live" -> "my first order"
+	(4,1,[1,2]) -> (6,6,[4,7]), that is: "It" -> "my first order"
+	(6,1,[1,2]) -> (6,6,[4,7]), that is: "That" -> "my first order"

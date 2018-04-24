@@ -1,0 +1,420 @@
+Sentence #1 (13 tokens):
+Get up early & go to St. Matthews with Mummy at 8.0.
+[Text=Get CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=early CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=early NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=St. CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=St. NamedEntityTag=LOCATION]
+[Text=Matthews CharacterOffsetBegin=25 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Matthews NamedEntityTag=LOCATION]
+[Text=with CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Mummy CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Mummy NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=8.0 CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=CD Lemma=8.0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=8.0]
+[Text=. CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Get)
+      (PRT (RP up))
+      (NP
+        (NP (JJ early))
+        (CC &)
+        (S
+          (VP (VB go)
+            (PP (TO to)
+              (NP
+                (NP (NNP St.) (NNP Matthews))
+                (PP (IN with)
+                  (NP (NNP Mummy)))))
+            (PP (IN at)
+              (NP (CD 8.0)))))))
+    (. .)))
+
+root(ROOT-0, Get-1)
+compound:prt(Get-1, up-2)
+dobj(Get-1, early-3)
+cc(early-3, &-4)
+dobj(Get-1, go-5)
+conj:&(early-3, go-5)
+case(Matthews-8, to-6)
+compound(Matthews-8, St.-7)
+nmod:to(go-5, Matthews-8)
+case(Mummy-10, with-9)
+nmod:with(Matthews-8, Mummy-10)
+case(8.0-12, at-11)
+nmod:at(go-5, 8.0-12)
+punct(Get-1, .-13)
+
+Sentence #2 (30 tokens):
+Spend all morning (11.0–1.0) & afternoon (2.30–4.45) with lunch back here – at Bach Choir, St. Matthew Passion, cond.
+[Text=Spend CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=spend NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=morning CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=TMO Timex=<TIMEX3 tid="t1" type="TIME" value="TMO">morning</TIMEX3>]
+[Text=-LRB- CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=11.0 CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=CD Lemma=11.0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=11.0]
+[Text=-- CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=1.0 CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=CD Lemma=1.0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=-RRB- CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=afternoon CharacterOffsetBegin=84 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 tid="t2" type="TIME" value="TAF">afternoon</TIMEX3>]
+[Text=-LRB- CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=2.30 CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=CD Lemma=2.30 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.3]
+[Text=-- CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=4.45 CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=CD Lemma=4.45 NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.45]
+[Text=-RRB- CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=lunch CharacterOffsetBegin=111 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=lunch NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=117 CharacterOffsetEnd=121 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=122 CharacterOffsetEnd=126 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Bach CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=NNP Lemma=Bach NamedEntityTag=LOCATION]
+[Text=Choir CharacterOffsetBegin=137 CharacterOffsetEnd=142 PartOfSpeech=NNP Lemma=Choir NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=St. CharacterOffsetBegin=144 CharacterOffsetEnd=147 PartOfSpeech=NNP Lemma=St. NamedEntityTag=LOCATION]
+[Text=Matthew CharacterOffsetBegin=148 CharacterOffsetEnd=155 PartOfSpeech=NNP Lemma=Matthew NamedEntityTag=LOCATION]
+[Text=Passion CharacterOffsetBegin=156 CharacterOffsetEnd=163 PartOfSpeech=NNP Lemma=Passion NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=163 CharacterOffsetEnd=164 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=cond CharacterOffsetBegin=165 CharacterOffsetEnd=169 PartOfSpeech=NN Lemma=cond NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=169 CharacterOffsetEnd=170 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Spend)
+      (NP
+        (NP
+          (NP
+            (NP (DT all) (NN morning))
+            (PRN (-LRB- -LRB-)
+              (NP
+                (NP (CD 11.0))
+                (: --)
+                (NP (CD 1.0)))
+              (-RRB- -RRB-)))
+          (CC &)
+          (NP (NN afternoon)))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (CD 2.30))
+            (: --)
+            (NP (CD 4.45)))
+          (-RRB- -RRB-)))
+      (PP (IN with)
+        (NP (NN lunch)))
+      (ADVP (RB back) (RB here))
+      (: --)
+      (PP (IN at)
+        (NP
+          (NP (NNP Bach) (NNP Choir))
+          (, ,)
+          (NP
+            (NP (NNP St.) (NNP Matthew) (NNP Passion))
+            (, ,)
+            (NP (NN cond))))))
+    (. .)))
+
+root(ROOT-0, Spend-1)
+det(morning-3, all-2)
+dobj(Spend-1, morning-3)
+punct(11.0-5, -LRB--4)
+dep(morning-3, 11.0-5)
+punct(11.0-5, ---6)
+dep(11.0-5, 1.0-7)
+punct(11.0-5, -RRB--8)
+cc(morning-3, &-9)
+dobj(Spend-1, afternoon-10)
+conj:&(morning-3, afternoon-10)
+punct(2.30-12, -LRB--11)
+dep(morning-3, 2.30-12)
+punct(2.30-12, ---13)
+dep(2.30-12, 4.45-14)
+punct(2.30-12, -RRB--15)
+case(lunch-17, with-16)
+nmod:with(Spend-1, lunch-17)
+advmod(here-19, back-18)
+advmod(Spend-1, here-19)
+punct(Spend-1, ---20)
+case(Choir-23, at-21)
+compound(Choir-23, Bach-22)
+nmod:at(Spend-1, Choir-23)
+punct(Choir-23, ,-24)
+compound(Passion-27, St.-25)
+compound(Passion-27, Matthew-26)
+appos(Choir-23, Passion-27)
+punct(Passion-27, ,-28)
+appos(Passion-27, cond-29)
+punct(Spend-1, .-30)
+
+Sentence #3 (22 tokens):
+A. Boult, with D. Silk, M. Balfour, S. Wilson, H. Eisdle, K. Falkner & A Cranmer.
+[Text=A. CharacterOffsetBegin=171 CharacterOffsetEnd=173 PartOfSpeech=NN Lemma=a. NamedEntityTag=PERSON]
+[Text=Boult CharacterOffsetBegin=174 CharacterOffsetEnd=179 PartOfSpeech=NNP Lemma=Boult NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=179 CharacterOffsetEnd=180 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=181 CharacterOffsetEnd=185 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=D. CharacterOffsetBegin=186 CharacterOffsetEnd=188 PartOfSpeech=NNP Lemma=D. NamedEntityTag=PERSON]
+[Text=Silk CharacterOffsetBegin=189 CharacterOffsetEnd=193 PartOfSpeech=NNP Lemma=Silk NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=193 CharacterOffsetEnd=194 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=M. CharacterOffsetBegin=195 CharacterOffsetEnd=197 PartOfSpeech=NNP Lemma=M. NamedEntityTag=PERSON]
+[Text=Balfour CharacterOffsetBegin=198 CharacterOffsetEnd=205 PartOfSpeech=NNP Lemma=Balfour NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=205 CharacterOffsetEnd=206 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=S. CharacterOffsetBegin=207 CharacterOffsetEnd=209 PartOfSpeech=NNP Lemma=S. NamedEntityTag=PERSON]
+[Text=Wilson CharacterOffsetBegin=210 CharacterOffsetEnd=216 PartOfSpeech=NNP Lemma=Wilson NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=H. CharacterOffsetBegin=218 CharacterOffsetEnd=220 PartOfSpeech=NNP Lemma=H. NamedEntityTag=PERSON]
+[Text=Eisdle CharacterOffsetBegin=221 CharacterOffsetEnd=227 PartOfSpeech=NNP Lemma=Eisdle NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=227 CharacterOffsetEnd=228 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=K. CharacterOffsetBegin=229 CharacterOffsetEnd=231 PartOfSpeech=NNP Lemma=K. NamedEntityTag=PERSON]
+[Text=Falkner CharacterOffsetBegin=232 CharacterOffsetEnd=239 PartOfSpeech=NNP Lemma=Falkner NamedEntityTag=PERSON]
+[Text=& CharacterOffsetBegin=240 CharacterOffsetEnd=241 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=242 CharacterOffsetEnd=243 PartOfSpeech=NNP Lemma=A NamedEntityTag=O]
+[Text=Cranmer CharacterOffsetBegin=244 CharacterOffsetEnd=251 PartOfSpeech=NNP Lemma=Cranmer NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=251 CharacterOffsetEnd=252 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NN A.))
+    (NP (NNP Boult))
+    (, ,)
+    (PP (IN with)
+      (NP
+        (NP (NNP D.) (NNP Silk))
+        (, ,)
+        (NP (NNP M.) (NNP Balfour))
+        (, ,)
+        (NP (NNP S.) (NNP Wilson))
+        (, ,)
+        (NP (NNP H.) (NNP Eisdle))
+        (, ,)
+        (NP (NNP K.) (NNP Falkner)
+          (CC &)
+          (NNP A) (NNP Cranmer))))
+    (. .)))
+
+root(ROOT-0, A.-1)
+appos(A.-1, Boult-2)
+punct(A.-1, ,-3)
+case(Silk-6, with-4)
+compound(Silk-6, D.-5)
+nmod:with(A.-1, Silk-6)
+punct(Silk-6, ,-7)
+compound(Balfour-9, M.-8)
+appos(Silk-6, Balfour-9)
+punct(Silk-6, ,-10)
+compound(Wilson-12, S.-11)
+appos(Silk-6, Wilson-12)
+punct(Silk-6, ,-13)
+compound(Eisdle-15, H.-14)
+appos(Silk-6, Eisdle-15)
+punct(Silk-6, ,-16)
+compound(Falkner-18, K.-17)
+appos(Silk-6, Falkner-18)
+cc(Falkner-18, &-19)
+compound(Cranmer-21, A-20)
+appos(Silk-6, Cranmer-21)
+conj:&(Falkner-18, Cranmer-21)
+punct(A.-1, .-22)
+
+Sentence #4 (12 tokens):
+A very good performance on the whole, & very moving.
+[Text=A CharacterOffsetBegin=253 CharacterOffsetEnd=254 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=255 CharacterOffsetEnd=259 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=260 CharacterOffsetEnd=264 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=265 CharacterOffsetEnd=276 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=277 CharacterOffsetEnd=279 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=280 CharacterOffsetEnd=283 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=284 CharacterOffsetEnd=289 PartOfSpeech=NN Lemma=whole NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=289 CharacterOffsetEnd=290 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=291 CharacterOffsetEnd=292 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=293 CharacterOffsetEnd=297 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=moving CharacterOffsetBegin=298 CharacterOffsetEnd=304 PartOfSpeech=VBG Lemma=move NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=304 CharacterOffsetEnd=305 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP
+        (NP (DT A)
+          (ADJP (RB very) (JJ good))
+          (NN performance))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN whole))
+            (, ,))))
+      (CC &)
+      (NP (RB very) (VBG moving)))
+    (. .)))
+
+root(ROOT-0, performance-4)
+det(performance-4, A-1)
+advmod(good-3, very-2)
+amod(performance-4, good-3)
+case(whole-7, on-5)
+det(whole-7, the-6)
+nmod:on(performance-4, whole-7)
+punct(whole-7, ,-8)
+cc(performance-4, &-9)
+conj:&(performance-4, very-10)
+amod(very-10, moving-11)
+punct(performance-4, .-12)
+
+Sentence #5 (12 tokens):
+Keith Falkner & St. Wilson were great & Dorothy Silk also.
+[Text=Keith CharacterOffsetBegin=306 CharacterOffsetEnd=311 PartOfSpeech=NNP Lemma=Keith NamedEntityTag=PERSON]
+[Text=Falkner CharacterOffsetBegin=312 CharacterOffsetEnd=319 PartOfSpeech=NNP Lemma=Falkner NamedEntityTag=PERSON]
+[Text=& CharacterOffsetBegin=320 CharacterOffsetEnd=321 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=St. CharacterOffsetBegin=322 CharacterOffsetEnd=325 PartOfSpeech=NNP Lemma=St. NamedEntityTag=O]
+[Text=Wilson CharacterOffsetBegin=326 CharacterOffsetEnd=332 PartOfSpeech=NNP Lemma=Wilson NamedEntityTag=PERSON]
+[Text=were CharacterOffsetBegin=333 CharacterOffsetEnd=337 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=338 CharacterOffsetEnd=343 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=344 CharacterOffsetEnd=345 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Dorothy CharacterOffsetBegin=346 CharacterOffsetEnd=353 PartOfSpeech=NNP Lemma=Dorothy NamedEntityTag=PERSON]
+[Text=Silk CharacterOffsetBegin=354 CharacterOffsetEnd=358 PartOfSpeech=NNP Lemma=Silk NamedEntityTag=PERSON]
+[Text=also CharacterOffsetBegin=359 CharacterOffsetEnd=363 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=363 CharacterOffsetEnd=364 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Keith) (NNP Falkner)
+      (CC &)
+      (NNP St.) (NNP Wilson))
+    (VP (VBD were)
+      (NP
+        (NP (JJ great))
+        (CC &)
+        (NP (NNP Dorothy) (NNP Silk)))
+      (ADVP (RB also)))
+    (. .)))
+
+root(ROOT-0, great-7)
+compound(Falkner-2, Keith-1)
+nsubj(great-7, Falkner-2)
+cc(Falkner-2, &-3)
+compound(Wilson-5, St.-4)
+conj:&(Falkner-2, Wilson-5)
+nsubj(great-7, Wilson-5)
+cop(great-7, were-6)
+cc(great-7, &-8)
+compound(Silk-10, Dorothy-9)
+conj:&(great-7, Silk-10)
+advmod(great-7, also-11)
+punct(great-7, .-12)
+
+Sentence #6 (12 tokens):
+Choir quite good – oh, it’s a great work!
+[Text=Choir CharacterOffsetBegin=365 CharacterOffsetEnd=370 PartOfSpeech=NN Lemma=choir NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=371 CharacterOffsetEnd=376 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=377 CharacterOffsetEnd=381 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=382 CharacterOffsetEnd=383 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=oh CharacterOffsetBegin=384 CharacterOffsetEnd=386 PartOfSpeech=UH Lemma=oh NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=386 CharacterOffsetEnd=387 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=388 CharacterOffsetEnd=390 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=390 CharacterOffsetEnd=392 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=393 CharacterOffsetEnd=394 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=395 CharacterOffsetEnd=400 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=401 CharacterOffsetEnd=405 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=405 CharacterOffsetEnd=406 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (FRAG
+      (NP
+        (NP (NN Choir))
+        (ADJP (RB quite) (JJ good))))
+    (: --)
+    (S
+      (INTJ (UH oh))
+      (, ,)
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (NP (DT a) (JJ great) (NN work))))
+    (. !)))
+
+root(ROOT-0, work-11)
+dep(work-11, Choir-1)
+advmod(good-3, quite-2)
+amod(Choir-1, good-3)
+punct(work-11, ---4)
+discourse(work-11, oh-5)
+punct(work-11, ,-6)
+nsubj(work-11, it-7)
+cop(work-11, 's-8)
+det(work-11, a-9)
+amod(work-11, great-10)
+punct(work-11, !-12)
+
+Sentence #7 (9 tokens):
+Tea with Barbara; back here for supper.
+[Text=Tea CharacterOffsetBegin=407 CharacterOffsetEnd=410 PartOfSpeech=NNP Lemma=Tea NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=411 CharacterOffsetEnd=415 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Barbara CharacterOffsetBegin=416 CharacterOffsetEnd=423 PartOfSpeech=NNP Lemma=Barbara NamedEntityTag=PERSON]
+[Text=; CharacterOffsetBegin=423 CharacterOffsetEnd=424 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=425 CharacterOffsetEnd=429 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=430 CharacterOffsetEnd=434 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=435 CharacterOffsetEnd=438 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=supper CharacterOffsetBegin=439 CharacterOffsetEnd=445 PartOfSpeech=NN Lemma=supper NamedEntityTag=DATE NormalizedNamedEntityTag=supper ]
+[Text=. CharacterOffsetBegin=445 CharacterOffsetEnd=446 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Tea))
+      (PP (IN with)
+        (NP (NNP Barbara))))
+    (: ;)
+    (NP
+      (NP (RB back) (RB here))
+      (PP (IN for)
+        (NP (NN supper))))
+    (. .)))
+
+root(ROOT-0, Tea-1)
+case(Barbara-3, with-2)
+nmod:with(Tea-1, Barbara-3)
+punct(Tea-1, ;-4)
+advmod(here-6, back-5)
+dep(Tea-1, here-6)
+case(supper-8, for-7)
+nmod:for(here-6, supper-8)
+punct(Tea-1, .-9)
+
+Sentence #8 (5 tokens):
+Write to Pop afterwards.
+[Text=Write CharacterOffsetBegin=447 CharacterOffsetEnd=452 PartOfSpeech=VB Lemma=write NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=453 CharacterOffsetEnd=455 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Pop CharacterOffsetBegin=456 CharacterOffsetEnd=459 PartOfSpeech=NN Lemma=pop NamedEntityTag=O]
+[Text=afterwards CharacterOffsetBegin=460 CharacterOffsetEnd=470 PartOfSpeech=RB Lemma=afterwards NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=470 CharacterOffsetEnd=471 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Write)
+      (PP (TO to)
+        (NP (NN Pop)))
+      (ADVP (RB afterwards)))
+    (. .)))
+
+root(ROOT-0, Write-1)
+case(Pop-3, to-2)
+nmod:to(Write-1, Pop-3)
+advmod(Write-1, afterwards-4)
+punct(Write-1, .-5)
+
+Sentence #9 (5 tokens):
+Early bed, by 10.0
+[Text=Early CharacterOffsetBegin=472 CharacterOffsetEnd=477 PartOfSpeech=RB Lemma=early NamedEntityTag=O]
+[Text=bed CharacterOffsetBegin=478 CharacterOffsetEnd=481 PartOfSpeech=NN Lemma=bed NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=481 CharacterOffsetEnd=482 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=483 CharacterOffsetEnd=485 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=10.0 CharacterOffsetBegin=486 CharacterOffsetEnd=490 PartOfSpeech=CD Lemma=10.0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.0]
+(ROOT
+  (NP
+    (NP (RB Early) (NN bed))
+    (PRN (, ,)
+      (PP (IN by)
+        (NP (CD 10.0))))))
+
+root(ROOT-0, bed-2)
+advmod(bed-2, Early-1)
+punct(10.0-5, ,-3)
+case(10.0-5, by-4)
+nmod:by(bed-2, 10.0-5)
+
+Coreference set:
+	(3,20,[20,21]) -> (3,2,[1,3]), that is: "A" -> "A. Boult"
+Coreference set:
+	(6,1,[1,4]) -> (6,11,[9,12]), that is: "Choir quite good" -> "a great work"
+	(6,7,[7,8]) -> (6,11,[9,12]), that is: "it" -> "a great work"

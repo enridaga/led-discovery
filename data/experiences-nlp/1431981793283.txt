@@ -1,0 +1,86 @@
+Sentence #1 (27 tokens):
+In the evening Father and I went to the Singakademie to hear a pianist, a nice-looking young man but he did not play too well.
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t1" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=Father CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=father NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Singakademie CharacterOffsetBegin=40 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Singakademie NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=pianist CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=pianist NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=nice-looking CharacterOffsetBegin=74 CharacterOffsetEnd=86 PartOfSpeech=JJ Lemma=nice-looking NamedEntityTag=O]
+[Text=young CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=JJ Lemma=young NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (DT the) (NN evening) (NN Father))
+        (CC and)
+        (S
+          (NP (PRP I))
+          (VP (VBD went)
+            (PP (TO to)
+              (NP (DT the) (NNP Singakademie)))
+            (S
+              (VP (TO to)
+                (VP (VB hear)
+                  (NP (DT a) (NN pianist)))))))))
+    (, ,)
+    (NP
+      (NP (DT a) (JJ nice-looking) (JJ young) (NN man))
+      (PP (CC but)
+        (NP (PRP he))))
+    (VP (VBD did) (RB not)
+      (VP (VB play)
+        (ADVP (RB too) (RB well))))
+    (. .)))
+
+root(ROOT-0, play-24)
+case(Father-4, In-1)
+det(Father-4, the-2)
+compound(Father-4, evening-3)
+nmod:in(play-24, Father-4)
+cc(Father-4, and-5)
+nsubj(went-7, I-6)
+nsubj:xsubj(hear-12, I-6)
+conj:and(Father-4, went-7)
+nmod:in(play-24, went-7)
+case(Singakademie-10, to-8)
+det(Singakademie-10, the-9)
+nmod:to(went-7, Singakademie-10)
+mark(hear-12, to-11)
+xcomp(went-7, hear-12)
+det(pianist-14, a-13)
+dobj(hear-12, pianist-14)
+punct(play-24, ,-15)
+det(man-19, a-16)
+amod(man-19, nice-looking-17)
+amod(man-19, young-18)
+nsubj(play-24, man-19)
+case(he-21, but-20)
+nmod:but(man-19, he-21)
+aux(play-24, did-22)
+neg(play-24, not-23)
+advmod(well-26, too-25)
+advmod(play-24, well-26)
+punct(play-24, .-27)
+
+Coreference set:
+	(1,21,[21,22]) -> (1,4,[2,5]), that is: "he" -> "the evening Father"

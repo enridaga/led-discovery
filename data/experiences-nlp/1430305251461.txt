@@ -1,0 +1,90 @@
+Sentence #1 (26 tokens):
+After a performance of the 'Maid of Artois', in which Malibran performed marvellously, we went to see her in her dressing-room.
+[Text=After CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=8 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Maid CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=maid NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Artois CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Artois NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=Malibran CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Malibran NamedEntityTag=PERSON]
+[Text=performed CharacterOffsetBegin=63 CharacterOffsetEnd=72 PartOfSpeech=VBD Lemma=perform NamedEntityTag=O]
+[Text=marvellously CharacterOffsetBegin=73 CharacterOffsetEnd=85 PartOfSpeech=RB Lemma=marvellously NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=dressing-room CharacterOffsetBegin=113 CharacterOffsetEnd=126 PartOfSpeech=NN Lemma=dressing-room NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP (DT a) (NN performance))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (`` `) (NN Maid))
+            (PP (IN of)
+              (NP
+                (NP (NNP Artois) (POS '))
+                (, ,)
+                (SBAR
+                  (WHPP (IN in)
+                    (WHNP (WDT which)))
+                  (S
+                    (NP (NNP Malibran))
+                    (VP (VBD performed)
+                      (ADVP (RB marvellously)))))))))))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBD went)
+      (S
+        (VP (TO to)
+          (VP (VB see)
+            (NP (PRP her))
+            (PP (IN in)
+              (NP (PRP$ her) (NN dressing-room)))))))
+    (. .)))
+
+root(ROOT-0, went-19)
+case(performance-3, After-1)
+det(performance-3, a-2)
+nmod:after(went-19, performance-3)
+case(Maid-7, of-4)
+det(Maid-7, the-5)
+punct(Maid-7, `-6)
+nmod:of(performance-3, Maid-7)
+case(Artois-9, of-8)
+nmod:'(Maid-7, Artois-9)
+nmod:in(performed-15, Artois-9)
+case(Artois-9, '-10)
+punct(Artois-9, ,-11)
+case(which-13, in-12)
+ref(Artois-9, which-13)
+nsubj(performed-15, Malibran-14)
+acl:relcl(Artois-9, performed-15)
+advmod(performed-15, marvellously-16)
+punct(went-19, ,-17)
+nsubj(went-19, we-18)
+nsubj:xsubj(see-21, we-18)
+mark(see-21, to-20)
+xcomp(went-19, see-21)
+dobj(see-21, her-22)
+case(dressing-room-25, in-23)
+nmod:poss(dressing-room-25, her-24)
+nmod:in(see-21, dressing-room-25)
+punct(went-19, .-26)
+
+Coreference set:
+	(1,22,[22,23]) -> (1,7,[5,17]), that is: "her" -> "the ` Maid of Artois ' , in which Malibran performed marvellously"
+	(1,24,[24,25]) -> (1,7,[5,17]), that is: "her" -> "the ` Maid of Artois ' , in which Malibran performed marvellously"

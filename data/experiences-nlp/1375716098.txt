@@ -1,0 +1,177 @@
+Sentence #1 (17 tokens):
+We reached Oatlands an hour before dinner-time and found the party just returned from riding. . . .
+[Text=We CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=reached CharacterOffsetBegin=3 CharacterOffsetEnd=10 PartOfSpeech=VBD Lemma=reach NamedEntityTag=O]
+[Text=Oatlands CharacterOffsetBegin=11 CharacterOffsetEnd=19 PartOfSpeech=NNPS Lemma=Oatlands NamedEntityTag=MISC]
+[Text=an CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT1H">an hour</TIMEX3>]
+[Text=hour CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT1H">an hour</TIMEX3>]
+[Text=before CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=dinner-time CharacterOffsetBegin=35 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=dinner-time NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=found CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=VBD Lemma=find NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=returned CharacterOffsetBegin=72 CharacterOffsetEnd=80 PartOfSpeech=VBD Lemma=return NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=riding CharacterOffsetBegin=86 CharacterOffsetEnd=92 PartOfSpeech=VBG Lemma=ride NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP
+      (VP (VBD reached)
+        (NP
+          (NP (NNPS Oatlands))
+          (NP (DT an) (NN hour)))
+        (PP (IN before)
+          (ADJP (JJ dinner-time))))
+      (CC and)
+      (VP (VBD found)
+        (SBAR
+          (S
+            (NP (DT the) (NN party))
+            (ADVP (RB just))
+            (VP (VBD returned)
+              (PP (IN from)
+                (S
+                  (VP (VBG riding)))))))))
+    (: ...) (. .)))
+
+root(ROOT-0, reached-2)
+nsubj(reached-2, We-1)
+nsubj(found-9, We-1)
+dobj(reached-2, Oatlands-3)
+det(hour-5, an-4)
+dep(Oatlands-3, hour-5)
+case(dinner-time-7, before-6)
+advcl:before(reached-2, dinner-time-7)
+cc(reached-2, and-8)
+conj:and(reached-2, found-9)
+det(party-11, the-10)
+nsubj(returned-13, party-11)
+advmod(returned-13, just-12)
+ccomp(found-9, returned-13)
+mark(riding-15, from-14)
+advcl:from(returned-13, riding-15)
+punct(reached-2, ...-16)
+punct(reached-2, .-17)
+
+Sentence #2 (8 tokens):
+We had some music in the evening.
+[Text=We CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=107 CharacterOffsetEnd=111 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=125 CharacterOffsetEnd=132 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t2" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=. CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBD had)
+      (NP
+        (NP (DT some) (NN music))
+        (PP (IN in)
+          (NP (DT the) (NN evening)))))
+    (. .)))
+
+root(ROOT-0, had-2)
+nsubj(had-2, We-1)
+det(music-4, some-3)
+dobj(had-2, music-4)
+case(evening-7, in-5)
+det(evening-7, the-6)
+nmod:in(music-4, evening-7)
+punct(had-2, .-8)
+
+Sentence #3 (23 tokens):
+Lady Francis sang and I sang, and was frightened to death, as I always am when asked to do so.
+[Text=Lady CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=lady NamedEntityTag=O]
+[Text=Francis CharacterOffsetBegin=139 CharacterOffsetEnd=146 PartOfSpeech=NNP Lemma=Francis NamedEntityTag=PERSON]
+[Text=sang CharacterOffsetBegin=147 CharacterOffsetEnd=151 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=152 CharacterOffsetEnd=155 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=156 CharacterOffsetEnd=157 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=sang CharacterOffsetBegin=158 CharacterOffsetEnd=162 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=162 CharacterOffsetEnd=163 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=frightened CharacterOffsetBegin=172 CharacterOffsetEnd=182 PartOfSpeech=VBN Lemma=frighten NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=183 CharacterOffsetEnd=185 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=death CharacterOffsetBegin=186 CharacterOffsetEnd=191 PartOfSpeech=NN Lemma=death NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=191 CharacterOffsetEnd=192 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=193 CharacterOffsetEnd=195 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=198 CharacterOffsetEnd=204 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=205 CharacterOffsetEnd=207 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=208 CharacterOffsetEnd=212 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=213 CharacterOffsetEnd=218 PartOfSpeech=VBN Lemma=ask NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=219 CharacterOffsetEnd=221 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=222 CharacterOffsetEnd=224 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=227 CharacterOffsetEnd=228 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NN Lady) (NNP Francis))
+      (VP (VBD sang)))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP
+        (VP (VBD sang))
+        (, ,)
+        (CC and)
+        (VP (VBD was)
+          (ADJP (VBN frightened)
+            (PP (TO to)
+              (NP
+                (NP (NN death))
+                (, ,)
+                (SBAR (IN as)
+                  (S
+                    (NP (PRP I))
+                    (ADVP (RB always))
+                    (VP (VBP am)
+                      (SBAR
+                        (WHADVP (WRB when))
+                        (S
+                          (VP (VBN asked)
+                            (S
+                              (VP (TO to)
+                                (VP (VB do)
+                                  (ADVP (RB so)))))))))))))))))
+    (. .)))
+
+root(ROOT-0, sang-3)
+compound(Francis-2, Lady-1)
+nsubj(sang-3, Francis-2)
+cc(sang-3, and-4)
+nsubj(sang-6, I-5)
+nsubjpass(frightened-10, I-5)
+conj:and(sang-3, sang-6)
+punct(sang-6, ,-7)
+cc(sang-6, and-8)
+auxpass(frightened-10, was-9)
+conj:and(sang-3, frightened-10)
+conj:and(sang-6, frightened-10)
+case(death-12, to-11)
+nmod:to(frightened-10, death-12)
+punct(death-12, ,-13)
+mark(am-17, as-14)
+nsubj(am-17, I-15)
+advmod(am-17, always-16)
+dep(death-12, am-17)
+advmod(asked-19, when-18)
+advcl(am-17, asked-19)
+mark(do-21, to-20)
+xcomp(asked-19, do-21)
+advmod(do-21, so-22)
+punct(sang-3, .-23)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,1,[1,2]), that is: "We" -> "We"
+Coreference set:
+	(3,15,[15,16]) -> (3,5,[5,6]), that is: "I" -> "I"

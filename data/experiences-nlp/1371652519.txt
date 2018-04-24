@@ -1,0 +1,212 @@
+Sentence #1 (5 tokens):
+19 Nov., 1840.
+[Text=19 CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=CD Lemma=19 NamedEntityTag=DATE NormalizedNamedEntityTag=1840-11-19 Timex=<TIMEX3 tid="t1" type="DATE" value="1840-11-19">19 Nov., 1840</TIMEX3>]
+[Text=Nov. CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Nov. NamedEntityTag=DATE NormalizedNamedEntityTag=1840-11-19 Timex=<TIMEX3 tid="t1" type="DATE" value="1840-11-19">19 Nov., 1840</TIMEX3>]
+[Text=, CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=1840-11-19 Timex=<TIMEX3 tid="t1" type="DATE" value="1840-11-19">19 Nov., 1840</TIMEX3>]
+[Text=1840 CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=CD Lemma=1840 NamedEntityTag=DATE NormalizedNamedEntityTag=1840-11-19 Timex=<TIMEX3 tid="t1" type="DATE" value="1840-11-19">19 Nov., 1840</TIMEX3>]
+[Text=. CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (CD 19) (NNP Nov.))
+    (, ,)
+    (NP (CD 1840))
+    (. .)))
+
+root(ROOT-0, Nov.-2)
+nummod(Nov.-2, 19-1)
+punct(Nov.-2, ,-3)
+amod(Nov.-2, 1840-4)
+punct(Nov.-2, .-5)
+
+Sentence #2 (20 tokens):
+- We have Neukomm in the house, and he supplies our want, of music, most abundantly.
+[Text=- CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=We CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=Neukomm CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Neukomm NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=36 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=house CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=house NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=supplies CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=VBZ Lemma=supply NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=want CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=VBP Lemma=want NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=abundantly CharacterOffsetBegin=88 CharacterOffsetEnd=98 PartOfSpeech=RB Lemma=abundantly NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (: -)
+    (S
+      (NP (PRP We))
+      (VP (VBP have)
+        (NP
+          (NP (NNP Neukomm))
+          (PP (IN in)
+            (NP (DT the) (NN house))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBZ supplies)
+        (SBAR
+          (S
+            (NP (PRP$ our))
+            (VP (VBP want) (, ,)
+              (PP (IN of)
+                (NP
+                  (NP (NN music))
+                  (, ,)
+                  (NP (JJS most))))
+              (ADVP (RB abundantly)))))))
+    (. .)))
+
+root(ROOT-0, have-3)
+punct(have-3, --1)
+nsubj(have-3, We-2)
+dobj(have-3, Neukomm-4)
+case(house-7, in-5)
+det(house-7, the-6)
+nmod:in(Neukomm-4, house-7)
+punct(have-3, ,-8)
+cc(have-3, and-9)
+nsubj(supplies-11, he-10)
+conj:and(have-3, supplies-11)
+nsubj(want-13, our-12)
+ccomp(supplies-11, want-13)
+punct(want-13, ,-14)
+case(music-16, of-15)
+nmod:of(want-13, music-16)
+punct(music-16, ,-17)
+appos(music-16, most-18)
+advmod(want-13, abundantly-19)
+punct(have-3, .-20)
+
+Sentence #3 (35 tokens):
+We enjoy ourselves every evening, and I profit by the leisure to finish up old Italian views, that have waited for such an undisturbed time, while he plays on the organ.
+[Text=We CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=enjoy CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=VBP Lemma=enjoy NamedEntityTag=O]
+[Text=ourselves CharacterOffsetBegin=109 CharacterOffsetEnd=118 PartOfSpeech=PRP Lemma=ourselves NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=119 CharacterOffsetEnd=124 PartOfSpeech=DT Lemma=every NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1D" quant="every" tid="t2" type="SET" value="TEV">every evening</TIMEX3>]
+[Text=evening CharacterOffsetBegin=125 CharacterOffsetEnd=132 PartOfSpeech=NN Lemma=evening NamedEntityTag=SET Timex=<TIMEX3 periodicity="P1D" quant="every" tid="t2" type="SET" value="TEV">every evening</TIMEX3>]
+[Text=, CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=134 CharacterOffsetEnd=137 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=profit CharacterOffsetBegin=140 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=profit NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=leisure CharacterOffsetBegin=154 CharacterOffsetEnd=161 PartOfSpeech=NN Lemma=leisure NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=162 CharacterOffsetEnd=164 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=finish CharacterOffsetBegin=165 CharacterOffsetEnd=171 PartOfSpeech=VB Lemma=finish NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=172 CharacterOffsetEnd=174 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=175 CharacterOffsetEnd=178 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=Italian CharacterOffsetBegin=179 CharacterOffsetEnd=186 PartOfSpeech=JJ Lemma=italian NamedEntityTag=MISC]
+[Text=views CharacterOffsetBegin=187 CharacterOffsetEnd=192 PartOfSpeech=NNS Lemma=view NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=192 CharacterOffsetEnd=193 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=194 CharacterOffsetEnd=198 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=199 CharacterOffsetEnd=203 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=waited CharacterOffsetBegin=204 CharacterOffsetEnd=210 PartOfSpeech=VBN Lemma=wait NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=211 CharacterOffsetEnd=214 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=215 CharacterOffsetEnd=219 PartOfSpeech=JJ Lemma=such NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=220 CharacterOffsetEnd=222 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=undisturbed CharacterOffsetBegin=223 CharacterOffsetEnd=234 PartOfSpeech=JJ Lemma=undisturbed NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=235 CharacterOffsetEnd=239 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=239 CharacterOffsetEnd=240 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=241 CharacterOffsetEnd=246 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=247 CharacterOffsetEnd=249 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=plays CharacterOffsetBegin=250 CharacterOffsetEnd=255 PartOfSpeech=VBZ Lemma=play NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=256 CharacterOffsetEnd=258 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=259 CharacterOffsetEnd=262 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=organ CharacterOffsetBegin=263 CharacterOffsetEnd=268 PartOfSpeech=NN Lemma=organ NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=268 CharacterOffsetEnd=269 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP
+      (VP (VBP enjoy)
+        (S
+          (NP (PRP ourselves))
+          (NP (DT every) (NN evening))))
+      (, ,)
+      (CC and)
+      (VP
+        (NP (PRP I))
+        (NP
+          (NP (NN profit))
+          (PP (IN by)
+            (NP (DT the) (NN leisure))))
+        (S
+          (VP (TO to)
+            (VP (VB finish)
+              (PRT (RP up))
+              (NP
+                (NP (JJ old) (JJ Italian) (NNS views))
+                (, ,)
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBP have)
+                      (VP (VBN waited)
+                        (PP (IN for)
+                          (NP
+                            (NP (JJ such) (DT an)
+                              (ADJP (JJ undisturbed))
+                              (NN time))
+                            (, ,)
+                            (SBAR (IN while)
+                              (S
+                                (NP (PRP he))
+                                (VP (VBZ plays)
+                                  (PP (IN on)
+                                    (NP (DT the) (NN organ))))))))))))))))))
+    (. .)))
+
+root(ROOT-0, enjoy-2)
+nsubj(enjoy-2, We-1)
+nsubj(evening-5, ourselves-3)
+det(evening-5, every-4)
+xcomp(enjoy-2, evening-5)
+punct(enjoy-2, ,-6)
+cc(enjoy-2, and-7)
+conj:and(enjoy-2, I-8)
+dobj(I-8, profit-9)
+case(leisure-12, by-10)
+det(leisure-12, the-11)
+nmod:by(profit-9, leisure-12)
+mark(finish-14, to-13)
+advcl:to(I-8, finish-14)
+compound:prt(finish-14, up-15)
+amod(views-18, old-16)
+amod(views-18, Italian-17)
+dobj(finish-14, views-18)
+nsubj(waited-22, views-18)
+punct(views-18, ,-19)
+ref(views-18, that-20)
+aux(waited-22, have-21)
+acl:relcl(views-18, waited-22)
+case(time-27, for-23)
+amod(time-27, such-24)
+det(time-27, an-25)
+amod(time-27, undisturbed-26)
+nmod:for(waited-22, time-27)
+punct(time-27, ,-28)
+mark(plays-31, while-29)
+nsubj(plays-31, he-30)
+acl:relcl(time-27, plays-31)
+case(organ-34, on-32)
+det(organ-34, the-33)
+nmod:on(plays-31, organ-34)
+punct(enjoy-2, .-35)
+
+Coreference set:
+	(2,12,[12,13]) -> (2,2,[2,3]), that is: "our" -> "We"
+	(3,1,[1,2]) -> (2,2,[2,3]), that is: "We" -> "We"
+	(3,3,[3,4]) -> (2,2,[2,3]), that is: "ourselves" -> "We"
+Coreference set:
+	(2,10,[10,11]) -> (2,4,[4,8]), that is: "he" -> "Neukomm in the house"
+	(3,30,[30,31]) -> (2,4,[4,8]), that is: "he" -> "Neukomm in the house"

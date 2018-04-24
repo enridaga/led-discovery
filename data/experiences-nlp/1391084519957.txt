@@ -1,0 +1,354 @@
+Sentence #1 (6 tokens):
+More commemorations, I see!
+[Text=More CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=commemorations CharacterOffsetBegin=5 CharacterOffsetEnd=19 PartOfSpeech=NNS Lemma=commemoration NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=VBP Lemma=see NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RBR More)
+      (NP (NNS commemorations)))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP see))
+    (. !)))
+
+root(ROOT-0, see-5)
+advmod(see-5, More-1)
+nmod:npmod(More-1, commemorations-2)
+punct(see-5, ,-3)
+nsubj(see-5, I-4)
+punct(see-5, !-6)
+
+Sentence #2 (5 tokens):
+… Will it do?
+[Text=... CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=Will CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (FRAG (: ...)
+    (VP (MD Will)
+      (ADVP (PRP it))
+      (VP (VB do)))
+    (. ?)))
+
+root(ROOT-0, do-4)
+punct(do-4, ...-1)
+aux(do-4, Will-2)
+advmod(do-4, it-3)
+punct(do-4, ?-5)
+
+Sentence #3 (9 tokens):
+Shall I go to town to hear it?
+[Text=Shall CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Shall NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=town CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=town NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Shall) (PRP I))
+    (VP (VBP go)
+      (PP (TO to)
+        (NP (NN town)))
+      (S
+        (VP (TO to)
+          (VP (VB hear)
+            (NP (PRP it))))))
+    (. ?)))
+
+root(ROOT-0, go-3)
+nsubj(go-3, Shall-1)
+nsubj:xsubj(hear-7, Shall-1)
+dep(Shall-1, I-2)
+case(town-5, to-4)
+nmod:to(go-3, town-5)
+mark(hear-7, to-6)
+xcomp(go-3, hear-7)
+dobj(hear-7, it-8)
+punct(go-3, ?-9)
+
+Sentence #4 (5 tokens):
+What will be performed?
+[Text=What CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=performed CharacterOffsetBegin=86 CharacterOffsetEnd=95 PartOfSpeech=VBN Lemma=perform NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (MD will)
+        (VP (VB be)
+          (VP (VBN performed)))))
+    (. ?)))
+
+root(ROOT-0, performed-4)
+nsubjpass(performed-4, What-1)
+aux(performed-4, will-2)
+auxpass(performed-4, be-3)
+punct(performed-4, ?-5)
+
+Sentence #5 (8 tokens):
+I was astonished that "Tune yr.
+[Text=I CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=astonished CharacterOffsetBegin=103 CharacterOffsetEnd=113 PartOfSpeech=VBN Lemma=astonish NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=114 CharacterOffsetEnd=118 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Tune CharacterOffsetBegin=120 CharacterOffsetEnd=124 PartOfSpeech=NN Lemma=tune NamedEntityTag=O]
+[Text=yr CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=yr NamedEntityTag=DURATION NormalizedNamedEntityTag=P1Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P1Y">yr</TIMEX3>]
+[Text=. CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBN astonished)
+        (PP (IN that) (`` ``)
+          (NP (NN Tune) (NN yr)))))
+    (. .)))
+
+root(ROOT-0, astonished-3)
+nsubjpass(astonished-3, I-1)
+auxpass(astonished-3, was-2)
+case(yr-7, that-4)
+punct(yr-7, ``-5)
+compound(yr-7, Tune-6)
+nmod:that(astonished-3, yr-7)
+punct(astonished-3, .-8)
+
+Sentence #6 (14 tokens):
+Harps" [from Handel’s Esther] was not admitted last time.
+[Text=Harps CharacterOffsetBegin=129 CharacterOffsetEnd=134 PartOfSpeech=NNS Lemma=harp NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Handel CharacterOffsetBegin=142 CharacterOffsetEnd=148 PartOfSpeech=NNP Lemma=Handel NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=148 CharacterOffsetEnd=150 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Esther CharacterOffsetBegin=151 CharacterOffsetEnd=157 PartOfSpeech=NNP Lemma=Esther NamedEntityTag=PERSON]
+[Text=-RSB- CharacterOffsetBegin=157 CharacterOffsetEnd=158 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=159 CharacterOffsetEnd=162 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=163 CharacterOffsetEnd=166 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=admitted CharacterOffsetBegin=167 CharacterOffsetEnd=175 PartOfSpeech=VBN Lemma=admit NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=176 CharacterOffsetEnd=180 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=181 CharacterOffsetEnd=185 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=185 CharacterOffsetEnd=186 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNS Harps))
+      ('' '')
+      (RRC
+        (ADVP (-LRB- -LSB-))
+        (PP (IN from)
+          (NP
+            (NP (NNP Handel) (POS 's))
+            (NNP Esther))))
+      (-RRB- -RSB-))
+    (VP (VBD was) (RB not)
+      (VP (VBN admitted)
+        (NP-TMP (JJ last) (NN time))))
+    (. .)))
+
+root(ROOT-0, admitted-11)
+nsubjpass(admitted-11, Harps-1)
+punct(Harps-1, ''-2)
+advmod(Esther-7, -LSB--3)
+case(Esther-7, from-4)
+nmod:poss(Esther-7, Handel-5)
+case(Handel-5, 's-6)
+acl:relcl(Harps-1, Esther-7)
+punct(Harps-1, -RSB--8)
+auxpass(admitted-11, was-9)
+neg(admitted-11, not-10)
+amod(time-13, last-12)
+nmod:tmod(admitted-11, time-13)
+punct(admitted-11, .-14)
+
+Sentence #7 (21 tokens):
+There are Chorusses of Handel equally sublime, perhaps, but none that strike me as equally sublime & beautiful.
+[Text=There CharacterOffsetBegin=187 CharacterOffsetEnd=192 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=193 CharacterOffsetEnd=196 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=Chorusses CharacterOffsetBegin=197 CharacterOffsetEnd=206 PartOfSpeech=NNS Lemma=choruss NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=207 CharacterOffsetEnd=209 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Handel CharacterOffsetBegin=210 CharacterOffsetEnd=216 PartOfSpeech=NNP Lemma=Handel NamedEntityTag=PERSON]
+[Text=equally CharacterOffsetBegin=217 CharacterOffsetEnd=224 PartOfSpeech=RB Lemma=equally NamedEntityTag=O]
+[Text=sublime CharacterOffsetBegin=225 CharacterOffsetEnd=232 PartOfSpeech=JJ Lemma=sublime NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=232 CharacterOffsetEnd=233 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=perhaps CharacterOffsetBegin=234 CharacterOffsetEnd=241 PartOfSpeech=RB Lemma=perhaps NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=241 CharacterOffsetEnd=242 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=243 CharacterOffsetEnd=246 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=none CharacterOffsetBegin=247 CharacterOffsetEnd=251 PartOfSpeech=NN Lemma=none NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=252 CharacterOffsetEnd=256 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=strike CharacterOffsetBegin=257 CharacterOffsetEnd=263 PartOfSpeech=VBP Lemma=strike NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=264 CharacterOffsetEnd=266 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=267 CharacterOffsetEnd=269 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=equally CharacterOffsetBegin=270 CharacterOffsetEnd=277 PartOfSpeech=RB Lemma=equally NamedEntityTag=O]
+[Text=sublime CharacterOffsetBegin=278 CharacterOffsetEnd=285 PartOfSpeech=JJ Lemma=sublime NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=286 CharacterOffsetEnd=287 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=beautiful CharacterOffsetBegin=288 CharacterOffsetEnd=297 PartOfSpeech=JJ Lemma=beautiful NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=297 CharacterOffsetEnd=298 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (NNS Chorusses))
+        (PP (IN of)
+          (NP (NNP Handel)))
+        (ADJP (RB equally) (JJ sublime)))
+      (, ,)
+      (ADVP (RB perhaps))
+      (, ,)
+      (PP (CC but)
+        (NP
+          (NP (NN none))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP strike)
+                (NP (PRP me))
+                (PP (IN as)
+                  (NP
+                    (NP (RB equally) (JJ sublime))
+                    (CC &)
+                    (NP (JJ beautiful))))))))))
+    (. .)))
+
+root(ROOT-0, are-2)
+expl(are-2, There-1)
+nsubj(are-2, Chorusses-3)
+case(Handel-5, of-4)
+nmod:of(Chorusses-3, Handel-5)
+advmod(sublime-7, equally-6)
+amod(Chorusses-3, sublime-7)
+punct(are-2, ,-8)
+advmod(are-2, perhaps-9)
+punct(are-2, ,-10)
+case(none-12, but-11)
+nmod:but(are-2, none-12)
+nsubj(strike-14, none-12)
+ref(none-12, that-13)
+acl:relcl(none-12, strike-14)
+dobj(strike-14, me-15)
+case(sublime-18, as-16)
+advmod(sublime-18, equally-17)
+nmod:as(strike-14, sublime-18)
+cc(sublime-18, &-19)
+nmod:as(strike-14, beautiful-20)
+conj:&(sublime-18, beautiful-20)
+punct(are-2, .-21)
+
+Sentence #8 (29 tokens):
+It always appeared to me more angelic, heavenly -- more like my idea of the extemporary counterpoint of celestial spirits — than anything else of the kind.
+[Text=It CharacterOffsetBegin=299 CharacterOffsetEnd=301 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=302 CharacterOffsetEnd=308 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=appeared CharacterOffsetBegin=309 CharacterOffsetEnd=317 PartOfSpeech=VBD Lemma=appear NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=318 CharacterOffsetEnd=320 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=321 CharacterOffsetEnd=323 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=324 CharacterOffsetEnd=328 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=angelic CharacterOffsetBegin=329 CharacterOffsetEnd=336 PartOfSpeech=JJ Lemma=angelic NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=336 CharacterOffsetEnd=337 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=heavenly CharacterOffsetBegin=338 CharacterOffsetEnd=346 PartOfSpeech=JJ Lemma=heavenly NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=347 CharacterOffsetEnd=349 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=350 CharacterOffsetEnd=354 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=355 CharacterOffsetEnd=359 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=360 CharacterOffsetEnd=362 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=idea CharacterOffsetBegin=363 CharacterOffsetEnd=367 PartOfSpeech=NN Lemma=idea NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=368 CharacterOffsetEnd=370 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=371 CharacterOffsetEnd=374 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=extemporary CharacterOffsetBegin=375 CharacterOffsetEnd=386 PartOfSpeech=JJ Lemma=extemporary NamedEntityTag=O]
+[Text=counterpoint CharacterOffsetBegin=387 CharacterOffsetEnd=399 PartOfSpeech=NN Lemma=counterpoint NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=400 CharacterOffsetEnd=402 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=celestial CharacterOffsetBegin=403 CharacterOffsetEnd=412 PartOfSpeech=JJ Lemma=celestial NamedEntityTag=O]
+[Text=spirits CharacterOffsetBegin=413 CharacterOffsetEnd=420 PartOfSpeech=NNS Lemma=spirit NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=421 CharacterOffsetEnd=422 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=423 CharacterOffsetEnd=427 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=428 CharacterOffsetEnd=436 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=else CharacterOffsetBegin=437 CharacterOffsetEnd=441 PartOfSpeech=RB Lemma=else NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=442 CharacterOffsetEnd=444 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=445 CharacterOffsetEnd=448 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=kind CharacterOffsetBegin=449 CharacterOffsetEnd=453 PartOfSpeech=NN Lemma=kind NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=453 CharacterOffsetEnd=454 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB always))
+    (VP (VBD appeared)
+      (PP (TO to)
+        (NP (PRP me)))
+      (ADJP
+        (ADJP (RBR more) (JJ angelic))
+        (, ,)
+        (ADJP
+          (ADJP (JJ heavenly))
+          (PRN (: --)
+            (PP
+              (ADVP (JJR more))
+              (IN like)
+              (NP
+                (NP (PRP$ my) (NN idea))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (JJ extemporary) (NN counterpoint))
+                    (PP (IN of)
+                      (NP (JJ celestial) (NNS spirits)))))))
+            (: --))))
+      (PP (IN than)
+        (NP
+          (NP (NN anything) (RB else))
+          (PP (IN of)
+            (NP (DT the) (NN kind))))))
+    (. .)))
+
+root(ROOT-0, appeared-3)
+nsubj(appeared-3, It-1)
+advmod(appeared-3, always-2)
+case(me-5, to-4)
+nmod:to(appeared-3, me-5)
+advmod(angelic-7, more-6)
+xcomp(appeared-3, angelic-7)
+punct(angelic-7, ,-8)
+dep(angelic-7, heavenly-9)
+punct(idea-14, ---10)
+advmod(idea-14, more-11)
+case(idea-14, like-12)
+nmod:poss(idea-14, my-13)
+dep(heavenly-9, idea-14)
+case(counterpoint-18, of-15)
+det(counterpoint-18, the-16)
+amod(counterpoint-18, extemporary-17)
+nmod:of(idea-14, counterpoint-18)
+case(spirits-21, of-19)
+amod(spirits-21, celestial-20)
+nmod:of(counterpoint-18, spirits-21)
+punct(idea-14, ---22)
+case(anything-24, than-23)
+nmod:than(appeared-3, anything-24)
+advmod(anything-24, else-25)
+case(kind-28, of-26)
+det(kind-28, the-27)
+nmod:of(anything-24, kind-28)
+punct(appeared-3, .-29)
+
+Coreference set:
+	(3,2,[2,3]) -> (1,4,[4,5]), that is: "I" -> "I"
+	(5,1,[1,2]) -> (1,4,[4,5]), that is: "I" -> "I"
+	(7,15,[15,16]) -> (1,4,[4,5]), that is: "me" -> "I"
+	(8,5,[5,6]) -> (1,4,[4,5]), that is: "me" -> "I"
+	(8,13,[13,14]) -> (1,4,[4,5]), that is: "my" -> "I"
+Coreference set:
+	(3,8,[8,9]) -> (3,1,[1,3]), that is: "it" -> "Shall I"
+Coreference set:
+	(7,5,[5,6]) -> (6,5,[5,7]), that is: "Handel" -> "Handel 's"
+Coreference set:
+	(8,1,[1,2]) -> (7,18,[17,19]), that is: "It" -> "equally sublime"

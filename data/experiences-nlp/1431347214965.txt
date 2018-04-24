@@ -1,0 +1,96 @@
+Sentence #1 (29 tokens):
+Her high, thin voice is like a violin with very thin strings; I can't say I care much for her 'Beatrice di Tenda'.
+[Text=Her CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=high CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=JJ Lemma=high NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=thin CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=thin NamedEntityTag=O]
+[Text=voice CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=voice NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=violin CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=violin NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=thin CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=JJ Lemma=thin NamedEntityTag=O]
+[Text=strings CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=NNS Lemma=string NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=care CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=VB Lemma=care NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Beatrice CharacterOffsetBegin=95 CharacterOffsetEnd=103 PartOfSpeech=NNP Lemma=Beatrice NamedEntityTag=PERSON]
+[Text=di CharacterOffsetBegin=104 CharacterOffsetEnd=106 PartOfSpeech=NNP Lemma=di NamedEntityTag=PERSON]
+[Text=Tenda CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=NNP Lemma=Tenda NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP$ Her)
+        (ADJP (JJ high) (, ,) (JJ thin))
+        (NN voice))
+      (VP (VBZ is)
+        (PP (IN like)
+          (NP
+            (NP (DT a) (NN violin))
+            (PP (IN with)
+              (NP
+                (ADJP (RB very) (JJ thin))
+                (NNS strings)))))))
+    (: ;)
+    (S
+      (NP (PRP I))
+      (VP (MD ca) (RB n't)
+        (VP (VB say)
+          (S
+            (NP (PRP I))
+            (VP (VB care)
+              (ADVP (RB much)
+                (PP (IN for)
+                  (NP
+                    (NP (PRP$ her) (`` `) (NNP Beatrice) (NNP di))
+                    (NP (NNP Tenda) (POS '))))))))))
+    (. .)))
+
+root(ROOT-0, violin-9)
+nmod:poss(voice-5, Her-1)
+amod(thin-4, high-2)
+punct(thin-4, ,-3)
+amod(voice-5, thin-4)
+nsubj(violin-9, voice-5)
+cop(violin-9, is-6)
+case(violin-9, like-7)
+det(violin-9, a-8)
+case(strings-13, with-10)
+advmod(thin-12, very-11)
+amod(strings-13, thin-12)
+nmod:with(violin-9, strings-13)
+punct(violin-9, ;-14)
+nsubj(say-18, I-15)
+aux(say-18, ca-16)
+neg(say-18, n't-17)
+parataxis(violin-9, say-18)
+nsubj(care-20, I-19)
+ccomp(say-18, care-20)
+advmod(care-20, much-21)
+case(di-26, for-22)
+nmod:poss(di-26, her-23)
+punct(di-26, `-24)
+compound(di-26, Beatrice-25)
+nmod:for(much-21, di-26)
+nmod:poss(di-26, Tenda-27)
+case(Tenda-27, '-28)
+punct(violin-9, .-29)
+
+Coreference set:
+	(1,27,[27,29]) -> (1,27,[25,28]), that is: "Tenda '" -> "Beatrice di Tenda"
+Coreference set:
+	(1,23,[23,24]) -> (1,1,[1,2]), that is: "her" -> "Her"
+Coreference set:
+	(1,19,[19,20]) -> (1,15,[15,16]), that is: "I" -> "I"

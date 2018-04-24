@@ -1,0 +1,76 @@
+Sentence #1 (15 tokens):
+Go to Bridges for lunch and listen to broadcast performance of his Phantasy Quart.
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Bridges CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Bridges NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=lunch CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=lunch NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=broadcast CharacterOffsetBegin=38 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=broadcast NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=48 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=Phantasy CharacterOffsetBegin=67 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Phantasy NamedEntityTag=O]
+[Text=Quart CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Quart NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP
+      (VP (VB Go)
+        (PP (TO to)
+          (NP (NNP Bridges)))
+        (PP (IN for)
+          (NP (NN lunch))))
+      (CC and)
+      (VP (VB listen)
+        (S
+          (VP (TO to)
+            (VP (VB broadcast)
+              (NP
+                (NP (NN performance))
+                (PP (IN of)
+                  (NP (PRP$ his) (NNP Phantasy) (NNP Quart)))))))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+case(Bridges-3, to-2)
+nmod:to(Go-1, Bridges-3)
+case(lunch-5, for-4)
+nmod:for(Go-1, lunch-5)
+cc(Go-1, and-6)
+conj:and(Go-1, listen-7)
+mark(broadcast-9, to-8)
+xcomp(listen-7, broadcast-9)
+dobj(broadcast-9, performance-10)
+case(Quart-14, of-11)
+nmod:poss(Quart-14, his-12)
+compound(Quart-14, Phantasy-13)
+nmod:of(performance-10, Quart-14)
+punct(Go-1, .-15)
+
+Sentence #2 (7 tokens):
+(Pft-F#)U=*
+[Text=-LRB- CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Pft-F CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=pft-f NamedEntityTag=O]
+[Text=# CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=# Lemma=# NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=U CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=u NamedEntityTag=O]
+[Text== CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=JJ Lemma== NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (-LRB- -LRB-) (NN Pft-F) (# #) (-RRB- -RRB-))
+    (VP (NN U)
+      (ADVP (JJ =))
+      (X (SYM *)))))
+
+root(ROOT-0, U-5)
+punct(Pft-F-2, -LRB--1)
+nsubj(U-5, Pft-F-2)
+dep(Pft-F-2, #-3)
+punct(Pft-F-2, -RRB--4)
+advmod(U-5, =-6)
+dep(U-5, *-7)
+

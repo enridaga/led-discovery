@@ -1,0 +1,337 @@
+Sentence #1 (9 tokens):
+I also did a take-off on Lulu Belle.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=take-off CharacterOffsetBegin=13 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=take-off NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Lulu CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Lulu NamedEntityTag=PERSON]
+[Text=Belle CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Belle NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB also))
+    (VP (VBD did)
+      (NP (DT a) (NN take-off))
+      (PP (IN on)
+        (NP (NNP Lulu) (NNP Belle))))
+    (. .)))
+
+root(ROOT-0, did-3)
+nsubj(did-3, I-1)
+advmod(did-3, also-2)
+det(take-off-5, a-4)
+dobj(did-3, take-off-5)
+case(Belle-8, on-6)
+compound(Belle-8, Lulu-7)
+nmod:on(did-3, Belle-8)
+punct(did-3, .-9)
+
+Sentence #2 (18 tokens):
+That was another Broadway hit, starring Lenore Ulric, that Edward Sheldon and Charles MacArthur wrote.
+[Text=That CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=another CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=another NamedEntityTag=O]
+[Text=Broadway CharacterOffsetBegin=54 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Broadway NamedEntityTag=LOCATION]
+[Text=hit CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=hit NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=starring CharacterOffsetBegin=68 CharacterOffsetEnd=76 PartOfSpeech=VBG Lemma=star NamedEntityTag=O]
+[Text=Lenore CharacterOffsetBegin=77 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=Lenore NamedEntityTag=PERSON]
+[Text=Ulric CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=Ulric NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=Edward CharacterOffsetBegin=96 CharacterOffsetEnd=102 PartOfSpeech=NNP Lemma=Edward NamedEntityTag=PERSON]
+[Text=Sheldon CharacterOffsetBegin=103 CharacterOffsetEnd=110 PartOfSpeech=NNP Lemma=Sheldon NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Charles CharacterOffsetBegin=115 CharacterOffsetEnd=122 PartOfSpeech=NNP Lemma=Charles NamedEntityTag=PERSON]
+[Text=MacArthur CharacterOffsetBegin=123 CharacterOffsetEnd=132 PartOfSpeech=NNP Lemma=MacArthur NamedEntityTag=PERSON]
+[Text=wrote CharacterOffsetBegin=133 CharacterOffsetEnd=138 PartOfSpeech=VBD Lemma=write NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBD was)
+      (NP (DT another) (NNP Broadway) (NN hit))
+      (, ,)
+      (S
+        (VP (VBG starring)
+          (NP
+            (NP (NNP Lenore) (NNP Ulric))
+            (, ,)
+            (SBAR (IN that)
+              (S
+                (NP (NNP Edward) (NNP Sheldon)
+                  (CC and)
+                  (NNP Charles) (NNP MacArthur))
+                (VP (VBD wrote))))))))
+    (. .)))
+
+root(ROOT-0, hit-5)
+nsubj(hit-5, That-1)
+cop(hit-5, was-2)
+det(hit-5, another-3)
+compound(hit-5, Broadway-4)
+punct(hit-5, ,-6)
+advcl(hit-5, starring-7)
+compound(Ulric-9, Lenore-8)
+dobj(starring-7, Ulric-9)
+punct(Ulric-9, ,-10)
+mark(wrote-17, that-11)
+compound(Sheldon-13, Edward-12)
+nsubj(wrote-17, Sheldon-13)
+cc(Sheldon-13, and-14)
+compound(MacArthur-16, Charles-15)
+conj:and(Sheldon-13, MacArthur-16)
+nsubj(wrote-17, MacArthur-16)
+dep(Ulric-9, wrote-17)
+punct(hit-5, .-18)
+
+Sentence #3 (16 tokens):
+I had met David Belasco, with his collar turned backward, who produced it.
+[Text=I CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=142 CharacterOffsetEnd=145 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=met CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=VBN Lemma=meet NamedEntityTag=O]
+[Text=David CharacterOffsetBegin=150 CharacterOffsetEnd=155 PartOfSpeech=NNP Lemma=David NamedEntityTag=PERSON]
+[Text=Belasco CharacterOffsetBegin=156 CharacterOffsetEnd=163 PartOfSpeech=NNP Lemma=Belasco NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=163 CharacterOffsetEnd=164 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=165 CharacterOffsetEnd=169 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=170 CharacterOffsetEnd=173 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=collar CharacterOffsetBegin=174 CharacterOffsetEnd=180 PartOfSpeech=NN Lemma=collar NamedEntityTag=O]
+[Text=turned CharacterOffsetBegin=181 CharacterOffsetEnd=187 PartOfSpeech=VBD Lemma=turn NamedEntityTag=O]
+[Text=backward CharacterOffsetBegin=188 CharacterOffsetEnd=196 PartOfSpeech=RB Lemma=backward NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=198 CharacterOffsetEnd=201 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=produced CharacterOffsetBegin=202 CharacterOffsetEnd=210 PartOfSpeech=VBD Lemma=produce NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=211 CharacterOffsetEnd=213 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=213 CharacterOffsetEnd=214 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD had)
+      (VP (VBN met)
+        (NP
+          (NP (NNP David) (NNP Belasco))
+          (, ,)
+          (PP (IN with)
+            (NP
+              (NP (PRP$ his) (NN collar))
+              (VP (VBD turned)
+                (ADVP (RB backward)))))
+          (, ,)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD produced)
+                (NP (PRP it))))))))
+    (. .)))
+
+root(ROOT-0, met-3)
+nsubj(met-3, I-1)
+aux(met-3, had-2)
+compound(Belasco-5, David-4)
+dobj(met-3, Belasco-5)
+nsubj(produced-14, Belasco-5)
+punct(Belasco-5, ,-6)
+case(collar-9, with-7)
+nmod:poss(collar-9, his-8)
+nmod:with(Belasco-5, collar-9)
+acl(collar-9, turned-10)
+advmod(turned-10, backward-11)
+punct(Belasco-5, ,-12)
+ref(Belasco-5, who-13)
+acl:relcl(Belasco-5, produced-14)
+dobj(produced-14, it-15)
+punct(met-3, .-16)
+
+Sentence #4 (27 tokens):
+In the play Lenore Ulric played a Negro trollop who works her way up to a count and a boudoir in Paris by her diligent whoring.
+[Text=In CharacterOffsetBegin=215 CharacterOffsetEnd=217 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=218 CharacterOffsetEnd=221 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=222 CharacterOffsetEnd=226 PartOfSpeech=NN Lemma=play NamedEntityTag=O]
+[Text=Lenore CharacterOffsetBegin=227 CharacterOffsetEnd=233 PartOfSpeech=NNP Lemma=Lenore NamedEntityTag=PERSON]
+[Text=Ulric CharacterOffsetBegin=234 CharacterOffsetEnd=239 PartOfSpeech=NNP Lemma=Ulric NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=240 CharacterOffsetEnd=246 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=247 CharacterOffsetEnd=248 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Negro CharacterOffsetBegin=249 CharacterOffsetEnd=254 PartOfSpeech=NNP Lemma=Negro NamedEntityTag=MISC]
+[Text=trollop CharacterOffsetBegin=255 CharacterOffsetEnd=262 PartOfSpeech=NN Lemma=trollop NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=263 CharacterOffsetEnd=266 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=works CharacterOffsetBegin=267 CharacterOffsetEnd=272 PartOfSpeech=VBZ Lemma=work NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=273 CharacterOffsetEnd=276 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=277 CharacterOffsetEnd=280 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=281 CharacterOffsetEnd=283 PartOfSpeech=IN Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=284 CharacterOffsetEnd=286 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=287 CharacterOffsetEnd=288 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=count CharacterOffsetBegin=289 CharacterOffsetEnd=294 PartOfSpeech=NN Lemma=count NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=295 CharacterOffsetEnd=298 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=299 CharacterOffsetEnd=300 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=boudoir CharacterOffsetBegin=301 CharacterOffsetEnd=308 PartOfSpeech=NN Lemma=boudoir NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=309 CharacterOffsetEnd=311 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Paris CharacterOffsetBegin=312 CharacterOffsetEnd=317 PartOfSpeech=NNP Lemma=Paris NamedEntityTag=LOCATION]
+[Text=by CharacterOffsetBegin=318 CharacterOffsetEnd=320 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=321 CharacterOffsetEnd=324 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=diligent CharacterOffsetBegin=325 CharacterOffsetEnd=333 PartOfSpeech=JJ Lemma=diligent NamedEntityTag=O]
+[Text=whoring CharacterOffsetBegin=334 CharacterOffsetEnd=341 PartOfSpeech=NN Lemma=whoring NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=341 CharacterOffsetEnd=342 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NN play)))
+    (NP (NNP Lenore) (NNP Ulric))
+    (VP (VBD played)
+      (NP
+        (NP (DT a) (NNP Negro) (NN trollop))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ works)
+              (NP (PRP$ her) (NN way))
+              (ADVP (IN up)
+                (PP (TO to)
+                  (NP
+                    (NP (DT a) (NN count))
+                    (CC and)
+                    (NP (DT a) (NN boudoir)))))))))
+      (PP (IN in)
+        (NP (NNP Paris)))
+      (PP (IN by)
+        (NP (PRP$ her) (JJ diligent) (NN whoring))))
+    (. .)))
+
+root(ROOT-0, played-6)
+case(play-3, In-1)
+det(play-3, the-2)
+nmod:in(played-6, play-3)
+compound(Ulric-5, Lenore-4)
+nsubj(played-6, Ulric-5)
+det(trollop-9, a-7)
+compound(trollop-9, Negro-8)
+dobj(played-6, trollop-9)
+nsubj(works-11, trollop-9)
+ref(trollop-9, who-10)
+acl:relcl(trollop-9, works-11)
+nmod:poss(way-13, her-12)
+dobj(works-11, way-13)
+advmod(works-11, up-14)
+case(count-17, to-15)
+det(count-17, a-16)
+nmod:to(up-14, count-17)
+cc(count-17, and-18)
+det(boudoir-20, a-19)
+nmod:to(up-14, boudoir-20)
+conj:and(count-17, boudoir-20)
+case(Paris-22, in-21)
+nmod:in(played-6, Paris-22)
+case(whoring-26, by-23)
+nmod:poss(whoring-26, her-24)
+amod(whoring-26, diligent-25)
+nmod:by(played-6, whoring-26)
+punct(played-6, .-27)
+
+Sentence #5 (28 tokens):
+In my take-off on Miss Ulric I sang "You Can't Do What the Last Man Did," and this take-off was later in Africana.
+[Text=In CharacterOffsetBegin=343 CharacterOffsetEnd=345 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=346 CharacterOffsetEnd=348 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=take-off CharacterOffsetBegin=349 CharacterOffsetEnd=357 PartOfSpeech=NN Lemma=take-off NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=358 CharacterOffsetEnd=360 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Miss CharacterOffsetBegin=361 CharacterOffsetEnd=365 PartOfSpeech=NNP Lemma=Miss NamedEntityTag=O]
+[Text=Ulric CharacterOffsetBegin=366 CharacterOffsetEnd=371 PartOfSpeech=NNP Lemma=Ulric NamedEntityTag=PERSON]
+[Text=I CharacterOffsetBegin=372 CharacterOffsetEnd=373 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=sang CharacterOffsetBegin=374 CharacterOffsetEnd=378 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=379 CharacterOffsetEnd=380 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=You CharacterOffsetBegin=380 CharacterOffsetEnd=383 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=Ca CharacterOffsetBegin=384 CharacterOffsetEnd=386 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=386 CharacterOffsetEnd=389 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Do CharacterOffsetBegin=390 CharacterOffsetEnd=392 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=What CharacterOffsetBegin=393 CharacterOffsetEnd=397 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=398 CharacterOffsetEnd=401 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Last CharacterOffsetBegin=402 CharacterOffsetEnd=406 PartOfSpeech=JJ Lemma=last NamedEntityTag=MISC]
+[Text=Man CharacterOffsetBegin=407 CharacterOffsetEnd=410 PartOfSpeech=NN Lemma=man NamedEntityTag=MISC]
+[Text=Did CharacterOffsetBegin=411 CharacterOffsetEnd=414 PartOfSpeech=VBD Lemma=do NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=414 CharacterOffsetEnd=415 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=415 CharacterOffsetEnd=416 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=417 CharacterOffsetEnd=420 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=421 CharacterOffsetEnd=425 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=take-off CharacterOffsetBegin=426 CharacterOffsetEnd=434 PartOfSpeech=NN Lemma=take-off NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=435 CharacterOffsetEnd=438 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=later CharacterOffsetBegin=439 CharacterOffsetEnd=444 PartOfSpeech=RB Lemma=later NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=445 CharacterOffsetEnd=447 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Africana CharacterOffsetBegin=448 CharacterOffsetEnd=456 PartOfSpeech=NNP Lemma=Africana NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=456 CharacterOffsetEnd=457 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (PRP$ my) (NN take-off))
+        (PP (IN on)
+          (NP (NNP Miss) (NNP Ulric)))))
+    (NP (PRP I))
+    (VP (VBD sang)
+      (SBAR
+        (S
+          (S (`` ``)
+            (NP (PRP You))
+            (VP (MD Ca) (RB n't)
+              (VP (VB Do)
+                (SBAR
+                  (WHNP (WP What))
+                  (S
+                    (NP (DT the) (JJ Last) (NN Man))
+                    (VP (VBD Did))))))
+            (, ,) ('' ''))
+          (CC and)
+          (S
+            (NP (DT this) (NN take-off))
+            (VP (VBD was)
+              (ADVP (RB later))
+              (PP (IN in)
+                (NP (NNP Africana))))))))
+    (. .)))
+
+root(ROOT-0, sang-8)
+case(take-off-3, In-1)
+nmod:poss(take-off-3, my-2)
+nmod:in(sang-8, take-off-3)
+case(Ulric-6, on-4)
+compound(Ulric-6, Miss-5)
+nmod:on(take-off-3, Ulric-6)
+nsubj(sang-8, I-7)
+punct(Do-13, ``-9)
+nsubj(Do-13, You-10)
+aux(Do-13, Ca-11)
+neg(Do-13, n't-12)
+dep(sang-8, Do-13)
+dobj(Did-18, What-14)
+det(Man-17, the-15)
+amod(Man-17, Last-16)
+nsubj(Did-18, Man-17)
+ccomp(Do-13, Did-18)
+punct(Do-13, ,-19)
+punct(Do-13, ''-20)
+cc(Do-13, and-21)
+det(take-off-23, this-22)
+nsubj(Africana-27, take-off-23)
+cop(Africana-27, was-24)
+advmod(Africana-27, later-25)
+case(Africana-27, in-26)
+dep(sang-8, Africana-27)
+conj:and(Do-13, Africana-27)
+punct(sang-8, .-28)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,1,[1,2]), that is: "That" -> "I"
+	(3,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(5,2,[2,3]) -> (1,1,[1,2]), that is: "my" -> "I"
+	(5,7,[7,8]) -> (1,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(4,5,[4,6]) -> (2,9,[8,10]), that is: "Lenore Ulric" -> "Lenore Ulric"
+	(4,12,[12,13]) -> (2,9,[8,10]), that is: "her" -> "Lenore Ulric"
+	(4,24,[24,25]) -> (2,9,[8,10]), that is: "her" -> "Lenore Ulric"
+	(5,6,[5,7]) -> (2,9,[8,10]), that is: "Miss Ulric" -> "Lenore Ulric"
+Coreference set:
+	(3,8,[8,9]) -> (3,5,[4,6]), that is: "his" -> "David Belasco"
+Coreference set:
+	(3,15,[15,16]) -> (3,9,[8,12]), that is: "it" -> "his collar turned backward"
+Coreference set:
+	(5,23,[22,24]) -> (5,3,[2,7]), that is: "this take-off" -> "my take-off on Miss Ulric"

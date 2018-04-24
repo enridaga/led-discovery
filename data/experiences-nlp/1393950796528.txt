@@ -1,0 +1,94 @@
+Sentence #1 (28 tokens):
+[Beethoven's String Quartet] no.2 in G has a very particular place in my history and I love it only this side of idolatry.
+[Text=-LSB- CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Beethoven CharacterOffsetBegin=1 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=String CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=String NamedEntityTag=O]
+[Text=Quartet CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=quartet NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=no. CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=no. NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=in CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=G CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=g NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=particular CharacterOffsetBegin=50 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=particular NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=history CharacterOffsetBegin=73 CharacterOffsetEnd=80 PartOfSpeech=NN Lemma=history NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=love CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=VBP Lemma=love NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=side CharacterOffsetBegin=105 CharacterOffsetEnd=109 PartOfSpeech=NN Lemma=side NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=idolatry CharacterOffsetBegin=113 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=idolatry NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (-LRB- -LSB-)
+      (NP
+        (NP (NNP Beethoven) (POS 's))
+        (NNP String) (NN Quartet)))
+    (-RRB- -RSB-)
+    (S
+      (NP
+        (NP (NN no.) (CD 2))
+        (PP (IN in)
+          (NP (NN G))))
+      (VP (VBZ has)
+        (NP
+          (NP (DT a)
+            (ADJP (RB very) (JJ particular))
+            (NN place))
+          (PP (IN in)
+            (NP (PRP$ my) (NN history))))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP love)
+        (S
+          (NP (PRP it))
+          (NP
+            (NP (RB only) (DT this) (NN side))
+            (PP (IN of)
+              (NP (NN idolatry)))))))
+    (. .)))
+
+root(ROOT-0, has-11)
+punct(Quartet-5, -LSB--1)
+nmod:poss(Quartet-5, Beethoven-2)
+case(Beethoven-2, 's-3)
+compound(Quartet-5, String-4)
+nmod(has-11, Quartet-5)
+punct(has-11, -RSB--6)
+nsubj(has-11, no.-7)
+nummod(no.-7, 2-8)
+case(G-10, in-9)
+nmod:in(no.-7, G-10)
+det(place-15, a-12)
+advmod(particular-14, very-13)
+amod(place-15, particular-14)
+dobj(has-11, place-15)
+case(history-18, in-16)
+nmod:poss(history-18, my-17)
+nmod:in(place-15, history-18)
+cc(has-11, and-19)
+nsubj(love-21, I-20)
+conj:and(has-11, love-21)
+nsubj(side-25, it-22)
+advmod(side-25, only-23)
+det(side-25, this-24)
+xcomp(love-21, side-25)
+case(idolatry-27, of-26)
+nmod:of(side-25, idolatry-27)
+punct(has-11, .-28)
+
+Coreference set:
+	(1,22,[22,23]) -> (1,5,[2,6]), that is: "it" -> "Beethoven 's String Quartet"
+Coreference set:
+	(1,20,[20,21]) -> (1,17,[17,18]), that is: "I" -> "my"

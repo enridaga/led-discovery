@@ -1,0 +1,89 @@
+Sentence #1 (27 tokens):
+After a long and cheery meal we played bridge and ended the evening at 11.45 with dancing in the kitchen to the music of the gramophone.
+[Text=After CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=long NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=cheery CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=cheery NamedEntityTag=O]
+[Text=meal CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=meal NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=bridge CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=bridge NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=ended CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=VBD Lemma=end NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t1" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=at CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=11.45 CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=CD Lemma=11.45 NamedEntityTag=NUMBER NormalizedNamedEntityTag=11.45]
+[Text=with CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=dancing CharacterOffsetBegin=82 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=dancing NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=kitchen CharacterOffsetBegin=97 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=kitchen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gramophone CharacterOffsetBegin=125 CharacterOffsetEnd=135 PartOfSpeech=NN Lemma=gramophone NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN After)
+      (NP (DT a)
+        (ADJP (JJ long)
+          (CC and)
+          (JJ cheery))
+        (NN meal)))
+    (NP (PRP we))
+    (VP
+      (VP (VBD played)
+        (NP (NN bridge)))
+      (CC and)
+      (VP (VBD ended)
+        (NP-TMP (DT the) (NN evening))
+        (PP (IN at)
+          (NP (CD 11.45)))
+        (PP (IN with)
+          (NP
+            (NP (NN dancing))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN kitchen))
+                (PP (TO to)
+                  (NP
+                    (NP (DT the) (NN music))
+                    (PP (IN of)
+                      (NP (DT the) (NN gramophone)))))))))))
+    (. .)))
+
+root(ROOT-0, played-8)
+case(meal-6, After-1)
+det(meal-6, a-2)
+amod(meal-6, long-3)
+cc(long-3, and-4)
+conj:and(long-3, cheery-5)
+amod(meal-6, cheery-5)
+nmod:after(played-8, meal-6)
+nsubj(played-8, we-7)
+nsubj(ended-11, we-7)
+dobj(played-8, bridge-9)
+cc(played-8, and-10)
+conj:and(played-8, ended-11)
+det(evening-13, the-12)
+nmod:tmod(ended-11, evening-13)
+case(11.45-15, at-14)
+nmod:at(ended-11, 11.45-15)
+case(dancing-17, with-16)
+nmod:with(ended-11, dancing-17)
+case(kitchen-20, in-18)
+det(kitchen-20, the-19)
+nmod:in(dancing-17, kitchen-20)
+case(music-23, to-21)
+det(music-23, the-22)
+nmod:to(kitchen-20, music-23)
+case(gramophone-26, of-24)
+det(gramophone-26, the-25)
+nmod:of(music-23, gramophone-26)
+punct(played-8, .-27)
+

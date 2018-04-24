@@ -1,0 +1,38 @@
+Sentence #1 (11 tokens):
+Went Monday to Donald Collup's stylish if bland recital.
+[Text=Went CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Went NamedEntityTag=O]
+[Text=Monday CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Monday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-1 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-WXX-1">Monday</TIMEX3>]
+[Text=to CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Donald CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Donald NamedEntityTag=PERSON]
+[Text=Collup CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Collup NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=stylish CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=stylish NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=bland CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=JJ Lemma=bland NamedEntityTag=O]
+[Text=recital CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=recital NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Went) (NNP Monday))
+    (PP (TO to)
+      (NP
+        (NP (NNP Donald) (NNP Collup) (POS 's))
+        (ADJP
+          (ADJP (JJ stylish))
+          (IN if)
+          (ADJP (JJ bland)))
+        (NN recital)))
+    (. .)))
+
+root(ROOT-0, Monday-2)
+compound(Monday-2, Went-1)
+case(recital-10, to-3)
+compound(Collup-5, Donald-4)
+nmod:poss(recital-10, Collup-5)
+case(Collup-5, 's-6)
+amod(recital-10, stylish-7)
+dep(stylish-7, if-8)
+dep(stylish-7, bland-9)
+nmod:to(Monday-2, recital-10)
+punct(Monday-2, .-11)
+

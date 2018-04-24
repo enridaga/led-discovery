@@ -1,0 +1,676 @@
+Sentence #1 (28 tokens):
+There were oratorios performing at Drury Lane, under the united management of Mr. Linley, Doctor Arnold, and Madame Mara, who were joint proprietors.
+[Text=There CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=oratorios CharacterOffsetBegin=11 CharacterOffsetEnd=20 PartOfSpeech=NNS Lemma=oratorio NamedEntityTag=O]
+[Text=performing CharacterOffsetBegin=21 CharacterOffsetEnd=31 PartOfSpeech=VBG Lemma=perform NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Drury CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Drury NamedEntityTag=LOCATION]
+[Text=Lane CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Lane NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=united CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=VBN Lemma=unite NamedEntityTag=O]
+[Text=management CharacterOffsetBegin=64 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=management NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Linley CharacterOffsetBegin=82 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=Linley NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Doctor CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=NNP Lemma=Doctor NamedEntityTag=O]
+[Text=Arnold CharacterOffsetBegin=97 CharacterOffsetEnd=103 PartOfSpeech=NNP Lemma=Arnold NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Madame CharacterOffsetBegin=109 CharacterOffsetEnd=115 PartOfSpeech=NNP Lemma=Madame NamedEntityTag=PERSON]
+[Text=Mara CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=NNP Lemma=Mara NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=122 CharacterOffsetEnd=125 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=joint CharacterOffsetBegin=131 CharacterOffsetEnd=136 PartOfSpeech=JJ Lemma=joint NamedEntityTag=O]
+[Text=proprietors CharacterOffsetBegin=137 CharacterOffsetEnd=148 PartOfSpeech=NNS Lemma=proprietor NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD were)
+      (NP
+        (NP (NNS oratorios))
+        (VP (VBG performing)
+          (PP (IN at)
+            (NP (NNP Drury) (NNP Lane)))
+          (, ,)
+          (PP (IN under)
+            (NP (DT the) (VBN united) (NN management))))
+        (PP (IN of)
+          (NP
+            (NP (NNP Mr.) (NNP Linley))
+            (, ,)
+            (NP (NNP Doctor) (NNP Arnold))
+            (, ,)
+            (CC and)
+            (NP (NNP Madame) (NNP Mara))))
+        (, ,)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD were)
+              (NP (JJ joint) (NNS proprietors)))))))
+    (. .)))
+
+root(ROOT-0, were-2)
+expl(were-2, There-1)
+nsubj(were-2, oratorios-3)
+nsubj(proprietors-27, oratorios-3)
+acl(oratorios-3, performing-4)
+case(Lane-7, at-5)
+compound(Lane-7, Drury-6)
+nmod:at(performing-4, Lane-7)
+punct(performing-4, ,-8)
+case(management-12, under-9)
+det(management-12, the-10)
+amod(management-12, united-11)
+nmod:under(performing-4, management-12)
+case(Linley-15, of-13)
+compound(Linley-15, Mr.-14)
+nmod:of(oratorios-3, Linley-15)
+punct(Linley-15, ,-16)
+compound(Arnold-18, Doctor-17)
+nmod:of(oratorios-3, Arnold-18)
+conj:and(Linley-15, Arnold-18)
+punct(Linley-15, ,-19)
+cc(Linley-15, and-20)
+compound(Mara-22, Madame-21)
+nmod:of(oratorios-3, Mara-22)
+conj:and(Linley-15, Mara-22)
+punct(oratorios-3, ,-23)
+ref(oratorios-3, who-24)
+cop(proprietors-27, were-25)
+amod(proprietors-27, joint-26)
+acl:relcl(oratorios-3, proprietors-27)
+punct(were-2, .-28)
+
+Sentence #2 (34 tokens):
+One evening, after the first act of the oratorio, I went into the green-room, where, amongst other ladies, was Madame Mara, to whom I had never spoken.
+[Text=One CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=evening CharacterOffsetBegin=154 CharacterOffsetEnd=161 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t1" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=, CharacterOffsetBegin=161 CharacterOffsetEnd=162 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=163 CharacterOffsetEnd=168 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=169 CharacterOffsetEnd=172 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=173 CharacterOffsetEnd=178 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=act CharacterOffsetBegin=179 CharacterOffsetEnd=182 PartOfSpeech=NN Lemma=act NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=183 CharacterOffsetEnd=185 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=186 CharacterOffsetEnd=189 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=oratorio CharacterOffsetBegin=190 CharacterOffsetEnd=198 PartOfSpeech=NN Lemma=oratorio NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=198 CharacterOffsetEnd=199 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=200 CharacterOffsetEnd=201 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=202 CharacterOffsetEnd=206 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=207 CharacterOffsetEnd=211 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=212 CharacterOffsetEnd=215 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=green-room CharacterOffsetBegin=216 CharacterOffsetEnd=226 PartOfSpeech=NN Lemma=green-room NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=226 CharacterOffsetEnd=227 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=228 CharacterOffsetEnd=233 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=233 CharacterOffsetEnd=234 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=amongst CharacterOffsetBegin=235 CharacterOffsetEnd=242 PartOfSpeech=IN Lemma=amongst NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=243 CharacterOffsetEnd=248 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=ladies CharacterOffsetBegin=249 CharacterOffsetEnd=255 PartOfSpeech=NNS Lemma=lady NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=255 CharacterOffsetEnd=256 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=Madame CharacterOffsetBegin=261 CharacterOffsetEnd=267 PartOfSpeech=NNP Lemma=Madame NamedEntityTag=PERSON]
+[Text=Mara CharacterOffsetBegin=268 CharacterOffsetEnd=272 PartOfSpeech=NNP Lemma=Mara NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=272 CharacterOffsetEnd=273 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=274 CharacterOffsetEnd=276 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=whom CharacterOffsetBegin=277 CharacterOffsetEnd=281 PartOfSpeech=WP Lemma=whom NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=282 CharacterOffsetEnd=283 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=284 CharacterOffsetEnd=287 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=288 CharacterOffsetEnd=293 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=spoken CharacterOffsetBegin=294 CharacterOffsetEnd=300 PartOfSpeech=VBN Lemma=speak NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=300 CharacterOffsetEnd=301 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (CD One) (NN evening))
+    (, ,)
+    (PP (IN after)
+      (NP
+        (NP (DT the) (JJ first) (NN act))
+        (PP (IN of)
+          (NP (DT the) (NN oratorio)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD went)
+      (PP (IN into)
+        (NP
+          (NP (DT the) (NN green-room))
+          (, ,)
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (PRN (, ,)
+                (PP (IN amongst)
+                  (NP (JJ other) (NNS ladies)))
+                (, ,))
+              (VP (VBD was)
+                (NP
+                  (NP (NNP Madame) (NNP Mara))
+                  (, ,)
+                  (SBAR
+                    (WHPP (TO to)
+                      (WHNP (WP whom)))
+                    (S
+                      (NP (PRP I))
+                      (VP (VBD had)
+                        (ADVP (RB never))
+                        (VP (VBN spoken))))))))))))
+    (. .)))
+
+root(ROOT-0, went-13)
+nummod(evening-2, One-1)
+nmod:tmod(went-13, evening-2)
+punct(went-13, ,-3)
+case(act-7, after-4)
+det(act-7, the-5)
+amod(act-7, first-6)
+nmod:after(went-13, act-7)
+case(oratorio-10, of-8)
+det(oratorio-10, the-9)
+nmod:of(act-7, oratorio-10)
+punct(went-13, ,-11)
+nsubj(went-13, I-12)
+case(green-room-16, into-14)
+det(green-room-16, the-15)
+nmod:into(went-13, green-room-16)
+nmod:to(spoken-33, green-room-16)
+punct(green-room-16, ,-17)
+advmod(Mara-26, where-18)
+punct(ladies-22, ,-19)
+case(ladies-22, amongst-20)
+amod(ladies-22, other-21)
+dep(Mara-26, ladies-22)
+punct(ladies-22, ,-23)
+cop(Mara-26, was-24)
+compound(Mara-26, Madame-25)
+acl:relcl(green-room-16, Mara-26)
+nmod:to(spoken-33, Mara-26)
+punct(Mara-26, ,-27)
+case(whom-29, to-28)
+ref(green-room-16, whom-29)
+ref(Mara-26, whom-29)
+nsubj(spoken-33, I-30)
+aux(spoken-33, had-31)
+neg(spoken-33, never-32)
+acl:relcl(Mara-26, spoken-33)
+punct(went-13, .-34)
+
+Sentence #3 (22 tokens):
+Doctor Arnold said, " Pray, Mr. Kelly, tell us what sort of a singer is Signora Storace ?"
+[Text=Doctor CharacterOffsetBegin=302 CharacterOffsetEnd=308 PartOfSpeech=NN Lemma=doctor NamedEntityTag=O]
+[Text=Arnold CharacterOffsetBegin=309 CharacterOffsetEnd=315 PartOfSpeech=NNP Lemma=Arnold NamedEntityTag=PERSON]
+[Text=said CharacterOffsetBegin=316 CharacterOffsetEnd=320 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=320 CharacterOffsetEnd=321 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=322 CharacterOffsetEnd=323 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=Pray CharacterOffsetBegin=324 CharacterOffsetEnd=328 PartOfSpeech=NNP Lemma=Pray NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=328 CharacterOffsetEnd=329 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=330 CharacterOffsetEnd=333 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Kelly CharacterOffsetBegin=334 CharacterOffsetEnd=339 PartOfSpeech=NNP Lemma=Kelly NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=339 CharacterOffsetEnd=340 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=tell CharacterOffsetBegin=341 CharacterOffsetEnd=345 PartOfSpeech=VBP Lemma=tell NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=346 CharacterOffsetEnd=348 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=349 CharacterOffsetEnd=353 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=sort CharacterOffsetBegin=354 CharacterOffsetEnd=358 PartOfSpeech=NN Lemma=sort NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=359 CharacterOffsetEnd=361 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=362 CharacterOffsetEnd=363 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=singer CharacterOffsetBegin=364 CharacterOffsetEnd=370 PartOfSpeech=NN Lemma=singer NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=371 CharacterOffsetEnd=373 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Signora CharacterOffsetBegin=374 CharacterOffsetEnd=381 PartOfSpeech=NNP Lemma=Signora NamedEntityTag=PERSON]
+[Text=Storace CharacterOffsetBegin=382 CharacterOffsetEnd=389 PartOfSpeech=NNP Lemma=Storace NamedEntityTag=PERSON]
+[Text=? CharacterOffsetBegin=390 CharacterOffsetEnd=391 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=391 CharacterOffsetEnd=392 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NN Doctor) (NNP Arnold))
+      (VP (VBD said)))
+    (, ,) ('' '')
+    (NP
+      (NP (NNP Pray))
+      (, ,)
+      (NP (NNP Mr.) (NNP Kelly))
+      (, ,))
+    (VP (VBP tell)
+      (NP (PRP us))
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP
+            (NP (NN sort))
+            (PP (IN of)
+              (NP (DT a) (NN singer))))
+          (VP (VBZ is)
+            (NP (NNP Signora) (NNP Storace))))))
+    (. ?) ('' '')))
+
+root(ROOT-0, tell-11)
+compound(Arnold-2, Doctor-1)
+nsubj(said-3, Arnold-2)
+ccomp(tell-11, said-3)
+punct(tell-11, ,-4)
+punct(tell-11, ''-5)
+nsubj(tell-11, Pray-6)
+punct(Pray-6, ,-7)
+compound(Kelly-9, Mr.-8)
+appos(Pray-6, Kelly-9)
+punct(Pray-6, ,-10)
+dobj(tell-11, us-12)
+dobj(Storace-20, what-13)
+nsubj(Storace-20, sort-14)
+case(singer-17, of-15)
+det(singer-17, a-16)
+nmod:of(sort-14, singer-17)
+cop(Storace-20, is-18)
+compound(Storace-20, Signora-19)
+ccomp(tell-11, Storace-20)
+punct(tell-11, ?-21)
+punct(tell-11, ''-22)
+
+Sentence #4 (15 tokens):
+I replied that, in my opinion she was the best singer in Europe.
+[Text=I CharacterOffsetBegin=393 CharacterOffsetEnd=394 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=replied CharacterOffsetBegin=395 CharacterOffsetEnd=402 PartOfSpeech=VBD Lemma=reply NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=403 CharacterOffsetEnd=407 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=407 CharacterOffsetEnd=408 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=409 CharacterOffsetEnd=411 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=412 CharacterOffsetEnd=414 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=opinion CharacterOffsetBegin=415 CharacterOffsetEnd=422 PartOfSpeech=NN Lemma=opinion NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=423 CharacterOffsetEnd=426 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=427 CharacterOffsetEnd=430 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=431 CharacterOffsetEnd=434 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=435 CharacterOffsetEnd=439 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=singer CharacterOffsetBegin=440 CharacterOffsetEnd=446 PartOfSpeech=NN Lemma=singer NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=447 CharacterOffsetEnd=449 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Europe CharacterOffsetBegin=450 CharacterOffsetEnd=456 PartOfSpeech=NNP Lemma=Europe NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=456 CharacterOffsetEnd=457 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD replied)
+      (SBAR (IN that) (, ,)
+        (S
+          (PP (IN in)
+            (NP (PRP$ my) (NN opinion)))
+          (NP (PRP she))
+          (VP (VBD was)
+            (NP
+              (NP (DT the) (JJS best) (NN singer))
+              (PP (IN in)
+                (NP (NNP Europe))))))))
+    (. .)))
+
+root(ROOT-0, replied-2)
+nsubj(replied-2, I-1)
+mark(singer-12, that-3)
+punct(singer-12, ,-4)
+case(opinion-7, in-5)
+nmod:poss(opinion-7, my-6)
+nmod:in(singer-12, opinion-7)
+nsubj(singer-12, she-8)
+cop(singer-12, was-9)
+det(singer-12, the-10)
+amod(singer-12, best-11)
+ccomp(replied-2, singer-12)
+case(Europe-14, in-13)
+nmod:in(singer-12, Europe-14)
+punct(replied-2, .-15)
+
+Sentence #5 (52 tokens):
+I meant, of course, in her line ; but, as it proved afterwards, Madame 
+Mara was highly offended at the praise which I had given to my friend, and said to a lady, when I quitted the green-room, that I was an impertinent coxcomb.
+[Text=I CharacterOffsetBegin=458 CharacterOffsetEnd=459 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=meant CharacterOffsetBegin=460 CharacterOffsetEnd=465 PartOfSpeech=VBD Lemma=mean NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=465 CharacterOffsetEnd=466 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=467 CharacterOffsetEnd=469 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=470 CharacterOffsetEnd=476 PartOfSpeech=NN Lemma=course NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=476 CharacterOffsetEnd=477 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=478 CharacterOffsetEnd=480 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=481 CharacterOffsetEnd=484 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=line CharacterOffsetBegin=485 CharacterOffsetEnd=489 PartOfSpeech=NN Lemma=line NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=490 CharacterOffsetEnd=491 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=492 CharacterOffsetEnd=495 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=495 CharacterOffsetEnd=496 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=497 CharacterOffsetEnd=499 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=500 CharacterOffsetEnd=502 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=proved CharacterOffsetBegin=503 CharacterOffsetEnd=509 PartOfSpeech=VBD Lemma=prove NamedEntityTag=O]
+[Text=afterwards CharacterOffsetBegin=510 CharacterOffsetEnd=520 PartOfSpeech=RB Lemma=afterwards NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=520 CharacterOffsetEnd=521 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Madame CharacterOffsetBegin=522 CharacterOffsetEnd=528 PartOfSpeech=NNP Lemma=Madame NamedEntityTag=PERSON]
+[Text=Mara CharacterOffsetBegin=531 CharacterOffsetEnd=535 PartOfSpeech=NNP Lemma=Mara NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=536 CharacterOffsetEnd=539 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=highly CharacterOffsetBegin=540 CharacterOffsetEnd=546 PartOfSpeech=RB Lemma=highly NamedEntityTag=O]
+[Text=offended CharacterOffsetBegin=547 CharacterOffsetEnd=555 PartOfSpeech=VBN Lemma=offend NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=556 CharacterOffsetEnd=558 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=559 CharacterOffsetEnd=562 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=praise CharacterOffsetBegin=563 CharacterOffsetEnd=569 PartOfSpeech=NN Lemma=praise NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=570 CharacterOffsetEnd=575 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=576 CharacterOffsetEnd=577 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=578 CharacterOffsetEnd=581 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=given CharacterOffsetBegin=582 CharacterOffsetEnd=587 PartOfSpeech=VBN Lemma=give NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=588 CharacterOffsetEnd=590 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=591 CharacterOffsetEnd=593 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=friend CharacterOffsetBegin=594 CharacterOffsetEnd=600 PartOfSpeech=NN Lemma=friend NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=600 CharacterOffsetEnd=601 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=602 CharacterOffsetEnd=605 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=606 CharacterOffsetEnd=610 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=611 CharacterOffsetEnd=613 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=614 CharacterOffsetEnd=615 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lady CharacterOffsetBegin=616 CharacterOffsetEnd=620 PartOfSpeech=NN Lemma=lady NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=620 CharacterOffsetEnd=621 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=622 CharacterOffsetEnd=626 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=627 CharacterOffsetEnd=628 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=quitted CharacterOffsetBegin=629 CharacterOffsetEnd=636 PartOfSpeech=VBD Lemma=quit NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=637 CharacterOffsetEnd=640 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=green-room CharacterOffsetBegin=641 CharacterOffsetEnd=651 PartOfSpeech=NN Lemma=green-room NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=651 CharacterOffsetEnd=652 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=653 CharacterOffsetEnd=657 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=658 CharacterOffsetEnd=659 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=660 CharacterOffsetEnd=663 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=664 CharacterOffsetEnd=666 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=impertinent CharacterOffsetBegin=667 CharacterOffsetEnd=678 PartOfSpeech=JJ Lemma=impertinent NamedEntityTag=O]
+[Text=coxcomb CharacterOffsetBegin=679 CharacterOffsetEnd=686 PartOfSpeech=NN Lemma=coxcomb NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=686 CharacterOffsetEnd=687 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD meant) (, ,)
+        (PP (IN of)
+          (NP (NN course)))
+        (, ,)
+        (PP (IN in)
+          (NP (PRP$ her) (NN line)))))
+    (: ;)
+    (S (CC but)
+      (, ,)
+      (SBAR (IN as)
+        (S
+          (NP (PRP it))
+          (VP (VBD proved)
+            (ADVP (RB afterwards)))))
+      (, ,)
+      (NP (NNP Madame) (NNP Mara))
+      (VP (VBD was)
+        (ADVP (RB highly))
+        (VP (VBN offended)
+          (PP (IN at)
+            (NP
+              (NP (DT the) (NN praise))
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (NP (PRP I))
+                  (VP
+                    (VP (VBD had)
+                      (VP (VBN given)
+                        (PP (TO to)
+                          (NP (PRP$ my) (NN friend)))))
+                    (, ,)
+                    (CC and)
+                    (VP (VBD said)
+                      (PP (TO to)
+                        (NP
+                          (NP (DT a) (NN lady))
+                          (, ,)
+                          (SBAR
+                            (WHADVP (WRB when))
+                            (S
+                              (NP (PRP I))
+                              (VP (VBD quitted)
+                                (NP (DT the) (NN green-room))
+                                (, ,)
+                                (SBAR (IN that)
+                                  (S
+                                    (NP (PRP I))
+                                    (VP (VBD was)
+                                      (NP (DT an) (JJ impertinent) (NN coxcomb)))))))))))))))))))
+    (. .)))
+
+root(ROOT-0, meant-2)
+nsubj(meant-2, I-1)
+punct(meant-2, ,-3)
+case(course-5, of-4)
+nmod:of(meant-2, course-5)
+punct(meant-2, ,-6)
+case(line-9, in-7)
+nmod:poss(line-9, her-8)
+nmod:in(meant-2, line-9)
+punct(meant-2, ;-10)
+cc(offended-22, but-11)
+punct(offended-22, ,-12)
+mark(proved-15, as-13)
+nsubj(proved-15, it-14)
+advcl:as(offended-22, proved-15)
+advmod(proved-15, afterwards-16)
+punct(offended-22, ,-17)
+compound(Mara-19, Madame-18)
+nsubjpass(offended-22, Mara-19)
+auxpass(offended-22, was-20)
+advmod(offended-22, highly-21)
+parataxis(meant-2, offended-22)
+case(praise-25, at-23)
+det(praise-25, the-24)
+nmod:at(offended-22, praise-25)
+dobj(given-29, praise-25)
+ref(praise-25, which-26)
+nsubj(given-29, I-27)
+nsubj(said-35, I-27)
+aux(given-29, had-28)
+acl:relcl(praise-25, given-29)
+case(friend-32, to-30)
+nmod:poss(friend-32, my-31)
+nmod:to(given-29, friend-32)
+punct(given-29, ,-33)
+cc(given-29, and-34)
+acl:relcl(praise-25, said-35)
+conj:and(given-29, said-35)
+case(lady-38, to-36)
+det(lady-38, a-37)
+nmod:to(said-35, lady-38)
+mark(coxcomb-51, lady-38)
+punct(lady-38, ,-39)
+advmod(quitted-42, when-40)
+nsubj(quitted-42, I-41)
+acl:relcl(lady-38, quitted-42)
+det(green-room-44, the-43)
+dobj(quitted-42, green-room-44)
+punct(quitted-42, ,-45)
+ref(lady-38, that-46)
+nsubj(coxcomb-51, I-47)
+cop(coxcomb-51, was-48)
+det(coxcomb-51, an-49)
+amod(coxcomb-51, impertinent-50)
+ccomp(quitted-42, coxcomb-51)
+punct(meant-2, .-52)
+
+Sentence #6 (46 tokens):
+I then knew nothing of Madame Mara, nor at that time valued her 
+good opinion ; however, she carried her resentment so far against me, that she afterwards declared she would not sing where I did, if she could avoid it.
+[Text=I CharacterOffsetBegin=688 CharacterOffsetEnd=689 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=690 CharacterOffsetEnd=694 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=knew CharacterOffsetBegin=695 CharacterOffsetEnd=699 PartOfSpeech=VBD Lemma=know NamedEntityTag=O]
+[Text=nothing CharacterOffsetBegin=700 CharacterOffsetEnd=707 PartOfSpeech=NN Lemma=nothing NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=708 CharacterOffsetEnd=710 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Madame CharacterOffsetBegin=711 CharacterOffsetEnd=717 PartOfSpeech=NNP Lemma=Madame NamedEntityTag=PERSON]
+[Text=Mara CharacterOffsetBegin=718 CharacterOffsetEnd=722 PartOfSpeech=NNP Lemma=Mara NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=722 CharacterOffsetEnd=723 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=nor CharacterOffsetBegin=724 CharacterOffsetEnd=727 PartOfSpeech=CC Lemma=nor NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=728 CharacterOffsetEnd=730 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=731 CharacterOffsetEnd=735 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=736 CharacterOffsetEnd=740 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=valued CharacterOffsetBegin=741 CharacterOffsetEnd=747 PartOfSpeech=VBN Lemma=value NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=748 CharacterOffsetEnd=751 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=754 CharacterOffsetEnd=758 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=opinion CharacterOffsetBegin=759 CharacterOffsetEnd=766 PartOfSpeech=NN Lemma=opinion NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=767 CharacterOffsetEnd=768 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=however CharacterOffsetBegin=769 CharacterOffsetEnd=776 PartOfSpeech=RB Lemma=however NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=776 CharacterOffsetEnd=777 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=778 CharacterOffsetEnd=781 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=carried CharacterOffsetBegin=782 CharacterOffsetEnd=789 PartOfSpeech=VBD Lemma=carry NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=790 CharacterOffsetEnd=793 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=resentment CharacterOffsetBegin=794 CharacterOffsetEnd=804 PartOfSpeech=NN Lemma=resentment NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=805 CharacterOffsetEnd=807 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=far CharacterOffsetBegin=808 CharacterOffsetEnd=811 PartOfSpeech=RB Lemma=far NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=812 CharacterOffsetEnd=819 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=820 CharacterOffsetEnd=822 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=822 CharacterOffsetEnd=823 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=824 CharacterOffsetEnd=828 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=829 CharacterOffsetEnd=832 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=afterwards CharacterOffsetBegin=833 CharacterOffsetEnd=843 PartOfSpeech=RB Lemma=afterwards NamedEntityTag=O]
+[Text=declared CharacterOffsetBegin=844 CharacterOffsetEnd=852 PartOfSpeech=VBD Lemma=declare NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=853 CharacterOffsetEnd=856 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=857 CharacterOffsetEnd=862 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=863 CharacterOffsetEnd=866 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=sing CharacterOffsetBegin=867 CharacterOffsetEnd=871 PartOfSpeech=VB Lemma=sing NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=872 CharacterOffsetEnd=877 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=878 CharacterOffsetEnd=879 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=880 CharacterOffsetEnd=883 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=883 CharacterOffsetEnd=884 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=885 CharacterOffsetEnd=887 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=888 CharacterOffsetEnd=891 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=892 CharacterOffsetEnd=897 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=avoid CharacterOffsetBegin=898 CharacterOffsetEnd=903 PartOfSpeech=VB Lemma=avoid NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=904 CharacterOffsetEnd=906 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=906 CharacterOffsetEnd=907 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (ADVP (RB then))
+      (VP
+        (VP (VBD knew)
+          (NP
+            (NP (NN nothing))
+            (PP (IN of)
+              (NP (NNP Madame) (NNP Mara)))))
+        (, ,)
+        (CC nor)
+        (ADVP (IN at)
+          (NP (DT that) (NN time)))
+        (VP (VBN valued)
+          (NP (PRP$ her) (JJ good) (NN opinion)))))
+    (: ;)
+    (S
+      (ADVP (RB however))
+      (, ,)
+      (NP (PRP she))
+      (VP (VBD carried)
+        (NP (PRP$ her) (NN resentment))
+        (ADVP
+          (ADVP (RB so) (RB far))
+          (PP (IN against)
+            (NP (PRP me))))
+        (, ,)
+        (SBAR (IN that)
+          (S
+            (NP (PRP she))
+            (ADVP (RB afterwards))
+            (VP (VBD declared)
+              (SBAR
+                (S
+                  (NP (PRP she))
+                  (VP (MD would) (RB not)
+                    (VP (VB sing)
+                      (SBAR
+                        (WHADVP (WRB where))
+                        (S
+                          (NP (PRP I))
+                          (VP (VBD did)))))))))))
+        (, ,)
+        (SBAR (IN if)
+          (S
+            (NP (PRP she))
+            (VP (MD could)
+              (VP (VB avoid)
+                (NP (PRP it))))))))
+    (. .)))
+
+root(ROOT-0, knew-3)
+nsubj(knew-3, I-1)
+nsubj(valued-13, I-1)
+advmod(knew-3, then-2)
+dobj(knew-3, nothing-4)
+case(Mara-7, of-5)
+compound(Mara-7, Madame-6)
+nmod:of(nothing-4, Mara-7)
+punct(knew-3, ,-8)
+cc(knew-3, nor-9)
+case(time-12, at-10)
+det(time-12, that-11)
+advmod(knew-3, time-12)
+conj:nor(knew-3, valued-13)
+nmod:poss(opinion-16, her-14)
+amod(opinion-16, good-15)
+dobj(valued-13, opinion-16)
+punct(knew-3, ;-17)
+advmod(carried-21, however-18)
+punct(carried-21, ,-19)
+nsubj(carried-21, she-20)
+parataxis(knew-3, carried-21)
+nmod:poss(resentment-23, her-22)
+dobj(carried-21, resentment-23)
+advmod(far-25, so-24)
+advmod(carried-21, far-25)
+case(me-27, against-26)
+nmod:against(far-25, me-27)
+punct(carried-21, ,-28)
+mark(declared-32, that-29)
+nsubj(declared-32, she-30)
+advmod(declared-32, afterwards-31)
+ccomp(carried-21, declared-32)
+nsubj(sing-36, she-33)
+aux(sing-36, would-34)
+neg(sing-36, not-35)
+ccomp(declared-32, sing-36)
+advmod(did-39, where-37)
+nsubj(did-39, I-38)
+advcl(sing-36, did-39)
+punct(carried-21, ,-40)
+mark(avoid-44, if-41)
+nsubj(avoid-44, she-42)
+aux(avoid-44, could-43)
+advcl:if(carried-21, avoid-44)
+dobj(avoid-44, it-45)
+punct(knew-3, .-46)
+
+Coreference set:
+	(2,26,[25,34]) -> (1,22,[21,23]), that is: "Madame Mara , to whom I had never spoken" -> "Madame Mara"
+	(2,26,[25,27]) -> (1,22,[21,23]), that is: "Madame Mara" -> "Madame Mara"
+	(5,19,[18,20]) -> (1,22,[21,23]), that is: "Madame Mara" -> "Madame Mara"
+	(6,7,[6,8]) -> (1,22,[21,23]), that is: "Madame Mara" -> "Madame Mara"
+	(6,14,[14,15]) -> (1,22,[21,23]), that is: "her" -> "Madame Mara"
+	(6,20,[20,21]) -> (1,22,[21,23]), that is: "she" -> "Madame Mara"
+	(6,22,[22,23]) -> (1,22,[21,23]), that is: "her" -> "Madame Mara"
+	(6,30,[30,31]) -> (1,22,[21,23]), that is: "she" -> "Madame Mara"
+	(6,33,[33,34]) -> (1,22,[21,23]), that is: "she" -> "Madame Mara"
+	(6,42,[42,43]) -> (1,22,[21,23]), that is: "she" -> "Madame Mara"
+Coreference set:
+	(3,2,[1,3]) -> (1,18,[17,19]), that is: "Doctor Arnold" -> "Doctor Arnold"
+Coreference set:
+	(2,12,[12,13]) -> (5,51,[49,52]), that is: "I" -> "an impertinent coxcomb"
+	(2,30,[30,31]) -> (5,51,[49,52]), that is: "I" -> "an impertinent coxcomb"
+	(4,1,[1,2]) -> (5,51,[49,52]), that is: "I" -> "an impertinent coxcomb"
+	(4,6,[6,7]) -> (5,51,[49,52]), that is: "my" -> "an impertinent coxcomb"
+	(5,1,[1,2]) -> (5,51,[49,52]), that is: "I" -> "an impertinent coxcomb"
+	(5,27,[27,28]) -> (5,51,[49,52]), that is: "I" -> "an impertinent coxcomb"
+	(5,31,[31,32]) -> (5,51,[49,52]), that is: "my" -> "an impertinent coxcomb"
+	(5,41,[41,42]) -> (5,51,[49,52]), that is: "I" -> "an impertinent coxcomb"
+	(5,47,[47,48]) -> (5,51,[49,52]), that is: "I" -> "an impertinent coxcomb"
+	(6,1,[1,2]) -> (5,51,[49,52]), that is: "I" -> "an impertinent coxcomb"
+	(6,27,[27,28]) -> (5,51,[49,52]), that is: "me" -> "an impertinent coxcomb"
+	(6,38,[38,39]) -> (5,51,[49,52]), that is: "I" -> "an impertinent coxcomb"
+Coreference set:
+	(2,16,[15,17]) -> (2,16,[15,34]), that is: "the green-room" -> "the green-room , where , amongst other ladies , was Madame Mara , to whom I had never spoken"
+	(5,44,[43,45]) -> (2,16,[15,34]), that is: "the green-room" -> "the green-room , where , amongst other ladies , was Madame Mara , to whom I had never spoken"
+Coreference set:
+	(3,17,[16,18]) -> (4,12,[10,15]), that is: "a singer" -> "the best singer in Europe"
+	(4,8,[8,9]) -> (4,12,[10,15]), that is: "she" -> "the best singer in Europe"
+	(5,8,[8,9]) -> (4,12,[10,15]), that is: "her" -> "the best singer in Europe"
+Coreference set:
+	(5,14,[14,15]) -> (5,9,[8,10]), that is: "it" -> "her line"
+Coreference set:
+	(6,45,[45,46]) -> (6,23,[22,24]), that is: "it" -> "her resentment"

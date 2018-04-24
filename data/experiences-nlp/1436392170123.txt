@@ -1,0 +1,157 @@
+Sentence #1 (6 tokens):
+Barbra Streisand "special".
+[Text=Barbra CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Barbra NamedEntityTag=O]
+[Text=Streisand CharacterOffsetBegin=7 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Streisand NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=special CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=JJ Lemma=special NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Barbra) (NNP Streisand))
+    (ADJP (`` ``) (JJ special) ('' ''))
+    (. .)))
+
+root(ROOT-0, special-4)
+compound(Streisand-2, Barbra-1)
+dep(special-4, Streisand-2)
+punct(special-4, ``-3)
+punct(special-4, ''-5)
+punct(special-4, .-6)
+
+Sentence #2 (3 tokens):
+Many mistakes.
+[Text=Many CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=mistakes CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=NNS Lemma=mistake NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (JJ Many) (NNS mistakes))
+    (. .)))
+
+root(ROOT-0, mistakes-2)
+amod(mistakes-2, Many-1)
+punct(mistakes-2, .-3)
+
+Sentence #3 (13 tokens):
+Plays with her hair too much, distracting us from the song.
+[Text=Plays CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Plays NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=hair CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=hair NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=distracting CharacterOffsetBegin=73 CharacterOffsetEnd=84 PartOfSpeech=VBG Lemma=distract NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=song CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=song NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Plays))
+      (PP (IN with)
+        (NP (PRP$ her) (NN hair))))
+    (ADJP (RB too) (RB much))
+    (, ,)
+    (VP (VBG distracting)
+      (NP (PRP us)))
+    (PP (IN from)
+      (NP (DT the) (NN song)))
+    (. .)))
+
+root(ROOT-0, Plays-1)
+case(hair-4, with-2)
+nmod:poss(hair-4, her-3)
+nmod:with(Plays-1, hair-4)
+advmod(much-6, too-5)
+amod(Plays-1, much-6)
+punct(Plays-1, ,-7)
+acl(Plays-1, distracting-8)
+dobj(distracting-8, us-9)
+case(song-12, from-10)
+det(song-12, the-11)
+nmod:from(Plays-1, song-12)
+punct(Plays-1, .-13)
+
+Sentence #4 (3 tokens):
+Reptilian fingernails.
+[Text=Reptilian CharacterOffsetBegin=103 CharacterOffsetEnd=112 PartOfSpeech=JJ Lemma=reptilian NamedEntityTag=MISC]
+[Text=fingernails CharacterOffsetBegin=113 CharacterOffsetEnd=124 PartOfSpeech=NNS Lemma=fingernail NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (JJ Reptilian) (NNS fingernails))
+    (. .)))
+
+root(ROOT-0, fingernails-2)
+amod(fingernails-2, Reptilian-1)
+punct(fingernails-2, .-3)
+
+Sentence #5 (18 tokens):
+Gives no credit to any songwriter, lest, it would seem, her charisma be deflected.
+[Text=Gives CharacterOffsetBegin=126 CharacterOffsetEnd=131 PartOfSpeech=VBZ Lemma=give NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=credit CharacterOffsetBegin=135 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=credit NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=142 CharacterOffsetEnd=144 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=145 CharacterOffsetEnd=148 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=songwriter CharacterOffsetBegin=149 CharacterOffsetEnd=159 PartOfSpeech=NN Lemma=songwriter NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=lest CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=IN Lemma=lest NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=167 CharacterOffsetEnd=169 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=170 CharacterOffsetEnd=175 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=seem CharacterOffsetBegin=176 CharacterOffsetEnd=180 PartOfSpeech=VB Lemma=seem NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=182 CharacterOffsetEnd=185 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=charisma CharacterOffsetBegin=186 CharacterOffsetEnd=194 PartOfSpeech=NN Lemma=charisma NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=195 CharacterOffsetEnd=197 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=deflected CharacterOffsetBegin=198 CharacterOffsetEnd=207 PartOfSpeech=VBN Lemma=deflect NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBZ Gives)
+      (NP (DT no) (NN credit))
+      (PP (TO to)
+        (NP (DT any) (NN songwriter)))
+      (, ,)
+      (SBAR (IN lest)
+        (PRN (, ,)
+          (S
+            (NP (PRP it))
+            (VP (MD would)
+              (VP (VB seem))))
+          (, ,))
+        (S
+          (NP (PRP$ her) (NN charisma))
+          (VP (VB be)
+            (VP (VBN deflected))))))
+    (. .)))
+
+root(ROOT-0, Gives-1)
+neg(credit-3, no-2)
+dobj(Gives-1, credit-3)
+case(songwriter-6, to-4)
+det(songwriter-6, any-5)
+nmod:to(Gives-1, songwriter-6)
+punct(Gives-1, ,-7)
+mark(deflected-17, lest-8)
+punct(seem-12, ,-9)
+nsubj(seem-12, it-10)
+aux(seem-12, would-11)
+dep(deflected-17, seem-12)
+punct(seem-12, ,-13)
+nmod:poss(charisma-15, her-14)
+nsubjpass(deflected-17, charisma-15)
+auxpass(deflected-17, be-16)
+advcl:lest(Gives-1, deflected-17)
+punct(Gives-1, .-18)
+
+Coreference set:
+	(3,3,[3,4]) -> (1,2,[1,3]), that is: "her" -> "Barbra Streisand"
+Coreference set:
+	(5,14,[14,15]) -> (4,1,[1,2]), that is: "her" -> "Reptilian"
+Coreference set:
+	(5,10,[10,11]) -> (5,3,[2,4]), that is: "it" -> "no credit"

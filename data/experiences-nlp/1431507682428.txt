@@ -1,0 +1,55 @@
+Sentence #1 (15 tokens):
+Young Strauss's playing of dance-music is allowed to equal that of his father.
+[Text=Young CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Young NamedEntityTag=O]
+[Text=Strauss CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Strauss NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=16 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=dance-music CharacterOffsetBegin=27 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=dance-music NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=allowed CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=VBN Lemma=allow NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=equal CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=equal NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=father CharacterOffsetBegin=71 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=father NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Young) (NNP Strauss) (POS 's))
+        (NN playing))
+      (PP (IN of)
+        (ADJP (JJ dance-music))))
+    (VP (VBZ is)
+      (VP (VBN allowed)
+        (S
+          (VP (TO to)
+            (VP (VB equal)
+              (NP
+                (NP (DT that))
+                (PP (IN of)
+                  (NP (PRP$ his) (NN father)))))))))
+    (. .)))
+
+root(ROOT-0, allowed-8)
+compound(Strauss-2, Young-1)
+nmod:poss(playing-4, Strauss-2)
+case(Strauss-2, 's-3)
+nsubjpass(allowed-8, playing-4)
+nsubj:xsubj(equal-10, playing-4)
+case(dance-music-6, of-5)
+acl:of(playing-4, dance-music-6)
+auxpass(allowed-8, is-7)
+mark(equal-10, to-9)
+xcomp(allowed-8, equal-10)
+dobj(equal-10, that-11)
+case(father-14, of-12)
+nmod:poss(father-14, his-13)
+nmod:of(that-11, father-14)
+punct(allowed-8, .-15)
+
+Coreference set:
+	(1,13,[13,14]) -> (1,2,[1,4]), that is: "his" -> "Young Strauss 's"

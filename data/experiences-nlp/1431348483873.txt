@@ -1,0 +1,437 @@
+Sentence #1 (15 tokens):
+In Rimsky-Korsakov’s version, the orchestra often sounds more colourful that in mine.
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Rimsky-Korsakov CharacterOffsetBegin=3 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Rimsky-Korsakov NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=version CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=version NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=orchestra CharacterOffsetBegin=34 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=orchestra NamedEntityTag=O]
+[Text=often CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=often NamedEntityTag=O]
+[Text=sounds CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=VBZ Lemma=sound NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=colourful CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=colourful NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=mine CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=mine NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (NNP Rimsky-Korsakov) (POS 's))
+        (NN version)))
+    (, ,)
+    (NP (DT the) (NN orchestra))
+    (ADVP (RB often))
+    (VP (VBZ sounds)
+      (NP
+        (NP (JJR more))
+        (ADJP (JJ colourful))
+        (SBAR (IN that)
+          (FRAG
+            (PP (IN in)
+              (NP (NN mine)))))))
+    (. .)))
+
+root(ROOT-0, sounds-9)
+case(version-4, In-1)
+nmod:poss(version-4, Rimsky-Korsakov-2)
+case(Rimsky-Korsakov-2, 's-3)
+nmod:in(sounds-9, version-4)
+punct(sounds-9, ,-5)
+det(orchestra-7, the-6)
+nsubj(sounds-9, orchestra-7)
+advmod(sounds-9, often-8)
+dobj(sounds-9, more-10)
+amod(more-10, colourful-11)
+mark(mine-14, that-12)
+case(mine-14, in-13)
+dep(more-10, mine-14)
+punct(sounds-9, .-15)
+
+Sentence #2 (13 tokens):
+He uses brighter timbres and chops up the melodic lines too much.
+[Text=He CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=uses CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=VBZ Lemma=use NamedEntityTag=O]
+[Text=brighter CharacterOffsetBegin=94 CharacterOffsetEnd=102 PartOfSpeech=JJR Lemma=brighter NamedEntityTag=O]
+[Text=timbres CharacterOffsetBegin=103 CharacterOffsetEnd=110 PartOfSpeech=NNS Lemma=timbre NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=chops CharacterOffsetBegin=115 CharacterOffsetEnd=120 PartOfSpeech=NNS Lemma=chop NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=IN Lemma=up NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=124 CharacterOffsetEnd=127 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=melodic CharacterOffsetBegin=128 CharacterOffsetEnd=135 PartOfSpeech=JJ Lemma=melodic NamedEntityTag=O]
+[Text=lines CharacterOffsetBegin=136 CharacterOffsetEnd=141 PartOfSpeech=NNS Lemma=line NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=142 CharacterOffsetEnd=145 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=146 CharacterOffsetEnd=150 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=150 CharacterOffsetEnd=151 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ uses)
+      (NP
+        (NP (JJR brighter) (NNS timbres)
+          (CC and)
+          (NNS chops))
+        (ADVP (IN up)
+          (NP (DT the) (JJ melodic) (NNS lines))))
+      (ADVP (RB too) (RB much)))
+    (. .)))
+
+root(ROOT-0, uses-2)
+nsubj(uses-2, He-1)
+amod(timbres-4, brighter-3)
+dobj(uses-2, timbres-4)
+cc(timbres-4, and-5)
+dobj(uses-2, chops-6)
+conj:and(timbres-4, chops-6)
+case(lines-10, up-7)
+det(lines-10, the-8)
+amod(lines-10, melodic-9)
+advmod(timbres-4, lines-10)
+advmod(much-12, too-11)
+advmod(uses-2, much-12)
+punct(uses-2, .-13)
+
+Sentence #3 (23 tokens):
+I juxtapose the basic orchestral groups more often, and stress more sharply the dramatic ‘outbursts’ and ‘splashes’.
+[Text=I CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=juxtapose CharacterOffsetBegin=154 CharacterOffsetEnd=163 PartOfSpeech=VBP Lemma=juxtapose NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=basic CharacterOffsetBegin=168 CharacterOffsetEnd=173 PartOfSpeech=JJ Lemma=basic NamedEntityTag=O]
+[Text=orchestral CharacterOffsetBegin=174 CharacterOffsetEnd=184 PartOfSpeech=JJ Lemma=orchestral NamedEntityTag=O]
+[Text=groups CharacterOffsetBegin=185 CharacterOffsetEnd=191 PartOfSpeech=NNS Lemma=group NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=192 CharacterOffsetEnd=196 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=often CharacterOffsetBegin=197 CharacterOffsetEnd=202 PartOfSpeech=RB Lemma=often NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=202 CharacterOffsetEnd=203 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=204 CharacterOffsetEnd=207 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=stress CharacterOffsetBegin=208 CharacterOffsetEnd=214 PartOfSpeech=NN Lemma=stress NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=215 CharacterOffsetEnd=219 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=sharply CharacterOffsetBegin=220 CharacterOffsetEnd=227 PartOfSpeech=RB Lemma=sharply NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=dramatic CharacterOffsetBegin=232 CharacterOffsetEnd=240 PartOfSpeech=JJ Lemma=dramatic NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=241 CharacterOffsetEnd=242 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=outbursts CharacterOffsetBegin=242 CharacterOffsetEnd=251 PartOfSpeech=NNS Lemma=outburst NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=251 CharacterOffsetEnd=252 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=253 CharacterOffsetEnd=256 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=257 CharacterOffsetEnd=258 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=splashes CharacterOffsetBegin=258 CharacterOffsetEnd=266 PartOfSpeech=NNS Lemma=splash NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=266 CharacterOffsetEnd=267 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=267 CharacterOffsetEnd=268 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP juxtapose)
+      (S
+        (NP
+          (NP (DT the) (JJ basic) (JJ orchestral) (NNS groups))
+          (ADVP (RBR more)))
+        (NP
+          (NP (RB often))
+          (, ,)
+          (NP
+            (NP
+              (NP (CC and)
+                (NN stress))
+              (ADJP (RBR more))
+              (ADVP (RB sharply))
+              (NP
+                (NP (DT the)
+                  (NP (JJ dramatic) (`` `) (NNS outbursts) (POS ')))
+                (CC and)
+                (NP (`` `) (NNS splashes))))
+            (POS ')))))
+    (. .)))
+
+root(ROOT-0, juxtapose-2)
+nsubj(juxtapose-2, I-1)
+det(groups-6, the-3)
+amod(groups-6, basic-4)
+amod(groups-6, orchestral-5)
+nsubj(often-8, groups-6)
+advmod(groups-6, more-7)
+xcomp(juxtapose-2, often-8)
+punct(often-8, ,-9)
+cc(stress-11, and-10)
+appos(often-8, stress-11)
+amod(stress-11, more-12)
+advmod(stress-11, sharply-13)
+det(outbursts-17, the-14)
+amod(outbursts-17, dramatic-15)
+punct(outbursts-17, `-16)
+dep(stress-11, outbursts-17)
+case(outbursts-17, '-18)
+cc(outbursts-17, and-19)
+punct(splashes-21, `-20)
+dep(stress-11, splashes-21)
+conj:and(outbursts-17, splashes-21)
+case(stress-11, '-22)
+punct(juxtapose-2, .-23)
+
+Sentence #4 (9 tokens):
+Rimsky-Korsakov’s orchestra sounds calmer and more balanced.
+[Text=Rimsky-Korsakov CharacterOffsetBegin=269 CharacterOffsetEnd=284 PartOfSpeech=NNP Lemma=Rimsky-Korsakov NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=284 CharacterOffsetEnd=286 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=orchestra CharacterOffsetBegin=287 CharacterOffsetEnd=296 PartOfSpeech=NN Lemma=orchestra NamedEntityTag=O]
+[Text=sounds CharacterOffsetBegin=297 CharacterOffsetEnd=303 PartOfSpeech=VBZ Lemma=sound NamedEntityTag=O]
+[Text=calmer CharacterOffsetBegin=304 CharacterOffsetEnd=310 PartOfSpeech=JJR Lemma=calmer NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=311 CharacterOffsetEnd=314 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=315 CharacterOffsetEnd=319 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=balanced CharacterOffsetBegin=320 CharacterOffsetEnd=328 PartOfSpeech=JJ Lemma=balanced NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=328 CharacterOffsetEnd=329 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP Rimsky-Korsakov) (POS 's))
+      (NN orchestra))
+    (VP (VBZ sounds)
+      (ADJP
+        (ADJP (JJR calmer))
+        (CC and)
+        (ADJP (RBR more) (JJ balanced))))
+    (. .)))
+
+root(ROOT-0, sounds-4)
+nmod:poss(orchestra-3, Rimsky-Korsakov-1)
+case(Rimsky-Korsakov-1, 's-2)
+nsubj(sounds-4, orchestra-3)
+xcomp(sounds-4, calmer-5)
+cc(calmer-5, and-6)
+advmod(balanced-8, more-7)
+xcomp(sounds-4, balanced-8)
+conj:and(calmer-5, balanced-8)
+punct(sounds-4, .-9)
+
+Sentence #5 (10 tokens):
+I don’t think that’s appropriate to Boris.
+[Text=I CharacterOffsetBegin=330 CharacterOffsetEnd=331 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=332 CharacterOffsetEnd=334 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=334 CharacterOffsetEnd=337 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=338 CharacterOffsetEnd=343 PartOfSpeech=VB Lemma=think NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=344 CharacterOffsetEnd=348 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=348 CharacterOffsetEnd=350 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=appropriate CharacterOffsetBegin=351 CharacterOffsetEnd=362 PartOfSpeech=JJ Lemma=appropriate NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=363 CharacterOffsetEnd=365 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Boris CharacterOffsetBegin=366 CharacterOffsetEnd=371 PartOfSpeech=NNP Lemma=Boris NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=371 CharacterOffsetEnd=372 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB think)
+        (SBAR
+          (S
+            (NP (DT that))
+            (VP (VBZ 's)
+              (ADJP (JJ appropriate)
+                (PP (TO to)
+                  (NP (NNP Boris)))))))))
+    (. .)))
+
+root(ROOT-0, think-4)
+nsubj(think-4, I-1)
+aux(think-4, do-2)
+neg(think-4, n't-3)
+nsubj(appropriate-7, that-5)
+cop(appropriate-7, 's-6)
+ccomp(think-4, appropriate-7)
+case(Boris-9, to-8)
+nmod:to(appropriate-7, Boris-9)
+punct(think-4, .-10)
+
+Sentence #6 (14 tokens):
+He should have followed the mood changes of the characters with more flexibility.
+[Text=He CharacterOffsetBegin=373 CharacterOffsetEnd=375 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=376 CharacterOffsetEnd=382 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=383 CharacterOffsetEnd=387 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=followed CharacterOffsetBegin=388 CharacterOffsetEnd=396 PartOfSpeech=VBN Lemma=follow NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=397 CharacterOffsetEnd=400 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=mood CharacterOffsetBegin=401 CharacterOffsetEnd=405 PartOfSpeech=NN Lemma=mood NamedEntityTag=O]
+[Text=changes CharacterOffsetBegin=406 CharacterOffsetEnd=413 PartOfSpeech=NNS Lemma=change NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=414 CharacterOffsetEnd=416 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=417 CharacterOffsetEnd=420 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=characters CharacterOffsetBegin=421 CharacterOffsetEnd=431 PartOfSpeech=NNS Lemma=character NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=432 CharacterOffsetEnd=436 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=437 CharacterOffsetEnd=441 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=flexibility CharacterOffsetBegin=442 CharacterOffsetEnd=453 PartOfSpeech=NN Lemma=flexibility NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=453 CharacterOffsetEnd=454 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (MD should)
+      (VP (VB have)
+        (VP (VBN followed)
+          (NP
+            (NP (DT the) (NN mood) (NNS changes))
+            (PP (IN of)
+              (NP (DT the) (NNS characters))))
+          (PP (IN with)
+            (NP (JJR more) (NN flexibility))))))
+    (. .)))
+
+root(ROOT-0, followed-4)
+nsubj(followed-4, He-1)
+aux(followed-4, should-2)
+aux(followed-4, have-3)
+det(changes-7, the-5)
+compound(changes-7, mood-6)
+dobj(followed-4, changes-7)
+case(characters-10, of-8)
+det(characters-10, the-9)
+nmod:of(changes-7, characters-10)
+case(flexibility-13, with-11)
+amod(flexibility-13, more-12)
+nmod:with(followed-4, flexibility-13)
+punct(followed-4, .-14)
+
+Sentence #7 (22 tokens):
+And besides, I feel that the meaning of the choruses is more easily made clear by setting off the melody.
+[Text=And CharacterOffsetBegin=455 CharacterOffsetEnd=458 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=besides CharacterOffsetBegin=459 CharacterOffsetEnd=466 PartOfSpeech=IN Lemma=besides NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=466 CharacterOffsetEnd=467 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=468 CharacterOffsetEnd=469 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=feel CharacterOffsetBegin=470 CharacterOffsetEnd=474 PartOfSpeech=VBP Lemma=feel NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=475 CharacterOffsetEnd=479 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=480 CharacterOffsetEnd=483 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=meaning CharacterOffsetBegin=484 CharacterOffsetEnd=491 PartOfSpeech=NN Lemma=meaning NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=492 CharacterOffsetEnd=494 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=495 CharacterOffsetEnd=498 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=choruses CharacterOffsetBegin=499 CharacterOffsetEnd=507 PartOfSpeech=NNS Lemma=chorus NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=508 CharacterOffsetEnd=510 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=511 CharacterOffsetEnd=515 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=easily CharacterOffsetBegin=516 CharacterOffsetEnd=522 PartOfSpeech=RB Lemma=easily NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=523 CharacterOffsetEnd=527 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+[Text=clear CharacterOffsetBegin=528 CharacterOffsetEnd=533 PartOfSpeech=JJ Lemma=clear NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=534 CharacterOffsetEnd=536 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=setting CharacterOffsetBegin=537 CharacterOffsetEnd=544 PartOfSpeech=VBG Lemma=set NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=545 CharacterOffsetEnd=548 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=549 CharacterOffsetEnd=552 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=melody CharacterOffsetBegin=553 CharacterOffsetEnd=559 PartOfSpeech=NN Lemma=melody NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=559 CharacterOffsetEnd=560 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC And)
+    (PP (IN besides))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP feel)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT the) (NN meaning))
+            (PP (IN of)
+              (NP (DT the) (NNS choruses))))
+          (VP (VBZ is)
+            (ADVP (RBR more) (RB easily))
+            (VP (VBN made)
+              (ADJP (JJ clear)
+                (PP (IN by)
+                  (S
+                    (VP (VBG setting)
+                      (PRT (RP off))
+                      (NP (DT the) (NN melody)))))))))))
+    (. .)))
+
+root(ROOT-0, feel-5)
+cc(feel-5, And-1)
+nmod(feel-5, besides-2)
+punct(feel-5, ,-3)
+nsubj(feel-5, I-4)
+mark(made-15, that-6)
+det(meaning-8, the-7)
+nsubjpass(made-15, meaning-8)
+case(choruses-11, of-9)
+det(choruses-11, the-10)
+nmod:of(meaning-8, choruses-11)
+auxpass(made-15, is-12)
+advmod(easily-14, more-13)
+advmod(made-15, easily-14)
+ccomp(feel-5, made-15)
+xcomp(made-15, clear-16)
+mark(setting-18, by-17)
+advcl:by(clear-16, setting-18)
+compound:prt(setting-18, off-19)
+det(melody-21, the-20)
+dobj(setting-18, melody-21)
+punct(feel-5, .-22)
+
+Sentence #8 (18 tokens):
+In Rimsky-Korsakov’s version the melody and the subvoices usually blend, which perhaps obliterates their meaning.
+[Text=In CharacterOffsetBegin=561 CharacterOffsetEnd=563 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Rimsky-Korsakov CharacterOffsetBegin=564 CharacterOffsetEnd=579 PartOfSpeech=NNP Lemma=Rimsky-Korsakov NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=579 CharacterOffsetEnd=581 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=version CharacterOffsetBegin=582 CharacterOffsetEnd=589 PartOfSpeech=NN Lemma=version NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=590 CharacterOffsetEnd=593 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=melody CharacterOffsetBegin=594 CharacterOffsetEnd=600 PartOfSpeech=NN Lemma=melody NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=601 CharacterOffsetEnd=604 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=605 CharacterOffsetEnd=608 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=subvoices CharacterOffsetBegin=609 CharacterOffsetEnd=618 PartOfSpeech=NNS Lemma=subvoice NamedEntityTag=O]
+[Text=usually CharacterOffsetBegin=619 CharacterOffsetEnd=626 PartOfSpeech=RB Lemma=usually NamedEntityTag=O]
+[Text=blend CharacterOffsetBegin=627 CharacterOffsetEnd=632 PartOfSpeech=VBP Lemma=blend NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=632 CharacterOffsetEnd=633 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=634 CharacterOffsetEnd=639 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=perhaps CharacterOffsetBegin=640 CharacterOffsetEnd=647 PartOfSpeech=RB Lemma=perhaps NamedEntityTag=O]
+[Text=obliterates CharacterOffsetBegin=648 CharacterOffsetEnd=659 PartOfSpeech=VBZ Lemma=obliterate NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=660 CharacterOffsetEnd=665 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=meaning CharacterOffsetBegin=666 CharacterOffsetEnd=673 PartOfSpeech=NN Lemma=meaning NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=673 CharacterOffsetEnd=674 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP
+          (NP (NNP Rimsky-Korsakov) (POS 's))
+          (NN version))
+        (SBAR
+          (S
+            (NP
+              (NP (DT the) (NN melody))
+              (CC and)
+              (NP (DT the) (NNS subvoices)))
+            (ADVP (RB usually))
+            (VP (VBP blend))))))
+    (, ,)
+    (NP (WDT which))
+    (ADVP (RB perhaps))
+    (VP (VBZ obliterates)
+      (NP (PRP$ their) (NN meaning)))
+    (. .)))
+
+root(ROOT-0, obliterates-15)
+case(version-4, In-1)
+nmod:poss(version-4, Rimsky-Korsakov-2)
+case(Rimsky-Korsakov-2, 's-3)
+nmod:in(obliterates-15, version-4)
+det(melody-6, the-5)
+nsubj(blend-11, melody-6)
+cc(melody-6, and-7)
+det(subvoices-9, the-8)
+conj:and(melody-6, subvoices-9)
+nsubj(blend-11, subvoices-9)
+advmod(blend-11, usually-10)
+acl:relcl(version-4, blend-11)
+punct(obliterates-15, ,-12)
+nsubj(obliterates-15, which-13)
+advmod(obliterates-15, perhaps-14)
+nmod:poss(meaning-17, their-16)
+dobj(obliterates-15, meaning-17)
+punct(obliterates-15, .-18)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,2,[2,4]), that is: "He" -> "Rimsky-Korsakov 's"
+	(4,1,[1,3]) -> (1,2,[2,4]), that is: "Rimsky-Korsakov 's" -> "Rimsky-Korsakov 's"
+	(8,2,[2,4]) -> (1,2,[2,4]), that is: "Rimsky-Korsakov 's" -> "Rimsky-Korsakov 's"
+Coreference set:
+	(5,1,[1,2]) -> (3,1,[1,2]), that is: "I" -> "I"
+	(5,5,[5,6]) -> (3,1,[1,2]), that is: "that" -> "I"
+	(7,4,[4,5]) -> (3,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(3,11,[10,23]) -> (3,8,[8,9]), that is: "and stress more sharply the dramatic ` outbursts ' and ` splashes '" -> "often"
+Coreference set:
+	(6,1,[1,2]) -> (5,9,[9,10]), that is: "He" -> "Boris"
+Coreference set:
+	(8,17,[16,18]) -> (7,8,[7,12]), that is: "their meaning" -> "the meaning of the choruses"
+Coreference set:
+	(8,6,[5,7]) -> (7,21,[20,22]), that is: "the melody" -> "the melody"
+Coreference set:
+	(8,13,[13,14]) -> (8,9,[8,10]), that is: "which" -> "the subvoices"
+	(8,16,[16,17]) -> (8,9,[8,10]), that is: "their" -> "the subvoices"

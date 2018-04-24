@@ -1,0 +1,79 @@
+Sentence #1 (22 tokens):
+In evening listen to wireless - a very amusing Musical Comedy skit - the Pride of the Regiment by Walter Leigh.
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=3 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t1" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=listen CharacterOffsetBegin=11 CharacterOffsetEnd=17 PartOfSpeech=VBP Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=wireless CharacterOffsetBegin=21 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=wireless NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=amusing CharacterOffsetBegin=39 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=amusing NamedEntityTag=O]
+[Text=Musical CharacterOffsetBegin=47 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=musical NamedEntityTag=O]
+[Text=Comedy CharacterOffsetBegin=55 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=comedy NamedEntityTag=O]
+[Text=skit CharacterOffsetBegin=62 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=skit NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Pride CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=pride NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Regiment CharacterOffsetBegin=86 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=regiment NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Walter CharacterOffsetBegin=98 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=Walter NamedEntityTag=PERSON]
+[Text=Leigh CharacterOffsetBegin=105 CharacterOffsetEnd=110 PartOfSpeech=NNP Lemma=Leigh NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN evening)))
+    (VP (VBP listen)
+      (PP (TO to)
+        (NP
+          (NP (JJ wireless))
+          (: -)
+          (NP
+            (NP (DT a)
+              (ADJP (RB very) (JJ amusing))
+              (JJ Musical) (NN Comedy))
+            (NP (NN skit)))
+          (: -))))
+    (NP
+      (NP (DT the) (NN Pride))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN Regiment))
+          (PP (IN by)
+            (NP (NNP Walter) (NNP Leigh))))))
+    (. .)))
+
+root(ROOT-0, listen-3)
+case(evening-2, In-1)
+nmod:in(listen-3, evening-2)
+case(wireless-5, to-4)
+nmod:to(listen-3, wireless-5)
+punct(wireless-5, --6)
+det(Comedy-11, a-7)
+advmod(amusing-9, very-8)
+amod(Comedy-11, amusing-9)
+amod(Comedy-11, Musical-10)
+dep(wireless-5, Comedy-11)
+dep(Comedy-11, skit-12)
+punct(wireless-5, --13)
+det(Pride-15, the-14)
+dep(listen-3, Pride-15)
+case(Regiment-18, of-16)
+det(Regiment-18, the-17)
+nmod:of(Pride-15, Regiment-18)
+case(Leigh-21, by-19)
+compound(Leigh-21, Walter-20)
+nmod:by(Regiment-18, Leigh-21)
+punct(listen-3, .-22)
+
+Sentence #2 (1 tokens):
+*
+[Text=* CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+(ROOT
+  (X (SYM *)))
+
+root(ROOT-0, *-1)
+

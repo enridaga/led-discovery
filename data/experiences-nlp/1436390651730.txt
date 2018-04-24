@@ -1,0 +1,85 @@
+Sentence #1 (15 tokens):
+Elliott Carter's new quartet, unrelentingly chaotic, leads nothing to listen for.
+[Text=Elliott CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Elliott NamedEntityTag=PERSON]
+[Text=Carter CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Carter NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=quartet CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=quartet NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=unrelentingly CharacterOffsetBegin=30 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=unrelentingly NamedEntityTag=O]
+[Text=chaotic CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=JJ Lemma=chaotic NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=leads CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=VBZ Lemma=lead NamedEntityTag=O]
+[Text=nothing CharacterOffsetBegin=59 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=nothing NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Elliott) (NNP Carter) (POS 's))
+        (JJ new) (NN quartet))
+      (, ,)
+      (ADJP (RB unrelentingly) (JJ chaotic))
+      (, ,))
+    (VP (VBZ leads)
+      (NP (NN nothing))
+      (S
+        (VP (TO to)
+          (VP (VB listen)
+            (PP (IN for))))))
+    (. .)))
+
+root(ROOT-0, leads-10)
+compound(Carter-2, Elliott-1)
+nmod:poss(quartet-5, Carter-2)
+case(Carter-2, 's-3)
+amod(quartet-5, new-4)
+nsubj(leads-10, quartet-5)
+punct(quartet-5, ,-6)
+advmod(chaotic-8, unrelentingly-7)
+amod(quartet-5, chaotic-8)
+punct(quartet-5, ,-9)
+dobj(leads-10, nothing-11)
+mark(listen-13, to-12)
+advcl:to(leads-10, listen-13)
+nmod(listen-13, for-14)
+punct(leads-10, .-15)
+
+Sentence #2 (9 tokens):
+When all is chaos, nothing is chaos.
+[Text=When CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=chaos CharacterOffsetBegin=94 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=chaos NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=nothing CharacterOffsetBegin=101 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=nothing NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=chaos CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=chaos NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (DT all))
+        (VP (VBZ is)
+          (NP (NN chaos)))))
+    (, ,)
+    (NP (NN nothing))
+    (VP (VBZ is)
+      (NP (NN chaos)))
+    (. .)))
+
+root(ROOT-0, chaos-8)
+advmod(chaos-4, When-1)
+nsubj(chaos-4, all-2)
+cop(chaos-4, is-3)
+advcl(chaos-8, chaos-4)
+punct(chaos-8, ,-5)
+nsubj(chaos-8, nothing-6)
+cop(chaos-8, is-7)
+punct(chaos-8, .-9)
+

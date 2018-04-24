@@ -1,0 +1,602 @@
+Sentence #1 (5 tokens):
+The P.F. arrived safe.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=P.F. CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=P.F. NamedEntityTag=PERSON]
+[Text=arrived CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=arrive NamedEntityTag=O]
+[Text=safe CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=safe NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NNP P.F.))
+    (VP (VBD arrived)
+      (ADJP (JJ safe)))
+    (. .)))
+
+root(ROOT-0, arrived-3)
+det(P.F.-2, The-1)
+nsubj(arrived-3, P.F.-2)
+xcomp(arrived-3, safe-4)
+punct(arrived-3, .-5)
+
+Sentence #2 (6 tokens):
+It is a charming instrument.
+[Text=It CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=charming CharacterOffsetBegin=31 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=charming NamedEntityTag=O]
+[Text=instrument CharacterOffsetBegin=40 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=instrument NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP (DT a) (JJ charming) (NN instrument)))
+    (. .)))
+
+root(ROOT-0, instrument-5)
+nsubj(instrument-5, It-1)
+cop(instrument-5, is-2)
+det(instrument-5, a-3)
+amod(instrument-5, charming-4)
+punct(instrument-5, .-6)
+
+Sentence #3 (11 tokens):
+I thank you heartily, for myself & my friend.
+[Text=I CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=thank CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=VBP Lemma=thank NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=heartily CharacterOffsetBegin=64 CharacterOffsetEnd=72 PartOfSpeech=RB Lemma=heartily NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=myself CharacterOffsetBegin=78 CharacterOffsetEnd=84 PartOfSpeech=PRP Lemma=myself NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=friend CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=friend NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP thank)
+      (NP (PRP you))
+      (ADVP (RB heartily))
+      (, ,)
+      (PP (IN for)
+        (NP
+          (NP (PRP myself))
+          (CC &)
+          (NP (PRP$ my) (NN friend)))))
+    (. .)))
+
+root(ROOT-0, thank-2)
+nsubj(thank-2, I-1)
+dobj(thank-2, you-3)
+advmod(thank-2, heartily-4)
+punct(thank-2, ,-5)
+case(myself-7, for-6)
+nmod:for(thank-2, myself-7)
+cc(myself-7, &-8)
+nmod:poss(friend-10, my-9)
+nmod:for(thank-2, friend-10)
+conj:&(myself-7, friend-10)
+punct(thank-2, .-11)
+
+Sentence #4 (10 tokens):
+He improves, I think, in his basses.
+[Text=He CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=improves CharacterOffsetBegin=101 CharacterOffsetEnd=109 PartOfSpeech=VBZ Lemma=improve NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=113 CharacterOffsetEnd=118 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=120 CharacterOffsetEnd=122 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=basses CharacterOffsetBegin=127 CharacterOffsetEnd=133 PartOfSpeech=NNS Lemma=bass NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=133 CharacterOffsetEnd=134 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBZ improves)))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP think) (, ,)
+      (PP (IN in)
+        (NP (PRP$ his) (NNS basses))))
+    (. .)))
+
+root(ROOT-0, think-5)
+nsubj(improves-2, He-1)
+ccomp(think-5, improves-2)
+punct(think-5, ,-3)
+nsubj(think-5, I-4)
+punct(think-5, ,-6)
+case(basses-9, in-7)
+nmod:poss(basses-9, his-8)
+nmod:in(think-5, basses-9)
+punct(think-5, .-10)
+
+Sentence #5 (16 tokens):
+I find Miss [Catherine] Forster has a sweet voice & an excellent ear.
+[Text=I CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=VBP Lemma=find NamedEntityTag=O]
+[Text=Miss CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=NNP Lemma=Miss NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Catherine CharacterOffsetBegin=148 CharacterOffsetEnd=157 PartOfSpeech=NNP Lemma=Catherine NamedEntityTag=PERSON]
+[Text=-RSB- CharacterOffsetBegin=157 CharacterOffsetEnd=158 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=PERSON]
+[Text=Forster CharacterOffsetBegin=159 CharacterOffsetEnd=166 PartOfSpeech=NNP Lemma=Forster NamedEntityTag=PERSON]
+[Text=has CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=171 CharacterOffsetEnd=172 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=sweet CharacterOffsetBegin=173 CharacterOffsetEnd=178 PartOfSpeech=JJ Lemma=sweet NamedEntityTag=O]
+[Text=voice CharacterOffsetBegin=179 CharacterOffsetEnd=184 PartOfSpeech=NN Lemma=voice NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=185 CharacterOffsetEnd=186 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=187 CharacterOffsetEnd=189 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=excellent CharacterOffsetBegin=190 CharacterOffsetEnd=199 PartOfSpeech=JJ Lemma=excellent NamedEntityTag=O]
+[Text=ear CharacterOffsetBegin=200 CharacterOffsetEnd=203 PartOfSpeech=NN Lemma=ear NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=203 CharacterOffsetEnd=204 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP find)
+      (SBAR
+        (S
+          (NP (NNP Miss) (-LRB- -LSB-) (NNP Catherine) (-RRB- -RSB-) (NNP Forster))
+          (VP (VBZ has)
+            (NP
+              (NP (DT a) (JJ sweet) (NN voice))
+              (CC &)
+              (NP (DT an) (JJ excellent) (NN ear)))))))
+    (. .)))
+
+root(ROOT-0, find-2)
+nsubj(find-2, I-1)
+compound(Forster-7, Miss-3)
+punct(Forster-7, -LSB--4)
+compound(Forster-7, Catherine-5)
+punct(Forster-7, -RSB--6)
+nsubj(has-8, Forster-7)
+ccomp(find-2, has-8)
+det(voice-11, a-9)
+amod(voice-11, sweet-10)
+dobj(has-8, voice-11)
+cc(voice-11, &-12)
+det(ear-15, an-13)
+amod(ear-15, excellent-14)
+dobj(has-8, ear-15)
+conj:&(voice-11, ear-15)
+punct(find-2, .-16)
+
+Sentence #6 (17 tokens):
+I wish you had her under your tuition: such scholars must be comfortable & refreshing.
+[Text=I CharacterOffsetBegin=205 CharacterOffsetEnd=206 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=wish CharacterOffsetBegin=207 CharacterOffsetEnd=211 PartOfSpeech=VBP Lemma=wish NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=212 CharacterOffsetEnd=215 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=216 CharacterOffsetEnd=219 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=224 CharacterOffsetEnd=229 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=230 CharacterOffsetEnd=234 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=tuition CharacterOffsetBegin=235 CharacterOffsetEnd=242 PartOfSpeech=NN Lemma=tuition NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=242 CharacterOffsetEnd=243 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=244 CharacterOffsetEnd=248 PartOfSpeech=JJ Lemma=such NamedEntityTag=O]
+[Text=scholars CharacterOffsetBegin=249 CharacterOffsetEnd=257 PartOfSpeech=NNS Lemma=scholar NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=258 CharacterOffsetEnd=262 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=263 CharacterOffsetEnd=265 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=comfortable CharacterOffsetBegin=266 CharacterOffsetEnd=277 PartOfSpeech=JJ Lemma=comfortable NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=278 CharacterOffsetEnd=279 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=refreshing CharacterOffsetBegin=280 CharacterOffsetEnd=290 PartOfSpeech=JJ Lemma=refreshing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=290 CharacterOffsetEnd=291 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP wish)
+        (SBAR
+          (S
+            (NP (PRP you))
+            (VP (VBD had)
+              (NP (PRP$ her))
+              (PP (IN under)
+                (NP (PRP$ your) (NN tuition))))))))
+    (: :)
+    (S
+      (NP (JJ such) (NNS scholars))
+      (VP (MD must)
+        (VP (VB be)
+          (NP
+            (NP (JJ comfortable))
+            (CC &)
+            (NP (JJ refreshing))))))
+    (. .)))
+
+root(ROOT-0, wish-2)
+nsubj(wish-2, I-1)
+nsubj(had-4, you-3)
+ccomp(wish-2, had-4)
+dobj(had-4, her-5)
+case(tuition-8, under-6)
+nmod:poss(tuition-8, your-7)
+nmod:under(had-4, tuition-8)
+punct(wish-2, :-9)
+amod(scholars-11, such-10)
+nsubj(comfortable-14, scholars-11)
+nsubj(refreshing-16, scholars-11)
+aux(comfortable-14, must-12)
+cop(comfortable-14, be-13)
+parataxis(wish-2, comfortable-14)
+cc(comfortable-14, &-15)
+parataxis(wish-2, refreshing-16)
+conj:&(comfortable-14, refreshing-16)
+punct(wish-2, .-17)
+
+Sentence #7 (21 tokens):
+I have procured for her a set of lessons I have lately met with by one [Valentin] Roeser.
+[Text=I CharacterOffsetBegin=292 CharacterOffsetEnd=293 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=294 CharacterOffsetEnd=298 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=procured CharacterOffsetBegin=299 CharacterOffsetEnd=307 PartOfSpeech=VBN Lemma=procure NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=308 CharacterOffsetEnd=311 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=312 CharacterOffsetEnd=315 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=316 CharacterOffsetEnd=317 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=318 CharacterOffsetEnd=321 PartOfSpeech=NN Lemma=set NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=322 CharacterOffsetEnd=324 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=lessons CharacterOffsetBegin=325 CharacterOffsetEnd=332 PartOfSpeech=NNS Lemma=lesson NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=333 CharacterOffsetEnd=334 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=335 CharacterOffsetEnd=339 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=lately CharacterOffsetBegin=340 CharacterOffsetEnd=346 PartOfSpeech=RB Lemma=lately NamedEntityTag=O]
+[Text=met CharacterOffsetBegin=347 CharacterOffsetEnd=350 PartOfSpeech=VBN Lemma=meet NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=351 CharacterOffsetEnd=355 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=356 CharacterOffsetEnd=358 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=359 CharacterOffsetEnd=362 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=-LSB- CharacterOffsetBegin=363 CharacterOffsetEnd=364 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Valentin CharacterOffsetBegin=364 CharacterOffsetEnd=372 PartOfSpeech=NNP Lemma=Valentin NamedEntityTag=PERSON]
+[Text=-RSB- CharacterOffsetBegin=372 CharacterOffsetEnd=373 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=PERSON]
+[Text=Roeser CharacterOffsetBegin=374 CharacterOffsetEnd=380 PartOfSpeech=NNP Lemma=Roeser NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=380 CharacterOffsetEnd=381 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP have)
+        (VP (VBN procured)
+          (PP (IN for)
+            (NP (PRP$ her)
+              (NP
+                (NP (DT a) (NN set))
+                (PP (IN of)
+                  (NP (NNS lessons)))))))))
+    (NP (PRP I))
+    (VP (VBP have)
+      (ADVP (RB lately))
+      (VP (VBN met)
+        (PP (IN with) (IN by)
+          (NP
+            (NP (CD one))
+            (PP (-LRB- -LSB-)
+              (NP (NNP Valentin) (-RRB- -RSB-) (NNP Roeser)))))))
+    (. .)))
+
+root(ROOT-0, met-13)
+nsubj(procured-3, I-1)
+aux(procured-3, have-2)
+dep(met-13, procured-3)
+case(set-7, for-4)
+nmod:poss(set-7, her-5)
+det(set-7, a-6)
+nmod:for(procured-3, set-7)
+case(lessons-9, of-8)
+nmod:of(set-7, lessons-9)
+nsubj(met-13, I-10)
+aux(met-13, have-11)
+advmod(met-13, lately-12)
+case(one-16, with-14)
+case(one-16, by-15)
+nmod:by(met-13, one-16)
+punct(Roeser-20, -LSB--17)
+compound(Roeser-20, Valentin-18)
+punct(Roeser-20, -RSB--19)
+nmod(one-16, Roeser-20)
+punct(met-13, .-21)
+
+Sentence #8 (5 tokens):
+Do you know them?
+[Text=Do CharacterOffsetBegin=382 CharacterOffsetEnd=384 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=385 CharacterOffsetEnd=388 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=389 CharacterOffsetEnd=393 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=394 CharacterOffsetEnd=398 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=398 CharacterOffsetEnd=399 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (SQ
+    (VP (VB Do)
+      (S
+        (NP (PRP you))
+        (VP (VB know)
+          (NP (PRP them)))))
+    (. ?)))
+
+root(ROOT-0, Do-1)
+nsubj(know-3, you-2)
+ccomp(Do-1, know-3)
+dobj(know-3, them-4)
+punct(Do-1, ?-5)
+
+Sentence #9 (18 tokens):
+They seem to me the best things for beginners upon the Piano Forte that I ever saw.
+[Text=They CharacterOffsetBegin=400 CharacterOffsetEnd=404 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=seem CharacterOffsetBegin=405 CharacterOffsetEnd=409 PartOfSpeech=VBP Lemma=seem NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=410 CharacterOffsetEnd=412 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=413 CharacterOffsetEnd=415 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=416 CharacterOffsetEnd=419 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=420 CharacterOffsetEnd=424 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=425 CharacterOffsetEnd=431 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=432 CharacterOffsetEnd=435 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=beginners CharacterOffsetBegin=436 CharacterOffsetEnd=445 PartOfSpeech=NNS Lemma=beginner NamedEntityTag=O]
+[Text=upon CharacterOffsetBegin=446 CharacterOffsetEnd=450 PartOfSpeech=IN Lemma=upon NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=451 CharacterOffsetEnd=454 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Piano CharacterOffsetBegin=455 CharacterOffsetEnd=460 PartOfSpeech=NNP Lemma=Piano NamedEntityTag=O]
+[Text=Forte CharacterOffsetBegin=461 CharacterOffsetEnd=466 PartOfSpeech=NNP Lemma=Forte NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=467 CharacterOffsetEnd=471 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=472 CharacterOffsetEnd=473 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=474 CharacterOffsetEnd=478 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=saw CharacterOffsetBegin=479 CharacterOffsetEnd=482 PartOfSpeech=VBD Lemma=see NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=482 CharacterOffsetEnd=483 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP seem)
+      (PP (TO to)
+        (NP (PRP me)))
+      (NP
+        (NP (DT the) (JJS best) (NNS things))
+        (PP (IN for)
+          (NP
+            (NP (NNS beginners))
+            (PP (IN upon)
+              (NP (DT the) (NNP Piano) (NNP Forte)))))
+        (SBAR (IN that)
+          (S
+            (NP (PRP I))
+            (ADVP (RB ever))
+            (VP (VBD saw))))))
+    (. .)))
+
+root(ROOT-0, seem-2)
+nsubj(seem-2, They-1)
+case(me-4, to-3)
+nmod:to(seem-2, me-4)
+det(things-7, the-5)
+amod(things-7, best-6)
+xcomp(seem-2, things-7)
+case(beginners-9, for-8)
+nmod:for(things-7, beginners-9)
+case(Forte-13, upon-10)
+det(Forte-13, the-11)
+compound(Forte-13, Piano-12)
+nmod:upon(beginners-9, Forte-13)
+mark(saw-17, that-14)
+nsubj(saw-17, I-15)
+advmod(saw-17, ever-16)
+dep(things-7, saw-17)
+punct(seem-2, .-18)
+
+Sentence #10 (45 tokens):
+For they are easy, short, well adapted to the instrument, fair for the hand, & are yet good harmony, & far from vulgar or inelegant melody: well calculated, me thinks to lead younkers into a good taste.
+[Text=For CharacterOffsetBegin=484 CharacterOffsetEnd=487 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=488 CharacterOffsetEnd=492 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=493 CharacterOffsetEnd=496 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=easy CharacterOffsetBegin=497 CharacterOffsetEnd=501 PartOfSpeech=JJ Lemma=easy NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=501 CharacterOffsetEnd=502 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=short CharacterOffsetBegin=503 CharacterOffsetEnd=508 PartOfSpeech=JJ Lemma=short NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=508 CharacterOffsetEnd=509 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=510 CharacterOffsetEnd=514 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=adapted CharacterOffsetBegin=515 CharacterOffsetEnd=522 PartOfSpeech=VBN Lemma=adapt NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=523 CharacterOffsetEnd=525 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=526 CharacterOffsetEnd=529 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=instrument CharacterOffsetBegin=530 CharacterOffsetEnd=540 PartOfSpeech=NN Lemma=instrument NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=540 CharacterOffsetEnd=541 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=fair CharacterOffsetBegin=542 CharacterOffsetEnd=546 PartOfSpeech=JJ Lemma=fair NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=547 CharacterOffsetEnd=550 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=551 CharacterOffsetEnd=554 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=hand CharacterOffsetBegin=555 CharacterOffsetEnd=559 PartOfSpeech=NN Lemma=hand NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=559 CharacterOffsetEnd=560 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=561 CharacterOffsetEnd=562 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=563 CharacterOffsetEnd=566 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=yet CharacterOffsetBegin=567 CharacterOffsetEnd=570 PartOfSpeech=RB Lemma=yet NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=571 CharacterOffsetEnd=575 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=harmony CharacterOffsetBegin=576 CharacterOffsetEnd=583 PartOfSpeech=NN Lemma=harmony NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=583 CharacterOffsetEnd=584 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=585 CharacterOffsetEnd=586 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=far CharacterOffsetBegin=587 CharacterOffsetEnd=590 PartOfSpeech=RB Lemma=far NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=591 CharacterOffsetEnd=595 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=vulgar CharacterOffsetBegin=596 CharacterOffsetEnd=602 PartOfSpeech=JJ Lemma=vulgar NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=603 CharacterOffsetEnd=605 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=inelegant CharacterOffsetBegin=606 CharacterOffsetEnd=615 PartOfSpeech=JJ Lemma=inelegant NamedEntityTag=O]
+[Text=melody CharacterOffsetBegin=616 CharacterOffsetEnd=622 PartOfSpeech=NN Lemma=melody NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=622 CharacterOffsetEnd=623 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=624 CharacterOffsetEnd=628 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=calculated CharacterOffsetBegin=629 CharacterOffsetEnd=639 PartOfSpeech=VBN Lemma=calculate NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=639 CharacterOffsetEnd=640 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=641 CharacterOffsetEnd=643 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=thinks CharacterOffsetBegin=644 CharacterOffsetEnd=650 PartOfSpeech=VBZ Lemma=think NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=651 CharacterOffsetEnd=653 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=lead CharacterOffsetBegin=654 CharacterOffsetEnd=658 PartOfSpeech=VB Lemma=lead NamedEntityTag=O]
+[Text=younkers CharacterOffsetBegin=659 CharacterOffsetEnd=667 PartOfSpeech=NNS Lemma=younker NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=668 CharacterOffsetEnd=672 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=673 CharacterOffsetEnd=674 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=675 CharacterOffsetEnd=679 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=taste CharacterOffsetBegin=680 CharacterOffsetEnd=685 PartOfSpeech=NN Lemma=taste NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=685 CharacterOffsetEnd=686 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN For)
+      (S
+        (NP (PRP they))
+        (VP (VBP are)
+          (ADJP (JJ easy))
+          (, ,)
+          (ADJP (JJ short)))))
+    (, ,)
+    (S
+      (S
+        (ADVP (RB well))
+        (VP (VBN adapted)
+          (PP (TO to)
+            (NP (DT the) (NN instrument)))
+          (, ,)
+          (S
+            (ADJP (JJ fair)
+              (PP (IN for)
+                (NP (DT the) (NN hand)))))))
+      (, ,)
+      (NP (CC &))
+      (VP (VBP are)
+        (ADVP (RB yet))
+        (NP
+          (NP (JJ good) (NN harmony))
+          (, ,)
+          (CC &)
+          (ADVP (RB far)
+            (PP (IN from)
+              (ADJP (JJ vulgar)
+                (CC or)
+                (JJ inelegant))))
+          (NP (NN melody)))))
+    (: :)
+    (S
+      (S
+        (VP
+          (ADVP (RB well))
+          (VBN calculated)))
+      (, ,)
+      (NP (PRP me))
+      (VP (VBZ thinks)
+        (S
+          (VP (TO to)
+            (VP (VB lead)
+              (NP (NNS younkers))
+              (PP (IN into)
+                (NP (DT a) (JJ good) (NN taste))))))))
+    (. .)))
+
+root(ROOT-0, harmony-23)
+mark(easy-4, For-1)
+nsubj(easy-4, they-2)
+cop(easy-4, are-3)
+advcl:for(harmony-23, easy-4)
+punct(easy-4, ,-5)
+xcomp(easy-4, short-6)
+punct(harmony-23, ,-7)
+advmod(adapted-9, well-8)
+advcl(harmony-23, adapted-9)
+case(instrument-12, to-10)
+det(instrument-12, the-11)
+nmod:to(adapted-9, instrument-12)
+punct(adapted-9, ,-13)
+xcomp(adapted-9, fair-14)
+case(hand-17, for-15)
+det(hand-17, the-16)
+nmod:for(fair-14, hand-17)
+punct(harmony-23, ,-18)
+nsubj(harmony-23, &-19)
+cop(harmony-23, are-20)
+advmod(harmony-23, yet-21)
+amod(harmony-23, good-22)
+punct(harmony-23, ,-24)
+cc(harmony-23, &-25)
+advmod(harmony-23, far-26)
+case(vulgar-28, from-27)
+advcl:from(far-26, vulgar-28)
+cc(vulgar-28, or-29)
+advcl:from(far-26, inelegant-30)
+conj:or(vulgar-28, inelegant-30)
+conj:&(harmony-23, melody-31)
+punct(harmony-23, :-32)
+advmod(calculated-34, well-33)
+advcl(thinks-37, calculated-34)
+punct(thinks-37, ,-35)
+nsubj(thinks-37, me-36)
+nsubj:xsubj(lead-39, me-36)
+parataxis(harmony-23, thinks-37)
+mark(lead-39, to-38)
+xcomp(thinks-37, lead-39)
+dobj(lead-39, younkers-40)
+case(taste-44, into-41)
+det(taste-44, a-42)
+amod(taste-44, good-43)
+nmod:into(lead-39, taste-44)
+punct(harmony-23, .-45)
+
+Sentence #11 (5 tokens):
+What do you say?
+[Text=What CharacterOffsetBegin=687 CharacterOffsetEnd=691 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=692 CharacterOffsetEnd=694 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=695 CharacterOffsetEnd=698 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=699 CharacterOffsetEnd=702 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=702 CharacterOffsetEnd=703 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB say)))
+    (. ?)))
+
+root(ROOT-0, say-4)
+dobj(say-4, What-1)
+aux(say-4, do-2)
+nsubj(say-4, you-3)
+punct(say-4, ?-5)
+
+Sentence #12 (8 tokens):
+If I am wrong, tell me.
+[Text=If CharacterOffsetBegin=704 CharacterOffsetEnd=706 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=707 CharacterOffsetEnd=708 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=709 CharacterOffsetEnd=711 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=wrong CharacterOffsetBegin=712 CharacterOffsetEnd=717 PartOfSpeech=JJ Lemma=wrong NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=717 CharacterOffsetEnd=718 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=tell CharacterOffsetBegin=719 CharacterOffsetEnd=723 PartOfSpeech=VB Lemma=tell NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=724 CharacterOffsetEnd=726 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=726 CharacterOffsetEnd=727 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP I))
+        (VP (VBP am)
+          (ADJP (JJ wrong)))))
+    (, ,)
+    (VP (VB tell)
+      (NP (PRP me)))
+    (. .)))
+
+root(ROOT-0, tell-6)
+mark(wrong-4, If-1)
+nsubj(wrong-4, I-2)
+cop(wrong-4, am-3)
+advcl:if(tell-6, wrong-4)
+punct(tell-6, ,-5)
+dobj(tell-6, me-7)
+punct(tell-6, .-8)
+
+Coreference set:
+	(2,1,[1,2]) -> (2,5,[3,6]), that is: "It" -> "a charming instrument"
+	(10,12,[11,13]) -> (2,5,[3,6]), that is: "the instrument" -> "a charming instrument"
+Coreference set:
+	(3,7,[7,8]) -> (3,1,[1,2]), that is: "myself" -> "I"
+	(3,9,[9,10]) -> (3,1,[1,2]), that is: "my" -> "I"
+	(4,4,[4,5]) -> (3,1,[1,2]), that is: "I" -> "I"
+	(5,1,[1,2]) -> (3,1,[1,2]), that is: "I" -> "I"
+	(6,1,[1,2]) -> (3,1,[1,2]), that is: "I" -> "I"
+	(7,1,[1,2]) -> (3,1,[1,2]), that is: "I" -> "I"
+	(7,10,[10,11]) -> (3,1,[1,2]), that is: "I" -> "I"
+	(9,4,[4,5]) -> (3,1,[1,2]), that is: "me" -> "I"
+	(9,15,[15,16]) -> (3,1,[1,2]), that is: "I" -> "I"
+	(10,36,[36,37]) -> (3,1,[1,2]), that is: "me" -> "I"
+	(12,2,[2,3]) -> (3,1,[1,2]), that is: "I" -> "I"
+	(12,7,[7,8]) -> (3,1,[1,2]), that is: "me" -> "I"
+Coreference set:
+	(4,1,[1,2]) -> (3,10,[9,11]), that is: "He" -> "my friend"
+	(4,8,[8,9]) -> (3,10,[9,11]), that is: "his" -> "my friend"
+Coreference set:
+	(7,5,[5,6]) -> (6,5,[5,6]), that is: "her" -> "her"
+Coreference set:
+	(8,4,[4,5]) -> (6,11,[10,12]), that is: "them" -> "such scholars"
+	(9,1,[1,2]) -> (6,11,[10,12]), that is: "They" -> "such scholars"
+	(10,2,[2,3]) -> (6,11,[10,12]), that is: "they" -> "such scholars"

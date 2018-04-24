@@ -1,0 +1,421 @@
+Sentence #1 (10 tokens):
+Shortly after my turn, it was Jackie’s.
+[Text=Shortly CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=RB Lemma=shortly NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=turn CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=turn NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=Jackie CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Jackie NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (RB Shortly) (IN after)
+      (NP (PRP$ my) (NN turn)))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (S
+        (NP (NNP Jackie) (POS 's))))
+    (. .)))
+
+root(ROOT-0, was-7)
+advmod(turn-4, Shortly-1)
+case(turn-4, after-2)
+nmod:poss(turn-4, my-3)
+nmod:after(was-7, turn-4)
+punct(was-7, ,-5)
+nsubj(was-7, it-6)
+xcomp(was-7, Jackie-8)
+case(Jackie-8, 's-9)
+punct(was-7, .-10)
+
+Sentence #2 (15 tokens):
+She was to perform the set piece, Purcell’s Air in D minor.
+[Text=She CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=perform CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=VB Lemma=perform NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=set NamedEntityTag=O]
+[Text=piece CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=piece NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Purcell CharacterOffsetBegin=74 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Purcell NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Air CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=Air NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=D CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=D NamedEntityTag=O]
+[Text=minor CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=JJ Lemma=minor NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD was)
+      (S
+        (VP (TO to)
+          (VP (VB perform)
+            (S
+              (NP
+                (NP (DT the) (NN set) (NN piece))
+                (, ,)
+                (NP
+                  (NP
+                    (NP (NNP Purcell) (POS 's))
+                    (NNP Air))
+                  (PP (IN in)
+                    (NP (NNP D)))))
+              (ADJP (JJ minor)))))))
+    (. .)))
+
+root(ROOT-0, was-2)
+nsubj(was-2, She-1)
+nsubj:xsubj(perform-4, She-1)
+mark(perform-4, to-3)
+xcomp(was-2, perform-4)
+det(piece-7, the-5)
+compound(piece-7, set-6)
+nsubj(minor-14, piece-7)
+punct(piece-7, ,-8)
+nmod:poss(Air-11, Purcell-9)
+case(Purcell-9, 's-10)
+appos(piece-7, Air-11)
+case(D-13, in-12)
+nmod:in(Air-11, D-13)
+xcomp(perform-4, minor-14)
+punct(was-2, .-15)
+
+Sentence #3 (21 tokens):
+Mum climbed onto the platform with her and played an ‘A’ on the piano for Jackie to tune.
+[Text=Mum CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=NNP Lemma=Mum NamedEntityTag=O]
+[Text=climbed CharacterOffsetBegin=104 CharacterOffsetEnd=111 PartOfSpeech=VBD Lemma=climb NamedEntityTag=O]
+[Text=onto CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=onto NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=platform CharacterOffsetBegin=121 CharacterOffsetEnd=129 PartOfSpeech=NN Lemma=platform NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=143 CharacterOffsetEnd=149 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=153 CharacterOffsetEnd=154 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=155 CharacterOffsetEnd=156 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=157 CharacterOffsetEnd=159 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=160 CharacterOffsetEnd=163 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=164 CharacterOffsetEnd=169 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=170 CharacterOffsetEnd=173 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Jackie CharacterOffsetBegin=174 CharacterOffsetEnd=180 PartOfSpeech=NNP Lemma=Jackie NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=181 CharacterOffsetEnd=183 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=tune CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=VB Lemma=tune NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=188 CharacterOffsetEnd=189 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Mum))
+    (VP
+      (VP (VBD climbed)
+        (PP (IN onto)
+          (NP (DT the) (NN platform)))
+        (PP (IN with)
+          (NP (PRP$ her))))
+      (CC and)
+      (VP (VBD played)
+        (NP (DT an)
+          (NP (`` `) (DT A)))
+        ('' ')
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN piano))
+            (PP (IN for)
+              (NP (NNP Jackie)))))
+        (S
+          (VP (TO to)
+            (VP (VB tune))))))
+    (. .)))
+
+root(ROOT-0, climbed-2)
+nsubj(climbed-2, Mum-1)
+nsubj(played-9, Mum-1)
+case(platform-5, onto-3)
+det(platform-5, the-4)
+nmod:onto(climbed-2, platform-5)
+case(her-7, with-6)
+nmod:with(climbed-2, her-7)
+cc(climbed-2, and-8)
+conj:and(climbed-2, played-9)
+det(A-12, an-10)
+punct(A-12, `-11)
+dobj(played-9, A-12)
+punct(played-9, '-13)
+case(piano-16, on-14)
+det(piano-16, the-15)
+nmod:on(played-9, piano-16)
+case(Jackie-18, for-17)
+nmod:for(piano-16, Jackie-18)
+mark(tune-20, to-19)
+advcl:to(played-9, tune-20)
+punct(climbed-2, .-21)
+
+Sentence #4 (7 tokens):
+Silence descended, and Jackie began.
+[Text=Silence CharacterOffsetBegin=190 CharacterOffsetEnd=197 PartOfSpeech=NN Lemma=silence NamedEntityTag=O]
+[Text=descended CharacterOffsetBegin=198 CharacterOffsetEnd=207 PartOfSpeech=VBD Lemma=descend NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=209 CharacterOffsetEnd=212 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Jackie CharacterOffsetBegin=213 CharacterOffsetEnd=219 PartOfSpeech=NNP Lemma=Jackie NamedEntityTag=PERSON]
+[Text=began CharacterOffsetBegin=220 CharacterOffsetEnd=225 PartOfSpeech=VBD Lemma=begin NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=225 CharacterOffsetEnd=226 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NN Silence))
+      (VP (VBD descended)))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP Jackie))
+      (VP (VBD began)))
+    (. .)))
+
+root(ROOT-0, descended-2)
+nsubj(descended-2, Silence-1)
+punct(descended-2, ,-3)
+cc(descended-2, and-4)
+nsubj(began-6, Jackie-5)
+conj:and(descended-2, began-6)
+punct(descended-2, .-7)
+
+Sentence #5 (23 tokens):
+Her concentration was so intense that it seemed as though the whole hall had stopped breathing while she was performing for them.
+[Text=Her CharacterOffsetBegin=227 CharacterOffsetEnd=230 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=concentration CharacterOffsetBegin=231 CharacterOffsetEnd=244 PartOfSpeech=NN Lemma=concentration NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=245 CharacterOffsetEnd=248 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=249 CharacterOffsetEnd=251 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=intense CharacterOffsetBegin=252 CharacterOffsetEnd=259 PartOfSpeech=JJ Lemma=intense NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=260 CharacterOffsetEnd=264 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=265 CharacterOffsetEnd=267 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=seemed CharacterOffsetBegin=268 CharacterOffsetEnd=274 PartOfSpeech=VBD Lemma=seem NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=275 CharacterOffsetEnd=277 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=though CharacterOffsetBegin=278 CharacterOffsetEnd=284 PartOfSpeech=IN Lemma=though NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=285 CharacterOffsetEnd=288 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=289 CharacterOffsetEnd=294 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=hall CharacterOffsetBegin=295 CharacterOffsetEnd=299 PartOfSpeech=NN Lemma=hall NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=300 CharacterOffsetEnd=303 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=stopped CharacterOffsetBegin=304 CharacterOffsetEnd=311 PartOfSpeech=VBN Lemma=stop NamedEntityTag=O]
+[Text=breathing CharacterOffsetBegin=312 CharacterOffsetEnd=321 PartOfSpeech=VBG Lemma=breathe NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=322 CharacterOffsetEnd=327 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=328 CharacterOffsetEnd=331 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=332 CharacterOffsetEnd=335 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=performing CharacterOffsetBegin=336 CharacterOffsetEnd=346 PartOfSpeech=VBG Lemma=perform NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=347 CharacterOffsetEnd=350 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=351 CharacterOffsetEnd=355 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=355 CharacterOffsetEnd=356 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP$ Her) (NN concentration))
+    (VP (VBD was)
+      (ADJP (RB so) (JJ intense))
+      (SBAR (IN that)
+        (S
+          (NP (PRP it))
+          (VP (VBD seemed)
+            (SBAR (IN as) (IN though)
+              (S
+                (NP (DT the) (JJ whole) (NN hall))
+                (VP (VBD had)
+                  (VP (VBN stopped)
+                    (S
+                      (VP (VBG breathing)
+                        (SBAR (IN while)
+                          (S
+                            (NP (PRP she))
+                            (VP (VBD was)
+                              (VP (VBG performing)
+                                (PP (IN for)
+                                  (NP (PRP them)))))))))))))))))
+    (. .)))
+
+root(ROOT-0, intense-5)
+nmod:poss(concentration-2, Her-1)
+nsubj(intense-5, concentration-2)
+cop(intense-5, was-3)
+advmod(intense-5, so-4)
+mark(seemed-8, that-6)
+nsubj(seemed-8, it-7)
+ccomp(intense-5, seemed-8)
+mark(stopped-15, as-9)
+mark(stopped-15, though-10)
+det(hall-13, the-11)
+amod(hall-13, whole-12)
+nsubj(stopped-15, hall-13)
+aux(stopped-15, had-14)
+advcl:though(seemed-8, stopped-15)
+xcomp(stopped-15, breathing-16)
+mark(performing-20, while-17)
+nsubj(performing-20, she-18)
+aux(performing-20, was-19)
+advcl:while(breathing-16, performing-20)
+case(them-22, for-21)
+nmod:for(performing-20, them-22)
+punct(intense-5, .-23)
+
+Sentence #6 (28 tokens):
+I loved her playing and had already heard this piece while I was on the swing, but now there was an electric feeling in the air.
+[Text=I CharacterOffsetBegin=360 CharacterOffsetEnd=361 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=loved CharacterOffsetBegin=362 CharacterOffsetEnd=367 PartOfSpeech=VBD Lemma=love NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=368 CharacterOffsetEnd=371 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=372 CharacterOffsetEnd=379 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=380 CharacterOffsetEnd=383 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=384 CharacterOffsetEnd=387 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=already CharacterOffsetBegin=388 CharacterOffsetEnd=395 PartOfSpeech=RB Lemma=already NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=396 CharacterOffsetEnd=401 PartOfSpeech=VBN Lemma=hear NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=402 CharacterOffsetEnd=406 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=piece CharacterOffsetBegin=407 CharacterOffsetEnd=412 PartOfSpeech=NN Lemma=piece NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=413 CharacterOffsetEnd=418 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=419 CharacterOffsetEnd=420 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=421 CharacterOffsetEnd=424 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=425 CharacterOffsetEnd=427 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=428 CharacterOffsetEnd=431 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=swing CharacterOffsetBegin=432 CharacterOffsetEnd=437 PartOfSpeech=NN Lemma=swing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=437 CharacterOffsetEnd=438 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=439 CharacterOffsetEnd=442 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=443 CharacterOffsetEnd=446 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=there CharacterOffsetBegin=447 CharacterOffsetEnd=452 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=453 CharacterOffsetEnd=456 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=457 CharacterOffsetEnd=459 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=electric CharacterOffsetBegin=460 CharacterOffsetEnd=468 PartOfSpeech=JJ Lemma=electric NamedEntityTag=O]
+[Text=feeling CharacterOffsetBegin=469 CharacterOffsetEnd=476 PartOfSpeech=NN Lemma=feeling NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=477 CharacterOffsetEnd=479 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=480 CharacterOffsetEnd=483 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=air CharacterOffsetBegin=484 CharacterOffsetEnd=487 PartOfSpeech=NN Lemma=air NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=487 CharacterOffsetEnd=488 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP
+        (VP (VBD loved)
+          (NP (PRP$ her) (NN playing)))
+        (CC and)
+        (VP (VBD had)
+          (VP
+            (ADVP (RB already))
+            (VBN heard)
+            (NP (DT this) (NN piece))
+            (SBAR (IN while)
+              (S
+                (NP (PRP I))
+                (VP (VBD was)
+                  (PP (IN on)
+                    (NP (DT the) (NN swing))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (ADVP (RB now))
+      (NP (EX there))
+      (VP (VBD was)
+        (NP
+          (NP (DT an) (JJ electric) (NN feeling))
+          (PP (IN in)
+            (NP (DT the) (NN air))))))
+    (. .)))
+
+root(ROOT-0, loved-2)
+nsubj(loved-2, I-1)
+nsubj(heard-8, I-1)
+nmod:poss(playing-4, her-3)
+dobj(loved-2, playing-4)
+cc(loved-2, and-5)
+aux(heard-8, had-6)
+advmod(heard-8, already-7)
+conj:and(loved-2, heard-8)
+det(piece-10, this-9)
+dobj(heard-8, piece-10)
+mark(swing-16, while-11)
+nsubj(swing-16, I-12)
+cop(swing-16, was-13)
+case(swing-16, on-14)
+det(swing-16, the-15)
+advcl:on(heard-8, swing-16)
+punct(loved-2, ,-17)
+cc(loved-2, but-18)
+advmod(was-21, now-19)
+expl(was-21, there-20)
+conj:and(loved-2, was-21)
+det(feeling-24, an-22)
+amod(feeling-24, electric-23)
+nsubj(was-21, feeling-24)
+case(air-27, in-25)
+det(air-27, the-26)
+nmod:in(feeling-24, air-27)
+punct(loved-2, .-28)
+
+Sentence #7 (14 tokens):
+As the final notes died away, the audience burst into spontaneous cheering.
+[Text=As CharacterOffsetBegin=489 CharacterOffsetEnd=491 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=492 CharacterOffsetEnd=495 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=final CharacterOffsetBegin=496 CharacterOffsetEnd=501 PartOfSpeech=JJ Lemma=final NamedEntityTag=O]
+[Text=notes CharacterOffsetBegin=502 CharacterOffsetEnd=507 PartOfSpeech=NNS Lemma=note NamedEntityTag=O]
+[Text=died CharacterOffsetBegin=508 CharacterOffsetEnd=512 PartOfSpeech=VBD Lemma=die NamedEntityTag=O]
+[Text=away CharacterOffsetBegin=513 CharacterOffsetEnd=517 PartOfSpeech=RB Lemma=away NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=517 CharacterOffsetEnd=518 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=519 CharacterOffsetEnd=522 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=audience CharacterOffsetBegin=523 CharacterOffsetEnd=531 PartOfSpeech=NN Lemma=audience NamedEntityTag=O]
+[Text=burst CharacterOffsetBegin=532 CharacterOffsetEnd=537 PartOfSpeech=NN Lemma=burst NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=538 CharacterOffsetEnd=542 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=spontaneous CharacterOffsetBegin=543 CharacterOffsetEnd=554 PartOfSpeech=JJ Lemma=spontaneous NamedEntityTag=O]
+[Text=cheering CharacterOffsetBegin=555 CharacterOffsetEnd=563 PartOfSpeech=VBG Lemma=cheer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=563 CharacterOffsetEnd=564 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (DT the) (JJ final) (NNS notes))
+        (VP (VBD died)
+          (ADVP (RB away)))))
+    (, ,)
+    (NP (DT the) (NN audience))
+    (VP (NN burst)
+      (PP (IN into)
+        (NP
+          (NP (JJ spontaneous))
+          (VP (VBG cheering)))))
+    (. .)))
+
+root(ROOT-0, burst-10)
+mark(died-5, As-1)
+det(notes-4, the-2)
+amod(notes-4, final-3)
+nsubj(died-5, notes-4)
+advcl:as(burst-10, died-5)
+advmod(died-5, away-6)
+punct(burst-10, ,-7)
+det(audience-9, the-8)
+nsubj(burst-10, audience-9)
+case(spontaneous-12, into-11)
+nmod:into(burst-10, spontaneous-12)
+acl(spontaneous-12, cheering-13)
+punct(burst-10, .-14)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,8,[8,10]), that is: "She" -> "Jackie 's"
+	(3,18,[18,19]) -> (1,8,[8,10]), that is: "Jackie" -> "Jackie 's"
+	(4,5,[5,6]) -> (1,8,[8,10]), that is: "Jackie" -> "Jackie 's"
+	(5,1,[1,2]) -> (1,8,[8,10]), that is: "Her" -> "Jackie 's"
+	(5,18,[18,19]) -> (1,8,[8,10]), that is: "she" -> "Jackie 's"
+	(6,3,[3,4]) -> (1,8,[8,10]), that is: "her" -> "Jackie 's"
+Coreference set:
+	(1,6,[6,7]) -> (1,4,[3,5]), that is: "it" -> "my turn"
+Coreference set:
+	(6,1,[1,2]) -> (1,3,[3,4]), that is: "I" -> "my"
+	(6,12,[12,13]) -> (1,3,[3,4]), that is: "I" -> "my"
+Coreference set:
+	(2,7,[5,8]) -> (2,11,[9,14]), that is: "the set piece" -> "Purcell 's Air in D"
+	(6,10,[9,11]) -> (2,11,[9,14]), that is: "this piece" -> "Purcell 's Air in D"
+	(6,27,[26,28]) -> (2,11,[9,14]), that is: "the air" -> "Purcell 's Air in D"
+Coreference set:
+	(3,7,[7,8]) -> (3,1,[1,2]), that is: "her" -> "Mum"
+Coreference set:
+	(5,22,[22,23]) -> (3,12,[10,13]), that is: "them" -> "an ` A"
+Coreference set:
+	(5,7,[7,8]) -> (5,2,[1,3]), that is: "it" -> "Her concentration"

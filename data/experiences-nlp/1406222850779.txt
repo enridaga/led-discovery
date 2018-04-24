@@ -1,0 +1,737 @@
+Sentence #1 (15 tokens):
+I remember my pianist Tasso Janopulo and I were rehearsing Beethoven's Kreutzer Sonata.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=remember CharacterOffsetBegin=2 CharacterOffsetEnd=10 PartOfSpeech=VBP Lemma=remember NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=pianist CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=pianist NamedEntityTag=O]
+[Text=Tasso CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Tasso NamedEntityTag=PERSON]
+[Text=Janopulo CharacterOffsetBegin=28 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Janopulo NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=rehearsing CharacterOffsetBegin=48 CharacterOffsetEnd=58 PartOfSpeech=VBG Lemma=rehearse NamedEntityTag=O]
+[Text=Beethoven CharacterOffsetBegin=59 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=68 CharacterOffsetEnd=70 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Kreutzer CharacterOffsetBegin=71 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Kreutzer NamedEntityTag=PERSON]
+[Text=Sonata CharacterOffsetBegin=80 CharacterOffsetEnd=86 PartOfSpeech=NNP Lemma=Sonata NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP remember)
+        (S
+          (NP (PRP$ my) (NN pianist))
+          (NP (NNP Tasso) (NNP Janopulo)))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBD were)
+        (VP (VBG rehearsing)
+          (NP
+            (NP (NNP Beethoven) (POS 's))
+            (NNP Kreutzer) (NNP Sonata)))))
+    (. .)))
+
+root(ROOT-0, remember-2)
+nsubj(remember-2, I-1)
+nmod:poss(pianist-4, my-3)
+nsubj(Janopulo-6, pianist-4)
+compound(Janopulo-6, Tasso-5)
+xcomp(remember-2, Janopulo-6)
+cc(remember-2, and-7)
+nsubj(rehearsing-10, I-8)
+aux(rehearsing-10, were-9)
+conj:and(remember-2, rehearsing-10)
+nmod:poss(Sonata-14, Beethoven-11)
+case(Beethoven-11, 's-12)
+compound(Sonata-14, Kreutzer-13)
+dobj(rehearsing-10, Sonata-14)
+punct(remember-2, .-15)
+
+Sentence #2 (11 tokens):
+This was in Paris on the rue du Faubourg St-Honoré.
+[Text=This CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Paris CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=NNP Lemma=Paris NamedEntityTag=LOCATION]
+[Text=on CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rue CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=FW Lemma=rue NamedEntityTag=O]
+[Text=du CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=NNP Lemma=du NamedEntityTag=O]
+[Text=Faubourg CharacterOffsetBegin=120 CharacterOffsetEnd=128 PartOfSpeech=NNP Lemma=Faubourg NamedEntityTag=ORGANIZATION]
+[Text=St-Honoré CharacterOffsetBegin=129 CharacterOffsetEnd=138 PartOfSpeech=NNP Lemma=St-Honoré NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBD was)
+      (PP (IN in)
+        (NP
+          (NP (NNP Paris))
+          (PP (IN on)
+            (NP
+              (NP (DT the) (FW rue))
+              (NP (NNP du) (NNP Faubourg) (NNP St-Honoré)))))))
+    (. .)))
+
+root(ROOT-0, Paris-4)
+nsubj(Paris-4, This-1)
+cop(Paris-4, was-2)
+case(Paris-4, in-3)
+case(rue-7, on-5)
+det(rue-7, the-6)
+nmod:on(Paris-4, rue-7)
+compound(St-Honoré-10, du-8)
+compound(St-Honoré-10, Faubourg-9)
+dep(rue-7, St-Honoré-10)
+punct(Paris-4, .-11)
+
+Sentence #3 (16 tokens):
+It's a marvellous place, a quiet cul-de-sac inhabited by film stars and artists.
+[Text=It CharacterOffsetBegin=140 CharacterOffsetEnd=142 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=142 CharacterOffsetEnd=144 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=marvellous CharacterOffsetBegin=147 CharacterOffsetEnd=157 PartOfSpeech=JJ Lemma=marvellous NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=158 CharacterOffsetEnd=163 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=163 CharacterOffsetEnd=164 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=quiet CharacterOffsetBegin=167 CharacterOffsetEnd=172 PartOfSpeech=JJ Lemma=quiet NamedEntityTag=O]
+[Text=cul-de-sac CharacterOffsetBegin=173 CharacterOffsetEnd=183 PartOfSpeech=NN Lemma=cul-de-sac NamedEntityTag=O]
+[Text=inhabited CharacterOffsetBegin=184 CharacterOffsetEnd=193 PartOfSpeech=VBN Lemma=inhabit NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=194 CharacterOffsetEnd=196 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=film CharacterOffsetBegin=197 CharacterOffsetEnd=201 PartOfSpeech=NN Lemma=film NamedEntityTag=O]
+[Text=stars CharacterOffsetBegin=202 CharacterOffsetEnd=207 PartOfSpeech=NNS Lemma=star NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=208 CharacterOffsetEnd=211 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=artists CharacterOffsetBegin=212 CharacterOffsetEnd=219 PartOfSpeech=NNS Lemma=artist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=219 CharacterOffsetEnd=220 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT a) (JJ marvellous) (NN place))
+        (, ,)
+        (NP
+          (NP (DT a) (JJ quiet) (NN cul-de-sac))
+          (VP (VBN inhabited)
+            (PP (IN by)
+              (NP (NN film) (NNS stars)
+                (CC and)
+                (NNS artists)))))))
+    (. .)))
+
+root(ROOT-0, place-5)
+nsubj(place-5, It-1)
+cop(place-5, 's-2)
+det(place-5, a-3)
+amod(place-5, marvellous-4)
+punct(place-5, ,-6)
+det(cul-de-sac-9, a-7)
+amod(cul-de-sac-9, quiet-8)
+appos(place-5, cul-de-sac-9)
+acl(cul-de-sac-9, inhabited-10)
+case(stars-13, by-11)
+compound(stars-13, film-12)
+nmod:by(inhabited-10, stars-13)
+cc(stars-13, and-14)
+nmod:by(inhabited-10, artists-15)
+conj:and(stars-13, artists-15)
+punct(place-5, .-16)
+
+Sentence #4 (20 tokens):
+It was late June, and quite warm, so we opened the window into the long inner courtyard.
+[Text=It CharacterOffsetBegin=221 CharacterOffsetEnd=223 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=224 CharacterOffsetEnd=227 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=late CharacterOffsetBegin=228 CharacterOffsetEnd=232 PartOfSpeech=JJ Lemma=late NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-06 Timex=<TIMEX3 mod="LATE" tid="t1" type="DATE" value="XXXX-06">late June</TIMEX3>]
+[Text=June CharacterOffsetBegin=233 CharacterOffsetEnd=237 PartOfSpeech=NNP Lemma=June NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-06 Timex=<TIMEX3 mod="LATE" tid="t1" type="DATE" value="XXXX-06">late June</TIMEX3>]
+[Text=, CharacterOffsetBegin=237 CharacterOffsetEnd=238 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=239 CharacterOffsetEnd=242 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=243 CharacterOffsetEnd=248 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=warm CharacterOffsetBegin=249 CharacterOffsetEnd=253 PartOfSpeech=JJ Lemma=warm NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=253 CharacterOffsetEnd=254 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=255 CharacterOffsetEnd=257 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=258 CharacterOffsetEnd=260 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=opened CharacterOffsetBegin=261 CharacterOffsetEnd=267 PartOfSpeech=VBD Lemma=open NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=268 CharacterOffsetEnd=271 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=window CharacterOffsetBegin=272 CharacterOffsetEnd=278 PartOfSpeech=NN Lemma=window NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=279 CharacterOffsetEnd=283 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=284 CharacterOffsetEnd=287 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=288 CharacterOffsetEnd=292 PartOfSpeech=JJ Lemma=long NamedEntityTag=O]
+[Text=inner CharacterOffsetBegin=293 CharacterOffsetEnd=298 PartOfSpeech=JJ Lemma=inner NamedEntityTag=O]
+[Text=courtyard CharacterOffsetBegin=299 CharacterOffsetEnd=308 PartOfSpeech=NN Lemma=courtyard NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=308 CharacterOffsetEnd=309 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBD was)
+        (ADJP (JJ late))
+        (NP-TMP (NNP June)))
+      (, ,)
+      (CC and)
+      (VP
+        (ADJP (RB quite) (JJ warm))
+        (, ,)
+        (SBAR (IN so)
+          (S
+            (NP (PRP we))
+            (VP (VBD opened)
+              (NP (DT the) (NN window))
+              (PP (IN into)
+                (NP (DT the) (JJ long) (JJ inner) (NN courtyard))))))))
+    (. .)))
+
+root(ROOT-0, late-3)
+nsubj(late-3, It-1)
+nsubj(warm-8, It-1)
+cop(late-3, was-2)
+nmod:tmod(late-3, June-4)
+punct(late-3, ,-5)
+cc(late-3, and-6)
+advmod(warm-8, quite-7)
+conj:and(late-3, warm-8)
+punct(warm-8, ,-9)
+mark(opened-12, so-10)
+nsubj(opened-12, we-11)
+advcl:so(warm-8, opened-12)
+det(window-14, the-13)
+dobj(opened-12, window-14)
+case(courtyard-19, into-15)
+det(courtyard-19, the-16)
+amod(courtyard-19, long-17)
+amod(courtyard-19, inner-18)
+nmod:into(opened-12, courtyard-19)
+punct(late-3, .-20)
+
+Sentence #5 (10 tokens):
+The celebrated French actor, Louis Jouvet lived opposite.
+[Text=The CharacterOffsetBegin=313 CharacterOffsetEnd=316 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=celebrated CharacterOffsetBegin=317 CharacterOffsetEnd=327 PartOfSpeech=JJ Lemma=celebrated NamedEntityTag=O]
+[Text=French CharacterOffsetBegin=328 CharacterOffsetEnd=334 PartOfSpeech=JJ Lemma=french NamedEntityTag=MISC]
+[Text=actor CharacterOffsetBegin=335 CharacterOffsetEnd=340 PartOfSpeech=NN Lemma=actor NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=340 CharacterOffsetEnd=341 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Louis CharacterOffsetBegin=342 CharacterOffsetEnd=347 PartOfSpeech=NNP Lemma=Louis NamedEntityTag=PERSON]
+[Text=Jouvet CharacterOffsetBegin=348 CharacterOffsetEnd=354 PartOfSpeech=NNP Lemma=Jouvet NamedEntityTag=PERSON]
+[Text=lived CharacterOffsetBegin=355 CharacterOffsetEnd=360 PartOfSpeech=VBD Lemma=live NamedEntityTag=O]
+[Text=opposite CharacterOffsetBegin=361 CharacterOffsetEnd=369 PartOfSpeech=JJ Lemma=opposite NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=369 CharacterOffsetEnd=370 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ celebrated) (JJ French) (NN actor))
+      (, ,)
+      (NP (NNP Louis) (NNP Jouvet)))
+    (VP (VBD lived)
+      (NP (JJ opposite)))
+    (. .)))
+
+root(ROOT-0, lived-8)
+det(actor-4, The-1)
+amod(actor-4, celebrated-2)
+amod(actor-4, French-3)
+nsubj(lived-8, actor-4)
+punct(actor-4, ,-5)
+compound(Jouvet-7, Louis-6)
+appos(actor-4, Jouvet-7)
+dobj(lived-8, opposite-9)
+punct(lived-8, .-10)
+
+Sentence #6 (12 tokens):
+He had an exotic servant – a Turk in a fez.
+[Text=He CharacterOffsetBegin=371 CharacterOffsetEnd=373 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=374 CharacterOffsetEnd=377 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=378 CharacterOffsetEnd=380 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=exotic CharacterOffsetBegin=381 CharacterOffsetEnd=387 PartOfSpeech=JJ Lemma=exotic NamedEntityTag=O]
+[Text=servant CharacterOffsetBegin=388 CharacterOffsetEnd=395 PartOfSpeech=NN Lemma=servant NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=396 CharacterOffsetEnd=397 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=398 CharacterOffsetEnd=399 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Turk CharacterOffsetBegin=400 CharacterOffsetEnd=404 PartOfSpeech=NNP Lemma=Turk NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=405 CharacterOffsetEnd=407 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=408 CharacterOffsetEnd=409 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fez CharacterOffsetBegin=410 CharacterOffsetEnd=413 PartOfSpeech=NN Lemma=fez NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=413 CharacterOffsetEnd=414 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD had)
+      (NP
+        (NP (DT an) (JJ exotic) (NN servant))
+        (: --)
+        (NP
+          (NP (DT a) (NNP Turk))
+          (PP (IN in)
+            (NP (DT a) (NN fez))))))
+    (. .)))
+
+root(ROOT-0, had-2)
+nsubj(had-2, He-1)
+det(servant-5, an-3)
+amod(servant-5, exotic-4)
+dobj(had-2, servant-5)
+punct(servant-5, ---6)
+det(Turk-8, a-7)
+dep(servant-5, Turk-8)
+case(fez-11, in-9)
+det(fez-11, a-10)
+nmod:in(Turk-8, fez-11)
+punct(had-2, .-12)
+
+Sentence #7 (41 tokens):
+Rehearsing the Kreutzer, we had got to the characteristic closing theme of the exposition of the first movement when suddenly the Turkish servant called to us across the courtyard, “You’re playing my people’s music!”
+[Text=Rehearsing CharacterOffsetBegin=415 CharacterOffsetEnd=425 PartOfSpeech=VBG Lemma=rehearse NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=426 CharacterOffsetEnd=429 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Kreutzer CharacterOffsetBegin=430 CharacterOffsetEnd=438 PartOfSpeech=NNP Lemma=Kreutzer NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=438 CharacterOffsetEnd=439 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=440 CharacterOffsetEnd=442 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=443 CharacterOffsetEnd=446 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=447 CharacterOffsetEnd=450 PartOfSpeech=VBN Lemma=get NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=451 CharacterOffsetEnd=453 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=454 CharacterOffsetEnd=457 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=characteristic CharacterOffsetBegin=458 CharacterOffsetEnd=472 PartOfSpeech=JJ Lemma=characteristic NamedEntityTag=O]
+[Text=closing CharacterOffsetBegin=473 CharacterOffsetEnd=480 PartOfSpeech=NN Lemma=closing NamedEntityTag=O]
+[Text=theme CharacterOffsetBegin=481 CharacterOffsetEnd=486 PartOfSpeech=NN Lemma=theme NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=487 CharacterOffsetEnd=489 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=490 CharacterOffsetEnd=493 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=exposition CharacterOffsetBegin=494 CharacterOffsetEnd=504 PartOfSpeech=NN Lemma=exposition NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=505 CharacterOffsetEnd=507 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=508 CharacterOffsetEnd=511 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=512 CharacterOffsetEnd=517 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=movement CharacterOffsetBegin=518 CharacterOffsetEnd=526 PartOfSpeech=NN Lemma=movement NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=527 CharacterOffsetEnd=531 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=suddenly CharacterOffsetBegin=532 CharacterOffsetEnd=540 PartOfSpeech=RB Lemma=suddenly NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=541 CharacterOffsetEnd=544 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Turkish CharacterOffsetBegin=545 CharacterOffsetEnd=552 PartOfSpeech=JJ Lemma=turkish NamedEntityTag=MISC]
+[Text=servant CharacterOffsetBegin=553 CharacterOffsetEnd=560 PartOfSpeech=NN Lemma=servant NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=561 CharacterOffsetEnd=567 PartOfSpeech=VBN Lemma=call NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=568 CharacterOffsetEnd=570 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=571 CharacterOffsetEnd=573 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=across CharacterOffsetBegin=574 CharacterOffsetEnd=580 PartOfSpeech=IN Lemma=across NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=581 CharacterOffsetEnd=584 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=courtyard CharacterOffsetBegin=585 CharacterOffsetEnd=594 PartOfSpeech=NN Lemma=courtyard NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=594 CharacterOffsetEnd=595 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=596 CharacterOffsetEnd=597 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=You CharacterOffsetBegin=597 CharacterOffsetEnd=600 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=600 CharacterOffsetEnd=603 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=604 CharacterOffsetEnd=611 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=612 CharacterOffsetEnd=614 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=615 CharacterOffsetEnd=621 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=621 CharacterOffsetEnd=623 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=624 CharacterOffsetEnd=629 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=629 CharacterOffsetEnd=630 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=630 CharacterOffsetEnd=631 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (VP (VBG Rehearsing)
+        (NP (DT the) (NNP Kreutzer))))
+    (PRN (, ,)
+      (S
+        (NP (PRP we))
+        (VP (VBD had)
+          (VP (VBN got)
+            (PP (TO to)
+              (NP
+                (NP (DT the) (JJ characteristic) (NN closing) (NN theme))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NN exposition))
+                    (PP (IN of)
+                      (NP (DT the) (JJ first) (NN movement)))))))
+            (SBAR
+              (WHADVP (WRB when))
+              (FRAG
+                (ADVP (RB suddenly))
+                (NP
+                  (NP (DT the) (JJ Turkish) (NN servant))
+                  (VP (VBN called)
+                    (PP (TO to)
+                      (NP (PRP us)))
+                    (PP (IN across)
+                      (NP (DT the) (NN courtyard))))))))))
+      (, ,))
+    (`` ``)
+    (NP (PRP You))
+    (VP (VBP 're)
+      (VP (VBG playing)
+        (NP
+          (NP (PRP$ my) (NNS people) (POS 's))
+          (NN music))))
+    (. !) ('' '')))
+
+root(ROOT-0, playing-35)
+dep(playing-35, Rehearsing-1)
+det(Kreutzer-3, the-2)
+dobj(Rehearsing-1, Kreutzer-3)
+punct(got-7, ,-4)
+nsubj(got-7, we-5)
+aux(got-7, had-6)
+parataxis(playing-35, got-7)
+case(theme-12, to-8)
+det(theme-12, the-9)
+amod(theme-12, characteristic-10)
+compound(theme-12, closing-11)
+nmod:to(got-7, theme-12)
+case(exposition-15, of-13)
+det(exposition-15, the-14)
+nmod:of(theme-12, exposition-15)
+case(movement-19, of-16)
+det(movement-19, the-17)
+amod(movement-19, first-18)
+nmod:of(exposition-15, movement-19)
+advmod(servant-24, when-20)
+dep(servant-24, suddenly-21)
+det(servant-24, the-22)
+amod(servant-24, Turkish-23)
+advcl(got-7, servant-24)
+acl(servant-24, called-25)
+case(us-27, to-26)
+nmod:to(called-25, us-27)
+case(courtyard-30, across-28)
+det(courtyard-30, the-29)
+nmod:across(called-25, courtyard-30)
+punct(got-7, ,-31)
+punct(playing-35, ``-32)
+nsubj(playing-35, You-33)
+aux(playing-35, 're-34)
+nmod:poss(people-37, my-36)
+nmod:poss(music-39, people-37)
+case(people-37, 's-38)
+dobj(playing-35, music-39)
+punct(playing-35, !-40)
+punct(playing-35, ''-41)
+
+Sentence #8 (27 tokens):
+Out of the blue, it seemed, he was holding a tambourine, then singing along and dancing while beating the rhythm on the tambourine!
+[Text=Out CharacterOffsetBegin=632 CharacterOffsetEnd=635 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=636 CharacterOffsetEnd=638 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=639 CharacterOffsetEnd=642 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=blue CharacterOffsetBegin=643 CharacterOffsetEnd=647 PartOfSpeech=JJ Lemma=blue NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=647 CharacterOffsetEnd=648 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=649 CharacterOffsetEnd=651 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=seemed CharacterOffsetBegin=652 CharacterOffsetEnd=658 PartOfSpeech=VBD Lemma=seem NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=658 CharacterOffsetEnd=659 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=660 CharacterOffsetEnd=662 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=663 CharacterOffsetEnd=666 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=holding CharacterOffsetBegin=667 CharacterOffsetEnd=674 PartOfSpeech=VBG Lemma=hold NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=675 CharacterOffsetEnd=676 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=tambourine CharacterOffsetBegin=677 CharacterOffsetEnd=687 PartOfSpeech=NN Lemma=tambourine NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=687 CharacterOffsetEnd=688 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=689 CharacterOffsetEnd=693 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=694 CharacterOffsetEnd=701 PartOfSpeech=VBG Lemma=sing NamedEntityTag=O]
+[Text=along CharacterOffsetBegin=702 CharacterOffsetEnd=707 PartOfSpeech=IN Lemma=along NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=708 CharacterOffsetEnd=711 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=dancing CharacterOffsetBegin=712 CharacterOffsetEnd=719 PartOfSpeech=NN Lemma=dancing NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=720 CharacterOffsetEnd=725 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=beating CharacterOffsetBegin=726 CharacterOffsetEnd=733 PartOfSpeech=VBG Lemma=beat NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=734 CharacterOffsetEnd=737 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rhythm CharacterOffsetBegin=738 CharacterOffsetEnd=744 PartOfSpeech=NN Lemma=rhythm NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=745 CharacterOffsetEnd=747 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=748 CharacterOffsetEnd=751 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=tambourine CharacterOffsetBegin=752 CharacterOffsetEnd=762 PartOfSpeech=NN Lemma=tambourine NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=762 CharacterOffsetEnd=763 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN Out)
+      (PP (IN of)
+        (NP (DT the) (JJ blue))))
+    (PRN (, ,)
+      (S
+        (NP (PRP it))
+        (VP (VBD seemed)))
+      (, ,))
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP
+        (VP (VBG holding)
+          (NP (DT a) (NN tambourine)))
+        (, ,)
+        (VP
+          (ADVP (RB then))
+          (VBG singing)
+          (PP (IN along)))
+        (CC and)
+        (VP
+          (NP (NN dancing))
+          (PP (IN while)
+            (S
+              (VP (VBG beating)
+                (NP (DT the) (NN rhythm))
+                (PP (IN on)
+                  (NP (DT the) (NN tambourine)))))))))
+    (. !)))
+
+root(ROOT-0, holding-11)
+case(blue-4, Out-1)
+mwe(Out-1, of-2)
+det(blue-4, the-3)
+nmod:out_of(holding-11, blue-4)
+punct(seemed-7, ,-5)
+nsubj(seemed-7, it-6)
+parataxis(holding-11, seemed-7)
+punct(seemed-7, ,-8)
+nsubj(holding-11, he-9)
+nsubj(singing-16, he-9)
+aux(holding-11, was-10)
+det(tambourine-13, a-12)
+dobj(holding-11, tambourine-13)
+punct(holding-11, ,-14)
+advmod(singing-16, then-15)
+conj:and(holding-11, singing-16)
+nmod(singing-16, along-17)
+cc(holding-11, and-18)
+conj:and(holding-11, dancing-19)
+mark(beating-21, while-20)
+advcl:while(dancing-19, beating-21)
+det(rhythm-23, the-22)
+dobj(beating-21, rhythm-23)
+case(tambourine-26, on-24)
+det(tambourine-26, the-25)
+nmod:on(beating-21, tambourine-26)
+punct(holding-11, !-27)
+
+Sentence #9 (23 tokens):
+At first Tasso and I were astonished, but then I thought, Of course, the theme is Turkish in character!
+[Text=At CharacterOffsetBegin=767 CharacterOffsetEnd=769 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=770 CharacterOffsetEnd=775 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=Tasso CharacterOffsetBegin=776 CharacterOffsetEnd=781 PartOfSpeech=NNP Lemma=Tasso NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=782 CharacterOffsetEnd=785 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=786 CharacterOffsetEnd=787 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=788 CharacterOffsetEnd=792 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=astonished CharacterOffsetBegin=793 CharacterOffsetEnd=803 PartOfSpeech=VBN Lemma=astonish NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=803 CharacterOffsetEnd=804 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=805 CharacterOffsetEnd=808 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=809 CharacterOffsetEnd=813 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=814 CharacterOffsetEnd=815 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=816 CharacterOffsetEnd=823 PartOfSpeech=VBD Lemma=think NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=823 CharacterOffsetEnd=824 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Of CharacterOffsetBegin=825 CharacterOffsetEnd=827 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=828 CharacterOffsetEnd=834 PartOfSpeech=NN Lemma=course NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=834 CharacterOffsetEnd=835 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=836 CharacterOffsetEnd=839 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=theme CharacterOffsetBegin=840 CharacterOffsetEnd=845 PartOfSpeech=NN Lemma=theme NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=846 CharacterOffsetEnd=848 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Turkish CharacterOffsetBegin=849 CharacterOffsetEnd=856 PartOfSpeech=JJ Lemma=turkish NamedEntityTag=MISC]
+[Text=in CharacterOffsetBegin=857 CharacterOffsetEnd=859 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=character CharacterOffsetBegin=860 CharacterOffsetEnd=869 PartOfSpeech=NN Lemma=character NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=869 CharacterOffsetEnd=870 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (JJ first) (NNP Tasso))
+        (CC and)
+        (S
+          (S
+            (NP (PRP I))
+            (VP (VBD were)
+              (VP (VBN astonished))))
+          (, ,)
+          (CC but)
+          (S
+            (ADVP (RB then))
+            (NP (PRP I))
+            (VP (VBD thought))))))
+    (, ,)
+    (PP (IN Of)
+      (NP (NN course)))
+    (, ,)
+    (NP (DT the) (NN theme))
+    (VP (VBZ is)
+      (NP
+        (NP (JJ Turkish))
+        (PP (IN in)
+          (NP (NN character)))))
+    (. !)))
+
+root(ROOT-0, Turkish-20)
+case(Tasso-3, At-1)
+amod(Tasso-3, first-2)
+nmod:at(Turkish-20, Tasso-3)
+cc(Tasso-3, and-4)
+nsubjpass(astonished-7, I-5)
+auxpass(astonished-7, were-6)
+conj:and(Tasso-3, astonished-7)
+nmod:at(Turkish-20, astonished-7)
+punct(astonished-7, ,-8)
+cc(astonished-7, but-9)
+advmod(thought-12, then-10)
+nsubj(thought-12, I-11)
+conj:and(Tasso-3, thought-12)
+conj:but(astonished-7, thought-12)
+punct(Turkish-20, ,-13)
+case(course-15, Of-14)
+nmod:of(Turkish-20, course-15)
+punct(Turkish-20, ,-16)
+det(theme-18, the-17)
+nsubj(Turkish-20, theme-18)
+cop(Turkish-20, is-19)
+case(character-22, in-21)
+nmod:in(Turkish-20, character-22)
+punct(Turkish-20, !-23)
+
+Sentence #10 (14 tokens):
+That’s why it’s so inconvenient to play, by the way.
+[Text=That CharacterOffsetBegin=871 CharacterOffsetEnd=875 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=875 CharacterOffsetEnd=877 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=878 CharacterOffsetEnd=881 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=882 CharacterOffsetEnd=884 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=884 CharacterOffsetEnd=886 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=887 CharacterOffsetEnd=889 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=inconvenient CharacterOffsetBegin=890 CharacterOffsetEnd=902 PartOfSpeech=JJ Lemma=inconvenient NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=903 CharacterOffsetEnd=905 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=906 CharacterOffsetEnd=910 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=910 CharacterOffsetEnd=911 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=912 CharacterOffsetEnd=914 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=915 CharacterOffsetEnd=918 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=919 CharacterOffsetEnd=922 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=922 CharacterOffsetEnd=923 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (ADJP (RB so) (JJ inconvenient)
+              (S
+                (VP (TO to)
+                  (VP (VB play)))))
+            (, ,)
+            (PP (IN by)
+              (NP (DT the) (NN way)))))))
+    (. .)))
+
+root(ROOT-0, 's-2)
+nsubj('s-2, That-1)
+advmod(inconvenient-7, why-3)
+nsubj(inconvenient-7, it-4)
+nsubj:xsubj(play-9, it-4)
+cop(inconvenient-7, 's-5)
+advmod(inconvenient-7, so-6)
+advcl('s-2, inconvenient-7)
+mark(play-9, to-8)
+xcomp(inconvenient-7, play-9)
+punct(inconvenient-7, ,-10)
+case(way-13, by-11)
+det(way-13, the-12)
+nmod:by(inconvenient-7, way-13)
+punct('s-2, .-14)
+
+Sentence #11 (23 tokens):
+We are so used to hearing it in the context of the Beethoven sonata that we do not notice its exotic roots.
+[Text=We CharacterOffsetBegin=924 CharacterOffsetEnd=926 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=927 CharacterOffsetEnd=930 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=931 CharacterOffsetEnd=933 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=934 CharacterOffsetEnd=938 PartOfSpeech=VBN Lemma=use NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=939 CharacterOffsetEnd=941 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hearing CharacterOffsetBegin=942 CharacterOffsetEnd=949 PartOfSpeech=VBG Lemma=hear NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=950 CharacterOffsetEnd=952 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=953 CharacterOffsetEnd=955 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=956 CharacterOffsetEnd=959 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=context CharacterOffsetBegin=960 CharacterOffsetEnd=967 PartOfSpeech=NN Lemma=context NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=968 CharacterOffsetEnd=970 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=971 CharacterOffsetEnd=974 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Beethoven CharacterOffsetBegin=975 CharacterOffsetEnd=984 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=PERSON]
+[Text=sonata CharacterOffsetBegin=985 CharacterOffsetEnd=991 PartOfSpeech=NN Lemma=sonata NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=992 CharacterOffsetEnd=996 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=997 CharacterOffsetEnd=999 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=1000 CharacterOffsetEnd=1002 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=1003 CharacterOffsetEnd=1006 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=notice CharacterOffsetBegin=1007 CharacterOffsetEnd=1013 PartOfSpeech=VB Lemma=notice NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=1014 CharacterOffsetEnd=1017 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=exotic CharacterOffsetBegin=1018 CharacterOffsetEnd=1024 PartOfSpeech=JJ Lemma=exotic NamedEntityTag=O]
+[Text=roots CharacterOffsetBegin=1025 CharacterOffsetEnd=1030 PartOfSpeech=NNS Lemma=root NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1030 CharacterOffsetEnd=1031 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP are)
+      (ADJP (RB so) (VBN used)
+        (PP (TO to)
+          (S
+            (VP (VBG hearing)
+              (NP (PRP it))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NN context))
+                  (PP (IN of)
+                    (NP (DT the) (NNP Beethoven) (NN sonata)))))))))
+      (SBAR (IN that)
+        (S
+          (NP (PRP we))
+          (VP (VBP do) (RB not)
+            (VP (VB notice)
+              (NP (PRP$ its) (JJ exotic) (NNS roots)))))))
+    (. .)))
+
+root(ROOT-0, used-4)
+nsubjpass(used-4, We-1)
+auxpass(used-4, are-2)
+advmod(used-4, so-3)
+mark(hearing-6, to-5)
+advcl:to(used-4, hearing-6)
+dobj(hearing-6, it-7)
+case(context-10, in-8)
+det(context-10, the-9)
+nmod:in(hearing-6, context-10)
+case(sonata-14, of-11)
+det(sonata-14, the-12)
+compound(sonata-14, Beethoven-13)
+nmod:of(context-10, sonata-14)
+mark(notice-19, that-15)
+nsubj(notice-19, we-16)
+aux(notice-19, do-17)
+neg(notice-19, not-18)
+ccomp(used-4, notice-19)
+nmod:poss(roots-22, its-20)
+amod(roots-22, exotic-21)
+dobj(notice-19, roots-22)
+punct(used-4, .-23)
+
+Coreference set:
+	(11,13,[13,14]) -> (1,11,[11,13]), that is: "Beethoven" -> "Beethoven 's"
+Coreference set:
+	(1,13,[13,14]) -> (7,3,[2,4]), that is: "Kreutzer" -> "the Kreutzer"
+	(7,3,[3,4]) -> (7,3,[2,4]), that is: "Kreutzer" -> "the Kreutzer"
+	(7,36,[36,37]) -> (7,3,[2,4]), that is: "my" -> "the Kreutzer"
+Coreference set:
+	(1,3,[3,4]) -> (1,1,[1,2]), that is: "my" -> "I"
+	(1,8,[8,9]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(9,5,[5,6]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(9,11,[11,12]) -> (1,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(11,14,[12,15]) -> (1,14,[11,15]), that is: "the Beethoven sonata" -> "Beethoven 's Kreutzer Sonata"
+Coreference set:
+	(2,1,[1,2]) -> (3,5,[3,16]), that is: "This" -> "a marvellous place , a quiet cul-de-sac inhabited by film stars and artists"
+	(3,1,[1,2]) -> (3,5,[3,16]), that is: "It" -> "a marvellous place , a quiet cul-de-sac inhabited by film stars and artists"
+	(3,5,[3,6]) -> (3,5,[3,16]), that is: "a marvellous place" -> "a marvellous place , a quiet cul-de-sac inhabited by film stars and artists"
+	(3,9,[7,16]) -> (3,5,[3,16]), that is: "a quiet cul-de-sac inhabited by film stars and artists" -> "a marvellous place , a quiet cul-de-sac inhabited by film stars and artists"
+	(4,1,[1,2]) -> (3,5,[3,16]), that is: "It" -> "a marvellous place , a quiet cul-de-sac inhabited by film stars and artists"
+Coreference set:
+	(7,5,[5,6]) -> (4,11,[11,12]), that is: "we" -> "we"
+	(7,27,[27,28]) -> (4,11,[11,12]), that is: "us" -> "we"
+Coreference set:
+	(7,30,[29,31]) -> (4,19,[16,20]), that is: "the courtyard" -> "the long inner courtyard"
+Coreference set:
+	(5,4,[1,5]) -> (5,7,[6,8]), that is: "The celebrated French actor" -> "Louis Jouvet"
+	(6,1,[1,2]) -> (5,7,[6,8]), that is: "He" -> "Louis Jouvet"
+Coreference set:
+	(9,2,[2,3]) -> (7,18,[18,19]), that is: "first" -> "first"
+	(10,4,[4,5]) -> (7,18,[18,19]), that is: "it" -> "first"
+	(11,7,[7,8]) -> (7,18,[18,19]), that is: "it" -> "first"
+	(11,20,[20,21]) -> (7,18,[18,19]), that is: "its" -> "first"
+Coreference set:
+	(8,9,[9,10]) -> (7,24,[22,31]), that is: "he" -> "the Turkish servant called to us across the courtyard"
+Coreference set:
+	(8,6,[6,7]) -> (8,4,[3,5]), that is: "it" -> "the blue"
+Coreference set:
+	(8,26,[25,27]) -> (8,13,[12,14]), that is: "the tambourine" -> "a tambourine"
+Coreference set:
+	(10,1,[1,2]) -> (9,3,[2,13]), that is: "That" -> "first Tasso and I were astonished , but then I thought"
+Coreference set:
+	(9,18,[17,19]) -> (9,20,[20,23]), that is: "the theme" -> "Turkish in character"
+Coreference set:
+	(11,16,[16,17]) -> (11,1,[1,2]), that is: "we" -> "We"

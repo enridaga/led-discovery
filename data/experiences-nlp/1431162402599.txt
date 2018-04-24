@@ -1,0 +1,59 @@
+Sentence #1 (17 tokens):
+Felix, in the room next to me, is teaching his little boy to sing.
+[Text=Felix CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Felix NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=room CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=room NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=teaching CharacterOffsetBegin=34 CharacterOffsetEnd=42 PartOfSpeech=VBG Lemma=teach NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=boy CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=boy NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=sing CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=sing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP Felix))
+      (, ,)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN room))
+          (ADVP (JJ next)
+            (PP (TO to)
+              (NP (PRP me))))))
+      (, ,))
+    (VP (VBZ is)
+      (VP (VBG teaching)
+        (NP (PRP$ his) (JJ little) (NN boy))
+        (S
+          (VP (TO to)
+            (VP (VB sing))))))
+    (. .)))
+
+root(ROOT-0, teaching-11)
+nsubj(teaching-11, Felix-1)
+punct(Felix-1, ,-2)
+case(room-5, in-3)
+det(room-5, the-4)
+nmod:in(Felix-1, room-5)
+case(me-8, next-6)
+mwe(next-6, to-7)
+nmod:next_to(room-5, me-8)
+punct(Felix-1, ,-9)
+aux(teaching-11, is-10)
+nmod:poss(boy-14, his-12)
+amod(boy-14, little-13)
+dobj(teaching-11, boy-14)
+mark(sing-16, to-15)
+advcl:to(teaching-11, sing-16)
+punct(teaching-11, .-17)
+
+Coreference set:
+	(1,12,[12,13]) -> (1,1,[1,2]), that is: "his" -> "Felix"

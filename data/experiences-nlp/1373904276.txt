@@ -1,0 +1,548 @@
+Sentence #1 (5 tokens):
+2 May, 1821.
+[Text=2 CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=CD Lemma=2 NamedEntityTag=DATE NormalizedNamedEntityTag=1821-05-02 Timex=<TIMEX3 tid="t1" type="DATE" value="1821-05-02">2 May, 1821</TIMEX3>]
+[Text=May CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=1821-05-02 Timex=<TIMEX3 tid="t1" type="DATE" value="1821-05-02">2 May, 1821</TIMEX3>]
+[Text=, CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=1821-05-02 Timex=<TIMEX3 tid="t1" type="DATE" value="1821-05-02">2 May, 1821</TIMEX3>]
+[Text=1821 CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=CD Lemma=1821 NamedEntityTag=DATE NormalizedNamedEntityTag=1821-05-02 Timex=<TIMEX3 tid="t1" type="DATE" value="1821-05-02">2 May, 1821</TIMEX3>]
+[Text=. CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (CD 2) (NNP May))
+    (, ,)
+    (NP (CD 1821))
+    (. .)))
+
+root(ROOT-0, May-2)
+nummod(May-2, 2-1)
+punct(May-2, ,-3)
+amod(May-2, 1821-4)
+punct(May-2, .-5)
+
+Sentence #2 (13 tokens):
+- This day se'nnight I went to Madame de Redens.
+[Text=- CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=This CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=this NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">This day</TIMEX3>]
+[Text=day CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">This day</TIMEX3>]
+[Text=se CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=FW Lemma=se NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=nnight CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=nnight NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Madame CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Madame NamedEntityTag=PERSON]
+[Text=de CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=IN Lemma=de NamedEntityTag=PERSON]
+[Text=Redens CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Redens NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (: -)
+    (NP
+      (NP (DT This) (NN day))
+      (NP (FW se))
+      (NP
+        (NP (`` `) (NN nnight))
+        (NP (PRP I))))
+    (VP (VBD went)
+      (PP (TO to)
+        (NP
+          (NP (NNP Madame))
+          (PP (IN de)
+            (NP (NNP Redens))))))
+    (. .)))
+
+root(ROOT-0, went-8)
+punct(went-8, --1)
+det(day-3, This-2)
+nsubj(went-8, day-3)
+dep(day-3, se-4)
+punct(nnight-6, `-5)
+dep(day-3, nnight-6)
+dep(nnight-6, I-7)
+case(Madame-10, to-9)
+nmod:to(went-8, Madame-10)
+case(Redens-12, de-11)
+nmod:de(Madame-10, Redens-12)
+punct(went-8, .-13)
+
+Sentence #3 (52 tokens):
+We did not arrive till ten, because Charles had much to write, and we came away at one o'clock, but the greater part of the intermediate time I was waltzing, and was at the last so far from tired, that I could willingly have waltzed longer.
+[Text=We CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=arrive CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=VB Lemma=arrive NamedEntityTag=O]
+[Text=till CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=till NamedEntityTag=O]
+[Text=ten CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=CD Lemma=ten NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.0]
+[Text=, CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=Charles CharacterOffsetBegin=98 CharacterOffsetEnd=105 PartOfSpeech=NNP Lemma=Charles NamedEntityTag=PERSON]
+[Text=had CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=115 CharacterOffsetEnd=117 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=write CharacterOffsetBegin=118 CharacterOffsetEnd=123 PartOfSpeech=VB Lemma=write NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=came CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=away CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=RB Lemma=away NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=142 CharacterOffsetEnd=144 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=145 CharacterOffsetEnd=148 PartOfSpeech=CD Lemma=one NamedEntityTag=TIME NormalizedNamedEntityTag=T01:00 Timex=<TIMEX3 tid="t3" type="TIME" value="T01:00">one o'clock</TIMEX3>]
+[Text=o'clock CharacterOffsetBegin=149 CharacterOffsetEnd=156 PartOfSpeech=RB Lemma=o'clock NamedEntityTag=TIME NormalizedNamedEntityTag=T01:00 Timex=<TIMEX3 tid="t3" type="TIME" value="T01:00">one o'clock</TIMEX3>]
+[Text=, CharacterOffsetBegin=156 CharacterOffsetEnd=157 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=162 CharacterOffsetEnd=165 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=greater CharacterOffsetBegin=166 CharacterOffsetEnd=173 PartOfSpeech=JJR Lemma=greater NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=174 CharacterOffsetEnd=178 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=179 CharacterOffsetEnd=181 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=182 CharacterOffsetEnd=185 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=intermediate CharacterOffsetBegin=186 CharacterOffsetEnd=198 PartOfSpeech=JJ Lemma=intermediate NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=199 CharacterOffsetEnd=203 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=204 CharacterOffsetEnd=205 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=206 CharacterOffsetEnd=209 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=waltzing CharacterOffsetBegin=210 CharacterOffsetEnd=218 PartOfSpeech=VBG Lemma=waltz NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=218 CharacterOffsetEnd=219 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=224 CharacterOffsetEnd=227 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=228 CharacterOffsetEnd=230 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=231 CharacterOffsetEnd=234 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=235 CharacterOffsetEnd=239 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=240 CharacterOffsetEnd=242 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=far CharacterOffsetBegin=243 CharacterOffsetEnd=246 PartOfSpeech=RB Lemma=far NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=247 CharacterOffsetEnd=251 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=tired CharacterOffsetBegin=252 CharacterOffsetEnd=257 PartOfSpeech=JJ Lemma=tired NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=257 CharacterOffsetEnd=258 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=259 CharacterOffsetEnd=263 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=264 CharacterOffsetEnd=265 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=266 CharacterOffsetEnd=271 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=willingly CharacterOffsetBegin=272 CharacterOffsetEnd=281 PartOfSpeech=RB Lemma=willingly NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=282 CharacterOffsetEnd=286 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=waltzed CharacterOffsetBegin=287 CharacterOffsetEnd=294 PartOfSpeech=VBN Lemma=waltz NamedEntityTag=O]
+[Text=longer CharacterOffsetBegin=295 CharacterOffsetEnd=301 PartOfSpeech=RBR Lemma=longer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=301 CharacterOffsetEnd=302 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VBD did) (RB not)
+        (VP (VB arrive)
+          (PP (IN till)
+            (NP (CD ten)))
+          (, ,)
+          (SBAR (IN because)
+            (S
+              (NP (NNP Charles))
+              (VP (VBD had)
+                (ADVP (JJ much))
+                (S
+                  (VP (TO to)
+                    (VP (VB write))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP we))
+      (VP (VBD came)
+        (PP (RB away)
+          (PP (IN at)
+            (NP (CD one) (RB o'clock)))
+          (, ,)
+          (CC but)
+          (PP
+            (NP
+              (NP (DT the) (JJR greater) (NN part))
+              (PP (IN of)
+                (NP (DT the) (JJ intermediate) (NN time))))))
+        (SBAR
+          (SBAR
+            (S
+              (NP (PRP I))
+              (VP (VBD was)
+                (VP (VBG waltzing)))))
+          (, ,)
+          (CC and)
+          (SBAR
+            (S
+              (VP (VBD was)
+                (PP (IN at)
+                  (NP (DT the) (JJ last)))
+                (ADVP
+                  (ADVP (RB so) (RB far))
+                  (PP (IN from)
+                    (ADJP (JJ tired))))
+                (, ,)
+                (SBAR (IN that)
+                  (S
+                    (NP (PRP I))
+                    (VP (MD could)
+                      (ADVP (RB willingly))
+                      (VP (VB have)
+                        (VP (VBN waltzed)
+                          (ADVP (RBR longer)))))))))))))
+    (. .)))
+
+root(ROOT-0, arrive-4)
+nsubj(arrive-4, We-1)
+aux(arrive-4, did-2)
+neg(arrive-4, not-3)
+case(ten-6, till-5)
+nmod:till(arrive-4, ten-6)
+punct(arrive-4, ,-7)
+mark(had-10, because-8)
+nsubj(had-10, Charles-9)
+nsubj:xsubj(write-13, Charles-9)
+advcl:because(arrive-4, had-10)
+advmod(had-10, much-11)
+mark(write-13, to-12)
+xcomp(had-10, write-13)
+punct(arrive-4, ,-14)
+cc(arrive-4, and-15)
+nsubj(came-17, we-16)
+conj:and(arrive-4, came-17)
+advmod(one-20, away-18)
+case(one-20, at-19)
+nmod:at(came-17, one-20)
+advmod(one-20, o'clock-21)
+punct(one-20, ,-22)
+cc(one-20, but-23)
+det(part-26, the-24)
+amod(part-26, greater-25)
+nmod:at(came-17, part-26)
+conj:but(one-20, part-26)
+case(time-30, of-27)
+det(time-30, the-28)
+amod(time-30, intermediate-29)
+nmod:of(part-26, time-30)
+nsubj(waltzing-33, I-31)
+nsubj(last-39, I-31)
+aux(waltzing-33, was-32)
+dep(came-17, waltzing-33)
+punct(waltzing-33, ,-34)
+cc(waltzing-33, and-35)
+cop(last-39, was-36)
+case(last-39, at-37)
+det(last-39, the-38)
+dep(came-17, last-39)
+conj:and(waltzing-33, last-39)
+advmod(far-41, so-40)
+advmod(last-39, far-41)
+case(tired-43, from-42)
+advcl:from(far-41, tired-43)
+punct(last-39, ,-44)
+mark(waltzed-50, that-45)
+nsubj(waltzed-50, I-46)
+aux(waltzed-50, could-47)
+advmod(waltzed-50, willingly-48)
+aux(waltzed-50, have-49)
+ccomp(last-39, waltzed-50)
+advmod(waltzed-50, longer-51)
+punct(arrive-4, .-52)
+
+Sentence #4 (94 tokens):
+Two days after I had a violent cramp, which made me quite lame, so that I hopped and hobbled about the house all Saturday morning, but on Saturday evening, Ringseis [a German doctor in Rome] came for his leave-taking visit, and we had some other people to meet him, who by degrees were so wound up by singing, that all set about waltzing - and soon I waltzed too - and the end of the story is, had no future cramp or fatigue.
+[Text=Two CharacterOffsetBegin=303 CharacterOffsetEnd=306 PartOfSpeech=CD Lemma=two NamedEntityTag=DURATION NormalizedNamedEntityTag=P2D Timex=<TIMEX3 tid="t4" type="DURATION" value="P2D">Two days</TIMEX3>]
+[Text=days CharacterOffsetBegin=307 CharacterOffsetEnd=311 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P2D Timex=<TIMEX3 tid="t4" type="DURATION" value="P2D">Two days</TIMEX3>]
+[Text=after CharacterOffsetBegin=312 CharacterOffsetEnd=317 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=318 CharacterOffsetEnd=319 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=320 CharacterOffsetEnd=323 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=324 CharacterOffsetEnd=325 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=violent CharacterOffsetBegin=326 CharacterOffsetEnd=333 PartOfSpeech=JJ Lemma=violent NamedEntityTag=O]
+[Text=cramp CharacterOffsetBegin=334 CharacterOffsetEnd=339 PartOfSpeech=NN Lemma=cramp NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=339 CharacterOffsetEnd=340 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=341 CharacterOffsetEnd=346 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=347 CharacterOffsetEnd=351 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=352 CharacterOffsetEnd=354 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=355 CharacterOffsetEnd=360 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=lame CharacterOffsetBegin=361 CharacterOffsetEnd=365 PartOfSpeech=JJ Lemma=lame NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=365 CharacterOffsetEnd=366 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=367 CharacterOffsetEnd=369 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=370 CharacterOffsetEnd=374 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=375 CharacterOffsetEnd=376 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=hopped CharacterOffsetBegin=377 CharacterOffsetEnd=383 PartOfSpeech=VBD Lemma=hop NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=384 CharacterOffsetEnd=387 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=hobbled CharacterOffsetBegin=388 CharacterOffsetEnd=395 PartOfSpeech=VBD Lemma=hobble NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=396 CharacterOffsetEnd=401 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=402 CharacterOffsetEnd=405 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=house CharacterOffsetBegin=406 CharacterOffsetEnd=411 PartOfSpeech=NN Lemma=house NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=412 CharacterOffsetEnd=415 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=Saturday CharacterOffsetBegin=416 CharacterOffsetEnd=424 PartOfSpeech=NNP Lemma=Saturday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-6TMO Timex=<TIMEX3 tid="t5" type="TIME" value="XXXX-WXX-6TMO">Saturday morning</TIMEX3>]
+[Text=morning CharacterOffsetBegin=425 CharacterOffsetEnd=432 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=XXXX-WXX-6TMO Timex=<TIMEX3 tid="t5" type="TIME" value="XXXX-WXX-6TMO">Saturday morning</TIMEX3>]
+[Text=, CharacterOffsetBegin=432 CharacterOffsetEnd=433 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=434 CharacterOffsetEnd=437 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=438 CharacterOffsetEnd=440 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Saturday CharacterOffsetBegin=441 CharacterOffsetEnd=449 PartOfSpeech=NNP Lemma=Saturday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-6TEV Timex=<TIMEX3 tid="t6" type="TIME" value="XXXX-WXX-6TEV">Saturday evening</TIMEX3>]
+[Text=evening CharacterOffsetBegin=450 CharacterOffsetEnd=457 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=XXXX-WXX-6TEV Timex=<TIMEX3 tid="t6" type="TIME" value="XXXX-WXX-6TEV">Saturday evening</TIMEX3>]
+[Text=, CharacterOffsetBegin=457 CharacterOffsetEnd=458 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Ringseis CharacterOffsetBegin=459 CharacterOffsetEnd=467 PartOfSpeech=NNP Lemma=Ringseis NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=468 CharacterOffsetEnd=469 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=469 CharacterOffsetEnd=470 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=German CharacterOffsetBegin=471 CharacterOffsetEnd=477 PartOfSpeech=JJ Lemma=german NamedEntityTag=MISC]
+[Text=doctor CharacterOffsetBegin=478 CharacterOffsetEnd=484 PartOfSpeech=NN Lemma=doctor NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=485 CharacterOffsetEnd=487 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Rome CharacterOffsetBegin=488 CharacterOffsetEnd=492 PartOfSpeech=NNP Lemma=Rome NamedEntityTag=LOCATION]
+[Text=-RSB- CharacterOffsetBegin=492 CharacterOffsetEnd=493 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=came CharacterOffsetBegin=494 CharacterOffsetEnd=498 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=499 CharacterOffsetEnd=502 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=503 CharacterOffsetEnd=506 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=leave-taking CharacterOffsetBegin=507 CharacterOffsetEnd=519 PartOfSpeech=JJ Lemma=leave-taking NamedEntityTag=O]
+[Text=visit CharacterOffsetBegin=520 CharacterOffsetEnd=525 PartOfSpeech=NN Lemma=visit NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=525 CharacterOffsetEnd=526 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=527 CharacterOffsetEnd=530 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=531 CharacterOffsetEnd=533 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=534 CharacterOffsetEnd=537 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=538 CharacterOffsetEnd=542 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=543 CharacterOffsetEnd=548 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=549 CharacterOffsetEnd=555 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=556 CharacterOffsetEnd=558 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=meet CharacterOffsetBegin=559 CharacterOffsetEnd=563 PartOfSpeech=VB Lemma=meet NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=564 CharacterOffsetEnd=567 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=567 CharacterOffsetEnd=568 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=569 CharacterOffsetEnd=572 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=573 CharacterOffsetEnd=575 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=degrees CharacterOffsetBegin=576 CharacterOffsetEnd=583 PartOfSpeech=NNS Lemma=degree NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=584 CharacterOffsetEnd=588 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=589 CharacterOffsetEnd=591 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=wound CharacterOffsetBegin=592 CharacterOffsetEnd=597 PartOfSpeech=VBN Lemma=wind NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=598 CharacterOffsetEnd=600 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=601 CharacterOffsetEnd=603 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=604 CharacterOffsetEnd=611 PartOfSpeech=NN Lemma=singing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=611 CharacterOffsetEnd=612 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=613 CharacterOffsetEnd=617 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=618 CharacterOffsetEnd=621 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=622 CharacterOffsetEnd=625 PartOfSpeech=VBN Lemma=set NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=626 CharacterOffsetEnd=631 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=waltzing CharacterOffsetBegin=632 CharacterOffsetEnd=640 PartOfSpeech=VBG Lemma=waltz NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=641 CharacterOffsetEnd=642 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=643 CharacterOffsetEnd=646 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=soon CharacterOffsetBegin=647 CharacterOffsetEnd=651 PartOfSpeech=RB Lemma=soon NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=652 CharacterOffsetEnd=653 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=waltzed CharacterOffsetBegin=654 CharacterOffsetEnd=661 PartOfSpeech=VBD Lemma=waltz NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=662 CharacterOffsetEnd=665 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=666 CharacterOffsetEnd=667 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=668 CharacterOffsetEnd=671 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=672 CharacterOffsetEnd=675 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=676 CharacterOffsetEnd=679 PartOfSpeech=NN Lemma=end NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=680 CharacterOffsetEnd=682 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=683 CharacterOffsetEnd=686 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=story CharacterOffsetBegin=687 CharacterOffsetEnd=692 PartOfSpeech=NN Lemma=story NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=693 CharacterOffsetEnd=695 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=695 CharacterOffsetEnd=696 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=697 CharacterOffsetEnd=700 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=701 CharacterOffsetEnd=703 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=future CharacterOffsetBegin=704 CharacterOffsetEnd=710 PartOfSpeech=JJ Lemma=future NamedEntityTag=DATE NormalizedNamedEntityTag=FUTURE_REF Timex=<TIMEX3 tid="t7" type="DATE" value="FUTURE_REF">future</TIMEX3>]
+[Text=cramp CharacterOffsetBegin=711 CharacterOffsetEnd=716 PartOfSpeech=NN Lemma=cramp NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=717 CharacterOffsetEnd=719 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=fatigue CharacterOffsetBegin=720 CharacterOffsetEnd=727 PartOfSpeech=NN Lemma=fatigue NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=727 CharacterOffsetEnd=728 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (UCP
+        (SBAR
+          (NP (CD Two) (NNS days))
+          (IN after)
+          (S
+            (NP (PRP I))
+            (VP (VBD had)
+              (NP
+                (NP (DT a) (JJ violent) (NN cramp))
+                (, ,)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBD made)
+                      (S
+                        (NP (PRP me))
+                        (ADJP (RB quite) (JJ lame)))
+                      (, ,)
+                      (SBAR (IN so) (IN that)
+                        (S
+                          (NP (PRP I))
+                          (VP
+                            (VP (VBD hopped))
+                            (CC and)
+                            (VP (VBD hobbled)
+                              (PP (IN about)
+                                (NP
+                                  (NP (DT the) (NN house))
+                                  (NP (DT all))))
+                              (NP-TMP (NNP Saturday) (NN morning)))))))))))))
+        (, ,)
+        (CC but)
+        (PP (IN on)
+          (NP (NNP Saturday)))))
+    (S
+      (NP-TMP (NN evening))
+      (, ,)
+      (NP
+        (NP (NNP Ringseis))
+        (PP (-LRB- -LSB-)
+          (NP
+            (NP (DT a) (JJ German) (NN doctor))
+            (PP (IN in)
+              (NP (NNP Rome) (-RRB- -RSB-))))))
+      (VP (VBD came)
+        (PP (IN for)
+          (NP (PRP$ his) (JJ leave-taking) (NN visit)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP we))
+      (VP (VBD had)
+        (NP (DT some) (JJ other) (NNS people)
+          (S
+            (VP (TO to)
+              (VP (VB meet)
+                (NP (PRP him))))))
+        (, ,)
+        (SBAR
+          (WHNP (WP who))
+          (PP (IN by)
+            (NP (NNS degrees)))
+          (S
+            (VP (VBD were)
+              (ADVP (RB so))
+              (VP (VBN wound)
+                (PRT (RP up))
+                (PP (IN by)
+                  (NP (NN singing)))))))
+        (, ,)
+        (SBAR (IN that)
+          (S
+            (NP (DT all))
+            (VP (VBN set)
+              (PP (IN about)
+                (S
+                  (VP (VBG waltzing)))))))))
+    (: -)
+    (CC and)
+    (S
+      (ADVP (RB soon))
+      (NP (PRP I))
+      (VP (VBD waltzed)
+        (ADVP (RB too))))
+    (: -)
+    (CC and)
+    (S
+      (NP
+        (NP (DT the) (NN end))
+        (PP (IN of)
+          (NP (DT the) (NN story))))
+      (VP
+        (VP (VBZ is))
+        (, ,)
+        (VP (VBD had)
+          (NP
+            (NP (DT no) (JJ future) (NN cramp))
+            (CC or)
+            (NP (NN fatigue))))))
+    (. .)))
+
+root(ROOT-0, had-5)
+nummod(days-2, Two-1)
+dep(had-5, days-2)
+mark(had-5, after-3)
+nsubj(had-5, I-4)
+det(cramp-8, a-6)
+amod(cramp-8, violent-7)
+dobj(had-5, cramp-8)
+nsubj(made-11, cramp-8)
+punct(cramp-8, ,-9)
+ref(cramp-8, which-10)
+acl:relcl(cramp-8, made-11)
+nsubj(lame-14, me-12)
+advmod(lame-14, quite-13)
+xcomp(made-11, lame-14)
+punct(made-11, ,-15)
+mark(hopped-19, so-16)
+mwe(so-16, that-17)
+nsubj(hopped-19, I-18)
+nsubj(hobbled-21, I-18)
+advcl:so_that(made-11, hopped-19)
+cc(hopped-19, and-20)
+advcl:so_that(made-11, hobbled-21)
+conj:and(hopped-19, hobbled-21)
+case(house-24, about-22)
+det(house-24, the-23)
+nmod:about(hobbled-21, house-24)
+dep(house-24, all-25)
+compound(morning-27, Saturday-26)
+nmod:tmod(hobbled-21, morning-27)
+punct(had-5, ,-28)
+cc(had-5, but-29)
+case(Saturday-31, on-30)
+conj:but(had-5, Saturday-31)
+nmod:tmod(came-42, evening-32)
+punct(came-42, ,-33)
+nsubj(came-42, Ringseis-34)
+punct(doctor-38, -LSB--35)
+det(doctor-38, a-36)
+amod(doctor-38, German-37)
+nmod(Ringseis-34, doctor-38)
+case(Rome-40, in-39)
+nmod:in(doctor-38, Rome-40)
+punct(Rome-40, -RSB--41)
+ccomp(had-5, came-42)
+case(visit-46, for-43)
+nmod:poss(visit-46, his-44)
+amod(visit-46, leave-taking-45)
+nmod:for(came-42, visit-46)
+punct(had-5, ,-47)
+cc(had-5, and-48)
+nsubj(had-50, we-49)
+conj:but(had-5, had-50)
+det(people-53, some-51)
+amod(people-53, other-52)
+dobj(had-50, people-53)
+mark(meet-55, to-54)
+acl:to(people-53, meet-55)
+dobj(meet-55, him-56)
+punct(had-50, ,-57)
+nsubjpass(wound-63, who-58)
+case(degrees-60, by-59)
+nmod:agent(wound-63, degrees-60)
+auxpass(wound-63, were-61)
+advmod(wound-63, so-62)
+dep(had-50, wound-63)
+compound:prt(wound-63, up-64)
+case(singing-66, by-65)
+nmod:agent(wound-63, singing-66)
+punct(had-50, ,-67)
+mark(set-70, that-68)
+nsubj(set-70, all-69)
+ccomp(had-50, set-70)
+mark(waltzing-72, about-71)
+advcl:about(set-70, waltzing-72)
+punct(had-5, --73)
+cc(had-5, and-74)
+advmod(waltzed-77, soon-75)
+nsubj(waltzed-77, I-76)
+conj:but(had-5, waltzed-77)
+advmod(waltzed-77, too-78)
+punct(had-5, --79)
+cc(had-5, and-80)
+det(end-82, the-81)
+nsubj(is-86, end-82)
+case(story-85, of-83)
+det(story-85, the-84)
+nmod:of(end-82, story-85)
+conj:but(had-5, is-86)
+punct(is-86, ,-87)
+dep(is-86, had-88)
+neg(cramp-91, no-89)
+amod(cramp-91, future-90)
+dobj(had-88, cramp-91)
+cc(cramp-91, or-92)
+dobj(had-88, fatigue-93)
+conj:or(cramp-91, fatigue-93)
+punct(had-5, .-94)
+
+Coreference set:
+	(3,31,[31,32]) -> (2,7,[7,8]), that is: "I" -> "I"
+	(3,46,[46,47]) -> (2,7,[7,8]), that is: "I" -> "I"
+	(4,4,[4,5]) -> (2,7,[7,8]), that is: "I" -> "I"
+	(4,12,[12,13]) -> (2,7,[7,8]), that is: "me" -> "I"
+	(4,18,[18,19]) -> (2,7,[7,8]), that is: "I" -> "I"
+	(4,76,[76,77]) -> (2,7,[7,8]), that is: "I" -> "I"
+Coreference set:
+	(3,16,[16,17]) -> (3,1,[1,2]), that is: "we" -> "We"
+	(4,49,[49,50]) -> (3,1,[1,2]), that is: "we" -> "We"
+Coreference set:
+	(4,44,[44,45]) -> (4,34,[34,42]), that is: "his" -> "Ringseis -LSB- a German doctor in Rome -RSB-"
+	(4,56,[56,57]) -> (4,34,[34,42]), that is: "him" -> "Ringseis -LSB- a German doctor in Rome -RSB-"

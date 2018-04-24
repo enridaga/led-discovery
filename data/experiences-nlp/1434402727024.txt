@@ -1,0 +1,65 @@
+Sentence #1 (19 tokens):
+After lunch Mr. Bridge plays alot of his things - including bits of his apparently beautiful Piano Sonata.
+[Text=After CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=lunch CharacterOffsetBegin=6 CharacterOffsetEnd=11 PartOfSpeech=NN Lemma=lunch NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Bridge CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Bridge NamedEntityTag=PERSON]
+[Text=plays CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=VBZ Lemma=play NamedEntityTag=O]
+[Text=alot CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=alot NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=including CharacterOffsetBegin=50 CharacterOffsetEnd=59 PartOfSpeech=VBG Lemma=include NamedEntityTag=O]
+[Text=bits CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=NNS Lemma=bit NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=apparently CharacterOffsetBegin=72 CharacterOffsetEnd=82 PartOfSpeech=RB Lemma=apparently NamedEntityTag=O]
+[Text=beautiful CharacterOffsetBegin=83 CharacterOffsetEnd=92 PartOfSpeech=JJ Lemma=beautiful NamedEntityTag=O]
+[Text=Piano CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=NNP Lemma=Piano NamedEntityTag=O]
+[Text=Sonata CharacterOffsetBegin=99 CharacterOffsetEnd=105 PartOfSpeech=NNP Lemma=Sonata NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN After)
+      (NP (NN lunch)))
+    (NP (NNP Mr.) (NNP Bridge))
+    (VP (VBZ plays)
+      (NP
+        (NP (NN alot))
+        (PP (IN of)
+          (NP (PRP$ his) (NNS things)))
+        (: -)
+        (PP (VBG including)
+          (NP
+            (NP (NNS bits))
+            (PP (IN of)
+              (NP (PRP$ his)
+                (ADJP (RB apparently) (JJ beautiful))
+                (NNP Piano)))
+            (NP (NNP Sonata))))))
+    (. .)))
+
+root(ROOT-0, plays-5)
+case(lunch-2, After-1)
+nmod:after(plays-5, lunch-2)
+compound(Bridge-4, Mr.-3)
+nsubj(plays-5, Bridge-4)
+dobj(plays-5, alot-6)
+case(things-9, of-7)
+nmod:poss(things-9, his-8)
+nmod:of(alot-6, things-9)
+punct(alot-6, --10)
+case(bits-12, including-11)
+nmod:including(alot-6, bits-12)
+case(Piano-17, of-13)
+nmod:poss(Piano-17, his-14)
+advmod(beautiful-16, apparently-15)
+amod(Piano-17, beautiful-16)
+nmod:of(bits-12, Piano-17)
+dep(bits-12, Sonata-18)
+punct(plays-5, .-19)
+
+Coreference set:
+	(1,8,[8,9]) -> (1,4,[3,5]), that is: "his" -> "Mr. Bridge"
+	(1,14,[14,15]) -> (1,4,[3,5]), that is: "his" -> "Mr. Bridge"

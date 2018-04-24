@@ -1,0 +1,259 @@
+Sentence #1 (27 tokens):
+Her Majesty wanted to hear me play the organ (there is an excellent one in the chapel at Windsor) , and then the piano.
+[Text=Her CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=Majesty CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Majesty NamedEntityTag=O]
+[Text=wanted CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=VBD Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=organ CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=organ NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=excellent CharacterOffsetBegin=58 CharacterOffsetEnd=67 PartOfSpeech=JJ Lemma=excellent NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=in CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=chapel CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=chapel NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Windsor CharacterOffsetBegin=89 CharacterOffsetEnd=96 PartOfSpeech=NNP Lemma=Windsor NamedEntityTag=LOCATION]
+[Text=-RRB- CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=113 CharacterOffsetEnd=118 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP$ Her) (NNP Majesty))
+      (VP (VBD wanted)
+        (S
+          (VP (TO to)
+            (VP (VB hear)
+              (S
+                (NP (PRP me))
+                (VP (VB play)
+                  (NP (DT the) (NN organ))))
+              (PRN (-LRB- -LRB-)
+                (S
+                  (NP (EX there))
+                  (VP (VBZ is)
+                    (NP
+                      (NP (DT an) (JJ excellent) (CD one))
+                      (PP (IN in)
+                        (NP
+                          (NP (DT the) (NN chapel))
+                          (PP (IN at)
+                            (NP (NNP Windsor))))))))
+                (-RRB- -RRB-)))))))
+    (, ,)
+    (CC and)
+    (FRAG (RB then)
+      (NP (DT the) (NN piano)))
+    (. .)))
+
+root(ROOT-0, wanted-3)
+nmod:poss(Majesty-2, Her-1)
+nsubj(wanted-3, Majesty-2)
+nsubj:xsubj(hear-5, Majesty-2)
+mark(hear-5, to-4)
+xcomp(wanted-3, hear-5)
+nsubj(play-7, me-6)
+ccomp(hear-5, play-7)
+det(organ-9, the-8)
+dobj(play-7, organ-9)
+punct(is-12, -LRB--10)
+expl(is-12, there-11)
+parataxis(hear-5, is-12)
+det(one-15, an-13)
+amod(one-15, excellent-14)
+nsubj(is-12, one-15)
+case(chapel-18, in-16)
+det(chapel-18, the-17)
+nmod:in(one-15, chapel-18)
+case(Windsor-20, at-19)
+nmod:at(chapel-18, Windsor-20)
+punct(is-12, -RRB--21)
+punct(wanted-3, ,-22)
+cc(wanted-3, and-23)
+conj:and(wanted-3, then-24)
+det(piano-26, the-25)
+dep(then-24, piano-26)
+punct(wanted-3, .-27)
+
+Sentence #2 (19 tokens):
+Finally, I had the honor of accompanying the Princess as she sang the aria from Etienne Marcel.
+[Text=Finally CharacterOffsetBegin=120 CharacterOffsetEnd=127 PartOfSpeech=RB Lemma=finally NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=honor CharacterOffsetBegin=139 CharacterOffsetEnd=144 PartOfSpeech=NN Lemma=honor NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=145 CharacterOffsetEnd=147 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=accompanying CharacterOffsetBegin=148 CharacterOffsetEnd=160 PartOfSpeech=VBG Lemma=accompany NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=161 CharacterOffsetEnd=164 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Princess CharacterOffsetBegin=165 CharacterOffsetEnd=173 PartOfSpeech=NNP Lemma=Princess NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=174 CharacterOffsetEnd=176 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=177 CharacterOffsetEnd=180 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=sang CharacterOffsetBegin=181 CharacterOffsetEnd=185 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=186 CharacterOffsetEnd=189 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=aria CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=NN Lemma=aria NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=195 CharacterOffsetEnd=199 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Etienne CharacterOffsetBegin=200 CharacterOffsetEnd=207 PartOfSpeech=NNP Lemma=Etienne NamedEntityTag=PERSON]
+[Text=Marcel CharacterOffsetBegin=208 CharacterOffsetEnd=214 PartOfSpeech=NNP Lemma=Marcel NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Finally))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD had)
+      (NP
+        (NP (DT the) (NN honor))
+        (PP (IN of)
+          (S
+            (VP (VBG accompanying)
+              (NP (DT the) (NNP Princess))
+              (SBAR (IN as)
+                (S
+                  (NP (PRP she))
+                  (VP (VBD sang)
+                    (NP (DT the) (NN aria))
+                    (PP (IN from)
+                      (NP (NNP Etienne) (NNP Marcel)))))))))))
+    (. .)))
+
+root(ROOT-0, had-4)
+advmod(had-4, Finally-1)
+punct(had-4, ,-2)
+nsubj(had-4, I-3)
+det(honor-6, the-5)
+dobj(had-4, honor-6)
+mark(accompanying-8, of-7)
+acl:of(honor-6, accompanying-8)
+det(Princess-10, the-9)
+dobj(accompanying-8, Princess-10)
+mark(sang-13, as-11)
+nsubj(sang-13, she-12)
+advcl:as(accompanying-8, sang-13)
+det(aria-15, the-14)
+dobj(sang-13, aria-15)
+case(Marcel-18, from-16)
+compound(Marcel-18, Etienne-17)
+nmod:from(sang-13, Marcel-18)
+punct(had-4, .-19)
+
+Sentence #3 (31 tokens):
+Her Royal Highness sang with great clearness and distinctness, but it was the first time she had sung before her august mother and she was frightened almost to death.
+[Text=Her CharacterOffsetBegin=216 CharacterOffsetEnd=219 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=Royal CharacterOffsetBegin=220 CharacterOffsetEnd=225 PartOfSpeech=NNP Lemma=Royal NamedEntityTag=O]
+[Text=Highness CharacterOffsetBegin=226 CharacterOffsetEnd=234 PartOfSpeech=NNP Lemma=Highness NamedEntityTag=O]
+[Text=sang CharacterOffsetBegin=235 CharacterOffsetEnd=239 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=240 CharacterOffsetEnd=244 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=245 CharacterOffsetEnd=250 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=clearness CharacterOffsetBegin=251 CharacterOffsetEnd=260 PartOfSpeech=NN Lemma=clearness NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=261 CharacterOffsetEnd=264 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=distinctness CharacterOffsetBegin=265 CharacterOffsetEnd=277 PartOfSpeech=NN Lemma=distinctness NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=277 CharacterOffsetEnd=278 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=283 CharacterOffsetEnd=285 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=286 CharacterOffsetEnd=289 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=290 CharacterOffsetEnd=293 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=294 CharacterOffsetEnd=299 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=time CharacterOffsetBegin=300 CharacterOffsetEnd=304 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=305 CharacterOffsetEnd=308 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=309 CharacterOffsetEnd=312 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=sung CharacterOffsetBegin=313 CharacterOffsetEnd=317 PartOfSpeech=VBN Lemma=sing NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=318 CharacterOffsetEnd=324 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=325 CharacterOffsetEnd=328 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=august CharacterOffsetBegin=329 CharacterOffsetEnd=335 PartOfSpeech=NNP Lemma=august NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-08 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-08">august</TIMEX3>]
+[Text=mother CharacterOffsetBegin=336 CharacterOffsetEnd=342 PartOfSpeech=NN Lemma=mother NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=343 CharacterOffsetEnd=346 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=347 CharacterOffsetEnd=350 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=351 CharacterOffsetEnd=354 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=frightened CharacterOffsetBegin=355 CharacterOffsetEnd=365 PartOfSpeech=VBN Lemma=frighten NamedEntityTag=O]
+[Text=almost CharacterOffsetBegin=366 CharacterOffsetEnd=372 PartOfSpeech=RB Lemma=almost NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=373 CharacterOffsetEnd=375 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=death CharacterOffsetBegin=376 CharacterOffsetEnd=381 PartOfSpeech=NN Lemma=death NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=381 CharacterOffsetEnd=382 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP$ Her) (NNP Royal) (NNP Highness))
+      (VP (VBD sang)
+        (PP (IN with)
+          (NP (JJ great) (NN clearness)
+            (CC and)
+            (NN distinctness)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBD was)
+        (NP
+          (NP (DT the) (JJ first) (NN time))
+          (SBAR
+            (S
+              (S
+                (NP (PRP she))
+                (VP (VBD had)
+                  (VP (VBN sung)
+                    (PP (IN before)
+                      (NP (PRP$ her) (NNP august) (NN mother))))))
+              (CC and)
+              (S
+                (NP (PRP she))
+                (VP (VBD was)
+                  (ADJP (VBN frightened))
+                  (ADVP (RB almost)
+                    (PP (TO to)
+                      (NP (NN death)))))))))))
+    (. .)))
+
+root(ROOT-0, sang-4)
+nmod:poss(Highness-3, Her-1)
+compound(Highness-3, Royal-2)
+nsubj(sang-4, Highness-3)
+case(clearness-7, with-5)
+amod(clearness-7, great-6)
+nmod:with(sang-4, clearness-7)
+cc(clearness-7, and-8)
+nmod:with(sang-4, distinctness-9)
+conj:and(clearness-7, distinctness-9)
+punct(sang-4, ,-10)
+cc(sang-4, but-11)
+nsubj(time-16, it-12)
+cop(time-16, was-13)
+det(time-16, the-14)
+amod(time-16, first-15)
+conj:but(sang-4, time-16)
+nsubj(sung-19, she-17)
+aux(sung-19, had-18)
+acl:relcl(time-16, sung-19)
+case(mother-23, before-20)
+nmod:poss(mother-23, her-21)
+compound(mother-23, august-22)
+nmod:before(sung-19, mother-23)
+cc(sung-19, and-24)
+nsubjpass(frightened-27, she-25)
+auxpass(frightened-27, was-26)
+acl:relcl(time-16, frightened-27)
+conj:and(sung-19, frightened-27)
+advmod(frightened-27, almost-28)
+case(death-30, to-29)
+nmod:to(almost-28, death-30)
+punct(sang-4, .-31)
+
+Coreference set:
+	(2,3,[3,4]) -> (1,6,[6,7]), that is: "I" -> "me"
+Coreference set:
+	(2,12,[12,13]) -> (2,10,[9,11]), that is: "she" -> "the Princess"
+	(3,1,[1,2]) -> (2,10,[9,11]), that is: "Her" -> "the Princess"
+	(3,17,[17,18]) -> (2,10,[9,11]), that is: "she" -> "the Princess"
+	(3,21,[21,22]) -> (2,10,[9,11]), that is: "her" -> "the Princess"
+	(3,25,[25,26]) -> (2,10,[9,11]), that is: "she" -> "the Princess"

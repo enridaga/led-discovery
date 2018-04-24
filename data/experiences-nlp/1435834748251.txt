@@ -1,0 +1,275 @@
+Sentence #1 (31 tokens):
+Through a glass screen in an elaborate studio we watch - listen to - the recording session of a brass piece by a Hungarian composer and conductor unknown to me.
+[Text=Through CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=glass CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=glass NamedEntityTag=O]
+[Text=screen CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=screen NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=elaborate CharacterOffsetBegin=29 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=elaborate NamedEntityTag=O]
+[Text=studio CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=studio NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=watch CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=VBP Lemma=watch NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=57 CharacterOffsetEnd=63 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=recording CharacterOffsetBegin=73 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=recording NamedEntityTag=O]
+[Text=session CharacterOffsetBegin=83 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=session NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=brass CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=brass NamedEntityTag=O]
+[Text=piece CharacterOffsetBegin=102 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=piece NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Hungarian CharacterOffsetBegin=113 CharacterOffsetEnd=122 PartOfSpeech=JJ Lemma=hungarian NamedEntityTag=MISC]
+[Text=composer CharacterOffsetBegin=123 CharacterOffsetEnd=131 PartOfSpeech=NN Lemma=composer NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=132 CharacterOffsetEnd=135 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=conductor CharacterOffsetBegin=136 CharacterOffsetEnd=145 PartOfSpeech=NN Lemma=conductor NamedEntityTag=O]
+[Text=unknown CharacterOffsetBegin=146 CharacterOffsetEnd=153 PartOfSpeech=JJ Lemma=unknown NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=154 CharacterOffsetEnd=156 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=157 CharacterOffsetEnd=159 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN Through)
+      (NP
+        (NP (DT a) (NN glass) (NN screen))
+        (PP (IN in)
+          (NP (DT an) (JJ elaborate) (NN studio)))))
+    (NP (PRP we))
+    (VP (VBP watch)
+      (PRN (: -)
+        (S
+          (VP (VB listen)
+            (PP (TO to))))
+        (: -))
+      (NP (DT the) (NN recording) (NN session))
+      (PP (IN of)
+        (NP
+          (NP (DT a) (NN brass) (NN piece))
+          (PP (IN by)
+            (NP
+              (NP (DT a) (JJ Hungarian) (NN composer)
+                (CC and)
+                (NN conductor))
+              (ADJP (JJ unknown)
+                (PP (TO to)
+                  (NP (PRP me)))))))))
+    (. .)))
+
+root(ROOT-0, watch-10)
+case(screen-4, Through-1)
+det(screen-4, a-2)
+compound(screen-4, glass-3)
+nmod:through(watch-10, screen-4)
+case(studio-8, in-5)
+det(studio-8, an-6)
+amod(studio-8, elaborate-7)
+nmod:in(screen-4, studio-8)
+nsubj(watch-10, we-9)
+punct(listen-12, --11)
+parataxis(watch-10, listen-12)
+nmod(listen-12, to-13)
+punct(listen-12, --14)
+det(session-17, the-15)
+compound(session-17, recording-16)
+dobj(watch-10, session-17)
+case(piece-21, of-18)
+det(piece-21, a-19)
+compound(piece-21, brass-20)
+nmod:of(watch-10, piece-21)
+case(composer-25, by-22)
+det(composer-25, a-23)
+amod(composer-25, Hungarian-24)
+nmod:by(piece-21, composer-25)
+cc(composer-25, and-26)
+nmod:by(piece-21, conductor-27)
+conj:and(composer-25, conductor-27)
+amod(composer-25, unknown-28)
+case(me-30, to-29)
+nmod:to(unknown-28, me-30)
+punct(watch-10, .-31)
+
+Sentence #2 (30 tokens):
+Over there two trombones fart dryly, back here a horn farts in reply, then three trumpets fart and are answered by a low fart on the tuba.
+[Text=Over CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=166 CharacterOffsetEnd=171 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=172 CharacterOffsetEnd=175 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=trombones CharacterOffsetBegin=176 CharacterOffsetEnd=185 PartOfSpeech=NNS Lemma=trombone NamedEntityTag=O]
+[Text=fart CharacterOffsetBegin=186 CharacterOffsetEnd=190 PartOfSpeech=JJ Lemma=fart NamedEntityTag=O]
+[Text=dryly CharacterOffsetBegin=191 CharacterOffsetEnd=196 PartOfSpeech=RB Lemma=dryly NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=198 CharacterOffsetEnd=202 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=203 CharacterOffsetEnd=207 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=208 CharacterOffsetEnd=209 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=horn CharacterOffsetBegin=210 CharacterOffsetEnd=214 PartOfSpeech=NN Lemma=horn NamedEntityTag=O]
+[Text=farts CharacterOffsetBegin=215 CharacterOffsetEnd=220 PartOfSpeech=NNS Lemma=fart NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=221 CharacterOffsetEnd=223 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=reply CharacterOffsetBegin=224 CharacterOffsetEnd=229 PartOfSpeech=NN Lemma=reply NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=229 CharacterOffsetEnd=230 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=231 CharacterOffsetEnd=235 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=236 CharacterOffsetEnd=241 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=trumpets CharacterOffsetBegin=242 CharacterOffsetEnd=250 PartOfSpeech=VBZ Lemma=trumpet NamedEntityTag=O]
+[Text=fart CharacterOffsetBegin=251 CharacterOffsetEnd=255 PartOfSpeech=NN Lemma=fart NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=256 CharacterOffsetEnd=259 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=260 CharacterOffsetEnd=263 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=answered CharacterOffsetBegin=264 CharacterOffsetEnd=272 PartOfSpeech=VBN Lemma=answer NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=273 CharacterOffsetEnd=275 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=276 CharacterOffsetEnd=277 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=low CharacterOffsetBegin=278 CharacterOffsetEnd=281 PartOfSpeech=JJ Lemma=low NamedEntityTag=O]
+[Text=fart CharacterOffsetBegin=282 CharacterOffsetEnd=286 PartOfSpeech=NN Lemma=fart NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=287 CharacterOffsetEnd=289 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=290 CharacterOffsetEnd=293 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=tuba CharacterOffsetBegin=294 CharacterOffsetEnd=298 PartOfSpeech=NN Lemma=tuba NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=298 CharacterOffsetEnd=299 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN Over)
+      (NP
+        (NP
+          (NP (EX there))
+          (ADJP
+            (NP (CD two) (NNS trombones))
+            (JJ fart))
+          (ADVP (RB dryly)))
+        (, ,)
+        (ADVP (RB back) (RB here))
+        (NP
+          (NP (DT a) (NN horn) (NNS farts))
+          (PP (IN in)
+            (NP (NN reply))))))
+    (, ,)
+    (NP (RB then) (CD three))
+    (VP
+      (VP (VBZ trumpets)
+        (NP (NN fart)))
+      (CC and)
+      (VP (VBP are)
+        (VP (VBN answered)
+          (PP (IN by)
+            (NP
+              (NP (DT a) (JJ low) (NN fart))
+              (PP (IN on)
+                (NP (DT the) (NN tuba))))))))
+    (. .)))
+
+root(ROOT-0, trumpets-18)
+case(there-2, Over-1)
+nmod:over(trumpets-18, there-2)
+nummod(trombones-4, two-3)
+nmod:npmod(fart-5, trombones-4)
+amod(there-2, fart-5)
+advmod(there-2, dryly-6)
+punct(there-2, ,-7)
+advmod(here-9, back-8)
+advmod(there-2, here-9)
+det(farts-12, a-10)
+compound(farts-12, horn-11)
+dep(there-2, farts-12)
+case(reply-14, in-13)
+nmod:in(farts-12, reply-14)
+punct(trumpets-18, ,-15)
+advmod(three-17, then-16)
+nsubj(trumpets-18, three-17)
+nsubjpass(answered-22, three-17)
+dobj(trumpets-18, fart-19)
+cc(trumpets-18, and-20)
+auxpass(answered-22, are-21)
+conj:and(trumpets-18, answered-22)
+case(fart-26, by-23)
+det(fart-26, a-24)
+amod(fart-26, low-25)
+nmod:agent(answered-22, fart-26)
+case(tuba-29, on-27)
+det(tuba-29, the-28)
+nmod:on(fart-26, tuba-29)
+punct(trumpets-18, .-30)
+
+Sentence #3 (15 tokens):
+Then they all fart together, but can't seem really to let loose.
+[Text=Then CharacterOffsetBegin=300 CharacterOffsetEnd=304 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=305 CharacterOffsetEnd=309 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=310 CharacterOffsetEnd=313 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=fart CharacterOffsetBegin=314 CharacterOffsetEnd=318 PartOfSpeech=VBN Lemma=fart NamedEntityTag=O]
+[Text=together CharacterOffsetBegin=319 CharacterOffsetEnd=327 PartOfSpeech=RB Lemma=together NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=327 CharacterOffsetEnd=328 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=329 CharacterOffsetEnd=332 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=333 CharacterOffsetEnd=335 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=335 CharacterOffsetEnd=338 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=seem CharacterOffsetBegin=339 CharacterOffsetEnd=343 PartOfSpeech=VB Lemma=seem NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=344 CharacterOffsetEnd=350 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=351 CharacterOffsetEnd=353 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=354 CharacterOffsetEnd=357 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=loose CharacterOffsetBegin=358 CharacterOffsetEnd=363 PartOfSpeech=JJ Lemma=loose NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=363 CharacterOffsetEnd=364 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (ADVP (RB Then))
+    (NP
+      (NP
+        (NP (PRP they))
+        (NP (DT all)))
+      (VP
+        (VP (VBN fart)
+          (ADVP (RB together)))
+        (, ,)
+        (CC but)
+        (VP (MD ca) (RB n't)
+          (VP (VB seem)
+            (ADVP (RB really))
+            (S
+              (VP (TO to)
+                (VP (VB let)
+                  (ADJP (JJ loose)))))))))
+    (. .)))
+
+root(ROOT-0, they-2)
+dep(they-2, Then-1)
+det(they-2, all-3)
+dep(they-2, fart-4)
+advmod(fart-4, together-5)
+punct(fart-4, ,-6)
+cc(fart-4, but-7)
+aux(seem-10, ca-8)
+neg(seem-10, n't-9)
+dep(they-2, seem-10)
+conj:but(fart-4, seem-10)
+advmod(seem-10, really-11)
+mark(let-13, to-12)
+xcomp(seem-10, let-13)
+xcomp(let-13, loose-14)
+punct(they-2, .-15)
+
+Sentence #4 (7 tokens):
+Don't true artists grandly shit?
+[Text=Do CharacterOffsetBegin=365 CharacterOffsetEnd=367 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=367 CharacterOffsetEnd=370 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=true CharacterOffsetBegin=371 CharacterOffsetEnd=375 PartOfSpeech=JJ Lemma=true NamedEntityTag=O]
+[Text=artists CharacterOffsetBegin=376 CharacterOffsetEnd=383 PartOfSpeech=NNS Lemma=artist NamedEntityTag=O]
+[Text=grandly CharacterOffsetBegin=384 CharacterOffsetEnd=391 PartOfSpeech=RB Lemma=grandly NamedEntityTag=O]
+[Text=shit CharacterOffsetBegin=392 CharacterOffsetEnd=396 PartOfSpeech=VB Lemma=shit NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=396 CharacterOffsetEnd=397 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (SQ (VBP Do)
+    (NP
+      (NP (RB n't))
+      (NP (JJ true) (NNS artists)))
+    (VP
+      (ADVP (RB grandly))
+      (VB shit))
+    (. ?)))
+
+root(ROOT-0, shit-6)
+aux(shit-6, Do-1)
+nsubj(shit-6, n't-2)
+amod(artists-4, true-3)
+dep(n't-2, artists-4)
+advmod(shit-6, grandly-5)
+punct(shit-6, ?-7)
+
+Coreference set:
+	(3,2,[2,15]) -> (2,2,[2,15]), that is: "they all fart together , but ca n't seem really to let loose" -> "there two trombones fart dryly , back here a horn farts in reply"
+Coreference set:
+	(2,2,[2,7]) -> (2,12,[10,15]), that is: "there two trombones fart dryly" -> "a horn farts in reply"

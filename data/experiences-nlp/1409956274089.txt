@@ -1,0 +1,340 @@
+Sentence #1 (21 tokens):
+A musician playing back a recorded “take” is in much this position of frank astonishment and threatened disgust.
+[Text=A CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=musician CharacterOffsetBegin=2 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=musician NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=11 CharacterOffsetEnd=18 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=RP Lemma=back NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=recorded CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=VBN Lemma=record NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=RB Lemma=in NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=position CharacterOffsetBegin=58 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=position NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=frank CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=JJ Lemma=frank NamedEntityTag=O]
+[Text=astonishment CharacterOffsetBegin=76 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=astonishment NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=threatened CharacterOffsetBegin=93 CharacterOffsetEnd=103 PartOfSpeech=VBD Lemma=threaten NamedEntityTag=O]
+[Text=disgust CharacterOffsetBegin=104 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=disgust NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN musician))
+      (VP (VBG playing)
+        (PRT (RP back))
+        (NP (DT a))))
+    (VP
+      (VP (VBN recorded)
+        (SBAR
+          (S (`` ``)
+            (S
+              (VP (VB take)))
+            ('' '')
+            (VP (VBZ is)
+              (ADVP (RB in))
+              (NP
+                (NP (RB much) (DT this) (NN position))
+                (PP (IN of)
+                  (NP (JJ frank) (NN astonishment))))))))
+      (CC and)
+      (VP (VBD threatened)
+        (NP (NN disgust))))
+    (. .)))
+
+root(ROOT-0, recorded-6)
+det(musician-2, A-1)
+nsubj(recorded-6, musician-2)
+nsubj(threatened-19, musician-2)
+acl(musician-2, playing-3)
+compound:prt(playing-3, back-4)
+dobj(playing-3, a-5)
+punct(position-14, ``-7)
+ccomp(position-14, take-8)
+punct(position-14, ''-9)
+cop(position-14, is-10)
+advmod(position-14, in-11)
+advmod(position-14, much-12)
+det(position-14, this-13)
+ccomp(recorded-6, position-14)
+case(astonishment-17, of-15)
+amod(astonishment-17, frank-16)
+nmod:of(position-14, astonishment-17)
+cc(recorded-6, and-18)
+conj:and(recorded-6, threatened-19)
+dobj(threatened-19, disgust-20)
+punct(recorded-6, .-21)
+
+Sentence #2 (8 tokens):
+“Did I really do that?”
+[Text=`` CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Did CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=120 CharacterOffsetEnd=126 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=127 CharacterOffsetEnd=129 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S (`` ``)
+    (S
+      (VP (VBD Did)
+        (NP (PRP I))
+        (ADVP (RB really))))
+    (VP (VBP do)
+      (ADVP (IN that)))
+    (. ?) ('' '')))
+
+root(ROOT-0, do-5)
+punct(do-5, ``-1)
+csubj(do-5, Did-2)
+dobj(Did-2, I-3)
+advmod(Did-2, really-4)
+advmod(do-5, that-6)
+punct(do-5, ?-7)
+punct(do-5, ''-8)
+
+Sentence #3 (13 tokens):
+he asks himself until repetition teaches him an outsider’s dispassionate judgement.
+[Text=he CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=asks CharacterOffsetBegin=140 CharacterOffsetEnd=144 PartOfSpeech=VBZ Lemma=ask NamedEntityTag=O]
+[Text=himself CharacterOffsetBegin=145 CharacterOffsetEnd=152 PartOfSpeech=PRP Lemma=himself NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=153 CharacterOffsetEnd=158 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=repetition CharacterOffsetBegin=159 CharacterOffsetEnd=169 PartOfSpeech=NN Lemma=repetition NamedEntityTag=O]
+[Text=teaches CharacterOffsetBegin=170 CharacterOffsetEnd=177 PartOfSpeech=VBZ Lemma=teach NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=178 CharacterOffsetEnd=181 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=182 CharacterOffsetEnd=184 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=outsider CharacterOffsetBegin=185 CharacterOffsetEnd=193 PartOfSpeech=NN Lemma=outsider NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=193 CharacterOffsetEnd=195 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=dispassionate CharacterOffsetBegin=196 CharacterOffsetEnd=209 PartOfSpeech=JJ Lemma=dispassionate NamedEntityTag=O]
+[Text=judgement CharacterOffsetBegin=210 CharacterOffsetEnd=219 PartOfSpeech=NN Lemma=judgement NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=219 CharacterOffsetEnd=220 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP he))
+    (VP (VBZ asks)
+      (NP (PRP himself))
+      (SBAR (IN until)
+        (S
+          (NP (NN repetition))
+          (VP (VBZ teaches)
+            (S
+              (NP (PRP him))
+              (NP
+                (NP (DT an) (NN outsider) (POS 's))
+                (JJ dispassionate) (NN judgement)))))))
+    (. .)))
+
+root(ROOT-0, asks-2)
+nsubj(asks-2, he-1)
+dobj(asks-2, himself-3)
+mark(teaches-6, until-4)
+nsubj(teaches-6, repetition-5)
+advcl:until(asks-2, teaches-6)
+nsubj(judgement-12, him-7)
+det(outsider-9, an-8)
+nmod:poss(judgement-12, outsider-9)
+case(outsider-9, 's-10)
+amod(judgement-12, dispassionate-11)
+xcomp(teaches-6, judgement-12)
+punct(asks-2, .-13)
+
+Sentence #4 (13 tokens):
+Occasionally – very occasionally – his performance surpasses his memory of it.
+[Text=Occasionally CharacterOffsetBegin=221 CharacterOffsetEnd=233 PartOfSpeech=RB Lemma=occasionally NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=234 CharacterOffsetEnd=235 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=236 CharacterOffsetEnd=240 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=occasionally CharacterOffsetBegin=241 CharacterOffsetEnd=253 PartOfSpeech=RB Lemma=occasionally NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=254 CharacterOffsetEnd=255 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=256 CharacterOffsetEnd=259 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=260 CharacterOffsetEnd=271 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=surpasses CharacterOffsetBegin=272 CharacterOffsetEnd=281 PartOfSpeech=VBZ Lemma=surpass NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=282 CharacterOffsetEnd=285 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=memory CharacterOffsetBegin=286 CharacterOffsetEnd=292 PartOfSpeech=NN Lemma=memory NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=293 CharacterOffsetEnd=295 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=296 CharacterOffsetEnd=298 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=298 CharacterOffsetEnd=299 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (FRAG
+      (ADVP (RB Occasionally) (: --))
+      (ADVP (RB very) (RB occasionally)))
+    (: --)
+    (S
+      (NP (PRP$ his) (NN performance))
+      (VP (VBZ surpasses)
+        (NP
+          (NP (PRP$ his) (NN memory))
+          (PP (IN of)
+            (NP (PRP it))))))
+    (. .)))
+
+root(ROOT-0, surpasses-8)
+dep(surpasses-8, Occasionally-1)
+punct(Occasionally-1, ---2)
+advmod(occasionally-4, very-3)
+dep(Occasionally-1, occasionally-4)
+punct(surpasses-8, ---5)
+nmod:poss(performance-7, his-6)
+nsubj(surpasses-8, performance-7)
+nmod:poss(memory-10, his-9)
+dobj(surpasses-8, memory-10)
+case(it-12, of-11)
+nmod:of(memory-10, it-12)
+punct(surpasses-8, .-13)
+
+Sentence #5 (42 tokens):
+One on a transatlantic liner’s public address system I heard the Beethoven Concerto played as I would dearly have loved to have played it, only to discover that the recording was one I had made with Furtwängler in 1947.
+[Text=One CharacterOffsetBegin=300 CharacterOffsetEnd=303 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=on CharacterOffsetBegin=304 CharacterOffsetEnd=306 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=307 CharacterOffsetEnd=308 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=transatlantic CharacterOffsetBegin=309 CharacterOffsetEnd=322 PartOfSpeech=NN Lemma=transatlantic NamedEntityTag=O]
+[Text=liner CharacterOffsetBegin=323 CharacterOffsetEnd=328 PartOfSpeech=NN Lemma=liner NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=328 CharacterOffsetEnd=330 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=public CharacterOffsetBegin=331 CharacterOffsetEnd=337 PartOfSpeech=JJ Lemma=public NamedEntityTag=O]
+[Text=address CharacterOffsetBegin=338 CharacterOffsetEnd=345 PartOfSpeech=NN Lemma=address NamedEntityTag=O]
+[Text=system CharacterOffsetBegin=346 CharacterOffsetEnd=352 PartOfSpeech=NN Lemma=system NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=353 CharacterOffsetEnd=354 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=355 CharacterOffsetEnd=360 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=361 CharacterOffsetEnd=364 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Beethoven CharacterOffsetBegin=365 CharacterOffsetEnd=374 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=O]
+[Text=Concerto CharacterOffsetBegin=375 CharacterOffsetEnd=383 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=384 CharacterOffsetEnd=390 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=391 CharacterOffsetEnd=393 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=394 CharacterOffsetEnd=395 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=396 CharacterOffsetEnd=401 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=dearly CharacterOffsetBegin=402 CharacterOffsetEnd=408 PartOfSpeech=RB Lemma=dearly NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=409 CharacterOffsetEnd=413 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=loved CharacterOffsetBegin=414 CharacterOffsetEnd=419 PartOfSpeech=VBN Lemma=love NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=420 CharacterOffsetEnd=422 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=423 CharacterOffsetEnd=427 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=428 CharacterOffsetEnd=434 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=435 CharacterOffsetEnd=437 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=437 CharacterOffsetEnd=438 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=439 CharacterOffsetEnd=443 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=444 CharacterOffsetEnd=446 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=discover CharacterOffsetBegin=447 CharacterOffsetEnd=455 PartOfSpeech=VB Lemma=discover NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=456 CharacterOffsetEnd=460 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=461 CharacterOffsetEnd=464 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=recording CharacterOffsetBegin=465 CharacterOffsetEnd=474 PartOfSpeech=NN Lemma=recording NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=475 CharacterOffsetEnd=478 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=479 CharacterOffsetEnd=482 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=I CharacterOffsetBegin=483 CharacterOffsetEnd=484 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=485 CharacterOffsetEnd=488 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=489 CharacterOffsetEnd=493 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=494 CharacterOffsetEnd=498 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Furtwängler CharacterOffsetBegin=499 CharacterOffsetEnd=510 PartOfSpeech=NN Lemma=furtwängler NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=511 CharacterOffsetEnd=513 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=1947 CharacterOffsetBegin=514 CharacterOffsetEnd=518 PartOfSpeech=CD Lemma=1947 NamedEntityTag=DATE NormalizedNamedEntityTag=1947 Timex=<TIMEX3 tid="t1" type="DATE" value="1947">1947</TIMEX3>]
+[Text=. CharacterOffsetBegin=518 CharacterOffsetEnd=519 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (CD One))
+      (PP (IN on)
+        (NP
+          (NP (DT a) (NN transatlantic) (NN liner) (POS 's))
+          (JJ public) (NN address) (NN system))))
+    (NP (PRP I))
+    (VP (VBD heard)
+      (SBAR
+        (S
+          (NP (DT the) (NNP Beethoven) (NNP Concerto))
+          (VP (VBD played)
+            (SBAR (IN as)
+              (S
+                (NP (PRP I))
+                (VP (MD would)
+                  (ADVP (RB dearly))
+                  (VP (VB have)
+                    (VP (VBN loved)
+                      (S
+                        (VP (TO to)
+                          (VP (VB have)
+                            (VP (VBN played)
+                              (NP (PRP it))
+                              (, ,)
+                              (S
+                                (ADVP (RB only))
+                                (VP (TO to)
+                                  (VP (VB discover)
+                                    (SBAR (IN that)
+                                      (S
+                                        (NP (DT the) (NN recording))
+                                        (VP (VBD was)
+                                          (NP
+                                            (NP (CD one))
+                                            (SBAR
+                                              (S
+                                                (NP (PRP I))
+                                                (VP (VBD had)
+                                                  (VP (VBN made)
+                                                    (PP (IN with)
+                                                      (NP
+                                                        (NP (NN Furtwängler))
+                                                        (PP (IN in)
+                                                          (NP (CD 1947)))))))))))))))))))))))))))))
+    (. .)))
+
+root(ROOT-0, heard-11)
+nsubj(heard-11, One-1)
+case(system-9, on-2)
+det(liner-5, a-3)
+compound(liner-5, transatlantic-4)
+nmod:poss(system-9, liner-5)
+case(liner-5, 's-6)
+amod(system-9, public-7)
+compound(system-9, address-8)
+nmod:on(One-1, system-9)
+nsubj(heard-11, I-10)
+det(Concerto-14, the-12)
+compound(Concerto-14, Beethoven-13)
+nsubj(played-15, Concerto-14)
+ccomp(heard-11, played-15)
+mark(loved-21, as-16)
+nsubj(loved-21, I-17)
+nsubj:xsubj(played-24, I-17)
+aux(loved-21, would-18)
+advmod(loved-21, dearly-19)
+aux(loved-21, have-20)
+advcl:as(played-15, loved-21)
+mark(played-24, to-22)
+aux(played-24, have-23)
+xcomp(loved-21, played-24)
+dobj(played-24, it-25)
+punct(played-24, ,-26)
+advmod(discover-29, only-27)
+mark(discover-29, to-28)
+advcl:to(played-24, discover-29)
+mark(one-34, that-30)
+det(recording-32, the-31)
+nsubj(one-34, recording-32)
+cop(one-34, was-33)
+ccomp(discover-29, one-34)
+nsubj(made-37, I-35)
+aux(made-37, had-36)
+acl:relcl(one-34, made-37)
+case(Furtwängler-39, with-38)
+nmod:with(made-37, Furtwängler-39)
+case(1947-41, in-40)
+nmod:in(Furtwängler-39, 1947-41)
+punct(heard-11, .-42)
+
+Coreference set:
+	(2,3,[3,4]) -> (1,2,[1,6]), that is: "I" -> "A musician playing back a"
+	(3,1,[1,2]) -> (1,2,[1,6]), that is: "he" -> "A musician playing back a"
+	(3,3,[3,4]) -> (1,2,[1,6]), that is: "himself" -> "A musician playing back a"
+	(3,7,[7,8]) -> (1,2,[1,6]), that is: "him" -> "A musician playing back a"
+	(4,6,[6,7]) -> (1,2,[1,6]), that is: "his" -> "A musician playing back a"
+	(4,9,[9,10]) -> (1,2,[1,6]), that is: "his" -> "A musician playing back a"
+Coreference set:
+	(4,12,[12,13]) -> (4,7,[6,8]), that is: "it" -> "his performance"
+Coreference set:
+	(5,17,[17,18]) -> (5,10,[10,11]), that is: "I" -> "I"
+	(5,35,[35,36]) -> (5,10,[10,11]), that is: "I" -> "I"
+Coreference set:
+	(5,25,[25,26]) -> (5,14,[12,15]), that is: "it" -> "the Beethoven Concerto"

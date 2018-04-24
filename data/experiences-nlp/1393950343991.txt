@@ -1,0 +1,77 @@
+Sentence #1 (22 tokens):
+The whole concert sounded so ineffective that I began to suspect that I have got a seat which is acoustically bad.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=sounded CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=VBD Lemma=sound NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=ineffective CharacterOffsetBegin=29 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=ineffective NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=began CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=VBD Lemma=begin NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=suspect CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=VB Lemma=suspect NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=VBN Lemma=get NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=seat CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=NN Lemma=seat NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=88 CharacterOffsetEnd=93 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=acoustically CharacterOffsetBegin=97 CharacterOffsetEnd=109 PartOfSpeech=RB Lemma=acoustically NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (JJ whole) (NN concert))
+    (VP (VBD sounded)
+      (ADJP (RB so) (JJ ineffective))
+      (SBAR (IN that)
+        (S
+          (NP (PRP I))
+          (VP (VBD began)
+            (S
+              (VP (TO to)
+                (VP (VB suspect)
+                  (SBAR (IN that)
+                    (S
+                      (NP (PRP I))
+                      (VP (VBP have)
+                        (VP (VBN got)
+                          (NP
+                            (NP (DT a) (NN seat))
+                            (SBAR
+                              (WHNP (WDT which))
+                              (S
+                                (VP (VBZ is)
+                                  (ADJP (RB acoustically) (JJ bad)))))))))))))))))
+    (. .)))
+
+root(ROOT-0, sounded-4)
+det(concert-3, The-1)
+amod(concert-3, whole-2)
+nsubj(sounded-4, concert-3)
+advmod(ineffective-6, so-5)
+xcomp(sounded-4, ineffective-6)
+mark(began-9, that-7)
+nsubj(began-9, I-8)
+nsubj:xsubj(suspect-11, I-8)
+ccomp(sounded-4, began-9)
+mark(suspect-11, to-10)
+xcomp(began-9, suspect-11)
+mark(got-15, that-12)
+nsubj(got-15, I-13)
+aux(got-15, have-14)
+ccomp(suspect-11, got-15)
+det(seat-17, a-16)
+dobj(got-15, seat-17)
+nsubj(bad-21, seat-17)
+ref(seat-17, which-18)
+cop(bad-21, is-19)
+advmod(bad-21, acoustically-20)
+acl:relcl(seat-17, bad-21)
+punct(sounded-4, .-22)
+
+Coreference set:
+	(1,13,[13,14]) -> (1,8,[8,9]), that is: "I" -> "I"

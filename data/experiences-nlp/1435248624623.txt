@@ -1,0 +1,269 @@
+Sentence #1 (7 tokens):
+I like great big ole tears.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=like NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=7 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=ole CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=ole NamedEntityTag=O]
+[Text=tears CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NNS Lemma=tear NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP like)
+      (NP (JJ great) (JJ big) (NN ole) (NNS tears)))
+    (. .)))
+
+root(ROOT-0, like-2)
+nsubj(like-2, I-1)
+amod(tears-6, great-3)
+amod(tears-6, big-4)
+compound(tears-6, ole-5)
+dobj(like-2, tears-6)
+punct(like-2, .-7)
+
+Sentence #2 (10 tokens):
+That's why I liked [Artie] Whetsol.
+[Text=That CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=liked CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=VBD Lemma=like NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Artie CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=artie NamedEntityTag=PERSON]
+[Text=-RSB- CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=PERSON]
+[Text=Whetsol CharacterOffsetBegin=55 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=whetsol NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP (PRP I))
+          (VP (VBD liked)
+            (NP
+              (NP (-LRB- -LSB-) (NN Artie))
+              (PP (-RRB- -RSB-)
+                (NP (NN Whetsol))))))))
+    (. .)))
+
+root(ROOT-0, 's-2)
+nsubj('s-2, That-1)
+advmod(liked-5, why-3)
+nsubj(liked-5, I-4)
+advcl('s-2, liked-5)
+punct(Artie-7, -LSB--6)
+dobj(liked-5, Artie-7)
+punct(Whetsol-9, -RSB--8)
+nmod(Artie-7, Whetsol-9)
+punct('s-2, .-10)
+
+Sentence #3 (63 tokens):
+When he played the funeral march in "Black and Tan Fantasy", I used to see great, big ole tears running down people's faces… Bubber used to say, "if it ain't got swing, it ain't worth playin'; if it ain't got gutbucket, it ain't worth doing."
+[Text=When CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=funeral CharacterOffsetBegin=83 CharacterOffsetEnd=90 PartOfSpeech=JJ Lemma=funeral NamedEntityTag=O]
+[Text=march CharacterOffsetBegin=91 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=march NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-03 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-03">march</TIMEX3>]
+[Text=in CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Black CharacterOffsetBegin=101 CharacterOffsetEnd=106 PartOfSpeech=JJ Lemma=black NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Tan CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=NNP Lemma=Tan NamedEntityTag=MISC]
+[Text=Fantasy CharacterOffsetBegin=115 CharacterOffsetEnd=122 PartOfSpeech=NNP Lemma=Fantasy NamedEntityTag=MISC]
+[Text='' CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech='' Lemma='' NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=VBD Lemma=use NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=139 CharacterOffsetEnd=144 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=ole CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=NN Lemma=ole NamedEntityTag=O]
+[Text=tears CharacterOffsetBegin=154 CharacterOffsetEnd=159 PartOfSpeech=NNS Lemma=tear NamedEntityTag=O]
+[Text=running CharacterOffsetBegin=160 CharacterOffsetEnd=167 PartOfSpeech=VBG Lemma=run NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=168 CharacterOffsetEnd=172 PartOfSpeech=IN Lemma=down NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=173 CharacterOffsetEnd=179 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=179 CharacterOffsetEnd=181 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=faces CharacterOffsetBegin=182 CharacterOffsetEnd=187 PartOfSpeech=NNS Lemma=face NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=Bubber CharacterOffsetBegin=189 CharacterOffsetEnd=195 PartOfSpeech=NNP Lemma=Bubber NamedEntityTag=PERSON]
+[Text=used CharacterOffsetBegin=196 CharacterOffsetEnd=200 PartOfSpeech=VBD Lemma=use NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=201 CharacterOffsetEnd=203 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=204 CharacterOffsetEnd=207 PartOfSpeech=VB Lemma=say NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=209 CharacterOffsetEnd=210 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=210 CharacterOffsetEnd=212 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=213 CharacterOffsetEnd=215 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=ai CharacterOffsetBegin=216 CharacterOffsetEnd=218 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=218 CharacterOffsetEnd=221 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=222 CharacterOffsetEnd=225 PartOfSpeech=VBN Lemma=get NamedEntityTag=O]
+[Text=swing CharacterOffsetBegin=226 CharacterOffsetEnd=231 PartOfSpeech=NN Lemma=swing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=231 CharacterOffsetEnd=232 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=233 CharacterOffsetEnd=235 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=ai CharacterOffsetBegin=236 CharacterOffsetEnd=238 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=238 CharacterOffsetEnd=241 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=worth CharacterOffsetBegin=242 CharacterOffsetEnd=247 PartOfSpeech=JJ Lemma=worth NamedEntityTag=O]
+[Text=playin CharacterOffsetBegin=248 CharacterOffsetEnd=254 PartOfSpeech=NN Lemma=playin NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=254 CharacterOffsetEnd=255 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=255 CharacterOffsetEnd=256 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=257 CharacterOffsetEnd=259 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=260 CharacterOffsetEnd=262 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=ai CharacterOffsetBegin=263 CharacterOffsetEnd=265 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=265 CharacterOffsetEnd=268 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=269 CharacterOffsetEnd=272 PartOfSpeech=VBN Lemma=get NamedEntityTag=O]
+[Text=gutbucket CharacterOffsetBegin=273 CharacterOffsetEnd=282 PartOfSpeech=NN Lemma=gutbucket NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=282 CharacterOffsetEnd=283 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=284 CharacterOffsetEnd=286 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=ai CharacterOffsetBegin=287 CharacterOffsetEnd=289 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=289 CharacterOffsetEnd=292 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=worth CharacterOffsetBegin=293 CharacterOffsetEnd=298 PartOfSpeech=JJ Lemma=worth NamedEntityTag=O]
+[Text=doing CharacterOffsetBegin=299 CharacterOffsetEnd=304 PartOfSpeech=VBG Lemma=do NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=304 CharacterOffsetEnd=305 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=305 CharacterOffsetEnd=306 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (SBAR
+        (WHADVP (WRB When))
+        (S
+          (NP (PRP he))
+          (VP (VBD played)
+            (NP (DT the) (JJ funeral) (NN march))
+            (PP (IN in) (`` ``)
+              (NP
+                (NP (JJ Black))
+                (CC and)
+                (NP (NNP Tan) (NNP Fantasy)))
+              ('' '')))))
+      (, ,)
+      (NP (PRP I))
+      (VP (VBD used)
+        (S
+          (VP (TO to)
+            (VP (VB see)
+              (S
+                (NP
+                  (NP (JJ great) (, ,) (JJ big) (NN ole) (NNS tears))
+                  (VP (VBG running)
+                    (PP (IN down)
+                      (NP
+                        (NP (NNS people) (POS 's))
+                        (NNS faces)))))
+                (: ...)
+                (NP (NNP Bubber))
+                (VP (VBD used)
+                  (S
+                    (VP (TO to)
+                      (VP (VB say) (, ,) (`` ``)
+                        (S
+                          (SBAR (IN if)
+                            (S
+                              (NP (PRP it))
+                              (VP (VBP ai) (RB n't)
+                                (VP (VBN got)
+                                  (NP (NN swing))))))
+                          (, ,)
+                          (NP (PRP it))
+                          (VP (VBP ai) (RB n't)
+                            (NP (JJ worth) (NN playin))))))))
+                ('' ')))))))
+    (: ;)
+    (S
+      (SBAR (IN if)
+        (S
+          (NP (PRP it))
+          (VP (VBP ai) (RB n't)
+            (VP (VBN got)
+              (NP (NN gutbucket))))))
+      (, ,)
+      (NP (PRP it))
+      (VP (VBP ai) (RB n't)
+        (ADJP (JJ worth)
+          (S
+            (VP (VBG doing))))))
+    (. .) ('' '')))
+
+root(ROOT-0, used-16)
+advmod(played-3, When-1)
+nsubj(played-3, he-2)
+advcl(used-16, played-3)
+det(march-6, the-4)
+amod(march-6, funeral-5)
+nmod:tmod(played-3, march-6)
+case(Black-9, in-7)
+punct(Black-9, ``-8)
+nmod:in(played-3, Black-9)
+cc(Black-9, and-10)
+compound(Fantasy-12, Tan-11)
+nmod:in(played-3, Fantasy-12)
+conj:and(Black-9, Fantasy-12)
+punct(Black-9, ''-13)
+punct(used-16, ,-14)
+nsubj(used-16, I-15)
+nsubj:xsubj(see-18, I-15)
+mark(see-18, to-17)
+xcomp(used-16, see-18)
+amod(tears-23, great-19)
+punct(tears-23, ,-20)
+amod(tears-23, big-21)
+compound(tears-23, ole-22)
+nsubj(used-31, tears-23)
+nsubj:xsubj(say-33, tears-23)
+acl(tears-23, running-24)
+case(faces-28, down-25)
+nmod:poss(faces-28, people-26)
+case(people-26, 's-27)
+nmod:down(running-24, faces-28)
+punct(used-31, ...-29)
+nsubj(used-31, Bubber-30)
+nsubj:xsubj(say-33, Bubber-30)
+ccomp(see-18, used-31)
+mark(say-33, to-32)
+xcomp(used-31, say-33)
+punct(say-33, ,-34)
+punct(say-33, ``-35)
+mark(got-40, if-36)
+nsubjpass(got-40, it-37)
+auxpass(got-40, ai-38)
+neg(got-40, n't-39)
+advcl:if(playin-47, got-40)
+dobj(got-40, swing-41)
+punct(playin-47, ,-42)
+nsubj(playin-47, it-43)
+cop(playin-47, ai-44)
+neg(playin-47, n't-45)
+amod(playin-47, worth-46)
+ccomp(say-33, playin-47)
+punct(used-31, '-48)
+punct(used-16, ;-49)
+mark(got-54, if-50)
+nsubjpass(got-54, it-51)
+auxpass(got-54, ai-52)
+neg(got-54, n't-53)
+advcl:if(worth-60, got-54)
+dobj(got-54, gutbucket-55)
+punct(worth-60, ,-56)
+nsubj(worth-60, it-57)
+cop(worth-60, ai-58)
+neg(worth-60, n't-59)
+parataxis(used-16, worth-60)
+dep(worth-60, doing-61)
+punct(used-16, .-62)
+punct(used-16, ''-63)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,1,[1,2]), that is: "That" -> "I"
+	(2,4,[4,5]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(3,15,[15,16]) -> (1,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(3,2,[2,3]) -> (2,7,[6,10]), that is: "he" -> "-LSB- Artie -RSB- Whetsol"
+Coreference set:
+	(3,37,[37,38]) -> (3,6,[4,7]), that is: "it" -> "the funeral march"
+	(3,43,[43,44]) -> (3,6,[4,7]), that is: "it" -> "the funeral march"
+	(3,51,[51,52]) -> (3,6,[4,7]), that is: "it" -> "the funeral march"
+	(3,57,[57,58]) -> (3,6,[4,7]), that is: "it" -> "the funeral march"

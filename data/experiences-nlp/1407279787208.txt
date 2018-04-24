@@ -1,0 +1,100 @@
+Sentence #1 (31 tokens):
+To the church again; where before Sermon, a long Psalm was set that lasted an houre while the Sexton gathered his year's contribucion through the whole church.
+[Text=To CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=church CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=church NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=Sermon CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Sermon NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=long NamedEntityTag=O]
+[Text=Psalm CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=psalm NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=set CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=VBN Lemma=set NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=lasted CharacterOffsetBegin=68 CharacterOffsetEnd=74 PartOfSpeech=VBD Lemma=last NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=houre CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=houre NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Sexton CharacterOffsetBegin=94 CharacterOffsetEnd=100 PartOfSpeech=NNP Lemma=Sexton NamedEntityTag=PERSON]
+[Text=gathered CharacterOffsetBegin=101 CharacterOffsetEnd=109 PartOfSpeech=VBD Lemma=gather NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=year CharacterOffsetBegin=114 CharacterOffsetEnd=118 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P1Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P1Y">year</TIMEX3>]
+[Text='s CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=contribucion CharacterOffsetBegin=121 CharacterOffsetEnd=133 PartOfSpeech=NN Lemma=contribucion NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=134 CharacterOffsetEnd=141 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=142 CharacterOffsetEnd=145 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=146 CharacterOffsetEnd=151 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=church CharacterOffsetBegin=152 CharacterOffsetEnd=158 PartOfSpeech=NN Lemma=church NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (FRAG
+      (PP
+        (PP (TO To)
+          (NP (DT the) (NN church)))
+        (ADVP (RB again))))
+    (: ;)
+    (S
+      (SBAR
+        (WHADVP (WRB where))
+        (FRAG
+          (PP (IN before)
+            (NP (NNP Sermon)))))
+      (, ,)
+      (NP (DT a) (JJ long) (NN Psalm))
+      (VP (VBD was)
+        (VP (VBN set)
+          (SBAR (IN that)
+            (S
+              (VP (VBD lasted)
+                (NP (DT an) (NN houre))
+                (SBAR (IN while)
+                  (S
+                    (NP (DT the) (NNP Sexton))
+                    (VP (VBD gathered)
+                      (NP
+                        (NP (PRP$ his) (NN year) (POS 's))
+                        (NN contribucion))
+                      (PP (IN through)
+                        (NP (DT the) (JJ whole) (NN church))))))))))))
+    (. .)))
+
+root(ROOT-0, set-14)
+case(church-3, To-1)
+det(church-3, the-2)
+nmod:to(again-4, church-3)
+dep(set-14, again-4)
+punct(set-14, ;-5)
+advmod(Sermon-8, where-6)
+case(Sermon-8, before-7)
+advcl:before(set-14, Sermon-8)
+punct(set-14, ,-9)
+det(Psalm-12, a-10)
+amod(Psalm-12, long-11)
+nsubjpass(set-14, Psalm-12)
+auxpass(set-14, was-13)
+mark(lasted-16, that-15)
+ccomp(set-14, lasted-16)
+det(houre-18, an-17)
+dobj(lasted-16, houre-18)
+mark(gathered-22, while-19)
+det(Sexton-21, the-20)
+nsubj(gathered-22, Sexton-21)
+advcl:while(lasted-16, gathered-22)
+nmod:poss(year-24, his-23)
+nmod:poss(contribucion-26, year-24)
+case(year-24, 's-25)
+dobj(gathered-22, contribucion-26)
+case(church-30, through-27)
+det(church-30, the-28)
+amod(church-30, whole-29)
+nmod:through(gathered-22, church-30)
+punct(set-14, .-31)
+
+Coreference set:
+	(1,23,[23,24]) -> (1,18,[17,19]), that is: "his" -> "an houre"

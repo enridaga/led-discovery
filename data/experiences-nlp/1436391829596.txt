@@ -1,0 +1,34 @@
+Sentence #1 (10 tokens):
+Gay Men's Chorus in the new Carnegie Hall.
+[Text=Gay CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NNS Lemma=gay NamedEntityTag=O]
+[Text=Men CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Men NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Chorus CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Chorus NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=Carnegie CharacterOffsetBegin=28 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Carnegie NamedEntityTag=LOCATION]
+[Text=Hall CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Hall NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNS Gay))
+    (NP
+      (NP
+        (NP (NNP Men) (POS 's))
+        (NNP Chorus))
+      (PP (IN in)
+        (NP (DT the) (JJ new) (NNP Carnegie) (NNP Hall))))
+    (. .)))
+
+root(ROOT-0, Gay-1)
+nmod:poss(Chorus-4, Men-2)
+case(Men-2, 's-3)
+dep(Gay-1, Chorus-4)
+case(Hall-9, in-5)
+det(Hall-9, the-6)
+amod(Hall-9, new-7)
+compound(Hall-9, Carnegie-8)
+nmod:in(Chorus-4, Hall-9)
+punct(Gay-1, .-10)
+

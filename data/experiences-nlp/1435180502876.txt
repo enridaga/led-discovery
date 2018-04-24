@@ -1,0 +1,54 @@
+Sentence #1 (17 tokens):
+On the 27th, Will's and my "pre-concert" recital in Tully of Debussy.
+[Text=On CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=27th CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=JJ Lemma=27th NamedEntityTag=ORDINAL NormalizedNamedEntityTag=27.0]
+[Text=, CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Will CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Will NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=pre-concert CharacterOffsetBegin=28 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=pre-concert NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=recital CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=recital NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Tully CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=Tully NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Debussy CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=Debussy NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN On)
+      (NP
+        (NP (DT the) (JJ 27th))
+        (, ,)
+        (NP (NNP Will) (POS 's))
+        (CC and)
+        (NP
+          (NP (PRP$ my) (`` ``) (JJ pre-concert) ('' '') (NN recital))
+          (PP (IN in)
+            (NP
+              (NP (NNP Tully))
+              (PP (IN of)
+                (NP (NNP Debussy))))))))
+    (. .)))
+
+root(ROOT-0, 27th-3)
+case(27th-3, On-1)
+det(27th-3, the-2)
+punct(27th-3, ,-4)
+conj:and(27th-3, Will-5)
+case(Will-5, 's-6)
+cc(27th-3, and-7)
+nmod:poss(recital-12, my-8)
+punct(recital-12, ``-9)
+amod(recital-12, pre-concert-10)
+punct(recital-12, ''-11)
+conj:and(27th-3, recital-12)
+case(Tully-14, in-13)
+nmod:in(recital-12, Tully-14)
+case(Debussy-16, of-15)
+nmod:of(Tully-14, Debussy-16)
+punct(27th-3, .-17)
+

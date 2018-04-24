@@ -1,0 +1,135 @@
+Sentence #1 (3 tokens):
+Wow wee!
+[Text=Wow CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=UH Lemma=wow NamedEntityTag=O]
+[Text=wee CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=wee NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (VP
+      (NP
+        (INTJ (UH Wow))
+        (NP (NN wee))))
+    (. !)))
+
+root(ROOT-0, wee-2)
+discourse(wee-2, Wow-1)
+punct(wee-2, !-3)
+
+Sentence #2 (11 tokens):
+What a night at the Anvil (25 May).
+[Text=What CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=night CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t1" type="TIME" value="TNI">night</TIMEX3>]
+[Text=at CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Anvil CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Anvil NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=25 CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=CD Lemma=25 NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-05-25 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-05-25">25 May</TIMEX3>]
+[Text=May CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-05-25 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-05-25">25 May</TIMEX3>]
+[Text=-RRB- CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (WP What))
+    (NP-TMP (DT a) (NN night))
+    (PP (IN at)
+      (NP
+        (NP (DT the) (NNP Anvil))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (CD 25))
+            (NP-TMP (NNP May)))
+          (-RRB- -RRB-))))
+    (. .)))
+
+root(ROOT-0, What-1)
+det(night-3, a-2)
+nmod:tmod(What-1, night-3)
+case(Anvil-6, at-4)
+det(Anvil-6, the-5)
+nmod:at(What-1, Anvil-6)
+punct(25-8, -LRB--7)
+dep(Anvil-6, 25-8)
+nmod:tmod(25-8, May-9)
+punct(25-8, -RRB--10)
+punct(What-1, .-11)
+
+Sentence #3 (11 tokens):
+The Labeque sisters were wonderful and the orchestra was incredible.
+[Text=The CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Labeque CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=labeque NamedEntityTag=MISC]
+[Text=sisters CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=NNS Lemma=sister NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=wonderful CharacterOffsetBegin=70 CharacterOffsetEnd=79 PartOfSpeech=JJ Lemma=wonderful NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=orchestra CharacterOffsetBegin=88 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=orchestra NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=incredible CharacterOffsetBegin=102 CharacterOffsetEnd=112 PartOfSpeech=JJ Lemma=incredible NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJ Labeque) (NNS sisters))
+      (VP (VBD were)
+        (ADJP (JJ wonderful))))
+    (CC and)
+    (S
+      (NP (DT the) (NN orchestra))
+      (VP (VBD was)
+        (ADJP (JJ incredible))))
+    (. .)))
+
+root(ROOT-0, wonderful-5)
+det(sisters-3, The-1)
+amod(sisters-3, Labeque-2)
+nsubj(wonderful-5, sisters-3)
+cop(wonderful-5, were-4)
+cc(wonderful-5, and-6)
+det(orchestra-8, the-7)
+nsubj(incredible-10, orchestra-8)
+cop(incredible-10, was-9)
+conj:and(wonderful-5, incredible-10)
+punct(wonderful-5, .-11)
+
+Sentence #4 (8 tokens):
+Great programme, a truly memorable evening!
+[Text=Great CharacterOffsetBegin=114 CharacterOffsetEnd=119 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=programme CharacterOffsetBegin=120 CharacterOffsetEnd=129 PartOfSpeech=NN Lemma=programme NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=truly CharacterOffsetBegin=133 CharacterOffsetEnd=138 PartOfSpeech=RB Lemma=truly NamedEntityTag=O]
+[Text=memorable CharacterOffsetBegin=139 CharacterOffsetEnd=148 PartOfSpeech=JJ Lemma=memorable NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=149 CharacterOffsetEnd=156 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t3" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=! CharacterOffsetBegin=156 CharacterOffsetEnd=157 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (JJ Great) (NN programme))
+    (, ,)
+    (NP (DT a) (RB truly) (JJ memorable) (NN evening))
+    (. !)))
+
+root(ROOT-0, programme-2)
+amod(programme-2, Great-1)
+punct(programme-2, ,-3)
+det(evening-7, a-4)
+advmod(evening-7, truly-5)
+amod(evening-7, memorable-6)
+appos(programme-2, evening-7)
+punct(programme-2, !-8)
+
+Sentence #5 (3 tokens):
+Thank you!
+[Text=Thank CharacterOffsetBegin=158 CharacterOffsetEnd=163 PartOfSpeech=VB Lemma=thank NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=167 CharacterOffsetEnd=168 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Thank)
+      (NP (PRP you)))
+    (. !)))
+
+root(ROOT-0, Thank-1)
+dobj(Thank-1, you-2)
+punct(Thank-1, !-3)
+

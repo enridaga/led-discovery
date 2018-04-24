@@ -1,0 +1,54 @@
+Sentence #1 (17 tokens):
+First, New York for four days where with Gary Clarke I saw the Peking Opera.
+[Text=First CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=, CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=New NamedEntityTag=LOCATION]
+[Text=York CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=York NamedEntityTag=LOCATION]
+[Text=for CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=four CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=CD Lemma=four NamedEntityTag=DURATION NormalizedNamedEntityTag=P4D Timex=<TIMEX3 tid="t1" type="DURATION" value="P4D">four days</TIMEX3>]
+[Text=days CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P4D Timex=<TIMEX3 tid="t1" type="DURATION" value="P4D">four days</TIMEX3>]
+[Text=where CharacterOffsetBegin=30 CharacterOffsetEnd=35 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Gary CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Gary NamedEntityTag=PERSON]
+[Text=Clarke CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Clarke NamedEntityTag=PERSON]
+[Text=I CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=saw CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=VBD Lemma=see NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Peking CharacterOffsetBegin=63 CharacterOffsetEnd=69 PartOfSpeech=JJ Lemma=peking NamedEntityTag=LOCATION]
+[Text=Opera CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Opera NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB First))
+    (, ,)
+    (NP
+      (NP (NNP New) (NNP York))
+      (PP (IN for)
+        (NP
+          (NP (CD four) (NNS days))
+          (FRAG
+            (WHADVP (WRB where)))))
+      (PP (IN with)
+        (NP (NNP Gary) (NNP Clarke) (PRP I))))
+    (VP (VBD saw)
+      (NP (DT the) (JJ Peking) (NNP Opera)))
+    (. .)))
+
+root(ROOT-0, saw-13)
+advmod(saw-13, First-1)
+punct(saw-13, ,-2)
+compound(York-4, New-3)
+nsubj(saw-13, York-4)
+case(days-7, for-5)
+nummod(days-7, four-6)
+nmod:for(York-4, days-7)
+dep(days-7, where-8)
+case(Clarke-11, with-9)
+compound(Clarke-11, Gary-10)
+nmod:with(York-4, Clarke-11)
+dep(Clarke-11, I-12)
+det(Opera-16, the-14)
+amod(Opera-16, Peking-15)
+dobj(saw-13, Opera-16)
+punct(saw-13, .-17)
+

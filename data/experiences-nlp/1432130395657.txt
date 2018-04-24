@@ -1,0 +1,469 @@
+Sentence #1 (25 tokens):
+I [Isaak Glikman] visited Shostakovich in Repino, where he had come for a month to be treated by a woman doctor.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Isaak CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Isaak NamedEntityTag=PERSON]
+[Text=Glikman CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Glikman NamedEntityTag=PERSON]
+[Text=-RSB- CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=visited CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=VBD Lemma=visit NamedEntityTag=O]
+[Text=Shostakovich CharacterOffsetBegin=26 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Shostakovich NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Repino CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Repino NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=come CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=VBN Lemma=come NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=P1M Timex=<TIMEX3 tid="t1" type="DURATION" value="P1M">a month</TIMEX3>]
+[Text=month CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=month NamedEntityTag=DURATION NormalizedNamedEntityTag=P1M Timex=<TIMEX3 tid="t1" type="DURATION" value="P1M">a month</TIMEX3>]
+[Text=to CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=treated CharacterOffsetBegin=86 CharacterOffsetEnd=93 PartOfSpeech=VBN Lemma=treat NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=woman CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=NN Lemma=woman NamedEntityTag=O]
+[Text=doctor CharacterOffsetBegin=105 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=doctor NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (-LRB- -LSB-)
+      (SBAR
+        (S
+          (NP (NNP Isaak) (NNP Glikman) (-RRB- -RSB-))
+          (VP (VBD visited)
+            (NP (NNP Shostakovich))
+            (PP (IN in)
+              (NP (NNP Repino)))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PRP he))
+                (VP (VBD had)
+                  (VP (VBN come)
+                    (PP (IN for)
+                      (NP (DT a) (NN month)))
+                    (S
+                      (VP (TO to)
+                        (VP (VB be)
+                          (VP (VBN treated)
+                            (PP (IN by)
+                              (NP (DT a) (NN woman) (NN doctor)))))))))))))))
+    (. .)))
+
+root(ROOT-0, visited-6)
+nsubj(visited-6, I-1)
+punct(visited-6, -LSB--2)
+compound(Glikman-4, Isaak-3)
+nsubj(visited-6, Glikman-4)
+punct(Glikman-4, -RSB--5)
+dobj(visited-6, Shostakovich-7)
+case(Repino-9, in-8)
+nmod:in(visited-6, Repino-9)
+punct(visited-6, ,-10)
+advmod(come-14, where-11)
+nsubj(come-14, he-12)
+nsubjpass:xsubj(treated-20, he-12)
+aux(come-14, had-13)
+advcl(visited-6, come-14)
+case(month-17, for-15)
+det(month-17, a-16)
+nmod:for(come-14, month-17)
+mark(treated-20, to-18)
+auxpass(treated-20, be-19)
+xcomp(come-14, treated-20)
+case(doctor-24, by-21)
+det(doctor-24, a-22)
+compound(doctor-24, woman-23)
+nmod:agent(treated-20, doctor-24)
+punct(visited-6, .-25)
+
+Sentence #2 (35 tokens):
+He revealed this in a gloomy tone of voice, but over dinner he cheered up and started to tell me about a revival of 'Katerina Izmailova' at the Kiev Opera House.
+[Text=He CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=revealed CharacterOffsetBegin=116 CharacterOffsetEnd=124 PartOfSpeech=VBD Lemma=reveal NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=130 CharacterOffsetEnd=132 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=133 CharacterOffsetEnd=134 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=gloomy CharacterOffsetBegin=135 CharacterOffsetEnd=141 PartOfSpeech=JJ Lemma=gloomy NamedEntityTag=O]
+[Text=tone CharacterOffsetBegin=142 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=tone NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=voice CharacterOffsetBegin=150 CharacterOffsetEnd=155 PartOfSpeech=NN Lemma=voice NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=155 CharacterOffsetEnd=156 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=157 CharacterOffsetEnd=160 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=166 CharacterOffsetEnd=172 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=173 CharacterOffsetEnd=175 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=cheered CharacterOffsetBegin=176 CharacterOffsetEnd=183 PartOfSpeech=VBD Lemma=cheer NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=184 CharacterOffsetEnd=186 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=187 CharacterOffsetEnd=190 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=started CharacterOffsetBegin=191 CharacterOffsetEnd=198 PartOfSpeech=VBD Lemma=start NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=199 CharacterOffsetEnd=201 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=tell CharacterOffsetBegin=202 CharacterOffsetEnd=206 PartOfSpeech=VB Lemma=tell NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=207 CharacterOffsetEnd=209 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=210 CharacterOffsetEnd=215 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=revival CharacterOffsetBegin=218 CharacterOffsetEnd=225 PartOfSpeech=NN Lemma=revival NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=226 CharacterOffsetEnd=228 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=229 CharacterOffsetEnd=230 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Katerina CharacterOffsetBegin=230 CharacterOffsetEnd=238 PartOfSpeech=NNP Lemma=Katerina NamedEntityTag=PERSON]
+[Text=Izmailova CharacterOffsetBegin=239 CharacterOffsetEnd=248 PartOfSpeech=NNP Lemma=Izmailova NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=248 CharacterOffsetEnd=249 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=250 CharacterOffsetEnd=252 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=253 CharacterOffsetEnd=256 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Kiev CharacterOffsetBegin=257 CharacterOffsetEnd=261 PartOfSpeech=NNP Lemma=Kiev NamedEntityTag=ORGANIZATION]
+[Text=Opera CharacterOffsetBegin=262 CharacterOffsetEnd=267 PartOfSpeech=NNP Lemma=Opera NamedEntityTag=ORGANIZATION]
+[Text=House CharacterOffsetBegin=268 CharacterOffsetEnd=273 PartOfSpeech=NNP Lemma=House NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=273 CharacterOffsetEnd=274 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD revealed)
+        (NP (DT this))
+        (PP (IN in)
+          (NP
+            (NP (DT a) (JJ gloomy) (NN tone))
+            (PP (IN of)
+              (NP (NN voice)))))))
+    (, ,)
+    (CC but)
+    (S
+      (PP (IN over)
+        (NP (NN dinner)))
+      (NP (PRP he))
+      (VP
+        (VP (VBD cheered)
+          (PRT (RP up)))
+        (CC and)
+        (VP (VBD started)
+          (S
+            (VP (TO to)
+              (VP (VB tell)
+                (NP (PRP me))
+                (PP (IN about)
+                  (NP
+                    (NP (DT a) (NN revival))
+                    (PP (IN of) (`` `)
+                      (NP
+                        (NP (NNP Katerina) (NNP Izmailova) (POS '))
+                        (PP (IN at)
+                          (NP (DT the) (NNP Kiev) (NNP Opera) (NNP House)))))))))))))
+    (. .)))
+
+root(ROOT-0, revealed-2)
+nsubj(revealed-2, He-1)
+dobj(revealed-2, this-3)
+case(tone-7, in-4)
+det(tone-7, a-5)
+amod(tone-7, gloomy-6)
+nmod:in(revealed-2, tone-7)
+case(voice-9, of-8)
+nmod:of(tone-7, voice-9)
+punct(revealed-2, ,-10)
+cc(revealed-2, but-11)
+case(dinner-13, over-12)
+nmod:over(cheered-15, dinner-13)
+nsubj(cheered-15, he-14)
+nsubj(started-18, he-14)
+nsubj:xsubj(tell-20, he-14)
+conj:but(revealed-2, cheered-15)
+compound:prt(cheered-15, up-16)
+cc(cheered-15, and-17)
+conj:but(revealed-2, started-18)
+conj:and(cheered-15, started-18)
+mark(tell-20, to-19)
+xcomp(started-18, tell-20)
+dobj(tell-20, me-21)
+case(revival-24, about-22)
+det(revival-24, a-23)
+nmod:about(tell-20, revival-24)
+case(Izmailova-28, of-25)
+punct(Izmailova-28, `-26)
+compound(Izmailova-28, Katerina-27)
+nmod:'(revival-24, Izmailova-28)
+case(Izmailova-28, '-29)
+case(House-34, at-30)
+det(House-34, the-31)
+compound(House-34, Kiev-32)
+compound(House-34, Opera-33)
+nmod:at(Izmailova-28, House-34)
+punct(revealed-2, .-35)
+
+Sentence #3 (13 tokens):
+He said: 'This production was like a holiday for me.
+[Text=He CharacterOffsetBegin=275 CharacterOffsetEnd=277 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=278 CharacterOffsetEnd=282 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=282 CharacterOffsetEnd=283 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=284 CharacterOffsetEnd=285 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=This CharacterOffsetBegin=285 CharacterOffsetEnd=289 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=production CharacterOffsetBegin=290 CharacterOffsetEnd=300 PartOfSpeech=NN Lemma=production NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=301 CharacterOffsetEnd=304 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=305 CharacterOffsetEnd=309 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=310 CharacterOffsetEnd=311 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=holiday CharacterOffsetBegin=312 CharacterOffsetEnd=319 PartOfSpeech=NN Lemma=holiday NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=320 CharacterOffsetEnd=323 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=324 CharacterOffsetEnd=326 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=326 CharacterOffsetEnd=327 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD said) (: :) (`` `)
+      (S
+        (NP (DT This) (NN production))
+        (VP (VBD was)
+          (PP (IN like)
+            (NP
+              (NP (DT a) (NN holiday))
+              (PP (IN for)
+                (NP (PRP me))))))))
+    (. .)))
+
+root(ROOT-0, said-2)
+nsubj(said-2, He-1)
+punct(said-2, :-3)
+punct(said-2, `-4)
+det(production-6, This-5)
+nsubj(holiday-10, production-6)
+cop(holiday-10, was-7)
+case(holiday-10, like-8)
+det(holiday-10, a-9)
+ccomp(said-2, holiday-10)
+case(me-12, for-11)
+nmod:for(holiday-10, me-12)
+punct(said-2, .-13)
+
+Sentence #4 (13 tokens):
+Orchestra, singers, conductor and even the producer were all splendid.
+[Text=Orchestra CharacterOffsetBegin=328 CharacterOffsetEnd=337 PartOfSpeech=NNP Lemma=Orchestra NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=337 CharacterOffsetEnd=338 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=singers CharacterOffsetBegin=339 CharacterOffsetEnd=346 PartOfSpeech=NNS Lemma=singer NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=346 CharacterOffsetEnd=347 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=conductor CharacterOffsetBegin=348 CharacterOffsetEnd=357 PartOfSpeech=NN Lemma=conductor NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=358 CharacterOffsetEnd=361 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=362 CharacterOffsetEnd=366 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=367 CharacterOffsetEnd=370 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=producer CharacterOffsetBegin=371 CharacterOffsetEnd=379 PartOfSpeech=NN Lemma=producer NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=380 CharacterOffsetEnd=384 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=385 CharacterOffsetEnd=388 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=splendid CharacterOffsetBegin=389 CharacterOffsetEnd=397 PartOfSpeech=JJ Lemma=splendid NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=397 CharacterOffsetEnd=398 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP Orchestra))
+      (, ,)
+      (NP (NNS singers))
+      (, ,)
+      (NP (NN conductor))
+      (CC and)
+      (NP (RB even) (DT the) (NN producer)))
+    (VP (VBD were)
+      (NP (DT all) (JJ splendid)))
+    (. .)))
+
+root(ROOT-0, splendid-12)
+nsubj(splendid-12, Orchestra-1)
+punct(Orchestra-1, ,-2)
+conj:and(Orchestra-1, singers-3)
+nsubj(splendid-12, singers-3)
+punct(Orchestra-1, ,-4)
+conj:and(Orchestra-1, conductor-5)
+nsubj(splendid-12, conductor-5)
+cc(Orchestra-1, and-6)
+advmod(producer-9, even-7)
+det(producer-9, the-8)
+conj:and(Orchestra-1, producer-9)
+nsubj(splendid-12, producer-9)
+cop(splendid-12, were-10)
+det(splendid-12, all-11)
+punct(splendid-12, .-13)
+
+Sentence #5 (16 tokens):
+Altough Simeonov does not have a particularly original personality, he is a fine conductor.
+[Text=Altough CharacterOffsetBegin=399 CharacterOffsetEnd=406 PartOfSpeech=NNP Lemma=Altough NamedEntityTag=O]
+[Text=Simeonov CharacterOffsetBegin=407 CharacterOffsetEnd=415 PartOfSpeech=NNP Lemma=Simeonov NamedEntityTag=PERSON]
+[Text=does CharacterOffsetBegin=416 CharacterOffsetEnd=420 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=421 CharacterOffsetEnd=424 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=425 CharacterOffsetEnd=429 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=430 CharacterOffsetEnd=431 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=particularly CharacterOffsetBegin=432 CharacterOffsetEnd=444 PartOfSpeech=RB Lemma=particularly NamedEntityTag=O]
+[Text=original CharacterOffsetBegin=445 CharacterOffsetEnd=453 PartOfSpeech=JJ Lemma=original NamedEntityTag=O]
+[Text=personality CharacterOffsetBegin=454 CharacterOffsetEnd=465 PartOfSpeech=NN Lemma=personality NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=465 CharacterOffsetEnd=466 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=467 CharacterOffsetEnd=469 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=470 CharacterOffsetEnd=472 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=473 CharacterOffsetEnd=474 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=475 CharacterOffsetEnd=479 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=conductor CharacterOffsetBegin=480 CharacterOffsetEnd=489 PartOfSpeech=NN Lemma=conductor NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=489 CharacterOffsetEnd=490 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Altough) (NNP Simeonov))
+      (VP (VBZ does) (RB not)
+        (VP (VB have)
+          (NP (DT a) (RB particularly) (JJ original) (NN personality)))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBZ is)
+      (NP (DT a) (JJ fine) (NN conductor)))
+    (. .)))
+
+root(ROOT-0, conductor-15)
+compound(Simeonov-2, Altough-1)
+nsubj(have-5, Simeonov-2)
+aux(have-5, does-3)
+neg(have-5, not-4)
+ccomp(conductor-15, have-5)
+det(personality-9, a-6)
+advmod(personality-9, particularly-7)
+amod(personality-9, original-8)
+dobj(have-5, personality-9)
+punct(conductor-15, ,-10)
+nsubj(conductor-15, he-11)
+cop(conductor-15, is-12)
+det(conductor-15, a-13)
+amod(conductor-15, fine-14)
+punct(conductor-15, .-16)
+
+Sentence #6 (40 tokens):
+By a strange, and I am sure quite fortuitous circumstance, the performance they gave on 28 January was on the anniversary of the "Muddle Instead of Music" article on the same day in 1936.'
+[Text=By CharacterOffsetBegin=491 CharacterOffsetEnd=493 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=494 CharacterOffsetEnd=495 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=strange CharacterOffsetBegin=496 CharacterOffsetEnd=503 PartOfSpeech=JJ Lemma=strange NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=503 CharacterOffsetEnd=504 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=505 CharacterOffsetEnd=508 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=509 CharacterOffsetEnd=510 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=511 CharacterOffsetEnd=513 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=514 CharacterOffsetEnd=518 PartOfSpeech=JJ Lemma=sure NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=519 CharacterOffsetEnd=524 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=fortuitous CharacterOffsetBegin=525 CharacterOffsetEnd=535 PartOfSpeech=JJ Lemma=fortuitous NamedEntityTag=O]
+[Text=circumstance CharacterOffsetBegin=536 CharacterOffsetEnd=548 PartOfSpeech=NN Lemma=circumstance NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=548 CharacterOffsetEnd=549 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=550 CharacterOffsetEnd=553 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=554 CharacterOffsetEnd=565 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=566 CharacterOffsetEnd=570 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=571 CharacterOffsetEnd=575 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=576 CharacterOffsetEnd=578 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=28 CharacterOffsetBegin=579 CharacterOffsetEnd=581 PartOfSpeech=CD Lemma=28 NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-28 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-01-28">28 January</TIMEX3>]
+[Text=January CharacterOffsetBegin=582 CharacterOffsetEnd=589 PartOfSpeech=NNP Lemma=January NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-01-28 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-01-28">28 January</TIMEX3>]
+[Text=was CharacterOffsetBegin=590 CharacterOffsetEnd=593 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=594 CharacterOffsetEnd=596 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=597 CharacterOffsetEnd=600 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=anniversary CharacterOffsetBegin=601 CharacterOffsetEnd=612 PartOfSpeech=NN Lemma=anniversary NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=613 CharacterOffsetEnd=615 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=616 CharacterOffsetEnd=619 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=620 CharacterOffsetEnd=621 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Muddle CharacterOffsetBegin=621 CharacterOffsetEnd=627 PartOfSpeech=NNP Lemma=Muddle NamedEntityTag=O]
+[Text=Instead CharacterOffsetBegin=628 CharacterOffsetEnd=635 PartOfSpeech=RB Lemma=instead NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=636 CharacterOffsetEnd=638 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Music CharacterOffsetBegin=639 CharacterOffsetEnd=644 PartOfSpeech=NNP Lemma=Music NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=644 CharacterOffsetEnd=645 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=article CharacterOffsetBegin=646 CharacterOffsetEnd=653 PartOfSpeech=NN Lemma=article NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=654 CharacterOffsetEnd=656 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=657 CharacterOffsetEnd=660 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D INTERSECT 1936 Timex=<TIMEX3 alt_value="THIS P1D INTERSECT 1936" anchorTimeID="t4" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf0">the same day in 1936</TIMEX3>]
+[Text=same CharacterOffsetBegin=661 CharacterOffsetEnd=665 PartOfSpeech=JJ Lemma=same NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D INTERSECT 1936 Timex=<TIMEX3 alt_value="THIS P1D INTERSECT 1936" anchorTimeID="t4" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf0">the same day in 1936</TIMEX3>]
+[Text=day CharacterOffsetBegin=666 CharacterOffsetEnd=669 PartOfSpeech=NN Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D INTERSECT 1936 Timex=<TIMEX3 alt_value="THIS P1D INTERSECT 1936" anchorTimeID="t4" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf0">the same day in 1936</TIMEX3>]
+[Text=in CharacterOffsetBegin=670 CharacterOffsetEnd=672 PartOfSpeech=IN Lemma=in NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D INTERSECT 1936 Timex=<TIMEX3 alt_value="THIS P1D INTERSECT 1936" anchorTimeID="t4" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf0">the same day in 1936</TIMEX3>]
+[Text=1936 CharacterOffsetBegin=673 CharacterOffsetEnd=677 PartOfSpeech=CD Lemma=1936 NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D INTERSECT 1936 Timex=<TIMEX3 alt_value="THIS P1D INTERSECT 1936" anchorTimeID="t4" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf0">the same day in 1936</TIMEX3>]
+[Text=. CharacterOffsetBegin=677 CharacterOffsetEnd=678 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=678 CharacterOffsetEnd=679 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN By)
+      (NP (DT a) (JJ strange)))
+    (PRN (, ,)
+      (CC and)
+      (S
+        (NP (PRP I))
+        (VP (VBP am)
+          (NP (JJ sure)
+            (ADJP (RB quite) (JJ fortuitous))
+            (NN circumstance))))
+      (, ,))
+    (NP (DT the) (NN performance))
+    (PRN
+      (S
+        (NP (PRP they))
+        (VP (VBD gave)
+          (PP (IN on)
+            (NP (CD 28))))))
+    (NP (NNP January))
+    (VP (VBD was)
+      (PP (IN on)
+        (NP
+          (NP (DT the) (NN anniversary))
+          (PP (IN of)
+            (NP
+              (NP (DT the)
+                (NP (`` ``)
+                  (NP (NNP Muddle))
+                  (PP (RB Instead) (IN of)
+                    (NP (NNP Music)))
+                  ('' ''))
+                (NN article))
+              (PP (IN on)
+                (NP
+                  (NP (DT the) (JJ same) (NN day))
+                  (PP (IN in)
+                    (NP (CD 1936))))))))))
+    (. .) ('' ')))
+
+root(ROOT-0, anniversary-23)
+case(strange-3, By-1)
+det(strange-3, a-2)
+nmod:by(anniversary-23, strange-3)
+punct(circumstance-11, ,-4)
+cc(circumstance-11, and-5)
+nsubj(circumstance-11, I-6)
+cop(circumstance-11, am-7)
+amod(circumstance-11, sure-8)
+advmod(fortuitous-10, quite-9)
+amod(circumstance-11, fortuitous-10)
+parataxis(anniversary-23, circumstance-11)
+punct(circumstance-11, ,-12)
+det(performance-14, the-13)
+nsubj(anniversary-23, performance-14)
+nsubj(gave-16, they-15)
+parataxis(anniversary-23, gave-16)
+case(28-18, on-17)
+nmod:on(gave-16, 28-18)
+nsubj(anniversary-23, January-19)
+cop(anniversary-23, was-20)
+case(anniversary-23, on-21)
+det(anniversary-23, the-22)
+case(article-32, of-24)
+det(article-32, the-25)
+punct(Muddle-27, ``-26)
+compound(article-32, Muddle-27)
+case(Music-30, Instead-28)
+mwe(Instead-28, of-29)
+nmod:instead_of(Muddle-27, Music-30)
+punct(Muddle-27, ''-31)
+nmod:of(anniversary-23, article-32)
+case(day-36, on-33)
+det(day-36, the-34)
+amod(day-36, same-35)
+nmod:on(article-32, day-36)
+case(1936-38, in-37)
+nmod:in(day-36, 1936-38)
+punct(anniversary-23, .-39)
+punct(anniversary-23, '-40)
+
+Coreference set:
+	(2,21,[21,22]) -> (1,1,[1,2]), that is: "me" -> "I"
+	(3,12,[12,13]) -> (1,1,[1,2]), that is: "me" -> "I"
+	(6,6,[6,7]) -> (1,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(1,12,[12,13]) -> (1,4,[3,6]), that is: "he" -> "Isaak Glikman -RSB-"
+	(2,1,[1,2]) -> (1,4,[3,6]), that is: "He" -> "Isaak Glikman -RSB-"
+	(2,14,[14,15]) -> (1,4,[3,6]), that is: "he" -> "Isaak Glikman -RSB-"
+	(3,1,[1,2]) -> (1,4,[3,6]), that is: "He" -> "Isaak Glikman -RSB-"
+Coreference set:
+	(6,15,[15,16]) -> (4,3,[3,4]), that is: "they" -> "singers"
+Coreference set:
+	(5,11,[11,12]) -> (5,2,[1,3]), that is: "he" -> "Altough Simeonov"
+	(5,15,[13,16]) -> (5,2,[1,3]), that is: "a fine conductor" -> "Altough Simeonov"

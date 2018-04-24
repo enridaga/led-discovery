@@ -1,0 +1,65 @@
+Sentence #1 (18 tokens):
+A simpler and more imaginative setting might be better for those who value the music above everything...
+[Text=A CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=simpler CharacterOffsetBegin=2 CharacterOffsetEnd=9 PartOfSpeech=JJR Lemma=simpler NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=imaginative CharacterOffsetBegin=19 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=imaginative NamedEntityTag=O]
+[Text=setting CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=setting NamedEntityTag=O]
+[Text=might CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=MD Lemma=might NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=48 CharacterOffsetEnd=54 PartOfSpeech=RBR Lemma=better NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=value CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=VBP Lemma=value NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=above CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=IN Lemma=above NamedEntityTag=O]
+[Text=everything CharacterOffsetBegin=91 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=everything NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT A)
+      (ADJP (JJR simpler)
+        (CC and)
+        (JJR more))
+      (JJ imaginative) (NN setting))
+    (VP (MD might)
+      (VP (VB be)
+        (ADVP
+          (ADVP (RBR better))
+          (PP (IN for)
+            (NP
+              (NP (DT those))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBP value)
+                    (NP
+                      (NP (DT the) (NN music))
+                      (PP (IN above)
+                        (NP (NN everything))))))))))))
+    (: ...)))
+
+root(ROOT-0, be-8)
+det(setting-6, A-1)
+amod(setting-6, simpler-2)
+cc(simpler-2, and-3)
+conj:and(simpler-2, more-4)
+amod(setting-6, more-4)
+amod(setting-6, imaginative-5)
+nsubj(be-8, setting-6)
+aux(be-8, might-7)
+advmod(be-8, better-9)
+case(those-11, for-10)
+nmod:for(better-9, those-11)
+nsubj(value-13, those-11)
+ref(those-11, who-12)
+acl:relcl(those-11, value-13)
+det(music-15, the-14)
+dobj(value-13, music-15)
+case(everything-17, above-16)
+nmod:above(music-15, everything-17)
+punct(be-8, ...-18)
+

@@ -1,0 +1,97 @@
+Sentence #1 (29 tokens):
+Among the new things which Felix played again to me are two pianoforte Capriccios and a Fugue in quick-time in F minor - all admirable in their way.
+[Text=Among CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=among NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=Felix CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Felix NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=pianoforte CharacterOffsetBegin=60 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=pianoforte NamedEntityTag=O]
+[Text=Capriccios CharacterOffsetBegin=71 CharacterOffsetEnd=81 PartOfSpeech=NNS Lemma=capriccio NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Fugue CharacterOffsetBegin=88 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=fugue NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=quick-time CharacterOffsetBegin=97 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=quick-time NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=F CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=f NamedEntityTag=O]
+[Text=minor CharacterOffsetBegin=113 CharacterOffsetEnd=118 PartOfSpeech=JJ Lemma=minor NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=admirable CharacterOffsetBegin=125 CharacterOffsetEnd=134 PartOfSpeech=JJ Lemma=admirable NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=135 CharacterOffsetEnd=137 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=138 CharacterOffsetEnd=143 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=144 CharacterOffsetEnd=147 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN Among)
+      (NP
+        (NP (DT the) (JJ new) (NNS things))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (NP (NNP Felix))
+            (VP (VBD played)
+              (ADVP (RB again))
+              (PP (TO to)))))))
+    (NP (PRP me))
+    (VP (VBP are)
+      (NP
+        (NP (CD two) (NN pianoforte) (NNS Capriccios))
+        (CC and)
+        (NP
+          (NP (DT a) (NN Fugue))
+          (PP (IN in)
+            (NP
+              (NP (NN quick-time))
+              (PP (IN in)
+                (NP (NN F)))
+              (UCP
+                (ADJP (JJ minor))
+                (: -)
+                (NP
+                  (NP (DT all) (JJ admirable))
+                  (PP (IN in)
+                    (NP (PRP$ their) (NN way))))))))))
+    (. .)))
+
+root(ROOT-0, Capriccios-14)
+case(things-4, Among-1)
+det(things-4, the-2)
+amod(things-4, new-3)
+nmod:to(played-7, things-4)
+nmod:among(Capriccios-14, things-4)
+ref(things-4, which-5)
+nsubj(played-7, Felix-6)
+acl:relcl(things-4, played-7)
+advmod(played-7, again-8)
+case(which-5, to-9)
+nsubj(Capriccios-14, me-10)
+cop(Capriccios-14, are-11)
+nummod(Capriccios-14, two-12)
+compound(Capriccios-14, pianoforte-13)
+cc(Capriccios-14, and-15)
+det(Fugue-17, a-16)
+conj:and(Capriccios-14, Fugue-17)
+case(quick-time-19, in-18)
+nmod:in(Fugue-17, quick-time-19)
+case(F-21, in-20)
+nmod:in(quick-time-19, F-21)
+amod(quick-time-19, minor-22)
+punct(minor-22, --23)
+det(admirable-25, all-24)
+dep(minor-22, admirable-25)
+case(way-28, in-26)
+nmod:poss(way-28, their-27)
+nmod:in(admirable-25, way-28)
+punct(Capriccios-14, .-29)
+
+Coreference set:
+	(1,27,[27,28]) -> (1,14,[12,15]), that is: "their" -> "two pianoforte Capriccios"

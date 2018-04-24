@@ -1,0 +1,231 @@
+Sentence #1 (29 tokens):
+Sister Chesters went to Abbeville with Matron yesterday afternoon, so Sister Banham was on all day and she and I had great time together after dinner....
+[Text=Sister CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=sister NamedEntityTag=O]
+[Text=Chesters CharacterOffsetBegin=7 CharacterOffsetEnd=15 PartOfSpeech=NNS Lemma=chester NamedEntityTag=PERSON]
+[Text=went CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Abbeville CharacterOffsetBegin=24 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Abbeville NamedEntityTag=LOCATION]
+[Text=with CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Matron CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Matron NamedEntityTag=O]
+[Text=yesterday CharacterOffsetBegin=46 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1D INTERSECT AF Timex=<TIMEX3 alt_value="OFFSET P-1D INTERSECT AF" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">yesterday afternoon</TIMEX3>]
+[Text=afternoon CharacterOffsetBegin=56 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1D INTERSECT AF Timex=<TIMEX3 alt_value="OFFSET P-1D INTERSECT AF" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">yesterday afternoon</TIMEX3>]
+[Text=, CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=67 CharacterOffsetEnd=69 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=Sister CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Sister NamedEntityTag=O]
+[Text=Banham CharacterOffsetBegin=77 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=Banham NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t3" type="DURATION" value="P1D">day</TIMEX3>]
+[Text=and CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=117 CharacterOffsetEnd=122 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=123 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=together CharacterOffsetBegin=128 CharacterOffsetEnd=136 PartOfSpeech=RB Lemma=together NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=137 CharacterOffsetEnd=142 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=143 CharacterOffsetEnd=149 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=149 CharacterOffsetEnd=152 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NN Sister) (NNS Chesters))
+    (VP (VBD went)
+      (PP (TO to)
+        (NP (NNP Abbeville)))
+      (PP (IN with)
+        (NP (NNP Matron)))
+      (NP-TMP (NN yesterday))
+      (SBAR
+        (S
+          (S
+            (NP-TMP (NN afternoon))
+            (, ,)
+            (ADVP (RB so))
+            (NP (NNP Sister) (NNP Banham))
+            (VP (VBD was)
+              (PP (IN on)
+                (NP (DT all) (NN day)))))
+          (CC and)
+          (S
+            (NP (PRP she)
+              (CC and)
+              (PRP I))
+            (VP (VBD had)
+              (NP (JJ great) (NN time))
+              (PP
+                (ADVP (RB together))
+                (IN after)
+                (NP (NN dinner))))))))
+    (: ...) (. .)))
+
+root(ROOT-0, went-3)
+compound(Chesters-2, Sister-1)
+nsubj(went-3, Chesters-2)
+case(Abbeville-5, to-4)
+nmod:to(went-3, Abbeville-5)
+case(Matron-7, with-6)
+nmod:with(went-3, Matron-7)
+nmod:tmod(went-3, yesterday-8)
+nmod:tmod(day-17, afternoon-9)
+punct(day-17, ,-10)
+advmod(Banham-13, so-11)
+compound(Banham-13, Sister-12)
+nsubj(day-17, Banham-13)
+cop(day-17, was-14)
+case(day-17, on-15)
+det(day-17, all-16)
+dep(went-3, day-17)
+cc(day-17, and-18)
+nsubj(had-22, she-19)
+cc(she-19, and-20)
+conj:and(she-19, I-21)
+nsubj(had-22, I-21)
+dep(went-3, had-22)
+conj:and(day-17, had-22)
+amod(time-24, great-23)
+dobj(had-22, time-24)
+advmod(dinner-27, together-25)
+case(dinner-27, after-26)
+nmod:after(had-22, dinner-27)
+punct(went-3, ...-28)
+punct(went-3, .-29)
+
+Sentence #2 (40 tokens):
+We got the gramophone going in the ward and the men shouted choruses with very lusty voices, 'Down where the breezes blow - Oh-oh-oh-o-o-oh' was our favourite refrain and we all got quite giggly and foolish.
+[Text=We CharacterOffsetBegin=154 CharacterOffsetEnd=156 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=157 CharacterOffsetEnd=160 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=161 CharacterOffsetEnd=164 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gramophone CharacterOffsetBegin=165 CharacterOffsetEnd=175 PartOfSpeech=NN Lemma=gramophone NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=176 CharacterOffsetEnd=181 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=182 CharacterOffsetEnd=184 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=185 CharacterOffsetEnd=188 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=ward CharacterOffsetBegin=189 CharacterOffsetEnd=193 PartOfSpeech=NN Lemma=ward NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=194 CharacterOffsetEnd=197 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=198 CharacterOffsetEnd=201 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=202 CharacterOffsetEnd=205 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=shouted CharacterOffsetBegin=206 CharacterOffsetEnd=213 PartOfSpeech=VBD Lemma=shout NamedEntityTag=O]
+[Text=choruses CharacterOffsetBegin=214 CharacterOffsetEnd=222 PartOfSpeech=NNS Lemma=chorus NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=223 CharacterOffsetEnd=227 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=228 CharacterOffsetEnd=232 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=lusty CharacterOffsetBegin=233 CharacterOffsetEnd=238 PartOfSpeech=JJ Lemma=lusty NamedEntityTag=O]
+[Text=voices CharacterOffsetBegin=239 CharacterOffsetEnd=245 PartOfSpeech=NNS Lemma=voice NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=245 CharacterOffsetEnd=246 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=247 CharacterOffsetEnd=248 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Down CharacterOffsetBegin=248 CharacterOffsetEnd=252 PartOfSpeech=IN Lemma=down NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=253 CharacterOffsetEnd=258 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=259 CharacterOffsetEnd=262 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=breezes CharacterOffsetBegin=263 CharacterOffsetEnd=270 PartOfSpeech=NNS Lemma=breeze NamedEntityTag=O]
+[Text=blow CharacterOffsetBegin=271 CharacterOffsetEnd=275 PartOfSpeech=NN Lemma=blow NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=276 CharacterOffsetEnd=277 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Oh-oh-oh-o-o-oh CharacterOffsetBegin=278 CharacterOffsetEnd=293 PartOfSpeech=NN Lemma=oh-oh-oh-o-o-oh NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=293 CharacterOffsetEnd=294 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=295 CharacterOffsetEnd=298 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=299 CharacterOffsetEnd=302 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=favourite CharacterOffsetBegin=303 CharacterOffsetEnd=312 PartOfSpeech=JJ Lemma=favourite NamedEntityTag=O]
+[Text=refrain CharacterOffsetBegin=313 CharacterOffsetEnd=320 PartOfSpeech=NN Lemma=refrain NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=321 CharacterOffsetEnd=324 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=325 CharacterOffsetEnd=327 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=328 CharacterOffsetEnd=331 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=332 CharacterOffsetEnd=335 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=336 CharacterOffsetEnd=341 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=giggly CharacterOffsetBegin=342 CharacterOffsetEnd=348 PartOfSpeech=JJ Lemma=giggly NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=349 CharacterOffsetEnd=352 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=foolish CharacterOffsetBegin=353 CharacterOffsetEnd=360 PartOfSpeech=JJ Lemma=foolish NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=360 CharacterOffsetEnd=361 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VBD got)
+        (NP
+          (NP (DT the) (NN gramophone))
+          (VP (VBG going)
+            (PP (IN in)
+              (NP (DT the) (NN ward)))))))
+    (CC and)
+    (S
+      (NP (DT the) (NNS men))
+      (VP (VBD shouted)
+        (NP (NNS choruses))
+        (PP (IN with)
+          (NP
+            (NP
+              (ADJP (RB very) (JJ lusty))
+              (NNS voices))
+            (, ,) (`` `)
+            (S
+              (S
+                (PP (IN Down)
+                  (SBAR
+                    (WHADVP (WRB where))
+                    (S
+                      (NP
+                        (NP (DT the) (NNS breezes) (NN blow))
+                        (: -)
+                        (NP (NN Oh-oh-oh-o-o-oh))
+                        ('' '))
+                      (VP (VBD was)
+                        (NP (PRP$ our) (JJ favourite) (NN refrain)))))))
+              (CC and)
+              (S
+                (NP (PRP we))
+                (ADVP (DT all))
+                (VP (VBD got)
+                  (ADJP (RB quite) (JJ giggly)
+                    (CC and)
+                    (JJ foolish)))))))))
+    (. .)))
+
+root(ROOT-0, got-2)
+nsubj(got-2, We-1)
+det(gramophone-4, the-3)
+dobj(got-2, gramophone-4)
+acl(gramophone-4, going-5)
+case(ward-8, in-6)
+det(ward-8, the-7)
+nmod:in(going-5, ward-8)
+cc(got-2, and-9)
+det(men-11, the-10)
+nsubj(shouted-12, men-11)
+conj:and(got-2, shouted-12)
+dobj(shouted-12, choruses-13)
+case(voices-17, with-14)
+advmod(lusty-16, very-15)
+amod(voices-17, lusty-16)
+nmod:with(shouted-12, voices-17)
+punct(voices-17, ,-18)
+punct(voices-17, `-19)
+mark(refrain-31, Down-20)
+advmod(refrain-31, where-21)
+det(blow-24, the-22)
+compound(blow-24, breezes-23)
+nsubj(refrain-31, blow-24)
+punct(blow-24, --25)
+dep(blow-24, Oh-oh-oh-o-o-oh-26)
+punct(blow-24, '-27)
+cop(refrain-31, was-28)
+nmod:poss(refrain-31, our-29)
+amod(refrain-31, favourite-30)
+dep(voices-17, refrain-31)
+cc(refrain-31, and-32)
+nsubj(got-35, we-33)
+advmod(got-35, all-34)
+dep(voices-17, got-35)
+conj:and(refrain-31, got-35)
+advmod(giggly-37, quite-36)
+xcomp(got-35, giggly-37)
+cc(giggly-37, and-38)
+xcomp(got-35, foolish-39)
+conj:and(giggly-37, foolish-39)
+punct(got-2, .-40)
+
+Coreference set:
+	(1,19,[19,20]) -> (1,13,[12,14]), that is: "she" -> "Sister Banham"
+Coreference set:
+	(2,29,[29,30]) -> (2,1,[1,2]), that is: "our" -> "We"
+	(2,33,[33,34]) -> (2,1,[1,2]), that is: "we" -> "We"
+Coreference set:
+	(2,31,[29,32]) -> (2,24,[22,25]), that is: "our favourite refrain" -> "the breezes blow"

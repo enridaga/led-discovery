@@ -1,0 +1,126 @@
+Sentence #1 (29 tokens):
+The last and newest orchestral works I heard were the Prelude to Tristan, and, hot out of the publisher's oven, Liszt's Faust Symphony.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=newest CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=JJS Lemma=newest NamedEntityTag=O]
+[Text=orchestral CharacterOffsetBegin=20 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=orchestral NamedEntityTag=O]
+[Text=works CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NNS Lemma=work NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Prelude CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=prelude NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Tristan CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Tristan NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=hot CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=JJ Lemma=hot NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=publisher CharacterOffsetBegin=94 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=publisher NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=oven CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=oven NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Liszt CharacterOffsetBegin=112 CharacterOffsetEnd=117 PartOfSpeech=NNP Lemma=Liszt NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=POS Lemma='s NamedEntityTag=ORGANIZATION]
+[Text=Faust CharacterOffsetBegin=120 CharacterOffsetEnd=125 PartOfSpeech=NNP Lemma=Faust NamedEntityTag=ORGANIZATION]
+[Text=Symphony CharacterOffsetBegin=126 CharacterOffsetEnd=134 PartOfSpeech=NNP Lemma=Symphony NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (JJ last))
+        (CC and)
+        (NP
+          (NP (JJS newest) (JJ orchestral) (NNS works))
+          (SBAR
+            (S
+              (NP (PRP I))
+              (VP (VBD heard))))))
+      (VP (VBD were)
+        (NP
+          (NP (DT the) (NN Prelude))
+          (PP (TO to)
+            (NP (NNP Tristan))))))
+    (, ,)
+    (CC and)
+    (, ,)
+    (S
+      (ADJP (JJ hot)
+        (PP (IN out)
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN publisher) (POS 's))
+              (NN oven))))))
+    (, ,)
+    (S
+      (NP (NNP Liszt) (POS 's))
+      (NP (NNP Faust) (NNP Symphony)))
+    (. .)))
+
+root(ROOT-0, Prelude-11)
+det(last-2, The-1)
+nsubj(Prelude-11, last-2)
+nsubj(hot-17, last-2)
+cc(last-2, and-3)
+amod(works-6, newest-4)
+amod(works-6, orchestral-5)
+conj:and(last-2, works-6)
+nsubj(Prelude-11, works-6)
+nsubj(heard-8, I-7)
+acl:relcl(works-6, heard-8)
+cop(Prelude-11, were-9)
+det(Prelude-11, the-10)
+case(Tristan-13, to-12)
+nmod:to(Prelude-11, Tristan-13)
+punct(Prelude-11, ,-14)
+cc(Prelude-11, and-15)
+punct(Prelude-11, ,-16)
+conj:and(Prelude-11, hot-17)
+case(oven-23, out-18)
+mwe(out-18, of-19)
+det(publisher-21, the-20)
+nmod:poss(oven-23, publisher-21)
+case(publisher-21, 's-22)
+nmod:out_of(hot-17, oven-23)
+punct(Prelude-11, ,-24)
+dep(Symphony-28, Liszt-25)
+case(Liszt-25, 's-26)
+compound(Symphony-28, Faust-27)
+conj:and(Prelude-11, Symphony-28)
+punct(Prelude-11, .-29)
+
+Sentence #2 (9 tokens):
+The slow movement Gretchen left a vivid impression.
+[Text=The CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=slow CharacterOffsetBegin=140 CharacterOffsetEnd=144 PartOfSpeech=JJ Lemma=slow NamedEntityTag=O]
+[Text=movement CharacterOffsetBegin=145 CharacterOffsetEnd=153 PartOfSpeech=NN Lemma=movement NamedEntityTag=O]
+[Text=Gretchen CharacterOffsetBegin=154 CharacterOffsetEnd=162 PartOfSpeech=NNP Lemma=Gretchen NamedEntityTag=PERSON]
+[Text=left CharacterOffsetBegin=163 CharacterOffsetEnd=167 PartOfSpeech=VBD Lemma=leave NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=168 CharacterOffsetEnd=169 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=vivid CharacterOffsetBegin=170 CharacterOffsetEnd=175 PartOfSpeech=JJ Lemma=vivid NamedEntityTag=O]
+[Text=impression CharacterOffsetBegin=176 CharacterOffsetEnd=186 PartOfSpeech=NN Lemma=impression NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=186 CharacterOffsetEnd=187 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (JJ slow) (NN movement) (NNP Gretchen))
+    (VP (VBD left)
+      (NP (DT a) (JJ vivid) (NN impression)))
+    (. .)))
+
+root(ROOT-0, left-5)
+det(Gretchen-4, The-1)
+amod(Gretchen-4, slow-2)
+compound(Gretchen-4, movement-3)
+nsubj(left-5, Gretchen-4)
+det(impression-8, a-6)
+amod(impression-8, vivid-7)
+dobj(left-5, impression-8)
+punct(left-5, .-9)
+
+Coreference set:
+	(1,11,[10,14]) -> (1,2,[1,3]), that is: "the Prelude to Tristan" -> "The last"

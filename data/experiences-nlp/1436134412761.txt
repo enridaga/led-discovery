@@ -1,0 +1,229 @@
+Sentence #1 (25 tokens):
+Bland fare of Beethoven on the radio, year after year, plus the smarm that goes with it by Karl Haas et alia.
+[Text=Bland CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=JJ Lemma=bland NamedEntityTag=O]
+[Text=fare CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=fare NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Beethoven CharacterOffsetBegin=14 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=PERSON]
+[Text=on CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=radio CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=radio NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=year CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P1Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P1Y">year</TIMEX3>]
+[Text=after CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=year CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P1Y Timex=<TIMEX3 tid="t1" type="DURATION" value="P1Y">year</TIMEX3>]
+[Text=, CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=plus CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=CC Lemma=plus NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=smarm CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=smarm NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=goes CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=VBZ Lemma=go NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Karl CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=NNP Lemma=Karl NamedEntityTag=PERSON]
+[Text=Haas CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=NNP Lemma=Haas NamedEntityTag=PERSON]
+[Text=et CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=FW Lemma=et NamedEntityTag=O]
+[Text=alia CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=FW Lemma=alia NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (JJ Bland) (NN fare))
+    (PP (IN of)
+      (NP
+        (NP (NNP Beethoven))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN radio))
+            (, ,)
+            (ADVP (NN year)
+              (PP (IN after)
+                (NP
+                  (NP (NN year))
+                  (, ,)
+                  (PP (CC plus)
+                    (NP
+                      (NP (DT the) (NN smarm))
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (VP (VBZ goes)
+                            (PP (IN with)
+                              (NP (PRP it)))
+                            (PP (IN by)
+                              (NP (NNP Karl) (NNP Haas)))))))))))
+            (NP (FW et) (FW alia))))))
+    (. .)))
+
+root(ROOT-0, fare-2)
+amod(fare-2, Bland-1)
+case(Beethoven-4, of-3)
+nmod:of(fare-2, Beethoven-4)
+case(radio-7, on-5)
+det(radio-7, the-6)
+nmod:on(Beethoven-4, radio-7)
+punct(radio-7, ,-8)
+advmod(radio-7, year-9)
+case(year-11, after-10)
+nmod:after(year-9, year-11)
+punct(year-11, ,-12)
+case(smarm-15, plus-13)
+det(smarm-15, the-14)
+nmod:plus(year-11, smarm-15)
+nsubj(goes-17, smarm-15)
+ref(smarm-15, that-16)
+acl:relcl(smarm-15, goes-17)
+case(it-19, with-18)
+nmod:with(goes-17, it-19)
+case(Haas-22, by-20)
+compound(Haas-22, Karl-21)
+nmod:by(goes-17, Haas-22)
+compound(alia-24, et-23)
+dep(radio-7, alia-24)
+punct(fare-2, .-25)
+
+Sentence #2 (4 tokens):
+Is Beethoven noble?
+[Text=Is CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Beethoven CharacterOffsetBegin=113 CharacterOffsetEnd=122 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=PERSON]
+[Text=noble CharacterOffsetBegin=123 CharacterOffsetEnd=128 PartOfSpeech=JJ Lemma=noble NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (SQ (VBZ Is)
+    (NP (NNP Beethoven))
+    (ADJP (JJ noble))
+    (. ?)))
+
+root(ROOT-0, noble-3)
+cop(noble-3, Is-1)
+nsubj(noble-3, Beethoven-2)
+punct(noble-3, ?-4)
+
+Sentence #3 (7 tokens):
+Does his art express lofty notions?
+[Text=Does CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=art CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=NN Lemma=art NamedEntityTag=O]
+[Text=express CharacterOffsetBegin=143 CharacterOffsetEnd=150 PartOfSpeech=VBP Lemma=express NamedEntityTag=O]
+[Text=lofty CharacterOffsetBegin=151 CharacterOffsetEnd=156 PartOfSpeech=JJ Lemma=lofty NamedEntityTag=O]
+[Text=notions CharacterOffsetBegin=157 CharacterOffsetEnd=164 PartOfSpeech=NNS Lemma=notion NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=164 CharacterOffsetEnd=165 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (VP (VBZ Does)
+        (NP (PRP$ his) (NN art))))
+    (VP (VBP express)
+      (NP (JJ lofty) (NNS notions)))
+    (. ?)))
+
+root(ROOT-0, express-4)
+csubj(express-4, Does-1)
+nmod:poss(art-3, his-2)
+dobj(Does-1, art-3)
+amod(notions-6, lofty-5)
+dobj(express-4, notions-6)
+punct(express-4, ?-7)
+
+Sentence #4 (5 tokens):
+Does he improve us?
+[Text=Does CharacterOffsetBegin=166 CharacterOffsetEnd=170 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=171 CharacterOffsetEnd=173 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=improve CharacterOffsetBegin=174 CharacterOffsetEnd=181 PartOfSpeech=VB Lemma=improve NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=182 CharacterOffsetEnd=184 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=184 CharacterOffsetEnd=185 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (SQ (VBZ Does)
+    (NP (PRP he))
+    (VP (VB improve)
+      (NP (PRP us)))
+    (. ?)))
+
+root(ROOT-0, improve-3)
+aux(improve-3, Does-1)
+nsubj(improve-3, he-2)
+dobj(improve-3, us-4)
+punct(improve-3, ?-5)
+
+Sentence #5 (9 tokens):
+Has music really anything to do with goodness?
+[Text=Has CharacterOffsetBegin=186 CharacterOffsetEnd=189 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=190 CharacterOffsetEnd=195 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=really CharacterOffsetBegin=196 CharacterOffsetEnd=202 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=203 CharacterOffsetEnd=211 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=212 CharacterOffsetEnd=214 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=215 CharacterOffsetEnd=217 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=218 CharacterOffsetEnd=222 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=goodness CharacterOffsetBegin=223 CharacterOffsetEnd=231 PartOfSpeech=NN Lemma=goodness NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=231 CharacterOffsetEnd=232 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (SQ (VBZ Has)
+    (NP
+      (NP (NN music))
+      (ADVP (RB really)))
+    (VP
+      (ADJP (NN anything)
+        (S
+          (VP (TO to)
+            (VP (VB do)))))
+      (PP (IN with)
+        (NP (NN goodness))))
+    (. ?)))
+
+root(ROOT-0, anything-4)
+aux(anything-4, Has-1)
+nsubj(anything-4, music-2)
+nsubj:xsubj(do-6, music-2)
+advmod(music-2, really-3)
+mark(do-6, to-5)
+xcomp(anything-4, do-6)
+case(goodness-8, with-7)
+nmod:with(anything-4, goodness-8)
+punct(anything-4, ?-9)
+
+Sentence #6 (12 tokens):
+Why not a program on the genius as low sensual being?
+[Text=Why CharacterOffsetBegin=233 CharacterOffsetEnd=236 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=237 CharacterOffsetEnd=240 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=241 CharacterOffsetEnd=242 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=program CharacterOffsetBegin=243 CharacterOffsetEnd=250 PartOfSpeech=NN Lemma=program NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=251 CharacterOffsetEnd=253 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=254 CharacterOffsetEnd=257 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=genius CharacterOffsetBegin=258 CharacterOffsetEnd=264 PartOfSpeech=NN Lemma=genius NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=265 CharacterOffsetEnd=267 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=low CharacterOffsetBegin=268 CharacterOffsetEnd=271 PartOfSpeech=JJ Lemma=low NamedEntityTag=O]
+[Text=sensual CharacterOffsetBegin=272 CharacterOffsetEnd=279 PartOfSpeech=JJ Lemma=sensual NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=280 CharacterOffsetEnd=285 PartOfSpeech=NN Lemma=being NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=285 CharacterOffsetEnd=286 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (SBARQ
+      (WHADVP (WRB Why) (RB not))
+      (SQ
+        (NP (DT a) (NN program))
+        (PP (IN on)
+          (NP
+            (ADJP
+              (NP
+                (NP (DT the) (NN genius))
+                (ADJP (RB as) (JJ low)))
+              (JJ sensual))
+            (NN being))))
+      (. ?))))
+
+root(ROOT-0, program-4)
+advmod(not-2, Why-1)
+advmod(program-4, not-2)
+det(program-4, a-3)
+case(being-11, on-5)
+det(genius-7, the-6)
+nmod:npmod(sensual-10, genius-7)
+advmod(low-9, as-8)
+amod(genius-7, low-9)
+amod(being-11, sensual-10)
+nmod:on(program-4, being-11)
+punct(program-4, ?-12)
+
+Coreference set:
+	(2,2,[2,3]) -> (1,4,[4,25]), that is: "Beethoven" -> "Beethoven on the radio , year after year , plus the smarm that goes with it by Karl Haas et alia"
+	(3,2,[2,3]) -> (1,4,[4,25]), that is: "his" -> "Beethoven on the radio , year after year , plus the smarm that goes with it by Karl Haas et alia"
+	(4,2,[2,3]) -> (1,4,[4,25]), that is: "he" -> "Beethoven on the radio , year after year , plus the smarm that goes with it by Karl Haas et alia"

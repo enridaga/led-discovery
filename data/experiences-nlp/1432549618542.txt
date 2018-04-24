@@ -1,0 +1,110 @@
+Sentence #1 (32 tokens):
+Sullivan's music to Shakespeare's 'Tempest' sounded fresh and clear, and the composer was, as he deserved to be, unanimously called forward at the end.
+[Text=Sullivan CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Sullivan NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Shakespeare CharacterOffsetBegin=20 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Shakespeare NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Tempest CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=tempest NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=sounded CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=VBD Lemma=sound NamedEntityTag=O]
+[Text=fresh CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=JJ Lemma=fresh NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=clear CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=JJ Lemma=clear NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=composer CharacterOffsetBegin=77 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=composer NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=deserved CharacterOffsetBegin=97 CharacterOffsetEnd=105 PartOfSpeech=VBD Lemma=deserve NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=unanimously CharacterOffsetBegin=113 CharacterOffsetEnd=124 PartOfSpeech=RB Lemma=unanimously NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=125 CharacterOffsetEnd=131 PartOfSpeech=VBN Lemma=call NamedEntityTag=O]
+[Text=forward CharacterOffsetBegin=132 CharacterOffsetEnd=139 PartOfSpeech=RB Lemma=forward NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=140 CharacterOffsetEnd=142 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=143 CharacterOffsetEnd=146 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=NN Lemma=end NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=150 CharacterOffsetEnd=151 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP
+          (NP (NNP Sullivan) (POS 's))
+          (NN music))
+        (PP (TO to)
+          (NP
+            (NP (NNP Shakespeare) (POS 's))
+            (`` `)
+            (NP (NN Tempest))
+            ('' '))))
+      (VP (VBD sounded)
+        (ADJP (JJ fresh)
+          (CC and)
+          (JJ clear))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT the) (NN composer))
+      (VP (VBD was)
+        (PRN (, ,)
+          (SBAR (IN as)
+            (S
+              (NP (PRP he))
+              (VP (VBD deserved)
+                (S
+                  (VP (TO to)
+                    (VP (VB be)))))))
+          (, ,))
+        (VP
+          (ADVP (RB unanimously))
+          (VBN called)
+          (ADVP (RB forward))
+          (PP (IN at)
+            (NP (DT the) (NN end))))))
+    (. .)))
+
+root(ROOT-0, sounded-10)
+nmod:poss(music-3, Sullivan-1)
+case(Sullivan-1, 's-2)
+nsubj(sounded-10, music-3)
+case(Shakespeare-5, to-4)
+nmod:'s(music-3, Shakespeare-5)
+case(Shakespeare-5, 's-6)
+punct(Shakespeare-5, `-7)
+dep(Shakespeare-5, Tempest-8)
+punct(Shakespeare-5, '-9)
+xcomp(sounded-10, fresh-11)
+cc(fresh-11, and-12)
+xcomp(sounded-10, clear-13)
+conj:and(fresh-11, clear-13)
+punct(sounded-10, ,-14)
+cc(sounded-10, and-15)
+det(composer-17, the-16)
+nsubjpass(called-27, composer-17)
+auxpass(called-27, was-18)
+punct(deserved-22, ,-19)
+mark(deserved-22, as-20)
+nsubj(deserved-22, he-21)
+nsubj:xsubj(be-24, he-21)
+parataxis(called-27, deserved-22)
+mark(be-24, to-23)
+xcomp(deserved-22, be-24)
+punct(deserved-22, ,-25)
+advmod(called-27, unanimously-26)
+conj:and(sounded-10, called-27)
+advmod(called-27, forward-28)
+case(end-31, at-29)
+det(end-31, the-30)
+nmod:at(called-27, end-31)
+punct(sounded-10, .-32)
+
+Coreference set:
+	(1,21,[21,22]) -> (1,17,[16,18]), that is: "he" -> "the composer"

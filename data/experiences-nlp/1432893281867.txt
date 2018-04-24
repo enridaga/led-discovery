@@ -1,0 +1,90 @@
+Sentence #1 (28 tokens):
+Ries played with great dexterity and had acquired a good deal of his mater's off-hand humoristic style; yet on the whole his playing was unexciting.
+[Text=Ries CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Ries NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=dexterity CharacterOffsetBegin=23 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=dexterity NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=acquired CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=VBN Lemma=acquire NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=deal CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=NN Lemma=deal NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=62 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=mater CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=mater NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=off-hand CharacterOffsetBegin=77 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=off-hand NamedEntityTag=O]
+[Text=humoristic CharacterOffsetBegin=86 CharacterOffsetEnd=96 PartOfSpeech=JJ Lemma=humoristic NamedEntityTag=O]
+[Text=style CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=style NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=yet CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=RB Lemma=yet NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=115 CharacterOffsetEnd=120 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=125 CharacterOffsetEnd=132 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=133 CharacterOffsetEnd=136 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=unexciting CharacterOffsetBegin=137 CharacterOffsetEnd=147 PartOfSpeech=JJ Lemma=unexciting NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Ries))
+      (VP
+        (VP (VBD played)
+          (PP (IN with)
+            (NP (JJ great) (NN dexterity))))
+        (CC and)
+        (VP (VBD had)
+          (VP (VBN acquired)
+            (NP
+              (NP (DT a) (JJ good) (NN deal))
+              (PP (IN of)
+                (NP
+                  (NP (PRP$ his) (NN mater) (POS 's))
+                  (JJ off-hand) (JJ humoristic) (NN style))))))))
+    (: ;)
+    (S
+      (ADVP (RB yet))
+      (PP (IN on)
+        (NP (DT the) (JJ whole)))
+      (NP (PRP$ his) (NN playing))
+      (VP (VBD was)
+        (ADJP (JJ unexciting))))
+    (. .)))
+
+root(ROOT-0, played-2)
+nsubj(played-2, Ries-1)
+nsubj(acquired-8, Ries-1)
+case(dexterity-5, with-3)
+amod(dexterity-5, great-4)
+nmod:with(played-2, dexterity-5)
+cc(played-2, and-6)
+aux(acquired-8, had-7)
+conj:and(played-2, acquired-8)
+det(deal-11, a-9)
+amod(deal-11, good-10)
+dobj(acquired-8, deal-11)
+case(style-18, of-12)
+nmod:poss(mater-14, his-13)
+nmod:poss(style-18, mater-14)
+case(mater-14, 's-15)
+amod(style-18, off-hand-16)
+amod(style-18, humoristic-17)
+nmod:of(deal-11, style-18)
+punct(played-2, ;-19)
+advmod(unexciting-27, yet-20)
+case(whole-23, on-21)
+det(whole-23, the-22)
+nmod:on(unexciting-27, whole-23)
+nmod:poss(playing-25, his-24)
+nsubj(unexciting-27, playing-25)
+cop(unexciting-27, was-26)
+parataxis(played-2, unexciting-27)
+punct(played-2, .-28)
+
+Coreference set:
+	(1,13,[13,14]) -> (1,1,[1,2]), that is: "his" -> "Ries"
+	(1,24,[24,25]) -> (1,1,[1,2]), that is: "his" -> "Ries"

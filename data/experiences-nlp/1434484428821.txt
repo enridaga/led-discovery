@@ -1,0 +1,66 @@
+Sentence #1 (17 tokens):
+Listen to Prelude to Tristan from Covent Garden, before dinner, under Beecham - Disgraceful!
+[Text=Listen CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Prelude CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=prelude NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Tristan CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=Tristan NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Covent CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Covent NamedEntityTag=LOCATION]
+[Text=Garden CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Garden NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=56 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=Beecham CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=NNP Lemma=Beecham NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Disgraceful CharacterOffsetBegin=80 CharacterOffsetEnd=91 PartOfSpeech=JJ Lemma=disgraceful NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (SQ
+    (VP (VB Listen)
+      (PP (TO to)
+        (NP (NN Prelude)))
+      (PP (TO to)
+        (NP (NNP Tristan)))
+      (PP (IN from)
+        (NP (NNP Covent) (NNP Garden)))
+      (, ,)
+      (SBAR (IN before)
+        (X
+          (X
+            (NP (NN dinner))
+            (, ,)
+            (PP (IN under)
+              (NP (NNP Beecham)))
+            (: -))
+          (NP (JJ Disgraceful)))))
+    (. !)))
+
+root(ROOT-0, Listen-1)
+case(Prelude-3, to-2)
+nmod:to(Listen-1, Prelude-3)
+case(Tristan-5, to-4)
+nmod:to(Listen-1, Tristan-5)
+case(Garden-8, from-6)
+compound(Garden-8, Covent-7)
+nmod:from(Listen-1, Garden-8)
+punct(Listen-1, ,-9)
+advcl(Listen-1, before-10)
+dep(Disgraceful-16, dinner-11)
+punct(dinner-11, ,-12)
+case(Beecham-14, under-13)
+nmod:under(dinner-11, Beecham-14)
+punct(dinner-11, --15)
+dep(before-10, Disgraceful-16)
+punct(Listen-1, !-17)
+
+Sentence #2 (1 tokens):
+*
+[Text=* CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+(ROOT
+  (X (SYM *)))
+
+root(ROOT-0, *-1)
+

@@ -1,0 +1,432 @@
+Sentence #1 (8 tokens):
+Otto Klemperer conducting Mahler's 9th Symphony.
+[Text=Otto CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Otto NamedEntityTag=PERSON]
+[Text=Klemperer CharacterOffsetBegin=5 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Klemperer NamedEntityTag=PERSON]
+[Text=conducting CharacterOffsetBegin=15 CharacterOffsetEnd=25 PartOfSpeech=VBG Lemma=conduct NamedEntityTag=O]
+[Text=Mahler CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Mahler NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=9th CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=9th NamedEntityTag=ORDINAL NormalizedNamedEntityTag=9.0]
+[Text=Symphony CharacterOffsetBegin=39 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Symphony NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Otto) (NNP Klemperer))
+    (VP (VBG conducting)
+      (NP
+        (NP (NNP Mahler) (POS 's))
+        (JJ 9th) (NNP Symphony)))
+    (. .)))
+
+root(ROOT-0, Klemperer-2)
+compound(Klemperer-2, Otto-1)
+acl(Klemperer-2, conducting-3)
+nmod:poss(Symphony-7, Mahler-4)
+case(Mahler-4, 's-5)
+amod(Symphony-7, 9th-6)
+dobj(conducting-3, Symphony-7)
+punct(Klemperer-2, .-8)
+
+Sentence #2 (6 tokens):
+The concert started very late!
+[Text=The CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=started CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=VBD Lemma=start NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=late CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=JJ Lemma=late NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NN concert))
+    (VP (VBD started)
+      (ADJP (RB very) (JJ late)))
+    (. !)))
+
+root(ROOT-0, started-3)
+det(concert-2, The-1)
+nsubj(started-3, concert-2)
+advmod(late-5, very-4)
+xcomp(started-3, late-5)
+punct(started-3, !-6)
+
+Sentence #3 (32 tokens):
+He eventually appeared, supported 2 men, one on each side - very slowly he staggered up the steps to the podium and was 'dumped'  into a chair.
+[Text=He CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=eventually CharacterOffsetBegin=83 CharacterOffsetEnd=93 PartOfSpeech=RB Lemma=eventually NamedEntityTag=O]
+[Text=appeared CharacterOffsetBegin=94 CharacterOffsetEnd=102 PartOfSpeech=VBD Lemma=appear NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=supported CharacterOffsetBegin=104 CharacterOffsetEnd=113 PartOfSpeech=VBD Lemma=support NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=men CharacterOffsetBegin=116 CharacterOffsetEnd=119 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=on CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=128 CharacterOffsetEnd=132 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=side CharacterOffsetBegin=133 CharacterOffsetEnd=137 PartOfSpeech=NN Lemma=side NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=140 CharacterOffsetEnd=144 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=slowly CharacterOffsetBegin=145 CharacterOffsetEnd=151 PartOfSpeech=RB Lemma=slowly NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=152 CharacterOffsetEnd=154 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=staggered CharacterOffsetBegin=155 CharacterOffsetEnd=164 PartOfSpeech=VBD Lemma=stagger NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=165 CharacterOffsetEnd=167 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=steps CharacterOffsetBegin=172 CharacterOffsetEnd=177 PartOfSpeech=NNS Lemma=step NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=178 CharacterOffsetEnd=180 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=181 CharacterOffsetEnd=184 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=podium CharacterOffsetBegin=185 CharacterOffsetEnd=191 PartOfSpeech=NN Lemma=podium NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=192 CharacterOffsetEnd=195 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=196 CharacterOffsetEnd=199 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=200 CharacterOffsetEnd=201 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=dumped CharacterOffsetBegin=201 CharacterOffsetEnd=207 PartOfSpeech=VBN Lemma=dump NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=210 CharacterOffsetEnd=214 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=215 CharacterOffsetEnd=216 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=chair CharacterOffsetBegin=217 CharacterOffsetEnd=222 PartOfSpeech=NN Lemma=chair NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=222 CharacterOffsetEnd=223 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (ADVP (RB eventually))
+      (VP
+        (VP (VBD appeared))
+        (, ,)
+        (VP (VBD supported)
+          (NP (CD 2) (NNS men)))
+        (, ,)
+        (NP
+          (NP (CD one))
+          (PP (IN on)
+            (NP (DT each) (NN side))))))
+    (: -)
+    (S
+      (ADVP (RB very) (RB slowly))
+      (NP (PRP he))
+      (VP
+        (VP (VBD staggered)
+          (PRT (RP up))
+          (NP (DT the) (NNS steps))
+          (PP (TO to)
+            (NP (DT the) (NN podium))))
+        (CC and)
+        (VP (VBD was)
+          (VP (`` `) (VBN dumped) ('' ')
+            (PP (IN into)
+              (NP (DT a) (NN chair)))))))
+    (. .)))
+
+root(ROOT-0, appeared-3)
+nsubj(appeared-3, He-1)
+advmod(appeared-3, eventually-2)
+punct(appeared-3, ,-4)
+dep(appeared-3, supported-5)
+nummod(men-7, 2-6)
+dobj(supported-5, men-7)
+punct(appeared-3, ,-8)
+dobj(appeared-3, one-9)
+case(side-12, on-10)
+det(side-12, each-11)
+nmod:on(one-9, side-12)
+punct(appeared-3, --13)
+advmod(slowly-15, very-14)
+advmod(staggered-17, slowly-15)
+nsubj(staggered-17, he-16)
+nsubjpass(dumped-27, he-16)
+parataxis(appeared-3, staggered-17)
+compound:prt(staggered-17, up-18)
+det(steps-20, the-19)
+dobj(staggered-17, steps-20)
+case(podium-23, to-21)
+det(podium-23, the-22)
+nmod:to(staggered-17, podium-23)
+cc(staggered-17, and-24)
+auxpass(dumped-27, was-25)
+punct(dumped-27, `-26)
+parataxis(appeared-3, dumped-27)
+conj:and(staggered-17, dumped-27)
+punct(dumped-27, '-28)
+case(chair-31, into-29)
+det(chair-31, a-30)
+nmod:into(dumped-27, chair-31)
+punct(appeared-3, .-32)
+
+Sentence #4 (9 tokens):
+He raised his baton and the concert started.
+[Text=He CharacterOffsetBegin=224 CharacterOffsetEnd=226 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=raised CharacterOffsetBegin=227 CharacterOffsetEnd=233 PartOfSpeech=VBD Lemma=raise NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=234 CharacterOffsetEnd=237 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=baton CharacterOffsetBegin=238 CharacterOffsetEnd=243 PartOfSpeech=NN Lemma=baton NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=244 CharacterOffsetEnd=247 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=248 CharacterOffsetEnd=251 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=252 CharacterOffsetEnd=259 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=started CharacterOffsetBegin=260 CharacterOffsetEnd=267 PartOfSpeech=VBD Lemma=start NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=267 CharacterOffsetEnd=268 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD raised)
+      (SBAR
+        (S
+          (NP
+            (NP (PRP$ his) (NN baton))
+            (CC and)
+            (NP (DT the) (NN concert)))
+          (VP (VBD started)))))
+    (. .)))
+
+root(ROOT-0, raised-2)
+nsubj(raised-2, He-1)
+nmod:poss(baton-4, his-3)
+nsubj(started-8, baton-4)
+cc(baton-4, and-5)
+det(concert-7, the-6)
+conj:and(baton-4, concert-7)
+nsubj(started-8, concert-7)
+ccomp(raised-2, started-8)
+punct(raised-2, .-9)
+
+Sentence #5 (9 tokens):
+Unforgettable - a wonderful performance (Philharmonia?)
+[Text=Unforgettable CharacterOffsetBegin=269 CharacterOffsetEnd=282 PartOfSpeech=JJ Lemma=unforgettable NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=283 CharacterOffsetEnd=284 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=285 CharacterOffsetEnd=286 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=wonderful CharacterOffsetBegin=287 CharacterOffsetEnd=296 PartOfSpeech=JJ Lemma=wonderful NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=297 CharacterOffsetEnd=308 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=309 CharacterOffsetEnd=310 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Philharmonia CharacterOffsetBegin=310 CharacterOffsetEnd=322 PartOfSpeech=NNP Lemma=Philharmonia NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=322 CharacterOffsetEnd=323 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=323 CharacterOffsetEnd=324 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (JJ Unforgettable))
+    (: -)
+    (NP
+      (NP (DT a) (JJ wonderful) (NN performance))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP Philharmonia) (. ?))
+        (-RRB- -RRB-)))))
+
+root(ROOT-0, Unforgettable-1)
+punct(Unforgettable-1, --2)
+det(performance-5, a-3)
+amod(performance-5, wonderful-4)
+dep(Unforgettable-1, performance-5)
+punct(Philharmonia-7, -LRB--6)
+appos(performance-5, Philharmonia-7)
+punct(Philharmonia-7, ?-8)
+punct(Philharmonia-7, -RRB--9)
+
+Sentence #6 (14 tokens):
+- but how they followed his 'beat' I don't know.
+[Text=- CharacterOffsetBegin=325 CharacterOffsetEnd=326 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=327 CharacterOffsetEnd=330 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=331 CharacterOffsetEnd=334 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=335 CharacterOffsetEnd=339 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=followed CharacterOffsetBegin=340 CharacterOffsetEnd=348 PartOfSpeech=VBD Lemma=follow NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=349 CharacterOffsetEnd=352 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=353 CharacterOffsetEnd=354 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=beat CharacterOffsetBegin=354 CharacterOffsetEnd=358 PartOfSpeech=VB Lemma=beat NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=358 CharacterOffsetEnd=359 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=360 CharacterOffsetEnd=361 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=362 CharacterOffsetEnd=364 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=364 CharacterOffsetEnd=367 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=368 CharacterOffsetEnd=372 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=372 CharacterOffsetEnd=373 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (: -)
+    (S (CC but)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (PRP they))
+          (VP (VBD followed)
+            (NP (PRP$ his))
+            (VP (`` `) (VB beat) ('' ')
+              (NP (PRP I))))))
+      (VP (VBP do) (RB n't)
+        (VP (VB know))))
+    (. .)))
+
+root(ROOT-0, know-13)
+punct(know-13, --1)
+cc(know-13, but-2)
+advmod(followed-5, how-3)
+nsubj(followed-5, they-4)
+csubj(know-13, followed-5)
+dobj(followed-5, his-6)
+punct(beat-8, `-7)
+dep(followed-5, beat-8)
+punct(beat-8, '-9)
+dobj(beat-8, I-10)
+aux(know-13, do-11)
+neg(know-13, n't-12)
+punct(know-13, .-14)
+
+Sentence #7 (17 tokens):
+But they played their hearts out in response to his waving, quivering arms and hands.
+[Text=But CharacterOffsetBegin=374 CharacterOffsetEnd=377 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=378 CharacterOffsetEnd=382 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=383 CharacterOffsetEnd=389 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=390 CharacterOffsetEnd=395 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=hearts CharacterOffsetBegin=396 CharacterOffsetEnd=402 PartOfSpeech=NNS Lemma=heart NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=403 CharacterOffsetEnd=406 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=407 CharacterOffsetEnd=409 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=response CharacterOffsetBegin=410 CharacterOffsetEnd=418 PartOfSpeech=NN Lemma=response NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=419 CharacterOffsetEnd=421 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=422 CharacterOffsetEnd=425 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=waving CharacterOffsetBegin=426 CharacterOffsetEnd=432 PartOfSpeech=VBG Lemma=wave NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=432 CharacterOffsetEnd=433 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=quivering CharacterOffsetBegin=434 CharacterOffsetEnd=443 PartOfSpeech=VBG Lemma=quiver NamedEntityTag=O]
+[Text=arms CharacterOffsetBegin=444 CharacterOffsetEnd=448 PartOfSpeech=NNS Lemma=arm NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=449 CharacterOffsetEnd=452 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=hands CharacterOffsetBegin=453 CharacterOffsetEnd=458 PartOfSpeech=NNS Lemma=hand NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=458 CharacterOffsetEnd=459 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC But)
+    (NP (PRP they))
+    (VP (VBD played)
+      (NP (PRP$ their) (NNS hearts))
+      (PRT (RP out))
+      (PP (IN in)
+        (NP (NN response)))
+      (PP (TO to)
+        (S
+          (NP (PRP$ his))
+          (VP (VBG waving) (, ,) (VBG quivering)
+            (NP (NNS arms)
+              (CC and)
+              (NNS hands))))))
+    (. .)))
+
+root(ROOT-0, played-3)
+cc(played-3, But-1)
+nsubj(played-3, they-2)
+nmod:poss(hearts-5, their-4)
+dobj(played-3, hearts-5)
+compound:prt(played-3, out-6)
+case(response-8, in-7)
+nmod:in(played-3, response-8)
+mark(waving-11, to-9)
+nsubj(waving-11, his-10)
+advcl:to(played-3, waving-11)
+punct(waving-11, ,-12)
+dep(waving-11, quivering-13)
+dobj(waving-11, arms-14)
+cc(arms-14, and-15)
+dobj(waving-11, hands-16)
+conj:and(arms-14, hands-16)
+punct(played-3, .-17)
+
+Sentence #8 (12 tokens):
+Terrific applause, when his arms flopped down to his side.
+[Text=Terrific CharacterOffsetBegin=460 CharacterOffsetEnd=468 PartOfSpeech=NNP Lemma=Terrific NamedEntityTag=O]
+[Text=applause CharacterOffsetBegin=469 CharacterOffsetEnd=477 PartOfSpeech=NN Lemma=applause NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=477 CharacterOffsetEnd=478 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=479 CharacterOffsetEnd=483 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=484 CharacterOffsetEnd=487 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=arms CharacterOffsetBegin=488 CharacterOffsetEnd=492 PartOfSpeech=NNS Lemma=arm NamedEntityTag=O]
+[Text=flopped CharacterOffsetBegin=493 CharacterOffsetEnd=500 PartOfSpeech=VBD Lemma=flop NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=501 CharacterOffsetEnd=505 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=506 CharacterOffsetEnd=508 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=509 CharacterOffsetEnd=512 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=side CharacterOffsetBegin=513 CharacterOffsetEnd=517 PartOfSpeech=NN Lemma=side NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=517 CharacterOffsetEnd=518 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNP Terrific) (NN applause))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP$ his) (NNS arms))
+          (VP (VBD flopped)
+            (PRT (RP down))
+            (PP (TO to)
+              (NP (PRP$ his) (NN side)))))))
+    (. .)))
+
+root(ROOT-0, applause-2)
+compound(applause-2, Terrific-1)
+punct(applause-2, ,-3)
+advmod(flopped-7, when-4)
+nmod:poss(arms-6, his-5)
+nsubj(flopped-7, arms-6)
+acl:relcl(applause-2, flopped-7)
+compound:prt(flopped-7, down-8)
+case(side-11, to-9)
+nmod:poss(side-11, his-10)
+nmod:to(flopped-7, side-11)
+punct(applause-2, .-12)
+
+Sentence #9 (15 tokens):
+He was escorted out, never to be seen again, despite continuing applause!
+[Text=He CharacterOffsetBegin=519 CharacterOffsetEnd=521 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=522 CharacterOffsetEnd=525 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=escorted CharacterOffsetBegin=526 CharacterOffsetEnd=534 PartOfSpeech=VBN Lemma=escort NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=535 CharacterOffsetEnd=538 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=538 CharacterOffsetEnd=539 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=540 CharacterOffsetEnd=545 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=546 CharacterOffsetEnd=548 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=549 CharacterOffsetEnd=551 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=seen CharacterOffsetBegin=552 CharacterOffsetEnd=556 PartOfSpeech=VBN Lemma=see NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=557 CharacterOffsetEnd=562 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=562 CharacterOffsetEnd=563 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=despite CharacterOffsetBegin=564 CharacterOffsetEnd=571 PartOfSpeech=IN Lemma=despite NamedEntityTag=O]
+[Text=continuing CharacterOffsetBegin=572 CharacterOffsetEnd=582 PartOfSpeech=VBG Lemma=continue NamedEntityTag=O]
+[Text=applause CharacterOffsetBegin=583 CharacterOffsetEnd=591 PartOfSpeech=NN Lemma=applause NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=591 CharacterOffsetEnd=592 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (VP (VBN escorted)
+        (PRT (RP out))
+        (, ,)
+        (S
+          (ADVP (RB never))
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN seen)
+                (ADVP (RB again))
+                (, ,)
+                (PP (IN despite)
+                  (NP (VBG continuing) (NN applause)))))))))
+    (. !)))
+
+root(ROOT-0, escorted-3)
+nsubjpass(escorted-3, He-1)
+nsubjpass:xsubj(seen-9, He-1)
+auxpass(escorted-3, was-2)
+compound:prt(escorted-3, out-4)
+punct(escorted-3, ,-5)
+neg(seen-9, never-6)
+mark(seen-9, to-7)
+auxpass(seen-9, be-8)
+xcomp(escorted-3, seen-9)
+advmod(seen-9, again-10)
+punct(seen-9, ,-11)
+case(applause-14, despite-12)
+amod(applause-14, continuing-13)
+nmod:despite(seen-9, applause-14)
+punct(escorted-3, !-15)
+
+Coreference set:
+	(3,1,[1,2]) -> (1,2,[1,9]), that is: "He" -> "Otto Klemperer conducting Mahler 's 9th Symphony ."
+	(3,16,[16,17]) -> (1,2,[1,9]), that is: "he" -> "Otto Klemperer conducting Mahler 's 9th Symphony ."
+	(4,1,[1,2]) -> (1,2,[1,9]), that is: "He" -> "Otto Klemperer conducting Mahler 's 9th Symphony ."
+	(4,3,[3,4]) -> (1,2,[1,9]), that is: "his" -> "Otto Klemperer conducting Mahler 's 9th Symphony ."
+	(6,6,[6,7]) -> (1,2,[1,9]), that is: "his" -> "Otto Klemperer conducting Mahler 's 9th Symphony ."
+	(7,10,[10,11]) -> (1,2,[1,9]), that is: "his" -> "Otto Klemperer conducting Mahler 's 9th Symphony ."
+	(8,5,[5,6]) -> (1,2,[1,9]), that is: "his" -> "Otto Klemperer conducting Mahler 's 9th Symphony ."
+	(8,10,[10,11]) -> (1,2,[1,9]), that is: "his" -> "Otto Klemperer conducting Mahler 's 9th Symphony ."
+	(9,1,[1,2]) -> (1,2,[1,9]), that is: "He" -> "Otto Klemperer conducting Mahler 's 9th Symphony ."
+Coreference set:
+	(4,7,[6,8]) -> (2,2,[1,3]), that is: "the concert" -> "The concert"
+Coreference set:
+	(6,4,[4,5]) -> (3,7,[6,8]), that is: "they" -> "2 men"
+	(7,2,[2,3]) -> (3,7,[6,8]), that is: "they" -> "2 men"
+	(7,4,[4,5]) -> (3,7,[6,8]), that is: "their" -> "2 men"
+Coreference set:
+	(8,11,[10,12]) -> (3,12,[11,13]), that is: "his side" -> "each side"
+Coreference set:
+	(7,14,[14,17]) -> (8,6,[5,7]), that is: "arms and hands" -> "his arms"

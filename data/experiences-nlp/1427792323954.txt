@@ -1,0 +1,97 @@
+Sentence #1 (19 tokens):
+Beethoven's symphony in C major headed the first programme and was vehemently applauded by the meagre audience.
+[Text=Beethoven CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=symphony CharacterOffsetBegin=12 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=symphony NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=C CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=c NamedEntityTag=O]
+[Text=major CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=major NamedEntityTag=O]
+[Text=headed CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=VBD Lemma=head NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=programme CharacterOffsetBegin=49 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=programme NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=vehemently CharacterOffsetBegin=67 CharacterOffsetEnd=77 PartOfSpeech=RB Lemma=vehemently NamedEntityTag=O]
+[Text=applauded CharacterOffsetBegin=78 CharacterOffsetEnd=87 PartOfSpeech=VBN Lemma=applaud NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=meagre CharacterOffsetBegin=95 CharacterOffsetEnd=101 PartOfSpeech=JJ Lemma=meagre NamedEntityTag=O]
+[Text=audience CharacterOffsetBegin=102 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=audience NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Beethoven) (POS 's))
+        (NN symphony))
+      (PP (IN in)
+        (NP (NN C) (JJ major))))
+    (VP
+      (VP (VBD headed)
+        (NP (DT the) (JJ first) (NN programme)))
+      (CC and)
+      (VP (VBD was)
+        (VP
+          (ADVP (RB vehemently))
+          (VBN applauded)
+          (PP (IN by)
+            (NP (DT the) (JJ meagre) (NN audience))))))
+    (. .)))
+
+root(ROOT-0, headed-7)
+nmod:poss(symphony-3, Beethoven-1)
+case(Beethoven-1, 's-2)
+nsubj(headed-7, symphony-3)
+nsubjpass(applauded-14, symphony-3)
+case(C-5, in-4)
+nmod:in(symphony-3, C-5)
+amod(C-5, major-6)
+det(programme-10, the-8)
+amod(programme-10, first-9)
+dobj(headed-7, programme-10)
+cc(headed-7, and-11)
+auxpass(applauded-14, was-12)
+advmod(applauded-14, vehemently-13)
+conj:and(headed-7, applauded-14)
+case(audience-18, by-15)
+det(audience-18, the-16)
+amod(audience-18, meagre-17)
+nmod:agent(applauded-14, audience-18)
+punct(headed-7, .-19)
+
+Sentence #2 (10 tokens):
+The loss upon the concert was a heavy one.
+[Text=The CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=loss CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=loss NamedEntityTag=O]
+[Text=upon CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=IN Lemma=upon NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=130 CharacterOffsetEnd=137 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=138 CharacterOffsetEnd=141 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=heavy CharacterOffsetBegin=144 CharacterOffsetEnd=149 PartOfSpeech=JJ Lemma=heavy NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=153 CharacterOffsetEnd=154 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN loss))
+      (PP (IN upon)
+        (NP (DT the) (NN concert))))
+    (VP (VBD was)
+      (NP (DT a) (JJ heavy) (CD one)))
+    (. .)))
+
+root(ROOT-0, one-9)
+det(loss-2, The-1)
+nsubj(one-9, loss-2)
+case(concert-5, upon-3)
+det(concert-5, the-4)
+nmod:upon(loss-2, concert-5)
+cop(one-9, was-6)
+det(one-9, a-7)
+amod(one-9, heavy-8)
+punct(one-9, .-10)
+
+Coreference set:
+	(2,2,[1,6]) -> (2,9,[7,10]), that is: "The loss upon the concert" -> "a heavy one"

@@ -1,0 +1,323 @@
+Sentence #1 (14 tokens):
+After supper go to Queen's Hall (ticket from Vaughn Williams).
+[Text=After CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=supper CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=supper NamedEntityTag=DATE NormalizedNamedEntityTag=supper ]
+[Text=go CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Queen CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Queen NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Hall CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=hall NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=ticket CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=ticket NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Vaughn CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=Vaughn NamedEntityTag=PERSON]
+[Text=Williams CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Williams NamedEntityTag=PERSON]
+[Text=-RRB- CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (IN After) (NN supper))
+    (VP (VBP go)
+      (PP (TO to)
+        (NP
+          (NP
+            (NP (NNP Queen) (POS 's))
+            (NN Hall))
+          (PRN (-LRB- -LRB-)
+            (NP
+              (NP (NN ticket))
+              (PP (IN from)
+                (NP (NNP Vaughn) (NNP Williams))))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+root(ROOT-0, go-3)
+amod(supper-2, After-1)
+nsubj(go-3, supper-2)
+case(Hall-7, to-4)
+nmod:poss(Hall-7, Queen-5)
+case(Queen-5, 's-6)
+nmod:to(go-3, Hall-7)
+punct(ticket-9, -LRB--8)
+dep(Hall-7, ticket-9)
+case(Williams-12, from-10)
+compound(Williams-12, Vaughn-11)
+nmod:from(ticket-9, Williams-12)
+punct(ticket-9, -RRB--13)
+punct(go-3, .-14)
+
+Sentence #2 (4 tokens):
+to B.B.C. concert.
+[Text=to CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=B.B.C. CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=B.B.C. NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=73 CharacterOffsetEnd=80 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (TO to)
+      (NP (NNP B.B.C.) (NN concert)))
+    (. .)))
+
+root(ROOT-0, concert-3)
+case(concert-3, to-1)
+compound(concert-3, B.B.C.-2)
+punct(concert-3, .-4)
+
+Sentence #3 (10 tokens):
+Adrian Boult gives a positively anemic performance of Unfinished.
+[Text=Adrian CharacterOffsetBegin=82 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=Adrian NamedEntityTag=PERSON]
+[Text=Boult CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=Boult NamedEntityTag=PERSON]
+[Text=gives CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=VBZ Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=positively CharacterOffsetBegin=103 CharacterOffsetEnd=113 PartOfSpeech=RB Lemma=positively NamedEntityTag=O]
+[Text=anemic CharacterOffsetBegin=114 CharacterOffsetEnd=120 PartOfSpeech=JJ Lemma=anemic NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=121 CharacterOffsetEnd=132 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Unfinished CharacterOffsetBegin=136 CharacterOffsetEnd=146 PartOfSpeech=NNP Lemma=Unfinished NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Adrian) (NNP Boult))
+    (VP (VBZ gives)
+      (NP
+        (NP (DT a)
+          (ADJP
+            (ADVP (RB positively))
+            (JJ anemic))
+          (NN performance))
+        (PP (IN of)
+          (NP (NNP Unfinished)))))
+    (. .)))
+
+root(ROOT-0, gives-3)
+compound(Boult-2, Adrian-1)
+nsubj(gives-3, Boult-2)
+det(performance-7, a-4)
+advmod(anemic-6, positively-5)
+amod(performance-7, anemic-6)
+dobj(gives-3, performance-7)
+case(Unfinished-9, of-8)
+nmod:of(performance-7, Unfinished-9)
+punct(gives-3, .-10)
+
+Sentence #4 (8 tokens):
+Harriet Cohen plays V. Williams new Pft.
+[Text=Harriet CharacterOffsetBegin=148 CharacterOffsetEnd=155 PartOfSpeech=NNP Lemma=Harriet NamedEntityTag=PERSON]
+[Text=Cohen CharacterOffsetBegin=156 CharacterOffsetEnd=161 PartOfSpeech=NNP Lemma=Cohen NamedEntityTag=PERSON]
+[Text=plays CharacterOffsetBegin=162 CharacterOffsetEnd=167 PartOfSpeech=VBZ Lemma=play NamedEntityTag=O]
+[Text=V. CharacterOffsetBegin=168 CharacterOffsetEnd=170 PartOfSpeech=NNP Lemma=V. NamedEntityTag=PERSON]
+[Text=Williams CharacterOffsetBegin=171 CharacterOffsetEnd=179 PartOfSpeech=NNP Lemma=Williams NamedEntityTag=PERSON]
+[Text=new CharacterOffsetBegin=180 CharacterOffsetEnd=183 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=Pft CharacterOffsetBegin=184 CharacterOffsetEnd=187 PartOfSpeech=NNP Lemma=Pft NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Harriet) (NNP Cohen))
+    (VP (VBZ plays)
+      (NP (NNP V.) (NNP Williams))
+      (NP (JJ new) (NNP Pft)))
+    (. .)))
+
+root(ROOT-0, plays-3)
+compound(Cohen-2, Harriet-1)
+nsubj(plays-3, Cohen-2)
+compound(Williams-5, V.-4)
+iobj(plays-3, Williams-5)
+amod(Pft-7, new-6)
+dobj(plays-3, Pft-7)
+punct(plays-3, .-8)
+
+Sentence #5 (2 tokens):
+Concerto.
+[Text=Concerto CharacterOffsetBegin=189 CharacterOffsetEnd=197 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=197 CharacterOffsetEnd=198 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (NNP Concerto))
+    (. .)))
+
+root(ROOT-0, Concerto-1)
+punct(Concerto-1, .-2)
+
+Sentence #6 (16 tokens):
+I am afraid that I don't like his music, however much I try.
+[Text=I CharacterOffsetBegin=199 CharacterOffsetEnd=200 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=201 CharacterOffsetEnd=203 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=afraid CharacterOffsetBegin=204 CharacterOffsetEnd=210 PartOfSpeech=JJ Lemma=afraid NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=211 CharacterOffsetEnd=215 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=218 CharacterOffsetEnd=220 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=224 CharacterOffsetEnd=228 PartOfSpeech=VB Lemma=like NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=229 CharacterOffsetEnd=232 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=233 CharacterOffsetEnd=238 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=238 CharacterOffsetEnd=239 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=however CharacterOffsetBegin=240 CharacterOffsetEnd=247 PartOfSpeech=RB Lemma=however NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=248 CharacterOffsetEnd=252 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=253 CharacterOffsetEnd=254 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=try CharacterOffsetBegin=255 CharacterOffsetEnd=258 PartOfSpeech=VBP Lemma=try NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=258 CharacterOffsetEnd=259 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (ADJP (JJ afraid)
+        (SBAR (IN that)
+          (S
+            (NP (PRP I))
+            (VP (VBP do) (RB n't)
+              (VP (VB like)
+                (NP (PRP$ his) (NN music)))))))
+      (, ,)
+      (ADVP (RB however))
+      (ADJP (JJ much)
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP try))))))
+    (. .)))
+
+root(ROOT-0, afraid-3)
+nsubj(afraid-3, I-1)
+cop(afraid-3, am-2)
+mark(like-8, that-4)
+nsubj(like-8, I-5)
+aux(like-8, do-6)
+neg(like-8, n't-7)
+ccomp(afraid-3, like-8)
+nmod:poss(music-10, his-9)
+dobj(like-8, music-10)
+punct(afraid-3, ,-11)
+advmod(afraid-3, however-12)
+xcomp(afraid-3, much-13)
+nsubj(try-15, I-14)
+ccomp(much-13, try-15)
+punct(afraid-3, .-16)
+
+Sentence #7 (19 tokens):
+Bax's Garden of Fand, & Delius' Sea Drift (Roy Henderson & Philharmonic Choir).
+[Text=Bax CharacterOffsetBegin=260 CharacterOffsetEnd=263 PartOfSpeech=NN Lemma=bax NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=263 CharacterOffsetEnd=265 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Garden CharacterOffsetBegin=266 CharacterOffsetEnd=272 PartOfSpeech=NN Lemma=garden NamedEntityTag=ORGANIZATION]
+[Text=of CharacterOffsetBegin=273 CharacterOffsetEnd=275 PartOfSpeech=IN Lemma=of NamedEntityTag=ORGANIZATION]
+[Text=Fand CharacterOffsetBegin=276 CharacterOffsetEnd=280 PartOfSpeech=NNP Lemma=Fand NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=280 CharacterOffsetEnd=281 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=282 CharacterOffsetEnd=283 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Delius CharacterOffsetBegin=284 CharacterOffsetEnd=290 PartOfSpeech=NNP Lemma=Delius NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=290 CharacterOffsetEnd=291 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=Sea CharacterOffsetBegin=292 CharacterOffsetEnd=295 PartOfSpeech=NN Lemma=sea NamedEntityTag=O]
+[Text=Drift CharacterOffsetBegin=296 CharacterOffsetEnd=301 PartOfSpeech=NN Lemma=drift NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=302 CharacterOffsetEnd=303 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Roy CharacterOffsetBegin=303 CharacterOffsetEnd=306 PartOfSpeech=NNP Lemma=Roy NamedEntityTag=ORGANIZATION]
+[Text=Henderson CharacterOffsetBegin=307 CharacterOffsetEnd=316 PartOfSpeech=NNP Lemma=Henderson NamedEntityTag=ORGANIZATION]
+[Text=& CharacterOffsetBegin=317 CharacterOffsetEnd=318 PartOfSpeech=CC Lemma=& NamedEntityTag=ORGANIZATION]
+[Text=Philharmonic CharacterOffsetBegin=319 CharacterOffsetEnd=331 PartOfSpeech=NNP Lemma=Philharmonic NamedEntityTag=ORGANIZATION]
+[Text=Choir CharacterOffsetBegin=332 CharacterOffsetEnd=337 PartOfSpeech=NNP Lemma=Choir NamedEntityTag=ORGANIZATION]
+[Text=-RRB- CharacterOffsetBegin=337 CharacterOffsetEnd=338 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=338 CharacterOffsetEnd=339 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP
+        (NP
+          (NP (NN Bax) (POS 's))
+          (NN Garden))
+        (PP (IN of)
+          (NP (NNP Fand))))
+      (, ,)
+      (CC &)
+      (NP
+        (NP
+          (NP (NNP Delius) (POS '))
+          (NN Sea) (NN Drift))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (NNP Roy) (NNP Henderson))
+            (CC &)
+            (NP (NNP Philharmonic) (NNP Choir)))
+          (-RRB- -RRB-))))
+    (. .)))
+
+root(ROOT-0, Garden-3)
+nmod:poss(Garden-3, Bax-1)
+case(Bax-1, 's-2)
+case(Fand-5, of-4)
+nmod:of(Garden-3, Fand-5)
+punct(Garden-3, ,-6)
+cc(Garden-3, &-7)
+nmod:poss(Drift-11, Delius-8)
+case(Delius-8, '-9)
+compound(Drift-11, Sea-10)
+conj:&(Garden-3, Drift-11)
+punct(Henderson-14, -LRB--12)
+compound(Henderson-14, Roy-13)
+dep(Drift-11, Henderson-14)
+cc(Henderson-14, &-15)
+compound(Choir-17, Philharmonic-16)
+dep(Drift-11, Choir-17)
+conj:&(Henderson-14, Choir-17)
+punct(Henderson-14, -RRB--18)
+punct(Garden-3, .-19)
+
+Sentence #8 (4 tokens):
+latter v. beautiful.
+[Text=latter CharacterOffsetBegin=340 CharacterOffsetEnd=346 PartOfSpeech=JJ Lemma=latter NamedEntityTag=O]
+[Text=v. CharacterOffsetBegin=347 CharacterOffsetEnd=349 PartOfSpeech=CC Lemma=v. NamedEntityTag=O]
+[Text=beautiful CharacterOffsetBegin=350 CharacterOffsetEnd=359 PartOfSpeech=JJ Lemma=beautiful NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=359 CharacterOffsetEnd=360 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (JJ latter))
+    (PP (CC v.)
+      (NP (JJ beautiful)))
+    (. .)))
+
+root(ROOT-0, latter-1)
+case(beautiful-3, v.-2)
+nmod:v.(latter-1, beautiful-3)
+punct(latter-1, .-4)
+
+Sentence #9 (10 tokens):
+* Back to Bridges for a bit with Brosas.
+[Text=* CharacterOffsetBegin=360 CharacterOffsetEnd=361 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=Back CharacterOffsetBegin=362 CharacterOffsetEnd=366 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=367 CharacterOffsetEnd=369 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Bridges CharacterOffsetBegin=370 CharacterOffsetEnd=377 PartOfSpeech=NNP Lemma=Bridges NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=378 CharacterOffsetEnd=381 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=382 CharacterOffsetEnd=383 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=384 CharacterOffsetEnd=387 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=388 CharacterOffsetEnd=392 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Brosas CharacterOffsetBegin=393 CharacterOffsetEnd=399 PartOfSpeech=NNP Lemma=Brosas NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=399 CharacterOffsetEnd=400 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (X
+      (X (SYM *))
+      (PP
+        (ADVP (RB Back)
+          (PP (TO to)
+            (NP (NNP Bridges))))
+        (IN for)
+        (NP (DT a) (NN bit))))
+    (PP (IN with)
+      (NP (NNP Brosas))
+      (. .))))
+
+root(ROOT-0, bit-7)
+dep(bit-7, *-1)
+advmod(bit-7, Back-2)
+case(Bridges-4, to-3)
+nmod:to(Back-2, Bridges-4)
+case(bit-7, for-5)
+det(bit-7, a-6)
+case(Brosas-9, with-8)
+nmod:with(bit-7, Brosas-9)
+punct(Brosas-9, .-10)
+
+Coreference set:
+	(6,9,[9,10]) -> (4,5,[4,6]), that is: "his" -> "V. Williams"
+Coreference set:
+	(6,5,[5,6]) -> (6,1,[1,2]), that is: "I" -> "I"
+	(6,14,[14,15]) -> (6,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(7,11,[8,19]) -> (7,3,[3,6]), that is: "Delius ' Sea Drift -LRB- Roy Henderson & Philharmonic Choir -RRB-" -> "Garden of Fand"

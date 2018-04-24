@@ -1,0 +1,61 @@
+Sentence #1 (20 tokens):
+The Middlesex concert party gave a performance at Battalion Headquarters from 7.00 until 10.00 pm - a good show.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Middlesex CharacterOffsetBegin=4 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Middlesex NamedEntityTag=LOCATION]
+[Text=concert CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=35 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Battalion CharacterOffsetBegin=50 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Battalion NamedEntityTag=O]
+[Text=Headquarters CharacterOffsetBegin=60 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=headquarters NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=7.00 CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=CD Lemma=7.00 NamedEntityTag=NUMBER NormalizedNamedEntityTag=7.0]
+[Text=until CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=10.00 CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=CD Lemma=10.00 NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.0]
+[Text=pm CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=SYM Lemma=pm NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=show CharacterOffsetBegin=107 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=show NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NNP Middlesex) (NN concert) (NN party))
+    (VP (VBD gave)
+      (NP (DT a) (NN performance))
+      (PP (IN at)
+        (NP (NNP Battalion) (NN Headquarters)))
+      (PP (IN from)
+        (NP (CD 7.00)))
+      (PP (IN until)
+        (NP
+          (NP (CD 10.00))
+          (X
+            (X (SYM pm))
+            (: -)
+            (NP (DT a) (JJ good) (NN show))
+            (. .)))))))
+
+root(ROOT-0, gave-5)
+det(party-4, The-1)
+compound(party-4, Middlesex-2)
+compound(party-4, concert-3)
+nsubj(gave-5, party-4)
+det(performance-7, a-6)
+dobj(gave-5, performance-7)
+case(Headquarters-10, at-8)
+compound(Headquarters-10, Battalion-9)
+nmod:at(gave-5, Headquarters-10)
+case(7.00-12, from-11)
+nmod:from(gave-5, 7.00-12)
+case(10.00-14, until-13)
+nmod:until(gave-5, 10.00-14)
+dep(show-19, pm-15)
+punct(show-19, --16)
+det(show-19, a-17)
+amod(show-19, good-18)
+dep(10.00-14, show-19)
+punct(show-19, .-20)
+

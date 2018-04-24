@@ -1,0 +1,42 @@
+Sentence #1 (12 tokens):
+Then to Symphony Space for theatrical program of Peter Maxwell Davies.
+[Text=Then CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Symphony CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Symphony NamedEntityTag=O]
+[Text=Space CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Space NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=theatrical CharacterOffsetBegin=27 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=theatrical NamedEntityTag=O]
+[Text=program CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=program NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Peter CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Peter NamedEntityTag=PERSON]
+[Text=Maxwell CharacterOffsetBegin=55 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Maxwell NamedEntityTag=PERSON]
+[Text=Davies CharacterOffsetBegin=63 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Davies NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP
+      (PP
+        (ADVP (RB Then))
+        (TO to)
+        (NP
+          (NP (NNP Symphony) (NNP Space))
+          (PP (IN for)
+            (NP
+              (NP (JJ theatrical) (NN program))
+              (PP (IN of)
+                (NP (NNP Peter) (NNP Maxwell) (NNP Davies))))))))
+    (. .)))
+
+root(ROOT-0, Space-4)
+advmod(Space-4, Then-1)
+case(Space-4, to-2)
+compound(Space-4, Symphony-3)
+case(program-7, for-5)
+amod(program-7, theatrical-6)
+nmod:for(Space-4, program-7)
+case(Davies-11, of-8)
+compound(Davies-11, Peter-9)
+compound(Davies-11, Maxwell-10)
+nmod:of(program-7, Davies-11)
+punct(Space-4, .-12)
+

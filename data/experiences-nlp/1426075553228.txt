@@ -1,0 +1,241 @@
+Sentence #1 (24 tokens):
+Yesterday I went to a soiree at Soliva's where there was practically no one else apart from the Sowans and the Gressers.
+[Text=Yesterday CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1D Timex=<TIMEX3 alt_value="OFFSET P-1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Yesterday</TIMEX3>]
+[Text=I CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=CD Lemma=i NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.0]
+[Text=went CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=soiree CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=soiree NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Soliva CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Soliva NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=practically CharacterOffsetBegin=57 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=practically NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=else CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=RB Lemma=else NamedEntityTag=O]
+[Text=apart CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=RB Lemma=apart NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Sowans CharacterOffsetBegin=96 CharacterOffsetEnd=102 PartOfSpeech=NNPS Lemma=Sowans NamedEntityTag=MISC]
+[Text=and CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Gressers CharacterOffsetBegin=111 CharacterOffsetEnd=119 PartOfSpeech=NNP Lemma=Gressers NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NN Yesterday) (CD I))
+    (VP (VBD went)
+      (PP (TO to)
+        (NP
+          (NP (DT a) (NN soiree))
+          (PP (IN at)
+            (NP (NNP Soliva) (POS 's)))))
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (EX there))
+          (VP (VBD was)
+            (ADVP (RB practically)
+              (NP (DT no) (NN one)))
+            (ADJP (RB else))
+            (PP (RB apart) (IN from)
+              (NP
+                (NP (DT the) (NNPS Sowans))
+                (CC and)
+                (NP (DT the) (NNP Gressers))))))))
+    (. .)))
+
+root(ROOT-0, went-3)
+nsubj(went-3, Yesterday-1)
+nummod(Yesterday-1, I-2)
+case(soiree-6, to-4)
+det(soiree-6, a-5)
+nmod:to(went-3, soiree-6)
+case(Soliva-8, at-7)
+nmod:'s(soiree-6, Soliva-8)
+case(Soliva-8, 's-9)
+advmod(was-12, where-10)
+expl(was-12, there-11)
+advcl(went-3, was-12)
+advmod(was-12, practically-13)
+neg(one-15, no-14)
+nmod:npmod(practically-13, one-15)
+xcomp(was-12, else-16)
+case(Sowans-20, apart-17)
+mwe(apart-17, from-18)
+det(Sowans-20, the-19)
+nmod:apart_from(was-12, Sowans-20)
+cc(Sowans-20, and-21)
+det(Gressers-23, the-22)
+nmod:apart_from(was-12, Gressers-23)
+conj:and(Sowans-20, Gressers-23)
+punct(went-3, .-24)
+
+Sentence #2 (35 tokens):
+Gladkowska sang an aria which Soliva had expressly composed for her and inserted into the opera; this aria is to be her 
+show-piece and there are in fact some lovely things in it.
+[Text=Gladkowska CharacterOffsetBegin=121 CharacterOffsetEnd=131 PartOfSpeech=FW Lemma=gladkowska NamedEntityTag=PERSON]
+[Text=sang CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=aria CharacterOffsetBegin=140 CharacterOffsetEnd=144 PartOfSpeech=NN Lemma=aria NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=145 CharacterOffsetEnd=150 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=Soliva CharacterOffsetBegin=151 CharacterOffsetEnd=157 PartOfSpeech=NNP Lemma=Soliva NamedEntityTag=PERSON]
+[Text=had CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=expressly CharacterOffsetBegin=162 CharacterOffsetEnd=171 PartOfSpeech=RB Lemma=expressly NamedEntityTag=O]
+[Text=composed CharacterOffsetBegin=172 CharacterOffsetEnd=180 PartOfSpeech=VBN Lemma=compose NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=181 CharacterOffsetEnd=184 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=185 CharacterOffsetEnd=188 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=189 CharacterOffsetEnd=192 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=inserted CharacterOffsetBegin=193 CharacterOffsetEnd=201 PartOfSpeech=VBN Lemma=insert NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=202 CharacterOffsetEnd=206 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=207 CharacterOffsetEnd=210 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=opera CharacterOffsetBegin=211 CharacterOffsetEnd=216 PartOfSpeech=NN Lemma=opera NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=218 CharacterOffsetEnd=222 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=aria CharacterOffsetBegin=223 CharacterOffsetEnd=227 PartOfSpeech=NN Lemma=aria NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=228 CharacterOffsetEnd=230 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=231 CharacterOffsetEnd=233 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=234 CharacterOffsetEnd=236 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=237 CharacterOffsetEnd=240 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=show-piece CharacterOffsetBegin=243 CharacterOffsetEnd=253 PartOfSpeech=JJ Lemma=show-piece NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=254 CharacterOffsetEnd=257 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=258 CharacterOffsetEnd=263 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=264 CharacterOffsetEnd=267 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=268 CharacterOffsetEnd=270 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=fact CharacterOffsetBegin=271 CharacterOffsetEnd=275 PartOfSpeech=NN Lemma=fact NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=276 CharacterOffsetEnd=280 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=lovely CharacterOffsetBegin=281 CharacterOffsetEnd=287 PartOfSpeech=JJ Lemma=lovely NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=288 CharacterOffsetEnd=294 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=295 CharacterOffsetEnd=297 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=298 CharacterOffsetEnd=300 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=300 CharacterOffsetEnd=301 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (FW Gladkowska))
+      (VP (VBD sang)
+        (NP
+          (NP (DT an) (NN aria))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (NP (NNP Soliva))
+              (VP (VBD had)
+                (ADVP (RB expressly))
+                (VP
+                  (VP (VBN composed)
+                    (PP (IN for)
+                      (NP (PRP her))))
+                  (CC and)
+                  (VP (VBN inserted)
+                    (PP (IN into)
+                      (NP (DT the) (NN opera)))))))))))
+    (: ;)
+    (S
+      (S
+        (NP (DT this) (NN aria))
+        (VP (VBZ is)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (NP (PRP$ her) (JJ show-piece)))))))
+      (CC and)
+      (S
+        (NP (EX there))
+        (VP (VBP are)
+          (ADVP (IN in) (NN fact))
+          (NP
+            (NP (DT some) (JJ lovely) (NNS things))
+            (PP (IN in)
+              (NP (PRP it)))))))
+    (. .)))
+
+root(ROOT-0, sang-2)
+nsubj(sang-2, Gladkowska-1)
+det(aria-4, an-3)
+dobj(sang-2, aria-4)
+dobj(composed-9, aria-4)
+ref(aria-4, which-5)
+nsubj(composed-9, Soliva-6)
+nsubj(inserted-13, Soliva-6)
+aux(composed-9, had-7)
+advmod(composed-9, expressly-8)
+acl:relcl(aria-4, composed-9)
+case(her-11, for-10)
+nmod:for(composed-9, her-11)
+cc(composed-9, and-12)
+acl:relcl(aria-4, inserted-13)
+conj:and(composed-9, inserted-13)
+case(opera-16, into-14)
+det(opera-16, the-15)
+nmod:into(inserted-13, opera-16)
+punct(sang-2, ;-17)
+det(aria-19, this-18)
+nsubj(is-20, aria-19)
+nsubj:xsubj(show-piece-24, aria-19)
+parataxis(sang-2, is-20)
+mark(show-piece-24, to-21)
+cop(show-piece-24, be-22)
+nmod:poss(show-piece-24, her-23)
+xcomp(is-20, show-piece-24)
+cc(is-20, and-25)
+expl(are-27, there-26)
+parataxis(sang-2, are-27)
+conj:and(is-20, are-27)
+case(fact-29, in-28)
+advmod(are-27, fact-29)
+det(things-32, some-30)
+amod(things-32, lovely-31)
+nsubj(are-27, things-32)
+case(it-34, in-33)
+nmod:in(things-32, it-34)
+punct(sang-2, .-35)
+
+Sentence #3 (9 tokens):
+He has managed to suit her voice perfectly.
+[Text=He CharacterOffsetBegin=302 CharacterOffsetEnd=304 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=305 CharacterOffsetEnd=308 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=managed CharacterOffsetBegin=309 CharacterOffsetEnd=316 PartOfSpeech=VBN Lemma=manage NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=317 CharacterOffsetEnd=319 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=suit CharacterOffsetBegin=320 CharacterOffsetEnd=324 PartOfSpeech=VB Lemma=suit NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=325 CharacterOffsetEnd=328 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=voice CharacterOffsetBegin=329 CharacterOffsetEnd=334 PartOfSpeech=NN Lemma=voice NamedEntityTag=O]
+[Text=perfectly CharacterOffsetBegin=335 CharacterOffsetEnd=344 PartOfSpeech=RB Lemma=perfectly NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=344 CharacterOffsetEnd=345 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ has)
+      (VP (VBN managed)
+        (S
+          (VP (TO to)
+            (VP (VB suit)
+              (NP (PRP$ her) (NN voice))
+              (ADVP (RB perfectly)))))))
+    (. .)))
+
+root(ROOT-0, managed-3)
+nsubj(managed-3, He-1)
+nsubj:xsubj(suit-5, He-1)
+aux(managed-3, has-2)
+mark(suit-5, to-4)
+xcomp(managed-3, suit-5)
+nmod:poss(voice-7, her-6)
+dobj(suit-5, voice-7)
+advmod(suit-5, perfectly-8)
+punct(managed-3, .-9)
+
+Coreference set:
+	(2,6,[6,7]) -> (1,8,[8,10]), that is: "Soliva" -> "Soliva 's"
+	(2,11,[11,12]) -> (1,8,[8,10]), that is: "her" -> "Soliva 's"
+Coreference set:
+	(2,23,[23,24]) -> (2,1,[1,2]), that is: "her" -> "Gladkowska"
+	(3,6,[6,7]) -> (2,1,[1,2]), that is: "her" -> "Gladkowska"
+Coreference set:
+	(2,19,[18,20]) -> (2,4,[3,17]), that is: "this aria" -> "an aria which Soliva had expressly composed for her and inserted into the opera"
+	(2,34,[34,35]) -> (2,4,[3,17]), that is: "it" -> "an aria which Soliva had expressly composed for her and inserted into the opera"
+Coreference set:
+	(3,1,[1,2]) -> (2,24,[23,25]), that is: "He" -> "her show-piece"

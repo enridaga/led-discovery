@@ -1,0 +1,438 @@
+Sentence #1 (11 tokens):
+Stolyarsky lived in a building with a steep marble staircase.
+[Text=Stolyarsky CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Stolyarsky NamedEntityTag=PERSON]
+[Text=lived CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=live NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=building CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=building NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=steep CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=JJ Lemma=steep NamedEntityTag=O]
+[Text=marble CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=marble NamedEntityTag=O]
+[Text=staircase CharacterOffsetBegin=51 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=staircase NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Stolyarsky))
+    (VP (VBD lived)
+      (PP (IN in)
+        (NP (DT a) (NN building)))
+      (PP (IN with)
+        (NP (DT a) (JJ steep) (NN marble) (NN staircase))))
+    (. .)))
+
+root(ROOT-0, lived-2)
+nsubj(lived-2, Stolyarsky-1)
+case(building-5, in-3)
+det(building-5, a-4)
+nmod:in(lived-2, building-5)
+case(staircase-10, with-6)
+det(staircase-10, a-7)
+amod(staircase-10, steep-8)
+compound(staircase-10, marble-9)
+nmod:with(lived-2, staircase-10)
+punct(lived-2, .-11)
+
+Sentence #2 (20 tokens):
+One time I was leaving with a classmate, Edgar Ortenberg, who later played in the Budapest Quartet.
+[Text=One CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=time CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=leaving CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=VBG Lemma=leave NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=classmate CharacterOffsetBegin=92 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=classmate NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Edgar CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=NNP Lemma=Edgar NamedEntityTag=PERSON]
+[Text=Ortenberg CharacterOffsetBegin=109 CharacterOffsetEnd=118 PartOfSpeech=NNP Lemma=Ortenberg NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=later CharacterOffsetBegin=124 CharacterOffsetEnd=129 PartOfSpeech=RB Lemma=later NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=130 CharacterOffsetEnd=136 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=140 CharacterOffsetEnd=143 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Budapest CharacterOffsetBegin=144 CharacterOffsetEnd=152 PartOfSpeech=NNP Lemma=Budapest NamedEntityTag=LOCATION]
+[Text=Quartet CharacterOffsetBegin=153 CharacterOffsetEnd=160 PartOfSpeech=NN Lemma=quartet NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=160 CharacterOffsetEnd=161 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (CD One) (NN time))
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBG leaving)
+        (PP (IN with)
+          (NP
+            (NP (DT a) (NN classmate))
+            (, ,)
+            (NP (NNP Edgar) (NNP Ortenberg))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (ADVP (RB later))
+                (VP (VBD played)
+                  (PP (IN in)
+                    (NP (DT the) (NNP Budapest) (NN Quartet))))))))))
+    (. .)))
+
+root(ROOT-0, leaving-5)
+nummod(time-2, One-1)
+nmod:tmod(leaving-5, time-2)
+nsubj(leaving-5, I-3)
+aux(leaving-5, was-4)
+case(classmate-8, with-6)
+det(classmate-8, a-7)
+nmod:with(leaving-5, classmate-8)
+nsubj(played-15, classmate-8)
+punct(classmate-8, ,-9)
+compound(Ortenberg-11, Edgar-10)
+appos(classmate-8, Ortenberg-11)
+punct(classmate-8, ,-12)
+ref(classmate-8, who-13)
+advmod(played-15, later-14)
+acl:relcl(classmate-8, played-15)
+case(Quartet-19, in-16)
+det(Quartet-19, the-17)
+compound(Quartet-19, Budapest-18)
+nmod:in(played-15, Quartet-19)
+punct(leaving-5, .-20)
+
+Sentence #3 (39 tokens):
+Stolyarsky had rewarded us for a good lesson with tickets to I Pagliacci at the Odessa opera, and Ortenberg was so happy with the honour, he bounced around on the stairs and banged against my shoulder.
+[Text=Stolyarsky CharacterOffsetBegin=162 CharacterOffsetEnd=172 PartOfSpeech=NNP Lemma=Stolyarsky NamedEntityTag=PERSON]
+[Text=had CharacterOffsetBegin=173 CharacterOffsetEnd=176 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=rewarded CharacterOffsetBegin=177 CharacterOffsetEnd=185 PartOfSpeech=VBN Lemma=reward NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=186 CharacterOffsetEnd=188 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=189 CharacterOffsetEnd=192 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=193 CharacterOffsetEnd=194 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=195 CharacterOffsetEnd=199 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=lesson CharacterOffsetBegin=200 CharacterOffsetEnd=206 PartOfSpeech=NN Lemma=lesson NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=207 CharacterOffsetEnd=211 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=tickets CharacterOffsetBegin=212 CharacterOffsetEnd=219 PartOfSpeech=NNS Lemma=ticket NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=220 CharacterOffsetEnd=222 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=223 CharacterOffsetEnd=224 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=Pagliacci CharacterOffsetBegin=225 CharacterOffsetEnd=234 PartOfSpeech=NN Lemma=pagliacci NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=235 CharacterOffsetEnd=237 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=238 CharacterOffsetEnd=241 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Odessa CharacterOffsetBegin=242 CharacterOffsetEnd=248 PartOfSpeech=NNP Lemma=Odessa NamedEntityTag=LOCATION]
+[Text=opera CharacterOffsetBegin=249 CharacterOffsetEnd=254 PartOfSpeech=NN Lemma=opera NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=254 CharacterOffsetEnd=255 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=256 CharacterOffsetEnd=259 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Ortenberg CharacterOffsetBegin=260 CharacterOffsetEnd=269 PartOfSpeech=NNP Lemma=Ortenberg NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=270 CharacterOffsetEnd=273 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=274 CharacterOffsetEnd=276 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=happy CharacterOffsetBegin=277 CharacterOffsetEnd=282 PartOfSpeech=JJ Lemma=happy NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=283 CharacterOffsetEnd=287 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=288 CharacterOffsetEnd=291 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=honour CharacterOffsetBegin=292 CharacterOffsetEnd=298 PartOfSpeech=NN Lemma=honour NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=298 CharacterOffsetEnd=299 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=300 CharacterOffsetEnd=302 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=bounced CharacterOffsetBegin=303 CharacterOffsetEnd=310 PartOfSpeech=VBD Lemma=bounce NamedEntityTag=O]
+[Text=around CharacterOffsetBegin=311 CharacterOffsetEnd=317 PartOfSpeech=RP Lemma=around NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=318 CharacterOffsetEnd=320 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=321 CharacterOffsetEnd=324 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=stairs CharacterOffsetBegin=325 CharacterOffsetEnd=331 PartOfSpeech=NNS Lemma=stair NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=332 CharacterOffsetEnd=335 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=banged CharacterOffsetBegin=336 CharacterOffsetEnd=342 PartOfSpeech=VBN Lemma=bang NamedEntityTag=O]
+[Text=against CharacterOffsetBegin=343 CharacterOffsetEnd=350 PartOfSpeech=IN Lemma=against NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=351 CharacterOffsetEnd=353 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=shoulder CharacterOffsetBegin=354 CharacterOffsetEnd=362 PartOfSpeech=NN Lemma=shoulder NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=362 CharacterOffsetEnd=363 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (S
+        (NP (NNP Stolyarsky))
+        (VP (VBD had)
+          (VP (VBN rewarded)
+            (NP (PRP us))
+            (PP (IN for)
+              (NP
+                (NP (DT a) (JJ good) (NN lesson))
+                (PP (IN with)
+                  (NP (NNS tickets)))))
+            (PP (TO to)
+              (NP
+                (NP (PRP I) (NN Pagliacci))
+                (PP (IN at)
+                  (NP (DT the) (NNP Odessa) (NN opera))))))))
+      (, ,)
+      (CC and)
+      (S
+        (NP (NNP Ortenberg))
+        (VP (VBD was)
+          (ADJP (RB so) (JJ happy))
+          (PP (IN with)
+            (NP (DT the) (NN honour))))))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD bounced)
+        (PRT (RP around))
+        (PP (IN on)
+          (NP (DT the) (NNS stairs))))
+      (CC and)
+      (VP (VBN banged)
+        (PP (IN against)
+          (NP (PRP$ my) (NN shoulder)))))
+    (. .)))
+
+root(ROOT-0, bounced-29)
+nsubj(rewarded-3, Stolyarsky-1)
+aux(rewarded-3, had-2)
+ccomp(bounced-29, rewarded-3)
+dobj(rewarded-3, us-4)
+case(lesson-8, for-5)
+det(lesson-8, a-6)
+amod(lesson-8, good-7)
+nmod:for(rewarded-3, lesson-8)
+case(tickets-10, with-9)
+nmod:with(lesson-8, tickets-10)
+case(Pagliacci-13, to-11)
+dep(Pagliacci-13, I-12)
+nmod:to(rewarded-3, Pagliacci-13)
+case(opera-17, at-14)
+det(opera-17, the-15)
+compound(opera-17, Odessa-16)
+nmod:at(Pagliacci-13, opera-17)
+punct(rewarded-3, ,-18)
+cc(rewarded-3, and-19)
+nsubj(happy-23, Ortenberg-20)
+cop(happy-23, was-21)
+advmod(happy-23, so-22)
+conj:and(rewarded-3, happy-23)
+ccomp(bounced-29, happy-23)
+case(honour-26, with-24)
+det(honour-26, the-25)
+nmod:with(happy-23, honour-26)
+punct(bounced-29, ,-27)
+nsubj(bounced-29, he-28)
+nsubj(banged-35, he-28)
+compound:prt(bounced-29, around-30)
+case(stairs-33, on-31)
+det(stairs-33, the-32)
+nmod:on(bounced-29, stairs-33)
+cc(bounced-29, and-34)
+conj:and(bounced-29, banged-35)
+case(shoulder-38, against-36)
+nmod:poss(shoulder-38, my-37)
+nmod:against(banged-35, shoulder-38)
+punct(bounced-29, .-39)
+
+Sentence #4 (11 tokens):
+I fell down the stairs and cracked my left temple.
+[Text=I CharacterOffsetBegin=364 CharacterOffsetEnd=365 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=fell CharacterOffsetBegin=366 CharacterOffsetEnd=370 PartOfSpeech=VBD Lemma=fall NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=371 CharacterOffsetEnd=375 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=376 CharacterOffsetEnd=379 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=stairs CharacterOffsetBegin=380 CharacterOffsetEnd=386 PartOfSpeech=NNS Lemma=stair NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=387 CharacterOffsetEnd=390 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=cracked CharacterOffsetBegin=391 CharacterOffsetEnd=398 PartOfSpeech=VBD Lemma=crack NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=399 CharacterOffsetEnd=401 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=402 CharacterOffsetEnd=406 PartOfSpeech=JJ Lemma=left NamedEntityTag=O]
+[Text=temple CharacterOffsetBegin=407 CharacterOffsetEnd=413 PartOfSpeech=NN Lemma=temple NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=413 CharacterOffsetEnd=414 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBD fell)
+        (PRT (RP down))
+        (NP (DT the) (NNS stairs)))
+      (CC and)
+      (VP (VBD cracked)
+        (NP (PRP$ my) (JJ left) (NN temple))))
+    (. .)))
+
+root(ROOT-0, fell-2)
+nsubj(fell-2, I-1)
+nsubj(cracked-7, I-1)
+compound:prt(fell-2, down-3)
+det(stairs-5, the-4)
+dobj(fell-2, stairs-5)
+cc(fell-2, and-6)
+conj:and(fell-2, cracked-7)
+nmod:poss(temple-10, my-8)
+amod(temple-10, left-9)
+dobj(cracked-7, temple-10)
+punct(fell-2, .-11)
+
+Sentence #5 (12 tokens):
+Blood was pouring down my face, but I kept smiling.
+[Text=Blood CharacterOffsetBegin=415 CharacterOffsetEnd=420 PartOfSpeech=NN Lemma=blood NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=421 CharacterOffsetEnd=424 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=pouring CharacterOffsetBegin=425 CharacterOffsetEnd=432 PartOfSpeech=VBG Lemma=pour NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=433 CharacterOffsetEnd=437 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=438 CharacterOffsetEnd=440 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=face CharacterOffsetBegin=441 CharacterOffsetEnd=445 PartOfSpeech=NN Lemma=face NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=445 CharacterOffsetEnd=446 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=447 CharacterOffsetEnd=450 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=451 CharacterOffsetEnd=452 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=kept CharacterOffsetBegin=453 CharacterOffsetEnd=457 PartOfSpeech=VBD Lemma=keep NamedEntityTag=O]
+[Text=smiling CharacterOffsetBegin=458 CharacterOffsetEnd=465 PartOfSpeech=VBG Lemma=smile NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=465 CharacterOffsetEnd=466 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NN Blood))
+      (VP (VBD was)
+        (VP (VBG pouring)
+          (PRT (RP down))
+          (NP (PRP$ my) (NN face)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBD kept)
+        (S
+          (VP (VBG smiling)))))
+    (. .)))
+
+root(ROOT-0, pouring-3)
+nsubj(pouring-3, Blood-1)
+aux(pouring-3, was-2)
+compound:prt(pouring-3, down-4)
+nmod:poss(face-6, my-5)
+dobj(pouring-3, face-6)
+punct(pouring-3, ,-7)
+cc(pouring-3, but-8)
+nsubj(kept-10, I-9)
+conj:but(pouring-3, kept-10)
+xcomp(kept-10, smiling-11)
+punct(pouring-3, .-12)
+
+Sentence #6 (7 tokens):
+Dr. Auslender sewed up the gash.
+[Text=Dr. CharacterOffsetBegin=467 CharacterOffsetEnd=470 PartOfSpeech=NNP Lemma=Dr. NamedEntityTag=O]
+[Text=Auslender CharacterOffsetBegin=471 CharacterOffsetEnd=480 PartOfSpeech=NNP Lemma=Auslender NamedEntityTag=PERSON]
+[Text=sewed CharacterOffsetBegin=481 CharacterOffsetEnd=486 PartOfSpeech=VBD Lemma=sew NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=487 CharacterOffsetEnd=489 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=490 CharacterOffsetEnd=493 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gash CharacterOffsetBegin=494 CharacterOffsetEnd=498 PartOfSpeech=NN Lemma=gash NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=498 CharacterOffsetEnd=499 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Dr.) (NNP Auslender))
+    (VP (VBD sewed)
+      (PRT (RP up))
+      (NP (DT the) (NN gash)))
+    (. .)))
+
+root(ROOT-0, sewed-3)
+compound(Auslender-2, Dr.-1)
+nsubj(sewed-3, Auslender-2)
+compound:prt(sewed-3, up-4)
+det(gash-6, the-5)
+dobj(sewed-3, gash-6)
+punct(sewed-3, .-7)
+
+Sentence #7 (14 tokens):
+I got to see I Pagliacci at a later performance, with Caruso.
+[Text=I CharacterOffsetBegin=503 CharacterOffsetEnd=504 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=505 CharacterOffsetEnd=508 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=509 CharacterOffsetEnd=511 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=512 CharacterOffsetEnd=515 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=516 CharacterOffsetEnd=517 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=Pagliacci CharacterOffsetBegin=518 CharacterOffsetEnd=527 PartOfSpeech=NN Lemma=pagliacci NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=528 CharacterOffsetEnd=530 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=531 CharacterOffsetEnd=532 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=later CharacterOffsetBegin=533 CharacterOffsetEnd=538 PartOfSpeech=JJ Lemma=later NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=539 CharacterOffsetEnd=550 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=550 CharacterOffsetEnd=551 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=552 CharacterOffsetEnd=556 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Caruso CharacterOffsetBegin=557 CharacterOffsetEnd=563 PartOfSpeech=NNP Lemma=Caruso NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=563 CharacterOffsetEnd=564 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD got)
+      (S
+        (VP (TO to)
+          (VP (VB see)
+            (S
+              (NP (PRP I))
+              (NP
+                (NP (NN Pagliacci))
+                (PP (IN at)
+                  (NP (DT a) (JJ later) (NN performance))))))))
+      (, ,)
+      (PP (IN with)
+        (NP (NNP Caruso))))
+    (. .)))
+
+root(ROOT-0, got-2)
+nsubj(got-2, I-1)
+nsubj:xsubj(see-4, I-1)
+mark(see-4, to-3)
+xcomp(got-2, see-4)
+nsubj(Pagliacci-6, I-5)
+xcomp(see-4, Pagliacci-6)
+case(performance-10, at-7)
+det(performance-10, a-8)
+amod(performance-10, later-9)
+nmod:at(Pagliacci-6, performance-10)
+punct(got-2, ,-11)
+case(Caruso-13, with-12)
+nmod:with(got-2, Caruso-13)
+punct(got-2, .-14)
+
+Sentence #8 (11 tokens):
+He was short, fat, and sang deafeningly loudly.
+[Text=He CharacterOffsetBegin=565 CharacterOffsetEnd=567 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=568 CharacterOffsetEnd=571 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=short CharacterOffsetBegin=572 CharacterOffsetEnd=577 PartOfSpeech=JJ Lemma=short NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=577 CharacterOffsetEnd=578 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=fat CharacterOffsetBegin=579 CharacterOffsetEnd=582 PartOfSpeech=JJ Lemma=fat NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=582 CharacterOffsetEnd=583 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=584 CharacterOffsetEnd=587 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sang CharacterOffsetBegin=588 CharacterOffsetEnd=592 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=deafeningly CharacterOffsetBegin=593 CharacterOffsetEnd=604 PartOfSpeech=RB Lemma=deafeningly NamedEntityTag=O]
+[Text=loudly CharacterOffsetBegin=605 CharacterOffsetEnd=611 PartOfSpeech=RB Lemma=loudly NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=611 CharacterOffsetEnd=612 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (UCP
+        (ADJP (JJ short) (, ,) (JJ fat))
+        (, ,)
+        (CC and)
+        (VP (VBD sang)
+          (ADVP
+            (ADVP (RB deafeningly))
+            (RB loudly)))))
+    (. .)))
+
+root(ROOT-0, fat-5)
+nsubjpass(fat-5, He-1)
+nsubjpass(sang-8, He-1)
+auxpass(fat-5, was-2)
+amod(fat-5, short-3)
+punct(fat-5, ,-4)
+punct(fat-5, ,-6)
+cc(fat-5, and-7)
+conj:and(fat-5, sang-8)
+advmod(loudly-10, deafeningly-9)
+advmod(sang-8, loudly-10)
+punct(fat-5, .-11)
+
+Coreference set:
+	(3,1,[1,2]) -> (1,1,[1,2]), that is: "Stolyarsky" -> "Stolyarsky"
+	(3,28,[28,29]) -> (1,1,[1,2]), that is: "he" -> "Stolyarsky"
+Coreference set:
+	(3,12,[12,13]) -> (2,3,[3,4]), that is: "I" -> "I"
+	(3,37,[37,38]) -> (2,3,[3,4]), that is: "my" -> "I"
+	(4,1,[1,2]) -> (2,3,[3,4]), that is: "I" -> "I"
+	(4,8,[8,9]) -> (2,3,[3,4]), that is: "my" -> "I"
+	(5,5,[5,6]) -> (2,3,[3,4]), that is: "my" -> "I"
+	(5,9,[9,10]) -> (2,3,[3,4]), that is: "I" -> "I"
+	(7,1,[1,2]) -> (2,3,[3,4]), that is: "I" -> "I"
+	(7,5,[5,6]) -> (2,3,[3,4]), that is: "I" -> "I"
+Coreference set:
+	(2,8,[7,9]) -> (2,11,[10,12]), that is: "a classmate" -> "Edgar Ortenberg"
+	(3,20,[20,21]) -> (2,11,[10,12]), that is: "Ortenberg" -> "Edgar Ortenberg"
+Coreference set:
+	(4,5,[4,6]) -> (3,33,[32,34]), that is: "the stairs" -> "the stairs"
+Coreference set:
+	(8,1,[1,2]) -> (7,6,[6,11]), that is: "He" -> "Pagliacci at a later performance"

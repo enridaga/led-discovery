@@ -1,0 +1,112 @@
+Sentence #1 (21 tokens):
+Pop takes Mum, Beth & me to Sparrow's nest to see "Mr. Cinders" - musical comedy.
+[Text=Pop CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=NN Lemma=pop NamedEntityTag=O]
+[Text=takes CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=take NamedEntityTag=O]
+[Text=Mum CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Mum NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Beth CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Beth NamedEntityTag=PERSON]
+[Text=& CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Sparrow CharacterOffsetBegin=28 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Sparrow NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=nest CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=nest NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Cinders CharacterOffsetBegin=55 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Cinders NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=musical CharacterOffsetBegin=66 CharacterOffsetEnd=73 PartOfSpeech=JJ Lemma=musical NamedEntityTag=O]
+[Text=comedy CharacterOffsetBegin=74 CharacterOffsetEnd=80 PartOfSpeech=NN Lemma=comedy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NN Pop))
+    (VP (VBZ takes)
+      (NP
+        (NP (NNP Mum) (, ,) (NNP Beth))
+        (CC &)
+        (NP
+          (NP (PRP me))
+          (PP (TO to)
+            (NP
+              (NP
+                (NP (NNP Sparrow) (POS 's))
+                (NN nest)
+                (S
+                  (VP (TO to)
+                    (VP (VB see)
+                      (S (`` ``)
+                        (NP (NNP Mr.) (NNP Cinders))
+                        ('' ''))))))
+              (: -)
+              (NP (JJ musical) (NN comedy)))))))
+    (. .)))
+
+root(ROOT-0, takes-2)
+nsubj(takes-2, Pop-1)
+compound(Beth-5, Mum-3)
+punct(Beth-5, ,-4)
+dobj(takes-2, Beth-5)
+cc(Beth-5, &-6)
+dobj(takes-2, me-7)
+conj:&(Beth-5, me-7)
+case(nest-11, to-8)
+nmod:poss(nest-11, Sparrow-9)
+case(Sparrow-9, 's-10)
+nmod:to(me-7, nest-11)
+mark(see-13, to-12)
+acl:to(nest-11, see-13)
+punct(Cinders-16, ``-14)
+compound(Cinders-16, Mr.-15)
+xcomp(see-13, Cinders-16)
+punct(Cinders-16, ''-17)
+punct(nest-11, --18)
+amod(comedy-20, musical-19)
+dep(nest-11, comedy-20)
+punct(takes-2, .-21)
+
+Sentence #2 (10 tokens):
+* Very amusing & principal parts, very good.
+[Text=* CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=Very CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=amusing CharacterOffsetBegin=88 CharacterOffsetEnd=95 PartOfSpeech=JJ Lemma=amusing NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=principal CharacterOffsetBegin=98 CharacterOffsetEnd=107 PartOfSpeech=JJ Lemma=principal NamedEntityTag=O]
+[Text=parts CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=NNS Lemma=part NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=115 CharacterOffsetEnd=119 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=120 CharacterOffsetEnd=124 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (X
+    (X (SYM *))
+    (NP
+      (NP (RB Very))
+      (NP
+        (NP (JJ amusing))
+        (CC &)
+        (NP
+          (NP (JJ principal))
+          (NP
+            (NP (NNS parts))
+            (, ,) (RB very)
+            (NP (JJ good))
+            (. .)))))))
+
+root(ROOT-0, Very-2)
+dep(Very-2, *-1)
+dep(Very-2, amusing-3)
+cc(amusing-3, &-4)
+dep(Very-2, principal-5)
+conj:&(amusing-3, principal-5)
+dep(principal-5, parts-6)
+punct(parts-6, ,-7)
+advmod(parts-6, very-8)
+dep(parts-6, good-9)
+punct(parts-6, .-10)
+
+Coreference set:
+	(1,7,[7,21]) -> (1,5,[5,6]), that is: "me to Sparrow 's nest to see `` Mr. Cinders '' - musical comedy" -> "Beth"

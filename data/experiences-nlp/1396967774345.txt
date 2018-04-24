@@ -1,0 +1,345 @@
+Sentence #1 (16 tokens):
+Continue with my choral movement a good deal in morning, after lunch & tea.
+[Text=Continue CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VB Lemma=continue NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=choral CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=choral NamedEntityTag=O]
+[Text=movement CharacterOffsetBegin=24 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=movement NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=deal CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=deal NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=morning CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=TMO Timex=<TIMEX3 tid="t1" type="TIME" value="TMO">morning</TIMEX3>]
+[Text=, CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=57 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=lunch CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=lunch NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=tea CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=tea NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Continue)
+      (PP (IN with)
+        (NP
+          (NP (PRP$ my) (JJ choral) (NN movement))
+          (NP
+            (NP (DT a) (JJ good) (NN deal))
+            (PP (IN in)
+              (NP (NN morning))))))
+      (, ,)
+      (PP (IN after)
+        (NP
+          (NP (NN lunch))
+          (CC &)
+          (NP (NN tea)))))
+    (. .)))
+
+root(ROOT-0, Continue-1)
+case(movement-5, with-2)
+nmod:poss(movement-5, my-3)
+amod(movement-5, choral-4)
+nmod:with(Continue-1, movement-5)
+det(deal-8, a-6)
+amod(deal-8, good-7)
+dep(movement-5, deal-8)
+case(morning-10, in-9)
+nmod:in(deal-8, morning-10)
+punct(Continue-1, ,-11)
+case(lunch-13, after-12)
+nmod:after(Continue-1, lunch-13)
+cc(lunch-13, &-14)
+nmod:after(Continue-1, tea-15)
+conj:&(lunch-13, tea-15)
+punct(Continue-1, .-16)
+
+Sentence #2 (13 tokens):
+Practise with the Italian boy in afternoon - he's jolly good.
+[Text=Practise CharacterOffsetBegin=76 CharacterOffsetEnd=84 PartOfSpeech=VB Lemma=practise NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Italian CharacterOffsetBegin=94 CharacterOffsetEnd=101 PartOfSpeech=JJ Lemma=italian NamedEntityTag=MISC]
+[Text=boy CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=boy NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=afternoon CharacterOffsetBegin=109 CharacterOffsetEnd=118 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 tid="t2" type="TIME" value="TAF">afternoon</TIMEX3>]
+[Text=- CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=jolly CharacterOffsetBegin=126 CharacterOffsetEnd=131 PartOfSpeech=RB Lemma=jolly NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (VP (VB Practise)
+        (PP (IN with)
+          (NP
+            (NP (DT the) (JJ Italian) (NN boy))
+            (PP (IN in)
+              (NP (NN afternoon)))))))
+    (: -)
+    (S
+      (NP (PRP he))
+      (VP (VBZ 's)
+        (ADJP (RB jolly) (JJ good))))
+    (. .)))
+
+root(ROOT-0, Practise-1)
+case(boy-5, with-2)
+det(boy-5, the-3)
+amod(boy-5, Italian-4)
+nmod:with(Practise-1, boy-5)
+case(afternoon-7, in-6)
+nmod:in(boy-5, afternoon-7)
+punct(Practise-1, --8)
+nsubj(good-12, he-9)
+cop(good-12, 's-10)
+advmod(good-12, jolly-11)
+parataxis(Practise-1, good-12)
+punct(Practise-1, .-13)
+
+Sentence #3 (17 tokens):
+Go to Wigmore Hall in evening with Barbara (see yesterday) to hear Pirani Trio.
+[Text=Go CharacterOffsetBegin=138 CharacterOffsetEnd=140 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Wigmore CharacterOffsetBegin=144 CharacterOffsetEnd=151 PartOfSpeech=NNP Lemma=Wigmore NamedEntityTag=LOCATION]
+[Text=Hall CharacterOffsetBegin=152 CharacterOffsetEnd=156 PartOfSpeech=NNP Lemma=Hall NamedEntityTag=LOCATION]
+[Text=in CharacterOffsetBegin=157 CharacterOffsetEnd=159 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=160 CharacterOffsetEnd=167 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t3" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=with CharacterOffsetBegin=168 CharacterOffsetEnd=172 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Barbara CharacterOffsetBegin=173 CharacterOffsetEnd=180 PartOfSpeech=NNP Lemma=Barbara NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=182 CharacterOffsetEnd=185 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=yesterday CharacterOffsetBegin=186 CharacterOffsetEnd=195 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1D Timex=<TIMEX3 alt_value="OFFSET P-1D" anchorTimeID="t0" temporalFunction="true" tid="t4" type="DATE" valueFromFunction="tf0">yesterday</TIMEX3>]
+[Text=-RRB- CharacterOffsetBegin=195 CharacterOffsetEnd=196 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=197 CharacterOffsetEnd=199 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=200 CharacterOffsetEnd=204 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=Pirani CharacterOffsetBegin=205 CharacterOffsetEnd=211 PartOfSpeech=NNP Lemma=Pirani NamedEntityTag=PERSON]
+[Text=Trio CharacterOffsetBegin=212 CharacterOffsetEnd=216 PartOfSpeech=NNP Lemma=Trio NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PP (TO to)
+        (NP
+          (NP (NNP Wigmore) (NNP Hall))
+          (PP (IN in)
+            (NP
+              (NP (NN evening))
+              (PP (IN with)
+                (NP (NNP Barbara)))
+              (PRN (-LRB- -LRB-)
+                (S
+                  (VP (VB see)
+                    (NP-TMP (NN yesterday))))
+                (-RRB- -RRB-))))
+          (S
+            (VP (TO to)
+              (VP (VB hear)
+                (NP (NNP Pirani) (NNP Trio))))))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+case(Hall-4, to-2)
+compound(Hall-4, Wigmore-3)
+nmod:to(Go-1, Hall-4)
+case(evening-6, in-5)
+nmod:in(Hall-4, evening-6)
+case(Barbara-8, with-7)
+nmod:with(evening-6, Barbara-8)
+punct(see-10, -LRB--9)
+dep(evening-6, see-10)
+nmod:tmod(see-10, yesterday-11)
+punct(see-10, -RRB--12)
+mark(hear-14, to-13)
+acl:to(Hall-4, hear-14)
+compound(Trio-16, Pirani-15)
+dobj(hear-14, Trio-16)
+punct(Go-1, .-17)
+
+Sentence #4 (5 tokens):
+A very good concert.
+[Text=A CharacterOffsetBegin=218 CharacterOffsetEnd=219 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=220 CharacterOffsetEnd=224 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=225 CharacterOffsetEnd=229 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=230 CharacterOffsetEnd=237 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=237 CharacterOffsetEnd=238 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (DT A)
+      (ADJP (RB very) (JJ good))
+      (NN concert))
+    (. .)))
+
+root(ROOT-0, concert-4)
+det(concert-4, A-1)
+advmod(good-3, very-2)
+amod(concert-4, good-3)
+punct(concert-4, .-5)
+
+Sentence #5 (10 tokens):
+Beethoven Bb Trio - marvellous work, beautifully played.
+[Text=Beethoven CharacterOffsetBegin=239 CharacterOffsetEnd=248 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=PERSON]
+[Text=Bb CharacterOffsetBegin=249 CharacterOffsetEnd=251 PartOfSpeech=NNP Lemma=Bb NamedEntityTag=O]
+[Text=Trio CharacterOffsetBegin=252 CharacterOffsetEnd=256 PartOfSpeech=NNP Lemma=Trio NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=257 CharacterOffsetEnd=258 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=marvellous CharacterOffsetBegin=259 CharacterOffsetEnd=269 PartOfSpeech=JJ Lemma=marvellous NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=270 CharacterOffsetEnd=274 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=274 CharacterOffsetEnd=275 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=beautifully CharacterOffsetBegin=276 CharacterOffsetEnd=287 PartOfSpeech=RB Lemma=beautifully NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=288 CharacterOffsetEnd=294 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=294 CharacterOffsetEnd=295 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Beethoven) (NNP Bb) (NNP Trio))
+    (: -)
+    (NP
+      (NP (JJ marvellous) (NN work))
+      (, ,)
+      (VP
+        (ADVP (RB beautifully))
+        (VBN played)))
+    (. .)))
+
+root(ROOT-0, Trio-3)
+compound(Trio-3, Beethoven-1)
+compound(Trio-3, Bb-2)
+punct(Trio-3, --4)
+amod(work-6, marvellous-5)
+dep(Trio-3, work-6)
+punct(work-6, ,-7)
+advmod(played-9, beautifully-8)
+acl(work-6, played-9)
+punct(Trio-3, .-10)
+
+Sentence #6 (11 tokens):
+Casella - Siciliana & Burlesca - very beautiful & amusing.
+[Text=Casella CharacterOffsetBegin=296 CharacterOffsetEnd=303 PartOfSpeech=NNP Lemma=Casella NamedEntityTag=ORGANIZATION]
+[Text=- CharacterOffsetBegin=304 CharacterOffsetEnd=305 PartOfSpeech=: Lemma=- NamedEntityTag=ORGANIZATION]
+[Text=Siciliana CharacterOffsetBegin=306 CharacterOffsetEnd=315 PartOfSpeech=NNP Lemma=Siciliana NamedEntityTag=ORGANIZATION]
+[Text=& CharacterOffsetBegin=316 CharacterOffsetEnd=317 PartOfSpeech=CC Lemma=& NamedEntityTag=ORGANIZATION]
+[Text=Burlesca CharacterOffsetBegin=318 CharacterOffsetEnd=326 PartOfSpeech=NNP Lemma=Burlesca NamedEntityTag=ORGANIZATION]
+[Text=- CharacterOffsetBegin=327 CharacterOffsetEnd=328 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=329 CharacterOffsetEnd=333 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=beautiful CharacterOffsetBegin=334 CharacterOffsetEnd=343 PartOfSpeech=JJ Lemma=beautiful NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=344 CharacterOffsetEnd=345 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=amusing CharacterOffsetBegin=346 CharacterOffsetEnd=353 PartOfSpeech=JJ Lemma=amusing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=353 CharacterOffsetEnd=354 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Casella))
+    (: -)
+    (NP
+      (NP
+        (NP (NNP Siciliana)
+          (CC &)
+          (NNP Burlesca))
+        (: -)
+        (ADJP (RB very) (JJ beautiful)))
+      (CC &)
+      (NP (JJ amusing)))
+    (. .)))
+
+root(ROOT-0, Casella-1)
+punct(Casella-1, --2)
+dep(Casella-1, Siciliana-3)
+cc(Siciliana-3, &-4)
+dep(Casella-1, Burlesca-5)
+conj:&(Siciliana-3, Burlesca-5)
+punct(Siciliana-3, --6)
+advmod(beautiful-8, very-7)
+amod(Siciliana-3, beautiful-8)
+cc(Siciliana-3, &-9)
+dep(Casella-1, amusing-10)
+conj:&(Siciliana-3, amusing-10)
+punct(Casella-1, .-11)
+
+Sentence #7 (18 tokens):
+Tchaikovsky A minor Too long, & much too orchestral although beautiful in it's sentimental way.
+[Text=Tchaikovsky CharacterOffsetBegin=355 CharacterOffsetEnd=366 PartOfSpeech=NNP Lemma=Tchaikovsky NamedEntityTag=PERSON]
+[Text=A CharacterOffsetBegin=367 CharacterOffsetEnd=368 PartOfSpeech=NNP Lemma=A NamedEntityTag=O]
+[Text=minor CharacterOffsetBegin=369 CharacterOffsetEnd=374 PartOfSpeech=JJ Lemma=minor NamedEntityTag=O]
+[Text=Too CharacterOffsetBegin=375 CharacterOffsetEnd=378 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=379 CharacterOffsetEnd=383 PartOfSpeech=RB Lemma=long NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=383 CharacterOffsetEnd=384 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=385 CharacterOffsetEnd=386 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=387 CharacterOffsetEnd=391 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=392 CharacterOffsetEnd=395 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=orchestral CharacterOffsetBegin=396 CharacterOffsetEnd=406 PartOfSpeech=JJ Lemma=orchestral NamedEntityTag=O]
+[Text=although CharacterOffsetBegin=407 CharacterOffsetEnd=415 PartOfSpeech=IN Lemma=although NamedEntityTag=O]
+[Text=beautiful CharacterOffsetBegin=416 CharacterOffsetEnd=425 PartOfSpeech=JJ Lemma=beautiful NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=426 CharacterOffsetEnd=428 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=429 CharacterOffsetEnd=431 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=431 CharacterOffsetEnd=433 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=sentimental CharacterOffsetBegin=434 CharacterOffsetEnd=445 PartOfSpeech=JJ Lemma=sentimental NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=446 CharacterOffsetEnd=449 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=449 CharacterOffsetEnd=450 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Tchaikovsky) (NNP A))
+      (ADJP (JJ minor)))
+    (NP
+      (NP (RB Too) (RB long))
+      (, ,)
+      (CC &)
+      (RB much)
+      (NP
+        (ADJP
+          (ADJP (RB too) (JJ orchestral))
+          (SBAR (IN although)
+            (S
+              (NP
+                (NP (JJ beautiful))
+                (PP (IN in)
+                  (NP (PRP it))))
+              (VP (VBZ 's)
+                (ADJP (JJ sentimental))))))
+        (NN way)))
+    (. .)))
+
+root(ROOT-0, A-2)
+compound(A-2, Tchaikovsky-1)
+amod(A-2, minor-3)
+advmod(long-5, Too-4)
+dep(A-2, long-5)
+punct(long-5, ,-6)
+cc(long-5, &-7)
+advmod(long-5, much-8)
+advmod(orchestral-10, too-9)
+amod(way-17, orchestral-10)
+mark(sentimental-16, although-11)
+nsubj(sentimental-16, beautiful-12)
+case(it-14, in-13)
+nmod:in(beautiful-12, it-14)
+cop(sentimental-16, 's-15)
+ccomp(orchestral-10, sentimental-16)
+dep(long-5, way-17)
+punct(A-2, .-18)
+
+Sentence #8 (5 tokens):
+All v. excellently played.
+[Text=All CharacterOffsetBegin=451 CharacterOffsetEnd=454 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=v. CharacterOffsetBegin=455 CharacterOffsetEnd=457 PartOfSpeech=CC Lemma=v. NamedEntityTag=O]
+[Text=excellently CharacterOffsetBegin=458 CharacterOffsetEnd=469 PartOfSpeech=RB Lemma=excellently NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=470 CharacterOffsetEnd=476 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=476 CharacterOffsetEnd=477 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (DT All))
+    (PP (CC v.)
+      (S
+        (VP
+          (ADVP (RB excellently))
+          (VBN played))))
+    (. .)))
+
+root(ROOT-0, All-1)
+cc(played-4, v.-2)
+advmod(played-4, excellently-3)
+acl(All-1, played-4)
+punct(All-1, .-5)
+
+Coreference set:
+	(2,9,[9,10]) -> (2,5,[3,8]), that is: "he" -> "the Italian boy in afternoon"
+Coreference set:
+	(7,14,[14,15]) -> (6,3,[1,6]), that is: "it" -> "Casella - Siciliana & Burlesca"

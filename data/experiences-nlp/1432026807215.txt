@@ -1,0 +1,81 @@
+Sentence #1 (24 tokens):
+Lortzing's opera 'Roland's Knappen,' reminds me of the busy bee which sucks its honey out of many flowers.
+[Text=Lortzing CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=VBG Lemma=lortz NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=opera CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=opera NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Roland CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Roland NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Knappen CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Knappen NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=reminds CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=VBZ Lemma=remind NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=busy CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=JJ Lemma=busy NamedEntityTag=O]
+[Text=bee CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=bee NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=64 CharacterOffsetEnd=69 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=sucks CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=VBZ Lemma=suck NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=honey CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=honey NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=flowers CharacterOffsetBegin=98 CharacterOffsetEnd=105 PartOfSpeech=NNS Lemma=flower NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (VP (VBG Lortzing)
+        (S
+          (NP (POS 's))
+          (VP (NN opera)))))
+    (NP (`` `)
+      (NP
+        (NP (NNP Roland) (POS 's))
+        (NP (NNP Knappen)))
+      (, ,) ('' '))
+    (VP (VBZ reminds)
+      (NP (PRP me))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (JJ busy) (NN bee))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBZ sucks)
+                (NP (PRP$ its) (NN honey))
+                (ADVP (IN out)
+                  (PP (IN of)
+                    (NP (JJ many) (NNS flowers))))))))))
+    (. .)))
+
+root(ROOT-0, reminds-10)
+dep(reminds-10, Lortzing-1)
+nsubj(opera-3, 's-2)
+ccomp(Lortzing-1, opera-3)
+punct(Roland-5, `-4)
+nsubj(reminds-10, Roland-5)
+case(Roland-5, 's-6)
+dep(Roland-5, Knappen-7)
+punct(Roland-5, ,-8)
+punct(Roland-5, '-9)
+dobj(reminds-10, me-11)
+case(bee-15, of-12)
+det(bee-15, the-13)
+amod(bee-15, busy-14)
+nmod:of(reminds-10, bee-15)
+nsubj(sucks-17, bee-15)
+ref(bee-15, which-16)
+acl:relcl(bee-15, sucks-17)
+nmod:poss(honey-19, its-18)
+dobj(sucks-17, honey-19)
+case(flowers-23, out-20)
+mwe(out-20, of-21)
+amod(flowers-23, many-22)
+nmod:out_of(sucks-17, flowers-23)
+punct(reminds-10, .-24)
+
+Coreference set:
+	(1,18,[18,19]) -> (1,7,[4,10]), that is: "its" -> "` Roland 's Knappen , '"

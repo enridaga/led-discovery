@@ -1,0 +1,226 @@
+Sentence #1 (12 tokens):
+For several days I was employed in the officers’ mess.
+[Text=For CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=several CharacterOffsetBegin=4 CharacterOffsetEnd=11 PartOfSpeech=JJ Lemma=several NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t1" type="DURATION" value="PXD">several days</TIMEX3>]
+[Text=days CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t1" type="DURATION" value="PXD">several days</TIMEX3>]
+[Text=I CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=employed CharacterOffsetBegin=23 CharacterOffsetEnd=31 PartOfSpeech=VBN Lemma=employ NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=officers CharacterOffsetBegin=39 CharacterOffsetEnd=47 PartOfSpeech=NNS Lemma=officer NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=mess CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=mess NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (JJ several) (NNS days)))
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBN employed)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNS officers) (POS '))
+            (NN mess)))))
+    (. .)))
+
+root(ROOT-0, employed-6)
+case(days-3, For-1)
+amod(days-3, several-2)
+nmod:for(employed-6, days-3)
+nsubjpass(employed-6, I-4)
+auxpass(employed-6, was-5)
+case(mess-11, in-7)
+det(officers-9, the-8)
+nmod:poss(mess-11, officers-9)
+case(officers-9, '-10)
+nmod:in(employed-6, mess-11)
+punct(employed-6, .-12)
+
+Sentence #2 (14 tokens):
+When the officers were out I improved my musical education on their gramophone.
+[Text=When CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=officers CharacterOffsetBegin=64 CharacterOffsetEnd=72 PartOfSpeech=NNS Lemma=officer NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=improved CharacterOffsetBegin=84 CharacterOffsetEnd=92 PartOfSpeech=VBD Lemma=improve NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=musical CharacterOffsetBegin=96 CharacterOffsetEnd=103 PartOfSpeech=JJ Lemma=musical NamedEntityTag=O]
+[Text=education CharacterOffsetBegin=104 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=education NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=117 CharacterOffsetEnd=122 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=gramophone CharacterOffsetBegin=123 CharacterOffsetEnd=133 PartOfSpeech=NN Lemma=gramophone NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=133 CharacterOffsetEnd=134 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (DT the) (NNS officers))
+        (VP (VBD were)
+          (ADVP (IN out)))))
+    (NP (PRP I))
+    (VP (VBD improved)
+      (NP (PRP$ my) (JJ musical) (NN education))
+      (PP (IN on)
+        (NP (PRP$ their) (NN gramophone))))
+    (. .)))
+
+root(ROOT-0, improved-7)
+advmod(were-4, When-1)
+det(officers-3, the-2)
+nsubj(were-4, officers-3)
+advcl(improved-7, were-4)
+advmod(were-4, out-5)
+nsubj(improved-7, I-6)
+nmod:poss(education-10, my-8)
+amod(education-10, musical-9)
+dobj(improved-7, education-10)
+case(gramophone-13, on-11)
+nmod:poss(gramophone-13, their-12)
+nmod:on(improved-7, gramophone-13)
+punct(improved-7, .-14)
+
+Sentence #3 (22 tokens):
+Mendelssohn’s Midsummer Night’s Dream was my favourite, and his Spring Song and Wedding March tied for second place.
+[Text=Mendelssohn CharacterOffsetBegin=135 CharacterOffsetEnd=146 PartOfSpeech=NNP Lemma=Mendelssohn NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=146 CharacterOffsetEnd=148 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Midsummer CharacterOffsetBegin=149 CharacterOffsetEnd=158 PartOfSpeech=JJ Lemma=midsummer NamedEntityTag=O]
+[Text=Night CharacterOffsetBegin=159 CharacterOffsetEnd=164 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t2" type="TIME" value="TNI">Night</TIMEX3>]
+[Text='s CharacterOffsetBegin=164 CharacterOffsetEnd=166 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Dream CharacterOffsetBegin=167 CharacterOffsetEnd=172 PartOfSpeech=NN Lemma=dream NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=173 CharacterOffsetEnd=176 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=177 CharacterOffsetEnd=179 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=favourite CharacterOffsetBegin=180 CharacterOffsetEnd=189 PartOfSpeech=JJ Lemma=favourite NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=189 CharacterOffsetEnd=190 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=191 CharacterOffsetEnd=194 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=Spring CharacterOffsetBegin=199 CharacterOffsetEnd=205 PartOfSpeech=NN Lemma=spring NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-SP Timex=<TIMEX3 tid="t3" type="DATE" value="XXXX-SP">Spring</TIMEX3>]
+[Text=Song CharacterOffsetBegin=206 CharacterOffsetEnd=210 PartOfSpeech=NN Lemma=song NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=211 CharacterOffsetEnd=214 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Wedding CharacterOffsetBegin=215 CharacterOffsetEnd=222 PartOfSpeech=NN Lemma=wedding NamedEntityTag=O]
+[Text=March CharacterOffsetBegin=223 CharacterOffsetEnd=228 PartOfSpeech=NNP Lemma=March NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-03 Timex=<TIMEX3 tid="t4" type="DATE" value="XXXX-03">March</TIMEX3>]
+[Text=tied CharacterOffsetBegin=229 CharacterOffsetEnd=233 PartOfSpeech=VBD Lemma=tie NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=234 CharacterOffsetEnd=237 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=second CharacterOffsetBegin=238 CharacterOffsetEnd=244 PartOfSpeech=JJ Lemma=second NamedEntityTag=ORDINAL NormalizedNamedEntityTag=2.0]
+[Text=place CharacterOffsetBegin=245 CharacterOffsetEnd=250 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=250 CharacterOffsetEnd=251 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP
+          (NP (NNP Mendelssohn) (POS 's))
+          (JJ Midsummer) (NN Night) (POS 's))
+        (NN Dream))
+      (VP (VBD was)
+        (NP (PRP$ my) (JJ favourite))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP$ his) (NN Spring) (NN Song)
+        (CC and)
+        (NN Wedding))
+      (NP-TMP (NNP March))
+      (VP (VBD tied)
+        (PP (IN for)
+          (NP (JJ second) (NN place)))))
+    (. .)))
+
+root(ROOT-0, favourite-9)
+nmod:poss(Night-4, Mendelssohn-1)
+case(Mendelssohn-1, 's-2)
+amod(Night-4, Midsummer-3)
+nmod:poss(Dream-6, Night-4)
+case(Night-4, 's-5)
+nsubj(favourite-9, Dream-6)
+cop(favourite-9, was-7)
+nmod:poss(favourite-9, my-8)
+punct(favourite-9, ,-10)
+cc(favourite-9, and-11)
+nmod:poss(Song-14, his-12)
+compound(Song-14, Spring-13)
+nsubj(tied-18, Song-14)
+cc(Song-14, and-15)
+conj:and(Song-14, Wedding-16)
+nsubj(tied-18, Wedding-16)
+nmod:tmod(tied-18, March-17)
+conj:and(favourite-9, tied-18)
+case(place-21, for-19)
+amod(place-21, second-20)
+nmod:for(tied-18, place-21)
+punct(favourite-9, .-22)
+
+Sentence #4 (11 tokens):
+A very good third was Melody in F by Rubinstein.
+[Text=A CharacterOffsetBegin=252 CharacterOffsetEnd=253 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=254 CharacterOffsetEnd=258 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=259 CharacterOffsetEnd=263 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=third CharacterOffsetBegin=264 CharacterOffsetEnd=269 PartOfSpeech=NN Lemma=third NamedEntityTag=ORDINAL NormalizedNamedEntityTag=3.0]
+[Text=was CharacterOffsetBegin=270 CharacterOffsetEnd=273 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=Melody CharacterOffsetBegin=274 CharacterOffsetEnd=280 PartOfSpeech=NNP Lemma=Melody NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=281 CharacterOffsetEnd=283 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=F CharacterOffsetBegin=284 CharacterOffsetEnd=285 PartOfSpeech=NN Lemma=f NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=286 CharacterOffsetEnd=288 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Rubinstein CharacterOffsetBegin=289 CharacterOffsetEnd=299 PartOfSpeech=NN Lemma=rubinstein NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=299 CharacterOffsetEnd=300 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT A)
+      (ADJP (RB very) (JJ good))
+      (NN third))
+    (VP (VBD was)
+      (NP
+        (NP (NNP Melody))
+        (PP (IN in)
+          (NP (NN F))))
+      (PP (IN by)
+        (NP (NN Rubinstein))))
+    (. .)))
+
+root(ROOT-0, Melody-6)
+det(third-4, A-1)
+advmod(good-3, very-2)
+amod(third-4, good-3)
+nsubj(Melody-6, third-4)
+cop(Melody-6, was-5)
+case(F-8, in-7)
+nmod:in(Melody-6, F-8)
+case(Rubinstein-10, by-9)
+nmod:by(Melody-6, Rubinstein-10)
+punct(Melody-6, .-11)
+
+Sentence #5 (5 tokens):
+I loved that gramophone.
+[Text=I CharacterOffsetBegin=301 CharacterOffsetEnd=302 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=loved CharacterOffsetBegin=303 CharacterOffsetEnd=308 PartOfSpeech=VBD Lemma=love NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=309 CharacterOffsetEnd=313 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=gramophone CharacterOffsetBegin=314 CharacterOffsetEnd=324 PartOfSpeech=NN Lemma=gramophone NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=324 CharacterOffsetEnd=325 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD loved)
+      (PP (IN that)
+        (NP (NN gramophone))))
+    (. .)))
+
+root(ROOT-0, loved-2)
+nsubj(loved-2, I-1)
+case(gramophone-4, that-3)
+nmod:that(loved-2, gramophone-4)
+punct(loved-2, .-5)
+
+Coreference set:
+	(2,6,[6,7]) -> (1,4,[4,5]), that is: "I" -> "I"
+	(2,8,[8,9]) -> (1,4,[4,5]), that is: "my" -> "I"
+	(3,8,[8,9]) -> (1,4,[4,5]), that is: "my" -> "I"
+	(5,1,[1,2]) -> (1,4,[4,5]), that is: "I" -> "I"
+Coreference set:
+	(2,3,[2,4]) -> (1,9,[8,11]), that is: "the officers" -> "the officers '"
+	(2,12,[12,13]) -> (1,9,[8,11]), that is: "their" -> "the officers '"
+Coreference set:
+	(4,6,[6,9]) -> (4,4,[1,5]), that is: "Melody in F" -> "A very good third"

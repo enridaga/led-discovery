@@ -1,0 +1,254 @@
+Sentence #1 (10 tokens):
+I went to the theatre to engage some vocalists.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=theatre CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=theatre NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=engage CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=VB Lemma=engage NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=vocalists CharacterOffsetBegin=37 CharacterOffsetEnd=46 PartOfSpeech=NNS Lemma=vocalist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD went)
+      (PP (TO to)
+        (NP (DT the) (NN theatre)))
+      (S
+        (VP (TO to)
+          (VP (VB engage)
+            (NP (DT some) (NNS vocalists))))))
+    (. .)))
+
+root(ROOT-0, went-2)
+nsubj(went-2, I-1)
+nsubj:xsubj(engage-7, I-1)
+case(theatre-5, to-3)
+det(theatre-5, the-4)
+nmod:to(went-2, theatre-5)
+mark(engage-7, to-6)
+xcomp(went-2, engage-7)
+det(vocalists-9, some-8)
+dobj(engage-7, vocalists-9)
+punct(went-2, .-10)
+
+Sentence #2 (24 tokens):
+They were just rehearsing 'La Clemenza di Tito;' to me too, the 'Tito' was 'clemente.'
+[Text=They CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=rehearsing CharacterOffsetBegin=63 CharacterOffsetEnd=73 PartOfSpeech=VBG Lemma=rehearse NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=La CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=NNP Lemma=La NamedEntityTag=PERSON]
+[Text=Clemenza CharacterOffsetBegin=78 CharacterOffsetEnd=86 PartOfSpeech=NNP Lemma=Clemenza NamedEntityTag=PERSON]
+[Text=di CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=di NamedEntityTag=PERSON]
+[Text=Tito CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=Tito NamedEntityTag=PERSON]
+[Text=; CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Tito CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=NNP Lemma=Tito NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=clemente CharacterOffsetBegin=124 CharacterOffsetEnd=132 PartOfSpeech=FW Lemma=clemente NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=133 CharacterOffsetEnd=134 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBD were)
+        (ADVP (RB just))
+        (VP (VBG rehearsing) (`` `)
+          (NP (NNP La) (NNP Clemenza) (NNP di) (NNP Tito)))))
+    (: ;) ('' ')
+    (S
+      (PP (TO to)
+        (NP (PRP me)))
+      (ADVP (RB too))
+      (, ,)
+      (NP (DT the) (`` `) (NNP Tito) ('' '))
+      (VP (VBD was) (`` `)
+        (NP (FW clemente))))
+    (. .) ('' ')))
+
+root(ROOT-0, rehearsing-4)
+nsubj(rehearsing-4, They-1)
+aux(rehearsing-4, were-2)
+advmod(rehearsing-4, just-3)
+punct(rehearsing-4, `-5)
+compound(Tito-9, La-6)
+compound(Tito-9, Clemenza-7)
+compound(Tito-9, di-8)
+dobj(rehearsing-4, Tito-9)
+punct(rehearsing-4, ;-10)
+punct(rehearsing-4, '-11)
+case(me-13, to-12)
+nmod:to(clemente-22, me-13)
+advmod(clemente-22, too-14)
+punct(clemente-22, ,-15)
+det(Tito-18, the-16)
+punct(Tito-18, `-17)
+nsubj(clemente-22, Tito-18)
+punct(Tito-18, '-19)
+cop(clemente-22, was-20)
+punct(clemente-22, `-21)
+dep(rehearsing-4, clemente-22)
+punct(rehearsing-4, .-23)
+punct(rehearsing-4, '-24)
+
+Sentence #3 (43 tokens):
+Vitellia smiled condescendingly, Sesto, in her costume (more becoming at a distance), claimed acquaintance as an old Viennese friend, while the chorus director embraced me, and Hummel's son offered me his services as accompanist.
+[Text=Vitellia CharacterOffsetBegin=135 CharacterOffsetEnd=143 PartOfSpeech=NNP Lemma=Vitellia NamedEntityTag=PERSON]
+[Text=smiled CharacterOffsetBegin=144 CharacterOffsetEnd=150 PartOfSpeech=VBD Lemma=smile NamedEntityTag=O]
+[Text=condescendingly CharacterOffsetBegin=151 CharacterOffsetEnd=166 PartOfSpeech=RB Lemma=condescendingly NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=166 CharacterOffsetEnd=167 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Sesto CharacterOffsetBegin=168 CharacterOffsetEnd=173 PartOfSpeech=NNP Lemma=Sesto NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=173 CharacterOffsetEnd=174 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=175 CharacterOffsetEnd=177 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=178 CharacterOffsetEnd=181 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=costume CharacterOffsetBegin=182 CharacterOffsetEnd=189 PartOfSpeech=NN Lemma=costume NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=190 CharacterOffsetEnd=191 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=191 CharacterOffsetEnd=195 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=becoming CharacterOffsetBegin=196 CharacterOffsetEnd=204 PartOfSpeech=VBG Lemma=become NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=205 CharacterOffsetEnd=207 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=208 CharacterOffsetEnd=209 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=distance CharacterOffsetBegin=210 CharacterOffsetEnd=218 PartOfSpeech=NN Lemma=distance NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=218 CharacterOffsetEnd=219 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=219 CharacterOffsetEnd=220 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=claimed CharacterOffsetBegin=221 CharacterOffsetEnd=228 PartOfSpeech=VBD Lemma=claim NamedEntityTag=O]
+[Text=acquaintance CharacterOffsetBegin=229 CharacterOffsetEnd=241 PartOfSpeech=NN Lemma=acquaintance NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=242 CharacterOffsetEnd=244 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=245 CharacterOffsetEnd=247 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=248 CharacterOffsetEnd=251 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=Viennese CharacterOffsetBegin=252 CharacterOffsetEnd=260 PartOfSpeech=JJ Lemma=viennese NamedEntityTag=MISC]
+[Text=friend CharacterOffsetBegin=261 CharacterOffsetEnd=267 PartOfSpeech=NN Lemma=friend NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=267 CharacterOffsetEnd=268 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=269 CharacterOffsetEnd=274 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=275 CharacterOffsetEnd=278 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=chorus CharacterOffsetBegin=279 CharacterOffsetEnd=285 PartOfSpeech=NN Lemma=chorus NamedEntityTag=O]
+[Text=director CharacterOffsetBegin=286 CharacterOffsetEnd=294 PartOfSpeech=NN Lemma=director NamedEntityTag=O]
+[Text=embraced CharacterOffsetBegin=295 CharacterOffsetEnd=303 PartOfSpeech=VBD Lemma=embrace NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=304 CharacterOffsetEnd=306 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=306 CharacterOffsetEnd=307 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=308 CharacterOffsetEnd=311 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Hummel CharacterOffsetBegin=312 CharacterOffsetEnd=318 PartOfSpeech=NNP Lemma=Hummel NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=318 CharacterOffsetEnd=320 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=son CharacterOffsetBegin=321 CharacterOffsetEnd=324 PartOfSpeech=NN Lemma=son NamedEntityTag=O]
+[Text=offered CharacterOffsetBegin=325 CharacterOffsetEnd=332 PartOfSpeech=VBD Lemma=offer NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=333 CharacterOffsetEnd=335 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=336 CharacterOffsetEnd=339 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=services CharacterOffsetBegin=340 CharacterOffsetEnd=348 PartOfSpeech=NNS Lemma=service NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=349 CharacterOffsetEnd=351 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=accompanist CharacterOffsetBegin=352 CharacterOffsetEnd=363 PartOfSpeech=NN Lemma=accompanist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=363 CharacterOffsetEnd=364 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Vitellia))
+      (VP (VBD smiled)
+        (ADVP (RB condescendingly))))
+    (, ,)
+    (S
+      (NP
+        (NP (NNP Sesto))
+        (, ,)
+        (PP (IN in)
+          (NP
+            (NP (PRP$ her) (NN costume))
+            (PRN (-LRB- -LRB-)
+              (VP
+                (ADVP (JJR more))
+                (VBG becoming)
+                (PP (IN at)
+                  (NP (DT a) (NN distance))))
+              (-RRB- -RRB-))))
+        (, ,))
+      (VP (VBD claimed)
+        (NP (NN acquaintance))
+        (PP (IN as)
+          (NP (DT an) (JJ old) (JJ Viennese) (NN friend)))
+        (, ,)
+        (SBAR (IN while)
+          (S
+            (NP (DT the) (NN chorus) (NN director))
+            (VP (VBD embraced)
+              (NP (PRP me)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (NNP Hummel) (POS 's))
+        (NN son))
+      (VP (VBD offered)
+        (NP (PRP me))
+        (NP
+          (NP (PRP$ his) (NNS services))
+          (PP (IN as)
+            (NP (NN accompanist))))))
+    (. .)))
+
+root(ROOT-0, smiled-2)
+nsubj(smiled-2, Vitellia-1)
+advmod(smiled-2, condescendingly-3)
+punct(smiled-2, ,-4)
+nsubj(claimed-18, Sesto-5)
+punct(Sesto-5, ,-6)
+case(costume-9, in-7)
+nmod:poss(costume-9, her-8)
+nmod:in(Sesto-5, costume-9)
+punct(becoming-12, -LRB--10)
+advmod(becoming-12, more-11)
+dep(costume-9, becoming-12)
+case(distance-15, at-13)
+det(distance-15, a-14)
+nmod:at(becoming-12, distance-15)
+punct(becoming-12, -RRB--16)
+punct(Sesto-5, ,-17)
+ccomp(smiled-2, claimed-18)
+dobj(claimed-18, acquaintance-19)
+case(friend-24, as-20)
+det(friend-24, an-21)
+amod(friend-24, old-22)
+amod(friend-24, Viennese-23)
+nmod:as(claimed-18, friend-24)
+punct(claimed-18, ,-25)
+mark(embraced-30, while-26)
+det(director-29, the-27)
+compound(director-29, chorus-28)
+nsubj(embraced-30, director-29)
+advcl:while(claimed-18, embraced-30)
+dobj(embraced-30, me-31)
+punct(smiled-2, ,-32)
+cc(smiled-2, and-33)
+nmod:poss(son-36, Hummel-34)
+case(Hummel-34, 's-35)
+nsubj(offered-37, son-36)
+conj:and(smiled-2, offered-37)
+iobj(offered-37, me-38)
+nmod:poss(services-40, his-39)
+dobj(offered-37, services-40)
+case(accompanist-42, as-41)
+nmod:as(services-40, accompanist-42)
+punct(smiled-2, .-43)
+
+Coreference set:
+	(2,13,[13,14]) -> (1,1,[1,2]), that is: "me" -> "I"
+	(3,31,[31,32]) -> (1,1,[1,2]), that is: "me" -> "I"
+	(3,38,[38,39]) -> (1,1,[1,2]), that is: "me" -> "I"
+Coreference set:
+	(2,1,[1,2]) -> (1,9,[8,10]), that is: "They" -> "some vocalists"
+Coreference set:
+	(2,18,[16,20]) -> (2,9,[6,10]), that is: "the ` Tito '" -> "La Clemenza di Tito"
+	(2,22,[22,23]) -> (2,9,[6,10]), that is: "clemente" -> "La Clemenza di Tito"
+Coreference set:
+	(3,8,[8,9]) -> (3,5,[5,6]), that is: "her" -> "Sesto"
+Coreference set:
+	(3,39,[39,40]) -> (3,36,[34,37]), that is: "his" -> "Hummel 's son"

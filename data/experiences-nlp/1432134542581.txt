@@ -1,0 +1,101 @@
+Sentence #1 (23 tokens):
+It is not right you should thank me – I thank you most sincerely for your exquisite performance of the Cello Concerto.
+[Text=It CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=thank CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=VB Lemma=thank NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=thank CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=VBP Lemma=thank NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=sincerely CharacterOffsetBegin=55 CharacterOffsetEnd=64 PartOfSpeech=RB Lemma=sincerely NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=exquisite CharacterOffsetBegin=74 CharacterOffsetEnd=83 PartOfSpeech=JJ Lemma=exquisite NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=84 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Cello CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=NNP Lemma=Cello NamedEntityTag=O]
+[Text=Concerto CharacterOffsetBegin=109 CharacterOffsetEnd=117 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ is) (RB not)
+        (ADJP (JJ right)
+          (SBAR
+            (S
+              (NP (PRP you))
+              (VP (MD should)
+                (VP (VB thank)
+                  (NP (PRP me)))))))))
+    (: --)
+    (S
+      (NP (PRP I))
+      (VP (VBP thank)
+        (S
+          (NP (PRP you))
+          (ADJP (RBS most) (RB sincerely)))
+        (PP (IN for)
+          (NP
+            (NP (PRP$ your) (JJ exquisite) (NN performance))
+            (PP (IN of)
+              (NP (DT the) (NNP Cello) (NNP Concerto)))))))
+    (. .)))
+
+root(ROOT-0, right-4)
+nsubj(right-4, It-1)
+cop(right-4, is-2)
+neg(right-4, not-3)
+nsubj(thank-7, you-5)
+aux(thank-7, should-6)
+ccomp(right-4, thank-7)
+dobj(thank-7, me-8)
+punct(right-4, ---9)
+nsubj(thank-11, I-10)
+parataxis(right-4, thank-11)
+nsubj(sincerely-14, you-12)
+advmod(sincerely-14, most-13)
+xcomp(thank-11, sincerely-14)
+case(performance-18, for-15)
+nmod:poss(performance-18, your-16)
+amod(performance-18, exquisite-17)
+nmod:for(thank-11, performance-18)
+case(Concerto-22, of-19)
+det(Concerto-22, the-20)
+compound(Concerto-22, Cello-21)
+nmod:of(performance-18, Concerto-22)
+punct(right-4, .-23)
+
+Sentence #2 (6 tokens):
+Everyone was more than delighted…
+[Text=Everyone CharacterOffsetBegin=119 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=delighted CharacterOffsetBegin=142 CharacterOffsetEnd=151 PartOfSpeech=JJ Lemma=delighted NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NN Everyone))
+    (VP (VBD was)
+      (ADJP
+        (ADVP (JJR more) (IN than))
+        (JJ delighted)))
+    (: ...)))
+
+root(ROOT-0, delighted-5)
+nsubj(delighted-5, Everyone-1)
+cop(delighted-5, was-2)
+advmod(delighted-5, more-3)
+case(more-3, than-4)
+punct(delighted-5, ...-6)
+
+Coreference set:
+	(1,10,[10,11]) -> (1,8,[8,9]), that is: "I" -> "me"

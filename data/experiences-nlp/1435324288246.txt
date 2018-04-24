@@ -1,0 +1,63 @@
+Sentence #1 (11 tokens):
+Go to R.C.M. at 11.0 for final rehearsal of Sinf.
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=R.C.M. CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=R.C.M. NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=11.0 CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=CD Lemma=11.0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=11.0]
+[Text=for CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=final CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=final NamedEntityTag=O]
+[Text=rehearsal CharacterOffsetBegin=31 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=rehearsal NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Sinf CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=sinf NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PP (TO to)
+        (NP (NNP R.C.M.)))
+      (PP (IN at)
+        (NP (CD 11.0)))
+      (PP (IN for)
+        (NP
+          (NP (JJ final) (NN rehearsal))
+          (PP (IN of)
+            (NP (NN Sinf))))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+case(R.C.M.-3, to-2)
+nmod:to(Go-1, R.C.M.-3)
+case(11.0-5, at-4)
+nmod:at(Go-1, 11.0-5)
+case(rehearsal-8, for-6)
+amod(rehearsal-8, final-7)
+nmod:for(Go-1, rehearsal-8)
+case(Sinf-10, of-9)
+nmod:of(rehearsal-8, Sinf-10)
+punct(Go-1, .-11)
+
+Sentence #2 (5 tokens):
+It goes v. well.
+[Text=It CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=goes CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=VBZ Lemma=go NamedEntityTag=O]
+[Text=v. CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=CC Lemma=v. NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ goes)
+      (S
+        (NP (CC v.))
+        (ADVP (RB well))))
+    (. .)))
+
+root(ROOT-0, goes-2)
+nsubj(goes-2, It-1)
+xcomp(goes-2, v.-3)
+advmod(v.-3, well-4)
+punct(goes-2, .-5)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,3,[3,4]), that is: "It" -> "R.C.M."

@@ -1,0 +1,667 @@
+Sentence #1 (12 tokens):
+" I asked him if I could write to his mother.
+[Text='' CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=2 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=write CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=VB Lemma=write NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=mother CharacterOffsetBegin=38 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=mother NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S ('' '')
+    (NP (PRP I))
+    (VP (VBD asked)
+      (NP (PRP him))
+      (SBAR (IN if)
+        (S
+          (NP (PRP I))
+          (VP (MD could)
+            (VP (VB write)
+              (PP (TO to)
+                (NP (PRP$ his) (NN mother))))))))
+    (. .)))
+
+root(ROOT-0, asked-3)
+punct(asked-3, ''-1)
+nsubj(asked-3, I-2)
+dobj(asked-3, him-4)
+mark(write-8, if-5)
+nsubj(write-8, I-6)
+aux(write-8, could-7)
+advcl:if(asked-3, write-8)
+case(mother-11, to-9)
+nmod:poss(mother-11, his-10)
+nmod:to(write-8, mother-11)
+punct(asked-3, .-12)
+
+Sentence #2 (23 tokens):
+No, he said ; the surgeon had promised to write ; but could I, would I, sing to him ?
+[Text=No CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=surgeon CharacterOffsetBegin=64 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=surgeon NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=promised CharacterOffsetBegin=76 CharacterOffsetEnd=84 PartOfSpeech=VBN Lemma=promise NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=write CharacterOffsetBegin=88 CharacterOffsetEnd=93 PartOfSpeech=VB Lemma=write NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=100 CharacterOffsetEnd=105 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=sing CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=VB Lemma=sing NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=130 CharacterOffsetEnd=131 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (SQ
+    (S
+      (NP
+        (NP (DT No))
+        (, ,)
+        (NP (PRP he)))
+      (VP (VBD said) (: ;)
+        (S
+          (NP
+            (NP (DT the) (NN surgeon))
+            (SBAR
+              (S
+                (VP
+                  (VP (VBD had)
+                    (VP (VBN promised)
+                      (S
+                        (VP (TO to)
+                          (VP (VB write))))))
+                  (: ;)
+                  (CC but)
+                  (VP (MD could))))))
+          (NP (PRP I)))))
+    (, ,)
+    (SQ (MD would)
+      (NP (PRP I))
+      (, ,)
+      (VP (VB sing)
+        (PP (TO to)
+          (NP (PRP him)))))
+    (. ?)))
+
+root(ROOT-0, sing-20)
+nsubj(said-4, No-1)
+punct(No-1, ,-2)
+appos(No-1, he-3)
+dep(sing-20, said-4)
+punct(said-4, ;-5)
+det(surgeon-7, the-6)
+nsubj(I-15, surgeon-7)
+aux(promised-9, had-8)
+acl:relcl(surgeon-7, promised-9)
+mark(write-11, to-10)
+xcomp(promised-9, write-11)
+punct(promised-9, ;-12)
+cc(promised-9, but-13)
+acl:relcl(surgeon-7, could-14)
+conj:but(promised-9, could-14)
+parataxis(said-4, I-15)
+punct(sing-20, ,-16)
+aux(sing-20, would-17)
+nsubj(sing-20, I-18)
+punct(sing-20, ,-19)
+case(him-22, to-21)
+nmod:to(sing-20, him-22)
+punct(sing-20, ?-23)
+
+Sentence #3 (9 tokens):
+I hesitated a moment, and looked around.
+[Text=I CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=hesitated CharacterOffsetBegin=134 CharacterOffsetEnd=143 PartOfSpeech=VBD Lemma=hesitate NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=moment CharacterOffsetBegin=146 CharacterOffsetEnd=152 PartOfSpeech=NN Lemma=moment NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=looked CharacterOffsetBegin=158 CharacterOffsetEnd=164 PartOfSpeech=VBD Lemma=look NamedEntityTag=O]
+[Text=around CharacterOffsetBegin=165 CharacterOffsetEnd=171 PartOfSpeech=RB Lemma=around NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=171 CharacterOffsetEnd=172 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBD hesitated)
+        (NP (DT a) (NN moment)))
+      (, ,)
+      (CC and)
+      (VP (VBD looked)
+        (ADVP (RB around))))
+    (. .)))
+
+root(ROOT-0, hesitated-2)
+nsubj(hesitated-2, I-1)
+nsubj(looked-7, I-1)
+det(moment-4, a-3)
+dobj(hesitated-2, moment-4)
+punct(hesitated-2, ,-5)
+cc(hesitated-2, and-6)
+conj:and(hesitated-2, looked-7)
+advmod(looked-7, around-8)
+punct(hesitated-2, .-9)
+
+Sentence #4 (36 tokens):
+The gleam on the yellow water of the Nile, as the western rays slanted down, caught my eye and suggested the river the streams of which shall make glad the city of God.
+[Text=The CharacterOffsetBegin=173 CharacterOffsetEnd=176 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gleam CharacterOffsetBegin=177 CharacterOffsetEnd=182 PartOfSpeech=NN Lemma=gleam NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=183 CharacterOffsetEnd=185 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=186 CharacterOffsetEnd=189 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=yellow CharacterOffsetBegin=190 CharacterOffsetEnd=196 PartOfSpeech=JJ Lemma=yellow NamedEntityTag=O]
+[Text=water CharacterOffsetBegin=197 CharacterOffsetEnd=202 PartOfSpeech=NN Lemma=water NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=203 CharacterOffsetEnd=205 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=206 CharacterOffsetEnd=209 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Nile CharacterOffsetBegin=210 CharacterOffsetEnd=214 PartOfSpeech=NNP Lemma=Nile NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=216 CharacterOffsetEnd=218 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=219 CharacterOffsetEnd=222 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=western CharacterOffsetBegin=223 CharacterOffsetEnd=230 PartOfSpeech=JJ Lemma=western NamedEntityTag=O]
+[Text=rays CharacterOffsetBegin=231 CharacterOffsetEnd=235 PartOfSpeech=NNS Lemma=ray NamedEntityTag=O]
+[Text=slanted CharacterOffsetBegin=236 CharacterOffsetEnd=243 PartOfSpeech=VBN Lemma=slant NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=244 CharacterOffsetEnd=248 PartOfSpeech=RB Lemma=down NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=248 CharacterOffsetEnd=249 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=caught CharacterOffsetBegin=250 CharacterOffsetEnd=256 PartOfSpeech=VBD Lemma=catch NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=257 CharacterOffsetEnd=259 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=eye CharacterOffsetBegin=260 CharacterOffsetEnd=263 PartOfSpeech=NN Lemma=eye NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=264 CharacterOffsetEnd=267 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=suggested CharacterOffsetBegin=268 CharacterOffsetEnd=277 PartOfSpeech=VBD Lemma=suggest NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=278 CharacterOffsetEnd=281 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=river CharacterOffsetBegin=282 CharacterOffsetEnd=287 PartOfSpeech=NN Lemma=river NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=288 CharacterOffsetEnd=291 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=streams CharacterOffsetBegin=292 CharacterOffsetEnd=299 PartOfSpeech=NNS Lemma=stream NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=300 CharacterOffsetEnd=302 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=303 CharacterOffsetEnd=308 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=shall CharacterOffsetBegin=309 CharacterOffsetEnd=314 PartOfSpeech=MD Lemma=shall NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=315 CharacterOffsetEnd=319 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=glad CharacterOffsetBegin=320 CharacterOffsetEnd=324 PartOfSpeech=JJ Lemma=glad NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=325 CharacterOffsetEnd=328 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=city CharacterOffsetBegin=329 CharacterOffsetEnd=333 PartOfSpeech=NN Lemma=city NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=334 CharacterOffsetEnd=336 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=God CharacterOffsetBegin=337 CharacterOffsetEnd=340 PartOfSpeech=NNP Lemma=God NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=340 CharacterOffsetEnd=341 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN gleam))
+      (PP (IN on)
+        (NP
+          (NP (DT the) (JJ yellow) (NN water))
+          (PP (IN of)
+            (NP (DT the) (NNP Nile)))))
+      (, ,)
+      (PP (IN as)
+        (NP
+          (NP (DT the) (JJ western) (NNS rays))
+          (VP (VBN slanted)
+            (ADVP (RB down)))))
+      (, ,))
+    (VP
+      (VP (VBD caught)
+        (NP (PRP$ my) (NN eye)))
+      (CC and)
+      (VP (VBD suggested)
+        (NP (DT the) (NN river)))
+      (NP
+        (NP (DT the) (NNS streams))
+        (PP (IN of)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (MD shall)
+                (VP (VB make)
+                  (S
+                    (ADJP (JJ glad))
+                    (NP
+                      (NP (DT the) (NN city))
+                      (PP (IN of)
+                        (NP (NNP God))))))))))))
+    (. .)))
+
+root(ROOT-0, caught-18)
+det(gleam-2, The-1)
+nsubj(caught-18, gleam-2)
+nsubj(suggested-22, gleam-2)
+case(water-6, on-3)
+det(water-6, the-4)
+amod(water-6, yellow-5)
+nmod:on(gleam-2, water-6)
+case(Nile-9, of-7)
+det(Nile-9, the-8)
+nmod:of(water-6, Nile-9)
+punct(gleam-2, ,-10)
+case(rays-14, as-11)
+det(rays-14, the-12)
+amod(rays-14, western-13)
+nmod:as(gleam-2, rays-14)
+acl(rays-14, slanted-15)
+advmod(slanted-15, down-16)
+punct(gleam-2, ,-17)
+nmod:poss(eye-20, my-19)
+dobj(caught-18, eye-20)
+cc(caught-18, and-21)
+conj:and(caught-18, suggested-22)
+det(river-24, the-23)
+dobj(suggested-22, river-24)
+det(streams-26, the-25)
+dobj(caught-18, streams-26)
+mark(make-30, of-27)
+nsubj(make-30, which-28)
+aux(make-30, shall-29)
+acl:of(streams-26, make-30)
+xcomp(make-30, glad-31)
+det(city-33, the-32)
+dep(glad-31, city-33)
+case(God-35, of-34)
+nmod:of(city-33, God-35)
+punct(caught-18, .-36)
+
+Sentence #5 (21 tokens):
+I began to sing in a low voice the gospel hymn, * Shall we gather at the river ? '
+[Text=I CharacterOffsetBegin=342 CharacterOffsetEnd=343 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=began CharacterOffsetBegin=344 CharacterOffsetEnd=349 PartOfSpeech=VBD Lemma=begin NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=350 CharacterOffsetEnd=352 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=sing CharacterOffsetBegin=353 CharacterOffsetEnd=357 PartOfSpeech=VB Lemma=sing NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=358 CharacterOffsetEnd=360 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=361 CharacterOffsetEnd=362 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=low CharacterOffsetBegin=363 CharacterOffsetEnd=366 PartOfSpeech=JJ Lemma=low NamedEntityTag=O]
+[Text=voice CharacterOffsetBegin=367 CharacterOffsetEnd=372 PartOfSpeech=NN Lemma=voice NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=373 CharacterOffsetEnd=376 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gospel CharacterOffsetBegin=377 CharacterOffsetEnd=383 PartOfSpeech=NN Lemma=gospel NamedEntityTag=O]
+[Text=hymn CharacterOffsetBegin=384 CharacterOffsetEnd=388 PartOfSpeech=NN Lemma=hymn NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=388 CharacterOffsetEnd=389 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=390 CharacterOffsetEnd=391 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=Shall CharacterOffsetBegin=392 CharacterOffsetEnd=397 PartOfSpeech=FW Lemma=shall NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=398 CharacterOffsetEnd=400 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=gather CharacterOffsetBegin=401 CharacterOffsetEnd=407 PartOfSpeech=VBP Lemma=gather NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=408 CharacterOffsetEnd=410 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=411 CharacterOffsetEnd=414 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=river CharacterOffsetBegin=415 CharacterOffsetEnd=420 PartOfSpeech=NN Lemma=river NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=421 CharacterOffsetEnd=422 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=423 CharacterOffsetEnd=424 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD began)
+      (S
+        (VP (TO to)
+          (VP (VB sing)
+            (PP (IN in)
+              (NP (DT a) (JJ low) (NN voice))))))
+      (S
+        (NP
+          (NP (DT the) (NN gospel) (NN hymn))
+          (, ,)
+          (X (SYM *)))
+        (NP
+          (NP (FW Shall))
+          (SBAR
+            (S
+              (NP (PRP we))
+              (VP (VBP gather)
+                (PP (IN at)
+                  (NP (DT the) (NN river)))))))))
+    (. ?) ('' ')))
+
+root(ROOT-0, began-2)
+nsubj(began-2, I-1)
+nsubj:xsubj(sing-4, I-1)
+mark(sing-4, to-3)
+xcomp(began-2, sing-4)
+case(voice-8, in-5)
+det(voice-8, a-6)
+amod(voice-8, low-7)
+nmod:in(sing-4, voice-8)
+det(hymn-11, the-9)
+compound(hymn-11, gospel-10)
+nsubj(Shall-14, hymn-11)
+punct(hymn-11, ,-12)
+dep(hymn-11, *-13)
+xcomp(began-2, Shall-14)
+nsubj(gather-16, we-15)
+acl:relcl(Shall-14, gather-16)
+case(river-19, at-17)
+det(river-19, the-18)
+nmod:at(gather-16, river-19)
+punct(began-2, ?-20)
+punct(began-2, '-21)
+
+Sentence #6 (36 tokens):
+Eager heads were raised around us to listen more intently, while bass and tenor voices, weak and tremulous, came in on the chorus —
+
+Yes, we'll gather at the river.
+[Text=Eager CharacterOffsetBegin=425 CharacterOffsetEnd=430 PartOfSpeech=JJ Lemma=eager NamedEntityTag=O]
+[Text=heads CharacterOffsetBegin=431 CharacterOffsetEnd=436 PartOfSpeech=NNS Lemma=head NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=437 CharacterOffsetEnd=441 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=raised CharacterOffsetBegin=442 CharacterOffsetEnd=448 PartOfSpeech=VBN Lemma=raise NamedEntityTag=O]
+[Text=around CharacterOffsetBegin=449 CharacterOffsetEnd=455 PartOfSpeech=IN Lemma=around NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=456 CharacterOffsetEnd=458 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=459 CharacterOffsetEnd=461 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=462 CharacterOffsetEnd=468 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=469 CharacterOffsetEnd=473 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=intently CharacterOffsetBegin=474 CharacterOffsetEnd=482 PartOfSpeech=RB Lemma=intently NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=482 CharacterOffsetEnd=483 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=while CharacterOffsetBegin=484 CharacterOffsetEnd=489 PartOfSpeech=IN Lemma=while NamedEntityTag=O]
+[Text=bass CharacterOffsetBegin=490 CharacterOffsetEnd=494 PartOfSpeech=NN Lemma=bass NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=495 CharacterOffsetEnd=498 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=tenor CharacterOffsetBegin=499 CharacterOffsetEnd=504 PartOfSpeech=NN Lemma=tenor NamedEntityTag=O]
+[Text=voices CharacterOffsetBegin=505 CharacterOffsetEnd=511 PartOfSpeech=NNS Lemma=voice NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=511 CharacterOffsetEnd=512 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=weak CharacterOffsetBegin=513 CharacterOffsetEnd=517 PartOfSpeech=JJ Lemma=weak NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=518 CharacterOffsetEnd=521 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=tremulous CharacterOffsetBegin=522 CharacterOffsetEnd=531 PartOfSpeech=JJ Lemma=tremulous NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=531 CharacterOffsetEnd=532 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=came CharacterOffsetBegin=533 CharacterOffsetEnd=537 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=538 CharacterOffsetEnd=540 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=541 CharacterOffsetEnd=543 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=544 CharacterOffsetEnd=547 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=chorus CharacterOffsetBegin=548 CharacterOffsetEnd=554 PartOfSpeech=NN Lemma=chorus NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=555 CharacterOffsetEnd=556 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=Yes CharacterOffsetBegin=560 CharacterOffsetEnd=563 PartOfSpeech=UH Lemma=yes NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=563 CharacterOffsetEnd=564 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=565 CharacterOffsetEnd=567 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text='ll CharacterOffsetBegin=567 CharacterOffsetEnd=570 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=gather CharacterOffsetBegin=571 CharacterOffsetEnd=577 PartOfSpeech=VB Lemma=gather NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=578 CharacterOffsetEnd=580 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=581 CharacterOffsetEnd=584 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=river CharacterOffsetBegin=585 CharacterOffsetEnd=590 PartOfSpeech=NN Lemma=river NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=590 CharacterOffsetEnd=591 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (JJ Eager) (NNS heads))
+      (VP (VBD were)
+        (VP (VBN raised)
+          (PP (IN around)
+            (NP (PRP us)))
+          (S
+            (VP (TO to)
+              (VP (VB listen)
+                (NP (JJR more))
+                (ADVP (RB intently))
+                (, ,)
+                (SBAR (IN while)
+                  (S
+                    (NP
+                      (NP (NN bass)
+                        (CC and)
+                        (NN tenor) (NNS voices))
+                      (, ,)
+                      (ADJP (JJ weak)
+                        (CC and)
+                        (JJ tremulous))
+                      (, ,))
+                    (VP (VBD came)
+                      (PP (IN in)
+                        (PP (IN on)
+                          (NP (DT the) (NN chorus)))))))))))))
+    (: --)
+    (S
+      (INTJ (UH Yes))
+      (, ,)
+      (NP (PRP we))
+      (VP (MD 'll)
+        (VP (VB gather)
+          (PP (IN at)
+            (NP (DT the) (NN river))))))
+    (. .)))
+
+root(ROOT-0, raised-4)
+amod(heads-2, Eager-1)
+nsubjpass(raised-4, heads-2)
+nsubj:xsubj(listen-8, heads-2)
+auxpass(raised-4, were-3)
+case(us-6, around-5)
+nmod:around(raised-4, us-6)
+mark(listen-8, to-7)
+xcomp(raised-4, listen-8)
+dobj(listen-8, more-9)
+advmod(listen-8, intently-10)
+punct(listen-8, ,-11)
+mark(came-22, while-12)
+compound(voices-16, bass-13)
+cc(bass-13, and-14)
+conj:and(bass-13, tenor-15)
+compound(voices-16, tenor-15)
+nsubj(came-22, voices-16)
+punct(voices-16, ,-17)
+amod(voices-16, weak-18)
+cc(weak-18, and-19)
+amod(voices-16, tremulous-20)
+conj:and(weak-18, tremulous-20)
+punct(voices-16, ,-21)
+advcl:while(listen-8, came-22)
+case(chorus-26, in-23)
+case(chorus-26, on-24)
+det(chorus-26, the-25)
+nmod:on(came-22, chorus-26)
+punct(raised-4, ---27)
+discourse(gather-32, Yes-28)
+punct(gather-32, ,-29)
+nsubj(gather-32, we-30)
+aux(gather-32, 'll-31)
+parataxis(raised-4, gather-32)
+case(river-35, at-33)
+det(river-35, the-34)
+nmod:at(gather-32, river-35)
+punct(raised-4, .-36)
+
+Sentence #7 (23 tokens):
+The beautiful, the beautiful river ; 
+Gather with the saints at the river 
+That flows by the throne of God.
+
+"
+[Text=The CharacterOffsetBegin=594 CharacterOffsetEnd=597 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=beautiful CharacterOffsetBegin=598 CharacterOffsetEnd=607 PartOfSpeech=JJ Lemma=beautiful NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=607 CharacterOffsetEnd=608 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=609 CharacterOffsetEnd=612 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=beautiful CharacterOffsetBegin=613 CharacterOffsetEnd=622 PartOfSpeech=JJ Lemma=beautiful NamedEntityTag=O]
+[Text=river CharacterOffsetBegin=623 CharacterOffsetEnd=628 PartOfSpeech=NN Lemma=river NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=629 CharacterOffsetEnd=630 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=Gather CharacterOffsetBegin=633 CharacterOffsetEnd=639 PartOfSpeech=VB Lemma=gather NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=640 CharacterOffsetEnd=644 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=645 CharacterOffsetEnd=648 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=saints CharacterOffsetBegin=649 CharacterOffsetEnd=655 PartOfSpeech=NNS Lemma=saint NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=656 CharacterOffsetEnd=658 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=659 CharacterOffsetEnd=662 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=river CharacterOffsetBegin=663 CharacterOffsetEnd=668 PartOfSpeech=NN Lemma=river NamedEntityTag=O]
+[Text=That CharacterOffsetBegin=671 CharacterOffsetEnd=675 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=flows CharacterOffsetBegin=676 CharacterOffsetEnd=681 PartOfSpeech=VBZ Lemma=flow NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=682 CharacterOffsetEnd=684 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=685 CharacterOffsetEnd=688 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=throne CharacterOffsetBegin=689 CharacterOffsetEnd=695 PartOfSpeech=NN Lemma=throne NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=696 CharacterOffsetEnd=698 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=God CharacterOffsetBegin=699 CharacterOffsetEnd=702 PartOfSpeech=NNP Lemma=God NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=702 CharacterOffsetEnd=703 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=707 CharacterOffsetEnd=708 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (DT The) (JJ beautiful))
+    (, ,)
+    (NP (DT the) (JJ beautiful) (NN river))
+    (: ;)
+    (NP
+      (VP (VB Gather)
+        (PP (IN with)
+          (NP (DT the) (NNS saints)))
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NN river))
+            (SBAR
+              (WHNP (WDT That))
+              (S
+                (VP (VBZ flows)
+                  (PP (IN by)
+                    (NP (DT the) (NN throne)))))))))
+      (PP (IN of)
+        (NP (NNP God))))
+    (. .) ('' '')))
+
+root(ROOT-0, beautiful-2)
+det(beautiful-2, The-1)
+punct(beautiful-2, ,-3)
+det(river-6, the-4)
+amod(river-6, beautiful-5)
+appos(beautiful-2, river-6)
+punct(beautiful-2, ;-7)
+dep(beautiful-2, Gather-8)
+case(saints-11, with-9)
+det(saints-11, the-10)
+nmod:with(Gather-8, saints-11)
+case(river-14, at-12)
+det(river-14, the-13)
+nmod:at(Gather-8, river-14)
+nsubj(flows-16, river-14)
+ref(river-14, That-15)
+acl:relcl(river-14, flows-16)
+case(throne-19, by-17)
+det(throne-19, the-18)
+nmod:by(flows-16, throne-19)
+case(God-21, of-20)
+nmod:of(Gather-8, God-21)
+punct(beautiful-2, .-22)
+punct(beautiful-2, ''-23)
+
+Sentence #8 (32 tokens):
+When the song was ended, I looked into the face of the boy—for he was not over twenty—and asked, ' Will you be there ? '
+[Text=When CharacterOffsetBegin=709 CharacterOffsetEnd=713 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=714 CharacterOffsetEnd=717 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=song CharacterOffsetBegin=718 CharacterOffsetEnd=722 PartOfSpeech=NN Lemma=song NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=723 CharacterOffsetEnd=726 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=ended CharacterOffsetBegin=727 CharacterOffsetEnd=732 PartOfSpeech=VBN Lemma=end NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=732 CharacterOffsetEnd=733 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=734 CharacterOffsetEnd=735 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=looked CharacterOffsetBegin=736 CharacterOffsetEnd=742 PartOfSpeech=VBD Lemma=look NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=743 CharacterOffsetEnd=747 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=748 CharacterOffsetEnd=751 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=face CharacterOffsetBegin=752 CharacterOffsetEnd=756 PartOfSpeech=NN Lemma=face NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=757 CharacterOffsetEnd=759 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=760 CharacterOffsetEnd=763 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=boy CharacterOffsetBegin=764 CharacterOffsetEnd=767 PartOfSpeech=NN Lemma=boy NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=767 CharacterOffsetEnd=768 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=768 CharacterOffsetEnd=771 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=772 CharacterOffsetEnd=774 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=775 CharacterOffsetEnd=778 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=779 CharacterOffsetEnd=782 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=783 CharacterOffsetEnd=787 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=twenty CharacterOffsetBegin=788 CharacterOffsetEnd=794 PartOfSpeech=CD Lemma=twenty NamedEntityTag=NUMBER NormalizedNamedEntityTag=>20.0]
+[Text=-- CharacterOffsetBegin=794 CharacterOffsetEnd=795 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=795 CharacterOffsetEnd=798 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=799 CharacterOffsetEnd=804 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=804 CharacterOffsetEnd=805 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=806 CharacterOffsetEnd=807 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=Will CharacterOffsetBegin=808 CharacterOffsetEnd=812 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=813 CharacterOffsetEnd=816 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=817 CharacterOffsetEnd=819 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=820 CharacterOffsetEnd=825 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=826 CharacterOffsetEnd=827 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=828 CharacterOffsetEnd=829 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When)
+      (NP (DT the) (NN song)))
+    (SQ
+      (SQ (VBD was)
+        (VP (VBN ended) (, ,)
+          (S
+            (NP (PRP I))
+            (VP
+              (VP (VBD looked)
+                (PP (IN into)
+                  (NP
+                    (NP (DT the) (NN face))
+                    (PP (IN of)
+                      (NP
+                        (NP (DT the) (NN boy))
+                        (PRN (: --)
+                          (SBAR (IN for)
+                            (S
+                              (NP (PRP he))
+                              (VP (VBD was) (RB not)
+                                (PP (IN over)
+                                  (NP (CD twenty))))))
+                          (: --)))))))
+              (CC and)
+              (VP (VBD asked)))
+            (, ,) ('' '))))
+      (SQ (MD Will)
+        (NP (PRP you))
+        (VP (VB be)))
+      (FRAG
+        (ADVP (RB there))))
+    (. ?) ('' ')))
+
+root(ROOT-0, ended-5)
+advmod(ended-5, When-1)
+det(song-3, the-2)
+dep(When-1, song-3)
+auxpass(ended-5, was-4)
+punct(ended-5, ,-6)
+nsubj(looked-8, I-7)
+nsubj(asked-24, I-7)
+ccomp(ended-5, looked-8)
+case(face-11, into-9)
+det(face-11, the-10)
+nmod:into(looked-8, face-11)
+case(boy-14, of-12)
+det(boy-14, the-13)
+nmod:of(face-11, boy-14)
+punct(twenty-21, ---15)
+mark(twenty-21, for-16)
+nsubj(twenty-21, he-17)
+cop(twenty-21, was-18)
+neg(twenty-21, not-19)
+case(twenty-21, over-20)
+dep(boy-14, twenty-21)
+punct(twenty-21, ---22)
+cc(looked-8, and-23)
+ccomp(ended-5, asked-24)
+conj:and(looked-8, asked-24)
+punct(looked-8, ,-25)
+punct(looked-8, '-26)
+aux(be-29, Will-27)
+nsubj(be-29, you-28)
+dep(ended-5, be-29)
+dep(ended-5, there-30)
+punct(ended-5, ?-31)
+punct(ended-5, '-32)
+
+Coreference set:
+	(1,6,[6,7]) -> (1,2,[2,3]), that is: "I" -> "I"
+	(2,15,[15,16]) -> (1,2,[2,3]), that is: "I" -> "I"
+	(2,18,[18,19]) -> (1,2,[2,3]), that is: "I" -> "I"
+	(3,1,[1,2]) -> (1,2,[2,3]), that is: "I" -> "I"
+	(4,19,[19,20]) -> (1,2,[2,3]), that is: "my" -> "I"
+	(5,1,[1,2]) -> (1,2,[2,3]), that is: "I" -> "I"
+	(8,7,[7,8]) -> (1,2,[2,3]), that is: "I" -> "I"
+Coreference set:
+	(1,10,[10,11]) -> (1,4,[4,5]), that is: "his" -> "him"
+Coreference set:
+	(2,3,[3,4]) -> (2,1,[1,2]), that is: "he" -> "No"
+	(2,22,[22,23]) -> (2,1,[1,2]), that is: "him" -> "No"
+Coreference set:
+	(5,19,[18,20]) -> (4,24,[23,25]), that is: "the river" -> "the river"
+	(6,35,[34,36]) -> (4,24,[23,25]), that is: "the river" -> "the river"
+	(7,14,[13,20]) -> (4,24,[23,25]), that is: "the river That flows by the throne" -> "the river"
+Coreference set:
+	(7,21,[21,22]) -> (4,35,[35,36]), that is: "God" -> "God"
+	(8,17,[17,18]) -> (4,35,[35,36]), that is: "he" -> "God"
+Coreference set:
+	(6,6,[6,7]) -> (5,15,[15,16]), that is: "us" -> "we"
+	(6,30,[30,31]) -> (5,15,[15,16]), that is: "we" -> "we"
+Coreference set:
+	(7,8,[8,22]) -> (7,2,[1,3]), that is: "Gather with the saints at the river That flows by the throne of God" -> "The beautiful"

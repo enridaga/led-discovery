@@ -1,0 +1,136 @@
+Sentence #1 (24 tokens):
+Today I have many congratulatory visitors after my success of yesterday; among them Dionys Weber, who is loud in my praise.
+[Text=Today CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=today NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Today</TIMEX3>]
+[Text=I CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=congratulatory CharacterOffsetBegin=18 CharacterOffsetEnd=32 PartOfSpeech=JJ Lemma=congratulatory NamedEntityTag=O]
+[Text=visitors CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=NNS Lemma=visitor NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=42 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=success CharacterOffsetBegin=51 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=success NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=yesterday CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1D Timex=<TIMEX3 alt_value="OFFSET P-1D" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf1">yesterday</TIMEX3>]
+[Text=; CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=among CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=among NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=Dionys CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=Dionys NamedEntityTag=PERSON]
+[Text=Weber CharacterOffsetBegin=91 CharacterOffsetEnd=96 PartOfSpeech=NNP Lemma=Weber NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=loud CharacterOffsetBegin=105 CharacterOffsetEnd=109 PartOfSpeech=JJ Lemma=loud NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=praise CharacterOffsetBegin=116 CharacterOffsetEnd=122 PartOfSpeech=NN Lemma=praise NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (NN Today))
+    (NP (PRP I))
+    (VP (VBP have)
+      (NP
+        (NP (JJ many) (JJ congratulatory) (NNS visitors))
+        (PP
+          (PP (IN after)
+            (NP
+              (NP (PRP$ my) (NN success))
+              (PP (IN of)
+                (NP (NN yesterday)))))
+          (: ;)
+          (PP (IN among)
+            (NP
+              (NP (PRP them))
+              (NP-TMP
+                (NP (NNP Dionys) (NNP Weber))
+                (, ,)
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBZ is)
+                      (ADJP (JJ loud)
+                        (PP (IN in)
+                          (NP (PRP$ my) (NN praise)))))))))))))
+    (. .)))
+
+root(ROOT-0, have-3)
+nmod:tmod(have-3, Today-1)
+nsubj(have-3, I-2)
+amod(visitors-6, many-4)
+amod(visitors-6, congratulatory-5)
+dobj(have-3, visitors-6)
+case(success-9, after-7)
+nmod:poss(success-9, my-8)
+nmod:after(visitors-6, success-9)
+case(yesterday-11, of-10)
+nmod:of(success-9, yesterday-11)
+punct(success-9, ;-12)
+case(them-14, among-13)
+nmod:among(success-9, them-14)
+compound(Weber-16, Dionys-15)
+nmod:tmod(them-14, Weber-16)
+nsubj(loud-20, Weber-16)
+punct(Weber-16, ,-17)
+ref(Weber-16, who-18)
+cop(loud-20, is-19)
+acl:relcl(Weber-16, loud-20)
+case(praise-23, in-21)
+nmod:poss(praise-23, my-22)
+nmod:in(loud-20, praise-23)
+punct(have-3, .-24)
+
+Sentence #2 (16 tokens):
+He organized for my special sake an orchestral performance by his pupils at the Conservatoire.
+[Text=He CharacterOffsetBegin=124 CharacterOffsetEnd=126 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=organized CharacterOffsetBegin=127 CharacterOffsetEnd=136 PartOfSpeech=VBD Lemma=organize NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=137 CharacterOffsetEnd=140 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=special CharacterOffsetBegin=144 CharacterOffsetEnd=151 PartOfSpeech=JJ Lemma=special NamedEntityTag=O]
+[Text=sake CharacterOffsetBegin=152 CharacterOffsetEnd=156 PartOfSpeech=NN Lemma=sake NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=157 CharacterOffsetEnd=159 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=orchestral CharacterOffsetBegin=160 CharacterOffsetEnd=170 PartOfSpeech=JJ Lemma=orchestral NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=171 CharacterOffsetEnd=182 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=183 CharacterOffsetEnd=185 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=186 CharacterOffsetEnd=189 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=pupils CharacterOffsetBegin=190 CharacterOffsetEnd=196 PartOfSpeech=NNS Lemma=pupil NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=197 CharacterOffsetEnd=199 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=200 CharacterOffsetEnd=203 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Conservatoire CharacterOffsetBegin=204 CharacterOffsetEnd=217 PartOfSpeech=NNP Lemma=Conservatoire NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=217 CharacterOffsetEnd=218 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD organized)
+      (PP (IN for)
+        (NP (PRP$ my) (JJ special) (NN sake)))
+      (NP (DT an) (JJ orchestral) (NN performance))
+      (PP (IN by)
+        (NP (PRP$ his) (NNS pupils)))
+      (PP (IN at)
+        (NP (DT the) (NNP Conservatoire))))
+    (. .)))
+
+root(ROOT-0, organized-2)
+nsubj(organized-2, He-1)
+case(sake-6, for-3)
+nmod:poss(sake-6, my-4)
+amod(sake-6, special-5)
+nmod:for(organized-2, sake-6)
+det(performance-9, an-7)
+amod(performance-9, orchestral-8)
+dobj(organized-2, performance-9)
+case(pupils-12, by-10)
+nmod:poss(pupils-12, his-11)
+nmod:by(organized-2, pupils-12)
+case(Conservatoire-15, at-13)
+det(Conservatoire-15, the-14)
+nmod:at(organized-2, Conservatoire-15)
+punct(organized-2, .-16)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,16,[15,17]), that is: "He" -> "Dionys Weber"
+	(2,11,[11,12]) -> (1,16,[15,17]), that is: "his" -> "Dionys Weber"
+Coreference set:
+	(1,8,[8,9]) -> (1,2,[2,3]), that is: "my" -> "I"
+	(1,22,[22,23]) -> (1,2,[2,3]), that is: "my" -> "I"
+	(2,4,[4,5]) -> (1,2,[2,3]), that is: "my" -> "I"

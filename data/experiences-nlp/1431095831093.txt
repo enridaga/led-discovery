@@ -1,0 +1,99 @@
+Sentence #1 (13 tokens):
+We heard everyone who came into the Blue Note and the Silhouette.
+[Text=We CharacterOffsetBegin=1 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=10 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=came CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Blue CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Blue NamedEntityTag=MISC]
+[Text=Note CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=note NamedEntityTag=MISC]
+[Text=and CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Silhouette CharacterOffsetBegin=55 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Silhouette NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBD heard)
+      (NP
+        (NP (NN everyone))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD came)
+              (PP (IN into)
+                (NP
+                  (NP (DT the) (NNP Blue) (NN Note))
+                  (CC and)
+                  (NP (DT the) (NNP Silhouette)))))))))
+    (. .)))
+
+root(ROOT-0, heard-2)
+nsubj(heard-2, We-1)
+dobj(heard-2, everyone-3)
+nsubj(came-5, everyone-3)
+ref(everyone-3, who-4)
+acl:relcl(everyone-3, came-5)
+case(Note-9, into-6)
+det(Note-9, the-7)
+compound(Note-9, Blue-8)
+nmod:into(came-5, Note-9)
+cc(Note-9, and-10)
+det(Silhouette-12, the-11)
+nmod:into(came-5, Silhouette-12)
+conj:and(Note-9, Silhouette-12)
+punct(heard-2, .-13)
+
+Sentence #2 (14 tokens):
+I heard George Shearing when he was just starting out with the quintet.
+[Text=I CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=George CharacterOffsetBegin=75 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=George NamedEntityTag=PERSON]
+[Text=Shearing CharacterOffsetBegin=82 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=Shearing NamedEntityTag=PERSON]
+[Text=when CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=103 CharacterOffsetEnd=107 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=starting CharacterOffsetBegin=108 CharacterOffsetEnd=116 PartOfSpeech=VBG Lemma=start NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=quintet CharacterOffsetBegin=130 CharacterOffsetEnd=137 PartOfSpeech=NN Lemma=quintet NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=137 CharacterOffsetEnd=138 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD heard)
+      (NP
+        (NP (NNP George) (NNP Shearing))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP he))
+            (VP (VBD was)
+              (ADVP (RB just))
+              (VP (VBG starting)
+                (PRT (RP out))
+                (PP (IN with)
+                  (NP (DT the) (NN quintet)))))))))
+    (. .)))
+
+root(ROOT-0, heard-2)
+nsubj(heard-2, I-1)
+compound(Shearing-4, George-3)
+dobj(heard-2, Shearing-4)
+advmod(starting-9, when-5)
+nsubj(starting-9, he-6)
+aux(starting-9, was-7)
+advmod(starting-9, just-8)
+acl:relcl(Shearing-4, starting-9)
+compound:prt(starting-9, out-10)
+case(quintet-13, with-11)
+det(quintet-13, the-12)
+nmod:with(starting-9, quintet-13)
+punct(heard-2, .-14)
+
+Coreference set:
+	(2,6,[6,7]) -> (1,3,[3,13]), that is: "he" -> "everyone who came into the Blue Note and the Silhouette"

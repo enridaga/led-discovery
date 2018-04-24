@@ -1,0 +1,242 @@
+Sentence #1 (28 tokens):
+At one of Madame Marcello's concerts, I had the pleasure of hearing the greatest reputed dilettante singer in Europe, La Signora Teresa de Petris.
+[Text=At CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Madame CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Madame NamedEntityTag=PERSON]
+[Text=Marcello CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Marcello NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=concerts CharacterOffsetBegin=28 CharacterOffsetEnd=36 PartOfSpeech=NNS Lemma=concert NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pleasure CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=pleasure NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=hearing CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=VBG Lemma=hear NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=greatest CharacterOffsetBegin=72 CharacterOffsetEnd=80 PartOfSpeech=JJS Lemma=greatest NamedEntityTag=O]
+[Text=reputed CharacterOffsetBegin=81 CharacterOffsetEnd=88 PartOfSpeech=JJ Lemma=reputed NamedEntityTag=O]
+[Text=dilettante CharacterOffsetBegin=89 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=dilettante NamedEntityTag=O]
+[Text=singer CharacterOffsetBegin=100 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=singer NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=107 CharacterOffsetEnd=109 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Europe CharacterOffsetBegin=110 CharacterOffsetEnd=116 PartOfSpeech=NNP Lemma=Europe NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=La CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=NNP Lemma=La NamedEntityTag=PERSON]
+[Text=Signora CharacterOffsetBegin=121 CharacterOffsetEnd=128 PartOfSpeech=NNP Lemma=Signora NamedEntityTag=PERSON]
+[Text=Teresa CharacterOffsetBegin=129 CharacterOffsetEnd=135 PartOfSpeech=NNP Lemma=Teresa NamedEntityTag=PERSON]
+[Text=de CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=de NamedEntityTag=PERSON]
+[Text=Petris CharacterOffsetBegin=139 CharacterOffsetEnd=145 PartOfSpeech=NNP Lemma=Petris NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (NNP Madame) (NNP Marcello) (POS 's))
+            (NNS concerts)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD had)
+      (NP
+        (NP (DT the) (NN pleasure))
+        (PP (IN of)
+          (S
+            (VP (VBG hearing)
+              (NP
+                (NP (DT the) (JJS greatest) (JJ reputed) (NN dilettante) (NN singer))
+                (PP (IN in)
+                  (NP
+                    (NP (NNP Europe))
+                    (, ,)
+                    (NP (NNP La) (NNP Signora) (NNP Teresa) (IN de) (NNP Petris))))))))))
+    (. .)))
+
+root(ROOT-0, had-10)
+case(one-2, At-1)
+nmod:at(had-10, one-2)
+case(concerts-7, of-3)
+compound(Marcello-5, Madame-4)
+nmod:poss(concerts-7, Marcello-5)
+case(Marcello-5, 's-6)
+nmod:of(one-2, concerts-7)
+punct(had-10, ,-8)
+nsubj(had-10, I-9)
+det(pleasure-12, the-11)
+dobj(had-10, pleasure-12)
+mark(hearing-14, of-13)
+acl:of(pleasure-12, hearing-14)
+det(singer-19, the-15)
+amod(singer-19, greatest-16)
+amod(singer-19, reputed-17)
+compound(singer-19, dilettante-18)
+dobj(hearing-14, singer-19)
+case(Europe-21, in-20)
+nmod:in(singer-19, Europe-21)
+punct(Europe-21, ,-22)
+compound(Petris-27, La-23)
+compound(Petris-27, Signora-24)
+compound(Petris-27, Teresa-25)
+amod(Petris-27, de-26)
+appos(Europe-21, Petris-27)
+punct(had-10, .-28)
+
+Sentence #2 (46 tokens):
+Nor was her reputation higher than her merits ; she had one of the finest voices I ever heard, combined with great science and expression : in addition to this, she was very beautiful, and had about her all the Venetian fascination.
+[Text=Nor CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=CC Lemma=nor NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=151 CharacterOffsetEnd=154 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=155 CharacterOffsetEnd=158 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=reputation CharacterOffsetBegin=159 CharacterOffsetEnd=169 PartOfSpeech=NN Lemma=reputation NamedEntityTag=O]
+[Text=higher CharacterOffsetBegin=170 CharacterOffsetEnd=176 PartOfSpeech=JJR Lemma=higher NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=177 CharacterOffsetEnd=181 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=182 CharacterOffsetEnd=185 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=merits CharacterOffsetBegin=186 CharacterOffsetEnd=192 PartOfSpeech=NNS Lemma=merit NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=193 CharacterOffsetEnd=194 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=203 CharacterOffsetEnd=206 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=207 CharacterOffsetEnd=209 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=210 CharacterOffsetEnd=213 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=finest CharacterOffsetBegin=214 CharacterOffsetEnd=220 PartOfSpeech=JJS Lemma=finest NamedEntityTag=O]
+[Text=voices CharacterOffsetBegin=221 CharacterOffsetEnd=227 PartOfSpeech=NNS Lemma=voice NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=228 CharacterOffsetEnd=229 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=230 CharacterOffsetEnd=234 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=235 CharacterOffsetEnd=240 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=240 CharacterOffsetEnd=241 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=combined CharacterOffsetBegin=242 CharacterOffsetEnd=250 PartOfSpeech=VBN Lemma=combine NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=251 CharacterOffsetEnd=255 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=256 CharacterOffsetEnd=261 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=science CharacterOffsetBegin=262 CharacterOffsetEnd=269 PartOfSpeech=NN Lemma=science NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=270 CharacterOffsetEnd=273 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=expression CharacterOffsetBegin=274 CharacterOffsetEnd=284 PartOfSpeech=NN Lemma=expression NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=285 CharacterOffsetEnd=286 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=287 CharacterOffsetEnd=289 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=addition CharacterOffsetBegin=290 CharacterOffsetEnd=298 PartOfSpeech=NN Lemma=addition NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=299 CharacterOffsetEnd=301 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=302 CharacterOffsetEnd=306 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=306 CharacterOffsetEnd=307 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=308 CharacterOffsetEnd=311 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=312 CharacterOffsetEnd=315 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=316 CharacterOffsetEnd=320 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=beautiful CharacterOffsetBegin=321 CharacterOffsetEnd=330 PartOfSpeech=JJ Lemma=beautiful NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=330 CharacterOffsetEnd=331 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=332 CharacterOffsetEnd=335 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=336 CharacterOffsetEnd=339 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=340 CharacterOffsetEnd=345 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=346 CharacterOffsetEnd=349 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=350 CharacterOffsetEnd=353 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=354 CharacterOffsetEnd=357 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Venetian CharacterOffsetBegin=358 CharacterOffsetEnd=366 PartOfSpeech=JJ Lemma=venetian NamedEntityTag=MISC]
+[Text=fascination CharacterOffsetBegin=367 CharacterOffsetEnd=378 PartOfSpeech=NN Lemma=fascination NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=378 CharacterOffsetEnd=379 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (SINV (CC Nor)
+    (VBD was)
+    (NP (PRP$ her) (NN reputation))
+    (VP
+      (VP
+        (VP
+          (ADJP
+            (ADJP (JJR higher))
+            (PP (IN than)
+              (NP
+                (NP (PRP$ her) (NNS merits))
+                (: ;)
+                (SBAR
+                  (S
+                    (NP (PRP she))
+                    (VP (VBD had)
+                      (NP
+                        (NP (CD one))
+                        (PP (IN of)
+                          (NP
+                            (NP (DT the) (JJS finest) (NNS voices))
+                            (SBAR
+                              (S
+                                (NP (PRP I))
+                                (ADVP (RB ever))
+                                (VP (VBD heard)))))))
+                      (, ,)
+                      (PP (VBN combined)
+                        (PP (IN with)
+                          (NP (JJ great) (NN science)
+                            (CC and)
+                            (NN expression)))))))
+                (: :))))
+          (PP (IN in)
+            (NP
+              (NP (NN addition))
+              (PP (TO to)
+                (NP (DT this))))))
+        (PRN (, ,)
+          (S
+            (NP (PRP she))
+            (VP (VBD was)
+              (ADJP (RB very) (JJ beautiful))))
+          (, ,)))
+      (CC and)
+      (VP (VBD had)
+        (PP (IN about)
+          (NP (PRP$ her))))
+      (NP (PDT all) (DT the) (JJ Venetian) (NN fascination)))
+    (. .)))
+
+root(ROOT-0, higher-5)
+cc(higher-5, Nor-1)
+aux(higher-5, was-2)
+nmod:poss(reputation-4, her-3)
+nsubj(higher-5, reputation-4)
+nsubj(had-39, reputation-4)
+case(merits-8, than-6)
+nmod:poss(merits-8, her-7)
+nmod:than(higher-5, merits-8)
+punct(merits-8, ;-9)
+nsubj(had-11, she-10)
+acl:relcl(merits-8, had-11)
+det:qmod(voices-16, one-12)
+mwe(one-12, of-13)
+det(voices-16, the-14)
+amod(voices-16, finest-15)
+dobj(had-11, voices-16)
+nsubj(heard-19, I-17)
+advmod(heard-19, ever-18)
+acl:relcl(voices-16, heard-19)
+punct(had-11, ,-20)
+case(science-24, combined-21)
+case(science-24, with-22)
+amod(science-24, great-23)
+advcl:with(had-11, science-24)
+cc(science-24, and-25)
+advcl:with(had-11, expression-26)
+conj:and(science-24, expression-26)
+punct(merits-8, :-27)
+case(this-31, in-28)
+mwe(in-28, addition-29)
+mwe(in-28, to-30)
+nmod:in_addition_to(higher-5, this-31)
+punct(beautiful-36, ,-32)
+nsubj(beautiful-36, she-33)
+cop(beautiful-36, was-34)
+advmod(beautiful-36, very-35)
+parataxis(higher-5, beautiful-36)
+punct(beautiful-36, ,-37)
+cc(higher-5, and-38)
+conj:nor(higher-5, had-39)
+case(her-41, about-40)
+nmod:about(had-39, her-41)
+det:predet(fascination-45, all-42)
+det(fascination-45, the-43)
+amod(fascination-45, Venetian-44)
+dobj(higher-5, fascination-45)
+punct(higher-5, .-46)
+
+Coreference set:
+	(2,17,[17,18]) -> (1,9,[9,10]), that is: "I" -> "I"
+Coreference set:
+	(2,3,[3,4]) -> (1,19,[15,28]), that is: "her" -> "the greatest reputed dilettante singer in Europe , La Signora Teresa de Petris"
+	(2,7,[7,8]) -> (1,19,[15,28]), that is: "her" -> "the greatest reputed dilettante singer in Europe , La Signora Teresa de Petris"
+	(2,10,[10,11]) -> (1,19,[15,28]), that is: "she" -> "the greatest reputed dilettante singer in Europe , La Signora Teresa de Petris"
+	(2,33,[33,34]) -> (1,19,[15,28]), that is: "she" -> "the greatest reputed dilettante singer in Europe , La Signora Teresa de Petris"
+	(2,41,[41,42]) -> (1,19,[15,28]), that is: "her" -> "the greatest reputed dilettante singer in Europe , La Signora Teresa de Petris"

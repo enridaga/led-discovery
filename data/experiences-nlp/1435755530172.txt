@@ -1,0 +1,28 @@
+Sentence #1 (9 tokens):
+Press showing of the Santa Fe TV program.
+[Text=Press CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Press NamedEntityTag=O]
+[Text=showing CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=showing NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Santa CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=NNP Lemma=Santa NamedEntityTag=ORGANIZATION]
+[Text=Fe CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Fe NamedEntityTag=ORGANIZATION]
+[Text=TV CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=tv NamedEntityTag=ORGANIZATION]
+[Text=program CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=program NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Press) (NN showing))
+    (PP (IN of)
+      (NP (DT the) (NNP Santa) (NNP Fe) (NN TV) (NN program)))
+    (. .)))
+
+root(ROOT-0, showing-2)
+compound(showing-2, Press-1)
+case(program-8, of-3)
+det(program-8, the-4)
+compound(program-8, Santa-5)
+compound(program-8, Fe-6)
+compound(program-8, TV-7)
+nmod:of(showing-2, program-8)
+punct(showing-2, .-9)
+

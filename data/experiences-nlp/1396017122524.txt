@@ -1,0 +1,332 @@
+Sentence #1 (12 tokens):
+I write until 10.45 & then go & practise till 12.45.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=write CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=VBP Lemma=write NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=10.45 CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=CD Lemma=10.45 NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.45]
+[Text=& CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=practise CharacterOffsetBegin=32 CharacterOffsetEnd=40 PartOfSpeech=VB Lemma=practise NamedEntityTag=O]
+[Text=till CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=till NamedEntityTag=O]
+[Text=12.45 CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=CD Lemma=12.45 NamedEntityTag=NUMBER NormalizedNamedEntityTag=12.45]
+[Text=. CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP write)
+      (SBAR (IN until)
+        (S
+          (NP
+            (NP (CD 10.45))
+            (CC &)
+            (NP (RB then)))
+          (VP (VB go)
+            (S
+              (NP (CC &))
+              (VP (VB practise)
+                (PP (IN till)
+                  (NP (CD 12.45)))))))))
+    (. .)))
+
+root(ROOT-0, write-2)
+nsubj(write-2, I-1)
+mark(go-7, until-3)
+nsubj(go-7, 10.45-4)
+cc(10.45-4, &-5)
+conj:&(10.45-4, then-6)
+nsubj(go-7, then-6)
+advcl:until(write-2, go-7)
+nsubj(practise-9, &-8)
+ccomp(go-7, practise-9)
+case(12.45-11, till-10)
+nmod:till(practise-9, 12.45-11)
+punct(write-2, .-12)
+
+Sentence #2 (7 tokens):
+I practise 2.30-4.30 in afternoon.
+[Text=I CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=practise CharacterOffsetBegin=55 CharacterOffsetEnd=63 PartOfSpeech=VBP Lemma=practise NamedEntityTag=O]
+[Text=2.30-4 CharacterOffsetBegin=64 CharacterOffsetEnd=70 PartOfSpeech=CD Lemma=2.30-4 NamedEntityTag=NUMBER]
+[Text=.30 CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=CD Lemma=.30 NamedEntityTag=NUMBER NormalizedNamedEntityTag=0.3]
+[Text=in CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=afternoon CharacterOffsetBegin=77 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 tid="t1" type="TIME" value="TAF">afternoon</TIMEX3>]
+[Text=. CharacterOffsetBegin=86 CharacterOffsetEnd=87 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP practise)
+      (NP (CD 2.30-4) (CD .30))
+      (PP (IN in)
+        (NP (NN afternoon))))
+    (. .)))
+
+root(ROOT-0, practise-2)
+nsubj(practise-2, I-1)
+nummod(.30-4, 2.30-4-3)
+dobj(practise-2, .30-4)
+case(afternoon-6, in-5)
+nmod:in(practise-2, afternoon-6)
+punct(practise-2, .-7)
+
+Sentence #3 (6 tokens):
+Write a little after tea.
+[Text=Write CharacterOffsetBegin=88 CharacterOffsetEnd=93 PartOfSpeech=VB Lemma=write NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=96 CharacterOffsetEnd=102 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=103 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=tea CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=tea NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Write)
+      (NP (DT a) (JJ little))
+      (PP (IN after)
+        (NP (NN tea))))
+    (. .)))
+
+root(ROOT-0, Write-1)
+det(little-3, a-2)
+dobj(Write-1, little-3)
+case(tea-5, after-4)
+nmod:after(Write-1, tea-5)
+punct(Write-1, .-6)
+
+Sentence #4 (15 tokens):
+I go after dinner to a concert at the R.C.M. (1st Orchestra).
+[Text=I CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=119 CharacterOffsetEnd=124 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=125 CharacterOffsetEnd=131 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=137 CharacterOffsetEnd=144 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=145 CharacterOffsetEnd=147 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=148 CharacterOffsetEnd=151 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=R.C.M. CharacterOffsetBegin=152 CharacterOffsetEnd=158 PartOfSpeech=NNP Lemma=R.C.M. NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=1st CharacterOffsetBegin=160 CharacterOffsetEnd=163 PartOfSpeech=JJ Lemma=1st NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=Orchestra CharacterOffsetBegin=164 CharacterOffsetEnd=173 PartOfSpeech=NNP Lemma=Orchestra NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=173 CharacterOffsetEnd=174 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=174 CharacterOffsetEnd=175 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP go)
+      (PP (IN after)
+        (NP (NN dinner)))
+      (PP (TO to)
+        (NP
+          (NP
+            (NP (DT a) (NN concert))
+            (PP (IN at)
+              (NP (DT the) (NNP R.C.M.))))
+          (-LRB- -LRB-)
+          (NP (JJ 1st) (NNP Orchestra))
+          (-RRB- -RRB-))))
+    (. .)))
+
+root(ROOT-0, go-2)
+nsubj(go-2, I-1)
+case(dinner-4, after-3)
+nmod:after(go-2, dinner-4)
+case(concert-7, to-5)
+det(concert-7, a-6)
+nmod:to(go-2, concert-7)
+case(R.C.M.-10, at-8)
+det(R.C.M.-10, the-9)
+nmod:at(concert-7, R.C.M.-10)
+punct(concert-7, -LRB--11)
+amod(Orchestra-13, 1st-12)
+dep(concert-7, Orchestra-13)
+punct(concert-7, -RRB--14)
+punct(go-2, .-15)
+
+Sentence #5 (8 tokens):
+Cockaigne (Elgar) J. Ireland pft.
+[Text=Cockaigne CharacterOffsetBegin=176 CharacterOffsetEnd=185 PartOfSpeech=NNP Lemma=Cockaigne NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=186 CharacterOffsetEnd=187 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Elgar CharacterOffsetBegin=187 CharacterOffsetEnd=192 PartOfSpeech=NNP Lemma=Elgar NamedEntityTag=PERSON]
+[Text=-RRB- CharacterOffsetBegin=192 CharacterOffsetEnd=193 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=J. CharacterOffsetBegin=194 CharacterOffsetEnd=196 PartOfSpeech=NNP Lemma=J. NamedEntityTag=PERSON]
+[Text=Ireland CharacterOffsetBegin=197 CharacterOffsetEnd=204 PartOfSpeech=NNP Lemma=Ireland NamedEntityTag=PERSON]
+[Text=pft CharacterOffsetBegin=205 CharacterOffsetEnd=208 PartOfSpeech=NN Lemma=pft NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=208 CharacterOffsetEnd=209 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Cockaigne))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP Elgar))
+        (-RRB- -RRB-)))
+    (NP
+      (NP (NNP J.) (NNP Ireland))
+      (NP (NN pft)))
+    (. .)))
+
+root(ROOT-0, Cockaigne-1)
+punct(Elgar-3, -LRB--2)
+appos(Cockaigne-1, Elgar-3)
+punct(Elgar-3, -RRB--4)
+compound(Ireland-6, J.-5)
+dep(Cockaigne-1, Ireland-6)
+dep(Ireland-6, pft-7)
+punct(Cockaigne-1, .-8)
+
+Sentence #6 (42 tokens):
+concerto (which I like better each time - Helen Perkin played it beautifully) [Beethoven] 5th Symphony (ensemble bad) & suite - Boutique Fantastique (I cannot think why Vienna went mad over Rossini).
+[Text=concerto CharacterOffsetBegin=210 CharacterOffsetEnd=218 PartOfSpeech=NN Lemma=concerto NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=219 CharacterOffsetEnd=220 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=220 CharacterOffsetEnd=225 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=226 CharacterOffsetEnd=227 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=228 CharacterOffsetEnd=232 PartOfSpeech=VBP Lemma=like NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=233 CharacterOffsetEnd=239 PartOfSpeech=JJR Lemma=better NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=240 CharacterOffsetEnd=244 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=245 CharacterOffsetEnd=249 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=250 CharacterOffsetEnd=251 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Helen CharacterOffsetBegin=252 CharacterOffsetEnd=257 PartOfSpeech=NNP Lemma=Helen NamedEntityTag=PERSON]
+[Text=Perkin CharacterOffsetBegin=258 CharacterOffsetEnd=264 PartOfSpeech=NNP Lemma=Perkin NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=265 CharacterOffsetEnd=271 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=272 CharacterOffsetEnd=274 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=beautifully CharacterOffsetBegin=275 CharacterOffsetEnd=286 PartOfSpeech=RB Lemma=beautifully NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=286 CharacterOffsetEnd=287 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=288 CharacterOffsetEnd=289 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Beethoven CharacterOffsetBegin=289 CharacterOffsetEnd=298 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=PERSON]
+[Text=-RSB- CharacterOffsetBegin=298 CharacterOffsetEnd=299 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=5th CharacterOffsetBegin=300 CharacterOffsetEnd=303 PartOfSpeech=JJ Lemma=5th NamedEntityTag=ORDINAL NormalizedNamedEntityTag=5.0]
+[Text=Symphony CharacterOffsetBegin=304 CharacterOffsetEnd=312 PartOfSpeech=NNP Lemma=Symphony NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=313 CharacterOffsetEnd=314 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=ensemble CharacterOffsetBegin=314 CharacterOffsetEnd=322 PartOfSpeech=NN Lemma=ensemble NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=323 CharacterOffsetEnd=326 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=326 CharacterOffsetEnd=327 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=328 CharacterOffsetEnd=329 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=suite CharacterOffsetBegin=330 CharacterOffsetEnd=335 PartOfSpeech=NN Lemma=suite NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=336 CharacterOffsetEnd=337 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Boutique CharacterOffsetBegin=338 CharacterOffsetEnd=346 PartOfSpeech=NN Lemma=boutique NamedEntityTag=O]
+[Text=Fantastique CharacterOffsetBegin=347 CharacterOffsetEnd=358 PartOfSpeech=NN Lemma=fantastique NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=359 CharacterOffsetEnd=360 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=360 CharacterOffsetEnd=361 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=362 CharacterOffsetEnd=365 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=365 CharacterOffsetEnd=368 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=369 CharacterOffsetEnd=374 PartOfSpeech=VB Lemma=think NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=375 CharacterOffsetEnd=378 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=Vienna CharacterOffsetBegin=379 CharacterOffsetEnd=385 PartOfSpeech=NNP Lemma=Vienna NamedEntityTag=LOCATION]
+[Text=went CharacterOffsetBegin=386 CharacterOffsetEnd=390 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=mad CharacterOffsetBegin=391 CharacterOffsetEnd=394 PartOfSpeech=JJ Lemma=mad NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=395 CharacterOffsetEnd=399 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=Rossini CharacterOffsetBegin=400 CharacterOffsetEnd=407 PartOfSpeech=NNP Lemma=Rossini NamedEntityTag=PERSON]
+[Text=-RRB- CharacterOffsetBegin=407 CharacterOffsetEnd=408 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=408 CharacterOffsetEnd=409 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NN concerto))
+    (PRN (-LRB- -LRB-)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (NP (PRP I))
+          (VP (VBP like)
+            (NP-TMP (JJR better) (DT each) (NN time))
+            (: -)
+            (S
+              (NP (NNP Helen) (NNP Perkin))
+              (VP (VBD played)
+                (NP (PRP it))
+                (ADVP (RB beautifully)))))))
+      (-RRB- -RRB-))
+    (-LRB- -LSB-)
+    (NP
+      (NP
+        (NP (NNP Beethoven) (-RRB- -RSB-) (JJ 5th) (NNP Symphony))
+        (PRN (-LRB- -LRB-)
+          (S
+            (NP (NN ensemble))
+            (ADJP (JJ bad)))
+          (-RRB- -RRB-)))
+      (CC &)
+      (NP (NN suite)))
+    (: -)
+    (NP
+      (NP (NN Boutique) (NN Fantastique))
+      (PRN (-LRB- -LRB-)
+        (S
+          (NP (PRP I))
+          (VP (MD can) (RB not)
+            (VP (VB think)
+              (SBAR
+                (WHADVP (WRB why))
+                (S
+                  (NP (NNP Vienna))
+                  (VP (VBD went)
+                    (ADJP (JJ mad))
+                    (PP (IN over)
+                      (NP (NNP Rossini)))))))))
+        (-RRB- -RRB-)))
+    (. .)))
+
+root(ROOT-0, concerto-1)
+punct(like-5, -LRB--2)
+dobj(like-5, which-3)
+nsubj(like-5, I-4)
+dep(concerto-1, like-5)
+amod(time-8, better-6)
+det(time-8, each-7)
+nmod:tmod(like-5, time-8)
+punct(like-5, --9)
+compound(Perkin-11, Helen-10)
+nsubj(played-12, Perkin-11)
+ccomp(like-5, played-12)
+dobj(played-12, it-13)
+advmod(played-12, beautifully-14)
+punct(like-5, -RRB--15)
+punct(concerto-1, -LSB--16)
+compound(Symphony-20, Beethoven-17)
+punct(Symphony-20, -RSB--18)
+amod(Symphony-20, 5th-19)
+dep(concerto-1, Symphony-20)
+punct(bad-23, -LRB--21)
+dep(bad-23, ensemble-22)
+dep(Symphony-20, bad-23)
+punct(bad-23, -RRB--24)
+cc(Symphony-20, &-25)
+dep(concerto-1, suite-26)
+conj:&(Symphony-20, suite-26)
+punct(concerto-1, --27)
+compound(Fantastique-29, Boutique-28)
+dep(concerto-1, Fantastique-29)
+punct(think-34, -LRB--30)
+nsubj(think-34, I-31)
+aux(think-34, can-32)
+neg(think-34, not-33)
+dep(Fantastique-29, think-34)
+advmod(went-37, why-35)
+nsubj(went-37, Vienna-36)
+advcl(think-34, went-37)
+xcomp(went-37, mad-38)
+case(Rossini-40, over-39)
+nmod:over(went-37, Rossini-40)
+punct(think-34, -RRB--41)
+punct(concerto-1, .-42)
+
+Sentence #7 (3 tokens):
+Back at 10.15
+[Text=Back CharacterOffsetBegin=410 CharacterOffsetEnd=414 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=415 CharacterOffsetEnd=417 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=10.15 CharacterOffsetBegin=418 CharacterOffsetEnd=423 PartOfSpeech=CD Lemma=10.15 NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.15]
+(ROOT
+  (ADVP (RB Back)
+    (PP (IN at)
+      (NP (CD 10.15)))))
+
+root(ROOT-0, Back-1)
+case(10.15-3, at-2)
+nmod:at(Back-1, 10.15-3)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(4,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(6,4,[4,5]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(6,31,[31,32]) -> (1,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(6,13,[13,14]) -> (6,8,[6,9]), that is: "it" -> "better each time"

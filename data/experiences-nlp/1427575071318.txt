@@ -1,0 +1,577 @@
+Sentence #1 (12 tokens):
+Music was all over the place [in the 1950s].
+[Text=Music CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=195X Timex=<TIMEX3 tid="t1" type="DATE" value="195X">the 1950s</TIMEX3>]
+[Text=1950s CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=CD Lemma=1950s NamedEntityTag=DATE NormalizedNamedEntityTag=195X Timex=<TIMEX3 tid="t1" type="DATE" value="195X">the 1950s</TIMEX3>]
+[Text=-RSB- CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NN Music))
+    (VP (VBD was)
+      (NP
+        (NP (DT all))
+        (PP (IN over)
+          (NP
+            (NP (DT the) (NN place) (-LRB- -LSB-))
+            (PP (IN in)
+              (NP (DT the) (CD 1950s) (-RRB- -RSB-)))))))
+    (. .)))
+
+root(ROOT-0, all-3)
+nsubj(all-3, Music-1)
+cop(all-3, was-2)
+case(place-6, over-4)
+det(place-6, the-5)
+nmod:over(all-3, place-6)
+punct(place-6, -LSB--7)
+case(1950s-10, in-8)
+det(1950s-10, the-9)
+nmod:in(place-6, 1950s-10)
+punct(1950s-10, -RSB--11)
+punct(all-3, .-12)
+
+Sentence #2 (19 tokens):
+When we [the Lowell Fulson Blues Band] got to New York, we hit the Apollo.
+[Text=When CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Lowell CharacterOffsetBegin=58 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Lowell NamedEntityTag=ORGANIZATION]
+[Text=Fulson CharacterOffsetBegin=65 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Fulson NamedEntityTag=ORGANIZATION]
+[Text=Blues CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=NNP Lemma=Blues NamedEntityTag=ORGANIZATION]
+[Text=Band CharacterOffsetBegin=78 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Band NamedEntityTag=ORGANIZATION]
+[Text=-RSB- CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=New NamedEntityTag=LOCATION]
+[Text=York CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=NNP Lemma=York NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=hit CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=VBD Lemma=hit NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Apollo CharacterOffsetBegin=112 CharacterOffsetEnd=118 PartOfSpeech=NNP Lemma=Apollo NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP we))
+        (VP (-LRB- -LSB-)
+          (SBAR
+            (S
+              (NP (DT the) (NNP Lowell) (NNP Fulson) (NNP Blues) (NNP Band) (-RRB- -RSB-))
+              (VP (VBD got)
+                (PP (TO to)
+                  (NP (NNP New) (NNP York)))))))))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBD hit)
+      (NP (DT the) (NNP Apollo)))
+    (. .)))
+
+root(ROOT-0, hit-16)
+advmod(got-10, When-1)
+nsubj(got-10, we-2)
+punct(got-10, -LSB--3)
+det(Band-8, the-4)
+compound(Band-8, Lowell-5)
+compound(Band-8, Fulson-6)
+compound(Band-8, Blues-7)
+nsubj(got-10, Band-8)
+punct(Band-8, -RSB--9)
+advcl(hit-16, got-10)
+case(York-13, to-11)
+compound(York-13, New-12)
+nmod:to(got-10, York-13)
+punct(hit-16, ,-14)
+nsubj(hit-16, we-15)
+det(Apollo-18, the-17)
+dobj(hit-16, Apollo-18)
+punct(hit-16, .-19)
+
+Sentence #3 (22 tokens):
+And there were as many people hanging out backstage, listening to us rehearse and mess around, as out front.
+[Text=And CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=124 CharacterOffsetEnd=129 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=135 CharacterOffsetEnd=137 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=138 CharacterOffsetEnd=142 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=143 CharacterOffsetEnd=149 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=hanging CharacterOffsetBegin=150 CharacterOffsetEnd=157 PartOfSpeech=VBG Lemma=hang NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=158 CharacterOffsetEnd=161 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=backstage CharacterOffsetBegin=162 CharacterOffsetEnd=171 PartOfSpeech=RB Lemma=backstage NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=171 CharacterOffsetEnd=172 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=listening CharacterOffsetBegin=173 CharacterOffsetEnd=182 PartOfSpeech=VBG Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=183 CharacterOffsetEnd=185 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=186 CharacterOffsetEnd=188 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=rehearse CharacterOffsetBegin=189 CharacterOffsetEnd=197 PartOfSpeech=VB Lemma=rehearse NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=198 CharacterOffsetEnd=201 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=mess CharacterOffsetBegin=202 CharacterOffsetEnd=206 PartOfSpeech=NN Lemma=mess NamedEntityTag=O]
+[Text=around CharacterOffsetBegin=207 CharacterOffsetEnd=213 PartOfSpeech=RB Lemma=around NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=213 CharacterOffsetEnd=214 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=215 CharacterOffsetEnd=217 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=218 CharacterOffsetEnd=221 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=front CharacterOffsetBegin=222 CharacterOffsetEnd=227 PartOfSpeech=NN Lemma=front NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=227 CharacterOffsetEnd=228 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC And)
+    (NP (EX there))
+    (VP (VBD were)
+      (ADVP (RB as)
+        (NP (JJ many) (NNS people)))
+      (VP (VBG hanging)
+        (ADVP (RP out) (RB backstage))
+        (, ,)
+        (S
+          (VP (VBG listening)
+            (PP (TO to)
+              (NP
+                (S
+                  (NP (PRP us))
+                  (VP (VB rehearse)))
+                (CC and)
+                (NP
+                  (NP (NN mess))
+                  (ADVP (RB around)))))
+            (, ,)
+            (PP (IN as)
+              (PP (IN out)
+                (NP (NN front))))))))
+    (. .)))
+
+root(ROOT-0, hanging-7)
+cc(hanging-7, And-1)
+expl(hanging-7, there-2)
+aux(hanging-7, were-3)
+advmod(hanging-7, as-4)
+amod(people-6, many-5)
+nmod:npmod(as-4, people-6)
+dep(backstage-9, out-8)
+advmod(hanging-7, backstage-9)
+punct(hanging-7, ,-10)
+advcl(hanging-7, listening-11)
+case(rehearse-14, to-12)
+nsubj(rehearse-14, us-13)
+nmod:to(listening-11, rehearse-14)
+cc(rehearse-14, and-15)
+nmod:to(listening-11, mess-16)
+conj:and(rehearse-14, mess-16)
+advmod(mess-16, around-17)
+punct(listening-11, ,-18)
+case(front-21, as-19)
+case(front-21, out-20)
+nmod:out(listening-11, front-21)
+punct(hanging-7, .-22)
+
+Sentence #4 (14 tokens):
+Must have been at the Apollo that I played behind Jackie Moms Mabley.
+[Text=Must CharacterOffsetBegin=232 CharacterOffsetEnd=236 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=237 CharacterOffsetEnd=241 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=242 CharacterOffsetEnd=246 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=247 CharacterOffsetEnd=249 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=250 CharacterOffsetEnd=253 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Apollo CharacterOffsetBegin=254 CharacterOffsetEnd=260 PartOfSpeech=NNP Lemma=Apollo NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=261 CharacterOffsetEnd=265 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=266 CharacterOffsetEnd=267 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=268 CharacterOffsetEnd=274 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=behind CharacterOffsetBegin=275 CharacterOffsetEnd=281 PartOfSpeech=IN Lemma=behind NamedEntityTag=O]
+[Text=Jackie CharacterOffsetBegin=282 CharacterOffsetEnd=288 PartOfSpeech=NNP Lemma=Jackie NamedEntityTag=PERSON]
+[Text=Moms CharacterOffsetBegin=289 CharacterOffsetEnd=293 PartOfSpeech=NNP Lemma=Moms NamedEntityTag=PERSON]
+[Text=Mabley CharacterOffsetBegin=294 CharacterOffsetEnd=300 PartOfSpeech=NNP Lemma=Mabley NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=300 CharacterOffsetEnd=301 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (MD Must)
+      (VP (VB have)
+        (VP (VBN been)
+          (PP (IN at)
+            (NP (DT the) (NNP Apollo)))
+          (SBAR (IN that)
+            (S
+              (NP (PRP I))
+              (VP (VBD played)
+                (PP (IN behind)
+                  (NP (NNP Jackie) (NNP Moms) (NNP Mabley)))))))))
+    (. .)))
+
+root(ROOT-0, Apollo-6)
+aux(Apollo-6, Must-1)
+aux(Apollo-6, have-2)
+cop(Apollo-6, been-3)
+case(Apollo-6, at-4)
+det(Apollo-6, the-5)
+mark(played-9, that-7)
+nsubj(played-9, I-8)
+ccomp(Apollo-6, played-9)
+case(Mabley-13, behind-10)
+compound(Mabley-13, Jackie-11)
+compound(Mabley-13, Moms-12)
+nmod:behind(played-9, Mabley-13)
+punct(Apollo-6, .-14)
+
+Sentence #5 (27 tokens):
+She was doing her bit--acting like an old lady who wants to be loved by a young man--and she cracked me up.
+[Text=She CharacterOffsetBegin=302 CharacterOffsetEnd=305 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=306 CharacterOffsetEnd=309 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=doing CharacterOffsetBegin=310 CharacterOffsetEnd=315 PartOfSpeech=VBG Lemma=do NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=316 CharacterOffsetEnd=319 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=320 CharacterOffsetEnd=323 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=323 CharacterOffsetEnd=325 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=acting CharacterOffsetBegin=325 CharacterOffsetEnd=331 PartOfSpeech=VBG Lemma=act NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=332 CharacterOffsetEnd=336 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=337 CharacterOffsetEnd=339 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=340 CharacterOffsetEnd=343 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=lady CharacterOffsetBegin=344 CharacterOffsetEnd=348 PartOfSpeech=NN Lemma=lady NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=349 CharacterOffsetEnd=352 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=wants CharacterOffsetBegin=353 CharacterOffsetEnd=358 PartOfSpeech=VBZ Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=359 CharacterOffsetEnd=361 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=362 CharacterOffsetEnd=364 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=loved CharacterOffsetBegin=365 CharacterOffsetEnd=370 PartOfSpeech=VBN Lemma=love NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=371 CharacterOffsetEnd=373 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=374 CharacterOffsetEnd=375 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=young CharacterOffsetBegin=376 CharacterOffsetEnd=381 PartOfSpeech=JJ Lemma=young NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=382 CharacterOffsetEnd=385 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=385 CharacterOffsetEnd=387 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=387 CharacterOffsetEnd=390 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=391 CharacterOffsetEnd=394 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=cracked CharacterOffsetBegin=395 CharacterOffsetEnd=402 PartOfSpeech=VBD Lemma=crack NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=403 CharacterOffsetEnd=405 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=406 CharacterOffsetEnd=408 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=408 CharacterOffsetEnd=409 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP She))
+      (VP (VBD was)
+        (VP (VBG doing)
+          (NP (PRP$ her) (NN bit)))))
+    (PRN (: --)
+      (S
+        (VP (VBG acting)
+          (PP (IN like)
+            (NP
+              (NP (DT an) (JJ old) (NN lady))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBZ wants)
+                    (S
+                      (VP (TO to)
+                        (VP (VB be)
+                          (VP (VBN loved)
+                            (PP (IN by)
+                              (NP (DT a) (JJ young) (NN man))))))))))))))
+      (: --))
+    (CC and)
+    (S
+      (NP (PRP she))
+      (VP (VBD cracked)
+        (NP (PRP me))
+        (PRT (RP up))))
+    (. .)))
+
+root(ROOT-0, doing-3)
+nsubj(doing-3, She-1)
+aux(doing-3, was-2)
+nmod:poss(bit-5, her-4)
+dobj(doing-3, bit-5)
+punct(acting-7, ---6)
+dep(doing-3, acting-7)
+case(lady-11, like-8)
+det(lady-11, an-9)
+amod(lady-11, old-10)
+nmod:like(acting-7, lady-11)
+nsubj(wants-13, lady-11)
+nsubjpass:xsubj(loved-16, lady-11)
+ref(lady-11, who-12)
+acl:relcl(lady-11, wants-13)
+mark(loved-16, to-14)
+auxpass(loved-16, be-15)
+xcomp(wants-13, loved-16)
+case(man-20, by-17)
+det(man-20, a-18)
+amod(man-20, young-19)
+nmod:agent(loved-16, man-20)
+punct(acting-7, ---21)
+cc(doing-3, and-22)
+nsubj(cracked-24, she-23)
+conj:and(doing-3, cracked-24)
+dobj(cracked-24, me-25)
+compound:prt(cracked-24, up-26)
+punct(doing-3, .-27)
+
+Sentence #6 (11 tokens):
+I played piano behind her when she sang her songs.
+[Text=I CharacterOffsetBegin=410 CharacterOffsetEnd=411 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=412 CharacterOffsetEnd=418 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=419 CharacterOffsetEnd=424 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=behind CharacterOffsetBegin=425 CharacterOffsetEnd=431 PartOfSpeech=IN Lemma=behind NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=432 CharacterOffsetEnd=435 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=436 CharacterOffsetEnd=440 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=441 CharacterOffsetEnd=444 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=sang CharacterOffsetBegin=445 CharacterOffsetEnd=449 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=450 CharacterOffsetEnd=453 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=songs CharacterOffsetBegin=454 CharacterOffsetEnd=459 PartOfSpeech=NNS Lemma=song NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=459 CharacterOffsetEnd=460 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD played)
+      (NP (NN piano))
+      (PP (IN behind)
+        (NP (PRP$ her)))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP she))
+          (VP (VBD sang)
+            (NP (PRP$ her) (NNS songs))))))
+    (. .)))
+
+root(ROOT-0, played-2)
+nsubj(played-2, I-1)
+dobj(played-2, piano-3)
+case(her-5, behind-4)
+nmod:behind(played-2, her-5)
+advmod(sang-8, when-6)
+nsubj(sang-8, she-7)
+advcl(played-2, sang-8)
+nmod:poss(songs-10, her-9)
+dobj(sang-8, songs-10)
+punct(played-2, .-11)
+
+Sentence #7 (7 tokens):
+Things like "My Man”.
+[Text=Things CharacterOffsetBegin=461 CharacterOffsetEnd=467 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=468 CharacterOffsetEnd=472 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=473 CharacterOffsetEnd=474 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=My CharacterOffsetBegin=474 CharacterOffsetEnd=476 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=Man CharacterOffsetBegin=477 CharacterOffsetEnd=480 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=480 CharacterOffsetEnd=481 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=481 CharacterOffsetEnd=482 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNS Things))
+    (PP (IN like) (`` ``)
+      (NP (PRP$ My) (NN Man))
+      ('' ''))
+    (. .)))
+
+root(ROOT-0, Things-1)
+case(Man-5, like-2)
+punct(Man-5, ``-3)
+nmod:poss(Man-5, My-4)
+nmod:like(Things-1, Man-5)
+punct(Man-5, ''-6)
+punct(Things-1, .-7)
+
+Sentence #8 (30 tokens):
+I also met the other great comics playing the black theaters back then--fabulous cats like Pigmeat Markham, Redd Foxx, Slappy White, and Clay Tyson.
+[Text=I CharacterOffsetBegin=486 CharacterOffsetEnd=487 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=488 CharacterOffsetEnd=492 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=met CharacterOffsetBegin=493 CharacterOffsetEnd=496 PartOfSpeech=VBD Lemma=meet NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=497 CharacterOffsetEnd=500 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=501 CharacterOffsetEnd=506 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=507 CharacterOffsetEnd=512 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=comics CharacterOffsetBegin=513 CharacterOffsetEnd=519 PartOfSpeech=NNS Lemma=comic NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=520 CharacterOffsetEnd=527 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=528 CharacterOffsetEnd=531 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=black CharacterOffsetBegin=532 CharacterOffsetEnd=537 PartOfSpeech=JJ Lemma=black NamedEntityTag=O]
+[Text=theaters CharacterOffsetBegin=538 CharacterOffsetEnd=546 PartOfSpeech=NNS Lemma=theater NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=547 CharacterOffsetEnd=551 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=552 CharacterOffsetEnd=556 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=556 CharacterOffsetEnd=558 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=fabulous CharacterOffsetBegin=558 CharacterOffsetEnd=566 PartOfSpeech=JJ Lemma=fabulous NamedEntityTag=O]
+[Text=cats CharacterOffsetBegin=567 CharacterOffsetEnd=571 PartOfSpeech=NNS Lemma=cat NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=572 CharacterOffsetEnd=576 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=Pigmeat CharacterOffsetBegin=577 CharacterOffsetEnd=584 PartOfSpeech=NNP Lemma=Pigmeat NamedEntityTag=PERSON]
+[Text=Markham CharacterOffsetBegin=585 CharacterOffsetEnd=592 PartOfSpeech=NNP Lemma=Markham NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=592 CharacterOffsetEnd=593 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Redd CharacterOffsetBegin=594 CharacterOffsetEnd=598 PartOfSpeech=NNP Lemma=Redd NamedEntityTag=PERSON]
+[Text=Foxx CharacterOffsetBegin=599 CharacterOffsetEnd=603 PartOfSpeech=NNP Lemma=Foxx NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=603 CharacterOffsetEnd=604 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Slappy CharacterOffsetBegin=605 CharacterOffsetEnd=611 PartOfSpeech=NNP Lemma=Slappy NamedEntityTag=PERSON]
+[Text=White CharacterOffsetBegin=612 CharacterOffsetEnd=617 PartOfSpeech=NNP Lemma=White NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=617 CharacterOffsetEnd=618 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=619 CharacterOffsetEnd=622 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Clay CharacterOffsetBegin=623 CharacterOffsetEnd=627 PartOfSpeech=NNP Lemma=Clay NamedEntityTag=PERSON]
+[Text=Tyson CharacterOffsetBegin=628 CharacterOffsetEnd=633 PartOfSpeech=NNP Lemma=Tyson NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=633 CharacterOffsetEnd=634 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB also))
+    (VP (VBD met)
+      (NP
+        (NP
+          (NP (DT the) (JJ other) (JJ great) (NNS comics))
+          (VP (VBG playing)
+            (ADVP
+              (NP (DT the) (JJ black) (NNS theaters))
+              (RB back))
+            (ADVP (RB then))))
+        (: --)
+        (NP
+          (NP (JJ fabulous) (NNS cats))
+          (PP (IN like)
+            (NP
+              (NP (NNP Pigmeat) (NNP Markham))
+              (, ,)
+              (NP (NNP Redd) (NNP Foxx))
+              (, ,)
+              (NP (NNP Slappy) (NNP White))
+              (, ,)
+              (CC and)
+              (NP (NNP Clay) (NNP Tyson)))))))
+    (. .)))
+
+root(ROOT-0, met-3)
+nsubj(met-3, I-1)
+advmod(met-3, also-2)
+det(comics-7, the-4)
+amod(comics-7, other-5)
+amod(comics-7, great-6)
+dobj(met-3, comics-7)
+acl(comics-7, playing-8)
+det(theaters-11, the-9)
+amod(theaters-11, black-10)
+nmod:npmod(back-12, theaters-11)
+advmod(playing-8, back-12)
+advmod(playing-8, then-13)
+punct(comics-7, ---14)
+amod(cats-16, fabulous-15)
+dep(comics-7, cats-16)
+case(Markham-19, like-17)
+compound(Markham-19, Pigmeat-18)
+nmod:like(cats-16, Markham-19)
+punct(Markham-19, ,-20)
+compound(Foxx-22, Redd-21)
+nmod:like(cats-16, Foxx-22)
+conj:and(Markham-19, Foxx-22)
+punct(Markham-19, ,-23)
+compound(White-25, Slappy-24)
+nmod:like(cats-16, White-25)
+conj:and(Markham-19, White-25)
+punct(Markham-19, ,-26)
+cc(Markham-19, and-27)
+compound(Tyson-29, Clay-28)
+nmod:like(cats-16, Tyson-29)
+conj:and(Markham-19, Tyson-29)
+punct(met-3, .-30)
+
+Sentence #9 (26 tokens):
+In those days their material was raunchy and rough and funny enough to make you weep and pee in your pants at the same time.
+[Text=In CharacterOffsetBegin=635 CharacterOffsetEnd=637 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=638 CharacterOffsetEnd=643 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=days CharacterOffsetBegin=644 CharacterOffsetEnd=648 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t2" type="DURATION" value="PXD">days</TIMEX3>]
+[Text=their CharacterOffsetBegin=649 CharacterOffsetEnd=654 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=material CharacterOffsetBegin=655 CharacterOffsetEnd=663 PartOfSpeech=NN Lemma=material NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=664 CharacterOffsetEnd=667 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=raunchy CharacterOffsetBegin=668 CharacterOffsetEnd=675 PartOfSpeech=JJ Lemma=raunchy NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=676 CharacterOffsetEnd=679 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=rough CharacterOffsetBegin=680 CharacterOffsetEnd=685 PartOfSpeech=JJ Lemma=rough NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=686 CharacterOffsetEnd=689 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=funny CharacterOffsetBegin=690 CharacterOffsetEnd=695 PartOfSpeech=JJ Lemma=funny NamedEntityTag=O]
+[Text=enough CharacterOffsetBegin=696 CharacterOffsetEnd=702 PartOfSpeech=JJ Lemma=enough NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=703 CharacterOffsetEnd=705 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=706 CharacterOffsetEnd=710 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=711 CharacterOffsetEnd=714 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=weep CharacterOffsetBegin=715 CharacterOffsetEnd=719 PartOfSpeech=NN Lemma=weep NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=720 CharacterOffsetEnd=723 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=pee CharacterOffsetBegin=724 CharacterOffsetEnd=727 PartOfSpeech=NN Lemma=pee NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=728 CharacterOffsetEnd=730 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=731 CharacterOffsetEnd=735 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=pants CharacterOffsetBegin=736 CharacterOffsetEnd=741 PartOfSpeech=NNS Lemma=pants NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=742 CharacterOffsetEnd=744 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=745 CharacterOffsetEnd=748 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=749 CharacterOffsetEnd=753 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=754 CharacterOffsetEnd=758 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=758 CharacterOffsetEnd=759 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT those) (NNS days)))
+    (NP (PRP$ their) (NN material))
+    (VP (VBD was)
+      (ADJP
+        (ADJP (JJ raunchy)
+          (CC and)
+          (JJ rough))
+        (CC and)
+        (ADJP (JJ funny) (JJ enough)))
+      (S
+        (VP (TO to)
+          (VP
+            (VP (VB make)
+              (S
+                (NP (PRP you))
+                (VP (NN weep))))
+            (CC and)
+            (VP (NN pee)
+              (PP (IN in)
+                (NP
+                  (NP (PRP$ your) (NNS pants))
+                  (PP (IN at)
+                    (NP (DT the) (JJ same) (NN time))))))))))
+    (. .)))
+
+root(ROOT-0, raunchy-7)
+case(days-3, In-1)
+det(days-3, those-2)
+nmod:in(raunchy-7, days-3)
+nmod:poss(material-5, their-4)
+nsubj(raunchy-7, material-5)
+nsubj(rough-9, material-5)
+nsubj(enough-12, material-5)
+nsubj:xsubj(make-14, material-5)
+cop(raunchy-7, was-6)
+cc(raunchy-7, and-8)
+conj:and(raunchy-7, rough-9)
+cc(raunchy-7, and-10)
+amod(enough-12, funny-11)
+conj:and(raunchy-7, enough-12)
+mark(make-14, to-13)
+xcomp(raunchy-7, make-14)
+nsubj(weep-16, you-15)
+ccomp(make-14, weep-16)
+cc(make-14, and-17)
+xcomp(raunchy-7, pee-18)
+conj:and(make-14, pee-18)
+case(pants-21, in-19)
+nmod:poss(pants-21, your-20)
+nmod:in(pee-18, pants-21)
+case(time-25, at-22)
+det(time-25, the-23)
+amod(time-25, same-24)
+nmod:at(pants-21, time-25)
+punct(raunchy-7, .-26)
+
+Coreference set:
+	(2,15,[15,16]) -> (2,2,[2,3]), that is: "we" -> "we"
+	(3,13,[13,14]) -> (2,2,[2,3]), that is: "us" -> "we"
+Coreference set:
+	(4,6,[5,7]) -> (2,18,[17,19]), that is: "the Apollo" -> "the Apollo"
+Coreference set:
+	(5,25,[25,26]) -> (4,8,[8,9]), that is: "me" -> "I"
+	(6,1,[1,2]) -> (4,8,[8,9]), that is: "I" -> "I"
+	(7,4,[4,5]) -> (4,8,[8,9]), that is: "My" -> "I"
+	(8,1,[1,2]) -> (4,8,[8,9]), that is: "I" -> "I"
+Coreference set:
+	(5,4,[4,5]) -> (5,1,[1,2]), that is: "her" -> "She"
+	(5,23,[23,24]) -> (5,1,[1,2]), that is: "she" -> "She"
+	(6,5,[5,6]) -> (5,1,[1,2]), that is: "her" -> "She"
+	(6,7,[7,8]) -> (5,1,[1,2]), that is: "she" -> "She"
+	(6,9,[9,10]) -> (5,1,[1,2]), that is: "her" -> "She"
+Coreference set:
+	(7,5,[4,6]) -> (5,20,[18,21]), that is: "My Man" -> "a young man"
+Coreference set:
+	(9,4,[4,5]) -> (8,16,[15,30]), that is: "their" -> "fabulous cats like Pigmeat Markham , Redd Foxx , Slappy White , and Clay Tyson"

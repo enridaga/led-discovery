@@ -1,0 +1,100 @@
+Sentence #1 (18 tokens):
+The Canadians’ sports day went off well and they gave a good concert in the evening.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Canadians CharacterOffsetBegin=4 CharacterOffsetEnd=13 PartOfSpeech=NNPS Lemma=Canadians NamedEntityTag=MISC]
+[Text=' CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=sports CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NNS Lemma=sport NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t1" type="DURATION" value="P1D">day</TIMEX3>]
+[Text=went CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=RB Lemma=off NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=76 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t2" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=. CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NNPS Canadians) (POS '))
+        (NNS sports) (NN day))
+      (VP (VBD went)
+        (ADVP (RB off) (RB well))))
+    (CC and)
+    (S
+      (NP (PRP they))
+      (VP (VBD gave)
+        (NP (DT a) (JJ good) (NN concert))
+        (PP (IN in)
+          (NP (DT the) (NN evening)))))
+    (. .)))
+
+root(ROOT-0, went-6)
+det(Canadians-2, The-1)
+nmod:poss(day-5, Canadians-2)
+case(Canadians-2, '-3)
+compound(day-5, sports-4)
+nsubj(went-6, day-5)
+advmod(well-8, off-7)
+advmod(went-6, well-8)
+cc(went-6, and-9)
+nsubj(gave-11, they-10)
+conj:and(went-6, gave-11)
+det(concert-14, a-12)
+amod(concert-14, good-13)
+dobj(gave-11, concert-14)
+case(evening-17, in-15)
+det(evening-17, the-16)
+nmod:in(gave-11, evening-17)
+punct(went-6, .-18)
+
+Sentence #2 (13 tokens):
+Tomorrow is Thanksgiving Day, so the Americans will be en fête.
+[Text=Tomorrow CharacterOffsetBegin=85 CharacterOffsetEnd=93 PartOfSpeech=NN Lemma=tomorrow NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P1D Timex=<TIMEX3 alt_value="OFFSET P1D" anchorTimeID="t0" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf0">Tomorrow</TIMEX3>]
+[Text=is CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Thanksgiving CharacterOffsetBegin=97 CharacterOffsetEnd=109 PartOfSpeech=NNP Lemma=Thanksgiving NamedEntityTag=DATE NormalizedNamedEntityTag=THANKSGIVING Timex=<TIMEX3 tid="t4" type="DATE" value="THANKSGIVING">Thanksgiving</TIMEX3>]
+[Text=Day CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=NNP Lemma=Day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t1" type="DURATION" value="P1D">Day</TIMEX3>]
+[Text=, CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=115 CharacterOffsetEnd=117 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=118 CharacterOffsetEnd=121 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Americans CharacterOffsetBegin=122 CharacterOffsetEnd=131 PartOfSpeech=NNPS Lemma=Americans NamedEntityTag=MISC]
+[Text=will CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=en CharacterOffsetBegin=140 CharacterOffsetEnd=142 PartOfSpeech=IN Lemma=en NamedEntityTag=O]
+[Text=fête CharacterOffsetBegin=143 CharacterOffsetEnd=147 PartOfSpeech=NN Lemma=fête NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NN Tomorrow))
+      (VP (VBZ is)
+        (NP (NNP Thanksgiving) (NNP Day))))
+    (, ,) (IN so)
+    (S
+      (NP (DT the) (NNPS Americans))
+      (VP (MD will)
+        (VP (VB be)
+          (PP (IN en)
+            (NP (NN fête))))))
+    (. .)))
+
+root(ROOT-0, Day-4)
+nsubj(Day-4, Tomorrow-1)
+cop(Day-4, is-2)
+compound(Day-4, Thanksgiving-3)
+punct(Day-4, ,-5)
+dep(Day-4, so-6)
+det(Americans-8, the-7)
+nsubj(fête-12, Americans-8)
+aux(fête-12, will-9)
+cop(fête-12, be-10)
+case(fête-12, en-11)
+parataxis(Day-4, fête-12)
+punct(Day-4, .-13)
+

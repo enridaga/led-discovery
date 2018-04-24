@@ -1,0 +1,131 @@
+Sentence #1 (10 tokens):
+Concert of my pieces at the university last night.
+[Text=Concert CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=11 CharacterOffsetEnd=13 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=pieces CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=NNS Lemma=piece NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=university CharacterOffsetBegin=28 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=university NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=JJ Lemma=last NamedEntityTag=TIME NormalizedNamedEntityTag=TNI OFFSET P-1D Timex=<TIMEX3 alt_value="TNI OFFSET P-1D" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">last night</TIMEX3>]
+[Text=night CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI OFFSET P-1D Timex=<TIMEX3 alt_value="TNI OFFSET P-1D" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">last night</TIMEX3>]
+[Text=. CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NN Concert))
+    (PP (IN of)
+      (NP (PRP$ my) (NNS pieces)))
+    (PP (IN at)
+      (NP
+        (NP (DT the) (NN university))
+        (NP-TMP (JJ last) (NN night))))
+    (. .)))
+
+root(ROOT-0, Concert-1)
+case(pieces-4, of-2)
+nmod:poss(pieces-4, my-3)
+nmod:of(Concert-1, pieces-4)
+case(university-7, at-5)
+det(university-7, the-6)
+nmod:at(Concert-1, university-7)
+amod(night-9, last-8)
+nmod:tmod(university-7, night-9)
+punct(Concert-1, .-10)
+
+Sentence #2 (2 tokens):
+Professional.
+[Text=Professional CharacterOffsetBegin=51 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=Professional NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (NNP Professional))
+    (. .)))
+
+root(ROOT-0, Professional-1)
+punct(Professional-1, .-2)
+
+Sentence #3 (27 tokens):
+Ditto the speeches, and also the Albuquerque Orchestra which in Friday did Beethoven's Ninth, the first piece of junk in the grand style.
+[Text=Ditto CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Ditto NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=speeches CharacterOffsetBegin=75 CharacterOffsetEnd=83 PartOfSpeech=NNS Lemma=speech NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Albuquerque CharacterOffsetBegin=98 CharacterOffsetEnd=109 PartOfSpeech=NNP Lemma=Albuquerque NamedEntityTag=LOCATION]
+[Text=Orchestra CharacterOffsetBegin=110 CharacterOffsetEnd=119 PartOfSpeech=NNP Lemma=Orchestra NamedEntityTag=LOCATION]
+[Text=which CharacterOffsetBegin=120 CharacterOffsetEnd=125 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=126 CharacterOffsetEnd=128 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Friday CharacterOffsetBegin=129 CharacterOffsetEnd=135 PartOfSpeech=NNP Lemma=Friday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-5 Timex=<TIMEX3 tid="t3" type="DATE" value="XXXX-WXX-5">Friday</TIMEX3>]
+[Text=did CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=Beethoven CharacterOffsetBegin=140 CharacterOffsetEnd=149 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=149 CharacterOffsetEnd=151 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Ninth CharacterOffsetBegin=152 CharacterOffsetEnd=157 PartOfSpeech=NNP Lemma=Ninth NamedEntityTag=ORDINAL NormalizedNamedEntityTag=9.0]
+[Text=, CharacterOffsetBegin=157 CharacterOffsetEnd=158 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=159 CharacterOffsetEnd=162 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=163 CharacterOffsetEnd=168 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=piece CharacterOffsetBegin=169 CharacterOffsetEnd=174 PartOfSpeech=NN Lemma=piece NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=175 CharacterOffsetEnd=177 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=junk CharacterOffsetBegin=178 CharacterOffsetEnd=182 PartOfSpeech=NN Lemma=junk NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=183 CharacterOffsetEnd=185 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=186 CharacterOffsetEnd=189 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=grand CharacterOffsetBegin=190 CharacterOffsetEnd=195 PartOfSpeech=JJ Lemma=grand NamedEntityTag=O]
+[Text=style CharacterOffsetBegin=196 CharacterOffsetEnd=201 PartOfSpeech=NN Lemma=style NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=201 CharacterOffsetEnd=202 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Ditto))
+    (VP
+      (NP (DT the) (NNS speeches)
+        (PRN (, ,)
+          (CC and)
+          (ADVP (RB also))
+          (NP (DT the) (NNP Albuquerque) (NNP Orchestra)))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (PP (IN in)
+              (NP (NNP Friday)))
+            (VP (VBD did)
+              (NP
+                (NP (NNP Beethoven) (POS 's))
+                (NNP Ninth))))))
+      (, ,)
+      (NP
+        (NP (DT the) (JJ first) (NN piece))
+        (PP (IN of)
+          (NP
+            (NP (NN junk))
+            (PP (IN in)
+              (NP (DT the) (JJ grand) (NN style)))))))
+    (. .)))
+
+root(ROOT-0, speeches-3)
+nsubj(speeches-3, Ditto-1)
+det(speeches-3, the-2)
+punct(Orchestra-9, ,-4)
+cc(Orchestra-9, and-5)
+dep(Orchestra-9, also-6)
+det(Orchestra-9, the-7)
+compound(Orchestra-9, Albuquerque-8)
+dep(speeches-3, Orchestra-9)
+nsubj(did-13, which-10)
+case(Friday-12, in-11)
+nmod:in(did-13, Friday-12)
+ccomp(speeches-3, did-13)
+nmod:poss(Ninth-16, Beethoven-14)
+case(Beethoven-14, 's-15)
+dobj(did-13, Ninth-16)
+punct(speeches-3, ,-17)
+det(piece-20, the-18)
+amod(piece-20, first-19)
+dobj(speeches-3, piece-20)
+case(junk-22, of-21)
+nmod:of(piece-20, junk-22)
+case(style-26, in-23)
+det(style-26, the-24)
+amod(style-26, grand-25)
+nmod:in(junk-22, style-26)
+punct(speeches-3, .-27)
+

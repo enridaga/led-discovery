@@ -1,0 +1,71 @@
+Sentence #1 (22 tokens):
+Morlings don't fetch back Radio Gramophone so spend much of the day listening to all our records & to wireless.
+[Text=Morlings CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNS Lemma=morling NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=fetch CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=VB Lemma=fetch NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=Radio CharacterOffsetBegin=26 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Radio NamedEntityTag=O]
+[Text=Gramophone CharacterOffsetBegin=32 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Gramophone NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=spend CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=VB Lemma=spend NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the day</TIMEX3>]
+[Text=day CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=NN Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the day</TIMEX3>]
+[Text=listening CharacterOffsetBegin=68 CharacterOffsetEnd=77 PartOfSpeech=VBG Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=records CharacterOffsetBegin=89 CharacterOffsetEnd=96 PartOfSpeech=NNS Lemma=record NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=wireless CharacterOffsetBegin=102 CharacterOffsetEnd=110 PartOfSpeech=JJ Lemma=wireless NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNS Morlings))
+    (VP (VBP do) (RB n't)
+      (VP (VB fetch)
+        (PRT (RB back))
+        (NP (NNP Radio) (NNP Gramophone))
+        (ADVP (RB so)
+          (S
+            (VP (VB spend)
+              (S
+                (NP
+                  (NP (JJ much))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT the) (NN day))
+                      (VP (VBG listening)
+                        (PP (TO to)
+                          (NP (DT all) (PRP$ our) (NNS records)))))))
+                (NP (CC &))
+                (PP (TO to)
+                  (NP (JJ wireless)))))))))
+    (. .)))
+
+root(ROOT-0, fetch-4)
+nsubj(fetch-4, Morlings-1)
+aux(fetch-4, do-2)
+neg(fetch-4, n't-3)
+compound:prt(fetch-4, back-5)
+compound(Gramophone-7, Radio-6)
+dobj(fetch-4, Gramophone-7)
+advmod(fetch-4, so-8)
+dep(so-8, spend-9)
+nsubj(&-19, much-10)
+case(day-13, of-11)
+det(day-13, the-12)
+nmod:of(much-10, day-13)
+acl(day-13, listening-14)
+case(records-18, to-15)
+det:predet(records-18, all-16)
+nmod:poss(records-18, our-17)
+nmod:to(listening-14, records-18)
+xcomp(spend-9, &-19)
+case(wireless-21, to-20)
+dep(&-19, wireless-21)
+punct(fetch-4, .-22)
+

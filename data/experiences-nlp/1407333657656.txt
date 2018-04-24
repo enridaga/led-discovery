@@ -1,0 +1,112 @@
+Sentence #1 (31 tokens):
+After dinner I begun to teach my wife and Barker my song, It is decreed - which pleases my mightily, as now I have Mr. Hinxton's bass.
+[Text=After CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=begun CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=VBD Lemma=begin NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=teach CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=VB Lemma=teach NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=wife CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=wife NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Barker CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Barker NamedEntityTag=PERSON]
+[Text=my CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=song CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=song NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=It CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=decreed CharacterOffsetBegin=64 CharacterOffsetEnd=71 PartOfSpeech=VBN Lemma=decree NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=74 CharacterOffsetEnd=79 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=pleases CharacterOffsetBegin=80 CharacterOffsetEnd=87 PartOfSpeech=VBZ Lemma=please NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=mightily CharacterOffsetBegin=91 CharacterOffsetEnd=99 PartOfSpeech=RB Lemma=mightily NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=I CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Hinxton CharacterOffsetBegin=119 CharacterOffsetEnd=126 PartOfSpeech=NNP Lemma=Hinxton NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=126 CharacterOffsetEnd=128 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=bass CharacterOffsetBegin=129 CharacterOffsetEnd=133 PartOfSpeech=NN Lemma=bass NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=133 CharacterOffsetEnd=134 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (PP (IN After)
+        (NP (NN dinner)))
+      (NP (PRP I))
+      (VP (VBD begun)
+        (S
+          (VP (TO to)
+            (VP (VB teach)
+              (NP
+                (NP (PRP$ my) (NN wife))
+                (CC and)
+                (NP (NNP Barker)))
+              (NP (PRP$ my) (NN song)))))))
+    (, ,)
+    (S
+      (NP (PRP It))
+      (VP (VBZ is)
+        (VP (VBN decreed))))
+    (: -)
+    (SBAR
+      (WHNP (WDT which))
+      (S
+        (VP (VBZ pleases)
+          (NP (PRP$ my))
+          (ADVP (RB mightily))
+          (, ,)
+          (SBAR (IN as)
+            (S
+              (ADVP (RB now))
+              (NP (PRP I))
+              (VP (VBP have)
+                (NP
+                  (NP (NNP Mr.) (NNP Hinxton) (POS 's))
+                  (NN bass))))))))
+    (. .)))
+
+root(ROOT-0, begun-4)
+case(dinner-2, After-1)
+nmod:after(begun-4, dinner-2)
+nsubj(begun-4, I-3)
+nsubj:xsubj(teach-6, I-3)
+mark(teach-6, to-5)
+xcomp(begun-4, teach-6)
+nmod:poss(wife-8, my-7)
+iobj(teach-6, wife-8)
+cc(wife-8, and-9)
+iobj(teach-6, Barker-10)
+conj:and(wife-8, Barker-10)
+nmod:poss(song-12, my-11)
+dobj(teach-6, song-12)
+punct(begun-4, ,-13)
+nsubjpass(decreed-16, It-14)
+auxpass(decreed-16, is-15)
+parataxis(begun-4, decreed-16)
+punct(begun-4, --17)
+nsubj(pleases-19, which-18)
+parataxis(begun-4, pleases-19)
+dobj(pleases-19, my-20)
+advmod(pleases-19, mightily-21)
+punct(pleases-19, ,-22)
+mark(have-26, as-23)
+advmod(have-26, now-24)
+nsubj(have-26, I-25)
+advcl:as(pleases-19, have-26)
+compound(Hinxton-28, Mr.-27)
+nmod:poss(bass-30, Hinxton-28)
+case(Hinxton-28, 's-29)
+dobj(have-26, bass-30)
+punct(begun-4, .-31)
+
+Coreference set:
+	(1,7,[7,8]) -> (1,3,[3,4]), that is: "my" -> "I"
+	(1,11,[11,12]) -> (1,3,[3,4]), that is: "my" -> "I"
+	(1,20,[20,21]) -> (1,3,[3,4]), that is: "my" -> "I"
+	(1,25,[25,26]) -> (1,3,[3,4]), that is: "I" -> "I"
+Coreference set:
+	(1,14,[14,15]) -> (1,12,[11,13]), that is: "It" -> "my song"

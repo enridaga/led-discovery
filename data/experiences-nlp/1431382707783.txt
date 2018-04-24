@@ -1,0 +1,233 @@
+Sentence #1 (17 tokens):
+I recently received an invitation from the New York Philharmonic to conduct eight concerts in October.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=recently CharacterOffsetBegin=2 CharacterOffsetEnd=10 PartOfSpeech=RB Lemma=recently NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">recently</TIMEX3>]
+[Text=received CharacterOffsetBegin=11 CharacterOffsetEnd=19 PartOfSpeech=VBD Lemma=receive NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=invitation CharacterOffsetBegin=23 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=invitation NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=New CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=New NamedEntityTag=ORGANIZATION]
+[Text=York CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=NNP Lemma=York NamedEntityTag=ORGANIZATION]
+[Text=Philharmonic CharacterOffsetBegin=52 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Philharmonic NamedEntityTag=ORGANIZATION]
+[Text=to CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=conduct CharacterOffsetBegin=68 CharacterOffsetEnd=75 PartOfSpeech=VB Lemma=conduct NamedEntityTag=O]
+[Text=eight CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=CD Lemma=eight NamedEntityTag=NUMBER NormalizedNamedEntityTag=8.0]
+[Text=concerts CharacterOffsetBegin=82 CharacterOffsetEnd=90 PartOfSpeech=NNS Lemma=concert NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=October CharacterOffsetBegin=94 CharacterOffsetEnd=101 PartOfSpeech=NNP Lemma=October NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-10 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-10">October</TIMEX3>]
+[Text=. CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB recently))
+    (VP (VBD received)
+      (NP (DT an) (NN invitation))
+      (PP (IN from)
+        (NP (DT the) (NNP New) (NNP York) (NNP Philharmonic)))
+      (S
+        (VP (TO to)
+          (VP (VB conduct)
+            (NP
+              (NP (CD eight) (NNS concerts))
+              (PP (IN in)
+                (NP (NNP October))))))))
+    (. .)))
+
+root(ROOT-0, received-3)
+nsubj(received-3, I-1)
+advmod(received-3, recently-2)
+det(invitation-5, an-4)
+dobj(received-3, invitation-5)
+case(Philharmonic-10, from-6)
+det(Philharmonic-10, the-7)
+compound(Philharmonic-10, New-8)
+compound(Philharmonic-10, York-9)
+nmod:from(received-3, Philharmonic-10)
+mark(conduct-12, to-11)
+advcl:to(received-3, conduct-12)
+nummod(concerts-14, eight-13)
+dobj(conduct-12, concerts-14)
+case(October-16, in-15)
+nmod:in(concerts-14, October-16)
+punct(received-3, .-17)
+
+Sentence #2 (11 tokens):
+I turned it down, as I am no conductor.
+[Text=I CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=turned CharacterOffsetBegin=105 CharacterOffsetEnd=111 PartOfSpeech=VBD Lemma=turn NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=112 CharacterOffsetEnd=114 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=115 CharacterOffsetEnd=119 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=126 CharacterOffsetEnd=128 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=conductor CharacterOffsetBegin=132 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=conductor NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD turned)
+      (NP (PRP it))
+      (PRT (RP down))
+      (, ,)
+      (SBAR (IN as)
+        (S
+          (NP (PRP I))
+          (VP (VBP am)
+            (NP (DT no) (NN conductor))))))
+    (. .)))
+
+root(ROOT-0, turned-2)
+nsubj(turned-2, I-1)
+dobj(turned-2, it-3)
+compound:prt(turned-2, down-4)
+punct(turned-2, ,-5)
+mark(conductor-10, as-6)
+nsubj(conductor-10, I-7)
+cop(conductor-10, am-8)
+neg(conductor-10, no-9)
+advcl:as(turned-2, conductor-10)
+punct(turned-2, .-11)
+
+Sentence #3 (42 tokens):
+All the same, when I heard my Seventh Symphony conducted by Konstantin Ivanov three days later, I was regretting my decision having come to the conclusion that the art of conducting can’t be as difficult as all that.
+[Text=All CharacterOffsetBegin=143 CharacterOffsetEnd=146 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=151 CharacterOffsetEnd=155 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=155 CharacterOffsetEnd=156 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=157 CharacterOffsetEnd=161 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=162 CharacterOffsetEnd=163 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=164 CharacterOffsetEnd=169 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=170 CharacterOffsetEnd=172 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=Seventh CharacterOffsetBegin=173 CharacterOffsetEnd=180 PartOfSpeech=NNP Lemma=Seventh NamedEntityTag=ORDINAL NormalizedNamedEntityTag=7.0]
+[Text=Symphony CharacterOffsetBegin=181 CharacterOffsetEnd=189 PartOfSpeech=NNP Lemma=Symphony NamedEntityTag=O]
+[Text=conducted CharacterOffsetBegin=190 CharacterOffsetEnd=199 PartOfSpeech=VBN Lemma=conduct NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=200 CharacterOffsetEnd=202 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Konstantin CharacterOffsetBegin=203 CharacterOffsetEnd=213 PartOfSpeech=NNP Lemma=Konstantin NamedEntityTag=PERSON]
+[Text=Ivanov CharacterOffsetBegin=214 CharacterOffsetEnd=220 PartOfSpeech=NNP Lemma=Ivanov NamedEntityTag=PERSON]
+[Text=three CharacterOffsetBegin=221 CharacterOffsetEnd=226 PartOfSpeech=CD Lemma=three NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P3D Timex=<TIMEX3 alt_value="OFFSET P3D" anchorTimeID="t0" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf0">three days later</TIMEX3>]
+[Text=days CharacterOffsetBegin=227 CharacterOffsetEnd=231 PartOfSpeech=NNS Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P3D Timex=<TIMEX3 alt_value="OFFSET P3D" anchorTimeID="t0" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf0">three days later</TIMEX3>]
+[Text=later CharacterOffsetBegin=232 CharacterOffsetEnd=237 PartOfSpeech=RB Lemma=later NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P3D Timex=<TIMEX3 alt_value="OFFSET P3D" anchorTimeID="t0" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf0">three days later</TIMEX3>]
+[Text=, CharacterOffsetBegin=237 CharacterOffsetEnd=238 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=239 CharacterOffsetEnd=240 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=241 CharacterOffsetEnd=244 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=regretting CharacterOffsetBegin=245 CharacterOffsetEnd=255 PartOfSpeech=VBG Lemma=regret NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=256 CharacterOffsetEnd=258 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=decision CharacterOffsetBegin=259 CharacterOffsetEnd=267 PartOfSpeech=NN Lemma=decision NamedEntityTag=O]
+[Text=having CharacterOffsetBegin=268 CharacterOffsetEnd=274 PartOfSpeech=VBG Lemma=have NamedEntityTag=O]
+[Text=come CharacterOffsetBegin=275 CharacterOffsetEnd=279 PartOfSpeech=VBN Lemma=come NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=280 CharacterOffsetEnd=282 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=283 CharacterOffsetEnd=286 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=conclusion CharacterOffsetBegin=287 CharacterOffsetEnd=297 PartOfSpeech=NN Lemma=conclusion NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=298 CharacterOffsetEnd=302 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=303 CharacterOffsetEnd=306 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=art CharacterOffsetBegin=307 CharacterOffsetEnd=310 PartOfSpeech=NN Lemma=art NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=311 CharacterOffsetEnd=313 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=conducting CharacterOffsetBegin=314 CharacterOffsetEnd=324 PartOfSpeech=VBG Lemma=conduct NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=325 CharacterOffsetEnd=327 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=327 CharacterOffsetEnd=330 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=331 CharacterOffsetEnd=333 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=334 CharacterOffsetEnd=336 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=difficult CharacterOffsetBegin=337 CharacterOffsetEnd=346 PartOfSpeech=JJ Lemma=difficult NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=347 CharacterOffsetEnd=349 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=350 CharacterOffsetEnd=353 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=354 CharacterOffsetEnd=358 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=358 CharacterOffsetEnd=359 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (PDT All) (DT the) (JJ same))
+    (, ,)
+    (SBAR
+      (WHADVP (WRB when))
+      (S
+        (NP (PRP I))
+        (VP (VBD heard)
+          (NP
+            (NP (PRP$ my) (NNP Seventh) (NNP Symphony))
+            (VP (VBN conducted)
+              (PP (IN by)
+                (NP (NNP Konstantin) (NNP Ivanov)))
+              (NP-TMP (CD three) (NNS days) (RB later)))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBG regretting)
+        (NP (PRP$ my) (NN decision))
+        (S
+          (VP (VBG having)
+            (VP (VBN come)
+              (PP (TO to)
+                (NP (DT the) (NN conclusion)))
+              (SBAR (IN that)
+                (S
+                  (NP
+                    (NP (DT the) (NN art))
+                    (PP (IN of)
+                      (S
+                        (VP (VBG conducting)))))
+                  (VP (MD ca) (RB n't)
+                    (VP (VB be)
+                      (ADJP (IN as) (JJ difficult)
+                        (PP (IN as)
+                          (NP
+                            (NP (DT all))
+                            (NP (DT that))))))))))))))
+    (. .)))
+
+root(ROOT-0, regretting-21)
+dep(same-3, All-1)
+det(same-3, the-2)
+advmod(regretting-21, same-3)
+punct(regretting-21, ,-4)
+advmod(heard-7, when-5)
+nsubj(heard-7, I-6)
+advcl(regretting-21, heard-7)
+nmod:poss(Symphony-10, my-8)
+compound(Symphony-10, Seventh-9)
+dobj(heard-7, Symphony-10)
+acl(Symphony-10, conducted-11)
+case(Ivanov-14, by-12)
+compound(Ivanov-14, Konstantin-13)
+nmod:by(conducted-11, Ivanov-14)
+nummod(days-16, three-15)
+nmod:tmod(conducted-11, days-16)
+advmod(days-16, later-17)
+punct(regretting-21, ,-18)
+nsubj(regretting-21, I-19)
+aux(regretting-21, was-20)
+nmod:poss(decision-23, my-22)
+dobj(regretting-21, decision-23)
+aux(come-25, having-24)
+advcl(regretting-21, come-25)
+case(conclusion-28, to-26)
+det(conclusion-28, the-27)
+nmod:to(come-25, conclusion-28)
+mark(difficult-38, that-29)
+det(art-31, the-30)
+nsubj(difficult-38, art-31)
+mark(conducting-33, of-32)
+acl:of(art-31, conducting-33)
+aux(difficult-38, ca-34)
+neg(difficult-38, n't-35)
+cop(difficult-38, be-36)
+dep(difficult-38, as-37)
+ccomp(come-25, difficult-38)
+case(all-40, as-39)
+nmod:as(difficult-38, all-40)
+dep(all-40, that-41)
+punct(regretting-21, .-42)
+
+Coreference set:
+	(1,1,[1,2]) -> (2,10,[9,11]), that is: "I" -> "no conductor"
+	(2,1,[1,2]) -> (2,10,[9,11]), that is: "I" -> "no conductor"
+	(2,7,[7,8]) -> (2,10,[9,11]), that is: "I" -> "no conductor"
+	(3,6,[6,7]) -> (2,10,[9,11]), that is: "I" -> "no conductor"
+	(3,8,[8,9]) -> (2,10,[9,11]), that is: "my" -> "no conductor"
+	(3,19,[19,20]) -> (2,10,[9,11]), that is: "I" -> "no conductor"
+	(3,22,[22,23]) -> (2,10,[9,11]), that is: "my" -> "no conductor"
+Coreference set:
+	(2,3,[3,4]) -> (1,5,[4,6]), that is: "it" -> "an invitation"
+Coreference set:
+	(3,41,[41,42]) -> (3,23,[22,24]), that is: "that" -> "my decision"

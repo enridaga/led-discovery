@@ -1,0 +1,84 @@
+Sentence #1 (16 tokens):
+During the same month of August Chopin came, played, but was little understood.
+[Text=During CharacterOffsetBegin=1 CharacterOffsetEnd=7 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1M INTERSECT XXXX-08 Timex=<TIMEX3 alt_value="THIS P1M INTERSECT XXXX-08" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the same month of August</TIMEX3>]
+[Text=same CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=same NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1M INTERSECT XXXX-08 Timex=<TIMEX3 alt_value="THIS P1M INTERSECT XXXX-08" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the same month of August</TIMEX3>]
+[Text=month CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=month NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1M INTERSECT XXXX-08 Timex=<TIMEX3 alt_value="THIS P1M INTERSECT XXXX-08" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the same month of August</TIMEX3>]
+[Text=of CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=of NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1M INTERSECT XXXX-08 Timex=<TIMEX3 alt_value="THIS P1M INTERSECT XXXX-08" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the same month of August</TIMEX3>]
+[Text=August CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=August NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1M INTERSECT XXXX-08 Timex=<TIMEX3 alt_value="THIS P1M INTERSECT XXXX-08" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the same month of August</TIMEX3>]
+[Text=Chopin CharacterOffsetBegin=33 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Chopin NamedEntityTag=PERSON]
+[Text=came CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=understood CharacterOffsetBegin=69 CharacterOffsetEnd=79 PartOfSpeech=VBN Lemma=understand NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN During)
+      (NP
+        (NP (DT the) (JJ same) (NN month))
+        (PP (IN of)
+          (NP (NNP August)))))
+    (NP (NNP Chopin))
+    (VP
+      (VP (VBD came))
+      (, ,)
+      (VP (VBD played))
+      (, ,)
+      (CC but)
+      (VP (VBD was)
+        (VP
+          (NP (JJ little))
+          (VBN understood))))
+    (. .)))
+
+root(ROOT-0, came-8)
+case(month-4, During-1)
+det(month-4, the-2)
+amod(month-4, same-3)
+nmod:during(came-8, month-4)
+case(August-6, of-5)
+nmod:of(month-4, August-6)
+nsubj(came-8, Chopin-7)
+nsubj(played-10, Chopin-7)
+nsubjpass(understood-15, Chopin-7)
+punct(came-8, ,-9)
+conj:but(came-8, played-10)
+punct(came-8, ,-11)
+cc(came-8, but-12)
+auxpass(understood-15, was-13)
+dobj(understood-15, little-14)
+conj:but(came-8, understood-15)
+punct(came-8, .-16)
+
+Sentence #2 (7 tokens):
+He remained a few days only.
+[Text=He CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=remained CharacterOffsetBegin=84 CharacterOffsetEnd=92 PartOfSpeech=VBD Lemma=remain NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t3" type="DURATION" value="PXD">a few days</TIMEX3>]
+[Text=few CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=JJ Lemma=few NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t3" type="DURATION" value="PXD">a few days</TIMEX3>]
+[Text=days CharacterOffsetBegin=99 CharacterOffsetEnd=103 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t3" type="DURATION" value="PXD">a few days</TIMEX3>]
+[Text=only CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD remained)
+      (NP (DT a) (JJ few) (NNS days))
+      (ADVP (RB only)))
+    (. .)))
+
+root(ROOT-0, remained-2)
+nsubj(remained-2, He-1)
+det(days-5, a-3)
+amod(days-5, few-4)
+nmod:tmod(remained-2, days-5)
+advmod(remained-2, only-6)
+punct(remained-2, .-7)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,7,[7,8]), that is: "He" -> "Chopin"

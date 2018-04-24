@@ -1,0 +1,40 @@
+Sentence #1 (11 tokens):
+Mile Heinefetter looked lovely in Otello yesterday and sang divinely.
+[Text=Mile CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Mile NamedEntityTag=O]
+[Text=Heinefetter CharacterOffsetBegin=5 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Heinefetter NamedEntityTag=PERSON]
+[Text=looked CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=VBD Lemma=look NamedEntityTag=O]
+[Text=lovely CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=JJ Lemma=lovely NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Otello CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Otello NamedEntityTag=O]
+[Text=yesterday CharacterOffsetBegin=41 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1D Timex=<TIMEX3 alt_value="OFFSET P-1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">yesterday</TIMEX3>]
+[Text=and CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sang CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=divinely CharacterOffsetBegin=60 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=divinely NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Mile) (NNP Heinefetter))
+    (VP
+      (VP (VBD looked)
+        (ADJP (JJ lovely))
+        (PP (IN in)
+          (NP (NNP Otello)))
+        (NP-TMP (NN yesterday)))
+      (CC and)
+      (VP (VBD sang)
+        (ADVP (RB divinely))))
+    (. .)))
+
+root(ROOT-0, looked-3)
+compound(Heinefetter-2, Mile-1)
+nsubj(looked-3, Heinefetter-2)
+nsubj(sang-9, Heinefetter-2)
+xcomp(looked-3, lovely-4)
+case(Otello-6, in-5)
+nmod:in(looked-3, Otello-6)
+nmod:tmod(looked-3, yesterday-7)
+cc(looked-3, and-8)
+conj:and(looked-3, sang-9)
+advmod(sang-9, divinely-10)
+punct(looked-3, .-11)
+

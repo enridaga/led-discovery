@@ -1,0 +1,104 @@
+Sentence #1 (32 tokens):
+I went to the Swiss Choir with Miss Ross tonight in Cook's Memorial Hall, I think it is a nice place and the Swiss Choir have some tidy singers.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Swiss CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=JJ Lemma=swiss NamedEntityTag=O]
+[Text=Choir CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=choir NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Miss CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Miss NamedEntityTag=O]
+[Text=Ross CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Ross NamedEntityTag=PERSON]
+[Text=tonight CharacterOffsetBegin=41 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=tonight NamedEntityTag=DATE NormalizedNamedEntityTag=THIS NI Timex=<TIMEX3 alt_value="THIS NI" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">tonight</TIMEX3>]
+[Text=in CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Cook CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Cook NamedEntityTag=LOCATION]
+[Text='s CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=POS Lemma='s NamedEntityTag=LOCATION]
+[Text=Memorial CharacterOffsetBegin=59 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Memorial NamedEntityTag=LOCATION]
+[Text=Hall CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Hall NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=nice CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=JJ Lemma=nice NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=95 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Swiss CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=JJ Lemma=swiss NamedEntityTag=MISC]
+[Text=Choir CharacterOffsetBegin=115 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=choir NamedEntityTag=MISC]
+[Text=have CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=tidy CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=JJ Lemma=tidy NamedEntityTag=O]
+[Text=singers CharacterOffsetBegin=136 CharacterOffsetEnd=143 PartOfSpeech=NNS Lemma=singer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD went)
+        (PP (TO to)
+          (NP
+            (NP (DT the) (JJ Swiss) (NN Choir))
+            (PP (IN with)
+              (NP (NNP Miss) (NNP Ross)))))
+        (NP-TMP (NN tonight))
+        (PP (IN in)
+          (NP
+            (NP (NNP Cook) (POS 's))
+            (NNP Memorial) (NNP Hall)))))
+    (, ,)
+    (S
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (VBZ is)
+              (NP (DT a) (JJ nice) (NN place)))))))
+    (CC and)
+    (S
+      (NP (DT the) (JJ Swiss) (NN Choir))
+      (VP (VBP have)
+        (NP (DT some) (JJ tidy) (NNS singers))))
+    (. .)))
+
+root(ROOT-0, went-2)
+nsubj(went-2, I-1)
+case(Choir-6, to-3)
+det(Choir-6, the-4)
+amod(Choir-6, Swiss-5)
+nmod:to(went-2, Choir-6)
+case(Ross-9, with-7)
+compound(Ross-9, Miss-8)
+nmod:with(Choir-6, Ross-9)
+nmod:tmod(went-2, tonight-10)
+case(Hall-15, in-11)
+nmod:poss(Hall-15, Cook-12)
+case(Cook-12, 's-13)
+compound(Hall-15, Memorial-14)
+nmod:in(went-2, Hall-15)
+punct(went-2, ,-16)
+nsubj(think-18, I-17)
+conj:and(went-2, think-18)
+nsubj(place-23, it-19)
+cop(place-23, is-20)
+det(place-23, a-21)
+amod(place-23, nice-22)
+ccomp(think-18, place-23)
+cc(went-2, and-24)
+det(Choir-27, the-25)
+amod(Choir-27, Swiss-26)
+nsubj(have-28, Choir-27)
+conj:and(went-2, have-28)
+det(singers-31, some-29)
+amod(singers-31, tidy-30)
+dobj(have-28, singers-31)
+punct(went-2, .-32)
+
+Coreference set:
+	(1,17,[17,18]) -> (1,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(1,6,[4,10]) -> (1,27,[25,28]), that is: "the Swiss Choir with Miss Ross" -> "the Swiss Choir"
+	(1,19,[19,20]) -> (1,27,[25,28]), that is: "it" -> "the Swiss Choir"
+	(1,23,[21,24]) -> (1,27,[25,28]), that is: "a nice place" -> "the Swiss Choir"

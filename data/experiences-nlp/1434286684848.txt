@@ -1,0 +1,354 @@
+Sentence #1 (30 tokens):
+After dinner I go with Barbara to R.C.M. to operas (sitting with Mrs. Bridge & Miss Fass) - Christmas Rose & Blue Peter (Armstrong Gibbs).
+[Text=After CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=VBP Lemma=go NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Barbara CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Barbara NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=R.C.M. CharacterOffsetBegin=34 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=R.C.M. NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=operas CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NNS Lemma=opera NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=sitting CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=VBG Lemma=sit NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Mrs. CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Mrs. NamedEntityTag=O]
+[Text=Bridge CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Bridge NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Miss CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=Miss NamedEntityTag=O]
+[Text=Fass CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=NNP Lemma=Fass NamedEntityTag=PERSON]
+[Text=-RRB- CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Christmas CharacterOffsetBegin=92 CharacterOffsetEnd=101 PartOfSpeech=NNP Lemma=Christmas NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-12-25 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-12-25">Christmas</TIMEX3>]
+[Text=Rose CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=NNP Lemma=Rose NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Blue CharacterOffsetBegin=109 CharacterOffsetEnd=113 PartOfSpeech=NNP Lemma=Blue NamedEntityTag=PERSON]
+[Text=Peter CharacterOffsetBegin=114 CharacterOffsetEnd=119 PartOfSpeech=NNP Lemma=Peter NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Armstrong CharacterOffsetBegin=121 CharacterOffsetEnd=130 PartOfSpeech=NNP Lemma=Armstrong NamedEntityTag=ORGANIZATION]
+[Text=Gibbs CharacterOffsetBegin=131 CharacterOffsetEnd=136 PartOfSpeech=NNP Lemma=Gibbs NamedEntityTag=ORGANIZATION]
+[Text=-RRB- CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=137 CharacterOffsetEnd=138 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN After)
+      (NP (NN dinner)))
+    (NP (PRP I))
+    (VP (VBP go)
+      (PP (IN with)
+        (NP
+          (NP (NNP Barbara))
+          (PP (TO to)
+            (NP (NNP R.C.M.)))))
+      (PP (TO to)
+        (NP
+          (NP
+            (NP (NNS operas))
+            (PRN (-LRB- -LRB-)
+              (VP (VBG sitting)
+                (PP (IN with)
+                  (NP (NNP Mrs.) (NNP Bridge)
+                    (CC &)
+                    (NNP Miss) (NNP Fass))))
+              (-RRB- -RRB-)))
+          (: -)
+          (NP
+            (NP (NNP Christmas) (NNP Rose)
+              (CC &)
+              (NNP Blue) (NNP Peter))
+            (PRN (-LRB- -LRB-)
+              (NP (NNP Armstrong) (NNP Gibbs))
+              (-RRB- -RRB-))))))
+    (. .)))
+
+root(ROOT-0, go-4)
+case(dinner-2, After-1)
+nmod:after(go-4, dinner-2)
+nsubj(go-4, I-3)
+case(Barbara-6, with-5)
+nmod:with(go-4, Barbara-6)
+case(R.C.M.-8, to-7)
+nmod:to(Barbara-6, R.C.M.-8)
+case(operas-10, to-9)
+nmod:to(go-4, operas-10)
+punct(sitting-12, -LRB--11)
+dep(operas-10, sitting-12)
+case(Bridge-15, with-13)
+compound(Bridge-15, Mrs.-14)
+nmod:with(sitting-12, Bridge-15)
+cc(Bridge-15, &-16)
+compound(Fass-18, Miss-17)
+nmod:with(sitting-12, Fass-18)
+conj:&(Bridge-15, Fass-18)
+punct(sitting-12, -RRB--19)
+punct(operas-10, --20)
+compound(Rose-22, Christmas-21)
+dep(operas-10, Rose-22)
+cc(Rose-22, &-23)
+compound(Peter-25, Blue-24)
+dep(operas-10, Peter-25)
+conj:&(Rose-22, Peter-25)
+punct(Gibbs-28, -LRB--26)
+compound(Gibbs-28, Armstrong-27)
+appos(Rose-22, Gibbs-28)
+punct(Gibbs-28, -RRB--29)
+punct(go-4, .-30)
+
+Sentence #2 (14 tokens):
+* The performance vocally quite good (Miriam excellent)** orchestrally bad.
+[Text=* CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=140 CharacterOffsetEnd=143 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=144 CharacterOffsetEnd=155 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=vocally CharacterOffsetBegin=156 CharacterOffsetEnd=163 PartOfSpeech=RB Lemma=vocally NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=164 CharacterOffsetEnd=169 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=170 CharacterOffsetEnd=174 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=175 CharacterOffsetEnd=176 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Miriam CharacterOffsetBegin=176 CharacterOffsetEnd=182 PartOfSpeech=NNP Lemma=Miriam NamedEntityTag=PERSON]
+[Text=excellent CharacterOffsetBegin=183 CharacterOffsetEnd=192 PartOfSpeech=JJ Lemma=excellent NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=192 CharacterOffsetEnd=193 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=** CharacterOffsetBegin=193 CharacterOffsetEnd=195 PartOfSpeech=SYM Lemma=** NamedEntityTag=O]
+[Text=orchestrally CharacterOffsetBegin=196 CharacterOffsetEnd=208 PartOfSpeech=RB Lemma=orchestrally NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=209 CharacterOffsetEnd=212 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=212 CharacterOffsetEnd=213 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (X
+    (X (SYM *))
+    (NP
+      (NP (DT The) (NN performance))
+      (NP
+        (NP (RB vocally) (RB quite))
+        (VP
+          (NP
+            (NP
+              (NP (JJ good))
+              (PRN (-LRB- -LRB-)
+                (S
+                  (NP (NNP Miriam))
+                  (ADJP (JJ excellent)))
+                (-RRB- -RRB-)))
+            (X (SYM **)))
+          (PP (RB orchestrally)
+            (FRAG
+              (ADJP (JJ bad))
+              (. .))))))))
+
+root(ROOT-0, performance-3)
+dep(performance-3, *-1)
+det(performance-3, The-2)
+advmod(quite-5, vocally-4)
+dep(performance-3, quite-5)
+dep(quite-5, good-6)
+punct(excellent-9, -LRB--7)
+dep(excellent-9, Miriam-8)
+dep(good-6, excellent-9)
+punct(excellent-9, -RRB--10)
+dep(good-6, **-11)
+advmod(bad-13, orchestrally-12)
+advcl(good-6, bad-13)
+punct(bad-13, .-14)
+
+Sentence #3 (34 tokens):
+C. Rose may not be an excellent opera from the stage point of view, but when there is little action the music is always sublime - & that is O.K. for me!
+[Text=C. CharacterOffsetBegin=214 CharacterOffsetEnd=216 PartOfSpeech=NNP Lemma=C. NamedEntityTag=PERSON]
+[Text=Rose CharacterOffsetBegin=217 CharacterOffsetEnd=221 PartOfSpeech=NNP Lemma=Rose NamedEntityTag=PERSON]
+[Text=may CharacterOffsetBegin=222 CharacterOffsetEnd=225 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=226 CharacterOffsetEnd=229 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=230 CharacterOffsetEnd=232 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=233 CharacterOffsetEnd=235 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=excellent CharacterOffsetBegin=236 CharacterOffsetEnd=245 PartOfSpeech=JJ Lemma=excellent NamedEntityTag=O]
+[Text=opera CharacterOffsetBegin=246 CharacterOffsetEnd=251 PartOfSpeech=NN Lemma=opera NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=252 CharacterOffsetEnd=256 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=stage CharacterOffsetBegin=261 CharacterOffsetEnd=266 PartOfSpeech=NN Lemma=stage NamedEntityTag=O]
+[Text=point CharacterOffsetBegin=267 CharacterOffsetEnd=272 PartOfSpeech=NN Lemma=point NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=273 CharacterOffsetEnd=275 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=view CharacterOffsetBegin=276 CharacterOffsetEnd=280 PartOfSpeech=NN Lemma=view NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=280 CharacterOffsetEnd=281 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=282 CharacterOffsetEnd=285 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=286 CharacterOffsetEnd=290 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=291 CharacterOffsetEnd=296 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=297 CharacterOffsetEnd=299 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=300 CharacterOffsetEnd=306 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=action CharacterOffsetBegin=307 CharacterOffsetEnd=313 PartOfSpeech=NN Lemma=action NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=314 CharacterOffsetEnd=317 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=318 CharacterOffsetEnd=323 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=324 CharacterOffsetEnd=326 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=327 CharacterOffsetEnd=333 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=sublime CharacterOffsetBegin=334 CharacterOffsetEnd=341 PartOfSpeech=JJ Lemma=sublime NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=342 CharacterOffsetEnd=343 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=344 CharacterOffsetEnd=345 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=346 CharacterOffsetEnd=350 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=351 CharacterOffsetEnd=353 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=O.K. CharacterOffsetBegin=354 CharacterOffsetEnd=358 PartOfSpeech=NNP Lemma=O.K. NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=359 CharacterOffsetEnd=362 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=363 CharacterOffsetEnd=365 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=365 CharacterOffsetEnd=366 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (S
+        (NP (NNP C.) (NNP Rose))
+        (VP (MD may) (RB not)
+          (VP (VB be)
+            (NP
+              (NP (DT an) (JJ excellent) (NN opera))
+              (PP (IN from)
+                (NP
+                  (NP (DT the) (NN stage) (NN point))
+                  (PP (IN of)
+                    (NP (NN view)))))))))
+      (, ,)
+      (CC but)
+      (S
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (EX there))
+            (VP (VBZ is)
+              (NP (JJ little) (NN action)))))
+        (NP (DT the) (NN music))
+        (VP (VBZ is)
+          (ADVP (RB always))
+          (ADJP (JJ sublime)))))
+    (: -)
+    (S
+      (NP (CC &))
+      (NP-TMP (DT that))
+      (VP (VBZ is)
+        (NP
+          (NP (NNP O.K.))
+          (PP (IN for)
+            (NP (PRP me))))))
+    (. !)))
+
+root(ROOT-0, opera-8)
+compound(Rose-2, C.-1)
+nsubj(opera-8, Rose-2)
+aux(opera-8, may-3)
+neg(opera-8, not-4)
+cop(opera-8, be-5)
+det(opera-8, an-6)
+amod(opera-8, excellent-7)
+case(point-12, from-9)
+det(point-12, the-10)
+compound(point-12, stage-11)
+nmod:from(opera-8, point-12)
+case(view-14, of-13)
+nmod:of(point-12, view-14)
+punct(opera-8, ,-15)
+cc(opera-8, but-16)
+advmod(is-19, when-17)
+expl(is-19, there-18)
+advcl(is-24, is-19)
+amod(action-21, little-20)
+nsubj(is-19, action-21)
+det(music-23, the-22)
+nsubj(is-24, music-23)
+conj:but(opera-8, is-24)
+advmod(is-24, always-25)
+xcomp(is-24, sublime-26)
+punct(opera-8, --27)
+nsubj(O.K.-31, &-28)
+nmod:tmod(O.K.-31, that-29)
+cop(O.K.-31, is-30)
+parataxis(opera-8, O.K.-31)
+case(me-33, for-32)
+nmod:for(O.K.-31, me-33)
+punct(opera-8, !-34)
+
+Sentence #4 (28 tokens):
+the Blue Peter was an amusing little thing - merely Musical Comedy - clever in its way - but as different as anything from the adorable C. Rose
+[Text=the CharacterOffsetBegin=367 CharacterOffsetEnd=370 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Blue CharacterOffsetBegin=371 CharacterOffsetEnd=375 PartOfSpeech=NNP Lemma=Blue NamedEntityTag=O]
+[Text=Peter CharacterOffsetBegin=376 CharacterOffsetEnd=381 PartOfSpeech=NNP Lemma=Peter NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=382 CharacterOffsetEnd=385 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=386 CharacterOffsetEnd=388 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=amusing CharacterOffsetBegin=389 CharacterOffsetEnd=396 PartOfSpeech=JJ Lemma=amusing NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=397 CharacterOffsetEnd=403 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=404 CharacterOffsetEnd=409 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=410 CharacterOffsetEnd=411 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=merely CharacterOffsetBegin=412 CharacterOffsetEnd=418 PartOfSpeech=RB Lemma=merely NamedEntityTag=O]
+[Text=Musical CharacterOffsetBegin=419 CharacterOffsetEnd=426 PartOfSpeech=JJ Lemma=musical NamedEntityTag=O]
+[Text=Comedy CharacterOffsetBegin=427 CharacterOffsetEnd=433 PartOfSpeech=NN Lemma=comedy NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=434 CharacterOffsetEnd=435 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=clever CharacterOffsetBegin=436 CharacterOffsetEnd=442 PartOfSpeech=JJ Lemma=clever NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=443 CharacterOffsetEnd=445 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=446 CharacterOffsetEnd=449 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=450 CharacterOffsetEnd=453 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=454 CharacterOffsetEnd=455 PartOfSpeech=, Lemma=- NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=456 CharacterOffsetEnd=459 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=460 CharacterOffsetEnd=462 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=463 CharacterOffsetEnd=472 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=473 CharacterOffsetEnd=475 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=476 CharacterOffsetEnd=484 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=485 CharacterOffsetEnd=489 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=490 CharacterOffsetEnd=493 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=adorable CharacterOffsetBegin=494 CharacterOffsetEnd=502 PartOfSpeech=JJ Lemma=adorable NamedEntityTag=O]
+[Text=C. CharacterOffsetBegin=503 CharacterOffsetEnd=505 PartOfSpeech=NNP Lemma=C. NamedEntityTag=PERSON]
+[Text=Rose CharacterOffsetBegin=506 CharacterOffsetEnd=510 PartOfSpeech=NNP Lemma=Rose NamedEntityTag=PERSON]
+(ROOT
+  (S
+    (NP (DT the) (NNP Blue) (NNP Peter))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (JJ amusing) (JJ little) (NN thing))
+        (PRN (: -)
+          (NP (RB merely) (JJ Musical) (NN Comedy))
+          (: -))
+        (ADJP
+          (ADJP
+            (ADJP (JJ clever))
+            (PRN
+              (PP (IN in)
+                (NP (PRP$ its) (NN way)))
+              (, -)))
+          (CC but)
+          (ADJP (IN as) (JJ different))))
+      (PP (IN as)
+        (NP
+          (NP (NN anything))
+          (PP (IN from)
+            (NP (DT the) (JJ adorable) (NNP C.) (NNP Rose))))))))
+
+root(ROOT-0, thing-8)
+det(Peter-3, the-1)
+compound(Peter-3, Blue-2)
+nsubj(thing-8, Peter-3)
+cop(thing-8, was-4)
+det(thing-8, an-5)
+amod(thing-8, amusing-6)
+amod(thing-8, little-7)
+punct(Comedy-12, --9)
+advmod(Comedy-12, merely-10)
+amod(Comedy-12, Musical-11)
+dep(thing-8, Comedy-12)
+punct(Comedy-12, --13)
+amod(thing-8, clever-14)
+case(way-17, in-15)
+nmod:poss(way-17, its-16)
+dep(clever-14, way-17)
+punct(way-17, --18)
+cc(clever-14, but-19)
+dep(different-21, as-20)
+amod(thing-8, different-21)
+conj:but(clever-14, different-21)
+case(anything-23, as-22)
+nmod:as(thing-8, anything-23)
+case(Rose-28, from-24)
+det(Rose-28, the-25)
+amod(Rose-28, adorable-26)
+compound(Rose-28, C.-27)
+nmod:from(anything-23, Rose-28)
+
+Coreference set:
+	(3,33,[33,34]) -> (1,3,[3,4]), that is: "me" -> "I"
+Coreference set:
+	(4,3,[1,4]) -> (1,25,[21,30]), that is: "the Blue Peter" -> "Christmas Rose & Blue Peter -LRB- Armstrong Gibbs -RRB-"
+Coreference set:
+	(1,22,[22,23]) -> (4,28,[25,29]), that is: "Rose" -> "the adorable C. Rose"
+	(3,2,[1,3]) -> (4,28,[25,29]), that is: "C. Rose" -> "the adorable C. Rose"
+Coreference set:
+	(3,29,[29,30]) -> (3,23,[22,24]), that is: "that" -> "the music"
+Coreference set:
+	(4,16,[16,17]) -> (4,12,[10,13]), that is: "its" -> "merely Musical Comedy"

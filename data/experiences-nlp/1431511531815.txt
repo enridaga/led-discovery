@@ -1,0 +1,76 @@
+Sentence #1 (10 tokens):
+I went to Dresden - attended Döhler's concert.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Dresden CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Dresden NamedEntityTag=LOCATION]
+[Text=- CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=attended CharacterOffsetBegin=20 CharacterOffsetEnd=28 PartOfSpeech=VBD Lemma=attend NamedEntityTag=O]
+[Text=Döhler CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Döhler NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD went)
+        (PP (TO to)
+          (NP (NNP Dresden)))))
+    (: -)
+    (SINV
+      (VP (VBD attended))
+      (NP
+        (NP (NNP Döhler) (POS 's))
+        (NN concert)))
+    (. .)))
+
+root(ROOT-0, went-2)
+nsubj(went-2, I-1)
+case(Dresden-4, to-3)
+nmod:to(went-2, Dresden-4)
+punct(went-2, --5)
+parataxis(went-2, attended-6)
+nmod:poss(concert-9, Döhler-7)
+case(Döhler-7, 's-8)
+nsubj(attended-6, concert-9)
+punct(went-2, .-10)
+
+Sentence #2 (9 tokens):
+He played beautifully, and so did Piatti.
+[Text=He CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=beautifully CharacterOffsetBegin=57 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=beautifully NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=Piatti CharacterOffsetBegin=81 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=Piatti NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBD played)
+        (ADVP (RB beautifully)))
+      (, ,)
+      (CC and)
+      (VP
+        (ADVP (RB so))
+        (VBD did)
+        (NP (NNP Piatti))))
+    (. .)))
+
+root(ROOT-0, played-2)
+nsubj(played-2, He-1)
+nsubj(did-7, He-1)
+advmod(played-2, beautifully-3)
+punct(played-2, ,-4)
+cc(played-2, and-5)
+advmod(did-7, so-6)
+conj:and(played-2, did-7)
+dobj(did-7, Piatti-8)
+punct(played-2, .-9)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,7,[7,9]), that is: "He" -> "Döhler 's"

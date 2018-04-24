@@ -1,0 +1,81 @@
+Sentence #1 (26 tokens):
+Staudigl often sings in our house, his sound German style is the healthiest antidote I know of for the mawkish sentimentality of the Italians.
+[Text=Staudigl CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NN Lemma=staudigl NamedEntityTag=O]
+[Text=often CharacterOffsetBegin=9 CharacterOffsetEnd=14 PartOfSpeech=RB Lemma=often NamedEntityTag=O]
+[Text=sings CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=VBZ Lemma=sing NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=house CharacterOffsetBegin=28 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=house NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=sound CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=JJ Lemma=sound NamedEntityTag=O]
+[Text=German CharacterOffsetBegin=45 CharacterOffsetEnd=51 PartOfSpeech=JJ Lemma=german NamedEntityTag=MISC]
+[Text=style CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=style NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=healthiest CharacterOffsetBegin=65 CharacterOffsetEnd=75 PartOfSpeech=JJS Lemma=healthiest NamedEntityTag=O]
+[Text=antidote CharacterOffsetBegin=76 CharacterOffsetEnd=84 PartOfSpeech=NN Lemma=antidote NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=VBP Lemma=know NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=mawkish CharacterOffsetBegin=103 CharacterOffsetEnd=110 PartOfSpeech=JJ Lemma=mawkish NamedEntityTag=O]
+[Text=sentimentality CharacterOffsetBegin=111 CharacterOffsetEnd=125 PartOfSpeech=NN Lemma=sentimentality NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=126 CharacterOffsetEnd=128 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Italians CharacterOffsetBegin=133 CharacterOffsetEnd=141 PartOfSpeech=NNPS Lemma=Italians NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NN Staudigl))
+      (ADVP (RB often))
+      (VP (VBZ sings)
+        (PP (IN in)
+          (NP (PRP$ our) (NN house)))))
+    (, ,)
+    (NP (PRP$ his) (JJ sound) (JJ German) (NN style))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJS healthiest) (NN antidote))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP know)
+              (PP (IN of) (IN for)
+                (NP
+                  (NP (DT the) (JJ mawkish) (NN sentimentality))
+                  (PP (IN of)
+                    (NP (DT the) (NNPS Italians))))))))))
+    (. .)))
+
+root(ROOT-0, antidote-15)
+nsubj(sings-3, Staudigl-1)
+advmod(sings-3, often-2)
+ccomp(antidote-15, sings-3)
+case(house-6, in-4)
+nmod:poss(house-6, our-5)
+nmod:in(sings-3, house-6)
+punct(antidote-15, ,-7)
+nmod:poss(style-11, his-8)
+amod(style-11, sound-9)
+amod(style-11, German-10)
+nsubj(antidote-15, style-11)
+cop(antidote-15, is-12)
+det(antidote-15, the-13)
+amod(antidote-15, healthiest-14)
+nsubj(know-17, I-16)
+acl:relcl(antidote-15, know-17)
+case(sentimentality-22, of-18)
+case(sentimentality-22, for-19)
+det(sentimentality-22, the-20)
+amod(sentimentality-22, mawkish-21)
+nmod:for(know-17, sentimentality-22)
+case(Italians-25, of-23)
+det(Italians-25, the-24)
+nmod:of(sentimentality-22, Italians-25)
+punct(antidote-15, .-26)
+
+Coreference set:
+	(1,15,[13,26]) -> (1,11,[8,12]), that is: "the healthiest antidote I know of for the mawkish sentimentality of the Italians" -> "his sound German style"

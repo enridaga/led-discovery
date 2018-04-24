@@ -1,0 +1,204 @@
+Sentence #1 (19 tokens):
+Mother studied at the Petersburg Conservatoire with Rozanova, the same woman to whom she later took me.
+[Text=Mother CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NN Lemma=mother NamedEntityTag=O]
+[Text=studied CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=VBN Lemma=study NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Petersburg CharacterOffsetBegin=22 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Petersburg NamedEntityTag=LOCATION]
+[Text=Conservatoire CharacterOffsetBegin=33 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Conservatoire NamedEntityTag=LOCATION]
+[Text=with CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Rozanova CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Rozanova NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=woman CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=woman NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=whom CharacterOffsetBegin=80 CharacterOffsetEnd=84 PartOfSpeech=WP Lemma=whom NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=later CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=RB Lemma=later NamedEntityTag=O]
+[Text=took CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=VBD Lemma=take NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=100 CharacterOffsetEnd=102 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NN Mother))
+    (VP (VBN studied)
+      (PP (IN at)
+        (NP (DT the) (NNP Petersburg) (NNP Conservatoire)))
+      (PP (IN with)
+        (NP
+          (NP (NNP Rozanova))
+          (, ,)
+          (NP
+            (NP (DT the) (JJ same) (NN woman))
+            (SBAR
+              (WHPP (TO to)
+                (WHNP (WP whom)))
+              (S
+                (NP (PRP she))
+                (ADVP (RB later))
+                (VP (VBD took)
+                  (NP (PRP me)))))))))
+    (. .)))
+
+root(ROOT-0, studied-2)
+nsubj(studied-2, Mother-1)
+case(Conservatoire-6, at-3)
+det(Conservatoire-6, the-4)
+compound(Conservatoire-6, Petersburg-5)
+nmod:at(studied-2, Conservatoire-6)
+case(Rozanova-8, with-7)
+nmod:with(studied-2, Rozanova-8)
+punct(Rozanova-8, ,-9)
+det(woman-12, the-10)
+amod(woman-12, same-11)
+appos(Rozanova-8, woman-12)
+nmod:to(took-17, woman-12)
+case(whom-14, to-13)
+ref(woman-12, whom-14)
+nsubj(took-17, she-15)
+advmod(took-17, later-16)
+acl:relcl(woman-12, took-17)
+dobj(took-17, me-18)
+punct(studied-2, .-19)
+
+Sentence #2 (7 tokens):
+She played the piano rather well.
+[Text=She CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=108 CharacterOffsetEnd=114 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=119 CharacterOffsetEnd=124 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=125 CharacterOffsetEnd=131 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD played)
+      (NP (DT the) (NN piano))
+      (ADVP (RB rather) (RB well)))
+    (. .)))
+
+root(ROOT-0, played-2)
+nsubj(played-2, She-1)
+det(piano-4, the-3)
+dobj(played-2, piano-4)
+advmod(well-6, rather-5)
+advmod(played-2, well-6)
+punct(played-2, .-7)
+
+Sentence #3 (23 tokens):
+There’s nothing particularly significant in that, for in those days there were many more amateur musicians than there are now.
+[Text=There CharacterOffsetBegin=138 CharacterOffsetEnd=143 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=143 CharacterOffsetEnd=145 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=nothing CharacterOffsetBegin=146 CharacterOffsetEnd=153 PartOfSpeech=NN Lemma=nothing NamedEntityTag=O]
+[Text=particularly CharacterOffsetBegin=154 CharacterOffsetEnd=166 PartOfSpeech=RB Lemma=particularly NamedEntityTag=O]
+[Text=significant CharacterOffsetBegin=167 CharacterOffsetEnd=178 PartOfSpeech=JJ Lemma=significant NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=179 CharacterOffsetEnd=181 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=182 CharacterOffsetEnd=186 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=186 CharacterOffsetEnd=187 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=188 CharacterOffsetEnd=191 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=192 CharacterOffsetEnd=194 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=195 CharacterOffsetEnd=200 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=days CharacterOffsetBegin=201 CharacterOffsetEnd=205 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t1" type="DURATION" value="PXD">days</TIMEX3>]
+[Text=there CharacterOffsetBegin=206 CharacterOffsetEnd=211 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=212 CharacterOffsetEnd=216 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=217 CharacterOffsetEnd=221 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=222 CharacterOffsetEnd=226 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=amateur CharacterOffsetBegin=227 CharacterOffsetEnd=234 PartOfSpeech=JJ Lemma=amateur NamedEntityTag=O]
+[Text=musicians CharacterOffsetBegin=235 CharacterOffsetEnd=244 PartOfSpeech=NNS Lemma=musician NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=245 CharacterOffsetEnd=249 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=250 CharacterOffsetEnd=255 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=256 CharacterOffsetEnd=259 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=260 CharacterOffsetEnd=263 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t2" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=. CharacterOffsetBegin=263 CharacterOffsetEnd=264 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ 's)
+      (ADVP (NN nothing))
+      (ADJP (RB particularly) (JJ significant)
+        (PP (IN in)
+          (NP (DT that))))
+      (, ,)
+      (SBAR (IN for)
+        (S
+          (PP (IN in)
+            (NP (DT those) (NNS days)))
+          (NP (EX there))
+          (VP (VBD were)
+            (ADJP (JJ many))
+            (SBAR
+              (NP (JJR more) (JJ amateur) (NNS musicians))
+              (IN than)
+              (S
+                (NP (EX there))
+                (VP (VBP are)
+                  (ADVP (RB now)))))))))
+    (. .)))
+
+root(ROOT-0, 's-2)
+expl('s-2, There-1)
+advmod('s-2, nothing-3)
+advmod(significant-5, particularly-4)
+xcomp('s-2, significant-5)
+case(that-7, in-6)
+nmod:in(significant-5, that-7)
+punct('s-2, ,-8)
+mark(were-14, for-9)
+case(days-12, in-10)
+det(days-12, those-11)
+nmod:in(were-14, days-12)
+expl(were-14, there-13)
+advcl:for('s-2, were-14)
+xcomp(were-14, many-15)
+amod(musicians-18, more-16)
+amod(musicians-18, amateur-17)
+dep(are-21, musicians-18)
+mark(are-21, than-19)
+expl(are-21, there-20)
+advcl:than(were-14, are-21)
+advmod(are-21, now-22)
+punct('s-2, .-23)
+
+Sentence #4 (9 tokens):
+Take my neighbour’s quartet, for instance.
+[Text=Take CharacterOffsetBegin=265 CharacterOffsetEnd=269 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=270 CharacterOffsetEnd=272 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=neighbour CharacterOffsetBegin=273 CharacterOffsetEnd=282 PartOfSpeech=NN Lemma=neighbour NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=282 CharacterOffsetEnd=284 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=quartet CharacterOffsetBegin=285 CharacterOffsetEnd=292 PartOfSpeech=NN Lemma=quartet NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=292 CharacterOffsetEnd=293 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=294 CharacterOffsetEnd=297 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=instance CharacterOffsetBegin=298 CharacterOffsetEnd=306 PartOfSpeech=NN Lemma=instance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=306 CharacterOffsetEnd=307 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Take)
+      (NP
+        (NP
+          (NP (PRP$ my) (NN neighbour) (POS 's))
+          (NN quartet))
+        (, ,)
+        (PP (IN for)
+          (NP (NN instance)))))
+    (. .)))
+
+root(ROOT-0, Take-1)
+nmod:poss(neighbour-3, my-2)
+nmod:poss(quartet-5, neighbour-3)
+case(neighbour-3, 's-4)
+dobj(Take-1, quartet-5)
+punct(quartet-5, ,-6)
+case(instance-8, for-7)
+nmod:for(quartet-5, instance-8)
+punct(Take-1, .-9)
+
+Coreference set:
+	(1,12,[10,19]) -> (1,8,[8,9]), that is: "the same woman to whom she later took me" -> "Rozanova"
+	(1,15,[15,16]) -> (1,8,[8,9]), that is: "she" -> "Rozanova"
+	(2,1,[1,2]) -> (1,8,[8,9]), that is: "She" -> "Rozanova"
+Coreference set:
+	(4,2,[2,3]) -> (1,18,[18,19]), that is: "my" -> "me"
+Coreference set:
+	(3,7,[7,8]) -> (2,4,[3,5]), that is: "that" -> "the piano"

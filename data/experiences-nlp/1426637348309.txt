@@ -1,0 +1,243 @@
+Sentence #1 (17 tokens):
+One day in Paris a young man came to audition for a position as my accompanist.
+[Text=One CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CD Lemma=one NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t1" type="DURATION" value="P1D">One day</TIMEX3>]
+[Text=day CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t1" type="DURATION" value="P1D">One day</TIMEX3>]
+[Text=in CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Paris CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Paris NamedEntityTag=LOCATION]
+[Text=a CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=young CharacterOffsetBegin=19 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=young NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=came CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=audition CharacterOffsetBegin=37 CharacterOffsetEnd=45 PartOfSpeech=VB Lemma=audition NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=position CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=position NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=accompanist CharacterOffsetBegin=67 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=accompanist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (CD One) (NN day))
+      (PP (IN in)
+        (NP
+          (NP (NNP Paris))
+          (NP (DT a) (JJ young) (NN man)))))
+    (VP (VBD came)
+      (S
+        (VP (TO to)
+          (VP (VB audition)
+            (PP (IN for)
+              (NP
+                (NP (DT a) (NN position))
+                (PP (IN as)
+                  (NP (PRP$ my) (NN accompanist)))))))))
+    (. .)))
+
+root(ROOT-0, came-8)
+nummod(day-2, One-1)
+nsubj(came-8, day-2)
+nsubj:xsubj(audition-10, day-2)
+case(Paris-4, in-3)
+nmod:in(day-2, Paris-4)
+det(man-7, a-5)
+amod(man-7, young-6)
+dep(Paris-4, man-7)
+mark(audition-10, to-9)
+xcomp(came-8, audition-10)
+case(position-13, for-11)
+det(position-13, a-12)
+nmod:for(audition-10, position-13)
+case(accompanist-16, as-14)
+nmod:poss(accompanist-16, my-15)
+nmod:as(position-13, accompanist-16)
+punct(came-8, .-17)
+
+Sentence #2 (7 tokens):
+He was frail-looking and very eager.
+[Text=He CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=frail-looking CharacterOffsetBegin=87 CharacterOffsetEnd=100 PartOfSpeech=JJ Lemma=frail-looking NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=105 CharacterOffsetEnd=109 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=eager CharacterOffsetBegin=110 CharacterOffsetEnd=115 PartOfSpeech=JJ Lemma=eager NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD was)
+      (ADJP
+        (ADJP (JJ frail-looking))
+        (CC and)
+        (ADJP (RB very) (JJ eager))))
+    (. .)))
+
+root(ROOT-0, frail-looking-3)
+nsubj(frail-looking-3, He-1)
+nsubj(eager-6, He-1)
+cop(frail-looking-3, was-2)
+cc(frail-looking-3, and-4)
+advmod(eager-6, very-5)
+conj:and(frail-looking-3, eager-6)
+punct(frail-looking-3, .-7)
+
+Sentence #3 (13 tokens):
+He played for hours, but enchanted, I asked for more.
+[Text=He CharacterOffsetBegin=117 CharacterOffsetEnd=119 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=120 CharacterOffsetEnd=126 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=hours CharacterOffsetBegin=131 CharacterOffsetEnd=136 PartOfSpeech=NNS Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PTXH Timex=<TIMEX3 tid="t2" type="DURATION" value="PTXH">hours</TIMEX3>]
+[Text=, CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=138 CharacterOffsetEnd=141 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=enchanted CharacterOffsetBegin=142 CharacterOffsetEnd=151 PartOfSpeech=VBD Lemma=enchant NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=153 CharacterOffsetEnd=154 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=155 CharacterOffsetEnd=160 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=161 CharacterOffsetEnd=164 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=165 CharacterOffsetEnd=169 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=169 CharacterOffsetEnd=170 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP
+        (VP (VBD played)
+          (PP (IN for)
+            (NP (NNS hours))))
+        (, ,)
+        (CC but)
+        (VP (VBD enchanted))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD asked)
+      (PP (IN for)
+        (ADVP (RBR more))))
+    (. .)))
+
+root(ROOT-0, asked-10)
+nsubj(played-2, He-1)
+nsubj(enchanted-7, He-1)
+ccomp(asked-10, played-2)
+case(hours-4, for-3)
+nmod:for(played-2, hours-4)
+punct(played-2, ,-5)
+cc(played-2, but-6)
+conj:but(played-2, enchanted-7)
+ccomp(asked-10, enchanted-7)
+punct(asked-10, ,-8)
+nsubj(asked-10, I-9)
+case(more-12, for-11)
+advcl:for(asked-10, more-12)
+punct(asked-10, .-13)
+
+Sentence #4 (11 tokens):
+Finally he asked, “Will you engage me?”
+[Text=Finally CharacterOffsetBegin=171 CharacterOffsetEnd=178 PartOfSpeech=RB Lemma=finally NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=179 CharacterOffsetEnd=181 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=182 CharacterOffsetEnd=187 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=189 CharacterOffsetEnd=190 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Will CharacterOffsetBegin=190 CharacterOffsetEnd=194 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=engage CharacterOffsetBegin=199 CharacterOffsetEnd=205 PartOfSpeech=VB Lemma=engage NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=206 CharacterOffsetEnd=208 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=208 CharacterOffsetEnd=209 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=209 CharacterOffsetEnd=210 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Finally))
+    (NP (PRP he))
+    (VP (VBD asked) (, ,) (`` ``)
+      (SQ (MD Will)
+        (NP (PRP you))
+        (VP (VB engage)
+          (NP (PRP me)))))
+    (. ?) ('' '')))
+
+root(ROOT-0, asked-3)
+advmod(asked-3, Finally-1)
+nsubj(asked-3, he-2)
+punct(asked-3, ,-4)
+punct(asked-3, ``-5)
+aux(engage-8, Will-6)
+nsubj(engage-8, you-7)
+dep(asked-3, engage-8)
+dobj(engage-8, me-9)
+punct(asked-3, ?-10)
+punct(asked-3, ''-11)
+
+Sentence #5 (5 tokens):
+His voice was anxious.
+[Text=His CharacterOffsetBegin=211 CharacterOffsetEnd=214 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=voice CharacterOffsetBegin=215 CharacterOffsetEnd=220 PartOfSpeech=NN Lemma=voice NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=221 CharacterOffsetEnd=224 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=anxious CharacterOffsetBegin=225 CharacterOffsetEnd=232 PartOfSpeech=JJ Lemma=anxious NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=232 CharacterOffsetEnd=233 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP$ His) (NN voice))
+    (VP (VBD was)
+      (ADJP (JJ anxious)))
+    (. .)))
+
+root(ROOT-0, anxious-4)
+nmod:poss(voice-2, His-1)
+nsubj(anxious-4, voice-2)
+cop(anxious-4, was-3)
+punct(anxious-4, .-5)
+
+Sentence #6 (7 tokens):
+My answer was “No.”
+[Text=My CharacterOffsetBegin=234 CharacterOffsetEnd=236 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=answer CharacterOffsetBegin=237 CharacterOffsetEnd=243 PartOfSpeech=NN Lemma=answer NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=244 CharacterOffsetEnd=247 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=248 CharacterOffsetEnd=249 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=No CharacterOffsetBegin=249 CharacterOffsetEnd=251 PartOfSpeech=UH Lemma=no NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=251 CharacterOffsetEnd=252 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=252 CharacterOffsetEnd=253 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP$ My) (NN answer))
+    (VP (VBD was)
+      (VP
+        (FRAG
+          (INTJ (`` ``) (UH No)))))
+    (. .) ('' '')))
+
+root(ROOT-0, No-5)
+nmod:poss(answer-2, My-1)
+nsubj(No-5, answer-2)
+aux(No-5, was-3)
+punct(No-5, ``-4)
+punct(No-5, .-6)
+punct(No-5, ''-7)
+
+Sentence #7 (4 tokens):
+His color changed.
+[Text=His CharacterOffsetBegin=254 CharacterOffsetEnd=257 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=color CharacterOffsetBegin=258 CharacterOffsetEnd=263 PartOfSpeech=NN Lemma=color NamedEntityTag=O]
+[Text=changed CharacterOffsetBegin=264 CharacterOffsetEnd=271 PartOfSpeech=VBD Lemma=change NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=271 CharacterOffsetEnd=272 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP$ His) (NN color))
+    (VP (VBD changed))
+    (. .)))
+
+root(ROOT-0, changed-3)
+nmod:poss(color-2, His-1)
+nsubj(changed-3, color-2)
+punct(changed-3, .-4)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,7,[5,8]), that is: "He" -> "a young man"
+	(3,1,[1,2]) -> (1,7,[5,8]), that is: "He" -> "a young man"
+	(4,2,[2,3]) -> (1,7,[5,8]), that is: "he" -> "a young man"
+	(4,9,[9,10]) -> (1,7,[5,8]), that is: "me" -> "a young man"
+	(5,1,[1,2]) -> (1,7,[5,8]), that is: "His" -> "a young man"
+	(7,1,[1,2]) -> (1,7,[5,8]), that is: "His" -> "a young man"
+Coreference set:
+	(3,9,[9,10]) -> (1,15,[15,16]), that is: "I" -> "my"
+	(6,1,[1,2]) -> (1,15,[15,16]), that is: "My" -> "my"

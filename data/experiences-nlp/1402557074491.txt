@@ -1,0 +1,126 @@
+Sentence #1 (29 tokens):
+The Corporals and Lance Corporals of the upper camp gave a smoker [smoking concert] on St. Patricks's night and Corporal Maloney was at his best.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Corporals CharacterOffsetBegin=4 CharacterOffsetEnd=13 PartOfSpeech=NNS Lemma=corporal NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Lance CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Lance NamedEntityTag=PERSON]
+[Text=Corporals CharacterOffsetBegin=24 CharacterOffsetEnd=33 PartOfSpeech=NNS Lemma=corporal NamedEntityTag=PERSON]
+[Text=of CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=upper CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=JJ Lemma=upper NamedEntityTag=O]
+[Text=camp CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=camp NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=smoker CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=smoker NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=smoking CharacterOffsetBegin=67 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=smoking NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=75 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=St. CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=St. NamedEntityTag=LOCATION]
+[Text=Patricks CharacterOffsetBegin=91 CharacterOffsetEnd=99 PartOfSpeech=NNP Lemma=Patricks NamedEntityTag=LOCATION]
+[Text='s CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=night CharacterOffsetBegin=102 CharacterOffsetEnd=107 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t1" type="TIME" value="TNI">night</TIMEX3>]
+[Text=and CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Corporal CharacterOffsetBegin=112 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=corporal NamedEntityTag=O]
+[Text=Maloney CharacterOffsetBegin=121 CharacterOffsetEnd=128 PartOfSpeech=NNP Lemma=Maloney NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=140 CharacterOffsetEnd=144 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS Corporals))
+      (CC and)
+      (NP
+        (NP (NNP Lance) (NNS Corporals))
+        (PP (IN of)
+          (NP (DT the) (JJ upper) (NN camp)))))
+    (VP (VBD gave)
+      (NP (DT a) (NN smoker))
+      (NP
+        (NP (-LRB- -LSB-) (NN smoking) (NN concert) (-RRB- -RSB-))
+        (PP (IN on)
+          (NP
+            (NP (NNP St.) (NNP Patricks) (POS 's))
+            (NN night)
+            (CC and)
+            (NN Corporal)))
+        (SBAR
+          (S
+            (NP (NNP Maloney))
+            (VP (VBD was)
+              (PP (IN at)
+                (NP (PRP$ his) (JJS best))))))))
+    (. .)))
+
+root(ROOT-0, gave-10)
+det(Corporals-2, The-1)
+nsubj(gave-10, Corporals-2)
+cc(Corporals-2, and-3)
+compound(Corporals-5, Lance-4)
+conj:and(Corporals-2, Corporals-5)
+nsubj(gave-10, Corporals-5)
+case(camp-9, of-6)
+det(camp-9, the-7)
+amod(camp-9, upper-8)
+nmod:of(Corporals-5, camp-9)
+det(smoker-12, a-11)
+iobj(gave-10, smoker-12)
+punct(concert-15, -LSB--13)
+compound(concert-15, smoking-14)
+dobj(gave-10, concert-15)
+punct(concert-15, -RSB--16)
+case(night-21, on-17)
+compound(Patricks-19, St.-18)
+nmod:poss(night-21, Patricks-19)
+case(Patricks-19, 's-20)
+nmod:on(concert-15, night-21)
+cc(night-21, and-22)
+nmod:on(concert-15, Corporal-23)
+conj:and(night-21, Corporal-23)
+nsubj(best-28, Maloney-24)
+cop(best-28, was-25)
+case(best-28, at-26)
+nmod:poss(best-28, his-27)
+acl:relcl(concert-15, best-28)
+punct(gave-10, .-29)
+
+Sentence #2 (10 tokens):
+Smokers are a common feature of camp life here.
+[Text=Smokers CharacterOffsetBegin=146 CharacterOffsetEnd=153 PartOfSpeech=NNS Lemma=smoker NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=common CharacterOffsetBegin=160 CharacterOffsetEnd=166 PartOfSpeech=JJ Lemma=common NamedEntityTag=O]
+[Text=feature CharacterOffsetBegin=167 CharacterOffsetEnd=174 PartOfSpeech=NN Lemma=feature NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=175 CharacterOffsetEnd=177 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=camp CharacterOffsetBegin=178 CharacterOffsetEnd=182 PartOfSpeech=NN Lemma=camp NamedEntityTag=O]
+[Text=life CharacterOffsetBegin=183 CharacterOffsetEnd=187 PartOfSpeech=NN Lemma=life NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=188 CharacterOffsetEnd=192 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=192 CharacterOffsetEnd=193 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNS Smokers))
+    (VP (VBP are)
+      (NP
+        (NP (DT a) (JJ common) (NN feature))
+        (PP (IN of)
+          (NP (NN camp) (NN life))))
+      (ADVP (RB here)))
+    (. .)))
+
+root(ROOT-0, feature-5)
+nsubj(feature-5, Smokers-1)
+cop(feature-5, are-2)
+det(feature-5, a-3)
+amod(feature-5, common-4)
+case(life-8, of-6)
+compound(life-8, camp-7)
+nmod:of(feature-5, life-8)
+advmod(feature-5, here-9)
+punct(feature-5, .-10)
+
+Coreference set:
+	(1,27,[27,28]) -> (1,24,[24,25]), that is: "his" -> "Maloney"

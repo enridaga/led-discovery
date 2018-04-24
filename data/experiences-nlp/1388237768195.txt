@@ -1,0 +1,337 @@
+Sentence #1 (12 tokens):
+All my NY News is probably stale for you by now.
+[Text=All CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=4 CharacterOffsetEnd=6 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=NY CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=NY NamedEntityTag=O]
+[Text=News CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=News NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=probably CharacterOffsetBegin=18 CharacterOffsetEnd=26 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=stale CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=JJ Lemma=stale NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=. CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT All))
+      (NP (PRP$ my) (NNP NY) (NNP News)))
+    (VP (VBZ is)
+      (ADVP (RB probably))
+      (ADJP (JJ stale)
+        (PP (IN for)
+          (NP (PRP you))))
+      (PP (IN by)
+        (NP (RB now))))
+    (. .)))
+
+root(ROOT-0, stale-7)
+nsubj(stale-7, All-1)
+nmod:poss(News-4, my-2)
+compound(News-4, NY-3)
+dep(All-1, News-4)
+cop(stale-7, is-5)
+advmod(stale-7, probably-6)
+case(you-9, for-8)
+nmod:for(stale-7, you-9)
+case(now-11, by-10)
+nmod:by(stale-7, now-11)
+punct(stale-7, .-12)
+
+Sentence #2 (19 tokens):
+Virgil’s opera was original-looking on stage – no one has ever seen anything quite like it before.
+[Text=Virgil CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Virgil NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=opera CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=opera NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=original-looking CharacterOffsetBegin=69 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=original-looking NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=stage CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=stage NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=has CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=108 CharacterOffsetEnd=112 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=seen CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=VBN Lemma=see NamedEntityTag=O]
+[Text=anything CharacterOffsetBegin=118 CharacterOffsetEnd=126 PartOfSpeech=NN Lemma=anything NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=127 CharacterOffsetEnd=132 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=133 CharacterOffsetEnd=137 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=138 CharacterOffsetEnd=140 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=141 CharacterOffsetEnd=147 PartOfSpeech=RB Lemma=before NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Virgil) (POS 's))
+        (NN opera))
+      (VP (VBD was)
+        (ADJP (JJ original-looking)
+          (PP (IN on)
+            (NP (NN stage))))))
+    (: --)
+    (S
+      (NP (DT no) (NN one))
+      (VP (VBZ has)
+        (ADVP (RB ever))
+        (VP (VBN seen)
+          (NP (NN anything))
+          (ADVP (RB quite)
+            (PP (IN like)
+              (NP (PRP it))
+              (ADVP (RB before)))))))
+    (. .)))
+
+root(ROOT-0, original-looking-5)
+nmod:poss(opera-3, Virgil-1)
+case(Virgil-1, 's-2)
+nsubj(original-looking-5, opera-3)
+cop(original-looking-5, was-4)
+case(stage-7, on-6)
+nmod:on(original-looking-5, stage-7)
+punct(original-looking-5, ---8)
+neg(one-10, no-9)
+nsubj(seen-13, one-10)
+aux(seen-13, has-11)
+advmod(seen-13, ever-12)
+parataxis(original-looking-5, seen-13)
+dobj(seen-13, anything-14)
+advmod(seen-13, quite-15)
+case(it-17, like-16)
+nmod:like(quite-15, it-17)
+advmod(it-17, before-18)
+punct(original-looking-5, .-19)
+
+Sentence #3 (16 tokens):
+But I thought there was more music in Four Saints [in Three Acts].
+[Text=But CharacterOffsetBegin=149 CharacterOffsetEnd=152 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=153 CharacterOffsetEnd=154 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=155 CharacterOffsetEnd=162 PartOfSpeech=VBD Lemma=think NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=163 CharacterOffsetEnd=168 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=169 CharacterOffsetEnd=172 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=173 CharacterOffsetEnd=177 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=178 CharacterOffsetEnd=183 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=184 CharacterOffsetEnd=186 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Four CharacterOffsetBegin=187 CharacterOffsetEnd=191 PartOfSpeech=CD Lemma=four NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.0]
+[Text=Saints CharacterOffsetBegin=192 CharacterOffsetEnd=198 PartOfSpeech=NNP Lemma=Saints NamedEntityTag=MISC]
+[Text=-LSB- CharacterOffsetBegin=199 CharacterOffsetEnd=200 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=200 CharacterOffsetEnd=202 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Three CharacterOffsetBegin=203 CharacterOffsetEnd=208 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=Acts CharacterOffsetBegin=209 CharacterOffsetEnd=213 PartOfSpeech=NNS Lemma=act NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=213 CharacterOffsetEnd=214 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC But)
+    (NP (PRP I))
+    (VP (VBD thought)
+      (SBAR
+        (S
+          (NP (EX there))
+          (VP (VBD was)
+            (ADVP (RBR more))
+            (NP
+              (NP (NN music))
+              (PP (IN in)
+                (NP (CD Four) (NNP Saints) (-LRB- -LSB-)))
+              (PP (IN in)
+                (NP (CD Three) (NNS Acts))))
+            (ADVP (-RRB- -RSB-))))))
+    (. .)))
+
+root(ROOT-0, thought-3)
+cc(thought-3, But-1)
+nsubj(thought-3, I-2)
+expl(was-5, there-4)
+ccomp(thought-3, was-5)
+advmod(was-5, more-6)
+nsubj(was-5, music-7)
+case(Saints-10, in-8)
+nummod(Saints-10, Four-9)
+nmod:in(music-7, Saints-10)
+punct(Saints-10, -LSB--11)
+case(Acts-14, in-12)
+nummod(Acts-14, Three-13)
+nmod:in(music-7, Acts-14)
+advmod(was-5, -RSB--15)
+punct(thought-3, .-16)
+
+Sentence #4 (17 tokens):
+It’s as if a new musical idea hasn’t occurred to him in 10 years.
+[Text=It CharacterOffsetBegin=217 CharacterOffsetEnd=219 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=219 CharacterOffsetEnd=221 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=222 CharacterOffsetEnd=224 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=228 CharacterOffsetEnd=229 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=230 CharacterOffsetEnd=233 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=musical CharacterOffsetBegin=234 CharacterOffsetEnd=241 PartOfSpeech=JJ Lemma=musical NamedEntityTag=O]
+[Text=idea CharacterOffsetBegin=242 CharacterOffsetEnd=246 PartOfSpeech=NN Lemma=idea NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=247 CharacterOffsetEnd=250 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=250 CharacterOffsetEnd=253 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=occurred CharacterOffsetBegin=254 CharacterOffsetEnd=262 PartOfSpeech=VBD Lemma=occur NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=263 CharacterOffsetEnd=265 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=266 CharacterOffsetEnd=269 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=270 CharacterOffsetEnd=272 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=10 CharacterOffsetBegin=273 CharacterOffsetEnd=275 PartOfSpeech=CD Lemma=10 NamedEntityTag=DURATION NormalizedNamedEntityTag=P10Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P10Y">10 years</TIMEX3>]
+[Text=years CharacterOffsetBegin=276 CharacterOffsetEnd=281 PartOfSpeech=NNS Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P10Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P10Y">10 years</TIMEX3>]
+[Text=. CharacterOffsetBegin=281 CharacterOffsetEnd=282 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (SBAR (IN as) (IN if)
+        (S
+          (NP (DT a) (JJ new) (JJ musical) (NN idea))
+          (VP (VBZ has) (RB n't)
+            (VP (VBD occurred)
+              (PP (TO to)
+                (NP (PRP him)))
+              (PP (IN in)
+                (NP (CD 10) (NNS years))))))))
+    (. .)))
+
+root(ROOT-0, 's-2)
+nsubj('s-2, It-1)
+mark(occurred-11, as-3)
+mwe(as-3, if-4)
+det(idea-8, a-5)
+amod(idea-8, new-6)
+amod(idea-8, musical-7)
+nsubj(occurred-11, idea-8)
+aux(occurred-11, has-9)
+neg(occurred-11, n't-10)
+advcl:as_if('s-2, occurred-11)
+case(him-13, to-12)
+nmod:to(occurred-11, him-13)
+case(years-16, in-14)
+nummod(years-16, 10-15)
+nmod:in(occurred-11, years-16)
+punct('s-2, .-17)
+
+Sentence #5 (34 tokens):
+The prosody, as per usual, is superb – but then it’s easy to have good prosody is you have nothing else on your mind (I’m quoting myself).
+[Text=The CharacterOffsetBegin=284 CharacterOffsetEnd=287 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=prosody CharacterOffsetBegin=288 CharacterOffsetEnd=295 PartOfSpeech=NN Lemma=prosody NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=295 CharacterOffsetEnd=296 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=297 CharacterOffsetEnd=299 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=per CharacterOffsetBegin=300 CharacterOffsetEnd=303 PartOfSpeech=IN Lemma=per NamedEntityTag=O]
+[Text=usual CharacterOffsetBegin=304 CharacterOffsetEnd=309 PartOfSpeech=JJ Lemma=usual NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=309 CharacterOffsetEnd=310 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=311 CharacterOffsetEnd=313 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=superb CharacterOffsetBegin=314 CharacterOffsetEnd=320 PartOfSpeech=JJ Lemma=superb NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=321 CharacterOffsetEnd=322 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=323 CharacterOffsetEnd=326 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=327 CharacterOffsetEnd=331 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=332 CharacterOffsetEnd=334 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=334 CharacterOffsetEnd=336 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=easy CharacterOffsetBegin=337 CharacterOffsetEnd=341 PartOfSpeech=JJ Lemma=easy NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=342 CharacterOffsetEnd=344 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=345 CharacterOffsetEnd=349 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=350 CharacterOffsetEnd=354 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=prosody CharacterOffsetBegin=355 CharacterOffsetEnd=362 PartOfSpeech=NN Lemma=prosody NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=363 CharacterOffsetEnd=365 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=366 CharacterOffsetEnd=369 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=370 CharacterOffsetEnd=374 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=nothing CharacterOffsetBegin=375 CharacterOffsetEnd=382 PartOfSpeech=NN Lemma=nothing NamedEntityTag=O]
+[Text=else CharacterOffsetBegin=383 CharacterOffsetEnd=387 PartOfSpeech=RB Lemma=else NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=388 CharacterOffsetEnd=390 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=391 CharacterOffsetEnd=395 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=mind CharacterOffsetBegin=396 CharacterOffsetEnd=400 PartOfSpeech=NN Lemma=mind NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=401 CharacterOffsetEnd=402 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=402 CharacterOffsetEnd=403 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=403 CharacterOffsetEnd=405 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=quoting CharacterOffsetBegin=406 CharacterOffsetEnd=413 PartOfSpeech=VBG Lemma=quote NamedEntityTag=O]
+[Text=myself CharacterOffsetBegin=414 CharacterOffsetEnd=420 PartOfSpeech=PRP Lemma=myself NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=420 CharacterOffsetEnd=421 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=421 CharacterOffsetEnd=422 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN prosody))
+        (, ,)
+        (ADJP (IN as)
+          (PP (IN per)
+            (ADJP (JJ usual))))
+        (, ,))
+      (VP (VBZ is)
+        (ADJP (JJ superb))))
+    (: --)
+    (S (CC but)
+      (ADVP (RB then))
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (ADJP (JJ easy)
+          (S
+            (VP (TO to)
+              (VP (VB have)
+                (NP
+                  (NP (JJ good) (NN prosody))
+                  (SBAR
+                    (S
+                      (VP (VBZ is)
+                        (SBAR
+                          (S
+                            (NP (PRP you))
+                            (VP (VBP have)
+                              (NP
+                                (NP (NN nothing) (RB else))
+                                (PP (IN on)
+                                  (NP (PRP$ your) (NN mind)))))))))))))))
+        (PRN (-LRB- -LRB-)
+          (S
+            (NP (PRP I))
+            (VP (VBP 'm)
+              (VP (VBG quoting)
+                (NP (PRP myself)))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+root(ROOT-0, superb-9)
+det(prosody-2, The-1)
+nsubj(superb-9, prosody-2)
+punct(prosody-2, ,-3)
+amod(prosody-2, as-4)
+case(usual-6, per-5)
+advcl:per(as-4, usual-6)
+punct(prosody-2, ,-7)
+cop(superb-9, is-8)
+punct(superb-9, ---10)
+cc(easy-15, but-11)
+advmod(easy-15, then-12)
+nsubj(easy-15, it-13)
+nsubj:xsubj(have-17, it-13)
+cop(easy-15, 's-14)
+parataxis(superb-9, easy-15)
+mark(have-17, to-16)
+xcomp(easy-15, have-17)
+amod(prosody-19, good-18)
+dobj(have-17, prosody-19)
+acl:relcl(prosody-19, is-20)
+nsubj(have-22, you-21)
+ccomp(is-20, have-22)
+dobj(have-22, nothing-23)
+advmod(nothing-23, else-24)
+case(mind-27, on-25)
+nmod:poss(mind-27, your-26)
+nmod:on(nothing-23, mind-27)
+punct(quoting-31, -LRB--28)
+nsubj(quoting-31, I-29)
+aux(quoting-31, 'm-30)
+parataxis(easy-15, quoting-31)
+dobj(quoting-31, myself-32)
+punct(quoting-31, -RRB--33)
+punct(superb-9, .-34)
+
+Coreference set:
+	(3,2,[2,3]) -> (1,2,[2,3]), that is: "I" -> "my"
+	(5,29,[29,30]) -> (1,2,[2,3]), that is: "I" -> "my"
+	(5,32,[32,33]) -> (1,2,[2,3]), that is: "myself" -> "my"
+Coreference set:
+	(2,17,[17,18]) -> (2,10,[9,11]), that is: "it" -> "no one"
+Coreference set:
+	(4,1,[1,2]) -> (3,7,[7,15]), that is: "It" -> "music in Four Saints -LSB- in Three Acts"
+Coreference set:
+	(4,13,[13,14]) -> (3,10,[9,12]), that is: "him" -> "Four Saints -LSB-"
+Coreference set:
+	(5,13,[13,14]) -> (5,2,[1,3]), that is: "it" -> "The prosody"

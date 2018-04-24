@@ -1,0 +1,55 @@
+Sentence #1 (9 tokens):
+At 5:30 a run-through at Leontyne Price's.
+[Text=At CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=5:30 CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=CD Lemma=5:30 NamedEntityTag=TIME NormalizedNamedEntityTag=T05:30 Timex=<TIMEX3 tid="t1" type="TIME" value="T05:30">5:30</TIMEX3>]
+[Text=a CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=run-through CharacterOffsetBegin=10 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=run-through NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Leontyne CharacterOffsetBegin=25 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Leontyne NamedEntityTag=O]
+[Text=Price CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Price NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP
+        (QP (IN At) (CD 5:30))
+        (DT a) (NN run-through))
+      (PP (IN at)
+        (NP (NNP Leontyne) (NNP Price) (POS 's))))
+    (. .)))
+
+root(ROOT-0, run-through-4)
+advmod(5:30-2, At-1)
+nummod(run-through-4, 5:30-2)
+det(run-through-4, a-3)
+case(Price-7, at-5)
+compound(Price-7, Leontyne-6)
+nmod:'s(run-through-4, Price-7)
+case(Price-7, 's-8)
+punct(run-through-4, .-9)
+
+Sentence #2 (7 tokens):
+(Three songs of mine.)
+[Text=-LRB- CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Three CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=songs CharacterOffsetBegin=50 CharacterOffsetEnd=55 PartOfSpeech=NNS Lemma=song NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=mine CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=mine NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+(ROOT
+  (NP (-LRB- -LRB-)
+    (NP (CD Three) (NNS songs))
+    (PP (IN of)
+      (NP (NN mine)))
+    (. .) (-RRB- -RRB-)))
+
+root(ROOT-0, songs-3)
+punct(songs-3, -LRB--1)
+nummod(songs-3, Three-2)
+case(mine-5, of-4)
+nmod:of(songs-3, mine-5)
+punct(songs-3, .-6)
+punct(songs-3, -RRB--7)
+

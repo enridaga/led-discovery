@@ -1,0 +1,88 @@
+Sentence #1 (26 tokens):
+Pisaroni was the most superb singer I ever heard, but so unfortunately plain that she was hissed off the stage by the Bond-street loungers.
+[Text=Pisaroni CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Pisaroni NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=superb CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=JJ Lemma=superb NamedEntityTag=O]
+[Text=singer CharacterOffsetBegin=29 CharacterOffsetEnd=35 PartOfSpeech=NN Lemma=singer NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=unfortunately CharacterOffsetBegin=57 CharacterOffsetEnd=70 PartOfSpeech=RB Lemma=unfortunately NamedEntityTag=O]
+[Text=plain CharacterOffsetBegin=71 CharacterOffsetEnd=76 PartOfSpeech=JJ Lemma=plain NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=hissed CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=VBN Lemma=hiss NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=off NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=stage CharacterOffsetBegin=105 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=stage NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Bond-street CharacterOffsetBegin=118 CharacterOffsetEnd=129 PartOfSpeech=JJ Lemma=bond-street NamedEntityTag=MISC]
+[Text=loungers CharacterOffsetBegin=130 CharacterOffsetEnd=138 PartOfSpeech=NNS Lemma=lounger NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Pisaroni))
+    (VP (VBD was)
+      (NP
+        (NP (DT the)
+          (ADJP (RBS most) (JJ superb))
+          (NN singer))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (ADVP (RB ever))
+            (VP (VBD heard) (, ,)
+              (CC but)
+              (ADVP (RB so))
+              (PRN
+                (ADVP (RB unfortunately))
+                (ADVP (JJ plain)))
+              (SBAR (IN that)
+                (S
+                  (NP (PRP she))
+                  (VP (VBD was)
+                    (VP (VBN hissed)
+                      (PP (IN off)
+                        (NP (DT the) (NN stage)))
+                      (PP (IN by)
+                        (NP (DT the) (JJ Bond-street) (NNS loungers))))))))))))
+    (. .)))
+
+root(ROOT-0, singer-6)
+nsubj(singer-6, Pisaroni-1)
+cop(singer-6, was-2)
+det(singer-6, the-3)
+advmod(superb-5, most-4)
+amod(singer-6, superb-5)
+mark(hissed-18, singer-6)
+nsubj(heard-9, I-7)
+advmod(heard-9, ever-8)
+acl:relcl(singer-6, heard-9)
+punct(heard-9, ,-10)
+cc(heard-9, but-11)
+advmod(heard-9, so-12)
+dep(heard-9, unfortunately-13)
+dep(unfortunately-13, plain-14)
+ref(singer-6, that-15)
+nsubjpass(hissed-18, she-16)
+auxpass(hissed-18, was-17)
+ccomp(heard-9, hissed-18)
+case(stage-21, off-19)
+det(stage-21, the-20)
+nmod:off(hissed-18, stage-21)
+case(loungers-25, by-22)
+det(loungers-25, the-23)
+amod(loungers-25, Bond-street-24)
+nmod:agent(hissed-18, loungers-25)
+punct(singer-6, .-26)
+
+Coreference set:
+	(1,6,[3,26]) -> (1,1,[1,2]), that is: "the most superb singer I ever heard , but so unfortunately plain that she was hissed off the stage by the Bond-street loungers" -> "Pisaroni"
+	(1,16,[16,17]) -> (1,1,[1,2]), that is: "she" -> "Pisaroni"

@@ -1,0 +1,72 @@
+Sentence #1 (4 tokens):
+Finally heard Liberace.
+[Text=Finally CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=RB Lemma=finally NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=VBN Lemma=hear NamedEntityTag=O]
+[Text=Liberace CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Liberace NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP
+      (ADVP (RB Finally))
+      (VBN heard)
+      (NP (NNP Liberace)))
+    (. .)))
+
+root(ROOT-0, heard-2)
+advmod(heard-2, Finally-1)
+dobj(heard-2, Liberace-3)
+punct(heard-2, .-4)
+
+Sentence #2 (5 tokens):
+Extraordinary, his fingerwork!
+[Text=Extraordinary CharacterOffsetBegin=24 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=extraordinary NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=fingerwork CharacterOffsetBegin=43 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=fingerwork NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (JJ Extraordinary))
+    (, ,)
+    (NP (PRP$ his) (NN fingerwork))
+    (. !)))
+
+root(ROOT-0, Extraordinary-1)
+punct(Extraordinary-1, ,-2)
+nmod:poss(fingerwork-4, his-3)
+appos(Extraordinary-1, fingerwork-4)
+punct(Extraordinary-1, !-5)
+
+Sentence #3 (8 tokens):
+He plays all the right notes wrong.
+[Text=He CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=plays CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=VBZ Lemma=play NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=72 CharacterOffsetEnd=77 PartOfSpeech=JJ Lemma=right NamedEntityTag=O]
+[Text=notes CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=NNS Lemma=note NamedEntityTag=O]
+[Text=wrong CharacterOffsetBegin=84 CharacterOffsetEnd=89 PartOfSpeech=JJ Lemma=wrong NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ plays)
+      (S
+        (NP (PDT all) (DT the) (JJ right) (NNS notes))
+        (ADJP (JJ wrong))))
+    (. .)))
+
+root(ROOT-0, plays-2)
+nsubj(plays-2, He-1)
+det:predet(notes-6, all-3)
+det(notes-6, the-4)
+amod(notes-6, right-5)
+nsubj(wrong-7, notes-6)
+xcomp(plays-2, wrong-7)
+punct(plays-2, .-8)
+
+Coreference set:
+	(2,3,[3,4]) -> (1,3,[3,4]), that is: "his" -> "Liberace"
+	(3,1,[1,2]) -> (1,3,[3,4]), that is: "He" -> "Liberace"
+Coreference set:
+	(2,1,[1,2]) -> (2,4,[3,5]), that is: "Extraordinary" -> "his fingerwork"

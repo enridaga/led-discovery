@@ -1,0 +1,365 @@
+Sentence #1 (30 tokens):
+This Paramount [cinema] in London is exactly like the one in Paris: both of them boast of being the most up to date in the world.
+[Text=This CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=Paramount CharacterOffsetBegin=5 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Paramount NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=cinema CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=cinema NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=London CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=London NamedEntityTag=LOCATION]
+[Text=is CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=exactly CharacterOffsetBegin=37 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=exactly NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=45 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=in CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Paris CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Paris NamedEntityTag=LOCATION]
+[Text=: CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=boast CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=boast NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=90 CharacterOffsetEnd=95 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=RB Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=date CharacterOffsetBegin=111 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=date NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=123 CharacterOffsetEnd=128 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT This) (NNP Paramount) (-LRB- -LSB-) (NN cinema) (-RRB- -RSB-))
+      (PP (IN in)
+        (NP (NNP London))))
+    (VP (VBZ is)
+      (ADVP (RB exactly)
+        (PP (IN like)
+          (NP
+            (NP
+              (NP (DT the) (CD one))
+              (PP (IN in)
+                (NP (NNP Paris))))
+            (: :)
+            (NP
+              (NP (DT both))
+              (PP (IN of)
+                (NP (PRP them)))))))
+      (NP
+        (NP (NN boast))
+        (PP (IN of)
+          (S
+            (VP (VBG being)
+              (NP
+                (NP (DT the) (RBS most))
+                (ADVP (RB up)
+                  (PP (TO to)
+                    (NP (NN date))))
+                (PP (IN in)
+                  (NP (DT the) (NN world)))))))))
+    (. .)))
+
+root(ROOT-0, boast-19)
+det(cinema-4, This-1)
+compound(cinema-4, Paramount-2)
+punct(cinema-4, -LSB--3)
+nsubj(boast-19, cinema-4)
+punct(cinema-4, -RSB--5)
+case(London-7, in-6)
+nmod:in(cinema-4, London-7)
+cop(boast-19, is-8)
+advmod(boast-19, exactly-9)
+case(one-12, like-10)
+det(one-12, the-11)
+nmod:like(exactly-9, one-12)
+case(Paris-14, in-13)
+nmod:in(one-12, Paris-14)
+punct(one-12, :-15)
+det:qmod(them-18, both-16)
+mwe(both-16, of-17)
+dep(one-12, them-18)
+mark(the-22, of-20)
+cop(the-22, being-21)
+acl:of(boast-19, the-22)
+advmod(the-22, most-23)
+advmod(the-22, up-24)
+case(date-26, to-25)
+nmod:to(up-24, date-26)
+case(world-29, in-27)
+det(world-29, the-28)
+nmod:in(the-22, world-29)
+punct(boast-19, .-30)
+
+Sentence #2 (30 tokens):
+And then there is Movietone – and I do not understand why they do not speak more about this, since it provides the answer to cinematography with speech.
+[Text=And CharacterOffsetBegin=130 CharacterOffsetEnd=133 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=139 CharacterOffsetEnd=144 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=145 CharacterOffsetEnd=147 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Movietone CharacterOffsetBegin=148 CharacterOffsetEnd=157 PartOfSpeech=NNP Lemma=Movietone NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=160 CharacterOffsetEnd=163 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=164 CharacterOffsetEnd=165 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=166 CharacterOffsetEnd=168 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=169 CharacterOffsetEnd=172 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=understand CharacterOffsetBegin=173 CharacterOffsetEnd=183 PartOfSpeech=VB Lemma=understand NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=184 CharacterOffsetEnd=187 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=188 CharacterOffsetEnd=192 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=193 CharacterOffsetEnd=195 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=196 CharacterOffsetEnd=199 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=speak CharacterOffsetBegin=200 CharacterOffsetEnd=205 PartOfSpeech=VB Lemma=speak NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=206 CharacterOffsetEnd=210 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=211 CharacterOffsetEnd=216 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=217 CharacterOffsetEnd=221 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=221 CharacterOffsetEnd=222 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=since CharacterOffsetBegin=223 CharacterOffsetEnd=228 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=229 CharacterOffsetEnd=231 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=provides CharacterOffsetBegin=232 CharacterOffsetEnd=240 PartOfSpeech=VBZ Lemma=provide NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=241 CharacterOffsetEnd=244 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=answer CharacterOffsetBegin=245 CharacterOffsetEnd=251 PartOfSpeech=NN Lemma=answer NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=252 CharacterOffsetEnd=254 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=cinematography CharacterOffsetBegin=255 CharacterOffsetEnd=269 PartOfSpeech=NN Lemma=cinematography NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=270 CharacterOffsetEnd=274 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=speech CharacterOffsetBegin=275 CharacterOffsetEnd=281 PartOfSpeech=NN Lemma=speech NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=281 CharacterOffsetEnd=282 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S (CC And)
+      (ADVP (RB then))
+      (NP (EX there))
+      (VP (VBZ is)
+        (NP (NNP Movietone))))
+    (: --)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP do) (RB not)
+        (VP (VB understand)
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (NP (PRP they))
+              (VP (VBP do) (RB not)
+                (VP (VB speak)
+                  (NP (JJR more))
+                  (PP (IN about)
+                    (NP
+                      (NP (DT this))
+                      (, ,)
+                      (SBAR (IN since)
+                        (S
+                          (NP (PRP it))
+                          (VP (VBZ provides)
+                            (NP (DT the) (NN answer))
+                            (PP (TO to)
+                              (NP
+                                (NP (NN cinematography))
+                                (PP (IN with)
+                                  (NP (NN speech)))))))))))))))))
+    (. .)))
+
+root(ROOT-0, is-4)
+cc(is-4, And-1)
+advmod(is-4, then-2)
+expl(is-4, there-3)
+nsubj(is-4, Movietone-5)
+punct(is-4, ---6)
+cc(is-4, and-7)
+nsubj(understand-11, I-8)
+aux(understand-11, do-9)
+neg(understand-11, not-10)
+conj:and(is-4, understand-11)
+advmod(speak-16, why-12)
+nsubj(speak-16, they-13)
+aux(speak-16, do-14)
+neg(speak-16, not-15)
+ccomp(understand-11, speak-16)
+dobj(speak-16, more-17)
+case(this-19, about-18)
+nmod:about(speak-16, this-19)
+punct(this-19, ,-20)
+mark(provides-23, since-21)
+nsubj(provides-23, it-22)
+acl:since(this-19, provides-23)
+det(answer-25, the-24)
+dobj(provides-23, answer-25)
+case(cinematography-27, to-26)
+nmod:to(provides-23, cinematography-27)
+case(speech-29, with-28)
+nmod:with(cinematography-27, speech-29)
+punct(is-4, .-30)
+
+Sentence #3 (12 tokens):
+This is the only way films are produced from real life.
+[Text=This CharacterOffsetBegin=283 CharacterOffsetEnd=287 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=288 CharacterOffsetEnd=290 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=291 CharacterOffsetEnd=294 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=295 CharacterOffsetEnd=299 PartOfSpeech=JJ Lemma=only NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=300 CharacterOffsetEnd=303 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=films CharacterOffsetBegin=304 CharacterOffsetEnd=309 PartOfSpeech=NNS Lemma=film NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=310 CharacterOffsetEnd=313 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=produced CharacterOffsetBegin=314 CharacterOffsetEnd=322 PartOfSpeech=VBN Lemma=produce NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=323 CharacterOffsetEnd=327 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=real CharacterOffsetBegin=328 CharacterOffsetEnd=332 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=life CharacterOffsetBegin=333 CharacterOffsetEnd=337 PartOfSpeech=NN Lemma=life NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=337 CharacterOffsetEnd=338 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ only) (NN way))
+        (SBAR
+          (S
+            (NP (NNS films))
+            (VP (VBP are)
+              (VP (VBN produced)
+                (PP (IN from)
+                  (NP (JJ real) (NN life)))))))))
+    (. .)))
+
+root(ROOT-0, way-5)
+nsubj(way-5, This-1)
+cop(way-5, is-2)
+det(way-5, the-3)
+amod(way-5, only-4)
+nsubjpass(produced-8, films-6)
+auxpass(produced-8, are-7)
+acl:relcl(way-5, produced-8)
+case(life-11, from-9)
+amod(life-11, real-10)
+nmod:from(produced-8, life-11)
+punct(way-5, .-12)
+
+Sentence #4 (38 tokens):
+And the military reviews with their music in motion, the rhythm of the steps, the roar of the cannon, the sound of the commands and the applause of the crowd are rendered quite perfectly.
+[Text=And CharacterOffsetBegin=339 CharacterOffsetEnd=342 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=343 CharacterOffsetEnd=346 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=military CharacterOffsetBegin=347 CharacterOffsetEnd=355 PartOfSpeech=JJ Lemma=military NamedEntityTag=O]
+[Text=reviews CharacterOffsetBegin=356 CharacterOffsetEnd=363 PartOfSpeech=NNS Lemma=review NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=364 CharacterOffsetEnd=368 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=369 CharacterOffsetEnd=374 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=375 CharacterOffsetEnd=380 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=381 CharacterOffsetEnd=383 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=motion CharacterOffsetBegin=384 CharacterOffsetEnd=390 PartOfSpeech=NN Lemma=motion NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=390 CharacterOffsetEnd=391 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=392 CharacterOffsetEnd=395 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rhythm CharacterOffsetBegin=396 CharacterOffsetEnd=402 PartOfSpeech=NN Lemma=rhythm NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=403 CharacterOffsetEnd=405 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=406 CharacterOffsetEnd=409 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=steps CharacterOffsetBegin=410 CharacterOffsetEnd=415 PartOfSpeech=NNS Lemma=step NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=415 CharacterOffsetEnd=416 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=417 CharacterOffsetEnd=420 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=roar CharacterOffsetBegin=421 CharacterOffsetEnd=425 PartOfSpeech=NN Lemma=roar NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=426 CharacterOffsetEnd=428 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=429 CharacterOffsetEnd=432 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=cannon CharacterOffsetBegin=433 CharacterOffsetEnd=439 PartOfSpeech=NN Lemma=cannon NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=439 CharacterOffsetEnd=440 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=441 CharacterOffsetEnd=444 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sound CharacterOffsetBegin=445 CharacterOffsetEnd=450 PartOfSpeech=NN Lemma=sound NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=451 CharacterOffsetEnd=453 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=454 CharacterOffsetEnd=457 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=commands CharacterOffsetBegin=458 CharacterOffsetEnd=466 PartOfSpeech=NNS Lemma=command NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=467 CharacterOffsetEnd=470 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=471 CharacterOffsetEnd=474 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=applause CharacterOffsetBegin=475 CharacterOffsetEnd=483 PartOfSpeech=NN Lemma=applause NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=484 CharacterOffsetEnd=486 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=487 CharacterOffsetEnd=490 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=crowd CharacterOffsetBegin=491 CharacterOffsetEnd=496 PartOfSpeech=NN Lemma=crowd NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=497 CharacterOffsetEnd=500 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=rendered CharacterOffsetBegin=501 CharacterOffsetEnd=509 PartOfSpeech=VBN Lemma=render NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=510 CharacterOffsetEnd=515 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=perfectly CharacterOffsetBegin=516 CharacterOffsetEnd=525 PartOfSpeech=RB Lemma=perfectly NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=525 CharacterOffsetEnd=526 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC And)
+    (NP
+      (NP
+        (NP (DT the) (JJ military) (NNS reviews))
+        (PP (IN with)
+          (NP
+            (NP (PRP$ their) (NN music))
+            (PP (IN in)
+              (NP (NN motion))))))
+      (, ,)
+      (NP
+        (NP (DT the) (NN rhythm))
+        (PP (IN of)
+          (NP (DT the) (NNS steps))))
+      (, ,)
+      (NP
+        (NP (DT the) (NN roar))
+        (PP (IN of)
+          (NP (DT the) (NN cannon))))
+      (, ,)
+      (NP
+        (NP (DT the) (NN sound))
+        (PP (IN of)
+          (NP (DT the) (NNS commands))))
+      (CC and)
+      (NP
+        (NP (DT the) (NN applause))
+        (PP (IN of)
+          (NP (DT the) (NN crowd)))))
+    (VP (VBP are)
+      (VP (VBN rendered)
+        (ADVP (RB quite) (RB perfectly))))
+    (. .)))
+
+root(ROOT-0, rendered-35)
+cc(rendered-35, And-1)
+det(reviews-4, the-2)
+amod(reviews-4, military-3)
+nsubjpass(rendered-35, reviews-4)
+case(music-7, with-5)
+nmod:poss(music-7, their-6)
+nmod:with(reviews-4, music-7)
+case(motion-9, in-8)
+nmod:in(music-7, motion-9)
+punct(reviews-4, ,-10)
+det(rhythm-12, the-11)
+conj:and(reviews-4, rhythm-12)
+nsubjpass(rendered-35, rhythm-12)
+case(steps-15, of-13)
+det(steps-15, the-14)
+nmod:of(rhythm-12, steps-15)
+punct(reviews-4, ,-16)
+det(roar-18, the-17)
+conj:and(reviews-4, roar-18)
+nsubjpass(rendered-35, roar-18)
+case(cannon-21, of-19)
+det(cannon-21, the-20)
+nmod:of(roar-18, cannon-21)
+punct(reviews-4, ,-22)
+det(sound-24, the-23)
+conj:and(reviews-4, sound-24)
+nsubjpass(rendered-35, sound-24)
+case(commands-27, of-25)
+det(commands-27, the-26)
+nmod:of(sound-24, commands-27)
+cc(reviews-4, and-28)
+det(applause-30, the-29)
+conj:and(reviews-4, applause-30)
+nsubjpass(rendered-35, applause-30)
+case(crowd-33, of-31)
+det(crowd-33, the-32)
+nmod:of(applause-30, crowd-33)
+auxpass(rendered-35, are-34)
+advmod(perfectly-37, quite-36)
+advmod(rendered-35, perfectly-37)
+punct(rendered-35, .-38)
+
+Coreference set:
+	(1,19,[19,30]) -> (1,4,[1,8]), that is: "boast of being the most up to date in the world" -> "This Paramount -LSB- cinema -RSB- in London"
+Coreference set:
+	(2,13,[13,14]) -> (1,16,[16,19]), that is: "they" -> "both of them"
+	(4,6,[6,7]) -> (1,16,[16,19]), that is: "their" -> "both of them"
+Coreference set:
+	(2,22,[22,23]) -> (2,17,[17,18]), that is: "it" -> "more"
+Coreference set:
+	(2,19,[19,20]) -> (3,5,[3,12]), that is: "this" -> "the only way films are produced from real life"
+	(3,1,[1,2]) -> (3,5,[3,12]), that is: "This" -> "the only way films are produced from real life"

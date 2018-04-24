@@ -1,0 +1,102 @@
+Sentence #1 (12 tokens):
+Go to London Academy at 4.0 for a rehearsal of Sinf.
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=London CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=London NamedEntityTag=ORGANIZATION]
+[Text=Academy CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Academy NamedEntityTag=ORGANIZATION]
+[Text=at CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=4.0 CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=CD Lemma=4.0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.0]
+[Text=for CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=rehearsal CharacterOffsetBegin=34 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=rehearsal NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Sinf CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=sinf NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PP (TO to)
+        (NP
+          (NP (NNP London) (NNP Academy))
+          (PP (IN at)
+            (NP (CD 4.0)))))
+      (PP (IN for)
+        (NP
+          (NP (DT a) (NN rehearsal))
+          (PP (IN of)
+            (NP (NN Sinf))))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+case(Academy-4, to-2)
+compound(Academy-4, London-3)
+nmod:to(Go-1, Academy-4)
+case(4.0-6, at-5)
+nmod:at(Academy-4, 4.0-6)
+case(rehearsal-9, for-7)
+det(rehearsal-9, a-8)
+nmod:for(Go-1, rehearsal-9)
+case(Sinf-11, of-10)
+nmod:of(rehearsal-9, Sinf-11)
+punct(Go-1, .-12)
+
+Sentence #2 (4 tokens):
+with Iris Lemare.
+[Text=with CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Iris CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Iris NamedEntityTag=PERSON]
+[Text=Lemare CharacterOffsetBegin=63 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Lemare NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN with)
+      (NP (NNP Iris) (NNP Lemare)))
+    (. .)))
+
+root(ROOT-0, Lemare-3)
+case(Lemare-3, with-1)
+compound(Lemare-3, Iris-2)
+punct(Lemare-3, .-4)
+
+Sentence #3 (4 tokens):
+J. Ireland comes.
+[Text=J. CharacterOffsetBegin=71 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=J. NamedEntityTag=PERSON]
+[Text=Ireland CharacterOffsetBegin=74 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Ireland NamedEntityTag=PERSON]
+[Text=comes CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=VBZ Lemma=come NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP J.) (NNP Ireland))
+    (VP (VBZ comes))
+    (. .)))
+
+root(ROOT-0, comes-3)
+compound(Ireland-2, J.-1)
+nsubj(comes-3, Ireland-2)
+punct(comes-3, .-4)
+
+Sentence #4 (7 tokens):
+Not good - only 7 there!
+[Text=Not CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=7 CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=CD Lemma=7 NamedEntityTag=NUMBER NormalizedNamedEntityTag=7.0]
+[Text=there CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (RB Not) (JJ good))
+    (: -)
+    (S
+      (NP (RB only) (CD 7))
+      (NP (EX there)))
+    (. !)))
+
+root(ROOT-0, good-2)
+neg(good-2, Not-1)
+punct(good-2, --3)
+advmod(7-5, only-4)
+dep(there-6, 7-5)
+dep(good-2, there-6)
+punct(good-2, !-7)
+

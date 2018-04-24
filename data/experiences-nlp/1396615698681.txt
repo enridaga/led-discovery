@@ -1,0 +1,100 @@
+Sentence #1 (12 tokens):
+She [Myra Hess] played it [the encore!]
+[Text=She CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Myra CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Myra NamedEntityTag=PERSON]
+[Text=Hess CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Hess NamedEntityTag=PERSON]
+[Text=-RSB- CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=encore CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=encore NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (-LRB- -LSB-)
+      (SBAR
+        (S
+          (NP (NNP Myra) (NNP Hess) (-RRB- -RSB-))
+          (VP (VBD played)
+            (NP (PRP it))
+            (PP (-LRB- -LSB-)
+              (NP (DT the) (NN encore)))))))
+    (. !) (-RRB- -RSB-)))
+
+root(ROOT-0, played-6)
+nsubj(played-6, She-1)
+punct(played-6, -LSB--2)
+compound(Hess-4, Myra-3)
+nsubj(played-6, Hess-4)
+punct(Hess-4, -RSB--5)
+dobj(played-6, it-7)
+punct(encore-10, -LSB--8)
+det(encore-10, the-9)
+nmod(played-6, encore-10)
+punct(played-6, !-11)
+punct(played-6, -RSB--12)
+
+Sentence #2 (18 tokens):
+so beautifully and it was such a lovely reminder of the sane world of yesterday and tomorrow.
+[Text=so CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=beautifully CharacterOffsetBegin=43 CharacterOffsetEnd=54 PartOfSpeech=RB Lemma=beautifully NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=such NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lovely CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=JJ Lemma=lovely NamedEntityTag=O]
+[Text=reminder CharacterOffsetBegin=80 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=reminder NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sane CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=JJ Lemma=sane NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=101 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=107 CharacterOffsetEnd=109 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=yesterday CharacterOffsetBegin=110 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1D Timex=<TIMEX3 alt_value="OFFSET P-1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">yesterday</TIMEX3>]
+[Text=and CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=tomorrow CharacterOffsetBegin=124 CharacterOffsetEnd=132 PartOfSpeech=NN Lemma=tomorrow NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P1D Timex=<TIMEX3 alt_value="OFFSET P1D" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf1">tomorrow</TIMEX3>]
+[Text=. CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (ADJP (RB so) (RB beautifully))
+    (S (CC and)
+      (NP (PRP it))
+      (VP (VBD was)
+        (PP (JJ such)
+          (NP
+            (NP (DT a) (JJ lovely) (NN reminder))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (JJ sane) (NN world))
+                (PP (IN of)
+                  (NP (NN yesterday)
+                    (CC and)
+                    (NN tomorrow)))))))))
+    (. .)))
+
+root(ROOT-0, beautifully-2)
+advmod(beautifully-2, so-1)
+cc(reminder-9, and-3)
+nsubj(reminder-9, it-4)
+cop(reminder-9, was-5)
+case(reminder-9, such-6)
+det(reminder-9, a-7)
+amod(reminder-9, lovely-8)
+dep(beautifully-2, reminder-9)
+case(world-13, of-10)
+det(world-13, the-11)
+amod(world-13, sane-12)
+nmod:of(reminder-9, world-13)
+case(yesterday-15, of-14)
+nmod:of(world-13, yesterday-15)
+cc(yesterday-15, and-16)
+nmod:of(world-13, tomorrow-17)
+conj:and(yesterday-15, tomorrow-17)
+punct(beautifully-2, .-18)
+
+Coreference set:
+	(2,4,[4,5]) -> (1,7,[7,8]), that is: "it" -> "it"

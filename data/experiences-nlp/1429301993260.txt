@@ -1,0 +1,581 @@
+Sentence #1 (19 tokens):
+As a drummer, Chick [Webb] had his own ideas about what he wanted to do.
+[Text=As CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=3 CharacterOffsetEnd=4 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=drummer CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=drummer NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Chick CharacterOffsetBegin=14 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=chick NamedEntityTag=ORGANIZATION]
+[Text=-LSB- CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Webb CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Webb NamedEntityTag=PERSON]
+[Text=-RSB- CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=ideas CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=NNS Lemma=idea NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=wanted CharacterOffsetBegin=59 CharacterOffsetEnd=65 PartOfSpeech=VBD Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (DT a) (NN drummer)))
+    (, ,)
+    (NP (NN Chick) (-LRB- -LSB-) (NNP Webb) (-RRB- -RSB-))
+    (VP (VBD had)
+      (NP (PRP$ his) (JJ own) (NNS ideas))
+      (PP (IN about)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP he))
+            (VP (VBD wanted)
+              (S
+                (VP (TO to)
+                  (VP (VB do)))))))))
+    (. .)))
+
+root(ROOT-0, had-9)
+case(drummer-3, As-1)
+det(drummer-3, a-2)
+nmod:as(had-9, drummer-3)
+punct(had-9, ,-4)
+compound(Webb-7, Chick-5)
+punct(Webb-7, -LSB--6)
+nsubj(had-9, Webb-7)
+punct(Webb-7, -RSB--8)
+nmod:poss(ideas-12, his-10)
+amod(ideas-12, own-11)
+dobj(had-9, ideas-12)
+mark(wanted-16, about-13)
+dobj(wanted-16, what-14)
+nsubj:xsubj(do-18, what-14)
+nsubj(wanted-16, he-15)
+advcl:about(had-9, wanted-16)
+mark(do-18, to-17)
+xcomp(wanted-16, do-18)
+punct(had-9, .-19)
+
+Sentence #2 (9 tokens):
+Some musicians are dancers, and Chick was.
+[Text=Some CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=musicians CharacterOffsetBegin=78 CharacterOffsetEnd=87 PartOfSpeech=NNS Lemma=musician NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=88 CharacterOffsetEnd=91 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=dancers CharacterOffsetBegin=92 CharacterOffsetEnd=99 PartOfSpeech=NNS Lemma=dancer NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Chick CharacterOffsetBegin=105 CharacterOffsetEnd=110 PartOfSpeech=NNP Lemma=Chick NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (DT Some) (NNS musicians))
+      (VP (VBP are)
+        (NP (NNS dancers))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP Chick))
+      (VP (VBD was)))
+    (. .)))
+
+root(ROOT-0, dancers-4)
+det(musicians-2, Some-1)
+nsubj(dancers-4, musicians-2)
+cop(dancers-4, are-3)
+punct(dancers-4, ,-5)
+cc(dancers-4, and-6)
+nsubj(was-8, Chick-7)
+conj:and(dancers-4, was-8)
+punct(dancers-4, .-9)
+
+Sentence #3 (26 tokens):
+You can dance with a lot of things besides your feet… Chick Webb was a dance-drummer who painted pictures of dances with his drums.
+[Text=You CharacterOffsetBegin=116 CharacterOffsetEnd=119 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=dance CharacterOffsetBegin=124 CharacterOffsetEnd=129 PartOfSpeech=VB Lemma=dance NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lot CharacterOffsetBegin=137 CharacterOffsetEnd=140 PartOfSpeech=NN Lemma=lot NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=144 CharacterOffsetEnd=150 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=besides CharacterOffsetBegin=151 CharacterOffsetEnd=158 PartOfSpeech=IN Lemma=besides NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=159 CharacterOffsetEnd=163 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=feet CharacterOffsetBegin=164 CharacterOffsetEnd=168 PartOfSpeech=NNS Lemma=foot NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=168 CharacterOffsetEnd=169 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=Chick CharacterOffsetBegin=170 CharacterOffsetEnd=175 PartOfSpeech=NNP Lemma=Chick NamedEntityTag=PERSON]
+[Text=Webb CharacterOffsetBegin=176 CharacterOffsetEnd=180 PartOfSpeech=NNP Lemma=Webb NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=181 CharacterOffsetEnd=184 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=185 CharacterOffsetEnd=186 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=dance-drummer CharacterOffsetBegin=187 CharacterOffsetEnd=200 PartOfSpeech=NN Lemma=dance-drummer NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=painted CharacterOffsetBegin=205 CharacterOffsetEnd=212 PartOfSpeech=VBD Lemma=paint NamedEntityTag=O]
+[Text=pictures CharacterOffsetBegin=213 CharacterOffsetEnd=221 PartOfSpeech=NNS Lemma=picture NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=222 CharacterOffsetEnd=224 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=dances CharacterOffsetBegin=225 CharacterOffsetEnd=231 PartOfSpeech=NNS Lemma=dance NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=232 CharacterOffsetEnd=236 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=237 CharacterOffsetEnd=240 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=drums CharacterOffsetBegin=241 CharacterOffsetEnd=246 PartOfSpeech=NNS Lemma=drum NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=246 CharacterOffsetEnd=247 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (MD can)
+        (VP (VB dance)
+          (PP (IN with)
+            (NP
+              (NP (DT a) (NN lot))
+              (PP (IN of)
+                (NP
+                  (NP (NNS things))
+                  (PP (IN besides)
+                    (NP (PRP$ your) (NNS feet))))))))))
+    (: ...)
+    (S
+      (NP (NNP Chick) (NNP Webb))
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (NN dance-drummer))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD painted)
+                (NP
+                  (NP (NNS pictures))
+                  (PP (IN of)
+                    (NP (NNS dances))))
+                (PP (IN with)
+                  (NP (PRP$ his) (NNS drums)))))))))
+    (. .)))
+
+root(ROOT-0, dance-3)
+nsubj(dance-3, You-1)
+aux(dance-3, can-2)
+case(lot-6, with-4)
+det:qmod(things-8, a-5)
+mwe(a-5, lot-6)
+mwe(a-5, of-7)
+nmod(dance-3, things-8)
+case(feet-11, besides-9)
+nmod:poss(feet-11, your-10)
+nmod:besides(things-8, feet-11)
+punct(dance-3, ...-12)
+compound(Webb-14, Chick-13)
+nsubj(dance-drummer-17, Webb-14)
+cop(dance-drummer-17, was-15)
+det(dance-drummer-17, a-16)
+parataxis(dance-3, dance-drummer-17)
+nsubj(painted-19, dance-drummer-17)
+ref(dance-drummer-17, who-18)
+acl:relcl(dance-drummer-17, painted-19)
+dobj(painted-19, pictures-20)
+case(dances-22, of-21)
+nmod:of(pictures-20, dances-22)
+case(drums-25, with-23)
+nmod:poss(drums-25, his-24)
+nmod:with(painted-19, drums-25)
+punct(dance-3, .-26)
+
+Sentence #4 (18 tokens):
+Way back, at the Cotton Club, we were always tailoring orchestrations to fit the dances.
+[Text=Way CharacterOffsetBegin=248 CharacterOffsetEnd=251 PartOfSpeech=NNP Lemma=Way NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=252 CharacterOffsetEnd=256 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=256 CharacterOffsetEnd=257 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=258 CharacterOffsetEnd=260 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=261 CharacterOffsetEnd=264 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Cotton CharacterOffsetBegin=265 CharacterOffsetEnd=271 PartOfSpeech=NNP Lemma=Cotton NamedEntityTag=ORGANIZATION]
+[Text=Club CharacterOffsetBegin=272 CharacterOffsetEnd=276 PartOfSpeech=NNP Lemma=Club NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=276 CharacterOffsetEnd=277 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=278 CharacterOffsetEnd=280 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=281 CharacterOffsetEnd=285 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=286 CharacterOffsetEnd=292 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=tailoring CharacterOffsetBegin=293 CharacterOffsetEnd=302 PartOfSpeech=VBG Lemma=tailor NamedEntityTag=O]
+[Text=orchestrations CharacterOffsetBegin=303 CharacterOffsetEnd=317 PartOfSpeech=NNS Lemma=orchestration NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=318 CharacterOffsetEnd=320 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=fit CharacterOffsetBegin=321 CharacterOffsetEnd=324 PartOfSpeech=VB Lemma=fit NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=325 CharacterOffsetEnd=328 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=dances CharacterOffsetBegin=329 CharacterOffsetEnd=335 PartOfSpeech=NNS Lemma=dance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=335 CharacterOffsetEnd=336 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Way))
+      (ADVP (RB back)))
+    (, ,)
+    (PP (IN at)
+      (NP (DT the) (NNP Cotton) (NNP Club)))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBD were)
+      (ADVP (RB always))
+      (VP (VBG tailoring)
+        (NP (NNS orchestrations))
+        (S
+          (VP (TO to)
+            (VP (VB fit)
+              (NP (DT the) (NNS dances)))))))
+    (. .)))
+
+root(ROOT-0, tailoring-12)
+ccomp(tailoring-12, Way-1)
+advmod(Way-1, back-2)
+punct(tailoring-12, ,-3)
+case(Club-7, at-4)
+det(Club-7, the-5)
+compound(Club-7, Cotton-6)
+nmod:at(tailoring-12, Club-7)
+punct(tailoring-12, ,-8)
+nsubj(tailoring-12, we-9)
+aux(tailoring-12, were-10)
+advmod(tailoring-12, always-11)
+dobj(tailoring-12, orchestrations-13)
+mark(fit-15, to-14)
+advcl:to(tailoring-12, fit-15)
+det(dances-17, the-16)
+dobj(fit-15, dances-17)
+punct(tailoring-12, .-18)
+
+Sentence #5 (36 tokens):
+If you listen to the figures in some of Strayhorn's pieces, like "U.M.M.G.," those are dances--tap dances maybe--and you can't mistake what they essentially are.
+[Text=If CharacterOffsetBegin=337 CharacterOffsetEnd=339 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=340 CharacterOffsetEnd=343 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=344 CharacterOffsetEnd=350 PartOfSpeech=VBP Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=351 CharacterOffsetEnd=353 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=354 CharacterOffsetEnd=357 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=figures CharacterOffsetBegin=358 CharacterOffsetEnd=365 PartOfSpeech=NNS Lemma=figure NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=366 CharacterOffsetEnd=368 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=369 CharacterOffsetEnd=373 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=374 CharacterOffsetEnd=376 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Strayhorn CharacterOffsetBegin=377 CharacterOffsetEnd=386 PartOfSpeech=NNP Lemma=Strayhorn NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=386 CharacterOffsetEnd=388 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=pieces CharacterOffsetBegin=389 CharacterOffsetEnd=395 PartOfSpeech=NNS Lemma=piece NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=395 CharacterOffsetEnd=396 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=397 CharacterOffsetEnd=401 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=402 CharacterOffsetEnd=403 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=U.M.M.G. CharacterOffsetBegin=403 CharacterOffsetEnd=411 PartOfSpeech=NNP Lemma=U.M.M.G. NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=411 CharacterOffsetEnd=412 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=412 CharacterOffsetEnd=413 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=414 CharacterOffsetEnd=419 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=420 CharacterOffsetEnd=423 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=dances CharacterOffsetBegin=424 CharacterOffsetEnd=430 PartOfSpeech=NNS Lemma=dance NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=430 CharacterOffsetEnd=432 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=tap CharacterOffsetBegin=432 CharacterOffsetEnd=435 PartOfSpeech=NN Lemma=tap NamedEntityTag=O]
+[Text=dances CharacterOffsetBegin=436 CharacterOffsetEnd=442 PartOfSpeech=NNS Lemma=dance NamedEntityTag=O]
+[Text=maybe CharacterOffsetBegin=443 CharacterOffsetEnd=448 PartOfSpeech=RB Lemma=maybe NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=448 CharacterOffsetEnd=450 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=450 CharacterOffsetEnd=453 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=454 CharacterOffsetEnd=457 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=458 CharacterOffsetEnd=460 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=460 CharacterOffsetEnd=463 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=mistake CharacterOffsetBegin=464 CharacterOffsetEnd=471 PartOfSpeech=NN Lemma=mistake NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=472 CharacterOffsetEnd=476 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=477 CharacterOffsetEnd=481 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=essentially CharacterOffsetBegin=482 CharacterOffsetEnd=493 PartOfSpeech=RB Lemma=essentially NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=494 CharacterOffsetEnd=497 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=497 CharacterOffsetEnd=498 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP listen)
+          (PP (TO to)
+            (NP
+              (NP (DT the) (NNS figures))
+              (PP (IN in)
+                (NP
+                  (NP (DT some))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNP Strayhorn) (POS 's))
+                      (NNS pieces))))))))))
+    (, ,)
+    (PP (IN like) (`` ``)
+      (NP (NNP U.M.M.G.)))
+    (, ,) ('' '')
+    (S
+      (NP (DT those))
+      (VP (VBP are)
+        (NP
+          (NP (NNS dances))
+          (: --)
+          (NP (NN tap) (NNS dances)))
+        (ADVP (RB maybe))))
+    (: --)
+    (CC and)
+    (S
+      (NP (PRP you))
+      (VP (MD ca) (RB n't)
+        (S
+          (NP
+            (NP (NN mistake))
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (PRP they))
+                (ADVP (RB essentially))
+                (VP (VBP are))))))))
+    (. .)))
+
+root(ROOT-0, dances-21)
+mark(listen-3, If-1)
+nsubj(listen-3, you-2)
+advcl:if(dances-21, listen-3)
+case(figures-6, to-4)
+det(figures-6, the-5)
+nmod:to(listen-3, figures-6)
+case(some-8, in-7)
+nmod:in(figures-6, some-8)
+case(pieces-12, of-9)
+nmod:poss(pieces-12, Strayhorn-10)
+case(Strayhorn-10, 's-11)
+nmod:of(some-8, pieces-12)
+punct(dances-21, ,-13)
+case(U.M.M.G.-16, like-14)
+punct(U.M.M.G.-16, ``-15)
+nmod:like(dances-21, U.M.M.G.-16)
+punct(dances-21, ,-17)
+punct(dances-21, ''-18)
+nsubj(dances-21, those-19)
+cop(dances-21, are-20)
+punct(dances-21, ---22)
+compound(dances-24, tap-23)
+dep(dances-21, dances-24)
+advmod(dances-21, maybe-25)
+punct(dances-21, ---26)
+cc(dances-21, and-27)
+nsubj(ca-29, you-28)
+conj:and(dances-21, ca-29)
+neg(ca-29, n't-30)
+xcomp(ca-29, mistake-31)
+dobj(are-35, mistake-31)
+ref(mistake-31, what-32)
+nsubj(are-35, they-33)
+advmod(are-35, essentially-34)
+acl:relcl(mistake-31, are-35)
+punct(dances-21, .-36)
+
+Sentence #6 (37 tokens):
+The reason why Chick Webb had such control, such command of his audiences at the Savoy ballroom, was because he was always in communication with the dancers and felt it the way they did.
+[Text=The CharacterOffsetBegin=499 CharacterOffsetEnd=502 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=reason CharacterOffsetBegin=503 CharacterOffsetEnd=509 PartOfSpeech=NN Lemma=reason NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=510 CharacterOffsetEnd=513 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=Chick CharacterOffsetBegin=514 CharacterOffsetEnd=519 PartOfSpeech=NNP Lemma=Chick NamedEntityTag=ORGANIZATION]
+[Text=Webb CharacterOffsetBegin=520 CharacterOffsetEnd=524 PartOfSpeech=NNP Lemma=Webb NamedEntityTag=ORGANIZATION]
+[Text=had CharacterOffsetBegin=525 CharacterOffsetEnd=528 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=529 CharacterOffsetEnd=533 PartOfSpeech=JJ Lemma=such NamedEntityTag=O]
+[Text=control CharacterOffsetBegin=534 CharacterOffsetEnd=541 PartOfSpeech=NN Lemma=control NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=541 CharacterOffsetEnd=542 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=543 CharacterOffsetEnd=547 PartOfSpeech=JJ Lemma=such NamedEntityTag=O]
+[Text=command CharacterOffsetBegin=548 CharacterOffsetEnd=555 PartOfSpeech=NN Lemma=command NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=556 CharacterOffsetEnd=558 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=559 CharacterOffsetEnd=562 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=audiences CharacterOffsetBegin=563 CharacterOffsetEnd=572 PartOfSpeech=NNS Lemma=audience NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=573 CharacterOffsetEnd=575 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=576 CharacterOffsetEnd=579 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Savoy CharacterOffsetBegin=580 CharacterOffsetEnd=585 PartOfSpeech=NNP Lemma=Savoy NamedEntityTag=O]
+[Text=ballroom CharacterOffsetBegin=586 CharacterOffsetEnd=594 PartOfSpeech=NN Lemma=ballroom NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=594 CharacterOffsetEnd=595 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=596 CharacterOffsetEnd=599 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=600 CharacterOffsetEnd=607 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=608 CharacterOffsetEnd=610 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=611 CharacterOffsetEnd=614 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=615 CharacterOffsetEnd=621 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=622 CharacterOffsetEnd=624 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=communication CharacterOffsetBegin=625 CharacterOffsetEnd=638 PartOfSpeech=NN Lemma=communication NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=639 CharacterOffsetEnd=643 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=644 CharacterOffsetEnd=647 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=dancers CharacterOffsetBegin=648 CharacterOffsetEnd=655 PartOfSpeech=NNS Lemma=dancer NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=656 CharacterOffsetEnd=659 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=felt CharacterOffsetBegin=660 CharacterOffsetEnd=664 PartOfSpeech=VBD Lemma=feel NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=665 CharacterOffsetEnd=667 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=668 CharacterOffsetEnd=671 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=672 CharacterOffsetEnd=675 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=676 CharacterOffsetEnd=680 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=681 CharacterOffsetEnd=684 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=684 CharacterOffsetEnd=685 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT The) (NN reason))
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (NP (NNP Chick) (NNP Webb))
+            (VP (VBD had)
+              (NP (JJ such) (NN control))))))
+      (, ,)
+      (NP
+        (NP (JJ such) (NN command))
+        (PP (IN of)
+          (NP
+            (NP (PRP$ his) (NNS audiences))
+            (PP (IN at)
+              (NP (DT the) (NNP Savoy) (NN ballroom))))))
+      (, ,))
+    (VP (VBD was)
+      (SBAR (IN because)
+        (S
+          (NP (PRP he))
+          (VP
+            (VP (VBD was)
+              (ADVP (RB always))
+              (PP (IN in)
+                (NP
+                  (NP (NN communication))
+                  (PP (IN with)
+                    (NP (DT the) (NNS dancers))))))
+            (CC and)
+            (VP (VBD felt)
+              (NP (PRP it)))
+            (NP
+              (NP (DT the) (NN way))
+              (SBAR
+                (S
+                  (NP (PRP they))
+                  (VP (VBD did)))))))))
+    (. .)))
+
+root(ROOT-0, was-20)
+det(reason-2, The-1)
+nsubj(was-20, reason-2)
+advmod(had-6, why-3)
+compound(Webb-5, Chick-4)
+nsubj(had-6, Webb-5)
+acl:relcl(reason-2, had-6)
+amod(control-8, such-7)
+dobj(had-6, control-8)
+punct(reason-2, ,-9)
+amod(command-11, such-10)
+appos(reason-2, command-11)
+case(audiences-14, of-12)
+nmod:poss(audiences-14, his-13)
+nmod:of(command-11, audiences-14)
+case(ballroom-18, at-15)
+det(ballroom-18, the-16)
+compound(ballroom-18, Savoy-17)
+nmod:at(audiences-14, ballroom-18)
+punct(reason-2, ,-19)
+mark(communication-26, because-21)
+nsubj(communication-26, he-22)
+nsubj(felt-31, he-22)
+cop(communication-26, was-23)
+advmod(communication-26, always-24)
+case(communication-26, in-25)
+advcl:in(was-20, communication-26)
+case(dancers-29, with-27)
+det(dancers-29, the-28)
+nmod:with(communication-26, dancers-29)
+cc(communication-26, and-30)
+advcl:in(was-20, felt-31)
+conj:and(communication-26, felt-31)
+dobj(felt-31, it-32)
+det(way-34, the-33)
+dobj(communication-26, way-34)
+nsubj(did-36, they-35)
+acl:relcl(way-34, did-36)
+punct(was-20, .-37)
+
+Sentence #7 (20 tokens):
+And that is probably the biggest reason why he could cut all the other bands that went in there.
+[Text=And CharacterOffsetBegin=686 CharacterOffsetEnd=689 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=690 CharacterOffsetEnd=694 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=695 CharacterOffsetEnd=697 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=probably CharacterOffsetBegin=698 CharacterOffsetEnd=706 PartOfSpeech=RB Lemma=probably NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=707 CharacterOffsetEnd=710 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=biggest CharacterOffsetBegin=711 CharacterOffsetEnd=718 PartOfSpeech=JJS Lemma=biggest NamedEntityTag=O]
+[Text=reason CharacterOffsetBegin=719 CharacterOffsetEnd=725 PartOfSpeech=NN Lemma=reason NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=726 CharacterOffsetEnd=729 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=730 CharacterOffsetEnd=732 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=733 CharacterOffsetEnd=738 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=cut CharacterOffsetBegin=739 CharacterOffsetEnd=742 PartOfSpeech=VB Lemma=cut NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=743 CharacterOffsetEnd=746 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=747 CharacterOffsetEnd=750 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=751 CharacterOffsetEnd=756 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=bands CharacterOffsetBegin=757 CharacterOffsetEnd=762 PartOfSpeech=NNS Lemma=band NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=763 CharacterOffsetEnd=767 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=768 CharacterOffsetEnd=772 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=773 CharacterOffsetEnd=775 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=776 CharacterOffsetEnd=781 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=781 CharacterOffsetEnd=782 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC And)
+    (NP (DT that))
+    (VP (VBZ is)
+      (ADVP (RB probably))
+      (NP
+        (NP (DT the) (JJS biggest) (NN reason))
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (NP (PRP he))
+            (VP (MD could)
+              (VP (VB cut)
+                (NP
+                  (NP (PDT all) (DT the) (JJ other) (NNS bands))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBD went)
+                        (PP (IN in)
+                          (NP (RB there)))))))))))))
+    (. .)))
+
+root(ROOT-0, reason-7)
+cc(reason-7, And-1)
+nsubj(reason-7, that-2)
+cop(reason-7, is-3)
+advmod(reason-7, probably-4)
+det(reason-7, the-5)
+amod(reason-7, biggest-6)
+nsubj(went-17, reason-7)
+advmod(cut-11, why-8)
+nsubj(cut-11, he-9)
+aux(cut-11, could-10)
+acl:relcl(reason-7, cut-11)
+det:predet(bands-15, all-12)
+det(bands-15, the-13)
+amod(bands-15, other-14)
+dobj(cut-11, bands-15)
+nsubj(went-17, bands-15)
+ref(reason-7, that-16)
+ref(bands-15, that-16)
+acl:relcl(bands-15, went-17)
+case(there-19, in-18)
+nmod:in(went-17, there-19)
+punct(reason-7, .-20)
+
+Coreference set:
+	(1,10,[10,11]) -> (1,3,[2,4]), that is: "his" -> "a drummer"
+	(1,15,[15,16]) -> (1,3,[2,4]), that is: "he" -> "a drummer"
+Coreference set:
+	(2,7,[7,8]) -> (1,7,[5,9]), that is: "Chick" -> "Chick -LSB- Webb -RSB-"
+	(3,14,[13,15]) -> (1,7,[5,9]), that is: "Chick Webb" -> "Chick -LSB- Webb -RSB-"
+	(3,17,[16,26]) -> (1,7,[5,9]), that is: "a dance-drummer who painted pictures of dances with his drums" -> "Chick -LSB- Webb -RSB-"
+	(3,24,[24,25]) -> (1,7,[5,9]), that is: "his" -> "Chick -LSB- Webb -RSB-"
+	(6,5,[4,6]) -> (1,7,[5,9]), that is: "Chick Webb" -> "Chick -LSB- Webb -RSB-"
+	(6,13,[13,14]) -> (1,7,[5,9]), that is: "his" -> "Chick -LSB- Webb -RSB-"
+	(6,22,[22,23]) -> (1,7,[5,9]), that is: "he" -> "Chick -LSB- Webb -RSB-"
+	(7,9,[9,10]) -> (1,7,[5,9]), that is: "he" -> "Chick -LSB- Webb -RSB-"
+Coreference set:
+	(2,4,[4,5]) -> (2,2,[1,3]), that is: "dancers" -> "Some musicians"
+	(6,29,[28,30]) -> (2,2,[1,3]), that is: "the dancers" -> "Some musicians"
+	(6,35,[35,36]) -> (2,2,[1,3]), that is: "they" -> "Some musicians"
+Coreference set:
+	(3,22,[22,23]) -> (4,17,[16,18]), that is: "dances" -> "the dances"
+Coreference set:
+	(5,33,[33,34]) -> (5,8,[8,13]), that is: "they" -> "some of Strayhorn 's pieces"
+Coreference set:
+	(5,19,[19,20]) -> (5,24,[23,25]), that is: "those" -> "tap dances"
+	(5,21,[21,25]) -> (5,24,[23,25]), that is: "dances -- tap dances" -> "tap dances"
+Coreference set:
+	(6,2,[1,9]) -> (7,7,[5,20]), that is: "The reason why Chick Webb had such control" -> "the biggest reason why he could cut all the other bands that went in there"
+	(7,2,[2,3]) -> (7,7,[5,20]), that is: "that" -> "the biggest reason why he could cut all the other bands that went in there"
+Coreference set:
+	(6,32,[32,33]) -> (6,26,[26,30]), that is: "it" -> "communication with the dancers"

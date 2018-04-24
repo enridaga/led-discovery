@@ -1,0 +1,46 @@
+Sentence #1 (5 tokens):
+Bitterly, dangerously cold.
+[Text=Bitterly CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=RB Lemma=bitterly NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=dangerously CharacterOffsetBegin=10 CharacterOffsetEnd=21 PartOfSpeech=RB Lemma=dangerously NamedEntityTag=O]
+[Text=cold CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=cold NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (ADVP (RB Bitterly))
+    (, ,)
+    (NP (RB dangerously) (JJ cold))
+    (. .)))
+
+root(ROOT-0, cold-4)
+dep(cold-4, Bitterly-1)
+punct(cold-4, ,-2)
+advmod(cold-4, dangerously-3)
+punct(cold-4, .-5)
+
+Sentence #2 (7 tokens):
+Listened to Milhaud's Trombone Concerto.
+[Text=Listened CharacterOffsetBegin=28 CharacterOffsetEnd=36 PartOfSpeech=VBN Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Milhaud CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Milhaud NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Trombone CharacterOffsetBegin=50 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Trombone NamedEntityTag=O]
+[Text=Concerto CharacterOffsetBegin=59 CharacterOffsetEnd=67 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=67 CharacterOffsetEnd=68 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBN Listened)
+      (PP (TO to)
+        (NP
+          (NP (NNP Milhaud) (POS 's))
+          (NNP Trombone) (NNP Concerto))))
+    (. .)))
+
+root(ROOT-0, Listened-1)
+case(Concerto-6, to-2)
+nmod:poss(Concerto-6, Milhaud-3)
+case(Milhaud-3, 's-4)
+compound(Concerto-6, Trombone-5)
+nmod:to(Listened-1, Concerto-6)
+punct(Listened-1, .-7)
+

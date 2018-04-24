@@ -1,0 +1,99 @@
+Sentence #1 (32 tokens):
+From my earliest days I was surrounded with music, since my father used to practice a great deal (especially work by Clementi, Mozart, Kozeluch, etc.)
+[Text=From CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=earliest CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=JJS Lemma=earliest NamedEntityTag=O]
+[Text=days CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t1" type="DURATION" value="PXD">days</TIMEX3>]
+[Text=I CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=surrounded CharacterOffsetBegin=28 CharacterOffsetEnd=38 PartOfSpeech=VBN Lemma=surround NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=since CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=father CharacterOffsetBegin=60 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=father NamedEntityTag=O]
+[Text=used CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=VBD Lemma=use NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=practice CharacterOffsetBegin=75 CharacterOffsetEnd=83 PartOfSpeech=VB Lemma=practice NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=84 CharacterOffsetEnd=85 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=86 CharacterOffsetEnd=91 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=deal CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=deal NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=especially CharacterOffsetBegin=98 CharacterOffsetEnd=108 PartOfSpeech=RB Lemma=especially NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=109 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Clementi CharacterOffsetBegin=117 CharacterOffsetEnd=125 PartOfSpeech=NNP Lemma=Clementi NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Mozart CharacterOffsetBegin=127 CharacterOffsetEnd=133 PartOfSpeech=NNP Lemma=Mozart NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=133 CharacterOffsetEnd=134 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Kozeluch CharacterOffsetBegin=135 CharacterOffsetEnd=143 PartOfSpeech=NNP Lemma=Kozeluch NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=etc. CharacterOffsetBegin=145 CharacterOffsetEnd=148 PartOfSpeech=FW Lemma=etc. NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=149 CharacterOffsetEnd=150 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN From)
+      (NP (PRP$ my) (JJS earliest) (NNS days)))
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBN surrounded)
+        (PP (IN with)
+          (NP (NN music)))
+        (, ,)
+        (SBAR (IN since)
+          (S
+            (NP (PRP$ my) (NN father))
+            (VP (VBD used)
+              (S
+                (VP (TO to)
+                  (VP (VB practice)
+                    (NP
+                      (NP (DT a) (JJ great) (NN deal))
+                      (PRN (-LRB- -LRB-)
+                        (NP
+                          (NP
+                            (NP (RB especially) (NN work))
+                            (PP (IN by)
+                              (NP (NNP Clementi) (, ,) (NNP Mozart) (, ,) (NNP Kozeluch) (, ,))))
+                          (NP (FW etc.) (. .)))
+                        (-RRB- -RRB-)))))))))))))
+
+root(ROOT-0, surrounded-7)
+case(days-4, From-1)
+nmod:poss(days-4, my-2)
+amod(days-4, earliest-3)
+nmod:from(surrounded-7, days-4)
+nsubjpass(surrounded-7, I-5)
+auxpass(surrounded-7, was-6)
+case(music-9, with-8)
+nmod:with(surrounded-7, music-9)
+punct(surrounded-7, ,-10)
+mark(used-14, since-11)
+nmod:poss(father-13, my-12)
+nsubj(used-14, father-13)
+nsubj:xsubj(practice-16, father-13)
+advcl:since(surrounded-7, used-14)
+mark(practice-16, to-15)
+xcomp(used-14, practice-16)
+det(deal-19, a-17)
+amod(deal-19, great-18)
+dobj(practice-16, deal-19)
+punct(work-22, -LRB--20)
+advmod(work-22, especially-21)
+dep(deal-19, work-22)
+case(Kozeluch-28, by-23)
+compound(Kozeluch-28, Clementi-24)
+punct(Kozeluch-28, ,-25)
+appos(Kozeluch-28, Mozart-26)
+punct(Kozeluch-28, ,-27)
+nmod:by(work-22, Kozeluch-28)
+punct(Kozeluch-28, ,-29)
+dep(work-22, etc.-30)
+punct(etc.-30, .-31)
+punct(work-22, -RRB--32)
+
+Coreference set:
+	(1,5,[5,6]) -> (1,2,[2,3]), that is: "I" -> "my"
+	(1,12,[12,13]) -> (1,2,[2,3]), that is: "my" -> "my"

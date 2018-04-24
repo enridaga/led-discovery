@@ -1,0 +1,236 @@
+Sentence #1 (18 tokens):
+Last Sunday I attended Mass in the Heiligkreuzkirche and at ten o’clock I went to Herr Stein.
+[Text=Last CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=last NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-7 OFFSET P-1W Timex=<TIMEX3 alt_value="XXXX-WXX-7 OFFSET P-1W" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Last Sunday</TIMEX3>]
+[Text=Sunday CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Sunday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-7 OFFSET P-1W Timex=<TIMEX3 alt_value="XXXX-WXX-7 OFFSET P-1W" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Last Sunday</TIMEX3>]
+[Text=I CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=attended CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=VBD Lemma=attend NamedEntityTag=O]
+[Text=Mass CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Mass NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Heiligkreuzkirche CharacterOffsetBegin=35 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Heiligkreuzkirche NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=ten CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=CD Lemma=ten NamedEntityTag=TIME NormalizedNamedEntityTag=T10:00 Timex=<TIMEX3 tid="t3" type="TIME" value="T10:00">ten o￢ﾀﾙclock</TIMEX3>]
+[Text=o'clock CharacterOffsetBegin=64 CharacterOffsetEnd=71 PartOfSpeech=RB Lemma=o'clock NamedEntityTag=TIME NormalizedNamedEntityTag=T10:00 Timex=<TIMEX3 tid="t3" type="TIME" value="T10:00">ten o￢ﾀﾙclock</TIMEX3>]
+[Text=I CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Herr CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=NNP Lemma=Herr NamedEntityTag=PERSON]
+[Text=Stein CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=Stein NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (JJ Last) (NNP Sunday))
+    (S
+      (NP (PRP I))
+      (VP (VBD attended)
+        (NP
+          (NP (NNP Mass))
+          (PP (IN in)
+            (NP (DT the) (NNP Heiligkreuzkirche))))))
+    (CC and)
+    (S
+      (PP (IN at)
+        (NP (CD ten) (RB o'clock)))
+      (NP (PRP I))
+      (VP (VBD went)
+        (PP (TO to)
+          (NP (NNP Herr) (NNP Stein)))))
+    (. .)))
+
+root(ROOT-0, attended-4)
+amod(Sunday-2, Last-1)
+dep(attended-4, Sunday-2)
+nsubj(attended-4, I-3)
+dobj(attended-4, Mass-5)
+case(Heiligkreuzkirche-8, in-6)
+det(Heiligkreuzkirche-8, the-7)
+nmod:in(Mass-5, Heiligkreuzkirche-8)
+cc(attended-4, and-9)
+case(ten-11, at-10)
+nmod:at(went-14, ten-11)
+advmod(ten-11, o'clock-12)
+nsubj(went-14, I-13)
+conj:and(attended-4, went-14)
+case(Stein-17, to-15)
+compound(Stein-17, Herr-16)
+nmod:to(went-14, Stein-17)
+punct(attended-4, .-18)
+
+Sentence #2 (6 tokens):
+That was on the 19th.
+[Text=That CharacterOffsetBegin=94 CharacterOffsetEnd=98 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=99 CharacterOffsetEnd=102 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=19th CharacterOffsetBegin=110 CharacterOffsetEnd=114 PartOfSpeech=JJ Lemma=19th NamedEntityTag=DATE NormalizedNamedEntityTag=******19]
+[Text=. CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBD was)
+      (PP (IN on)
+        (NP (DT the) (JJ 19th))))
+    (. .)))
+
+root(ROOT-0, 19th-5)
+nsubj(19th-5, That-1)
+cop(19th-5, was-2)
+case(19th-5, on-3)
+det(19th-5, the-4)
+punct(19th-5, .-6)
+
+Sentence #3 (9 tokens):
+We rehearsed a few symphonies for the concert.
+[Text=We CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=rehearsed CharacterOffsetBegin=119 CharacterOffsetEnd=128 PartOfSpeech=VBD Lemma=rehearse NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=few CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=JJ Lemma=few NamedEntityTag=O]
+[Text=symphonies CharacterOffsetBegin=135 CharacterOffsetEnd=145 PartOfSpeech=NNS Lemma=symphony NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=154 CharacterOffsetEnd=161 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=161 CharacterOffsetEnd=162 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBD rehearsed)
+      (NP (DT a) (JJ few) (NNS symphonies))
+      (PP (IN for)
+        (NP (DT the) (NN concert))))
+    (. .)))
+
+root(ROOT-0, rehearsed-2)
+nsubj(rehearsed-2, We-1)
+det(symphonies-5, a-3)
+amod(symphonies-5, few-4)
+dobj(rehearsed-2, symphonies-5)
+case(concert-8, for-6)
+det(concert-8, the-7)
+nmod:for(rehearsed-2, concert-8)
+punct(rehearsed-2, .-9)
+
+Sentence #4 (11 tokens):
+Afterwards I lunched with my uncle at the Heiligkreuz Monastery.
+[Text=Afterwards CharacterOffsetBegin=163 CharacterOffsetEnd=173 PartOfSpeech=RB Lemma=afterwards NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=174 CharacterOffsetEnd=175 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=lunched CharacterOffsetBegin=176 CharacterOffsetEnd=183 PartOfSpeech=VBD Lemma=lunch NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=189 CharacterOffsetEnd=191 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=uncle CharacterOffsetBegin=192 CharacterOffsetEnd=197 PartOfSpeech=NN Lemma=uncle NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=198 CharacterOffsetEnd=200 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Heiligkreuz CharacterOffsetBegin=205 CharacterOffsetEnd=216 PartOfSpeech=NNP Lemma=Heiligkreuz NamedEntityTag=LOCATION]
+[Text=Monastery CharacterOffsetBegin=217 CharacterOffsetEnd=226 PartOfSpeech=NNP Lemma=Monastery NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=226 CharacterOffsetEnd=227 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Afterwards))
+    (NP (PRP I))
+    (VP (VBD lunched)
+      (PP (IN with)
+        (NP (PRP$ my) (NN uncle)))
+      (PP (IN at)
+        (NP (DT the) (NNP Heiligkreuz) (NNP Monastery))))
+    (. .)))
+
+root(ROOT-0, lunched-3)
+advmod(lunched-3, Afterwards-1)
+nsubj(lunched-3, I-2)
+case(uncle-6, with-4)
+nmod:poss(uncle-6, my-5)
+nmod:with(lunched-3, uncle-6)
+case(Monastery-10, at-7)
+det(Monastery-10, the-8)
+compound(Monastery-10, Heiligkreuz-9)
+nmod:at(lunched-3, Monastery-10)
+punct(lunched-3, .-11)
+
+Sentence #5 (8 tokens):
+During the meal we had some music.
+[Text=During CharacterOffsetBegin=228 CharacterOffsetEnd=234 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=235 CharacterOffsetEnd=238 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=meal CharacterOffsetBegin=239 CharacterOffsetEnd=243 PartOfSpeech=NN Lemma=meal NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=244 CharacterOffsetEnd=246 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=247 CharacterOffsetEnd=250 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=251 CharacterOffsetEnd=255 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=256 CharacterOffsetEnd=261 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=261 CharacterOffsetEnd=262 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN During)
+      (NP (DT the) (NN meal)))
+    (NP (PRP we))
+    (VP (VBD had)
+      (NP (DT some) (NN music)))
+    (. .)))
+
+root(ROOT-0, had-5)
+case(meal-3, During-1)
+det(meal-3, the-2)
+nmod:during(had-5, meal-3)
+nsubj(had-5, we-4)
+det(music-7, some-6)
+dobj(had-5, music-7)
+punct(had-5, .-8)
+
+Sentence #6 (16 tokens):
+In spite of their poor fiddling I prefer the monastery players to the Augsburg orchestra.
+[Text=In CharacterOffsetBegin=263 CharacterOffsetEnd=265 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=spite CharacterOffsetBegin=266 CharacterOffsetEnd=271 PartOfSpeech=NN Lemma=spite NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=272 CharacterOffsetEnd=274 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=275 CharacterOffsetEnd=280 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=poor CharacterOffsetBegin=281 CharacterOffsetEnd=285 PartOfSpeech=JJ Lemma=poor NamedEntityTag=O]
+[Text=fiddling CharacterOffsetBegin=286 CharacterOffsetEnd=294 PartOfSpeech=VBG Lemma=fiddle NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=295 CharacterOffsetEnd=296 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=prefer CharacterOffsetBegin=297 CharacterOffsetEnd=303 PartOfSpeech=VBP Lemma=prefer NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=304 CharacterOffsetEnd=307 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=monastery CharacterOffsetBegin=308 CharacterOffsetEnd=317 PartOfSpeech=NN Lemma=monastery NamedEntityTag=O]
+[Text=players CharacterOffsetBegin=318 CharacterOffsetEnd=325 PartOfSpeech=NNS Lemma=player NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=326 CharacterOffsetEnd=328 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=329 CharacterOffsetEnd=332 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Augsburg CharacterOffsetBegin=333 CharacterOffsetEnd=341 PartOfSpeech=NNP Lemma=Augsburg NamedEntityTag=LOCATION]
+[Text=orchestra CharacterOffsetBegin=342 CharacterOffsetEnd=351 PartOfSpeech=NN Lemma=orchestra NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=351 CharacterOffsetEnd=352 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (S
+        (NP
+          (NP (NN spite))
+          (PP (IN of)
+            (NP (PRP$ their) (JJ poor))))
+        (VP (VBG fiddling))))
+    (NP (PRP I))
+    (VP (VBP prefer)
+      (NP (DT the) (NN monastery) (NNS players))
+      (PP (TO to)
+        (NP (DT the) (NNP Augsburg) (NN orchestra))))
+    (. .)))
+
+root(ROOT-0, prefer-8)
+mark(fiddling-6, In-1)
+nsubj(fiddling-6, spite-2)
+case(poor-5, of-3)
+nmod:poss(poor-5, their-4)
+nmod:of(spite-2, poor-5)
+advcl:in(prefer-8, fiddling-6)
+nsubj(prefer-8, I-7)
+det(players-11, the-9)
+compound(players-11, monastery-10)
+dobj(prefer-8, players-11)
+case(orchestra-15, to-12)
+det(orchestra-15, the-13)
+compound(orchestra-15, Augsburg-14)
+nmod:to(prefer-8, orchestra-15)
+punct(prefer-8, .-16)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,2,[1,3]), that is: "That" -> "Last Sunday"
+Coreference set:
+	(1,13,[13,14]) -> (1,3,[3,4]), that is: "I" -> "I"
+	(4,2,[2,3]) -> (1,3,[3,4]), that is: "I" -> "I"
+	(4,5,[5,6]) -> (1,3,[3,4]), that is: "my" -> "I"
+	(6,7,[7,8]) -> (1,3,[3,4]), that is: "I" -> "I"
+Coreference set:
+	(5,4,[4,5]) -> (3,1,[1,2]), that is: "we" -> "We"

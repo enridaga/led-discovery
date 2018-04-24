@@ -1,0 +1,247 @@
+Sentence #1 (17 tokens):
+Go to supper with Bridges & then (+ Brosas) to B.B.C Studio for orch.
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=supper CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=supper NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Bridges CharacterOffsetBegin=18 CharacterOffsetEnd=25 PartOfSpeech=NNPS Lemma=Bridges NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=28 CharacterOffsetEnd=32 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=+ CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=CC Lemma=+ NamedEntityTag=O]
+[Text=Brosas CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=NNS Lemma=brosa NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=B.B.C CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=B.B.C NamedEntityTag=O]
+[Text=Studio CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Studio NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=orch CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=orch NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PP (TO to)
+        (NP
+          (NP (NN supper))
+          (PP (IN with)
+            (NP
+              (NP (NNPS Bridges))
+              (CC &)
+              (NP (RB then))
+              (PRN (-LRB- -LRB-)
+                (S
+                  (NP (CC +))
+                  (ADJP (NNS Brosas)))
+                (-RRB- -RRB-))))))
+      (PP (TO to)
+        (NP
+          (NP (NNP B.B.C) (NNP Studio))
+          (PP (IN for)
+            (NP (NN orch))))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+case(supper-3, to-2)
+nmod:to(Go-1, supper-3)
+case(Bridges-5, with-4)
+nmod:with(supper-3, Bridges-5)
+cc(Bridges-5, &-6)
+nmod:with(supper-3, then-7)
+conj:&(Bridges-5, then-7)
+punct(Brosas-10, -LRB--8)
+dep(Brosas-10, +-9)
+dep(Bridges-5, Brosas-10)
+punct(Brosas-10, -RRB--11)
+case(Studio-14, to-12)
+compound(Studio-14, B.B.C-13)
+nmod:to(Go-1, Studio-14)
+case(orch-16, for-15)
+nmod:for(Studio-14, orch-16)
+punct(Go-1, .-17)
+
+Sentence #2 (10 tokens):
+concert (F.B. conducting) Brahm's 3rd Symph.
+[Text=concert CharacterOffsetBegin=70 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=F.B. CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=f.b. NamedEntityTag=O]
+[Text=conducting CharacterOffsetBegin=84 CharacterOffsetEnd=94 PartOfSpeech=NN Lemma=conducting NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=Brahm CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=NNP Lemma=Brahm NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=3rd CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=JJ Lemma=3rd NamedEntityTag=ORDINAL NormalizedNamedEntityTag=3.0]
+[Text=Symph CharacterOffsetBegin=108 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=symph NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP (NN concert))
+      (PRN (-LRB- -LRB-)
+        (NP (NN F.B.) (NN conducting))
+        (-RRB- -RRB-)))
+    (NP
+      (NP (NNP Brahm) (POS 's))
+      (NP (JJ 3rd) (NN Symph)))
+    (. .)))
+
+root(ROOT-0, concert-1)
+punct(conducting-4, -LRB--2)
+compound(conducting-4, F.B.-3)
+appos(concert-1, conducting-4)
+punct(conducting-4, -RRB--5)
+dep(concert-1, Brahm-6)
+case(Brahm-6, 's-7)
+amod(Symph-9, 3rd-8)
+dep(Brahm-6, Symph-9)
+punct(concert-1, .-10)
+
+Sentence #3 (4 tokens):
+Orchestra rather poor.
+[Text=Orchestra CharacterOffsetBegin=115 CharacterOffsetEnd=124 PartOfSpeech=NNP Lemma=Orchestra NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=125 CharacterOffsetEnd=131 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=poor CharacterOffsetBegin=132 CharacterOffsetEnd=136 PartOfSpeech=JJ Lemma=poor NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Orchestra))
+    (ADJP (RB rather) (JJ poor))
+    (. .)))
+
+root(ROOT-0, poor-3)
+dep(poor-3, Orchestra-1)
+advmod(poor-3, rather-2)
+punct(poor-3, .-4)
+
+Sentence #4 (5 tokens):
+Isolde Menges in Amin.
+[Text=Isolde CharacterOffsetBegin=138 CharacterOffsetEnd=144 PartOfSpeech=NNP Lemma=Isolde NamedEntityTag=PERSON]
+[Text=Menges CharacterOffsetBegin=145 CharacterOffsetEnd=151 PartOfSpeech=NNP Lemma=Menges NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=152 CharacterOffsetEnd=154 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Amin CharacterOffsetBegin=155 CharacterOffsetEnd=159 PartOfSpeech=NNP Lemma=Amin NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Isolde) (NNP Menges))
+    (PP (IN in)
+      (NP (NNP Amin)))
+    (. .)))
+
+root(ROOT-0, Menges-2)
+compound(Menges-2, Isolde-1)
+case(Amin-4, in-3)
+nmod:in(Menges-2, Amin-4)
+punct(Menges-2, .-5)
+
+Sentence #5 (2 tokens):
+Bach.
+[Text=Bach CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=NNP Lemma=Bach NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (NNP Bach))
+    (. .)))
+
+root(ROOT-0, Bach-1)
+punct(Bach-1, .-2)
+
+Sentence #6 (2 tokens):
+conc.
+[Text=conc CharacterOffsetBegin=167 CharacterOffsetEnd=171 PartOfSpeech=NN Lemma=conc NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=171 CharacterOffsetEnd=172 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (NN conc) (. .)))
+
+root(ROOT-0, conc-1)
+punct(conc-1, .-2)
+
+Sentence #7 (20 tokens):
+- very good, but not my Bach - finally F.B. magnificent & lovely Enter Spring which the orch.
+[Text=- CharacterOffsetBegin=173 CharacterOffsetEnd=174 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=175 CharacterOffsetEnd=179 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=180 CharacterOffsetEnd=184 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=184 CharacterOffsetEnd=185 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=186 CharacterOffsetEnd=189 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=190 CharacterOffsetEnd=193 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=194 CharacterOffsetEnd=196 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=Bach CharacterOffsetBegin=197 CharacterOffsetEnd=201 PartOfSpeech=NNP Lemma=Bach NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=202 CharacterOffsetEnd=203 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=finally CharacterOffsetBegin=204 CharacterOffsetEnd=211 PartOfSpeech=RB Lemma=finally NamedEntityTag=O]
+[Text=F.B. CharacterOffsetBegin=212 CharacterOffsetEnd=216 PartOfSpeech=NNP Lemma=F.B. NamedEntityTag=O]
+[Text=magnificent CharacterOffsetBegin=217 CharacterOffsetEnd=228 PartOfSpeech=JJ Lemma=magnificent NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=229 CharacterOffsetEnd=230 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=lovely CharacterOffsetBegin=231 CharacterOffsetEnd=237 PartOfSpeech=JJ Lemma=lovely NamedEntityTag=O]
+[Text=Enter CharacterOffsetBegin=238 CharacterOffsetEnd=243 PartOfSpeech=VB Lemma=enter NamedEntityTag=O]
+[Text=Spring CharacterOffsetBegin=244 CharacterOffsetEnd=250 PartOfSpeech=NN Lemma=spring NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-SP Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-SP">Spring</TIMEX3>]
+[Text=which CharacterOffsetBegin=251 CharacterOffsetEnd=256 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=orch CharacterOffsetBegin=261 CharacterOffsetEnd=265 PartOfSpeech=NN Lemma=orch NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=265 CharacterOffsetEnd=266 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (: -)
+    (NP
+      (NP (RB very) (JJ good))
+      (, ,)
+      (CC but)
+      (RB not)
+      (NP
+        (NP
+          (NP (PRP$ my) (NNP Bach))
+          (PRN (: -)
+            (ADVP (RB finally))
+            (NP (NNP F.B.))))
+        (SBAR
+          (S
+            (NP
+              (NP (JJ magnificent))
+              (CC &)
+              (NP (JJ lovely)))
+            (VP (VB Enter)
+              (NP
+                (NP (NN Spring))
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (NP (DT the) (NN orch))))))))))
+    (. .)))
+
+root(ROOT-0, good-3)
+punct(good-3, --1)
+advmod(good-3, very-2)
+punct(good-3, ,-4)
+cc(good-3, but-5)
+neg(Bach-8, not-6)
+nmod:poss(Bach-8, my-7)
+conj:but(good-3, Bach-8)
+dep(orch-19, Bach-8)
+punct(F.B.-11, --9)
+dep(F.B.-11, finally-10)
+dep(Bach-8, F.B.-11)
+nsubj(Enter-15, magnificent-12)
+cc(magnificent-12, &-13)
+conj:&(magnificent-12, lovely-14)
+nsubj(Enter-15, lovely-14)
+acl:relcl(Bach-8, Enter-15)
+dobj(Enter-15, Spring-16)
+dep(orch-19, Spring-16)
+ref(Bach-8, which-17)
+ref(Spring-16, which-17)
+det(orch-19, the-18)
+acl:relcl(Spring-16, orch-19)
+punct(good-3, .-20)
+
+Sentence #8 (4 tokens):
+played quite well.
+[Text=played CharacterOffsetBegin=267 CharacterOffsetEnd=273 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=274 CharacterOffsetEnd=279 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=280 CharacterOffsetEnd=284 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=284 CharacterOffsetEnd=285 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBN played)
+      (ADVP (RB quite) (RB well)))
+    (. .)))
+
+root(ROOT-0, played-1)
+advmod(well-3, quite-2)
+advmod(played-1, well-3)
+punct(played-1, .-4)
+

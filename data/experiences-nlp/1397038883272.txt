@@ -1,0 +1,70 @@
+Sentence #1 (21 tokens):
+Lena Ashwell's concert party were here and gave us a charming selection of songs and violin and piano pieces.
+[Text=Lena CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Lena NamedEntityTag=PERSON]
+[Text=Ashwell CharacterOffsetBegin=5 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Ashwell NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=party CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=39 CharacterOffsetEnd=42 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=charming CharacterOffsetBegin=53 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=charming NamedEntityTag=O]
+[Text=selection CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=selection NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=songs CharacterOffsetBegin=75 CharacterOffsetEnd=80 PartOfSpeech=NNS Lemma=song NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=violin CharacterOffsetBegin=85 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=violin NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=pieces CharacterOffsetBegin=102 CharacterOffsetEnd=108 PartOfSpeech=NNS Lemma=piece NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP Lena) (NNP Ashwell) (POS 's))
+      (NN concert) (NN party))
+    (VP
+      (VP (VBD were)
+        (ADVP (RB here)))
+      (CC and)
+      (VP (VBD gave)
+        (NP (PRP us))
+        (NP
+          (NP (DT a) (JJ charming) (NN selection))
+          (PP (IN of)
+            (NP
+              (NP (NNS songs))
+              (CC and)
+              (NP (NN violin)
+                (CC and)
+                (NN piano) (NNS pieces)))))))
+    (. .)))
+
+root(ROOT-0, were-6)
+compound(Ashwell-2, Lena-1)
+nmod:poss(party-5, Ashwell-2)
+case(Ashwell-2, 's-3)
+compound(party-5, concert-4)
+nsubj(were-6, party-5)
+nsubj(gave-9, party-5)
+advmod(were-6, here-7)
+cc(were-6, and-8)
+conj:and(were-6, gave-9)
+iobj(gave-9, us-10)
+det(selection-13, a-11)
+amod(selection-13, charming-12)
+dobj(gave-9, selection-13)
+case(songs-15, of-14)
+nmod:of(selection-13, songs-15)
+cc(songs-15, and-16)
+compound(pieces-20, violin-17)
+cc(violin-17, and-18)
+conj:and(violin-17, piano-19)
+compound(pieces-20, piano-19)
+nmod:of(selection-13, pieces-20)
+conj:and(songs-15, pieces-20)
+punct(were-6, .-21)
+

@@ -1,0 +1,256 @@
+Sentence #1 (10 tokens):
+The entertainment at the Castle yesterday was very superb.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=entertainment CharacterOffsetBegin=4 CharacterOffsetEnd=17 PartOfSpeech=NN Lemma=entertainment NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Castle CharacterOffsetBegin=25 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Castle NamedEntityTag=O]
+[Text=yesterday CharacterOffsetBegin=32 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1D Timex=<TIMEX3 alt_value="OFFSET P-1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">yesterday</TIMEX3>]
+[Text=was CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=superb CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=JJ Lemma=superb NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN entertainment))
+      (PP (IN at)
+        (NP (DT the) (NNP Castle) (NN yesterday))))
+    (VP (VBD was)
+      (ADJP (RB very) (JJ superb)))
+    (. .)))
+
+root(ROOT-0, superb-9)
+det(entertainment-2, The-1)
+nsubj(superb-9, entertainment-2)
+case(yesterday-6, at-3)
+det(yesterday-6, the-4)
+compound(yesterday-6, Castle-5)
+nmod:at(entertainment-2, yesterday-6)
+cop(superb-9, was-7)
+advmod(superb-9, very-8)
+punct(superb-9, .-10)
+
+Sentence #2 (20 tokens):
+There were above a hundred people, Ministers of State and foreigners, invited to come to the Castle.
+[Text=There CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=above CharacterOffsetBegin=70 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=above NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=hundred CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=CD Lemma=hundred NamedEntityTag=NUMBER NormalizedNamedEntityTag=100.0]
+[Text=people CharacterOffsetBegin=86 CharacterOffsetEnd=92 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Ministers CharacterOffsetBegin=94 CharacterOffsetEnd=103 PartOfSpeech=NNPS Lemma=Ministers NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=104 CharacterOffsetEnd=106 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=State CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=NNP Lemma=State NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=foreigners CharacterOffsetBegin=117 CharacterOffsetEnd=127 PartOfSpeech=NNS Lemma=foreigner NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=invited CharacterOffsetBegin=129 CharacterOffsetEnd=136 PartOfSpeech=VBN Lemma=invite NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=come CharacterOffsetBegin=140 CharacterOffsetEnd=144 PartOfSpeech=VB Lemma=come NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=145 CharacterOffsetEnd=147 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=148 CharacterOffsetEnd=151 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Castle CharacterOffsetBegin=152 CharacterOffsetEnd=158 PartOfSpeech=NNP Lemma=Castle NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD were)
+      (PP (IN above)
+        (NP
+          (NP (DT a) (CD hundred) (NNS people))
+          (, ,)
+          (NP
+            (NP (NNPS Ministers))
+            (PP (IN of)
+              (NP (NNP State))))
+          (CC and)
+          (NP
+            (NP (NNS foreigners))
+            (, ,)
+            (VP (VBN invited)
+              (S
+                (VP (TO to)
+                  (VP (VB come)
+                    (PP (TO to)
+                      (NP (DT the) (NNP Castle)))))))))))
+    (. .)))
+
+root(ROOT-0, were-2)
+expl(were-2, There-1)
+case(people-6, above-3)
+det(people-6, a-4)
+nummod(people-6, hundred-5)
+nmod:above(were-2, people-6)
+punct(people-6, ,-7)
+nmod:above(were-2, Ministers-8)
+conj:and(people-6, Ministers-8)
+case(State-10, of-9)
+nmod:of(Ministers-8, State-10)
+cc(people-6, and-11)
+nmod:above(were-2, foreigners-12)
+conj:and(people-6, foreigners-12)
+punct(foreigners-12, ,-13)
+acl(foreigners-12, invited-14)
+mark(come-16, to-15)
+xcomp(invited-14, come-16)
+case(Castle-19, to-17)
+det(Castle-19, the-18)
+nmod:to(come-16, Castle-19)
+punct(were-2, .-20)
+
+Sentence #3 (47 tokens):
+At seven o'clock, and after the drawing-room was over and all compliments paid and received on the day, the company were conducted into the music-room, where there was a very fine concert, chiefly of Mr. Handel's music, most exquisitely performed.
+[Text=At CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=seven CharacterOffsetBegin=163 CharacterOffsetEnd=168 PartOfSpeech=CD Lemma=seven NamedEntityTag=TIME NormalizedNamedEntityTag=T07:00 Timex=<TIMEX3 tid="t2" type="TIME" value="T07:00">seven o'clock</TIMEX3>]
+[Text=o'clock CharacterOffsetBegin=169 CharacterOffsetEnd=176 PartOfSpeech=RB Lemma=o'clock NamedEntityTag=TIME NormalizedNamedEntityTag=T07:00 Timex=<TIMEX3 tid="t2" type="TIME" value="T07:00">seven o'clock</TIMEX3>]
+[Text=, CharacterOffsetBegin=176 CharacterOffsetEnd=177 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=178 CharacterOffsetEnd=181 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=182 CharacterOffsetEnd=187 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=188 CharacterOffsetEnd=191 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=drawing-room CharacterOffsetBegin=192 CharacterOffsetEnd=204 PartOfSpeech=NN Lemma=drawing-room NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=205 CharacterOffsetEnd=208 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=209 CharacterOffsetEnd=213 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=214 CharacterOffsetEnd=217 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=218 CharacterOffsetEnd=221 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=compliments CharacterOffsetBegin=222 CharacterOffsetEnd=233 PartOfSpeech=NNS Lemma=compliment NamedEntityTag=O]
+[Text=paid CharacterOffsetBegin=234 CharacterOffsetEnd=238 PartOfSpeech=VBN Lemma=pay NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=239 CharacterOffsetEnd=242 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=243 CharacterOffsetEnd=251 PartOfSpeech=VBN Lemma=receive NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=252 CharacterOffsetEnd=254 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=255 CharacterOffsetEnd=258 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf1">the day</TIMEX3>]
+[Text=day CharacterOffsetBegin=259 CharacterOffsetEnd=262 PartOfSpeech=NN Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf1">the day</TIMEX3>]
+[Text=, CharacterOffsetBegin=262 CharacterOffsetEnd=263 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=264 CharacterOffsetEnd=267 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=268 CharacterOffsetEnd=275 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=276 CharacterOffsetEnd=280 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=conducted CharacterOffsetBegin=281 CharacterOffsetEnd=290 PartOfSpeech=VBN Lemma=conduct NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=291 CharacterOffsetEnd=295 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=296 CharacterOffsetEnd=299 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=music-room CharacterOffsetBegin=300 CharacterOffsetEnd=310 PartOfSpeech=NN Lemma=music-room NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=310 CharacterOffsetEnd=311 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=312 CharacterOffsetEnd=317 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=318 CharacterOffsetEnd=323 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=324 CharacterOffsetEnd=327 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=328 CharacterOffsetEnd=329 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=330 CharacterOffsetEnd=334 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=335 CharacterOffsetEnd=339 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=340 CharacterOffsetEnd=347 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=347 CharacterOffsetEnd=348 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=chiefly CharacterOffsetBegin=349 CharacterOffsetEnd=356 PartOfSpeech=RB Lemma=chiefly NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=357 CharacterOffsetEnd=359 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=360 CharacterOffsetEnd=363 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Handel CharacterOffsetBegin=364 CharacterOffsetEnd=370 PartOfSpeech=NNP Lemma=Handel NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=370 CharacterOffsetEnd=372 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=373 CharacterOffsetEnd=378 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=378 CharacterOffsetEnd=379 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=380 CharacterOffsetEnd=384 PartOfSpeech=JJS Lemma=most NamedEntityTag=O]
+[Text=exquisitely CharacterOffsetBegin=385 CharacterOffsetEnd=396 PartOfSpeech=RB Lemma=exquisitely NamedEntityTag=O]
+[Text=performed CharacterOffsetBegin=397 CharacterOffsetEnd=406 PartOfSpeech=VBN Lemma=perform NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=406 CharacterOffsetEnd=407 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (UCP
+        (PP (IN At)
+          (NP (CD seven) (RB o'clock)))
+        (, ,)
+        (CC and)
+        (SBAR (IN after)
+          (S
+            (NP (DT the) (NN drawing-room))
+            (VP (VBD was)
+              (UCP
+                (ADJP (IN over))
+                (CC and)
+                (NP
+                  (NP (DT all) (NNS compliments))
+                  (VP (VBN paid)
+                    (CC and)
+                    (VBN received)
+                    (PP (IN on)
+                      (NP (DT the) (NN day)))))))))))
+    (, ,)
+    (NP (DT the) (NN company))
+    (VP (VBD were)
+      (VP (VBN conducted)
+        (PP (IN into)
+          (NP
+            (NP (DT the) (NN music-room))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (EX there))
+                (VP (VBD was)
+                  (NP (DT a)
+                    (ADJP (RB very) (JJ fine))
+                    (NN concert))
+                  (, ,)
+                  (PP
+                    (ADVP (RB chiefly))
+                    (IN of)
+                    (NP
+                      (NP
+                        (NP (NNP Mr.) (NNP Handel) (POS 's))
+                        (NN music))
+                      (, ,)
+                      (NP
+                        (NP (JJS most))
+                        (VP
+                          (ADVP (RB exquisitely))
+                          (VBN performed))))))))))))
+    (. .)))
+
+root(ROOT-0, conducted-24)
+case(seven-2, At-1)
+ccomp(conducted-24, seven-2)
+advmod(seven-2, o'clock-3)
+punct(seven-2, ,-4)
+cc(seven-2, and-5)
+mark(over-10, after-6)
+det(drawing-room-8, the-7)
+nsubj(over-10, drawing-room-8)
+cop(over-10, was-9)
+conj:and(seven-2, over-10)
+ccomp(conducted-24, over-10)
+cc(over-10, and-11)
+det(compliments-13, all-12)
+conj:and(seven-2, compliments-13)
+conj:and(over-10, compliments-13)
+acl(compliments-13, paid-14)
+cc(paid-14, and-15)
+acl(compliments-13, received-16)
+conj:and(paid-14, received-16)
+case(day-19, on-17)
+det(day-19, the-18)
+nmod:on(paid-14, day-19)
+punct(conducted-24, ,-20)
+det(company-22, the-21)
+nsubjpass(conducted-24, company-22)
+auxpass(conducted-24, were-23)
+case(music-room-27, into-25)
+det(music-room-27, the-26)
+nmod:into(conducted-24, music-room-27)
+punct(music-room-27, ,-28)
+advmod(was-31, where-29)
+expl(was-31, there-30)
+acl:relcl(music-room-27, was-31)
+det(concert-35, a-32)
+advmod(fine-34, very-33)
+amod(concert-35, fine-34)
+nsubj(was-31, concert-35)
+punct(was-31, ,-36)
+advmod(music-42, chiefly-37)
+case(music-42, of-38)
+compound(Handel-40, Mr.-39)
+nmod:poss(music-42, Handel-40)
+case(Handel-40, 's-41)
+nmod:of(was-31, music-42)
+punct(music-42, ,-43)
+appos(music-42, most-44)
+advmod(performed-46, exquisitely-45)
+acl(most-44, performed-46)
+punct(conducted-24, .-47)
+

@@ -1,0 +1,245 @@
+Sentence #1 (5 tokens):
+London is all beflagged.
+[Text=London CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=London NamedEntityTag=LOCATION]
+[Text=is CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=beflagged CharacterOffsetBegin=14 CharacterOffsetEnd=23 PartOfSpeech=JJ Lemma=beflagged NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP London))
+    (VP (VBZ is)
+      (ADJP (DT all) (JJ beflagged)))
+    (. .)))
+
+root(ROOT-0, beflagged-4)
+nsubj(beflagged-4, London-1)
+cop(beflagged-4, is-2)
+det(beflagged-4, all-3)
+punct(beflagged-4, .-5)
+
+Sentence #2 (16 tokens):
+The streets are calmer today, but there are still plenty of signs of rejoicing.
+[Text=The CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=streets CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=NNS Lemma=street NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=calmer CharacterOffsetBegin=41 CharacterOffsetEnd=47 PartOfSpeech=JJR Lemma=calmer NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=today NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">today</TIMEX3>]
+[Text=, CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=plenty CharacterOffsetBegin=75 CharacterOffsetEnd=81 PartOfSpeech=JJ Lemma=plenty NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=signs CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=NNS Lemma=sign NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=rejoicing CharacterOffsetBegin=94 CharacterOffsetEnd=103 PartOfSpeech=VBG Lemma=rejoice NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNS streets))
+      (VP (VBP are)
+        (NP (JJR calmer) (NN today))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (EX there))
+      (VP (VBP are)
+        (ADVP (RB still))
+        (NP
+          (NP (JJ plenty))
+          (PP (IN of)
+            (NP
+              (NP (NNS signs))
+              (PP (IN of)
+                (NP (VBG rejoicing))))))))
+    (. .)))
+
+root(ROOT-0, today-5)
+det(streets-2, The-1)
+nsubj(today-5, streets-2)
+cop(today-5, are-3)
+amod(today-5, calmer-4)
+punct(today-5, ,-6)
+cc(today-5, but-7)
+expl(are-9, there-8)
+conj:but(today-5, are-9)
+advmod(are-9, still-10)
+det:qmod(signs-13, plenty-11)
+mwe(plenty-11, of-12)
+nsubj(are-9, signs-13)
+case(rejoicing-15, of-14)
+nmod:of(signs-13, rejoicing-15)
+punct(today-5, .-16)
+
+Sentence #3 (27 tokens):
+The Heads told us last night that the finest experience they had lived through was the singing of God Save the King at the Stock Exchange.
+[Text=The CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Heads CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=NNS Lemma=head NamedEntityTag=O]
+[Text=told CharacterOffsetBegin=115 CharacterOffsetEnd=119 PartOfSpeech=VBD Lemma=tell NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=120 CharacterOffsetEnd=122 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=123 CharacterOffsetEnd=127 PartOfSpeech=JJ Lemma=last NamedEntityTag=TIME NormalizedNamedEntityTag=TNI OFFSET P-1D Timex=<TIMEX3 alt_value="TNI OFFSET P-1D" anchorTimeID="t3" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf1">last night</TIMEX3>]
+[Text=night CharacterOffsetBegin=128 CharacterOffsetEnd=133 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI OFFSET P-1D Timex=<TIMEX3 alt_value="TNI OFFSET P-1D" anchorTimeID="t3" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf1">last night</TIMEX3>]
+[Text=that CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=finest CharacterOffsetBegin=143 CharacterOffsetEnd=149 PartOfSpeech=JJS Lemma=finest NamedEntityTag=O]
+[Text=experience CharacterOffsetBegin=150 CharacterOffsetEnd=160 PartOfSpeech=NN Lemma=experience NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=166 CharacterOffsetEnd=169 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=lived CharacterOffsetBegin=170 CharacterOffsetEnd=175 PartOfSpeech=VBN Lemma=live NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=176 CharacterOffsetEnd=183 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=184 CharacterOffsetEnd=187 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=188 CharacterOffsetEnd=191 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=192 CharacterOffsetEnd=199 PartOfSpeech=NN Lemma=singing NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=200 CharacterOffsetEnd=202 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=God CharacterOffsetBegin=203 CharacterOffsetEnd=206 PartOfSpeech=NNP Lemma=God NamedEntityTag=O]
+[Text=Save CharacterOffsetBegin=207 CharacterOffsetEnd=211 PartOfSpeech=VB Lemma=save NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=212 CharacterOffsetEnd=215 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=King CharacterOffsetBegin=216 CharacterOffsetEnd=220 PartOfSpeech=NNP Lemma=King NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=221 CharacterOffsetEnd=223 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=224 CharacterOffsetEnd=227 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Stock CharacterOffsetBegin=228 CharacterOffsetEnd=233 PartOfSpeech=NNP Lemma=Stock NamedEntityTag=ORGANIZATION]
+[Text=Exchange CharacterOffsetBegin=234 CharacterOffsetEnd=242 PartOfSpeech=NNP Lemma=Exchange NamedEntityTag=ORGANIZATION]
+[Text=. CharacterOffsetBegin=242 CharacterOffsetEnd=243 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NNS Heads))
+    (VP (VBD told)
+      (NP (PRP us))
+      (NP-TMP (JJ last) (NN night))
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT the) (JJS finest) (NN experience))
+            (SBAR
+              (S
+                (NP (PRP they))
+                (VP (VBD had)
+                  (VP (VBN lived)
+                    (PP (IN through)))))))
+          (VP (VBD was)
+            (NP
+              (NP (DT the) (NN singing))
+              (PP (IN of)
+                (NP (NNP God)))
+              (S
+                (VP (VB Save)
+                  (NP (DT the) (NNP King))
+                  (PP (IN at)
+                    (NP (DT the) (NNP Stock) (NNP Exchange))))))))))
+    (. .)))
+
+root(ROOT-0, told-3)
+det(Heads-2, The-1)
+nsubj(told-3, Heads-2)
+dobj(told-3, us-4)
+amod(night-6, last-5)
+nmod:tmod(told-3, night-6)
+mark(singing-17, that-7)
+det(experience-10, the-8)
+amod(experience-10, finest-9)
+nsubj(singing-17, experience-10)
+nsubj(lived-13, they-11)
+aux(lived-13, had-12)
+acl:relcl(experience-10, lived-13)
+nmod(lived-13, through-14)
+cop(singing-17, was-15)
+det(singing-17, the-16)
+ccomp(told-3, singing-17)
+case(God-19, of-18)
+nmod:of(singing-17, God-19)
+dep(singing-17, Save-20)
+det(King-22, the-21)
+dobj(Save-20, King-22)
+case(Exchange-26, at-23)
+det(Exchange-26, the-24)
+compound(Exchange-26, Stock-25)
+nmod:at(Save-20, Exchange-26)
+punct(told-3, .-27)
+
+Sentence #4 (24 tokens):
+Mr Head 'phoned his wife to come at once and join him as soon as he got down there in the morning.
+[Text=Mr CharacterOffsetBegin=244 CharacterOffsetEnd=246 PartOfSpeech=NNP Lemma=Mr NamedEntityTag=O]
+[Text=Head CharacterOffsetBegin=247 CharacterOffsetEnd=251 PartOfSpeech=NNP Lemma=Head NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=252 CharacterOffsetEnd=253 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=phoned CharacterOffsetBegin=253 CharacterOffsetEnd=259 PartOfSpeech=VBD Lemma=phone NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=260 CharacterOffsetEnd=263 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=wife CharacterOffsetBegin=264 CharacterOffsetEnd=268 PartOfSpeech=NN Lemma=wife NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=269 CharacterOffsetEnd=271 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=come CharacterOffsetBegin=272 CharacterOffsetEnd=276 PartOfSpeech=VB Lemma=come NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=277 CharacterOffsetEnd=279 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=once CharacterOffsetBegin=280 CharacterOffsetEnd=284 PartOfSpeech=RB Lemma=once NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t4" type="DATE" value="PAST_REF">once</TIMEX3>]
+[Text=and CharacterOffsetBegin=285 CharacterOffsetEnd=288 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=join CharacterOffsetBegin=289 CharacterOffsetEnd=293 PartOfSpeech=VB Lemma=join NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=294 CharacterOffsetEnd=297 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=298 CharacterOffsetEnd=300 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=soon CharacterOffsetBegin=301 CharacterOffsetEnd=305 PartOfSpeech=RB Lemma=soon NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=306 CharacterOffsetEnd=308 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=309 CharacterOffsetEnd=311 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=312 CharacterOffsetEnd=315 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=316 CharacterOffsetEnd=320 PartOfSpeech=RB Lemma=down NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=321 CharacterOffsetEnd=326 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=327 CharacterOffsetEnd=329 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=330 CharacterOffsetEnd=333 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=morning CharacterOffsetBegin=334 CharacterOffsetEnd=341 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=TMO Timex=<TIMEX3 tid="t5" type="TIME" value="TMO">morning</TIMEX3>]
+[Text=. CharacterOffsetBegin=341 CharacterOffsetEnd=342 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Mr) (NNP Head))
+    (VP (`` `) (VBD phoned)
+      (NP (PRP$ his) (NN wife))
+      (S
+        (VP (TO to)
+          (VP
+            (VP (VB come)
+              (PP (IN at)
+                (NP (RB once))))
+            (CC and)
+            (VP (VB join)
+              (NP (PRP him))
+              (ADVP
+                (ADVP (RB as) (RB soon))
+                (SBAR (IN as)
+                  (S
+                    (NP (PRP he))
+                    (VP (VBD got)))))))))
+      (ADVP
+        (ADVP (RB down) (RB there))
+        (PP (IN in)
+          (NP (DT the) (NN morning)))))
+    (. .)))
+
+root(ROOT-0, phoned-4)
+compound(Head-2, Mr-1)
+nsubj(phoned-4, Head-2)
+punct(phoned-4, `-3)
+nmod:poss(wife-6, his-5)
+dobj(phoned-4, wife-6)
+mark(come-8, to-7)
+advcl:to(phoned-4, come-8)
+case(once-10, at-9)
+nmod:at(come-8, once-10)
+cc(come-8, and-11)
+advcl:to(phoned-4, join-12)
+conj:and(come-8, join-12)
+dobj(join-12, him-13)
+advmod(soon-15, as-14)
+advmod(join-12, soon-15)
+mark(got-18, as-16)
+nsubj(got-18, he-17)
+advcl:as(soon-15, got-18)
+advmod(there-20, down-19)
+advmod(phoned-4, there-20)
+case(morning-23, in-21)
+det(morning-23, the-22)
+nmod:in(there-20, morning-23)
+punct(phoned-4, .-24)
+
+Coreference set:
+	(3,17,[16,27]) -> (3,10,[8,15]), that is: "the singing of God Save the King at the Stock Exchange" -> "the finest experience they had lived through"
+Coreference set:
+	(4,5,[5,6]) -> (3,19,[19,20]), that is: "his" -> "God"
+	(4,13,[13,14]) -> (3,19,[19,20]), that is: "him" -> "God"
+	(4,17,[17,18]) -> (3,19,[19,20]), that is: "he" -> "God"

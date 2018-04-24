@@ -1,0 +1,368 @@
+Sentence #1 (10 tokens):
+Does Milton Babbitt like listening to his own music?
+[Text=Does CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=Milton CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Milton NamedEntityTag=PERSON]
+[Text=Babbitt CharacterOffsetBegin=12 CharacterOffsetEnd=19 PartOfSpeech=NNP Lemma=Babbitt NamedEntityTag=PERSON]
+[Text=like CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=listening CharacterOffsetBegin=25 CharacterOffsetEnd=34 PartOfSpeech=VBG Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=42 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=46 CharacterOffsetEnd=51 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBZ Does)
+      (NP
+        (NP (NNP Milton) (NNP Babbitt))
+        (PP (IN like)
+          (S
+            (VP (VBG listening)
+              (PP (TO to)
+                (NP (PRP$ his) (JJ own) (NN music))))))))
+    (. ?)))
+
+root(ROOT-0, Does-1)
+compound(Babbitt-3, Milton-2)
+dobj(Does-1, Babbitt-3)
+mark(listening-5, like-4)
+acl:like(Babbitt-3, listening-5)
+case(music-9, to-6)
+nmod:poss(music-9, his-7)
+amod(music-9, own-8)
+nmod:to(listening-5, music-9)
+punct(Does-1, ?-10)
+
+Sentence #2 (12 tokens):
+Ravel now, and even Billie Holiday, leave me indifferent.
+[Text=Ravel CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Ravel NamedEntityTag=PERSON]
+[Text=now CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=, CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=Billie CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Billie NamedEntityTag=O]
+[Text=Holiday CharacterOffsetBegin=80 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=Holiday NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=leave CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=VBP Lemma=leave NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=indifferent CharacterOffsetBegin=98 CharacterOffsetEnd=109 PartOfSpeech=JJ Lemma=indifferent NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP Ravel) (RB now))
+      (, ,)
+      (CC and)
+      (RB even)
+      (NP (NNP Billie) (NNP Holiday))
+      (, ,))
+    (VP (VBP leave)
+      (S
+        (NP (PRP me))
+        (ADJP (JJ indifferent))))
+    (. .)))
+
+root(ROOT-0, leave-9)
+nsubj(leave-9, Ravel-1)
+advmod(Ravel-1, now-2)
+punct(Ravel-1, ,-3)
+cc(Ravel-1, and-4)
+advmod(Ravel-1, even-5)
+compound(Holiday-7, Billie-6)
+dep(Ravel-1, Holiday-7)
+punct(Ravel-1, ,-8)
+nsubj(indifferent-11, me-10)
+xcomp(leave-9, indifferent-11)
+punct(leave-9, .-12)
+
+Sentence #3 (27 tokens):
+Yet performers - at least classical ones - remain the same, keeping up their enthusiasm, year after year, for the few old chestnuts.
+[Text=Yet CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=RB Lemma=yet NamedEntityTag=O]
+[Text=performers CharacterOffsetBegin=115 CharacterOffsetEnd=125 PartOfSpeech=NNS Lemma=performer NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=128 CharacterOffsetEnd=130 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=least CharacterOffsetBegin=131 CharacterOffsetEnd=136 PartOfSpeech=JJS Lemma=least NamedEntityTag=O]
+[Text=classical CharacterOffsetBegin=137 CharacterOffsetEnd=146 PartOfSpeech=JJ Lemma=classical NamedEntityTag=O]
+[Text=ones CharacterOffsetBegin=147 CharacterOffsetEnd=151 PartOfSpeech=NNS Lemma=one NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=remain CharacterOffsetBegin=154 CharacterOffsetEnd=160 PartOfSpeech=VBP Lemma=remain NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=161 CharacterOffsetEnd=164 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=165 CharacterOffsetEnd=169 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=169 CharacterOffsetEnd=170 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=keeping CharacterOffsetBegin=171 CharacterOffsetEnd=178 PartOfSpeech=VBG Lemma=keep NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=179 CharacterOffsetEnd=181 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=182 CharacterOffsetEnd=187 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=enthusiasm CharacterOffsetBegin=188 CharacterOffsetEnd=198 PartOfSpeech=NN Lemma=enthusiasm NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=198 CharacterOffsetEnd=199 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=year CharacterOffsetBegin=200 CharacterOffsetEnd=204 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P1Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P1Y">year</TIMEX3>]
+[Text=after CharacterOffsetBegin=205 CharacterOffsetEnd=210 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=year CharacterOffsetBegin=211 CharacterOffsetEnd=215 PartOfSpeech=NN Lemma=year NamedEntityTag=DURATION NormalizedNamedEntityTag=P1Y Timex=<TIMEX3 tid="t2" type="DURATION" value="P1Y">year</TIMEX3>]
+[Text=, CharacterOffsetBegin=215 CharacterOffsetEnd=216 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=217 CharacterOffsetEnd=220 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=221 CharacterOffsetEnd=224 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=few CharacterOffsetBegin=225 CharacterOffsetEnd=228 PartOfSpeech=JJ Lemma=few NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=229 CharacterOffsetEnd=232 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=chestnuts CharacterOffsetBegin=233 CharacterOffsetEnd=242 PartOfSpeech=NNS Lemma=chestnut NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=242 CharacterOffsetEnd=243 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (RB Yet)
+    (NP
+      (NP (NNS performers))
+      (: -)
+      (ADVP (IN at) (JJS least))
+      (NP (JJ classical) (NNS ones))
+      (: -))
+    (VP (VBP remain)
+      (NP (DT the) (JJ same))
+      (, ,)
+      (S
+        (VP (VBG keeping)
+          (PRT (RP up))
+          (NP (PRP$ their) (NN enthusiasm))
+          (, ,)
+          (NP-TMP (NN year))
+          (PP (IN after)
+            (NP (NN year)))
+          (, ,)
+          (PP (IN for)
+            (NP (DT the) (JJ few) (JJ old) (NNS chestnuts))))))
+    (. .)))
+
+root(ROOT-0, remain-9)
+advmod(remain-9, Yet-1)
+nsubj(remain-9, performers-2)
+punct(performers-2, --3)
+case(least-5, at-4)
+advmod(performers-2, least-5)
+amod(ones-7, classical-6)
+dep(performers-2, ones-7)
+punct(performers-2, --8)
+det(same-11, the-10)
+xcomp(remain-9, same-11)
+punct(remain-9, ,-12)
+advcl(remain-9, keeping-13)
+compound:prt(keeping-13, up-14)
+nmod:poss(enthusiasm-16, their-15)
+dobj(keeping-13, enthusiasm-16)
+punct(keeping-13, ,-17)
+nmod:tmod(keeping-13, year-18)
+case(year-20, after-19)
+nmod:after(keeping-13, year-20)
+punct(keeping-13, ,-21)
+case(chestnuts-26, for-22)
+det(chestnuts-26, the-23)
+amod(chestnuts-26, few-24)
+amod(chestnuts-26, old-25)
+nmod:for(keeping-13, chestnuts-26)
+punct(remain-9, .-27)
+
+Sentence #4 (64 tokens):
+John Browning, Gary Graffman, back in the days when we all Had Time, played to me alone for hours as I sipped vodka martinis; they needed no booze to enhance a manifest ecstasy in controlling that winged horse (the grand piano, a tree skinned alive and lacquered), an ecstasy provoked by other people's music.
+[Text=John CharacterOffsetBegin=247 CharacterOffsetEnd=251 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=Browning CharacterOffsetBegin=252 CharacterOffsetEnd=260 PartOfSpeech=NNP Lemma=Browning NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=260 CharacterOffsetEnd=261 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Gary CharacterOffsetBegin=262 CharacterOffsetEnd=266 PartOfSpeech=NNP Lemma=Gary NamedEntityTag=PERSON]
+[Text=Graffman CharacterOffsetBegin=267 CharacterOffsetEnd=275 PartOfSpeech=NNP Lemma=Graffman NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=275 CharacterOffsetEnd=276 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=277 CharacterOffsetEnd=281 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=282 CharacterOffsetEnd=284 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=285 CharacterOffsetEnd=288 PartOfSpeech=DT Lemma=the NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t3" type="DURATION" value="PXD">the days</TIMEX3>]
+[Text=days CharacterOffsetBegin=289 CharacterOffsetEnd=293 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t3" type="DURATION" value="PXD">the days</TIMEX3>]
+[Text=when CharacterOffsetBegin=294 CharacterOffsetEnd=298 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=299 CharacterOffsetEnd=301 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=302 CharacterOffsetEnd=305 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=Had CharacterOffsetBegin=306 CharacterOffsetEnd=309 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=Time CharacterOffsetBegin=310 CharacterOffsetEnd=314 PartOfSpeech=NNP Lemma=Time NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=314 CharacterOffsetEnd=315 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=316 CharacterOffsetEnd=322 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=323 CharacterOffsetEnd=325 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=326 CharacterOffsetEnd=328 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=alone CharacterOffsetBegin=329 CharacterOffsetEnd=334 PartOfSpeech=RB Lemma=alone NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=335 CharacterOffsetEnd=338 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=hours CharacterOffsetBegin=339 CharacterOffsetEnd=344 PartOfSpeech=NNS Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PTXH Timex=<TIMEX3 tid="t4" type="DURATION" value="PTXH">hours</TIMEX3>]
+[Text=as CharacterOffsetBegin=345 CharacterOffsetEnd=347 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=348 CharacterOffsetEnd=349 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=sipped CharacterOffsetBegin=350 CharacterOffsetEnd=356 PartOfSpeech=VBD Lemma=sip NamedEntityTag=O]
+[Text=vodka CharacterOffsetBegin=357 CharacterOffsetEnd=362 PartOfSpeech=NN Lemma=vodka NamedEntityTag=O]
+[Text=martinis CharacterOffsetBegin=363 CharacterOffsetEnd=371 PartOfSpeech=NNS Lemma=martini NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=371 CharacterOffsetEnd=372 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=373 CharacterOffsetEnd=377 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=needed CharacterOffsetBegin=378 CharacterOffsetEnd=384 PartOfSpeech=VBD Lemma=need NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=385 CharacterOffsetEnd=387 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=booze CharacterOffsetBegin=388 CharacterOffsetEnd=393 PartOfSpeech=NN Lemma=booze NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=394 CharacterOffsetEnd=396 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=enhance CharacterOffsetBegin=397 CharacterOffsetEnd=404 PartOfSpeech=VB Lemma=enhance NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=405 CharacterOffsetEnd=406 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=manifest CharacterOffsetBegin=407 CharacterOffsetEnd=415 PartOfSpeech=JJ Lemma=manifest NamedEntityTag=O]
+[Text=ecstasy CharacterOffsetBegin=416 CharacterOffsetEnd=423 PartOfSpeech=NN Lemma=ecstasy NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=424 CharacterOffsetEnd=426 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=controlling CharacterOffsetBegin=427 CharacterOffsetEnd=438 PartOfSpeech=VBG Lemma=control NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=439 CharacterOffsetEnd=443 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=winged CharacterOffsetBegin=444 CharacterOffsetEnd=450 PartOfSpeech=JJ Lemma=winged NamedEntityTag=O]
+[Text=horse CharacterOffsetBegin=451 CharacterOffsetEnd=456 PartOfSpeech=NN Lemma=horse NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=457 CharacterOffsetEnd=458 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=458 CharacterOffsetEnd=461 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=grand CharacterOffsetBegin=462 CharacterOffsetEnd=467 PartOfSpeech=JJ Lemma=grand NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=468 CharacterOffsetEnd=473 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=473 CharacterOffsetEnd=474 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=475 CharacterOffsetEnd=476 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=tree CharacterOffsetBegin=477 CharacterOffsetEnd=481 PartOfSpeech=NN Lemma=tree NamedEntityTag=O]
+[Text=skinned CharacterOffsetBegin=482 CharacterOffsetEnd=489 PartOfSpeech=VBD Lemma=skin NamedEntityTag=O]
+[Text=alive CharacterOffsetBegin=490 CharacterOffsetEnd=495 PartOfSpeech=JJ Lemma=alive NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=496 CharacterOffsetEnd=499 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=lacquered CharacterOffsetBegin=500 CharacterOffsetEnd=509 PartOfSpeech=JJ Lemma=lacquered NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=509 CharacterOffsetEnd=510 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=510 CharacterOffsetEnd=511 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=512 CharacterOffsetEnd=514 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=ecstasy CharacterOffsetBegin=515 CharacterOffsetEnd=522 PartOfSpeech=NN Lemma=ecstasy NamedEntityTag=O]
+[Text=provoked CharacterOffsetBegin=523 CharacterOffsetEnd=531 PartOfSpeech=VBN Lemma=provoke NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=532 CharacterOffsetEnd=534 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=535 CharacterOffsetEnd=540 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=541 CharacterOffsetEnd=547 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=547 CharacterOffsetEnd=549 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=550 CharacterOffsetEnd=555 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=555 CharacterOffsetEnd=556 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP John) (NNP Browning))
+        (, ,)
+        (NP (NNP Gary) (NNP Graffman))
+        (, ,)
+        (SBAR
+          (WHADVP
+            (ADVP (RB back)
+              (PP (IN in)
+                (NP (DT the) (NNS days))))
+            (WRB when))
+          (S
+            (NP (PRP we))
+            (ADVP (DT all))
+            (VP (VBD Had)
+              (NP (NNP Time)))))
+        (, ,))
+      (VP (VBD played)
+        (PP (TO to)
+          (NP (PRP me)))
+        (ADVP (RB alone))
+        (PP (IN for)
+          (NP (NNS hours)))
+        (SBAR (IN as)
+          (S
+            (NP (PRP I))
+            (VP (VBD sipped)
+              (NP (NN vodka) (NNS martinis)))))))
+    (: ;)
+    (S
+      (NP (PRP they))
+      (VP (VBD needed)
+        (NP (DT no) (NN booze)
+          (S
+            (VP (TO to)
+              (VP (VB enhance)
+                (NP (DT a)
+                  (ADJP (JJ manifest))
+                  (NN ecstasy))
+                (PP (IN in)
+                  (NP
+                    (NP
+                      (NP (VBG controlling))
+                      (PP (IN that)
+                        (NP (JJ winged) (NN horse)))
+                      (PRN (-LRB- -LRB-)
+                        (S
+                          (NP (DT the) (JJ grand) (NN piano))
+                          (, ,)
+                          (NP (DT a) (NN tree))
+                          (VP (VBD skinned)
+                            (ADJP (JJ alive)
+                              (CC and)
+                              (JJ lacquered))))
+                        (-RRB- -RRB-)))
+                    (, ,)
+                    (NP
+                      (NP (DT an) (NN ecstasy))
+                      (VP (VBN provoked)
+                        (PP (IN by)
+                          (NP
+                            (NP (JJ other) (NNS people) (POS 's))
+                            (NN music)))))))))))))
+    (. .)))
+
+root(ROOT-0, played-17)
+compound(Browning-2, John-1)
+nsubj(played-17, Browning-2)
+punct(Browning-2, ,-3)
+compound(Graffman-5, Gary-4)
+appos(Browning-2, Graffman-5)
+punct(Browning-2, ,-6)
+advmod(when-11, back-7)
+case(days-10, in-8)
+det(days-10, the-9)
+nmod:in(back-7, days-10)
+advmod(Had-14, when-11)
+nsubj(Had-14, we-12)
+advmod(Had-14, all-13)
+acl:relcl(Browning-2, Had-14)
+dobj(Had-14, Time-15)
+punct(Browning-2, ,-16)
+case(me-19, to-18)
+nmod:to(played-17, me-19)
+advmod(played-17, alone-20)
+case(hours-22, for-21)
+nmod:for(played-17, hours-22)
+mark(sipped-25, as-23)
+nsubj(sipped-25, I-24)
+advcl:as(played-17, sipped-25)
+compound(martinis-27, vodka-26)
+dobj(sipped-25, martinis-27)
+punct(played-17, ;-28)
+nsubj(needed-30, they-29)
+parataxis(played-17, needed-30)
+neg(booze-32, no-31)
+dobj(needed-30, booze-32)
+mark(enhance-34, to-33)
+acl:to(booze-32, enhance-34)
+det(ecstasy-37, a-35)
+amod(ecstasy-37, manifest-36)
+dobj(enhance-34, ecstasy-37)
+case(controlling-39, in-38)
+nmod:in(enhance-34, controlling-39)
+case(horse-42, that-40)
+amod(horse-42, winged-41)
+nmod:that(controlling-39, horse-42)
+punct(skinned-50, -LRB--43)
+det(piano-46, the-44)
+amod(piano-46, grand-45)
+nsubj(skinned-50, piano-46)
+punct(skinned-50, ,-47)
+det(tree-49, a-48)
+nsubj(skinned-50, tree-49)
+dep(controlling-39, skinned-50)
+xcomp(skinned-50, alive-51)
+cc(alive-51, and-52)
+xcomp(skinned-50, lacquered-53)
+conj:and(alive-51, lacquered-53)
+punct(skinned-50, -RRB--54)
+punct(controlling-39, ,-55)
+det(ecstasy-57, an-56)
+appos(controlling-39, ecstasy-57)
+acl(ecstasy-57, provoked-58)
+case(music-63, by-59)
+amod(people-61, other-60)
+nmod:poss(music-63, people-61)
+case(people-61, 's-62)
+nmod:by(provoked-58, music-63)
+punct(played-17, .-64)
+
+Coreference set:
+	(4,19,[19,20]) -> (2,10,[10,11]), that is: "me" -> "me"
+	(4,24,[24,25]) -> (2,10,[10,11]), that is: "I" -> "me"
+Coreference set:
+	(3,15,[15,16]) -> (3,2,[2,9]), that is: "their" -> "performers - at least classical ones -"
+	(4,29,[29,30]) -> (3,2,[2,9]), that is: "they" -> "performers - at least classical ones -"
+Coreference set:
+	(3,20,[20,21]) -> (3,18,[18,19]), that is: "year" -> "year"
+Coreference set:
+	(4,39,[39,55]) -> (4,57,[56,64]), that is: "controlling that winged horse -LRB- the grand piano , a tree skinned alive and lacquered -RRB-" -> "an ecstasy provoked by other people 's music"

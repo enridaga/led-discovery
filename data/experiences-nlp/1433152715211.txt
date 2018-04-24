@@ -1,0 +1,161 @@
+Sentence #1 (7 tokens):
+Tuckerman went by an afternoon train.
+[Text=Tuckerman CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Tuckerman NamedEntityTag=PERSON]
+[Text=went CharacterOffsetBegin=10 CharacterOffsetEnd=14 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=afternoon CharacterOffsetBegin=21 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 tid="t1" type="TIME" value="TAF">afternoon</TIMEX3>]
+[Text=train CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=train NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Tuckerman))
+    (VP (VBD went)
+      (PP (IN by)
+        (NP (DT an) (NN afternoon) (NN train))))
+    (. .)))
+
+root(ROOT-0, went-2)
+nsubj(went-2, Tuckerman-1)
+case(train-6, by-3)
+det(train-6, an-4)
+compound(train-6, afternoon-5)
+nmod:by(went-2, train-6)
+punct(went-2, .-7)
+
+Sentence #2 (17 tokens):
+Dr. Wesley met him at the railway station, and lodged him courteously in his house.
+[Text=Dr. CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Dr. NamedEntityTag=O]
+[Text=Wesley CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Wesley NamedEntityTag=PERSON]
+[Text=met CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=VBD Lemma=meet NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=railway CharacterOffsetBegin=64 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=railway NamedEntityTag=O]
+[Text=station CharacterOffsetBegin=72 CharacterOffsetEnd=79 PartOfSpeech=NN Lemma=station NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=lodged CharacterOffsetBegin=85 CharacterOffsetEnd=91 PartOfSpeech=VBD Lemma=lodge NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=courteously CharacterOffsetBegin=96 CharacterOffsetEnd=107 PartOfSpeech=RB Lemma=courteously NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=house CharacterOffsetBegin=115 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=house NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Dr.) (NNP Wesley))
+    (VP
+      (VP (VBD met)
+        (NP (PRP him))
+        (PP (IN at)
+          (NP (DT the) (NN railway) (NN station))))
+      (, ,)
+      (CC and)
+      (VP (VBD lodged)
+        (NP (PRP him))
+        (PP
+          (ADVP (RB courteously))
+          (IN in)
+          (NP (PRP$ his) (NN house)))))
+    (. .)))
+
+root(ROOT-0, met-3)
+compound(Wesley-2, Dr.-1)
+nsubj(met-3, Wesley-2)
+nsubj(lodged-11, Wesley-2)
+dobj(met-3, him-4)
+case(station-8, at-5)
+det(station-8, the-6)
+compound(station-8, railway-7)
+nmod:at(met-3, station-8)
+punct(met-3, ,-9)
+cc(met-3, and-10)
+conj:and(met-3, lodged-11)
+dobj(lodged-11, him-12)
+advmod(house-16, courteously-13)
+case(house-16, in-14)
+nmod:poss(house-16, his-15)
+nmod:in(lodged-11, house-16)
+punct(met-3, .-17)
+
+Sentence #3 (24 tokens):
+After dinner they went into the Cathedral, and for two hours Wesley played the organ in his best manner, chiefly extempore.
+[Text=After CharacterOffsetBegin=122 CharacterOffsetEnd=127 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=128 CharacterOffsetEnd=134 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=140 CharacterOffsetEnd=144 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=145 CharacterOffsetEnd=149 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Cathedral CharacterOffsetBegin=154 CharacterOffsetEnd=163 PartOfSpeech=NNP Lemma=Cathedral NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=163 CharacterOffsetEnd=164 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=165 CharacterOffsetEnd=168 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=169 CharacterOffsetEnd=172 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=173 CharacterOffsetEnd=176 PartOfSpeech=CD Lemma=two NamedEntityTag=DURATION NormalizedNamedEntityTag=PT2H Timex=<TIMEX3 tid="t2" type="DURATION" value="PT2H">two hours</TIMEX3>]
+[Text=hours CharacterOffsetBegin=177 CharacterOffsetEnd=182 PartOfSpeech=NNS Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PT2H Timex=<TIMEX3 tid="t2" type="DURATION" value="PT2H">two hours</TIMEX3>]
+[Text=Wesley CharacterOffsetBegin=183 CharacterOffsetEnd=189 PartOfSpeech=NNP Lemma=Wesley NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=190 CharacterOffsetEnd=196 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=197 CharacterOffsetEnd=200 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=organ CharacterOffsetBegin=201 CharacterOffsetEnd=206 PartOfSpeech=NN Lemma=organ NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=207 CharacterOffsetEnd=209 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=210 CharacterOffsetEnd=213 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=214 CharacterOffsetEnd=218 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=manner CharacterOffsetBegin=219 CharacterOffsetEnd=225 PartOfSpeech=NN Lemma=manner NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=225 CharacterOffsetEnd=226 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=chiefly CharacterOffsetBegin=227 CharacterOffsetEnd=234 PartOfSpeech=RB Lemma=chiefly NamedEntityTag=O]
+[Text=extempore CharacterOffsetBegin=235 CharacterOffsetEnd=244 PartOfSpeech=JJ Lemma=extempore NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=244 CharacterOffsetEnd=245 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (PP (IN After)
+        (NP (NN dinner)))
+      (NP (PRP they))
+      (VP (VBD went)
+        (PP (IN into)
+          (NP (DT the) (NNP Cathedral)))))
+    (, ,)
+    (CC and)
+    (S
+      (PP (IN for)
+        (NP (CD two) (NNS hours)))
+      (NP (NNP Wesley))
+      (VP (VBD played)
+        (NP (DT the) (NN organ))
+        (PP (IN in)
+          (NP (PRP$ his) (JJS best) (NN manner)))
+        (, ,)
+        (ADJP (RB chiefly) (JJ extempore))))
+    (. .)))
+
+root(ROOT-0, went-4)
+case(dinner-2, After-1)
+nmod:after(went-4, dinner-2)
+nsubj(went-4, they-3)
+case(Cathedral-7, into-5)
+det(Cathedral-7, the-6)
+nmod:into(went-4, Cathedral-7)
+punct(went-4, ,-8)
+cc(went-4, and-9)
+case(hours-12, for-10)
+nummod(hours-12, two-11)
+nmod:for(played-14, hours-12)
+nsubj(played-14, Wesley-13)
+conj:and(went-4, played-14)
+det(organ-16, the-15)
+dobj(played-14, organ-16)
+case(manner-20, in-17)
+nmod:poss(manner-20, his-18)
+amod(manner-20, best-19)
+nmod:in(played-14, manner-20)
+punct(played-14, ,-21)
+advmod(extempore-23, chiefly-22)
+xcomp(played-14, extempore-23)
+punct(went-4, .-24)
+
+Coreference set:
+	(2,4,[4,5]) -> (2,2,[1,3]), that is: "him" -> "Dr. Wesley"
+	(2,12,[12,13]) -> (2,2,[1,3]), that is: "him" -> "Dr. Wesley"
+	(2,15,[15,16]) -> (2,2,[1,3]), that is: "his" -> "Dr. Wesley"
+	(3,13,[13,14]) -> (2,2,[1,3]), that is: "Wesley" -> "Dr. Wesley"
+	(3,18,[18,19]) -> (2,2,[1,3]), that is: "his" -> "Dr. Wesley"

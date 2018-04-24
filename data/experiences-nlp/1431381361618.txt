@@ -1,0 +1,566 @@
+Sentence #1 (32 tokens):
+After a moment’s hesitation, he sat down at the piano and played the magnificent, noble exposition of the Seventh Symphony and the variation theme depicting the Fascist invasion.
+[Text=After CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=moment CharacterOffsetBegin=8 CharacterOffsetEnd=14 PartOfSpeech=NN Lemma=moment NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=hesitation CharacterOffsetBegin=17 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=hesitation NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=sat CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=VBD Lemma=sit NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=58 CharacterOffsetEnd=64 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=magnificent CharacterOffsetBegin=69 CharacterOffsetEnd=80 PartOfSpeech=JJ Lemma=magnificent NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=noble CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=JJ Lemma=noble NamedEntityTag=O]
+[Text=exposition CharacterOffsetBegin=88 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=exposition NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=99 CharacterOffsetEnd=101 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Seventh CharacterOffsetBegin=106 CharacterOffsetEnd=113 PartOfSpeech=NNP Lemma=Seventh NamedEntityTag=ORDINAL NormalizedNamedEntityTag=7.0]
+[Text=Symphony CharacterOffsetBegin=114 CharacterOffsetEnd=122 PartOfSpeech=NNP Lemma=Symphony NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=variation CharacterOffsetBegin=131 CharacterOffsetEnd=140 PartOfSpeech=NN Lemma=variation NamedEntityTag=O]
+[Text=theme CharacterOffsetBegin=141 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=theme NamedEntityTag=O]
+[Text=depicting CharacterOffsetBegin=147 CharacterOffsetEnd=156 PartOfSpeech=VBG Lemma=depict NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=157 CharacterOffsetEnd=160 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Fascist CharacterOffsetBegin=161 CharacterOffsetEnd=168 PartOfSpeech=JJ Lemma=fascist NamedEntityTag=MISC]
+[Text=invasion CharacterOffsetBegin=169 CharacterOffsetEnd=177 PartOfSpeech=NN Lemma=invasion NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=177 CharacterOffsetEnd=178 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP (DT a) (NN moment) (POS 's))
+        (NN hesitation)))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD sat)
+        (PRT (RP down))
+        (PP (IN at)
+          (NP (DT the) (NN piano))))
+      (CC and)
+      (VP (VBD played)
+        (NP
+          (NP (DT the) (JJ magnificent) (, ,) (JJ noble) (NN exposition))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNP Seventh) (NNP Symphony))
+              (CC and)
+              (NP (DT the) (NN variation) (NN theme)))))
+        (S
+          (VP (VBG depicting)
+            (NP (DT the) (JJ Fascist) (NN invasion))))))
+    (. .)))
+
+root(ROOT-0, sat-8)
+case(hesitation-5, After-1)
+det(moment-3, a-2)
+nmod:poss(hesitation-5, moment-3)
+case(moment-3, 's-4)
+nmod:after(sat-8, hesitation-5)
+punct(sat-8, ,-6)
+nsubj(sat-8, he-7)
+nsubj(played-14, he-7)
+compound:prt(sat-8, down-9)
+case(piano-12, at-10)
+det(piano-12, the-11)
+nmod:at(sat-8, piano-12)
+cc(sat-8, and-13)
+conj:and(sat-8, played-14)
+det(exposition-19, the-15)
+amod(exposition-19, magnificent-16)
+punct(exposition-19, ,-17)
+amod(exposition-19, noble-18)
+dobj(played-14, exposition-19)
+case(Symphony-23, of-20)
+det(Symphony-23, the-21)
+compound(Symphony-23, Seventh-22)
+nmod:of(exposition-19, Symphony-23)
+cc(Symphony-23, and-24)
+det(theme-27, the-25)
+compound(theme-27, variation-26)
+nmod:of(exposition-19, theme-27)
+conj:and(Symphony-23, theme-27)
+xcomp(played-14, depicting-28)
+det(invasion-31, the-29)
+amod(invasion-31, Fascist-30)
+dobj(depicting-28, invasion-31)
+punct(sat-8, .-32)
+
+Sentence #2 (23 tokens):
+We were both extremely agitated; it was a rare event for Shostakovich to play a new work with such manifest emotion.
+[Text=We CharacterOffsetBegin=179 CharacterOffsetEnd=181 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=182 CharacterOffsetEnd=186 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=187 CharacterOffsetEnd=191 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=extremely CharacterOffsetBegin=192 CharacterOffsetEnd=201 PartOfSpeech=RB Lemma=extremely NamedEntityTag=O]
+[Text=agitated CharacterOffsetBegin=202 CharacterOffsetEnd=210 PartOfSpeech=VBN Lemma=agitate NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=210 CharacterOffsetEnd=211 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=212 CharacterOffsetEnd=214 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=215 CharacterOffsetEnd=218 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=219 CharacterOffsetEnd=220 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=rare CharacterOffsetBegin=221 CharacterOffsetEnd=225 PartOfSpeech=JJ Lemma=rare NamedEntityTag=O]
+[Text=event CharacterOffsetBegin=226 CharacterOffsetEnd=231 PartOfSpeech=NN Lemma=event NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=232 CharacterOffsetEnd=235 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Shostakovich CharacterOffsetBegin=236 CharacterOffsetEnd=248 PartOfSpeech=NNP Lemma=Shostakovich NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=249 CharacterOffsetEnd=251 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=252 CharacterOffsetEnd=256 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=257 CharacterOffsetEnd=258 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=259 CharacterOffsetEnd=262 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=263 CharacterOffsetEnd=267 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=268 CharacterOffsetEnd=272 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=273 CharacterOffsetEnd=277 PartOfSpeech=JJ Lemma=such NamedEntityTag=O]
+[Text=manifest CharacterOffsetBegin=278 CharacterOffsetEnd=286 PartOfSpeech=JJ Lemma=manifest NamedEntityTag=O]
+[Text=emotion CharacterOffsetBegin=287 CharacterOffsetEnd=294 PartOfSpeech=NN Lemma=emotion NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=294 CharacterOffsetEnd=295 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VBD were) (DT both)
+        (VP
+          (ADVP (RB extremely))
+          (VBN agitated))))
+    (: ;)
+    (S
+      (NP (PRP it))
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (JJ rare) (NN event))
+          (PP (IN for)
+            (NP (NNP Shostakovich)))
+          (S
+            (VP (TO to)
+              (VP (VB play)
+                (NP (DT a) (JJ new) (NN work))
+                (PP (IN with)
+                  (NP (JJ such) (JJ manifest) (NN emotion)))))))))
+    (. .)))
+
+root(ROOT-0, agitated-5)
+nsubjpass(agitated-5, We-1)
+auxpass(agitated-5, were-2)
+dep(agitated-5, both-3)
+advmod(agitated-5, extremely-4)
+punct(agitated-5, ;-6)
+nsubj(event-11, it-7)
+cop(event-11, was-8)
+det(event-11, a-9)
+amod(event-11, rare-10)
+parataxis(agitated-5, event-11)
+case(Shostakovich-13, for-12)
+nmod:for(event-11, Shostakovich-13)
+mark(play-15, to-14)
+acl:to(event-11, play-15)
+det(work-18, a-16)
+amod(work-18, new-17)
+dobj(play-15, work-18)
+case(emotion-22, with-19)
+amod(emotion-22, such-20)
+amod(emotion-22, manifest-21)
+nmod:with(play-15, emotion-22)
+punct(agitated-5, .-23)
+
+Sentence #3 (39 tokens):
+We sat on, plunged in silence, broken at last by Shostakovich with these words (I have them written down): ‘I don’t know what the fate of this piece will be.’
+[Text=We CharacterOffsetBegin=296 CharacterOffsetEnd=298 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=sat CharacterOffsetBegin=299 CharacterOffsetEnd=302 PartOfSpeech=VBD Lemma=sit NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=303 CharacterOffsetEnd=305 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=305 CharacterOffsetEnd=306 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=plunged CharacterOffsetBegin=307 CharacterOffsetEnd=314 PartOfSpeech=VBD Lemma=plunge NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=315 CharacterOffsetEnd=317 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=silence CharacterOffsetBegin=318 CharacterOffsetEnd=325 PartOfSpeech=NN Lemma=silence NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=325 CharacterOffsetEnd=326 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=broken CharacterOffsetBegin=327 CharacterOffsetEnd=333 PartOfSpeech=VBN Lemma=break NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=334 CharacterOffsetEnd=336 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=337 CharacterOffsetEnd=341 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=342 CharacterOffsetEnd=344 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Shostakovich CharacterOffsetBegin=345 CharacterOffsetEnd=357 PartOfSpeech=NNP Lemma=Shostakovich NamedEntityTag=PERSON]
+[Text=with CharacterOffsetBegin=358 CharacterOffsetEnd=362 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=363 CharacterOffsetEnd=368 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=words CharacterOffsetBegin=369 CharacterOffsetEnd=374 PartOfSpeech=NNS Lemma=word NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=375 CharacterOffsetEnd=376 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=376 CharacterOffsetEnd=377 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=378 CharacterOffsetEnd=382 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=383 CharacterOffsetEnd=387 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=written CharacterOffsetBegin=388 CharacterOffsetEnd=395 PartOfSpeech=VBN Lemma=write NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=396 CharacterOffsetEnd=400 PartOfSpeech=RP Lemma=down NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=400 CharacterOffsetEnd=401 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=401 CharacterOffsetEnd=402 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=403 CharacterOffsetEnd=404 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=404 CharacterOffsetEnd=405 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=406 CharacterOffsetEnd=408 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=408 CharacterOffsetEnd=411 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=412 CharacterOffsetEnd=416 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=417 CharacterOffsetEnd=421 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=422 CharacterOffsetEnd=425 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fate CharacterOffsetBegin=426 CharacterOffsetEnd=430 PartOfSpeech=NN Lemma=fate NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=431 CharacterOffsetEnd=433 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=434 CharacterOffsetEnd=438 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=piece CharacterOffsetBegin=439 CharacterOffsetEnd=444 PartOfSpeech=NN Lemma=piece NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=445 CharacterOffsetEnd=449 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=450 CharacterOffsetEnd=452 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=452 CharacterOffsetEnd=453 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=453 CharacterOffsetEnd=454 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP
+        (VP (VBD sat)
+          (PP (IN on)))
+        (, ,)
+        (VP (VBD plunged)
+          (PP (IN in)
+            (NP (NN silence))))
+        (, ,)
+        (S
+          (VP (VBN broken)
+            (PP (IN at)
+              (NP (JJ last)))
+            (PP (IN by)
+              (NP (NNP Shostakovich)))
+            (PP (IN with)
+              (NP (DT these) (NNS words)))))))
+    (PRN (-LRB- -LRB-)
+      (S
+        (NP (PRP I))
+        (VP (VBP have)
+          (S
+            (NP (PRP them))
+            (VP (VBN written)
+              (PRT (RP down))))))
+      (-RRB- -RRB-))
+    (: :) (`` `)
+    (S
+      (NP (PRP I))
+      (VP (VBP do) (RB n't)
+        (VP (VB know)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP
+                (NP (DT the) (NN fate))
+                (PP (IN of)
+                  (NP (DT this) (NN piece))))
+              (VP (MD will)
+                (VP (VB be))))))))
+    (. .) ('' ')))
+
+root(ROOT-0, sat-2)
+nsubj(sat-2, We-1)
+nmod(sat-2, on-3)
+punct(sat-2, ,-4)
+dep(sat-2, plunged-5)
+case(silence-7, in-6)
+nmod:in(plunged-5, silence-7)
+punct(sat-2, ,-8)
+advcl(sat-2, broken-9)
+case(last-11, at-10)
+nmod:at(broken-9, last-11)
+case(Shostakovich-13, by-12)
+nmod:by(broken-9, Shostakovich-13)
+case(words-16, with-14)
+det(words-16, these-15)
+nmod:with(broken-9, words-16)
+punct(have-19, -LRB--17)
+nsubj(have-19, I-18)
+dep(sat-2, have-19)
+nsubj(written-21, them-20)
+ccomp(have-19, written-21)
+compound:prt(written-21, down-22)
+punct(have-19, -RRB--23)
+punct(sat-2, :-24)
+punct(sat-2, `-25)
+nsubj(know-29, I-26)
+aux(know-29, do-27)
+neg(know-29, n't-28)
+parataxis(sat-2, know-29)
+dobj(be-37, what-30)
+det(fate-32, the-31)
+nsubj(be-37, fate-32)
+case(piece-35, of-33)
+det(piece-35, this-34)
+nmod:of(fate-32, piece-35)
+aux(be-37, will-36)
+ccomp(know-29, be-37)
+punct(sat-2, .-38)
+punct(sat-2, '-39)
+
+Sentence #4 (27 tokens):
+After a further pause, he added: ‘I suppose that critics with nothing better to do will damn me for copying Ravel’s Bolero.
+[Text=After CharacterOffsetBegin=455 CharacterOffsetEnd=460 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=461 CharacterOffsetEnd=462 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=further CharacterOffsetBegin=463 CharacterOffsetEnd=470 PartOfSpeech=JJ Lemma=further NamedEntityTag=O]
+[Text=pause CharacterOffsetBegin=471 CharacterOffsetEnd=476 PartOfSpeech=NN Lemma=pause NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=476 CharacterOffsetEnd=477 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=478 CharacterOffsetEnd=480 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=added CharacterOffsetBegin=481 CharacterOffsetEnd=486 PartOfSpeech=VBD Lemma=add NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=486 CharacterOffsetEnd=487 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=488 CharacterOffsetEnd=489 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=489 CharacterOffsetEnd=490 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=suppose CharacterOffsetBegin=491 CharacterOffsetEnd=498 PartOfSpeech=VBP Lemma=suppose NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=499 CharacterOffsetEnd=503 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=critics CharacterOffsetBegin=504 CharacterOffsetEnd=511 PartOfSpeech=NNS Lemma=critic NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=512 CharacterOffsetEnd=516 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=nothing CharacterOffsetBegin=517 CharacterOffsetEnd=524 PartOfSpeech=NN Lemma=nothing NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=525 CharacterOffsetEnd=531 PartOfSpeech=JJR Lemma=better NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=532 CharacterOffsetEnd=534 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=535 CharacterOffsetEnd=537 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=538 CharacterOffsetEnd=542 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=damn CharacterOffsetBegin=543 CharacterOffsetEnd=547 PartOfSpeech=RB Lemma=damn NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=548 CharacterOffsetEnd=550 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=551 CharacterOffsetEnd=554 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=copying CharacterOffsetBegin=555 CharacterOffsetEnd=562 PartOfSpeech=VBG Lemma=copy NamedEntityTag=O]
+[Text=Ravel CharacterOffsetBegin=563 CharacterOffsetEnd=568 PartOfSpeech=NNP Lemma=Ravel NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=568 CharacterOffsetEnd=570 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Bolero CharacterOffsetBegin=571 CharacterOffsetEnd=577 PartOfSpeech=NNP Lemma=Bolero NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=577 CharacterOffsetEnd=578 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN After)
+      (NP (DT a) (JJ further) (NN pause)))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD added) (: :) (`` `)
+      (S
+        (NP (PRP I))
+        (VP (VBP suppose)
+          (SBAR (IN that)
+            (S
+              (NP
+                (NP (NNS critics))
+                (PP (IN with)
+                  (NP
+                    (NP (NN nothing))
+                    (NP (JJR better))))
+                (S
+                  (VP (TO to)
+                    (VP (VB do)))))
+              (VP (MD will)
+                (VP
+                  (ADVP (RB damn))
+                  (NP (PRP me))))))
+          (PP (IN for)
+            (S
+              (VP (VBG copying)
+                (NP
+                  (NP (NNP Ravel) (POS 's))
+                  (NNP Bolero))))))))
+    (. .)))
+
+root(ROOT-0, added-7)
+case(pause-4, After-1)
+det(pause-4, a-2)
+amod(pause-4, further-3)
+nmod:after(added-7, pause-4)
+punct(added-7, ,-5)
+nsubj(added-7, he-6)
+punct(added-7, :-8)
+punct(added-7, `-9)
+nsubj(suppose-11, I-10)
+ccomp(added-7, suppose-11)
+mark(me-21, that-12)
+nsubj(me-21, critics-13)
+case(nothing-15, with-14)
+nmod:with(critics-13, nothing-15)
+dep(nothing-15, better-16)
+mark(do-18, to-17)
+acl:to(critics-13, do-18)
+aux(me-21, will-19)
+advmod(me-21, damn-20)
+ccomp(suppose-11, me-21)
+mark(copying-23, for-22)
+advcl:for(suppose-11, copying-23)
+nmod:poss(Bolero-26, Ravel-24)
+case(Ravel-24, 's-25)
+dobj(copying-23, Bolero-26)
+punct(added-7, .-27)
+
+Sentence #5 (5 tokens):
+Well, let them.
+[Text=Well CharacterOffsetBegin=579 CharacterOffsetEnd=583 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=583 CharacterOffsetEnd=584 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=585 CharacterOffsetEnd=588 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=589 CharacterOffsetEnd=593 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=593 CharacterOffsetEnd=594 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (INTJ (RB Well))
+    (, ,)
+    (VP (VB let)
+      (NP (PRP them)))
+    (. .)))
+
+root(ROOT-0, let-3)
+discourse(let-3, Well-1)
+punct(let-3, ,-2)
+dobj(let-3, them-4)
+punct(let-3, .-5)
+
+Sentence #6 (8 tokens):
+That is how I hear war.’
+[Text=That CharacterOffsetBegin=595 CharacterOffsetEnd=599 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=600 CharacterOffsetEnd=602 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=603 CharacterOffsetEnd=606 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=607 CharacterOffsetEnd=608 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=609 CharacterOffsetEnd=613 PartOfSpeech=VBP Lemma=hear NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=614 CharacterOffsetEnd=617 PartOfSpeech=NN Lemma=war NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=617 CharacterOffsetEnd=618 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=618 CharacterOffsetEnd=619 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (PRP I))
+          (VP (VBP hear)
+            (NP (NN war))))))
+    (. .) ('' ')))
+
+root(ROOT-0, is-2)
+nsubj(is-2, That-1)
+advmod(hear-5, how-3)
+nsubj(hear-5, I-4)
+ccomp(is-2, hear-5)
+dobj(hear-5, war-6)
+punct(is-2, .-7)
+punct(is-2, '-8)
+
+Sentence #7 (35 tokens):
+I believe that on that memorable August day Shostakovich was still unaware of the titanic scale of his symphony, for which a fate unique in the history of music was already in preparation.
+[Text=I CharacterOffsetBegin=620 CharacterOffsetEnd=621 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=believe CharacterOffsetBegin=622 CharacterOffsetEnd=629 PartOfSpeech=VBP Lemma=believe NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=630 CharacterOffsetEnd=634 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=635 CharacterOffsetEnd=637 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=638 CharacterOffsetEnd=642 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=memorable CharacterOffsetBegin=643 CharacterOffsetEnd=652 PartOfSpeech=JJ Lemma=memorable NamedEntityTag=O]
+[Text=August CharacterOffsetBegin=653 CharacterOffsetEnd=659 PartOfSpeech=NNP Lemma=August NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-08 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-08">August</TIMEX3>]
+[Text=day CharacterOffsetBegin=660 CharacterOffsetEnd=663 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t2" type="DURATION" value="P1D">day</TIMEX3>]
+[Text=Shostakovich CharacterOffsetBegin=664 CharacterOffsetEnd=676 PartOfSpeech=NNP Lemma=Shostakovich NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=677 CharacterOffsetEnd=680 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=681 CharacterOffsetEnd=686 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=unaware CharacterOffsetBegin=687 CharacterOffsetEnd=694 PartOfSpeech=JJ Lemma=unaware NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=695 CharacterOffsetEnd=697 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=698 CharacterOffsetEnd=701 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=titanic CharacterOffsetBegin=702 CharacterOffsetEnd=709 PartOfSpeech=JJ Lemma=titanic NamedEntityTag=O]
+[Text=scale CharacterOffsetBegin=710 CharacterOffsetEnd=715 PartOfSpeech=NN Lemma=scale NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=716 CharacterOffsetEnd=718 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=719 CharacterOffsetEnd=722 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=symphony CharacterOffsetBegin=723 CharacterOffsetEnd=731 PartOfSpeech=NN Lemma=symphony NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=731 CharacterOffsetEnd=732 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=733 CharacterOffsetEnd=736 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=737 CharacterOffsetEnd=742 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=743 CharacterOffsetEnd=744 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fate CharacterOffsetBegin=745 CharacterOffsetEnd=749 PartOfSpeech=NN Lemma=fate NamedEntityTag=O]
+[Text=unique CharacterOffsetBegin=750 CharacterOffsetEnd=756 PartOfSpeech=JJ Lemma=unique NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=757 CharacterOffsetEnd=759 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=760 CharacterOffsetEnd=763 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=history CharacterOffsetBegin=764 CharacterOffsetEnd=771 PartOfSpeech=NN Lemma=history NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=772 CharacterOffsetEnd=774 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=775 CharacterOffsetEnd=780 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=781 CharacterOffsetEnd=784 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=already CharacterOffsetBegin=785 CharacterOffsetEnd=792 PartOfSpeech=RB Lemma=already NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=793 CharacterOffsetEnd=795 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=preparation CharacterOffsetBegin=796 CharacterOffsetEnd=807 PartOfSpeech=NN Lemma=preparation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=807 CharacterOffsetEnd=808 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP believe)
+      (SBAR (IN that)
+        (S
+          (PP (IN on)
+            (NP (DT that) (JJ memorable) (NNP August) (NN day)))
+          (NP (NNP Shostakovich))
+          (VP (VBD was)
+            (ADVP (RB still))
+            (ADJP (JJ unaware))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (JJ titanic) (NN scale))
+                (PP (IN of)
+                  (NP
+                    (NP (PRP$ his) (NN symphony))
+                    (, ,)
+                    (SBAR
+                      (WHPP (IN for)
+                        (WHNP (WDT which)))
+                      (S
+                        (NP
+                          (NP (DT a) (NN fate))
+                          (ADJP (JJ unique)
+                            (PP (IN in)
+                              (NP
+                                (NP (DT the) (NN history))
+                                (PP (IN of)
+                                  (NP (NN music)))))))
+                        (VP (VBD was)
+                          (ADVP (RB already))
+                          (PP (IN in)
+                            (NP (NN preparation))))))))))))))
+    (. .)))
+
+root(ROOT-0, believe-2)
+nsubj(believe-2, I-1)
+mark(unaware-12, that-3)
+case(day-8, on-4)
+det(day-8, that-5)
+amod(day-8, memorable-6)
+compound(day-8, August-7)
+nmod:on(unaware-12, day-8)
+nsubj(unaware-12, Shostakovich-9)
+cop(unaware-12, was-10)
+advmod(unaware-12, still-11)
+ccomp(believe-2, unaware-12)
+case(scale-16, of-13)
+det(scale-16, the-14)
+amod(scale-16, titanic-15)
+nmod:of(unaware-12, scale-16)
+case(symphony-19, of-17)
+nmod:poss(symphony-19, his-18)
+nmod:of(scale-16, symphony-19)
+nmod:for(preparation-34, symphony-19)
+punct(symphony-19, ,-20)
+case(which-22, for-21)
+ref(symphony-19, which-22)
+det(fate-24, a-23)
+nsubj(preparation-34, fate-24)
+amod(fate-24, unique-25)
+case(history-28, in-26)
+det(history-28, the-27)
+nmod:in(unique-25, history-28)
+case(music-30, of-29)
+nmod:of(history-28, music-30)
+cop(preparation-34, was-31)
+advmod(preparation-34, already-32)
+case(preparation-34, in-33)
+acl:relcl(symphony-19, preparation-34)
+punct(believe-2, .-35)
+
+Coreference set:
+	(7,19,[18,20]) -> (1,23,[21,24]), that is: "his symphony" -> "the Seventh Symphony"
+Coreference set:
+	(3,13,[13,14]) -> (2,13,[13,14]), that is: "Shostakovich" -> "Shostakovich"
+	(4,6,[6,7]) -> (2,13,[13,14]), that is: "he" -> "Shostakovich"
+	(7,9,[9,10]) -> (2,13,[13,14]), that is: "Shostakovich" -> "Shostakovich"
+	(7,18,[18,19]) -> (2,13,[13,14]), that is: "his" -> "Shostakovich"
+Coreference set:
+	(3,1,[1,2]) -> (2,1,[1,2]), that is: "We" -> "We"
+Coreference set:
+	(3,26,[26,27]) -> (3,18,[18,19]), that is: "I" -> "I"
+	(4,10,[10,11]) -> (3,18,[18,19]), that is: "I" -> "I"
+	(4,21,[21,22]) -> (3,18,[18,19]), that is: "me" -> "I"
+	(6,4,[4,5]) -> (3,18,[18,19]), that is: "I" -> "I"
+	(7,1,[1,2]) -> (3,18,[18,19]), that is: "I" -> "I"
+Coreference set:
+	(5,4,[4,5]) -> (4,13,[13,19]), that is: "them" -> "critics with nothing better to do"
+	(6,1,[1,2]) -> (4,13,[13,19]), that is: "That" -> "critics with nothing better to do"

@@ -1,0 +1,270 @@
+Sentence #1 (11 tokens):
+Listen to the winning 3 of Telegraph comp on wireless.
+[Text=Listen CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=winning CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=VBG Lemma=win NamedEntityTag=O]
+[Text=3 CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=of CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Telegraph CharacterOffsetBegin=27 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Telegraph NamedEntityTag=O]
+[Text=comp CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=comp NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=42 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=wireless CharacterOffsetBegin=45 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=wireless NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Listen)
+      (S
+        (VP (TO to)
+          (VP
+            (NP (DT the) (VBG winning))
+            (NP
+              (NP (CD 3))
+              (PP (IN of)
+                (NP (NNP Telegraph) (NN comp))))
+            (PP (IN on)
+              (NP (NN wireless)))))))
+    (. .)))
+
+root(ROOT-0, Listen-1)
+mark(the-3, to-2)
+xcomp(Listen-1, the-3)
+amod(the-3, winning-4)
+dobj(the-3, 3-5)
+case(comp-8, of-6)
+compound(comp-8, Telegraph-7)
+nmod:of(3-5, comp-8)
+case(wireless-10, on-9)
+nmod:on(the-3, wireless-10)
+punct(Listen-1, .-11)
+
+Sentence #2 (4 tokens):
+Armstrong Gibbs 4tet.
+[Text=Armstrong CharacterOffsetBegin=55 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Armstrong NamedEntityTag=ORGANIZATION]
+[Text=Gibbs CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Gibbs NamedEntityTag=ORGANIZATION]
+[Text=4tet CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=4tet NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Armstrong) (NNP Gibbs))
+    (NP (NN 4tet))
+    (. .)))
+
+root(ROOT-0, Gibbs-2)
+compound(Gibbs-2, Armstrong-1)
+dep(Gibbs-2, 4tet-3)
+punct(Gibbs-2, .-4)
+
+Sentence #3 (11 tokens):
+competent I suppose, dull as ditchwater & v. unoriginal.
+[Text=competent CharacterOffsetBegin=77 CharacterOffsetEnd=86 PartOfSpeech=JJ Lemma=competent NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=suppose CharacterOffsetBegin=89 CharacterOffsetEnd=96 PartOfSpeech=VBP Lemma=suppose NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=dull CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=JJ Lemma=dull NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=ditchwater CharacterOffsetBegin=106 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=ditchwater NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=v. CharacterOffsetBegin=119 CharacterOffsetEnd=121 PartOfSpeech=CC Lemma=v. NamedEntityTag=O]
+[Text=unoriginal CharacterOffsetBegin=122 CharacterOffsetEnd=132 PartOfSpeech=JJ Lemma=unoriginal NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADJP (JJ competent))
+    (NP (PRP I))
+    (VP
+      (VP (VBP suppose))
+      (, ,)
+      (VP
+        (ADJP (JJ dull)
+          (SBAR (IN as)
+            (S
+              (NP (NN ditchwater))
+              (NP (CC &)))))
+        (PP (CC v.)
+          (NP (JJ unoriginal)))))
+    (. .)))
+
+root(ROOT-0, suppose-3)
+dep(suppose-3, competent-1)
+nsubj(suppose-3, I-2)
+punct(suppose-3, ,-4)
+dep(suppose-3, dull-5)
+mark(&-8, as-6)
+dep(&-8, ditchwater-7)
+dep(dull-5, &-8)
+case(unoriginal-10, v.-9)
+nmod:v.(dull-5, unoriginal-10)
+punct(suppose-3, .-11)
+
+Sentence #4 (4 tokens):
+E. Maconchy Ob.
+[Text=E. CharacterOffsetBegin=134 CharacterOffsetEnd=136 PartOfSpeech=NNP Lemma=E. NamedEntityTag=PERSON]
+[Text=Maconchy CharacterOffsetBegin=137 CharacterOffsetEnd=145 PartOfSpeech=NNP Lemma=Maconchy NamedEntityTag=PERSON]
+[Text=Ob CharacterOffsetBegin=146 CharacterOffsetEnd=148 PartOfSpeech=NNP Lemma=Ob NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (NNP E.) (NNP Maconchy) (NNP Ob) (. .)))
+
+root(ROOT-0, Ob-3)
+compound(Ob-3, E.-1)
+compound(Ob-3, Maconchy-2)
+punct(Ob-3, .-4)
+
+Sentence #5 (2 tokens):
+5tet.
+[Text=5tet CharacterOffsetBegin=150 CharacterOffsetEnd=154 PartOfSpeech=NN Lemma=5tet NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (NN 5tet) (. .)))
+
+root(ROOT-0, 5tet-1)
+punct(5tet-1, .-2)
+
+Sentence #6 (11 tokens):
+Not so competent, but one or two fresh Ideas.
+[Text=Not CharacterOffsetBegin=156 CharacterOffsetEnd=159 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=160 CharacterOffsetEnd=162 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=competent CharacterOffsetBegin=163 CharacterOffsetEnd=172 PartOfSpeech=JJ Lemma=competent NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=172 CharacterOffsetEnd=173 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=174 CharacterOffsetEnd=177 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=178 CharacterOffsetEnd=181 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=or CharacterOffsetBegin=182 CharacterOffsetEnd=184 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=185 CharacterOffsetEnd=188 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=fresh CharacterOffsetBegin=189 CharacterOffsetEnd=194 PartOfSpeech=JJ Lemma=fresh NamedEntityTag=O]
+[Text=Ideas CharacterOffsetBegin=195 CharacterOffsetEnd=200 PartOfSpeech=NNS Lemma=idea NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=200 CharacterOffsetEnd=201 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (RB Not) (RB so) (JJ competent))
+    (, ,)
+    (CC but)
+    (NP
+      (QP (CD one)
+        (CC or)
+        (CD two))
+      (JJ fresh) (NNS Ideas))
+    (. .)))
+
+root(ROOT-0, competent-3)
+neg(competent-3, Not-1)
+advmod(competent-3, so-2)
+punct(competent-3, ,-4)
+cc(competent-3, but-5)
+nummod(Ideas-10, one-6)
+cc(one-6, or-7)
+conj:or(one-6, two-8)
+nummod(Ideas-10, two-8)
+amod(Ideas-10, fresh-9)
+conj:but(competent-3, Ideas-10)
+punct(competent-3, .-11)
+
+Sentence #7 (12 tokens):
+Eric Cundell (1st prize), technically efficient I suppose.
+[Text=Eric CharacterOffsetBegin=202 CharacterOffsetEnd=206 PartOfSpeech=NNP Lemma=Eric NamedEntityTag=PERSON]
+[Text=Cundell CharacterOffsetBegin=207 CharacterOffsetEnd=214 PartOfSpeech=NNP Lemma=Cundell NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=215 CharacterOffsetEnd=216 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=1st CharacterOffsetBegin=216 CharacterOffsetEnd=219 PartOfSpeech=JJ Lemma=1st NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=prize CharacterOffsetBegin=220 CharacterOffsetEnd=225 PartOfSpeech=NN Lemma=prize NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=225 CharacterOffsetEnd=226 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=226 CharacterOffsetEnd=227 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=technically CharacterOffsetBegin=228 CharacterOffsetEnd=239 PartOfSpeech=RB Lemma=technically NamedEntityTag=O]
+[Text=efficient CharacterOffsetBegin=240 CharacterOffsetEnd=249 PartOfSpeech=JJ Lemma=efficient NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=250 CharacterOffsetEnd=251 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=suppose CharacterOffsetBegin=252 CharacterOffsetEnd=259 PartOfSpeech=VBP Lemma=suppose NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=259 CharacterOffsetEnd=260 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Eric) (NNP Cundell))
+      (PRN (-LRB- -LRB-)
+        (NP (JJ 1st) (NN prize))
+        (-RRB- -RRB-))
+      (, ,))
+    (ADJP (RB technically) (JJ efficient)
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBP suppose)))))
+    (. .)))
+
+root(ROOT-0, Cundell-2)
+compound(Cundell-2, Eric-1)
+punct(prize-5, -LRB--3)
+amod(prize-5, 1st-4)
+appos(Cundell-2, prize-5)
+punct(prize-5, -RRB--6)
+punct(Cundell-2, ,-7)
+advmod(efficient-9, technically-8)
+amod(Cundell-2, efficient-9)
+nsubj(suppose-11, I-10)
+ccomp(efficient-9, suppose-11)
+punct(Cundell-2, .-12)
+
+Sentence #8 (7 tokens):
+Superficially brilliant & disonent fast move.
+[Text=Superficially CharacterOffsetBegin=261 CharacterOffsetEnd=274 PartOfSpeech=RB Lemma=superficially NamedEntityTag=O]
+[Text=brilliant CharacterOffsetBegin=275 CharacterOffsetEnd=284 PartOfSpeech=JJ Lemma=brilliant NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=285 CharacterOffsetEnd=286 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=disonent CharacterOffsetBegin=287 CharacterOffsetEnd=295 PartOfSpeech=JJ Lemma=disonent NamedEntityTag=O]
+[Text=fast CharacterOffsetBegin=296 CharacterOffsetEnd=300 PartOfSpeech=JJ Lemma=fast NamedEntityTag=O]
+[Text=move CharacterOffsetBegin=301 CharacterOffsetEnd=305 PartOfSpeech=NN Lemma=move NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=305 CharacterOffsetEnd=306 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (ADVP (RB Superficially))
+      (NP
+        (NP
+          (NP (JJ brilliant))
+          (CC &)
+          (NP (JJ disonent) (JJ fast)))
+        (NN move)))
+    (. .)))
+
+root(ROOT-0, move-6)
+advmod(move-6, Superficially-1)
+compound(move-6, brilliant-2)
+cc(brilliant-2, &-3)
+amod(fast-5, disonent-4)
+conj:&(brilliant-2, fast-5)
+compound(move-6, fast-5)
+punct(move-6, .-7)
+
+Sentence #9 (7 tokens):
+Ordinary & rather cheap slow ones.
+[Text=Ordinary CharacterOffsetBegin=307 CharacterOffsetEnd=315 PartOfSpeech=NNP Lemma=Ordinary NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=316 CharacterOffsetEnd=317 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=318 CharacterOffsetEnd=324 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=cheap CharacterOffsetBegin=325 CharacterOffsetEnd=330 PartOfSpeech=JJ Lemma=cheap NamedEntityTag=O]
+[Text=slow CharacterOffsetBegin=331 CharacterOffsetEnd=335 PartOfSpeech=JJ Lemma=slow NamedEntityTag=O]
+[Text=ones CharacterOffsetBegin=336 CharacterOffsetEnd=340 PartOfSpeech=NNS Lemma=one NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=340 CharacterOffsetEnd=341 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP
+      (NP
+        (NP (NNP Ordinary))
+        (CC &)
+        (RB rather)
+        (NP (JJ cheap) (JJ slow) (NNS ones))))
+    (. .)))
+
+root(ROOT-0, Ordinary-1)
+cc(Ordinary-1, &-2)
+advmod(Ordinary-1, rather-3)
+amod(ones-6, cheap-4)
+amod(ones-6, slow-5)
+dep(Ordinary-1, ones-6)
+punct(Ordinary-1, .-7)
+
+Sentence #10 (1 tokens):
+*
+[Text=* CharacterOffsetBegin=341 CharacterOffsetEnd=342 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+(ROOT
+  (X (SYM *)))
+
+root(ROOT-0, *-1)
+
+Coreference set:
+	(7,10,[10,11]) -> (3,2,[2,3]), that is: "I" -> "I"

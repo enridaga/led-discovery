@@ -1,0 +1,49 @@
+Sentence #1 (13 tokens):
+Truly a prodigy for power, purity of tone, and execution.
+[Text=Truly CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=truly NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=prodigy CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=prodigy NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=power CharacterOffsetBegin=20 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=power NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=purity CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=purity NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=tone CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=tone NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=execution CharacterOffsetBegin=47 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=execution NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (ADVP (RB Truly))
+    (NP
+      (NP (DT a) (NN prodigy))
+      (PP (IN for)
+        (NP
+          (NP (NN power))
+          (, ,)
+          (NP
+            (NP (NN purity))
+            (PP (IN of)
+              (NP (NN tone))))
+          (, ,)
+          (CC and)
+          (NP (NN execution)))))
+    (. .)))
+
+root(ROOT-0, prodigy-3)
+dep(prodigy-3, Truly-1)
+det(prodigy-3, a-2)
+case(power-5, for-4)
+nmod:for(prodigy-3, power-5)
+punct(power-5, ,-6)
+nmod:for(prodigy-3, purity-7)
+conj:and(power-5, purity-7)
+case(tone-9, of-8)
+nmod:of(purity-7, tone-9)
+punct(power-5, ,-10)
+cc(power-5, and-11)
+nmod:for(prodigy-3, execution-12)
+conj:and(power-5, execution-12)
+punct(prodigy-3, .-13)
+

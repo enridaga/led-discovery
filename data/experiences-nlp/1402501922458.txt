@@ -1,0 +1,69 @@
+Sentence #1 (23 tokens):
+The Amara 'Perriot [Pierrot] Company' gave a splendid show at Brigade Headquarters from 7.00 pm until 10.00 pm.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Amara CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NNP Lemma=Amara NamedEntityTag=PERSON]
+[Text=` CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=`` Lemma=` NamedEntityTag=PERSON]
+[Text=Perriot CharacterOffsetBegin=11 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Perriot NamedEntityTag=PERSON]
+[Text=-LSB- CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=PERSON]
+[Text=Pierrot CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Pierrot NamedEntityTag=PERSON]
+[Text=-RSB- CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=Company CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Company NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=splendid CharacterOffsetBegin=45 CharacterOffsetEnd=53 PartOfSpeech=JJ Lemma=splendid NamedEntityTag=O]
+[Text=show CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=NN Lemma=show NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Brigade CharacterOffsetBegin=62 CharacterOffsetEnd=69 PartOfSpeech=NN Lemma=brigade NamedEntityTag=O]
+[Text=Headquarters CharacterOffsetBegin=70 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=headquarters NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=7.00 CharacterOffsetBegin=88 CharacterOffsetEnd=92 PartOfSpeech=CD Lemma=7.00 NamedEntityTag=NUMBER NormalizedNamedEntityTag=7.0]
+[Text=pm CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=pm NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=10.00 CharacterOffsetBegin=102 CharacterOffsetEnd=107 PartOfSpeech=CD Lemma=10.00 NamedEntityTag=NUMBER NormalizedNamedEntityTag=10.0]
+[Text=pm CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=pm NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Amara))
+      (`` `)
+      (NP (NNP Perriot) (-LRB- -LSB-) (NNP Pierrot) (-RRB- -RSB-) (NNP Company))
+      ('' '))
+    (VP (VBD gave)
+      (NP (DT a) (JJ splendid) (NN show))
+      (PP (IN at)
+        (NP
+          (NP (NN Brigade) (NN Headquarters))
+          (PP (IN from)
+            (NP (CD 7.00) (NN pm)))))
+      (PP (IN until)
+        (NP (CD 10.00) (NN pm))))
+    (. .)))
+
+root(ROOT-0, gave-10)
+det(Amara-2, The-1)
+nsubj(gave-10, Amara-2)
+punct(Amara-2, `-3)
+compound(Company-8, Perriot-4)
+punct(Company-8, -LSB--5)
+compound(Company-8, Pierrot-6)
+punct(Company-8, -RSB--7)
+dep(Amara-2, Company-8)
+punct(Amara-2, '-9)
+det(show-13, a-11)
+amod(show-13, splendid-12)
+dobj(gave-10, show-13)
+case(Headquarters-16, at-14)
+compound(Headquarters-16, Brigade-15)
+nmod:at(gave-10, Headquarters-16)
+case(pm-19, from-17)
+nummod(pm-19, 7.00-18)
+nmod:from(Headquarters-16, pm-19)
+case(pm-22, until-20)
+nummod(pm-22, 10.00-21)
+nmod:until(gave-10, pm-22)
+punct(gave-10, .-23)
+
+Coreference set:
+	(1,2,[2,7]) -> (1,2,[1,3]), that is: "Amara ` Perriot -LSB- Pierrot" -> "The Amara"

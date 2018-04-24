@@ -1,0 +1,248 @@
+Sentence #1 (17 tokens):
+I stayed to dinner [at Whitney Rectory] and Armine and Helen played very nicely.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=stayed CharacterOffsetBegin=2 CharacterOffsetEnd=8 PartOfSpeech=VBD Lemma=stay NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Whitney CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Whitney NamedEntityTag=LOCATION]
+[Text=Rectory CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Rectory NamedEntityTag=LOCATION]
+[Text=-RSB- CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Armine CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Armine NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Helen CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Helen NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=61 CharacterOffsetEnd=67 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=nicely CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=RB Lemma=nicely NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD stayed)
+        (PP (TO to)
+          (NP (NN dinner) (-LRB- -LSB-)))
+        (PP (IN at)
+          (NP (NNP Whitney) (NNP Rectory)))))
+    (-RRB- -RSB-)
+    (CC and)
+    (S
+      (NP (NNP Armine)
+        (CC and)
+        (NNP Helen))
+      (VP (VBD played)
+        (ADVP (RB very) (RB nicely))))
+    (. .)))
+
+root(ROOT-0, stayed-2)
+nsubj(stayed-2, I-1)
+case(dinner-4, to-3)
+nmod:to(stayed-2, dinner-4)
+punct(dinner-4, -LSB--5)
+case(Rectory-8, at-6)
+compound(Rectory-8, Whitney-7)
+nmod:at(stayed-2, Rectory-8)
+punct(stayed-2, -RSB--9)
+cc(stayed-2, and-10)
+nsubj(played-14, Armine-11)
+cc(Armine-11, and-12)
+conj:and(Armine-11, Helen-13)
+nsubj(played-14, Helen-13)
+conj:and(stayed-2, played-14)
+advmod(nicely-16, very-15)
+advmod(played-14, nicely-16)
+punct(stayed-2, .-17)
+
+Sentence #2 (14 tokens):
+The night was cool and pleasant as I walked home under the stars.
+[Text=The CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=night CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t1" type="TIME" value="TNI">night</TIMEX3>]
+[Text=was CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=cool CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=JJ Lemma=cool NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=pleasant CharacterOffsetBegin=104 CharacterOffsetEnd=112 PartOfSpeech=JJ Lemma=pleasant NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=walked CharacterOffsetBegin=118 CharacterOffsetEnd=124 PartOfSpeech=VBD Lemma=walk NamedEntityTag=O]
+[Text=home CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=NN Lemma=home NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=130 CharacterOffsetEnd=135 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=stars CharacterOffsetBegin=140 CharacterOffsetEnd=145 PartOfSpeech=NNS Lemma=star NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NN night))
+    (VP (VBD was)
+      (ADJP (JJ cool)
+        (CC and)
+        (JJ pleasant))
+      (SBAR (IN as)
+        (S
+          (NP (PRP I))
+          (VP (VBD walked)
+            (NP (NN home))
+            (PP (IN under)
+              (NP (DT the) (NNS stars)))))))
+    (. .)))
+
+root(ROOT-0, cool-4)
+det(night-2, The-1)
+nsubj(cool-4, night-2)
+nsubj(pleasant-6, night-2)
+cop(cool-4, was-3)
+cc(cool-4, and-5)
+conj:and(cool-4, pleasant-6)
+mark(walked-9, as-7)
+nsubj(walked-9, I-8)
+advcl:as(cool-4, walked-9)
+dobj(walked-9, home-10)
+case(stars-13, under-11)
+det(stars-13, the-12)
+nmod:under(walked-9, stars-13)
+punct(cool-4, .-14)
+
+Sentence #3 (18 tokens):
+About midnight I passed over Rhydspence border brook, and crossed the border from England into Wales.
+[Text=About CharacterOffsetBegin=147 CharacterOffsetEnd=152 PartOfSpeech=IN Lemma=about NamedEntityTag=TIME NormalizedNamedEntityTag=T00:00 Timex=<TIMEX3 tid="t2" type="TIME" value="T00:00">About midnight</TIMEX3>]
+[Text=midnight CharacterOffsetBegin=153 CharacterOffsetEnd=161 PartOfSpeech=NN Lemma=midnight NamedEntityTag=TIME NormalizedNamedEntityTag=T00:00 Timex=<TIMEX3 tid="t2" type="TIME" value="T00:00">About midnight</TIMEX3>]
+[Text=I CharacterOffsetBegin=162 CharacterOffsetEnd=163 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=passed CharacterOffsetBegin=164 CharacterOffsetEnd=170 PartOfSpeech=VBD Lemma=pass NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=171 CharacterOffsetEnd=175 PartOfSpeech=RP Lemma=over NamedEntityTag=O]
+[Text=Rhydspence CharacterOffsetBegin=176 CharacterOffsetEnd=186 PartOfSpeech=NNP Lemma=Rhydspence NamedEntityTag=O]
+[Text=border CharacterOffsetBegin=187 CharacterOffsetEnd=193 PartOfSpeech=NN Lemma=border NamedEntityTag=O]
+[Text=brook CharacterOffsetBegin=194 CharacterOffsetEnd=199 PartOfSpeech=NN Lemma=brook NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=199 CharacterOffsetEnd=200 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=crossed CharacterOffsetBegin=205 CharacterOffsetEnd=212 PartOfSpeech=VBD Lemma=cross NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=213 CharacterOffsetEnd=216 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=border CharacterOffsetBegin=217 CharacterOffsetEnd=223 PartOfSpeech=NN Lemma=border NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=224 CharacterOffsetEnd=228 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=England CharacterOffsetBegin=229 CharacterOffsetEnd=236 PartOfSpeech=NNP Lemma=England NamedEntityTag=LOCATION]
+[Text=into CharacterOffsetBegin=237 CharacterOffsetEnd=241 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=Wales CharacterOffsetBegin=242 CharacterOffsetEnd=247 PartOfSpeech=NNP Lemma=Wales NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=247 CharacterOffsetEnd=248 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN About)
+      (NP (NN midnight)))
+    (NP (PRP I))
+    (VP
+      (VP (VBD passed)
+        (PRT (RP over))
+        (NP (NNP Rhydspence) (NN border) (NN brook)))
+      (, ,)
+      (CC and)
+      (VP (VBD crossed)
+        (NP (DT the) (NN border))
+        (PP (IN from)
+          (NP (NNP England)))
+        (PP (IN into)
+          (NP (NNP Wales)))))
+    (. .)))
+
+root(ROOT-0, passed-4)
+case(midnight-2, About-1)
+nmod:about(passed-4, midnight-2)
+nsubj(passed-4, I-3)
+nsubj(crossed-11, I-3)
+compound:prt(passed-4, over-5)
+compound(brook-8, Rhydspence-6)
+compound(brook-8, border-7)
+dobj(passed-4, brook-8)
+punct(passed-4, ,-9)
+cc(passed-4, and-10)
+conj:and(passed-4, crossed-11)
+det(border-13, the-12)
+dobj(crossed-11, border-13)
+case(England-15, from-14)
+nmod:from(crossed-11, England-15)
+case(Wales-17, into-16)
+nmod:into(crossed-11, Wales-17)
+punct(passed-4, .-18)
+
+Sentence #4 (25 tokens):
+The English inn was still ablaze with light and noisy with the songs of revellers, but the Welsh inn was dark and still.
+[Text=The CharacterOffsetBegin=249 CharacterOffsetEnd=252 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=English CharacterOffsetBegin=253 CharacterOffsetEnd=260 PartOfSpeech=NNP Lemma=English NamedEntityTag=MISC]
+[Text=inn CharacterOffsetBegin=261 CharacterOffsetEnd=264 PartOfSpeech=NN Lemma=inn NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=265 CharacterOffsetEnd=268 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=269 CharacterOffsetEnd=274 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=ablaze CharacterOffsetBegin=275 CharacterOffsetEnd=281 PartOfSpeech=VB Lemma=ablaze NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=282 CharacterOffsetEnd=286 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=light CharacterOffsetBegin=287 CharacterOffsetEnd=292 PartOfSpeech=JJ Lemma=light NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=293 CharacterOffsetEnd=296 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=noisy CharacterOffsetBegin=297 CharacterOffsetEnd=302 PartOfSpeech=JJ Lemma=noisy NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=303 CharacterOffsetEnd=307 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=308 CharacterOffsetEnd=311 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=songs CharacterOffsetBegin=312 CharacterOffsetEnd=317 PartOfSpeech=NNS Lemma=song NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=318 CharacterOffsetEnd=320 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=revellers CharacterOffsetBegin=321 CharacterOffsetEnd=330 PartOfSpeech=NNS Lemma=reveller NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=330 CharacterOffsetEnd=331 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=332 CharacterOffsetEnd=335 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=336 CharacterOffsetEnd=339 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Welsh CharacterOffsetBegin=340 CharacterOffsetEnd=345 PartOfSpeech=NNP Lemma=Welsh NamedEntityTag=MISC]
+[Text=inn CharacterOffsetBegin=346 CharacterOffsetEnd=349 PartOfSpeech=NN Lemma=inn NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=350 CharacterOffsetEnd=353 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=dark CharacterOffsetBegin=354 CharacterOffsetEnd=358 PartOfSpeech=JJ Lemma=dark NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=359 CharacterOffsetEnd=362 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=363 CharacterOffsetEnd=368 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=368 CharacterOffsetEnd=369 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNP English) (NN inn))
+      (VP (VBD was)
+        (ADVP (RB still))
+        (S
+          (VP (VB ablaze)
+            (PP (IN with)
+              (ADJP (JJ light)
+                (CC and)
+                (JJ noisy)))
+            (PP (IN with)
+              (NP
+                (NP (DT the) (NNS songs))
+                (PP (IN of)
+                  (NP (NNS revellers)))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT the) (NNP Welsh) (NN inn))
+      (VP (VBD was)
+        (ADJP (JJ dark)
+          (CC and)
+          (RB still))))
+    (. .)))
+
+root(ROOT-0, was-4)
+det(inn-3, The-1)
+compound(inn-3, English-2)
+nsubj(was-4, inn-3)
+advmod(was-4, still-5)
+ccomp(was-4, ablaze-6)
+case(light-8, with-7)
+advcl:with(ablaze-6, light-8)
+cc(light-8, and-9)
+advcl:with(ablaze-6, noisy-10)
+conj:and(light-8, noisy-10)
+case(songs-13, with-11)
+det(songs-13, the-12)
+nmod:with(ablaze-6, songs-13)
+case(revellers-15, of-14)
+nmod:of(songs-13, revellers-15)
+punct(was-4, ,-16)
+cc(was-4, but-17)
+det(inn-20, the-18)
+compound(inn-20, Welsh-19)
+nsubj(dark-22, inn-20)
+cop(dark-22, was-21)
+conj:but(was-4, dark-22)
+cc(dark-22, and-23)
+advmod(dark-22, still-24)
+punct(was-4, .-25)
+
+Coreference set:
+	(2,8,[8,9]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(3,3,[3,4]) -> (1,1,[1,2]), that is: "I" -> "I"

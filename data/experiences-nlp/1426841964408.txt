@@ -1,0 +1,218 @@
+Sentence #1 (27 tokens):
+I have played before the Queen, Prince Albert, the Prince of Prussia and the most elegant social circle at the Duchess of Sutherland's.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=7 CharacterOffsetEnd=13 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Queen CharacterOffsetBegin=25 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Queen NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Prince CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=NNP Lemma=Prince NamedEntityTag=O]
+[Text=Albert CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Albert NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Prince CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=Prince NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Prussia CharacterOffsetBegin=61 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=Prussia NamedEntityTag=LOCATION]
+[Text=and CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=elegant CharacterOffsetBegin=82 CharacterOffsetEnd=89 PartOfSpeech=JJ Lemma=elegant NamedEntityTag=O]
+[Text=social CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=JJ Lemma=social NamedEntityTag=O]
+[Text=circle CharacterOffsetBegin=97 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=circle NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=104 CharacterOffsetEnd=106 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Duchess CharacterOffsetBegin=111 CharacterOffsetEnd=118 PartOfSpeech=NNP Lemma=Duchess NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=119 CharacterOffsetEnd=121 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Sutherland CharacterOffsetBegin=122 CharacterOffsetEnd=132 PartOfSpeech=NNP Lemma=Sutherland NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (VP (VBN played)
+        (PP (IN before)
+          (NP
+            (NP
+              (NP (DT the) (NNP Queen))
+              (, ,)
+              (NP (NNP Prince) (NNP Albert)))
+            (, ,)
+            (NP
+              (NP (DT the) (NNP Prince))
+              (PP (IN of)
+                (NP (NNP Prussia))))
+            (CC and)
+            (NP
+              (NP (DT the)
+                (ADJP (RBS most) (JJ elegant))
+                (JJ social) (NN circle))
+              (PP (IN at)
+                (NP
+                  (NP (DT the) (NNP Duchess))
+                  (PP (IN of)
+                    (NP (NNP Sutherland) (POS 's))))))))))
+    (. .)))
+
+root(ROOT-0, played-3)
+nsubj(played-3, I-1)
+aux(played-3, have-2)
+case(Queen-6, before-4)
+det(Queen-6, the-5)
+nmod:before(played-3, Queen-6)
+punct(Queen-6, ,-7)
+compound(Albert-9, Prince-8)
+appos(Queen-6, Albert-9)
+punct(Queen-6, ,-10)
+det(Prince-12, the-11)
+nmod:before(played-3, Prince-12)
+conj:and(Queen-6, Prince-12)
+case(Prussia-14, of-13)
+nmod:of(Prince-12, Prussia-14)
+cc(Queen-6, and-15)
+det(circle-20, the-16)
+advmod(elegant-18, most-17)
+amod(circle-20, elegant-18)
+amod(circle-20, social-19)
+nmod:before(played-3, circle-20)
+conj:and(Queen-6, circle-20)
+case(Duchess-23, at-21)
+det(Duchess-23, the-22)
+nmod:at(circle-20, Duchess-23)
+case(Sutherland-25, of-24)
+nmod:'s(Duchess-23, Sutherland-25)
+case(Sutherland-25, 's-26)
+punct(played-3, .-27)
+
+Sentence #2 (20 tokens):
+They say it went very well, but now there is Court-mourning until the 23rd for some royal aunt.
+[Text=They CharacterOffsetBegin=136 CharacterOffsetEnd=140 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=say CharacterOffsetBegin=141 CharacterOffsetEnd=144 PartOfSpeech=VBP Lemma=say NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=145 CharacterOffsetEnd=147 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=148 CharacterOffsetEnd=152 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=158 CharacterOffsetEnd=162 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=162 CharacterOffsetEnd=163 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=there CharacterOffsetBegin=172 CharacterOffsetEnd=177 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=178 CharacterOffsetEnd=180 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=Court-mourning CharacterOffsetBegin=181 CharacterOffsetEnd=195 PartOfSpeech=NN Lemma=court-mourning NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=196 CharacterOffsetEnd=201 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=202 CharacterOffsetEnd=205 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=23rd CharacterOffsetBegin=206 CharacterOffsetEnd=210 PartOfSpeech=JJ Lemma=23rd NamedEntityTag=ORDINAL NormalizedNamedEntityTag=23.0]
+[Text=for CharacterOffsetBegin=211 CharacterOffsetEnd=214 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=215 CharacterOffsetEnd=219 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=royal CharacterOffsetBegin=220 CharacterOffsetEnd=225 PartOfSpeech=JJ Lemma=royal NamedEntityTag=O]
+[Text=aunt CharacterOffsetBegin=226 CharacterOffsetEnd=230 PartOfSpeech=NN Lemma=aunt NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=230 CharacterOffsetEnd=231 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBP say)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (VBD went)
+              (ADVP (RB very) (RB well)))))))
+    (, ,)
+    (CC but)
+    (S
+      (ADVP (RB now))
+      (NP (EX there))
+      (VP (VBZ is)
+        (NP (NN Court-mourning))
+        (PP (IN until)
+          (NP
+            (NP (DT the) (JJ 23rd))
+            (PP (IN for)
+              (NP (DT some) (JJ royal) (NN aunt)))))))
+    (. .)))
+
+root(ROOT-0, say-2)
+nsubj(say-2, They-1)
+nsubj(went-4, it-3)
+ccomp(say-2, went-4)
+advmod(well-6, very-5)
+advmod(went-4, well-6)
+punct(say-2, ,-7)
+cc(say-2, but-8)
+advmod(is-11, now-9)
+expl(is-11, there-10)
+conj:but(say-2, is-11)
+nsubj(is-11, Court-mourning-12)
+case(23rd-15, until-13)
+det(23rd-15, the-14)
+nmod:until(is-11, 23rd-15)
+case(aunt-19, for-16)
+det(aunt-19, some-17)
+amod(aunt-19, royal-18)
+nmod:for(23rd-15, aunt-19)
+punct(say-2, .-20)
+
+Sentence #3 (16 tokens):
+There will be nothing at Court, so I doubt whether I shall be invited.
+[Text=There CharacterOffsetBegin=232 CharacterOffsetEnd=237 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=238 CharacterOffsetEnd=242 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=243 CharacterOffsetEnd=245 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=nothing CharacterOffsetBegin=246 CharacterOffsetEnd=253 PartOfSpeech=NN Lemma=nothing NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=254 CharacterOffsetEnd=256 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Court CharacterOffsetBegin=257 CharacterOffsetEnd=262 PartOfSpeech=NNP Lemma=Court NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=262 CharacterOffsetEnd=263 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=264 CharacterOffsetEnd=266 PartOfSpeech=IN Lemma=so NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=267 CharacterOffsetEnd=268 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=doubt CharacterOffsetBegin=269 CharacterOffsetEnd=274 PartOfSpeech=VBP Lemma=doubt NamedEntityTag=O]
+[Text=whether CharacterOffsetBegin=275 CharacterOffsetEnd=282 PartOfSpeech=IN Lemma=whether NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=283 CharacterOffsetEnd=284 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=shall CharacterOffsetBegin=285 CharacterOffsetEnd=290 PartOfSpeech=MD Lemma=shall NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=291 CharacterOffsetEnd=293 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=invited CharacterOffsetBegin=294 CharacterOffsetEnd=301 PartOfSpeech=VBN Lemma=invite NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=301 CharacterOffsetEnd=302 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (EX There))
+      (VP (MD will)
+        (VP (VB be)
+          (NP
+            (NP (NN nothing))
+            (PP (IN at)
+              (NP (NNP Court)))))))
+    (, ,) (IN so)
+    (S
+      (NP (PRP I))
+      (VP (VBP doubt)
+        (SBAR (IN whether)
+          (S
+            (NP (PRP I))
+            (VP (MD shall)
+              (VP (VB be)
+                (VP (VBN invited))))))))
+    (. .)))
+
+root(ROOT-0, nothing-4)
+expl(nothing-4, There-1)
+aux(nothing-4, will-2)
+cop(nothing-4, be-3)
+case(Court-6, at-5)
+nmod:at(nothing-4, Court-6)
+punct(nothing-4, ,-7)
+dep(nothing-4, so-8)
+nsubj(doubt-10, I-9)
+parataxis(nothing-4, doubt-10)
+mark(invited-15, whether-11)
+nsubjpass(invited-15, I-12)
+aux(invited-15, shall-13)
+auxpass(invited-15, be-14)
+ccomp(doubt-10, invited-15)
+punct(nothing-4, .-16)
+
+Coreference set:
+	(2,3,[3,4]) -> (1,14,[14,15]), that is: "it" -> "Prussia"
+Coreference set:
+	(3,9,[9,10]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(3,12,[12,13]) -> (1,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(2,1,[1,2]) -> (1,6,[5,27]), that is: "They" -> "the Queen , Prince Albert , the Prince of Prussia and the most elegant social circle at the Duchess of Sutherland 's"

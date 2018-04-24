@@ -1,0 +1,113 @@
+Sentence #1 (5 tokens):
+Music at Mendelssohns'.
+[Text=Music CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Mendelssohns CharacterOffsetBegin=9 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Mendelssohns NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NN Music))
+    (PP (IN at)
+      (NP (NNP Mendelssohns) (POS ')))
+    (. .)))
+
+root(ROOT-0, Music-1)
+case(Mendelssohns-3, at-2)
+nmod:'(Music-1, Mendelssohns-3)
+case(Mendelssohns-3, '-4)
+punct(Music-1, .-5)
+
+Sentence #2 (5 tokens):
+Felix F minor Quartet.
+[Text=Felix CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=NNP Lemma=Felix NamedEntityTag=PERSON]
+[Text=F CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=NN Lemma=f NamedEntityTag=O]
+[Text=minor CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=minor NamedEntityTag=O]
+[Text=Quartet CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=quartet NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Felix))
+    (NP (NN F) (JJ minor) (NN Quartet))
+    (. .)))
+
+root(ROOT-0, Felix-1)
+compound(Quartet-4, F-2)
+amod(Quartet-4, minor-3)
+dep(Felix-1, Quartet-4)
+punct(Felix-1, .-5)
+
+Sentence #3 (12 tokens):
+I played with him my duet in G for two pianofortes.
+[Text=I CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=duet CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=NN Lemma=duet NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=G CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=g NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=82 CharacterOffsetEnd=85 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=pianofortes CharacterOffsetBegin=86 CharacterOffsetEnd=97 PartOfSpeech=NNS Lemma=pianoforte NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD played)
+      (PP (IN with)
+        (NP (PRP him)))
+      (NP (PRP$ my) (NN duet))
+      (PP (IN in)
+        (NP (NN G)))
+      (PP (IN for)
+        (NP (CD two) (NNS pianofortes))))
+    (. .)))
+
+root(ROOT-0, played-2)
+nsubj(played-2, I-1)
+case(him-4, with-3)
+nmod:with(played-2, him-4)
+nmod:poss(duet-6, my-5)
+dobj(played-2, duet-6)
+case(G-8, in-7)
+nmod:in(played-2, G-8)
+case(pianofortes-11, for-9)
+nummod(pianofortes-11, two-10)
+nmod:for(played-2, pianofortes-11)
+punct(played-2, .-12)
+
+Sentence #4 (8 tokens):
+Young Schilling played Hummel's Trio in G.
+[Text=Young CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=Young NamedEntityTag=O]
+[Text=Schilling CharacterOffsetBegin=105 CharacterOffsetEnd=114 PartOfSpeech=NNP Lemma=Schilling NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=115 CharacterOffsetEnd=121 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=Hummel CharacterOffsetBegin=122 CharacterOffsetEnd=128 PartOfSpeech=NNP Lemma=Hummel NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=128 CharacterOffsetEnd=130 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Trio CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=NNP Lemma=Trio NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=G. CharacterOffsetBegin=139 CharacterOffsetEnd=141 PartOfSpeech=NNP Lemma=G. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Young) (NNP Schilling))
+    (VP (VBD played)
+      (NP
+        (NP
+          (NP (NNP Hummel) (POS 's))
+          (NNP Trio))
+        (PP (IN in)
+          (NP (NNP G.)))))))
+
+root(ROOT-0, played-3)
+compound(Schilling-2, Young-1)
+nsubj(played-3, Schilling-2)
+nmod:poss(Trio-6, Hummel-4)
+case(Hummel-4, 's-5)
+dobj(played-3, Trio-6)
+case(G.-8, in-7)
+nmod:in(Trio-6, G.-8)
+
+Coreference set:
+	(3,4,[4,5]) -> (2,1,[1,6]), that is: "him" -> "Felix F minor Quartet ."
+Coreference set:
+	(3,5,[5,6]) -> (3,1,[1,2]), that is: "my" -> "I"

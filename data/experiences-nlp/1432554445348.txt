@@ -1,0 +1,587 @@
+Sentence #1 (30 tokens):
+Both the last concerts in Sydney, on Friday and Saturday, were crowded, the one on Saturday particularly so, and will long be remembered by us.
+[Text=Both CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=CC Lemma=both NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=5 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=concerts CharacterOffsetBegin=14 CharacterOffsetEnd=22 PartOfSpeech=NNS Lemma=concert NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Sydney CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Sydney NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Friday CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Friday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-5 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-WXX-5">Friday</TIMEX3>]
+[Text=and CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Saturday CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Saturday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-6 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-WXX-6">Saturday</TIMEX3>]
+[Text=, CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=crowded CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=VBN Lemma=crowd NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=on CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Saturday CharacterOffsetBegin=83 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=Saturday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-6 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-WXX-6">Saturday</TIMEX3>]
+[Text=particularly CharacterOffsetBegin=92 CharacterOffsetEnd=104 PartOfSpeech=RB Lemma=particularly NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=RB Lemma=long NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=remembered CharacterOffsetBegin=126 CharacterOffsetEnd=136 PartOfSpeech=VBN Lemma=remember NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=140 CharacterOffsetEnd=142 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (CC Both)
+      (NP
+        (NP (DT the) (JJ last) (NNS concerts))
+        (PP (IN in)
+          (NP (NNP Sydney)))))
+    (, ,)
+    (PP (IN on)
+      (NP (NNP Friday)
+        (CC and)
+        (NNP Saturday)))
+    (, ,)
+    (VP (VBD were)
+      (ADJP (VBN crowded))
+      (, ,)
+      (NP
+        (NP (DT the) (CD one))
+        (PP (IN on)
+          (NP (NNP Saturday)))
+        (UCP
+          (ADJP (RB particularly) (RB so))
+          (, ,)
+          (CC and)
+          (VP (MD will)
+            (ADVP (RB long))
+            (VP (VB be)
+              (VP (VBN remembered)
+                (PP (IN by)
+                  (NP (PRP us)))))))))
+    (. .)))
+
+root(ROOT-0, crowded-14)
+dep(concerts-4, Both-1)
+det(concerts-4, the-2)
+amod(concerts-4, last-3)
+nsubjpass(crowded-14, concerts-4)
+case(Sydney-6, in-5)
+nmod:in(concerts-4, Sydney-6)
+punct(crowded-14, ,-7)
+case(Friday-9, on-8)
+nmod:on(crowded-14, Friday-9)
+cc(Friday-9, and-10)
+conj:and(Friday-9, Saturday-11)
+nmod:on(crowded-14, Saturday-11)
+punct(crowded-14, ,-12)
+auxpass(crowded-14, were-13)
+punct(crowded-14, ,-15)
+det(one-17, the-16)
+dep(crowded-14, one-17)
+case(Saturday-19, on-18)
+nmod:on(one-17, Saturday-19)
+advmod(so-21, particularly-20)
+amod(one-17, so-21)
+punct(so-21, ,-22)
+cc(so-21, and-23)
+aux(remembered-27, will-24)
+advmod(remembered-27, long-25)
+auxpass(remembered-27, be-26)
+amod(one-17, remembered-27)
+conj:and(so-21, remembered-27)
+case(us-29, by-28)
+nmod:agent(remembered-27, us-29)
+punct(crowded-14, .-30)
+
+Sentence #2 (26 tokens):
+Lord and Lady Carrington, who had only returned the same afternoon, were there, and sat on the platform close to the piano.
+[Text=Lord CharacterOffsetBegin=144 CharacterOffsetEnd=148 PartOfSpeech=NNP Lemma=Lord NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=149 CharacterOffsetEnd=152 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Lady CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=NNP Lemma=Lady NamedEntityTag=PERSON]
+[Text=Carrington CharacterOffsetBegin=158 CharacterOffsetEnd=168 PartOfSpeech=NNP Lemma=Carrington NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=168 CharacterOffsetEnd=169 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=170 CharacterOffsetEnd=173 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=174 CharacterOffsetEnd=177 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=178 CharacterOffsetEnd=182 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=returned CharacterOffsetBegin=183 CharacterOffsetEnd=191 PartOfSpeech=VBN Lemma=return NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=192 CharacterOffsetEnd=195 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=same CharacterOffsetBegin=196 CharacterOffsetEnd=200 PartOfSpeech=JJ Lemma=same NamedEntityTag=O]
+[Text=afternoon CharacterOffsetBegin=201 CharacterOffsetEnd=210 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 tid="t3" type="TIME" value="TAF">afternoon</TIMEX3>]
+[Text=, CharacterOffsetBegin=210 CharacterOffsetEnd=211 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=212 CharacterOffsetEnd=216 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=217 CharacterOffsetEnd=222 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=222 CharacterOffsetEnd=223 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=224 CharacterOffsetEnd=227 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sat CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=VBD Lemma=sit NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=232 CharacterOffsetEnd=234 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=235 CharacterOffsetEnd=238 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=platform CharacterOffsetBegin=239 CharacterOffsetEnd=247 PartOfSpeech=NN Lemma=platform NamedEntityTag=O]
+[Text=close CharacterOffsetBegin=248 CharacterOffsetEnd=253 PartOfSpeech=NN Lemma=close NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=254 CharacterOffsetEnd=256 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=257 CharacterOffsetEnd=260 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=261 CharacterOffsetEnd=266 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=266 CharacterOffsetEnd=267 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP Lord)
+        (CC and)
+        (NNP Lady) (NNP Carrington))
+      (, ,)
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBD had)
+            (ADVP (RB only))
+            (VP (VBN returned)
+              (NP-TMP (DT the) (JJ same) (NN afternoon))))))
+      (, ,))
+    (VP
+      (VP (VBD were)
+        (ADVP (RB there)))
+      (, ,)
+      (CC and)
+      (VP (VBD sat)
+        (PP (IN on)
+          (NP (DT the) (NN platform) (NN close)))
+        (PP (TO to)
+          (NP (DT the) (NN piano)))))
+    (. .)))
+
+root(ROOT-0, were-14)
+compound(Carrington-4, Lord-1)
+cc(Lord-1, and-2)
+conj:and(Lord-1, Lady-3)
+compound(Carrington-4, Lady-3)
+nsubj(returned-9, Carrington-4)
+nsubj(were-14, Carrington-4)
+nsubj(sat-18, Carrington-4)
+punct(Carrington-4, ,-5)
+ref(Carrington-4, who-6)
+aux(returned-9, had-7)
+advmod(returned-9, only-8)
+acl:relcl(Carrington-4, returned-9)
+det(afternoon-12, the-10)
+amod(afternoon-12, same-11)
+nmod:tmod(returned-9, afternoon-12)
+punct(Carrington-4, ,-13)
+advmod(were-14, there-15)
+punct(were-14, ,-16)
+cc(were-14, and-17)
+conj:and(were-14, sat-18)
+case(close-22, on-19)
+det(close-22, the-20)
+compound(close-22, platform-21)
+nmod:on(sat-18, close-22)
+case(piano-25, to-23)
+det(piano-25, the-24)
+nmod:to(sat-18, piano-25)
+punct(were-14, .-26)
+
+Sentence #3 (75 tokens):
+Wilma got bouquets after every one of her pieces ; but after the last, when we thought the flowery tribute exhausted, there came such a shower of them from all sides that the whole air seemed filled with roses and other splendid flowers that were thrown from the galleries, right and left, as well as from the reserved seats, many of which struck Lord Carrington as well as me.
+[Text=Wilma CharacterOffsetBegin=268 CharacterOffsetEnd=273 PartOfSpeech=NNP Lemma=Wilma NamedEntityTag=PERSON]
+[Text=got CharacterOffsetBegin=274 CharacterOffsetEnd=277 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=bouquets CharacterOffsetBegin=278 CharacterOffsetEnd=286 PartOfSpeech=NNS Lemma=bouquet NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=287 CharacterOffsetEnd=292 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=293 CharacterOffsetEnd=298 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=299 CharacterOffsetEnd=302 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=303 CharacterOffsetEnd=305 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=306 CharacterOffsetEnd=309 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=pieces CharacterOffsetBegin=310 CharacterOffsetEnd=316 PartOfSpeech=NNS Lemma=piece NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=317 CharacterOffsetEnd=318 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=319 CharacterOffsetEnd=322 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=323 CharacterOffsetEnd=328 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=329 CharacterOffsetEnd=332 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=333 CharacterOffsetEnd=337 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=337 CharacterOffsetEnd=338 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=339 CharacterOffsetEnd=343 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=344 CharacterOffsetEnd=346 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=347 CharacterOffsetEnd=354 PartOfSpeech=VBD Lemma=think NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=355 CharacterOffsetEnd=358 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=flowery CharacterOffsetBegin=359 CharacterOffsetEnd=366 PartOfSpeech=JJ Lemma=flowery NamedEntityTag=O]
+[Text=tribute CharacterOffsetBegin=367 CharacterOffsetEnd=374 PartOfSpeech=NN Lemma=tribute NamedEntityTag=O]
+[Text=exhausted CharacterOffsetBegin=375 CharacterOffsetEnd=384 PartOfSpeech=VBN Lemma=exhaust NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=384 CharacterOffsetEnd=385 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=386 CharacterOffsetEnd=391 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=came CharacterOffsetBegin=392 CharacterOffsetEnd=396 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=397 CharacterOffsetEnd=401 PartOfSpeech=PDT Lemma=such NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=402 CharacterOffsetEnd=403 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=shower CharacterOffsetBegin=404 CharacterOffsetEnd=410 PartOfSpeech=NN Lemma=shower NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=411 CharacterOffsetEnd=413 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=414 CharacterOffsetEnd=418 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=419 CharacterOffsetEnd=423 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=424 CharacterOffsetEnd=427 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=sides CharacterOffsetBegin=428 CharacterOffsetEnd=433 PartOfSpeech=NNS Lemma=side NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=434 CharacterOffsetEnd=438 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=439 CharacterOffsetEnd=442 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=443 CharacterOffsetEnd=448 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=air CharacterOffsetBegin=449 CharacterOffsetEnd=452 PartOfSpeech=NN Lemma=air NamedEntityTag=O]
+[Text=seemed CharacterOffsetBegin=453 CharacterOffsetEnd=459 PartOfSpeech=VBD Lemma=seem NamedEntityTag=O]
+[Text=filled CharacterOffsetBegin=460 CharacterOffsetEnd=466 PartOfSpeech=VBN Lemma=fill NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=467 CharacterOffsetEnd=471 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=roses CharacterOffsetBegin=472 CharacterOffsetEnd=477 PartOfSpeech=NNS Lemma=rose NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=478 CharacterOffsetEnd=481 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=482 CharacterOffsetEnd=487 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=splendid CharacterOffsetBegin=488 CharacterOffsetEnd=496 PartOfSpeech=JJ Lemma=splendid NamedEntityTag=O]
+[Text=flowers CharacterOffsetBegin=497 CharacterOffsetEnd=504 PartOfSpeech=NNS Lemma=flower NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=505 CharacterOffsetEnd=509 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=510 CharacterOffsetEnd=514 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=thrown CharacterOffsetBegin=515 CharacterOffsetEnd=521 PartOfSpeech=VBN Lemma=throw NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=522 CharacterOffsetEnd=526 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=527 CharacterOffsetEnd=530 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=galleries CharacterOffsetBegin=531 CharacterOffsetEnd=540 PartOfSpeech=NNS Lemma=gallery NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=540 CharacterOffsetEnd=541 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=right CharacterOffsetBegin=542 CharacterOffsetEnd=547 PartOfSpeech=RB Lemma=right NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=548 CharacterOffsetEnd=551 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=552 CharacterOffsetEnd=556 PartOfSpeech=RB Lemma=left NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=556 CharacterOffsetEnd=557 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=558 CharacterOffsetEnd=560 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=561 CharacterOffsetEnd=565 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=566 CharacterOffsetEnd=568 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=569 CharacterOffsetEnd=573 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=574 CharacterOffsetEnd=577 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=reserved CharacterOffsetBegin=578 CharacterOffsetEnd=586 PartOfSpeech=JJ Lemma=reserved NamedEntityTag=O]
+[Text=seats CharacterOffsetBegin=587 CharacterOffsetEnd=592 PartOfSpeech=NNS Lemma=seat NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=592 CharacterOffsetEnd=593 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=594 CharacterOffsetEnd=598 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=599 CharacterOffsetEnd=601 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=602 CharacterOffsetEnd=607 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=struck CharacterOffsetBegin=608 CharacterOffsetEnd=614 PartOfSpeech=VBD Lemma=strike NamedEntityTag=O]
+[Text=Lord CharacterOffsetBegin=615 CharacterOffsetEnd=619 PartOfSpeech=NNP Lemma=Lord NamedEntityTag=O]
+[Text=Carrington CharacterOffsetBegin=620 CharacterOffsetEnd=630 PartOfSpeech=NNP Lemma=Carrington NamedEntityTag=PERSON]
+[Text=as CharacterOffsetBegin=631 CharacterOffsetEnd=633 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=634 CharacterOffsetEnd=638 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=639 CharacterOffsetEnd=641 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=642 CharacterOffsetEnd=644 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=644 CharacterOffsetEnd=645 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Wilma))
+      (VP (VBD got)
+        (NP (NNS bouquets))
+        (PP (IN after)
+          (NP
+            (NP (DT every) (CD one))
+            (PP (IN of)
+              (NP (PRP$ her) (NNS pieces)))))))
+    (: ;)
+    (S (CC but)
+      (PP (IN after)
+        (NP (DT the) (JJ last)))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP we))
+          (VP (VBD thought)
+            (NP
+              (NP (DT the) (JJ flowery) (NN tribute))
+              (VP (VBN exhausted))))))
+      (, ,)
+      (NP (EX there))
+      (VP (VBD came)
+        (NP
+          (NP (PDT such) (DT a) (NN shower))
+          (PP (IN of)
+            (NP (PRP them))))
+        (PP (IN from)
+          (NP (DT all) (NNS sides)))
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (JJ whole) (NN air))
+            (VP (VBD seemed)
+              (VP (VBN filled)
+                (PP
+                  (PP (IN with)
+                    (NP
+                      (NP (NNS roses))
+                      (CC and)
+                      (NP
+                        (NP (JJ other) (JJ splendid) (NNS flowers))
+                        (SBAR
+                          (WHNP (WDT that))
+                          (S
+                            (VP (VBD were)
+                              (VP (VBN thrown)
+                                (PP (IN from)
+                                  (NP (DT the) (NNS galleries)))
+                                (, ,)
+                                (ADVP (RB right)
+                                  (CC and)
+                                  (RB left)))))))))
+                  (, ,)
+                  (CONJP (RB as) (RB well) (IN as))
+                  (PP (IN from)
+                    (NP
+                      (NP (DT the) (JJ reserved) (NNS seats))
+                      (, ,)
+                      (SBAR
+                        (WHNP
+                          (WHNP (JJ many))
+                          (WHPP (IN of)
+                            (WHNP (WDT which))))
+                        (S
+                          (VP (VBD struck)
+                            (NP
+                              (NP (NNP Lord) (NNP Carrington))
+                              (CONJP (RB as) (RB well) (IN as))
+                              (NP (PRP me)))))))))))))))
+    (. .)))
+
+root(ROOT-0, got-2)
+nsubj(got-2, Wilma-1)
+dobj(got-2, bouquets-3)
+case(one-6, after-4)
+det(one-6, every-5)
+nmod:after(got-2, one-6)
+case(pieces-9, of-7)
+nmod:poss(pieces-9, her-8)
+nmod:of(one-6, pieces-9)
+punct(got-2, ;-10)
+cc(came-25, but-11)
+case(last-14, after-12)
+det(last-14, the-13)
+nmod:after(came-25, last-14)
+punct(came-25, ,-15)
+advmod(thought-18, when-16)
+nsubj(thought-18, we-17)
+advcl(came-25, thought-18)
+det(tribute-21, the-19)
+amod(tribute-21, flowery-20)
+dobj(thought-18, tribute-21)
+acl(tribute-21, exhausted-22)
+punct(came-25, ,-23)
+expl(came-25, there-24)
+parataxis(got-2, came-25)
+det:predet(shower-28, such-26)
+det(shower-28, a-27)
+dobj(came-25, shower-28)
+case(them-30, of-29)
+nmod:of(shower-28, them-30)
+case(sides-33, from-31)
+det(sides-33, all-32)
+nmod:from(came-25, sides-33)
+mark(seemed-38, that-34)
+det(air-37, the-35)
+amod(air-37, whole-36)
+nsubj(seemed-38, air-37)
+ccomp(came-25, seemed-38)
+xcomp(seemed-38, filled-39)
+xcomp(seemed-38, filled-39')
+conj:and(filled-39, filled-39')
+xcomp(seemed-38, filled-39'')
+conj:and(filled-39, filled-39'')
+case(roses-41, with-40)
+nmod:with(filled-39, roses-41)
+cc(filled-39, and-42)
+amod(flowers-45, other-43)
+amod(flowers-45, splendid-44)
+conj(roses-41, flowers-45)
+nsubjpass(thrown-48, flowers-45)
+ref(flowers-45, that-46)
+auxpass(thrown-48, were-47)
+acl:relcl(flowers-45, thrown-48)
+case(galleries-51, from-49)
+det(galleries-51, the-50)
+nmod:from(thrown-48, galleries-51)
+punct(thrown-48, ,-52)
+advmod(thrown-48, right-53)
+cc(right-53, and-54)
+advmod(thrown-48, left-55)
+conj:and(right-53, left-55)
+punct(roses-41, ,-56)
+cc(filled-39, as-57)
+mwe(as-57, well-58)
+mwe(as-57, as-59)
+case(seats-63, from-60)
+det(seats-63, the-61)
+amod(seats-63, reserved-62)
+nmod:from(filled-39', seats-63)
+nmod:of(many-65, seats-63)
+punct(seats-63, ,-64)
+nsubj(struck-68, many-65)
+case(which-67, of-66)
+ref(seats-63, which-67)
+acl:relcl(seats-63, struck-68)
+compound(Carrington-70, Lord-69)
+dobj(struck-68, Carrington-70)
+cc(Carrington-70, as-71)
+mwe(as-71, well-72)
+mwe(as-71, as-73)
+dobj(struck-68, me-74)
+conj:and(Carrington-70, me-74)
+punct(got-2, .-75)
+
+Sentence #4 (45 tokens):
+The hole platform was in a short time covered with them, Lord Carrington and I being very busy in picking them up ; but to gather them all was impossible, and Wilma on leaving the platform had literally to walk over roses.
+[Text=The CharacterOffsetBegin=646 CharacterOffsetEnd=649 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=hole CharacterOffsetBegin=650 CharacterOffsetEnd=654 PartOfSpeech=NN Lemma=hole NamedEntityTag=O]
+[Text=platform CharacterOffsetBegin=655 CharacterOffsetEnd=663 PartOfSpeech=NN Lemma=platform NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=664 CharacterOffsetEnd=667 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=668 CharacterOffsetEnd=670 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=671 CharacterOffsetEnd=672 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=short CharacterOffsetBegin=673 CharacterOffsetEnd=678 PartOfSpeech=JJ Lemma=short NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=679 CharacterOffsetEnd=683 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=covered CharacterOffsetBegin=684 CharacterOffsetEnd=691 PartOfSpeech=VBN Lemma=cover NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=692 CharacterOffsetEnd=696 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=697 CharacterOffsetEnd=701 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=701 CharacterOffsetEnd=702 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Lord CharacterOffsetBegin=703 CharacterOffsetEnd=707 PartOfSpeech=NNP Lemma=Lord NamedEntityTag=O]
+[Text=Carrington CharacterOffsetBegin=708 CharacterOffsetEnd=718 PartOfSpeech=NNP Lemma=Carrington NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=719 CharacterOffsetEnd=722 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=723 CharacterOffsetEnd=724 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=725 CharacterOffsetEnd=730 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=731 CharacterOffsetEnd=735 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=busy CharacterOffsetBegin=736 CharacterOffsetEnd=740 PartOfSpeech=JJ Lemma=busy NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=741 CharacterOffsetEnd=743 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=picking CharacterOffsetBegin=744 CharacterOffsetEnd=751 PartOfSpeech=VBG Lemma=pick NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=752 CharacterOffsetEnd=756 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=757 CharacterOffsetEnd=759 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=760 CharacterOffsetEnd=761 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=762 CharacterOffsetEnd=765 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=766 CharacterOffsetEnd=768 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=gather CharacterOffsetBegin=769 CharacterOffsetEnd=775 PartOfSpeech=VB Lemma=gather NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=776 CharacterOffsetEnd=780 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=781 CharacterOffsetEnd=784 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=785 CharacterOffsetEnd=788 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=impossible CharacterOffsetBegin=789 CharacterOffsetEnd=799 PartOfSpeech=JJ Lemma=impossible NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=799 CharacterOffsetEnd=800 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=801 CharacterOffsetEnd=804 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Wilma CharacterOffsetBegin=805 CharacterOffsetEnd=810 PartOfSpeech=NNP Lemma=Wilma NamedEntityTag=PERSON]
+[Text=on CharacterOffsetBegin=811 CharacterOffsetEnd=813 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=leaving CharacterOffsetBegin=814 CharacterOffsetEnd=821 PartOfSpeech=VBG Lemma=leave NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=822 CharacterOffsetEnd=825 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=platform CharacterOffsetBegin=826 CharacterOffsetEnd=834 PartOfSpeech=NN Lemma=platform NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=835 CharacterOffsetEnd=838 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=literally CharacterOffsetBegin=839 CharacterOffsetEnd=848 PartOfSpeech=RB Lemma=literally NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=849 CharacterOffsetEnd=851 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=walk CharacterOffsetBegin=852 CharacterOffsetEnd=856 PartOfSpeech=VB Lemma=walk NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=857 CharacterOffsetEnd=861 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=roses CharacterOffsetBegin=862 CharacterOffsetEnd=867 PartOfSpeech=NNS Lemma=rose NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=867 CharacterOffsetEnd=868 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN hole) (NN platform))
+      (VP (VBD was)
+        (PP (IN in)
+          (NP
+            (NP (DT a) (JJ short) (NN time))
+            (VP (VBN covered)
+              (PP (IN with)
+                (NP
+                  (NP (PRP them))
+                  (, ,)
+                  (NP (NNP Lord) (NNP Carrington))
+                  (CC and)
+                  (NP (PRP I))))
+              (S
+                (VP (VBG being)
+                  (ADJP (RB very) (JJ busy)
+                    (PP (IN in)
+                      (S
+                        (VP (VBG picking)
+                          (NP (PRP them))
+                          (PRT (RP up)))))))))))))
+    (: ;)
+    (CC but)
+    (S
+      (S
+        (VP (TO to)
+          (VP (VB gather)
+            (NP (PRP them)))))
+      (S
+        (NP (DT all))
+        (VP (VBD was)
+          (ADJP (JJ impossible))))
+      (, ,)
+      (CC and)
+      (S
+        (NP
+          (NP (NNP Wilma))
+          (PP (IN on)
+            (S
+              (VP (VBG leaving)
+                (NP (DT the) (NN platform))))))
+        (VP (VBD had)
+          (ADVP (RB literally))
+          (S
+            (VP (TO to)
+              (VP (VB walk)
+                (PP (IN over)
+                  (NP (NNS roses)))))))))
+    (. .)))
+
+root(ROOT-0, time-8)
+det(platform-3, The-1)
+compound(platform-3, hole-2)
+nsubj(time-8, platform-3)
+nsubj(gather-27, platform-3)
+cop(time-8, was-4)
+case(time-8, in-5)
+det(time-8, a-6)
+amod(time-8, short-7)
+acl(time-8, covered-9)
+case(them-11, with-10)
+nmod:with(covered-9, them-11)
+punct(them-11, ,-12)
+compound(Carrington-14, Lord-13)
+nmod:with(covered-9, Carrington-14)
+conj:and(them-11, Carrington-14)
+cc(them-11, and-15)
+nmod:with(covered-9, I-16)
+conj:and(them-11, I-16)
+cop(busy-19, being-17)
+advmod(busy-19, very-18)
+xcomp(covered-9, busy-19)
+mark(picking-21, in-20)
+advcl:in(busy-19, picking-21)
+dobj(picking-21, them-22)
+compound:prt(picking-21, up-23)
+punct(time-8, ;-24)
+cc(time-8, but-25)
+mark(gather-27, to-26)
+conj:but(time-8, gather-27)
+dobj(gather-27, them-28)
+nsubj(impossible-31, all-29)
+cop(impossible-31, was-30)
+ccomp(gather-27, impossible-31)
+punct(gather-27, ,-32)
+cc(gather-27, and-33)
+nsubj(had-39, Wilma-34)
+nsubj:xsubj(walk-42, Wilma-34)
+mark(leaving-36, on-35)
+acl:on(Wilma-34, leaving-36)
+det(platform-38, the-37)
+dobj(leaving-36, platform-38)
+conj:but(time-8, had-39)
+conj:and(gather-27, had-39)
+advmod(had-39, literally-40)
+mark(walk-42, to-41)
+xcomp(had-39, walk-42)
+case(roses-44, over-43)
+nmod:over(walk-42, roses-44)
+punct(time-8, .-45)
+
+Coreference set:
+	(3,17,[17,18]) -> (1,29,[29,30]), that is: "we" -> "us"
+Coreference set:
+	(1,19,[19,20]) -> (1,11,[11,12]), that is: "Saturday" -> "Saturday"
+Coreference set:
+	(2,4,[1,5]) -> (3,70,[69,75]), that is: "Lord and Lady Carrington" -> "Lord Carrington as well as me"
+	(3,30,[30,31]) -> (3,70,[69,75]), that is: "them" -> "Lord Carrington as well as me"
+	(4,11,[11,12]) -> (3,70,[69,75]), that is: "them" -> "Lord Carrington as well as me"
+	(4,14,[13,15]) -> (3,70,[69,75]), that is: "Lord Carrington" -> "Lord Carrington as well as me"
+	(4,14,[14,15]) -> (3,70,[69,75]), that is: "Carrington" -> "Lord Carrington as well as me"
+	(4,22,[22,23]) -> (3,70,[69,75]), that is: "them" -> "Lord Carrington as well as me"
+	(4,28,[28,29]) -> (3,70,[69,75]), that is: "them" -> "Lord Carrington as well as me"
+Coreference set:
+	(4,44,[44,45]) -> (3,41,[41,42]), that is: "roses" -> "roses"
+Coreference set:
+	(4,16,[16,17]) -> (3,74,[74,75]), that is: "I" -> "me"
+Coreference set:
+	(4,38,[37,39]) -> (4,3,[1,4]), that is: "the platform" -> "The hole platform"

@@ -1,0 +1,253 @@
+Sentence #1 (24 tokens):
+Driving into Chippenham with Fanny this morning we saw the headquarters of the 13th Hussars who had just marched in, band playing.
+[Text=Driving CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=VBG Lemma=drive NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=Chippenham CharacterOffsetBegin=13 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Chippenham NamedEntityTag=LOCATION]
+[Text=with CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Fanny CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Fanny NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=DT Lemma=this NamedEntityTag=TIME NormalizedNamedEntityTag=THIS MO Timex=<TIMEX3 alt_value="THIS MO" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">this morning</TIMEX3>]
+[Text=morning CharacterOffsetBegin=40 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=THIS MO Timex=<TIMEX3 alt_value="THIS MO" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">this morning</TIMEX3>]
+[Text=we CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=saw CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=VBD Lemma=see NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=headquarters CharacterOffsetBegin=59 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=headquarters NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=72 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=13th CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=JJ Lemma=13th NamedEntityTag=ORDINAL NormalizedNamedEntityTag=13.0]
+[Text=Hussars CharacterOffsetBegin=84 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=Hussars NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=marched CharacterOffsetBegin=105 CharacterOffsetEnd=112 PartOfSpeech=VBN Lemma=march NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=band CharacterOffsetBegin=117 CharacterOffsetEnd=121 PartOfSpeech=NN Lemma=band NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=122 CharacterOffsetEnd=129 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (VP (VBG Driving)
+        (PP (IN into)
+          (NP
+            (NP (NNP Chippenham))
+            (PP (IN with)
+              (NP (NNP Fanny)))))
+        (NP-TMP (DT this) (NN morning))))
+    (NP (PRP we))
+    (VP (VBD saw)
+      (NP
+        (NP (DT the) (NN headquarters))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (DT the) (JJ 13th) (NNP Hussars))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD had)
+                    (ADVP (RB just))
+                    (VP (VBN marched)
+                      (PP (IN in)))))))
+            (, ,)
+            (NP (NN band) (NN playing))))))
+    (. .)))
+
+root(ROOT-0, saw-9)
+dep(saw-9, Driving-1)
+case(Chippenham-3, into-2)
+nmod:into(Driving-1, Chippenham-3)
+case(Fanny-5, with-4)
+nmod:with(Chippenham-3, Fanny-5)
+det(morning-7, this-6)
+nmod:tmod(Driving-1, morning-7)
+nsubj(saw-9, we-8)
+det(headquarters-11, the-10)
+dobj(saw-9, headquarters-11)
+case(Hussars-15, of-12)
+det(Hussars-15, the-13)
+amod(Hussars-15, 13th-14)
+nmod:of(headquarters-11, Hussars-15)
+nsubj(marched-19, Hussars-15)
+ref(Hussars-15, who-16)
+aux(marched-19, had-17)
+advmod(marched-19, just-18)
+acl:relcl(Hussars-15, marched-19)
+nmod(marched-19, in-20)
+punct(Hussars-15, ,-21)
+compound(playing-23, band-22)
+appos(Hussars-15, playing-23)
+punct(saw-9, .-24)
+
+Sentence #2 (11 tokens):
+They were on their way up from Dartmoor to Colchester.
+[Text=They CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=136 CharacterOffsetEnd=140 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=144 CharacterOffsetEnd=149 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=154 CharacterOffsetEnd=156 PartOfSpeech=IN Lemma=up NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=157 CharacterOffsetEnd=161 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Dartmoor CharacterOffsetBegin=162 CharacterOffsetEnd=170 PartOfSpeech=NNP Lemma=Dartmoor NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=171 CharacterOffsetEnd=173 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Colchester CharacterOffsetBegin=174 CharacterOffsetEnd=184 PartOfSpeech=NNP Lemma=Colchester NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=184 CharacterOffsetEnd=185 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD were)
+      (PP (IN on)
+        (NP (PRP$ their) (NN way)))
+      (ADVP (IN up)
+        (PP (IN from)
+          (NP (NNP Dartmoor))))
+      (PP (TO to)
+        (NP (NNP Colchester))))
+    (. .)))
+
+root(ROOT-0, way-5)
+nsubj(way-5, They-1)
+cop(way-5, were-2)
+case(way-5, on-3)
+nmod:poss(way-5, their-4)
+advmod(way-5, up-6)
+case(Dartmoor-8, from-7)
+nmod:from(up-6, Dartmoor-8)
+case(Colchester-10, to-9)
+nmod:to(way-5, Colchester-10)
+punct(way-5, .-11)
+
+Sentence #3 (9 tokens):
+They had been taking part in disastrous manoeuvres.
+[Text=They CharacterOffsetBegin=186 CharacterOffsetEnd=190 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=191 CharacterOffsetEnd=194 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=195 CharacterOffsetEnd=199 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=taking CharacterOffsetBegin=200 CharacterOffsetEnd=206 PartOfSpeech=VBG Lemma=take NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=207 CharacterOffsetEnd=211 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=212 CharacterOffsetEnd=214 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=disastrous CharacterOffsetBegin=215 CharacterOffsetEnd=225 PartOfSpeech=JJ Lemma=disastrous NamedEntityTag=O]
+[Text=manoeuvres CharacterOffsetBegin=226 CharacterOffsetEnd=236 PartOfSpeech=NNS Lemma=manoeuvre NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=236 CharacterOffsetEnd=237 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD had)
+      (VP (VBN been)
+        (VP (VBG taking)
+          (NP
+            (NP (NN part))
+            (PP (IN in)
+              (NP (JJ disastrous) (NNS manoeuvres)))))))
+    (. .)))
+
+root(ROOT-0, taking-4)
+nsubj(taking-4, They-1)
+aux(taking-4, had-2)
+aux(taking-4, been-3)
+dobj(taking-4, part-5)
+case(manoeuvres-8, in-6)
+amod(manoeuvres-8, disastrous-7)
+nmod:in(part-5, manoeuvres-8)
+punct(taking-4, .-9)
+
+Sentence #4 (30 tokens):
+Horses and men looked thin, worn, weak, dirty and jaded and as if the best manoeuvres they could accomplish would be a manoeuvre into their barracks.
+[Text=Horses CharacterOffsetBegin=238 CharacterOffsetEnd=244 PartOfSpeech=NNS Lemma=horse NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=245 CharacterOffsetEnd=248 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=249 CharacterOffsetEnd=252 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=looked CharacterOffsetBegin=253 CharacterOffsetEnd=259 PartOfSpeech=VBD Lemma=look NamedEntityTag=O]
+[Text=thin CharacterOffsetBegin=260 CharacterOffsetEnd=264 PartOfSpeech=JJ Lemma=thin NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=264 CharacterOffsetEnd=265 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=worn CharacterOffsetBegin=266 CharacterOffsetEnd=270 PartOfSpeech=JJ Lemma=worn NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=270 CharacterOffsetEnd=271 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=weak CharacterOffsetBegin=272 CharacterOffsetEnd=276 PartOfSpeech=JJ Lemma=weak NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=276 CharacterOffsetEnd=277 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=dirty CharacterOffsetBegin=278 CharacterOffsetEnd=283 PartOfSpeech=JJ Lemma=dirty NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=284 CharacterOffsetEnd=287 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=jaded CharacterOffsetBegin=288 CharacterOffsetEnd=293 PartOfSpeech=JJ Lemma=jaded NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=294 CharacterOffsetEnd=297 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=298 CharacterOffsetEnd=300 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=301 CharacterOffsetEnd=303 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=304 CharacterOffsetEnd=307 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=308 CharacterOffsetEnd=312 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=manoeuvres CharacterOffsetBegin=313 CharacterOffsetEnd=323 PartOfSpeech=NNS Lemma=manoeuvre NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=324 CharacterOffsetEnd=328 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=329 CharacterOffsetEnd=334 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=accomplish CharacterOffsetBegin=335 CharacterOffsetEnd=345 PartOfSpeech=VB Lemma=accomplish NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=346 CharacterOffsetEnd=351 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=352 CharacterOffsetEnd=354 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=355 CharacterOffsetEnd=356 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=manoeuvre CharacterOffsetBegin=357 CharacterOffsetEnd=366 PartOfSpeech=NN Lemma=manoeuvre NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=367 CharacterOffsetEnd=371 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=372 CharacterOffsetEnd=377 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=barracks CharacterOffsetBegin=378 CharacterOffsetEnd=386 PartOfSpeech=NNS Lemma=barracks NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=386 CharacterOffsetEnd=387 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNS Horses)
+      (CC and)
+      (NNS men))
+    (VP
+      (VP (VBD looked)
+        (ADJP (JJ thin) (, ,) (JJ worn) (, ,) (JJ weak) (, ,) (JJ dirty)
+          (CC and)
+          (JJ jaded)))
+      (CC and)
+      (VP
+        (SBAR (IN as) (IN if)
+          (S
+            (NP
+              (NP (DT the) (JJS best) (NNS manoeuvres))
+              (SBAR
+                (S
+                  (NP (PRP they))
+                  (VP (MD could)
+                    (VP (VB accomplish))))))
+            (VP (MD would)
+              (VP (VB be)
+                (NP (DT a) (NN manoeuvre))
+                (PP (IN into)
+                  (NP (PRP$ their) (NNS barracks)))))))))
+    (. .)))
+
+root(ROOT-0, looked-4)
+nsubj(looked-4, Horses-1)
+cc(Horses-1, and-2)
+conj:and(Horses-1, men-3)
+nsubj(looked-4, men-3)
+xcomp(looked-4, thin-5)
+punct(thin-5, ,-6)
+xcomp(looked-4, worn-7)
+conj:and(thin-5, worn-7)
+punct(thin-5, ,-8)
+xcomp(looked-4, weak-9)
+conj:and(thin-5, weak-9)
+punct(thin-5, ,-10)
+xcomp(looked-4, dirty-11)
+conj:and(thin-5, dirty-11)
+cc(thin-5, and-12)
+xcomp(looked-4, jaded-13)
+conj:and(thin-5, jaded-13)
+cc(looked-4, and-14)
+mark(manoeuvre-26, as-15)
+mwe(as-15, if-16)
+det(manoeuvres-19, the-17)
+amod(manoeuvres-19, best-18)
+nsubj(manoeuvre-26, manoeuvres-19)
+nsubj(accomplish-22, they-20)
+aux(accomplish-22, could-21)
+acl:relcl(manoeuvres-19, accomplish-22)
+aux(manoeuvre-26, would-23)
+cop(manoeuvre-26, be-24)
+det(manoeuvre-26, a-25)
+conj:and(looked-4, manoeuvre-26)
+case(barracks-29, into-27)
+nmod:poss(barracks-29, their-28)
+nmod:into(manoeuvre-26, barracks-29)
+punct(looked-4, .-30)
+
+Coreference set:
+	(2,4,[4,5]) -> (2,1,[1,2]), that is: "their" -> "They"
+	(3,1,[1,2]) -> (2,1,[1,2]), that is: "They" -> "They"
+	(4,20,[20,21]) -> (2,1,[1,2]), that is: "they" -> "They"
+	(4,28,[28,29]) -> (2,1,[1,2]), that is: "their" -> "They"

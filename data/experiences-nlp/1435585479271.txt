@@ -1,0 +1,62 @@
+Sentence #1 (20 tokens):
+Yesterday afternoon Edo de Waart Conducted "Remembering Tommy", with Lee Luvisi again and cellist Laszlo Varga.
+[Text=Yesterday CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1D INTERSECT AF Timex=<TIMEX3 alt_value="OFFSET P-1D INTERSECT AF" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Yesterday afternoon</TIMEX3>]
+[Text=afternoon CharacterOffsetBegin=10 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1D INTERSECT AF Timex=<TIMEX3 alt_value="OFFSET P-1D INTERSECT AF" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Yesterday afternoon</TIMEX3>]
+[Text=Edo CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Edo NamedEntityTag=O]
+[Text=de CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=de NamedEntityTag=O]
+[Text=Waart CharacterOffsetBegin=27 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Waart NamedEntityTag=O]
+[Text=Conducted CharacterOffsetBegin=33 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=Conducted NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Remembering CharacterOffsetBegin=44 CharacterOffsetEnd=55 PartOfSpeech=VBG Lemma=remember NamedEntityTag=O]
+[Text=Tommy CharacterOffsetBegin=56 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=Tommy NamedEntityTag=PERSON]
+[Text='' CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Lee CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Lee NamedEntityTag=PERSON]
+[Text=Luvisi CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Luvisi NamedEntityTag=PERSON]
+[Text=again CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=86 CharacterOffsetEnd=89 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=cellist CharacterOffsetBegin=90 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=cellist NamedEntityTag=O]
+[Text=Laszlo CharacterOffsetBegin=98 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=Laszlo NamedEntityTag=PERSON]
+[Text=Varga CharacterOffsetBegin=105 CharacterOffsetEnd=110 PartOfSpeech=NNP Lemma=Varga NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP-TMP (NN Yesterday))
+      (NP
+        (NP (NN afternoon) (NNP Edo) (IN de) (NNP Waart) (NNP Conducted))
+        (VP (`` ``) (VBG Remembering)
+          (NP (NNP Tommy) ('' '')))
+        (, ,)
+        (PP (IN with)
+          (NP
+            (NP (NNP Lee) (NNP Luvisi))
+            (ADVP (RB again))))))
+    (CC and)
+    (S
+      (NP (NN cellist))
+      (NP (NNP Laszlo) (NNP Varga)))
+    (. .)))
+
+root(ROOT-0, Conducted-6)
+dep(Conducted-6, Yesterday-1)
+compound(Conducted-6, afternoon-2)
+compound(Conducted-6, Edo-3)
+amod(Conducted-6, de-4)
+compound(Conducted-6, Waart-5)
+punct(Remembering-8, ``-7)
+acl(Conducted-6, Remembering-8)
+dobj(Remembering-8, Tommy-9)
+punct(Tommy-9, ''-10)
+punct(Conducted-6, ,-11)
+case(Luvisi-14, with-12)
+compound(Luvisi-14, Lee-13)
+nmod:with(Conducted-6, Luvisi-14)
+advmod(Luvisi-14, again-15)
+cc(Conducted-6, and-16)
+dep(Varga-19, cellist-17)
+compound(Varga-19, Laszlo-18)
+conj:and(Conducted-6, Varga-19)
+punct(Conducted-6, .-20)
+

@@ -1,0 +1,122 @@
+Sentence #1 (23 tokens):
+Here I am at Palma... In the day-time, sunshine; everyone goes about in summer clothes and it's hot.
+[Text=Here CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=5 CharacterOffsetEnd=6 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Palma CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Palma NamedEntityTag=LOCATION]
+[Text=... CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=day-time CharacterOffsetBegin=29 CharacterOffsetEnd=37 PartOfSpeech=JJ Lemma=day-time NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=sunshine CharacterOffsetBegin=39 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=sunshine NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=49 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=goes CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBZ Lemma=go NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=RB Lemma=about NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=summer CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=summer NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-SU Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-SU">summer</TIMEX3>]
+[Text=clothes CharacterOffsetBegin=79 CharacterOffsetEnd=86 PartOfSpeech=NNS Lemma=clothes NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=hot CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=JJ Lemma=hot NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (ADVP (RB Here))
+      (NP (PRP I))
+      (VP (VBP am)
+        (PP (IN at)
+          (NP (NNP Palma)))))
+    (: ...)
+    (S
+      (S
+        (PP (IN In)
+          (NP (DT the) (JJ day-time)))
+        (, ,)
+        (NP
+          (NP (NN sunshine))
+          (: ;)
+          (NP (NN everyone)))
+        (VP (VBZ goes)
+          (ADVP (RB about))
+          (PP (IN in)
+            (NP (NN summer) (NNS clothes)))))
+      (CC and)
+      (S
+        (NP (PRP it))
+        (VP (VBZ 's)
+          (ADJP (JJ hot)))))
+    (. .)))
+
+root(ROOT-0, Palma-5)
+advmod(Palma-5, Here-1)
+nsubj(Palma-5, I-2)
+cop(Palma-5, am-3)
+case(Palma-5, at-4)
+punct(Palma-5, ...-6)
+case(day-time-9, In-7)
+det(day-time-9, the-8)
+nmod:in(goes-14, day-time-9)
+punct(goes-14, ,-10)
+nsubj(goes-14, sunshine-11)
+punct(sunshine-11, ;-12)
+dep(sunshine-11, everyone-13)
+parataxis(Palma-5, goes-14)
+advmod(goes-14, about-15)
+case(clothes-18, in-16)
+compound(clothes-18, summer-17)
+nmod:in(goes-14, clothes-18)
+cc(goes-14, and-19)
+nsubj(hot-22, it-20)
+cop(hot-22, 's-21)
+parataxis(Palma-5, hot-22)
+conj:and(goes-14, hot-22)
+punct(Palma-5, .-23)
+
+Sentence #2 (11 tokens):
+At night, guitars and songs for hours on end.
+[Text=At CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=night CharacterOffsetBegin=104 CharacterOffsetEnd=109 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t2" type="TIME" value="TNI">night</TIMEX3>]
+[Text=, CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=guitars CharacterOffsetBegin=111 CharacterOffsetEnd=118 PartOfSpeech=NNS Lemma=guitar NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=songs CharacterOffsetBegin=123 CharacterOffsetEnd=128 PartOfSpeech=NNS Lemma=song NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=hours CharacterOffsetBegin=133 CharacterOffsetEnd=138 PartOfSpeech=NNS Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PTXH Timex=<TIMEX3 tid="t3" type="DURATION" value="PTXH">hours</TIMEX3>]
+[Text=on CharacterOffsetBegin=139 CharacterOffsetEnd=141 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=142 CharacterOffsetEnd=145 PartOfSpeech=NN Lemma=end NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN At)
+      (NP (NN night)))
+    (, ,)
+    (NP
+      (NP (NNS guitars)
+        (CC and)
+        (NNS songs))
+      (PP (IN for)
+        (NP
+          (NP (NNS hours))
+          (PP (IN on)
+            (NP (NN end))))))
+    (. .)))
+
+root(ROOT-0, guitars-4)
+case(night-2, At-1)
+nmod:at(guitars-4, night-2)
+punct(guitars-4, ,-3)
+cc(guitars-4, and-5)
+conj:and(guitars-4, songs-6)
+case(hours-8, for-7)
+nmod:for(guitars-4, hours-8)
+case(end-10, on-9)
+nmod:on(hours-8, end-10)
+punct(guitars-4, .-11)
+
+Coreference set:
+	(1,20,[20,21]) -> (1,9,[8,10]), that is: "it" -> "the day-time"

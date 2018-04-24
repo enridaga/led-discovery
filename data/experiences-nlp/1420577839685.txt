@@ -1,0 +1,99 @@
+Sentence #1 (28 tokens):
+Last night, defeated after seeing Fellini's 8½ I heard again the recorded War Requiem of Britten, and what am I but a midget!
+[Text=Last CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=JJ Lemma=last NamedEntityTag=DATE NormalizedNamedEntityTag=TNI OFFSET P-1D Timex=<TIMEX3 alt_value="TNI OFFSET P-1D" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Last night</TIMEX3>]
+[Text=night CharacterOffsetBegin=5 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=night NamedEntityTag=DATE NormalizedNamedEntityTag=TNI OFFSET P-1D Timex=<TIMEX3 alt_value="TNI OFFSET P-1D" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Last night</TIMEX3>]
+[Text=, CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=defeated CharacterOffsetBegin=12 CharacterOffsetEnd=20 PartOfSpeech=VBN Lemma=defeat NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=21 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=seeing CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=VBG Lemma=see NamedEntityTag=O]
+[Text=Fellini CharacterOffsetBegin=34 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Fellini NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=8 CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=CD Lemma=8 NamedEntityTag=NUMBER NormalizedNamedEntityTag=8.0]
+[Text=1/2 CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=CD Lemma=1/2 NamedEntityTag=NUMBER]
+[Text=I CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=recorded CharacterOffsetBegin=65 CharacterOffsetEnd=73 PartOfSpeech=VBN Lemma=record NamedEntityTag=O]
+[Text=War CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=war NamedEntityTag=O]
+[Text=Requiem CharacterOffsetBegin=78 CharacterOffsetEnd=85 PartOfSpeech=NNP Lemma=Requiem NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Britten CharacterOffsetBegin=89 CharacterOffsetEnd=96 PartOfSpeech=NNP Lemma=Britten NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=107 CharacterOffsetEnd=109 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=110 CharacterOffsetEnd=111 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=midget CharacterOffsetBegin=118 CharacterOffsetEnd=124 PartOfSpeech=NN Lemma=midget NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=124 CharacterOffsetEnd=125 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (JJ Last) (NN night))
+    (, ,)
+    (VP (VBN defeated)
+      (SBAR
+        (SBAR (IN after)
+          (S
+            (VP (VBG seeing)
+              (NP
+                (NP
+                  (NP (NNP Fellini) (POS 's))
+                  (QP (CD 8) (CD 1/2)))
+                (SBAR
+                  (S
+                    (NP (PRP I))
+                    (VP (VBD heard)
+                      (ADVP (RB again))
+                      (NP (DT the) (VBN recorded) (NN War)))))))
+            (NP-TMP
+              (NP (NNP Requiem))
+              (PP (IN of)
+                (NP (NNP Britten))))))
+        (, ,)
+        (CC and)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBP am)
+              (NP
+                (NP (PRP I))
+                (PP (CC but)
+                  (NP (DT a) (NN midget)))))))))
+    (. !)))
+
+root(ROOT-0, night-2)
+amod(night-2, Last-1)
+punct(night-2, ,-3)
+acl(night-2, defeated-4)
+mark(seeing-6, after-5)
+advcl:after(defeated-4, seeing-6)
+dobj(seeing-6, Fellini-7)
+case(Fellini-7, 's-8)
+compound(1/2-10, 8-9)
+nummod(Fellini-7, 1/2-10)
+nsubj(heard-12, I-11)
+acl:relcl(Fellini-7, heard-12)
+advmod(heard-12, again-13)
+det(War-16, the-14)
+amod(War-16, recorded-15)
+dobj(heard-12, War-16)
+dep(seeing-6, Requiem-17)
+case(Britten-19, of-18)
+nmod:of(Requiem-17, Britten-19)
+punct(seeing-6, ,-20)
+cc(seeing-6, and-21)
+nsubj(I-24, what-22)
+cop(I-24, am-23)
+advcl:after(defeated-4, I-24)
+conj:and(seeing-6, I-24)
+case(midget-27, but-25)
+det(midget-27, a-26)
+nmod:but(I-24, midget-27)
+punct(night-2, !-28)
+
+Coreference set:
+	(1,24,[24,28]) -> (1,7,[7,17]), that is: "I but a midget" -> "Fellini 's 8 1/2 I heard again the recorded War"
+Coreference set:
+	(1,24,[24,25]) -> (1,11,[11,12]), that is: "I" -> "I"

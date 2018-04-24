@@ -1,0 +1,920 @@
+Sentence #1 (6 tokens):
+The casualty lists are terrible.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=casualty CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=casualty NamedEntityTag=O]
+[Text=lists CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NNS Lemma=list NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=terrible CharacterOffsetBegin=23 CharacterOffsetEnd=31 PartOfSpeech=JJ Lemma=terrible NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=31 CharacterOffsetEnd=32 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NN casualty) (NNS lists))
+    (VP (VBP are)
+      (ADJP (JJ terrible)))
+    (. .)))
+
+root(ROOT-0, terrible-5)
+det(lists-3, The-1)
+compound(lists-3, casualty-2)
+nsubj(terrible-5, lists-3)
+cop(terrible-5, are-4)
+punct(terrible-5, .-6)
+
+Sentence #2 (11 tokens):
+In today’s there are two pairs of brothers killed.
+[Text=In CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=today CharacterOffsetBegin=36 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=today NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">today</TIMEX3>]
+[Text='s CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=54 CharacterOffsetEnd=57 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=pairs CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NNS Lemma=pair NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=brothers CharacterOffsetBegin=67 CharacterOffsetEnd=75 PartOfSpeech=NNS Lemma=brother NamedEntityTag=O]
+[Text=killed CharacterOffsetBegin=76 CharacterOffsetEnd=82 PartOfSpeech=VBN Lemma=kill NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN today) (POS 's)))
+    (NP (EX there))
+    (VP (VBP are)
+      (NP
+        (NP (CD two) (NNS pairs))
+        (PP (IN of)
+          (NP
+            (NP (NNS brothers))
+            (VP (VBN killed))))))
+    (. .)))
+
+root(ROOT-0, are-5)
+case(today-2, In-1)
+nmod:in(are-5, today-2)
+case(today-2, 's-3)
+expl(are-5, there-4)
+nummod(pairs-7, two-6)
+det:qmod(brothers-9, pairs-7)
+mwe(pairs-7, of-8)
+nsubj(are-5, brothers-9)
+acl(brothers-9, killed-10)
+punct(are-5, .-11)
+
+Sentence #3 (16 tokens):
+This battle for Calais has been most bloody; it has lasted twenty days already.
+[Text=This CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=battle CharacterOffsetBegin=89 CharacterOffsetEnd=95 PartOfSpeech=NN Lemma=battle NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Calais CharacterOffsetBegin=100 CharacterOffsetEnd=106 PartOfSpeech=NNP Lemma=Calais NamedEntityTag=LOCATION]
+[Text=has CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=111 CharacterOffsetEnd=115 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=bloody CharacterOffsetBegin=121 CharacterOffsetEnd=127 PartOfSpeech=JJ Lemma=bloody NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=129 CharacterOffsetEnd=131 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=132 CharacterOffsetEnd=135 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=lasted CharacterOffsetBegin=136 CharacterOffsetEnd=142 PartOfSpeech=VBN Lemma=last NamedEntityTag=O]
+[Text=twenty CharacterOffsetBegin=143 CharacterOffsetEnd=149 PartOfSpeech=CD Lemma=twenty NamedEntityTag=DURATION NormalizedNamedEntityTag=P20D Timex=<TIMEX3 tid="t2" type="DURATION" value="P20D">twenty days</TIMEX3>]
+[Text=days CharacterOffsetBegin=150 CharacterOffsetEnd=154 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P20D Timex=<TIMEX3 tid="t2" type="DURATION" value="P20D">twenty days</TIMEX3>]
+[Text=already CharacterOffsetBegin=155 CharacterOffsetEnd=162 PartOfSpeech=RB Lemma=already NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=162 CharacterOffsetEnd=163 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT This) (NN battle))
+        (PP (IN for)
+          (NP (NNP Calais))))
+      (VP (VBZ has)
+        (VP (VBN been)
+          (ADJP (RBS most) (JJ bloody)))))
+    (: ;)
+    (S
+      (NP (PRP it))
+      (VP (VBZ has)
+        (VP (VBN lasted)
+          (NP-TMP (CD twenty) (NNS days) (RB already)))))
+    (. .)))
+
+root(ROOT-0, bloody-8)
+det(battle-2, This-1)
+nsubj(bloody-8, battle-2)
+case(Calais-4, for-3)
+nmod:for(battle-2, Calais-4)
+aux(bloody-8, has-5)
+cop(bloody-8, been-6)
+advmod(bloody-8, most-7)
+punct(bloody-8, ;-9)
+nsubj(lasted-12, it-10)
+aux(lasted-12, has-11)
+parataxis(bloody-8, lasted-12)
+nummod(days-14, twenty-13)
+nmod:tmod(lasted-12, days-14)
+advmod(days-14, already-15)
+punct(bloody-8, .-16)
+
+Sentence #4 (23 tokens):
+It becomes more and more clear that legislation must be made to compel men to serve, if only during this war.
+[Text=It CharacterOffsetBegin=164 CharacterOffsetEnd=166 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=becomes CharacterOffsetBegin=167 CharacterOffsetEnd=174 PartOfSpeech=VBZ Lemma=become NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=175 CharacterOffsetEnd=179 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=180 CharacterOffsetEnd=183 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=clear CharacterOffsetBegin=189 CharacterOffsetEnd=194 PartOfSpeech=JJ Lemma=clear NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=195 CharacterOffsetEnd=199 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=legislation CharacterOffsetBegin=200 CharacterOffsetEnd=211 PartOfSpeech=NN Lemma=legislation NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=212 CharacterOffsetEnd=216 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=217 CharacterOffsetEnd=219 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=220 CharacterOffsetEnd=224 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=compel CharacterOffsetBegin=228 CharacterOffsetEnd=234 PartOfSpeech=VB Lemma=compel NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=235 CharacterOffsetEnd=238 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=239 CharacterOffsetEnd=241 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=serve CharacterOffsetBegin=242 CharacterOffsetEnd=247 PartOfSpeech=VB Lemma=serve NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=247 CharacterOffsetEnd=248 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=249 CharacterOffsetEnd=251 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=252 CharacterOffsetEnd=256 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=257 CharacterOffsetEnd=263 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=264 CharacterOffsetEnd=268 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=269 CharacterOffsetEnd=272 PartOfSpeech=NN Lemma=war NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=272 CharacterOffsetEnd=273 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ becomes)
+      (ADJP
+        (ADVP (RBR more)
+          (CC and)
+          (RBR more))
+        (JJ clear))
+      (SBAR (IN that)
+        (S
+          (NP (NN legislation))
+          (VP (MD must)
+            (VP (VB be)
+              (VP (VBN made)
+                (S
+                  (VP (TO to)
+                    (VP (VB compel)
+                      (NP (NNS men)
+                        (S
+                          (VP (TO to)
+                            (VP (VB serve) (, ,)
+                              (FRAG (IN if)
+                                (ADVP (RB only)))))))
+                      (PP (IN during)
+                        (NP (DT this) (NN war))))))))))))
+    (. .)))
+
+root(ROOT-0, becomes-2)
+nsubj(becomes-2, It-1)
+advmod(clear-6, more-3)
+cc(more-3, and-4)
+conj:and(more-3, more-5)
+advmod(clear-6, more-5)
+xcomp(becomes-2, clear-6)
+mark(made-11, that-7)
+nsubjpass(made-11, legislation-8)
+nsubj:xsubj(compel-13, legislation-8)
+aux(made-11, must-9)
+auxpass(made-11, be-10)
+ccomp(becomes-2, made-11)
+mark(compel-13, to-12)
+xcomp(made-11, compel-13)
+dobj(compel-13, men-14)
+mark(serve-16, to-15)
+acl:to(men-14, serve-16)
+punct(serve-16, ,-17)
+dep(serve-16, if-18)
+dep(if-18, only-19)
+case(war-22, during-20)
+det(war-22, this-21)
+nmod:during(compel-13, war-22)
+punct(becomes-2, .-23)
+
+Sentence #5 (23 tokens):
+Our Army will be extinct if it is not reinforced... Much more should be published about the real state of affairs.
+[Text=Our CharacterOffsetBegin=274 CharacterOffsetEnd=277 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=Army CharacterOffsetBegin=278 CharacterOffsetEnd=282 PartOfSpeech=NNP Lemma=Army NamedEntityTag=ORGANIZATION]
+[Text=will CharacterOffsetBegin=283 CharacterOffsetEnd=287 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=288 CharacterOffsetEnd=290 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=extinct CharacterOffsetBegin=291 CharacterOffsetEnd=298 PartOfSpeech=JJ Lemma=extinct NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=299 CharacterOffsetEnd=301 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=302 CharacterOffsetEnd=304 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=305 CharacterOffsetEnd=307 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=308 CharacterOffsetEnd=311 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=reinforced CharacterOffsetBegin=312 CharacterOffsetEnd=322 PartOfSpeech=VBN Lemma=reinforce NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=322 CharacterOffsetEnd=325 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=Much CharacterOffsetBegin=326 CharacterOffsetEnd=330 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=331 CharacterOffsetEnd=335 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=336 CharacterOffsetEnd=342 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=343 CharacterOffsetEnd=345 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=published CharacterOffsetBegin=346 CharacterOffsetEnd=355 PartOfSpeech=VBN Lemma=publish NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=356 CharacterOffsetEnd=361 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=362 CharacterOffsetEnd=365 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=real CharacterOffsetBegin=366 CharacterOffsetEnd=370 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=state CharacterOffsetBegin=371 CharacterOffsetEnd=376 PartOfSpeech=NN Lemma=state NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=377 CharacterOffsetEnd=379 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=affairs CharacterOffsetBegin=380 CharacterOffsetEnd=387 PartOfSpeech=NNS Lemma=affair NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=387 CharacterOffsetEnd=388 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP$ Our) (NNP Army))
+      (VP (MD will)
+        (VP (VB be)
+          (ADJP (JJ extinct))
+          (SBAR (IN if)
+            (S
+              (NP (PRP it))
+              (VP (VBZ is) (RB not)
+                (ADJP (VBN reinforced))))))))
+    (: ...)
+    (S
+      (NP (JJ Much))
+      (ADVP (RBR more))
+      (VP (MD should)
+        (VP (VB be)
+          (VP (VBN published)
+            (PP (IN about)
+              (NP
+                (NP (DT the) (JJ real) (NN state))
+                (PP (IN of)
+                  (NP (NNS affairs)))))))))
+    (. .)))
+
+root(ROOT-0, extinct-5)
+nmod:poss(Army-2, Our-1)
+nsubj(extinct-5, Army-2)
+aux(extinct-5, will-3)
+cop(extinct-5, be-4)
+mark(reinforced-10, if-6)
+nsubjpass(reinforced-10, it-7)
+auxpass(reinforced-10, is-8)
+neg(reinforced-10, not-9)
+advcl:if(extinct-5, reinforced-10)
+punct(extinct-5, ...-11)
+nsubjpass(published-16, Much-12)
+advmod(published-16, more-13)
+aux(published-16, should-14)
+auxpass(published-16, be-15)
+parataxis(extinct-5, published-16)
+case(state-20, about-17)
+det(state-20, the-18)
+amod(state-20, real-19)
+nmod:about(published-16, state-20)
+case(affairs-22, of-21)
+nmod:of(state-20, affairs-22)
+punct(extinct-5, .-23)
+
+Sentence #6 (22 tokens):
+Recruiting should be carried on more picturesquely, with musical displays etc, so as to appeal to our stolid fellows.
+[Text=Recruiting CharacterOffsetBegin=389 CharacterOffsetEnd=399 PartOfSpeech=VBG Lemma=recruit NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=400 CharacterOffsetEnd=406 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=407 CharacterOffsetEnd=409 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=carried CharacterOffsetBegin=410 CharacterOffsetEnd=417 PartOfSpeech=VBN Lemma=carry NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=418 CharacterOffsetEnd=420 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=421 CharacterOffsetEnd=425 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=picturesquely CharacterOffsetBegin=426 CharacterOffsetEnd=439 PartOfSpeech=RB Lemma=picturesquely NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=439 CharacterOffsetEnd=440 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=441 CharacterOffsetEnd=445 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=musical CharacterOffsetBegin=446 CharacterOffsetEnd=453 PartOfSpeech=JJ Lemma=musical NamedEntityTag=O]
+[Text=displays CharacterOffsetBegin=454 CharacterOffsetEnd=462 PartOfSpeech=NNS Lemma=display NamedEntityTag=O]
+[Text=etc CharacterOffsetBegin=463 CharacterOffsetEnd=466 PartOfSpeech=FW Lemma=etc NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=466 CharacterOffsetEnd=467 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=468 CharacterOffsetEnd=470 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=471 CharacterOffsetEnd=473 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=474 CharacterOffsetEnd=476 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=appeal CharacterOffsetBegin=477 CharacterOffsetEnd=483 PartOfSpeech=VB Lemma=appeal NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=484 CharacterOffsetEnd=486 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=487 CharacterOffsetEnd=490 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=stolid CharacterOffsetBegin=491 CharacterOffsetEnd=497 PartOfSpeech=JJ Lemma=stolid NamedEntityTag=O]
+[Text=fellows CharacterOffsetBegin=498 CharacterOffsetEnd=505 PartOfSpeech=NNS Lemma=fellow NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=505 CharacterOffsetEnd=506 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (VBG Recruiting))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN carried)
+          (PP (IN on)
+            (NP
+              (NP (JJR more))
+              (ADVP (RB picturesquely))))
+          (, ,)
+          (PP (IN with)
+            (NP
+              (NP (JJ musical) (NNS displays)
+                (NX (FW etc)))
+              (PRN (, ,)
+                (ADVP (RB so))
+                (ADJP (IN as)
+                  (S
+                    (VP (TO to)
+                      (VP (VB appeal)
+                        (PP (TO to)
+                          (NP (PRP$ our) (JJ stolid) (NNS fellows)))))))))))))
+    (. .)))
+
+root(ROOT-0, carried-4)
+nsubjpass(carried-4, Recruiting-1)
+aux(carried-4, should-2)
+auxpass(carried-4, be-3)
+case(more-6, on-5)
+nmod:on(carried-4, more-6)
+advmod(more-6, picturesquely-7)
+punct(carried-4, ,-8)
+case(etc-12, with-9)
+amod(etc-12, musical-10)
+dep(etc-12, displays-11)
+nmod:with(carried-4, etc-12)
+punct(as-15, ,-13)
+dep(as-15, so-14)
+dep(etc-12, as-15)
+mark(appeal-17, to-16)
+xcomp(as-15, appeal-17)
+case(fellows-21, to-18)
+nmod:poss(fellows-21, our-19)
+amod(fellows-21, stolid-20)
+nmod:to(appeal-17, fellows-21)
+punct(carried-4, .-22)
+
+Sentence #7 (33 tokens):
+This morning I took you to the Park in your pram with Nannie to see the parade and departure of the Sportsmen’s Battalion for their camp, preparatory to going abroad.
+[Text=This CharacterOffsetBegin=511 CharacterOffsetEnd=515 PartOfSpeech=DT Lemma=this NamedEntityTag=DATE NormalizedNamedEntityTag=THIS MO Timex=<TIMEX3 alt_value="THIS MO" anchorTimeID="t0" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf1">This morning</TIMEX3>]
+[Text=morning CharacterOffsetBegin=516 CharacterOffsetEnd=523 PartOfSpeech=NN Lemma=morning NamedEntityTag=DATE NormalizedNamedEntityTag=THIS MO Timex=<TIMEX3 alt_value="THIS MO" anchorTimeID="t0" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf1">This morning</TIMEX3>]
+[Text=I CharacterOffsetBegin=524 CharacterOffsetEnd=525 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=took CharacterOffsetBegin=526 CharacterOffsetEnd=530 PartOfSpeech=VBD Lemma=take NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=531 CharacterOffsetEnd=534 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=535 CharacterOffsetEnd=537 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=538 CharacterOffsetEnd=541 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Park CharacterOffsetBegin=542 CharacterOffsetEnd=546 PartOfSpeech=NN Lemma=park NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=547 CharacterOffsetEnd=549 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=550 CharacterOffsetEnd=554 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=pram CharacterOffsetBegin=555 CharacterOffsetEnd=559 PartOfSpeech=NN Lemma=pram NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=560 CharacterOffsetEnd=564 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Nannie CharacterOffsetBegin=565 CharacterOffsetEnd=571 PartOfSpeech=NN Lemma=nannie NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=572 CharacterOffsetEnd=574 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=see CharacterOffsetBegin=575 CharacterOffsetEnd=578 PartOfSpeech=VB Lemma=see NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=579 CharacterOffsetEnd=582 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=parade CharacterOffsetBegin=583 CharacterOffsetEnd=589 PartOfSpeech=NN Lemma=parade NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=590 CharacterOffsetEnd=593 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=departure CharacterOffsetBegin=594 CharacterOffsetEnd=603 PartOfSpeech=NN Lemma=departure NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=604 CharacterOffsetEnd=606 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=607 CharacterOffsetEnd=610 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Sportsmen CharacterOffsetBegin=611 CharacterOffsetEnd=620 PartOfSpeech=NNP Lemma=Sportsmen NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=620 CharacterOffsetEnd=622 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Battalion CharacterOffsetBegin=623 CharacterOffsetEnd=632 PartOfSpeech=NNP Lemma=Battalion NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=633 CharacterOffsetEnd=636 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=637 CharacterOffsetEnd=642 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=camp CharacterOffsetBegin=643 CharacterOffsetEnd=647 PartOfSpeech=NN Lemma=camp NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=647 CharacterOffsetEnd=648 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=preparatory CharacterOffsetBegin=649 CharacterOffsetEnd=660 PartOfSpeech=JJ Lemma=preparatory NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=661 CharacterOffsetEnd=663 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=664 CharacterOffsetEnd=669 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=abroad CharacterOffsetBegin=670 CharacterOffsetEnd=676 PartOfSpeech=RB Lemma=abroad NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=676 CharacterOffsetEnd=677 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (DT This) (NN morning))
+    (NP (PRP I))
+    (VP (VBD took)
+      (NP (PRP you))
+      (PP (TO to)
+        (NP
+          (NP (DT the) (NN Park))
+          (PP (IN in)
+            (NP
+              (NP (PRP$ your) (NN pram))
+              (PP (IN with)
+                (NP (NN Nannie)))))))
+      (S
+        (VP (TO to)
+          (VP (VB see)
+            (NP
+              (NP (DT the) (NN parade)
+                (CC and)
+                (NN departure))
+              (PP (IN of)
+                (NP
+                  (NP
+                    (NP (DT the) (NNP Sportsmen) (POS 's))
+                    (NNP Battalion))
+                  (PP (IN for)
+                    (NP (PRP$ their) (NN camp)))))))))
+      (, ,)
+      (S
+        (ADJP (JJ preparatory)
+          (PP (TO to)
+            (S
+              (VP (VBG going)
+                (ADVP (RB abroad))))))))
+    (. .)))
+
+root(ROOT-0, took-4)
+det(morning-2, This-1)
+nmod:tmod(took-4, morning-2)
+nsubj(took-4, I-3)
+dobj(took-4, you-5)
+case(Park-8, to-6)
+det(Park-8, the-7)
+nmod:to(took-4, Park-8)
+case(pram-11, in-9)
+nmod:poss(pram-11, your-10)
+nmod:in(Park-8, pram-11)
+case(Nannie-13, with-12)
+nmod:with(pram-11, Nannie-13)
+mark(see-15, to-14)
+advcl:to(took-4, see-15)
+det(parade-17, the-16)
+dobj(see-15, parade-17)
+cc(parade-17, and-18)
+dobj(see-15, departure-19)
+conj:and(parade-17, departure-19)
+case(Battalion-24, of-20)
+det(Sportsmen-22, the-21)
+nmod:poss(Battalion-24, Sportsmen-22)
+case(Sportsmen-22, 's-23)
+nmod:of(parade-17, Battalion-24)
+case(camp-27, for-25)
+nmod:poss(camp-27, their-26)
+nmod:for(Battalion-24, camp-27)
+punct(took-4, ,-28)
+xcomp(took-4, preparatory-29)
+mark(going-31, to-30)
+advcl:to(preparatory-29, going-31)
+advmod(going-31, abroad-32)
+punct(took-4, .-33)
+
+Sentence #8 (28 tokens):
+This splendid corps is composed of athletes and sporting men up to the age of forty five, who can shoot, ride and do other sport.
+[Text=This CharacterOffsetBegin=678 CharacterOffsetEnd=682 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=splendid CharacterOffsetBegin=683 CharacterOffsetEnd=691 PartOfSpeech=JJ Lemma=splendid NamedEntityTag=O]
+[Text=corps CharacterOffsetBegin=692 CharacterOffsetEnd=697 PartOfSpeech=NN Lemma=corps NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=698 CharacterOffsetEnd=700 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=composed CharacterOffsetBegin=701 CharacterOffsetEnd=709 PartOfSpeech=VBN Lemma=compose NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=710 CharacterOffsetEnd=712 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=athletes CharacterOffsetBegin=713 CharacterOffsetEnd=721 PartOfSpeech=NNS Lemma=athlete NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=722 CharacterOffsetEnd=725 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sporting CharacterOffsetBegin=726 CharacterOffsetEnd=734 PartOfSpeech=VBG Lemma=sport NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=735 CharacterOffsetEnd=738 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=739 CharacterOffsetEnd=741 PartOfSpeech=IN Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=742 CharacterOffsetEnd=744 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=745 CharacterOffsetEnd=748 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=age CharacterOffsetBegin=749 CharacterOffsetEnd=752 PartOfSpeech=NN Lemma=age NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=753 CharacterOffsetEnd=755 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=forty CharacterOffsetBegin=756 CharacterOffsetEnd=761 PartOfSpeech=CD Lemma=forty NamedEntityTag=NUMBER NormalizedNamedEntityTag=45.0]
+[Text=five CharacterOffsetBegin=762 CharacterOffsetEnd=766 PartOfSpeech=CD Lemma=five NamedEntityTag=NUMBER NormalizedNamedEntityTag=45.0]
+[Text=, CharacterOffsetBegin=766 CharacterOffsetEnd=767 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=768 CharacterOffsetEnd=771 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=772 CharacterOffsetEnd=775 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=shoot CharacterOffsetBegin=776 CharacterOffsetEnd=781 PartOfSpeech=VB Lemma=shoot NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=781 CharacterOffsetEnd=782 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=ride CharacterOffsetBegin=783 CharacterOffsetEnd=787 PartOfSpeech=VB Lemma=ride NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=788 CharacterOffsetEnd=791 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=792 CharacterOffsetEnd=794 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=795 CharacterOffsetEnd=800 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=sport CharacterOffsetBegin=801 CharacterOffsetEnd=806 PartOfSpeech=NN Lemma=sport NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=806 CharacterOffsetEnd=807 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT This) (JJ splendid) (NN corps))
+    (VP (VBZ is)
+      (VP
+        (VP (VBN composed)
+          (PP (IN of)
+            (NP (NNS athletes))))
+        (CC and)
+        (VP (VBG sporting)
+          (NP
+            (NP (NNS men))
+            (ADVP (IN up)
+              (PP (TO to)
+                (NP
+                  (NP (DT the) (NN age))
+                  (PP (IN of)
+                    (NP (CD forty) (CD five)))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (MD can)
+                        (VP (VB shoot) (, ,) (VB ride)
+                          (CC and)
+                          (VB do)
+                          (NP (JJ other) (NN sport)))))))))))))
+    (. .)))
+
+root(ROOT-0, composed-5)
+det(corps-3, This-1)
+amod(corps-3, splendid-2)
+nsubjpass(composed-5, corps-3)
+nsubjpass(sporting-9, corps-3)
+auxpass(composed-5, is-4)
+case(athletes-7, of-6)
+nmod:of(composed-5, athletes-7)
+cc(composed-5, and-8)
+conj:and(composed-5, sporting-9)
+dobj(sporting-9, men-10)
+advmod(men-10, up-11)
+case(age-14, to-12)
+det(age-14, the-13)
+nmod:to(up-11, age-14)
+nsubj(shoot-21, age-14)
+nsubj(ride-23, age-14)
+nsubj(do-25, age-14)
+case(five-17, of-15)
+nummod(five-17, forty-16)
+nmod:of(age-14, five-17)
+punct(age-14, ,-18)
+ref(age-14, who-19)
+aux(shoot-21, can-20)
+acl:relcl(age-14, shoot-21)
+punct(shoot-21, ,-22)
+acl:relcl(age-14, ride-23)
+conj:and(shoot-21, ride-23)
+cc(shoot-21, and-24)
+acl:relcl(age-14, do-25)
+conj:and(shoot-21, do-25)
+amod(sport-27, other-26)
+dobj(shoot-21, sport-27)
+punct(composed-5, .-28)
+
+Sentence #9 (18 tokens):
+They were such handsome big fellows, there are gentlemen and non-gentlemen, trainers and jockeys too.
+[Text=They CharacterOffsetBegin=808 CharacterOffsetEnd=812 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=813 CharacterOffsetEnd=817 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=818 CharacterOffsetEnd=822 PartOfSpeech=JJ Lemma=such NamedEntityTag=O]
+[Text=handsome CharacterOffsetBegin=823 CharacterOffsetEnd=831 PartOfSpeech=JJ Lemma=handsome NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=832 CharacterOffsetEnd=835 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=fellows CharacterOffsetBegin=836 CharacterOffsetEnd=843 PartOfSpeech=NNS Lemma=fellow NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=843 CharacterOffsetEnd=844 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=845 CharacterOffsetEnd=850 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=851 CharacterOffsetEnd=854 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=gentlemen CharacterOffsetBegin=855 CharacterOffsetEnd=864 PartOfSpeech=NNS Lemma=gentleman NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=865 CharacterOffsetEnd=868 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=non-gentlemen CharacterOffsetBegin=869 CharacterOffsetEnd=882 PartOfSpeech=JJ Lemma=non-gentlemen NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=882 CharacterOffsetEnd=883 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=trainers CharacterOffsetBegin=884 CharacterOffsetEnd=892 PartOfSpeech=NNS Lemma=trainer NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=893 CharacterOffsetEnd=896 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=jockeys CharacterOffsetBegin=897 CharacterOffsetEnd=904 PartOfSpeech=NNS Lemma=jockey NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=905 CharacterOffsetEnd=908 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=908 CharacterOffsetEnd=909 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBD were)
+        (NP (JJ such) (JJ handsome) (JJ big) (NNS fellows))))
+    (, ,)
+    (NP (EX there))
+    (VP (VBP are)
+      (NP
+        (NP (NNS gentlemen))
+        (CC and)
+        (NP (JJ non-gentlemen) (, ,) (NNS trainers)
+          (CC and)
+          (NNS jockeys)))
+      (ADVP (RB too)))
+    (. .)))
+
+root(ROOT-0, are-9)
+nsubj(fellows-6, They-1)
+cop(fellows-6, were-2)
+amod(fellows-6, such-3)
+amod(fellows-6, handsome-4)
+amod(fellows-6, big-5)
+ccomp(are-9, fellows-6)
+punct(are-9, ,-7)
+expl(are-9, there-8)
+nsubj(are-9, gentlemen-10)
+cc(gentlemen-10, and-11)
+nsubj(are-9, non-gentlemen-12)
+conj:and(gentlemen-10, non-gentlemen-12)
+punct(non-gentlemen-12, ,-13)
+conj:and(gentlemen-10, trainers-14)
+conj:and(non-gentlemen-12, trainers-14)
+cc(non-gentlemen-12, and-15)
+conj:and(gentlemen-10, jockeys-16)
+conj:and(non-gentlemen-12, jockeys-16)
+advmod(are-9, too-17)
+punct(are-9, .-18)
+
+Sentence #10 (16 tokens):
+There was a big band to accompany them on their march to Liverpool Street Station.
+[Text=There CharacterOffsetBegin=910 CharacterOffsetEnd=915 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=916 CharacterOffsetEnd=919 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=920 CharacterOffsetEnd=921 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=big CharacterOffsetBegin=922 CharacterOffsetEnd=925 PartOfSpeech=JJ Lemma=big NamedEntityTag=O]
+[Text=band CharacterOffsetBegin=926 CharacterOffsetEnd=930 PartOfSpeech=NN Lemma=band NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=931 CharacterOffsetEnd=933 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=accompany CharacterOffsetBegin=934 CharacterOffsetEnd=943 PartOfSpeech=VB Lemma=accompany NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=944 CharacterOffsetEnd=948 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=949 CharacterOffsetEnd=951 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=952 CharacterOffsetEnd=957 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=march CharacterOffsetBegin=958 CharacterOffsetEnd=963 PartOfSpeech=NN Lemma=march NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-03 Timex=<TIMEX3 tid="t4" type="DATE" value="XXXX-03">march</TIMEX3>]
+[Text=to CharacterOffsetBegin=964 CharacterOffsetEnd=966 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Liverpool CharacterOffsetBegin=967 CharacterOffsetEnd=976 PartOfSpeech=NNP Lemma=Liverpool NamedEntityTag=LOCATION]
+[Text=Street CharacterOffsetBegin=977 CharacterOffsetEnd=983 PartOfSpeech=NNP Lemma=Street NamedEntityTag=LOCATION]
+[Text=Station CharacterOffsetBegin=984 CharacterOffsetEnd=991 PartOfSpeech=NNP Lemma=Station NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=991 CharacterOffsetEnd=992 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD was)
+      (NP (DT a) (JJ big) (NN band)
+        (S
+          (VP (TO to)
+            (VP (VB accompany)
+              (NP (PRP them))
+              (PP (IN on)
+                (NP (PRP$ their) (NN march)))
+              (PP (TO to)
+                (NP (NNP Liverpool) (NNP Street) (NNP Station))))))))
+    (. .)))
+
+root(ROOT-0, was-2)
+expl(was-2, There-1)
+det(band-5, a-3)
+amod(band-5, big-4)
+nsubj(was-2, band-5)
+mark(accompany-7, to-6)
+acl:to(band-5, accompany-7)
+dobj(accompany-7, them-8)
+case(march-11, on-9)
+nmod:poss(march-11, their-10)
+nmod:on(accompany-7, march-11)
+case(Station-15, to-12)
+compound(Station-15, Liverpool-13)
+compound(Station-15, Street-14)
+nmod:to(accompany-7, Station-15)
+punct(was-2, .-16)
+
+Sentence #11 (28 tokens):
+When the band struck up, as they left the Parade Ground, you got very excited, my pet, and waved your little gloved hands.
+[Text=When CharacterOffsetBegin=998 CharacterOffsetEnd=1002 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1003 CharacterOffsetEnd=1006 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=band CharacterOffsetBegin=1007 CharacterOffsetEnd=1011 PartOfSpeech=NN Lemma=band NamedEntityTag=O]
+[Text=struck CharacterOffsetBegin=1012 CharacterOffsetEnd=1018 PartOfSpeech=VBD Lemma=strike NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=1019 CharacterOffsetEnd=1021 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1021 CharacterOffsetEnd=1022 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=1023 CharacterOffsetEnd=1025 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=1026 CharacterOffsetEnd=1030 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=1031 CharacterOffsetEnd=1035 PartOfSpeech=VBD Lemma=leave NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1036 CharacterOffsetEnd=1039 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Parade CharacterOffsetBegin=1040 CharacterOffsetEnd=1046 PartOfSpeech=NNP Lemma=Parade NamedEntityTag=O]
+[Text=Ground CharacterOffsetBegin=1047 CharacterOffsetEnd=1053 PartOfSpeech=NNP Lemma=Ground NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1053 CharacterOffsetEnd=1054 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=1055 CharacterOffsetEnd=1058 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=got CharacterOffsetBegin=1059 CharacterOffsetEnd=1062 PartOfSpeech=VBD Lemma=get NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=1063 CharacterOffsetEnd=1067 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=excited CharacterOffsetBegin=1068 CharacterOffsetEnd=1075 PartOfSpeech=JJ Lemma=excited NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1075 CharacterOffsetEnd=1076 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=1077 CharacterOffsetEnd=1079 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=pet CharacterOffsetBegin=1080 CharacterOffsetEnd=1083 PartOfSpeech=NN Lemma=pet NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1083 CharacterOffsetEnd=1084 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1085 CharacterOffsetEnd=1088 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=waved CharacterOffsetBegin=1089 CharacterOffsetEnd=1094 PartOfSpeech=VBD Lemma=wave NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=1095 CharacterOffsetEnd=1099 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=1100 CharacterOffsetEnd=1106 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=gloved CharacterOffsetBegin=1107 CharacterOffsetEnd=1113 PartOfSpeech=JJ Lemma=gloved NamedEntityTag=O]
+[Text=hands CharacterOffsetBegin=1114 CharacterOffsetEnd=1119 PartOfSpeech=NNS Lemma=hand NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1119 CharacterOffsetEnd=1120 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (DT the) (NN band))
+        (VP (VBD struck)
+          (PRT (RP up))
+          (, ,)
+          (SBAR (IN as)
+            (S
+              (NP (PRP they))
+              (VP (VBD left)
+                (NP (DT the) (NNP Parade) (NNP Ground))))))))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBD got)
+      (ADJP (RB very) (JJ excited))
+      (, ,)
+      (S
+        (NP (PRP$ my) (NN pet))))
+    (, ,)
+    (CC and)
+    (VP (VBD waved)
+      (NP (PRP$ your) (JJ little) (JJ gloved) (NNS hands)))
+    (. .)))
+
+root(ROOT-0, got-15)
+advmod(struck-4, When-1)
+det(band-3, the-2)
+nsubj(struck-4, band-3)
+advcl(got-15, struck-4)
+compound:prt(struck-4, up-5)
+punct(struck-4, ,-6)
+mark(left-9, as-7)
+nsubj(left-9, they-8)
+advcl:as(struck-4, left-9)
+det(Ground-12, the-10)
+compound(Ground-12, Parade-11)
+dobj(left-9, Ground-12)
+punct(got-15, ,-13)
+nsubj(got-15, you-14)
+nsubj(waved-23, you-14)
+advmod(excited-17, very-16)
+xcomp(got-15, excited-17)
+punct(got-15, ,-18)
+nmod:poss(pet-20, my-19)
+xcomp(got-15, pet-20)
+punct(got-15, ,-21)
+cc(got-15, and-22)
+conj:and(got-15, waved-23)
+nmod:poss(hands-27, your-24)
+amod(hands-27, little-25)
+amod(hands-27, gloved-26)
+dobj(waved-23, hands-27)
+punct(got-15, .-28)
+
+Sentence #12 (20 tokens):
+Your pram was very soon left behind in the crowd, for your Mummy started marching alongside the battalion.
+[Text=Your CharacterOffsetBegin=1121 CharacterOffsetEnd=1125 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=pram CharacterOffsetBegin=1126 CharacterOffsetEnd=1130 PartOfSpeech=NN Lemma=pram NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=1131 CharacterOffsetEnd=1134 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=1135 CharacterOffsetEnd=1139 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=soon CharacterOffsetBegin=1140 CharacterOffsetEnd=1144 PartOfSpeech=RB Lemma=soon NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=1145 CharacterOffsetEnd=1149 PartOfSpeech=VBN Lemma=leave NamedEntityTag=O]
+[Text=behind CharacterOffsetBegin=1150 CharacterOffsetEnd=1156 PartOfSpeech=IN Lemma=behind NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1157 CharacterOffsetEnd=1159 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1160 CharacterOffsetEnd=1163 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=crowd CharacterOffsetBegin=1164 CharacterOffsetEnd=1169 PartOfSpeech=NN Lemma=crowd NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1169 CharacterOffsetEnd=1170 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1171 CharacterOffsetEnd=1174 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=1175 CharacterOffsetEnd=1179 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=Mummy CharacterOffsetBegin=1180 CharacterOffsetEnd=1185 PartOfSpeech=NN Lemma=mummy NamedEntityTag=O]
+[Text=started CharacterOffsetBegin=1186 CharacterOffsetEnd=1193 PartOfSpeech=VBD Lemma=start NamedEntityTag=O]
+[Text=marching CharacterOffsetBegin=1194 CharacterOffsetEnd=1202 PartOfSpeech=VBG Lemma=march NamedEntityTag=O]
+[Text=alongside CharacterOffsetBegin=1203 CharacterOffsetEnd=1212 PartOfSpeech=IN Lemma=alongside NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1213 CharacterOffsetEnd=1216 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=battalion CharacterOffsetBegin=1217 CharacterOffsetEnd=1226 PartOfSpeech=NN Lemma=battalion NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1226 CharacterOffsetEnd=1227 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP$ Your) (NN pram))
+    (VP (VBD was)
+      (ADVP (RB very) (RB soon))
+      (VP (VBN left)
+        (PP (IN behind) (IN in)
+          (NP
+            (NP (DT the) (NN crowd))
+            (, ,)
+            (SBAR (IN for)
+              (S
+                (NP (PRP$ your) (NN Mummy))
+                (VP (VBD started)
+                  (S
+                    (VP (VBG marching)
+                      (PP (IN alongside)
+                        (NP (DT the) (NN battalion))))))))))))
+    (. .)))
+
+root(ROOT-0, left-6)
+nmod:poss(pram-2, Your-1)
+nsubjpass(left-6, pram-2)
+auxpass(left-6, was-3)
+advmod(soon-5, very-4)
+advmod(left-6, soon-5)
+case(crowd-10, behind-7)
+case(crowd-10, in-8)
+det(crowd-10, the-9)
+nmod:in(left-6, crowd-10)
+punct(crowd-10, ,-11)
+mark(started-15, for-12)
+nmod:poss(Mummy-14, your-13)
+nsubj(started-15, Mummy-14)
+acl:relcl(crowd-10, started-15)
+xcomp(started-15, marching-16)
+case(battalion-19, alongside-17)
+det(battalion-19, the-18)
+nmod:alongside(marching-16, battalion-19)
+punct(left-6, .-20)
+
+Sentence #13 (29 tokens):
+Granny came too, and she and I accompanied the men from the Knightsbridge Barracks Parade to Hyde Park Corner, Mummy’s eyes streaming all the way.
+[Text=Granny CharacterOffsetBegin=1228 CharacterOffsetEnd=1234 PartOfSpeech=NNP Lemma=Granny NamedEntityTag=PERSON]
+[Text=came CharacterOffsetBegin=1235 CharacterOffsetEnd=1239 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=1240 CharacterOffsetEnd=1243 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1243 CharacterOffsetEnd=1244 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1245 CharacterOffsetEnd=1248 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=1249 CharacterOffsetEnd=1252 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1253 CharacterOffsetEnd=1256 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=1257 CharacterOffsetEnd=1258 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=accompanied CharacterOffsetBegin=1259 CharacterOffsetEnd=1270 PartOfSpeech=VBD Lemma=accompany NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1271 CharacterOffsetEnd=1274 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=1275 CharacterOffsetEnd=1278 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=1279 CharacterOffsetEnd=1283 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1284 CharacterOffsetEnd=1287 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Knightsbridge CharacterOffsetBegin=1288 CharacterOffsetEnd=1301 PartOfSpeech=NNP Lemma=Knightsbridge NamedEntityTag=ORGANIZATION]
+[Text=Barracks CharacterOffsetBegin=1302 CharacterOffsetEnd=1310 PartOfSpeech=NNP Lemma=Barracks NamedEntityTag=ORGANIZATION]
+[Text=Parade CharacterOffsetBegin=1311 CharacterOffsetEnd=1317 PartOfSpeech=NNP Lemma=Parade NamedEntityTag=ORGANIZATION]
+[Text=to CharacterOffsetBegin=1318 CharacterOffsetEnd=1320 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Hyde CharacterOffsetBegin=1321 CharacterOffsetEnd=1325 PartOfSpeech=NNP Lemma=Hyde NamedEntityTag=LOCATION]
+[Text=Park CharacterOffsetBegin=1326 CharacterOffsetEnd=1330 PartOfSpeech=NNP Lemma=Park NamedEntityTag=LOCATION]
+[Text=Corner CharacterOffsetBegin=1331 CharacterOffsetEnd=1337 PartOfSpeech=NN Lemma=corner NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=1337 CharacterOffsetEnd=1338 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Mummy CharacterOffsetBegin=1339 CharacterOffsetEnd=1344 PartOfSpeech=NNP Lemma=Mummy NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=1344 CharacterOffsetEnd=1346 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=eyes CharacterOffsetBegin=1347 CharacterOffsetEnd=1351 PartOfSpeech=NNS Lemma=eye NamedEntityTag=O]
+[Text=streaming CharacterOffsetBegin=1352 CharacterOffsetEnd=1361 PartOfSpeech=NN Lemma=streaming NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=1362 CharacterOffsetEnd=1365 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1366 CharacterOffsetEnd=1369 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=way CharacterOffsetBegin=1370 CharacterOffsetEnd=1373 PartOfSpeech=NN Lemma=way NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1373 CharacterOffsetEnd=1374 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Granny))
+      (VP (VBD came)
+        (ADVP (RB too))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP she)
+        (CC and)
+        (PRP I))
+      (VP (VBD accompanied)
+        (NP (DT the) (NNS men))
+        (PP (IN from)
+          (NP (DT the) (NNP Knightsbridge) (NNP Barracks) (NNP Parade)))
+        (PP (TO to)
+          (NP
+            (NP (NNP Hyde) (NNP Park) (NN Corner))
+            (, ,)
+            (NP
+              (NP
+                (NP (NNP Mummy) (POS 's))
+                (NNS eyes) (NN streaming))
+              (NP (PDT all) (DT the) (NN way)))))))
+    (. .)))
+
+root(ROOT-0, came-2)
+nsubj(came-2, Granny-1)
+advmod(came-2, too-3)
+punct(came-2, ,-4)
+cc(came-2, and-5)
+nsubj(accompanied-9, she-6)
+cc(she-6, and-7)
+conj:and(she-6, I-8)
+nsubj(accompanied-9, I-8)
+conj:and(came-2, accompanied-9)
+det(men-11, the-10)
+dobj(accompanied-9, men-11)
+case(Parade-16, from-12)
+det(Parade-16, the-13)
+compound(Parade-16, Knightsbridge-14)
+compound(Parade-16, Barracks-15)
+nmod:from(accompanied-9, Parade-16)
+case(Corner-20, to-17)
+compound(Corner-20, Hyde-18)
+compound(Corner-20, Park-19)
+nmod:to(accompanied-9, Corner-20)
+punct(Corner-20, ,-21)
+nmod:poss(streaming-25, Mummy-22)
+case(Mummy-22, 's-23)
+compound(streaming-25, eyes-24)
+appos(Corner-20, streaming-25)
+det:predet(way-28, all-26)
+det(way-28, the-27)
+dep(streaming-25, way-28)
+punct(came-2, .-29)
+
+Coreference set:
+	(3,10,[10,11]) -> (3,2,[1,5]), that is: "it" -> "This battle for Calais"
+Coreference set:
+	(5,7,[7,8]) -> (5,2,[1,3]), that is: "it" -> "Our Army"
+Coreference set:
+	(6,19,[19,20]) -> (5,1,[1,2]), that is: "our" -> "Our"
+Coreference set:
+	(7,26,[26,27]) -> (6,21,[19,22]), that is: "their" -> "our stolid fellows"
+Coreference set:
+	(11,19,[19,20]) -> (7,3,[3,4]), that is: "my" -> "I"
+	(13,8,[8,9]) -> (7,3,[3,4]), that is: "I" -> "I"
+Coreference set:
+	(12,2,[1,3]) -> (7,11,[10,14]), that is: "Your pram" -> "your pram with Nannie"
+Coreference set:
+	(12,19,[18,20]) -> (7,24,[21,28]), that is: "the battalion" -> "the Sportsmen 's Battalion for their camp"
+Coreference set:
+	(9,1,[1,2]) -> (8,7,[7,8]), that is: "They" -> "athletes"
+	(10,8,[8,9]) -> (8,7,[7,8]), that is: "them" -> "athletes"
+	(10,10,[10,11]) -> (8,7,[7,8]), that is: "their" -> "athletes"
+	(11,8,[8,9]) -> (8,7,[7,8]), that is: "they" -> "athletes"
+Coreference set:
+	(8,10,[10,28]) -> (13,11,[10,12]), that is: "men up to the age of forty five , who can shoot , ride and do other sport" -> "the men"
+Coreference set:
+	(11,3,[2,4]) -> (10,5,[3,16]), that is: "the band" -> "a big band to accompany them on their march to Liverpool Street Station"
+Coreference set:
+	(12,14,[13,15]) -> (13,22,[22,24]), that is: "your Mummy" -> "Mummy 's"
+Coreference set:
+	(13,6,[6,7]) -> (13,1,[1,2]), that is: "she" -> "Granny"
+Coreference set:
+	(13,25,[22,29]) -> (13,20,[18,21]), that is: "Mummy 's eyes streaming all the way" -> "Hyde Park Corner"

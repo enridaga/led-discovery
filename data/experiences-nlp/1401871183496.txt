@@ -1,0 +1,248 @@
+Sentence #1 (2 tokens):
+Lord!
+[Text=Lord CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Lord NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (NNP Lord))
+    (. !)))
+
+root(ROOT-0, Lord-1)
+punct(Lord-1, !-2)
+
+Sentence #2 (4 tokens):
+What a march!
+[Text=What CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=march CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=march NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-03 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-03">march</TIMEX3>]
+[Text=! CharacterOffsetBegin=18 CharacterOffsetEnd=19 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (WHNP (WP What)
+      (NP (DT a) (NN march)))
+    (. !)))
+
+root(ROOT-0, What-1)
+det(march-3, a-2)
+dep(What-1, march-3)
+punct(What-1, !-4)
+
+Sentence #3 (7 tokens):
+The men are still straggling in.
+[Text=The CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=men CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=NNS Lemma=man NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=straggling CharacterOffsetBegin=38 CharacterOffsetEnd=48 PartOfSpeech=VBG Lemma=straggle NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NNS men))
+    (VP (VBP are)
+      (ADVP (RB still))
+      (VP (VBG straggling)
+        (PP (IN in))))
+    (. .)))
+
+root(ROOT-0, straggling-5)
+det(men-2, The-1)
+nsubj(straggling-5, men-2)
+aux(straggling-5, are-3)
+advmod(straggling-5, still-4)
+nmod(straggling-5, in-6)
+punct(straggling-5, .-7)
+
+Sentence #4 (40 tokens):
+About three-quarters of the company arrived with the column this morning, and I honestly believe half my platoon would have dropped out if it hadn’t been for Jackson, who simply wouldn’t let them stop singing.
+[Text=About CharacterOffsetBegin=53 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=about NamedEntityTag=DURATION NormalizedNamedEntityTag=P9M Timex=<TIMEX3 tid="t2" type="DURATION" value="P9M">About three-quarters</TIMEX3>]
+[Text=three-quarters CharacterOffsetBegin=59 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=three-quarter NamedEntityTag=DURATION NormalizedNamedEntityTag=P9M Timex=<TIMEX3 tid="t2" type="DURATION" value="P9M">About three-quarters</TIMEX3>]
+[Text=of CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=company CharacterOffsetBegin=81 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=company NamedEntityTag=O]
+[Text=arrived CharacterOffsetBegin=89 CharacterOffsetEnd=96 PartOfSpeech=VBD Lemma=arrive NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=97 CharacterOffsetEnd=101 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=column CharacterOffsetBegin=106 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=column NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=113 CharacterOffsetEnd=117 PartOfSpeech=DT Lemma=this NamedEntityTag=TIME NormalizedNamedEntityTag=THIS MO Timex=<TIMEX3 alt_value="THIS MO" anchorTimeID="t0" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf0">this morning</TIMEX3>]
+[Text=morning CharacterOffsetBegin=118 CharacterOffsetEnd=125 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=THIS MO Timex=<TIMEX3 alt_value="THIS MO" anchorTimeID="t0" temporalFunction="true" tid="t3" type="DATE" valueFromFunction="tf0">this morning</TIMEX3>]
+[Text=, CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=honestly CharacterOffsetBegin=133 CharacterOffsetEnd=141 PartOfSpeech=RB Lemma=honestly NamedEntityTag=O]
+[Text=believe CharacterOffsetBegin=142 CharacterOffsetEnd=149 PartOfSpeech=VBP Lemma=believe NamedEntityTag=O]
+[Text=half CharacterOffsetBegin=150 CharacterOffsetEnd=154 PartOfSpeech=JJ Lemma=half NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=155 CharacterOffsetEnd=157 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=platoon CharacterOffsetBegin=158 CharacterOffsetEnd=165 PartOfSpeech=NN Lemma=platoon NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=166 CharacterOffsetEnd=171 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=172 CharacterOffsetEnd=176 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=dropped CharacterOffsetBegin=177 CharacterOffsetEnd=184 PartOfSpeech=VBN Lemma=drop NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=185 CharacterOffsetEnd=188 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=189 CharacterOffsetEnd=191 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=192 CharacterOffsetEnd=194 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=198 CharacterOffsetEnd=201 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=202 CharacterOffsetEnd=206 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=207 CharacterOffsetEnd=210 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Jackson CharacterOffsetBegin=211 CharacterOffsetEnd=218 PartOfSpeech=NNP Lemma=Jackson NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=218 CharacterOffsetEnd=219 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=simply CharacterOffsetBegin=224 CharacterOffsetEnd=230 PartOfSpeech=RB Lemma=simply NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=231 CharacterOffsetEnd=236 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=236 CharacterOffsetEnd=239 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=let CharacterOffsetBegin=240 CharacterOffsetEnd=243 PartOfSpeech=VB Lemma=let NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=244 CharacterOffsetEnd=248 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=stop CharacterOffsetBegin=249 CharacterOffsetEnd=253 PartOfSpeech=VB Lemma=stop NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=254 CharacterOffsetEnd=261 PartOfSpeech=NN Lemma=singing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=261 CharacterOffsetEnd=262 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN About)
+      (S
+        (S
+          (NP
+            (NP (NNS three-quarters))
+            (PP (IN of)
+              (NP (DT the) (NN company))))
+          (VP (VBD arrived)
+            (PP (IN with)
+              (NP (DT the) (NN column)))
+            (NP-TMP (DT this) (NN morning))))
+        (, ,)
+        (CC and)
+        (S
+          (NP (PRP I))
+          (ADVP (RB honestly))
+          (VP (VBP believe)
+            (NP (JJ half))))))
+    (NP (PRP$ my) (NN platoon))
+    (VP (MD would)
+      (VP (VB have)
+        (VP (VBN dropped)
+          (PRT (RP out))
+          (SBAR (IN if)
+            (S
+              (NP (PRP it))
+              (VP (VBD had) (RB n't)
+                (VP (VBN been)
+                  (PP (IN for)
+                    (NP
+                      (NP (NNP Jackson))
+                      (, ,)
+                      (SBAR
+                        (WHNP (WP who))
+                        (S
+                          (ADVP (RB simply))
+                          (VP (MD would) (RB n't)
+                            (VP (VB let)
+                              (S
+                                (NP (PRP them))
+                                (VP (VB stop)
+                                  (NP (NN singing)))))))))))))))))
+    (. .)))
+
+root(ROOT-0, dropped-22)
+mark(arrived-6, About-1)
+nsubj(arrived-6, three-quarters-2)
+case(company-5, of-3)
+det(company-5, the-4)
+nmod:of(three-quarters-2, company-5)
+advcl:about(dropped-22, arrived-6)
+case(column-9, with-7)
+det(column-9, the-8)
+nmod:with(arrived-6, column-9)
+det(morning-11, this-10)
+nmod:tmod(arrived-6, morning-11)
+punct(arrived-6, ,-12)
+cc(arrived-6, and-13)
+nsubj(believe-16, I-14)
+advmod(believe-16, honestly-15)
+conj:and(arrived-6, believe-16)
+advcl:about(dropped-22, believe-16)
+dobj(believe-16, half-17)
+nmod:poss(platoon-19, my-18)
+nsubj(dropped-22, platoon-19)
+aux(dropped-22, would-20)
+aux(dropped-22, have-21)
+compound:prt(dropped-22, out-23)
+mark(Jackson-30, if-24)
+nsubj(Jackson-30, it-25)
+aux(Jackson-30, had-26)
+neg(Jackson-30, n't-27)
+cop(Jackson-30, been-28)
+case(Jackson-30, for-29)
+advcl:if(dropped-22, Jackson-30)
+nsubj(let-36, Jackson-30)
+punct(Jackson-30, ,-31)
+ref(Jackson-30, who-32)
+advmod(let-36, simply-33)
+aux(let-36, would-34)
+neg(let-36, n't-35)
+acl:relcl(Jackson-30, let-36)
+nsubj(stop-38, them-37)
+ccomp(let-36, stop-38)
+dobj(stop-38, singing-39)
+punct(dropped-22, .-40)
+
+Sentence #5 (7 tokens):
+That little man is a marvel.
+[Text=That CharacterOffsetBegin=263 CharacterOffsetEnd=267 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=268 CharacterOffsetEnd=274 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=275 CharacterOffsetEnd=278 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=279 CharacterOffsetEnd=281 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=282 CharacterOffsetEnd=283 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=marvel CharacterOffsetBegin=284 CharacterOffsetEnd=290 PartOfSpeech=VB Lemma=marvel NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=290 CharacterOffsetEnd=291 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT That) (JJ little) (NN man))
+    (VP (VBZ is)
+      (S
+        (NP (DT a))
+        (VP (VB marvel))))
+    (. .)))
+
+root(ROOT-0, is-4)
+det(man-3, That-1)
+amod(man-3, little-2)
+nsubj(is-4, man-3)
+nsubj(marvel-6, a-5)
+ccomp(is-4, marvel-6)
+punct(is-4, .-7)
+
+Sentence #6 (7 tokens):
+I have never seen such pluck.
+[Text=I CharacterOffsetBegin=292 CharacterOffsetEnd=293 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=294 CharacterOffsetEnd=298 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=299 CharacterOffsetEnd=304 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=seen CharacterOffsetBegin=305 CharacterOffsetEnd=309 PartOfSpeech=VBN Lemma=see NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=310 CharacterOffsetEnd=314 PartOfSpeech=JJ Lemma=such NamedEntityTag=O]
+[Text=pluck CharacterOffsetBegin=315 CharacterOffsetEnd=320 PartOfSpeech=VBP Lemma=pluck NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=320 CharacterOffsetEnd=321 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (ADVP (RB never))
+      (VP (VBN seen)
+        (SBAR
+          (S
+            (NP (JJ such))
+            (VP (VBP pluck))))))
+    (. .)))
+
+root(ROOT-0, seen-4)
+nsubj(seen-4, I-1)
+aux(seen-4, have-2)
+neg(seen-4, never-3)
+nsubj(pluck-6, such-5)
+ccomp(seen-4, pluck-6)
+punct(seen-4, .-7)
+
+Coreference set:
+	(4,37,[37,38]) -> (3,2,[1,3]), that is: "them" -> "The men"
+Coreference set:
+	(4,25,[25,26]) -> (4,5,[4,6]), that is: "it" -> "the company"
+Coreference set:
+	(4,18,[18,19]) -> (4,14,[14,15]), that is: "my" -> "I"
+	(6,1,[1,2]) -> (4,14,[14,15]), that is: "I" -> "I"

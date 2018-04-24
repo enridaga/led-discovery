@@ -1,0 +1,75 @@
+Sentence #1 (24 tokens):
+Back from forty-eight hours in Washington, D.C., where Virgil and I were decently treated on Alan Mandel's Music Ensemble series.
+[Text=Back CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=5 CharacterOffsetEnd=9 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=forty-eight CharacterOffsetBegin=10 CharacterOffsetEnd=21 PartOfSpeech=CD Lemma=forty-eight NamedEntityTag=DURATION NormalizedNamedEntityTag=PT48H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT48H">forty-eight hours</TIMEX3>]
+[Text=hours CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NNS Lemma=hour NamedEntityTag=DURATION NormalizedNamedEntityTag=PT48H Timex=<TIMEX3 tid="t1" type="DURATION" value="PT48H">forty-eight hours</TIMEX3>]
+[Text=in CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Washington CharacterOffsetBegin=31 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Washington NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=D.C. CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=D.C. NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=Virgil CharacterOffsetBegin=55 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=Virgil NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=decently CharacterOffsetBegin=73 CharacterOffsetEnd=81 PartOfSpeech=RB Lemma=decently NamedEntityTag=O]
+[Text=treated CharacterOffsetBegin=82 CharacterOffsetEnd=89 PartOfSpeech=VBN Lemma=treat NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Alan CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=NNP Lemma=Alan NamedEntityTag=PERSON]
+[Text=Mandel CharacterOffsetBegin=98 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=Mandel NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=104 CharacterOffsetEnd=106 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Music CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=NNP Lemma=Music NamedEntityTag=O]
+[Text=Ensemble CharacterOffsetBegin=113 CharacterOffsetEnd=121 PartOfSpeech=NNP Lemma=Ensemble NamedEntityTag=O]
+[Text=series CharacterOffsetBegin=122 CharacterOffsetEnd=128 PartOfSpeech=NN Lemma=series NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (ADVP (RB Back)
+      (PP (IN from)
+        (NP
+          (NP (CD forty-eight) (NNS hours))
+          (PP (IN in)
+            (NP (NNP Washington) (, ,) (NNP D.C.) (, ,))))))
+    (SBAR
+      (WHADVP (WRB where))
+      (S
+        (NP (NNP Virgil)
+          (CC and)
+          (PRP I))
+        (VP (VBD were)
+          (ADVP (RB decently))
+          (VP (VBN treated)
+            (PP (IN on)
+              (NP
+                (NP (NNP Alan) (NNP Mandel) (POS 's))
+                (NNP Music) (NNP Ensemble) (NN series)))))))
+    (. .)))
+
+root(ROOT-0, Back-1)
+case(hours-4, from-2)
+nummod(hours-4, forty-eight-3)
+nmod:from(Back-1, hours-4)
+case(D.C.-8, in-5)
+compound(D.C.-8, Washington-6)
+punct(D.C.-8, ,-7)
+nmod:in(hours-4, D.C.-8)
+punct(D.C.-8, ,-9)
+advmod(treated-16, where-10)
+nsubjpass(treated-16, Virgil-11)
+cc(Virgil-11, and-12)
+conj:and(Virgil-11, I-13)
+nsubjpass(treated-16, I-13)
+auxpass(treated-16, were-14)
+advmod(treated-16, decently-15)
+dep(Back-1, treated-16)
+case(series-23, on-17)
+compound(Mandel-19, Alan-18)
+nmod:poss(series-23, Mandel-19)
+case(Mandel-19, 's-20)
+compound(series-23, Music-21)
+compound(series-23, Ensemble-22)
+nmod:on(treated-16, series-23)
+punct(Back-1, .-24)
+

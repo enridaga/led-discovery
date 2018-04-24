@@ -1,0 +1,23 @@
+Sentence #1 (6 tokens):
+Tuesday, practiced with Katherine.
+[Text=Tuesday CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Tuesday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-2 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-WXX-2">Tuesday</TIMEX3>]
+[Text=, CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=practiced CharacterOffsetBegin=9 CharacterOffsetEnd=18 PartOfSpeech=VBD Lemma=practice NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Katherine CharacterOffsetBegin=24 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Katherine NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Tuesday) (, ,))
+    (VP (VBD practiced)
+      (PP (IN with)
+        (NP (NNP Katherine))))
+    (. .)))
+
+root(ROOT-0, practiced-3)
+nsubj(practiced-3, Tuesday-1)
+punct(Tuesday-1, ,-2)
+case(Katherine-5, with-4)
+nmod:with(practiced-3, Katherine-5)
+punct(practiced-3, .-6)
+

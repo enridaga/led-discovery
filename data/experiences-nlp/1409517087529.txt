@@ -1,0 +1,800 @@
+Sentence #1 (13 tokens):
+[Quoted by the author from his diary] 
+
+“May 5.
+[Text=-LSB- CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Quoted CharacterOffsetBegin=1 CharacterOffsetEnd=7 PartOfSpeech=VBN Lemma=quote NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=author CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=author NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=diary CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=diary NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=May CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-05-05 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-05-05">May 5</TIMEX3>]
+[Text=5 CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=CD Lemma=5 NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-05-05 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-05-05">May 5</TIMEX3>]
+[Text=. CharacterOffsetBegin=48 CharacterOffsetEnd=49 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (-LRB- -LSB-)
+      (VP (VBN Quoted)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NN author))
+            (PP (IN from)
+              (NP (PRP$ his) (NN diary)))))
+        (-RRB- -RSB-) (`` ``)
+        (NP-TMP (NNP May) (CD 5))))
+    (. .)))
+
+root(ROOT-0, Quoted-2)
+punct(Quoted-2, -LSB--1)
+case(author-5, by-3)
+det(author-5, the-4)
+nmod:by(Quoted-2, author-5)
+case(diary-8, from-6)
+nmod:poss(diary-8, his-7)
+nmod:from(author-5, diary-8)
+punct(Quoted-2, -RSB--9)
+punct(Quoted-2, ``-10)
+nmod:tmod(Quoted-2, May-11)
+nummod(May-11, 5-12)
+punct(Quoted-2, .-13)
+
+Sentence #2 (19 tokens):
+To-day we were invited to dinner by Herr Kiekhöver, and there met Dussek and some other musicians.
+[Text=To-day CharacterOffsetBegin=50 CharacterOffsetEnd=56 PartOfSpeech=NN Lemma=to-day NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=invited CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=VBN Lemma=invite NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=76 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Herr CharacterOffsetBegin=86 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=Herr NamedEntityTag=PERSON]
+[Text=Kiekhöver CharacterOffsetBegin=91 CharacterOffsetEnd=100 PartOfSpeech=NNP Lemma=Kiekhöver NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=met CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=VBD Lemma=meet NamedEntityTag=O]
+[Text=Dussek CharacterOffsetBegin=116 CharacterOffsetEnd=122 PartOfSpeech=NNP Lemma=Dussek NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=132 CharacterOffsetEnd=137 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=musicians CharacterOffsetBegin=138 CharacterOffsetEnd=147 PartOfSpeech=NNS Lemma=musician NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NN To-day))
+        (NP (PRP we)))
+      (VP (VBD were)
+        (VP (VBN invited)
+          (PP (TO to)
+            (NP (NN dinner)))
+          (PP (IN by)
+            (NP (NNP Herr) (NNP Kiekhöver))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (EX there))
+      (VP (VBD met)
+        (NP
+          (NP (NNP Dussek))
+          (CC and)
+          (NP (DT some) (JJ other) (NNS musicians)))))
+    (. .)))
+
+root(ROOT-0, invited-4)
+nsubjpass(invited-4, To-day-1)
+nsubjpass(met-13, To-day-1)
+dep(To-day-1, we-2)
+auxpass(invited-4, were-3)
+case(dinner-6, to-5)
+nmod:to(invited-4, dinner-6)
+case(Kiekhöver-9, by-7)
+compound(Kiekhöver-9, Herr-8)
+nmod:agent(invited-4, Kiekhöver-9)
+punct(invited-4, ,-10)
+cc(invited-4, and-11)
+expl(met-13, there-12)
+conj:and(invited-4, met-13)
+dobj(met-13, Dussek-14)
+cc(Dussek-14, and-15)
+det(musicians-18, some-16)
+amod(musicians-18, other-17)
+dobj(met-13, musicians-18)
+conj:and(Dussek-14, musicians-18)
+punct(invited-4, .-19)
+
+Sentence #3 (18 tokens):
+This was very agreeable to me, as I had long earnestly wished to hear Dussek play.
+[Text=This CharacterOffsetBegin=149 CharacterOffsetEnd=153 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=158 CharacterOffsetEnd=162 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=agreeable CharacterOffsetBegin=163 CharacterOffsetEnd=172 PartOfSpeech=JJ Lemma=agreeable NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=173 CharacterOffsetEnd=175 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=176 CharacterOffsetEnd=178 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=178 CharacterOffsetEnd=179 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=180 CharacterOffsetEnd=182 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=183 CharacterOffsetEnd=184 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=185 CharacterOffsetEnd=188 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=189 CharacterOffsetEnd=193 PartOfSpeech=JJ Lemma=long NamedEntityTag=O]
+[Text=earnestly CharacterOffsetBegin=194 CharacterOffsetEnd=203 PartOfSpeech=RB Lemma=earnestly NamedEntityTag=O]
+[Text=wished CharacterOffsetBegin=204 CharacterOffsetEnd=210 PartOfSpeech=VBN Lemma=wish NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=211 CharacterOffsetEnd=213 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=214 CharacterOffsetEnd=218 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=Dussek CharacterOffsetBegin=219 CharacterOffsetEnd=225 PartOfSpeech=NNP Lemma=Dussek NamedEntityTag=PERSON]
+[Text=play CharacterOffsetBegin=226 CharacterOffsetEnd=230 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=230 CharacterOffsetEnd=231 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBD was)
+      (ADJP (RB very) (JJ agreeable))
+      (PP (TO to)
+        (NP (PRP me)))
+      (, ,)
+      (SBAR (IN as)
+        (S
+          (NP (PRP I))
+          (VP (VBD had)
+            (ADVP (JJ long))
+            (VP
+              (ADVP (RB earnestly))
+              (VBN wished)
+              (S
+                (VP (TO to)
+                  (VP (VB hear)
+                    (S
+                      (NP (NNP Dussek))
+                      (VP (VB play)))))))))))
+    (. .)))
+
+root(ROOT-0, agreeable-4)
+nsubj(agreeable-4, This-1)
+cop(agreeable-4, was-2)
+advmod(agreeable-4, very-3)
+case(me-6, to-5)
+nmod:to(agreeable-4, me-6)
+punct(agreeable-4, ,-7)
+mark(wished-13, as-8)
+nsubj(wished-13, I-9)
+nsubj:xsubj(hear-15, I-9)
+aux(wished-13, had-10)
+advmod(wished-13, long-11)
+advmod(wished-13, earnestly-12)
+advcl:as(agreeable-4, wished-13)
+mark(hear-15, to-14)
+xcomp(wished-13, hear-15)
+nsubj(play-17, Dussek-16)
+ccomp(hear-15, play-17)
+punct(agreeable-4, .-18)
+
+Sentence #4 (15 tokens):
+[…] The conversation at the table, was almost always in French.
+[Text=-LSB- CharacterOffsetBegin=232 CharacterOffsetEnd=233 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=233 CharacterOffsetEnd=234 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=234 CharacterOffsetEnd=235 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=236 CharacterOffsetEnd=239 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=conversation CharacterOffsetBegin=240 CharacterOffsetEnd=252 PartOfSpeech=NN Lemma=conversation NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=253 CharacterOffsetEnd=255 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=256 CharacterOffsetEnd=259 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=table CharacterOffsetBegin=260 CharacterOffsetEnd=265 PartOfSpeech=NN Lemma=table NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=265 CharacterOffsetEnd=266 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=267 CharacterOffsetEnd=270 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=almost CharacterOffsetBegin=271 CharacterOffsetEnd=277 PartOfSpeech=RB Lemma=almost NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=278 CharacterOffsetEnd=284 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=285 CharacterOffsetEnd=287 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=French CharacterOffsetBegin=288 CharacterOffsetEnd=294 PartOfSpeech=NNP Lemma=French NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=294 CharacterOffsetEnd=295 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (-LRB- -LSB-))
+      (: ...)
+      (VP (-RRB- -RSB-)
+        (NP (DT The) (NN conversation))
+        (PP (IN at)
+          (NP (DT the) (NN table))))
+      (, ,))
+    (VP (VBD was)
+      (ADVP (RB almost) (RB always))
+      (PP (IN in)
+        (NP (NNP French))))
+    (. .)))
+
+root(ROOT-0, French-14)
+nsubj(French-14, -LSB--1)
+punct(-LSB--1, ...-2)
+punct(conversation-5, -RSB--3)
+det(conversation-5, The-4)
+dep(-LSB--1, conversation-5)
+case(table-8, at-6)
+det(table-8, the-7)
+nmod:at(conversation-5, table-8)
+punct(-LSB--1, ,-9)
+cop(French-14, was-10)
+advmod(always-12, almost-11)
+advmod(French-14, always-12)
+case(French-14, in-13)
+punct(French-14, .-15)
+
+Sentence #5 (18 tokens):
+As I am not well versed in that language I could take but little part in it.
+[Text=As CharacterOffsetBegin=296 CharacterOffsetEnd=298 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=299 CharacterOffsetEnd=300 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=301 CharacterOffsetEnd=303 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=304 CharacterOffsetEnd=307 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=308 CharacterOffsetEnd=312 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=versed CharacterOffsetBegin=313 CharacterOffsetEnd=319 PartOfSpeech=VBN Lemma=verse NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=320 CharacterOffsetEnd=322 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=323 CharacterOffsetEnd=327 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=language CharacterOffsetBegin=328 CharacterOffsetEnd=336 PartOfSpeech=NN Lemma=language NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=337 CharacterOffsetEnd=338 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=339 CharacterOffsetEnd=344 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=345 CharacterOffsetEnd=349 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=350 CharacterOffsetEnd=353 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=354 CharacterOffsetEnd=360 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=361 CharacterOffsetEnd=365 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=366 CharacterOffsetEnd=368 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=369 CharacterOffsetEnd=371 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=371 CharacterOffsetEnd=372 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP I))
+        (VP (VBP am) (RB not)
+          (VP
+            (ADVP (RB well))
+            (VBN versed)
+            (PP (IN in)
+              (NP (DT that) (NN language)))))))
+    (NP (PRP I))
+    (VP (MD could)
+      (VP (VB take)
+        (PP (CC but)
+          (NP
+            (NP (JJ little) (NN part))
+            (PP (IN in)
+              (NP (PRP it)))))))
+    (. .)))
+
+root(ROOT-0, take-12)
+mark(versed-6, As-1)
+nsubjpass(versed-6, I-2)
+auxpass(versed-6, am-3)
+neg(versed-6, not-4)
+advmod(versed-6, well-5)
+advcl:as(take-12, versed-6)
+case(language-9, in-7)
+det(language-9, that-8)
+nmod:in(versed-6, language-9)
+nsubj(take-12, I-10)
+aux(take-12, could-11)
+case(part-15, but-13)
+amod(part-15, little-14)
+nmod:but(take-12, part-15)
+case(it-17, in-16)
+nmod:in(part-15, it-17)
+punct(take-12, .-18)
+
+Sentence #6 (13 tokens):
+But, I took all the more in the music which followed.
+[Text=But CharacterOffsetBegin=373 CharacterOffsetEnd=376 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=376 CharacterOffsetEnd=377 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=378 CharacterOffsetEnd=379 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=took CharacterOffsetBegin=380 CharacterOffsetEnd=384 PartOfSpeech=VBD Lemma=take NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=385 CharacterOffsetEnd=388 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=389 CharacterOffsetEnd=392 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=393 CharacterOffsetEnd=397 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=398 CharacterOffsetEnd=400 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=401 CharacterOffsetEnd=404 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=405 CharacterOffsetEnd=410 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=411 CharacterOffsetEnd=416 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=followed CharacterOffsetBegin=417 CharacterOffsetEnd=425 PartOfSpeech=VBD Lemma=follow NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=425 CharacterOffsetEnd=426 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC But)
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD took)
+      (NP (PDT all) (DT the))
+      (PP (RBR more) (IN in)
+        (NP
+          (NP (DT the) (NN music))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBD followed)))))))
+    (. .)))
+
+root(ROOT-0, took-4)
+cc(took-4, But-1)
+punct(took-4, ,-2)
+nsubj(took-4, I-3)
+det:predet(the-6, all-5)
+dobj(took-4, the-6)
+advmod(music-10, more-7)
+case(music-10, in-8)
+det(music-10, the-9)
+nmod:in(took-4, music-10)
+nsubj(followed-12, music-10)
+ref(music-10, which-11)
+acl:relcl(music-10, followed-12)
+punct(took-4, .-13)
+
+Sentence #7 (18 tokens):
+Herr Eck, began with a quartett of his own composition, and enchanted all the listeners.
+[Text=Herr CharacterOffsetBegin=427 CharacterOffsetEnd=431 PartOfSpeech=NNP Lemma=Herr NamedEntityTag=PERSON]
+[Text=Eck CharacterOffsetBegin=432 CharacterOffsetEnd=435 PartOfSpeech=NNP Lemma=Eck NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=435 CharacterOffsetEnd=436 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=began CharacterOffsetBegin=437 CharacterOffsetEnd=442 PartOfSpeech=VBD Lemma=begin NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=443 CharacterOffsetEnd=447 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=448 CharacterOffsetEnd=449 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=quartett CharacterOffsetBegin=450 CharacterOffsetEnd=458 PartOfSpeech=NN Lemma=quartett NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=459 CharacterOffsetEnd=461 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=462 CharacterOffsetEnd=465 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=466 CharacterOffsetEnd=469 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=composition CharacterOffsetBegin=470 CharacterOffsetEnd=481 PartOfSpeech=NN Lemma=composition NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=481 CharacterOffsetEnd=482 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=483 CharacterOffsetEnd=486 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=enchanted CharacterOffsetBegin=487 CharacterOffsetEnd=496 PartOfSpeech=VBD Lemma=enchant NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=497 CharacterOffsetEnd=500 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=501 CharacterOffsetEnd=504 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=listeners CharacterOffsetBegin=505 CharacterOffsetEnd=514 PartOfSpeech=NNS Lemma=listener NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=514 CharacterOffsetEnd=515 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Herr) (NNP Eck))
+    (, ,)
+    (VP
+      (VP (VBD began)
+        (PP (IN with)
+          (NP
+            (NP (DT a) (NN quartett))
+            (PP (IN of)
+              (NP (PRP$ his) (JJ own) (NN composition))))))
+      (, ,)
+      (CC and)
+      (VP (VBD enchanted)
+        (NP (PDT all) (DT the) (NNS listeners))))
+    (. .)))
+
+root(ROOT-0, began-4)
+compound(Eck-2, Herr-1)
+nsubj(began-4, Eck-2)
+nsubj(enchanted-14, Eck-2)
+punct(began-4, ,-3)
+case(quartett-7, with-5)
+det(quartett-7, a-6)
+nmod:with(began-4, quartett-7)
+case(composition-11, of-8)
+nmod:poss(composition-11, his-9)
+amod(composition-11, own-10)
+nmod:of(quartett-7, composition-11)
+punct(began-4, ,-12)
+cc(began-4, and-13)
+conj:and(began-4, enchanted-14)
+det:predet(listeners-17, all-15)
+det(listeners-17, the-16)
+dobj(enchanted-14, listeners-17)
+punct(began-4, .-18)
+
+Sentence #8 (24 tokens):
+The Herr Dussek played a sonata for the piano, of his own composition, which however did not seem to please particularly.
+[Text=The CharacterOffsetBegin=516 CharacterOffsetEnd=519 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Herr CharacterOffsetBegin=520 CharacterOffsetEnd=524 PartOfSpeech=NNP Lemma=Herr NamedEntityTag=PERSON]
+[Text=Dussek CharacterOffsetBegin=525 CharacterOffsetEnd=531 PartOfSpeech=NNP Lemma=Dussek NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=532 CharacterOffsetEnd=538 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=539 CharacterOffsetEnd=540 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=sonata CharacterOffsetBegin=541 CharacterOffsetEnd=547 PartOfSpeech=NN Lemma=sonata NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=548 CharacterOffsetEnd=551 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=552 CharacterOffsetEnd=555 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=556 CharacterOffsetEnd=561 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=561 CharacterOffsetEnd=562 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=563 CharacterOffsetEnd=565 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=566 CharacterOffsetEnd=569 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=570 CharacterOffsetEnd=573 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=composition CharacterOffsetBegin=574 CharacterOffsetEnd=585 PartOfSpeech=NN Lemma=composition NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=585 CharacterOffsetEnd=586 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=587 CharacterOffsetEnd=592 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=however CharacterOffsetBegin=593 CharacterOffsetEnd=600 PartOfSpeech=RB Lemma=however NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=601 CharacterOffsetEnd=604 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=605 CharacterOffsetEnd=608 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=seem CharacterOffsetBegin=609 CharacterOffsetEnd=613 PartOfSpeech=VB Lemma=seem NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=614 CharacterOffsetEnd=616 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=617 CharacterOffsetEnd=623 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=particularly CharacterOffsetBegin=624 CharacterOffsetEnd=636 PartOfSpeech=RB Lemma=particularly NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=636 CharacterOffsetEnd=637 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NNP Herr) (NNP Dussek))
+    (VP (VBD played)
+      (NP
+        (NP (DT a) (NN sonata))
+        (PP (IN for)
+          (NP (DT the) (NN piano)))
+        (, ,)
+        (PP (IN of)
+          (NP
+            (NP (PRP$ his) (JJ own) (NN composition))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (ADVP (RB however))
+                (VP (VBD did) (RB not)
+                  (VP (VB seem)
+                    (S
+                      (VP (TO to)
+                        (VP (VB please)
+                          (ADVP (RB particularly)))))))))))))
+    (. .)))
+
+root(ROOT-0, played-4)
+det(Dussek-3, The-1)
+compound(Dussek-3, Herr-2)
+nsubj(played-4, Dussek-3)
+det(sonata-6, a-5)
+dobj(played-4, sonata-6)
+case(piano-9, for-7)
+det(piano-9, the-8)
+nmod:for(sonata-6, piano-9)
+punct(sonata-6, ,-10)
+case(composition-14, of-11)
+nmod:poss(composition-14, his-12)
+amod(composition-14, own-13)
+nmod:of(sonata-6, composition-14)
+nsubj(seem-20, composition-14)
+nsubj:xsubj(please-22, composition-14)
+punct(composition-14, ,-15)
+ref(composition-14, which-16)
+advmod(seem-20, however-17)
+aux(seem-20, did-18)
+neg(seem-20, not-19)
+acl:relcl(composition-14, seem-20)
+mark(please-22, to-21)
+xcomp(seem-20, please-22)
+advmod(please-22, particularly-23)
+punct(played-4, .-24)
+
+Sentence #9 (21 tokens):
+Now followed a second quartett by Herr Eck, which so delighted Herr Dussek, that he enthusiastically embraced him.
+[Text=Now CharacterOffsetBegin=638 CharacterOffsetEnd=641 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t2" type="DATE" value="PRESENT_REF">Now</TIMEX3>]
+[Text=followed CharacterOffsetBegin=642 CharacterOffsetEnd=650 PartOfSpeech=VBN Lemma=follow NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=651 CharacterOffsetEnd=652 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1S Timex=<TIMEX3 tid="t3" type="DURATION" value="PT1S">a second</TIMEX3>]
+[Text=second CharacterOffsetBegin=653 CharacterOffsetEnd=659 PartOfSpeech=JJ Lemma=second NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1S Timex=<TIMEX3 tid="t3" type="DURATION" value="PT1S">a second</TIMEX3>]
+[Text=quartett CharacterOffsetBegin=660 CharacterOffsetEnd=668 PartOfSpeech=NN Lemma=quartett NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=669 CharacterOffsetEnd=671 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Herr CharacterOffsetBegin=672 CharacterOffsetEnd=676 PartOfSpeech=NNP Lemma=Herr NamedEntityTag=PERSON]
+[Text=Eck CharacterOffsetBegin=677 CharacterOffsetEnd=680 PartOfSpeech=NNP Lemma=Eck NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=680 CharacterOffsetEnd=681 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=682 CharacterOffsetEnd=687 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=688 CharacterOffsetEnd=690 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=delighted CharacterOffsetBegin=691 CharacterOffsetEnd=700 PartOfSpeech=JJ Lemma=delighted NamedEntityTag=O]
+[Text=Herr CharacterOffsetBegin=701 CharacterOffsetEnd=705 PartOfSpeech=NNP Lemma=Herr NamedEntityTag=PERSON]
+[Text=Dussek CharacterOffsetBegin=706 CharacterOffsetEnd=712 PartOfSpeech=NNP Lemma=Dussek NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=712 CharacterOffsetEnd=713 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=714 CharacterOffsetEnd=718 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=719 CharacterOffsetEnd=721 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=enthusiastically CharacterOffsetBegin=722 CharacterOffsetEnd=738 PartOfSpeech=RB Lemma=enthusiastically NamedEntityTag=O]
+[Text=embraced CharacterOffsetBegin=739 CharacterOffsetEnd=747 PartOfSpeech=VBD Lemma=embrace NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=748 CharacterOffsetEnd=751 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=751 CharacterOffsetEnd=752 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (RB Now))
+    (VP (VBN followed)
+      (NP (DT a) (JJ second) (NN quartett))
+      (PP (IN by)
+        (NP
+          (NP (NNP Herr) (NNP Eck))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (NP
+                (ADJP (RB so) (JJ delighted))
+                (NNP Herr) (NNP Dussek))))))
+      (, ,)
+      (SBAR (IN that)
+        (S
+          (NP (PRP he))
+          (ADVP (RB enthusiastically))
+          (VP (VBD embraced)
+            (NP (PRP him))))))
+    (. .)))
+
+root(ROOT-0, followed-2)
+nsubj(followed-2, Now-1)
+det(quartett-5, a-3)
+amod(quartett-5, second-4)
+dobj(followed-2, quartett-5)
+case(Eck-8, by-6)
+compound(Eck-8, Herr-7)
+nmod:by(followed-2, Eck-8)
+dep(Dussek-14, Eck-8)
+punct(Eck-8, ,-9)
+ref(Eck-8, which-10)
+advmod(delighted-12, so-11)
+amod(Dussek-14, delighted-12)
+compound(Dussek-14, Herr-13)
+acl:relcl(Eck-8, Dussek-14)
+punct(followed-2, ,-15)
+mark(embraced-19, that-16)
+nsubj(embraced-19, he-17)
+advmod(embraced-19, enthusiastically-18)
+ccomp(followed-2, embraced-19)
+dobj(embraced-19, him-20)
+punct(followed-2, .-21)
+
+Sentence #10 (22 tokens):
+In conclusion, Herr Dussek played a new quintett he had composed in Hamburgh, which was praised to the skies.
+[Text=In CharacterOffsetBegin=753 CharacterOffsetEnd=755 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=conclusion CharacterOffsetBegin=756 CharacterOffsetEnd=766 PartOfSpeech=NN Lemma=conclusion NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=766 CharacterOffsetEnd=767 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Herr CharacterOffsetBegin=768 CharacterOffsetEnd=772 PartOfSpeech=NNP Lemma=Herr NamedEntityTag=PERSON]
+[Text=Dussek CharacterOffsetBegin=773 CharacterOffsetEnd=779 PartOfSpeech=NNP Lemma=Dussek NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=780 CharacterOffsetEnd=786 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=787 CharacterOffsetEnd=788 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=789 CharacterOffsetEnd=792 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=quintett CharacterOffsetBegin=793 CharacterOffsetEnd=801 PartOfSpeech=NN Lemma=quintett NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=802 CharacterOffsetEnd=804 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=805 CharacterOffsetEnd=808 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=composed CharacterOffsetBegin=809 CharacterOffsetEnd=817 PartOfSpeech=VBN Lemma=compose NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=818 CharacterOffsetEnd=820 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Hamburgh CharacterOffsetBegin=821 CharacterOffsetEnd=829 PartOfSpeech=NNP Lemma=Hamburgh NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=829 CharacterOffsetEnd=830 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=831 CharacterOffsetEnd=836 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=837 CharacterOffsetEnd=840 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=praised CharacterOffsetBegin=841 CharacterOffsetEnd=848 PartOfSpeech=VBN Lemma=praise NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=849 CharacterOffsetEnd=851 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=852 CharacterOffsetEnd=855 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=skies CharacterOffsetBegin=856 CharacterOffsetEnd=861 PartOfSpeech=NNS Lemma=sky NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=861 CharacterOffsetEnd=862 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN conclusion)))
+    (, ,)
+    (NP (NNP Herr) (NNP Dussek))
+    (VP (VBD played)
+      (NP
+        (NP (DT a) (JJ new) (NN quintett))
+        (SBAR
+          (S
+            (NP (PRP he))
+            (VP (VBD had)
+              (VP (VBN composed)
+                (PP (IN in)
+                  (NP
+                    (NP (NNP Hamburgh))
+                    (, ,)
+                    (SBAR
+                      (WHNP (WDT which))
+                      (S
+                        (VP (VBD was)
+                          (VP (VBN praised)
+                            (PP (TO to)
+                              (NP (DT the) (NNS skies)))))))))))))))
+    (. .)))
+
+root(ROOT-0, played-6)
+case(conclusion-2, In-1)
+nmod:in(played-6, conclusion-2)
+punct(played-6, ,-3)
+compound(Dussek-5, Herr-4)
+nsubj(played-6, Dussek-5)
+det(quintett-9, a-7)
+amod(quintett-9, new-8)
+dobj(played-6, quintett-9)
+nsubjpass(praised-18, quintett-9)
+nsubj(composed-12, he-10)
+aux(composed-12, had-11)
+acl:relcl(quintett-9, composed-12)
+case(Hamburgh-14, in-13)
+nmod:in(composed-12, Hamburgh-14)
+nsubjpass(praised-18, Hamburgh-14)
+punct(Hamburgh-14, ,-15)
+ref(quintett-9, which-16)
+ref(Hamburgh-14, which-16)
+auxpass(praised-18, was-17)
+acl:relcl(Hamburgh-14, praised-18)
+case(skies-21, to-19)
+det(skies-21, the-20)
+nmod:to(praised-18, skies-21)
+punct(played-6, .-22)
+
+Sentence #11 (52 tokens):
+However, it did not entirely please me; for, despite the numerous modulations, it became tedious towards the end, and the worst was, that is had neither form nor rhythm, and the end could quite as well have been made the beginning as not.”
+[Text=However CharacterOffsetBegin=863 CharacterOffsetEnd=870 PartOfSpeech=RB Lemma=however NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=870 CharacterOffsetEnd=871 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=872 CharacterOffsetEnd=874 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=875 CharacterOffsetEnd=878 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=879 CharacterOffsetEnd=882 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=entirely CharacterOffsetBegin=883 CharacterOffsetEnd=891 PartOfSpeech=RB Lemma=entirely NamedEntityTag=O]
+[Text=please CharacterOffsetBegin=892 CharacterOffsetEnd=898 PartOfSpeech=VB Lemma=please NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=899 CharacterOffsetEnd=901 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=901 CharacterOffsetEnd=902 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=903 CharacterOffsetEnd=906 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=906 CharacterOffsetEnd=907 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=despite CharacterOffsetBegin=908 CharacterOffsetEnd=915 PartOfSpeech=IN Lemma=despite NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=916 CharacterOffsetEnd=919 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=numerous CharacterOffsetBegin=920 CharacterOffsetEnd=928 PartOfSpeech=JJ Lemma=numerous NamedEntityTag=O]
+[Text=modulations CharacterOffsetBegin=929 CharacterOffsetEnd=940 PartOfSpeech=NNS Lemma=modulation NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=940 CharacterOffsetEnd=941 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=942 CharacterOffsetEnd=944 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=became CharacterOffsetBegin=945 CharacterOffsetEnd=951 PartOfSpeech=VBD Lemma=become NamedEntityTag=O]
+[Text=tedious CharacterOffsetBegin=952 CharacterOffsetEnd=959 PartOfSpeech=JJ Lemma=tedious NamedEntityTag=O]
+[Text=towards CharacterOffsetBegin=960 CharacterOffsetEnd=967 PartOfSpeech=IN Lemma=towards NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=968 CharacterOffsetEnd=971 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=972 CharacterOffsetEnd=975 PartOfSpeech=NN Lemma=end NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=975 CharacterOffsetEnd=976 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=977 CharacterOffsetEnd=980 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=981 CharacterOffsetEnd=984 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=worst CharacterOffsetBegin=985 CharacterOffsetEnd=990 PartOfSpeech=JJS Lemma=worst NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=991 CharacterOffsetEnd=994 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=994 CharacterOffsetEnd=995 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=996 CharacterOffsetEnd=1000 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=1001 CharacterOffsetEnd=1003 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=1004 CharacterOffsetEnd=1007 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=neither CharacterOffsetBegin=1008 CharacterOffsetEnd=1015 PartOfSpeech=DT Lemma=neither NamedEntityTag=O]
+[Text=form CharacterOffsetBegin=1016 CharacterOffsetEnd=1020 PartOfSpeech=NN Lemma=form NamedEntityTag=O]
+[Text=nor CharacterOffsetBegin=1021 CharacterOffsetEnd=1024 PartOfSpeech=CC Lemma=nor NamedEntityTag=O]
+[Text=rhythm CharacterOffsetBegin=1025 CharacterOffsetEnd=1031 PartOfSpeech=NN Lemma=rhythm NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=1031 CharacterOffsetEnd=1032 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=1033 CharacterOffsetEnd=1036 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1037 CharacterOffsetEnd=1040 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=end CharacterOffsetBegin=1041 CharacterOffsetEnd=1044 PartOfSpeech=NN Lemma=end NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=1045 CharacterOffsetEnd=1050 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=1051 CharacterOffsetEnd=1056 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=1057 CharacterOffsetEnd=1059 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=1060 CharacterOffsetEnd=1064 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=1065 CharacterOffsetEnd=1069 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=1070 CharacterOffsetEnd=1074 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=1075 CharacterOffsetEnd=1079 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1080 CharacterOffsetEnd=1083 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=beginning CharacterOffsetBegin=1084 CharacterOffsetEnd=1093 PartOfSpeech=NN Lemma=beginning NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=1094 CharacterOffsetEnd=1096 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=1097 CharacterOffsetEnd=1100 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1100 CharacterOffsetEnd=1101 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=1101 CharacterOffsetEnd=1102 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB However))
+    (PRN (, ,)
+      (S
+        (NP (PRP it))
+        (VP (VBD did) (RB not)
+          (ADVP (RB entirely))
+          (VP (VB please)
+            (NP (PRP me))
+            (: ;)
+            (PP (IN for)))))
+      (, ,))
+    (S
+      (PP (IN despite)
+        (NP (DT the) (JJ numerous) (NNS modulations)))
+      (, ,)
+      (NP (PRP it))
+      (VP (VBD became)
+        (ADJP (JJ tedious))
+        (PP (IN towards)
+          (NP (DT the) (NN end)))))
+    (, ,)
+    (CC and)
+    (S
+      (S
+        (NP (DT the) (JJS worst))
+        (VP (VBD was)
+          (VP
+            (PRN (, ,)
+              (INTJ (DT that) (VBZ is)))
+            (VBD had)
+            (NP
+              (NP (DT neither) (NN form))
+              (CC nor)
+              (NP (NN rhythm))))))
+      (, ,)
+      (CC and)
+      (S
+        (NP (DT the) (NN end))
+        (VP (MD could)
+          (ADVP (RB quite) (RB as) (RB well))
+          (VP (VBP have)
+            (VP (VBN been)
+              (VP (VBN made)
+                (NP (DT the) (NN beginning))
+                (PP (IN as) (RB not))))))))
+    (. .) ('' '')))
+
+root(ROOT-0, became-18)
+advmod(became-18, However-1)
+punct(please-7, ,-2)
+nsubj(please-7, it-3)
+aux(please-7, did-4)
+neg(please-7, not-5)
+advmod(please-7, entirely-6)
+dep(became-18, please-7)
+dobj(please-7, me-8)
+punct(please-7, ;-9)
+nmod(please-7, for-10)
+punct(please-7, ,-11)
+case(modulations-15, despite-12)
+det(modulations-15, the-13)
+amod(modulations-15, numerous-14)
+nmod:despite(became-18, modulations-15)
+punct(became-18, ,-16)
+nsubj(became-18, it-17)
+xcomp(became-18, tedious-19)
+case(end-22, towards-20)
+det(end-22, the-21)
+nmod:towards(became-18, end-22)
+punct(became-18, ,-23)
+cc(became-18, and-24)
+det(worst-26, the-25)
+nsubjpass(had-31, worst-26)
+auxpass(had-31, was-27)
+punct(that-29, ,-28)
+discourse(had-31, that-29)
+mwe(that-29, is-30)
+conj:and(became-18, had-31)
+det(form-33, neither-32)
+dobj(had-31, form-33)
+cc(form-33, nor-34)
+dobj(had-31, rhythm-35)
+conj:nor(form-33, rhythm-35)
+punct(had-31, ,-36)
+cc(had-31, and-37)
+det(end-39, the-38)
+nsubjpass(made-46, end-39)
+aux(made-46, could-40)
+advmod(well-43, quite-41)
+advmod(well-43, as-42)
+advmod(made-46, well-43)
+aux(made-46, have-44)
+auxpass(made-46, been-45)
+conj:and(became-18, made-46)
+conj:and(had-31, made-46)
+det(beginning-48, the-47)
+dobj(made-46, beginning-48)
+case(not-50, as-49)
+advcl:as(made-46, not-50)
+punct(became-18, .-51)
+punct(became-18, ''-52)
+
+Coreference set:
+	(3,6,[6,7]) -> (1,5,[4,9]), that is: "me" -> "the author from his diary"
+	(3,9,[9,10]) -> (1,5,[4,9]), that is: "I" -> "the author from his diary"
+	(5,2,[2,3]) -> (1,5,[4,9]), that is: "I" -> "the author from his diary"
+	(5,10,[10,11]) -> (1,5,[4,9]), that is: "I" -> "the author from his diary"
+	(6,3,[3,4]) -> (1,5,[4,9]), that is: "I" -> "the author from his diary"
+	(11,8,[8,9]) -> (1,5,[4,9]), that is: "me" -> "the author from his diary"
+Coreference set:
+	(2,14,[14,15]) -> (9,14,[11,15]), that is: "Dussek" -> "so delighted Herr Dussek"
+	(3,16,[16,17]) -> (9,14,[11,15]), that is: "Dussek" -> "so delighted Herr Dussek"
+	(8,3,[1,4]) -> (9,14,[11,15]), that is: "The Herr Dussek" -> "so delighted Herr Dussek"
+	(8,12,[12,13]) -> (9,14,[11,15]), that is: "his" -> "so delighted Herr Dussek"
+	(9,14,[13,15]) -> (9,14,[11,15]), that is: "Herr Dussek" -> "so delighted Herr Dussek"
+	(10,5,[4,6]) -> (9,14,[11,15]), that is: "Herr Dussek" -> "so delighted Herr Dussek"
+	(10,10,[10,11]) -> (9,14,[11,15]), that is: "he" -> "so delighted Herr Dussek"
+Coreference set:
+	(5,17,[17,18]) -> (5,9,[8,10]), that is: "it" -> "that language"
+Coreference set:
+	(7,9,[9,10]) -> (7,2,[1,3]), that is: "his" -> "Herr Eck"
+	(9,8,[7,15]) -> (7,2,[1,3]), that is: "Herr Eck , which so delighted Herr Dussek" -> "Herr Eck"
+	(9,8,[7,9]) -> (7,2,[1,3]), that is: "Herr Eck" -> "Herr Eck"
+Coreference set:
+	(8,14,[12,24]) -> (7,11,[9,12]), that is: "his own composition , which however did not seem to please particularly" -> "his own composition"
+	(8,14,[12,15]) -> (7,11,[9,12]), that is: "his own composition" -> "his own composition"
+Coreference set:
+	(9,17,[17,18]) -> (9,5,[3,6]), that is: "he" -> "a second quartett"
+	(9,20,[20,21]) -> (9,5,[3,6]), that is: "him" -> "a second quartett"
+Coreference set:
+	(11,3,[3,4]) -> (10,9,[7,22]), that is: "it" -> "a new quintett he had composed in Hamburgh , which was praised to the skies"
+	(11,17,[17,18]) -> (10,9,[7,22]), that is: "it" -> "a new quintett he had composed in Hamburgh , which was praised to the skies"
+Coreference set:
+	(11,39,[38,40]) -> (11,22,[21,23]), that is: "the end" -> "the end"

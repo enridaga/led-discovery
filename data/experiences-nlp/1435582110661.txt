@@ -1,0 +1,70 @@
+Sentence #1 (23 tokens):
+No sooner off the train than another long session with Alan Titus, his "seasoned" baritone, his diamond-sure enunciation.
+[Text=No CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=sooner CharacterOffsetBegin=3 CharacterOffsetEnd=9 PartOfSpeech=RBR Lemma=sooner NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=IN Lemma=off NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=14 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=train CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=NN Lemma=train NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=24 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=another CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=DT Lemma=another NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=long NamedEntityTag=O]
+[Text=session CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=session NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Alan CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Alan NamedEntityTag=PERSON]
+[Text=Titus CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Titus NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=seasoned CharacterOffsetBegin=72 CharacterOffsetEnd=80 PartOfSpeech=JJ Lemma=seasoned NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=80 CharacterOffsetEnd=81 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=baritone CharacterOffsetBegin=82 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=baritone NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=diamond-sure CharacterOffsetBegin=96 CharacterOffsetEnd=108 PartOfSpeech=JJ Lemma=diamond-sure NamedEntityTag=O]
+[Text=enunciation CharacterOffsetBegin=109 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=enunciation NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (ADVP
+      (ADVP (DT No) (RBR sooner))
+      (PP (IN off)
+        (NP
+          (NP (DT the) (NN train))
+          (PP (IN than)
+            (NP
+              (NP (DT another) (JJ long) (NN session))
+              (PP (IN with)
+                (NP
+                  (NP (NNP Alan) (NNP Titus))
+                  (, ,)
+                  (NP (PRP$ his) (`` ``) (JJ seasoned) ('' '') (NN baritone))
+                  (, ,))))))))
+    (NP (PRP$ his) (JJ diamond-sure) (NN enunciation))
+    (. .)))
+
+root(ROOT-0, enunciation-22)
+neg(sooner-2, No-1)
+dep(enunciation-22, sooner-2)
+case(train-5, off-3)
+det(train-5, the-4)
+nmod:off(sooner-2, train-5)
+case(session-9, than-6)
+det(session-9, another-7)
+amod(session-9, long-8)
+nmod:than(train-5, session-9)
+case(Titus-12, with-10)
+compound(Titus-12, Alan-11)
+nmod:with(session-9, Titus-12)
+punct(Titus-12, ,-13)
+nmod:poss(baritone-18, his-14)
+punct(baritone-18, ``-15)
+amod(baritone-18, seasoned-16)
+punct(baritone-18, ''-17)
+appos(Titus-12, baritone-18)
+punct(Titus-12, ,-19)
+nmod:poss(enunciation-22, his-20)
+amod(enunciation-22, diamond-sure-21)
+punct(enunciation-22, .-23)
+
+Coreference set:
+	(1,18,[14,19]) -> (1,12,[11,13]), that is: "his `` seasoned '' baritone" -> "Alan Titus"

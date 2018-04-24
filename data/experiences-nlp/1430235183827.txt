@@ -1,0 +1,66 @@
+Sentence #1 (20 tokens):
+The music light, after the manner of the composer himself, but cheerful and pleasing like the author.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=light CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=light NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=manner CharacterOffsetBegin=27 CharacterOffsetEnd=33 PartOfSpeech=NN Lemma=manner NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=composer CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=composer NamedEntityTag=O]
+[Text=himself CharacterOffsetBegin=50 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=himself NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=cheerful CharacterOffsetBegin=63 CharacterOffsetEnd=71 PartOfSpeech=JJ Lemma=cheerful NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=pleasing CharacterOffsetBegin=76 CharacterOffsetEnd=84 PartOfSpeech=VBG Lemma=please NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=85 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=author CharacterOffsetBegin=94 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=author NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (DT The) (NN music) (NN light))
+    (, ,)
+    (PP (IN after)
+      (NP
+        (NP (DT the) (NN manner))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (DT the) (NN composer))
+              (NP (PRP himself))
+              (, ,)
+              (ADVP (CC but)))
+            (UCP
+              (ADJP (JJ cheerful))
+              (CC and)
+              (VP (VBG pleasing)
+                (PP (IN like)
+                  (NP (DT the) (NN author)))))))))
+    (. .)))
+
+root(ROOT-0, light-3)
+det(light-3, The-1)
+compound(light-3, music-2)
+punct(light-3, ,-4)
+case(manner-7, after-5)
+det(manner-7, the-6)
+nmod:after(light-3, manner-7)
+case(composer-10, of-8)
+det(composer-10, the-9)
+nmod:of(manner-7, composer-10)
+nmod:npmod(composer-10, himself-11)
+punct(composer-10, ,-12)
+advmod(composer-10, but-13)
+amod(composer-10, cheerful-14)
+cc(cheerful-14, and-15)
+amod(composer-10, pleasing-16)
+conj:and(cheerful-14, pleasing-16)
+case(author-19, like-17)
+det(author-19, the-18)
+nmod:like(pleasing-16, author-19)
+punct(light-3, .-20)
+

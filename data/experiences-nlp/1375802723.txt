@@ -1,0 +1,360 @@
+Sentence #1 (5 tokens):
+3 Feb., 1842.
+[Text=3 CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=CD Lemma=3 NamedEntityTag=DATE NormalizedNamedEntityTag=1842-02-03 Timex=<TIMEX3 tid="t1" type="DATE" value="1842-02-03">3 Feb., 1842</TIMEX3>]
+[Text=Feb. CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Feb. NamedEntityTag=DATE NormalizedNamedEntityTag=1842-02-03 Timex=<TIMEX3 tid="t1" type="DATE" value="1842-02-03">3 Feb., 1842</TIMEX3>]
+[Text=, CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=1842-02-03 Timex=<TIMEX3 tid="t1" type="DATE" value="1842-02-03">3 Feb., 1842</TIMEX3>]
+[Text=1842 CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=CD Lemma=1842 NamedEntityTag=DATE NormalizedNamedEntityTag=1842-02-03 Timex=<TIMEX3 tid="t1" type="DATE" value="1842-02-03">3 Feb., 1842</TIMEX3>]
+[Text=. CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (CD 3) (NNP Feb.))
+    (, ,)
+    (NP (CD 1842))
+    (. .)))
+
+root(ROOT-0, Feb.-2)
+nummod(Feb.-2, 3-1)
+punct(Feb.-2, ,-3)
+amod(Feb.-2, 1842-4)
+punct(Feb.-2, .-5)
+
+Sentence #2 (18 tokens):
+– On Monday we dined at Stafford House, where we were received with great kindness….
+[Text=-- CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=On CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Monday CharacterOffsetBegin=19 CharacterOffsetEnd=25 PartOfSpeech=NNP Lemma=Monday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-1 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-WXX-1">Monday</TIMEX3>]
+[Text=we CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=dined CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=VBD Lemma=dine NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Stafford CharacterOffsetBegin=38 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Stafford NamedEntityTag=LOCATION]
+[Text=House CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=House NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=63 CharacterOffsetEnd=67 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=received CharacterOffsetBegin=68 CharacterOffsetEnd=76 PartOfSpeech=VBN Lemma=receive NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=77 CharacterOffsetEnd=81 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=kindness CharacterOffsetBegin=88 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=kindness NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (: --)
+    (PP (IN On)
+      (NP (NNP Monday)))
+    (NP (PRP we))
+    (VP (VBD dined)
+      (FRAG
+        (PP (IN at)
+          (NP
+            (NP (NNP Stafford) (NNP House))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PRP we))
+                (VP (VBD were)
+                  (VP (VBN received)
+                    (PP (IN with)
+                      (NP (JJ great) (NN kindness))))))))
+          (: ...))))
+    (. .)))
+
+root(ROOT-0, dined-5)
+punct(dined-5, ---1)
+case(Monday-3, On-2)
+nmod:on(dined-5, Monday-3)
+nsubj(dined-5, we-4)
+case(House-8, at-6)
+compound(House-8, Stafford-7)
+dep(dined-5, House-8)
+punct(House-8, ,-9)
+advmod(received-13, where-10)
+nsubjpass(received-13, we-11)
+auxpass(received-13, were-12)
+acl:relcl(House-8, received-13)
+case(kindness-16, with-14)
+amod(kindness-16, great-15)
+nmod:with(received-13, kindness-16)
+punct(House-8, ...-17)
+punct(dined-5, .-18)
+
+Sentence #3 (24 tokens):
+I was presented to the Duchess of Gloucester, who called me ‘the daughter of her old friend, Mrs Waddington.’
+[Text=I CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=presented CharacterOffsetBegin=106 CharacterOffsetEnd=115 PartOfSpeech=VBN Lemma=present NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Duchess CharacterOffsetBegin=123 CharacterOffsetEnd=130 PartOfSpeech=NNP Lemma=Duchess NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=131 CharacterOffsetEnd=133 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Gloucester CharacterOffsetBegin=134 CharacterOffsetEnd=144 PartOfSpeech=NNP Lemma=Gloucester NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=150 CharacterOffsetEnd=156 PartOfSpeech=VBD Lemma=call NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=157 CharacterOffsetEnd=159 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=160 CharacterOffsetEnd=161 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=161 CharacterOffsetEnd=164 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=daughter CharacterOffsetBegin=165 CharacterOffsetEnd=173 PartOfSpeech=NN Lemma=daughter NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=174 CharacterOffsetEnd=176 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=177 CharacterOffsetEnd=180 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=181 CharacterOffsetEnd=184 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=friend CharacterOffsetBegin=185 CharacterOffsetEnd=191 PartOfSpeech=NN Lemma=friend NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=191 CharacterOffsetEnd=192 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Mrs CharacterOffsetBegin=193 CharacterOffsetEnd=196 PartOfSpeech=NNP Lemma=Mrs NamedEntityTag=PERSON]
+[Text=Waddington CharacterOffsetBegin=197 CharacterOffsetEnd=207 PartOfSpeech=NNP Lemma=Waddington NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=208 CharacterOffsetEnd=209 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBN presented)
+        (PP (TO to)
+          (NP
+            (NP (DT the) (NNP Duchess))
+            (PP (IN of)
+              (NP (NNP Gloucester)))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD called)
+                  (S
+                    (NP (PRP me))
+                    (`` `)
+                    (NP
+                      (NP (DT the) (NN daughter))
+                      (PP (IN of)
+                        (NP
+                          (NP (PRP$ her) (JJ old) (NN friend))
+                          (, ,)
+                          (NP (NNP Mrs) (NNP Waddington)))))))))))))
+    (. .) ('' ')))
+
+root(ROOT-0, presented-3)
+nsubjpass(presented-3, I-1)
+auxpass(presented-3, was-2)
+case(Duchess-6, to-4)
+det(Duchess-6, the-5)
+nmod:to(presented-3, Duchess-6)
+nsubj(called-11, Duchess-6)
+case(Gloucester-8, of-7)
+nmod:of(Duchess-6, Gloucester-8)
+punct(Duchess-6, ,-9)
+ref(Duchess-6, who-10)
+acl:relcl(Duchess-6, called-11)
+dep(daughter-15, me-12)
+punct(daughter-15, `-13)
+det(daughter-15, the-14)
+xcomp(called-11, daughter-15)
+case(friend-19, of-16)
+nmod:poss(friend-19, her-17)
+amod(friend-19, old-18)
+nmod:of(daughter-15, friend-19)
+punct(friend-19, ,-20)
+compound(Waddington-22, Mrs-21)
+appos(friend-19, Waddington-22)
+punct(presented-3, .-23)
+punct(presented-3, '-24)
+
+Sentence #4 (19 tokens):
+Being taken in to dinner by Lord John Russell, I found him a most agreeable neighbour….
+[Text=Being CharacterOffsetBegin=210 CharacterOffsetEnd=215 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=taken CharacterOffsetBegin=216 CharacterOffsetEnd=221 PartOfSpeech=VBN Lemma=take NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=222 CharacterOffsetEnd=224 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=228 CharacterOffsetEnd=234 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=235 CharacterOffsetEnd=237 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Lord CharacterOffsetBegin=238 CharacterOffsetEnd=242 PartOfSpeech=NNP Lemma=Lord NamedEntityTag=O]
+[Text=John CharacterOffsetBegin=243 CharacterOffsetEnd=247 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=Russell CharacterOffsetBegin=248 CharacterOffsetEnd=255 PartOfSpeech=NNP Lemma=Russell NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=255 CharacterOffsetEnd=256 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=257 CharacterOffsetEnd=258 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=found CharacterOffsetBegin=259 CharacterOffsetEnd=264 PartOfSpeech=VBD Lemma=find NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=265 CharacterOffsetEnd=268 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=269 CharacterOffsetEnd=270 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=271 CharacterOffsetEnd=275 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=agreeable CharacterOffsetBegin=276 CharacterOffsetEnd=285 PartOfSpeech=JJ Lemma=agreeable NamedEntityTag=O]
+[Text=neighbour CharacterOffsetBegin=286 CharacterOffsetEnd=295 PartOfSpeech=NN Lemma=neighbour NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=295 CharacterOffsetEnd=296 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=296 CharacterOffsetEnd=297 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (VP (VBG Being)
+        (VP (VBN taken)
+          (PP (IN in)
+            (PP (TO to)
+              (NP (NN dinner))))
+          (PP (IN by)
+            (NP (NNP Lord) (NNP John) (NNP Russell))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD found)
+      (S
+        (NP (PRP him))
+        (NP (DT a)
+          (ADJP (RBS most) (JJ agreeable))
+          (NN neighbour))))
+    (: ...) (. .)))
+
+root(ROOT-0, found-12)
+auxpass(taken-2, Being-1)
+advcl(found-12, taken-2)
+case(dinner-5, in-3)
+case(dinner-5, to-4)
+nmod:to(taken-2, dinner-5)
+case(Russell-9, by-6)
+compound(Russell-9, Lord-7)
+compound(Russell-9, John-8)
+nmod:agent(taken-2, Russell-9)
+punct(found-12, ,-10)
+nsubj(found-12, I-11)
+nsubj(neighbour-17, him-13)
+det(neighbour-17, a-14)
+advmod(agreeable-16, most-15)
+amod(neighbour-17, agreeable-16)
+xcomp(found-12, neighbour-17)
+punct(found-12, ...-18)
+punct(found-12, .-19)
+
+Sentence #5 (40 tokens):
+The house is beautiful, the staircase especially, and a fine band played the whole evening, concluding with a composition of Prince Radziwill, never before heard in England, which was an attention to the King.
+[Text=The CharacterOffsetBegin=298 CharacterOffsetEnd=301 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=house CharacterOffsetBegin=302 CharacterOffsetEnd=307 PartOfSpeech=NN Lemma=house NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=308 CharacterOffsetEnd=310 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=beautiful CharacterOffsetBegin=311 CharacterOffsetEnd=320 PartOfSpeech=JJ Lemma=beautiful NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=320 CharacterOffsetEnd=321 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=322 CharacterOffsetEnd=325 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=staircase CharacterOffsetBegin=326 CharacterOffsetEnd=335 PartOfSpeech=NN Lemma=staircase NamedEntityTag=O]
+[Text=especially CharacterOffsetBegin=336 CharacterOffsetEnd=346 PartOfSpeech=RB Lemma=especially NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=346 CharacterOffsetEnd=347 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=348 CharacterOffsetEnd=351 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=352 CharacterOffsetEnd=353 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=354 CharacterOffsetEnd=358 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=band CharacterOffsetBegin=359 CharacterOffsetEnd=363 PartOfSpeech=NN Lemma=band NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=364 CharacterOffsetEnd=370 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=371 CharacterOffsetEnd=374 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=whole CharacterOffsetBegin=375 CharacterOffsetEnd=380 PartOfSpeech=JJ Lemma=whole NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=381 CharacterOffsetEnd=388 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t3" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=, CharacterOffsetBegin=388 CharacterOffsetEnd=389 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=concluding CharacterOffsetBegin=390 CharacterOffsetEnd=400 PartOfSpeech=VBG Lemma=conclude NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=401 CharacterOffsetEnd=405 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=406 CharacterOffsetEnd=407 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=composition CharacterOffsetBegin=408 CharacterOffsetEnd=419 PartOfSpeech=NN Lemma=composition NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=420 CharacterOffsetEnd=422 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Prince CharacterOffsetBegin=423 CharacterOffsetEnd=429 PartOfSpeech=NNP Lemma=Prince NamedEntityTag=O]
+[Text=Radziwill CharacterOffsetBegin=430 CharacterOffsetEnd=439 PartOfSpeech=NNP Lemma=Radziwill NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=439 CharacterOffsetEnd=440 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=441 CharacterOffsetEnd=446 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=447 CharacterOffsetEnd=453 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=454 CharacterOffsetEnd=459 PartOfSpeech=VBN Lemma=hear NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=460 CharacterOffsetEnd=462 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=England CharacterOffsetBegin=463 CharacterOffsetEnd=470 PartOfSpeech=NNP Lemma=England NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=470 CharacterOffsetEnd=471 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=472 CharacterOffsetEnd=477 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=478 CharacterOffsetEnd=481 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=482 CharacterOffsetEnd=484 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=attention CharacterOffsetBegin=485 CharacterOffsetEnd=494 PartOfSpeech=NN Lemma=attention NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=495 CharacterOffsetEnd=497 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=498 CharacterOffsetEnd=501 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=King CharacterOffsetBegin=502 CharacterOffsetEnd=506 PartOfSpeech=NNP Lemma=King NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=506 CharacterOffsetEnd=507 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN house))
+      (VP (VBZ is)
+        (ADJP (JJ beautiful))
+        (, ,)
+        (ADVP
+          (NP (DT the) (NN staircase))
+          (RB especially))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT a) (JJ fine) (NN band))
+      (VP (VBD played)
+        (NP (DT the) (JJ whole) (NN evening))
+        (, ,)
+        (S
+          (VP (VBG concluding)
+            (PP (IN with)
+              (NP
+                (NP (DT a) (NN composition))
+                (PP (IN of)
+                  (NP (NNP Prince) (NNP Radziwill)))))))
+        (, ,)
+        (ADVP
+          (ADVP (RB never))
+          (SBAR (IN before)
+            (S
+              (VP (VBN heard)
+                (PP (IN in)
+                  (NP
+                    (NP (NNP England))
+                    (, ,)
+                    (SBAR
+                      (WHNP (WDT which))
+                      (S
+                        (VP (VBD was)
+                          (NP
+                            (NP (DT an) (NN attention))
+                            (PP (TO to)
+                              (NP (DT the) (NNP King)))))))))))))))
+    (. .)))
+
+root(ROOT-0, beautiful-4)
+det(house-2, The-1)
+nsubj(beautiful-4, house-2)
+cop(beautiful-4, is-3)
+punct(beautiful-4, ,-5)
+det(staircase-7, the-6)
+nmod:npmod(especially-8, staircase-7)
+advmod(beautiful-4, especially-8)
+punct(beautiful-4, ,-9)
+cc(beautiful-4, and-10)
+det(band-13, a-11)
+amod(band-13, fine-12)
+nsubj(played-14, band-13)
+conj:and(beautiful-4, played-14)
+det(evening-17, the-15)
+amod(evening-17, whole-16)
+nmod:tmod(played-14, evening-17)
+punct(played-14, ,-18)
+advcl(played-14, concluding-19)
+case(composition-22, with-20)
+det(composition-22, a-21)
+nmod:with(concluding-19, composition-22)
+case(Radziwill-25, of-23)
+compound(Radziwill-25, Prince-24)
+nmod:of(composition-22, Radziwill-25)
+punct(played-14, ,-26)
+advmod(played-14, never-27)
+mark(heard-29, before-28)
+advcl:before(never-27, heard-29)
+case(England-31, in-30)
+nmod:in(heard-29, England-31)
+nsubj(attention-36, England-31)
+punct(England-31, ,-32)
+ref(England-31, which-33)
+cop(attention-36, was-34)
+det(attention-36, an-35)
+acl:relcl(England-31, attention-36)
+case(King-39, to-37)
+det(King-39, the-38)
+nmod:to(attention-36, King-39)
+punct(beautiful-4, .-40)
+
+Coreference set:
+	(5,2,[1,3]) -> (2,8,[7,9]), that is: "The house" -> "Stafford House"
+Coreference set:
+	(2,11,[11,12]) -> (2,4,[4,5]), that is: "we" -> "we"
+Coreference set:
+	(3,12,[12,13]) -> (3,1,[1,2]), that is: "me" -> "I"
+	(4,11,[11,12]) -> (3,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(3,19,[17,20]) -> (3,22,[21,23]), that is: "her old friend" -> "Mrs Waddington"
+Coreference set:
+	(4,13,[13,14]) -> (4,9,[8,10]), that is: "him" -> "John Russell"

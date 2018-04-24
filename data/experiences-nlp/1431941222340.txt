@@ -1,0 +1,101 @@
+Sentence #1 (32 tokens):
+Mendelssohn was standing by the conductor's desk in the Gewandhaus, and I had the pleasure of hearing his overture to a 'Calm sea and a prosperous voyage.'
+[Text=Mendelssohn CharacterOffsetBegin=0 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Mendelssohn NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=standing CharacterOffsetBegin=16 CharacterOffsetEnd=24 PartOfSpeech=VBG Lemma=stand NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=conductor CharacterOffsetBegin=32 CharacterOffsetEnd=41 PartOfSpeech=NN Lemma=conductor NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=desk CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=NN Lemma=desk NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Gewandhaus CharacterOffsetBegin=56 CharacterOffsetEnd=66 PartOfSpeech=NNP Lemma=Gewandhaus NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pleasure CharacterOffsetBegin=82 CharacterOffsetEnd=90 PartOfSpeech=NN Lemma=pleasure NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=hearing CharacterOffsetBegin=94 CharacterOffsetEnd=101 PartOfSpeech=VBG Lemma=hear NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=overture CharacterOffsetBegin=106 CharacterOffsetEnd=114 PartOfSpeech=NN Lemma=overture NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=115 CharacterOffsetEnd=117 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Calm CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=JJ Lemma=calm NamedEntityTag=O]
+[Text=sea CharacterOffsetBegin=126 CharacterOffsetEnd=129 PartOfSpeech=NN Lemma=sea NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=130 CharacterOffsetEnd=133 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=prosperous CharacterOffsetBegin=136 CharacterOffsetEnd=146 PartOfSpeech=JJ Lemma=prosperous NamedEntityTag=O]
+[Text=voyage CharacterOffsetBegin=147 CharacterOffsetEnd=153 PartOfSpeech=NN Lemma=voyage NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=153 CharacterOffsetEnd=154 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=154 CharacterOffsetEnd=155 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Mendelssohn))
+      (VP (VBD was)
+        (VP (VBG standing)
+          (PP (IN by)
+            (NP
+              (NP
+                (NP (DT the) (NN conductor) (POS 's))
+                (NN desk))
+              (PP (IN in)
+                (NP (DT the) (NNP Gewandhaus))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBD had)
+        (NP
+          (NP (DT the) (NN pleasure))
+          (PP (IN of)
+            (S
+              (VP (VBG hearing)
+                (NP (PRP$ his) (NN overture))
+                (PP (TO to)
+                  (NP
+                    (NP (DT a) (`` `) (JJ Calm) (NN sea))
+                    (CC and)
+                    (NP (DT a) (JJ prosperous) (NN voyage))))))))))
+    (. .) ('' ')))
+
+root(ROOT-0, standing-3)
+nsubj(standing-3, Mendelssohn-1)
+aux(standing-3, was-2)
+case(desk-8, by-4)
+det(conductor-6, the-5)
+nmod:poss(desk-8, conductor-6)
+case(conductor-6, 's-7)
+nmod:by(standing-3, desk-8)
+case(Gewandhaus-11, in-9)
+det(Gewandhaus-11, the-10)
+nmod:in(desk-8, Gewandhaus-11)
+punct(standing-3, ,-12)
+cc(standing-3, and-13)
+nsubj(had-15, I-14)
+conj:and(standing-3, had-15)
+det(pleasure-17, the-16)
+dobj(had-15, pleasure-17)
+mark(hearing-19, of-18)
+acl:of(pleasure-17, hearing-19)
+nmod:poss(overture-21, his-20)
+dobj(hearing-19, overture-21)
+case(sea-26, to-22)
+det(sea-26, a-23)
+punct(sea-26, `-24)
+amod(sea-26, Calm-25)
+nmod:to(hearing-19, sea-26)
+cc(sea-26, and-27)
+det(voyage-30, a-28)
+amod(voyage-30, prosperous-29)
+nmod:to(hearing-19, voyage-30)
+conj:and(sea-26, voyage-30)
+punct(standing-3, .-31)
+punct(standing-3, '-32)
+
+Coreference set:
+	(1,20,[20,21]) -> (1,1,[1,2]), that is: "his" -> "Mendelssohn"

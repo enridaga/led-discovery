@@ -1,0 +1,324 @@
+Sentence #1 (13 tokens):
+At this time Hull was the most unmusical place I ever visited.
+[Text=At CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=Hull CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=Hull NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=unmusical CharacterOffsetBegin=31 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=unmusical NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=visited CharacterOffsetBegin=54 CharacterOffsetEnd=61 PartOfSpeech=VBD Lemma=visit NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (DT this) (NN time)))
+    (NP (NNP Hull))
+    (VP (VBD was)
+      (NP
+        (NP (DT the)
+          (ADJP (RBS most) (JJ unmusical))
+          (NN place))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (ADVP (RB ever))
+            (VP (VBD visited))))))
+    (. .)))
+
+root(ROOT-0, place-9)
+case(time-3, At-1)
+det(time-3, this-2)
+nmod:at(place-9, time-3)
+nsubj(place-9, Hull-4)
+cop(place-9, was-5)
+det(place-9, the-6)
+advmod(unmusical-8, most-7)
+amod(place-9, unmusical-8)
+nsubj(visited-12, I-10)
+advmod(visited-12, ever-11)
+acl:relcl(place-9, visited-12)
+punct(place-9, .-13)
+
+Sentence #2 (8 tokens):
+I attended a concert given by Mons.
+[Text=I CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=attended CharacterOffsetBegin=68 CharacterOffsetEnd=76 PartOfSpeech=VBD Lemma=attend NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=79 CharacterOffsetEnd=86 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=given CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=VBN Lemma=give NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Mons CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=NNP Lemma=Mons NamedEntityTag=LOCATION Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-WXX-1">Mons</TIMEX3>]
+[Text=. CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD attended)
+      (NP (DT a) (NN concert))
+      (PP (VBN given)
+        (PP (IN by)
+          (NP (NNP Mons)))))
+    (. .)))
+
+root(ROOT-0, attended-2)
+nsubj(attended-2, I-1)
+det(concert-4, a-3)
+dobj(attended-2, concert-4)
+case(Mons-7, given-5)
+case(Mons-7, by-6)
+advcl:by(attended-2, Mons-7)
+punct(attended-2, .-8)
+
+Sentence #3 (6 tokens):
+Aldy, the celebrated violinist.
+[Text=Aldy CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=NNP Lemma=Aldy NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=celebrated CharacterOffsetBegin=112 CharacterOffsetEnd=122 PartOfSpeech=JJ Lemma=celebrated NamedEntityTag=O]
+[Text=violinist CharacterOffsetBegin=123 CharacterOffsetEnd=132 PartOfSpeech=NN Lemma=violinist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Aldy))
+    (, ,)
+    (NP (DT the) (JJ celebrated) (NN violinist))
+    (. .)))
+
+root(ROOT-0, Aldy-1)
+punct(Aldy-1, ,-2)
+det(violinist-5, the-3)
+amod(violinist-5, celebrated-4)
+appos(Aldy-1, violinist-5)
+punct(Aldy-1, .-6)
+
+Sentence #4 (41 tokens):
+Scarcely more than half-a-dozen persons were present, and so few professors resided in the place, that a violoncello performer could not be found to accompany him: this part was wretchedly performed by a man upon the bassoon.
+[Text=Scarcely CharacterOffsetBegin=134 CharacterOffsetEnd=142 PartOfSpeech=RB Lemma=scarcely NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=143 CharacterOffsetEnd=147 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=than CharacterOffsetBegin=148 CharacterOffsetEnd=152 PartOfSpeech=IN Lemma=than NamedEntityTag=O]
+[Text=half-a-dozen CharacterOffsetBegin=153 CharacterOffsetEnd=165 PartOfSpeech=CD Lemma=half-a-dozen NamedEntityTag=NUMBER NormalizedNamedEntityTag=>12.0]
+[Text=persons CharacterOffsetBegin=166 CharacterOffsetEnd=173 PartOfSpeech=NNS Lemma=person NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=174 CharacterOffsetEnd=178 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=present CharacterOffsetBegin=179 CharacterOffsetEnd=186 PartOfSpeech=JJ Lemma=present NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t2" type="DATE" value="PRESENT_REF">present</TIMEX3>]
+[Text=, CharacterOffsetBegin=186 CharacterOffsetEnd=187 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=188 CharacterOffsetEnd=191 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=192 CharacterOffsetEnd=194 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=few CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=JJ Lemma=few NamedEntityTag=O]
+[Text=professors CharacterOffsetBegin=199 CharacterOffsetEnd=209 PartOfSpeech=NNS Lemma=professor NamedEntityTag=O]
+[Text=resided CharacterOffsetBegin=210 CharacterOffsetEnd=217 PartOfSpeech=VBD Lemma=reside NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=218 CharacterOffsetEnd=220 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=221 CharacterOffsetEnd=224 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=225 CharacterOffsetEnd=230 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=230 CharacterOffsetEnd=231 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=232 CharacterOffsetEnd=236 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=237 CharacterOffsetEnd=238 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=violoncello CharacterOffsetBegin=239 CharacterOffsetEnd=250 PartOfSpeech=NN Lemma=violoncello NamedEntityTag=O]
+[Text=performer CharacterOffsetBegin=251 CharacterOffsetEnd=260 PartOfSpeech=NN Lemma=performer NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=261 CharacterOffsetEnd=266 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=267 CharacterOffsetEnd=270 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=271 CharacterOffsetEnd=273 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=found CharacterOffsetBegin=274 CharacterOffsetEnd=279 PartOfSpeech=VBN Lemma=find NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=280 CharacterOffsetEnd=282 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=accompany CharacterOffsetBegin=283 CharacterOffsetEnd=292 PartOfSpeech=VB Lemma=accompany NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=293 CharacterOffsetEnd=296 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=296 CharacterOffsetEnd=297 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=298 CharacterOffsetEnd=302 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=303 CharacterOffsetEnd=307 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=308 CharacterOffsetEnd=311 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=wretchedly CharacterOffsetBegin=312 CharacterOffsetEnd=322 PartOfSpeech=RB Lemma=wretchedly NamedEntityTag=O]
+[Text=performed CharacterOffsetBegin=323 CharacterOffsetEnd=332 PartOfSpeech=VBN Lemma=perform NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=333 CharacterOffsetEnd=335 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=336 CharacterOffsetEnd=337 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=man CharacterOffsetBegin=338 CharacterOffsetEnd=341 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=upon CharacterOffsetBegin=342 CharacterOffsetEnd=346 PartOfSpeech=IN Lemma=upon NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=347 CharacterOffsetEnd=350 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bassoon CharacterOffsetBegin=351 CharacterOffsetEnd=358 PartOfSpeech=NN Lemma=bassoon NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=358 CharacterOffsetEnd=359 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (S
+        (ADVP (RB Scarcely))
+        (NP
+          (QP (JJR more) (IN than) (CD half-a-dozen))
+          (NNS persons))
+        (VP (VBD were)
+          (ADJP (JJ present))))
+      (, ,)
+      (CC and)
+      (RB so)
+      (S
+        (NP (JJ few) (NNS professors))
+        (VP (VBD resided)
+          (PP (IN in)
+            (NP (DT the) (NN place)))
+          (, ,)
+          (SBAR (IN that)
+            (S
+              (NP (DT a) (NN violoncello) (NN performer))
+              (VP (MD could) (RB not)
+                (VP (VB be)
+                  (VP (VBN found)
+                    (S
+                      (VP (TO to)
+                        (VP (VB accompany)
+                          (NP (PRP him)))))))))))))
+    (: :)
+    (S
+      (NP (DT this) (NN part))
+      (VP (VBD was)
+        (ADVP (RB wretchedly))
+        (VP (VBN performed)
+          (PP (IN by)
+            (NP (DT a) (NN man)))
+          (PP (IN upon)
+            (NP (DT the) (NN bassoon))))))
+    (. .)))
+
+root(ROOT-0, present-7)
+advmod(present-7, Scarcely-1)
+advmod(half-a-dozen-4, more-2)
+mwe(more-2, than-3)
+nummod(persons-5, half-a-dozen-4)
+nsubj(present-7, persons-5)
+cop(present-7, were-6)
+punct(present-7, ,-8)
+cc(so-10, and-9)
+cc(present-7, so-10)
+amod(professors-12, few-11)
+nsubj(resided-13, professors-12)
+conj:so(present-7, resided-13)
+case(place-16, in-14)
+det(place-16, the-15)
+nmod:in(resided-13, place-16)
+punct(resided-13, ,-17)
+mark(found-25, that-18)
+det(performer-21, a-19)
+compound(performer-21, violoncello-20)
+nsubjpass(found-25, performer-21)
+nsubj:xsubj(accompany-27, performer-21)
+aux(found-25, could-22)
+neg(found-25, not-23)
+auxpass(found-25, be-24)
+ccomp(resided-13, found-25)
+mark(accompany-27, to-26)
+xcomp(found-25, accompany-27)
+dobj(accompany-27, him-28)
+punct(present-7, :-29)
+det(part-31, this-30)
+nsubjpass(performed-34, part-31)
+auxpass(performed-34, was-32)
+advmod(performed-34, wretchedly-33)
+parataxis(present-7, performed-34)
+case(man-37, by-35)
+det(man-37, a-36)
+nmod:agent(performed-34, man-37)
+case(bassoon-40, upon-38)
+det(bassoon-40, the-39)
+nmod:upon(performed-34, bassoon-40)
+punct(present-7, .-41)
+
+Sentence #5 (26 tokens):
+I introduced myself to him, and condoled with him in his piteous situation, and encouraged him to play his succeeding pieces by himself.
+[Text=I CharacterOffsetBegin=360 CharacterOffsetEnd=361 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=introduced CharacterOffsetBegin=362 CharacterOffsetEnd=372 PartOfSpeech=VBD Lemma=introduce NamedEntityTag=O]
+[Text=myself CharacterOffsetBegin=373 CharacterOffsetEnd=379 PartOfSpeech=PRP Lemma=myself NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=380 CharacterOffsetEnd=382 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=383 CharacterOffsetEnd=386 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=386 CharacterOffsetEnd=387 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=388 CharacterOffsetEnd=391 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=condoled CharacterOffsetBegin=392 CharacterOffsetEnd=400 PartOfSpeech=VBN Lemma=condole NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=401 CharacterOffsetEnd=405 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=406 CharacterOffsetEnd=409 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=410 CharacterOffsetEnd=412 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=413 CharacterOffsetEnd=416 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=piteous CharacterOffsetBegin=417 CharacterOffsetEnd=424 PartOfSpeech=JJ Lemma=piteous NamedEntityTag=O]
+[Text=situation CharacterOffsetBegin=425 CharacterOffsetEnd=434 PartOfSpeech=NN Lemma=situation NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=434 CharacterOffsetEnd=435 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=436 CharacterOffsetEnd=439 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=encouraged CharacterOffsetBegin=440 CharacterOffsetEnd=450 PartOfSpeech=VBD Lemma=encourage NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=451 CharacterOffsetEnd=454 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=455 CharacterOffsetEnd=457 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=458 CharacterOffsetEnd=462 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=463 CharacterOffsetEnd=466 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=succeeding CharacterOffsetBegin=467 CharacterOffsetEnd=477 PartOfSpeech=VBG Lemma=succeed NamedEntityTag=O]
+[Text=pieces CharacterOffsetBegin=478 CharacterOffsetEnd=484 PartOfSpeech=NNS Lemma=piece NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=485 CharacterOffsetEnd=487 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=himself CharacterOffsetBegin=488 CharacterOffsetEnd=495 PartOfSpeech=PRP Lemma=himself NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=495 CharacterOffsetEnd=496 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP
+        (VP (VBD introduced)
+          (NP (PRP myself))
+          (PP (TO to)
+            (NP (PRP him))))
+        (, ,)
+        (CC and)
+        (VP (VBN condoled)
+          (PP (IN with)
+            (NP (PRP him)))
+          (PP (IN in)
+            (NP (PRP$ his) (JJ piteous) (NN situation)))))
+      (, ,)
+      (CC and)
+      (VP (VBD encouraged)
+        (S
+          (NP (PRP him))
+          (VP (TO to)
+            (VP (VB play)
+              (NP (PRP$ his) (VBG succeeding) (NNS pieces))
+              (PP (IN by)
+                (NP (PRP himself))))))))
+    (. .)))
+
+root(ROOT-0, introduced-2)
+nsubj(introduced-2, I-1)
+nsubj(condoled-8, I-1)
+nsubj(encouraged-17, I-1)
+dobj(introduced-2, myself-3)
+case(him-5, to-4)
+nmod:to(introduced-2, him-5)
+punct(introduced-2, ,-6)
+cc(introduced-2, and-7)
+conj:and(introduced-2, condoled-8)
+case(him-10, with-9)
+nmod:with(condoled-8, him-10)
+case(situation-14, in-11)
+nmod:poss(situation-14, his-12)
+amod(situation-14, piteous-13)
+nmod:in(condoled-8, situation-14)
+punct(introduced-2, ,-15)
+cc(introduced-2, and-16)
+conj:and(introduced-2, encouraged-17)
+dobj(encouraged-17, him-18)
+nsubj:xsubj(play-20, him-18)
+mark(play-20, to-19)
+xcomp(encouraged-17, play-20)
+nmod:poss(pieces-23, his-21)
+amod(pieces-23, succeeding-22)
+dobj(play-20, pieces-23)
+case(himself-25, by-24)
+nmod:by(play-20, himself-25)
+punct(introduced-2, .-26)
+
+Coreference set:
+	(4,16,[15,17]) -> (1,9,[6,13]), that is: "the place" -> "the most unmusical place I ever visited"
+Coreference set:
+	(2,1,[1,2]) -> (1,10,[10,11]), that is: "I" -> "I"
+	(5,1,[1,2]) -> (1,10,[10,11]), that is: "I" -> "I"
+	(5,3,[3,4]) -> (1,10,[10,11]), that is: "myself" -> "I"
+Coreference set:
+	(4,28,[28,29]) -> (4,21,[19,22]), that is: "him" -> "a violoncello performer"
+	(5,5,[5,6]) -> (4,21,[19,22]), that is: "him" -> "a violoncello performer"
+	(5,10,[10,11]) -> (4,21,[19,22]), that is: "him" -> "a violoncello performer"
+	(5,12,[12,13]) -> (4,21,[19,22]), that is: "his" -> "a violoncello performer"
+	(5,18,[18,19]) -> (4,21,[19,22]), that is: "him" -> "a violoncello performer"
+	(5,21,[21,22]) -> (4,21,[19,22]), that is: "his" -> "a violoncello performer"
+	(5,25,[25,26]) -> (4,21,[19,22]), that is: "himself" -> "a violoncello performer"

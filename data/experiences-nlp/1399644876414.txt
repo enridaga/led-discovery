@@ -1,0 +1,326 @@
+Sentence #1 (14 tokens):
+We had a nice musical evening last night, almost the old times.
+[Text=We CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=nice CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=JJ Lemma=nice NamedEntityTag=O]
+[Text=musical CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=JJ Lemma=musical NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TNI OFFSET P-1D INTERSECT EV Timex=<TIMEX3 alt_value="TNI OFFSET P-1D INTERSECT EV" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">evening last night</TIMEX3>]
+[Text=last CharacterOffsetBegin=30 CharacterOffsetEnd=34 PartOfSpeech=JJ Lemma=last NamedEntityTag=TIME NormalizedNamedEntityTag=TNI OFFSET P-1D INTERSECT EV Timex=<TIMEX3 alt_value="TNI OFFSET P-1D INTERSECT EV" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">evening last night</TIMEX3>]
+[Text=night CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI OFFSET P-1D INTERSECT EV Timex=<TIMEX3 alt_value="TNI OFFSET P-1D INTERSECT EV" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">evening last night</TIMEX3>]
+[Text=, CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=almost CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=RB Lemma=almost NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=49 CharacterOffsetEnd=52 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=times CharacterOffsetBegin=57 CharacterOffsetEnd=62 PartOfSpeech=NNS Lemma=time NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBD had)
+      (NP (DT a) (JJ nice) (JJ musical) (NN evening))
+      (NP-TMP (JJ last) (NN night))
+      (, ,)
+      (ADVP (RB almost)
+        (NP (DT the) (JJ old) (NNS times))))
+    (. .)))
+
+root(ROOT-0, had-2)
+nsubj(had-2, We-1)
+det(evening-6, a-3)
+amod(evening-6, nice-4)
+amod(evening-6, musical-5)
+dobj(had-2, evening-6)
+amod(night-8, last-7)
+nmod:tmod(had-2, night-8)
+punct(had-2, ,-9)
+advmod(had-2, almost-10)
+det(times-13, the-11)
+amod(times-13, old-12)
+nmod:npmod(almost-10, times-13)
+punct(had-2, .-14)
+
+Sentence #2 (12 tokens):
+The Wolffs and Mr B. dined and we played all evening.
+[Text=The CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Wolffs CharacterOffsetBegin=68 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Wolffs NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Mr CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Mr NamedEntityTag=O]
+[Text=B. CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=NNP Lemma=B. NamedEntityTag=O]
+[Text=dined CharacterOffsetBegin=85 CharacterOffsetEnd=90 PartOfSpeech=VBD Lemma=dine NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=98 CharacterOffsetEnd=104 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=109 CharacterOffsetEnd=116 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t3" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=. CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNP Wolffs)
+        (CC and)
+        (NNP Mr) (NNP B.))
+      (VP (VBD dined)))
+    (CC and)
+    (S
+      (NP (PRP we))
+      (VP (VBD played)
+        (NP-TMP (DT all) (NN evening))))
+    (. .)))
+
+root(ROOT-0, dined-6)
+det(B.-5, The-1)
+compound(B.-5, Wolffs-2)
+cc(Wolffs-2, and-3)
+conj:and(Wolffs-2, Mr-4)
+compound(B.-5, Mr-4)
+nsubj(dined-6, B.-5)
+cc(dined-6, and-7)
+nsubj(played-9, we-8)
+conj:and(dined-6, played-9)
+det(evening-11, all-10)
+nmod:tmod(played-9, evening-11)
+punct(dined-6, .-12)
+
+Sentence #3 (38 tokens):
+I was delighted to accompany Wolff again, though I was rather nervous as I never touch a piano now except to make the boys sing the “Chant du depart” and the “Marseillaise.”
+[Text=I CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=delighted CharacterOffsetBegin=124 CharacterOffsetEnd=133 PartOfSpeech=JJ Lemma=delighted NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=134 CharacterOffsetEnd=136 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=accompany CharacterOffsetBegin=137 CharacterOffsetEnd=146 PartOfSpeech=VB Lemma=accompany NamedEntityTag=O]
+[Text=Wolff CharacterOffsetBegin=147 CharacterOffsetEnd=152 PartOfSpeech=NNP Lemma=Wolff NamedEntityTag=PERSON]
+[Text=again CharacterOffsetBegin=153 CharacterOffsetEnd=158 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=though CharacterOffsetBegin=160 CharacterOffsetEnd=166 PartOfSpeech=IN Lemma=though NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=167 CharacterOffsetEnd=168 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=169 CharacterOffsetEnd=172 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=rather CharacterOffsetBegin=173 CharacterOffsetEnd=179 PartOfSpeech=RB Lemma=rather NamedEntityTag=O]
+[Text=nervous CharacterOffsetBegin=180 CharacterOffsetEnd=187 PartOfSpeech=JJ Lemma=nervous NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=188 CharacterOffsetEnd=190 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=191 CharacterOffsetEnd=192 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=193 CharacterOffsetEnd=198 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=touch CharacterOffsetBegin=199 CharacterOffsetEnd=204 PartOfSpeech=VBP Lemma=touch NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=205 CharacterOffsetEnd=206 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=207 CharacterOffsetEnd=212 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=213 CharacterOffsetEnd=216 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t4" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=except CharacterOffsetBegin=217 CharacterOffsetEnd=223 PartOfSpeech=IN Lemma=except NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=224 CharacterOffsetEnd=226 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=227 CharacterOffsetEnd=231 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=232 CharacterOffsetEnd=235 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=boys CharacterOffsetBegin=236 CharacterOffsetEnd=240 PartOfSpeech=NNS Lemma=boy NamedEntityTag=O]
+[Text=sing CharacterOffsetBegin=241 CharacterOffsetEnd=245 PartOfSpeech=VB Lemma=sing NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=246 CharacterOffsetEnd=249 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=250 CharacterOffsetEnd=251 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Chant CharacterOffsetBegin=251 CharacterOffsetEnd=256 PartOfSpeech=NNP Lemma=Chant NamedEntityTag=O]
+[Text=du CharacterOffsetBegin=257 CharacterOffsetEnd=259 PartOfSpeech=NNP Lemma=du NamedEntityTag=O]
+[Text=depart CharacterOffsetBegin=260 CharacterOffsetEnd=266 PartOfSpeech=VBP Lemma=depart NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=266 CharacterOffsetEnd=267 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=268 CharacterOffsetEnd=271 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=272 CharacterOffsetEnd=275 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=276 CharacterOffsetEnd=277 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Marseillaise CharacterOffsetBegin=277 CharacterOffsetEnd=289 PartOfSpeech=NNP Lemma=Marseillaise NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=289 CharacterOffsetEnd=290 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=290 CharacterOffsetEnd=291 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (ADJP (JJ delighted)
+        (S
+          (VP (TO to)
+            (VP (VB accompany)
+              (NP (NNP Wolff))
+              (ADVP (RB again))
+              (, ,)
+              (SBAR (IN though)
+                (S
+                  (NP (PRP I))
+                  (VP (VBD was)
+                    (ADJP (RB rather) (JJ nervous))
+                    (SBAR (IN as)
+                      (S
+                        (NP (PRP I))
+                        (ADVP (RB never))
+                        (VP (VBP touch)
+                          (NP (DT a) (NN piano))
+                          (ADVP (RB now))
+                          (PP (IN except)
+                            (NP
+                              (S
+                                (VP (TO to)
+                                  (VP (VB make)
+                                    (S
+                                      (NP (DT the) (NNS boys))
+                                      (VP (VB sing)
+                                        (NP (DT the)
+                                          (S (`` ``)
+                                            (NP (NNP Chant) (NNP du))
+                                            (VP (VBP depart))
+                                            ('' ''))))))))
+                              (CC and)
+                              (NP (DT the) (`` ``) (NNP Marseillaise)))))))))))))))
+    (. .) ('' '')))
+
+root(ROOT-0, delighted-3)
+nsubj(delighted-3, I-1)
+nsubj:xsubj(accompany-5, I-1)
+cop(delighted-3, was-2)
+mark(accompany-5, to-4)
+xcomp(delighted-3, accompany-5)
+dobj(accompany-5, Wolff-6)
+advmod(accompany-5, again-7)
+punct(accompany-5, ,-8)
+mark(nervous-13, though-9)
+nsubj(nervous-13, I-10)
+cop(nervous-13, was-11)
+advmod(nervous-13, rather-12)
+advcl:though(accompany-5, nervous-13)
+mark(touch-17, as-14)
+nsubj(touch-17, I-15)
+neg(touch-17, never-16)
+advcl:as(nervous-13, touch-17)
+det(piano-19, a-18)
+dobj(touch-17, piano-19)
+advmod(touch-17, now-20)
+case(make-23, except-21)
+mark(make-23, to-22)
+nmod:except(touch-17, make-23)
+det(boys-25, the-24)
+nsubj(sing-26, boys-25)
+ccomp(make-23, sing-26)
+dobj(sing-26, the-27)
+punct(depart-31, ``-28)
+compound(du-30, Chant-29)
+nsubj(depart-31, du-30)
+dep(the-27, depart-31)
+punct(depart-31, ''-32)
+cc(make-23, and-33)
+det(Marseillaise-36, the-34)
+punct(Marseillaise-36, ``-35)
+nmod:except(touch-17, Marseillaise-36)
+conj:and(make-23, Marseillaise-36)
+punct(delighted-3, .-37)
+punct(delighted-3, ''-38)
+
+Sentence #4 (4 tokens):
+Wolff played divinely.
+[Text=Wolff CharacterOffsetBegin=292 CharacterOffsetEnd=297 PartOfSpeech=NNP Lemma=Wolff NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=298 CharacterOffsetEnd=304 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=divinely CharacterOffsetBegin=305 CharacterOffsetEnd=313 PartOfSpeech=RB Lemma=divinely NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=313 CharacterOffsetEnd=314 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Wolff))
+    (VP (VBD played)
+      (ADVP (RB divinely)))
+    (. .)))
+
+root(ROOT-0, played-2)
+nsubj(played-2, Wolff-1)
+advmod(played-2, divinely-3)
+punct(played-2, .-4)
+
+Sentence #5 (27 tokens):
+It was a real pleasure, almost made me forget the war and the haunting terror always in my heart of what may come to us.
+[Text=It CharacterOffsetBegin=315 CharacterOffsetEnd=317 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=318 CharacterOffsetEnd=321 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=322 CharacterOffsetEnd=323 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=real CharacterOffsetBegin=324 CharacterOffsetEnd=328 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=pleasure CharacterOffsetBegin=329 CharacterOffsetEnd=337 PartOfSpeech=NN Lemma=pleasure NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=337 CharacterOffsetEnd=338 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=almost CharacterOffsetBegin=339 CharacterOffsetEnd=345 PartOfSpeech=RB Lemma=almost NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=346 CharacterOffsetEnd=350 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=351 CharacterOffsetEnd=353 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=forget CharacterOffsetBegin=354 CharacterOffsetEnd=360 PartOfSpeech=VB Lemma=forget NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=361 CharacterOffsetEnd=364 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=365 CharacterOffsetEnd=368 PartOfSpeech=NN Lemma=war NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=369 CharacterOffsetEnd=372 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=373 CharacterOffsetEnd=376 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=haunting CharacterOffsetBegin=377 CharacterOffsetEnd=385 PartOfSpeech=NN Lemma=haunting NamedEntityTag=O]
+[Text=terror CharacterOffsetBegin=386 CharacterOffsetEnd=392 PartOfSpeech=NN Lemma=terror NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=393 CharacterOffsetEnd=399 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=400 CharacterOffsetEnd=402 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=403 CharacterOffsetEnd=405 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=heart CharacterOffsetBegin=406 CharacterOffsetEnd=411 PartOfSpeech=NN Lemma=heart NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=412 CharacterOffsetEnd=414 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=415 CharacterOffsetEnd=419 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=may CharacterOffsetBegin=420 CharacterOffsetEnd=423 PartOfSpeech=MD Lemma=may NamedEntityTag=O]
+[Text=come CharacterOffsetBegin=424 CharacterOffsetEnd=428 PartOfSpeech=VB Lemma=come NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=429 CharacterOffsetEnd=431 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=432 CharacterOffsetEnd=434 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=434 CharacterOffsetEnd=435 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (SINV
+    (S
+      (NP (PRP It))
+      (VP (VBD was)
+        (NP (DT a) (JJ real) (NN pleasure))
+        (, ,)
+        (ADVP (RB almost))))
+    (VP (VBD made)
+      (S
+        (NP (PRP me))
+        (VP (VB forget)
+          (NP
+            (NP (DT the) (NN war))
+            (CC and)
+            (NP (DT the) (NN haunting))))))
+    (NP
+      (NP (NN terror))
+      (ADVP (RB always))
+      (PP (IN in)
+        (NP
+          (NP (PRP$ my) (NN heart))
+          (PP (IN of)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (VP (MD may)
+                  (VP (VB come)
+                    (PP (TO to)
+                      (NP (PRP us)))))))))))
+    (. .)))
+
+root(ROOT-0, made-8)
+nsubj(pleasure-5, It-1)
+cop(pleasure-5, was-2)
+det(pleasure-5, a-3)
+amod(pleasure-5, real-4)
+dep(made-8, pleasure-5)
+punct(pleasure-5, ,-6)
+advmod(pleasure-5, almost-7)
+nsubj(forget-10, me-9)
+ccomp(made-8, forget-10)
+det(war-12, the-11)
+dobj(forget-10, war-12)
+cc(war-12, and-13)
+det(haunting-15, the-14)
+dobj(forget-10, haunting-15)
+conj:and(war-12, haunting-15)
+nsubj(made-8, terror-16)
+advmod(terror-16, always-17)
+case(heart-20, in-18)
+nmod:poss(heart-20, my-19)
+nmod:in(terror-16, heart-20)
+mark(come-24, of-21)
+nsubj(come-24, what-22)
+aux(come-24, may-23)
+acl:of(heart-20, come-24)
+case(us-26, to-25)
+nmod:to(come-24, us-26)
+punct(made-8, .-27)
+
+Coreference set:
+	(2,8,[8,9]) -> (1,1,[1,2]), that is: "we" -> "We"
+	(5,26,[26,27]) -> (1,1,[1,2]), that is: "us" -> "We"
+Coreference set:
+	(4,1,[1,2]) -> (3,6,[6,7]), that is: "Wolff" -> "Wolff"
+Coreference set:
+	(3,10,[10,11]) -> (3,1,[1,2]), that is: "I" -> "I"
+	(3,15,[15,16]) -> (3,1,[1,2]), that is: "I" -> "I"
+	(5,9,[9,10]) -> (3,1,[1,2]), that is: "me" -> "I"
+	(5,19,[19,20]) -> (3,1,[1,2]), that is: "my" -> "I"
+Coreference set:
+	(3,19,[18,20]) -> (5,5,[3,6]), that is: "a piano" -> "a real pleasure"
+	(5,1,[1,2]) -> (5,5,[3,6]), that is: "It" -> "a real pleasure"

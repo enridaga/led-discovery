@@ -1,0 +1,230 @@
+Sentence #1 (27 tokens):
+...Go to concert – Maud Randall in afternoon – with Miss Bicknell – the lady-cook here – who was at school at St. Anne’s.
+[Text=... CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=Go CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=Maud CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Maud NamedEntityTag=PERSON]
+[Text=Randall CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Randall NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=afternoon CharacterOffsetBegin=35 CharacterOffsetEnd=44 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 tid="t1" type="TIME" value="TAF">afternoon</TIMEX3>]
+[Text=-- CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Miss CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Miss NamedEntityTag=O]
+[Text=Bicknell CharacterOffsetBegin=57 CharacterOffsetEnd=65 PartOfSpeech=NNP Lemma=Bicknell NamedEntityTag=PERSON]
+[Text=-- CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=lady-cook CharacterOffsetBegin=72 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=lady-cook NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=97 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=school CharacterOffsetBegin=100 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=school NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=107 CharacterOffsetEnd=109 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=St. CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=NNP Lemma=St. NamedEntityTag=LOCATION]
+[Text=Anne CharacterOffsetBegin=114 CharacterOffsetEnd=118 PartOfSpeech=NNP Lemma=Anne NamedEntityTag=LOCATION]
+[Text='s CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (VP (: ...) (VB Go)
+    (PP (TO to)
+      (NP
+        (NP (NN concert))
+        (PRN (: --)
+          (NP
+            (NP (NNP Maud) (NNP Randall))
+            (PP (IN in)
+              (NP (NN afternoon))))
+          (: --))))
+    (PP (IN with)
+      (NP (NNP Miss)))
+    (NP
+      (NP (NNP Bicknell))
+      (PRN (: --)
+        (NP (DT the) (NN lady-cook) (RB here))
+        (: --))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBD was)
+            (PP (IN at)
+              (NP (NN school)))
+            (PP (IN at)
+              (NP (NNP St.) (NNP Anne) (POS 's)))))))
+    (. .)))
+
+root(ROOT-0, Go-2)
+punct(Go-2, ...-1)
+case(concert-4, to-3)
+nmod:to(Go-2, concert-4)
+punct(Randall-7, ---5)
+compound(Randall-7, Maud-6)
+dep(concert-4, Randall-7)
+case(afternoon-9, in-8)
+nmod:in(Randall-7, afternoon-9)
+punct(Randall-7, ---10)
+case(Miss-12, with-11)
+nmod:with(Go-2, Miss-12)
+dobj(Go-2, Bicknell-13)
+nsubj(school-22, Bicknell-13)
+punct(lady-cook-16, ---14)
+det(lady-cook-16, the-15)
+dep(Bicknell-13, lady-cook-16)
+advmod(lady-cook-16, here-17)
+punct(lady-cook-16, ---18)
+ref(Bicknell-13, who-19)
+cop(school-22, was-20)
+case(school-22, at-21)
+acl:relcl(Bicknell-13, school-22)
+case(Anne-25, at-23)
+compound(Anne-25, St.-24)
+nmod:'s(school-22, Anne-25)
+case(Anne-25, 's-26)
+punct(Go-2, .-27)
+
+Sentence #2 (9 tokens):
+& afterwards tea at Maison Lyons with her.
+[Text=& CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=afterwards CharacterOffsetBegin=124 CharacterOffsetEnd=134 PartOfSpeech=RB Lemma=afterwards NamedEntityTag=O]
+[Text=tea CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=NN Lemma=tea NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=139 CharacterOffsetEnd=141 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Maison CharacterOffsetBegin=142 CharacterOffsetEnd=148 PartOfSpeech=NNP Lemma=Maison NamedEntityTag=PERSON]
+[Text=Lyons CharacterOffsetBegin=149 CharacterOffsetEnd=154 PartOfSpeech=NNP Lemma=Lyons NamedEntityTag=PERSON]
+[Text=with CharacterOffsetBegin=155 CharacterOffsetEnd=159 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=160 CharacterOffsetEnd=163 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=163 CharacterOffsetEnd=164 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (CC &)
+      (NP
+        (ADVP (RB afterwards))
+        (NP (NN tea))
+        (PP (IN at)
+          (NP (NNP Maison)))))
+    (VP (NNP Lyons)
+      (PP (IN with)
+        (NP (PRP her))))
+    (. .)))
+
+root(ROOT-0, Lyons-6)
+cc(tea-3, &-1)
+advmod(tea-3, afterwards-2)
+nsubj(Lyons-6, tea-3)
+case(Maison-5, at-4)
+nmod:at(tea-3, Maison-5)
+case(her-8, with-7)
+nmod:with(Lyons-6, her-8)
+punct(Lyons-6, .-9)
+
+Sentence #3 (6 tokens):
+There was nothing striking abt.
+[Text=There CharacterOffsetBegin=165 CharacterOffsetEnd=170 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=171 CharacterOffsetEnd=174 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=nothing CharacterOffsetBegin=175 CharacterOffsetEnd=182 PartOfSpeech=NN Lemma=nothing NamedEntityTag=O]
+[Text=striking CharacterOffsetBegin=183 CharacterOffsetEnd=191 PartOfSpeech=JJ Lemma=striking NamedEntityTag=O]
+[Text=abt CharacterOffsetBegin=192 CharacterOffsetEnd=195 PartOfSpeech=NN Lemma=abt NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=195 CharacterOffsetEnd=196 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD was)
+      (NP
+        (ADJP (NN nothing) (JJ striking))
+        (NN abt)))
+    (. .)))
+
+root(ROOT-0, was-2)
+expl(was-2, There-1)
+nmod:npmod(striking-4, nothing-3)
+amod(abt-5, striking-4)
+nsubj(was-2, abt-5)
+punct(was-2, .-6)
+
+Sentence #4 (7 tokens):
+the concert – only competant playing.
+[Text=the CharacterOffsetBegin=197 CharacterOffsetEnd=200 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=201 CharacterOffsetEnd=208 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=209 CharacterOffsetEnd=210 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=211 CharacterOffsetEnd=215 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=competant CharacterOffsetBegin=216 CharacterOffsetEnd=225 PartOfSpeech=JJ Lemma=competant NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=226 CharacterOffsetEnd=233 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=233 CharacterOffsetEnd=234 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (DT the) (NN concert))
+    (: --)
+    (NP (RB only) (JJ competant) (NN playing))
+    (. .)))
+
+root(ROOT-0, concert-2)
+det(concert-2, the-1)
+punct(concert-2, ---3)
+advmod(playing-6, only-4)
+amod(playing-6, competant-5)
+dep(concert-2, playing-6)
+punct(concert-2, .-7)
+
+Sentence #5 (6 tokens):
+– Schuman Symph Var Etudes.
+[Text=-- CharacterOffsetBegin=235 CharacterOffsetEnd=236 PartOfSpeech=: Lemma=-- NamedEntityTag=PERSON]
+[Text=Schuman CharacterOffsetBegin=237 CharacterOffsetEnd=244 PartOfSpeech=NNP Lemma=Schuman NamedEntityTag=PERSON]
+[Text=Symph CharacterOffsetBegin=245 CharacterOffsetEnd=250 PartOfSpeech=NNP Lemma=Symph NamedEntityTag=PERSON]
+[Text=Var CharacterOffsetBegin=251 CharacterOffsetEnd=254 PartOfSpeech=NNP Lemma=Var NamedEntityTag=PERSON]
+[Text=Etudes CharacterOffsetBegin=255 CharacterOffsetEnd=261 PartOfSpeech=NNP Lemma=Etudes NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=261 CharacterOffsetEnd=262 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (: --) (NNP Schuman) (NNP Symph) (NNP Var) (NNP Etudes) (. .)))
+
+root(ROOT-0, Etudes-5)
+punct(Etudes-5, ---1)
+compound(Etudes-5, Schuman-2)
+compound(Etudes-5, Symph-3)
+compound(Etudes-5, Var-4)
+punct(Etudes-5, .-6)
+
+Sentence #6 (9 tokens):
+Group of modern pieces & Chopin B min.
+[Text=Group CharacterOffsetBegin=263 CharacterOffsetEnd=268 PartOfSpeech=NN Lemma=group NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=269 CharacterOffsetEnd=271 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=modern CharacterOffsetBegin=272 CharacterOffsetEnd=278 PartOfSpeech=JJ Lemma=modern NamedEntityTag=O]
+[Text=pieces CharacterOffsetBegin=279 CharacterOffsetEnd=285 PartOfSpeech=NNS Lemma=piece NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=286 CharacterOffsetEnd=287 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Chopin CharacterOffsetBegin=288 CharacterOffsetEnd=294 PartOfSpeech=NNP Lemma=Chopin NamedEntityTag=O]
+[Text=B CharacterOffsetBegin=295 CharacterOffsetEnd=296 PartOfSpeech=NNP Lemma=B NamedEntityTag=O]
+[Text=min CharacterOffsetBegin=297 CharacterOffsetEnd=300 PartOfSpeech=NN Lemma=min NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1M Timex=<TIMEX3 tid="t2" type="DURATION" value="PT1M">min</TIMEX3>]
+[Text=. CharacterOffsetBegin=300 CharacterOffsetEnd=301 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NN Group))
+    (PP (IN of)
+      (NP
+        (NP (JJ modern) (NNS pieces))
+        (CC &)
+        (NNP Chopin) (NNP B) (NN min)))
+    (. .)))
+
+root(ROOT-0, Group-1)
+case(pieces-4, of-2)
+amod(pieces-4, modern-3)
+nmod:of(Group-1, pieces-4)
+cc(pieces-4, &-5)
+compound(min-8, Chopin-6)
+compound(min-8, B-7)
+nmod:of(Group-1, min-8)
+conj:&(pieces-4, min-8)
+punct(Group-1, .-9)
+
+Sentence #7 (2 tokens):
+sonata.
+[Text=sonata CharacterOffsetBegin=302 CharacterOffsetEnd=308 PartOfSpeech=NN Lemma=sonata NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=308 CharacterOffsetEnd=309 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (NN sonata) (. .)))
+
+root(ROOT-0, sonata-1)
+punct(sonata-1, .-2)
+
+Coreference set:
+	(2,8,[8,9]) -> (1,7,[6,10]), that is: "her" -> "Maud Randall in afternoon"

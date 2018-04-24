@@ -1,0 +1,115 @@
+Sentence #1 (15 tokens):
+Luncheon at 12, walked to Hay in rain and went to the Castle.
+[Text=Luncheon CharacterOffsetBegin=0 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Luncheon NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=12 CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=CD Lemma=12 NamedEntityTag=NUMBER NormalizedNamedEntityTag=12.0]
+[Text=, CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=walked CharacterOffsetBegin=16 CharacterOffsetEnd=22 PartOfSpeech=VBD Lemma=walk NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Hay CharacterOffsetBegin=26 CharacterOffsetEnd=29 PartOfSpeech=VB Lemma=hay NamedEntityTag=LOCATION]
+[Text=in CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=rain CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=rain NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=50 CharacterOffsetEnd=53 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Castle CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Castle NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP Luncheon))
+      (PP (IN at)
+        (NP (CD 12))))
+    (, ,)
+    (VP
+      (VP (VBD walked)
+        (S
+          (VP (TO to)
+            (VP (VB Hay)
+              (PP (IN in)
+                (NP (NN rain)))))))
+      (CC and)
+      (VP (VBD went)
+        (PP (TO to)
+          (NP (DT the) (NNP Castle)))))
+    (. .)))
+
+root(ROOT-0, walked-5)
+nsubj(walked-5, Luncheon-1)
+nsubj:xsubj(Hay-7, Luncheon-1)
+nsubj(went-11, Luncheon-1)
+case(12-3, at-2)
+nmod:at(Luncheon-1, 12-3)
+punct(walked-5, ,-4)
+mark(Hay-7, to-6)
+xcomp(walked-5, Hay-7)
+case(rain-9, in-8)
+nmod:in(Hay-7, rain-9)
+cc(walked-5, and-10)
+conj:and(walked-5, went-11)
+case(Castle-14, to-12)
+det(Castle-14, the-13)
+nmod:to(went-11, Castle-14)
+punct(walked-5, .-15)
+
+Sentence #2 (18 tokens):
+The 4 girls singing Pilgrims of the Night around the organ in the hall, Mary playing.
+[Text=The CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=4 CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=CD Lemma=4 NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.0]
+[Text=girls CharacterOffsetBegin=68 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=girl NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=74 CharacterOffsetEnd=81 PartOfSpeech=NN Lemma=singing NamedEntityTag=O]
+[Text=Pilgrims CharacterOffsetBegin=82 CharacterOffsetEnd=90 PartOfSpeech=NNPS Lemma=Pilgrims NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Night CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=NNP Lemma=Night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t1" type="TIME" value="TNI">Night</TIMEX3>]
+[Text=around CharacterOffsetBegin=104 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=around NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=organ CharacterOffsetBegin=115 CharacterOffsetEnd=120 PartOfSpeech=NN Lemma=organ NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=124 CharacterOffsetEnd=127 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=hall CharacterOffsetBegin=128 CharacterOffsetEnd=132 PartOfSpeech=NN Lemma=hall NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Mary CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=NNP Lemma=Mary NamedEntityTag=PERSON]
+[Text=playing CharacterOffsetBegin=139 CharacterOffsetEnd=146 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (CD 4) (NNS girls))
+    (VP
+      (NP (NN singing))
+      (NP
+        (NP (NNPS Pilgrims))
+        (PP (IN of)
+          (NP (DT the) (NNP Night))))
+      (PP (IN around)
+        (NP
+          (NP (DT the) (NN organ))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN hall))
+              (, ,)
+              (NP (NNP Mary) (NN playing)))))))
+    (. .)))
+
+root(ROOT-0, singing-4)
+det(girls-3, The-1)
+nummod(girls-3, 4-2)
+nsubj(singing-4, girls-3)
+dobj(singing-4, Pilgrims-5)
+case(Night-8, of-6)
+det(Night-8, the-7)
+nmod:of(Pilgrims-5, Night-8)
+case(organ-11, around-9)
+det(organ-11, the-10)
+nmod:around(singing-4, organ-11)
+case(hall-14, in-12)
+det(hall-14, the-13)
+nmod:in(organ-11, hall-14)
+punct(hall-14, ,-15)
+compound(playing-17, Mary-16)
+appos(hall-14, playing-17)
+punct(singing-4, .-18)
+
+Coreference set:
+	(2,17,[16,18]) -> (2,14,[13,15]), that is: "Mary playing" -> "the hall"

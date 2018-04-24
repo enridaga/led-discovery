@@ -1,0 +1,52 @@
+Sentence #1 (17 tokens):
+Paul Jacobs and I performed, as a curtain-lowered, both of the four-hand Stravinsky suites.
+[Text=Paul CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NNP Lemma=Paul NamedEntityTag=PERSON]
+[Text=Jacobs CharacterOffsetBegin=5 CharacterOffsetEnd=11 PartOfSpeech=NNP Lemma=Jacobs NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=12 CharacterOffsetEnd=15 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=performed CharacterOffsetBegin=18 CharacterOffsetEnd=27 PartOfSpeech=VBD Lemma=perform NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=curtain-lowered CharacterOffsetBegin=34 CharacterOffsetEnd=49 PartOfSpeech=JJ Lemma=curtain-lowered NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=both CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=DT Lemma=both NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=four-hand CharacterOffsetBegin=63 CharacterOffsetEnd=72 PartOfSpeech=JJ Lemma=four-hand NamedEntityTag=O]
+[Text=Stravinsky CharacterOffsetBegin=73 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=Stravinsky NamedEntityTag=PERSON]
+[Text=suites CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=NNS Lemma=suite NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP Paul) (NNP Jacobs))
+      (CC and)
+      (NP (PRP I)))
+    (VP (VBD performed) (, ,)
+      (PP (IN as)
+        (NP (DT a) (JJ curtain-lowered)))
+      (, ,)
+      (PP (DT both) (IN of)
+        (NP (DT the) (JJ four-hand) (NNP Stravinsky) (NNS suites))))
+    (. .)))
+
+root(ROOT-0, performed-5)
+compound(Jacobs-2, Paul-1)
+nsubj(performed-5, Jacobs-2)
+cc(Jacobs-2, and-3)
+conj:and(Jacobs-2, I-4)
+nsubj(performed-5, I-4)
+punct(performed-5, ,-6)
+case(curtain-lowered-9, as-7)
+det(curtain-lowered-9, a-8)
+nmod:as(performed-5, curtain-lowered-9)
+punct(performed-5, ,-10)
+dep(suites-16, both-11)
+case(suites-16, of-12)
+det(suites-16, the-13)
+amod(suites-16, four-hand-14)
+compound(suites-16, Stravinsky-15)
+nmod:of(performed-5, suites-16)
+punct(performed-5, .-17)
+

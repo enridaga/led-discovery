@@ -1,0 +1,78 @@
+Sentence #1 (23 tokens):
+Felix and Clara figuring in the duet which I had written for her voice, and his imitation of the French horn.
+[Text=Felix CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=Felix NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Clara CharacterOffsetBegin=10 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Clara NamedEntityTag=PERSON]
+[Text=figuring CharacterOffsetBegin=16 CharacterOffsetEnd=24 PartOfSpeech=VBG Lemma=figure NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=duet CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=duet NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=written CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=VBN Lemma=write NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=voice CharacterOffsetBegin=65 CharacterOffsetEnd=70 PartOfSpeech=NN Lemma=voice NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=imitation CharacterOffsetBegin=80 CharacterOffsetEnd=89 PartOfSpeech=NN Lemma=imitation NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=French CharacterOffsetBegin=97 CharacterOffsetEnd=103 PartOfSpeech=JJ Lemma=french NamedEntityTag=MISC]
+[Text=horn CharacterOffsetBegin=104 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=horn NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Felix)
+      (CC and)
+      (NNP Clara))
+    (VP (VBG figuring)
+      (PP (IN in)
+        (NP
+          (NP
+            (NP (DT the) (NN duet))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (NP (PRP I))
+                (VP (VBD had)
+                  (VP (VBN written)
+                    (PP (IN for)
+                      (NP (PRP$ her) (NN voice))))))))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (PRP$ his) (NN imitation))
+            (PP (IN of)
+              (NP (DT the) (JJ French) (NN horn)))))))
+    (. .)))
+
+root(ROOT-0, Felix-1)
+cc(Felix-1, and-2)
+conj:and(Felix-1, Clara-3)
+acl(Felix-1, figuring-4)
+case(duet-7, in-5)
+det(duet-7, the-6)
+nmod:in(figuring-4, duet-7)
+dobj(written-11, duet-7)
+ref(duet-7, which-8)
+nsubj(written-11, I-9)
+aux(written-11, had-10)
+acl:relcl(duet-7, written-11)
+case(voice-14, for-12)
+nmod:poss(voice-14, her-13)
+nmod:for(written-11, voice-14)
+punct(duet-7, ,-15)
+cc(duet-7, and-16)
+nmod:poss(imitation-18, his-17)
+nmod:in(figuring-4, imitation-18)
+conj:and(duet-7, imitation-18)
+dobj(written-11, imitation-18)
+case(horn-22, of-19)
+det(horn-22, the-20)
+amod(horn-22, French-21)
+nmod:of(imitation-18, horn-22)
+punct(Felix-1, .-23)
+

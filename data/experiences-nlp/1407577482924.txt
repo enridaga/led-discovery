@@ -1,0 +1,334 @@
+Sentence #1 (2 tokens):
+Whitsunday.
+[Text=Whitsunday CharacterOffsetBegin=0 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Whitsunday NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (NNP Whitsunday))
+    (. .)))
+
+root(ROOT-0, Whitsunday-1)
+punct(Whitsunday-1, .-2)
+
+Sentence #2 (21 tokens):
+By water to Whitehall and there to Chappell in my pew, belonging me as Clerk of the Privy Seale.
+[Text=By CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=water CharacterOffsetBegin=15 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=water NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Whitehall CharacterOffsetBegin=24 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Whitehall NamedEntityTag=ORGANIZATION]
+[Text=and CharacterOffsetBegin=34 CharacterOffsetEnd=37 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Chappell CharacterOffsetBegin=47 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Chappell NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=pew CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=pew NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=belonging CharacterOffsetBegin=67 CharacterOffsetEnd=76 PartOfSpeech=VBG Lemma=belong NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=77 CharacterOffsetEnd=79 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=Clerk CharacterOffsetBegin=83 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=clerk NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Privy CharacterOffsetBegin=96 CharacterOffsetEnd=101 PartOfSpeech=NNP Lemma=Privy NamedEntityTag=O]
+[Text=Seale CharacterOffsetBegin=102 CharacterOffsetEnd=107 PartOfSpeech=NNP Lemma=Seale NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN By)
+      (NP
+        (NP (NN water))
+        (PP
+          (PP (TO to)
+            (NP (NNP Whitehall)))
+          (CC and)
+          (ADVP (RB there))
+          (PP (TO to)
+            (NP (NNP Chappell))))
+        (PP (IN in)
+          (NP (PRP$ my) (NN pew)))
+        (, ,)
+        (VP (VBG belonging)
+          (NP (PRP me))
+          (PP (IN as)
+            (NP (NN Clerk))))
+        (PP (IN of)
+          (NP (DT the) (NNP Privy) (NNP Seale)))))
+    (. .)))
+
+root(ROOT-0, water-2)
+case(water-2, By-1)
+conj:and(water-2, water-2')
+case(Whitehall-4, to-3)
+nmod:to(water-2, Whitehall-4)
+cc(water-2, and-5)
+advmod(Chappell-8, there-6)
+case(Chappell-8, to-7)
+nmod:to(water-2', Chappell-8)
+case(pew-11, in-9)
+nmod:poss(pew-11, my-10)
+nmod:in(water-2, pew-11)
+punct(water-2, ,-12)
+acl(water-2, belonging-13)
+dobj(belonging-13, me-14)
+case(Clerk-16, as-15)
+nmod:as(belonging-13, Clerk-16)
+case(Seale-20, of-17)
+det(Seale-20, the-18)
+compound(Seale-20, Privy-19)
+nmod:of(water-2, Seale-20)
+punct(water-2, .-21)
+
+Sentence #3 (36 tokens):
+And there I heard a most excellent sermon of Dr. Hacket[t], Bishop of Lichfield and Coventry - upon these words: "Hee that drinketh this water shall never thirst."
+[Text=And CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=113 CharacterOffsetEnd=118 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=121 CharacterOffsetEnd=126 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=129 CharacterOffsetEnd=133 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=excellent CharacterOffsetBegin=134 CharacterOffsetEnd=143 PartOfSpeech=JJ Lemma=excellent NamedEntityTag=O]
+[Text=sermon CharacterOffsetBegin=144 CharacterOffsetEnd=150 PartOfSpeech=NN Lemma=sermon NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=151 CharacterOffsetEnd=153 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Dr. CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=NNP Lemma=Dr. NamedEntityTag=O]
+[Text=Hacket CharacterOffsetBegin=158 CharacterOffsetEnd=164 PartOfSpeech=NNP Lemma=Hacket NamedEntityTag=PERSON]
+[Text=-LSB- CharacterOffsetBegin=164 CharacterOffsetEnd=165 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=t CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=NN Lemma=t NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=166 CharacterOffsetEnd=167 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=167 CharacterOffsetEnd=168 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Bishop CharacterOffsetBegin=169 CharacterOffsetEnd=175 PartOfSpeech=NNP Lemma=Bishop NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=176 CharacterOffsetEnd=178 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Lichfield CharacterOffsetBegin=179 CharacterOffsetEnd=188 PartOfSpeech=NNP Lemma=Lichfield NamedEntityTag=LOCATION]
+[Text=and CharacterOffsetBegin=189 CharacterOffsetEnd=192 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Coventry CharacterOffsetBegin=193 CharacterOffsetEnd=201 PartOfSpeech=NNP Lemma=Coventry NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=202 CharacterOffsetEnd=203 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=upon CharacterOffsetBegin=204 CharacterOffsetEnd=208 PartOfSpeech=IN Lemma=upon NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=209 CharacterOffsetEnd=214 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=words CharacterOffsetBegin=215 CharacterOffsetEnd=220 PartOfSpeech=NNS Lemma=word NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=220 CharacterOffsetEnd=221 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=222 CharacterOffsetEnd=223 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Hee CharacterOffsetBegin=223 CharacterOffsetEnd=226 PartOfSpeech=NNP Lemma=Hee NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=227 CharacterOffsetEnd=231 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=drinketh CharacterOffsetBegin=232 CharacterOffsetEnd=240 PartOfSpeech=NN Lemma=drinketh NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=241 CharacterOffsetEnd=245 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=water CharacterOffsetBegin=246 CharacterOffsetEnd=251 PartOfSpeech=NN Lemma=water NamedEntityTag=O]
+[Text=shall CharacterOffsetBegin=252 CharacterOffsetEnd=257 PartOfSpeech=MD Lemma=shall NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=258 CharacterOffsetEnd=263 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=thirst CharacterOffsetBegin=264 CharacterOffsetEnd=270 PartOfSpeech=NN Lemma=thirst NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=270 CharacterOffsetEnd=271 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=271 CharacterOffsetEnd=272 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S (CC And)
+    (NP (EX there))
+    (PRN
+      (S
+        (NP (PRP I))
+        (VP (VBD heard)
+          (NP
+            (NP (DT a)
+              (ADJP (RBS most) (JJ excellent))
+              (NN sermon))
+            (PP (IN of)
+              (NP
+                (NP
+                  (NP (NNP Dr.) (NNP Hacket) (-LRB- -LSB-))
+                  (NN t) (-RRB- -RSB-))
+                (, ,)
+                (NP
+                  (NP (NNP Bishop))
+                  (PP (IN of)
+                    (NP (NNP Lichfield)
+                      (CC and)
+                      (NNP Coventry))))
+                (: -))))
+          (PP (IN upon)
+            (NP (DT these) (NNS words)))
+          (: :) (`` ``)
+          (FRAG
+            (NP (NNP Hee))
+            (PP (IN that)
+              (NP (NN drinketh)))))))
+    (NP (DT this) (NN water))
+    (VP (MD shall)
+      (VP
+        (ADVP (RB never))
+        (NP (NN thirst))))
+    (. .) ('' '')))
+
+root(ROOT-0, thirst-34)
+cc(thirst-34, And-1)
+expl(thirst-34, there-2)
+nsubj(heard-4, I-3)
+parataxis(thirst-34, heard-4)
+det(sermon-8, a-5)
+advmod(excellent-7, most-6)
+amod(sermon-8, excellent-7)
+dobj(heard-4, sermon-8)
+case(t-13, of-9)
+compound(Hacket-11, Dr.-10)
+compound(t-13, Hacket-11)
+punct(Hacket-11, -LSB--12)
+nmod:of(sermon-8, t-13)
+punct(t-13, -RSB--14)
+punct(t-13, ,-15)
+appos(t-13, Bishop-16)
+case(Lichfield-18, of-17)
+nmod:of(Bishop-16, Lichfield-18)
+cc(Lichfield-18, and-19)
+nmod:of(Bishop-16, Coventry-20)
+conj:and(Lichfield-18, Coventry-20)
+punct(t-13, --21)
+case(words-24, upon-22)
+det(words-24, these-23)
+nmod:upon(heard-4, words-24)
+punct(heard-4, :-25)
+punct(heard-4, ``-26)
+dep(heard-4, Hee-27)
+case(drinketh-29, that-28)
+nmod:that(Hee-27, drinketh-29)
+det(water-31, this-30)
+nsubj(thirst-34, water-31)
+aux(thirst-34, shall-32)
+neg(thirst-34, never-33)
+punct(thirst-34, .-35)
+punct(thirst-34, ''-36)
+
+Sentence #4 (40 tokens):
+We had an excellent Anthemne sung by Capt. Cooke and another, and brave Musique; and then the King Come down and offered, and took the Sacrament upon his Knees - a sight very well worth seeing.
+[Text=We CharacterOffsetBegin=273 CharacterOffsetEnd=275 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=276 CharacterOffsetEnd=279 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=280 CharacterOffsetEnd=282 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=excellent CharacterOffsetBegin=283 CharacterOffsetEnd=292 PartOfSpeech=JJ Lemma=excellent NamedEntityTag=O]
+[Text=Anthemne CharacterOffsetBegin=293 CharacterOffsetEnd=301 PartOfSpeech=NNP Lemma=Anthemne NamedEntityTag=O]
+[Text=sung CharacterOffsetBegin=302 CharacterOffsetEnd=306 PartOfSpeech=VBN Lemma=sing NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=307 CharacterOffsetEnd=309 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Capt. CharacterOffsetBegin=310 CharacterOffsetEnd=315 PartOfSpeech=NNP Lemma=Capt. NamedEntityTag=O]
+[Text=Cooke CharacterOffsetBegin=316 CharacterOffsetEnd=321 PartOfSpeech=NNP Lemma=Cooke NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=322 CharacterOffsetEnd=325 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=another CharacterOffsetBegin=326 CharacterOffsetEnd=333 PartOfSpeech=DT Lemma=another NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=333 CharacterOffsetEnd=334 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=335 CharacterOffsetEnd=338 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=brave CharacterOffsetBegin=339 CharacterOffsetEnd=344 PartOfSpeech=VB Lemma=brave NamedEntityTag=O]
+[Text=Musique CharacterOffsetBegin=345 CharacterOffsetEnd=352 PartOfSpeech=NNP Lemma=Musique NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=352 CharacterOffsetEnd=353 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=354 CharacterOffsetEnd=357 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=358 CharacterOffsetEnd=362 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=363 CharacterOffsetEnd=366 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=King CharacterOffsetBegin=367 CharacterOffsetEnd=371 PartOfSpeech=NNP Lemma=King NamedEntityTag=MISC]
+[Text=Come CharacterOffsetBegin=372 CharacterOffsetEnd=376 PartOfSpeech=VB Lemma=come NamedEntityTag=MISC]
+[Text=down CharacterOffsetBegin=377 CharacterOffsetEnd=381 PartOfSpeech=RB Lemma=down NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=382 CharacterOffsetEnd=385 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=offered CharacterOffsetBegin=386 CharacterOffsetEnd=393 PartOfSpeech=VBN Lemma=offer NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=393 CharacterOffsetEnd=394 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=395 CharacterOffsetEnd=398 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=took CharacterOffsetBegin=399 CharacterOffsetEnd=403 PartOfSpeech=VBD Lemma=take NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=404 CharacterOffsetEnd=407 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Sacrament CharacterOffsetBegin=408 CharacterOffsetEnd=417 PartOfSpeech=NN Lemma=sacrament NamedEntityTag=MISC]
+[Text=upon CharacterOffsetBegin=418 CharacterOffsetEnd=422 PartOfSpeech=IN Lemma=upon NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=423 CharacterOffsetEnd=426 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=Knees CharacterOffsetBegin=427 CharacterOffsetEnd=432 PartOfSpeech=NNS Lemma=knee NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=433 CharacterOffsetEnd=434 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=435 CharacterOffsetEnd=436 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=sight CharacterOffsetBegin=437 CharacterOffsetEnd=442 PartOfSpeech=NN Lemma=sight NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=443 CharacterOffsetEnd=447 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=448 CharacterOffsetEnd=452 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=worth CharacterOffsetBegin=453 CharacterOffsetEnd=458 PartOfSpeech=JJ Lemma=worth NamedEntityTag=O]
+[Text=seeing CharacterOffsetBegin=459 CharacterOffsetEnd=465 PartOfSpeech=VBG Lemma=see NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=465 CharacterOffsetEnd=466 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP
+        (VP (VBD had)
+          (NP (DT an) (JJ excellent) (NNP Anthemne))
+          (VP (VBN sung)
+            (PP (IN by)
+              (NP
+                (NP (NNP Capt.) (NNP Cooke))
+                (CC and)
+                (NP (DT another))))))
+        (, ,)
+        (CC and)
+        (VP (VB brave)
+          (NP (NNP Musique)))))
+    (: ;)
+    (CC and)
+    (ADVP (RB then))
+    (S
+      (NP (DT the) (NNP King))
+      (VP
+        (VP (VB Come)
+          (ADVP (RB down)))
+        (CC and)
+        (VP
+          (VP (VBN offered))
+          (, ,)
+          (CC and)
+          (VP (VBD took)
+            (NP
+              (NP (DT the) (NN Sacrament))
+              (PP (IN upon)
+                (NP (PRP$ his) (NNS Knees))))
+            (: -)
+            (S
+              (NP (DT a) (NN sight))
+              (ADJP (RB very) (RB well) (JJ worth))
+              (S
+                (VP (VBG seeing))))))))
+    (. .)))
+
+root(ROOT-0, sung-6)
+nsubj(sung-6, We-1)
+nsubj(brave-14, We-1)
+aux(sung-6, had-2)
+det(Anthemne-5, an-3)
+amod(Anthemne-5, excellent-4)
+dobj(sung-6, Anthemne-5)
+case(Cooke-9, by-7)
+compound(Cooke-9, Capt.-8)
+nmod:by(sung-6, Cooke-9)
+cc(Cooke-9, and-10)
+nmod:by(sung-6, another-11)
+conj:and(Cooke-9, another-11)
+punct(sung-6, ,-12)
+cc(sung-6, and-13)
+conj:and(sung-6, brave-14)
+dobj(brave-14, Musique-15)
+punct(sung-6, ;-16)
+cc(sung-6, and-17)
+advmod(Come-21, then-18)
+det(King-20, the-19)
+nsubj(Come-21, King-20)
+nsubj(offered-24, King-20)
+conj:and(sung-6, Come-21)
+advmod(Come-21, down-22)
+cc(Come-21, and-23)
+conj:and(sung-6, offered-24)
+conj:and(Come-21, offered-24)
+punct(offered-24, ,-25)
+cc(offered-24, and-26)
+conj:and(Come-21, took-27)
+conj:and(offered-24, took-27)
+det(Sacrament-29, the-28)
+dobj(took-27, Sacrament-29)
+case(Knees-32, upon-30)
+nmod:poss(Knees-32, his-31)
+nmod:upon(Sacrament-29, Knees-32)
+punct(took-27, --33)
+det(sight-35, a-34)
+nsubj(seeing-39, sight-35)
+advmod(worth-38, very-36)
+advmod(worth-38, well-37)
+dep(seeing-39, worth-38)
+parataxis(took-27, seeing-39)
+punct(sung-6, .-40)
+
+Coreference set:
+	(2,2,[2,21]) -> (3,31,[30,32]), that is: "water to Whitehall and there to Chappell in my pew , belonging me as Clerk of the Privy Seale" -> "this water"
+Coreference set:
+	(2,14,[14,15]) -> (2,10,[10,11]), that is: "me" -> "my"
+	(3,3,[3,4]) -> (2,10,[10,11]), that is: "I" -> "my"
+Coreference set:
+	(4,21,[20,22]) -> (4,20,[19,21]), that is: "King Come" -> "the King"
+	(4,31,[31,32]) -> (4,20,[19,21]), that is: "his" -> "the King"

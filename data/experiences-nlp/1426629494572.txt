@@ -1,0 +1,301 @@
+Sentence #1 (14 tokens):
+Two days ago we were at an evening party at George Sand's.
+[Text=Two CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CD Lemma=two NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-2D Timex=<TIMEX3 alt_value="OFFSET P-2D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Two days ago</TIMEX3>]
+[Text=days CharacterOffsetBegin=4 CharacterOffsetEnd=8 PartOfSpeech=NNS Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-2D Timex=<TIMEX3 alt_value="OFFSET P-2D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Two days ago</TIMEX3>]
+[Text=ago CharacterOffsetBegin=9 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=ago NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-2D Timex=<TIMEX3 alt_value="OFFSET P-2D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Two days ago</TIMEX3>]
+[Text=we CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=27 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t2" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=party CharacterOffsetBegin=35 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=party NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=George CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=George NamedEntityTag=PERSON]
+[Text=Sand CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Sand NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP
+      (NP (CD Two) (NNS days))
+      (IN ago))
+    (NP (PRP we))
+    (VP (VBD were)
+      (PP (IN at)
+        (NP (DT an) (NN evening) (NN party)))
+      (PP (IN at)
+        (NP (NNP George) (NNP Sand) (POS 's))))
+    (. .)))
+
+root(ROOT-0, party-9)
+nummod(days-2, Two-1)
+advmod(party-9, days-2)
+case(days-2, ago-3)
+nsubj(party-9, we-4)
+cop(party-9, were-5)
+case(party-9, at-6)
+det(party-9, an-7)
+compound(party-9, evening-8)
+case(Sand-12, at-10)
+compound(Sand-12, George-11)
+nmod:'s(party-9, Sand-12)
+case(Sand-12, 's-13)
+punct(party-9, .-14)
+
+Sentence #2 (8 tokens):
+Karl and Pauline Viardot were the performers.
+[Text=Karl CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=Karl NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Pauline CharacterOffsetBegin=68 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Pauline NamedEntityTag=PERSON]
+[Text=Viardot CharacterOffsetBegin=76 CharacterOffsetEnd=83 PartOfSpeech=NNP Lemma=Viardot NamedEntityTag=PERSON]
+[Text=were CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=performers CharacterOffsetBegin=93 CharacterOffsetEnd=103 PartOfSpeech=NNS Lemma=performer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP Karl))
+      (CC and)
+      (NP (NNP Pauline) (NNP Viardot)))
+    (VP (VBD were)
+      (NP (DT the) (NNS performers)))
+    (. .)))
+
+root(ROOT-0, performers-7)
+nsubj(performers-7, Karl-1)
+cc(Karl-1, and-2)
+compound(Viardot-4, Pauline-3)
+conj:and(Karl-1, Viardot-4)
+nsubj(performers-7, Viardot-4)
+cop(performers-7, were-5)
+det(performers-7, the-6)
+punct(performers-7, .-8)
+
+Sentence #3 (38 tokens):
+The latter is the sister of the great Malibran, but she is herself one of the first singers in the world for musical talent and intelligence; this surpasses even what she does as a pianist.
+[Text=The CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=latter CharacterOffsetBegin=109 CharacterOffsetEnd=115 PartOfSpeech=JJ Lemma=latter NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sister CharacterOffsetBegin=123 CharacterOffsetEnd=129 PartOfSpeech=NN Lemma=sister NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=130 CharacterOffsetEnd=132 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=133 CharacterOffsetEnd=136 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=137 CharacterOffsetEnd=142 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=Malibran CharacterOffsetBegin=143 CharacterOffsetEnd=151 PartOfSpeech=NNP Lemma=Malibran NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=153 CharacterOffsetEnd=156 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=157 CharacterOffsetEnd=160 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=herself CharacterOffsetBegin=164 CharacterOffsetEnd=171 PartOfSpeech=PRP Lemma=herself NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=172 CharacterOffsetEnd=175 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=176 CharacterOffsetEnd=178 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=179 CharacterOffsetEnd=182 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=183 CharacterOffsetEnd=188 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=singers CharacterOffsetBegin=189 CharacterOffsetEnd=196 PartOfSpeech=NNS Lemma=singer NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=197 CharacterOffsetEnd=199 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=200 CharacterOffsetEnd=203 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=204 CharacterOffsetEnd=209 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=210 CharacterOffsetEnd=213 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=musical CharacterOffsetBegin=214 CharacterOffsetEnd=221 PartOfSpeech=JJ Lemma=musical NamedEntityTag=O]
+[Text=talent CharacterOffsetBegin=222 CharacterOffsetEnd=228 PartOfSpeech=NN Lemma=talent NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=229 CharacterOffsetEnd=232 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=intelligence CharacterOffsetBegin=233 CharacterOffsetEnd=245 PartOfSpeech=NN Lemma=intelligence NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=245 CharacterOffsetEnd=246 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=247 CharacterOffsetEnd=251 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=surpasses CharacterOffsetBegin=252 CharacterOffsetEnd=261 PartOfSpeech=VBZ Lemma=surpass NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=262 CharacterOffsetEnd=266 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=267 CharacterOffsetEnd=271 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=272 CharacterOffsetEnd=275 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=276 CharacterOffsetEnd=280 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=281 CharacterOffsetEnd=283 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=284 CharacterOffsetEnd=285 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=pianist CharacterOffsetBegin=286 CharacterOffsetEnd=293 PartOfSpeech=NN Lemma=pianist NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=293 CharacterOffsetEnd=294 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (S
+        (NP (DT The) (JJ latter))
+        (VP (VBZ is)
+          (NP
+            (NP (DT the) (NN sister))
+            (PP (IN of)
+              (NP (DT the) (JJ great) (NNP Malibran))))))
+      (, ,)
+      (CC but)
+      (S
+        (NP (PRP she))
+        (VP (VBZ is)
+          (NP (PRP herself)
+            (NP
+              (NP (CD one))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (JJ first) (NNS singers))
+                  (PP (IN in)
+                    (NP
+                      (NP (DT the) (NN world))
+                      (PP (IN for)
+                        (NP (JJ musical) (NN talent)
+                          (CC and)
+                          (NN intelligence))))))))))))
+    (: ;)
+    (S
+      (NP (DT this))
+      (VP (VBZ surpasses)
+        (SBAR
+          (ADVP (RB even))
+          (WHNP (WP what))
+          (S
+            (NP (PRP she))
+            (VP (VBZ does)
+              (PP (IN as)
+                (NP (DT a) (NN pianist))))))))
+    (. .)))
+
+root(ROOT-0, sister-5)
+det(latter-2, The-1)
+nsubj(sister-5, latter-2)
+cop(sister-5, is-3)
+det(sister-5, the-4)
+case(Malibran-9, of-6)
+det(Malibran-9, the-7)
+amod(Malibran-9, great-8)
+nmod:of(sister-5, Malibran-9)
+punct(sister-5, ,-10)
+cc(sister-5, but-11)
+nsubj(one-15, she-12)
+cop(one-15, is-13)
+dep(one-15, herself-14)
+det:qmod(singers-19, one-15)
+mwe(one-15, of-16)
+det(singers-19, the-17)
+amod(singers-19, first-18)
+conj:but(sister-5, singers-19)
+case(world-22, in-20)
+det(world-22, the-21)
+nmod:in(singers-19, world-22)
+case(talent-25, for-23)
+amod(talent-25, musical-24)
+nmod:for(world-22, talent-25)
+cc(talent-25, and-26)
+nmod:for(world-22, intelligence-27)
+conj:and(talent-25, intelligence-27)
+punct(sister-5, ;-28)
+nsubj(surpasses-30, this-29)
+parataxis(sister-5, surpasses-30)
+advmod(does-34, even-31)
+dobj(does-34, what-32)
+nsubj(does-34, she-33)
+ccomp(surpasses-30, does-34)
+case(pianist-37, as-35)
+det(pianist-37, a-36)
+nmod:as(does-34, pianist-37)
+punct(sister-5, .-38)
+
+Sentence #4 (27 tokens):
+Chopin was in excellent spirits, beaming with joy at the success of his little pupil, who was kissed by Sand, Viardot and everyone.
+[Text=Chopin CharacterOffsetBegin=295 CharacterOffsetEnd=301 PartOfSpeech=NNP Lemma=Chopin NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=302 CharacterOffsetEnd=305 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=306 CharacterOffsetEnd=308 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=excellent CharacterOffsetBegin=309 CharacterOffsetEnd=318 PartOfSpeech=JJ Lemma=excellent NamedEntityTag=O]
+[Text=spirits CharacterOffsetBegin=319 CharacterOffsetEnd=326 PartOfSpeech=NNS Lemma=spirit NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=326 CharacterOffsetEnd=327 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=beaming CharacterOffsetBegin=328 CharacterOffsetEnd=335 PartOfSpeech=VBG Lemma=beam NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=336 CharacterOffsetEnd=340 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=joy CharacterOffsetBegin=341 CharacterOffsetEnd=344 PartOfSpeech=NN Lemma=joy NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=345 CharacterOffsetEnd=347 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=348 CharacterOffsetEnd=351 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=success CharacterOffsetBegin=352 CharacterOffsetEnd=359 PartOfSpeech=NN Lemma=success NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=360 CharacterOffsetEnd=362 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=363 CharacterOffsetEnd=366 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=367 CharacterOffsetEnd=373 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=pupil CharacterOffsetBegin=374 CharacterOffsetEnd=379 PartOfSpeech=NN Lemma=pupil NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=379 CharacterOffsetEnd=380 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=381 CharacterOffsetEnd=384 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=385 CharacterOffsetEnd=388 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=kissed CharacterOffsetBegin=389 CharacterOffsetEnd=395 PartOfSpeech=VBN Lemma=kiss NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=396 CharacterOffsetEnd=398 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Sand CharacterOffsetBegin=399 CharacterOffsetEnd=403 PartOfSpeech=NNP Lemma=Sand NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=403 CharacterOffsetEnd=404 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Viardot CharacterOffsetBegin=405 CharacterOffsetEnd=412 PartOfSpeech=NNP Lemma=Viardot NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=413 CharacterOffsetEnd=416 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=everyone CharacterOffsetBegin=417 CharacterOffsetEnd=425 PartOfSpeech=NN Lemma=everyone NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=425 CharacterOffsetEnd=426 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Chopin))
+    (VP (VBD was)
+      (PP (IN in)
+        (NP
+          (NP (JJ excellent) (NNS spirits))
+          (, ,)
+          (NP
+            (NP (VBG beaming))
+            (PP (IN with)
+              (NP (NN joy))))))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NN success))
+          (PP (IN of)
+            (NP
+              (NP (PRP$ his) (JJ little) (NN pupil))
+              (, ,)
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD was)
+                    (VP (VBN kissed)
+                      (PP (IN by)
+                        (NP
+                          (NP (NNP Sand))
+                          (, ,)
+                          (NP (NNP Viardot))
+                          (CC and)
+                          (NP (NN everyone)))))))))))))
+    (. .)))
+
+root(ROOT-0, spirits-5)
+nsubj(spirits-5, Chopin-1)
+cop(spirits-5, was-2)
+case(spirits-5, in-3)
+amod(spirits-5, excellent-4)
+punct(spirits-5, ,-6)
+appos(spirits-5, beaming-7)
+case(joy-9, with-8)
+nmod:with(beaming-7, joy-9)
+case(success-12, at-10)
+det(success-12, the-11)
+nmod:at(spirits-5, success-12)
+case(pupil-16, of-13)
+nmod:poss(pupil-16, his-14)
+amod(pupil-16, little-15)
+nmod:of(success-12, pupil-16)
+nsubjpass(kissed-20, pupil-16)
+punct(pupil-16, ,-17)
+ref(pupil-16, who-18)
+auxpass(kissed-20, was-19)
+acl:relcl(pupil-16, kissed-20)
+case(Sand-22, by-21)
+nmod:agent(kissed-20, Sand-22)
+punct(Sand-22, ,-23)
+nmod:agent(kissed-20, Viardot-24)
+conj:and(Sand-22, Viardot-24)
+cc(Sand-22, and-25)
+nmod:agent(kissed-20, everyone-26)
+conj:and(Sand-22, everyone-26)
+punct(spirits-5, .-27)
+
+Coreference set:
+	(4,22,[22,23]) -> (1,12,[11,14]), that is: "Sand" -> "George Sand 's"
+Coreference set:
+	(4,24,[24,25]) -> (2,4,[3,5]), that is: "Viardot" -> "Pauline Viardot"
+Coreference set:
+	(2,1,[1,5]) -> (2,7,[6,8]), that is: "Karl and Pauline Viardot" -> "the performers"
+Coreference set:
+	(3,12,[12,13]) -> (3,5,[4,10]), that is: "she" -> "the sister of the great Malibran"
+	(3,14,[14,15]) -> (3,5,[4,10]), that is: "herself" -> "the sister of the great Malibran"
+	(3,33,[33,34]) -> (3,5,[4,10]), that is: "she" -> "the sister of the great Malibran"
+Coreference set:
+	(4,14,[14,15]) -> (4,1,[1,2]), that is: "his" -> "Chopin"

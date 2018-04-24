@@ -1,0 +1,139 @@
+Sentence #1 (23 tokens):
+I have seen three operas: [Boleldieu's] La Dame Blanche, Rossini's Cenerentola and Meyerbeer's II Crotiato.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=seen CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=VBN Lemma=see NamedEntityTag=O]
+[Text=three CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=operas CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=NNS Lemma=opera NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Boleldieu CharacterOffsetBegin=27 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Boleldieu NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=La CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=La NamedEntityTag=PERSON]
+[Text=Dame CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Dame NamedEntityTag=PERSON]
+[Text=Blanche CharacterOffsetBegin=48 CharacterOffsetEnd=55 PartOfSpeech=NNP Lemma=Blanche NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Rossini CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Rossini NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Cenerentola CharacterOffsetBegin=67 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=Cenerentola NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Meyerbeer CharacterOffsetBegin=83 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=Meyerbeer NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=92 CharacterOffsetEnd=94 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=II CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=NNP Lemma=II NamedEntityTag=O]
+[Text=Crotiato CharacterOffsetBegin=98 CharacterOffsetEnd=106 PartOfSpeech=NNP Lemma=Crotiato NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (VP (VBN seen)
+        (NP
+          (NP (CD three) (NNS operas))
+          (: :)
+          (NP
+            (NP
+              (NP (-LRB- -LSB-) (NNP Boleldieu) (POS 's))
+              (-RRB- -RSB-) (NNP La) (NNP Dame) (NNP Blanche))
+            (, ,)
+            (NP
+              (NP (NNP Rossini) (POS 's))
+              (NNP Cenerentola))
+            (CC and)
+            (NP
+              (NP (NNP Meyerbeer) (POS 's))
+              (NNP II) (NNP Crotiato))))))
+    (. .)))
+
+root(ROOT-0, seen-3)
+nsubj(seen-3, I-1)
+aux(seen-3, have-2)
+nummod(operas-5, three-4)
+dobj(seen-3, operas-5)
+punct(operas-5, :-6)
+punct(Boleldieu-8, -LSB--7)
+nmod:poss(Blanche-13, Boleldieu-8)
+case(Boleldieu-8, 's-9)
+punct(Blanche-13, -RSB--10)
+compound(Blanche-13, La-11)
+compound(Blanche-13, Dame-12)
+dep(operas-5, Blanche-13)
+punct(Blanche-13, ,-14)
+nmod:poss(Cenerentola-17, Rossini-15)
+case(Rossini-15, 's-16)
+dep(operas-5, Cenerentola-17)
+conj:and(Blanche-13, Cenerentola-17)
+cc(Blanche-13, and-18)
+nmod:poss(Crotiato-22, Meyerbeer-19)
+case(Meyerbeer-19, 's-20)
+compound(Crotiato-22, II-21)
+dep(operas-5, Crotiato-22)
+conj:and(Blanche-13, Crotiato-22)
+punct(seen-3, .-23)
+
+Sentence #2 (7 tokens):
+The chorus and orchestra are excellent.
+[Text=The CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=chorus CharacterOffsetBegin=112 CharacterOffsetEnd=118 PartOfSpeech=NN Lemma=chorus NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=orchestra CharacterOffsetBegin=123 CharacterOffsetEnd=132 PartOfSpeech=NN Lemma=orchestra NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=133 CharacterOffsetEnd=136 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=excellent CharacterOffsetBegin=137 CharacterOffsetEnd=146 PartOfSpeech=JJ Lemma=excellent NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NN chorus)
+      (CC and)
+      (NN orchestra))
+    (VP (VBP are)
+      (ADJP (JJ excellent)))
+    (. .)))
+
+root(ROOT-0, excellent-6)
+det(chorus-2, The-1)
+nsubj(excellent-6, chorus-2)
+cc(chorus-2, and-3)
+conj:and(chorus-2, orchestra-4)
+nsubj(excellent-6, orchestra-4)
+cop(excellent-6, are-5)
+punct(excellent-6, .-7)
+
+Sentence #3 (11 tokens):
+Today we have [Mehul's] Joseph in Egypt.
+[Text=Today CharacterOffsetBegin=148 CharacterOffsetEnd=153 PartOfSpeech=NN Lemma=today NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Today</TIMEX3>]
+[Text=we CharacterOffsetBegin=154 CharacterOffsetEnd=156 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=157 CharacterOffsetEnd=161 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=162 CharacterOffsetEnd=163 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Mehul CharacterOffsetBegin=163 CharacterOffsetEnd=168 PartOfSpeech=NNP Lemma=Mehul NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=168 CharacterOffsetEnd=170 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=170 CharacterOffsetEnd=171 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=Joseph CharacterOffsetBegin=172 CharacterOffsetEnd=178 PartOfSpeech=NNP Lemma=Joseph NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=179 CharacterOffsetEnd=181 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Egypt CharacterOffsetBegin=182 CharacterOffsetEnd=187 PartOfSpeech=NNP Lemma=Egypt NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (NN Today))
+    (NP (PRP we))
+    (VP (VBP have)
+      (VP (-LRB- -LSB-)
+        (NP
+          (NP
+            (NP (NNP Mehul) (POS 's))
+            (-RRB- -RSB-) (NNP Joseph))
+          (PP (IN in)
+            (NP (NNP Egypt))))))
+    (. .)))
+
+root(ROOT-0, Joseph-8)
+nmod:tmod(Joseph-8, Today-1)
+nsubj(Joseph-8, we-2)
+aux(Joseph-8, have-3)
+punct(Joseph-8, -LSB--4)
+nmod:poss(Joseph-8, Mehul-5)
+case(Mehul-5, 's-6)
+punct(Joseph-8, -RSB--7)
+case(Egypt-10, in-9)
+nmod:in(Joseph-8, Egypt-10)
+punct(Joseph-8, .-11)
+

@@ -1,0 +1,43 @@
+Sentence #1 (13 tokens):
+Evening at Tully Hall, listening to George Perle's new piece.
+[Text=Evening CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=VBG Lemma=even NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t1" type="TIME" value="TEV">Evening</TIMEX3>]
+[Text=at CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Tully CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Tully NamedEntityTag=LOCATION]
+[Text=Hall CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Hall NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=listening CharacterOffsetBegin=23 CharacterOffsetEnd=32 PartOfSpeech=VBG Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=33 CharacterOffsetEnd=35 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=George CharacterOffsetBegin=36 CharacterOffsetEnd=42 PartOfSpeech=NNP Lemma=George NamedEntityTag=PERSON]
+[Text=Perle CharacterOffsetBegin=43 CharacterOffsetEnd=48 PartOfSpeech=NNP Lemma=Perle NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=piece CharacterOffsetBegin=55 CharacterOffsetEnd=60 PartOfSpeech=NN Lemma=piece NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP
+      (VP (VBG Evening)
+        (PP (IN at)
+          (NP (NNP Tully) (NNP Hall))))
+      (, ,)
+      (VP (VBG listening)
+        (PP (TO to)
+          (NP
+            (NP (NNP George) (NNP Perle) (POS 's))
+            (JJ new) (NN piece)))))
+    (. .)))
+
+root(ROOT-0, Evening-1)
+case(Hall-4, at-2)
+compound(Hall-4, Tully-3)
+nmod:at(Evening-1, Hall-4)
+punct(Evening-1, ,-5)
+dep(Evening-1, listening-6)
+case(piece-12, to-7)
+compound(Perle-9, George-8)
+nmod:poss(piece-12, Perle-9)
+case(Perle-9, 's-10)
+amod(piece-12, new-11)
+nmod:to(listening-6, piece-12)
+punct(Evening-1, .-13)
+

@@ -1,0 +1,95 @@
+Sentence #1 (29 tokens):
+The music has plenty of flowing melody, it is not commonplace, the instrumentation is richly colored, but the unity of style is not preserved throughout.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=plenty CharacterOffsetBegin=14 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=plenty NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=flowing CharacterOffsetBegin=24 CharacterOffsetEnd=31 PartOfSpeech=VBG Lemma=flow NamedEntityTag=O]
+[Text=melody CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=melody NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=commonplace CharacterOffsetBegin=50 CharacterOffsetEnd=61 PartOfSpeech=JJ Lemma=commonplace NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=instrumentation CharacterOffsetBegin=67 CharacterOffsetEnd=82 PartOfSpeech=NN Lemma=instrumentation NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=richly CharacterOffsetBegin=86 CharacterOffsetEnd=92 PartOfSpeech=RB Lemma=richly NamedEntityTag=O]
+[Text=colored CharacterOffsetBegin=93 CharacterOffsetEnd=100 PartOfSpeech=VBN Lemma=color NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=100 CharacterOffsetEnd=101 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=unity CharacterOffsetBegin=110 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=unity NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=style CharacterOffsetBegin=119 CharacterOffsetEnd=124 PartOfSpeech=NN Lemma=style NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=125 CharacterOffsetEnd=127 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=preserved CharacterOffsetBegin=132 CharacterOffsetEnd=141 PartOfSpeech=VBN Lemma=preserve NamedEntityTag=O]
+[Text=throughout CharacterOffsetBegin=142 CharacterOffsetEnd=152 PartOfSpeech=IN Lemma=throughout NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN music))
+      (VP (VBZ has)
+        (NP
+          (NP (NN plenty))
+          (PP (IN of)
+            (NP (VBG flowing) (NN melody))))))
+    (, ,)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is) (RB not)
+        (ADJP (JJ commonplace))))
+    (, ,)
+    (S
+      (NP (DT the) (NN instrumentation))
+      (VP (VBZ is)
+        (ADVP (RB richly))
+        (VP (VBN colored))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (DT the) (NN unity))
+        (PP (IN of)
+          (NP (NN style))))
+      (VP (VBZ is) (RB not)
+        (VP (VBN preserved)
+          (PP (IN throughout)))))
+    (. .)))
+
+root(ROOT-0, has-3)
+det(music-2, The-1)
+nsubj(has-3, music-2)
+det:qmod(melody-7, plenty-4)
+mwe(plenty-4, of-5)
+amod(melody-7, flowing-6)
+dobj(has-3, melody-7)
+punct(has-3, ,-8)
+nsubj(commonplace-12, it-9)
+cop(commonplace-12, is-10)
+neg(commonplace-12, not-11)
+ccomp(has-3, commonplace-12)
+punct(has-3, ,-13)
+det(instrumentation-15, the-14)
+nsubjpass(colored-18, instrumentation-15)
+auxpass(colored-18, is-16)
+advmod(colored-18, richly-17)
+ccomp(has-3, colored-18)
+punct(has-3, ,-19)
+cc(has-3, but-20)
+det(unity-22, the-21)
+nsubjpass(preserved-27, unity-22)
+case(style-24, of-23)
+nmod:of(unity-22, style-24)
+auxpass(preserved-27, is-25)
+neg(preserved-27, not-26)
+conj:but(has-3, preserved-27)
+nmod(preserved-27, throughout-28)
+punct(has-3, .-29)
+
+Coreference set:
+	(1,9,[9,10]) -> (1,2,[1,3]), that is: "it" -> "The music"

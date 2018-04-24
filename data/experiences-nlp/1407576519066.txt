@@ -1,0 +1,109 @@
+Sentence #1 (3 tokens):
+Lords day.
+[Text=Lords CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNPS Lemma=Lords NamedEntityTag=O]
+[Text=day CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t1" type="DURATION" value="P1D">day</TIMEX3>]
+[Text=. CharacterOffsetBegin=9 CharacterOffsetEnd=10 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNPS Lords))
+    (NP (NN day))
+    (. .)))
+
+root(ROOT-0, Lords-1)
+dep(Lords-1, day-2)
+punct(Lords-1, .-3)
+
+Sentence #2 (4 tokens):
+Lay long abed.
+[Text=Lay CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Lay NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=RB Lemma=long NamedEntityTag=O]
+[Text=abed CharacterOffsetBegin=20 CharacterOffsetEnd=24 PartOfSpeech=VBD Lemma=abe NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Lay))
+    (ADVP (RB long))
+    (VP (VBD abed))
+    (. .)))
+
+root(ROOT-0, abed-3)
+nsubj(abed-3, Lay-1)
+advmod(abed-3, long-2)
+punct(abed-3, .-4)
+
+Sentence #3 (8 tokens):
+To Mr. Messums; a good sermon.
+[Text=To CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Messums CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Messums NamedEntityTag=PERSON]
+[Text=; CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=44 CharacterOffsetEnd=48 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=sermon CharacterOffsetBegin=49 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=sermon NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=55 CharacterOffsetEnd=56 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (TO To)
+      (NP (NNP Mr.) (NNP Messums)))
+    (: ;)
+    (NP (DT a) (JJ good) (NN sermon))
+    (. .)))
+
+root(ROOT-0, sermon-7)
+case(Messums-3, To-1)
+compound(Messums-3, Mr.-2)
+nmod:to(sermon-7, Messums-3)
+punct(sermon-7, ;-4)
+det(sermon-7, a-5)
+amod(sermon-7, good-6)
+punct(sermon-7, .-8)
+
+Sentence #4 (14 tokens):
+This day the Organs did begin to play at Whitehall before the King.
+[Text=This CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=this NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">This day</TIMEX3>]
+[Text=day CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=NN Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">This day</TIMEX3>]
+[Text=the CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Organs CharacterOffsetBegin=70 CharacterOffsetEnd=76 PartOfSpeech=NNPS Lemma=Organs NamedEntityTag=MISC]
+[Text=did CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=begin CharacterOffsetBegin=81 CharacterOffsetEnd=86 PartOfSpeech=VB Lemma=begin NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Whitehall CharacterOffsetBegin=98 CharacterOffsetEnd=107 PartOfSpeech=NNP Lemma=Whitehall NamedEntityTag=ORGANIZATION]
+[Text=before CharacterOffsetBegin=108 CharacterOffsetEnd=114 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=King CharacterOffsetBegin=119 CharacterOffsetEnd=123 PartOfSpeech=NNP Lemma=King NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (DT This) (NN day))
+    (NP (DT the) (NNPS Organs))
+    (VP (VBD did)
+      (VP (VB begin)
+        (S
+          (VP (TO to)
+            (VP (VB play)
+              (PP (IN at)
+                (NP (NNP Whitehall)))
+              (PP (IN before)
+                (NP (DT the) (NNP King))))))))
+    (. .)))
+
+root(ROOT-0, begin-6)
+det(day-2, This-1)
+nmod:tmod(begin-6, day-2)
+det(Organs-4, the-3)
+nsubj(begin-6, Organs-4)
+nsubj:xsubj(play-8, Organs-4)
+aux(begin-6, did-5)
+mark(play-8, to-7)
+xcomp(begin-6, play-8)
+case(Whitehall-10, at-9)
+nmod:at(play-8, Whitehall-10)
+case(King-13, before-11)
+det(King-13, the-12)
+nmod:before(play-8, King-13)
+punct(begin-6, .-14)
+
+Coreference set:
+	(1,2,[2,3]) -> (4,2,[1,3]), that is: "day" -> "This day"

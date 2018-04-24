@@ -1,0 +1,306 @@
+Sentence #1 (6 tokens):
+Still absent from school work.
+[Text=Still CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=absent CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=absent NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=school CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=NN Lemma=school NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (ADJP (RB Still) (JJ absent)
+      (PP (IN from)
+        (NP (NN school) (NN work))))
+    (. .)))
+
+root(ROOT-0, absent-2)
+advmod(absent-2, Still-1)
+case(work-5, from-3)
+compound(work-5, school-4)
+nmod:from(absent-2, work-5)
+punct(absent-2, .-6)
+
+Sentence #2 (22 tokens):
+Everso much more snow, it is quite deep, allowing as well as skating, tobogganing, in the afternoon.
+[Text=Everso CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=Everso NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=38 CharacterOffsetEnd=42 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=more CharacterOffsetBegin=43 CharacterOffsetEnd=47 PartOfSpeech=RBR Lemma=more NamedEntityTag=O]
+[Text=snow CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=snow NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=52 CharacterOffsetEnd=53 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=deep CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=deep NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=70 CharacterOffsetEnd=71 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=allowing CharacterOffsetBegin=72 CharacterOffsetEnd=80 PartOfSpeech=VBG Lemma=allow NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=skating CharacterOffsetBegin=92 CharacterOffsetEnd=99 PartOfSpeech=NN Lemma=skating NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=tobogganing CharacterOffsetBegin=101 CharacterOffsetEnd=112 PartOfSpeech=VBG Lemma=toboggan NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=112 CharacterOffsetEnd=113 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=afternoon CharacterOffsetBegin=121 CharacterOffsetEnd=130 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 tid="t1" type="TIME" value="TAF">afternoon</TIMEX3>]
+[Text=. CharacterOffsetBegin=130 CharacterOffsetEnd=131 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Everso))
+      (ADJP (RB much) (RBR more)))
+    (S
+      (NP (NN snow))
+      (, ,)
+      (NP (PRP it))
+      (VP (VBZ is)
+        (ADJP (RB quite) (JJ deep))))
+    (, ,)
+    (VP (VBG allowing)
+      (ADVP (RB as) (RB well))
+      (PP (IN as)
+        (NP
+          (NP (NN skating))
+          (, ,)
+          (VP (VBG tobogganing))
+          (, ,))))
+    (PP (IN in)
+      (NP (DT the) (NN afternoon)))
+    (. .)))
+
+root(ROOT-0, Everso-1)
+advmod(more-3, much-2)
+amod(Everso-1, more-3)
+nsubj(deep-9, snow-4)
+punct(deep-9, ,-5)
+nsubj(deep-9, it-6)
+cop(deep-9, is-7)
+advmod(deep-9, quite-8)
+dep(Everso-1, deep-9)
+punct(Everso-1, ,-10)
+acl(Everso-1, allowing-11)
+advmod(allowing-11, as-12)
+mwe(as-12, well-13)
+case(skating-15, as-14)
+nmod:as(allowing-11, skating-15)
+punct(skating-15, ,-16)
+acl(skating-15, tobogganing-17)
+punct(skating-15, ,-18)
+case(afternoon-21, in-19)
+det(afternoon-21, the-20)
+nmod:in(Everso-1, afternoon-21)
+punct(Everso-1, .-22)
+
+Sentence #3 (11 tokens):
+But of course I'm not allowed to go out!
+[Text=But CharacterOffsetBegin=132 CharacterOffsetEnd=135 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=139 CharacterOffsetEnd=145 PartOfSpeech=NN Lemma=course NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=allowed CharacterOffsetBegin=154 CharacterOffsetEnd=161 PartOfSpeech=VBN Lemma=allow NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=162 CharacterOffsetEnd=164 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=go CharacterOffsetBegin=165 CharacterOffsetEnd=167 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=168 CharacterOffsetEnd=171 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=171 CharacterOffsetEnd=172 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S (CC But)
+    (PP (IN of)
+      (NP (NN course)))
+    (NP (PRP I))
+    (VP (VBP 'm) (RB not)
+      (VP (VBN allowed)
+        (S
+          (VP (TO to)
+            (VP (VB go)
+              (PRT (RP out)))))))
+    (. !)))
+
+root(ROOT-0, allowed-7)
+cc(allowed-7, But-1)
+case(course-3, of-2)
+nmod:of(allowed-7, course-3)
+nsubjpass(allowed-7, I-4)
+nsubj:xsubj(go-9, I-4)
+auxpass(allowed-7, 'm-5)
+neg(allowed-7, not-6)
+mark(go-9, to-8)
+xcomp(allowed-7, go-9)
+compound:prt(go-9, out-10)
+punct(allowed-7, !-11)
+
+Sentence #4 (36 tokens):
+In the afternoon after a lie down I listen to the wireless, a concert, orchestra & Paul Wittenstein [Wittgenstein] (I think that's his name, the left-handed pianist).
+[Text=In CharacterOffsetBegin=174 CharacterOffsetEnd=176 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=177 CharacterOffsetEnd=180 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=afternoon CharacterOffsetBegin=181 CharacterOffsetEnd=190 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 tid="t2" type="TIME" value="TAF">afternoon</TIMEX3>]
+[Text=after CharacterOffsetBegin=191 CharacterOffsetEnd=196 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=197 CharacterOffsetEnd=198 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lie CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=NN Lemma=lie NamedEntityTag=O]
+[Text=down CharacterOffsetBegin=203 CharacterOffsetEnd=207 PartOfSpeech=IN Lemma=down NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=208 CharacterOffsetEnd=209 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=210 CharacterOffsetEnd=216 PartOfSpeech=VBP Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=217 CharacterOffsetEnd=219 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=220 CharacterOffsetEnd=223 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=wireless CharacterOffsetBegin=224 CharacterOffsetEnd=232 PartOfSpeech=JJ Lemma=wireless NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=232 CharacterOffsetEnd=233 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=234 CharacterOffsetEnd=235 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=236 CharacterOffsetEnd=243 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=243 CharacterOffsetEnd=244 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=orchestra CharacterOffsetBegin=245 CharacterOffsetEnd=254 PartOfSpeech=NN Lemma=orchestra NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=255 CharacterOffsetEnd=256 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Paul CharacterOffsetBegin=257 CharacterOffsetEnd=261 PartOfSpeech=NNP Lemma=Paul NamedEntityTag=PERSON]
+[Text=Wittenstein CharacterOffsetBegin=262 CharacterOffsetEnd=273 PartOfSpeech=NNP Lemma=Wittenstein NamedEntityTag=PERSON]
+[Text=-LSB- CharacterOffsetBegin=274 CharacterOffsetEnd=275 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Wittgenstein CharacterOffsetBegin=275 CharacterOffsetEnd=287 PartOfSpeech=NNP Lemma=Wittgenstein NamedEntityTag=PERSON]
+[Text=-RSB- CharacterOffsetBegin=287 CharacterOffsetEnd=288 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=289 CharacterOffsetEnd=290 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=290 CharacterOffsetEnd=291 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=292 CharacterOffsetEnd=297 PartOfSpeech=VBP Lemma=think NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=298 CharacterOffsetEnd=302 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=302 CharacterOffsetEnd=304 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=305 CharacterOffsetEnd=308 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=name CharacterOffsetBegin=309 CharacterOffsetEnd=313 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=313 CharacterOffsetEnd=314 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=315 CharacterOffsetEnd=318 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=left-handed CharacterOffsetBegin=319 CharacterOffsetEnd=330 PartOfSpeech=JJ Lemma=left-handed NamedEntityTag=O]
+[Text=pianist CharacterOffsetBegin=331 CharacterOffsetEnd=338 PartOfSpeech=NN Lemma=pianist NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=338 CharacterOffsetEnd=339 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=339 CharacterOffsetEnd=340 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NN afternoon)))
+    (PP (IN after)
+      (ADVP
+        (NP (DT a) (NN lie))
+        (IN down)))
+    (NP (PRP I))
+    (VP (VBP listen)
+      (PP (TO to)
+        (NP
+          (NP (DT the) (JJ wireless))
+          (, ,)
+          (NP
+            (NP (DT a) (NN concert))
+            (, ,)
+            (NP
+              (NP (NN orchestra))
+              (CC &)
+              (NP (NNP Paul) (NNP Wittenstein) (-LRB- -LSB-) (NNP Wittgenstein) (-RRB- -RSB-)))
+            (PRN (-LRB- -LRB-)
+              (S
+                (NP (PRP I))
+                (VP (VBP think)
+                  (SBAR
+                    (S
+                      (NP (DT that))
+                      (VP (VBZ 's)
+                        (NP
+                          (NP (PRP$ his) (NN name))
+                          (, ,)
+                          (NP (DT the) (JJ left-handed) (NN pianist))))))))
+              (-RRB- -RRB-))))))
+    (. .)))
+
+root(ROOT-0, listen-9)
+case(afternoon-3, In-1)
+det(afternoon-3, the-2)
+nmod:in(listen-9, afternoon-3)
+case(lie-6, after-4)
+det(lie-6, a-5)
+advcl:down(listen-9, lie-6)
+case(lie-6, down-7)
+nsubj(listen-9, I-8)
+case(wireless-12, to-10)
+det(wireless-12, the-11)
+nmod:to(listen-9, wireless-12)
+punct(wireless-12, ,-13)
+det(concert-15, a-14)
+appos(wireless-12, concert-15)
+punct(concert-15, ,-16)
+appos(concert-15, orchestra-17)
+cc(orchestra-17, &-18)
+compound(Wittgenstein-22, Paul-19)
+compound(Wittgenstein-22, Wittenstein-20)
+punct(Wittgenstein-22, -LSB--21)
+appos(concert-15, Wittgenstein-22)
+conj:&(orchestra-17, Wittgenstein-22)
+punct(Wittgenstein-22, -RSB--23)
+punct(think-26, -LRB--24)
+nsubj(think-26, I-25)
+dep(concert-15, think-26)
+nsubj(name-30, that-27)
+cop(name-30, 's-28)
+nmod:poss(name-30, his-29)
+ccomp(think-26, name-30)
+punct(name-30, ,-31)
+det(pianist-34, the-32)
+amod(pianist-34, left-handed-33)
+appos(name-30, pianist-34)
+punct(think-26, -RRB--35)
+punct(listen-9, .-36)
+
+Sentence #5 (14 tokens):
+Quite good, tho' I didn't like the programme very much.
+[Text=Quite CharacterOffsetBegin=341 CharacterOffsetEnd=346 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=347 CharacterOffsetEnd=351 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=351 CharacterOffsetEnd=352 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=tho CharacterOffsetBegin=353 CharacterOffsetEnd=356 PartOfSpeech=NN Lemma=tho NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=356 CharacterOffsetEnd=357 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=358 CharacterOffsetEnd=359 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=360 CharacterOffsetEnd=363 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=363 CharacterOffsetEnd=366 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=367 CharacterOffsetEnd=371 PartOfSpeech=VB Lemma=like NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=372 CharacterOffsetEnd=375 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=programme CharacterOffsetBegin=376 CharacterOffsetEnd=385 PartOfSpeech=NN Lemma=programme NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=386 CharacterOffsetEnd=390 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=391 CharacterOffsetEnd=395 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=395 CharacterOffsetEnd=396 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (FRAG
+      (NP-TMP
+        (NP (RB Quite) (JJ good))
+        (, ,)
+        (NP (NN tho))))
+    ('' ')
+    (NP (PRP I))
+    (VP (VBD did) (RB n't)
+      (VP (VB like)
+        (NP (DT the) (NN programme))
+        (ADVP (RB very) (RB much))))
+    (. .)))
+
+root(ROOT-0, like-9)
+advmod(good-2, Quite-1)
+dep(like-9, good-2)
+punct(good-2, ,-3)
+appos(good-2, tho-4)
+punct(like-9, '-5)
+nsubj(like-9, I-6)
+aux(like-9, did-7)
+neg(like-9, n't-8)
+det(programme-11, the-10)
+dobj(like-9, programme-11)
+advmod(much-13, very-12)
+advmod(like-9, much-13)
+punct(like-9, .-14)
+
+Coreference set:
+	(2,6,[6,7]) -> (1,5,[4,6]), that is: "it" -> "school work"
+Coreference set:
+	(4,3,[2,4]) -> (2,21,[20,22]), that is: "the afternoon" -> "the afternoon"
+Coreference set:
+	(4,8,[8,9]) -> (3,4,[4,5]), that is: "I" -> "I"
+	(4,25,[25,26]) -> (3,4,[4,5]), that is: "I" -> "I"
+	(5,6,[6,7]) -> (3,4,[4,5]), that is: "I" -> "I"
+Coreference set:
+	(4,15,[14,36]) -> (4,12,[11,13]), that is: "a concert , orchestra & Paul Wittenstein -LSB- Wittgenstein -RSB- -LRB- I think that 's his name , the left-handed pianist -RRB-" -> "the wireless"
+	(4,15,[14,16]) -> (4,12,[11,13]), that is: "a concert" -> "the wireless"
+	(4,27,[27,28]) -> (4,12,[11,13]), that is: "that" -> "the wireless"
+	(4,30,[29,35]) -> (4,12,[11,13]), that is: "his name , the left-handed pianist" -> "the wireless"
+	(4,30,[29,31]) -> (4,12,[11,13]), that is: "his name" -> "the wireless"
+Coreference set:
+	(4,29,[29,30]) -> (4,22,[19,24]), that is: "his" -> "Paul Wittenstein -LSB- Wittgenstein -RSB-"

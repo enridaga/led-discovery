@@ -1,0 +1,177 @@
+Sentence #1 (13 tokens):
+Listen to a Wagner Prom after dinner on a very bad wireless.
+[Text=Listen CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Wagner CharacterOffsetBegin=12 CharacterOffsetEnd=18 PartOfSpeech=NNP Lemma=Wagner NamedEntityTag=O]
+[Text=Prom CharacterOffsetBegin=19 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Prom NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=wireless CharacterOffsetBegin=51 CharacterOffsetEnd=59 PartOfSpeech=NN Lemma=wireless NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Listen)
+      (PP (TO to)
+        (NP (DT a) (NNP Wagner) (NNP Prom)))
+      (PP (IN after)
+        (NP
+          (NP (NN dinner))
+          (PP (IN on)
+            (NP (DT a)
+              (ADJP (RB very) (JJ bad))
+              (NN wireless))))))
+    (. .)))
+
+root(ROOT-0, Listen-1)
+case(Prom-5, to-2)
+det(Prom-5, a-3)
+compound(Prom-5, Wagner-4)
+nmod:to(Listen-1, Prom-5)
+case(dinner-7, after-6)
+nmod:after(Listen-1, dinner-7)
+case(wireless-12, on-8)
+det(wireless-12, a-9)
+advmod(bad-11, very-10)
+amod(wireless-12, bad-11)
+nmod:on(dinner-7, wireless-12)
+punct(Listen-1, .-13)
+
+Sentence #2 (3 tokens):
+Mastersinger ov.
+[Text=Mastersinger CharacterOffsetBegin=61 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Mastersinger NamedEntityTag=O]
+[Text=ov CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=ov NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Mastersinger))
+    (NP (NN ov))
+    (. .)))
+
+root(ROOT-0, Mastersinger-1)
+dep(Mastersinger-1, ov-2)
+punct(Mastersinger-1, .-3)
+
+Sentence #3 (5 tokens):
+bacchanals, Siegried Idyll.
+[Text=bacchanals CharacterOffsetBegin=78 CharacterOffsetEnd=88 PartOfSpeech=NNS Lemma=bacchanal NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Siegried CharacterOffsetBegin=90 CharacterOffsetEnd=98 PartOfSpeech=NNP Lemma=Siegried NamedEntityTag=PERSON]
+[Text=Idyll CharacterOffsetBegin=99 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=Idyll NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNS bacchanals))
+    (, ,)
+    (NP (NNP Siegried) (NNP Idyll))
+    (. .)))
+
+root(ROOT-0, bacchanals-1)
+punct(bacchanals-1, ,-2)
+compound(Idyll-4, Siegried-3)
+appos(bacchanals-1, Idyll-4)
+punct(bacchanals-1, .-5)
+
+Sentence #4 (9 tokens):
+Hagen's Songs* (Norman Allin).
+[Text=Hagen CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=NNP Lemma=Hagen NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Songs CharacterOffsetBegin=114 CharacterOffsetEnd=119 PartOfSpeech=NNS Lemma=song NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Norman CharacterOffsetBegin=122 CharacterOffsetEnd=128 PartOfSpeech=NNP Lemma=Norman NamedEntityTag=PERSON]
+[Text=Allin CharacterOffsetBegin=129 CharacterOffsetEnd=134 PartOfSpeech=NNP Lemma=Allin NamedEntityTag=PERSON]
+[Text=-RRB- CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP Hagen) (POS 's))
+      (NNS Songs))
+    (VP (SYM *)
+      (PRN (-LRB- -LRB-)
+        (NP (NNP Norman) (NNP Allin))
+        (-RRB- -RRB-)))
+    (. .)))
+
+root(ROOT-0, *-4)
+nmod:poss(Songs-3, Hagen-1)
+case(Hagen-1, 's-2)
+nsubj(*-4, Songs-3)
+punct(Allin-7, -LRB--5)
+compound(Allin-7, Norman-6)
+dep(*-4, Allin-7)
+punct(Allin-7, -RRB--8)
+punct(*-4, .-9)
+
+Sentence #5 (21 tokens):
+Funeral March & finale from Götterdämmerung (Florence Austral) - orchestral playing rough, but some good wind playing.
+[Text=Funeral CharacterOffsetBegin=137 CharacterOffsetEnd=144 PartOfSpeech=JJ Lemma=funeral NamedEntityTag=O]
+[Text=March CharacterOffsetBegin=145 CharacterOffsetEnd=150 PartOfSpeech=NNP Lemma=March NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-03 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-03">March</TIMEX3>]
+[Text=& CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=finale CharacterOffsetBegin=153 CharacterOffsetEnd=159 PartOfSpeech=NNP Lemma=finale NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=160 CharacterOffsetEnd=164 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Götterdämmerung CharacterOffsetBegin=165 CharacterOffsetEnd=180 PartOfSpeech=NNP Lemma=Götterdämmerung NamedEntityTag=LOCATION]
+[Text=-LRB- CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Florence CharacterOffsetBegin=182 CharacterOffsetEnd=190 PartOfSpeech=NNP Lemma=Florence NamedEntityTag=LOCATION]
+[Text=Austral CharacterOffsetBegin=191 CharacterOffsetEnd=198 PartOfSpeech=NNP Lemma=Austral NamedEntityTag=LOCATION]
+[Text=-RRB- CharacterOffsetBegin=198 CharacterOffsetEnd=199 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=200 CharacterOffsetEnd=201 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=orchestral CharacterOffsetBegin=202 CharacterOffsetEnd=212 PartOfSpeech=JJ Lemma=orchestral NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=213 CharacterOffsetEnd=220 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=rough CharacterOffsetBegin=221 CharacterOffsetEnd=226 PartOfSpeech=JJ Lemma=rough NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=226 CharacterOffsetEnd=227 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=232 CharacterOffsetEnd=236 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=237 CharacterOffsetEnd=241 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=wind CharacterOffsetBegin=242 CharacterOffsetEnd=246 PartOfSpeech=NN Lemma=wind NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=247 CharacterOffsetEnd=254 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=254 CharacterOffsetEnd=255 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (JJ Funeral)
+      (NP
+        (NP (NNP March)
+          (CC &)
+          (NNP finale))
+        (PP (IN from)
+          (NP
+            (NP (NNP Götterdämmerung))
+            (PRN (-LRB- -LRB-)
+              (NP (NNP Florence) (NNP Austral))
+              (-RRB- -RRB-))))))
+    (: -)
+    (NP
+      (NP (JJ orchestral) (NN playing))
+      (ADJP (JJ rough)))
+    (, ,)
+    (PP (CC but)
+      (NP (DT some) (JJ good) (NN wind) (NN playing)))
+    (. .)))
+
+root(ROOT-0, March-2)
+amod(March-2, Funeral-1)
+cc(March-2, &-3)
+conj:&(March-2, finale-4)
+case(Götterdämmerung-6, from-5)
+nmod:from(March-2, Götterdämmerung-6)
+punct(Austral-9, -LRB--7)
+compound(Austral-9, Florence-8)
+appos(Götterdämmerung-6, Austral-9)
+punct(Austral-9, -RRB--10)
+punct(March-2, --11)
+amod(playing-13, orchestral-12)
+dep(March-2, playing-13)
+amod(playing-13, rough-14)
+punct(March-2, ,-15)
+case(playing-20, but-16)
+det(playing-20, some-17)
+amod(playing-20, good-18)
+compound(playing-20, wind-19)
+nmod:but(March-2, playing-20)
+punct(March-2, .-21)
+

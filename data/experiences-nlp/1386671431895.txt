@@ -1,0 +1,238 @@
+Sentence #1 (8 tokens):
+Usual work, walk, and practice.
+[Text=Usual CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=JJ Lemma=usual NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=walk CharacterOffsetBegin=12 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=walk NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=16 CharacterOffsetEnd=17 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=18 CharacterOffsetEnd=21 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=practice CharacterOffsetBegin=22 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=practice NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (JJ Usual) (NN work))
+    (, ,)
+    (NP
+      (NP (NN walk))
+      (, ,)
+      (CC and)
+      (NP (NN practice)))
+    (. .)))
+
+root(ROOT-0, work-2)
+amod(work-2, Usual-1)
+punct(work-2, ,-3)
+appos(work-2, walk-4)
+punct(walk-4, ,-5)
+cc(walk-4, and-6)
+appos(work-2, practice-7)
+conj:and(walk-4, practice-7)
+punct(work-2, .-8)
+
+Sentence #2 (9 tokens):
+In evening Mr. Greatorex, + Miss Chapman.
+[Text=In CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t1" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=Mr. CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Greatorex CharacterOffsetBegin=47 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Greatorex NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=+ CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=CC Lemma=+ NamedEntityTag=O]
+[Text=Miss CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Miss NamedEntityTag=O]
+[Text=Chapman CharacterOffsetBegin=65 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Chapman NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN In)
+      (NP
+        (NP (NN evening) (NNP Mr.) (NNP Greatorex))
+        (, ,)
+        (CC +)
+        (NP (NNP Miss) (NNP Chapman))))
+    (. .)))
+
+root(ROOT-0, Greatorex-4)
+case(Greatorex-4, In-1)
+compound(Greatorex-4, evening-2)
+compound(Greatorex-4, Mr.-3)
+punct(Greatorex-4, ,-5)
+cc(Greatorex-4, +-6)
+compound(Chapman-8, Miss-7)
+conj:+(Greatorex-4, Chapman-8)
+punct(Greatorex-4, .-9)
+
+Sentence #3 (4 tokens):
+Give a recital.
+[Text=Give CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=recital CharacterOffsetBegin=81 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=recital NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (DT a) (NN recital)))
+    (. .)))
+
+root(ROOT-0, Give-1)
+det(recital-3, a-2)
+dobj(Give-1, recital-3)
+punct(Give-1, .-4)
+
+Sentence #4 (10 tokens):
+Mr G. is simply terrible, played no 2.
+[Text=Mr CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=NNP Lemma=Mr NamedEntityTag=O]
+[Text=G. CharacterOffsetBegin=93 CharacterOffsetEnd=95 PartOfSpeech=NNP Lemma=G. NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=simply CharacterOffsetBegin=99 CharacterOffsetEnd=105 PartOfSpeech=RB Lemma=simply NamedEntityTag=O]
+[Text=terrible CharacterOffsetBegin=106 CharacterOffsetEnd=114 PartOfSpeech=JJ Lemma=terrible NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=116 CharacterOffsetEnd=122 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=123 CharacterOffsetEnd=125 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=2 CharacterOffsetBegin=126 CharacterOffsetEnd=127 PartOfSpeech=CD Lemma=2 NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=. CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Mr) (NNP G.))
+    (VP (VBZ is)
+      (ADJP (RB simply) (JJ terrible) (, ,)
+        (SBAR
+          (S
+            (VP (VBD played)
+              (NP
+                (QP (DT no) (CD 2))))))))
+    (. .)))
+
+root(ROOT-0, terrible-5)
+compound(G.-2, Mr-1)
+nsubj(terrible-5, G.-2)
+cop(terrible-5, is-3)
+advmod(terrible-5, simply-4)
+punct(terrible-5, ,-6)
+ccomp(terrible-5, played-7)
+advmod(2-9, no-8)
+dobj(played-7, 2-9)
+punct(terrible-5, .-10)
+
+Sentence #5 (22 tokens):
+Notes together, and everything [BB writes a squiggle here] To think that he is professor of music here!
+[Text=Notes CharacterOffsetBegin=129 CharacterOffsetEnd=134 PartOfSpeech=NNS Lemma=note NamedEntityTag=O]
+[Text=together CharacterOffsetBegin=135 CharacterOffsetEnd=143 PartOfSpeech=RB Lemma=together NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=145 CharacterOffsetEnd=148 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=everything CharacterOffsetBegin=149 CharacterOffsetEnd=159 PartOfSpeech=NN Lemma=everything NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=160 CharacterOffsetEnd=161 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=BB CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=NN Lemma=bb NamedEntityTag=O]
+[Text=writes CharacterOffsetBegin=164 CharacterOffsetEnd=170 PartOfSpeech=VBZ Lemma=write NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=171 CharacterOffsetEnd=172 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=squiggle CharacterOffsetBegin=173 CharacterOffsetEnd=181 PartOfSpeech=NN Lemma=squiggle NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=182 CharacterOffsetEnd=186 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=186 CharacterOffsetEnd=187 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=To CharacterOffsetBegin=188 CharacterOffsetEnd=190 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=think CharacterOffsetBegin=191 CharacterOffsetEnd=196 PartOfSpeech=VB Lemma=think NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=197 CharacterOffsetEnd=201 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=202 CharacterOffsetEnd=204 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=205 CharacterOffsetEnd=207 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=professor CharacterOffsetBegin=208 CharacterOffsetEnd=217 PartOfSpeech=NN Lemma=professor NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=218 CharacterOffsetEnd=220 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=221 CharacterOffsetEnd=226 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=227 CharacterOffsetEnd=231 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=231 CharacterOffsetEnd=232 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNS Notes))
+        (ADVP (RB together)))
+      (, ,)
+      (CC and)
+      (NP
+        (NP (NN everything) (-LRB- -LSB-))
+        (NN BB)))
+    (VP (VBZ writes)
+      (NP (DT a) (NN squiggle))
+      (ADVP (RB here))
+      (-RRB- -RSB-)
+      (S
+        (VP (TO To)
+          (VP (VB think)
+            (SBAR (IN that)
+              (S
+                (NP (PRP he))
+                (VP (VBZ is)
+                  (NP
+                    (NP (NN professor))
+                    (PP (IN of)
+                      (NP (NN music))))
+                  (ADVP (RB here)))))))))
+    (. !)))
+
+root(ROOT-0, writes-8)
+nsubj(writes-8, Notes-1)
+advmod(Notes-1, together-2)
+punct(Notes-1, ,-3)
+cc(Notes-1, and-4)
+compound(BB-7, everything-5)
+punct(everything-5, -LSB--6)
+conj:and(Notes-1, BB-7)
+nsubj(writes-8, BB-7)
+det(squiggle-10, a-9)
+dobj(writes-8, squiggle-10)
+advmod(writes-8, here-11)
+punct(writes-8, -RSB--12)
+mark(think-14, To-13)
+advcl:to(writes-8, think-14)
+mark(professor-18, that-15)
+nsubj(professor-18, he-16)
+cop(professor-18, is-17)
+ccomp(think-14, professor-18)
+case(music-20, of-19)
+nmod:of(professor-18, music-20)
+advmod(professor-18, here-21)
+punct(writes-8, !-22)
+
+Sentence #6 (13 tokens):
+Miss C. was quite good if only she could tune her strings!
+[Text=Miss CharacterOffsetBegin=233 CharacterOffsetEnd=237 PartOfSpeech=NNP Lemma=Miss NamedEntityTag=MISC]
+[Text=C. CharacterOffsetBegin=238 CharacterOffsetEnd=240 PartOfSpeech=NNP Lemma=C. NamedEntityTag=MISC]
+[Text=was CharacterOffsetBegin=241 CharacterOffsetEnd=244 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=quite CharacterOffsetBegin=245 CharacterOffsetEnd=250 PartOfSpeech=RB Lemma=quite NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=251 CharacterOffsetEnd=255 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=if CharacterOffsetBegin=256 CharacterOffsetEnd=258 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=259 CharacterOffsetEnd=263 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=264 CharacterOffsetEnd=267 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=could CharacterOffsetBegin=268 CharacterOffsetEnd=273 PartOfSpeech=MD Lemma=could NamedEntityTag=O]
+[Text=tune CharacterOffsetBegin=274 CharacterOffsetEnd=278 PartOfSpeech=VB Lemma=tune NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=strings CharacterOffsetBegin=283 CharacterOffsetEnd=290 PartOfSpeech=NNS Lemma=string NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=290 CharacterOffsetEnd=291 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Miss) (NNP C.))
+    (VP (VBD was)
+      (ADJP (RB quite) (JJ good))
+      (SBAR (IN if) (RB only)
+        (S
+          (NP (PRP she))
+          (VP (MD could)
+            (VP (VB tune)
+              (NP (PRP$ her) (NNS strings)))))))
+    (. !)))
+
+root(ROOT-0, good-5)
+compound(C.-2, Miss-1)
+nsubj(good-5, C.-2)
+cop(good-5, was-3)
+advmod(good-5, quite-4)
+mark(tune-10, if-6)
+advmod(tune-10, only-7)
+nsubj(tune-10, she-8)
+aux(tune-10, could-9)
+advcl:if(good-5, tune-10)
+nmod:poss(strings-12, her-11)
+dobj(tune-10, strings-12)
+punct(good-5, !-13)
+
+Coreference set:
+	(5,16,[16,17]) -> (2,4,[4,5]), that is: "he" -> "Greatorex"
+	(5,18,[18,21]) -> (2,4,[4,5]), that is: "professor of music" -> "Greatorex"
+Coreference set:
+	(6,11,[11,12]) -> (6,8,[8,9]), that is: "her" -> "she"

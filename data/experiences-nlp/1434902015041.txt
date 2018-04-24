@@ -1,0 +1,104 @@
+Sentence #1 (10 tokens):
+Go to Carlyle Singers after dinner at Lansdowne Rd.
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Carlyle CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Carlyle NamedEntityTag=ORGANIZATION]
+[Text=Singers CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NNPS Lemma=Singers NamedEntityTag=ORGANIZATION]
+[Text=after CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=35 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Lansdowne CharacterOffsetBegin=38 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Lansdowne NamedEntityTag=LOCATION]
+[Text=Rd. CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Rd. NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PP (TO to)
+        (NP (NNP Carlyle) (NNPS Singers)))
+      (PP (IN after)
+        (NP
+          (NP (NN dinner))
+          (PP (IN at)
+            (NP (NNP Lansdowne) (NNP Rd.))))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+case(Singers-4, to-2)
+compound(Singers-4, Carlyle-3)
+nmod:to(Go-1, Singers-4)
+case(dinner-6, after-5)
+nmod:after(Go-1, dinner-6)
+case(Rd.-9, at-7)
+compound(Rd.-9, Lansdowne-8)
+nmod:at(dinner-6, Rd.-9)
+punct(Go-1, .-10)
+
+Sentence #2 (13 tokens):
+They do my 3-pt-songs,* which seem to be effective enough.
+[Text=They CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=3-pt-songs CharacterOffsetBegin=63 CharacterOffsetEnd=73 PartOfSpeech=NNS Lemma=3-pt-song NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=76 CharacterOffsetEnd=81 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=seem CharacterOffsetBegin=82 CharacterOffsetEnd=86 PartOfSpeech=VBP Lemma=seem NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=effective CharacterOffsetBegin=93 CharacterOffsetEnd=102 PartOfSpeech=JJ Lemma=effective NamedEntityTag=O]
+[Text=enough CharacterOffsetBegin=103 CharacterOffsetEnd=109 PartOfSpeech=RB Lemma=enough NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP do)
+      (SBAR
+        (S
+          (NP (PRP$ my) (NNS 3-pt-songs))
+          (, ,)
+          (X (SYM *))
+          (NP (WDT which))
+          (VP (VBP seem)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (ADJP (JJ effective) (RB enough)))))))))
+    (. .)))
+
+root(ROOT-0, do-2)
+nsubj(do-2, They-1)
+nmod:poss(3-pt-songs-4, my-3)
+nsubj(seem-8, 3-pt-songs-4)
+nsubj:xsubj(effective-11, 3-pt-songs-4)
+punct(seem-8, ,-5)
+dep(seem-8, *-6)
+nsubj(seem-8, which-7)
+nsubj:xsubj(effective-11, which-7)
+ccomp(do-2, seem-8)
+mark(effective-11, to-9)
+cop(effective-11, be-10)
+xcomp(seem-8, effective-11)
+advmod(effective-11, enough-12)
+punct(do-2, .-13)
+
+Sentence #3 (4 tokens):
+& v. easy.
+[Text=& CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=v. CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=CC Lemma=v. NamedEntityTag=O]
+[Text=easy CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=JJ Lemma=easy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (CC &))
+    (VP
+      (PP (CC v.)
+        (NP (JJ easy))))
+    (. .)))
+
+root(ROOT-0, easy-3)
+nsubj(easy-3, &-1)
+case(easy-3, v.-2)
+punct(easy-3, .-4)
+
+Coreference set:
+	(2,7,[7,8]) -> (2,1,[1,2]), that is: "which" -> "They"

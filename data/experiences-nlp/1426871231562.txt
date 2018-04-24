@@ -1,0 +1,397 @@
+Sentence #1 (27 tokens):
+Beecham conducted Delius' "Mass of Life" which meant that we had to send for a certain Captain Waterhouse who played the bass oboe.
+[Text=Beecham CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Beecham NamedEntityTag=PERSON]
+[Text=conducted CharacterOffsetBegin=8 CharacterOffsetEnd=17 PartOfSpeech=VBD Lemma=conduct NamedEntityTag=O]
+[Text=Delius CharacterOffsetBegin=18 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=Delius NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=24 CharacterOffsetEnd=25 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Mass CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=NNP Lemma=Mass NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Life CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Life NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=41 CharacterOffsetEnd=46 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=meant CharacterOffsetBegin=47 CharacterOffsetEnd=52 PartOfSpeech=VBD Lemma=mean NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=send CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=VB Lemma=send NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=certain CharacterOffsetBegin=79 CharacterOffsetEnd=86 PartOfSpeech=JJ Lemma=certain NamedEntityTag=O]
+[Text=Captain CharacterOffsetBegin=87 CharacterOffsetEnd=94 PartOfSpeech=NNP Lemma=Captain NamedEntityTag=O]
+[Text=Waterhouse CharacterOffsetBegin=95 CharacterOffsetEnd=105 PartOfSpeech=NNP Lemma=Waterhouse NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=110 CharacterOffsetEnd=116 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bass CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=NN Lemma=bass NamedEntityTag=O]
+[Text=oboe CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=NN Lemma=oboe NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=130 CharacterOffsetEnd=131 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Beecham))
+    (VP (VBD conducted)
+      (NP
+        (NP
+          (NP (NNP Delius) (POS '))
+          (`` ``)
+          (NX
+            (NP (NNP Mass))
+            (PP (IN of)
+              (NP (NNP Life))))
+          ('' ''))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBD meant)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP we))
+                  (VP (VBD had)
+                    (S
+                      (VP (TO to)
+                        (VP (VB send)
+                          (PP (IN for)
+                            (NP
+                              (NP (DT a) (JJ certain) (NNP Captain) (NNP Waterhouse))
+                              (SBAR
+                                (WHNP (WP who))
+                                (S
+                                  (VP (VBD played)
+                                    (NP (DT the) (NN bass) (NN oboe))))))))))))))))))
+    (. .)))
+
+root(ROOT-0, conducted-2)
+nsubj(conducted-2, Beecham-1)
+nmod:poss(Mass-6, Delius-3)
+case(Delius-3, '-4)
+punct(Mass-6, ``-5)
+dobj(conducted-2, Mass-6)
+nsubj(meant-11, Mass-6)
+case(Life-8, of-7)
+nmod:of(Mass-6, Life-8)
+punct(Mass-6, ''-9)
+ref(Mass-6, which-10)
+acl:relcl(Mass-6, meant-11)
+mark(had-14, that-12)
+nsubj(had-14, we-13)
+nsubj:xsubj(send-16, we-13)
+ccomp(meant-11, had-14)
+mark(send-16, to-15)
+xcomp(had-14, send-16)
+case(Waterhouse-21, for-17)
+det(Waterhouse-21, a-18)
+amod(Waterhouse-21, certain-19)
+compound(Waterhouse-21, Captain-20)
+nmod:for(send-16, Waterhouse-21)
+nsubj(played-23, Waterhouse-21)
+ref(Waterhouse-21, who-22)
+acl:relcl(Waterhouse-21, played-23)
+det(oboe-26, the-24)
+compound(oboe-26, bass-25)
+dobj(played-23, oboe-26)
+punct(conducted-2, .-27)
+
+Sentence #2 (47 tokens):
+He was a total mystery to me, I never knew his first name - he was always referred to simply as Captain Waterhouse - I never talked to him; he would appear, tallish, faintly military, not young, and vanish again.
+[Text=He CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=135 CharacterOffsetEnd=138 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=total CharacterOffsetBegin=141 CharacterOffsetEnd=146 PartOfSpeech=JJ Lemma=total NamedEntityTag=O]
+[Text=mystery CharacterOffsetBegin=147 CharacterOffsetEnd=154 PartOfSpeech=NN Lemma=mystery NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=155 CharacterOffsetEnd=157 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=158 CharacterOffsetEnd=160 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=160 CharacterOffsetEnd=161 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=162 CharacterOffsetEnd=163 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=164 CharacterOffsetEnd=169 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=knew CharacterOffsetBegin=170 CharacterOffsetEnd=174 PartOfSpeech=VBD Lemma=know NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=175 CharacterOffsetEnd=178 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=179 CharacterOffsetEnd=184 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=name CharacterOffsetBegin=185 CharacterOffsetEnd=189 PartOfSpeech=NN Lemma=name NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=190 CharacterOffsetEnd=191 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=192 CharacterOffsetEnd=194 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=199 CharacterOffsetEnd=205 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=referred CharacterOffsetBegin=206 CharacterOffsetEnd=214 PartOfSpeech=VBN Lemma=refer NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=215 CharacterOffsetEnd=217 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=simply CharacterOffsetBegin=218 CharacterOffsetEnd=224 PartOfSpeech=RB Lemma=simply NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=225 CharacterOffsetEnd=227 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=Captain CharacterOffsetBegin=228 CharacterOffsetEnd=235 PartOfSpeech=NNP Lemma=Captain NamedEntityTag=MISC]
+[Text=Waterhouse CharacterOffsetBegin=236 CharacterOffsetEnd=246 PartOfSpeech=NNP Lemma=Waterhouse NamedEntityTag=MISC]
+[Text=- CharacterOffsetBegin=247 CharacterOffsetEnd=248 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=249 CharacterOffsetEnd=250 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=251 CharacterOffsetEnd=256 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=talked CharacterOffsetBegin=257 CharacterOffsetEnd=263 PartOfSpeech=VBD Lemma=talk NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=264 CharacterOffsetEnd=266 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=267 CharacterOffsetEnd=270 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=270 CharacterOffsetEnd=271 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=272 CharacterOffsetEnd=274 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=275 CharacterOffsetEnd=280 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=appear CharacterOffsetBegin=281 CharacterOffsetEnd=287 PartOfSpeech=VB Lemma=appear NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=287 CharacterOffsetEnd=288 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=tallish CharacterOffsetBegin=289 CharacterOffsetEnd=296 PartOfSpeech=JJ Lemma=tallish NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=296 CharacterOffsetEnd=297 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=faintly CharacterOffsetBegin=298 CharacterOffsetEnd=305 PartOfSpeech=RB Lemma=faintly NamedEntityTag=O]
+[Text=military CharacterOffsetBegin=306 CharacterOffsetEnd=314 PartOfSpeech=JJ Lemma=military NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=314 CharacterOffsetEnd=315 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=316 CharacterOffsetEnd=319 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=young CharacterOffsetBegin=320 CharacterOffsetEnd=325 PartOfSpeech=JJ Lemma=young NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=325 CharacterOffsetEnd=326 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=327 CharacterOffsetEnd=330 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=vanish CharacterOffsetBegin=331 CharacterOffsetEnd=337 PartOfSpeech=VB Lemma=vanish NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=338 CharacterOffsetEnd=343 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=343 CharacterOffsetEnd=344 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBD was)
+        (NP
+          (NP (DT a) (JJ total) (NN mystery))
+          (PP (TO to)
+            (NP (PRP me))))))
+    (, ,)
+    (S
+      (NP (PRP I))
+      (ADVP (RB never))
+      (VP (VBD knew)
+        (NP (PRP$ his) (JJ first) (NN name))))
+    (: -)
+    (S
+      (NP (PRP he))
+      (VP (VBD was)
+        (ADVP (RB always))
+        (VP (VBN referred)
+          (S
+            (VP (TO to)
+              (VP
+                (ADVP (RB simply))
+                (PP (IN as)
+                  (NP (NNP Captain) (NNP Waterhouse)))))))))
+    (: -)
+    (S
+      (NP (PRP I))
+      (ADVP (RB never))
+      (VP (VBD talked)
+        (PP (TO to)
+          (NP (PRP him)))))
+    (: ;)
+    (S
+      (NP (PRP he))
+      (VP (MD would)
+        (VP
+          (VP (VB appear))
+          (, ,)
+          (VP
+            (ADJP
+              (ADJP (JJ tallish))
+              (, ,)
+              (ADJP (RB faintly) (JJ military))
+              (, ,))
+            (PP (RB not)
+              (ADJP (JJ young))))
+          (, ,)
+          (CC and)
+          (VP (VB vanish)
+            (ADVP (RB again))))))
+    (. .)))
+
+root(ROOT-0, mystery-5)
+nsubj(mystery-5, He-1)
+cop(mystery-5, was-2)
+det(mystery-5, a-3)
+amod(mystery-5, total-4)
+case(me-7, to-6)
+nmod:to(mystery-5, me-7)
+punct(mystery-5, ,-8)
+nsubj(knew-11, I-9)
+neg(knew-11, never-10)
+dep(mystery-5, knew-11)
+nmod:poss(name-14, his-12)
+amod(name-14, first-13)
+dobj(knew-11, name-14)
+punct(mystery-5, --15)
+nsubjpass(referred-19, he-16)
+nsubj:xsubj(simply-21, he-16)
+auxpass(referred-19, was-17)
+advmod(referred-19, always-18)
+parataxis(mystery-5, referred-19)
+mark(simply-21, to-20)
+xcomp(referred-19, simply-21)
+case(Waterhouse-24, as-22)
+compound(Waterhouse-24, Captain-23)
+nmod:as(simply-21, Waterhouse-24)
+punct(mystery-5, --25)
+nsubj(talked-28, I-26)
+neg(talked-28, never-27)
+parataxis(mystery-5, talked-28)
+case(him-30, to-29)
+nmod:to(talked-28, him-30)
+punct(mystery-5, ;-31)
+nsubj(appear-34, he-32)
+nsubj(tallish-36, he-32)
+nsubj(vanish-45, he-32)
+aux(appear-34, would-33)
+parataxis(mystery-5, appear-34)
+punct(appear-34, ,-35)
+parataxis(mystery-5, tallish-36)
+conj:and(appear-34, tallish-36)
+punct(tallish-36, ,-37)
+advmod(military-39, faintly-38)
+dep(tallish-36, military-39)
+punct(tallish-36, ,-40)
+neg(young-42, not-41)
+advcl(tallish-36, young-42)
+punct(appear-34, ,-43)
+cc(appear-34, and-44)
+parataxis(mystery-5, vanish-45)
+conj:and(appear-34, vanish-45)
+advmod(vanish-45, again-46)
+punct(mystery-5, .-47)
+
+Sentence #3 (33 tokens):
+I often wondered what he did during those long, long spells when he was not playing the bass oboe, an instrument for which opportunities of employment were very rare indeed.
+[Text=I CharacterOffsetBegin=345 CharacterOffsetEnd=346 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=often CharacterOffsetBegin=347 CharacterOffsetEnd=352 PartOfSpeech=RB Lemma=often NamedEntityTag=O]
+[Text=wondered CharacterOffsetBegin=353 CharacterOffsetEnd=361 PartOfSpeech=VBD Lemma=wonder NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=362 CharacterOffsetEnd=366 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=367 CharacterOffsetEnd=369 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=370 CharacterOffsetEnd=373 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=during CharacterOffsetBegin=374 CharacterOffsetEnd=380 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=381 CharacterOffsetEnd=386 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=387 CharacterOffsetEnd=391 PartOfSpeech=JJ Lemma=long NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=391 CharacterOffsetEnd=392 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=393 CharacterOffsetEnd=397 PartOfSpeech=JJ Lemma=long NamedEntityTag=O]
+[Text=spells CharacterOffsetBegin=398 CharacterOffsetEnd=404 PartOfSpeech=NNS Lemma=spell NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=405 CharacterOffsetEnd=409 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=410 CharacterOffsetEnd=412 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=413 CharacterOffsetEnd=416 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=417 CharacterOffsetEnd=420 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=421 CharacterOffsetEnd=428 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=429 CharacterOffsetEnd=432 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bass CharacterOffsetBegin=433 CharacterOffsetEnd=437 PartOfSpeech=NN Lemma=bass NamedEntityTag=O]
+[Text=oboe CharacterOffsetBegin=438 CharacterOffsetEnd=442 PartOfSpeech=NN Lemma=oboe NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=442 CharacterOffsetEnd=443 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=444 CharacterOffsetEnd=446 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=instrument CharacterOffsetBegin=447 CharacterOffsetEnd=457 PartOfSpeech=NN Lemma=instrument NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=458 CharacterOffsetEnd=461 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=462 CharacterOffsetEnd=467 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=opportunities CharacterOffsetBegin=468 CharacterOffsetEnd=481 PartOfSpeech=NNS Lemma=opportunity NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=482 CharacterOffsetEnd=484 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=employment CharacterOffsetBegin=485 CharacterOffsetEnd=495 PartOfSpeech=NN Lemma=employment NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=496 CharacterOffsetEnd=500 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=501 CharacterOffsetEnd=505 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=rare CharacterOffsetBegin=506 CharacterOffsetEnd=510 PartOfSpeech=JJ Lemma=rare NamedEntityTag=O]
+[Text=indeed CharacterOffsetBegin=511 CharacterOffsetEnd=517 PartOfSpeech=RB Lemma=indeed NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=517 CharacterOffsetEnd=518 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB often))
+    (VP (VBD wondered)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (PRP he))
+          (VP (VBD did)
+            (PP (IN during)
+              (NP
+                (NP (DT those) (JJ long) (, ,) (JJ long) (NNS spells))
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (PRP he))
+                    (VP (VBD was) (RB not)
+                      (VP (VBG playing)
+                        (NP
+                          (NP (DT the) (NN bass) (NN oboe))
+                          (, ,)
+                          (SBAR
+                            (WHNP (DT an) (NN instrument)
+                              (WHPP (IN for)
+                                (WHNP (WDT which))))
+                            (S
+                              (NP
+                                (NP (NNS opportunities))
+                                (PP (IN of)
+                                  (NP (NN employment))))
+                              (VP (VBD were)
+                                (ADJP (RB very) (JJ rare))
+                                (ADVP (RB indeed))))))))))))))))
+    (. .)))
+
+root(ROOT-0, wondered-3)
+nsubj(wondered-3, I-1)
+advmod(wondered-3, often-2)
+dobj(did-6, what-4)
+nsubj(did-6, he-5)
+ccomp(wondered-3, did-6)
+case(spells-12, during-7)
+det(spells-12, those-8)
+amod(spells-12, long-9)
+punct(spells-12, ,-10)
+amod(spells-12, long-11)
+nmod:during(did-6, spells-12)
+nmod:for(instrument-23, spells-12)
+advmod(playing-17, when-13)
+nsubj(playing-17, he-14)
+aux(playing-17, was-15)
+neg(playing-17, not-16)
+acl:relcl(spells-12, playing-17)
+det(oboe-20, the-18)
+compound(oboe-20, bass-19)
+dobj(playing-17, oboe-20)
+nmod:for(instrument-23, oboe-20)
+punct(oboe-20, ,-21)
+det(instrument-23, an-22)
+dobj(rare-31, instrument-23)
+case(which-25, for-24)
+ref(spells-12, which-25)
+ref(oboe-20, which-25)
+nsubj(rare-31, opportunities-26)
+case(employment-28, of-27)
+nmod:of(opportunities-26, employment-28)
+cop(rare-31, were-29)
+advmod(rare-31, very-30)
+acl:relcl(oboe-20, rare-31)
+advmod(rare-31, indeed-32)
+punct(wondered-3, .-33)
+
+Sentence #4 (5 tokens):
+But I never discovered.
+[Text=But CharacterOffsetBegin=519 CharacterOffsetEnd=522 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=523 CharacterOffsetEnd=524 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=525 CharacterOffsetEnd=530 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=discovered CharacterOffsetBegin=531 CharacterOffsetEnd=541 PartOfSpeech=VBD Lemma=discover NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=541 CharacterOffsetEnd=542 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC But)
+    (NP (PRP I))
+    (ADVP (RB never))
+    (VP (VBD discovered))
+    (. .)))
+
+root(ROOT-0, discovered-4)
+cc(discovered-4, But-1)
+nsubj(discovered-4, I-2)
+neg(discovered-4, never-3)
+punct(discovered-4, .-5)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,1,[1,2]), that is: "He" -> "Beecham"
+	(2,12,[12,13]) -> (1,1,[1,2]), that is: "his" -> "Beecham"
+	(2,16,[16,17]) -> (1,1,[1,2]), that is: "he" -> "Beecham"
+	(2,30,[30,31]) -> (1,1,[1,2]), that is: "him" -> "Beecham"
+	(2,32,[32,33]) -> (1,1,[1,2]), that is: "he" -> "Beecham"
+	(3,5,[5,6]) -> (1,1,[1,2]), that is: "he" -> "Beecham"
+	(3,14,[14,15]) -> (1,1,[1,2]), that is: "he" -> "Beecham"
+Coreference set:
+	(1,21,[18,27]) -> (2,24,[23,25]), that is: "a certain Captain Waterhouse who played the bass oboe" -> "Captain Waterhouse"
+Coreference set:
+	(3,20,[18,33]) -> (1,26,[24,27]), that is: "the bass oboe , an instrument for which opportunities of employment were very rare indeed" -> "the bass oboe"
+	(3,20,[18,21]) -> (1,26,[24,27]), that is: "the bass oboe" -> "the bass oboe"
+Coreference set:
+	(2,9,[9,10]) -> (2,7,[7,8]), that is: "I" -> "me"
+	(2,26,[26,27]) -> (2,7,[7,8]), that is: "I" -> "me"
+	(3,1,[1,2]) -> (2,7,[7,8]), that is: "I" -> "me"
+	(4,2,[2,3]) -> (2,7,[7,8]), that is: "I" -> "me"

@@ -1,0 +1,439 @@
+Sentence #1 (20 tokens):
+Two great singers often appeared with us at rallies: the soprano Antonina Nezhdanova and the tenor Leonid Sobinov.
+[Text=Two CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=great CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=singers CharacterOffsetBegin=10 CharacterOffsetEnd=17 PartOfSpeech=NNS Lemma=singer NamedEntityTag=O]
+[Text=often CharacterOffsetBegin=18 CharacterOffsetEnd=23 PartOfSpeech=RB Lemma=often NamedEntityTag=O]
+[Text=appeared CharacterOffsetBegin=24 CharacterOffsetEnd=32 PartOfSpeech=VBD Lemma=appear NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=rallies CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=NNS Lemma=rally NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=soprano CharacterOffsetBegin=57 CharacterOffsetEnd=64 PartOfSpeech=NN Lemma=soprano NamedEntityTag=O]
+[Text=Antonina CharacterOffsetBegin=65 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Antonina NamedEntityTag=PERSON]
+[Text=Nezhdanova CharacterOffsetBegin=74 CharacterOffsetEnd=84 PartOfSpeech=NNP Lemma=Nezhdanova NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=tenor CharacterOffsetBegin=93 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=tenor NamedEntityTag=O]
+[Text=Leonid CharacterOffsetBegin=99 CharacterOffsetEnd=105 PartOfSpeech=NNP Lemma=Leonid NamedEntityTag=PERSON]
+[Text=Sobinov CharacterOffsetBegin=106 CharacterOffsetEnd=113 PartOfSpeech=NNP Lemma=Sobinov NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (CD Two) (JJ great) (NNS singers))
+    (ADVP (RB often))
+    (VP (VBD appeared)
+      (PP (IN with)
+        (NP (PRP us)))
+      (PP (IN at)
+        (NP
+          (NP
+            (NP (NNS rallies))
+            (: :)
+            (NP
+              (NP (DT the) (NN soprano))
+              (NP (NNP Antonina) (NNP Nezhdanova))))
+          (CC and)
+          (NP
+            (NP (DT the) (NN tenor))
+            (NP (NNP Leonid) (NNP Sobinov))))))
+    (. .)))
+
+root(ROOT-0, appeared-5)
+nummod(singers-3, Two-1)
+amod(singers-3, great-2)
+nsubj(appeared-5, singers-3)
+advmod(appeared-5, often-4)
+case(us-7, with-6)
+nmod:with(appeared-5, us-7)
+case(rallies-9, at-8)
+nmod:at(appeared-5, rallies-9)
+punct(rallies-9, :-10)
+det(soprano-12, the-11)
+dep(rallies-9, soprano-12)
+compound(Nezhdanova-14, Antonina-13)
+dep(soprano-12, Nezhdanova-14)
+cc(rallies-9, and-15)
+det(tenor-17, the-16)
+nmod:at(appeared-5, tenor-17)
+conj:and(rallies-9, tenor-17)
+compound(Sobinov-19, Leonid-18)
+dep(tenor-17, Sobinov-19)
+punct(appeared-5, .-20)
+
+Sentence #2 (4 tokens):
+How they sang!
+[Text=How CharacterOffsetBegin=115 CharacterOffsetEnd=118 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=119 CharacterOffsetEnd=123 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=sang CharacterOffsetBegin=124 CharacterOffsetEnd=128 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (SBAR
+      (WHADVP (WRB How))
+      (S
+        (NP (PRP they))
+        (VP (VBD sang))))
+    (. !)))
+
+root(ROOT-0, sang-3)
+advmod(sang-3, How-1)
+nsubj(sang-3, they-2)
+punct(sang-3, !-4)
+
+Sentence #3 (2 tokens):
+Unbelievable!
+[Text=Unbelievable CharacterOffsetBegin=130 CharacterOffsetEnd=142 PartOfSpeech=JJ Lemma=unbelievable NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (ADJP (JJ Unbelievable))
+    (. !)))
+
+root(ROOT-0, Unbelievable-1)
+punct(Unbelievable-1, !-2)
+
+Sentence #4 (13 tokens):
+Nezhdanova’s performance of Elsa’s aria from Lohengrin was a marvel.
+[Text=Nezhdanova CharacterOffsetBegin=144 CharacterOffsetEnd=154 PartOfSpeech=NNP Lemma=Nezhdanova NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=154 CharacterOffsetEnd=156 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=157 CharacterOffsetEnd=168 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=169 CharacterOffsetEnd=171 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Elsa CharacterOffsetBegin=172 CharacterOffsetEnd=176 PartOfSpeech=NNP Lemma=Elsa NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=176 CharacterOffsetEnd=178 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=aria CharacterOffsetBegin=179 CharacterOffsetEnd=183 PartOfSpeech=NN Lemma=aria NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Lohengrin CharacterOffsetBegin=189 CharacterOffsetEnd=198 PartOfSpeech=NNP Lemma=Lohengrin NamedEntityTag=LOCATION]
+[Text=was CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=203 CharacterOffsetEnd=204 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=marvel CharacterOffsetBegin=205 CharacterOffsetEnd=211 PartOfSpeech=VBP Lemma=marvel NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=211 CharacterOffsetEnd=212 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Nezhdanova) (POS 's))
+        (NN performance))
+      (PP (IN of)
+        (NP
+          (NP
+            (NP (NNP Elsa) (POS 's))
+            (NN aria))
+          (PP (IN from)
+            (NP (NNP Lohengrin))))))
+    (VP (VBD was)
+      (NP
+        (NP (DT a))
+        (SBAR
+          (S
+            (VP (VBP marvel))))))
+    (. .)))
+
+root(ROOT-0, a-11)
+nmod:poss(performance-3, Nezhdanova-1)
+case(Nezhdanova-1, 's-2)
+nsubj(a-11, performance-3)
+case(aria-7, of-4)
+nmod:poss(aria-7, Elsa-5)
+case(Elsa-5, 's-6)
+nmod:of(performance-3, aria-7)
+case(Lohengrin-9, from-8)
+nmod:from(aria-7, Lohengrin-9)
+cop(a-11, was-10)
+acl:relcl(a-11, marvel-12)
+punct(a-11, .-13)
+
+Sentence #5 (26 tokens):
+When Sobinov did Tchaikovsky’s song “In the Midst of the Ball”, he seemed to be talking to you, not performing.
+[Text=When CharacterOffsetBegin=213 CharacterOffsetEnd=217 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=Sobinov CharacterOffsetBegin=218 CharacterOffsetEnd=225 PartOfSpeech=NNP Lemma=Sobinov NamedEntityTag=PERSON]
+[Text=did CharacterOffsetBegin=226 CharacterOffsetEnd=229 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=Tchaikovsky CharacterOffsetBegin=230 CharacterOffsetEnd=241 PartOfSpeech=NNP Lemma=Tchaikovsky NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=241 CharacterOffsetEnd=243 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=song CharacterOffsetBegin=244 CharacterOffsetEnd=248 PartOfSpeech=NN Lemma=song NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=249 CharacterOffsetEnd=250 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=In CharacterOffsetBegin=250 CharacterOffsetEnd=252 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=253 CharacterOffsetEnd=256 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Midst CharacterOffsetBegin=257 CharacterOffsetEnd=262 PartOfSpeech=NN Lemma=midst NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=263 CharacterOffsetEnd=265 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=266 CharacterOffsetEnd=269 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Ball CharacterOffsetBegin=270 CharacterOffsetEnd=274 PartOfSpeech=NNP Lemma=Ball NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=274 CharacterOffsetEnd=275 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=275 CharacterOffsetEnd=276 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=277 CharacterOffsetEnd=279 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=seemed CharacterOffsetBegin=280 CharacterOffsetEnd=286 PartOfSpeech=VBD Lemma=seem NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=287 CharacterOffsetEnd=289 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=290 CharacterOffsetEnd=292 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=293 CharacterOffsetEnd=300 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=301 CharacterOffsetEnd=303 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=304 CharacterOffsetEnd=307 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=307 CharacterOffsetEnd=308 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=309 CharacterOffsetEnd=312 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=performing CharacterOffsetBegin=313 CharacterOffsetEnd=323 PartOfSpeech=VBG Lemma=perform NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=323 CharacterOffsetEnd=324 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (NNP Sobinov))
+        (VP (VBD did)
+          (S
+            (NP
+              (NP (NNP Tchaikovsky) (POS 's))
+              (NN song))
+            (`` ``)
+            (PP (IN In)
+              (NP
+                (NP (DT the) (NN Midst))
+                (PP (IN of)
+                  (NP (DT the) (NNP Ball) ('' '')))))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD seemed)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBG talking)
+              (PP (TO to)
+                (NP
+                  (NP (PRP you))
+                  (, ,)
+                  (ADJP (RB not) (VBG performing)))))))))
+    (. .)))
+
+root(ROOT-0, seemed-17)
+advmod(did-3, When-1)
+nsubj(did-3, Sobinov-2)
+advcl(seemed-17, did-3)
+nmod:poss(song-6, Tchaikovsky-4)
+case(Tchaikovsky-4, 's-5)
+xcomp(did-3, song-6)
+punct(song-6, ``-7)
+case(Midst-10, In-8)
+det(Midst-10, the-9)
+dep(song-6, Midst-10)
+case(Ball-13, of-11)
+det(Ball-13, the-12)
+nmod:of(Midst-10, Ball-13)
+punct(Ball-13, ''-14)
+punct(seemed-17, ,-15)
+nsubj(seemed-17, he-16)
+nsubj:xsubj(talking-20, he-16)
+mark(talking-20, to-18)
+aux(talking-20, be-19)
+xcomp(seemed-17, talking-20)
+case(you-22, to-21)
+nmod:to(talking-20, you-22)
+punct(you-22, ,-23)
+neg(performing-25, not-24)
+amod(you-22, performing-25)
+punct(seemed-17, .-26)
+
+Sentence #6 (13 tokens):
+And his rendition of Lensky’s aria from Eugene Onegin, heartbreaking!
+[Text=And CharacterOffsetBegin=325 CharacterOffsetEnd=328 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=329 CharacterOffsetEnd=332 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=rendition CharacterOffsetBegin=333 CharacterOffsetEnd=342 PartOfSpeech=NN Lemma=rendition NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=343 CharacterOffsetEnd=345 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Lensky CharacterOffsetBegin=346 CharacterOffsetEnd=352 PartOfSpeech=NNP Lemma=Lensky NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=352 CharacterOffsetEnd=354 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=aria CharacterOffsetBegin=355 CharacterOffsetEnd=359 PartOfSpeech=NN Lemma=aria NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=360 CharacterOffsetEnd=364 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Eugene CharacterOffsetBegin=365 CharacterOffsetEnd=371 PartOfSpeech=NNP Lemma=Eugene NamedEntityTag=PERSON]
+[Text=Onegin CharacterOffsetBegin=372 CharacterOffsetEnd=378 PartOfSpeech=NNP Lemma=Onegin NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=378 CharacterOffsetEnd=379 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=heartbreaking CharacterOffsetBegin=380 CharacterOffsetEnd=393 PartOfSpeech=JJ Lemma=heartbreaking NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=393 CharacterOffsetEnd=394 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (FRAG (CC And)
+    (NP
+      (NP (PRP$ his) (NN rendition))
+      (PP (IN of)
+        (NP
+          (NP (NNP Lensky) (POS 's))
+          (NN aria)))
+      (PP (IN from)
+        (NP
+          (NP (NNP Eugene) (NNP Onegin))
+          (, ,)
+          (NP (JJ heartbreaking)))))
+    (. !)))
+
+root(ROOT-0, rendition-3)
+cc(rendition-3, And-1)
+nmod:poss(rendition-3, his-2)
+case(aria-7, of-4)
+nmod:poss(aria-7, Lensky-5)
+case(Lensky-5, 's-6)
+nmod:of(rendition-3, aria-7)
+case(Onegin-10, from-8)
+compound(Onegin-10, Eugene-9)
+nmod:from(rendition-3, Onegin-10)
+punct(Onegin-10, ,-11)
+appos(Onegin-10, heartbreaking-12)
+punct(rendition-3, !-13)
+
+Sentence #7 (24 tokens):
+Sobinov as Lensky really asked with regret and sorrow, “Where have you gone, the golden days of my spring?”
+[Text=Sobinov CharacterOffsetBegin=395 CharacterOffsetEnd=402 PartOfSpeech=NNP Lemma=Sobinov NamedEntityTag=PERSON]
+[Text=as CharacterOffsetBegin=403 CharacterOffsetEnd=405 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=Lensky CharacterOffsetBegin=406 CharacterOffsetEnd=412 PartOfSpeech=NNP Lemma=Lensky NamedEntityTag=PERSON]
+[Text=really CharacterOffsetBegin=413 CharacterOffsetEnd=419 PartOfSpeech=RB Lemma=really NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=420 CharacterOffsetEnd=425 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=426 CharacterOffsetEnd=430 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=regret CharacterOffsetBegin=431 CharacterOffsetEnd=437 PartOfSpeech=NN Lemma=regret NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=438 CharacterOffsetEnd=441 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sorrow CharacterOffsetBegin=442 CharacterOffsetEnd=448 PartOfSpeech=NN Lemma=sorrow NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=448 CharacterOffsetEnd=449 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=450 CharacterOffsetEnd=451 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Where CharacterOffsetBegin=451 CharacterOffsetEnd=456 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=457 CharacterOffsetEnd=461 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=462 CharacterOffsetEnd=465 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=gone CharacterOffsetBegin=466 CharacterOffsetEnd=470 PartOfSpeech=VBN Lemma=go NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=470 CharacterOffsetEnd=471 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=472 CharacterOffsetEnd=475 PartOfSpeech=DT Lemma=the NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t1" type="DURATION" value="PXD">the golden days</TIMEX3>]
+[Text=golden CharacterOffsetBegin=476 CharacterOffsetEnd=482 PartOfSpeech=JJ Lemma=golden NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t1" type="DURATION" value="PXD">the golden days</TIMEX3>]
+[Text=days CharacterOffsetBegin=483 CharacterOffsetEnd=487 PartOfSpeech=NNS Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=PXD Timex=<TIMEX3 tid="t1" type="DURATION" value="PXD">the golden days</TIMEX3>]
+[Text=of CharacterOffsetBegin=488 CharacterOffsetEnd=490 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=491 CharacterOffsetEnd=493 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=spring CharacterOffsetBegin=494 CharacterOffsetEnd=500 PartOfSpeech=NN Lemma=spring NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-SP Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-SP">spring</TIMEX3>]
+[Text=? CharacterOffsetBegin=500 CharacterOffsetEnd=501 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=501 CharacterOffsetEnd=502 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (NNP Sobinov))
+    (SBAR (IN as)
+      (S
+        (NP (NNP Lensky))
+        (ADVP (RB really))
+        (VP (VBD asked)
+          (PP (IN with)
+            (NP
+              (NP (NN regret)
+                (CC and)
+                (NN sorrow))
+              (, ,) (`` ``)
+              (SBARQ
+                (WHADVP (WRB Where))
+                (SQ (VBP have)
+                  (NP (PRP you))
+                  (VP
+                    (VP (VBN gone))
+                    (, ,)
+                    (NP
+                      (NP (DT the) (JJ golden) (NNS days))
+                      (PP (IN of)
+                        (NP (PRP$ my) (NN spring))))))
+                (. ?) ('' '')))))))))
+
+root(ROOT-0, Sobinov-1)
+mark(asked-5, as-2)
+nsubj(asked-5, Lensky-3)
+advmod(asked-5, really-4)
+dep(Sobinov-1, asked-5)
+case(regret-7, with-6)
+nmod:with(asked-5, regret-7)
+cc(regret-7, and-8)
+nmod:with(asked-5, sorrow-9)
+conj:and(regret-7, sorrow-9)
+punct(regret-7, ,-10)
+punct(regret-7, ``-11)
+advmod(gone-15, Where-12)
+aux(gone-15, have-13)
+nsubj(gone-15, you-14)
+dep(regret-7, gone-15)
+punct(gone-15, ,-16)
+det(days-19, the-17)
+amod(days-19, golden-18)
+dobj(gone-15, days-19)
+case(spring-22, of-20)
+nmod:poss(spring-22, my-21)
+nmod:of(days-19, spring-22)
+punct(gone-15, ?-23)
+punct(gone-15, ''-24)
+
+Sentence #8 (22 tokens):
+Other tenors, such as Ivan Kozlovsky, popular in the Soviet Union, merely shouted those words without any meaning.
+[Text=Other CharacterOffsetBegin=503 CharacterOffsetEnd=508 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=tenors CharacterOffsetBegin=509 CharacterOffsetEnd=515 PartOfSpeech=NNS Lemma=tenor NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=515 CharacterOffsetEnd=516 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=517 CharacterOffsetEnd=521 PartOfSpeech=JJ Lemma=such NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=522 CharacterOffsetEnd=524 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=Ivan CharacterOffsetBegin=525 CharacterOffsetEnd=529 PartOfSpeech=NNP Lemma=Ivan NamedEntityTag=PERSON]
+[Text=Kozlovsky CharacterOffsetBegin=530 CharacterOffsetEnd=539 PartOfSpeech=NNP Lemma=Kozlovsky NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=539 CharacterOffsetEnd=540 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=popular CharacterOffsetBegin=541 CharacterOffsetEnd=548 PartOfSpeech=JJ Lemma=popular NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=549 CharacterOffsetEnd=551 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=552 CharacterOffsetEnd=555 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Soviet CharacterOffsetBegin=556 CharacterOffsetEnd=562 PartOfSpeech=NNP Lemma=Soviet NamedEntityTag=LOCATION]
+[Text=Union CharacterOffsetBegin=563 CharacterOffsetEnd=568 PartOfSpeech=NNP Lemma=Union NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=568 CharacterOffsetEnd=569 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=merely CharacterOffsetBegin=570 CharacterOffsetEnd=576 PartOfSpeech=RB Lemma=merely NamedEntityTag=O]
+[Text=shouted CharacterOffsetBegin=577 CharacterOffsetEnd=584 PartOfSpeech=VBD Lemma=shout NamedEntityTag=O]
+[Text=those CharacterOffsetBegin=585 CharacterOffsetEnd=590 PartOfSpeech=DT Lemma=those NamedEntityTag=O]
+[Text=words CharacterOffsetBegin=591 CharacterOffsetEnd=596 PartOfSpeech=NNS Lemma=word NamedEntityTag=O]
+[Text=without CharacterOffsetBegin=597 CharacterOffsetEnd=604 PartOfSpeech=IN Lemma=without NamedEntityTag=O]
+[Text=any CharacterOffsetBegin=605 CharacterOffsetEnd=608 PartOfSpeech=DT Lemma=any NamedEntityTag=O]
+[Text=meaning CharacterOffsetBegin=609 CharacterOffsetEnd=616 PartOfSpeech=NN Lemma=meaning NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=616 CharacterOffsetEnd=617 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (JJ Other) (NNS tenors))
+      (, ,)
+      (PP (JJ such) (IN as)
+        (NP
+          (NP (NNP Ivan) (NNP Kozlovsky))
+          (, ,)
+          (ADJP (JJ popular)
+            (PP (IN in)
+              (NP (DT the) (NNP Soviet) (NNP Union))))))
+      (, ,))
+    (ADVP (RB merely))
+    (VP (VBD shouted)
+      (NP (DT those) (NNS words))
+      (PP (IN without)
+        (NP (DT any) (NN meaning))))
+    (. .)))
+
+root(ROOT-0, shouted-16)
+amod(tenors-2, Other-1)
+nsubj(shouted-16, tenors-2)
+punct(tenors-2, ,-3)
+case(Kozlovsky-7, such-4)
+mwe(such-4, as-5)
+compound(Kozlovsky-7, Ivan-6)
+nmod:such_as(tenors-2, Kozlovsky-7)
+punct(Kozlovsky-7, ,-8)
+amod(Kozlovsky-7, popular-9)
+case(Union-13, in-10)
+det(Union-13, the-11)
+compound(Union-13, Soviet-12)
+nmod:in(popular-9, Union-13)
+punct(tenors-2, ,-14)
+advmod(shouted-16, merely-15)
+det(words-18, those-17)
+dobj(shouted-16, words-18)
+case(meaning-21, without-19)
+det(meaning-21, any-20)
+nmod:without(shouted-16, meaning-21)
+punct(shouted-16, .-22)
+
+Coreference set:
+	(4,1,[1,3]) -> (1,14,[13,15]), that is: "Nezhdanova 's" -> "Antonina Nezhdanova"
+Coreference set:
+	(5,2,[2,3]) -> (1,19,[18,20]), that is: "Sobinov" -> "Leonid Sobinov"
+	(5,16,[16,17]) -> (1,19,[18,20]), that is: "he" -> "Leonid Sobinov"
+	(5,22,[22,26]) -> (1,19,[18,20]), that is: "you , not performing" -> "Leonid Sobinov"
+	(6,2,[2,3]) -> (1,19,[18,20]), that is: "his" -> "Leonid Sobinov"
+	(7,1,[1,2]) -> (1,19,[18,20]), that is: "Sobinov" -> "Leonid Sobinov"
+Coreference set:
+	(2,2,[2,3]) -> (1,3,[1,4]), that is: "they" -> "Two great singers"
+Coreference set:
+	(4,11,[11,13]) -> (4,3,[1,10]), that is: "a marvel" -> "Nezhdanova 's performance of Elsa 's aria from Lohengrin"
+Coreference set:
+	(7,3,[3,4]) -> (6,5,[5,7]), that is: "Lensky" -> "Lensky 's"
+	(7,21,[21,22]) -> (6,5,[5,7]), that is: "my" -> "Lensky 's"

@@ -1,0 +1,60 @@
+Sentence #1 (17 tokens):
+I called on Schumann and Rochlitz; Madame Schumann played me a fugue of Bach's.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=called CharacterOffsetBegin=2 CharacterOffsetEnd=8 PartOfSpeech=VBD Lemma=call NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=9 CharacterOffsetEnd=11 PartOfSpeech=RP Lemma=on NamedEntityTag=O]
+[Text=Schumann CharacterOffsetBegin=12 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Schumann NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Rochlitz CharacterOffsetBegin=25 CharacterOffsetEnd=33 PartOfSpeech=NNP Lemma=Rochlitz NamedEntityTag=PERSON]
+[Text=; CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=Madame CharacterOffsetBegin=35 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Madame NamedEntityTag=PERSON]
+[Text=Schumann CharacterOffsetBegin=42 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Schumann NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=51 CharacterOffsetEnd=57 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=58 CharacterOffsetEnd=60 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fugue CharacterOffsetBegin=63 CharacterOffsetEnd=68 PartOfSpeech=NN Lemma=fugue NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=69 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Bach CharacterOffsetBegin=72 CharacterOffsetEnd=76 PartOfSpeech=NNP Lemma=Bach NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD called)
+        (PRT (RP on))
+        (NP (NNP Schumann)
+          (CC and)
+          (NNP Rochlitz))))
+    (: ;)
+    (S
+      (NP (NNP Madame) (NNP Schumann))
+      (VP (VBD played)
+        (NP (PRP me))
+        (NP
+          (NP (DT a) (NN fugue))
+          (PP (IN of)
+            (NP (NNP Bach) (POS 's))))))
+    (. .)))
+
+root(ROOT-0, called-2)
+nsubj(called-2, I-1)
+compound:prt(called-2, on-3)
+dobj(called-2, Schumann-4)
+cc(Schumann-4, and-5)
+dobj(called-2, Rochlitz-6)
+conj:and(Schumann-4, Rochlitz-6)
+punct(called-2, ;-7)
+compound(Schumann-9, Madame-8)
+nsubj(played-10, Schumann-9)
+parataxis(called-2, played-10)
+iobj(played-10, me-11)
+det(fugue-13, a-12)
+dobj(played-10, fugue-13)
+case(Bach-15, of-14)
+nmod:of(fugue-13, Bach-15)
+case(Bach-15, 's-16)
+punct(called-2, .-17)
+
+Coreference set:
+	(1,11,[11,12]) -> (1,1,[1,2]), that is: "me" -> "I"

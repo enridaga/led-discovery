@@ -1,0 +1,127 @@
+Sentence #1 (2 tokens):
+Sunday.
+[Text=Sunday CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Sunday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-7 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-WXX-7">Sunday</TIMEX3>]
+[Text=. CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (NNP Sunday))
+    (. .)))
+
+root(ROOT-0, Sunday-1)
+punct(Sunday-1, .-2)
+
+Sentence #2 (7 tokens):
+Had an impromptu service this morning.
+[Text=Had CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=impromptu CharacterOffsetBegin=15 CharacterOffsetEnd=24 PartOfSpeech=JJ Lemma=impromptu NamedEntityTag=O]
+[Text=service CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NN Lemma=service NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=33 CharacterOffsetEnd=37 PartOfSpeech=DT Lemma=this NamedEntityTag=TIME NormalizedNamedEntityTag=THIS MO Timex=<TIMEX3 alt_value="THIS MO" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">this morning</TIMEX3>]
+[Text=morning CharacterOffsetBegin=38 CharacterOffsetEnd=45 PartOfSpeech=NN Lemma=morning NamedEntityTag=TIME NormalizedNamedEntityTag=THIS MO Timex=<TIMEX3 alt_value="THIS MO" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">this morning</TIMEX3>]
+[Text=. CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBD Had)
+      (NP
+        (NP (DT an) (JJ impromptu) (NN service))
+        (NP-TMP (DT this) (NN morning))))
+    (. .)))
+
+root(ROOT-0, Had-1)
+det(service-4, an-2)
+amod(service-4, impromptu-3)
+dobj(Had-1, service-4)
+det(morning-6, this-5)
+nmod:tmod(service-4, morning-6)
+punct(Had-1, .-7)
+
+Sentence #3 (26 tokens):
+Lt. M-- read a few verses, and we sang, 'O God Our Help', and 'Onward Christian Soldiers'.
+[Text=Lt. CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Lt. NamedEntityTag=O]
+[Text=M CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=m NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=52 CharacterOffsetEnd=54 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=read CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=VB Lemma=read NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=few CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=JJ Lemma=few NamedEntityTag=O]
+[Text=verses CharacterOffsetBegin=66 CharacterOffsetEnd=72 PartOfSpeech=NNS Lemma=verse NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=74 CharacterOffsetEnd=77 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=sang CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=O CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=NNP Lemma=O NamedEntityTag=O]
+[Text=God CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=NNP Lemma=God NamedEntityTag=MISC]
+[Text=Our CharacterOffsetBegin=94 CharacterOffsetEnd=97 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=MISC]
+[Text=Help CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=help NamedEntityTag=MISC]
+[Text=' CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=103 CharacterOffsetEnd=104 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Onward CharacterOffsetBegin=110 CharacterOffsetEnd=116 PartOfSpeech=RB Lemma=onward NamedEntityTag=MISC]
+[Text=Christian CharacterOffsetBegin=117 CharacterOffsetEnd=126 PartOfSpeech=JJ Lemma=christian NamedEntityTag=MISC]
+[Text=Soldiers CharacterOffsetBegin=127 CharacterOffsetEnd=135 PartOfSpeech=NNS Lemma=soldier NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP
+      (NP
+        (NP
+          (NP (NNP Lt.))
+          (SBAR
+            (S
+              (VP (NN M)
+                (VP
+                  (VP
+                    (LST (: --))
+                    (VB read)
+                    (NP (DT a) (JJ few))
+                    (S
+                      (NP
+                        (NP (NNS verses))
+                        (PRN (, ,)
+                          (S (CC and)
+                            (NP (PRP we))
+                            (VP (VBD sang) (, ,) ('' ')
+                              (PP
+                                (NP (NNP O) (NNP God))
+                                (NP (PRP$ Our)
+                                  (NP
+                                    (NP (NN Help) ('' '))
+                                    (, ,)
+                                    (ADVP (CC and))))))))
+                        (`` `))))
+                  (ADVP (RB Onward)))))))
+        (NP
+          (NP (JJ Christian))
+          (NP (NNS Soldiers) (POS ')))))
+    (. .)))
+
+root(ROOT-0, Lt.-1)
+dep(read-4, M-2)
+dep(read-4, ---3)
+acl:relcl(Lt.-1, read-4)
+det(few-6, a-5)
+dobj(read-4, few-6)
+xcomp(read-4, verses-7)
+punct(sang-11, ,-8)
+cc(sang-11, and-9)
+nsubj(sang-11, we-10)
+dep(verses-7, sang-11)
+punct(sang-11, ,-12)
+punct(sang-11, '-13)
+compound(God-15, O-14)
+nmod(sang-11, God-15)
+nmod:poss(Help-17, Our-16)
+dep(God-15, Help-17)
+punct(Help-17, '-18)
+punct(Help-17, ,-19)
+advmod(Help-17, and-20)
+punct(verses-7, `-21)
+advmod(read-4, Onward-22)
+dep(Lt.-1, Christian-23)
+nmod:poss(Christian-23, Soldiers-24)
+case(Soldiers-24, '-25)
+punct(Lt.-1, .-26)
+

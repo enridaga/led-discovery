@@ -1,0 +1,111 @@
+Sentence #1 (11 tokens):
+In the afternoon and evening we were at his house.
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=3 CharacterOffsetEnd=6 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=afternoon CharacterOffsetBegin=7 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=afternoon NamedEntityTag=TIME NormalizedNamedEntityTag=TAF Timex=<TIMEX3 tid="t1" type="TIME" value="TAF">afternoon</TIMEX3>]
+[Text=and CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=21 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t2" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=we CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=40 CharacterOffsetEnd=43 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=house CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=house NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NN afternoon)
+        (CC and)
+        (NN evening)))
+    (NP (PRP we))
+    (VP (VBD were)
+      (PP (IN at)
+        (NP (PRP$ his) (NN house))))
+    (. .)))
+
+root(ROOT-0, house-10)
+case(afternoon-3, In-1)
+det(afternoon-3, the-2)
+nmod:in(house-10, afternoon-3)
+cc(afternoon-3, and-4)
+conj:and(afternoon-3, evening-5)
+nmod:in(house-10, evening-5)
+nsubj(house-10, we-6)
+cop(house-10, were-7)
+case(house-10, at-8)
+nmod:poss(house-10, his-9)
+punct(house-10, .-11)
+
+Sentence #2 (21 tokens):
+He played with Rietz, his D major Sonata with Cello, and the two by Beethoven, op. 102.
+[Text=He CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=54 CharacterOffsetEnd=60 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=61 CharacterOffsetEnd=65 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Rietz CharacterOffsetBegin=66 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Rietz NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=D CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=d NamedEntityTag=O]
+[Text=major CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=JJ Lemma=major NamedEntityTag=O]
+[Text=Sonata CharacterOffsetBegin=85 CharacterOffsetEnd=91 PartOfSpeech=NN Lemma=sonata NamedEntityTag=MISC]
+[Text=with CharacterOffsetBegin=92 CharacterOffsetEnd=96 PartOfSpeech=IN Lemma=with NamedEntityTag=MISC]
+[Text=Cello CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=NNP Lemma=Cello NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=108 CharacterOffsetEnd=111 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=by CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Beethoven CharacterOffsetBegin=119 CharacterOffsetEnd=128 PartOfSpeech=NNP Lemma=Beethoven NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=128 CharacterOffsetEnd=129 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=op. CharacterOffsetBegin=130 CharacterOffsetEnd=133 PartOfSpeech=RB Lemma=op. NamedEntityTag=O]
+[Text=102 CharacterOffsetBegin=134 CharacterOffsetEnd=137 PartOfSpeech=CD Lemma=102 NamedEntityTag=NUMBER NormalizedNamedEntityTag=102.0]
+[Text=. CharacterOffsetBegin=137 CharacterOffsetEnd=138 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD played)
+      (PP (IN with)
+        (NP
+          (NP (NNP Rietz))
+          (, ,)
+          (NP
+            (NP (PRP$ his) (NN D) (JJ major) (NN Sonata))
+            (PP (IN with)
+              (NP (NNP Cello))))
+          (, ,)
+          (CC and)
+          (NP (DT the) (CD two))))
+      (PP (IN by)
+        (NP
+          (NP (NNP Beethoven))
+          (, ,)
+          (ADVP (RB op.))
+          (NP (CD 102)))))
+    (. .)))
+
+root(ROOT-0, played-2)
+nsubj(played-2, He-1)
+case(Rietz-4, with-3)
+nmod:with(played-2, Rietz-4)
+punct(Rietz-4, ,-5)
+nmod:poss(Sonata-9, his-6)
+compound(Sonata-9, D-7)
+amod(Sonata-9, major-8)
+nmod:with(played-2, Sonata-9)
+conj:and(Rietz-4, Sonata-9)
+case(Cello-11, with-10)
+nmod:with(Sonata-9, Cello-11)
+punct(Rietz-4, ,-12)
+cc(Rietz-4, and-13)
+det(two-15, the-14)
+nmod:with(played-2, two-15)
+conj:and(Rietz-4, two-15)
+case(Beethoven-17, by-16)
+nmod:by(played-2, Beethoven-17)
+punct(Beethoven-17, ,-18)
+advmod(102-20, op.-19)
+appos(Beethoven-17, 102-20)
+punct(played-2, .-21)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,9,[9,10]), that is: "He" -> "his"
+	(2,6,[6,7]) -> (1,9,[9,10]), that is: "his" -> "his"

@@ -1,0 +1,159 @@
+Sentence #1 (11 tokens):
+Of course his [Malcolm White] violin-playing was ripping.
+[Text=Of CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=3 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=course NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=10 CharacterOffsetEnd=13 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=14 CharacterOffsetEnd=15 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=Malcolm CharacterOffsetBegin=15 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Malcolm NamedEntityTag=PERSON]
+[Text=White CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NNP Lemma=White NamedEntityTag=PERSON]
+[Text=-RSB- CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=violin-playing CharacterOffsetBegin=30 CharacterOffsetEnd=44 PartOfSpeech=VBG Lemma=violin-play NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=ripping CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=VBG Lemma=rip NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=56 CharacterOffsetEnd=57 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN Of)
+      (NP (NN course)))
+    (NP
+      (NP (PRP$ his) (-LRB- -LSB-) (NNP Malcolm) (NNP White) (-RRB- -RSB-))
+      (VP (VBG violin-playing)))
+    (VP (VBD was)
+      (VP (VBG ripping)))
+    (. .)))
+
+root(ROOT-0, ripping-10)
+case(course-2, Of-1)
+nmod:of(ripping-10, course-2)
+nmod:poss(White-6, his-3)
+punct(White-6, -LSB--4)
+compound(White-6, Malcolm-5)
+nsubj(ripping-10, White-6)
+punct(White-6, -RSB--7)
+acl(White-6, violin-playing-8)
+aux(ripping-10, was-9)
+punct(ripping-10, .-11)
+
+Sentence #2 (20 tokens):
+The fellow next door to us had a gramophone, and he had Bach's Concerto for two violins.
+[Text=The CharacterOffsetBegin=58 CharacterOffsetEnd=61 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fellow CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=JJ Lemma=fellow NamedEntityTag=O]
+[Text=next CharacterOffsetBegin=69 CharacterOffsetEnd=73 PartOfSpeech=JJ Lemma=next NamedEntityTag=O]
+[Text=door CharacterOffsetBegin=74 CharacterOffsetEnd=78 PartOfSpeech=NN Lemma=door NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=79 CharacterOffsetEnd=81 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=89 CharacterOffsetEnd=90 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=gramophone CharacterOffsetBegin=91 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=gramophone NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=107 CharacterOffsetEnd=109 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=Bach CharacterOffsetBegin=114 CharacterOffsetEnd=118 PartOfSpeech=NNP Lemma=Bach NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Concerto CharacterOffsetBegin=121 CharacterOffsetEnd=129 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=130 CharacterOffsetEnd=133 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=134 CharacterOffsetEnd=137 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=violins CharacterOffsetBegin=138 CharacterOffsetEnd=145 PartOfSpeech=NNS Lemma=violin NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (JJ fellow) (JJ next) (NN door))
+        (PP (TO to)
+          (NP (PRP us))))
+      (VP (VBD had)
+        (NP (DT a) (NN gramophone))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBD had)
+        (NP
+          (NP
+            (NP (NNP Bach) (POS 's))
+            (NNP Concerto))
+          (PP (IN for)
+            (NP (CD two) (NNS violins))))))
+    (. .)))
+
+root(ROOT-0, had-7)
+det(door-4, The-1)
+amod(door-4, fellow-2)
+amod(door-4, next-3)
+nsubj(had-7, door-4)
+case(us-6, to-5)
+nmod:to(door-4, us-6)
+det(gramophone-9, a-8)
+dobj(had-7, gramophone-9)
+punct(had-7, ,-10)
+cc(had-7, and-11)
+nsubj(had-13, he-12)
+conj:and(had-7, had-13)
+nmod:poss(Concerto-16, Bach-14)
+case(Bach-14, 's-15)
+dobj(had-13, Concerto-16)
+case(violins-19, for-17)
+nummod(violins-19, two-18)
+nmod:for(Concerto-16, violins-19)
+punct(had-7, .-20)
+
+Sentence #3 (16 tokens):
+The Man [White] would tune his violin carefully and play to the gramophone.
+[Text=The CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Man CharacterOffsetBegin=151 CharacterOffsetEnd=154 PartOfSpeech=NN Lemma=man NamedEntityTag=O]
+[Text=-LSB- CharacterOffsetBegin=155 CharacterOffsetEnd=156 PartOfSpeech=-LRB- Lemma=-lsb- NamedEntityTag=O]
+[Text=White CharacterOffsetBegin=156 CharacterOffsetEnd=161 PartOfSpeech=NNP Lemma=White NamedEntityTag=O]
+[Text=-RSB- CharacterOffsetBegin=161 CharacterOffsetEnd=162 PartOfSpeech=-RRB- Lemma=-rsb- NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=163 CharacterOffsetEnd=168 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=tune CharacterOffsetBegin=169 CharacterOffsetEnd=173 PartOfSpeech=VB Lemma=tune NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=174 CharacterOffsetEnd=177 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=violin CharacterOffsetBegin=178 CharacterOffsetEnd=184 PartOfSpeech=NN Lemma=violin NamedEntityTag=O]
+[Text=carefully CharacterOffsetBegin=185 CharacterOffsetEnd=194 PartOfSpeech=RB Lemma=carefully NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=199 CharacterOffsetEnd=203 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=204 CharacterOffsetEnd=206 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=207 CharacterOffsetEnd=210 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gramophone CharacterOffsetBegin=211 CharacterOffsetEnd=221 PartOfSpeech=NN Lemma=gramophone NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=221 CharacterOffsetEnd=222 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN Man) (-LRB- -LSB-))
+      (NNP White) (-RRB- -RSB-))
+    (VP (MD would)
+      (VP
+        (VP (VB tune)
+          (NP (PRP$ his) (NN violin))
+          (ADVP (RB carefully)))
+        (CC and)
+        (VP (VB play)
+          (PP (TO to)
+            (NP (DT the) (NN gramophone))))))
+    (. .)))
+
+root(ROOT-0, tune-7)
+det(Man-2, The-1)
+compound(White-4, Man-2)
+punct(Man-2, -LSB--3)
+nsubj(tune-7, White-4)
+nsubj(play-12, White-4)
+punct(White-4, -RSB--5)
+aux(tune-7, would-6)
+nmod:poss(violin-9, his-8)
+dobj(tune-7, violin-9)
+advmod(tune-7, carefully-10)
+cc(tune-7, and-11)
+conj:and(tune-7, play-12)
+case(gramophone-15, to-13)
+det(gramophone-15, the-14)
+nmod:to(play-12, gramophone-15)
+punct(tune-7, .-16)
+
+Coreference set:
+	(2,12,[12,13]) -> (1,6,[3,9]), that is: "he" -> "his -LSB- Malcolm White -RSB- violin-playing"
+Coreference set:
+	(3,15,[14,16]) -> (2,9,[8,10]), that is: "the gramophone" -> "a gramophone"
+Coreference set:
+	(3,8,[8,9]) -> (3,2,[1,4]), that is: "his" -> "The Man -LSB-"

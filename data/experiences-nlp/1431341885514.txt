@@ -1,0 +1,91 @@
+Sentence #1 (17 tokens):
+Was the composition, or was the bad performance to be held responsible for that chaos?
+[Text=Was CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=composition CharacterOffsetBegin=8 CharacterOffsetEnd=19 PartOfSpeech=NN Lemma=composition NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=24 CharacterOffsetEnd=27 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=32 CharacterOffsetEnd=35 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=36 CharacterOffsetEnd=47 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=48 CharacterOffsetEnd=50 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=51 CharacterOffsetEnd=53 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=held CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=VBN Lemma=hold NamedEntityTag=O]
+[Text=responsible CharacterOffsetBegin=59 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=responsible NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=71 CharacterOffsetEnd=74 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=chaos CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=chaos NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (SQ
+    (SQ (VBD Was)
+      (NP (DT the) (NN composition)))
+    (, ,)
+    (CC or)
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (JJ bad) (NN performance))
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN held)
+                (S
+                  (ADJP (JJ responsible)
+                    (PP (IN for))))
+                (SBAR (IN that)
+                  (FRAG
+                    (NP (NN chaos))))))))))
+    (. ?)))
+
+root(ROOT-0, Was-1)
+det(composition-3, the-2)
+nsubj(Was-1, composition-3)
+punct(Was-1, ,-4)
+cc(Was-1, or-5)
+conj:or(Was-1, was-6)
+det(performance-9, the-7)
+amod(performance-9, bad-8)
+nsubj(was-6, performance-9)
+mark(held-12, to-10)
+auxpass(held-12, be-11)
+acl:to(performance-9, held-12)
+xcomp(held-12, responsible-13)
+nmod(responsible-13, for-14)
+mark(chaos-16, that-15)
+dep(held-12, chaos-16)
+punct(Was-1, ?-17)
+
+Sentence #2 (10 tokens):
+I can't settle that question after one hearing.
+[Text=I CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=ca CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=settle CharacterOffsetBegin=95 CharacterOffsetEnd=101 PartOfSpeech=VB Lemma=settle NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=question CharacterOffsetBegin=107 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=question NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=116 CharacterOffsetEnd=121 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=122 CharacterOffsetEnd=125 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=hearing CharacterOffsetBegin=126 CharacterOffsetEnd=133 PartOfSpeech=NN Lemma=hearing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=133 CharacterOffsetEnd=134 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD ca) (RB n't)
+      (VP (VB settle)
+        (NP (DT that) (NN question))
+        (PP (IN after)
+          (NP (CD one) (NN hearing)))))
+    (. .)))
+
+root(ROOT-0, settle-4)
+nsubj(settle-4, I-1)
+aux(settle-4, ca-2)
+neg(settle-4, n't-3)
+det(question-6, that-5)
+dobj(settle-4, question-6)
+case(hearing-9, after-7)
+nummod(hearing-9, one-8)
+nmod:after(settle-4, hearing-9)
+punct(settle-4, .-10)
+

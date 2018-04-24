@@ -1,0 +1,81 @@
+Sentence #1 (14 tokens):
+Go to Carlyle Singers "dress" rehearsal at the Ballet Club theatre.
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Carlyle CharacterOffsetBegin=6 CharacterOffsetEnd=13 PartOfSpeech=NNP Lemma=Carlyle NamedEntityTag=ORGANIZATION]
+[Text=Singers CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NNPS Lemma=Singers NamedEntityTag=ORGANIZATION]
+[Text=`` CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=dress CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=dress NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=28 CharacterOffsetEnd=29 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=rehearsal CharacterOffsetBegin=30 CharacterOffsetEnd=39 PartOfSpeech=NN Lemma=rehearsal NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Ballet CharacterOffsetBegin=47 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Ballet NamedEntityTag=ORGANIZATION]
+[Text=Club CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=Club NamedEntityTag=ORGANIZATION]
+[Text=theatre CharacterOffsetBegin=59 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=theatre NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PP (TO to)
+        (NP (NNP Carlyle) (NNPS Singers)))
+      (PP
+        (NP (`` ``) (NN dress) ('' '') (NN rehearsal))
+        (IN at)
+        (NP (DT the) (NNP Ballet) (NNP Club) (NN theatre))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+case(Singers-4, to-2)
+compound(Singers-4, Carlyle-3)
+nmod:to(Go-1, Singers-4)
+punct(rehearsal-8, ``-5)
+compound(rehearsal-8, dress-6)
+punct(rehearsal-8, ''-7)
+nmod:at(Go-1, rehearsal-8)
+case(rehearsal-8, at-9)
+det(theatre-13, the-10)
+compound(theatre-13, Ballet-11)
+compound(theatre-13, Club-12)
+dep(rehearsal-8, theatre-13)
+punct(Go-1, .-14)
+
+Sentence #2 (11 tokens):
+Miss Taylor brings me back in her car by 11.30.
+[Text=Miss CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Miss NamedEntityTag=O]
+[Text=Taylor CharacterOffsetBegin=73 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Taylor NamedEntityTag=PERSON]
+[Text=brings CharacterOffsetBegin=80 CharacterOffsetEnd=86 PartOfSpeech=VBZ Lemma=bring NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=back CharacterOffsetBegin=90 CharacterOffsetEnd=94 PartOfSpeech=RP Lemma=back NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=95 CharacterOffsetEnd=97 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=car CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=NN Lemma=car NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=11.30 CharacterOffsetBegin=109 CharacterOffsetEnd=114 PartOfSpeech=CD Lemma=11.30 NamedEntityTag=NUMBER NormalizedNamedEntityTag=11.3]
+[Text=. CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Miss) (NNP Taylor))
+    (VP (VBZ brings)
+      (NP (PRP me))
+      (PRT (RP back))
+      (PP (IN in)
+        (NP (PRP$ her) (NN car)))
+      (PP (IN by)
+        (NP (CD 11.30))))
+    (. .)))
+
+root(ROOT-0, brings-3)
+compound(Taylor-2, Miss-1)
+nsubj(brings-3, Taylor-2)
+dobj(brings-3, me-4)
+compound:prt(brings-3, back-5)
+case(car-8, in-6)
+nmod:poss(car-8, her-7)
+nmod:in(brings-3, car-8)
+case(11.30-10, by-9)
+nmod:by(brings-3, 11.30-10)
+punct(brings-3, .-11)
+
+Coreference set:
+	(2,7,[7,8]) -> (2,2,[1,3]), that is: "her" -> "Miss Taylor"

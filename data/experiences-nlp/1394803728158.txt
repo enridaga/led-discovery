@@ -1,0 +1,144 @@
+Sentence #1 (9 tokens):
+The red round moon hanging over Clifford Hill.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=red CharacterOffsetBegin=4 CharacterOffsetEnd=7 PartOfSpeech=JJ Lemma=red NamedEntityTag=O]
+[Text=round CharacterOffsetBegin=8 CharacterOffsetEnd=13 PartOfSpeech=NN Lemma=round NamedEntityTag=O]
+[Text=moon CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=moon NamedEntityTag=O]
+[Text=hanging CharacterOffsetBegin=19 CharacterOffsetEnd=26 PartOfSpeech=VBG Lemma=hang NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=27 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=Clifford CharacterOffsetBegin=32 CharacterOffsetEnd=40 PartOfSpeech=NNP Lemma=Clifford NamedEntityTag=PERSON]
+[Text=Hill CharacterOffsetBegin=41 CharacterOffsetEnd=45 PartOfSpeech=NNP Lemma=Hill NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=45 CharacterOffsetEnd=46 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (DT The) (JJ red) (NN round) (NN moon))
+    (VP (VBG hanging)
+      (PP (IN over)
+        (NP (NNP Clifford) (NNP Hill))))
+    (. .)))
+
+root(ROOT-0, moon-4)
+det(moon-4, The-1)
+amod(moon-4, red-2)
+compound(moon-4, round-3)
+acl(moon-4, hanging-5)
+case(Hill-8, over-6)
+compound(Hill-8, Clifford-7)
+nmod:over(hanging-5, Hill-8)
+punct(moon-4, .-9)
+
+Sentence #2 (16 tokens):
+Owls hooting in the dusk across the dingles and from the height of Cefn Cethin.
+[Text=Owls CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=NNS Lemma=owl NamedEntityTag=O]
+[Text=hooting CharacterOffsetBegin=52 CharacterOffsetEnd=59 PartOfSpeech=VBG Lemma=hoot NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=63 CharacterOffsetEnd=66 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=dusk CharacterOffsetBegin=67 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=dusk NamedEntityTag=O]
+[Text=across CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=across NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=dingles CharacterOffsetBegin=83 CharacterOffsetEnd=90 PartOfSpeech=NNS Lemma=dingle NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=95 CharacterOffsetEnd=99 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=height CharacterOffsetBegin=104 CharacterOffsetEnd=110 PartOfSpeech=NN Lemma=height NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Cefn CharacterOffsetBegin=114 CharacterOffsetEnd=118 PartOfSpeech=NNP Lemma=Cefn NamedEntityTag=PERSON]
+[Text=Cethin CharacterOffsetBegin=119 CharacterOffsetEnd=125 PartOfSpeech=NNP Lemma=Cethin NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=125 CharacterOffsetEnd=126 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNS Owls))
+    (VP (VBG hooting)
+      (PP
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN dusk))
+            (PP (IN across)
+              (NP (DT the) (NNS dingles)))))
+        (CC and)
+        (PP (IN from)
+          (NP
+            (NP (DT the) (NN height))
+            (PP (IN of)
+              (NP (NNP Cefn) (NNP Cethin)))))))
+    (. .)))
+
+root(ROOT-0, Owls-1)
+acl(Owls-1, hooting-2)
+acl(Owls-1, hooting-2')
+conj:and(hooting-2, hooting-2')
+case(dusk-5, in-3)
+det(dusk-5, the-4)
+nmod:in(hooting-2, dusk-5)
+case(dingles-8, across-6)
+det(dingles-8, the-7)
+nmod:across(dusk-5, dingles-8)
+cc(hooting-2, and-9)
+case(height-12, from-10)
+det(height-12, the-11)
+nmod:from(hooting-2', height-12)
+case(Cethin-15, of-13)
+compound(Cethin-15, Cefn-14)
+nmod:of(height-12, Cethin-15)
+punct(Owls-1, .-16)
+
+Sentence #3 (19 tokens):
+Volunteer band in Hay playing across the valley, a review in preparation for a Volunteer Concert to-night.
+[Text=Volunteer CharacterOffsetBegin=127 CharacterOffsetEnd=136 PartOfSpeech=NN Lemma=volunteer NamedEntityTag=O]
+[Text=band CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=NN Lemma=band NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=142 CharacterOffsetEnd=144 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Hay CharacterOffsetBegin=145 CharacterOffsetEnd=148 PartOfSpeech=NN Lemma=hay NamedEntityTag=PERSON]
+[Text=playing CharacterOffsetBegin=149 CharacterOffsetEnd=156 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=across CharacterOffsetBegin=157 CharacterOffsetEnd=163 PartOfSpeech=IN Lemma=across NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=164 CharacterOffsetEnd=167 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=valley CharacterOffsetBegin=168 CharacterOffsetEnd=174 PartOfSpeech=NN Lemma=valley NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=174 CharacterOffsetEnd=175 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=176 CharacterOffsetEnd=177 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=review CharacterOffsetBegin=178 CharacterOffsetEnd=184 PartOfSpeech=NN Lemma=review NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=185 CharacterOffsetEnd=187 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=preparation CharacterOffsetBegin=188 CharacterOffsetEnd=199 PartOfSpeech=NN Lemma=preparation NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=200 CharacterOffsetEnd=203 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=204 CharacterOffsetEnd=205 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Volunteer CharacterOffsetBegin=206 CharacterOffsetEnd=215 PartOfSpeech=NNP Lemma=Volunteer NamedEntityTag=O]
+[Text=Concert CharacterOffsetBegin=216 CharacterOffsetEnd=223 PartOfSpeech=NNP Lemma=Concert NamedEntityTag=O]
+[Text=to-night CharacterOffsetBegin=224 CharacterOffsetEnd=232 PartOfSpeech=NN Lemma=to-night NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=232 CharacterOffsetEnd=233 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NN Volunteer) (NN band))
+    (PP (IN in)
+      (NP (NN Hay) (NN playing)))
+    (PP (IN across)
+      (NP
+        (NP (DT the) (NN valley))
+        (, ,)
+        (NP
+          (NP (DT a) (NN review))
+          (PP (IN in)
+            (NP (NN preparation))))))
+    (PP (IN for)
+      (NP (DT a) (NNP Volunteer) (NNP Concert) (NN to-night)))
+    (. .)))
+
+root(ROOT-0, band-2)
+compound(band-2, Volunteer-1)
+case(playing-5, in-3)
+compound(playing-5, Hay-4)
+nmod:in(band-2, playing-5)
+case(valley-8, across-6)
+det(valley-8, the-7)
+nmod:across(band-2, valley-8)
+punct(valley-8, ,-9)
+det(review-11, a-10)
+appos(valley-8, review-11)
+case(preparation-13, in-12)
+nmod:in(review-11, preparation-13)
+case(to-night-18, for-14)
+det(to-night-18, a-15)
+compound(to-night-18, Volunteer-16)
+compound(to-night-18, Concert-17)
+nmod:for(band-2, to-night-18)
+punct(band-2, .-19)
+
+Coreference set:
+	(3,11,[10,14]) -> (3,8,[7,9]), that is: "a review in preparation" -> "the valley"

@@ -1,0 +1,202 @@
+Sentence #1 (13 tokens):
+Listen to Webern conducting Mahlers' lovely 4th Symphony from London Regional.
+[Text=Listen CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Webern CharacterOffsetBegin=10 CharacterOffsetEnd=16 PartOfSpeech=NNP Lemma=Webern NamedEntityTag=PERSON]
+[Text=conducting CharacterOffsetBegin=17 CharacterOffsetEnd=27 PartOfSpeech=VBG Lemma=conduct NamedEntityTag=O]
+[Text=Mahlers CharacterOffsetBegin=28 CharacterOffsetEnd=35 PartOfSpeech=NNP Lemma=Mahlers NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=35 CharacterOffsetEnd=36 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=lovely CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=JJ Lemma=lovely NamedEntityTag=O]
+[Text=4th CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=JJ Lemma=4th NamedEntityTag=ORDINAL NormalizedNamedEntityTag=4.0]
+[Text=Symphony CharacterOffsetBegin=48 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Symphony NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=London CharacterOffsetBegin=62 CharacterOffsetEnd=68 PartOfSpeech=NNP Lemma=London NamedEntityTag=LOCATION]
+[Text=Regional CharacterOffsetBegin=69 CharacterOffsetEnd=77 PartOfSpeech=NNP Lemma=Regional NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Listen)
+      (PP (TO to)
+        (NP (NNP Webern)))
+      (S
+        (VP (VBG conducting)
+          (NP
+            (NP
+              (NP (NNP Mahlers) (POS '))
+              (ADJP (JJ lovely) (JJ 4th))
+              (NNP Symphony))
+            (PP (IN from)
+              (NP (NNP London) (NNP Regional)))))))
+    (. .)))
+
+root(ROOT-0, Listen-1)
+case(Webern-3, to-2)
+nmod:to(Listen-1, Webern-3)
+xcomp(Listen-1, conducting-4)
+nmod:poss(Symphony-9, Mahlers-5)
+case(Mahlers-5, '-6)
+amod(4th-8, lovely-7)
+amod(Symphony-9, 4th-8)
+dobj(conducting-4, Symphony-9)
+case(Regional-12, from-10)
+compound(Regional-12, London-11)
+nmod:from(Symphony-9, Regional-12)
+punct(Listen-1, .-13)
+
+Sentence #2 (20 tokens):
+This work seems a mix up of everything that one has ever heard, but it is definitely Mahler.
+[Text=This CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=seems CharacterOffsetBegin=89 CharacterOffsetEnd=94 PartOfSpeech=VBZ Lemma=seem NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=mix CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=NN Lemma=mix NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=101 CharacterOffsetEnd=103 PartOfSpeech=IN Lemma=up NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=104 CharacterOffsetEnd=106 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=everything CharacterOffsetBegin=107 CharacterOffsetEnd=117 PartOfSpeech=NN Lemma=everything NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=has CharacterOffsetBegin=127 CharacterOffsetEnd=130 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=ever CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=RB Lemma=ever NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=136 CharacterOffsetEnd=141 PartOfSpeech=VBN Lemma=hear NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=143 CharacterOffsetEnd=146 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=147 CharacterOffsetEnd=149 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=definitely CharacterOffsetBegin=153 CharacterOffsetEnd=163 PartOfSpeech=RB Lemma=definitely NamedEntityTag=O]
+[Text=Mahler CharacterOffsetBegin=164 CharacterOffsetEnd=170 PartOfSpeech=NNP Lemma=Mahler NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=170 CharacterOffsetEnd=171 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (DT This) (NN work))
+      (VP (VBZ seems)
+        (PP
+          (ADVP
+            (NP (DT a) (NN mix))
+            (IN up))
+          (IN of)
+          (NP (NN everything)))
+        (SBAR (IN that)
+          (S
+            (NP (CD one))
+            (VP (VBZ has)
+              (ADVP (RB ever))
+              (VP (VBN heard)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (ADVP (RB definitely))
+        (NP (NNP Mahler))))
+    (. .)))
+
+root(ROOT-0, seems-3)
+det(work-2, This-1)
+nsubj(seems-3, work-2)
+det(mix-5, a-4)
+advmod(everything-8, mix-5)
+case(mix-5, up-6)
+case(everything-8, of-7)
+nmod:of(seems-3, everything-8)
+mark(heard-13, that-9)
+nsubj(heard-13, one-10)
+aux(heard-13, has-11)
+advmod(heard-13, ever-12)
+ccomp(seems-3, heard-13)
+punct(seems-3, ,-14)
+cc(seems-3, but-15)
+nsubj(Mahler-19, it-16)
+cop(Mahler-19, is-17)
+advmod(Mahler-19, definitely-18)
+conj:but(seems-3, Mahler-19)
+punct(seems-3, .-20)
+
+Sentence #3 (6 tokens):
+Like a lovely spring day.
+[Text=Like CharacterOffsetBegin=172 CharacterOffsetEnd=176 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=177 CharacterOffsetEnd=178 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=lovely CharacterOffsetBegin=179 CharacterOffsetEnd=185 PartOfSpeech=JJ Lemma=lovely NamedEntityTag=O]
+[Text=spring CharacterOffsetBegin=186 CharacterOffsetEnd=192 PartOfSpeech=NN Lemma=spring NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-SP Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-SP">spring</TIMEX3>]
+[Text=day CharacterOffsetBegin=193 CharacterOffsetEnd=196 PartOfSpeech=NN Lemma=day NamedEntityTag=DURATION NormalizedNamedEntityTag=P1D Timex=<TIMEX3 tid="t2" type="DURATION" value="P1D">day</TIMEX3>]
+[Text=. CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN Like)
+      (NP (DT a) (JJ lovely) (NN spring) (NN day)))
+    (. .)))
+
+root(ROOT-0, day-5)
+case(day-5, Like-1)
+det(day-5, a-2)
+amod(day-5, lovely-3)
+compound(day-5, spring-4)
+punct(day-5, .-6)
+
+Sentence #4 (3 tokens):
+The orch.
+[Text=The CharacterOffsetBegin=198 CharacterOffsetEnd=201 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=orch CharacterOffsetBegin=202 CharacterOffsetEnd=206 PartOfSpeech=NN Lemma=orch NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=206 CharacterOffsetEnd=207 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (DT The) (NN orch) (. .)))
+
+root(ROOT-0, orch-2)
+det(orch-2, The-1)
+punct(orch-2, .-3)
+
+Sentence #5 (14 tokens):
+seemed to have caught the spirit but not over many notes of it!
+[Text=seemed CharacterOffsetBegin=208 CharacterOffsetEnd=214 PartOfSpeech=VBD Lemma=seem NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=215 CharacterOffsetEnd=217 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=218 CharacterOffsetEnd=222 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=caught CharacterOffsetBegin=223 CharacterOffsetEnd=229 PartOfSpeech=VBN Lemma=catch NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=230 CharacterOffsetEnd=233 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=spirit CharacterOffsetBegin=234 CharacterOffsetEnd=240 PartOfSpeech=NN Lemma=spirit NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=241 CharacterOffsetEnd=244 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=245 CharacterOffsetEnd=248 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=249 CharacterOffsetEnd=253 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=254 CharacterOffsetEnd=258 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=notes CharacterOffsetBegin=259 CharacterOffsetEnd=264 PartOfSpeech=NNS Lemma=note NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=265 CharacterOffsetEnd=267 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=268 CharacterOffsetEnd=270 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=270 CharacterOffsetEnd=271 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBD seemed)
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (VP (VBN caught)
+              (NP
+                (NP (DT the) (NN spirit))
+                (CONJP (CC but)
+                  (RB not))
+                (NP
+                  (NP (IN over) (JJ many) (NNS notes))
+                  (PP (IN of)
+                    (NP (PRP it))))))))))
+    (. !)))
+
+root(ROOT-0, seemed-1)
+mark(caught-4, to-2)
+aux(caught-4, have-3)
+xcomp(seemed-1, caught-4)
+det(spirit-6, the-5)
+dobj(caught-4, spirit-6)
+cc(not-8, but-7)
+cc(spirit-6, not-8)
+amod(notes-11, over-9)
+amod(notes-11, many-10)
+dobj(caught-4, notes-11)
+conj:negcc(spirit-6, notes-11)
+case(it-13, of-12)
+nmod:of(notes-11, it-13)
+punct(seemed-1, !-14)
+
+Coreference set:
+	(2,19,[19,20]) -> (1,5,[5,7]), that is: "Mahler" -> "Mahlers '"
+Coreference set:
+	(2,16,[16,17]) -> (2,2,[1,3]), that is: "it" -> "This work"
+Coreference set:
+	(5,13,[13,14]) -> (5,6,[5,7]), that is: "it" -> "the spirit"

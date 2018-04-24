@@ -1,0 +1,94 @@
+Sentence #1 (27 tokens):
+I had some seventy-eights of Charlie Parker, and as soon as I found out who Bud Powell was, I bought some of his records.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=6 CharacterOffsetEnd=10 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=seventy-eights CharacterOffsetBegin=11 CharacterOffsetEnd=25 PartOfSpeech=NNS Lemma=seventy-eight NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Charlie CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Charlie NamedEntityTag=PERSON]
+[Text=Parker CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=NNP Lemma=Parker NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=43 CharacterOffsetEnd=44 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=45 CharacterOffsetEnd=48 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=soon CharacterOffsetBegin=52 CharacterOffsetEnd=56 PartOfSpeech=RB Lemma=soon NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=57 CharacterOffsetEnd=59 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=found CharacterOffsetBegin=62 CharacterOffsetEnd=67 PartOfSpeech=VBD Lemma=find NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=72 CharacterOffsetEnd=75 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=Bud CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=NNP Lemma=Bud NamedEntityTag=PERSON]
+[Text=Powell CharacterOffsetBegin=80 CharacterOffsetEnd=86 PartOfSpeech=NNP Lemma=Powell NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=90 CharacterOffsetEnd=91 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=bought CharacterOffsetBegin=94 CharacterOffsetEnd=100 PartOfSpeech=VBD Lemma=buy NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=106 CharacterOffsetEnd=108 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=109 CharacterOffsetEnd=112 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=records CharacterOffsetBegin=113 CharacterOffsetEnd=120 PartOfSpeech=NNS Lemma=record NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD had)
+        (NP
+          (NP (DT some) (NNS seventy-eights))
+          (PP (IN of)
+            (NP (NNP Charlie) (NNP Parker))))))
+    (, ,)
+    (CC and)
+    (S
+      (ADVP (RB as) (RB soon)
+        (SBAR (IN as)
+          (S
+            (NP (PRP I))
+            (VP (VBD found)
+              (PRT (RP out))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (NP (NNP Bud) (NNP Powell))
+                  (VP (VBD was))))))))
+      (, ,)
+      (NP (PRP I))
+      (VP (VBD bought)
+        (NP
+          (NP (DT some))
+          (PP (IN of)
+            (NP (PRP$ his) (NNS records))))))
+    (. .)))
+
+root(ROOT-0, had-2)
+nsubj(had-2, I-1)
+det(seventy-eights-4, some-3)
+dobj(had-2, seventy-eights-4)
+case(Parker-7, of-5)
+compound(Parker-7, Charlie-6)
+nmod:of(seventy-eights-4, Parker-7)
+punct(had-2, ,-8)
+cc(had-2, and-9)
+advmod(soon-11, as-10)
+advmod(bought-22, soon-11)
+mark(found-14, as-12)
+nsubj(found-14, I-13)
+ccomp(soon-11, found-14)
+compound:prt(found-14, out-15)
+dobj(was-19, who-16)
+compound(Powell-18, Bud-17)
+nsubj(was-19, Powell-18)
+ccomp(found-14, was-19)
+punct(bought-22, ,-20)
+nsubj(bought-22, I-21)
+conj:and(had-2, bought-22)
+dobj(bought-22, some-23)
+case(records-26, of-24)
+nmod:poss(records-26, his-25)
+nmod:of(some-23, records-26)
+punct(had-2, .-27)
+
+Coreference set:
+	(1,25,[25,26]) -> (1,18,[17,19]), that is: "his" -> "Bud Powell"
+Coreference set:
+	(1,13,[13,14]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(1,21,[21,22]) -> (1,1,[1,2]), that is: "I" -> "I"

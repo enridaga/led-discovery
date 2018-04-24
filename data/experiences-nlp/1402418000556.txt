@@ -1,0 +1,124 @@
+Sentence #1 (13 tokens):
+I have been on a route march today for about 12 miles.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=12 CharacterOffsetEnd=14 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=15 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=route CharacterOffsetBegin=17 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=route NamedEntityTag=O]
+[Text=march CharacterOffsetBegin=23 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=march NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D INTERSECT XXXX-03 Timex=<TIMEX3 alt_value="THIS P1D INTERSECT XXXX-03" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">march today</TIMEX3>]
+[Text=today CharacterOffsetBegin=29 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=today NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D INTERSECT XXXX-03 Timex=<TIMEX3 alt_value="THIS P1D INTERSECT XXXX-03" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">march today</TIMEX3>]
+[Text=for CharacterOffsetBegin=35 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=12 CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=CD Lemma=12 NamedEntityTag=NUMBER NormalizedNamedEntityTag=~12.0]
+[Text=miles CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=NNS Lemma=mile NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (VP (VBN been)
+        (PP (IN on)
+          (NP (DT a) (NN route) (NN march)))
+        (NP-TMP (NN today))
+        (PP (IN for)
+          (PP (IN about)
+            (NP (CD 12) (NNS miles))))))
+    (. .)))
+
+root(ROOT-0, march-7)
+nsubj(march-7, I-1)
+aux(march-7, have-2)
+cop(march-7, been-3)
+case(march-7, on-4)
+det(march-7, a-5)
+compound(march-7, route-6)
+nmod:tmod(march-7, today-8)
+case(miles-12, for-9)
+case(miles-12, about-10)
+nummod(miles-12, 12-11)
+nmod:about(march-7, miles-12)
+punct(march-7, .-13)
+
+Sentence #2 (12 tokens):
+We have a fine band, 4 pipers and drummers etc.
+[Text=We CharacterOffsetBegin=55 CharacterOffsetEnd=57 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=65 CharacterOffsetEnd=69 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=band CharacterOffsetBegin=70 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=band NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=4 CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=CD Lemma=4 NamedEntityTag=NUMBER NormalizedNamedEntityTag=4.0]
+[Text=pipers CharacterOffsetBegin=78 CharacterOffsetEnd=84 PartOfSpeech=NNS Lemma=piper NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=drummers CharacterOffsetBegin=89 CharacterOffsetEnd=97 PartOfSpeech=NNS Lemma=drummer NamedEntityTag=O]
+[Text=etc. CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=FW Lemma=etc. NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP have)
+      (NP
+        (NP (DT a) (JJ fine) (NN band))
+        (, ,)
+        (NP (CD 4) (NNS pipers))
+        (CC and)
+        (NP
+          (NP (NNS drummers))
+          (NP (FW etc.)))))
+    (. .)))
+
+root(ROOT-0, have-2)
+nsubj(have-2, We-1)
+det(band-5, a-3)
+amod(band-5, fine-4)
+dobj(have-2, band-5)
+punct(band-5, ,-6)
+nummod(pipers-8, 4-7)
+dobj(have-2, pipers-8)
+conj:and(band-5, pipers-8)
+cc(band-5, and-9)
+dobj(have-2, drummers-10)
+conj:and(band-5, drummers-10)
+dep(drummers-10, etc.-11)
+punct(have-2, .-12)
+
+Sentence #3 (11 tokens):
+The bagpipes have a wonderful effect when you feel tired.
+[Text=The CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bagpipes CharacterOffsetBegin=107 CharacterOffsetEnd=115 PartOfSpeech=NNS Lemma=bagpipe NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=wonderful CharacterOffsetBegin=123 CharacterOffsetEnd=132 PartOfSpeech=JJ Lemma=wonderful NamedEntityTag=O]
+[Text=effect CharacterOffsetBegin=133 CharacterOffsetEnd=139 PartOfSpeech=NN Lemma=effect NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=140 CharacterOffsetEnd=144 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=145 CharacterOffsetEnd=148 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=feel CharacterOffsetBegin=149 CharacterOffsetEnd=153 PartOfSpeech=VBP Lemma=feel NamedEntityTag=O]
+[Text=tired CharacterOffsetBegin=154 CharacterOffsetEnd=159 PartOfSpeech=JJ Lemma=tired NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NNS bagpipes))
+    (VP (VBP have)
+      (NP
+        (NP (DT a) (JJ wonderful) (NN effect))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP you))
+            (VP (VBP feel)
+              (ADJP (JJ tired)))))))
+    (. .)))
+
+root(ROOT-0, have-3)
+det(bagpipes-2, The-1)
+nsubj(have-3, bagpipes-2)
+det(effect-6, a-4)
+amod(effect-6, wonderful-5)
+dobj(have-3, effect-6)
+advmod(feel-9, when-7)
+nsubj(feel-9, you-8)
+acl:relcl(effect-6, feel-9)
+xcomp(feel-9, tired-10)
+punct(have-3, .-11)
+

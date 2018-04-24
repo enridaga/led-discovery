@@ -1,0 +1,381 @@
+Sentence #1 (26 tokens):
+Outstanding among my continental excursion was a trip I made in February 1933 which included recitals in Rome, Milan and Pisa with Alfredo Casella.
+[Text=Outstanding CharacterOffsetBegin=0 CharacterOffsetEnd=11 PartOfSpeech=JJ Lemma=outstanding NamedEntityTag=O]
+[Text=among CharacterOffsetBegin=12 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=among NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=18 CharacterOffsetEnd=20 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=continental CharacterOffsetBegin=21 CharacterOffsetEnd=32 PartOfSpeech=JJ Lemma=continental NamedEntityTag=O]
+[Text=excursion CharacterOffsetBegin=33 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=excursion NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=43 CharacterOffsetEnd=46 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=trip CharacterOffsetBegin=49 CharacterOffsetEnd=53 PartOfSpeech=NN Lemma=trip NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=56 CharacterOffsetEnd=60 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=61 CharacterOffsetEnd=63 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=February CharacterOffsetBegin=64 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=February NamedEntityTag=DATE NormalizedNamedEntityTag=1933-02 Timex=<TIMEX3 tid="t1" type="DATE" value="1933-02">February 1933</TIMEX3>]
+[Text=1933 CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=CD Lemma=1933 NamedEntityTag=DATE NormalizedNamedEntityTag=1933-02 Timex=<TIMEX3 tid="t1" type="DATE" value="1933-02">February 1933</TIMEX3>]
+[Text=which CharacterOffsetBegin=78 CharacterOffsetEnd=83 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=included CharacterOffsetBegin=84 CharacterOffsetEnd=92 PartOfSpeech=VBD Lemma=include NamedEntityTag=O]
+[Text=recitals CharacterOffsetBegin=93 CharacterOffsetEnd=101 PartOfSpeech=NNS Lemma=recital NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Rome CharacterOffsetBegin=105 CharacterOffsetEnd=109 PartOfSpeech=NNP Lemma=Rome NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Milan CharacterOffsetBegin=111 CharacterOffsetEnd=116 PartOfSpeech=NNP Lemma=Milan NamedEntityTag=LOCATION]
+[Text=and CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Pisa CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=NNP Lemma=Pisa NamedEntityTag=LOCATION]
+[Text=with CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Alfredo CharacterOffsetBegin=131 CharacterOffsetEnd=138 PartOfSpeech=NNP Lemma=Alfredo NamedEntityTag=PERSON]
+[Text=Casella CharacterOffsetBegin=139 CharacterOffsetEnd=146 PartOfSpeech=NNP Lemma=Casella NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=146 CharacterOffsetEnd=147 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (JJ Outstanding))
+      (PP (IN among)
+        (NP (PRP$ my) (JJ continental) (NN excursion))))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN trip))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBD made)
+              (PP (IN in)
+                (NP
+                  (NP (NNP February) (CD 1933))
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBD included)
+                        (NP (NNS recitals))
+                        (PP (IN in)
+                          (NP (NNP Rome) (, ,) (NNP Milan)
+                            (CC and)
+                            (NNP Pisa)))
+                        (PP (IN with)
+                          (NP (NNP Alfredo) (NNP Casella)))))))))))))
+    (. .)))
+
+root(ROOT-0, trip-8)
+nsubj(trip-8, Outstanding-1)
+case(excursion-5, among-2)
+nmod:poss(excursion-5, my-3)
+amod(excursion-5, continental-4)
+nmod:among(Outstanding-1, excursion-5)
+cop(trip-8, was-6)
+det(trip-8, a-7)
+nsubj(included-15, trip-8)
+nsubj(made-10, I-9)
+acl:relcl(trip-8, made-10)
+case(February-12, in-11)
+nmod:in(made-10, February-12)
+nsubj(included-15, February-12)
+nummod(February-12, 1933-13)
+ref(trip-8, which-14)
+ref(February-12, which-14)
+acl:relcl(February-12, included-15)
+dobj(included-15, recitals-16)
+case(Rome-18, in-17)
+nmod:in(included-15, Rome-18)
+punct(Rome-18, ,-19)
+nmod:in(included-15, Milan-20)
+conj:and(Rome-18, Milan-20)
+cc(Rome-18, and-21)
+nmod:in(included-15, Pisa-22)
+conj:and(Rome-18, Pisa-22)
+case(Casella-25, with-23)
+compound(Casella-25, Alfredo-24)
+nmod:with(included-15, Casella-25)
+punct(trip-8, .-26)
+
+Sentence #2 (20 tokens):
+Casella was a brilliant pianist, his speciality being his performance of modern music for which he was world-famous.
+[Text=Casella CharacterOffsetBegin=148 CharacterOffsetEnd=155 PartOfSpeech=NNP Lemma=Casella NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=156 CharacterOffsetEnd=159 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=160 CharacterOffsetEnd=161 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=brilliant CharacterOffsetBegin=162 CharacterOffsetEnd=171 PartOfSpeech=JJ Lemma=brilliant NamedEntityTag=O]
+[Text=pianist CharacterOffsetBegin=172 CharacterOffsetEnd=179 PartOfSpeech=NN Lemma=pianist NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=179 CharacterOffsetEnd=180 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=181 CharacterOffsetEnd=184 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=speciality CharacterOffsetBegin=185 CharacterOffsetEnd=195 PartOfSpeech=NN Lemma=speciality NamedEntityTag=O]
+[Text=being CharacterOffsetBegin=196 CharacterOffsetEnd=201 PartOfSpeech=VBG Lemma=be NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=202 CharacterOffsetEnd=205 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=206 CharacterOffsetEnd=217 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=218 CharacterOffsetEnd=220 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=modern CharacterOffsetBegin=221 CharacterOffsetEnd=227 PartOfSpeech=JJ Lemma=modern NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=228 CharacterOffsetEnd=233 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=234 CharacterOffsetEnd=237 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=238 CharacterOffsetEnd=243 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=244 CharacterOffsetEnd=246 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=247 CharacterOffsetEnd=250 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=world-famous CharacterOffsetBegin=251 CharacterOffsetEnd=263 PartOfSpeech=JJ Lemma=world-famous NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=263 CharacterOffsetEnd=264 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Casella))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ brilliant) (NN pianist))
+        (, ,)
+        (NP (PRP$ his) (NN speciality)
+          (S
+            (VP (VBG being)
+              (NP
+                (NP (PRP$ his) (NN performance))
+                (PP (IN of)
+                  (NP (JJ modern) (NN music)))
+                (SBAR
+                  (WHPP (IN for)
+                    (WHNP (WDT which)))
+                  (S
+                    (NP (PRP he))
+                    (VP (VBD was)
+                      (ADJP (JJ world-famous)))))))))))
+    (. .)))
+
+root(ROOT-0, pianist-5)
+nsubj(pianist-5, Casella-1)
+cop(pianist-5, was-2)
+det(pianist-5, a-3)
+amod(pianist-5, brilliant-4)
+punct(pianist-5, ,-6)
+nmod:poss(speciality-8, his-7)
+appos(pianist-5, speciality-8)
+cop(performance-11, being-9)
+nmod:poss(performance-11, his-10)
+dep(speciality-8, performance-11)
+nmod:for(world-famous-19, performance-11)
+case(music-14, of-12)
+amod(music-14, modern-13)
+nmod:of(performance-11, music-14)
+case(which-16, for-15)
+ref(performance-11, which-16)
+nsubj(world-famous-19, he-17)
+cop(world-famous-19, was-18)
+acl:relcl(performance-11, world-famous-19)
+punct(pianist-5, .-20)
+
+Sentence #3 (30 tokens):
+Included in the programmes were two sonatas for viola and piano by York Bowen, and my arrangement for viola of John Ireland’s violin sonata in A minor.
+[Text=Included CharacterOffsetBegin=265 CharacterOffsetEnd=273 PartOfSpeech=VBN Lemma=include NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=274 CharacterOffsetEnd=276 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=277 CharacterOffsetEnd=280 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=programmes CharacterOffsetBegin=281 CharacterOffsetEnd=291 PartOfSpeech=NNS Lemma=programme NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=292 CharacterOffsetEnd=296 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=297 CharacterOffsetEnd=300 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=sonatas CharacterOffsetBegin=301 CharacterOffsetEnd=308 PartOfSpeech=NNS Lemma=sonata NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=309 CharacterOffsetEnd=312 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=viola CharacterOffsetBegin=313 CharacterOffsetEnd=318 PartOfSpeech=NN Lemma=viola NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=319 CharacterOffsetEnd=322 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=323 CharacterOffsetEnd=328 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=329 CharacterOffsetEnd=331 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=York CharacterOffsetBegin=332 CharacterOffsetEnd=336 PartOfSpeech=NNP Lemma=York NamedEntityTag=PERSON]
+[Text=Bowen CharacterOffsetBegin=337 CharacterOffsetEnd=342 PartOfSpeech=NNP Lemma=Bowen NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=342 CharacterOffsetEnd=343 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=344 CharacterOffsetEnd=347 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=348 CharacterOffsetEnd=350 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=arrangement CharacterOffsetBegin=351 CharacterOffsetEnd=362 PartOfSpeech=NN Lemma=arrangement NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=363 CharacterOffsetEnd=366 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=viola CharacterOffsetBegin=367 CharacterOffsetEnd=372 PartOfSpeech=NN Lemma=viola NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=373 CharacterOffsetEnd=375 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=John CharacterOffsetBegin=376 CharacterOffsetEnd=380 PartOfSpeech=NNP Lemma=John NamedEntityTag=PERSON]
+[Text=Ireland CharacterOffsetBegin=381 CharacterOffsetEnd=388 PartOfSpeech=NNP Lemma=Ireland NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=388 CharacterOffsetEnd=390 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=violin CharacterOffsetBegin=391 CharacterOffsetEnd=397 PartOfSpeech=NN Lemma=violin NamedEntityTag=O]
+[Text=sonata CharacterOffsetBegin=398 CharacterOffsetEnd=404 PartOfSpeech=NN Lemma=sonata NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=405 CharacterOffsetEnd=407 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=A CharacterOffsetBegin=408 CharacterOffsetEnd=409 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=minor CharacterOffsetBegin=410 CharacterOffsetEnd=415 PartOfSpeech=JJ Lemma=minor NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=415 CharacterOffsetEnd=416 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (SINV
+    (VP (VBN Included)
+      (PP (IN in)
+        (NP (DT the) (NNS programmes))))
+    (VP (VBD were))
+    (NP
+      (NP
+        (NP (CD two) (NNS sonatas))
+        (PP (IN for)
+          (NP (NN viola)
+            (CC and)
+            (NN piano))))
+      (PP (IN by)
+        (NP (NNP York) (NNP Bowen)))
+      (, ,)
+      (CC and)
+      (NP
+        (NP (PRP$ my) (NN arrangement))
+        (PP (IN for)
+          (NP
+            (NP (NN viola))
+            (PP (IN of)
+              (NP
+                (NP
+                  (NP (NNP John) (NNP Ireland) (POS 's))
+                  (NN violin) (NN sonata))
+                (PP (IN in)
+                  (NP (DT A) (JJ minor)))))))))
+    (. .)))
+
+root(ROOT-0, Included-1)
+case(programmes-4, in-2)
+det(programmes-4, the-3)
+nmod:in(Included-1, programmes-4)
+auxpass(Included-1, were-5)
+nummod(sonatas-7, two-6)
+nsubjpass(Included-1, sonatas-7)
+case(viola-9, for-8)
+nmod:for(sonatas-7, viola-9)
+cc(viola-9, and-10)
+nmod:for(sonatas-7, piano-11)
+conj:and(viola-9, piano-11)
+case(Bowen-14, by-12)
+compound(Bowen-14, York-13)
+nmod:by(sonatas-7, Bowen-14)
+punct(sonatas-7, ,-15)
+cc(sonatas-7, and-16)
+nmod:poss(arrangement-18, my-17)
+nsubjpass(Included-1, arrangement-18)
+conj:and(sonatas-7, arrangement-18)
+case(viola-20, for-19)
+nmod:for(arrangement-18, viola-20)
+case(sonata-26, of-21)
+compound(Ireland-23, John-22)
+nmod:poss(sonata-26, Ireland-23)
+case(Ireland-23, 's-24)
+compound(sonata-26, violin-25)
+nmod:of(viola-20, sonata-26)
+case(minor-29, in-27)
+det(minor-29, A-28)
+nmod:in(sonata-26, minor-29)
+punct(Included-1, .-30)
+
+Sentence #4 (20 tokens):
+Casella played piano solos of his own composition and I also contributed the Bach Chaconne in our joint recitals.
+[Text=Casella CharacterOffsetBegin=417 CharacterOffsetEnd=424 PartOfSpeech=NNP Lemma=Casella NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=425 CharacterOffsetEnd=431 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=432 CharacterOffsetEnd=437 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=solos CharacterOffsetBegin=438 CharacterOffsetEnd=443 PartOfSpeech=NNS Lemma=solo NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=444 CharacterOffsetEnd=446 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=447 CharacterOffsetEnd=450 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=451 CharacterOffsetEnd=454 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=composition CharacterOffsetBegin=455 CharacterOffsetEnd=466 PartOfSpeech=NN Lemma=composition NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=467 CharacterOffsetEnd=470 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=471 CharacterOffsetEnd=472 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=also CharacterOffsetBegin=473 CharacterOffsetEnd=477 PartOfSpeech=RB Lemma=also NamedEntityTag=O]
+[Text=contributed CharacterOffsetBegin=478 CharacterOffsetEnd=489 PartOfSpeech=VBD Lemma=contribute NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=490 CharacterOffsetEnd=493 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Bach CharacterOffsetBegin=494 CharacterOffsetEnd=498 PartOfSpeech=NNP Lemma=Bach NamedEntityTag=O]
+[Text=Chaconne CharacterOffsetBegin=499 CharacterOffsetEnd=507 PartOfSpeech=NNP Lemma=Chaconne NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=508 CharacterOffsetEnd=510 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=511 CharacterOffsetEnd=514 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=joint CharacterOffsetBegin=515 CharacterOffsetEnd=520 PartOfSpeech=JJ Lemma=joint NamedEntityTag=O]
+[Text=recitals CharacterOffsetBegin=521 CharacterOffsetEnd=529 PartOfSpeech=NNS Lemma=recital NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=529 CharacterOffsetEnd=530 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Casella))
+      (VP (VBD played)
+        (NP
+          (NP (NN piano) (NNS solos))
+          (PP (IN of)
+            (NP (PRP$ his) (JJ own) (NN composition))))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (ADVP (RB also))
+      (VP (VBD contributed)
+        (NP (DT the) (NNP Bach) (NNP Chaconne))
+        (PP (IN in)
+          (NP (PRP$ our) (JJ joint) (NNS recitals)))))
+    (. .)))
+
+root(ROOT-0, played-2)
+nsubj(played-2, Casella-1)
+compound(solos-4, piano-3)
+dobj(played-2, solos-4)
+case(composition-8, of-5)
+nmod:poss(composition-8, his-6)
+amod(composition-8, own-7)
+nmod:of(solos-4, composition-8)
+cc(played-2, and-9)
+nsubj(contributed-12, I-10)
+advmod(contributed-12, also-11)
+conj:and(played-2, contributed-12)
+det(Chaconne-15, the-13)
+compound(Chaconne-15, Bach-14)
+dobj(contributed-12, Chaconne-15)
+case(recitals-19, in-16)
+nmod:poss(recitals-19, our-17)
+amod(recitals-19, joint-18)
+nmod:in(contributed-12, recitals-19)
+punct(played-2, .-20)
+
+Sentence #5 (14 tokens):
+I enjoyed myself very much in this collaboration for his playing was magnificent.
+[Text=I CharacterOffsetBegin=531 CharacterOffsetEnd=532 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=enjoyed CharacterOffsetBegin=533 CharacterOffsetEnd=540 PartOfSpeech=VBD Lemma=enjoy NamedEntityTag=O]
+[Text=myself CharacterOffsetBegin=541 CharacterOffsetEnd=547 PartOfSpeech=PRP Lemma=myself NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=548 CharacterOffsetEnd=552 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=553 CharacterOffsetEnd=557 PartOfSpeech=RB Lemma=much NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=558 CharacterOffsetEnd=560 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=561 CharacterOffsetEnd=565 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=collaboration CharacterOffsetBegin=566 CharacterOffsetEnd=579 PartOfSpeech=NN Lemma=collaboration NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=580 CharacterOffsetEnd=583 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=584 CharacterOffsetEnd=587 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=588 CharacterOffsetEnd=595 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=596 CharacterOffsetEnd=599 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=magnificent CharacterOffsetBegin=600 CharacterOffsetEnd=611 PartOfSpeech=JJ Lemma=magnificent NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=611 CharacterOffsetEnd=612 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD enjoyed)
+      (SBAR
+        (S
+          (NP (PRP myself))
+          (ADVP
+            (ADVP (RB very) (RB much))
+            (PP (IN in)
+              (NP
+                (NP (DT this) (NN collaboration))
+                (PP (IN for)
+                  (NP (PRP$ his) (NN playing))))))
+          (VP (VBD was)
+            (ADJP (JJ magnificent))))))
+    (. .)))
+
+root(ROOT-0, enjoyed-2)
+nsubj(enjoyed-2, I-1)
+nsubj(magnificent-13, myself-3)
+advmod(much-5, very-4)
+advmod(magnificent-13, much-5)
+case(collaboration-8, in-6)
+det(collaboration-8, this-7)
+nmod:in(much-5, collaboration-8)
+case(playing-11, for-9)
+nmod:poss(playing-11, his-10)
+nmod:for(collaboration-8, playing-11)
+cop(magnificent-13, was-12)
+ccomp(enjoyed-2, magnificent-13)
+punct(enjoyed-2, .-14)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,25,[24,26]), that is: "Casella" -> "Alfredo Casella"
+	(2,5,[3,20]) -> (1,25,[24,26]), that is: "a brilliant pianist , his speciality being his performance of modern music for which he was world-famous" -> "Alfredo Casella"
+	(2,5,[3,6]) -> (1,25,[24,26]), that is: "a brilliant pianist" -> "Alfredo Casella"
+	(2,7,[7,8]) -> (1,25,[24,26]), that is: "his" -> "Alfredo Casella"
+	(2,10,[10,11]) -> (1,25,[24,26]), that is: "his" -> "Alfredo Casella"
+	(2,17,[17,18]) -> (1,25,[24,26]), that is: "he" -> "Alfredo Casella"
+	(4,1,[1,2]) -> (1,25,[24,26]), that is: "Casella" -> "Alfredo Casella"
+	(4,6,[6,7]) -> (1,25,[24,26]), that is: "his" -> "Alfredo Casella"
+	(5,10,[10,11]) -> (1,25,[24,26]), that is: "his" -> "Alfredo Casella"
+Coreference set:
+	(1,1,[1,6]) -> (1,8,[7,26]), that is: "Outstanding among my continental excursion" -> "a trip I made in February 1933 which included recitals in Rome , Milan and Pisa with Alfredo Casella"
+Coreference set:
+	(1,9,[9,10]) -> (1,3,[3,4]), that is: "I" -> "my"
+	(3,17,[17,18]) -> (1,3,[3,4]), that is: "my" -> "my"
+	(4,10,[10,11]) -> (1,3,[3,4]), that is: "I" -> "my"
+	(5,1,[1,2]) -> (1,3,[3,4]), that is: "I" -> "my"
+	(5,3,[3,4]) -> (1,3,[3,4]), that is: "myself" -> "my"

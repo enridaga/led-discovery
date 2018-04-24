@@ -1,0 +1,366 @@
+Sentence #1 (28 tokens):
+In 1876, when we returned to Chicago to work, I was entertained at the home of Mr. and Mrs. Spafford for a number of weeks.
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=1876 CharacterOffsetBegin=3 CharacterOffsetEnd=7 PartOfSpeech=CD Lemma=1876 NamedEntityTag=DATE NormalizedNamedEntityTag=1876 Timex=<TIMEX3 tid="t1" type="DATE" value="1876">1876</TIMEX3>]
+[Text=, CharacterOffsetBegin=7 CharacterOffsetEnd=8 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=returned CharacterOffsetBegin=17 CharacterOffsetEnd=25 PartOfSpeech=VBD Lemma=return NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Chicago CharacterOffsetBegin=29 CharacterOffsetEnd=36 PartOfSpeech=NNP Lemma=Chicago NamedEntityTag=LOCATION]
+[Text=to CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=VB Lemma=work NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=48 CharacterOffsetEnd=51 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=entertained CharacterOffsetBegin=52 CharacterOffsetEnd=63 PartOfSpeech=VBN Lemma=entertain NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=home CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=home NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Mrs. CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=Mrs. NamedEntityTag=O]
+[Text=Spafford CharacterOffsetBegin=92 CharacterOffsetEnd=100 PartOfSpeech=NNP Lemma=Spafford NamedEntityTag=PERSON]
+[Text=for CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=number CharacterOffsetBegin=107 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=number NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=114 CharacterOffsetEnd=116 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=weeks CharacterOffsetBegin=117 CharacterOffsetEnd=122 PartOfSpeech=NNS Lemma=week NamedEntityTag=DURATION NormalizedNamedEntityTag=PXW Timex=<TIMEX3 tid="t2" type="DURATION" value="PXW">weeks</TIMEX3>]
+[Text=. CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1876)))
+    (, ,)
+    (SBAR
+      (WHADVP (WRB when))
+      (S
+        (NP (PRP we))
+        (VP (VBD returned)
+          (PP (TO to)
+            (NP (NNP Chicago)))
+          (S
+            (VP (TO to)
+              (VP (VB work)))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBN entertained)
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NN home))
+            (PP (IN of)
+              (NP (NNP Mr.)
+                (CC and)
+                (NNP Mrs.) (NNP Spafford)))))
+        (PP (IN for)
+          (NP
+            (NP (DT a) (NN number))
+            (PP (IN of)
+              (NP (NNS weeks)))))))
+    (. .)))
+
+root(ROOT-0, entertained-14)
+case(1876-2, In-1)
+nmod:in(entertained-14, 1876-2)
+punct(entertained-14, ,-3)
+advmod(returned-6, when-4)
+nsubj(returned-6, we-5)
+nsubj:xsubj(work-10, we-5)
+advcl(entertained-14, returned-6)
+case(Chicago-8, to-7)
+nmod:to(returned-6, Chicago-8)
+mark(work-10, to-9)
+xcomp(returned-6, work-10)
+punct(entertained-14, ,-11)
+nsubjpass(entertained-14, I-12)
+auxpass(entertained-14, was-13)
+case(home-17, at-15)
+det(home-17, the-16)
+nmod:at(entertained-14, home-17)
+case(Spafford-22, of-18)
+compound(Spafford-22, Mr.-19)
+cc(Mr.-19, and-20)
+conj:and(Mr.-19, Mrs.-21)
+compound(Spafford-22, Mrs.-21)
+nmod:of(home-17, Spafford-22)
+case(number-25, for-23)
+det:qmod(weeks-27, a-24)
+mwe(a-24, number-25)
+mwe(a-24, of-26)
+nmod(entertained-14, weeks-27)
+punct(entertained-14, .-28)
+
+Sentence #2 (27 tokens):
+During that time Mr. Spafford wrote the hynm, " It is well with my soul," in commemoration of the death of his children.
+[Text=During CharacterOffsetBegin=124 CharacterOffsetEnd=130 PartOfSpeech=IN Lemma=during NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=136 CharacterOffsetEnd=140 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=Mr. CharacterOffsetBegin=141 CharacterOffsetEnd=144 PartOfSpeech=NNP Lemma=Mr. NamedEntityTag=O]
+[Text=Spafford CharacterOffsetBegin=145 CharacterOffsetEnd=153 PartOfSpeech=NNP Lemma=Spafford NamedEntityTag=PERSON]
+[Text=wrote CharacterOffsetBegin=154 CharacterOffsetEnd=159 PartOfSpeech=VBD Lemma=write NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=160 CharacterOffsetEnd=163 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=hynm CharacterOffsetBegin=164 CharacterOffsetEnd=168 PartOfSpeech=NN Lemma=hynm NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=168 CharacterOffsetEnd=169 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=170 CharacterOffsetEnd=171 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=It CharacterOffsetBegin=172 CharacterOffsetEnd=174 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=175 CharacterOffsetEnd=177 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=178 CharacterOffsetEnd=182 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=183 CharacterOffsetEnd=187 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=188 CharacterOffsetEnd=190 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=soul CharacterOffsetBegin=191 CharacterOffsetEnd=195 PartOfSpeech=NN Lemma=soul NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=195 CharacterOffsetEnd=196 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=198 CharacterOffsetEnd=200 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=commemoration CharacterOffsetBegin=201 CharacterOffsetEnd=214 PartOfSpeech=NN Lemma=commemoration NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=215 CharacterOffsetEnd=217 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=218 CharacterOffsetEnd=221 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=death CharacterOffsetBegin=222 CharacterOffsetEnd=227 PartOfSpeech=NN Lemma=death NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=228 CharacterOffsetEnd=230 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=231 CharacterOffsetEnd=234 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=children CharacterOffsetBegin=235 CharacterOffsetEnd=243 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=243 CharacterOffsetEnd=244 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (PP (IN During)
+        (NP (DT that) (NN time)))
+      (NP (NNP Mr.) (NNP Spafford))
+      (VP (VBD wrote)
+        (NP (DT the) (NN hynm))))
+    (, ,) ('' '')
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADVP (RB well))
+      (PP (IN with)
+        (NP (PRP$ my) (NN soul)))
+      (, ,) ('' '')
+      (PP (IN in)
+        (NP
+          (NP (NN commemoration))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN death))
+              (PP (IN of)
+                (NP (PRP$ his) (NNS children))))))))
+    (. .)))
+
+root(ROOT-0, soul-16)
+case(time-3, During-1)
+det(time-3, that-2)
+nmod:during(wrote-6, time-3)
+compound(Spafford-5, Mr.-4)
+nsubj(wrote-6, Spafford-5)
+ccomp(soul-16, wrote-6)
+det(hynm-8, the-7)
+dobj(wrote-6, hynm-8)
+punct(soul-16, ,-9)
+punct(soul-16, ''-10)
+nsubj(soul-16, It-11)
+cop(soul-16, is-12)
+advmod(soul-16, well-13)
+case(soul-16, with-14)
+nmod:poss(soul-16, my-15)
+punct(soul-16, ,-17)
+punct(soul-16, ''-18)
+case(commemoration-20, in-19)
+nmod:in(soul-16, commemoration-20)
+case(death-23, of-21)
+det(death-23, the-22)
+nmod:of(commemoration-20, death-23)
+case(children-26, of-24)
+nmod:poss(children-26, his-25)
+nmod:of(death-23, children-26)
+punct(soul-16, .-27)
+
+Sentence #3 (21 tokens):
+P. P. Bliss composed the music, and sang it for the first time at a meeting in Farwell Hall.
+[Text=P. CharacterOffsetBegin=245 CharacterOffsetEnd=247 PartOfSpeech=NNP Lemma=P. NamedEntityTag=PERSON]
+[Text=P. CharacterOffsetBegin=248 CharacterOffsetEnd=250 PartOfSpeech=NNP Lemma=P. NamedEntityTag=PERSON]
+[Text=Bliss CharacterOffsetBegin=251 CharacterOffsetEnd=256 PartOfSpeech=NNP Lemma=Bliss NamedEntityTag=PERSON]
+[Text=composed CharacterOffsetBegin=257 CharacterOffsetEnd=265 PartOfSpeech=VBN Lemma=compose NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=266 CharacterOffsetEnd=269 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=270 CharacterOffsetEnd=275 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=275 CharacterOffsetEnd=276 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=277 CharacterOffsetEnd=280 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sang CharacterOffsetBegin=281 CharacterOffsetEnd=285 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=286 CharacterOffsetEnd=288 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=289 CharacterOffsetEnd=292 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=293 CharacterOffsetEnd=296 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=297 CharacterOffsetEnd=302 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=time CharacterOffsetBegin=303 CharacterOffsetEnd=307 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=308 CharacterOffsetEnd=310 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=311 CharacterOffsetEnd=312 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=meeting CharacterOffsetBegin=313 CharacterOffsetEnd=320 PartOfSpeech=NN Lemma=meeting NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=321 CharacterOffsetEnd=323 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Farwell CharacterOffsetBegin=324 CharacterOffsetEnd=331 PartOfSpeech=NNP Lemma=Farwell NamedEntityTag=LOCATION]
+[Text=Hall CharacterOffsetBegin=332 CharacterOffsetEnd=336 PartOfSpeech=NNP Lemma=Hall NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=336 CharacterOffsetEnd=337 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP P.) (NNP P.) (NNP Bliss))
+    (VP
+      (VP (VBN composed)
+        (NP (DT the) (NN music)))
+      (, ,)
+      (CC and)
+      (VP (VBD sang)
+        (NP (PRP it))
+        (PP (IN for)
+          (NP (DT the) (JJ first) (NN time)))
+        (PP (IN at)
+          (NP
+            (NP (DT a) (NN meeting))
+            (PP (IN in)
+              (NP (NNP Farwell) (NNP Hall)))))))
+    (. .)))
+
+root(ROOT-0, composed-4)
+compound(Bliss-3, P.-1)
+compound(Bliss-3, P.-2)
+nsubj(composed-4, Bliss-3)
+nsubj(sang-9, Bliss-3)
+det(music-6, the-5)
+dobj(composed-4, music-6)
+punct(composed-4, ,-7)
+cc(composed-4, and-8)
+conj:and(composed-4, sang-9)
+dobj(sang-9, it-10)
+case(time-14, for-11)
+det(time-14, the-12)
+amod(time-14, first-13)
+nmod:for(sang-9, time-14)
+case(meeting-17, at-15)
+det(meeting-17, a-16)
+nmod:at(sang-9, meeting-17)
+case(Hall-20, in-18)
+compound(Hall-20, Farwell-19)
+nmod:in(meeting-17, Hall-20)
+punct(composed-4, .-21)
+
+Sentence #4 (36 tokens):
+The comforting fact in connexion with this incident was that in one of our small meetings in North Chicago, a short time prior to their sailing for Europe, the children had been converted.
+[Text=The CharacterOffsetBegin=338 CharacterOffsetEnd=341 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=comforting CharacterOffsetBegin=342 CharacterOffsetEnd=352 PartOfSpeech=JJ Lemma=comforting NamedEntityTag=O]
+[Text=fact CharacterOffsetBegin=353 CharacterOffsetEnd=357 PartOfSpeech=NN Lemma=fact NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=358 CharacterOffsetEnd=360 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=connexion CharacterOffsetBegin=361 CharacterOffsetEnd=370 PartOfSpeech=NN Lemma=connexion NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=371 CharacterOffsetEnd=375 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=376 CharacterOffsetEnd=380 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=incident CharacterOffsetBegin=381 CharacterOffsetEnd=389 PartOfSpeech=NN Lemma=incident NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=390 CharacterOffsetEnd=393 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=394 CharacterOffsetEnd=398 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=399 CharacterOffsetEnd=401 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=402 CharacterOffsetEnd=405 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=406 CharacterOffsetEnd=408 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=409 CharacterOffsetEnd=412 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=small CharacterOffsetBegin=413 CharacterOffsetEnd=418 PartOfSpeech=JJ Lemma=small NamedEntityTag=O]
+[Text=meetings CharacterOffsetBegin=419 CharacterOffsetEnd=427 PartOfSpeech=NNS Lemma=meeting NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=428 CharacterOffsetEnd=430 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=North CharacterOffsetBegin=431 CharacterOffsetEnd=436 PartOfSpeech=NNP Lemma=North NamedEntityTag=LOCATION]
+[Text=Chicago CharacterOffsetBegin=437 CharacterOffsetEnd=444 PartOfSpeech=NNP Lemma=Chicago NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=444 CharacterOffsetEnd=445 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=446 CharacterOffsetEnd=447 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=short CharacterOffsetBegin=448 CharacterOffsetEnd=453 PartOfSpeech=JJ Lemma=short NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=454 CharacterOffsetEnd=458 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=prior CharacterOffsetBegin=459 CharacterOffsetEnd=464 PartOfSpeech=JJ Lemma=prior NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=465 CharacterOffsetEnd=467 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=468 CharacterOffsetEnd=473 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=sailing CharacterOffsetBegin=474 CharacterOffsetEnd=481 PartOfSpeech=NN Lemma=sailing NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=482 CharacterOffsetEnd=485 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Europe CharacterOffsetBegin=486 CharacterOffsetEnd=492 PartOfSpeech=NNP Lemma=Europe NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=492 CharacterOffsetEnd=493 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=494 CharacterOffsetEnd=497 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=children CharacterOffsetBegin=498 CharacterOffsetEnd=506 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=507 CharacterOffsetEnd=510 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=511 CharacterOffsetEnd=515 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=converted CharacterOffsetBegin=516 CharacterOffsetEnd=525 PartOfSpeech=VBN Lemma=convert NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=525 CharacterOffsetEnd=526 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ comforting) (NN fact))
+      (PP (IN in)
+        (NP
+          (NP (NN connexion))
+          (PP (IN with)
+            (NP (DT this) (NN incident))))))
+    (VP (VBD was)
+      (SBAR (IN that)
+        (S
+          (PP (IN in)
+            (NP
+              (NP (CD one))
+              (PP (IN of)
+                (NP
+                  (NP (PRP$ our) (JJ small) (NNS meetings))
+                  (PP (IN in)
+                    (NP
+                      (NP (NNP North) (NNP Chicago))
+                      (, ,)
+                      (NP
+                        (NP (DT a) (JJ short) (NN time))
+                        (ADVP (JJ prior)
+                          (PP (TO to)
+                            (NP (PRP$ their) (NN sailing))))
+                        (PP (IN for)
+                          (NP (NNP Europe))))))))))
+          (, ,)
+          (NP (DT the) (NNS children))
+          (VP (VBD had)
+            (VP (VBN been)
+              (VP (VBN converted)))))))
+    (. .)))
+
+root(ROOT-0, was-9)
+det(fact-3, The-1)
+amod(fact-3, comforting-2)
+nsubj(was-9, fact-3)
+case(connexion-5, in-4)
+nmod:in(fact-3, connexion-5)
+case(incident-8, with-6)
+det(incident-8, this-7)
+nmod:with(connexion-5, incident-8)
+mark(converted-35, that-10)
+case(one-12, in-11)
+nmod:in(converted-35, one-12)
+case(meetings-16, of-13)
+nmod:poss(meetings-16, our-14)
+amod(meetings-16, small-15)
+nmod:of(one-12, meetings-16)
+case(Chicago-19, in-17)
+compound(Chicago-19, North-18)
+nmod:in(meetings-16, Chicago-19)
+punct(Chicago-19, ,-20)
+det(time-23, a-21)
+amod(time-23, short-22)
+appos(Chicago-19, time-23)
+advmod(time-23, prior-24)
+case(sailing-27, to-25)
+nmod:poss(sailing-27, their-26)
+nmod:to(prior-24, sailing-27)
+case(Europe-29, for-28)
+nmod:for(time-23, Europe-29)
+punct(converted-35, ,-30)
+det(children-32, the-31)
+nsubjpass(converted-35, children-32)
+aux(converted-35, had-33)
+auxpass(converted-35, been-34)
+ccomp(was-9, converted-35)
+punct(was-9, .-36)
+
+Coreference set:
+	(2,15,[15,16]) -> (1,12,[12,13]), that is: "my" -> "I"
+Coreference set:
+	(1,22,[19,23]) -> (2,5,[4,6]), that is: "Mr. and Mrs. Spafford" -> "Mr. Spafford"
+	(2,25,[25,26]) -> (2,5,[4,6]), that is: "his" -> "Mr. Spafford"
+Coreference set:
+	(2,11,[11,12]) -> (2,3,[2,4]), that is: "It" -> "that time"
+Coreference set:
+	(4,26,[26,27]) -> (2,26,[25,27]), that is: "their" -> "his children"
+	(4,32,[31,33]) -> (2,26,[25,27]), that is: "the children" -> "his children"
+Coreference set:
+	(3,10,[10,11]) -> (3,6,[5,7]), that is: "it" -> "the music"
+Coreference set:
+	(4,23,[21,30]) -> (4,19,[18,20]), that is: "a short time prior to their sailing for Europe" -> "North Chicago"

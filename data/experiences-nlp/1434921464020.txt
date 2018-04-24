@@ -1,0 +1,248 @@
+Sentence #1 (15 tokens):
+Go to B.B.C. concert (in area) at Queen's Hall at 8.15.
+[Text=Go CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=VB Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=3 CharacterOffsetEnd=5 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=B.B.C. CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=B.B.C. NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=area CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=area NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Queen CharacterOffsetBegin=34 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Queen NamedEntityTag=LOCATION]
+[Text='s CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=POS Lemma='s NamedEntityTag=LOCATION]
+[Text=Hall CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=NN Lemma=hall NamedEntityTag=LOCATION]
+[Text=at CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=8.15 CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=CD Lemma=8.15 NamedEntityTag=NUMBER NormalizedNamedEntityTag=8.15]
+[Text=. CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Go)
+      (PP (TO to)
+        (NP
+          (NP (NNP B.B.C.) (NN concert))
+          (PRN (-LRB- -LRB-)
+            (PP (IN in)
+              (NP (NN area)))
+            (-RRB- -RRB-))))
+      (PP (IN at)
+        (NP
+          (NP
+            (NP (NNP Queen) (POS 's))
+            (NN Hall))
+          (PP (IN at)
+            (NP (CD 8.15))))))
+    (. .)))
+
+root(ROOT-0, Go-1)
+case(concert-4, to-2)
+compound(concert-4, B.B.C.-3)
+nmod:to(Go-1, concert-4)
+punct(area-7, -LRB--5)
+case(area-7, in-6)
+nmod:in(concert-4, area-7)
+punct(area-7, -RRB--8)
+case(Hall-12, at-9)
+nmod:poss(Hall-12, Queen-10)
+case(Queen-10, 's-11)
+nmod:at(Go-1, Hall-12)
+case(8.15-14, at-13)
+nmod:at(Hall-12, 8.15-14)
+punct(Go-1, .-15)
+
+Sentence #2 (6 tokens):
+Ansermet conducts a poor perf.
+[Text=Ansermet CharacterOffsetBegin=56 CharacterOffsetEnd=64 PartOfSpeech=NNP Lemma=Ansermet NamedEntityTag=PERSON]
+[Text=conducts CharacterOffsetBegin=65 CharacterOffsetEnd=73 PartOfSpeech=VBZ Lemma=conduct NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=poor CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=JJ Lemma=poor NamedEntityTag=O]
+[Text=perf CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=perf NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Ansermet))
+    (VP (VBZ conducts)
+      (NP (DT a) (JJ poor) (NN perf)))
+    (. .)))
+
+root(ROOT-0, conducts-2)
+nsubj(conducts-2, Ansermet-1)
+det(perf-5, a-3)
+amod(perf-5, poor-4)
+dobj(conducts-2, perf-5)
+punct(conducts-2, .-6)
+
+Sentence #3 (16 tokens):
+of Der Freischutz, & a not too thrilling one of Debussy's incomparable Nocturnes.
+[Text=of CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Der CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=NNP Lemma=Der NamedEntityTag=PERSON]
+[Text=Freischutz CharacterOffsetBegin=94 CharacterOffsetEnd=104 PartOfSpeech=NNP Lemma=Freischutz NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=thrilling CharacterOffsetBegin=118 CharacterOffsetEnd=127 PartOfSpeech=JJ Lemma=thrilling NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=128 CharacterOffsetEnd=131 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Debussy CharacterOffsetBegin=135 CharacterOffsetEnd=142 PartOfSpeech=NNP Lemma=Debussy NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=142 CharacterOffsetEnd=144 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=incomparable CharacterOffsetBegin=145 CharacterOffsetEnd=157 PartOfSpeech=JJ Lemma=incomparable NamedEntityTag=O]
+[Text=Nocturnes CharacterOffsetBegin=158 CharacterOffsetEnd=167 PartOfSpeech=NNPS Lemma=Nocturnes NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=167 CharacterOffsetEnd=168 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (PP (IN of)
+      (NP
+        (NP (NNP Der) (NNP Freischutz))
+        (, ,)
+        (CC &)
+        (NP
+          (NP (DT a)
+            (ADJP (RB not) (RB too) (JJ thrilling))
+            (CD one))
+          (PP (IN of)
+            (NP
+              (NP (NNP Debussy) (POS 's))
+              (NP (JJ incomparable) (NNPS Nocturnes)))))))
+    (. .)))
+
+root(ROOT-0, Freischutz-3)
+case(Freischutz-3, of-1)
+compound(Freischutz-3, Der-2)
+punct(Freischutz-3, ,-4)
+cc(Freischutz-3, &-5)
+det(one-10, a-6)
+neg(thrilling-9, not-7)
+advmod(thrilling-9, too-8)
+amod(one-10, thrilling-9)
+conj:&(Freischutz-3, one-10)
+case(Debussy-12, of-11)
+nmod:'s(one-10, Debussy-12)
+case(Debussy-12, 's-13)
+amod(Nocturnes-15, incomparable-14)
+dep(Debussy-12, Nocturnes-15)
+punct(Freischutz-3, .-16)
+
+Sentence #4 (2 tokens):
+Eliz.
+[Text=Eliz CharacterOffsetBegin=169 CharacterOffsetEnd=173 PartOfSpeech=NN Lemma=eliz NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=173 CharacterOffsetEnd=174 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (NN Eliz) (. .)))
+
+root(ROOT-0, Eliz-1)
+punct(Eliz-1, .-2)
+
+Sentence #5 (14 tokens):
+Schuman sings 3 delightful Mahler songs* & Et Incarnates (C min.
+[Text=Schuman CharacterOffsetBegin=175 CharacterOffsetEnd=182 PartOfSpeech=NNP Lemma=Schuman NamedEntityTag=PERSON]
+[Text=sings CharacterOffsetBegin=183 CharacterOffsetEnd=188 PartOfSpeech=VBZ Lemma=sing NamedEntityTag=O]
+[Text=3 CharacterOffsetBegin=189 CharacterOffsetEnd=190 PartOfSpeech=CD Lemma=3 NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=delightful CharacterOffsetBegin=191 CharacterOffsetEnd=201 PartOfSpeech=JJ Lemma=delightful NamedEntityTag=O]
+[Text=Mahler CharacterOffsetBegin=202 CharacterOffsetEnd=208 PartOfSpeech=NNP Lemma=Mahler NamedEntityTag=O]
+[Text=songs CharacterOffsetBegin=209 CharacterOffsetEnd=214 PartOfSpeech=NNS Lemma=song NamedEntityTag=O]
+[Text=* CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=216 CharacterOffsetEnd=217 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Et CharacterOffsetBegin=218 CharacterOffsetEnd=220 PartOfSpeech=NNP Lemma=Et NamedEntityTag=O]
+[Text=Incarnates CharacterOffsetBegin=221 CharacterOffsetEnd=231 PartOfSpeech=NNPS Lemma=Incarnates NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=232 CharacterOffsetEnd=233 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=C CharacterOffsetBegin=233 CharacterOffsetEnd=234 PartOfSpeech=NN Lemma=c NamedEntityTag=O]
+[Text=min CharacterOffsetBegin=235 CharacterOffsetEnd=238 PartOfSpeech=NN Lemma=min NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1M Timex=<TIMEX3 tid="t1" type="DURATION" value="PT1M">min</TIMEX3>]
+[Text=. CharacterOffsetBegin=238 CharacterOffsetEnd=239 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Schuman))
+    (VP (VBZ sings)
+      (NP
+        (NP
+          (NP (CD 3))
+          (NP
+            (NP (JJ delightful))
+            (PP (NNP Mahler)
+              (NP (NNS songs)))
+            (X (SYM *))))
+        (CC &)
+        (NP
+          (NP (NNP Et) (NNPS Incarnates))
+          (-LRB- -LRB-)
+          (NP
+            (NP (NN C))
+            (NP (NN min))))))
+    (. .)))
+
+root(ROOT-0, sings-2)
+nsubj(sings-2, Schuman-1)
+dobj(sings-2, 3-3)
+dep(3-3, delightful-4)
+dep(songs-6, Mahler-5)
+nmod(delightful-4, songs-6)
+dep(delightful-4, *-7)
+cc(3-3, &-8)
+compound(Incarnates-10, Et-9)
+dobj(sings-2, Incarnates-10)
+conj:&(3-3, Incarnates-10)
+punct(Incarnates-10, -LRB--11)
+dep(Incarnates-10, C-12)
+dep(C-12, min-13)
+punct(sings-2, .-14)
+
+Sentence #6 (6 tokens):
+Mass) of Mozart marvellously.
+[Text=Mass CharacterOffsetBegin=240 CharacterOffsetEnd=244 PartOfSpeech=NNP Lemma=Mass NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=244 CharacterOffsetEnd=245 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=246 CharacterOffsetEnd=248 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Mozart CharacterOffsetBegin=249 CharacterOffsetEnd=255 PartOfSpeech=NNP Lemma=Mozart NamedEntityTag=PERSON]
+[Text=marvellously CharacterOffsetBegin=256 CharacterOffsetEnd=268 PartOfSpeech=RB Lemma=marvellously NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=268 CharacterOffsetEnd=269 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Mass) (-RRB- -RRB-))
+    (PP (IN of)
+      (NP (NNP Mozart)))
+    (ADVP (RB marvellously))
+    (. .)))
+
+root(ROOT-0, Mass-1)
+punct(Mass-1, -RRB--2)
+case(Mozart-4, of-3)
+nmod:of(Mass-1, Mozart-4)
+advmod(Mass-1, marvellously-5)
+punct(Mass-1, .-6)
+
+Sentence #7 (11 tokens):
+A competent performance of the astounding Sacre to finish with.
+[Text=A CharacterOffsetBegin=270 CharacterOffsetEnd=271 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=competent CharacterOffsetBegin=272 CharacterOffsetEnd=281 PartOfSpeech=JJ Lemma=competent NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=282 CharacterOffsetEnd=293 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=294 CharacterOffsetEnd=296 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=297 CharacterOffsetEnd=300 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=astounding CharacterOffsetBegin=301 CharacterOffsetEnd=311 PartOfSpeech=JJ Lemma=astounding NamedEntityTag=O]
+[Text=Sacre CharacterOffsetBegin=312 CharacterOffsetEnd=317 PartOfSpeech=NNP Lemma=Sacre NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=318 CharacterOffsetEnd=320 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=finish CharacterOffsetBegin=321 CharacterOffsetEnd=327 PartOfSpeech=VB Lemma=finish NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=328 CharacterOffsetEnd=332 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=332 CharacterOffsetEnd=333 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (DT A) (JJ competent) (NN performance))
+    (PP (IN of)
+      (NP (DT the) (JJ astounding) (NNP Sacre)))
+    (S
+      (VP (TO to)
+        (VP (VB finish)
+          (PP (IN with)))))
+    (. .)))
+
+root(ROOT-0, performance-3)
+det(performance-3, A-1)
+amod(performance-3, competent-2)
+case(Sacre-7, of-4)
+det(Sacre-7, the-5)
+amod(Sacre-7, astounding-6)
+nmod:of(performance-3, Sacre-7)
+mark(finish-9, to-8)
+acl:to(performance-3, finish-9)
+nmod(finish-9, with-10)
+punct(performance-3, .-11)
+

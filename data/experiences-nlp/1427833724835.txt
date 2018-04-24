@@ -1,0 +1,448 @@
+Sentence #1 (10 tokens):
+I have special memories of the Symphony of Psalms.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=special CharacterOffsetBegin=7 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=special NamedEntityTag=O]
+[Text=memories CharacterOffsetBegin=15 CharacterOffsetEnd=23 PartOfSpeech=NNS Lemma=memory NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=24 CharacterOffsetEnd=26 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Symphony CharacterOffsetBegin=31 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Symphony NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=40 CharacterOffsetEnd=42 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Psalms CharacterOffsetBegin=43 CharacterOffsetEnd=49 PartOfSpeech=NNPS Lemma=Psalms NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (NP
+        (NP (JJ special) (NNS memories))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Symphony))
+            (PP (IN of)
+              (NP (NNPS Psalms)))))))
+    (. .)))
+
+root(ROOT-0, have-2)
+nsubj(have-2, I-1)
+amod(memories-4, special-3)
+dobj(have-2, memories-4)
+case(Symphony-7, of-5)
+det(Symphony-7, the-6)
+nmod:of(memories-4, Symphony-7)
+case(Psalms-9, of-8)
+nmod:of(Symphony-7, Psalms-9)
+punct(have-2, .-10)
+
+Sentence #2 (20 tokens):
+I transcribed it for four-hand piano as soon as I obtained the score and showed it to my students.
+[Text=I CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=transcribed CharacterOffsetBegin=53 CharacterOffsetEnd=64 PartOfSpeech=VBD Lemma=transcribe NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=four-hand CharacterOffsetBegin=72 CharacterOffsetEnd=81 PartOfSpeech=JJ Lemma=four-hand NamedEntityTag=O]
+[Text=piano CharacterOffsetBegin=82 CharacterOffsetEnd=87 PartOfSpeech=NN Lemma=piano NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=88 CharacterOffsetEnd=90 PartOfSpeech=RB Lemma=as NamedEntityTag=O]
+[Text=soon CharacterOffsetBegin=91 CharacterOffsetEnd=95 PartOfSpeech=RB Lemma=soon NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=96 CharacterOffsetEnd=98 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=99 CharacterOffsetEnd=100 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=obtained CharacterOffsetBegin=101 CharacterOffsetEnd=109 PartOfSpeech=VBD Lemma=obtain NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=score CharacterOffsetBegin=114 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=score NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=120 CharacterOffsetEnd=123 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=showed CharacterOffsetBegin=124 CharacterOffsetEnd=130 PartOfSpeech=VBD Lemma=show NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=131 CharacterOffsetEnd=133 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=134 CharacterOffsetEnd=136 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=students CharacterOffsetBegin=140 CharacterOffsetEnd=148 PartOfSpeech=NNS Lemma=student NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD transcribed)
+      (NP (PRP it))
+      (PP (IN for)
+        (NP (JJ four-hand) (NN piano)))
+      (SBAR
+        (ADVP (RB as) (RB soon))
+        (IN as)
+        (S
+          (NP (PRP I))
+          (VP
+            (VP (VBD obtained)
+              (NP (DT the) (NN score)))
+            (CC and)
+            (VP (VBD showed)
+              (NP (PRP it))
+              (PP (TO to)
+                (NP (PRP$ my) (NNS students))))))))
+    (. .)))
+
+root(ROOT-0, transcribed-2)
+nsubj(transcribed-2, I-1)
+dobj(transcribed-2, it-3)
+case(piano-6, for-4)
+amod(piano-6, four-hand-5)
+nmod:for(transcribed-2, piano-6)
+advmod(soon-8, as-7)
+advmod(obtained-11, soon-8)
+mark(obtained-11, as-9)
+nsubj(obtained-11, I-10)
+nsubj(showed-15, I-10)
+advcl:as(transcribed-2, obtained-11)
+det(score-13, the-12)
+dobj(obtained-11, score-13)
+cc(obtained-11, and-14)
+advcl:as(transcribed-2, showed-15)
+conj:and(obtained-11, showed-15)
+dobj(showed-15, it-16)
+case(students-19, to-17)
+nmod:poss(students-19, my-18)
+nmod:to(showed-15, students-19)
+punct(transcribed-2, .-20)
+
+Sentence #3 (13 tokens):
+I must note that it has its problems in terms of construction.
+[Text=I CharacterOffsetBegin=150 CharacterOffsetEnd=151 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=152 CharacterOffsetEnd=156 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=note CharacterOffsetBegin=157 CharacterOffsetEnd=161 PartOfSpeech=VB Lemma=note NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=162 CharacterOffsetEnd=166 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=167 CharacterOffsetEnd=169 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=170 CharacterOffsetEnd=173 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=174 CharacterOffsetEnd=177 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=problems CharacterOffsetBegin=178 CharacterOffsetEnd=186 PartOfSpeech=NNS Lemma=problem NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=187 CharacterOffsetEnd=189 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=terms CharacterOffsetBegin=190 CharacterOffsetEnd=195 PartOfSpeech=NNS Lemma=term NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=196 CharacterOffsetEnd=198 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=construction CharacterOffsetBegin=199 CharacterOffsetEnd=211 PartOfSpeech=NN Lemma=construction NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=211 CharacterOffsetEnd=212 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD must)
+      (VP (VB note)
+        (SBAR (IN that)
+          (S
+            (NP (PRP it))
+            (VP (VBZ has)
+              (NP (PRP$ its) (NNS problems))
+              (PP (IN in)
+                (NP
+                  (NP (NNS terms))
+                  (PP (IN of)
+                    (NP (NN construction))))))))))
+    (. .)))
+
+root(ROOT-0, note-3)
+nsubj(note-3, I-1)
+aux(note-3, must-2)
+mark(has-6, that-4)
+nsubj(has-6, it-5)
+ccomp(note-3, has-6)
+nmod:poss(problems-8, its-7)
+dobj(has-6, problems-8)
+case(terms-10, in-9)
+nmod:in(has-6, terms-10)
+case(construction-12, of-11)
+nmod:of(terms-10, construction-12)
+punct(note-3, .-13)
+
+Sentence #4 (8 tokens):
+It’s crudely worked out, crudely.
+[Text=It CharacterOffsetBegin=213 CharacterOffsetEnd=215 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=215 CharacterOffsetEnd=217 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=crudely CharacterOffsetBegin=218 CharacterOffsetEnd=225 PartOfSpeech=RB Lemma=crudely NamedEntityTag=O]
+[Text=worked CharacterOffsetBegin=226 CharacterOffsetEnd=232 PartOfSpeech=VBN Lemma=work NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=233 CharacterOffsetEnd=236 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=236 CharacterOffsetEnd=237 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=crudely CharacterOffsetBegin=238 CharacterOffsetEnd=245 PartOfSpeech=RB Lemma=crudely NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=245 CharacterOffsetEnd=246 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (ADJP (RB crudely) (VBN worked)
+        (PRT (RP out)))
+      (, ,)
+      (ADVP (RB crudely)))
+    (. .)))
+
+root(ROOT-0, worked-4)
+nsubjpass(worked-4, It-1)
+auxpass(worked-4, 's-2)
+advmod(worked-4, crudely-3)
+dep(worked-4, out-5)
+punct(worked-4, ,-6)
+advmod(worked-4, crudely-7)
+punct(worked-4, .-8)
+
+Sentence #5 (4 tokens):
+The seams show.
+[Text=The CharacterOffsetBegin=247 CharacterOffsetEnd=250 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=seams CharacterOffsetBegin=251 CharacterOffsetEnd=256 PartOfSpeech=NNS Lemma=seam NamedEntityTag=O]
+[Text=show CharacterOffsetBegin=257 CharacterOffsetEnd=261 PartOfSpeech=VBP Lemma=show NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=261 CharacterOffsetEnd=262 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NNS seams))
+    (VP (VBP show))
+    (. .)))
+
+root(ROOT-0, show-3)
+det(seams-2, The-1)
+nsubj(show-3, seams-2)
+punct(show-3, .-4)
+
+Sentence #6 (11 tokens):
+In that sense the Symphony in Three Movements is stronger.
+[Text=In CharacterOffsetBegin=263 CharacterOffsetEnd=265 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=266 CharacterOffsetEnd=270 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=sense CharacterOffsetBegin=271 CharacterOffsetEnd=276 PartOfSpeech=NN Lemma=sense NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=277 CharacterOffsetEnd=280 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Symphony CharacterOffsetBegin=281 CharacterOffsetEnd=289 PartOfSpeech=NNP Lemma=Symphony NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=290 CharacterOffsetEnd=292 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Three CharacterOffsetBegin=293 CharacterOffsetEnd=298 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=Movements CharacterOffsetBegin=299 CharacterOffsetEnd=308 PartOfSpeech=NNS Lemma=movement NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=309 CharacterOffsetEnd=311 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=stronger CharacterOffsetBegin=312 CharacterOffsetEnd=320 PartOfSpeech=JJR Lemma=stronger NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=320 CharacterOffsetEnd=321 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT that) (NN sense)))
+    (NP
+      (NP (DT the) (NNP Symphony))
+      (PP (IN in)
+        (NP (CD Three) (NNS Movements))))
+    (VP (VBZ is)
+      (ADJP (JJR stronger)))
+    (. .)))
+
+root(ROOT-0, stronger-10)
+case(sense-3, In-1)
+det(sense-3, that-2)
+nmod:in(stronger-10, sense-3)
+det(Symphony-5, the-4)
+nsubj(stronger-10, Symphony-5)
+case(Movements-8, in-6)
+nummod(Movements-8, Three-7)
+nmod:in(Symphony-5, Movements-8)
+cop(stronger-10, is-9)
+punct(stronger-10, .-11)
+
+Sentence #7 (16 tokens):
+In general, Stravinsky often has this problem: his construction sticks out like scaffolding.
+[Text=In CharacterOffsetBegin=322 CharacterOffsetEnd=324 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=general CharacterOffsetBegin=325 CharacterOffsetEnd=332 PartOfSpeech=JJ Lemma=general NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=332 CharacterOffsetEnd=333 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Stravinsky CharacterOffsetBegin=334 CharacterOffsetEnd=344 PartOfSpeech=NNP Lemma=Stravinsky NamedEntityTag=PERSON]
+[Text=often CharacterOffsetBegin=345 CharacterOffsetEnd=350 PartOfSpeech=RB Lemma=often NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=351 CharacterOffsetEnd=354 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=355 CharacterOffsetEnd=359 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=problem CharacterOffsetBegin=360 CharacterOffsetEnd=367 PartOfSpeech=NN Lemma=problem NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=367 CharacterOffsetEnd=368 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=369 CharacterOffsetEnd=372 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=construction CharacterOffsetBegin=373 CharacterOffsetEnd=385 PartOfSpeech=NN Lemma=construction NamedEntityTag=O]
+[Text=sticks CharacterOffsetBegin=386 CharacterOffsetEnd=392 PartOfSpeech=VBZ Lemma=stick NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=393 CharacterOffsetEnd=396 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=397 CharacterOffsetEnd=401 PartOfSpeech=IN Lemma=like NamedEntityTag=O]
+[Text=scaffolding CharacterOffsetBegin=402 CharacterOffsetEnd=413 PartOfSpeech=NN Lemma=scaffolding NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=413 CharacterOffsetEnd=414 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (ADJP (JJ general)))
+    (, ,)
+    (S
+      (NP (NNP Stravinsky))
+      (ADVP (RB often))
+      (VP (VBZ has)
+        (NP (DT this) (NN problem))))
+    (: :)
+    (S
+      (NP (PRP$ his) (NN construction))
+      (VP (VBZ sticks)
+        (PRT (RP out))
+        (PP (IN like)
+          (NP (NN scaffolding)))))
+    (. .)))
+
+root(ROOT-0, has-6)
+case(general-2, In-1)
+advcl:in(has-6, general-2)
+punct(has-6, ,-3)
+nsubj(has-6, Stravinsky-4)
+advmod(has-6, often-5)
+det(problem-8, this-7)
+dobj(has-6, problem-8)
+punct(has-6, :-9)
+nmod:poss(construction-11, his-10)
+nsubj(sticks-12, construction-11)
+parataxis(has-6, sticks-12)
+compound:prt(sticks-12, out-13)
+case(scaffolding-15, like-14)
+nmod:like(sticks-12, scaffolding-15)
+punct(has-6, .-16)
+
+Sentence #8 (9 tokens):
+There’s no flow, no natural bridges.
+[Text=There CharacterOffsetBegin=415 CharacterOffsetEnd=420 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=420 CharacterOffsetEnd=422 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=423 CharacterOffsetEnd=425 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=flow CharacterOffsetBegin=426 CharacterOffsetEnd=430 PartOfSpeech=NN Lemma=flow NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=430 CharacterOffsetEnd=431 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=432 CharacterOffsetEnd=434 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=natural CharacterOffsetBegin=435 CharacterOffsetEnd=442 PartOfSpeech=JJ Lemma=natural NamedEntityTag=O]
+[Text=bridges CharacterOffsetBegin=443 CharacterOffsetEnd=450 PartOfSpeech=NNS Lemma=bridge NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=450 CharacterOffsetEnd=451 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT no) (NN flow))
+        (, ,)
+        (NP (DT no) (JJ natural) (NNS bridges))))
+    (. .)))
+
+root(ROOT-0, 's-2)
+expl('s-2, There-1)
+neg(flow-4, no-3)
+nsubj('s-2, flow-4)
+punct(flow-4, ,-5)
+neg(bridges-8, no-6)
+amod(bridges-8, natural-7)
+appos(flow-4, bridges-8)
+punct('s-2, .-9)
+
+Sentence #9 (20 tokens):
+I find it irritating, but on the other hand, this clarity makes it easier for the listener.
+[Text=I CharacterOffsetBegin=452 CharacterOffsetEnd=453 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=454 CharacterOffsetEnd=458 PartOfSpeech=VBP Lemma=find NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=459 CharacterOffsetEnd=461 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=irritating CharacterOffsetBegin=462 CharacterOffsetEnd=472 PartOfSpeech=JJ Lemma=irritating NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=472 CharacterOffsetEnd=473 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=474 CharacterOffsetEnd=477 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=478 CharacterOffsetEnd=480 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=481 CharacterOffsetEnd=484 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=485 CharacterOffsetEnd=490 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=hand CharacterOffsetBegin=491 CharacterOffsetEnd=495 PartOfSpeech=NN Lemma=hand NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=495 CharacterOffsetEnd=496 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=497 CharacterOffsetEnd=501 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=clarity CharacterOffsetBegin=502 CharacterOffsetEnd=509 PartOfSpeech=NN Lemma=clarity NamedEntityTag=O]
+[Text=makes CharacterOffsetBegin=510 CharacterOffsetEnd=515 PartOfSpeech=VBZ Lemma=make NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=516 CharacterOffsetEnd=518 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=easier CharacterOffsetBegin=519 CharacterOffsetEnd=525 PartOfSpeech=JJR Lemma=easier NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=526 CharacterOffsetEnd=529 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=530 CharacterOffsetEnd=533 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=listener CharacterOffsetBegin=534 CharacterOffsetEnd=542 PartOfSpeech=NN Lemma=listener NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=542 CharacterOffsetEnd=543 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP find)
+        (S
+          (NP (PRP it))
+          (ADJP (JJ irritating)))))
+    (, ,)
+    (CC but)
+    (S
+      (PP (IN on)
+        (NP (DT the) (JJ other) (NN hand)))
+      (, ,)
+      (NP (DT this) (NN clarity))
+      (VP (VBZ makes)
+        (S
+          (NP (PRP it))
+          (ADJP
+            (ADJP (JJR easier))
+            (PP (IN for)
+              (NP (DT the) (NN listener)))))))
+    (. .)))
+
+root(ROOT-0, find-2)
+nsubj(find-2, I-1)
+nsubj(irritating-4, it-3)
+xcomp(find-2, irritating-4)
+punct(find-2, ,-5)
+cc(find-2, but-6)
+case(hand-10, on-7)
+det(hand-10, the-8)
+amod(hand-10, other-9)
+nmod:on(makes-14, hand-10)
+punct(makes-14, ,-11)
+det(clarity-13, this-12)
+nsubj(makes-14, clarity-13)
+conj:but(find-2, makes-14)
+nsubj(easier-16, it-15)
+xcomp(makes-14, easier-16)
+case(listener-19, for-17)
+det(listener-19, the-18)
+nmod:for(easier-16, listener-19)
+punct(find-2, .-20)
+
+Sentence #10 (12 tokens):
+That must be one of the secrets of Stravinsky’s popularity.
+[Text=That CharacterOffsetBegin=544 CharacterOffsetEnd=548 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=must CharacterOffsetBegin=549 CharacterOffsetEnd=553 PartOfSpeech=MD Lemma=must NamedEntityTag=O]
+[Text=be CharacterOffsetBegin=554 CharacterOffsetEnd=556 PartOfSpeech=VB Lemma=be NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=557 CharacterOffsetEnd=560 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=561 CharacterOffsetEnd=563 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=564 CharacterOffsetEnd=567 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=secrets CharacterOffsetBegin=568 CharacterOffsetEnd=575 PartOfSpeech=NNS Lemma=secret NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=576 CharacterOffsetEnd=578 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Stravinsky CharacterOffsetBegin=579 CharacterOffsetEnd=589 PartOfSpeech=NNP Lemma=Stravinsky NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=589 CharacterOffsetEnd=591 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=popularity CharacterOffsetBegin=592 CharacterOffsetEnd=602 PartOfSpeech=NN Lemma=popularity NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=602 CharacterOffsetEnd=603 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (MD must)
+      (VP (VB be)
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNS secrets))
+              (PP (IN of)
+                (NP
+                  (NP (NNP Stravinsky) (POS 's))
+                  (NN popularity))))))))
+    (. .)))
+
+root(ROOT-0, secrets-7)
+nsubj(one-4, That-1)
+aux(one-4, must-2)
+cop(one-4, be-3)
+det:qmod(secrets-7, one-4)
+mwe(one-4, of-5)
+det(secrets-7, the-6)
+case(popularity-11, of-8)
+nmod:poss(popularity-11, Stravinsky-9)
+case(Stravinsky-9, 's-10)
+nmod:of(secrets-7, popularity-11)
+punct(one-4, .-12)
+
+Coreference set:
+	(9,15,[15,16]) -> (9,10,[8,11]), that is: "it" -> "the other hand"
+Coreference set:
+	(2,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(2,10,[10,11]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(2,18,[18,19]) -> (1,1,[1,2]), that is: "my" -> "I"
+	(3,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(9,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(10,1,[1,2]) -> (1,1,[1,2]), that is: "That" -> "I"
+Coreference set:
+	(2,3,[3,4]) -> (1,7,[6,10]), that is: "it" -> "the Symphony of Psalms"
+	(3,5,[5,6]) -> (1,7,[6,10]), that is: "it" -> "the Symphony of Psalms"
+	(3,7,[7,8]) -> (1,7,[6,10]), that is: "its" -> "the Symphony of Psalms"
+	(4,1,[1,2]) -> (1,7,[6,10]), that is: "It" -> "the Symphony of Psalms"
+Coreference set:
+	(2,16,[16,17]) -> (2,13,[12,14]), that is: "it" -> "the score"
+Coreference set:
+	(7,10,[10,11]) -> (7,4,[4,5]), that is: "his" -> "Stravinsky"
+	(10,9,[9,11]) -> (7,4,[4,5]), that is: "Stravinsky 's" -> "Stravinsky"
+Coreference set:
+	(9,3,[3,4]) -> (8,4,[3,5]), that is: "it" -> "no flow"

@@ -1,0 +1,119 @@
+Sentence #1 (6 tokens):
+I dined at Hay Castle.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=dined CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=VBD Lemma=dine NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Hay CharacterOffsetBegin=11 CharacterOffsetEnd=14 PartOfSpeech=NNP Lemma=Hay NamedEntityTag=LOCATION]
+[Text=Castle CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=NNP Lemma=Castle NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD dined)
+      (PP (IN at)
+        (NP (NNP Hay) (NNP Castle))))
+    (. .)))
+
+root(ROOT-0, dined-2)
+nsubj(dined-2, I-1)
+case(Castle-5, at-3)
+compound(Castle-5, Hay-4)
+nmod:at(dined-2, Castle-5)
+punct(dined-2, .-6)
+
+Sentence #2 (8 tokens):
+The Fanshawes were staying in the house.
+[Text=The CharacterOffsetBegin=23 CharacterOffsetEnd=26 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Fanshawes CharacterOffsetBegin=27 CharacterOffsetEnd=36 PartOfSpeech=NNPS Lemma=Fanshawes NamedEntityTag=MISC]
+[Text=were CharacterOffsetBegin=37 CharacterOffsetEnd=41 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=staying CharacterOffsetBegin=42 CharacterOffsetEnd=49 PartOfSpeech=VBG Lemma=stay NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=53 CharacterOffsetEnd=56 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=house CharacterOffsetBegin=57 CharacterOffsetEnd=62 PartOfSpeech=NN Lemma=house NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=62 CharacterOffsetEnd=63 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NNPS Fanshawes))
+    (VP (VBD were)
+      (VP (VBG staying)
+        (PP (IN in)
+          (NP (DT the) (NN house)))))
+    (. .)))
+
+root(ROOT-0, staying-4)
+det(Fanshawes-2, The-1)
+nsubj(staying-4, Fanshawes-2)
+aux(staying-4, were-3)
+case(house-7, in-5)
+det(house-7, the-6)
+nmod:in(staying-4, house-7)
+punct(staying-4, .-8)
+
+Sentence #3 (21 tokens):
+Last night Arthur Crichton amused them all after dinner by dressing, acting and singing 'The Grecian Bend'.
+[Text=Last CharacterOffsetBegin=64 CharacterOffsetEnd=68 PartOfSpeech=JJ Lemma=last NamedEntityTag=DATE NormalizedNamedEntityTag=TNI OFFSET P-1D Timex=<TIMEX3 alt_value="TNI OFFSET P-1D" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Last night</TIMEX3>]
+[Text=night CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=NN Lemma=night NamedEntityTag=DATE NormalizedNamedEntityTag=TNI OFFSET P-1D Timex=<TIMEX3 alt_value="TNI OFFSET P-1D" anchorTimeID="t2" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Last night</TIMEX3>]
+[Text=Arthur CharacterOffsetBegin=75 CharacterOffsetEnd=81 PartOfSpeech=NNP Lemma=Arthur NamedEntityTag=PERSON]
+[Text=Crichton CharacterOffsetBegin=82 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=Crichton NamedEntityTag=PERSON]
+[Text=amused CharacterOffsetBegin=91 CharacterOffsetEnd=97 PartOfSpeech=VBD Lemma=amuse NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=107 CharacterOffsetEnd=112 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=113 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=120 CharacterOffsetEnd=122 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=dressing CharacterOffsetBegin=123 CharacterOffsetEnd=131 PartOfSpeech=VBG Lemma=dress NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=131 CharacterOffsetEnd=132 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=acting CharacterOffsetBegin=133 CharacterOffsetEnd=139 PartOfSpeech=VBG Lemma=act NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=140 CharacterOffsetEnd=143 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=144 CharacterOffsetEnd=151 PartOfSpeech=VBG Lemma=sing NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=The CharacterOffsetBegin=153 CharacterOffsetEnd=156 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Grecian CharacterOffsetBegin=157 CharacterOffsetEnd=164 PartOfSpeech=NNP Lemma=Grecian NamedEntityTag=MISC]
+[Text=Bend CharacterOffsetBegin=165 CharacterOffsetEnd=169 PartOfSpeech=NNP Lemma=Bend NamedEntityTag=MISC]
+[Text=' CharacterOffsetBegin=169 CharacterOffsetEnd=170 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=170 CharacterOffsetEnd=171 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (JJ Last) (NN night))
+    (NP (NNP Arthur) (NNP Crichton))
+    (VP (VBD amused)
+      (NP (PRP them))
+      (PP (DT all) (IN after)
+        (NP (NN dinner)))
+      (PP (IN by)
+        (S
+          (VP
+            (VP (VBG dressing))
+            (, ,)
+            (VP (VBG acting))
+            (CC and)
+            (VP (VBG singing) (`` `)
+              (NP (DT The)
+                (NP (NNP Grecian)
+                  (NP (NNP Bend) (POS ')))))))))
+    (. .)))
+
+root(ROOT-0, amused-5)
+amod(night-2, Last-1)
+nmod:tmod(amused-5, night-2)
+compound(Crichton-4, Arthur-3)
+nsubj(amused-5, Crichton-4)
+dobj(amused-5, them-6)
+dep(dinner-9, all-7)
+case(dinner-9, after-8)
+nmod:after(amused-5, dinner-9)
+mark(dressing-11, by-10)
+advcl:by(amused-5, dressing-11)
+punct(dressing-11, ,-12)
+advcl:by(amused-5, acting-13)
+conj:and(dressing-11, acting-13)
+cc(dressing-11, and-14)
+advcl:by(amused-5, singing-15)
+conj:and(dressing-11, singing-15)
+punct(singing-15, `-16)
+det(Grecian-18, The-17)
+dobj(singing-15, Grecian-18)
+nmod:poss(Grecian-18, Bend-19)
+case(Bend-19, '-20)
+punct(amused-5, .-21)
+

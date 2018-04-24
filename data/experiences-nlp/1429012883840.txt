@@ -1,0 +1,161 @@
+Sentence #1 (13 tokens):
+The Princess was most amiable and kept me till near seven o'clock.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Princess CharacterOffsetBegin=4 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Princess NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=13 CharacterOffsetEnd=16 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=most CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=RBS Lemma=most NamedEntityTag=O]
+[Text=amiable CharacterOffsetBegin=22 CharacterOffsetEnd=29 PartOfSpeech=JJ Lemma=amiable NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=30 CharacterOffsetEnd=33 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=kept CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=VBD Lemma=keep NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=39 CharacterOffsetEnd=41 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=till CharacterOffsetBegin=42 CharacterOffsetEnd=46 PartOfSpeech=IN Lemma=till NamedEntityTag=O]
+[Text=near CharacterOffsetBegin=47 CharacterOffsetEnd=51 PartOfSpeech=IN Lemma=near NamedEntityTag=O]
+[Text=seven CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=CD Lemma=seven NamedEntityTag=TIME NormalizedNamedEntityTag=T07:00 Timex=<TIMEX3 tid="t1" type="TIME" value="T07:00">seven o'clock</TIMEX3>]
+[Text=o'clock CharacterOffsetBegin=58 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=o'clock NamedEntityTag=TIME NormalizedNamedEntityTag=T07:00 Timex=<TIMEX3 tid="t1" type="TIME" value="T07:00">seven o'clock</TIMEX3>]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NNP Princess))
+    (VP
+      (VP (VBD was)
+        (ADJP (RBS most) (JJ amiable)))
+      (CC and)
+      (VP (VBD kept)
+        (NP (PRP me))
+        (PP (IN till)
+          (PP (IN near)
+            (NP (CD seven) (RB o'clock))))))
+    (. .)))
+
+root(ROOT-0, amiable-5)
+det(Princess-2, The-1)
+nsubj(amiable-5, Princess-2)
+nsubj(kept-7, Princess-2)
+cop(amiable-5, was-3)
+advmod(amiable-5, most-4)
+cc(amiable-5, and-6)
+conj:and(amiable-5, kept-7)
+dobj(kept-7, me-8)
+case(seven-11, till-9)
+case(seven-11, near-10)
+nmod:near(kept-7, seven-11)
+advmod(seven-11, o'clock-12)
+punct(amiable-5, .-13)
+
+Sentence #2 (12 tokens):
+She sent for her baby, to show him to me.
+[Text=She CharacterOffsetBegin=67 CharacterOffsetEnd=70 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=sent CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=VBD Lemma=send NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=76 CharacterOffsetEnd=79 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=80 CharacterOffsetEnd=83 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=baby CharacterOffsetBegin=84 CharacterOffsetEnd=88 PartOfSpeech=NN Lemma=baby NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=90 CharacterOffsetEnd=92 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=show CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=VB Lemma=show NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=107 CharacterOffsetEnd=108 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD sent)
+      (PP (IN for)
+        (NP (PRP$ her) (NN baby)))
+      (, ,)
+      (S
+        (VP (TO to)
+          (VP (VB show)
+            (NP (PRP him))
+            (PP (TO to)
+              (NP (PRP me)))))))
+    (. .)))
+
+root(ROOT-0, sent-2)
+nsubj(sent-2, She-1)
+nsubj:xsubj(show-8, She-1)
+case(baby-5, for-3)
+nmod:poss(baby-5, her-4)
+nmod:for(sent-2, baby-5)
+punct(sent-2, ,-6)
+mark(show-8, to-7)
+xcomp(sent-2, show-8)
+dobj(show-8, him-9)
+case(me-11, to-10)
+nmod:to(show-8, me-11)
+punct(sent-2, .-12)
+
+Sentence #3 (19 tokens):
+We made much music together; Prince Louis came to listen, smoking his cigar in the drawing-room,
+[Text=We CharacterOffsetBegin=109 CharacterOffsetEnd=111 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=112 CharacterOffsetEnd=116 PartOfSpeech=VBD Lemma=make NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=117 CharacterOffsetEnd=121 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=122 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=together CharacterOffsetBegin=128 CharacterOffsetEnd=136 PartOfSpeech=RB Lemma=together NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=136 CharacterOffsetEnd=137 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=Prince CharacterOffsetBegin=138 CharacterOffsetEnd=144 PartOfSpeech=NNP Lemma=Prince NamedEntityTag=PERSON]
+[Text=Louis CharacterOffsetBegin=145 CharacterOffsetEnd=150 PartOfSpeech=NNP Lemma=Louis NamedEntityTag=PERSON]
+[Text=came CharacterOffsetBegin=151 CharacterOffsetEnd=155 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=156 CharacterOffsetEnd=158 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=159 CharacterOffsetEnd=165 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=165 CharacterOffsetEnd=166 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=smoking CharacterOffsetBegin=167 CharacterOffsetEnd=174 PartOfSpeech=VBG Lemma=smoke NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=175 CharacterOffsetEnd=178 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=cigar CharacterOffsetBegin=179 CharacterOffsetEnd=184 PartOfSpeech=NN Lemma=cigar NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=185 CharacterOffsetEnd=187 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=188 CharacterOffsetEnd=191 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=drawing-room CharacterOffsetBegin=192 CharacterOffsetEnd=204 PartOfSpeech=NN Lemma=drawing-room NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=204 CharacterOffsetEnd=205 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VBD made)
+        (NP (JJ much) (NN music))
+        (ADVP (RB together))))
+    (: ;)
+    (S
+      (S
+        (NP (NNP Prince) (NNP Louis))
+        (VP (VBD came)
+          (S
+            (VP (TO to)
+              (VP (VB listen))))))
+      (PRN (, ,)
+        (S
+          (VP (VBG smoking)
+            (NP (PRP$ his) (NN cigar))
+            (PP (IN in)
+              (NP (DT the) (NN drawing-room)))))
+        (, ,)))))
+
+root(ROOT-0, made-2)
+nsubj(made-2, We-1)
+amod(music-4, much-3)
+dobj(made-2, music-4)
+advmod(made-2, together-5)
+punct(made-2, ;-6)
+compound(Louis-8, Prince-7)
+nsubj(came-9, Louis-8)
+nsubj:xsubj(listen-11, Louis-8)
+parataxis(made-2, came-9)
+mark(listen-11, to-10)
+xcomp(came-9, listen-11)
+punct(smoking-13, ,-12)
+dep(came-9, smoking-13)
+nmod:poss(cigar-15, his-14)
+dobj(smoking-13, cigar-15)
+case(drawing-room-18, in-16)
+det(drawing-room-18, the-17)
+nmod:in(smoking-13, drawing-room-18)
+punct(smoking-13, ,-19)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,2,[1,3]), that is: "She" -> "The Princess"
+	(2,4,[4,5]) -> (1,2,[1,3]), that is: "her" -> "The Princess"
+Coreference set:
+	(2,11,[11,12]) -> (1,8,[8,9]), that is: "me" -> "me"
+Coreference set:
+	(2,9,[9,10]) -> (2,5,[4,6]), that is: "him" -> "her baby"
+Coreference set:
+	(3,14,[14,15]) -> (3,8,[7,9]), that is: "his" -> "Prince Louis"

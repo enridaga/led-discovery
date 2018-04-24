@@ -1,0 +1,85 @@
+Sentence #1 (9 tokens):
+Played with Princess for the last time there.
+[Text=Played CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=7 CharacterOffsetEnd=11 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Princess CharacterOffsetBegin=12 CharacterOffsetEnd=20 PartOfSpeech=NNP Lemma=Princess NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=21 CharacterOffsetEnd=24 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=25 CharacterOffsetEnd=28 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=last CharacterOffsetBegin=29 CharacterOffsetEnd=33 PartOfSpeech=JJ Lemma=last NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=RB Lemma=there NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBN Played)
+      (PP (IN with)
+        (NP
+          (NP (NNP Princess))
+          (PP (IN for)
+            (NP (DT the) (JJ last) (NN time)))))
+      (ADVP (RB there)))
+    (. .)))
+
+root(ROOT-0, Played-1)
+case(Princess-3, with-2)
+nmod:with(Played-1, Princess-3)
+case(time-7, for-4)
+det(time-7, the-5)
+amod(time-7, last-6)
+nmod:for(Princess-3, time-7)
+advmod(Played-1, there-8)
+punct(Played-1, .-9)
+
+Sentence #2 (16 tokens):
+Brahms Requiem, glorious sunset, all so beautiful, Princess simply beloved and sweet.
+[Text=Brahms CharacterOffsetBegin=46 CharacterOffsetEnd=52 PartOfSpeech=NNP Lemma=Brahms NamedEntityTag=ORGANIZATION]
+[Text=Requiem CharacterOffsetBegin=53 CharacterOffsetEnd=60 PartOfSpeech=NNP Lemma=Requiem NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=60 CharacterOffsetEnd=61 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=glorious CharacterOffsetBegin=62 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=glorious NamedEntityTag=O]
+[Text=sunset CharacterOffsetBegin=71 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=sunset NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=79 CharacterOffsetEnd=82 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=83 CharacterOffsetEnd=85 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=beautiful CharacterOffsetBegin=86 CharacterOffsetEnd=95 PartOfSpeech=JJ Lemma=beautiful NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=95 CharacterOffsetEnd=96 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Princess CharacterOffsetBegin=97 CharacterOffsetEnd=105 PartOfSpeech=NNP Lemma=Princess NamedEntityTag=O]
+[Text=simply CharacterOffsetBegin=106 CharacterOffsetEnd=112 PartOfSpeech=RB Lemma=simply NamedEntityTag=O]
+[Text=beloved CharacterOffsetBegin=113 CharacterOffsetEnd=120 PartOfSpeech=JJ Lemma=beloved NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=sweet CharacterOffsetBegin=125 CharacterOffsetEnd=130 PartOfSpeech=JJ Lemma=sweet NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=130 CharacterOffsetEnd=131 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NNP Brahms) (NNP Requiem))
+    (, ,)
+    (NP (JJ glorious) (NN sunset))
+    (, ,)
+    (NP
+      (NP (DT all))
+      (ADJP (RB so) (JJ beautiful)))
+    (, ,)
+    (NP
+      (NP (NNP Princess))
+      (ADJP (RB simply) (JJ beloved)
+        (CC and)
+        (JJ sweet)))
+    (. .)))
+
+root(ROOT-0, Requiem-2)
+compound(Requiem-2, Brahms-1)
+punct(Requiem-2, ,-3)
+amod(sunset-5, glorious-4)
+appos(Requiem-2, sunset-5)
+punct(Requiem-2, ,-6)
+appos(Requiem-2, all-7)
+advmod(beautiful-9, so-8)
+amod(all-7, beautiful-9)
+punct(Requiem-2, ,-10)
+appos(Requiem-2, Princess-11)
+advmod(beloved-13, simply-12)
+amod(Princess-11, beloved-13)
+cc(beloved-13, and-14)
+amod(Princess-11, sweet-15)
+conj:and(beloved-13, sweet-15)
+punct(Requiem-2, .-16)
+

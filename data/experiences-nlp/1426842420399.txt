@@ -1,0 +1,270 @@
+Sentence #1 (16 tokens):
+Yesterday (7 July) I gave a second matinee at Lord Falmouth's residence.
+[Text=Yesterday CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=yesterday NamedEntityTag=DATE NormalizedNamedEntityTag=OFFSET P-1D Timex=<TIMEX3 alt_value="OFFSET P-1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">Yesterday</TIMEX3>]
+[Text=-LRB- CharacterOffsetBegin=10 CharacterOffsetEnd=11 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=7 CharacterOffsetBegin=11 CharacterOffsetEnd=12 PartOfSpeech=CD Lemma=7 NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-07-07 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-07-07">7 July</TIMEX3>]
+[Text=July CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=NNP Lemma=July NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-07-07 Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-07-07">7 July</TIMEX3>]
+[Text=-RRB- CharacterOffsetBegin=17 CharacterOffsetEnd=18 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=DT Lemma=a NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1S Timex=<TIMEX3 tid="t3" type="DURATION" value="PT1S">a second</TIMEX3>]
+[Text=second CharacterOffsetBegin=28 CharacterOffsetEnd=34 PartOfSpeech=JJ Lemma=second NamedEntityTag=DURATION NormalizedNamedEntityTag=PT1S Timex=<TIMEX3 tid="t3" type="DURATION" value="PT1S">a second</TIMEX3>]
+[Text=matinee CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=matinee NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Lord CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=NNP Lemma=Lord NamedEntityTag=O]
+[Text=Falmouth CharacterOffsetBegin=51 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Falmouth NamedEntityTag=LOCATION]
+[Text='s CharacterOffsetBegin=59 CharacterOffsetEnd=61 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=residence CharacterOffsetBegin=62 CharacterOffsetEnd=71 PartOfSpeech=NN Lemma=residence NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP-TMP (NN Yesterday))
+    (PRN (-LRB- -LRB-)
+      (NP
+        (NP (CD 7))
+        (NP-TMP (NNP July)))
+      (-RRB- -RRB-))
+    (NP (PRP I))
+    (VP (VBD gave)
+      (NP (DT a) (JJ second) (NN matinee))
+      (PP (IN at)
+        (NP
+          (NP (NNP Lord) (NNP Falmouth) (POS 's))
+          (NN residence))))
+    (. .)))
+
+root(ROOT-0, gave-7)
+nmod:tmod(gave-7, Yesterday-1)
+punct(7-3, -LRB--2)
+dep(gave-7, 7-3)
+nmod:tmod(7-3, July-4)
+punct(7-3, -RRB--5)
+nsubj(gave-7, I-6)
+det(matinee-10, a-8)
+amod(matinee-10, second-9)
+dobj(gave-7, matinee-10)
+case(residence-15, at-11)
+compound(Falmouth-13, Lord-12)
+nmod:poss(residence-15, Falmouth-13)
+case(Falmouth-13, 's-14)
+nmod:at(gave-7, residence-15)
+punct(gave-7, .-16)
+
+Sentence #2 (8 tokens):
+Among other things Viardot sang my Mazurkas.
+[Text=Among CharacterOffsetBegin=73 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=among NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=79 CharacterOffsetEnd=84 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=85 CharacterOffsetEnd=91 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=Viardot CharacterOffsetBegin=92 CharacterOffsetEnd=99 PartOfSpeech=NNP Lemma=Viardot NamedEntityTag=PERSON]
+[Text=sang CharacterOffsetBegin=100 CharacterOffsetEnd=104 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=105 CharacterOffsetEnd=107 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=Mazurkas CharacterOffsetBegin=108 CharacterOffsetEnd=116 PartOfSpeech=NNPS Lemma=Mazurkas NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN Among)
+      (NP (JJ other) (NNS things)))
+    (NP (NNP Viardot))
+    (VP (VBD sang)
+      (NP (PRP$ my) (NNPS Mazurkas)))
+    (. .)))
+
+root(ROOT-0, sang-5)
+case(things-3, Among-1)
+amod(things-3, other-2)
+nmod:among(sang-5, things-3)
+nsubj(sang-5, Viardot-4)
+nmod:poss(Mazurkas-7, my-6)
+dobj(sang-5, Mazurkas-7)
+punct(sang-5, .-8)
+
+Sentence #3 (20 tokens):
+It went very well, but I don't know whether I shall make 100 guineas out of it.
+[Text=It CharacterOffsetBegin=118 CharacterOffsetEnd=120 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=went CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=137 CharacterOffsetEnd=140 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=141 CharacterOffsetEnd=142 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=143 CharacterOffsetEnd=145 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=145 CharacterOffsetEnd=148 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=149 CharacterOffsetEnd=153 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=whether CharacterOffsetBegin=154 CharacterOffsetEnd=161 PartOfSpeech=IN Lemma=whether NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=162 CharacterOffsetEnd=163 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=shall CharacterOffsetBegin=164 CharacterOffsetEnd=169 PartOfSpeech=MD Lemma=shall NamedEntityTag=O]
+[Text=make CharacterOffsetBegin=170 CharacterOffsetEnd=174 PartOfSpeech=VB Lemma=make NamedEntityTag=O]
+[Text=100 CharacterOffsetBegin=175 CharacterOffsetEnd=178 PartOfSpeech=CD Lemma=100 NamedEntityTag=NUMBER NormalizedNamedEntityTag=100.0]
+[Text=guineas CharacterOffsetBegin=179 CharacterOffsetEnd=186 PartOfSpeech=NNS Lemma=guinea NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=187 CharacterOffsetEnd=190 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=191 CharacterOffsetEnd=193 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=194 CharacterOffsetEnd=196 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBD went)
+        (ADVP (RB very) (RB well))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP do) (RB n't)
+        (VP (VB know)
+          (SBAR (IN whether)
+            (S
+              (NP (PRP I))
+              (VP (MD shall)
+                (VP (VB make)
+                  (PP
+                    (ADVP
+                      (NP (CD 100) (NNS guineas))
+                      (IN out))
+                    (IN of)
+                    (NP (PRP it))))))))))
+    (. .)))
+
+root(ROOT-0, went-2)
+nsubj(went-2, It-1)
+advmod(well-4, very-3)
+advmod(went-2, well-4)
+punct(went-2, ,-5)
+cc(went-2, but-6)
+nsubj(know-10, I-7)
+aux(know-10, do-8)
+neg(know-10, n't-9)
+conj:but(went-2, know-10)
+mark(make-14, whether-11)
+nsubj(make-14, I-12)
+aux(make-14, shall-13)
+ccomp(know-10, make-14)
+nummod(guineas-16, 100-15)
+advmod(it-19, guineas-16)
+case(guineas-16, out-17)
+case(it-19, of-18)
+nmod:of(make-14, it-19)
+punct(went-2, .-20)
+
+Sentence #4 (8 tokens):
+I shall only find out on Monday.
+[Text=I CharacterOffsetBegin=198 CharacterOffsetEnd=199 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=shall CharacterOffsetBegin=200 CharacterOffsetEnd=205 PartOfSpeech=MD Lemma=shall NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=206 CharacterOffsetEnd=210 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=find CharacterOffsetBegin=211 CharacterOffsetEnd=215 PartOfSpeech=VB Lemma=find NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=216 CharacterOffsetEnd=219 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=220 CharacterOffsetEnd=222 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=Monday CharacterOffsetBegin=223 CharacterOffsetEnd=229 PartOfSpeech=NNP Lemma=Monday NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-WXX-1 Timex=<TIMEX3 tid="t4" type="DATE" value="XXXX-WXX-1">Monday</TIMEX3>]
+[Text=. CharacterOffsetBegin=229 CharacterOffsetEnd=230 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD shall)
+      (ADVP (RB only))
+      (VP (VB find)
+        (PRT (RP out))
+        (PP (IN on)
+          (NP (NNP Monday)))))
+    (. .)))
+
+root(ROOT-0, find-4)
+nsubj(find-4, I-1)
+aux(find-4, shall-2)
+advmod(find-4, only-3)
+compound:prt(find-4, out-5)
+case(Monday-7, on-6)
+nmod:on(find-4, Monday-7)
+punct(find-4, .-8)
+
+Sentence #5 (7 tokens):
+The season here is now over.
+[Text=The CharacterOffsetBegin=231 CharacterOffsetEnd=234 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=season CharacterOffsetBegin=235 CharacterOffsetEnd=241 PartOfSpeech=NN Lemma=season NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=242 CharacterOffsetEnd=246 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=247 CharacterOffsetEnd=249 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=250 CharacterOffsetEnd=253 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t5" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=over CharacterOffsetBegin=254 CharacterOffsetEnd=258 PartOfSpeech=RB Lemma=over NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=258 CharacterOffsetEnd=259 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NN season))
+    (ADVP (RB here))
+    (VP (VBZ is)
+      (ADVP (RB now))
+      (ADJP (RB over)))
+    (. .)))
+
+root(ROOT-0, over-6)
+det(season-2, The-1)
+nsubj(over-6, season-2)
+advmod(over-6, here-3)
+cop(over-6, is-4)
+advmod(over-6, now-5)
+punct(over-6, .-7)
+
+Sentence #6 (15 tokens):
+I don't know what my plans are or how they will turn out.
+[Text=I CharacterOffsetBegin=260 CharacterOffsetEnd=261 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=262 CharacterOffsetEnd=264 PartOfSpeech=VBP Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=264 CharacterOffsetEnd=267 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=268 CharacterOffsetEnd=272 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=273 CharacterOffsetEnd=277 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=278 CharacterOffsetEnd=280 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=plans CharacterOffsetBegin=281 CharacterOffsetEnd=286 PartOfSpeech=NNS Lemma=plan NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=287 CharacterOffsetEnd=290 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=291 CharacterOffsetEnd=293 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=how CharacterOffsetBegin=294 CharacterOffsetEnd=297 PartOfSpeech=WRB Lemma=how NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=298 CharacterOffsetEnd=302 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=will CharacterOffsetBegin=303 CharacterOffsetEnd=307 PartOfSpeech=MD Lemma=will NamedEntityTag=O]
+[Text=turn CharacterOffsetBegin=308 CharacterOffsetEnd=312 PartOfSpeech=VB Lemma=turn NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=313 CharacterOffsetEnd=316 PartOfSpeech=RP Lemma=out NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=316 CharacterOffsetEnd=317 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB know)
+        (SBAR
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (PRP$ my) (NNS plans))
+              (VP (VBP are))))
+          (CC or)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (PRP they))
+              (VP (MD will)
+                (VP (VB turn)
+                  (PRT (RP out)))))))))
+    (. .)))
+
+root(ROOT-0, know-4)
+nsubj(know-4, I-1)
+aux(know-4, do-2)
+neg(know-4, n't-3)
+dobj(are-8, what-5)
+nmod:poss(plans-7, my-6)
+nsubj(are-8, plans-7)
+dep(know-4, are-8)
+cc(are-8, or-9)
+advmod(turn-13, how-10)
+nsubj(turn-13, they-11)
+aux(turn-13, will-12)
+dep(know-4, turn-13)
+conj:or(are-8, turn-13)
+compound:prt(turn-13, out-14)
+punct(know-4, .-15)
+
+Coreference set:
+	(3,1,[1,2]) -> (1,1,[1,2]), that is: "It" -> "Yesterday"
+Coreference set:
+	(2,6,[6,7]) -> (1,6,[6,7]), that is: "my" -> "I"
+	(3,7,[7,8]) -> (1,6,[6,7]), that is: "I" -> "I"
+	(3,12,[12,13]) -> (1,6,[6,7]), that is: "I" -> "I"
+	(4,1,[1,2]) -> (1,6,[6,7]), that is: "I" -> "I"
+	(6,1,[1,2]) -> (1,6,[6,7]), that is: "I" -> "I"
+	(6,6,[6,7]) -> (1,6,[6,7]), that is: "my" -> "I"
+Coreference set:
+	(3,19,[19,20]) -> (3,15,[15,16]), that is: "it" -> "100"

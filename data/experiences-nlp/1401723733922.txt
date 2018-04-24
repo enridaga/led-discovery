@@ -1,0 +1,895 @@
+Sentence #1 (10 tokens):
+I was always trying to expand my musical horizons.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=2 CharacterOffsetEnd=5 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=trying CharacterOffsetBegin=13 CharacterOffsetEnd=19 PartOfSpeech=VBG Lemma=try NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=20 CharacterOffsetEnd=22 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=expand CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=VB Lemma=expand NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=musical CharacterOffsetBegin=33 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=musical NamedEntityTag=O]
+[Text=horizons CharacterOffsetBegin=41 CharacterOffsetEnd=49 PartOfSpeech=NNS Lemma=horizon NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=49 CharacterOffsetEnd=50 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (ADVP (RB always))
+      (VP (VBG trying)
+        (S
+          (VP (TO to)
+            (VP (VB expand)
+              (NP (PRP$ my) (JJ musical) (NNS horizons)))))))
+    (. .)))
+
+root(ROOT-0, trying-4)
+nsubj(trying-4, I-1)
+nsubj:xsubj(expand-6, I-1)
+aux(trying-4, was-2)
+advmod(trying-4, always-3)
+mark(expand-6, to-5)
+xcomp(trying-4, expand-6)
+nmod:poss(horizons-9, my-7)
+amod(horizons-9, musical-8)
+dobj(expand-6, horizons-9)
+punct(trying-4, .-10)
+
+Sentence #2 (14 tokens):
+There were two good orchestras in Odessa: the opera and the philharmonic.
+[Text=There CharacterOffsetBegin=51 CharacterOffsetEnd=56 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=57 CharacterOffsetEnd=61 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=62 CharacterOffsetEnd=65 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=good CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=orchestras CharacterOffsetBegin=71 CharacterOffsetEnd=81 PartOfSpeech=NNS Lemma=orchestra NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=82 CharacterOffsetEnd=84 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Odessa CharacterOffsetBegin=85 CharacterOffsetEnd=91 PartOfSpeech=NNP Lemma=Odessa NamedEntityTag=LOCATION]
+[Text=: CharacterOffsetBegin=91 CharacterOffsetEnd=92 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=opera CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=opera NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=103 CharacterOffsetEnd=106 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=107 CharacterOffsetEnd=110 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=philharmonic CharacterOffsetBegin=111 CharacterOffsetEnd=123 PartOfSpeech=JJ Lemma=philharmonic NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=123 CharacterOffsetEnd=124 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD were)
+      (NP
+        (NP
+          (NP (CD two) (JJ good) (NNS orchestras))
+          (PP (IN in)
+            (NP (NNP Odessa))))
+        (: :)
+        (NP
+          (NP (DT the) (NN opera))
+          (CC and)
+          (NP (DT the) (JJ philharmonic)))))
+    (. .)))
+
+root(ROOT-0, were-2)
+expl(were-2, There-1)
+nummod(orchestras-5, two-3)
+amod(orchestras-5, good-4)
+nsubj(were-2, orchestras-5)
+case(Odessa-7, in-6)
+nmod:in(orchestras-5, Odessa-7)
+punct(orchestras-5, :-8)
+det(opera-10, the-9)
+dep(orchestras-5, opera-10)
+cc(opera-10, and-11)
+det(philharmonic-13, the-12)
+dep(orchestras-5, philharmonic-13)
+conj:and(opera-10, philharmonic-13)
+punct(were-2, .-14)
+
+Sentence #3 (14 tokens):
+The leader of the latter was Naum Blinder, Isaac Stern's teacher.
+[Text=The CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=leader CharacterOffsetBegin=129 CharacterOffsetEnd=135 PartOfSpeech=NN Lemma=leader NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=139 CharacterOffsetEnd=142 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=latter CharacterOffsetBegin=143 CharacterOffsetEnd=149 PartOfSpeech=NN Lemma=latter NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=150 CharacterOffsetEnd=153 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=Naum CharacterOffsetBegin=154 CharacterOffsetEnd=158 PartOfSpeech=NNP Lemma=Naum NamedEntityTag=PERSON]
+[Text=Blinder CharacterOffsetBegin=159 CharacterOffsetEnd=166 PartOfSpeech=NNP Lemma=Blinder NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=166 CharacterOffsetEnd=167 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Isaac CharacterOffsetBegin=168 CharacterOffsetEnd=173 PartOfSpeech=NNP Lemma=Isaac NamedEntityTag=PERSON]
+[Text=Stern CharacterOffsetBegin=174 CharacterOffsetEnd=179 PartOfSpeech=NNP Lemma=Stern NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=179 CharacterOffsetEnd=181 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=teacher CharacterOffsetBegin=182 CharacterOffsetEnd=189 PartOfSpeech=NN Lemma=teacher NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=189 CharacterOffsetEnd=190 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN leader))
+      (PP (IN of)
+        (NP (DT the) (NN latter))))
+    (VP (VBD was)
+      (NP
+        (NP (NNP Naum) (NNP Blinder))
+        (, ,)
+        (NP
+          (NP (NNP Isaac) (NNP Stern) (POS 's))
+          (NN teacher))))
+    (. .)))
+
+root(ROOT-0, Blinder-8)
+det(leader-2, The-1)
+nsubj(Blinder-8, leader-2)
+case(latter-5, of-3)
+det(latter-5, the-4)
+nmod:of(leader-2, latter-5)
+cop(Blinder-8, was-6)
+compound(Blinder-8, Naum-7)
+punct(Blinder-8, ,-9)
+compound(Stern-11, Isaac-10)
+nmod:poss(teacher-13, Stern-11)
+case(Stern-11, 's-12)
+appos(Blinder-8, teacher-13)
+punct(Blinder-8, .-14)
+
+Sentence #4 (12 tokens):
+Blinder was a very good violinist with a real European education.
+[Text=Blinder CharacterOffsetBegin=191 CharacterOffsetEnd=198 PartOfSpeech=NNP Lemma=Blinder NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=203 CharacterOffsetEnd=204 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=205 CharacterOffsetEnd=209 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=good CharacterOffsetBegin=210 CharacterOffsetEnd=214 PartOfSpeech=JJ Lemma=good NamedEntityTag=O]
+[Text=violinist CharacterOffsetBegin=215 CharacterOffsetEnd=224 PartOfSpeech=NN Lemma=violinist NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=225 CharacterOffsetEnd=229 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=230 CharacterOffsetEnd=231 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=real CharacterOffsetBegin=232 CharacterOffsetEnd=236 PartOfSpeech=JJ Lemma=real NamedEntityTag=O]
+[Text=European CharacterOffsetBegin=237 CharacterOffsetEnd=245 PartOfSpeech=JJ Lemma=european NamedEntityTag=MISC]
+[Text=education CharacterOffsetBegin=246 CharacterOffsetEnd=255 PartOfSpeech=NN Lemma=education NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=255 CharacterOffsetEnd=256 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Blinder))
+    (VP (VBD was)
+      (NP
+        (NP (DT a)
+          (ADJP (RB very) (JJ good))
+          (NN violinist))
+        (PP (IN with)
+          (NP (DT a) (JJ real) (JJ European) (NN education)))))
+    (. .)))
+
+root(ROOT-0, violinist-6)
+nsubj(violinist-6, Blinder-1)
+cop(violinist-6, was-2)
+det(violinist-6, a-3)
+advmod(good-5, very-4)
+amod(violinist-6, good-5)
+case(education-11, with-7)
+det(education-11, a-8)
+amod(education-11, real-9)
+amod(education-11, European-10)
+nmod:with(violinist-6, education-11)
+punct(violinist-6, .-12)
+
+Sentence #5 (18 tokens):
+He had studied in Manchester with Adolf Brodsky, to whom Tchaikovsky's violin concerto is dedicated!
+[Text=He CharacterOffsetBegin=257 CharacterOffsetEnd=259 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=260 CharacterOffsetEnd=263 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=studied CharacterOffsetBegin=264 CharacterOffsetEnd=271 PartOfSpeech=VBN Lemma=study NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=272 CharacterOffsetEnd=274 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Manchester CharacterOffsetBegin=275 CharacterOffsetEnd=285 PartOfSpeech=NNP Lemma=Manchester NamedEntityTag=LOCATION]
+[Text=with CharacterOffsetBegin=286 CharacterOffsetEnd=290 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Adolf CharacterOffsetBegin=291 CharacterOffsetEnd=296 PartOfSpeech=NNP Lemma=Adolf NamedEntityTag=PERSON]
+[Text=Brodsky CharacterOffsetBegin=297 CharacterOffsetEnd=304 PartOfSpeech=NNP Lemma=Brodsky NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=304 CharacterOffsetEnd=305 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=306 CharacterOffsetEnd=308 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=whom CharacterOffsetBegin=309 CharacterOffsetEnd=313 PartOfSpeech=WP Lemma=whom NamedEntityTag=O]
+[Text=Tchaikovsky CharacterOffsetBegin=314 CharacterOffsetEnd=325 PartOfSpeech=NNP Lemma=Tchaikovsky NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=325 CharacterOffsetEnd=327 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=violin CharacterOffsetBegin=328 CharacterOffsetEnd=334 PartOfSpeech=NN Lemma=violin NamedEntityTag=O]
+[Text=concerto CharacterOffsetBegin=335 CharacterOffsetEnd=343 PartOfSpeech=NN Lemma=concerto NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=344 CharacterOffsetEnd=346 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=dedicated CharacterOffsetBegin=347 CharacterOffsetEnd=356 PartOfSpeech=VBN Lemma=dedicate NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=356 CharacterOffsetEnd=357 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD had)
+      (VP (VBN studied)
+        (PP (IN in)
+          (NP (NNP Manchester)))
+        (PP (IN with)
+          (NP
+            (NP (NNP Adolf) (NNP Brodsky))
+            (, ,)
+            (SBAR
+              (WHPP (TO to)
+                (WHNP (WP whom)))
+              (S
+                (NP
+                  (NP (NNP Tchaikovsky) (POS 's))
+                  (NN violin) (NN concerto))
+                (VP (VBZ is)
+                  (VP (VBN dedicated)))))))))
+    (. !)))
+
+root(ROOT-0, studied-3)
+nsubj(studied-3, He-1)
+aux(studied-3, had-2)
+case(Manchester-5, in-4)
+nmod:in(studied-3, Manchester-5)
+case(Brodsky-8, with-6)
+compound(Brodsky-8, Adolf-7)
+nmod:with(studied-3, Brodsky-8)
+nmod:to(dedicated-17, Brodsky-8)
+punct(Brodsky-8, ,-9)
+case(whom-11, to-10)
+ref(Brodsky-8, whom-11)
+nmod:poss(concerto-15, Tchaikovsky-12)
+case(Tchaikovsky-12, 's-13)
+compound(concerto-15, violin-14)
+nsubjpass(dedicated-17, concerto-15)
+auxpass(dedicated-17, is-16)
+acl:relcl(Brodsky-8, dedicated-17)
+punct(studied-3, !-18)
+
+Sentence #6 (9 tokens):
+I remember Blinder playing Prokofiev's First Concerto.
+[Text=I CharacterOffsetBegin=358 CharacterOffsetEnd=359 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=remember CharacterOffsetBegin=360 CharacterOffsetEnd=368 PartOfSpeech=VBP Lemma=remember NamedEntityTag=O]
+[Text=Blinder CharacterOffsetBegin=369 CharacterOffsetEnd=376 PartOfSpeech=NNP Lemma=Blinder NamedEntityTag=PERSON]
+[Text=playing CharacterOffsetBegin=377 CharacterOffsetEnd=384 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=Prokofiev CharacterOffsetBegin=385 CharacterOffsetEnd=394 PartOfSpeech=NNP Lemma=Prokofiev NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=394 CharacterOffsetEnd=396 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=First CharacterOffsetBegin=397 CharacterOffsetEnd=402 PartOfSpeech=NNP Lemma=First NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=Concerto CharacterOffsetBegin=403 CharacterOffsetEnd=411 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=411 CharacterOffsetEnd=412 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP remember)
+      (S
+        (NP (NNP Blinder))
+        (VP (VBG playing)
+          (NP
+            (NP (NNP Prokofiev) (POS 's))
+            (NNP First) (NNP Concerto)))))
+    (. .)))
+
+root(ROOT-0, remember-2)
+nsubj(remember-2, I-1)
+nsubj(playing-4, Blinder-3)
+dep(remember-2, playing-4)
+nmod:poss(Concerto-8, Prokofiev-5)
+case(Prokofiev-5, 's-6)
+compound(Concerto-8, First-7)
+dobj(playing-4, Concerto-8)
+punct(remember-2, .-9)
+
+Sentence #7 (27 tokens):
+It all sounded fine and solid, but a bit heavy, perhaps; for my taste, it missed the music's bouquet and poetry.
+[Text=It CharacterOffsetBegin=413 CharacterOffsetEnd=415 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=416 CharacterOffsetEnd=419 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=sounded CharacterOffsetBegin=420 CharacterOffsetEnd=427 PartOfSpeech=VBD Lemma=sound NamedEntityTag=O]
+[Text=fine CharacterOffsetBegin=428 CharacterOffsetEnd=432 PartOfSpeech=JJ Lemma=fine NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=433 CharacterOffsetEnd=436 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=solid CharacterOffsetBegin=437 CharacterOffsetEnd=442 PartOfSpeech=JJ Lemma=solid NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=442 CharacterOffsetEnd=443 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=444 CharacterOffsetEnd=447 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=448 CharacterOffsetEnd=449 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bit CharacterOffsetBegin=450 CharacterOffsetEnd=453 PartOfSpeech=NN Lemma=bit NamedEntityTag=O]
+[Text=heavy CharacterOffsetBegin=454 CharacterOffsetEnd=459 PartOfSpeech=JJ Lemma=heavy NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=459 CharacterOffsetEnd=460 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=perhaps CharacterOffsetBegin=461 CharacterOffsetEnd=468 PartOfSpeech=RB Lemma=perhaps NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=468 CharacterOffsetEnd=469 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=470 CharacterOffsetEnd=473 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=474 CharacterOffsetEnd=476 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=taste CharacterOffsetBegin=477 CharacterOffsetEnd=482 PartOfSpeech=NN Lemma=taste NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=482 CharacterOffsetEnd=483 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=484 CharacterOffsetEnd=486 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=missed CharacterOffsetBegin=487 CharacterOffsetEnd=493 PartOfSpeech=VBD Lemma=miss NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=494 CharacterOffsetEnd=497 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=498 CharacterOffsetEnd=503 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=503 CharacterOffsetEnd=505 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=bouquet CharacterOffsetBegin=506 CharacterOffsetEnd=513 PartOfSpeech=NN Lemma=bouquet NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=514 CharacterOffsetEnd=517 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=poetry CharacterOffsetBegin=518 CharacterOffsetEnd=524 PartOfSpeech=NN Lemma=poetry NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=524 CharacterOffsetEnd=525 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (ADVP (DT all))
+      (VP (VBD sounded)
+        (ADJP
+          (ADJP (JJ fine)
+            (CC and)
+            (JJ solid))
+          (, ,)
+          (CC but)
+          (ADJP
+            (NP (DT a) (NN bit))
+            (JJ heavy)))
+        (, ,)
+        (ADVP (RB perhaps))))
+    (: ;)
+    (S
+      (PP (IN for)
+        (NP (PRP$ my) (NN taste)))
+      (, ,)
+      (NP (PRP it))
+      (VP (VBD missed)
+        (NP
+          (NP (DT the) (NN music) (POS 's))
+          (NN bouquet)
+          (CC and)
+          (NN poetry))))
+    (. .)))
+
+root(ROOT-0, sounded-3)
+nsubj(sounded-3, It-1)
+advmod(sounded-3, all-2)
+xcomp(sounded-3, fine-4)
+cc(fine-4, and-5)
+xcomp(sounded-3, solid-6)
+conj:and(fine-4, solid-6)
+punct(fine-4, ,-7)
+cc(fine-4, but-8)
+det(bit-10, a-9)
+nmod:npmod(heavy-11, bit-10)
+xcomp(sounded-3, heavy-11)
+conj:but(fine-4, heavy-11)
+punct(sounded-3, ,-12)
+advmod(sounded-3, perhaps-13)
+punct(sounded-3, ;-14)
+case(taste-17, for-15)
+nmod:poss(taste-17, my-16)
+nmod:for(missed-20, taste-17)
+punct(missed-20, ,-18)
+nsubj(missed-20, it-19)
+parataxis(sounded-3, missed-20)
+det(music-22, the-21)
+nmod:poss(bouquet-24, music-22)
+case(music-22, 's-23)
+dobj(missed-20, bouquet-24)
+cc(bouquet-24, and-25)
+dobj(missed-20, poetry-26)
+conj:and(bouquet-24, poetry-26)
+punct(sounded-3, .-27)
+
+Sentence #8 (17 tokens):
+I liked going to the philharmonic's rehearsals and listening to their presentations of new music.
+[Text=I CharacterOffsetBegin=526 CharacterOffsetEnd=527 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=liked CharacterOffsetBegin=528 CharacterOffsetEnd=533 PartOfSpeech=VBD Lemma=like NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=534 CharacterOffsetEnd=539 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=540 CharacterOffsetEnd=542 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=543 CharacterOffsetEnd=546 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=philharmonic CharacterOffsetBegin=547 CharacterOffsetEnd=559 PartOfSpeech=NN Lemma=philharmonic NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=559 CharacterOffsetEnd=561 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=rehearsals CharacterOffsetBegin=562 CharacterOffsetEnd=572 PartOfSpeech=NNS Lemma=rehearsal NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=573 CharacterOffsetEnd=576 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=listening CharacterOffsetBegin=577 CharacterOffsetEnd=586 PartOfSpeech=VBG Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=587 CharacterOffsetEnd=589 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=590 CharacterOffsetEnd=595 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=presentations CharacterOffsetBegin=596 CharacterOffsetEnd=609 PartOfSpeech=NNS Lemma=presentation NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=610 CharacterOffsetEnd=612 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=613 CharacterOffsetEnd=616 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=617 CharacterOffsetEnd=622 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=622 CharacterOffsetEnd=623 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD liked)
+      (S
+        (VP
+          (VP (VBG going)
+            (PP (TO to)
+              (NP
+                (NP (DT the) (NN philharmonic) (POS 's))
+                (NNS rehearsals))))
+          (CC and)
+          (VP (VBG listening)
+            (PP (TO to)
+              (NP
+                (NP (PRP$ their) (NNS presentations))
+                (PP (IN of)
+                  (NP (JJ new) (NN music)))))))))
+    (. .)))
+
+root(ROOT-0, liked-2)
+nsubj(liked-2, I-1)
+ccomp(liked-2, going-3)
+case(rehearsals-8, to-4)
+det(philharmonic-6, the-5)
+nmod:poss(rehearsals-8, philharmonic-6)
+case(philharmonic-6, 's-7)
+nmod:to(going-3, rehearsals-8)
+cc(going-3, and-9)
+ccomp(liked-2, listening-10)
+conj:and(going-3, listening-10)
+case(presentations-13, to-11)
+nmod:poss(presentations-13, their-12)
+nmod:to(listening-10, presentations-13)
+case(music-16, of-14)
+amod(music-16, new-15)
+nmod:of(presentations-13, music-16)
+punct(liked-2, .-17)
+
+Sentence #9 (23 tokens):
+The conductor was Lev Steinberg: I always remember him holding up his slipping pince-nez with his left hand as he conducted.
+[Text=The CharacterOffsetBegin=624 CharacterOffsetEnd=627 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=conductor CharacterOffsetBegin=628 CharacterOffsetEnd=637 PartOfSpeech=NN Lemma=conductor NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=638 CharacterOffsetEnd=641 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=Lev CharacterOffsetBegin=642 CharacterOffsetEnd=645 PartOfSpeech=NNP Lemma=Lev NamedEntityTag=PERSON]
+[Text=Steinberg CharacterOffsetBegin=646 CharacterOffsetEnd=655 PartOfSpeech=NNP Lemma=Steinberg NamedEntityTag=PERSON]
+[Text=: CharacterOffsetBegin=655 CharacterOffsetEnd=656 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=657 CharacterOffsetEnd=658 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=always CharacterOffsetBegin=659 CharacterOffsetEnd=665 PartOfSpeech=RB Lemma=always NamedEntityTag=O]
+[Text=remember CharacterOffsetBegin=666 CharacterOffsetEnd=674 PartOfSpeech=VBP Lemma=remember NamedEntityTag=O]
+[Text=him CharacterOffsetBegin=675 CharacterOffsetEnd=678 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=holding CharacterOffsetBegin=679 CharacterOffsetEnd=686 PartOfSpeech=VBG Lemma=hold NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=687 CharacterOffsetEnd=689 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=690 CharacterOffsetEnd=693 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=slipping CharacterOffsetBegin=694 CharacterOffsetEnd=702 PartOfSpeech=VBG Lemma=slip NamedEntityTag=O]
+[Text=pince-nez CharacterOffsetBegin=703 CharacterOffsetEnd=712 PartOfSpeech=NN Lemma=pince-nez NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=713 CharacterOffsetEnd=717 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=718 CharacterOffsetEnd=721 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=722 CharacterOffsetEnd=726 PartOfSpeech=JJ Lemma=left NamedEntityTag=O]
+[Text=hand CharacterOffsetBegin=727 CharacterOffsetEnd=731 PartOfSpeech=NN Lemma=hand NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=732 CharacterOffsetEnd=734 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=735 CharacterOffsetEnd=737 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=conducted CharacterOffsetBegin=738 CharacterOffsetEnd=747 PartOfSpeech=VBD Lemma=conduct NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=747 CharacterOffsetEnd=748 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN conductor))
+      (VP (VBD was)
+        (NP (NNP Lev) (NNP Steinberg))))
+    (: :)
+    (S
+      (NP (PRP I))
+      (ADVP (RB always))
+      (VP (VBP remember)
+        (S
+          (NP (PRP him))
+          (VP (VBG holding)
+            (PRT (RP up))
+            (NP
+              (NP (PRP$ his) (VBG slipping) (NN pince-nez))
+              (PP (IN with)
+                (NP (PRP$ his) (JJ left) (NN hand))))
+            (SBAR (IN as)
+              (S
+                (NP (PRP he))
+                (VP (VBD conducted))))))))
+    (. .)))
+
+root(ROOT-0, Steinberg-5)
+det(conductor-2, The-1)
+nsubj(Steinberg-5, conductor-2)
+cop(Steinberg-5, was-3)
+compound(Steinberg-5, Lev-4)
+punct(Steinberg-5, :-6)
+nsubj(remember-9, I-7)
+advmod(remember-9, always-8)
+parataxis(Steinberg-5, remember-9)
+nsubj(holding-11, him-10)
+dep(remember-9, holding-11)
+compound:prt(holding-11, up-12)
+nmod:poss(pince-nez-15, his-13)
+amod(pince-nez-15, slipping-14)
+dobj(holding-11, pince-nez-15)
+case(hand-19, with-16)
+nmod:poss(hand-19, his-17)
+amod(hand-19, left-18)
+nmod:with(pince-nez-15, hand-19)
+mark(conducted-22, as-20)
+nsubj(conducted-22, he-21)
+advcl:as(holding-11, conducted-22)
+punct(Steinberg-5, .-23)
+
+Sentence #10 (14 tokens):
+Once I was at a rehearsal with Blinder, the leader, absent.
+[Text=Once CharacterOffsetBegin=749 CharacterOffsetEnd=753 PartOfSpeech=RB Lemma=once NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">Once</TIMEX3>]
+[Text=I CharacterOffsetBegin=754 CharacterOffsetEnd=755 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=756 CharacterOffsetEnd=759 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=760 CharacterOffsetEnd=762 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=763 CharacterOffsetEnd=764 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=rehearsal CharacterOffsetBegin=765 CharacterOffsetEnd=774 PartOfSpeech=NN Lemma=rehearsal NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=775 CharacterOffsetEnd=779 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=Blinder CharacterOffsetBegin=780 CharacterOffsetEnd=787 PartOfSpeech=NNP Lemma=Blinder NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=787 CharacterOffsetEnd=788 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=789 CharacterOffsetEnd=792 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=leader CharacterOffsetBegin=793 CharacterOffsetEnd=799 PartOfSpeech=NN Lemma=leader NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=799 CharacterOffsetEnd=800 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=absent CharacterOffsetBegin=801 CharacterOffsetEnd=807 PartOfSpeech=JJ Lemma=absent NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=807 CharacterOffsetEnd=808 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Once))
+    (NP (PRP I))
+    (VP (VBD was)
+      (ADVP (IN at)
+        (NP (DT a) (NN rehearsal))
+        (PP (IN with)
+          (NP
+            (NP (NNP Blinder))
+            (, ,)
+            (NP (DT the) (NN leader))
+            (, ,))))
+      (ADJP (JJ absent)))
+    (. .)))
+
+root(ROOT-0, absent-13)
+advmod(absent-13, Once-1)
+nsubj(absent-13, I-2)
+cop(absent-13, was-3)
+case(rehearsal-6, at-4)
+det(rehearsal-6, a-5)
+advmod(absent-13, rehearsal-6)
+case(Blinder-8, with-7)
+nmod:with(rehearsal-6, Blinder-8)
+punct(Blinder-8, ,-9)
+det(leader-11, the-10)
+appos(Blinder-8, leader-11)
+punct(Blinder-8, ,-12)
+punct(absent-13, .-14)
+
+Sentence #11 (15 tokens):
+We learned that he was sick and not coming to the performance that night.
+[Text=We CharacterOffsetBegin=809 CharacterOffsetEnd=811 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=learned CharacterOffsetBegin=812 CharacterOffsetEnd=819 PartOfSpeech=VBD Lemma=learn NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=820 CharacterOffsetEnd=824 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=825 CharacterOffsetEnd=827 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=828 CharacterOffsetEnd=831 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=sick CharacterOffsetBegin=832 CharacterOffsetEnd=836 PartOfSpeech=JJ Lemma=sick NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=837 CharacterOffsetEnd=840 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=841 CharacterOffsetEnd=844 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=coming CharacterOffsetBegin=845 CharacterOffsetEnd=851 PartOfSpeech=VBG Lemma=come NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=852 CharacterOffsetEnd=854 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=855 CharacterOffsetEnd=858 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=859 CharacterOffsetEnd=870 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=871 CharacterOffsetEnd=875 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=night CharacterOffsetBegin=876 CharacterOffsetEnd=881 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t2" type="TIME" value="TNI">night</TIMEX3>]
+[Text=. CharacterOffsetBegin=881 CharacterOffsetEnd=882 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VBD learned)
+        (SBAR (IN that)
+          (S
+            (NP (PRP he))
+            (VP (VBD was)
+              (ADJP (JJ sick)))))))
+    (CC and)
+    (RB not)
+    (S
+      (VP (VBG coming)
+        (PP (TO to)
+          (NP
+            (NP (DT the) (NN performance))
+            (SBAR
+              (WHNP (WDT that)))))
+        (NP-TMP (NN night))))
+    (. .)))
+
+root(ROOT-0, learned-2)
+nsubj(learned-2, We-1)
+nsubj(coming-9, We-1)
+mark(sick-6, that-3)
+nsubj(sick-6, he-4)
+cop(sick-6, was-5)
+ccomp(learned-2, sick-6)
+cc(learned-2, and-7)
+neg(coming-9, not-8)
+conj:and(learned-2, coming-9)
+case(performance-12, to-10)
+det(performance-12, the-11)
+nmod:to(coming-9, performance-12)
+acl:relcl(performance-12, that-13)
+nmod:tmod(coming-9, night-14)
+punct(learned-2, .-15)
+
+Sentence #12 (15 tokens):
+They were rehearsing Richard Strauss's Ein Heldenleben, a work that I adored.
+[Text=They CharacterOffsetBegin=883 CharacterOffsetEnd=887 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=888 CharacterOffsetEnd=892 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=rehearsing CharacterOffsetBegin=893 CharacterOffsetEnd=903 PartOfSpeech=VBG Lemma=rehearse NamedEntityTag=O]
+[Text=Richard CharacterOffsetBegin=904 CharacterOffsetEnd=911 PartOfSpeech=NNP Lemma=Richard NamedEntityTag=PERSON]
+[Text=Strauss CharacterOffsetBegin=912 CharacterOffsetEnd=919 PartOfSpeech=NNP Lemma=Strauss NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=919 CharacterOffsetEnd=921 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Ein CharacterOffsetBegin=922 CharacterOffsetEnd=925 PartOfSpeech=NNP Lemma=Ein NamedEntityTag=PERSON]
+[Text=Heldenleben CharacterOffsetBegin=926 CharacterOffsetEnd=937 PartOfSpeech=NNP Lemma=Heldenleben NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=937 CharacterOffsetEnd=938 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=939 CharacterOffsetEnd=940 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=941 CharacterOffsetEnd=945 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=946 CharacterOffsetEnd=950 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=951 CharacterOffsetEnd=952 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=adored CharacterOffsetBegin=953 CharacterOffsetEnd=959 PartOfSpeech=VBD Lemma=adore NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=959 CharacterOffsetEnd=960 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD were)
+      (VP (VBG rehearsing)
+        (NP
+          (NP
+            (NP (NNP Richard) (NNP Strauss) (POS 's))
+            (NNP Ein) (NNP Heldenleben))
+          (, ,)
+          (NP (DT a) (NN work)))
+        (SBAR (IN that)
+          (S
+            (NP (PRP I))
+            (VP (VBD adored))))))
+    (. .)))
+
+root(ROOT-0, rehearsing-3)
+nsubj(rehearsing-3, They-1)
+aux(rehearsing-3, were-2)
+compound(Strauss-5, Richard-4)
+nmod:poss(Heldenleben-8, Strauss-5)
+case(Strauss-5, 's-6)
+compound(Heldenleben-8, Ein-7)
+dobj(rehearsing-3, Heldenleben-8)
+punct(Heldenleben-8, ,-9)
+det(work-11, a-10)
+appos(Heldenleben-8, work-11)
+mark(adored-14, that-12)
+nsubj(adored-14, I-13)
+ccomp(rehearsing-3, adored-14)
+punct(rehearsing-3, .-15)
+
+Sentence #13 (7 tokens):
+It has an important violin solo.
+[Text=It CharacterOffsetBegin=961 CharacterOffsetEnd=963 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=964 CharacterOffsetEnd=967 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=968 CharacterOffsetEnd=970 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=important CharacterOffsetBegin=971 CharacterOffsetEnd=980 PartOfSpeech=JJ Lemma=important NamedEntityTag=O]
+[Text=violin CharacterOffsetBegin=981 CharacterOffsetEnd=987 PartOfSpeech=NN Lemma=violin NamedEntityTag=O]
+[Text=solo CharacterOffsetBegin=988 CharacterOffsetEnd=992 PartOfSpeech=NN Lemma=solo NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=992 CharacterOffsetEnd=993 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ has)
+      (NP (DT an) (JJ important) (NN violin) (NN solo)))
+    (. .)))
+
+root(ROOT-0, has-2)
+nsubj(has-2, It-1)
+det(solo-6, an-3)
+amod(solo-6, important-4)
+compound(solo-6, violin-5)
+dobj(has-2, solo-6)
+punct(has-2, .-7)
+
+Sentence #14 (31 tokens):
+The manager of the Odessa Philharmonic (husband of the pianist Ania Dorfinann, later taught at Juilliard) asked me to fill in for Blinder; I readily agreed.
+[Text=The CharacterOffsetBegin=994 CharacterOffsetEnd=997 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=manager CharacterOffsetBegin=998 CharacterOffsetEnd=1005 PartOfSpeech=NN Lemma=manager NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1006 CharacterOffsetEnd=1008 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1009 CharacterOffsetEnd=1012 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Odessa CharacterOffsetBegin=1013 CharacterOffsetEnd=1019 PartOfSpeech=NNP Lemma=Odessa NamedEntityTag=ORGANIZATION]
+[Text=Philharmonic CharacterOffsetBegin=1020 CharacterOffsetEnd=1032 PartOfSpeech=NNP Lemma=Philharmonic NamedEntityTag=ORGANIZATION]
+[Text=-LRB- CharacterOffsetBegin=1033 CharacterOffsetEnd=1034 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=husband CharacterOffsetBegin=1034 CharacterOffsetEnd=1041 PartOfSpeech=NN Lemma=husband NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=1042 CharacterOffsetEnd=1044 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=1045 CharacterOffsetEnd=1048 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pianist CharacterOffsetBegin=1049 CharacterOffsetEnd=1056 PartOfSpeech=NN Lemma=pianist NamedEntityTag=O]
+[Text=Ania CharacterOffsetBegin=1057 CharacterOffsetEnd=1061 PartOfSpeech=NNP Lemma=Ania NamedEntityTag=PERSON]
+[Text=Dorfinann CharacterOffsetBegin=1062 CharacterOffsetEnd=1071 PartOfSpeech=NNP Lemma=Dorfinann NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=1071 CharacterOffsetEnd=1072 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=later CharacterOffsetBegin=1073 CharacterOffsetEnd=1078 PartOfSpeech=RB Lemma=later NamedEntityTag=O]
+[Text=taught CharacterOffsetBegin=1079 CharacterOffsetEnd=1085 PartOfSpeech=VBD Lemma=teach NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=1086 CharacterOffsetEnd=1088 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Juilliard CharacterOffsetBegin=1089 CharacterOffsetEnd=1098 PartOfSpeech=NNP Lemma=Juilliard NamedEntityTag=ORGANIZATION]
+[Text=-RRB- CharacterOffsetBegin=1098 CharacterOffsetEnd=1099 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=1100 CharacterOffsetEnd=1105 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=1106 CharacterOffsetEnd=1108 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=1109 CharacterOffsetEnd=1111 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=fill CharacterOffsetBegin=1112 CharacterOffsetEnd=1116 PartOfSpeech=VB Lemma=fill NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=1117 CharacterOffsetEnd=1119 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=1120 CharacterOffsetEnd=1123 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=Blinder CharacterOffsetBegin=1124 CharacterOffsetEnd=1131 PartOfSpeech=NNP Lemma=Blinder NamedEntityTag=PERSON]
+[Text=; CharacterOffsetBegin=1131 CharacterOffsetEnd=1132 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=1133 CharacterOffsetEnd=1134 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=readily CharacterOffsetBegin=1135 CharacterOffsetEnd=1142 PartOfSpeech=RB Lemma=readily NamedEntityTag=O]
+[Text=agreed CharacterOffsetBegin=1143 CharacterOffsetEnd=1149 PartOfSpeech=VBD Lemma=agree NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1149 CharacterOffsetEnd=1150 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP
+          (NP (DT The) (NN manager))
+          (PP (IN of)
+            (NP (DT the) (NNP Odessa) (NNP Philharmonic))))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (NN husband))
+            (PP (IN of)
+              (NP
+                (NP
+                  (NP (DT the) (NN pianist))
+                  (NP (NNP Ania) (NNP Dorfinann))
+                  (, ,)
+                  (ADVP (RB later)))
+                (VP (VBD taught)
+                  (PP (IN at)
+                    (NP (NNP Juilliard)))))))
+          (-RRB- -RRB-)))
+      (VP (VBD asked)
+        (S
+          (NP (PRP me))
+          (VP (TO to)
+            (VP (VB fill)
+              (PP (IN in)
+                (PP (IN for)
+                  (NP (NNP Blinder)))))))))
+    (: ;)
+    (S
+      (NP (PRP I))
+      (ADVP (RB readily))
+      (VP (VBD agreed)))
+    (. .)))
+
+root(ROOT-0, asked-20)
+det(manager-2, The-1)
+nsubj(asked-20, manager-2)
+case(Philharmonic-6, of-3)
+det(Philharmonic-6, the-4)
+compound(Philharmonic-6, Odessa-5)
+nmod:of(manager-2, Philharmonic-6)
+punct(husband-8, -LRB--7)
+dep(manager-2, husband-8)
+case(pianist-11, of-9)
+det(pianist-11, the-10)
+nmod:of(husband-8, pianist-11)
+compound(Dorfinann-13, Ania-12)
+dep(pianist-11, Dorfinann-13)
+punct(pianist-11, ,-14)
+advmod(pianist-11, later-15)
+acl(pianist-11, taught-16)
+case(Juilliard-18, at-17)
+nmod:at(taught-16, Juilliard-18)
+punct(husband-8, -RRB--19)
+dobj(asked-20, me-21)
+nsubj:xsubj(fill-23, me-21)
+mark(fill-23, to-22)
+xcomp(asked-20, fill-23)
+case(Blinder-26, in-24)
+case(Blinder-26, for-25)
+nmod:for(fill-23, Blinder-26)
+punct(asked-20, ;-27)
+nsubj(agreed-30, I-28)
+advmod(agreed-30, readily-29)
+parataxis(asked-20, agreed-30)
+punct(asked-20, .-31)
+
+Sentence #15 (13 tokens):
+And so with just one rehearsal I played Ein Heldenleben in concert.
+[Text=And CharacterOffsetBegin=1151 CharacterOffsetEnd=1154 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=1155 CharacterOffsetEnd=1157 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=1158 CharacterOffsetEnd=1162 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=just CharacterOffsetBegin=1163 CharacterOffsetEnd=1167 PartOfSpeech=RB Lemma=just NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=1168 CharacterOffsetEnd=1171 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=rehearsal CharacterOffsetBegin=1172 CharacterOffsetEnd=1181 PartOfSpeech=NN Lemma=rehearsal NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=1182 CharacterOffsetEnd=1183 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=1184 CharacterOffsetEnd=1190 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=Ein CharacterOffsetBegin=1191 CharacterOffsetEnd=1194 PartOfSpeech=NNP Lemma=Ein NamedEntityTag=PERSON]
+[Text=Heldenleben CharacterOffsetBegin=1195 CharacterOffsetEnd=1206 PartOfSpeech=NNP Lemma=Heldenleben NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=1207 CharacterOffsetEnd=1209 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=1210 CharacterOffsetEnd=1217 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1217 CharacterOffsetEnd=1218 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC And)
+    (ADVP (RB so)
+      (PP (IN with)
+        (NP (RB just) (CD one) (NN rehearsal))))
+    (NP (PRP I))
+    (VP (VBD played)
+      (NP
+        (NP (NNP Ein) (NNP Heldenleben))
+        (PP (IN in)
+          (NP (NN concert)))))
+    (. .)))
+
+root(ROOT-0, played-8)
+cc(played-8, And-1)
+advmod(played-8, so-2)
+case(rehearsal-6, with-3)
+advmod(rehearsal-6, just-4)
+nummod(rehearsal-6, one-5)
+nmod:with(so-2, rehearsal-6)
+nsubj(played-8, I-7)
+compound(Heldenleben-10, Ein-9)
+dobj(played-8, Heldenleben-10)
+case(concert-12, in-11)
+nmod:in(Heldenleben-10, concert-12)
+punct(played-8, .-13)
+
+Sentence #16 (7 tokens):
+The audience shouted "Bravo!"
+[Text=The CharacterOffsetBegin=1219 CharacterOffsetEnd=1222 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=audience CharacterOffsetBegin=1223 CharacterOffsetEnd=1231 PartOfSpeech=NN Lemma=audience NamedEntityTag=O]
+[Text=shouted CharacterOffsetBegin=1232 CharacterOffsetEnd=1239 PartOfSpeech=VBD Lemma=shout NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=1240 CharacterOffsetEnd=1241 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Bravo CharacterOffsetBegin=1241 CharacterOffsetEnd=1246 PartOfSpeech=NNP Lemma=Bravo NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=1246 CharacterOffsetEnd=1247 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=1247 CharacterOffsetEnd=1248 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NN audience))
+    (VP (VBD shouted)
+      (S (`` ``)
+        (NP (NNP Bravo))))
+    (. !) ('' '')))
+
+root(ROOT-0, shouted-3)
+det(audience-2, The-1)
+nsubj(shouted-3, audience-2)
+punct(Bravo-5, ``-4)
+xcomp(shouted-3, Bravo-5)
+punct(shouted-3, !-6)
+punct(shouted-3, ''-7)
+
+Sentence #17 (6 tokens):
+and I was very pleased.
+[Text=and CharacterOffsetBegin=1249 CharacterOffsetEnd=1252 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=1253 CharacterOffsetEnd=1254 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=1255 CharacterOffsetEnd=1258 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=1259 CharacterOffsetEnd=1263 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=pleased CharacterOffsetBegin=1264 CharacterOffsetEnd=1271 PartOfSpeech=JJ Lemma=pleased NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=1271 CharacterOffsetEnd=1272 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC and)
+    (NP (PRP I))
+    (VP (VBD was)
+      (ADJP (RB very) (JJ pleased)))
+    (. .)))
+
+root(ROOT-0, pleased-5)
+cc(pleased-5, and-1)
+nsubj(pleased-5, I-2)
+cop(pleased-5, was-3)
+advmod(pleased-5, very-4)
+punct(pleased-5, .-6)
+
+Coreference set:
+	(1,7,[7,8]) -> (1,1,[1,2]), that is: "my" -> "I"
+	(6,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(7,16,[16,17]) -> (1,1,[1,2]), that is: "my" -> "I"
+	(8,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(9,7,[7,8]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(10,2,[2,3]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(12,13,[13,14]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(14,21,[21,22]) -> (1,1,[1,2]), that is: "me" -> "I"
+	(14,28,[28,29]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(15,7,[7,8]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(17,2,[2,3]) -> (1,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(8,6,[5,8]) -> (2,13,[12,14]), that is: "the philharmonic 's" -> "the philharmonic"
+Coreference set:
+	(3,2,[1,6]) -> (3,8,[7,14]), that is: "The leader of the latter" -> "Naum Blinder , Isaac Stern 's teacher"
+	(3,8,[7,9]) -> (3,8,[7,14]), that is: "Naum Blinder" -> "Naum Blinder , Isaac Stern 's teacher"
+	(3,13,[10,14]) -> (3,8,[7,14]), that is: "Isaac Stern 's teacher" -> "Naum Blinder , Isaac Stern 's teacher"
+	(4,1,[1,2]) -> (3,8,[7,14]), that is: "Blinder" -> "Naum Blinder , Isaac Stern 's teacher"
+	(4,6,[3,12]) -> (3,8,[7,14]), that is: "a very good violinist with a real European education" -> "Naum Blinder , Isaac Stern 's teacher"
+	(5,1,[1,2]) -> (3,8,[7,14]), that is: "He" -> "Naum Blinder , Isaac Stern 's teacher"
+	(6,3,[3,4]) -> (3,8,[7,14]), that is: "Blinder" -> "Naum Blinder , Isaac Stern 's teacher"
+	(10,8,[8,12]) -> (3,8,[7,14]), that is: "Blinder , the leader" -> "Naum Blinder , Isaac Stern 's teacher"
+	(10,8,[8,9]) -> (3,8,[7,14]), that is: "Blinder" -> "Naum Blinder , Isaac Stern 's teacher"
+	(10,11,[10,12]) -> (3,8,[7,14]), that is: "the leader" -> "Naum Blinder , Isaac Stern 's teacher"
+	(11,4,[4,5]) -> (3,8,[7,14]), that is: "he" -> "Naum Blinder , Isaac Stern 's teacher"
+	(14,26,[26,27]) -> (3,8,[7,14]), that is: "Blinder" -> "Naum Blinder , Isaac Stern 's teacher"
+Coreference set:
+	(7,1,[1,2]) -> (6,8,[5,9]), that is: "It" -> "Prokofiev 's First Concerto"
+Coreference set:
+	(7,19,[19,20]) -> (7,17,[16,18]), that is: "it" -> "my taste"
+Coreference set:
+	(9,2,[1,3]) -> (9,5,[4,6]), that is: "The conductor" -> "Lev Steinberg"
+	(9,10,[10,11]) -> (9,5,[4,6]), that is: "him" -> "Lev Steinberg"
+	(9,13,[13,14]) -> (9,5,[4,6]), that is: "his" -> "Lev Steinberg"
+	(9,17,[17,18]) -> (9,5,[4,6]), that is: "his" -> "Lev Steinberg"
+	(9,21,[21,22]) -> (9,5,[4,6]), that is: "he" -> "Lev Steinberg"
+Coreference set:
+	(13,1,[1,2]) -> (12,11,[10,12]), that is: "It" -> "a work"

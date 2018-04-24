@@ -1,0 +1,387 @@
+Sentence #1 (26 tokens):
+I have now come to the spring season of 1913 in Paris, when the Russian Ballet inaugurated the opening of the Téatre des Champs-Elysées.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=2 CharacterOffsetEnd=6 PartOfSpeech=VBP Lemma=have NamedEntityTag=O]
+[Text=now CharacterOffsetBegin=7 CharacterOffsetEnd=10 PartOfSpeech=RB Lemma=now NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PRESENT_REF">now</TIMEX3>]
+[Text=come CharacterOffsetBegin=11 CharacterOffsetEnd=15 PartOfSpeech=VBN Lemma=come NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=16 CharacterOffsetEnd=18 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=19 CharacterOffsetEnd=22 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=spring CharacterOffsetBegin=23 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=spring NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-SP Timex=<TIMEX3 tid="t2" type="DATE" value="XXXX-SP">spring</TIMEX3>]
+[Text=season CharacterOffsetBegin=30 CharacterOffsetEnd=36 PartOfSpeech=NN Lemma=season NamedEntityTag=DATE NormalizedNamedEntityTag=season of ]
+[Text=of CharacterOffsetBegin=37 CharacterOffsetEnd=39 PartOfSpeech=IN Lemma=of NamedEntityTag=DATE NormalizedNamedEntityTag=season of ]
+[Text=1913 CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=CD Lemma=1913 NamedEntityTag=DATE NormalizedNamedEntityTag=1913 Timex=<TIMEX3 tid="t3" type="DATE" value="1913">1913</TIMEX3>]
+[Text=in CharacterOffsetBegin=45 CharacterOffsetEnd=47 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Paris CharacterOffsetBegin=48 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Paris NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=53 CharacterOffsetEnd=54 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=55 CharacterOffsetEnd=59 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Russian CharacterOffsetBegin=64 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Russian NamedEntityTag=LOCATION]
+[Text=Ballet CharacterOffsetBegin=72 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=Ballet NamedEntityTag=LOCATION]
+[Text=inaugurated CharacterOffsetBegin=79 CharacterOffsetEnd=90 PartOfSpeech=VBD Lemma=inaugurate NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=91 CharacterOffsetEnd=94 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=opening CharacterOffsetBegin=95 CharacterOffsetEnd=102 PartOfSpeech=NN Lemma=opening NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=103 CharacterOffsetEnd=105 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=106 CharacterOffsetEnd=109 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Téatre CharacterOffsetBegin=110 CharacterOffsetEnd=116 PartOfSpeech=NNP Lemma=Téatre NamedEntityTag=MISC]
+[Text=des CharacterOffsetBegin=117 CharacterOffsetEnd=120 PartOfSpeech=NNP Lemma=des NamedEntityTag=MISC]
+[Text=Champs-Elysées CharacterOffsetBegin=121 CharacterOffsetEnd=135 PartOfSpeech=NNP Lemma=Champs-Elysées NamedEntityTag=MISC]
+[Text=. CharacterOffsetBegin=135 CharacterOffsetEnd=136 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (ADVP (RB now))
+      (VP (VBN come)
+        (PP (TO to)
+          (NP
+            (NP (DT the) (NN spring) (NN season))
+            (PP (IN of)
+              (NP (CD 1913)))))
+        (PP (IN in)
+          (NP
+            (NP (NNP Paris))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (DT the) (NNP Russian) (NNP Ballet))
+                (VP (VBD inaugurated)
+                  (NP
+                    (NP (DT the) (NN opening))
+                    (PP (IN of)
+                      (NP (DT the) (NNP Téatre) (NNP des) (NNP Champs-Elysées)))))))))))
+    (. .)))
+
+root(ROOT-0, come-4)
+nsubj(come-4, I-1)
+aux(come-4, have-2)
+advmod(come-4, now-3)
+case(season-8, to-5)
+det(season-8, the-6)
+compound(season-8, spring-7)
+nmod:to(come-4, season-8)
+case(1913-10, of-9)
+nmod:of(season-8, 1913-10)
+case(Paris-12, in-11)
+nmod:in(come-4, Paris-12)
+punct(Paris-12, ,-13)
+advmod(inaugurated-18, when-14)
+det(Ballet-17, the-15)
+compound(Ballet-17, Russian-16)
+nsubj(inaugurated-18, Ballet-17)
+acl:relcl(Paris-12, inaugurated-18)
+det(opening-20, the-19)
+dobj(inaugurated-18, opening-20)
+case(Champs-Elysées-25, of-21)
+det(Champs-Elysées-25, the-22)
+compound(Champs-Elysées-25, Téatre-23)
+compound(Champs-Elysées-25, des-24)
+nmod:of(opening-20, Champs-Elysées-25)
+punct(come-4, .-26)
+
+Sentence #2 (29 tokens):
+It began with a revival of 'L’Oiseau de Feu', and the 'Sacre du Printemps' was given on May 28 at the evening performance.
+[Text=It CharacterOffsetBegin=137 CharacterOffsetEnd=139 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=began CharacterOffsetBegin=140 CharacterOffsetEnd=145 PartOfSpeech=VBD Lemma=begin NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=146 CharacterOffsetEnd=150 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=151 CharacterOffsetEnd=152 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=revival CharacterOffsetBegin=153 CharacterOffsetEnd=160 PartOfSpeech=NN Lemma=revival NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=161 CharacterOffsetEnd=163 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=164 CharacterOffsetEnd=165 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=L'Oiseau CharacterOffsetBegin=165 CharacterOffsetEnd=173 PartOfSpeech=FW Lemma=l'oiseau NamedEntityTag=MISC]
+[Text=de CharacterOffsetBegin=174 CharacterOffsetEnd=176 PartOfSpeech=FW Lemma=de NamedEntityTag=MISC]
+[Text=Feu CharacterOffsetBegin=177 CharacterOffsetEnd=180 PartOfSpeech=FW Lemma=feu NamedEntityTag=MISC]
+[Text=' CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=181 CharacterOffsetEnd=182 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=183 CharacterOffsetEnd=186 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=187 CharacterOffsetEnd=190 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=191 CharacterOffsetEnd=192 PartOfSpeech=`` Lemma=` NamedEntityTag=MISC]
+[Text=Sacre CharacterOffsetBegin=192 CharacterOffsetEnd=197 PartOfSpeech=FW Lemma=sacre NamedEntityTag=MISC]
+[Text=du CharacterOffsetBegin=198 CharacterOffsetEnd=200 PartOfSpeech=NNP Lemma=du NamedEntityTag=MISC]
+[Text=Printemps CharacterOffsetBegin=201 CharacterOffsetEnd=210 PartOfSpeech=NNP Lemma=Printemps NamedEntityTag=MISC]
+[Text=' CharacterOffsetBegin=210 CharacterOffsetEnd=211 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=212 CharacterOffsetEnd=215 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=given CharacterOffsetBegin=216 CharacterOffsetEnd=221 PartOfSpeech=VBN Lemma=give NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=222 CharacterOffsetEnd=224 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=May CharacterOffsetBegin=225 CharacterOffsetEnd=228 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-05-28 Timex=<TIMEX3 tid="t4" type="DATE" value="XXXX-05-28">May 28</TIMEX3>]
+[Text=28 CharacterOffsetBegin=229 CharacterOffsetEnd=231 PartOfSpeech=CD Lemma=28 NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-05-28 Timex=<TIMEX3 tid="t4" type="DATE" value="XXXX-05-28">May 28</TIMEX3>]
+[Text=at CharacterOffsetBegin=232 CharacterOffsetEnd=234 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=235 CharacterOffsetEnd=238 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=239 CharacterOffsetEnd=246 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t5" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=performance CharacterOffsetBegin=247 CharacterOffsetEnd=258 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=258 CharacterOffsetEnd=259 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD began)
+      (PP (IN with)
+        (NP
+          (NP (DT a) (NN revival))
+          (PP (IN of)
+            (NP (`` `)
+              (NP (FW L'Oiseau) (FW de) (FW Feu))
+              ('' ') (, ,)
+              (CC and)
+              (NP (DT the) (`` `) (FW Sacre))))))
+      (SBAR
+        (S
+          (NP (NNP du) (NNP Printemps) (POS '))
+          (VP (VBD was)
+            (VP (VBN given)
+              (PP (IN on)
+                (NP (NNP May) (CD 28)))
+              (PP (IN at)
+                (NP (DT the) (NN evening) (NN performance))))))))
+    (. .)))
+
+root(ROOT-0, began-2)
+nsubj(began-2, It-1)
+case(revival-5, with-3)
+det(revival-5, a-4)
+nmod:with(began-2, revival-5)
+case(Feu-10, of-6)
+punct(Feu-10, `-7)
+compound(Feu-10, L'Oiseau-8)
+compound(Feu-10, de-9)
+nmod:of(revival-5, Feu-10)
+punct(Feu-10, '-11)
+punct(Feu-10, ,-12)
+cc(Feu-10, and-13)
+det(Sacre-16, the-14)
+punct(Sacre-16, `-15)
+nmod:of(revival-5, Sacre-16)
+conj:and(Feu-10, Sacre-16)
+compound(Printemps-18, du-17)
+nsubjpass(given-21, Printemps-18)
+case(Printemps-18, '-19)
+auxpass(given-21, was-20)
+ccomp(began-2, given-21)
+case(May-23, on-22)
+nmod:on(given-21, May-23)
+nummod(May-23, 28-24)
+case(performance-28, at-25)
+det(performance-28, the-26)
+compound(performance-28, evening-27)
+nmod:at(given-21, performance-28)
+punct(began-2, .-29)
+
+Sentence #3 (24 tokens):
+The complexity of my score had demanded a great number of rehearsals, which Monteux had conducted with his usual skill and attention.
+[Text=The CharacterOffsetBegin=260 CharacterOffsetEnd=263 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=complexity CharacterOffsetBegin=264 CharacterOffsetEnd=274 PartOfSpeech=NN Lemma=complexity NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=275 CharacterOffsetEnd=277 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=278 CharacterOffsetEnd=280 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=score CharacterOffsetBegin=281 CharacterOffsetEnd=286 PartOfSpeech=NN Lemma=score NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=287 CharacterOffsetEnd=290 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=demanded CharacterOffsetBegin=291 CharacterOffsetEnd=299 PartOfSpeech=VBN Lemma=demand NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=300 CharacterOffsetEnd=301 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=302 CharacterOffsetEnd=307 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=number CharacterOffsetBegin=308 CharacterOffsetEnd=314 PartOfSpeech=NN Lemma=number NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=315 CharacterOffsetEnd=317 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=rehearsals CharacterOffsetBegin=318 CharacterOffsetEnd=328 PartOfSpeech=NNS Lemma=rehearsal NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=328 CharacterOffsetEnd=329 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=330 CharacterOffsetEnd=335 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=Monteux CharacterOffsetBegin=336 CharacterOffsetEnd=343 PartOfSpeech=NNP Lemma=Monteux NamedEntityTag=PERSON]
+[Text=had CharacterOffsetBegin=344 CharacterOffsetEnd=347 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=conducted CharacterOffsetBegin=348 CharacterOffsetEnd=357 PartOfSpeech=VBN Lemma=conduct NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=358 CharacterOffsetEnd=362 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=363 CharacterOffsetEnd=366 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=usual CharacterOffsetBegin=367 CharacterOffsetEnd=372 PartOfSpeech=JJ Lemma=usual NamedEntityTag=O]
+[Text=skill CharacterOffsetBegin=373 CharacterOffsetEnd=378 PartOfSpeech=NN Lemma=skill NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=379 CharacterOffsetEnd=382 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=attention CharacterOffsetBegin=383 CharacterOffsetEnd=392 PartOfSpeech=NN Lemma=attention NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=392 CharacterOffsetEnd=393 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN complexity))
+      (PP (IN of)
+        (NP (PRP$ my) (NN score))))
+    (VP (VBD had)
+      (VP (VBN demanded)
+        (NP
+          (NP (DT a) (JJ great) (NN number))
+          (PP (IN of)
+            (NP
+              (NP (NNS rehearsals))
+              (, ,)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (NP (NNP Monteux))
+                  (VP (VBD had)
+                    (VP (VBN conducted)
+                      (PP (IN with)
+                        (NP (PRP$ his) (JJ usual) (NN skill)
+                          (CC and)
+                          (NN attention))))))))))))
+    (. .)))
+
+root(ROOT-0, demanded-7)
+det(complexity-2, The-1)
+nsubj(demanded-7, complexity-2)
+case(score-5, of-3)
+nmod:poss(score-5, my-4)
+nmod:of(complexity-2, score-5)
+aux(demanded-7, had-6)
+det(number-10, a-8)
+amod(number-10, great-9)
+dobj(demanded-7, number-10)
+case(rehearsals-12, of-11)
+nmod:of(number-10, rehearsals-12)
+dobj(conducted-17, rehearsals-12)
+punct(rehearsals-12, ,-13)
+ref(rehearsals-12, which-14)
+nsubj(conducted-17, Monteux-15)
+aux(conducted-17, had-16)
+acl:relcl(rehearsals-12, conducted-17)
+case(skill-21, with-18)
+nmod:poss(skill-21, his-19)
+amod(skill-21, usual-20)
+nmod:with(conducted-17, skill-21)
+cc(skill-21, and-22)
+nmod:with(conducted-17, attention-23)
+conj:and(skill-21, attention-23)
+punct(demanded-7, .-24)
+
+Sentence #4 (36 tokens):
+As for the actual performance, I am not in a position to judge, as I left the auditorium at the first bars of the prelude, which had at once evoked derisive laughter.
+[Text=As CharacterOffsetBegin=394 CharacterOffsetEnd=396 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=397 CharacterOffsetEnd=400 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=401 CharacterOffsetEnd=404 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=actual CharacterOffsetBegin=405 CharacterOffsetEnd=411 PartOfSpeech=JJ Lemma=actual NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=412 CharacterOffsetEnd=423 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=423 CharacterOffsetEnd=424 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=425 CharacterOffsetEnd=426 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=427 CharacterOffsetEnd=429 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=430 CharacterOffsetEnd=433 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=434 CharacterOffsetEnd=436 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=437 CharacterOffsetEnd=438 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=position CharacterOffsetBegin=439 CharacterOffsetEnd=447 PartOfSpeech=NN Lemma=position NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=448 CharacterOffsetEnd=450 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=judge CharacterOffsetBegin=451 CharacterOffsetEnd=456 PartOfSpeech=NN Lemma=judge NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=456 CharacterOffsetEnd=457 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=458 CharacterOffsetEnd=460 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=461 CharacterOffsetEnd=462 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=left CharacterOffsetBegin=463 CharacterOffsetEnd=467 PartOfSpeech=VBD Lemma=leave NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=468 CharacterOffsetEnd=471 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=auditorium CharacterOffsetBegin=472 CharacterOffsetEnd=482 PartOfSpeech=NN Lemma=auditorium NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=483 CharacterOffsetEnd=485 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=486 CharacterOffsetEnd=489 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=490 CharacterOffsetEnd=495 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=bars CharacterOffsetBegin=496 CharacterOffsetEnd=500 PartOfSpeech=NNS Lemma=bar NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=501 CharacterOffsetEnd=503 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=504 CharacterOffsetEnd=507 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=prelude CharacterOffsetBegin=508 CharacterOffsetEnd=515 PartOfSpeech=NN Lemma=prelude NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=515 CharacterOffsetEnd=516 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=517 CharacterOffsetEnd=522 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=523 CharacterOffsetEnd=526 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=527 CharacterOffsetEnd=529 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=once CharacterOffsetBegin=530 CharacterOffsetEnd=534 PartOfSpeech=RB Lemma=once NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t6" type="DATE" value="PAST_REF">once</TIMEX3>]
+[Text=evoked CharacterOffsetBegin=535 CharacterOffsetEnd=541 PartOfSpeech=VBN Lemma=evoke NamedEntityTag=O]
+[Text=derisive CharacterOffsetBegin=542 CharacterOffsetEnd=550 PartOfSpeech=JJ Lemma=derisive NamedEntityTag=O]
+[Text=laughter CharacterOffsetBegin=551 CharacterOffsetEnd=559 PartOfSpeech=NN Lemma=laughter NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=559 CharacterOffsetEnd=560 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN As)
+      (PP (IN for)
+        (NP (DT the) (JJ actual) (NN performance))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP am) (RB not)
+      (PP (IN in)
+        (NP
+          (NP (DT a) (NN position))
+          (PP (TO to)
+            (NP
+              (NP (NN judge))
+              (, ,)
+              (SBAR (IN as)
+                (S
+                  (NP (PRP I))
+                  (VP (VBD left)
+                    (NP (DT the) (NN auditorium))
+                    (PP (IN at)
+                      (NP
+                        (NP (DT the) (JJ first) (NNS bars))
+                        (PP (IN of)
+                          (NP
+                            (NP (DT the) (NN prelude))
+                            (, ,)
+                            (SBAR
+                              (WHNP (WDT which))
+                              (S
+                                (VP (VBD had)
+                                  (ADVP (IN at) (RB once))
+                                  (VP (VBN evoked)
+                                    (NP (JJ derisive) (NN laughter))))))))))))))))))
+    (. .)))
+
+root(ROOT-0, position-12)
+case(performance-5, As-1)
+mwe(As-1, for-2)
+det(performance-5, the-3)
+amod(performance-5, actual-4)
+nmod:as_for(position-12, performance-5)
+punct(position-12, ,-6)
+nsubj(position-12, I-7)
+cop(position-12, am-8)
+neg(position-12, not-9)
+case(position-12, in-10)
+det(position-12, a-11)
+case(judge-14, to-13)
+nmod:to(position-12, judge-14)
+punct(judge-14, ,-15)
+mark(left-18, as-16)
+nsubj(left-18, I-17)
+dep(judge-14, left-18)
+det(auditorium-20, the-19)
+dobj(left-18, auditorium-20)
+case(bars-24, at-21)
+det(bars-24, the-22)
+amod(bars-24, first-23)
+nmod:at(left-18, bars-24)
+case(prelude-27, of-25)
+det(prelude-27, the-26)
+nmod:of(bars-24, prelude-27)
+nsubj(evoked-33, prelude-27)
+punct(prelude-27, ,-28)
+ref(prelude-27, which-29)
+aux(evoked-33, had-30)
+case(once-32, at-31)
+advmod(evoked-33, once-32)
+acl:relcl(prelude-27, evoked-33)
+amod(laughter-35, derisive-34)
+dobj(evoked-33, laughter-35)
+punct(position-12, .-36)
+
+Sentence #5 (4 tokens):
+I was disgusted.
+[Text=I CharacterOffsetBegin=561 CharacterOffsetEnd=562 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=563 CharacterOffsetEnd=566 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=disgusted CharacterOffsetBegin=567 CharacterOffsetEnd=576 PartOfSpeech=VBN Lemma=disgust NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=576 CharacterOffsetEnd=577 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBN disgusted)))
+    (. .)))
+
+root(ROOT-0, disgusted-3)
+nsubjpass(disgusted-3, I-1)
+auxpass(disgusted-3, was-2)
+punct(disgusted-3, .-4)
+
+Coreference set:
+	(3,4,[4,5]) -> (1,1,[1,2]), that is: "my" -> "I"
+	(4,7,[7,8]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(4,17,[17,18]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(5,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(2,1,[1,2]) -> (1,8,[6,11]), that is: "It" -> "the spring season of 1913"
+Coreference set:
+	(2,16,[15,19]) -> (2,16,[14,17]), that is: "` Sacre du Printemps" -> "the ` Sacre"
+Coreference set:
+	(3,19,[19,20]) -> (3,15,[15,16]), that is: "his" -> "Monteux"

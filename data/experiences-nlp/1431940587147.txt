@@ -1,0 +1,42 @@
+Sentence #1 (11 tokens):
+David's society and playing are never-failing sources of enjoyment.
+[Text=David CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=David NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=society CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=NN Lemma=society NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=20 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=playing NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=28 CharacterOffsetEnd=31 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=never-failing CharacterOffsetBegin=32 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=never-failing NamedEntityTag=O]
+[Text=sources CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=NNS Lemma=source NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=enjoyment CharacterOffsetBegin=57 CharacterOffsetEnd=66 PartOfSpeech=NN Lemma=enjoyment NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=66 CharacterOffsetEnd=67 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP David) (POS 's))
+      (NN society)
+      (CC and)
+      (NN playing))
+    (VP (VBP are)
+      (NP
+        (NP (JJ never-failing) (NNS sources))
+        (PP (IN of)
+          (NP (NN enjoyment)))))
+    (. .)))
+
+root(ROOT-0, sources-8)
+nmod:poss(society-3, David-1)
+case(David-1, 's-2)
+nsubj(sources-8, society-3)
+cc(society-3, and-4)
+conj:and(society-3, playing-5)
+nsubj(sources-8, playing-5)
+cop(sources-8, are-6)
+amod(sources-8, never-failing-7)
+case(enjoyment-10, of-9)
+nmod:of(sources-8, enjoyment-10)
+punct(sources-8, .-11)
+
+Coreference set:
+	(1,3,[1,6]) -> (1,8,[7,11]), that is: "David 's society and playing" -> "never-failing sources of enjoyment"

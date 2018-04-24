@@ -1,0 +1,202 @@
+Sentence #1 (8 tokens):
+Well, in what country am I?
+[Text=Well CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=4 CharacterOffsetEnd=5 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=9 CharacterOffsetEnd=13 PartOfSpeech=WDT Lemma=what NamedEntityTag=O]
+[Text=country CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=country NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=25 CharacterOffsetEnd=26 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=26 CharacterOffsetEnd=27 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (SBARQ
+    (FRAG (RB Well))
+    (, ,)
+    (SBARQ
+      (WHPP (IN in)
+        (WHNP (WDT what) (NN country)))
+      (SQ (VBP am)
+        (NP (PRP I))))
+    (. ?)))
+
+root(ROOT-0, am-6)
+dep(am-6, Well-1)
+punct(am-6, ,-2)
+case(country-5, in-3)
+det(country-5, what-4)
+nmod:in(am-6, country-5)
+nsubj(am-6, I-7)
+punct(am-6, ?-8)
+
+Sentence #2 (13 tokens):
+Finally I heard the tape of the Louisville Orchestra playing my Design.
+[Text=Finally CharacterOffsetBegin=28 CharacterOffsetEnd=35 PartOfSpeech=RB Lemma=finally NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=36 CharacterOffsetEnd=37 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=38 CharacterOffsetEnd=43 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=44 CharacterOffsetEnd=47 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=tape CharacterOffsetBegin=48 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=tape NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=53 CharacterOffsetEnd=55 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Louisville CharacterOffsetBegin=60 CharacterOffsetEnd=70 PartOfSpeech=NNP Lemma=Louisville NamedEntityTag=LOCATION]
+[Text=Orchestra CharacterOffsetBegin=71 CharacterOffsetEnd=80 PartOfSpeech=NNP Lemma=Orchestra NamedEntityTag=LOCATION]
+[Text=playing CharacterOffsetBegin=81 CharacterOffsetEnd=88 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=89 CharacterOffsetEnd=91 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=Design CharacterOffsetBegin=92 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=design NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Finally))
+    (NP (PRP I))
+    (VP (VBD heard)
+      (NP
+        (NP (DT the) (NN tape))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Louisville) (NNP Orchestra))
+            (VP (VBG playing)
+              (NP (PRP$ my) (NN Design)))))))
+    (. .)))
+
+root(ROOT-0, heard-3)
+advmod(heard-3, Finally-1)
+nsubj(heard-3, I-2)
+det(tape-5, the-4)
+dobj(heard-3, tape-5)
+case(Orchestra-9, of-6)
+det(Orchestra-9, the-7)
+compound(Orchestra-9, Louisville-8)
+nmod:of(tape-5, Orchestra-9)
+acl(Orchestra-9, playing-10)
+nmod:poss(Design-12, my-11)
+dobj(playing-10, Design-12)
+punct(heard-3, .-13)
+
+Sentence #3 (20 tokens):
+The mechanic of the studio said to me afterwards: "But you aren't of your time."
+[Text=The CharacterOffsetBegin=100 CharacterOffsetEnd=103 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=mechanic CharacterOffsetBegin=104 CharacterOffsetEnd=112 PartOfSpeech=NN Lemma=mechanic NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=116 CharacterOffsetEnd=119 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=studio CharacterOffsetBegin=120 CharacterOffsetEnd=126 PartOfSpeech=NN Lemma=studio NamedEntityTag=O]
+[Text=said CharacterOffsetBegin=127 CharacterOffsetEnd=131 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=132 CharacterOffsetEnd=134 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=135 CharacterOffsetEnd=137 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=afterwards CharacterOffsetBegin=138 CharacterOffsetEnd=148 PartOfSpeech=RB Lemma=afterwards NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=150 CharacterOffsetEnd=151 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=But CharacterOffsetBegin=151 CharacterOffsetEnd=154 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=155 CharacterOffsetEnd=158 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=are CharacterOffsetBegin=159 CharacterOffsetEnd=162 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=162 CharacterOffsetEnd=165 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=166 CharacterOffsetEnd=168 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=your CharacterOffsetBegin=169 CharacterOffsetEnd=173 PartOfSpeech=PRP$ Lemma=you NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=174 CharacterOffsetEnd=178 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=178 CharacterOffsetEnd=179 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=179 CharacterOffsetEnd=180 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN mechanic))
+        (PP (IN of)
+          (NP (DT the) (NN studio))))
+      (VP (VBD said)
+        (PP (TO to)
+          (NP (PRP me)))
+        (ADVP (RB afterwards))))
+    (: :) (`` ``)
+    (S (CC But)
+      (NP (PRP you))
+      (VP (VBP are) (RB n't)
+        (PP (IN of)
+          (NP (PRP$ your) (NN time)))))
+    (. .) ('' '')))
+
+root(ROOT-0, said-6)
+det(mechanic-2, The-1)
+nsubj(said-6, mechanic-2)
+case(studio-5, of-3)
+det(studio-5, the-4)
+nmod:of(mechanic-2, studio-5)
+case(me-8, to-7)
+nmod:to(said-6, me-8)
+advmod(said-6, afterwards-9)
+punct(said-6, :-10)
+punct(said-6, ``-11)
+cc(time-18, But-12)
+nsubj(time-18, you-13)
+cop(time-18, are-14)
+neg(time-18, n't-15)
+case(time-18, of-16)
+nmod:poss(time-18, your-17)
+parataxis(said-6, time-18)
+punct(said-6, .-19)
+punct(said-6, ''-20)
+
+Sentence #4 (17 tokens):
+But of course, I am of my time, only it is not of me.
+[Text=But CharacterOffsetBegin=181 CharacterOffsetEnd=184 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=185 CharacterOffsetEnd=187 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=course CharacterOffsetBegin=188 CharacterOffsetEnd=194 PartOfSpeech=NN Lemma=course NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=194 CharacterOffsetEnd=195 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=198 CharacterOffsetEnd=200 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=201 CharacterOffsetEnd=203 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=204 CharacterOffsetEnd=206 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=207 CharacterOffsetEnd=211 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=211 CharacterOffsetEnd=212 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=213 CharacterOffsetEnd=217 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=218 CharacterOffsetEnd=220 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=221 CharacterOffsetEnd=223 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=224 CharacterOffsetEnd=227 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=228 CharacterOffsetEnd=230 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=231 CharacterOffsetEnd=233 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=233 CharacterOffsetEnd=234 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC But)
+    (PP (IN of)
+      (NP (NN course)))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP am)
+      (PP (IN of)
+        (NP (PRP$ my) (NN time)))
+      (, ,)
+      (SBAR (RB only)
+        (S
+          (NP (PRP it))
+          (VP (VBZ is) (RB not)
+            (PP (IN of)
+              (NP (PRP me)))))))
+    (. .)))
+
+root(ROOT-0, time-9)
+cc(time-9, But-1)
+case(course-3, of-2)
+nmod:of(time-9, course-3)
+punct(time-9, ,-4)
+nsubj(time-9, I-5)
+cop(time-9, am-6)
+case(time-9, of-7)
+nmod:poss(time-9, my-8)
+punct(time-9, ,-10)
+advmod(me-16, only-11)
+nsubj(me-16, it-12)
+cop(me-16, is-13)
+neg(me-16, not-14)
+case(me-16, of-15)
+ccomp(time-9, me-16)
+punct(time-9, .-17)
+
+Coreference set:
+	(2,2,[2,3]) -> (1,7,[7,8]), that is: "I" -> "I"
+	(2,11,[11,12]) -> (1,7,[7,8]), that is: "my" -> "I"
+	(3,8,[8,9]) -> (1,7,[7,8]), that is: "me" -> "I"
+	(4,5,[5,6]) -> (1,7,[7,8]), that is: "I" -> "I"
+	(4,8,[8,9]) -> (1,7,[7,8]), that is: "my" -> "I"
+	(4,16,[16,17]) -> (1,7,[7,8]), that is: "me" -> "I"
+Coreference set:
+	(3,17,[17,18]) -> (3,13,[13,14]), that is: "your" -> "you"
+Coreference set:
+	(4,9,[8,10]) -> (3,18,[17,19]), that is: "my time" -> "your time"
+	(4,12,[12,13]) -> (3,18,[17,19]), that is: "it" -> "your time"

@@ -1,0 +1,241 @@
+Sentence #1 (16 tokens):
+In Barcelona, at the time of my return, there were two symphony orchestras.
+[Text=In CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Barcelona CharacterOffsetBegin=3 CharacterOffsetEnd=12 PartOfSpeech=NNP Lemma=Barcelona NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=17 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=NN Lemma=time NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">time</TIMEX3>]
+[Text=of CharacterOffsetBegin=26 CharacterOffsetEnd=28 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=return CharacterOffsetBegin=32 CharacterOffsetEnd=38 PartOfSpeech=NN Lemma=return NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=38 CharacterOffsetEnd=39 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=40 CharacterOffsetEnd=45 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=46 CharacterOffsetEnd=50 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=symphony CharacterOffsetBegin=55 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=symphony NamedEntityTag=O]
+[Text=orchestras CharacterOffsetBegin=64 CharacterOffsetEnd=74 PartOfSpeech=NNS Lemma=orchestra NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP Barcelona)))
+    (, ,)
+    (PP (IN at)
+      (NP
+        (NP (DT the) (NN time))
+        (PP (IN of)
+          (NP (PRP$ my) (NN return)))))
+    (, ,)
+    (NP (EX there))
+    (VP (VBD were)
+      (NP (CD two) (NN symphony) (NNS orchestras)))
+    (. .)))
+
+root(ROOT-0, were-12)
+case(Barcelona-2, In-1)
+nmod:in(were-12, Barcelona-2)
+punct(were-12, ,-3)
+case(time-6, at-4)
+det(time-6, the-5)
+nmod:at(were-12, time-6)
+case(return-9, of-7)
+nmod:poss(return-9, my-8)
+nmod:of(time-6, return-9)
+punct(were-12, ,-10)
+expl(were-12, there-11)
+nummod(orchestras-15, two-13)
+compound(orchestras-15, symphony-14)
+nsubj(were-12, orchestras-15)
+punct(were-12, .-16)
+
+Sentence #2 (17 tokens):
+They had no regular concert schedules – they played only on special occasions and rehearsed infrequently.
+[Text=They CharacterOffsetBegin=76 CharacterOffsetEnd=80 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=81 CharacterOffsetEnd=84 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=85 CharacterOffsetEnd=87 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=regular CharacterOffsetBegin=88 CharacterOffsetEnd=95 PartOfSpeech=JJ Lemma=regular NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=96 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=schedules CharacterOffsetBegin=104 CharacterOffsetEnd=113 PartOfSpeech=NNS Lemma=schedule NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=121 CharacterOffsetEnd=127 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=128 CharacterOffsetEnd=132 PartOfSpeech=RB Lemma=only NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=special CharacterOffsetBegin=136 CharacterOffsetEnd=143 PartOfSpeech=JJ Lemma=special NamedEntityTag=O]
+[Text=occasions CharacterOffsetBegin=144 CharacterOffsetEnd=153 PartOfSpeech=NNS Lemma=occasion NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=rehearsed CharacterOffsetBegin=158 CharacterOffsetEnd=167 PartOfSpeech=VBN Lemma=rehearse NamedEntityTag=O]
+[Text=infrequently CharacterOffsetBegin=168 CharacterOffsetEnd=180 PartOfSpeech=RB Lemma=infrequently NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=180 CharacterOffsetEnd=181 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBD had)
+        (NP (DT no) (JJ regular) (NN concert) (NNS schedules))))
+    (: --)
+    (S
+      (NP (PRP they))
+      (VP
+        (VP (VBD played)
+          (ADVP (RB only))
+          (PP (IN on)
+            (NP (JJ special) (NNS occasions))))
+        (CC and)
+        (VP (VBN rehearsed)
+          (ADVP (RB infrequently)))))
+    (. .)))
+
+root(ROOT-0, had-2)
+nsubj(had-2, They-1)
+neg(schedules-6, no-3)
+amod(schedules-6, regular-4)
+compound(schedules-6, concert-5)
+dobj(had-2, schedules-6)
+punct(had-2, ---7)
+nsubj(played-9, they-8)
+nsubj(rehearsed-15, they-8)
+parataxis(had-2, played-9)
+advmod(played-9, only-10)
+case(occasions-13, on-11)
+amod(occasions-13, special-12)
+nmod:on(played-9, occasions-13)
+cc(played-9, and-14)
+parataxis(had-2, rehearsed-15)
+conj:and(played-9, rehearsed-15)
+advmod(rehearsed-15, infrequently-16)
+punct(had-2, .-17)
+
+Sentence #3 (22 tokens):
+When I heard them, I thought it was shocking that a city this size not have something better to offer.
+[Text=When CharacterOffsetBegin=182 CharacterOffsetEnd=186 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=187 CharacterOffsetEnd=188 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=189 CharacterOffsetEnd=194 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=them CharacterOffsetBegin=195 CharacterOffsetEnd=199 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=199 CharacterOffsetEnd=200 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=201 CharacterOffsetEnd=202 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=203 CharacterOffsetEnd=210 PartOfSpeech=VBD Lemma=think NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=211 CharacterOffsetEnd=213 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=214 CharacterOffsetEnd=217 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=shocking CharacterOffsetBegin=218 CharacterOffsetEnd=226 PartOfSpeech=JJ Lemma=shocking NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=227 CharacterOffsetEnd=231 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=232 CharacterOffsetEnd=233 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=city CharacterOffsetBegin=234 CharacterOffsetEnd=238 PartOfSpeech=NN Lemma=city NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=239 CharacterOffsetEnd=243 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=size CharacterOffsetBegin=244 CharacterOffsetEnd=248 PartOfSpeech=NN Lemma=size NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=249 CharacterOffsetEnd=252 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=253 CharacterOffsetEnd=257 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=258 CharacterOffsetEnd=267 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=268 CharacterOffsetEnd=274 PartOfSpeech=JJR Lemma=better NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=275 CharacterOffsetEnd=277 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=offer CharacterOffsetBegin=278 CharacterOffsetEnd=283 PartOfSpeech=VB Lemma=offer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=283 CharacterOffsetEnd=284 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP I))
+        (VP (VBD heard)
+          (NP (PRP them)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD thought)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBD was)
+            (ADJP (JJ shocking))
+            (SBAR (IN that)
+              (S
+                (NP (DT a) (NN city))
+                (ADVP
+                  (NP (DT this) (NN size))
+                  (RB not))
+                (VP (VB have)
+                  (S
+                    (NP (NN something))
+                    (ADJP (JJR better)
+                      (S
+                        (VP (TO to)
+                          (VP (VB offer)))))))))))))
+    (. .)))
+
+root(ROOT-0, thought-7)
+advmod(heard-3, When-1)
+nsubj(heard-3, I-2)
+advcl(thought-7, heard-3)
+dobj(heard-3, them-4)
+punct(thought-7, ,-5)
+nsubj(thought-7, I-6)
+nsubj(shocking-10, it-8)
+cop(shocking-10, was-9)
+ccomp(thought-7, shocking-10)
+mark(have-17, that-11)
+det(city-13, a-12)
+nsubj(have-17, city-13)
+det(size-15, this-14)
+nmod:npmod(not-16, size-15)
+neg(have-17, not-16)
+ccomp(shocking-10, have-17)
+nsubj(better-19, something-18)
+nsubj:xsubj(offer-21, something-18)
+xcomp(have-17, better-19)
+mark(offer-21, to-20)
+xcomp(better-19, offer-21)
+punct(thought-7, .-22)
+
+Sentence #4 (8 tokens):
+Other major European cities had first-class orchestras.
+[Text=Other CharacterOffsetBegin=285 CharacterOffsetEnd=290 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=major CharacterOffsetBegin=291 CharacterOffsetEnd=296 PartOfSpeech=JJ Lemma=major NamedEntityTag=O]
+[Text=European CharacterOffsetBegin=297 CharacterOffsetEnd=305 PartOfSpeech=JJ Lemma=european NamedEntityTag=MISC]
+[Text=cities CharacterOffsetBegin=306 CharacterOffsetEnd=312 PartOfSpeech=NNS Lemma=city NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=313 CharacterOffsetEnd=316 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=first-class CharacterOffsetBegin=317 CharacterOffsetEnd=328 PartOfSpeech=JJ Lemma=first-class NamedEntityTag=O]
+[Text=orchestras CharacterOffsetBegin=329 CharacterOffsetEnd=339 PartOfSpeech=NNS Lemma=orchestra NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=339 CharacterOffsetEnd=340 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (JJ Other) (JJ major) (JJ European) (NNS cities))
+    (VP (VBD had)
+      (NP (JJ first-class) (NNS orchestras)))
+    (. .)))
+
+root(ROOT-0, had-5)
+amod(cities-4, Other-1)
+amod(cities-4, major-2)
+amod(cities-4, European-3)
+nsubj(had-5, cities-4)
+amod(orchestras-7, first-class-6)
+dobj(had-5, orchestras-7)
+punct(had-5, .-8)
+
+Sentence #5 (4 tokens):
+Why not Barcelona?
+[Text=Why CharacterOffsetBegin=341 CharacterOffsetEnd=344 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=345 CharacterOffsetEnd=348 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=Barcelona CharacterOffsetBegin=349 CharacterOffsetEnd=358 PartOfSpeech=NNP Lemma=Barcelona NamedEntityTag=ORGANIZATION]
+[Text=? CharacterOffsetBegin=358 CharacterOffsetEnd=359 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (SBARQ
+      (WHADVP (WRB Why))
+      (SQ (RB not)
+        (NP (NNP Barcelona)))
+      (. ?))))
+
+root(ROOT-0, not-2)
+advmod(not-2, Why-1)
+dep(not-2, Barcelona-3)
+punct(not-2, ?-4)
+
+Coreference set:
+	(5,3,[3,4]) -> (1,2,[2,3]), that is: "Barcelona" -> "Barcelona"
+Coreference set:
+	(3,2,[2,3]) -> (1,8,[8,9]), that is: "I" -> "my"
+	(3,6,[6,7]) -> (1,8,[8,9]), that is: "I" -> "my"
+Coreference set:
+	(2,8,[8,9]) -> (2,1,[1,2]), that is: "they" -> "They"
+	(3,4,[4,5]) -> (2,1,[1,2]), that is: "them" -> "They"

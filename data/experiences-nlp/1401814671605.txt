@@ -1,0 +1,570 @@
+Sentence #1 (8 tokens):
+Off parade there is little to do.
+[Text=Off CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=IN Lemma=off NamedEntityTag=O]
+[Text=parade CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NN Lemma=parade NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=17 CharacterOffsetEnd=19 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=do CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=VB Lemma=do NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=32 CharacterOffsetEnd=33 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN Off)
+      (NP (NN parade)))
+    (NP (EX there))
+    (VP (VBZ is)
+      (ADJP (JJ little)
+        (S
+          (VP (TO to)
+            (VP (VB do))))))
+    (. .)))
+
+root(ROOT-0, is-4)
+case(parade-2, Off-1)
+nmod:off(is-4, parade-2)
+expl(is-4, there-3)
+xcomp(is-4, little-5)
+mark(do-7, to-6)
+xcomp(little-5, do-7)
+punct(is-4, .-8)
+
+Sentence #2 (19 tokens):
+We write letters: eat and drink in the mess: talk or play cards in the hut.
+[Text=We CharacterOffsetBegin=34 CharacterOffsetEnd=36 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=write CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=VBP Lemma=write NamedEntityTag=O]
+[Text=letters CharacterOffsetBegin=43 CharacterOffsetEnd=50 PartOfSpeech=NNS Lemma=letter NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=eat CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=VB Lemma=eat NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=drink CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=VB Lemma=drink NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=66 CharacterOffsetEnd=68 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=69 CharacterOffsetEnd=72 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=mess CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=mess NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=talk CharacterOffsetBegin=79 CharacterOffsetEnd=83 PartOfSpeech=NN Lemma=talk NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=87 CharacterOffsetEnd=91 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=cards CharacterOffsetBegin=92 CharacterOffsetEnd=97 PartOfSpeech=NNS Lemma=card NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=98 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=101 CharacterOffsetEnd=104 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=hut CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=NN Lemma=hut NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP write)
+      (NP
+        (NP (NNS letters))
+        (: :)
+        (VP
+          (VP (VB eat)
+            (CC and)
+            (VB drink)
+            (PP (IN in)
+              (NP (DT the) (NN mess) (: :) (NN talk))))
+          (CC or)
+          (VP (VB play)
+            (NP (NNS cards))
+            (PP (IN in)
+              (NP (DT the) (NN hut)))))))
+    (. .)))
+
+root(ROOT-0, write-2)
+nsubj(write-2, We-1)
+dobj(write-2, letters-3)
+punct(letters-3, :-4)
+dep(letters-3, eat-5)
+cc(eat-5, and-6)
+dep(letters-3, drink-7)
+conj:and(eat-5, drink-7)
+case(talk-12, in-8)
+det(talk-12, the-9)
+compound(talk-12, mess-10)
+punct(talk-12, :-11)
+nmod:in(eat-5, talk-12)
+cc(eat-5, or-13)
+dep(letters-3, play-14)
+conj:or(eat-5, play-14)
+dobj(play-14, cards-15)
+case(hut-18, in-16)
+det(hut-18, the-17)
+nmod:in(play-14, hut-18)
+punct(write-2, .-19)
+
+Sentence #3 (15 tokens):
+And whether we like it or not, we listen to the eternal gramophone.
+[Text=And CharacterOffsetBegin=110 CharacterOffsetEnd=113 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=whether CharacterOffsetBegin=114 CharacterOffsetEnd=121 PartOfSpeech=IN Lemma=whether NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=122 CharacterOffsetEnd=124 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=like CharacterOffsetBegin=125 CharacterOffsetEnd=129 PartOfSpeech=VBP Lemma=like NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=130 CharacterOffsetEnd=132 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=133 CharacterOffsetEnd=135 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=141 CharacterOffsetEnd=143 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=144 CharacterOffsetEnd=150 PartOfSpeech=VBP Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=151 CharacterOffsetEnd=153 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=154 CharacterOffsetEnd=157 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=eternal CharacterOffsetBegin=158 CharacterOffsetEnd=165 PartOfSpeech=JJ Lemma=eternal NamedEntityTag=O]
+[Text=gramophone CharacterOffsetBegin=166 CharacterOffsetEnd=176 PartOfSpeech=NN Lemma=gramophone NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=176 CharacterOffsetEnd=177 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC And)
+    (PRN
+      (SBAR (IN whether)
+        (S
+          (NP (PRP we))
+          (VP (VBP like)
+            (NP (PRP it))))
+        (CC or)
+        (RB not)))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBP listen)
+      (PP (TO to)
+        (NP (DT the) (JJ eternal) (NN gramophone))))
+    (. .)))
+
+root(ROOT-0, listen-10)
+cc(listen-10, And-1)
+mark(like-4, whether-2)
+nsubj(like-4, we-3)
+parataxis(listen-10, like-4)
+dobj(like-4, it-5)
+cc(like-4, or-6)
+conj:or(like-4, not-7)
+parataxis(listen-10, not-7)
+punct(listen-10, ,-8)
+nsubj(listen-10, we-9)
+case(gramophone-14, to-11)
+det(gramophone-14, the-12)
+amod(gramophone-14, eternal-13)
+nmod:to(listen-10, gramophone-14)
+punct(listen-10, .-15)
+
+Sentence #4 (17 tokens):
+At every hour of the day, and half the night, some gramophone is going.
+[Text=At CharacterOffsetBegin=178 CharacterOffsetEnd=180 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=181 CharacterOffsetEnd=186 PartOfSpeech=DT Lemma=every NamedEntityTag=SET Timex=<TIMEX3 alt_value="THIS P1D INTERSECT PT1H" quant="every" tid="t1" type="SET">every hour of the day</TIMEX3>]
+[Text=hour CharacterOffsetBegin=187 CharacterOffsetEnd=191 PartOfSpeech=NN Lemma=hour NamedEntityTag=SET Timex=<TIMEX3 alt_value="THIS P1D INTERSECT PT1H" quant="every" tid="t1" type="SET">every hour of the day</TIMEX3>]
+[Text=of CharacterOffsetBegin=192 CharacterOffsetEnd=194 PartOfSpeech=IN Lemma=of NamedEntityTag=SET Timex=<TIMEX3 alt_value="THIS P1D INTERSECT PT1H" quant="every" tid="t1" type="SET">every hour of the day</TIMEX3>]
+[Text=the CharacterOffsetBegin=195 CharacterOffsetEnd=198 PartOfSpeech=DT Lemma=the NamedEntityTag=SET Timex=<TIMEX3 alt_value="THIS P1D INTERSECT PT1H" quant="every" tid="t1" type="SET">every hour of the day</TIMEX3>]
+[Text=day CharacterOffsetBegin=199 CharacterOffsetEnd=202 PartOfSpeech=NN Lemma=day NamedEntityTag=SET Timex=<TIMEX3 alt_value="THIS P1D INTERSECT PT1H" quant="every" tid="t1" type="SET">every hour of the day</TIMEX3>]
+[Text=, CharacterOffsetBegin=202 CharacterOffsetEnd=203 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=204 CharacterOffsetEnd=207 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=half CharacterOffsetBegin=208 CharacterOffsetEnd=212 PartOfSpeech=PDT Lemma=half NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=213 CharacterOffsetEnd=216 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=night CharacterOffsetBegin=217 CharacterOffsetEnd=222 PartOfSpeech=NN Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t2" type="TIME" value="TNI">night</TIMEX3>]
+[Text=, CharacterOffsetBegin=222 CharacterOffsetEnd=223 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=224 CharacterOffsetEnd=228 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=gramophone CharacterOffsetBegin=229 CharacterOffsetEnd=239 PartOfSpeech=NN Lemma=gramophone NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=240 CharacterOffsetEnd=242 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=going CharacterOffsetBegin=243 CharacterOffsetEnd=248 PartOfSpeech=VBG Lemma=go NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=248 CharacterOffsetEnd=249 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP
+          (NP (DT every) (NN hour))
+          (PP (IN of)
+            (NP (DT the) (NN day))))
+        (, ,)
+        (CC and)
+        (NP
+          (QP (PDT half)))))
+    (NP-TMP (DT the) (NN night))
+    (, ,)
+    (NP (DT some) (NN gramophone))
+    (VP (VBZ is)
+      (VP (VBG going)))
+    (. .)))
+
+root(ROOT-0, going-16)
+case(hour-3, At-1)
+det(hour-3, every-2)
+nmod:at(going-16, hour-3)
+case(day-6, of-4)
+det(day-6, the-5)
+nmod:of(hour-3, day-6)
+punct(hour-3, ,-7)
+cc(hour-3, and-8)
+conj:and(hour-3, half-9)
+nmod:at(going-16, half-9)
+det(night-11, the-10)
+nmod:tmod(going-16, night-11)
+punct(going-16, ,-12)
+det(gramophone-14, some-13)
+nsubj(going-16, gramophone-14)
+aux(going-16, is-15)
+punct(going-16, .-17)
+
+Sentence #5 (28 tokens):
+Up the slope the pitiful wail is carried on the breeze:
+
+If you were the only girl in the world
+And I were the only boy.
+[Text=Up CharacterOffsetBegin=250 CharacterOffsetEnd=252 PartOfSpeech=IN Lemma=up NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=253 CharacterOffsetEnd=256 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=slope CharacterOffsetBegin=257 CharacterOffsetEnd=262 PartOfSpeech=NN Lemma=slope NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=263 CharacterOffsetEnd=266 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=pitiful CharacterOffsetBegin=267 CharacterOffsetEnd=274 PartOfSpeech=JJ Lemma=pitiful NamedEntityTag=O]
+[Text=wail CharacterOffsetBegin=275 CharacterOffsetEnd=279 PartOfSpeech=VB Lemma=wail NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=280 CharacterOffsetEnd=282 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=carried CharacterOffsetBegin=283 CharacterOffsetEnd=290 PartOfSpeech=VBN Lemma=carry NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=291 CharacterOffsetEnd=293 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=294 CharacterOffsetEnd=297 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=breeze CharacterOffsetBegin=298 CharacterOffsetEnd=304 PartOfSpeech=NN Lemma=breeze NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=304 CharacterOffsetEnd=305 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=If CharacterOffsetBegin=309 CharacterOffsetEnd=311 PartOfSpeech=IN Lemma=if NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=312 CharacterOffsetEnd=315 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=316 CharacterOffsetEnd=320 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=321 CharacterOffsetEnd=324 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=325 CharacterOffsetEnd=329 PartOfSpeech=JJ Lemma=only NamedEntityTag=O]
+[Text=girl CharacterOffsetBegin=330 CharacterOffsetEnd=334 PartOfSpeech=NN Lemma=girl NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=335 CharacterOffsetEnd=337 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=338 CharacterOffsetEnd=341 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=world CharacterOffsetBegin=342 CharacterOffsetEnd=347 PartOfSpeech=NN Lemma=world NamedEntityTag=O]
+[Text=And CharacterOffsetBegin=349 CharacterOffsetEnd=352 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=353 CharacterOffsetEnd=354 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=355 CharacterOffsetEnd=359 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=360 CharacterOffsetEnd=363 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=only CharacterOffsetBegin=364 CharacterOffsetEnd=368 PartOfSpeech=JJ Lemma=only NamedEntityTag=O]
+[Text=boy CharacterOffsetBegin=369 CharacterOffsetEnd=372 PartOfSpeech=NN Lemma=boy NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=372 CharacterOffsetEnd=373 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN Up)
+      (NP (DT the) (NN slope)))
+    (S
+      (NP (DT the) (JJ pitiful))
+      (VP (VB wail)
+        (SBAR
+          (S
+            (VP (VBZ is)
+              (VP (VBN carried)
+                (PP (IN on)
+                  (NP (DT the) (NN breeze)))
+                (: :)
+                (SBAR (IN If)
+                  (S
+                    (NP (PRP you))
+                    (VP (VBD were)
+                      (NP
+                        (NP (DT the) (JJ only) (NN girl))
+                        (PP (IN in)
+                          (NP (DT the) (NN world)))))))))))))
+    (CC And)
+    (S
+      (NP (PRP I))
+      (VP (VBD were)
+        (NP (DT the) (JJ only) (NN boy))))
+    (. .)))
+
+root(ROOT-0, wail-6)
+case(slope-3, Up-1)
+det(slope-3, the-2)
+nmod:up(wail-6, slope-3)
+det(pitiful-5, the-4)
+nsubj(wail-6, pitiful-5)
+auxpass(carried-8, is-7)
+ccomp(wail-6, carried-8)
+case(breeze-11, on-9)
+det(breeze-11, the-10)
+nmod:on(carried-8, breeze-11)
+punct(carried-8, :-12)
+mark(girl-18, If-13)
+nsubj(girl-18, you-14)
+cop(girl-18, were-15)
+det(girl-18, the-16)
+amod(girl-18, only-17)
+advcl:if(carried-8, girl-18)
+case(world-21, in-19)
+det(world-21, the-20)
+nmod:in(girl-18, world-21)
+cc(wail-6, And-22)
+nsubj(boy-27, I-23)
+cop(boy-27, were-24)
+det(boy-27, the-25)
+amod(boy-27, only-26)
+conj:and(wail-6, boy-27)
+punct(wail-6, .-28)
+
+Sentence #6 (6 tokens):
+A pathetic hymn before battle.
+[Text=A CharacterOffsetBegin=377 CharacterOffsetEnd=378 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=pathetic CharacterOffsetBegin=379 CharacterOffsetEnd=387 PartOfSpeech=JJ Lemma=pathetic NamedEntityTag=O]
+[Text=hymn CharacterOffsetBegin=388 CharacterOffsetEnd=392 PartOfSpeech=NN Lemma=hymn NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=393 CharacterOffsetEnd=399 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=battle CharacterOffsetBegin=400 CharacterOffsetEnd=406 PartOfSpeech=NN Lemma=battle NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=406 CharacterOffsetEnd=407 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (DT A) (JJ pathetic) (NN hymn))
+    (PP (IN before)
+      (NP (NN battle)))
+    (. .)))
+
+root(ROOT-0, hymn-3)
+det(hymn-3, A-1)
+amod(hymn-3, pathetic-2)
+case(battle-5, before-4)
+nmod:before(hymn-3, battle-5)
+punct(hymn-3, .-6)
+
+Sentence #7 (30 tokens):
+Yet it serves as a reminder that, under many layers of treacly sentiment, the human heart still beats: even this war cannot remove that organ.
+[Text=Yet CharacterOffsetBegin=408 CharacterOffsetEnd=411 PartOfSpeech=CC Lemma=yet NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=412 CharacterOffsetEnd=414 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=serves CharacterOffsetBegin=415 CharacterOffsetEnd=421 PartOfSpeech=VBZ Lemma=serve NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=422 CharacterOffsetEnd=424 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=425 CharacterOffsetEnd=426 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=reminder CharacterOffsetBegin=427 CharacterOffsetEnd=435 PartOfSpeech=NN Lemma=reminder NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=436 CharacterOffsetEnd=440 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=440 CharacterOffsetEnd=441 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=442 CharacterOffsetEnd=447 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=448 CharacterOffsetEnd=452 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=layers CharacterOffsetBegin=453 CharacterOffsetEnd=459 PartOfSpeech=NNS Lemma=layer NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=460 CharacterOffsetEnd=462 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=treacly CharacterOffsetBegin=463 CharacterOffsetEnd=470 PartOfSpeech=JJ Lemma=treacly NamedEntityTag=O]
+[Text=sentiment CharacterOffsetBegin=471 CharacterOffsetEnd=480 PartOfSpeech=NN Lemma=sentiment NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=480 CharacterOffsetEnd=481 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=482 CharacterOffsetEnd=485 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=human CharacterOffsetBegin=486 CharacterOffsetEnd=491 PartOfSpeech=JJ Lemma=human NamedEntityTag=O]
+[Text=heart CharacterOffsetBegin=492 CharacterOffsetEnd=497 PartOfSpeech=NN Lemma=heart NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=498 CharacterOffsetEnd=503 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=beats CharacterOffsetBegin=504 CharacterOffsetEnd=509 PartOfSpeech=VBZ Lemma=beat NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=509 CharacterOffsetEnd=510 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=511 CharacterOffsetEnd=515 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=516 CharacterOffsetEnd=520 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=war CharacterOffsetBegin=521 CharacterOffsetEnd=524 PartOfSpeech=NN Lemma=war NamedEntityTag=O]
+[Text=can CharacterOffsetBegin=525 CharacterOffsetEnd=528 PartOfSpeech=MD Lemma=can NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=528 CharacterOffsetEnd=531 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=remove CharacterOffsetBegin=532 CharacterOffsetEnd=538 PartOfSpeech=VB Lemma=remove NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=539 CharacterOffsetEnd=543 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=organ CharacterOffsetBegin=544 CharacterOffsetEnd=549 PartOfSpeech=NN Lemma=organ NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=549 CharacterOffsetEnd=550 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC Yet)
+    (NP (PRP it))
+    (VP (VBZ serves)
+      (PP (IN as)
+        (NP (DT a) (NN reminder)))
+      (SBAR (IN that)
+        (S
+          (PRN (, ,)
+            (PP (IN under)
+              (NP
+                (NP (JJ many) (NNS layers))
+                (PP (IN of)
+                  (NP (JJ treacly) (NN sentiment)))))
+            (, ,))
+          (S
+            (NP (DT the) (JJ human) (NN heart))
+            (ADVP (RB still))
+            (VP (VBZ beats)))
+          (: :)
+          (S
+            (ADVP (RB even))
+            (NP (DT this) (NN war))
+            (VP (MD can) (RB not)
+              (VP (VB remove)
+                (SBAR (IN that)
+                  (FRAG
+                    (NP (NN organ))))))))))
+    (. .)))
+
+root(ROOT-0, serves-3)
+cc(serves-3, Yet-1)
+nsubj(serves-3, it-2)
+case(reminder-6, as-4)
+det(reminder-6, a-5)
+nmod:as(serves-3, reminder-6)
+mark(beats-20, that-7)
+punct(layers-11, ,-8)
+case(layers-11, under-9)
+amod(layers-11, many-10)
+dep(beats-20, layers-11)
+case(sentiment-14, of-12)
+amod(sentiment-14, treacly-13)
+nmod:of(layers-11, sentiment-14)
+punct(layers-11, ,-15)
+det(heart-18, the-16)
+amod(heart-18, human-17)
+nsubj(beats-20, heart-18)
+advmod(beats-20, still-19)
+ccomp(serves-3, beats-20)
+punct(beats-20, :-21)
+advmod(remove-27, even-22)
+det(war-24, this-23)
+nsubj(remove-27, war-24)
+aux(remove-27, can-25)
+neg(remove-27, not-26)
+parataxis(beats-20, remove-27)
+mark(organ-29, that-28)
+dep(remove-27, organ-29)
+punct(serves-3, .-30)
+
+Sentence #8 (15 tokens):
+Nero did well to play the fiddle: the gramophone is our best substitute.
+[Text=Nero CharacterOffsetBegin=551 CharacterOffsetEnd=555 PartOfSpeech=NNP Lemma=Nero NamedEntityTag=PERSON]
+[Text=did CharacterOffsetBegin=556 CharacterOffsetEnd=559 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=560 CharacterOffsetEnd=564 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=565 CharacterOffsetEnd=567 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=568 CharacterOffsetEnd=572 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=573 CharacterOffsetEnd=576 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=fiddle CharacterOffsetBegin=577 CharacterOffsetEnd=583 PartOfSpeech=NN Lemma=fiddle NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=583 CharacterOffsetEnd=584 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=585 CharacterOffsetEnd=588 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gramophone CharacterOffsetBegin=589 CharacterOffsetEnd=599 PartOfSpeech=NN Lemma=gramophone NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=600 CharacterOffsetEnd=602 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=603 CharacterOffsetEnd=606 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=best CharacterOffsetBegin=607 CharacterOffsetEnd=611 PartOfSpeech=JJS Lemma=best NamedEntityTag=O]
+[Text=substitute CharacterOffsetBegin=612 CharacterOffsetEnd=622 PartOfSpeech=NN Lemma=substitute NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=622 CharacterOffsetEnd=623 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Nero))
+      (VP (VBD did)
+        (ADVP (RB well))
+        (S
+          (VP (TO to)
+            (VP (VB play)
+              (NP (DT the) (NN fiddle)))))))
+    (: :)
+    (S
+      (NP (DT the) (NN gramophone))
+      (VP (VBZ is)
+        (NP (PRP$ our) (JJS best) (NN substitute))))
+    (. .)))
+
+root(ROOT-0, did-2)
+nsubj(did-2, Nero-1)
+nsubj:xsubj(play-5, Nero-1)
+advmod(did-2, well-3)
+mark(play-5, to-4)
+xcomp(did-2, play-5)
+det(fiddle-7, the-6)
+dobj(play-5, fiddle-7)
+punct(did-2, :-8)
+det(gramophone-10, the-9)
+nsubj(substitute-14, gramophone-10)
+cop(substitute-14, is-11)
+nmod:poss(substitute-14, our-12)
+amod(substitute-14, best-13)
+parataxis(did-2, substitute-14)
+punct(did-2, .-15)
+
+Sentence #9 (30 tokens):
+And that pathetic tune, who knows but its terrible popularity is due to the subconscious craving in every one of us here for his own suspended individual life?
+[Text=And CharacterOffsetBegin=624 CharacterOffsetEnd=627 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=628 CharacterOffsetEnd=632 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=pathetic CharacterOffsetBegin=633 CharacterOffsetEnd=641 PartOfSpeech=JJ Lemma=pathetic NamedEntityTag=O]
+[Text=tune CharacterOffsetBegin=642 CharacterOffsetEnd=646 PartOfSpeech=NN Lemma=tune NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=646 CharacterOffsetEnd=647 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=who CharacterOffsetBegin=648 CharacterOffsetEnd=651 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=knows CharacterOffsetBegin=652 CharacterOffsetEnd=657 PartOfSpeech=VBZ Lemma=know NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=658 CharacterOffsetEnd=661 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=662 CharacterOffsetEnd=665 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=terrible CharacterOffsetBegin=666 CharacterOffsetEnd=674 PartOfSpeech=JJ Lemma=terrible NamedEntityTag=O]
+[Text=popularity CharacterOffsetBegin=675 CharacterOffsetEnd=685 PartOfSpeech=NN Lemma=popularity NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=686 CharacterOffsetEnd=688 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=due CharacterOffsetBegin=689 CharacterOffsetEnd=692 PartOfSpeech=JJ Lemma=due NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=693 CharacterOffsetEnd=695 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=696 CharacterOffsetEnd=699 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=subconscious CharacterOffsetBegin=700 CharacterOffsetEnd=712 PartOfSpeech=NN Lemma=subconscious NamedEntityTag=O]
+[Text=craving CharacterOffsetBegin=713 CharacterOffsetEnd=720 PartOfSpeech=NN Lemma=craving NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=721 CharacterOffsetEnd=723 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=every CharacterOffsetBegin=724 CharacterOffsetEnd=729 PartOfSpeech=DT Lemma=every NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=730 CharacterOffsetEnd=733 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=734 CharacterOffsetEnd=736 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=737 CharacterOffsetEnd=739 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=here CharacterOffsetBegin=740 CharacterOffsetEnd=744 PartOfSpeech=RB Lemma=here NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=745 CharacterOffsetEnd=748 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=749 CharacterOffsetEnd=752 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=753 CharacterOffsetEnd=756 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=suspended CharacterOffsetBegin=757 CharacterOffsetEnd=766 PartOfSpeech=VBN Lemma=suspend NamedEntityTag=O]
+[Text=individual CharacterOffsetBegin=767 CharacterOffsetEnd=777 PartOfSpeech=JJ Lemma=individual NamedEntityTag=O]
+[Text=life CharacterOffsetBegin=778 CharacterOffsetEnd=782 PartOfSpeech=NN Lemma=life NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=782 CharacterOffsetEnd=783 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (FRAG (CC And)
+    (NP
+      (NP (DT that) (JJ pathetic) (NN tune))
+      (, ,)
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ knows)
+            (SBAR (CC but)
+              (S
+                (NP (PRP$ its) (JJ terrible) (NN popularity))
+                (VP (VBZ is)
+                  (ADJP (JJ due)
+                    (PP (TO to)
+                      (NP
+                        (NP (DT the) (NN subconscious) (NN craving))
+                        (PP (IN in)
+                          (NP
+                            (NP (DT every) (CD one))
+                            (PP (IN of)
+                              (NP (PRP us))))))))
+                  (ADVP (RB here))
+                  (PP (IN for)
+                    (NP
+                      (NP (PRP$ his) (JJ own))
+                      (VP (VBN suspended)
+                        (NP (JJ individual) (NN life))))))))))))
+    (. ?)))
+
+root(ROOT-0, tune-4)
+cc(tune-4, And-1)
+det(tune-4, that-2)
+amod(tune-4, pathetic-3)
+nsubj(knows-7, tune-4)
+punct(tune-4, ,-5)
+ref(tune-4, who-6)
+acl:relcl(tune-4, knows-7)
+cc(due-13, but-8)
+nmod:poss(popularity-11, its-9)
+amod(popularity-11, terrible-10)
+nsubj(due-13, popularity-11)
+cop(due-13, is-12)
+ccomp(knows-7, due-13)
+case(craving-17, to-14)
+det(craving-17, the-15)
+compound(craving-17, subconscious-16)
+nmod:to(due-13, craving-17)
+case(one-20, in-18)
+det(one-20, every-19)
+det:qmod(us-22, one-20)
+mwe(one-20, of-21)
+nmod(craving-17, us-22)
+advmod(due-13, here-23)
+case(own-26, for-24)
+nmod:poss(own-26, his-25)
+nmod:for(due-13, own-26)
+acl(own-26, suspended-27)
+amod(life-29, individual-28)
+dobj(suspended-27, life-29)
+punct(tune-4, ?-30)
+
+Coreference set:
+	(3,3,[3,4]) -> (2,1,[1,2]), that is: "we" -> "We"
+	(3,9,[9,10]) -> (2,1,[1,2]), that is: "we" -> "We"
+Coreference set:
+	(3,5,[5,6]) -> (2,12,[9,13]), that is: "it" -> "the mess : talk"
+Coreference set:
+	(5,14,[14,15]) -> (5,18,[16,22]), that is: "you" -> "the only girl in the world"
+Coreference set:
+	(5,23,[23,24]) -> (5,27,[25,28]), that is: "I" -> "the only boy"
+Coreference set:
+	(7,2,[2,3]) -> (6,3,[1,7]), that is: "it" -> "A pathetic hymn before battle ."
+Coreference set:
+	(9,25,[25,26]) -> (8,1,[1,2]), that is: "his" -> "Nero"
+Coreference set:
+	(9,9,[9,10]) -> (8,7,[6,8]), that is: "its" -> "the fiddle"
+Coreference set:
+	(8,10,[9,11]) -> (8,14,[12,15]), that is: "the gramophone" -> "our best substitute"

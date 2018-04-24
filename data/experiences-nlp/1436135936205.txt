@@ -1,0 +1,99 @@
+Sentence #1 (32 tokens):
+After a scratchy run-through in an Omni Park hotel room of "Back to Life", as effected by Rod Hardest and a bassist from Boston, I met JH...
+[Text=After CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=scratchy CharacterOffsetBegin=8 CharacterOffsetEnd=16 PartOfSpeech=JJ Lemma=scratchy NamedEntityTag=O]
+[Text=run-through CharacterOffsetBegin=17 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=run-through NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=32 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Omni CharacterOffsetBegin=35 CharacterOffsetEnd=39 PartOfSpeech=NNP Lemma=Omni NamedEntityTag=LOCATION]
+[Text=Park CharacterOffsetBegin=40 CharacterOffsetEnd=44 PartOfSpeech=NNP Lemma=Park NamedEntityTag=LOCATION]
+[Text=hotel CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=hotel NamedEntityTag=O]
+[Text=room CharacterOffsetBegin=51 CharacterOffsetEnd=55 PartOfSpeech=NN Lemma=room NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=59 CharacterOffsetEnd=60 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Back CharacterOffsetBegin=60 CharacterOffsetEnd=64 PartOfSpeech=RB Lemma=back NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=65 CharacterOffsetEnd=67 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Life CharacterOffsetBegin=68 CharacterOffsetEnd=72 PartOfSpeech=NNP Lemma=Life NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=72 CharacterOffsetEnd=73 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=73 CharacterOffsetEnd=74 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=effected CharacterOffsetBegin=78 CharacterOffsetEnd=86 PartOfSpeech=VBN Lemma=effect NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=Rod CharacterOffsetBegin=90 CharacterOffsetEnd=93 PartOfSpeech=NNP Lemma=Rod NamedEntityTag=PERSON]
+[Text=Hardest CharacterOffsetBegin=94 CharacterOffsetEnd=101 PartOfSpeech=NNP Lemma=Hardest NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=102 CharacterOffsetEnd=105 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=bassist CharacterOffsetBegin=108 CharacterOffsetEnd=115 PartOfSpeech=NN Lemma=bassist NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Boston CharacterOffsetBegin=121 CharacterOffsetEnd=127 PartOfSpeech=NNP Lemma=Boston NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=127 CharacterOffsetEnd=128 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=129 CharacterOffsetEnd=130 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=met CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=VBD Lemma=meet NamedEntityTag=O]
+[Text=JH CharacterOffsetBegin=135 CharacterOffsetEnd=137 PartOfSpeech=NN Lemma=jh NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=137 CharacterOffsetEnd=140 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP (DT a) (JJ scratchy) (NN run-through))
+        (PP (IN in)
+          (NP
+            (NP (DT an) (NNP Omni) (NNP Park) (NN hotel) (NN room))
+            (PP (IN of) (`` ``)
+              (FRAG
+                (ADVP (RB Back))
+                (PP (TO to)
+                  (NP (NNP Life))))
+              ('' ''))))))
+    (, ,)
+    (SBAR (IN as)
+      (S
+        (VP (VBN effected)
+          (PP (IN by)
+            (NP
+              (NP (NNP Rod) (NNP Hardest))
+              (CC and)
+              (NP (DT a) (NN bassist))))
+          (PP (IN from)
+            (NP (NNP Boston))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD met)
+      (NP (NN JH)))
+    (: ...)))
+
+root(ROOT-0, met-30)
+case(run-through-4, After-1)
+det(run-through-4, a-2)
+amod(run-through-4, scratchy-3)
+nmod:after(met-30, run-through-4)
+case(room-10, in-5)
+det(room-10, an-6)
+compound(room-10, Omni-7)
+compound(room-10, Park-8)
+compound(room-10, hotel-9)
+nmod:in(run-through-4, room-10)
+case(Back-13, of-11)
+punct(Back-13, ``-12)
+acl:of(room-10, Back-13)
+case(Life-15, to-14)
+nmod:to(Back-13, Life-15)
+punct(Back-13, ''-16)
+punct(met-30, ,-17)
+mark(effected-19, as-18)
+advcl:as(met-30, effected-19)
+case(Hardest-22, by-20)
+compound(Hardest-22, Rod-21)
+nmod:by(effected-19, Hardest-22)
+cc(Hardest-22, and-23)
+det(bassist-25, a-24)
+nmod:by(effected-19, bassist-25)
+conj:and(Hardest-22, bassist-25)
+case(Boston-27, from-26)
+nmod:from(effected-19, Boston-27)
+punct(met-30, ,-28)
+nsubj(met-30, I-29)
+dobj(met-30, JH-31)
+punct(met-30, ...-32)
+

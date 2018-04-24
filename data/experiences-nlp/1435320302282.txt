@@ -1,0 +1,69 @@
+Sentence #1 (12 tokens):
+Phyllis and I gave a Poulenc-Rorem recital, relaxed and enjoyable.
+[Text=Phyllis CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=NNP Lemma=Phyllis NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=8 CharacterOffsetEnd=11 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=12 CharacterOffsetEnd=13 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=14 CharacterOffsetEnd=18 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=19 CharacterOffsetEnd=20 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Poulenc-Rorem CharacterOffsetBegin=21 CharacterOffsetEnd=34 PartOfSpeech=NNP Lemma=Poulenc-Rorem NamedEntityTag=MISC]
+[Text=recital CharacterOffsetBegin=35 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=recital NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=relaxed CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=VBN Lemma=relax NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=52 CharacterOffsetEnd=55 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=enjoyable CharacterOffsetBegin=56 CharacterOffsetEnd=65 PartOfSpeech=JJ Lemma=enjoyable NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Phyllis)
+      (CC and)
+      (PRP I))
+    (VP (VBD gave)
+      (NP
+        (NP (DT a) (NNP Poulenc-Rorem) (NN recital))
+        (, ,)
+        (UCP
+          (VP (VBN relaxed))
+          (CC and)
+          (ADJP (JJ enjoyable)))))
+    (. .)))
+
+root(ROOT-0, gave-4)
+nsubj(gave-4, Phyllis-1)
+cc(Phyllis-1, and-2)
+conj:and(Phyllis-1, I-3)
+nsubj(gave-4, I-3)
+det(recital-7, a-5)
+compound(recital-7, Poulenc-Rorem-6)
+dobj(gave-4, recital-7)
+punct(recital-7, ,-8)
+dep(recital-7, relaxed-9)
+cc(relaxed-9, and-10)
+dep(recital-7, enjoyable-11)
+conj:and(relaxed-9, enjoyable-11)
+punct(gave-4, .-12)
+
+Sentence #2 (6 tokens):
+Phyllis at 60 sounds marvellous...
+[Text=Phyllis CharacterOffsetBegin=67 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Phyllis NamedEntityTag=PERSON]
+[Text=at CharacterOffsetBegin=75 CharacterOffsetEnd=77 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=60 CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=CD Lemma=60 NamedEntityTag=NUMBER NormalizedNamedEntityTag=60.0]
+[Text=sounds CharacterOffsetBegin=81 CharacterOffsetEnd=87 PartOfSpeech=NNS Lemma=sound NamedEntityTag=O]
+[Text=marvellous CharacterOffsetBegin=88 CharacterOffsetEnd=98 PartOfSpeech=JJ Lemma=marvellous NamedEntityTag=O]
+[Text=... CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (ADJP
+      (NP
+        (NP (NNP Phyllis))
+        (ADVP (IN at)
+          (NP (CD 60) (NNS sounds))))
+      (JJ marvellous))
+    (: ...)))
+
+root(ROOT-0, marvellous-5)
+nmod:npmod(marvellous-5, Phyllis-1)
+case(sounds-4, at-2)
+nummod(sounds-4, 60-3)
+advmod(Phyllis-1, sounds-4)
+punct(marvellous-5, ...-6)
+

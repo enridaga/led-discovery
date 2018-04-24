@@ -1,0 +1,104 @@
+Sentence #1 (8 tokens):
+Rain prevents us having tennis after tea.
+[Text=Rain CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=rain NamedEntityTag=O]
+[Text=prevents CharacterOffsetBegin=5 CharacterOffsetEnd=13 PartOfSpeech=VBZ Lemma=prevent NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=14 CharacterOffsetEnd=16 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=having CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=VBG Lemma=have NamedEntityTag=O]
+[Text=tennis CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=NN Lemma=tennis NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=31 CharacterOffsetEnd=36 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=tea CharacterOffsetBegin=37 CharacterOffsetEnd=40 PartOfSpeech=NN Lemma=tea NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NN Rain))
+    (VP (VBZ prevents)
+      (S
+        (NP (PRP us))
+        (VP (VBG having)
+          (NP (NN tennis))
+          (PP (IN after)
+            (NP (NN tea))))))
+    (. .)))
+
+root(ROOT-0, prevents-2)
+nsubj(prevents-2, Rain-1)
+nsubj(having-4, us-3)
+dep(prevents-2, having-4)
+dobj(having-4, tennis-5)
+case(tea-7, after-6)
+nmod:after(having-4, tea-7)
+punct(prevents-2, .-8)
+
+Sentence #2 (8 tokens):
+Listen to wireless after Hazard (Com.
+[Text=Listen CharacterOffsetBegin=42 CharacterOffsetEnd=48 PartOfSpeech=VB Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=49 CharacterOffsetEnd=51 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=wireless CharacterOffsetBegin=52 CharacterOffsetEnd=60 PartOfSpeech=JJ Lemma=wireless NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=61 CharacterOffsetEnd=66 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=Hazard CharacterOffsetBegin=67 CharacterOffsetEnd=73 PartOfSpeech=NN Lemma=hazard NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=74 CharacterOffsetEnd=75 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Com CharacterOffsetBegin=75 CharacterOffsetEnd=78 PartOfSpeech=NNP Lemma=Com NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Listen)
+      (PP (TO to)
+        (NP (JJ wireless)))
+      (PP (IN after)
+        (NP
+          (NP (NN Hazard))
+          (PP (-LRB- -LRB-)
+            (NP (NNP Com))))))
+    (. .)))
+
+root(ROOT-0, Listen-1)
+case(wireless-3, to-2)
+nmod:to(Listen-1, wireless-3)
+case(Hazard-5, after-4)
+nmod:after(Listen-1, Hazard-5)
+punct(Com-7, -LRB--6)
+nmod(Hazard-5, Com-7)
+punct(Listen-1, .-8)
+
+Sentence #3 (10 tokens):
+Stoker of Dardanelles fame) & Tannhäuser from Rome.
+[Text=Stoker CharacterOffsetBegin=80 CharacterOffsetEnd=86 PartOfSpeech=NNP Lemma=Stoker NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=87 CharacterOffsetEnd=89 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Dardanelles CharacterOffsetBegin=90 CharacterOffsetEnd=101 PartOfSpeech=NNPS Lemma=Dardanelles NamedEntityTag=O]
+[Text=fame CharacterOffsetBegin=102 CharacterOffsetEnd=106 PartOfSpeech=NN Lemma=fame NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=106 CharacterOffsetEnd=107 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=108 CharacterOffsetEnd=109 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Tannhäuser CharacterOffsetBegin=110 CharacterOffsetEnd=120 PartOfSpeech=NNP Lemma=Tannhäuser NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=121 CharacterOffsetEnd=125 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=Rome CharacterOffsetBegin=126 CharacterOffsetEnd=130 PartOfSpeech=NNP Lemma=Rome NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=130 CharacterOffsetEnd=131 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP
+        (NP (NNP Stoker))
+        (PP
+          (PP (IN of))
+          (PRN
+            (NP
+              (NP (NNPS Dardanelles))
+              (NP (NN fame)))
+            (-RRB- -RRB-))))
+      (CC &)
+      (NP
+        (NP (NNP Tannhäuser))
+        (PP (IN from)
+          (NP (NNP Rome)))))
+    (. .)))
+
+root(ROOT-0, Stoker-1)
+acl(Stoker-1, of-2)
+dep(of-2, Dardanelles-3)
+dep(Dardanelles-3, fame-4)
+punct(Dardanelles-3, -RRB--5)
+cc(Stoker-1, &-6)
+conj:&(Stoker-1, Tannhäuser-7)
+case(Rome-9, from-8)
+nmod:from(Tannhäuser-7, Rome-9)
+punct(Stoker-1, .-10)
+

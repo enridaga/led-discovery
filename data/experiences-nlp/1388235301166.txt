@@ -1,0 +1,368 @@
+Sentence #1 (17 tokens):
+Spent an evening with G. Antheil who played me his 2nd, 3rd and 4th Symphonies.
+[Text=Spent CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=VB Lemma=spend NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=6 CharacterOffsetEnd=8 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=evening CharacterOffsetBegin=9 CharacterOffsetEnd=16 PartOfSpeech=NN Lemma=evening NamedEntityTag=TIME NormalizedNamedEntityTag=TEV Timex=<TIMEX3 tid="t1" type="TIME" value="TEV">evening</TIMEX3>]
+[Text=with CharacterOffsetBegin=17 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=G. CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=NNP Lemma=G. NamedEntityTag=PERSON]
+[Text=Antheil CharacterOffsetBegin=25 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Antheil NamedEntityTag=PERSON]
+[Text=who CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=44 CharacterOffsetEnd=46 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=47 CharacterOffsetEnd=50 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=2nd CharacterOffsetBegin=51 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=2nd NamedEntityTag=ORDINAL NormalizedNamedEntityTag=2.0]
+[Text=, CharacterOffsetBegin=54 CharacterOffsetEnd=55 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=3rd CharacterOffsetBegin=56 CharacterOffsetEnd=59 PartOfSpeech=JJ Lemma=3rd NamedEntityTag=ORDINAL NormalizedNamedEntityTag=3.0]
+[Text=and CharacterOffsetBegin=60 CharacterOffsetEnd=63 PartOfSpeech=CC Lemma=and NamedEntityTag=ORDINAL]
+[Text=4th CharacterOffsetBegin=64 CharacterOffsetEnd=67 PartOfSpeech=JJ Lemma=4th NamedEntityTag=ORDINAL]
+[Text=Symphonies CharacterOffsetBegin=68 CharacterOffsetEnd=78 PartOfSpeech=NNS Lemma=symphony NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=78 CharacterOffsetEnd=79 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Spent)
+      (NP (DT an) (NN evening))
+      (PP (IN with)
+        (NP
+          (NP (NNP G.) (NNP Antheil))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD played)
+                (NP (PRP me))
+                (NP (PRP$ his) (JJ 2nd) (, ,) (JJ 3rd)
+                  (CC and)
+                  (JJ 4th) (NNS Symphonies))))))))
+    (. .)))
+
+root(ROOT-0, Spent-1)
+det(evening-3, an-2)
+nmod:tmod(Spent-1, evening-3)
+case(Antheil-6, with-4)
+compound(Antheil-6, G.-5)
+nmod:with(Spent-1, Antheil-6)
+nsubj(played-8, Antheil-6)
+ref(Antheil-6, who-7)
+acl:relcl(Antheil-6, played-8)
+iobj(played-8, me-9)
+nmod:poss(Symphonies-16, his-10)
+amod(Symphonies-16, 2nd-11)
+punct(2nd-11, ,-12)
+conj:and(2nd-11, 3rd-13)
+amod(Symphonies-16, 3rd-13)
+cc(2nd-11, and-14)
+conj:and(2nd-11, 4th-15)
+amod(Symphonies-16, 4th-15)
+dobj(played-8, Symphonies-16)
+punct(Spent-1, .-17)
+
+Sentence #2 (6 tokens):
+They’re hard to describe.
+[Text=They CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=hard CharacterOffsetBegin=89 CharacterOffsetEnd=93 PartOfSpeech=JJ Lemma=hard NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=describe CharacterOffsetBegin=97 CharacterOffsetEnd=105 PartOfSpeech=VB Lemma=describe NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=105 CharacterOffsetEnd=106 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP 're)
+      (ADJP (JJ hard)
+        (S
+          (VP (TO to)
+            (VP (VB describe))))))
+    (. .)))
+
+root(ROOT-0, hard-3)
+nsubj(hard-3, They-1)
+nsubj:xsubj(describe-5, They-1)
+cop(hard-3, 're-2)
+mark(describe-5, to-4)
+xcomp(hard-3, describe-5)
+punct(hard-3, .-6)
+
+Sentence #3 (37 tokens):
+He’s in a Mahler-Shostakovich period, and everything comes out of there in great unwashed gobs of sound that billow about you until it’s all over and you’re not sure what you heard.
+[Text=He CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=110 CharacterOffsetEnd=112 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Mahler-Shostakovich CharacterOffsetBegin=118 CharacterOffsetEnd=137 PartOfSpeech=JJ Lemma=mahler-shostakovich NamedEntityTag=MISC]
+[Text=period CharacterOffsetBegin=138 CharacterOffsetEnd=144 PartOfSpeech=NN Lemma=period NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=144 CharacterOffsetEnd=145 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=everything CharacterOffsetBegin=150 CharacterOffsetEnd=160 PartOfSpeech=NN Lemma=everything NamedEntityTag=O]
+[Text=comes CharacterOffsetBegin=161 CharacterOffsetEnd=166 PartOfSpeech=VBZ Lemma=come NamedEntityTag=O]
+[Text=out CharacterOffsetBegin=167 CharacterOffsetEnd=170 PartOfSpeech=IN Lemma=out NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=171 CharacterOffsetEnd=173 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=174 CharacterOffsetEnd=179 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=180 CharacterOffsetEnd=182 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=183 CharacterOffsetEnd=188 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=unwashed CharacterOffsetBegin=189 CharacterOffsetEnd=197 PartOfSpeech=JJ Lemma=unwashed NamedEntityTag=O]
+[Text=gobs CharacterOffsetBegin=198 CharacterOffsetEnd=202 PartOfSpeech=NNS Lemma=gob NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=203 CharacterOffsetEnd=205 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=sound CharacterOffsetBegin=206 CharacterOffsetEnd=211 PartOfSpeech=NN Lemma=sound NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=212 CharacterOffsetEnd=216 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text=billow CharacterOffsetBegin=217 CharacterOffsetEnd=223 PartOfSpeech=VBP Lemma=billow NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=224 CharacterOffsetEnd=229 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=230 CharacterOffsetEnd=233 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=until CharacterOffsetBegin=234 CharacterOffsetEnd=239 PartOfSpeech=IN Lemma=until NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=240 CharacterOffsetEnd=242 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=242 CharacterOffsetEnd=244 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=245 CharacterOffsetEnd=248 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=249 CharacterOffsetEnd=253 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=254 CharacterOffsetEnd=257 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=258 CharacterOffsetEnd=261 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text='re CharacterOffsetBegin=261 CharacterOffsetEnd=264 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=265 CharacterOffsetEnd=268 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=sure CharacterOffsetBegin=269 CharacterOffsetEnd=273 PartOfSpeech=JJ Lemma=sure NamedEntityTag=O]
+[Text=what CharacterOffsetBegin=274 CharacterOffsetEnd=278 PartOfSpeech=WP Lemma=what NamedEntityTag=O]
+[Text=you CharacterOffsetBegin=279 CharacterOffsetEnd=282 PartOfSpeech=PRP Lemma=you NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=283 CharacterOffsetEnd=288 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=288 CharacterOffsetEnd=289 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBZ 's)
+        (PP (IN in)
+          (NP (DT a) (JJ Mahler-Shostakovich) (NN period)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NN everything))
+      (VP (VBZ comes)
+        (ADVP (IN out)
+          (PP (IN of)
+            (NP (EX there))))
+        (PP (IN in)
+          (NP
+            (NP (JJ great) (JJ unwashed) (NNS gobs))
+            (PP (IN of)
+              (NP (NN sound)))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP billow)
+                  (PP (IN about)
+                    (NP (PRP you)))
+                  (SBAR (IN until)
+                    (S
+                      (S
+                        (NP (PRP it))
+                        (VP (VBZ 's)
+                          (ADVP (DT all) (IN over))))
+                      (CC and)
+                      (S
+                        (NP (PRP you))
+                        (VP (VBP 're) (RB not)
+                          (ADJP (JJ sure)
+                            (SBAR
+                              (WHNP (WP what))
+                              (S
+                                (NP (PRP you))
+                                (VP (VBD heard))))))))))))))))
+    (. .)))
+
+root(ROOT-0, period-6)
+nsubj(period-6, He-1)
+cop(period-6, 's-2)
+case(period-6, in-3)
+det(period-6, a-4)
+amod(period-6, Mahler-Shostakovich-5)
+punct(period-6, ,-7)
+cc(period-6, and-8)
+nsubj(comes-10, everything-9)
+conj:and(period-6, comes-10)
+case(there-13, out-11)
+mwe(out-11, of-12)
+nmod:out_of(comes-10, there-13)
+case(gobs-17, in-14)
+amod(gobs-17, great-15)
+amod(gobs-17, unwashed-16)
+nmod:in(comes-10, gobs-17)
+nsubj(billow-21, gobs-17)
+case(sound-19, of-18)
+nmod:of(gobs-17, sound-19)
+ref(gobs-17, that-20)
+acl:relcl(gobs-17, billow-21)
+case(you-23, about-22)
+nmod:about(billow-21, you-23)
+mark('s-26, until-24)
+nsubj('s-26, it-25)
+advcl:until(billow-21, 's-26)
+advmod('s-26, all-27)
+case(all-27, over-28)
+cc('s-26, and-29)
+nsubj(sure-33, you-30)
+cop(sure-33, 're-31)
+neg(sure-33, not-32)
+advcl:until(billow-21, sure-33)
+conj:and('s-26, sure-33)
+dobj(heard-36, what-34)
+nsubj(heard-36, you-35)
+ccomp(sure-33, heard-36)
+punct(period-6, .-37)
+
+Sentence #4 (31 tokens):
+Some of it is very effective, and it all has a typical Antheil drive, but somehow when it’s all over, one doesn’t give a damn.
+[Text=Some CharacterOffsetBegin=291 CharacterOffsetEnd=295 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=296 CharacterOffsetEnd=298 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=299 CharacterOffsetEnd=301 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=302 CharacterOffsetEnd=304 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=305 CharacterOffsetEnd=309 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=effective CharacterOffsetBegin=310 CharacterOffsetEnd=319 PartOfSpeech=JJ Lemma=effective NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=319 CharacterOffsetEnd=320 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=321 CharacterOffsetEnd=324 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=325 CharacterOffsetEnd=327 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=328 CharacterOffsetEnd=331 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=332 CharacterOffsetEnd=335 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=336 CharacterOffsetEnd=337 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=typical CharacterOffsetBegin=338 CharacterOffsetEnd=345 PartOfSpeech=JJ Lemma=typical NamedEntityTag=O]
+[Text=Antheil CharacterOffsetBegin=346 CharacterOffsetEnd=353 PartOfSpeech=NNP Lemma=Antheil NamedEntityTag=PERSON]
+[Text=drive CharacterOffsetBegin=354 CharacterOffsetEnd=359 PartOfSpeech=NN Lemma=drive NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=359 CharacterOffsetEnd=360 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=but CharacterOffsetBegin=361 CharacterOffsetEnd=364 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=somehow CharacterOffsetBegin=365 CharacterOffsetEnd=372 PartOfSpeech=RB Lemma=somehow NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=373 CharacterOffsetEnd=377 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=378 CharacterOffsetEnd=380 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=380 CharacterOffsetEnd=382 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=383 CharacterOffsetEnd=386 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=over CharacterOffsetBegin=387 CharacterOffsetEnd=391 PartOfSpeech=IN Lemma=over NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=391 CharacterOffsetEnd=392 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=393 CharacterOffsetEnd=396 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=does CharacterOffsetBegin=397 CharacterOffsetEnd=401 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=n't CharacterOffsetBegin=401 CharacterOffsetEnd=404 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=give CharacterOffsetBegin=405 CharacterOffsetEnd=409 PartOfSpeech=VB Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=410 CharacterOffsetEnd=411 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=damn CharacterOffsetBegin=412 CharacterOffsetEnd=416 PartOfSpeech=NN Lemma=damn NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=416 CharacterOffsetEnd=417 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (S
+        (NP
+          (NP (DT Some))
+          (PP (IN of)
+            (NP (PRP it))))
+        (VP (VBZ is)
+          (ADJP (RB very) (JJ effective))))
+      (, ,)
+      (CC and)
+      (S
+        (NP (PRP it))
+        (ADVP (DT all))
+        (VP (VBZ has)
+          (NP (DT a) (JJ typical) (NNP Antheil) (NN drive)))))
+    (, ,)
+    (CC but)
+    (S
+      (SBAR
+        (ADVP (RB somehow))
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (ADVP (DT all) (IN over)))))
+      (, ,)
+      (NP (CD one))
+      (VP (VBZ does) (RB n't)
+        (VP (VB give)
+          (NP (DT a) (NN damn)))))
+    (. .)))
+
+root(ROOT-0, effective-6)
+det:qmod(it-3, Some-1)
+mwe(Some-1, of-2)
+nsubj(effective-6, it-3)
+cop(effective-6, is-4)
+advmod(effective-6, very-5)
+punct(effective-6, ,-7)
+cc(effective-6, and-8)
+nsubj(has-11, it-9)
+advmod(has-11, all-10)
+conj:and(effective-6, has-11)
+det(drive-15, a-12)
+amod(drive-15, typical-13)
+compound(drive-15, Antheil-14)
+dobj(has-11, drive-15)
+punct(effective-6, ,-16)
+cc(effective-6, but-17)
+advmod('s-21, somehow-18)
+advmod('s-21, when-19)
+nsubj('s-21, it-20)
+advcl(give-28, 's-21)
+advmod('s-21, all-22)
+case(all-22, over-23)
+punct(give-28, ,-24)
+nsubj(give-28, one-25)
+aux(give-28, does-26)
+neg(give-28, n't-27)
+conj:and(effective-6, give-28)
+det(damn-30, a-29)
+dobj(give-28, damn-30)
+punct(effective-6, .-31)
+
+Sentence #5 (14 tokens):
+That’s the sort of thing that’s hard to tell a composer.
+[Text=That CharacterOffsetBegin=419 CharacterOffsetEnd=423 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=423 CharacterOffsetEnd=425 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=426 CharacterOffsetEnd=429 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=sort CharacterOffsetBegin=430 CharacterOffsetEnd=434 PartOfSpeech=NN Lemma=sort NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=435 CharacterOffsetEnd=437 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=thing CharacterOffsetBegin=438 CharacterOffsetEnd=443 PartOfSpeech=NN Lemma=thing NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=444 CharacterOffsetEnd=448 PartOfSpeech=WDT Lemma=that NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=448 CharacterOffsetEnd=450 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=hard CharacterOffsetBegin=451 CharacterOffsetEnd=455 PartOfSpeech=JJ Lemma=hard NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=456 CharacterOffsetEnd=458 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=tell CharacterOffsetBegin=459 CharacterOffsetEnd=463 PartOfSpeech=VB Lemma=tell NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=464 CharacterOffsetEnd=465 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=composer CharacterOffsetBegin=466 CharacterOffsetEnd=474 PartOfSpeech=NN Lemma=composer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=474 CharacterOffsetEnd=475 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT the) (NN sort))
+        (PP (IN of)
+          (NP (NN thing)))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ 's)
+              (ADJP (JJ hard)
+                (S
+                  (VP (TO to)
+                    (VP (VB tell)
+                      (NP (DT a) (NN composer)))))))))))
+    (. .)))
+
+root(ROOT-0, sort-4)
+nsubj(sort-4, That-1)
+cop(sort-4, 's-2)
+det(sort-4, the-3)
+nsubj(hard-9, sort-4)
+nsubj:xsubj(tell-11, sort-4)
+case(thing-6, of-5)
+nmod:of(sort-4, thing-6)
+ref(sort-4, that-7)
+cop(hard-9, 's-8)
+acl:relcl(sort-4, hard-9)
+mark(tell-11, to-10)
+xcomp(hard-9, tell-11)
+det(composer-13, a-12)
+dobj(tell-11, composer-13)
+punct(sort-4, .-14)
+
+Coreference set:
+	(3,1,[1,2]) -> (1,6,[5,17]), that is: "He" -> "G. Antheil who played me his 2nd , 3rd and 4th Symphonies"
+	(4,14,[14,15]) -> (1,6,[5,17]), that is: "Antheil" -> "G. Antheil who played me his 2nd , 3rd and 4th Symphonies"
+Coreference set:
+	(3,25,[25,26]) -> (3,6,[4,7]), that is: "it" -> "a Mahler-Shostakovich period"
+	(4,3,[3,4]) -> (3,6,[4,7]), that is: "it" -> "a Mahler-Shostakovich period"
+Coreference set:
+	(4,1,[1,4]) -> (5,4,[3,14]), that is: "Some of it" -> "the sort of thing that 's hard to tell a composer"
+	(4,9,[9,10]) -> (5,4,[3,14]), that is: "it" -> "the sort of thing that 's hard to tell a composer"
+	(4,20,[20,21]) -> (5,4,[3,14]), that is: "it" -> "the sort of thing that 's hard to tell a composer"
+	(5,1,[1,2]) -> (5,4,[3,14]), that is: "That" -> "the sort of thing that 's hard to tell a composer"

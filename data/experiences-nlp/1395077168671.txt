@@ -1,0 +1,430 @@
+Sentence #1 (8 tokens):
+Sitting room windows open till very late.
+[Text=Sitting CharacterOffsetBegin=0 CharacterOffsetEnd=7 PartOfSpeech=VBG Lemma=sit NamedEntityTag=O]
+[Text=room CharacterOffsetBegin=8 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=room NamedEntityTag=O]
+[Text=windows CharacterOffsetBegin=13 CharacterOffsetEnd=20 PartOfSpeech=NNS Lemma=window NamedEntityTag=O]
+[Text=open CharacterOffsetBegin=21 CharacterOffsetEnd=25 PartOfSpeech=JJ Lemma=open NamedEntityTag=O]
+[Text=till CharacterOffsetBegin=26 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=till NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=late CharacterOffsetBegin=36 CharacterOffsetEnd=40 PartOfSpeech=JJ Lemma=late NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=40 CharacterOffsetEnd=41 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBG Sitting)
+      (S
+        (NP (NN room) (NNS windows))
+        (ADJP (JJ open)
+          (PP (IN till)
+            (ADJP (RB very) (JJ late))))))
+    (. .)))
+
+root(ROOT-0, Sitting-1)
+compound(windows-3, room-2)
+nsubj(open-4, windows-3)
+xcomp(Sitting-1, open-4)
+case(late-7, till-5)
+advmod(late-7, very-6)
+advcl:till(open-4, late-7)
+punct(Sitting-1, .-8)
+
+Sentence #2 (20 tokens):
+A group of people talking and laughing loud in the Swan porch and on the steps in the dusk.
+[Text=A CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=group CharacterOffsetBegin=44 CharacterOffsetEnd=49 PartOfSpeech=NN Lemma=group NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=50 CharacterOffsetEnd=52 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=53 CharacterOffsetEnd=59 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=talking CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=VBG Lemma=talk NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=68 CharacterOffsetEnd=71 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=laughing CharacterOffsetBegin=72 CharacterOffsetEnd=80 PartOfSpeech=VBG Lemma=laugh NamedEntityTag=O]
+[Text=loud CharacterOffsetBegin=81 CharacterOffsetEnd=85 PartOfSpeech=JJ Lemma=loud NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=86 CharacterOffsetEnd=88 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Swan CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=NN Lemma=swan NamedEntityTag=O]
+[Text=porch CharacterOffsetBegin=98 CharacterOffsetEnd=103 PartOfSpeech=NN Lemma=porch NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=104 CharacterOffsetEnd=107 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=108 CharacterOffsetEnd=110 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=111 CharacterOffsetEnd=114 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=steps CharacterOffsetBegin=115 CharacterOffsetEnd=120 PartOfSpeech=NNS Lemma=step NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=124 CharacterOffsetEnd=127 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=dusk CharacterOffsetBegin=128 CharacterOffsetEnd=132 PartOfSpeech=NN Lemma=dusk NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP (DT A) (NN group))
+      (PP (IN of)
+        (NP (NNS people))))
+    (VP (VBG talking)
+      (CC and)
+      (VBG laughing)
+      (PP
+        (ADVP (JJ loud))
+        (PP (IN in)
+          (NP (DT the) (NN Swan) (NN porch)))
+        (CC and)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NNS steps))
+            (PP (IN in)
+              (NP (DT the) (NN dusk)))))))
+    (. .)))
+
+root(ROOT-0, group-2)
+det(group-2, A-1)
+case(people-4, of-3)
+nmod:of(group-2, people-4)
+acl(group-2, talking-5)
+cc(talking-5, and-6)
+acl(group-2, laughing-7)
+conj:and(talking-5, laughing-7)
+nmod(talking-5, loud-8)
+case(porch-12, in-9)
+det(porch-12, the-10)
+compound(porch-12, Swan-11)
+nmod:in(loud-8, porch-12)
+cc(loud-8, and-13)
+case(steps-16, on-14)
+det(steps-16, the-15)
+nmod(talking-5, steps-16)
+conj:and(loud-8, steps-16)
+case(dusk-19, in-17)
+det(dusk-19, the-18)
+nmod:in(steps-16, dusk-19)
+punct(group-2, .-20)
+
+Sentence #3 (24 tokens):
+I was delighted to hear Teddy Evans proposing to some other children to play the old game of 'Fox a Dandley'.
+[Text=I CharacterOffsetBegin=134 CharacterOffsetEnd=135 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=136 CharacterOffsetEnd=139 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=delighted CharacterOffsetBegin=140 CharacterOffsetEnd=149 PartOfSpeech=JJ Lemma=delighted NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=150 CharacterOffsetEnd=152 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=153 CharacterOffsetEnd=157 PartOfSpeech=VB Lemma=hear NamedEntityTag=O]
+[Text=Teddy CharacterOffsetBegin=158 CharacterOffsetEnd=163 PartOfSpeech=NNP Lemma=Teddy NamedEntityTag=PERSON]
+[Text=Evans CharacterOffsetBegin=164 CharacterOffsetEnd=169 PartOfSpeech=NNP Lemma=Evans NamedEntityTag=PERSON]
+[Text=proposing CharacterOffsetBegin=170 CharacterOffsetEnd=179 PartOfSpeech=VBG Lemma=propose NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=180 CharacterOffsetEnd=182 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=some CharacterOffsetBegin=183 CharacterOffsetEnd=187 PartOfSpeech=DT Lemma=some NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=188 CharacterOffsetEnd=193 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=children CharacterOffsetBegin=194 CharacterOffsetEnd=202 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=203 CharacterOffsetEnd=205 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=206 CharacterOffsetEnd=210 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=211 CharacterOffsetEnd=214 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=215 CharacterOffsetEnd=218 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=game CharacterOffsetBegin=219 CharacterOffsetEnd=223 PartOfSpeech=NN Lemma=game NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=224 CharacterOffsetEnd=226 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=227 CharacterOffsetEnd=228 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Fox CharacterOffsetBegin=228 CharacterOffsetEnd=231 PartOfSpeech=NNP Lemma=Fox NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=232 CharacterOffsetEnd=233 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Dandley CharacterOffsetBegin=234 CharacterOffsetEnd=241 PartOfSpeech=NN Lemma=dandley NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=241 CharacterOffsetEnd=242 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=242 CharacterOffsetEnd=243 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (ADJP (JJ delighted)
+        (S
+          (VP (TO to)
+            (VP (VB hear)
+              (NP
+                (NP (NNP Teddy) (NNP Evans))
+                (VP (VBG proposing)
+                  (PP (TO to)
+                    (NP (DT some) (JJ other) (NNS children)))
+                  (S
+                    (VP (TO to)
+                      (VP (VB play)
+                        (NP
+                          (NP (DT the) (JJ old) (NN game))
+                          (PP (IN of) (`` `)
+                            (NP (NNP Fox) (DT a) (NN Dandley))
+                            ('' ')))))))))))))
+    (. .)))
+
+root(ROOT-0, delighted-3)
+nsubj(delighted-3, I-1)
+nsubj:xsubj(hear-5, I-1)
+cop(delighted-3, was-2)
+mark(hear-5, to-4)
+xcomp(delighted-3, hear-5)
+compound(Evans-7, Teddy-6)
+dobj(hear-5, Evans-7)
+acl(Evans-7, proposing-8)
+case(children-12, to-9)
+det(children-12, some-10)
+amod(children-12, other-11)
+nmod:to(proposing-8, children-12)
+mark(play-14, to-13)
+xcomp(proposing-8, play-14)
+det(game-17, the-15)
+amod(game-17, old-16)
+dobj(play-14, game-17)
+case(Dandley-22, of-18)
+punct(Dandley-22, `-19)
+compound(Dandley-22, Fox-20)
+det(Dandley-22, a-21)
+nmod:of(game-17, Dandley-22)
+punct(Dandley-22, '-23)
+punct(delighted-3, .-24)
+
+Sentence #4 (26 tokens):
+Then they chose 'dens' and began running about catching each other and I thought I heard the 'Cats of Kinlay' mewing.
+[Text=Then CharacterOffsetBegin=244 CharacterOffsetEnd=248 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=they CharacterOffsetBegin=249 CharacterOffsetEnd=253 PartOfSpeech=PRP Lemma=they NamedEntityTag=O]
+[Text=chose CharacterOffsetBegin=254 CharacterOffsetEnd=259 PartOfSpeech=VBD Lemma=choose NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=260 CharacterOffsetEnd=261 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=dens CharacterOffsetBegin=261 CharacterOffsetEnd=265 PartOfSpeech=NNS Lemma=den NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=265 CharacterOffsetEnd=266 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=267 CharacterOffsetEnd=270 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=began CharacterOffsetBegin=271 CharacterOffsetEnd=276 PartOfSpeech=VBD Lemma=begin NamedEntityTag=O]
+[Text=running CharacterOffsetBegin=277 CharacterOffsetEnd=284 PartOfSpeech=VBG Lemma=run NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=285 CharacterOffsetEnd=290 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=catching CharacterOffsetBegin=291 CharacterOffsetEnd=299 PartOfSpeech=VBG Lemma=catch NamedEntityTag=O]
+[Text=each CharacterOffsetBegin=300 CharacterOffsetEnd=304 PartOfSpeech=DT Lemma=each NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=305 CharacterOffsetEnd=310 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=311 CharacterOffsetEnd=314 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=315 CharacterOffsetEnd=316 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=thought CharacterOffsetBegin=317 CharacterOffsetEnd=324 PartOfSpeech=VBD Lemma=think NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=325 CharacterOffsetEnd=326 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=heard CharacterOffsetBegin=327 CharacterOffsetEnd=332 PartOfSpeech=VBD Lemma=hear NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=333 CharacterOffsetEnd=336 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=337 CharacterOffsetEnd=338 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Cats CharacterOffsetBegin=338 CharacterOffsetEnd=342 PartOfSpeech=NNS Lemma=cat NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=343 CharacterOffsetEnd=345 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Kinlay CharacterOffsetBegin=346 CharacterOffsetEnd=352 PartOfSpeech=NN Lemma=kinlay NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=352 CharacterOffsetEnd=353 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=mewing CharacterOffsetBegin=354 CharacterOffsetEnd=360 PartOfSpeech=JJ Lemma=mewing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=360 CharacterOffsetEnd=361 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (RB Then)
+    (NP (PRP they))
+    (VP (VBD chose) (`` `)
+      (S
+        (S
+          (NP (NNS dens) (POS '))
+          (ADVP (CC and))
+          (VP (VBD began)
+            (S
+              (VP (VBG running)
+                (PP (IN about)
+                  (S
+                    (VP (VBG catching)
+                      (NP (DT each) (JJ other)))))))))
+        (CC and)
+        (S
+          (NP (PRP I))
+          (VP (VBD thought)
+            (SBAR
+              (S
+                (NP (PRP I))
+                (VP (VBD heard)
+                  (NP
+                    (NP (DT the) (`` `) (NNS Cats))
+                    (PP (IN of)
+                      (NP (NN Kinlay)))
+                    ('' ')
+                    (ADJP (JJ mewing))))))))))
+    (. .)))
+
+root(ROOT-0, chose-3)
+advmod(chose-3, Then-1)
+nsubj(chose-3, they-2)
+punct(chose-3, `-4)
+nsubj(began-8, dens-5)
+case(dens-5, '-6)
+advmod(began-8, and-7)
+xcomp(chose-3, began-8)
+xcomp(began-8, running-9)
+mark(catching-11, about-10)
+advcl:about(running-9, catching-11)
+det(other-13, each-12)
+dobj(catching-11, other-13)
+cc(began-8, and-14)
+nsubj(thought-16, I-15)
+xcomp(chose-3, thought-16)
+conj:and(began-8, thought-16)
+nsubj(heard-18, I-17)
+ccomp(thought-16, heard-18)
+det(Cats-21, the-19)
+punct(Cats-21, `-20)
+dobj(heard-18, Cats-21)
+case(Kinlay-23, of-22)
+nmod:of(Cats-21, Kinlay-23)
+punct(Cats-21, '-24)
+amod(Cats-21, mewing-25)
+punct(chose-3, .-26)
+
+Sentence #5 (8 tokens):
+Perhaps that is part of the game.
+[Text=Perhaps CharacterOffsetBegin=362 CharacterOffsetEnd=369 PartOfSpeech=RB Lemma=perhaps NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=370 CharacterOffsetEnd=374 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=375 CharacterOffsetEnd=377 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=378 CharacterOffsetEnd=382 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=383 CharacterOffsetEnd=385 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=386 CharacterOffsetEnd=389 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=game CharacterOffsetBegin=390 CharacterOffsetEnd=394 PartOfSpeech=NN Lemma=game NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=394 CharacterOffsetEnd=395 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Perhaps))
+    (NP (DT that))
+    (VP (VBZ is)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP (DT the) (NN game)))))
+    (. .)))
+
+root(ROOT-0, part-4)
+advmod(part-4, Perhaps-1)
+nsubj(part-4, that-2)
+cop(part-4, is-3)
+case(game-7, of-5)
+det(game-7, the-6)
+nmod:of(part-4, game-7)
+punct(part-4, .-8)
+
+Sentence #6 (17 tokens):
+I had no idea the old game was still played by the present generation of children.
+[Text=I CharacterOffsetBegin=396 CharacterOffsetEnd=397 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=398 CharacterOffsetEnd=401 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=402 CharacterOffsetEnd=404 PartOfSpeech=DT Lemma=no NamedEntityTag=O]
+[Text=idea CharacterOffsetBegin=405 CharacterOffsetEnd=409 PartOfSpeech=NN Lemma=idea NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=410 CharacterOffsetEnd=413 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=414 CharacterOffsetEnd=417 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=game CharacterOffsetBegin=418 CharacterOffsetEnd=422 PartOfSpeech=NN Lemma=game NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=423 CharacterOffsetEnd=426 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=still CharacterOffsetBegin=427 CharacterOffsetEnd=432 PartOfSpeech=RB Lemma=still NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=433 CharacterOffsetEnd=439 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=440 CharacterOffsetEnd=442 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=443 CharacterOffsetEnd=446 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=present CharacterOffsetBegin=447 CharacterOffsetEnd=454 PartOfSpeech=JJ Lemma=present NamedEntityTag=DATE NormalizedNamedEntityTag=PRESENT_REF Timex=<TIMEX3 tid="t2" type="DATE" value="PRESENT_REF">present</TIMEX3>]
+[Text=generation CharacterOffsetBegin=455 CharacterOffsetEnd=465 PartOfSpeech=NN Lemma=generation NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=466 CharacterOffsetEnd=468 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=children CharacterOffsetBegin=469 CharacterOffsetEnd=477 PartOfSpeech=NNS Lemma=child NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=477 CharacterOffsetEnd=478 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD had)
+      (NP
+        (NP (DT no) (NN idea))
+        (SBAR
+          (S
+            (NP (DT the) (JJ old) (NN game))
+            (VP (VBD was)
+              (ADVP (RB still))
+              (VP (VBN played)
+                (PP (IN by)
+                  (NP
+                    (NP (DT the) (JJ present) (NN generation))
+                    (PP (IN of)
+                      (NP (NNS children)))))))))))
+    (. .)))
+
+root(ROOT-0, had-2)
+nsubj(had-2, I-1)
+neg(idea-4, no-3)
+dobj(had-2, idea-4)
+det(game-7, the-5)
+amod(game-7, old-6)
+nsubjpass(played-10, game-7)
+auxpass(played-10, was-8)
+advmod(played-10, still-9)
+acl:relcl(idea-4, played-10)
+case(generation-14, by-11)
+det(generation-14, the-12)
+amod(generation-14, present-13)
+nmod:agent(played-10, generation-14)
+case(children-16, of-15)
+nmod:of(generation-14, children-16)
+punct(had-2, .-17)
+
+Sentence #7 (20 tokens):
+Teddy Evans was singing
+
+My Mother said that I never should
+Play with the gipsies in the wood &c.
+[Text=Teddy CharacterOffsetBegin=479 CharacterOffsetEnd=484 PartOfSpeech=NNP Lemma=Teddy NamedEntityTag=PERSON]
+[Text=Evans CharacterOffsetBegin=485 CharacterOffsetEnd=490 PartOfSpeech=NNP Lemma=Evans NamedEntityTag=PERSON]
+[Text=was CharacterOffsetBegin=491 CharacterOffsetEnd=494 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=singing CharacterOffsetBegin=495 CharacterOffsetEnd=502 PartOfSpeech=VBG Lemma=sing NamedEntityTag=O]
+[Text=My CharacterOffsetBegin=506 CharacterOffsetEnd=508 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=PERSON]
+[Text=Mother CharacterOffsetBegin=509 CharacterOffsetEnd=515 PartOfSpeech=NN Lemma=mother NamedEntityTag=PERSON]
+[Text=said CharacterOffsetBegin=516 CharacterOffsetEnd=520 PartOfSpeech=VBD Lemma=say NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=521 CharacterOffsetEnd=525 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=526 CharacterOffsetEnd=527 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=never CharacterOffsetBegin=528 CharacterOffsetEnd=533 PartOfSpeech=RB Lemma=never NamedEntityTag=O]
+[Text=should CharacterOffsetBegin=534 CharacterOffsetEnd=540 PartOfSpeech=MD Lemma=should NamedEntityTag=O]
+[Text=Play CharacterOffsetBegin=542 CharacterOffsetEnd=546 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=547 CharacterOffsetEnd=551 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=552 CharacterOffsetEnd=555 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=gipsies CharacterOffsetBegin=556 CharacterOffsetEnd=563 PartOfSpeech=NNS Lemma=gipsy NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=564 CharacterOffsetEnd=566 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=567 CharacterOffsetEnd=570 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=wood CharacterOffsetBegin=571 CharacterOffsetEnd=575 PartOfSpeech=NN Lemma=wood NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=576 CharacterOffsetEnd=577 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=c. CharacterOffsetBegin=577 CharacterOffsetEnd=579 PartOfSpeech=NN Lemma=c. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Teddy) (NNP Evans))
+    (VP (VBD was)
+      (VP (VBG singing)
+        (SBAR
+          (S
+            (NP (PRP$ My) (NN Mother))
+            (VP (VBD said)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP I))
+                  (ADVP (RB never))
+                  (VP (MD should)
+                    (VP (VB Play)
+                      (PP (IN with)
+                        (NP
+                          (NP (DT the) (NNS gipsies))
+                          (PP (IN in)
+                            (NP
+                              (NP (DT the) (NN wood))
+                              (CC &)
+                              (NP (NN c.)))))))))))))))))
+
+root(ROOT-0, singing-4)
+compound(Evans-2, Teddy-1)
+nsubj(singing-4, Evans-2)
+aux(singing-4, was-3)
+nmod:poss(Mother-6, My-5)
+nsubj(said-7, Mother-6)
+ccomp(singing-4, said-7)
+mark(Play-12, that-8)
+nsubj(Play-12, I-9)
+neg(Play-12, never-10)
+aux(Play-12, should-11)
+ccomp(said-7, Play-12)
+case(gipsies-15, with-13)
+det(gipsies-15, the-14)
+nmod:with(Play-12, gipsies-15)
+case(wood-18, in-16)
+det(wood-18, the-17)
+nmod:in(gipsies-15, wood-18)
+cc(wood-18, &-19)
+nmod:in(gipsies-15, c.-20)
+conj:&(wood-18, c.-20)
+
+Coreference set:
+	(4,15,[15,16]) -> (3,1,[1,2]), that is: "I" -> "I"
+	(4,17,[17,18]) -> (3,1,[1,2]), that is: "I" -> "I"
+	(6,1,[1,2]) -> (3,1,[1,2]), that is: "I" -> "I"
+	(7,9,[9,10]) -> (3,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(7,2,[1,3]) -> (3,7,[6,24]), that is: "Teddy Evans" -> "Teddy Evans proposing to some other children to play the old game of ` Fox a Dandley '"
+Coreference set:
+	(4,2,[2,3]) -> (3,12,[10,13]), that is: "they" -> "some other children"
+	(6,16,[16,17]) -> (3,12,[10,13]), that is: "children" -> "some other children"
+Coreference set:
+	(5,7,[6,8]) -> (3,17,[15,24]), that is: "the game" -> "the old game of ` Fox a Dandley '"
+	(6,7,[5,8]) -> (3,17,[15,24]), that is: "the old game" -> "the old game of ` Fox a Dandley '"
+Coreference set:
+	(5,2,[2,3]) -> (4,13,[12,14]), that is: "that" -> "each other"
+	(5,4,[4,8]) -> (4,13,[12,14]), that is: "part of the game" -> "each other"

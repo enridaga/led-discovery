@@ -1,0 +1,89 @@
+Sentence #1 (27 tokens):
+Three concerts at Juilliard, at which the students' works were no less interesting that their mentors', including Shapey's ugly Double Concerto.
+[Text=Three CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=CD Lemma=three NamedEntityTag=NUMBER NormalizedNamedEntityTag=3.0]
+[Text=concerts CharacterOffsetBegin=6 CharacterOffsetEnd=14 PartOfSpeech=NNS Lemma=concert NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=15 CharacterOffsetEnd=17 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=Juilliard CharacterOffsetBegin=18 CharacterOffsetEnd=27 PartOfSpeech=NNP Lemma=Juilliard NamedEntityTag=ORGANIZATION]
+[Text=, CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=29 CharacterOffsetEnd=31 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=32 CharacterOffsetEnd=37 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=38 CharacterOffsetEnd=41 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=students CharacterOffsetBegin=42 CharacterOffsetEnd=50 PartOfSpeech=NNS Lemma=student NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=works CharacterOffsetBegin=52 CharacterOffsetEnd=57 PartOfSpeech=NNS Lemma=work NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=58 CharacterOffsetEnd=62 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=no CharacterOffsetBegin=63 CharacterOffsetEnd=65 PartOfSpeech=RB Lemma=no NamedEntityTag=O]
+[Text=less CharacterOffsetBegin=66 CharacterOffsetEnd=70 PartOfSpeech=RBR Lemma=less NamedEntityTag=O]
+[Text=interesting CharacterOffsetBegin=71 CharacterOffsetEnd=82 PartOfSpeech=JJ Lemma=interesting NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=83 CharacterOffsetEnd=87 PartOfSpeech=IN Lemma=that NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=88 CharacterOffsetEnd=93 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=mentors CharacterOffsetBegin=94 CharacterOffsetEnd=101 PartOfSpeech=NNS Lemma=mentor NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=including CharacterOffsetBegin=104 CharacterOffsetEnd=113 PartOfSpeech=VBG Lemma=include NamedEntityTag=O]
+[Text=Shapey CharacterOffsetBegin=114 CharacterOffsetEnd=120 PartOfSpeech=NNP Lemma=Shapey NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=120 CharacterOffsetEnd=122 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=ugly CharacterOffsetBegin=123 CharacterOffsetEnd=127 PartOfSpeech=JJ Lemma=ugly NamedEntityTag=O]
+[Text=Double CharacterOffsetBegin=128 CharacterOffsetEnd=134 PartOfSpeech=JJ Lemma=double NamedEntityTag=O]
+[Text=Concerto CharacterOffsetBegin=135 CharacterOffsetEnd=143 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (CD Three) (NNS concerts))
+    (PP (IN at)
+      (NP
+        (NP (NNP Juilliard))
+        (, ,)
+        (SBAR
+          (WHPP (IN at)
+            (WHNP (WDT which)))
+          (S
+            (NP
+              (NP (DT the) (NNS students) (POS '))
+              (NNS works))
+            (VP (VBD were)
+              (ADJP (RB no) (RBR less) (JJ interesting))
+              (PP (IN that)
+                (NP
+                  (NP (PRP$ their))
+                  (NP (NNS mentors) (POS '))))
+              (, ,)
+              (PP (VBG including)
+                (NP
+                  (NP (NNP Shapey) (POS 's))
+                  (NP
+                    (ADJP (JJ ugly) (JJ Double))
+                    (NNP Concerto)))))))))
+    (. .)))
+
+root(ROOT-0, concerts-2)
+nummod(concerts-2, Three-1)
+case(Juilliard-4, at-3)
+nmod:at(concerts-2, Juilliard-4)
+nmod:at(interesting-15, Juilliard-4)
+punct(Juilliard-4, ,-5)
+case(which-7, at-6)
+ref(Juilliard-4, which-7)
+det(students-9, the-8)
+nmod:poss(works-11, students-9)
+case(students-9, '-10)
+nsubj(interesting-15, works-11)
+cop(interesting-15, were-12)
+neg(interesting-15, no-13)
+advmod(interesting-15, less-14)
+acl:relcl(Juilliard-4, interesting-15)
+case(their-17, that-16)
+nmod:that(interesting-15, their-17)
+nmod:poss(their-17, mentors-18)
+case(mentors-18, '-19)
+punct(interesting-15, ,-20)
+case(Shapey-22, including-21)
+nmod:'s(interesting-15, Shapey-22)
+case(Shapey-22, 's-23)
+amod(Double-25, ugly-24)
+amod(Concerto-26, Double-25)
+dep(Shapey-22, Concerto-26)
+punct(concerts-2, .-27)
+
+Coreference set:
+	(1,17,[17,18]) -> (1,9,[8,11]), that is: "their" -> "the students '"

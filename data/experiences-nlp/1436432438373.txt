@@ -1,0 +1,305 @@
+Sentence #1 (25 tokens):
+Lady Folkestone once arranged a performance 
+of Romberg's Toy Symphony, and invited all the 
+best-known musicians of the day to take part.
+[Text=Lady CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=NN Lemma=lady NamedEntityTag=O]
+[Text=Folkestone CharacterOffsetBegin=5 CharacterOffsetEnd=15 PartOfSpeech=NNP Lemma=Folkestone NamedEntityTag=LOCATION]
+[Text=once CharacterOffsetBegin=16 CharacterOffsetEnd=20 PartOfSpeech=RB Lemma=once NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t1" type="DATE" value="PAST_REF">once</TIMEX3>]
+[Text=arranged CharacterOffsetBegin=21 CharacterOffsetEnd=29 PartOfSpeech=VBD Lemma=arrange NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=32 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=46 CharacterOffsetEnd=48 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Romberg CharacterOffsetBegin=49 CharacterOffsetEnd=56 PartOfSpeech=NNP Lemma=Romberg NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Toy CharacterOffsetBegin=59 CharacterOffsetEnd=62 PartOfSpeech=NNP Lemma=Toy NamedEntityTag=O]
+[Text=Symphony CharacterOffsetBegin=63 CharacterOffsetEnd=71 PartOfSpeech=NNP Lemma=Symphony NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=71 CharacterOffsetEnd=72 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=73 CharacterOffsetEnd=76 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=invited CharacterOffsetBegin=77 CharacterOffsetEnd=84 PartOfSpeech=VBN Lemma=invite NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=best-known CharacterOffsetBegin=95 CharacterOffsetEnd=105 PartOfSpeech=JJS Lemma=best-known NamedEntityTag=O]
+[Text=musicians CharacterOffsetBegin=106 CharacterOffsetEnd=115 PartOfSpeech=NNS Lemma=musician NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=119 CharacterOffsetEnd=122 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">the day</TIMEX3>]
+[Text=day CharacterOffsetBegin=123 CharacterOffsetEnd=126 PartOfSpeech=NN Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=THIS P1D Timex=<TIMEX3 alt_value="THIS P1D" anchorTimeID="t0" temporalFunction="true" tid="t2" type="DATE" valueFromFunction="tf0">the day</TIMEX3>]
+[Text=to CharacterOffsetBegin=127 CharacterOffsetEnd=129 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=take CharacterOffsetBegin=130 CharacterOffsetEnd=134 PartOfSpeech=VB Lemma=take NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=139 CharacterOffsetEnd=140 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NN Lady) (NNP Folkestone))
+    (ADVP (RB once))
+    (VP
+      (VP (VBD arranged)
+        (NP
+          (NP (DT a) (NN performance))
+          (PP (IN of)
+            (NP
+              (NP (NNP Romberg) (POS 's))
+              (NNP Toy) (NNP Symphony)))))
+      (, ,)
+      (CC and)
+      (VP (VBN invited)
+        (NP
+          (NP (PDT all) (DT the) (JJS best-known) (NNS musicians))
+          (PP (IN of)
+            (NP (DT the) (NN day)
+              (S
+                (VP (TO to)
+                  (VP (VB take)
+                    (NP (NN part))))))))))
+    (. .)))
+
+root(ROOT-0, arranged-4)
+compound(Folkestone-2, Lady-1)
+nsubj(arranged-4, Folkestone-2)
+nsubj(invited-14, Folkestone-2)
+advmod(arranged-4, once-3)
+det(performance-6, a-5)
+dobj(arranged-4, performance-6)
+case(Symphony-11, of-7)
+nmod:poss(Symphony-11, Romberg-8)
+case(Romberg-8, 's-9)
+compound(Symphony-11, Toy-10)
+nmod:of(performance-6, Symphony-11)
+punct(arranged-4, ,-12)
+cc(arranged-4, and-13)
+conj:and(arranged-4, invited-14)
+det:predet(musicians-18, all-15)
+det(musicians-18, the-16)
+amod(musicians-18, best-known-17)
+dobj(invited-14, musicians-18)
+case(day-21, of-19)
+det(day-21, the-20)
+nmod:of(musicians-18, day-21)
+mark(take-23, to-22)
+acl:to(day-21, take-23)
+dobj(take-23, part-24)
+punct(arranged-4, .-25)
+
+Sentence #2 (13 tokens):
+It was given at a charity concert on May 14th, 
+1880.
+[Text=It CharacterOffsetBegin=143 CharacterOffsetEnd=145 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=146 CharacterOffsetEnd=149 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=given CharacterOffsetBegin=150 CharacterOffsetEnd=155 PartOfSpeech=VBN Lemma=give NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=156 CharacterOffsetEnd=158 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=159 CharacterOffsetEnd=160 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=charity CharacterOffsetBegin=161 CharacterOffsetEnd=168 PartOfSpeech=NN Lemma=charity NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=169 CharacterOffsetEnd=176 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=177 CharacterOffsetEnd=179 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=May CharacterOffsetBegin=180 CharacterOffsetEnd=183 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=1880-05-14 Timex=<TIMEX3 tid="t3" type="DATE" value="1880-05-14">May 14th, &#13;
+1880</TIMEX3>]
+[Text=14th CharacterOffsetBegin=184 CharacterOffsetEnd=188 PartOfSpeech=JJ Lemma=14th NamedEntityTag=DATE NormalizedNamedEntityTag=1880-05-14 Timex=<TIMEX3 tid="t3" type="DATE" value="1880-05-14">May 14th, &#13;
+1880</TIMEX3>]
+[Text=, CharacterOffsetBegin=188 CharacterOffsetEnd=189 PartOfSpeech=, Lemma=, NamedEntityTag=DATE NormalizedNamedEntityTag=1880-05-14 Timex=<TIMEX3 tid="t3" type="DATE" value="1880-05-14">May 14th, &#13;
+1880</TIMEX3>]
+[Text=1880 CharacterOffsetBegin=192 CharacterOffsetEnd=196 PartOfSpeech=NNP Lemma=1880 NamedEntityTag=DATE NormalizedNamedEntityTag=1880-05-14 Timex=<TIMEX3 tid="t3" type="DATE" value="1880-05-14">May 14th, &#13;
+1880</TIMEX3>]
+[Text=. CharacterOffsetBegin=196 CharacterOffsetEnd=197 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN given)
+        (PP (IN at)
+          (NP
+            (NP
+              (NP (DT a) (NN charity) (NN concert))
+              (PP (IN on)
+                (NP (NNP May) (JJ 14th))))
+            (, ,)
+            (NP (NNP 1880))))))
+    (. .)))
+
+root(ROOT-0, given-3)
+nsubjpass(given-3, It-1)
+auxpass(given-3, was-2)
+case(concert-7, at-4)
+det(concert-7, a-5)
+compound(concert-7, charity-6)
+nmod:at(given-3, concert-7)
+case(May-9, on-8)
+nmod:on(concert-7, May-9)
+amod(May-9, 14th-10)
+punct(concert-7, ,-11)
+appos(concert-7, 1880-12)
+punct(given-3, .-13)
+
+Sentence #3 (10 tokens):
+We all chose instruments we had not 
+played before.
+[Text=We CharacterOffsetBegin=198 CharacterOffsetEnd=200 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=chose CharacterOffsetBegin=205 CharacterOffsetEnd=210 PartOfSpeech=VBD Lemma=choose NamedEntityTag=O]
+[Text=instruments CharacterOffsetBegin=211 CharacterOffsetEnd=222 PartOfSpeech=NNS Lemma=instrument NamedEntityTag=O]
+[Text=we CharacterOffsetBegin=223 CharacterOffsetEnd=225 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=226 CharacterOffsetEnd=229 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=230 CharacterOffsetEnd=233 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=236 CharacterOffsetEnd=242 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=before CharacterOffsetBegin=243 CharacterOffsetEnd=249 PartOfSpeech=IN Lemma=before NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=249 CharacterOffsetEnd=250 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (ADVP (DT all))
+    (VP (VBD chose)
+      (NP
+        (NP (NNS instruments))
+        (SBAR
+          (S
+            (NP (PRP we))
+            (VP (VBD had) (RB not)
+              (VP (VBN played)
+                (PP (IN before))))))))
+    (. .)))
+
+root(ROOT-0, chose-3)
+nsubj(chose-3, We-1)
+advmod(chose-3, all-2)
+dobj(chose-3, instruments-4)
+nsubj(played-8, we-5)
+aux(played-8, had-6)
+neg(played-8, not-7)
+acl:relcl(instruments-4, played-8)
+nmod(played-8, before-9)
+punct(chose-3, .-10)
+
+Sentence #4 (10 tokens):
+Charles Santley played the violin 
+and I the viola.
+[Text=Charles CharacterOffsetBegin=251 CharacterOffsetEnd=258 PartOfSpeech=NNP Lemma=Charles NamedEntityTag=PERSON]
+[Text=Santley CharacterOffsetBegin=259 CharacterOffsetEnd=266 PartOfSpeech=NNP Lemma=Santley NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=267 CharacterOffsetEnd=273 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=274 CharacterOffsetEnd=277 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=violin CharacterOffsetBegin=278 CharacterOffsetEnd=284 PartOfSpeech=NN Lemma=violin NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=287 CharacterOffsetEnd=290 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=291 CharacterOffsetEnd=292 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=293 CharacterOffsetEnd=296 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=viola CharacterOffsetBegin=297 CharacterOffsetEnd=302 PartOfSpeech=NN Lemma=viola NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=302 CharacterOffsetEnd=303 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Charles) (NNP Santley))
+      (VP (VBD played)
+        (NP (DT the) (NN violin))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (NP (DT the) (NN viola)))
+    (. .)))
+
+root(ROOT-0, played-3)
+compound(Santley-2, Charles-1)
+nsubj(played-3, Santley-2)
+det(violin-5, the-4)
+dobj(played-3, violin-5)
+cc(played-3, and-6)
+dep(viola-9, I-7)
+det(viola-9, the-8)
+conj:and(played-3, viola-9)
+punct(played-3, .-10)
+
+Sentence #5 (18 tokens):
+Benedict took the bells, and 
+Arthur Sullivan amused us all with his imitation 
+of the cuckoo.
+[Text=Benedict CharacterOffsetBegin=304 CharacterOffsetEnd=312 PartOfSpeech=NNP Lemma=Benedict NamedEntityTag=PERSON]
+[Text=took CharacterOffsetBegin=313 CharacterOffsetEnd=317 PartOfSpeech=VBD Lemma=take NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=318 CharacterOffsetEnd=321 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=bells CharacterOffsetBegin=322 CharacterOffsetEnd=327 PartOfSpeech=NNS Lemma=bell NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=327 CharacterOffsetEnd=328 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=329 CharacterOffsetEnd=332 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Arthur CharacterOffsetBegin=335 CharacterOffsetEnd=341 PartOfSpeech=NNP Lemma=Arthur NamedEntityTag=PERSON]
+[Text=Sullivan CharacterOffsetBegin=342 CharacterOffsetEnd=350 PartOfSpeech=NNP Lemma=Sullivan NamedEntityTag=PERSON]
+[Text=amused CharacterOffsetBegin=351 CharacterOffsetEnd=357 PartOfSpeech=VBD Lemma=amuse NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=358 CharacterOffsetEnd=360 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=all CharacterOffsetBegin=361 CharacterOffsetEnd=364 PartOfSpeech=DT Lemma=all NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=365 CharacterOffsetEnd=369 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=370 CharacterOffsetEnd=373 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=imitation CharacterOffsetBegin=374 CharacterOffsetEnd=383 PartOfSpeech=NN Lemma=imitation NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=386 CharacterOffsetEnd=388 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=389 CharacterOffsetEnd=392 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=cuckoo CharacterOffsetBegin=393 CharacterOffsetEnd=399 PartOfSpeech=NN Lemma=cuckoo NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=399 CharacterOffsetEnd=400 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP Benedict))
+      (VP (VBD took)
+        (NP (DT the) (NNS bells))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP Arthur) (NNP Sullivan))
+      (VP (VBD amused)
+        (NP (PRP us))
+        (PP (DT all) (IN with)
+          (NP
+            (NP (PRP$ his) (NN imitation))
+            (PP (IN of)
+              (NP (DT the) (NN cuckoo)))))))
+    (. .)))
+
+root(ROOT-0, took-2)
+nsubj(took-2, Benedict-1)
+det(bells-4, the-3)
+dobj(took-2, bells-4)
+punct(took-2, ,-5)
+cc(took-2, and-6)
+compound(Sullivan-8, Arthur-7)
+nsubj(amused-9, Sullivan-8)
+conj:and(took-2, amused-9)
+dobj(amused-9, us-10)
+dep(imitation-14, all-11)
+case(imitation-14, with-12)
+nmod:poss(imitation-14, his-13)
+nmod:with(amused-9, imitation-14)
+case(cuckoo-17, of-15)
+det(cuckoo-17, the-16)
+nmod:of(imitation-14, cuckoo-17)
+punct(took-2, .-18)
+
+Sentence #6 (9 tokens):
+Henry Leslie wielded the baton 
+with great skill.
+[Text=Henry CharacterOffsetBegin=401 CharacterOffsetEnd=406 PartOfSpeech=NNP Lemma=Henry NamedEntityTag=PERSON]
+[Text=Leslie CharacterOffsetBegin=407 CharacterOffsetEnd=413 PartOfSpeech=NNP Lemma=Leslie NamedEntityTag=PERSON]
+[Text=wielded CharacterOffsetBegin=414 CharacterOffsetEnd=421 PartOfSpeech=VBD Lemma=wield NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=422 CharacterOffsetEnd=425 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=baton CharacterOffsetBegin=426 CharacterOffsetEnd=431 PartOfSpeech=NN Lemma=baton NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=434 CharacterOffsetEnd=438 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=great CharacterOffsetBegin=439 CharacterOffsetEnd=444 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=skill CharacterOffsetBegin=445 CharacterOffsetEnd=450 PartOfSpeech=NN Lemma=skill NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=450 CharacterOffsetEnd=451 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Henry) (NNP Leslie))
+    (VP (VBD wielded)
+      (NP (DT the) (NN baton))
+      (PP (IN with)
+        (NP (JJ great) (NN skill))))
+    (. .)))
+
+root(ROOT-0, wielded-3)
+compound(Leslie-2, Henry-1)
+nsubj(wielded-3, Leslie-2)
+det(baton-5, the-4)
+dobj(wielded-3, baton-5)
+case(skill-8, with-6)
+amod(skill-8, great-7)
+nmod:with(wielded-3, skill-8)
+punct(wielded-3, .-9)
+
+Coreference set:
+	(2,1,[1,2]) -> (1,2,[1,3]), that is: "It" -> "Lady Folkestone"
+Coreference set:
+	(2,7,[5,11]) -> (2,12,[12,13]), that is: "a charity concert on May 14th" -> "1880"
+Coreference set:
+	(3,5,[5,6]) -> (3,1,[1,2]), that is: "we" -> "We"
+	(5,10,[10,11]) -> (3,1,[1,2]), that is: "us" -> "We"
+Coreference set:
+	(5,13,[13,14]) -> (5,8,[7,9]), that is: "his" -> "Arthur Sullivan"

@@ -1,0 +1,24 @@
+Sentence #1 (6 tokens):
+Duprez is an admirable Tell.
+[Text=Duprez CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP Lemma=Duprez NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=7 CharacterOffsetEnd=9 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=admirable CharacterOffsetBegin=13 CharacterOffsetEnd=22 PartOfSpeech=JJ Lemma=admirable NamedEntityTag=O]
+[Text=Tell CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=VB Lemma=tell NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=27 CharacterOffsetEnd=28 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Duprez))
+    (VP (VBZ is)
+      (S
+        (NP (DT an) (JJ admirable))
+        (VP (VB Tell))))
+    (. .)))
+
+root(ROOT-0, is-2)
+nsubj(is-2, Duprez-1)
+det(admirable-4, an-3)
+nsubj(Tell-5, admirable-4)
+ccomp(is-2, Tell-5)
+punct(is-2, .-6)
+

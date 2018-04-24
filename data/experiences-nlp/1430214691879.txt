@@ -1,0 +1,91 @@
+Sentence #1 (25 tokens):
+We pianoforte players had selected Cramer's compositions for our performance; he himself played with much grace and delicacy Mozart's Concerto in D.
+[Text=We CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=pianoforte CharacterOffsetBegin=3 CharacterOffsetEnd=13 PartOfSpeech=VBP Lemma=pianoforte NamedEntityTag=O]
+[Text=players CharacterOffsetBegin=14 CharacterOffsetEnd=21 PartOfSpeech=NNS Lemma=player NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=22 CharacterOffsetEnd=25 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=selected CharacterOffsetBegin=26 CharacterOffsetEnd=34 PartOfSpeech=VBN Lemma=select NamedEntityTag=O]
+[Text=Cramer CharacterOffsetBegin=35 CharacterOffsetEnd=41 PartOfSpeech=NNP Lemma=Cramer NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=41 CharacterOffsetEnd=43 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=compositions CharacterOffsetBegin=44 CharacterOffsetEnd=56 PartOfSpeech=NNS Lemma=composition NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=57 CharacterOffsetEnd=60 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=our CharacterOffsetBegin=61 CharacterOffsetEnd=64 PartOfSpeech=PRP$ Lemma=we NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=65 CharacterOffsetEnd=76 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=76 CharacterOffsetEnd=77 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=78 CharacterOffsetEnd=80 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=himself CharacterOffsetBegin=81 CharacterOffsetEnd=88 PartOfSpeech=PRP Lemma=himself NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=89 CharacterOffsetEnd=95 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=96 CharacterOffsetEnd=100 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=much CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=JJ Lemma=much NamedEntityTag=O]
+[Text=grace CharacterOffsetBegin=106 CharacterOffsetEnd=111 PartOfSpeech=NN Lemma=grace NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=delicacy CharacterOffsetBegin=116 CharacterOffsetEnd=124 PartOfSpeech=NN Lemma=delicacy NamedEntityTag=O]
+[Text=Mozart CharacterOffsetBegin=125 CharacterOffsetEnd=131 PartOfSpeech=NNP Lemma=Mozart NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=131 CharacterOffsetEnd=133 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Concerto CharacterOffsetBegin=134 CharacterOffsetEnd=142 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=143 CharacterOffsetEnd=145 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=D. CharacterOffsetBegin=146 CharacterOffsetEnd=148 PartOfSpeech=NNP Lemma=D. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP pianoforte)
+      (SBAR
+        (S
+          (NP (NNS players))
+          (VP (VBD had)
+            (VP (VBN selected)
+              (NP
+                (NP (NNP Cramer) (POS 's))
+                (NNS compositions))
+              (PP (IN for)
+                (NP (PRP$ our) (NN performance)))
+              (: ;)
+              (NP
+                (NP (PRP he))
+                (SBAR
+                  (S
+                    (NP (PRP himself))
+                    (VP (VBD played)
+                      (PP (IN with)
+                        (NP (JJ much) (NN grace)
+                          (CC and)
+                          (NN delicacy)))
+                      (NP
+                        (NP
+                          (NP (NNP Mozart) (POS 's))
+                          (NNP Concerto))
+                        (PP (IN in)
+                          (NP (NNP D.)))))))))))))))
+
+root(ROOT-0, pianoforte-2)
+nsubj(pianoforte-2, We-1)
+nsubj(selected-5, players-3)
+aux(selected-5, had-4)
+ccomp(pianoforte-2, selected-5)
+nmod:poss(compositions-8, Cramer-6)
+case(Cramer-6, 's-7)
+dobj(selected-5, compositions-8)
+case(performance-11, for-9)
+nmod:poss(performance-11, our-10)
+nmod:for(selected-5, performance-11)
+punct(selected-5, ;-12)
+parataxis(selected-5, he-13)
+nsubj(played-15, himself-14)
+acl:relcl(he-13, played-15)
+case(grace-18, with-16)
+amod(grace-18, much-17)
+nmod:with(played-15, grace-18)
+cc(grace-18, and-19)
+nmod:with(played-15, delicacy-20)
+conj:and(grace-18, delicacy-20)
+nmod:poss(Concerto-23, Mozart-21)
+case(Mozart-21, 's-22)
+dobj(played-15, Concerto-23)
+case(D.-25, in-24)
+nmod:in(Concerto-23, D.-25)
+
+Coreference set:
+	(1,13,[13,26]) -> (1,6,[6,8]), that is: "he himself played with much grace and delicacy Mozart 's Concerto in D." -> "Cramer 's"
+	(1,14,[14,15]) -> (1,6,[6,8]), that is: "himself" -> "Cramer 's"
+Coreference set:
+	(1,10,[10,11]) -> (1,1,[1,2]), that is: "our" -> "We"

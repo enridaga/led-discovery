@@ -1,0 +1,401 @@
+Sentence #1 (28 tokens):
+The first audition of ‘Oedipus’ took place at the Théatre Sarah Bernhardt on May 30, and was followed by two more under my direction.
+[Text=The CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=first CharacterOffsetBegin=4 CharacterOffsetEnd=9 PartOfSpeech=JJ Lemma=first NamedEntityTag=ORDINAL NormalizedNamedEntityTag=1.0]
+[Text=audition CharacterOffsetBegin=10 CharacterOffsetEnd=18 PartOfSpeech=NN Lemma=audition NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Oedipus CharacterOffsetBegin=23 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Oedipus NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=took CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=VBD Lemma=take NamedEntityTag=O]
+[Text=place CharacterOffsetBegin=37 CharacterOffsetEnd=42 PartOfSpeech=NN Lemma=place NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=46 CharacterOffsetEnd=49 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Théatre CharacterOffsetBegin=50 CharacterOffsetEnd=57 PartOfSpeech=NNP Lemma=Théatre NamedEntityTag=O]
+[Text=Sarah CharacterOffsetBegin=58 CharacterOffsetEnd=63 PartOfSpeech=NNP Lemma=Sarah NamedEntityTag=PERSON]
+[Text=Bernhardt CharacterOffsetBegin=64 CharacterOffsetEnd=73 PartOfSpeech=NNP Lemma=Bernhardt NamedEntityTag=PERSON]
+[Text=on CharacterOffsetBegin=74 CharacterOffsetEnd=76 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=May CharacterOffsetBegin=77 CharacterOffsetEnd=80 PartOfSpeech=NNP Lemma=May NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-05-30 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-05-30">May 30</TIMEX3>]
+[Text=30 CharacterOffsetBegin=81 CharacterOffsetEnd=83 PartOfSpeech=CD Lemma=30 NamedEntityTag=DATE NormalizedNamedEntityTag=XXXX-05-30 Timex=<TIMEX3 tid="t1" type="DATE" value="XXXX-05-30">May 30</TIMEX3>]
+[Text=, CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=85 CharacterOffsetEnd=88 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=89 CharacterOffsetEnd=92 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=followed CharacterOffsetBegin=93 CharacterOffsetEnd=101 PartOfSpeech=VBN Lemma=follow NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=102 CharacterOffsetEnd=104 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=105 CharacterOffsetEnd=108 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=more CharacterOffsetBegin=109 CharacterOffsetEnd=113 PartOfSpeech=JJR Lemma=more NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=114 CharacterOffsetEnd=119 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=120 CharacterOffsetEnd=122 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=direction CharacterOffsetBegin=123 CharacterOffsetEnd=132 PartOfSpeech=NN Lemma=direction NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=132 CharacterOffsetEnd=133 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ first) (NN audition))
+      (PP (IN of) (`` `)
+        (NP (NNP Oedipus))
+        ('' ')))
+    (VP
+      (VP (VBD took)
+        (NP (NN place))
+        (PP (IN at)
+          (NP (DT the) (NNP Théatre) (NNP Sarah) (NNP Bernhardt)))
+        (PP (IN on)
+          (NP (NNP May) (CD 30))))
+      (, ,)
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN followed)
+          (PP (IN by)
+            (NP
+              (NP (CD two) (JJR more))
+              (PP (IN under)
+                (NP (PRP$ my) (NN direction))))))))
+    (. .)))
+
+root(ROOT-0, took-8)
+det(audition-3, The-1)
+amod(audition-3, first-2)
+nsubj(took-8, audition-3)
+nsubjpass(followed-21, audition-3)
+case(Oedipus-6, of-4)
+punct(Oedipus-6, `-5)
+nmod:of(audition-3, Oedipus-6)
+punct(Oedipus-6, '-7)
+dobj(took-8, place-9)
+case(Bernhardt-14, at-10)
+det(Bernhardt-14, the-11)
+compound(Bernhardt-14, Théatre-12)
+compound(Bernhardt-14, Sarah-13)
+nmod:at(took-8, Bernhardt-14)
+case(May-16, on-15)
+nmod:on(took-8, May-16)
+nummod(May-16, 30-17)
+punct(took-8, ,-18)
+cc(took-8, and-19)
+auxpass(followed-21, was-20)
+conj:and(took-8, followed-21)
+case(more-24, by-22)
+nummod(more-24, two-23)
+nmod:agent(followed-21, more-24)
+case(direction-27, under-25)
+nmod:poss(direction-27, my-26)
+nmod:under(more-24, direction-27)
+punct(took-8, .-28)
+
+Sentence #2 (23 tokens):
+Once again I had to suffer from the conditions under which my work was presented: an oratorio sandwiched between two ballets!
+[Text=Once CharacterOffsetBegin=134 CharacterOffsetEnd=138 PartOfSpeech=RB Lemma=once NamedEntityTag=DATE NormalizedNamedEntityTag=PAST_REF Timex=<TIMEX3 tid="t2" type="DATE" value="PAST_REF">Once</TIMEX3>]
+[Text=again CharacterOffsetBegin=139 CharacterOffsetEnd=144 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=147 CharacterOffsetEnd=150 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=151 CharacterOffsetEnd=153 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=suffer CharacterOffsetBegin=154 CharacterOffsetEnd=160 PartOfSpeech=VB Lemma=suffer NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=161 CharacterOffsetEnd=165 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=166 CharacterOffsetEnd=169 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=conditions CharacterOffsetBegin=170 CharacterOffsetEnd=180 PartOfSpeech=NNS Lemma=condition NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=181 CharacterOffsetEnd=186 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=187 CharacterOffsetEnd=192 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=193 CharacterOffsetEnd=195 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=work CharacterOffsetBegin=196 CharacterOffsetEnd=200 PartOfSpeech=NN Lemma=work NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=201 CharacterOffsetEnd=204 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=presented CharacterOffsetBegin=205 CharacterOffsetEnd=214 PartOfSpeech=VBN Lemma=present NamedEntityTag=O]
+[Text=: CharacterOffsetBegin=214 CharacterOffsetEnd=215 PartOfSpeech=: Lemma=: NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=216 CharacterOffsetEnd=218 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=oratorio CharacterOffsetBegin=219 CharacterOffsetEnd=227 PartOfSpeech=NN Lemma=oratorio NamedEntityTag=O]
+[Text=sandwiched CharacterOffsetBegin=228 CharacterOffsetEnd=238 PartOfSpeech=VBN Lemma=sandwich NamedEntityTag=O]
+[Text=between CharacterOffsetBegin=239 CharacterOffsetEnd=246 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=247 CharacterOffsetEnd=250 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=ballets CharacterOffsetBegin=251 CharacterOffsetEnd=258 PartOfSpeech=NNS Lemma=ballet NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=258 CharacterOffsetEnd=259 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (S
+    (ADVP (RB Once) (RB again))
+    (NP (PRP I))
+    (VP (VBD had)
+      (S
+        (VP (TO to)
+          (VP (VB suffer)
+            (PP (IN from)
+              (NP
+                (NP
+                  (NP (DT the) (NNS conditions))
+                  (SBAR
+                    (WHPP (IN under)
+                      (WHNP (WDT which)))
+                    (S
+                      (NP (PRP$ my) (NN work))
+                      (VP (VBD was)
+                        (VP (VBN presented))))))
+                (: :)
+                (NP
+                  (NP (DT an) (NN oratorio) (VBN sandwiched))
+                  (PP (IN between)
+                    (NP (CD two) (NNS ballets))))))))))
+    (. !)))
+
+root(ROOT-0, had-4)
+advmod(again-2, Once-1)
+advmod(had-4, again-2)
+nsubj(had-4, I-3)
+nsubj:xsubj(suffer-6, I-3)
+mark(suffer-6, to-5)
+xcomp(had-4, suffer-6)
+case(conditions-9, from-7)
+det(conditions-9, the-8)
+nmod:from(suffer-6, conditions-9)
+nmod:under(presented-15, conditions-9)
+case(which-11, under-10)
+ref(conditions-9, which-11)
+nmod:poss(work-13, my-12)
+nsubjpass(presented-15, work-13)
+auxpass(presented-15, was-14)
+acl:relcl(conditions-9, presented-15)
+punct(conditions-9, :-16)
+det(oratorio-18, an-17)
+dep(conditions-9, oratorio-18)
+amod(oratorio-18, sandwiched-19)
+case(ballets-22, between-20)
+nummod(ballets-22, two-21)
+nmod:between(oratorio-18, ballets-22)
+punct(had-4, !-23)
+
+Sentence #3 (26 tokens):
+An audience which had come to applaud ballet was naturally disconcerted by such a contrast, and was unable to concentrate on something purely auditive.
+[Text=An CharacterOffsetBegin=260 CharacterOffsetEnd=262 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=audience CharacterOffsetBegin=263 CharacterOffsetEnd=271 PartOfSpeech=NN Lemma=audience NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=272 CharacterOffsetEnd=277 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=278 CharacterOffsetEnd=281 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=come CharacterOffsetBegin=282 CharacterOffsetEnd=286 PartOfSpeech=VBN Lemma=come NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=287 CharacterOffsetEnd=289 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=applaud CharacterOffsetBegin=290 CharacterOffsetEnd=297 PartOfSpeech=VB Lemma=applaud NamedEntityTag=O]
+[Text=ballet CharacterOffsetBegin=298 CharacterOffsetEnd=304 PartOfSpeech=JJ Lemma=ballet NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=305 CharacterOffsetEnd=308 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=naturally CharacterOffsetBegin=309 CharacterOffsetEnd=318 PartOfSpeech=RB Lemma=naturally NamedEntityTag=O]
+[Text=disconcerted CharacterOffsetBegin=319 CharacterOffsetEnd=331 PartOfSpeech=VBN Lemma=disconcert NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=332 CharacterOffsetEnd=334 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=such CharacterOffsetBegin=335 CharacterOffsetEnd=339 PartOfSpeech=PDT Lemma=such NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=340 CharacterOffsetEnd=341 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=contrast CharacterOffsetBegin=342 CharacterOffsetEnd=350 PartOfSpeech=NN Lemma=contrast NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=350 CharacterOffsetEnd=351 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=352 CharacterOffsetEnd=355 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=356 CharacterOffsetEnd=359 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=unable CharacterOffsetBegin=360 CharacterOffsetEnd=366 PartOfSpeech=JJ Lemma=unable NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=367 CharacterOffsetEnd=369 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=concentrate CharacterOffsetBegin=370 CharacterOffsetEnd=381 PartOfSpeech=VB Lemma=concentrate NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=382 CharacterOffsetEnd=384 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=something CharacterOffsetBegin=385 CharacterOffsetEnd=394 PartOfSpeech=NN Lemma=something NamedEntityTag=O]
+[Text=purely CharacterOffsetBegin=395 CharacterOffsetEnd=401 PartOfSpeech=RB Lemma=purely NamedEntityTag=O]
+[Text=auditive CharacterOffsetBegin=402 CharacterOffsetEnd=410 PartOfSpeech=JJ Lemma=auditive NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=410 CharacterOffsetEnd=411 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (DT An) (NN audience))
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBD had)
+            (VP (VBN come)
+              (S
+                (VP (TO to)
+                  (VP (VB applaud)
+                    (NP (JJ ballet))))))))))
+    (VP
+      (VP (VBD was)
+        (VP
+          (ADVP (RB naturally))
+          (VBN disconcerted)
+          (PP (IN by)
+            (NP (PDT such) (DT a) (NN contrast)))))
+      (, ,)
+      (CC and)
+      (VP (VBD was)
+        (ADJP (JJ unable)
+          (S
+            (VP (TO to)
+              (VP (VB concentrate)
+                (PP (IN on)
+                  (NP
+                    (NP (NN something))
+                    (ADJP (RB purely) (JJ auditive))))))))))
+    (. .)))
+
+root(ROOT-0, disconcerted-11)
+det(audience-2, An-1)
+nsubj(come-5, audience-2)
+nsubj:xsubj(applaud-7, audience-2)
+nsubjpass(disconcerted-11, audience-2)
+nsubj(unable-19, audience-2)
+nsubj:xsubj(concentrate-21, audience-2)
+ref(audience-2, which-3)
+aux(come-5, had-4)
+acl:relcl(audience-2, come-5)
+mark(applaud-7, to-6)
+xcomp(come-5, applaud-7)
+dobj(applaud-7, ballet-8)
+auxpass(disconcerted-11, was-9)
+advmod(disconcerted-11, naturally-10)
+case(contrast-15, by-12)
+det:predet(contrast-15, such-13)
+det(contrast-15, a-14)
+nmod:agent(disconcerted-11, contrast-15)
+punct(disconcerted-11, ,-16)
+cc(disconcerted-11, and-17)
+cop(unable-19, was-18)
+conj:and(disconcerted-11, unable-19)
+mark(concentrate-21, to-20)
+xcomp(unable-19, concentrate-21)
+case(something-23, on-22)
+nmod:on(concentrate-21, something-23)
+advmod(auditive-25, purely-24)
+amod(something-23, auditive-25)
+punct(disconcerted-11, .-26)
+
+Sentence #4 (42 tokens):
+That is why the later performances of Oedipus as an opera under Klemperer in Berlin, and then as a concert under my direction in Dresden and London and in the Salle Pleyel, Paris, gave me far greater satisfaction.
+[Text=That CharacterOffsetBegin=412 CharacterOffsetEnd=416 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=417 CharacterOffsetEnd=419 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=why CharacterOffsetBegin=420 CharacterOffsetEnd=423 PartOfSpeech=WRB Lemma=why NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=424 CharacterOffsetEnd=427 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=later CharacterOffsetBegin=428 CharacterOffsetEnd=433 PartOfSpeech=JJ Lemma=later NamedEntityTag=O]
+[Text=performances CharacterOffsetBegin=434 CharacterOffsetEnd=446 PartOfSpeech=NNS Lemma=performance NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=447 CharacterOffsetEnd=449 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Oedipus CharacterOffsetBegin=450 CharacterOffsetEnd=457 PartOfSpeech=NNP Lemma=Oedipus NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=458 CharacterOffsetEnd=460 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=461 CharacterOffsetEnd=463 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=opera CharacterOffsetBegin=464 CharacterOffsetEnd=469 PartOfSpeech=NN Lemma=opera NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=470 CharacterOffsetEnd=475 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=Klemperer CharacterOffsetBegin=476 CharacterOffsetEnd=485 PartOfSpeech=NNP Lemma=Klemperer NamedEntityTag=PERSON]
+[Text=in CharacterOffsetBegin=486 CharacterOffsetEnd=488 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Berlin CharacterOffsetBegin=489 CharacterOffsetEnd=495 PartOfSpeech=NNP Lemma=Berlin NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=495 CharacterOffsetEnd=496 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=497 CharacterOffsetEnd=500 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=then CharacterOffsetBegin=501 CharacterOffsetEnd=505 PartOfSpeech=RB Lemma=then NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=506 CharacterOffsetEnd=508 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=509 CharacterOffsetEnd=510 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=concert CharacterOffsetBegin=511 CharacterOffsetEnd=518 PartOfSpeech=NN Lemma=concert NamedEntityTag=O]
+[Text=under CharacterOffsetBegin=519 CharacterOffsetEnd=524 PartOfSpeech=IN Lemma=under NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=525 CharacterOffsetEnd=527 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=direction CharacterOffsetBegin=528 CharacterOffsetEnd=537 PartOfSpeech=NN Lemma=direction NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=538 CharacterOffsetEnd=540 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Dresden CharacterOffsetBegin=541 CharacterOffsetEnd=548 PartOfSpeech=NNP Lemma=Dresden NamedEntityTag=LOCATION]
+[Text=and CharacterOffsetBegin=549 CharacterOffsetEnd=552 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=London CharacterOffsetBegin=553 CharacterOffsetEnd=559 PartOfSpeech=NNP Lemma=London NamedEntityTag=LOCATION]
+[Text=and CharacterOffsetBegin=560 CharacterOffsetEnd=563 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=564 CharacterOffsetEnd=566 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=567 CharacterOffsetEnd=570 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Salle CharacterOffsetBegin=571 CharacterOffsetEnd=576 PartOfSpeech=NNP Lemma=Salle NamedEntityTag=LOCATION]
+[Text=Pleyel CharacterOffsetBegin=577 CharacterOffsetEnd=583 PartOfSpeech=NNP Lemma=Pleyel NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=583 CharacterOffsetEnd=584 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Paris CharacterOffsetBegin=585 CharacterOffsetEnd=590 PartOfSpeech=NNP Lemma=Paris NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=590 CharacterOffsetEnd=591 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=592 CharacterOffsetEnd=596 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=597 CharacterOffsetEnd=599 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=far CharacterOffsetBegin=600 CharacterOffsetEnd=603 PartOfSpeech=RB Lemma=far NamedEntityTag=O]
+[Text=greater CharacterOffsetBegin=604 CharacterOffsetEnd=611 PartOfSpeech=JJR Lemma=greater NamedEntityTag=O]
+[Text=satisfaction CharacterOffsetBegin=612 CharacterOffsetEnd=624 PartOfSpeech=NN Lemma=satisfaction NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=624 CharacterOffsetEnd=625 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP
+            (NP (DT the) (JJ later) (NNS performances))
+            (PP (IN of)
+              (NP
+                (NP (NNP Oedipus))
+                (PP (IN as)
+                  (NP
+                    (NP (DT an) (NN opera))
+                    (PP (IN under)
+                      (NP
+                        (NP
+                          (NP (NNP Klemperer))
+                          (PP (IN in)
+                            (NP (NNP Berlin))))
+                        (, ,)
+                        (CC and)
+                        (RB then) (IN as)
+                        (NP
+                          (NP (DT a) (NN concert))
+                          (PP
+                            (PP (IN under)
+                              (NP
+                                (NP (PRP$ my) (NN direction))
+                                (PP (IN in)
+                                  (NP (NNP Dresden)
+                                    (CC and)
+                                    (NNP London)))))
+                            (CC and)
+                            (PP (IN in)
+                              (NP
+                                (NP (DT the) (NNP Salle) (NNP Pleyel))
+                                (, ,)
+                                (NP (NNP Paris))
+                                (, ,))))))))))))
+          (VP (VBD gave)
+            (NP (PRP me))
+            (NP
+              (ADJP (RB far) (JJR greater))
+              (NN satisfaction))))))
+    (. .)))
+
+root(ROOT-0, is-2)
+nsubj(is-2, That-1)
+advmod(gave-37, why-3)
+det(performances-6, the-4)
+amod(performances-6, later-5)
+nsubj(gave-37, performances-6)
+case(Oedipus-8, of-7)
+nmod:of(performances-6, Oedipus-8)
+case(opera-11, as-9)
+det(opera-11, an-10)
+nmod:as(Oedipus-8, opera-11)
+case(Klemperer-13, under-12)
+nmod:under(opera-11, Klemperer-13)
+case(Berlin-15, in-14)
+nmod:in(Klemperer-13, Berlin-15)
+punct(Klemperer-13, ,-16)
+cc(Klemperer-13, and-17)
+advmod(Klemperer-13, then-18)
+amod(Klemperer-13, as-19)
+det(concert-21, a-20)
+dep(Klemperer-13, concert-21)
+dep(Klemperer-13, concert-21')
+conj:and(concert-21, concert-21')
+case(direction-24, under-22)
+nmod:poss(direction-24, my-23)
+nmod:under(concert-21, direction-24)
+case(Dresden-26, in-25)
+nmod:in(direction-24, Dresden-26)
+cc(Dresden-26, and-27)
+nmod:in(direction-24, London-28)
+conj:and(Dresden-26, London-28)
+cc(concert-21, and-29)
+case(Pleyel-33, in-30)
+det(Pleyel-33, the-31)
+compound(Pleyel-33, Salle-32)
+nmod:in(concert-21', Pleyel-33)
+punct(Pleyel-33, ,-34)
+appos(Pleyel-33, Paris-35)
+punct(Pleyel-33, ,-36)
+advcl(is-2, gave-37)
+iobj(gave-37, me-38)
+advmod(greater-40, far-39)
+amod(satisfaction-41, greater-40)
+dobj(gave-37, satisfaction-41)
+punct(is-2, .-42)
+
+Coreference set:
+	(2,21,[21,22]) -> (1,23,[23,24]), that is: "two" -> "two"
+Coreference set:
+	(2,3,[3,4]) -> (1,26,[26,27]), that is: "I" -> "my"
+	(2,12,[12,13]) -> (1,26,[26,27]), that is: "my" -> "my"
+	(4,23,[23,24]) -> (1,26,[26,27]), that is: "my" -> "my"
+	(4,38,[38,39]) -> (1,26,[26,27]), that is: "me" -> "my"
+Coreference set:
+	(4,1,[1,2]) -> (3,2,[1,9]), that is: "That" -> "An audience which had come to applaud ballet"

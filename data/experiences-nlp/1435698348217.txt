@@ -1,0 +1,118 @@
+Sentence #1 (5 tokens):
+Rehearsal of My Phant.
+[Text=Rehearsal CharacterOffsetBegin=0 CharacterOffsetEnd=9 PartOfSpeech=NN Lemma=rehearsal NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=My CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=Phant CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=NN Lemma=phant NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=21 CharacterOffsetEnd=22 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NN Rehearsal))
+    (PP (IN of)
+      (NP (PRP$ My) (NN Phant)))
+    (. .)))
+
+root(ROOT-0, Rehearsal-1)
+case(Phant-4, of-2)
+nmod:poss(Phant-4, My-3)
+nmod:of(Rehearsal-1, Phant-4)
+punct(Rehearsal-1, .-5)
+
+Sentence #2 (6 tokens):
+4tet at R.C.M. at 1.0.
+[Text=4tet CharacterOffsetBegin=23 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=4tet NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=R.C.M. CharacterOffsetBegin=31 CharacterOffsetEnd=37 PartOfSpeech=NNP Lemma=R.C.M. NamedEntityTag=ORGANIZATION]
+[Text=at CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=1.0 CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=CD Lemma=1.0 NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=. CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (NN 4tet))
+    (PP (IN at)
+      (NP (NNP R.C.M.)))
+    (PP (IN at)
+      (NP (CD 1.0)))
+    (. .)))
+
+root(ROOT-0, 4tet-1)
+case(R.C.M.-3, at-2)
+nmod:at(4tet-1, R.C.M.-3)
+case(1.0-5, at-4)
+nmod:at(4tet-1, 1.0-5)
+punct(4tet-1, .-6)
+
+Sentence #3 (20 tokens):
+Natalie Caine is playing Oboe, Lauri (Vln), Riddle (Vla) Bernard (Vlc).
+[Text=Natalie CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Natalie NamedEntityTag=PERSON]
+[Text=Caine CharacterOffsetBegin=54 CharacterOffsetEnd=59 PartOfSpeech=NNP Lemma=Caine NamedEntityTag=PERSON]
+[Text=is CharacterOffsetBegin=60 CharacterOffsetEnd=62 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=63 CharacterOffsetEnd=70 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=Oboe CharacterOffsetBegin=71 CharacterOffsetEnd=75 PartOfSpeech=NNP Lemma=Oboe NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=75 CharacterOffsetEnd=76 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Lauri CharacterOffsetBegin=77 CharacterOffsetEnd=82 PartOfSpeech=NNP Lemma=Lauri NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=83 CharacterOffsetEnd=84 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Vln CharacterOffsetBegin=84 CharacterOffsetEnd=87 PartOfSpeech=NNP Lemma=Vln NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=88 CharacterOffsetEnd=89 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Riddle CharacterOffsetBegin=90 CharacterOffsetEnd=96 PartOfSpeech=NN Lemma=riddle NamedEntityTag=O]
+[Text=-LRB- CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Vla CharacterOffsetBegin=98 CharacterOffsetEnd=101 PartOfSpeech=NN Lemma=vla NamedEntityTag=LOCATION]
+[Text=-RRB- CharacterOffsetBegin=101 CharacterOffsetEnd=102 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=Bernard CharacterOffsetBegin=103 CharacterOffsetEnd=110 PartOfSpeech=NNP Lemma=Bernard NamedEntityTag=PERSON]
+[Text=-LRB- CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=-LRB- Lemma=-lrb- NamedEntityTag=O]
+[Text=Vlc CharacterOffsetBegin=112 CharacterOffsetEnd=115 PartOfSpeech=NNP Lemma=Vlc NamedEntityTag=O]
+[Text=-RRB- CharacterOffsetBegin=115 CharacterOffsetEnd=116 PartOfSpeech=-RRB- Lemma=-rrb- NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=116 CharacterOffsetEnd=117 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Natalie) (NNP Caine))
+    (VP (VBZ is)
+      (VP (VBG playing)
+        (NP
+          (NP
+            (NP (NNP Oboe) (, ,) (NNP Lauri))
+            (PRN (-LRB- -LRB-)
+              (NP (NNP Vln))
+              (-RRB- -RRB-))
+            (, ,)
+            (NP
+              (NP (NN Riddle))
+              (PRN (-LRB- -LRB-)
+                (NP (NN Vla))
+                (-RRB- -RRB-))
+              (NP (NNP Bernard))))
+          (PRN (-LRB- -LRB-)
+            (NP (NNP Vlc))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+root(ROOT-0, playing-4)
+compound(Caine-2, Natalie-1)
+nsubj(playing-4, Caine-2)
+aux(playing-4, is-3)
+compound(Lauri-7, Oboe-5)
+punct(Lauri-7, ,-6)
+dobj(playing-4, Lauri-7)
+punct(Vln-9, -LRB--8)
+appos(Lauri-7, Vln-9)
+punct(Vln-9, -RRB--10)
+punct(Lauri-7, ,-11)
+appos(Lauri-7, Riddle-12)
+punct(Vla-14, -LRB--13)
+appos(Riddle-12, Vla-14)
+punct(Vla-14, -RRB--15)
+dep(Riddle-12, Bernard-16)
+punct(Vlc-18, -LRB--17)
+appos(Lauri-7, Vlc-18)
+punct(Vlc-18, -RRB--19)
+punct(playing-4, .-20)
+
+Sentence #4 (1 tokens):
+*
+[Text=* CharacterOffsetBegin=117 CharacterOffsetEnd=118 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+(ROOT
+  (X (SYM *)))
+
+root(ROOT-0, *-1)
+

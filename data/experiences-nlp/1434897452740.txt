@@ -1,0 +1,228 @@
+Sentence #1 (12 tokens):
+After dinner I listen to Prom on wireless - British Programme.
+[Text=After CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=13 CharacterOffsetEnd=14 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=listen CharacterOffsetBegin=15 CharacterOffsetEnd=21 PartOfSpeech=VBP Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=22 CharacterOffsetEnd=24 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Prom CharacterOffsetBegin=25 CharacterOffsetEnd=29 PartOfSpeech=VB Lemma=prom NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=30 CharacterOffsetEnd=32 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=wireless CharacterOffsetBegin=33 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=wireless NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=42 CharacterOffsetEnd=43 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=British CharacterOffsetBegin=44 CharacterOffsetEnd=51 PartOfSpeech=JJ Lemma=british NamedEntityTag=O]
+[Text=Programme CharacterOffsetBegin=52 CharacterOffsetEnd=61 PartOfSpeech=NNP Lemma=Programme NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=61 CharacterOffsetEnd=62 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (UCP
+    (S
+      (PP (IN After)
+        (NP (NN dinner)))
+      (NP (PRP I))
+      (VP (VBP listen)
+        (S
+          (VP (TO to)
+            (VP (VB Prom)
+              (PP (IN on)
+                (NP (JJ wireless))))))))
+    (: -)
+    (NP (JJ British) (NNP Programme))
+    (. .)))
+
+root(ROOT-0, listen-4)
+case(dinner-2, After-1)
+nmod:after(listen-4, dinner-2)
+nsubj(listen-4, I-3)
+nsubj:xsubj(Prom-6, I-3)
+mark(Prom-6, to-5)
+xcomp(listen-4, Prom-6)
+case(wireless-8, on-7)
+nmod:on(Prom-6, wireless-8)
+punct(listen-4, --9)
+amod(Programme-11, British-10)
+dep(listen-4, Programme-11)
+punct(listen-4, .-12)
+
+Sentence #2 (12 tokens):
+Delius' marvellously beautiful, tho' meandering & too long.
+[Text=Delius CharacterOffsetBegin=63 CharacterOffsetEnd=69 PartOfSpeech=NNP Lemma=Delius NamedEntityTag=PERSON]
+[Text=' CharacterOffsetBegin=69 CharacterOffsetEnd=70 PartOfSpeech=POS Lemma=' NamedEntityTag=O]
+[Text=marvellously CharacterOffsetBegin=71 CharacterOffsetEnd=83 PartOfSpeech=RB Lemma=marvellously NamedEntityTag=O]
+[Text=beautiful CharacterOffsetBegin=84 CharacterOffsetEnd=93 PartOfSpeech=JJ Lemma=beautiful NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=tho CharacterOffsetBegin=95 CharacterOffsetEnd=98 PartOfSpeech=NN Lemma=tho NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=98 CharacterOffsetEnd=99 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=meandering CharacterOffsetBegin=100 CharacterOffsetEnd=110 PartOfSpeech=VBG Lemma=meander NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=111 CharacterOffsetEnd=112 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=too CharacterOffsetBegin=113 CharacterOffsetEnd=116 PartOfSpeech=RB Lemma=too NamedEntityTag=O]
+[Text=long CharacterOffsetBegin=117 CharacterOffsetEnd=121 PartOfSpeech=RB Lemma=long NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=121 CharacterOffsetEnd=122 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP
+      (NP
+        (NP
+          (NP (NNP Delius) (POS '))
+          (PRN
+            (ADVP (RB marvellously))
+            (NP (JJ beautiful))
+            (, ,))
+          (NN tho) ('' '))
+        (VP (VBG meandering)
+          (S
+            (NP (CC &))
+            (ADJP (RB too) (RB long))))))
+    (. .)))
+
+root(ROOT-0, tho-6)
+nmod:poss(tho-6, Delius-1)
+case(Delius-1, '-2)
+dep(beautiful-4, marvellously-3)
+dep(tho-6, beautiful-4)
+punct(beautiful-4, ,-5)
+punct(tho-6, '-7)
+acl(tho-6, meandering-8)
+nsubj(long-11, &-9)
+advmod(long-11, too-10)
+xcomp(meandering-8, long-11)
+punct(tho-6, .-12)
+
+Sentence #3 (35 tokens):
+Song of the High Hills, completely dwarfs the rest of the anemic programme - Cyril Scott's dismal Noel, Elgar's typical Sea pictures & Ethel Symth's "Aubrey Brain".
+[Text=Song CharacterOffsetBegin=123 CharacterOffsetEnd=127 PartOfSpeech=NN Lemma=song NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=128 CharacterOffsetEnd=130 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=High CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=NNP Lemma=High NamedEntityTag=LOCATION]
+[Text=Hills CharacterOffsetBegin=140 CharacterOffsetEnd=145 PartOfSpeech=NNP Lemma=Hills NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=completely CharacterOffsetBegin=147 CharacterOffsetEnd=157 PartOfSpeech=RB Lemma=completely NamedEntityTag=O]
+[Text=dwarfs CharacterOffsetBegin=158 CharacterOffsetEnd=164 PartOfSpeech=VBZ Lemma=dwarf NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=165 CharacterOffsetEnd=168 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=rest CharacterOffsetBegin=169 CharacterOffsetEnd=173 PartOfSpeech=NN Lemma=rest NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=174 CharacterOffsetEnd=176 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=177 CharacterOffsetEnd=180 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=anemic CharacterOffsetBegin=181 CharacterOffsetEnd=187 PartOfSpeech=JJ Lemma=anemic NamedEntityTag=O]
+[Text=programme CharacterOffsetBegin=188 CharacterOffsetEnd=197 PartOfSpeech=NN Lemma=programme NamedEntityTag=O]
+[Text=- CharacterOffsetBegin=198 CharacterOffsetEnd=199 PartOfSpeech=: Lemma=- NamedEntityTag=O]
+[Text=Cyril CharacterOffsetBegin=200 CharacterOffsetEnd=205 PartOfSpeech=NNP Lemma=Cyril NamedEntityTag=PERSON]
+[Text=Scott CharacterOffsetBegin=206 CharacterOffsetEnd=211 PartOfSpeech=NNP Lemma=Scott NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=211 CharacterOffsetEnd=213 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=dismal CharacterOffsetBegin=214 CharacterOffsetEnd=220 PartOfSpeech=JJ Lemma=dismal NamedEntityTag=O]
+[Text=Noel CharacterOffsetBegin=221 CharacterOffsetEnd=225 PartOfSpeech=NNP Lemma=Noel NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=225 CharacterOffsetEnd=226 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=Elgar CharacterOffsetBegin=227 CharacterOffsetEnd=232 PartOfSpeech=NNP Lemma=Elgar NamedEntityTag=ORGANIZATION]
+[Text='s CharacterOffsetBegin=232 CharacterOffsetEnd=234 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=typical CharacterOffsetBegin=235 CharacterOffsetEnd=242 PartOfSpeech=JJ Lemma=typical NamedEntityTag=O]
+[Text=Sea CharacterOffsetBegin=243 CharacterOffsetEnd=246 PartOfSpeech=NN Lemma=sea NamedEntityTag=O]
+[Text=pictures CharacterOffsetBegin=247 CharacterOffsetEnd=255 PartOfSpeech=NNS Lemma=picture NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=256 CharacterOffsetEnd=257 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Ethel CharacterOffsetBegin=258 CharacterOffsetEnd=263 PartOfSpeech=NNP Lemma=Ethel NamedEntityTag=PERSON]
+[Text=Symth CharacterOffsetBegin=264 CharacterOffsetEnd=269 PartOfSpeech=NNP Lemma=Symth NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=269 CharacterOffsetEnd=271 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=`` CharacterOffsetBegin=272 CharacterOffsetEnd=273 PartOfSpeech=`` Lemma=`` NamedEntityTag=O]
+[Text=Aubrey CharacterOffsetBegin=273 CharacterOffsetEnd=279 PartOfSpeech=NNP Lemma=Aubrey NamedEntityTag=O]
+[Text=Brain CharacterOffsetBegin=280 CharacterOffsetEnd=285 PartOfSpeech=NNP Lemma=Brain NamedEntityTag=O]
+[Text='' CharacterOffsetBegin=285 CharacterOffsetEnd=286 PartOfSpeech='' Lemma='' NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=286 CharacterOffsetEnd=287 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NN Song))
+      (PP (IN of)
+        (NP (DT the) (NNP High) (NNP Hills))))
+    (, ,)
+    (ADVP (RB completely))
+    (VP (VBZ dwarfs)
+      (NP
+        (NP
+          (NP
+            (NP (DT the) (NN rest))
+            (PP (IN of)
+              (NP (DT the) (JJ anemic) (NN programme))))
+          (: -)
+          (NP
+            (NP
+              (NP (NNP Cyril) (NNP Scott) (POS 's))
+              (JJ dismal) (NNP Noel))
+            (, ,)
+            (NP
+              (NP (NNP Elgar) (POS 's))
+              (JJ typical) (NN Sea) (NNS pictures))))
+        (CC &)
+        (NP
+          (NP (NNP Ethel) (NNP Symth) (POS 's))
+          (`` ``) (NNP Aubrey) (NNP Brain) ('' ''))))
+    (. .)))
+
+root(ROOT-0, dwarfs-8)
+nsubj(dwarfs-8, Song-1)
+case(Hills-5, of-2)
+det(Hills-5, the-3)
+compound(Hills-5, High-4)
+nmod:of(Song-1, Hills-5)
+punct(dwarfs-8, ,-6)
+advmod(dwarfs-8, completely-7)
+det(rest-10, the-9)
+dobj(dwarfs-8, rest-10)
+case(programme-14, of-11)
+det(programme-14, the-12)
+amod(programme-14, anemic-13)
+nmod:of(rest-10, programme-14)
+punct(rest-10, --15)
+compound(Scott-17, Cyril-16)
+nmod:poss(Noel-20, Scott-17)
+case(Scott-17, 's-18)
+amod(Noel-20, dismal-19)
+dep(rest-10, Noel-20)
+punct(Noel-20, ,-21)
+nmod:poss(pictures-26, Elgar-22)
+case(Elgar-22, 's-23)
+amod(pictures-26, typical-24)
+compound(pictures-26, Sea-25)
+appos(Noel-20, pictures-26)
+cc(rest-10, &-27)
+compound(Symth-29, Ethel-28)
+nmod:poss(Brain-33, Symth-29)
+case(Symth-29, 's-30)
+punct(Brain-33, ``-31)
+compound(Brain-33, Aubrey-32)
+dobj(dwarfs-8, Brain-33)
+conj:&(rest-10, Brain-33)
+punct(Brain-33, ''-34)
+punct(dwarfs-8, .-35)
+
+Sentence #4 (4 tokens):
+Vl & Hrn.
+[Text=Vl CharacterOffsetBegin=288 CharacterOffsetEnd=290 PartOfSpeech=NNP Lemma=Vl NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=291 CharacterOffsetEnd=292 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=Hrn CharacterOffsetBegin=293 CharacterOffsetEnd=296 PartOfSpeech=NNP Lemma=Hrn NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=296 CharacterOffsetEnd=297 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (NNP Vl)
+    (CC &)
+    (NNP Hrn) (. .)))
+
+root(ROOT-0, Vl-1)
+cc(Vl-1, &-2)
+conj:&(Vl-1, Hrn-3)
+punct(Vl-1, .-4)
+
+Sentence #5 (2 tokens):
+Concerto.
+[Text=Concerto CharacterOffsetBegin=298 CharacterOffsetEnd=306 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=306 CharacterOffsetEnd=307 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (NP (NNP Concerto))
+    (. .)))
+
+root(ROOT-0, Concerto-1)
+punct(Concerto-1, .-2)
+
+Sentence #6 (1 tokens):
+*
+[Text=* CharacterOffsetBegin=307 CharacterOffsetEnd=308 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+(ROOT
+  (X (SYM *)))
+
+root(ROOT-0, *-1)
+

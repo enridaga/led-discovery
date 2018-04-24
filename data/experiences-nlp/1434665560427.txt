@@ -1,0 +1,87 @@
+Sentence #1 (12 tokens):
+Get Walton's Portsmouth Point, ov., on gram record.
+[Text=Get CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=Walton CharacterOffsetBegin=4 CharacterOffsetEnd=10 PartOfSpeech=NNP Lemma=Walton NamedEntityTag=PERSON]
+[Text='s CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=Portsmouth CharacterOffsetBegin=13 CharacterOffsetEnd=23 PartOfSpeech=NNP Lemma=Portsmouth NamedEntityTag=LOCATION]
+[Text=Point CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=NN Lemma=point NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=29 CharacterOffsetEnd=30 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=ov. CharacterOffsetBegin=31 CharacterOffsetEnd=34 PartOfSpeech=NN Lemma=ov. NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=34 CharacterOffsetEnd=35 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=gram CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=gram NamedEntityTag=O]
+[Text=record CharacterOffsetBegin=44 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=record NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=50 CharacterOffsetEnd=51 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VB Get)
+      (NP
+        (NP
+          (NP (NNP Walton) (POS 's))
+          (NNP Portsmouth) (NN Point))
+        (, ,)
+        (NP (NN ov.))
+        (, ,))
+      (PP (IN on)
+        (NP (NN gram) (NN record))))
+    (. .)))
+
+root(ROOT-0, Get-1)
+nmod:poss(Point-5, Walton-2)
+case(Walton-2, 's-3)
+compound(Point-5, Portsmouth-4)
+dobj(Get-1, Point-5)
+punct(Point-5, ,-6)
+appos(Point-5, ov.-7)
+punct(Point-5, ,-8)
+case(record-11, on-9)
+compound(record-11, gram-10)
+nmod:on(Get-1, record-11)
+punct(Get-1, .-12)
+
+Sentence #2 (3 tokens):
+* Disappointed.
+[Text=* CharacterOffsetBegin=51 CharacterOffsetEnd=52 PartOfSpeech=SYM Lemma=* NamedEntityTag=O]
+[Text=Disappointed CharacterOffsetBegin=53 CharacterOffsetEnd=65 PartOfSpeech=VBN Lemma=disappoint NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (FRAG
+    (X (SYM *))
+    (VP (VBN Disappointed))
+    (. .)))
+
+root(ROOT-0, Disappointed-2)
+dep(Disappointed-2, *-1)
+punct(Disappointed-2, .-3)
+
+Sentence #3 (8 tokens):
+Ineffective & apparently bad & careless workmanship.
+[Text=Ineffective CharacterOffsetBegin=67 CharacterOffsetEnd=78 PartOfSpeech=JJ Lemma=ineffective NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=79 CharacterOffsetEnd=80 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=apparently CharacterOffsetBegin=81 CharacterOffsetEnd=91 PartOfSpeech=RB Lemma=apparently NamedEntityTag=O]
+[Text=bad CharacterOffsetBegin=92 CharacterOffsetEnd=95 PartOfSpeech=JJ Lemma=bad NamedEntityTag=O]
+[Text=& CharacterOffsetBegin=96 CharacterOffsetEnd=97 PartOfSpeech=CC Lemma=& NamedEntityTag=O]
+[Text=careless CharacterOffsetBegin=98 CharacterOffsetEnd=106 PartOfSpeech=JJ Lemma=careless NamedEntityTag=O]
+[Text=workmanship CharacterOffsetBegin=107 CharacterOffsetEnd=118 PartOfSpeech=NN Lemma=workmanship NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=118 CharacterOffsetEnd=119 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP
+      (NP (JJ Ineffective))
+      (CC &)
+      (NP
+        (NP (RB apparently) (JJ bad))
+        (CC &)
+        (NP (JJ careless) (NN workmanship))))
+    (. .)))
+
+root(ROOT-0, Ineffective-1)
+cc(Ineffective-1, &-2)
+advmod(bad-4, apparently-3)
+conj:&(Ineffective-1, bad-4)
+cc(bad-4, &-5)
+amod(workmanship-7, careless-6)
+conj:&(Ineffective-1, workmanship-7)
+conj:&(bad-4, workmanship-7)
+punct(Ineffective-1, .-8)
+

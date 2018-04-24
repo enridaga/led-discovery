@@ -1,0 +1,65 @@
+Sentence #1 (20 tokens):
+...different Bands of Music on various small Ferry Steamers playing 'Cheer Boys Cheer' and other tunes.
+[Text=... CharacterOffsetBegin=0 CharacterOffsetEnd=3 PartOfSpeech=: Lemma=... NamedEntityTag=O]
+[Text=different CharacterOffsetBegin=3 CharacterOffsetEnd=12 PartOfSpeech=JJ Lemma=different NamedEntityTag=O]
+[Text=Bands CharacterOffsetBegin=13 CharacterOffsetEnd=18 PartOfSpeech=NNS Lemma=band NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=19 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Music CharacterOffsetBegin=22 CharacterOffsetEnd=27 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=28 CharacterOffsetEnd=30 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=various CharacterOffsetBegin=31 CharacterOffsetEnd=38 PartOfSpeech=JJ Lemma=various NamedEntityTag=O]
+[Text=small CharacterOffsetBegin=39 CharacterOffsetEnd=44 PartOfSpeech=JJ Lemma=small NamedEntityTag=O]
+[Text=Ferry CharacterOffsetBegin=45 CharacterOffsetEnd=50 PartOfSpeech=NN Lemma=ferry NamedEntityTag=O]
+[Text=Steamers CharacterOffsetBegin=51 CharacterOffsetEnd=59 PartOfSpeech=NNS Lemma=steamer NamedEntityTag=O]
+[Text=playing CharacterOffsetBegin=60 CharacterOffsetEnd=67 PartOfSpeech=VBG Lemma=play NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=68 CharacterOffsetEnd=69 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Cheer CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=VB Lemma=cheer NamedEntityTag=O]
+[Text=Boys CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=NNS Lemma=boy NamedEntityTag=O]
+[Text=Cheer CharacterOffsetBegin=80 CharacterOffsetEnd=85 PartOfSpeech=VB Lemma=cheer NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=85 CharacterOffsetEnd=86 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=87 CharacterOffsetEnd=90 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=other CharacterOffsetBegin=91 CharacterOffsetEnd=96 PartOfSpeech=JJ Lemma=other NamedEntityTag=O]
+[Text=tunes CharacterOffsetBegin=97 CharacterOffsetEnd=102 PartOfSpeech=NNS Lemma=tune NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP (: ...)
+    (NP
+      (NP
+        (NP (JJ different) (NNS Bands))
+        (PP (IN of)
+          (NP
+            (NP (NN Music))
+            (PP (IN on)
+              (NP
+                (NP (JJ various) (JJ small) (NN Ferry) (NNS Steamers))
+                (VP (VBG playing)
+                  (S
+                    (VP (`` `) (VB Cheer)
+                      (S
+                        (NP (NNS Boys))
+                        (VP (VB Cheer))))))))
+            ('' '))))
+      (CC and)
+      (NP (JJ other) (NNS tunes)))
+    (. .)))
+
+root(ROOT-0, Bands-3)
+punct(Bands-3, ...-1)
+amod(Bands-3, different-2)
+case(Music-5, of-4)
+nmod:of(Bands-3, Music-5)
+case(Steamers-10, on-6)
+amod(Steamers-10, various-7)
+amod(Steamers-10, small-8)
+compound(Steamers-10, Ferry-9)
+nmod:on(Music-5, Steamers-10)
+acl(Steamers-10, playing-11)
+punct(Cheer-13, `-12)
+ccomp(playing-11, Cheer-13)
+nsubj(Cheer-15, Boys-14)
+ccomp(Cheer-13, Cheer-15)
+punct(Music-5, '-16)
+cc(Bands-3, and-17)
+amod(tunes-19, other-18)
+conj:and(Bands-3, tunes-19)
+punct(Bands-3, .-20)
+

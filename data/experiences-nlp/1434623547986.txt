@@ -1,0 +1,564 @@
+Sentence #1 (28 tokens):
+There was at that time in Geneva a little restaurant with a small orchestra of string instruments, including a cymbalon, on which Aladar Racz excelelled.
+[Text=There CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=6 CharacterOffsetEnd=9 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=at CharacterOffsetBegin=10 CharacterOffsetEnd=12 PartOfSpeech=IN Lemma=at NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=13 CharacterOffsetEnd=17 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=time CharacterOffsetBegin=18 CharacterOffsetEnd=22 PartOfSpeech=NN Lemma=time NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=23 CharacterOffsetEnd=25 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Geneva CharacterOffsetBegin=26 CharacterOffsetEnd=32 PartOfSpeech=NNP Lemma=Geneva NamedEntityTag=LOCATION]
+[Text=a CharacterOffsetBegin=33 CharacterOffsetEnd=34 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=35 CharacterOffsetEnd=41 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=restaurant CharacterOffsetBegin=42 CharacterOffsetEnd=52 PartOfSpeech=NN Lemma=restaurant NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=53 CharacterOffsetEnd=57 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=58 CharacterOffsetEnd=59 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=small CharacterOffsetBegin=60 CharacterOffsetEnd=65 PartOfSpeech=JJ Lemma=small NamedEntityTag=O]
+[Text=orchestra CharacterOffsetBegin=66 CharacterOffsetEnd=75 PartOfSpeech=NN Lemma=orchestra NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=76 CharacterOffsetEnd=78 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=string CharacterOffsetBegin=79 CharacterOffsetEnd=85 PartOfSpeech=NN Lemma=string NamedEntityTag=O]
+[Text=instruments CharacterOffsetBegin=86 CharacterOffsetEnd=97 PartOfSpeech=NNS Lemma=instrument NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=97 CharacterOffsetEnd=98 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=including CharacterOffsetBegin=99 CharacterOffsetEnd=108 PartOfSpeech=VBG Lemma=include NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=109 CharacterOffsetEnd=110 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=cymbalon CharacterOffsetBegin=111 CharacterOffsetEnd=119 PartOfSpeech=NN Lemma=cymbalon NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=119 CharacterOffsetEnd=120 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=124 CharacterOffsetEnd=129 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=Aladar CharacterOffsetBegin=130 CharacterOffsetEnd=136 PartOfSpeech=NNP Lemma=Aladar NamedEntityTag=PERSON]
+[Text=Racz CharacterOffsetBegin=137 CharacterOffsetEnd=141 PartOfSpeech=NNP Lemma=Racz NamedEntityTag=PERSON]
+[Text=excelelled CharacterOffsetBegin=142 CharacterOffsetEnd=152 PartOfSpeech=VBD Lemma=excelell NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=152 CharacterOffsetEnd=153 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD was)
+      (ADVP (IN at)
+        (NP (DT that) (NN time))
+        (PP (IN in)
+          (NP (NNP Geneva))))
+      (NP
+        (NP (DT a) (JJ little) (NN restaurant))
+        (PP (IN with)
+          (NP
+            (NP (DT a) (JJ small) (NN orchestra))
+            (PP (IN of)
+              (NP (NN string) (NNS instruments))))))
+      (, ,)
+      (PP (VBG including)
+        (NP
+          (NP (DT a) (NN cymbalon))
+          (, ,)
+          (SBAR
+            (WHPP (IN on)
+              (WHNP (WDT which)))
+            (S
+              (NP (NNP Aladar) (NNP Racz))
+              (VP (VBD excelelled)))))))
+    (. .)))
+
+root(ROOT-0, was-2)
+expl(was-2, There-1)
+case(time-5, at-3)
+det(time-5, that-4)
+advmod(was-2, time-5)
+case(Geneva-7, in-6)
+nmod:in(time-5, Geneva-7)
+det(restaurant-10, a-8)
+amod(restaurant-10, little-9)
+nsubj(was-2, restaurant-10)
+case(orchestra-14, with-11)
+det(orchestra-14, a-12)
+amod(orchestra-14, small-13)
+nmod:with(restaurant-10, orchestra-14)
+case(instruments-17, of-15)
+compound(instruments-17, string-16)
+nmod:of(orchestra-14, instruments-17)
+punct(was-2, ,-18)
+case(cymbalon-21, including-19)
+det(cymbalon-21, a-20)
+nmod:including(was-2, cymbalon-21)
+nmod:on(excelelled-27, cymbalon-21)
+punct(cymbalon-21, ,-22)
+case(which-24, on-23)
+ref(cymbalon-21, which-24)
+compound(Racz-26, Aladar-25)
+nsubj(excelelled-27, Racz-26)
+acl:relcl(cymbalon-21, excelelled-27)
+punct(was-2, .-28)
+
+Sentence #2 (14 tokens):
+He is a Hungarian, and has since become recognized as a virtuoso.
+[Text=He CharacterOffsetBegin=154 CharacterOffsetEnd=156 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=157 CharacterOffsetEnd=159 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=160 CharacterOffsetEnd=161 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=Hungarian CharacterOffsetBegin=162 CharacterOffsetEnd=171 PartOfSpeech=JJ Lemma=hungarian NamedEntityTag=MISC]
+[Text=, CharacterOffsetBegin=171 CharacterOffsetEnd=172 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=173 CharacterOffsetEnd=176 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=has CharacterOffsetBegin=177 CharacterOffsetEnd=180 PartOfSpeech=VBZ Lemma=have NamedEntityTag=O]
+[Text=since CharacterOffsetBegin=181 CharacterOffsetEnd=186 PartOfSpeech=IN Lemma=since NamedEntityTag=O]
+[Text=become CharacterOffsetBegin=187 CharacterOffsetEnd=193 PartOfSpeech=VBN Lemma=become NamedEntityTag=O]
+[Text=recognized CharacterOffsetBegin=194 CharacterOffsetEnd=204 PartOfSpeech=VBN Lemma=recognize NamedEntityTag=O]
+[Text=as CharacterOffsetBegin=205 CharacterOffsetEnd=207 PartOfSpeech=IN Lemma=as NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=208 CharacterOffsetEnd=209 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=virtuoso CharacterOffsetBegin=210 CharacterOffsetEnd=218 PartOfSpeech=JJ Lemma=virtuoso NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=218 CharacterOffsetEnd=219 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (VBZ is)
+        (NP (DT a) (JJ Hungarian)))
+      (, ,)
+      (CC and)
+      (VP (VBZ has)
+        (ADVP (IN since))
+        (VP (VBN become)
+          (S
+            (VP (VBN recognized)
+              (PP (IN as)
+                (NP (DT a) (JJ virtuoso))))))))
+    (. .)))
+
+root(ROOT-0, Hungarian-4)
+nsubj(Hungarian-4, He-1)
+nsubj(become-9, He-1)
+cop(Hungarian-4, is-2)
+det(Hungarian-4, a-3)
+punct(Hungarian-4, ,-5)
+cc(Hungarian-4, and-6)
+aux(become-9, has-7)
+advmod(become-9, since-8)
+conj:and(Hungarian-4, become-9)
+dep(become-9, recognized-10)
+case(virtuoso-13, as-11)
+det(virtuoso-13, a-12)
+nmod:as(recognized-10, virtuoso-13)
+punct(Hungarian-4, .-14)
+
+Sentence #3 (41 tokens):
+I was captivated by the instrument which delighted me by its rich, full tone and by the player’s direct contact with the strings through the little sticks held between his fingers, and even by its trapezoid shape.
+[Text=I CharacterOffsetBegin=220 CharacterOffsetEnd=221 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=222 CharacterOffsetEnd=225 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=captivated CharacterOffsetBegin=226 CharacterOffsetEnd=236 PartOfSpeech=VBN Lemma=captivate NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=237 CharacterOffsetEnd=239 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=240 CharacterOffsetEnd=243 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=instrument CharacterOffsetBegin=244 CharacterOffsetEnd=254 PartOfSpeech=NN Lemma=instrument NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=255 CharacterOffsetEnd=260 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=delighted CharacterOffsetBegin=261 CharacterOffsetEnd=270 PartOfSpeech=VBD Lemma=delight NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=271 CharacterOffsetEnd=273 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=274 CharacterOffsetEnd=276 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=277 CharacterOffsetEnd=280 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=rich CharacterOffsetBegin=281 CharacterOffsetEnd=285 PartOfSpeech=JJ Lemma=rich NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=285 CharacterOffsetEnd=286 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=full CharacterOffsetBegin=287 CharacterOffsetEnd=291 PartOfSpeech=JJ Lemma=full NamedEntityTag=O]
+[Text=tone CharacterOffsetBegin=292 CharacterOffsetEnd=296 PartOfSpeech=NN Lemma=tone NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=297 CharacterOffsetEnd=300 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=301 CharacterOffsetEnd=303 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=304 CharacterOffsetEnd=307 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=player CharacterOffsetBegin=308 CharacterOffsetEnd=314 PartOfSpeech=NN Lemma=player NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=314 CharacterOffsetEnd=316 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=direct CharacterOffsetBegin=317 CharacterOffsetEnd=323 PartOfSpeech=JJ Lemma=direct NamedEntityTag=O]
+[Text=contact CharacterOffsetBegin=324 CharacterOffsetEnd=331 PartOfSpeech=NN Lemma=contact NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=332 CharacterOffsetEnd=336 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=337 CharacterOffsetEnd=340 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=strings CharacterOffsetBegin=341 CharacterOffsetEnd=348 PartOfSpeech=NNS Lemma=string NamedEntityTag=O]
+[Text=through CharacterOffsetBegin=349 CharacterOffsetEnd=356 PartOfSpeech=IN Lemma=through NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=357 CharacterOffsetEnd=360 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=361 CharacterOffsetEnd=367 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=sticks CharacterOffsetBegin=368 CharacterOffsetEnd=374 PartOfSpeech=NNS Lemma=stick NamedEntityTag=O]
+[Text=held CharacterOffsetBegin=375 CharacterOffsetEnd=379 PartOfSpeech=VBD Lemma=hold NamedEntityTag=O]
+[Text=between CharacterOffsetBegin=380 CharacterOffsetEnd=387 PartOfSpeech=IN Lemma=between NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=388 CharacterOffsetEnd=391 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=fingers CharacterOffsetBegin=392 CharacterOffsetEnd=399 PartOfSpeech=NNS Lemma=finger NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=399 CharacterOffsetEnd=400 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=401 CharacterOffsetEnd=404 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=even CharacterOffsetBegin=405 CharacterOffsetEnd=409 PartOfSpeech=RB Lemma=even NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=410 CharacterOffsetEnd=412 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=its CharacterOffsetBegin=413 CharacterOffsetEnd=416 PartOfSpeech=PRP$ Lemma=its NamedEntityTag=O]
+[Text=trapezoid CharacterOffsetBegin=417 CharacterOffsetEnd=426 PartOfSpeech=NN Lemma=trapezoid NamedEntityTag=O]
+[Text=shape CharacterOffsetBegin=427 CharacterOffsetEnd=432 PartOfSpeech=NN Lemma=shape NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=432 CharacterOffsetEnd=433 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBN captivated)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NN instrument))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBD delighted)
+                  (NP (PRP me))
+                  (PP
+                    (PP (IN by)
+                      (NP (PRP$ its) (JJ rich) (, ,) (JJ full) (NN tone)))
+                    (CC and)
+                    (PP (IN by)
+                      (NP
+                        (NP (DT the) (NN player) (POS 's))
+                        (JJ direct) (NN contact))))
+                  (PP (IN with)
+                    (NP (DT the) (NNS strings)))
+                  (PP (IN through)
+                    (NP
+                      (NP (DT the) (JJ little) (NNS sticks))
+                      (VP (VBD held)
+                        (PP
+                          (PP (IN between)
+                            (NP (PRP$ his) (NNS fingers)))
+                          (, ,)
+                          (CC and)
+                          (RB even)
+                          (PP (IN by)
+                            (NP (PRP$ its) (NN trapezoid) (NN shape))))))))))))))
+    (. .)))
+
+root(ROOT-0, captivated-3)
+nsubjpass(captivated-3, I-1)
+auxpass(captivated-3, was-2)
+case(instrument-6, by-4)
+det(instrument-6, the-5)
+nmod:agent(captivated-3, instrument-6)
+nsubj(delighted-8, instrument-6)
+nsubj(delighted-8', instrument-6)
+ref(instrument-6, which-7)
+acl:relcl(instrument-6, delighted-8)
+acl:relcl(instrument-6, delighted-8')
+conj:and(delighted-8, delighted-8')
+dobj(delighted-8, me-9)
+case(tone-15, by-10)
+nmod:poss(tone-15, its-11)
+amod(tone-15, rich-12)
+punct(tone-15, ,-13)
+amod(tone-15, full-14)
+nmod:by(delighted-8, tone-15)
+cc(delighted-8, and-16)
+case(contact-22, by-17)
+det(player-19, the-18)
+nmod:poss(contact-22, player-19)
+case(player-19, 's-20)
+amod(contact-22, direct-21)
+nmod:by(delighted-8', contact-22)
+case(strings-25, with-23)
+det(strings-25, the-24)
+nmod:with(delighted-8, strings-25)
+case(sticks-29, through-26)
+det(sticks-29, the-27)
+amod(sticks-29, little-28)
+nmod:through(delighted-8, sticks-29)
+acl(sticks-29, held-30)
+case(fingers-33, between-31)
+nmod:poss(fingers-33, his-32)
+nmod:between(held-30, fingers-33)
+punct(fingers-33, ,-34)
+cc(fingers-33, and-35)
+nmod:between(held-30, even-36)
+conj:and(fingers-33, even-36)
+case(shape-40, by-37)
+nmod:poss(shape-40, its-38)
+compound(shape-40, trapezoid-39)
+nmod:by(fingers-33, shape-40)
+punct(captivated-3, .-41)
+
+Sentence #4 (44 tokens):
+I wanted to get one, and begged Racz to help me by making my wish known among his associates in Geneva, and, in fact, he did tell me of an old Hungarian who sold me one of these instruments.
+[Text=I CharacterOffsetBegin=434 CharacterOffsetEnd=435 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=wanted CharacterOffsetBegin=436 CharacterOffsetEnd=442 PartOfSpeech=VBD Lemma=want NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=443 CharacterOffsetEnd=445 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=get CharacterOffsetBegin=446 CharacterOffsetEnd=449 PartOfSpeech=VB Lemma=get NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=450 CharacterOffsetEnd=453 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=, CharacterOffsetBegin=453 CharacterOffsetEnd=454 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=455 CharacterOffsetEnd=458 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=begged CharacterOffsetBegin=459 CharacterOffsetEnd=465 PartOfSpeech=VBD Lemma=beg NamedEntityTag=O]
+[Text=Racz CharacterOffsetBegin=466 CharacterOffsetEnd=470 PartOfSpeech=NNP Lemma=Racz NamedEntityTag=PERSON]
+[Text=to CharacterOffsetBegin=471 CharacterOffsetEnd=473 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=help CharacterOffsetBegin=474 CharacterOffsetEnd=478 PartOfSpeech=VB Lemma=help NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=479 CharacterOffsetEnd=481 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=by CharacterOffsetBegin=482 CharacterOffsetEnd=484 PartOfSpeech=IN Lemma=by NamedEntityTag=O]
+[Text=making CharacterOffsetBegin=485 CharacterOffsetEnd=491 PartOfSpeech=VBG Lemma=make NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=492 CharacterOffsetEnd=494 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=wish CharacterOffsetBegin=495 CharacterOffsetEnd=499 PartOfSpeech=NN Lemma=wish NamedEntityTag=O]
+[Text=known CharacterOffsetBegin=500 CharacterOffsetEnd=505 PartOfSpeech=VBN Lemma=know NamedEntityTag=O]
+[Text=among CharacterOffsetBegin=506 CharacterOffsetEnd=511 PartOfSpeech=IN Lemma=among NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=512 CharacterOffsetEnd=515 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=associates CharacterOffsetBegin=516 CharacterOffsetEnd=526 PartOfSpeech=NNS Lemma=associate NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=527 CharacterOffsetEnd=529 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=Geneva CharacterOffsetBegin=530 CharacterOffsetEnd=536 PartOfSpeech=NNP Lemma=Geneva NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=536 CharacterOffsetEnd=537 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=538 CharacterOffsetEnd=541 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=541 CharacterOffsetEnd=542 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=543 CharacterOffsetEnd=545 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=fact CharacterOffsetBegin=546 CharacterOffsetEnd=550 PartOfSpeech=NN Lemma=fact NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=550 CharacterOffsetEnd=551 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=he CharacterOffsetBegin=552 CharacterOffsetEnd=554 PartOfSpeech=PRP Lemma=he NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=555 CharacterOffsetEnd=558 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=tell CharacterOffsetBegin=559 CharacterOffsetEnd=563 PartOfSpeech=VB Lemma=tell NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=564 CharacterOffsetEnd=566 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=567 CharacterOffsetEnd=569 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=an CharacterOffsetBegin=570 CharacterOffsetEnd=572 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=573 CharacterOffsetEnd=576 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=Hungarian CharacterOffsetBegin=577 CharacterOffsetEnd=586 PartOfSpeech=JJ Lemma=hungarian NamedEntityTag=MISC]
+[Text=who CharacterOffsetBegin=587 CharacterOffsetEnd=590 PartOfSpeech=WP Lemma=who NamedEntityTag=O]
+[Text=sold CharacterOffsetBegin=591 CharacterOffsetEnd=595 PartOfSpeech=VBD Lemma=sell NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=596 CharacterOffsetEnd=598 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=one CharacterOffsetBegin=599 CharacterOffsetEnd=602 PartOfSpeech=CD Lemma=one NamedEntityTag=NUMBER NormalizedNamedEntityTag=1.0]
+[Text=of CharacterOffsetBegin=603 CharacterOffsetEnd=605 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=606 CharacterOffsetEnd=611 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=instruments CharacterOffsetBegin=612 CharacterOffsetEnd=623 PartOfSpeech=NNS Lemma=instrument NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=623 CharacterOffsetEnd=624 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP
+        (VP (VBD wanted)
+          (S
+            (VP (TO to)
+              (VP (VB get)
+                (NP (CD one))))))
+        (, ,)
+        (CC and)
+        (VP (VBD begged)
+          (S
+            (NP (NNP Racz))
+            (VP (TO to)
+              (VP (VB help)
+                (NP (PRP me))
+                (PP (IN by)
+                  (S
+                    (VP (VBG making)
+                      (NP
+                        (NP (PRP$ my) (NN wish))
+                        (VP (VBN known)
+                          (PP (IN among)
+                            (NP (PRP$ his) (NNS associates)))
+                          (PP (IN in)
+                            (NP (NNP Geneva))))))))))))))
+    (, ,)
+    (CC and)
+    (PRN (, ,)
+      (PP (IN in)
+        (NP (NN fact)))
+      (, ,))
+    (S
+      (NP (PRP he))
+      (VP (VBD did)
+        (VP (VB tell)
+          (NP (PRP me))
+          (PP (IN of)
+            (NP
+              (NP (DT an) (JJ old) (JJ Hungarian))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD sold)
+                    (S
+                      (NP (PRP me))
+                      (NP
+                        (NP (CD one))
+                        (PP (IN of)
+                          (NP (DT these) (NNS instruments)))))))))))))
+    (. .)))
+
+root(ROOT-0, wanted-2)
+nsubj(wanted-2, I-1)
+nsubj:xsubj(get-4, I-1)
+nsubj(begged-8, I-1)
+mark(get-4, to-3)
+xcomp(wanted-2, get-4)
+dobj(get-4, one-5)
+punct(wanted-2, ,-6)
+cc(wanted-2, and-7)
+conj:and(wanted-2, begged-8)
+dobj(begged-8, Racz-9)
+nsubj:xsubj(help-11, Racz-9)
+mark(help-11, to-10)
+xcomp(begged-8, help-11)
+dobj(help-11, me-12)
+mark(making-14, by-13)
+advcl:by(help-11, making-14)
+nmod:poss(wish-16, my-15)
+dobj(making-14, wish-16)
+acl(wish-16, known-17)
+case(associates-20, among-18)
+nmod:poss(associates-20, his-19)
+nmod:among(known-17, associates-20)
+case(Geneva-22, in-21)
+nmod:in(known-17, Geneva-22)
+punct(wanted-2, ,-23)
+cc(wanted-2, and-24)
+punct(fact-27, ,-25)
+case(fact-27, in-26)
+dep(wanted-2, fact-27)
+punct(fact-27, ,-28)
+nsubj(tell-31, he-29)
+aux(tell-31, did-30)
+ccomp(wanted-2, tell-31)
+dobj(tell-31, me-32)
+case(Hungarian-36, of-33)
+det(Hungarian-36, an-34)
+amod(Hungarian-36, old-35)
+nmod:of(tell-31, Hungarian-36)
+nsubj(sold-38, Hungarian-36)
+ref(Hungarian-36, who-37)
+acl:relcl(Hungarian-36, sold-38)
+nsubj(one-40, me-39)
+det:qmod(instruments-43, one-40)
+mwe(one-40, of-41)
+det(instruments-43, these-42)
+xcomp(sold-38, instruments-43)
+punct(wanted-2, .-44)
+
+Sentence #5 (37 tokens):
+I carried it off to Morges in glee, and very soon learned to play it well enough to enable me to compose a part for cymbalon which I introduced into the little orchestra of Renard.
+[Text=I CharacterOffsetBegin=625 CharacterOffsetEnd=626 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=carried CharacterOffsetBegin=627 CharacterOffsetEnd=634 PartOfSpeech=VBD Lemma=carry NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=635 CharacterOffsetEnd=637 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=off CharacterOffsetBegin=638 CharacterOffsetEnd=641 PartOfSpeech=RP Lemma=off NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=642 CharacterOffsetEnd=644 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Morges CharacterOffsetBegin=645 CharacterOffsetEnd=651 PartOfSpeech=NNP Lemma=Morges NamedEntityTag=LOCATION]
+[Text=in CharacterOffsetBegin=652 CharacterOffsetEnd=654 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=glee CharacterOffsetBegin=655 CharacterOffsetEnd=659 PartOfSpeech=NN Lemma=glee NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=659 CharacterOffsetEnd=660 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=661 CharacterOffsetEnd=664 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=very CharacterOffsetBegin=665 CharacterOffsetEnd=669 PartOfSpeech=RB Lemma=very NamedEntityTag=O]
+[Text=soon CharacterOffsetBegin=670 CharacterOffsetEnd=674 PartOfSpeech=RB Lemma=soon NamedEntityTag=O]
+[Text=learned CharacterOffsetBegin=675 CharacterOffsetEnd=682 PartOfSpeech=VBN Lemma=learn NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=683 CharacterOffsetEnd=685 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=play CharacterOffsetBegin=686 CharacterOffsetEnd=690 PartOfSpeech=VB Lemma=play NamedEntityTag=O]
+[Text=it CharacterOffsetBegin=691 CharacterOffsetEnd=693 PartOfSpeech=PRP Lemma=it NamedEntityTag=O]
+[Text=well CharacterOffsetBegin=694 CharacterOffsetEnd=698 PartOfSpeech=RB Lemma=well NamedEntityTag=O]
+[Text=enough CharacterOffsetBegin=699 CharacterOffsetEnd=705 PartOfSpeech=RB Lemma=enough NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=706 CharacterOffsetEnd=708 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=enable CharacterOffsetBegin=709 CharacterOffsetEnd=715 PartOfSpeech=VB Lemma=enable NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=716 CharacterOffsetEnd=718 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=719 CharacterOffsetEnd=721 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=compose CharacterOffsetBegin=722 CharacterOffsetEnd=729 PartOfSpeech=VB Lemma=compose NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=730 CharacterOffsetEnd=731 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=part CharacterOffsetBegin=732 CharacterOffsetEnd=736 PartOfSpeech=NN Lemma=part NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=737 CharacterOffsetEnd=740 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=cymbalon CharacterOffsetBegin=741 CharacterOffsetEnd=749 PartOfSpeech=NN Lemma=cymbalon NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=750 CharacterOffsetEnd=755 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=756 CharacterOffsetEnd=757 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=introduced CharacterOffsetBegin=758 CharacterOffsetEnd=768 PartOfSpeech=VBD Lemma=introduce NamedEntityTag=O]
+[Text=into CharacterOffsetBegin=769 CharacterOffsetEnd=773 PartOfSpeech=IN Lemma=into NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=774 CharacterOffsetEnd=777 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=778 CharacterOffsetEnd=784 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=orchestra CharacterOffsetBegin=785 CharacterOffsetEnd=794 PartOfSpeech=NN Lemma=orchestra NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=795 CharacterOffsetEnd=797 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Renard CharacterOffsetBegin=798 CharacterOffsetEnd=804 PartOfSpeech=NNP Lemma=Renard NamedEntityTag=PERSON]
+[Text=. CharacterOffsetBegin=804 CharacterOffsetEnd=805 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBD carried)
+        (NP (PRP it))
+        (PRT (RP off))
+        (PP (TO to)
+          (NP (NNP Morges)))
+        (PP (IN in)
+          (NP (NN glee))))
+      (, ,)
+      (CC and)
+      (ADVP (RB very) (RB soon))
+      (VP (VBN learned)
+        (S
+          (VP (TO to)
+            (VP (VB play)
+              (NP (PRP it))
+              (ADVP (RB well) (RB enough)
+                (S
+                  (VP (TO to)
+                    (VP (VB enable)
+                      (S
+                        (NP (PRP me))
+                        (VP (TO to)
+                          (VP (VB compose)
+                            (NP
+                              (NP (DT a) (NN part))
+                              (PP (IN for)
+                                (NP (NN cymbalon)))
+                              (SBAR
+                                (WHNP (WDT which))
+                                (S
+                                  (NP (PRP I))
+                                  (VP (VBD introduced)
+                                    (PP (IN into)
+                                      (NP
+                                        (NP (DT the) (JJ little) (NN orchestra))
+                                        (PP (IN of)
+                                          (NP (NNP Renard)))))))))))))))))))))
+    (. .)))
+
+root(ROOT-0, carried-2)
+nsubj(carried-2, I-1)
+nsubj(learned-13, I-1)
+nsubj:xsubj(play-15, I-1)
+dobj(carried-2, it-3)
+compound:prt(carried-2, off-4)
+case(Morges-6, to-5)
+nmod:to(carried-2, Morges-6)
+case(glee-8, in-7)
+nmod:in(carried-2, glee-8)
+punct(carried-2, ,-9)
+cc(carried-2, and-10)
+advmod(soon-12, very-11)
+advmod(carried-2, soon-12)
+conj:and(carried-2, learned-13)
+mark(play-15, to-14)
+xcomp(learned-13, play-15)
+dobj(play-15, it-16)
+advmod(enough-18, well-17)
+advmod(play-15, enough-18)
+mark(enable-20, to-19)
+dep(enough-18, enable-20)
+dobj(enable-20, me-21)
+nsubj:xsubj(compose-23, me-21)
+mark(compose-23, to-22)
+xcomp(enable-20, compose-23)
+det(part-25, a-24)
+dobj(compose-23, part-25)
+dobj(introduced-30, part-25)
+case(cymbalon-27, for-26)
+nmod:for(part-25, cymbalon-27)
+ref(part-25, which-28)
+nsubj(introduced-30, I-29)
+acl:relcl(part-25, introduced-30)
+case(orchestra-34, into-31)
+det(orchestra-34, the-32)
+amod(orchestra-34, little-33)
+nmod:into(introduced-30, orchestra-34)
+case(Renard-36, of-35)
+nmod:of(orchestra-34, Renard-36)
+punct(carried-2, .-37)
+
+Coreference set:
+	(4,22,[22,23]) -> (1,7,[7,8]), that is: "Geneva" -> "Geneva"
+Coreference set:
+	(4,9,[9,10]) -> (1,26,[25,27]), that is: "Racz" -> "Aladar Racz"
+	(4,19,[19,20]) -> (1,26,[25,27]), that is: "his" -> "Aladar Racz"
+	(4,29,[29,30]) -> (1,26,[25,27]), that is: "he" -> "Aladar Racz"
+Coreference set:
+	(2,1,[1,2]) -> (1,21,[20,22]), that is: "He" -> "a cymbalon"
+Coreference set:
+	(3,11,[11,12]) -> (2,4,[3,5]), that is: "its" -> "a Hungarian"
+Coreference set:
+	(3,9,[9,10]) -> (3,1,[1,2]), that is: "me" -> "I"
+	(4,1,[1,2]) -> (3,1,[1,2]), that is: "I" -> "I"
+	(4,12,[12,13]) -> (3,1,[1,2]), that is: "me" -> "I"
+	(4,15,[15,16]) -> (3,1,[1,2]), that is: "my" -> "I"
+	(4,32,[32,33]) -> (3,1,[1,2]), that is: "me" -> "I"
+	(4,39,[39,40]) -> (3,1,[1,2]), that is: "me" -> "I"
+	(5,1,[1,2]) -> (3,1,[1,2]), that is: "I" -> "I"
+	(5,21,[21,22]) -> (3,1,[1,2]), that is: "me" -> "I"
+	(5,29,[29,30]) -> (3,1,[1,2]), that is: "I" -> "I"
+Coreference set:
+	(3,38,[38,39]) -> (3,15,[11,16]), that is: "its" -> "its rich , full tone"
+Coreference set:
+	(3,32,[32,33]) -> (3,19,[18,21]), that is: "his" -> "the player 's"
+Coreference set:
+	(5,3,[3,4]) -> (4,5,[5,6]), that is: "it" -> "one"
+	(5,16,[16,17]) -> (4,5,[5,6]), that is: "it" -> "one"

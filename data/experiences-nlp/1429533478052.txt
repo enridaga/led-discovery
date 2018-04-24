@@ -1,0 +1,129 @@
+Sentence #1 (17 tokens):
+M. Allan, son-in-law of Logier, gave a public performance, where his pupils played.
+[Text=M. CharacterOffsetBegin=0 CharacterOffsetEnd=2 PartOfSpeech=NNP Lemma=M. NamedEntityTag=PERSON]
+[Text=Allan CharacterOffsetBegin=3 CharacterOffsetEnd=8 PartOfSpeech=NNP Lemma=Allan NamedEntityTag=PERSON]
+[Text=, CharacterOffsetBegin=8 CharacterOffsetEnd=9 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=son-in-law CharacterOffsetBegin=10 CharacterOffsetEnd=20 PartOfSpeech=NN Lemma=son-in-law NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=21 CharacterOffsetEnd=23 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=Logier CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=NNP Lemma=Logier NamedEntityTag=LOCATION]
+[Text=, CharacterOffsetBegin=30 CharacterOffsetEnd=31 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=gave CharacterOffsetBegin=32 CharacterOffsetEnd=36 PartOfSpeech=VBD Lemma=give NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=37 CharacterOffsetEnd=38 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=public CharacterOffsetBegin=39 CharacterOffsetEnd=45 PartOfSpeech=JJ Lemma=public NamedEntityTag=O]
+[Text=performance CharacterOffsetBegin=46 CharacterOffsetEnd=57 PartOfSpeech=NN Lemma=performance NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=where CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=WRB Lemma=where NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=pupils CharacterOffsetBegin=69 CharacterOffsetEnd=75 PartOfSpeech=NNS Lemma=pupil NamedEntityTag=O]
+[Text=played CharacterOffsetBegin=76 CharacterOffsetEnd=82 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP M.) (NNP Allan))
+      (, ,)
+      (NP
+        (NP (NN son-in-law))
+        (PP (IN of)
+          (NP (NNP Logier))))
+      (, ,))
+    (VP (VBD gave)
+      (NP
+        (NP (DT a) (JJ public) (NN performance))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP$ his) (NNS pupils))
+            (VP (VBD played))))))
+    (. .)))
+
+root(ROOT-0, gave-8)
+compound(Allan-2, M.-1)
+nsubj(gave-8, Allan-2)
+punct(Allan-2, ,-3)
+appos(Allan-2, son-in-law-4)
+case(Logier-6, of-5)
+nmod:of(son-in-law-4, Logier-6)
+punct(Allan-2, ,-7)
+det(performance-11, a-9)
+amod(performance-11, public-10)
+dobj(gave-8, performance-11)
+punct(performance-11, ,-12)
+advmod(played-16, where-13)
+nmod:poss(pupils-15, his-14)
+nsubj(played-16, pupils-15)
+acl:relcl(performance-11, played-16)
+punct(gave-8, .-17)
+
+Sentence #2 (9 tokens):
+Pieces of my own were made to suffer.
+[Text=Pieces CharacterOffsetBegin=84 CharacterOffsetEnd=90 PartOfSpeech=NNP Lemma=Pieces NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=91 CharacterOffsetEnd=93 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=94 CharacterOffsetEnd=96 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=own CharacterOffsetBegin=97 CharacterOffsetEnd=100 PartOfSpeech=JJ Lemma=own NamedEntityTag=O]
+[Text=were CharacterOffsetBegin=101 CharacterOffsetEnd=105 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=made CharacterOffsetBegin=106 CharacterOffsetEnd=110 PartOfSpeech=VBN Lemma=make NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=111 CharacterOffsetEnd=113 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=suffer CharacterOffsetBegin=114 CharacterOffsetEnd=120 PartOfSpeech=VB Lemma=suffer NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP
+      (NP (NNP Pieces))
+      (PP (IN of)
+        (NP (PRP$ my) (JJ own))))
+    (VP (VBD were)
+      (VP (VBN made)
+        (S
+          (VP (TO to)
+            (VP (VB suffer))))))
+    (. .)))
+
+root(ROOT-0, made-6)
+nsubjpass(made-6, Pieces-1)
+nsubj:xsubj(suffer-8, Pieces-1)
+case(own-4, of-2)
+nmod:poss(own-4, my-3)
+nmod:of(Pieces-1, own-4)
+auxpass(made-6, were-5)
+mark(suffer-8, to-7)
+xcomp(made-6, suffer-8)
+punct(made-6, .-9)
+
+Sentence #3 (8 tokens):
+I repeat the word 'suffer'?
+[Text=I CharacterOffsetBegin=122 CharacterOffsetEnd=123 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=repeat CharacterOffsetBegin=124 CharacterOffsetEnd=130 PartOfSpeech=VBP Lemma=repeat NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=131 CharacterOffsetEnd=134 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=word CharacterOffsetBegin=135 CharacterOffsetEnd=139 PartOfSpeech=NN Lemma=word NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=140 CharacterOffsetEnd=141 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=suffer CharacterOffsetBegin=141 CharacterOffsetEnd=147 PartOfSpeech=VBP Lemma=suffer NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=147 CharacterOffsetEnd=148 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=? CharacterOffsetBegin=148 CharacterOffsetEnd=149 PartOfSpeech=. Lemma=? NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP repeat)
+      (SBAR
+        (S
+          (NP (DT the) (NN word))
+          (`` `)
+          (VP (VBP suffer))
+          ('' '))))
+    (. ?)))
+
+root(ROOT-0, repeat-2)
+nsubj(repeat-2, I-1)
+det(word-4, the-3)
+nsubj(suffer-6, word-4)
+punct(suffer-6, `-5)
+ccomp(repeat-2, suffer-6)
+punct(suffer-6, '-7)
+punct(repeat-2, ?-8)
+
+Coreference set:
+	(1,4,[4,7]) -> (1,2,[1,3]), that is: "son-in-law of Logier" -> "M. Allan"
+	(1,14,[14,15]) -> (1,2,[1,3]), that is: "his" -> "M. Allan"
+Coreference set:
+	(3,1,[1,2]) -> (2,3,[3,4]), that is: "I" -> "my"

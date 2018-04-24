@@ -1,0 +1,88 @@
+Sentence #1 (24 tokens):
+I am delighted when I hear her sing my 'Lieder,' which she does to perfection and 'con amore.'
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=am CharacterOffsetBegin=2 CharacterOffsetEnd=4 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=delighted CharacterOffsetBegin=5 CharacterOffsetEnd=14 PartOfSpeech=JJ Lemma=delighted NamedEntityTag=O]
+[Text=when CharacterOffsetBegin=15 CharacterOffsetEnd=19 PartOfSpeech=WRB Lemma=when NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=20 CharacterOffsetEnd=21 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=hear CharacterOffsetBegin=22 CharacterOffsetEnd=26 PartOfSpeech=VBP Lemma=hear NamedEntityTag=O]
+[Text=her CharacterOffsetBegin=27 CharacterOffsetEnd=30 PartOfSpeech=PRP$ Lemma=she NamedEntityTag=O]
+[Text=sing CharacterOffsetBegin=31 CharacterOffsetEnd=35 PartOfSpeech=VB Lemma=sing NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=36 CharacterOffsetEnd=38 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=39 CharacterOffsetEnd=40 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Lieder CharacterOffsetBegin=40 CharacterOffsetEnd=46 PartOfSpeech=NNP Lemma=Lieder NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=46 CharacterOffsetEnd=47 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=47 CharacterOffsetEnd=48 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=49 CharacterOffsetEnd=54 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=she CharacterOffsetBegin=55 CharacterOffsetEnd=58 PartOfSpeech=PRP Lemma=she NamedEntityTag=O]
+[Text=does CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=VBZ Lemma=do NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=64 CharacterOffsetEnd=66 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=perfection CharacterOffsetBegin=67 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=perfection NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=78 CharacterOffsetEnd=81 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=82 CharacterOffsetEnd=83 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=con CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=JJ Lemma=con NamedEntityTag=O]
+[Text=amore CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=NN Lemma=amore NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=93 CharacterOffsetEnd=94 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (ADJP (JJ delighted)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP I))
+            (VP (VBP hear)
+              (S
+                (NP (PRP$ her))
+                (VP (VB sing)
+                  (S
+                    (NP (PRP$ my))
+                    (NP (`` `)
+                      (NP (NNP Lieder))
+                      (, ,) ('' ')
+                      (SBAR
+                        (WHNP (WDT which))
+                        (S
+                          (NP (PRP she))
+                          (VP (VBZ does)
+                            (PP (TO to)
+                              (NP
+                                (NP (NN perfection))
+                                (CC and)
+                                (NP (`` `) (JJ con) (NN amore))))))))))))))))
+    (. .) ('' ')))
+
+root(ROOT-0, delighted-3)
+nsubj(delighted-3, I-1)
+cop(delighted-3, am-2)
+advmod(hear-6, when-4)
+nsubj(hear-6, I-5)
+ccomp(delighted-3, hear-6)
+nsubj(sing-8, her-7)
+ccomp(hear-6, sing-8)
+nsubj(Lieder-11, my-9)
+punct(Lieder-11, `-10)
+xcomp(sing-8, Lieder-11)
+dobj(does-16, Lieder-11)
+punct(Lieder-11, ,-12)
+punct(Lieder-11, '-13)
+ref(Lieder-11, which-14)
+nsubj(does-16, she-15)
+acl:relcl(Lieder-11, does-16)
+case(perfection-18, to-17)
+nmod:to(does-16, perfection-18)
+cc(perfection-18, and-19)
+punct(amore-22, `-20)
+amod(amore-22, con-21)
+nmod:to(does-16, amore-22)
+conj:and(perfection-18, amore-22)
+punct(delighted-3, .-23)
+punct(delighted-3, '-24)
+
+Coreference set:
+	(1,5,[5,6]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(1,9,[9,10]) -> (1,1,[1,2]), that is: "my" -> "I"
+Coreference set:
+	(1,15,[15,16]) -> (1,7,[7,8]), that is: "she" -> "her"

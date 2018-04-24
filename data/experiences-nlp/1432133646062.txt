@@ -1,0 +1,204 @@
+Sentence #1 (5 tokens):
+Went up to Sandringham.
+[Text=Went CharacterOffsetBegin=0 CharacterOffsetEnd=4 PartOfSpeech=VBD Lemma=go NamedEntityTag=O]
+[Text=up CharacterOffsetBegin=5 CharacterOffsetEnd=7 PartOfSpeech=RP Lemma=up NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=Sandringham CharacterOffsetBegin=11 CharacterOffsetEnd=22 PartOfSpeech=NNP Lemma=Sandringham NamedEntityTag=LOCATION]
+[Text=. CharacterOffsetBegin=22 CharacterOffsetEnd=23 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBD Went)
+      (PRT (RP up))
+      (PP (TO to)
+        (NP (NNP Sandringham))))
+    (. .)))
+
+root(ROOT-0, Went-1)
+compound:prt(Went-1, up-2)
+case(Sandringham-4, to-3)
+nmod:to(Went-1, Sandringham-4)
+punct(Went-1, .-5)
+
+Sentence #2 (8 tokens):
+Played in dear Princess’s room upstairs.
+[Text=Played CharacterOffsetBegin=24 CharacterOffsetEnd=30 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=31 CharacterOffsetEnd=33 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=dear CharacterOffsetBegin=34 CharacterOffsetEnd=38 PartOfSpeech=RB Lemma=dear NamedEntityTag=O]
+[Text=Princess CharacterOffsetBegin=39 CharacterOffsetEnd=47 PartOfSpeech=NNP Lemma=Princess NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=47 CharacterOffsetEnd=49 PartOfSpeech=POS Lemma='s NamedEntityTag=O]
+[Text=room CharacterOffsetBegin=50 CharacterOffsetEnd=54 PartOfSpeech=NN Lemma=room NamedEntityTag=O]
+[Text=upstairs CharacterOffsetBegin=55 CharacterOffsetEnd=63 PartOfSpeech=NN Lemma=upstairs NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=63 CharacterOffsetEnd=64 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBN Played)
+      (PP (IN in)
+        (ADJP (RB dear)))
+      (NP
+        (NP (NNP Princess) (POS 's))
+        (NN room) (NN upstairs)))
+    (. .)))
+
+root(ROOT-0, Played-1)
+case(dear-3, in-2)
+advcl:in(Played-1, dear-3)
+nmod:poss(upstairs-7, Princess-4)
+case(Princess-4, 's-5)
+compound(upstairs-7, room-6)
+dobj(Played-1, upstairs-7)
+punct(Played-1, .-8)
+
+Sentence #3 (20 tokens):
+The Queen came in for a little and Princess Mary and Lady Mary Trefusis and Marquise d’Hautpoule were there.
+[Text=The CharacterOffsetBegin=65 CharacterOffsetEnd=68 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Queen CharacterOffsetBegin=69 CharacterOffsetEnd=74 PartOfSpeech=NNP Lemma=Queen NamedEntityTag=O]
+[Text=came CharacterOffsetBegin=75 CharacterOffsetEnd=79 PartOfSpeech=VBD Lemma=come NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=80 CharacterOffsetEnd=82 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=87 CharacterOffsetEnd=88 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=little CharacterOffsetBegin=89 CharacterOffsetEnd=95 PartOfSpeech=JJ Lemma=little NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=96 CharacterOffsetEnd=99 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Princess CharacterOffsetBegin=100 CharacterOffsetEnd=108 PartOfSpeech=NNP Lemma=Princess NamedEntityTag=O]
+[Text=Mary CharacterOffsetBegin=109 CharacterOffsetEnd=113 PartOfSpeech=NNP Lemma=Mary NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=114 CharacterOffsetEnd=117 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Lady CharacterOffsetBegin=118 CharacterOffsetEnd=122 PartOfSpeech=NNP Lemma=Lady NamedEntityTag=PERSON]
+[Text=Mary CharacterOffsetBegin=123 CharacterOffsetEnd=127 PartOfSpeech=NNP Lemma=Mary NamedEntityTag=PERSON]
+[Text=Trefusis CharacterOffsetBegin=128 CharacterOffsetEnd=136 PartOfSpeech=NNP Lemma=Trefusis NamedEntityTag=PERSON]
+[Text=and CharacterOffsetBegin=137 CharacterOffsetEnd=140 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=Marquise CharacterOffsetBegin=141 CharacterOffsetEnd=149 PartOfSpeech=NNP Lemma=Marquise NamedEntityTag=PERSON]
+[Text=d'Hautpoule CharacterOffsetBegin=150 CharacterOffsetEnd=161 PartOfSpeech=NNP Lemma=d'Hautpoule NamedEntityTag=PERSON]
+[Text=were CharacterOffsetBegin=162 CharacterOffsetEnd=166 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=167 CharacterOffsetEnd=172 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=172 CharacterOffsetEnd=173 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNP Queen))
+      (VP (VBD came)
+        (PP (IN in) (IN for)
+          (NP
+            (NP (DT a) (JJ little))
+            (CC and)
+            (NP (NNP Princess) (NNP Mary))))))
+    (CC and)
+    (S
+      (NP (NNP Lady) (NNP Mary) (NNP Trefusis)
+        (CC and)
+        (NNP Marquise) (NNP d'Hautpoule))
+      (VP (VBD were)
+        (NP (EX there))))
+    (. .)))
+
+root(ROOT-0, came-3)
+det(Queen-2, The-1)
+nsubj(came-3, Queen-2)
+case(little-7, in-4)
+case(little-7, for-5)
+det(little-7, a-6)
+nmod:for(came-3, little-7)
+cc(little-7, and-8)
+compound(Mary-10, Princess-9)
+nmod:for(came-3, Mary-10)
+conj:and(little-7, Mary-10)
+cc(came-3, and-11)
+compound(Trefusis-14, Lady-12)
+compound(Trefusis-14, Mary-13)
+nsubj(there-19, Trefusis-14)
+cc(Trefusis-14, and-15)
+compound(d'Hautpoule-17, Marquise-16)
+conj:and(Trefusis-14, d'Hautpoule-17)
+nsubj(there-19, d'Hautpoule-17)
+cop(there-19, were-18)
+conj:and(came-3, there-19)
+punct(came-3, .-20)
+
+Sentence #4 (4 tokens):
+Princess Mary sang.
+[Text=Princess CharacterOffsetBegin=174 CharacterOffsetEnd=182 PartOfSpeech=NNP Lemma=Princess NamedEntityTag=O]
+[Text=Mary CharacterOffsetBegin=183 CharacterOffsetEnd=187 PartOfSpeech=NNP Lemma=Mary NamedEntityTag=PERSON]
+[Text=sang CharacterOffsetBegin=188 CharacterOffsetEnd=192 PartOfSpeech=VBD Lemma=sing NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=192 CharacterOffsetEnd=193 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (NNP Princess) (NNP Mary))
+    (VP (VBD sang))
+    (. .)))
+
+root(ROOT-0, sang-3)
+compound(Mary-2, Princess-1)
+nsubj(sang-3, Mary-2)
+punct(sang-3, .-4)
+
+Sentence #5 (3 tokens):
+Curious voice!
+[Text=Curious CharacterOffsetBegin=194 CharacterOffsetEnd=201 PartOfSpeech=JJ Lemma=curious NamedEntityTag=O]
+[Text=voice CharacterOffsetBegin=202 CharacterOffsetEnd=207 PartOfSpeech=NN Lemma=voice NamedEntityTag=O]
+[Text=! CharacterOffsetBegin=207 CharacterOffsetEnd=208 PartOfSpeech=. Lemma=! NamedEntityTag=O]
+(ROOT
+  (NP (JJ Curious) (NN voice) (. !)))
+
+root(ROOT-0, voice-2)
+amod(voice-2, Curious-1)
+punct(voice-2, !-3)
+
+Sentence #6 (6 tokens):
+Played lots on two pianos.
+[Text=Played CharacterOffsetBegin=209 CharacterOffsetEnd=215 PartOfSpeech=VBN Lemma=play NamedEntityTag=O]
+[Text=lots CharacterOffsetBegin=216 CharacterOffsetEnd=220 PartOfSpeech=NNS Lemma=lot NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=221 CharacterOffsetEnd=223 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=224 CharacterOffsetEnd=227 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=pianos CharacterOffsetBegin=228 CharacterOffsetEnd=234 PartOfSpeech=NNS Lemma=piano NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=234 CharacterOffsetEnd=235 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (VP (VBN Played)
+      (NP
+        (NP (NNS lots))
+        (PP (IN on)
+          (NP (CD two) (NNS pianos)))))
+    (. .)))
+
+root(ROOT-0, Played-1)
+dobj(Played-1, lots-2)
+case(pianos-5, on-3)
+nummod(pianos-5, two-4)
+nmod:on(lots-2, pianos-5)
+punct(Played-1, .-6)
+
+Sentence #7 (10 tokens):
+The Queen asked us again for the next day.
+[Text=The CharacterOffsetBegin=236 CharacterOffsetEnd=239 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=Queen CharacterOffsetBegin=240 CharacterOffsetEnd=245 PartOfSpeech=NNP Lemma=Queen NamedEntityTag=O]
+[Text=asked CharacterOffsetBegin=246 CharacterOffsetEnd=251 PartOfSpeech=VBD Lemma=ask NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=252 CharacterOffsetEnd=254 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=again CharacterOffsetBegin=255 CharacterOffsetEnd=260 PartOfSpeech=RB Lemma=again NamedEntityTag=O]
+[Text=for CharacterOffsetBegin=261 CharacterOffsetEnd=264 PartOfSpeech=IN Lemma=for NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=265 CharacterOffsetEnd=268 PartOfSpeech=DT Lemma=the NamedEntityTag=DATE NormalizedNamedEntityTag=NEXT_IMMEDIATE P1D Timex=<TIMEX3 alt_value="NEXT_IMMEDIATE P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the next day</TIMEX3>]
+[Text=next CharacterOffsetBegin=269 CharacterOffsetEnd=273 PartOfSpeech=JJ Lemma=next NamedEntityTag=DATE NormalizedNamedEntityTag=NEXT_IMMEDIATE P1D Timex=<TIMEX3 alt_value="NEXT_IMMEDIATE P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the next day</TIMEX3>]
+[Text=day CharacterOffsetBegin=274 CharacterOffsetEnd=277 PartOfSpeech=NN Lemma=day NamedEntityTag=DATE NormalizedNamedEntityTag=NEXT_IMMEDIATE P1D Timex=<TIMEX3 alt_value="NEXT_IMMEDIATE P1D" anchorTimeID="t0" temporalFunction="true" tid="t1" type="DATE" valueFromFunction="tf0">the next day</TIMEX3>]
+[Text=. CharacterOffsetBegin=277 CharacterOffsetEnd=278 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (NNP Queen))
+    (VP (VBD asked)
+      (NP (PRP us))
+      (ADVP (RB again))
+      (PP (IN for)
+        (NP (DT the) (JJ next) (NN day))))
+    (. .)))
+
+root(ROOT-0, asked-3)
+det(Queen-2, The-1)
+nsubj(asked-3, Queen-2)
+dobj(asked-3, us-4)
+advmod(asked-3, again-5)
+case(day-9, for-6)
+det(day-9, the-7)
+amod(day-9, next-8)
+nmod:for(asked-3, day-9)
+punct(asked-3, .-10)
+
+Coreference set:
+	(7,2,[1,3]) -> (3,2,[1,3]), that is: "The Queen" -> "The Queen"
+Coreference set:
+	(4,2,[1,3]) -> (3,10,[9,11]), that is: "Princess Mary" -> "Princess Mary"

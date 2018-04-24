@@ -1,0 +1,97 @@
+Sentence #1 (12 tokens):
+Great crowds in the street on account of the impending elections.
+[Text=Great CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=JJ Lemma=great NamedEntityTag=O]
+[Text=crowds CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=NNS Lemma=crowd NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=street CharacterOffsetBegin=20 CharacterOffsetEnd=26 PartOfSpeech=NN Lemma=street NamedEntityTag=O]
+[Text=on CharacterOffsetBegin=27 CharacterOffsetEnd=29 PartOfSpeech=IN Lemma=on NamedEntityTag=O]
+[Text=account CharacterOffsetBegin=30 CharacterOffsetEnd=37 PartOfSpeech=NN Lemma=account NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=38 CharacterOffsetEnd=40 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=41 CharacterOffsetEnd=44 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=impending CharacterOffsetBegin=45 CharacterOffsetEnd=54 PartOfSpeech=JJ Lemma=impending NamedEntityTag=O]
+[Text=elections CharacterOffsetBegin=55 CharacterOffsetEnd=64 PartOfSpeech=NNS Lemma=election NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (NP
+    (NP (JJ Great) (NNS crowds))
+    (PP (IN in)
+      (NP
+        (NP (DT the) (NN street))
+        (PP (IN on)
+          (NP (NN account)))))
+    (PP (IN of)
+      (NP (DT the) (JJ impending) (NNS elections)))
+    (. .)))
+
+root(ROOT-0, crowds-2)
+amod(crowds-2, Great-1)
+case(street-5, in-3)
+det(street-5, the-4)
+nmod:in(crowds-2, street-5)
+case(account-7, on-6)
+nmod:on(street-5, account-7)
+case(elections-11, of-8)
+det(elections-11, the-9)
+amod(elections-11, impending-10)
+nmod:of(crowds-2, elections-11)
+punct(crowds-2, .-12)
+
+Sentence #2 (17 tokens):
+The two candidates paraded the streets with bands of music and the shouts of their partisans.
+[Text=The CharacterOffsetBegin=66 CharacterOffsetEnd=69 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=two CharacterOffsetBegin=70 CharacterOffsetEnd=73 PartOfSpeech=CD Lemma=two NamedEntityTag=NUMBER NormalizedNamedEntityTag=2.0]
+[Text=candidates CharacterOffsetBegin=74 CharacterOffsetEnd=84 PartOfSpeech=NNS Lemma=candidate NamedEntityTag=O]
+[Text=paraded CharacterOffsetBegin=85 CharacterOffsetEnd=92 PartOfSpeech=VBD Lemma=parade NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=93 CharacterOffsetEnd=96 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=streets CharacterOffsetBegin=97 CharacterOffsetEnd=104 PartOfSpeech=NNS Lemma=street NamedEntityTag=O]
+[Text=with CharacterOffsetBegin=105 CharacterOffsetEnd=109 PartOfSpeech=IN Lemma=with NamedEntityTag=O]
+[Text=bands CharacterOffsetBegin=110 CharacterOffsetEnd=115 PartOfSpeech=NNS Lemma=band NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=116 CharacterOffsetEnd=118 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=119 CharacterOffsetEnd=124 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=125 CharacterOffsetEnd=128 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=129 CharacterOffsetEnd=132 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=shouts CharacterOffsetBegin=133 CharacterOffsetEnd=139 PartOfSpeech=NNS Lemma=shout NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=140 CharacterOffsetEnd=142 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=their CharacterOffsetBegin=143 CharacterOffsetEnd=148 PartOfSpeech=PRP$ Lemma=they NamedEntityTag=O]
+[Text=partisans CharacterOffsetBegin=149 CharacterOffsetEnd=158 PartOfSpeech=NNS Lemma=partisan NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=158 CharacterOffsetEnd=159 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT The) (CD two) (NNS candidates))
+    (VP (VBD paraded)
+      (NP (DT the) (NNS streets))
+      (PP (IN with)
+        (NP
+          (NP
+            (NP (NNS bands))
+            (PP (IN of)
+              (NP (NN music))))
+          (CC and)
+          (NP
+            (NP (DT the) (NNS shouts))
+            (PP (IN of)
+              (NP (PRP$ their) (NNS partisans)))))))
+    (. .)))
+
+root(ROOT-0, paraded-4)
+det(candidates-3, The-1)
+nummod(candidates-3, two-2)
+nsubj(paraded-4, candidates-3)
+det(streets-6, the-5)
+dobj(paraded-4, streets-6)
+case(bands-8, with-7)
+nmod:with(paraded-4, bands-8)
+case(music-10, of-9)
+nmod:of(bands-8, music-10)
+cc(bands-8, and-11)
+det(shouts-13, the-12)
+nmod:with(paraded-4, shouts-13)
+conj:and(bands-8, shouts-13)
+case(partisans-16, of-14)
+nmod:poss(partisans-16, their-15)
+nmod:of(shouts-13, partisans-16)
+punct(paraded-4, .-17)
+
+Coreference set:
+	(2,15,[15,16]) -> (2,3,[1,4]), that is: "their" -> "The two candidates"

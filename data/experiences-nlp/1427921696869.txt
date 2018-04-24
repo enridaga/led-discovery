@@ -1,0 +1,431 @@
+Sentence #1 (16 tokens):
+I spoke of these people, my acquaintances, in various ways throughout my life.
+[Text=I CharacterOffsetBegin=0 CharacterOffsetEnd=1 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=spoke CharacterOffsetBegin=2 CharacterOffsetEnd=7 PartOfSpeech=VBD Lemma=speak NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=8 CharacterOffsetEnd=10 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=11 CharacterOffsetEnd=16 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=17 CharacterOffsetEnd=23 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=23 CharacterOffsetEnd=24 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=25 CharacterOffsetEnd=27 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=acquaintances CharacterOffsetBegin=28 CharacterOffsetEnd=41 PartOfSpeech=NNS Lemma=acquaintance NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=41 CharacterOffsetEnd=42 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=43 CharacterOffsetEnd=45 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=various CharacterOffsetBegin=46 CharacterOffsetEnd=53 PartOfSpeech=JJ Lemma=various NamedEntityTag=O]
+[Text=ways CharacterOffsetBegin=54 CharacterOffsetEnd=58 PartOfSpeech=NNS Lemma=way NamedEntityTag=O]
+[Text=throughout CharacterOffsetBegin=59 CharacterOffsetEnd=69 PartOfSpeech=IN Lemma=throughout NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=70 CharacterOffsetEnd=72 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=life CharacterOffsetBegin=73 CharacterOffsetEnd=77 PartOfSpeech=NN Lemma=life NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=77 CharacterOffsetEnd=78 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD spoke)
+      (PP (IN of)
+        (NP
+          (NP (DT these) (NNS people))
+          (, ,)
+          (NP (PRP$ my) (NNS acquaintances))
+          (, ,)))
+      (PP (IN in)
+        (NP (JJ various) (NNS ways)))
+      (PP (IN throughout)
+        (NP (PRP$ my) (NN life))))
+    (. .)))
+
+root(ROOT-0, spoke-2)
+nsubj(spoke-2, I-1)
+case(people-5, of-3)
+det(people-5, these-4)
+nmod:of(spoke-2, people-5)
+punct(people-5, ,-6)
+nmod:poss(acquaintances-8, my-7)
+appos(people-5, acquaintances-8)
+punct(people-5, ,-9)
+case(ways-12, in-10)
+amod(ways-12, various-11)
+nmod:in(spoke-2, ways-12)
+case(life-15, throughout-13)
+nmod:poss(life-15, my-14)
+nmod:throughout(spoke-2, life-15)
+punct(spoke-2, .-16)
+
+Sentence #2 (13 tokens):
+Occasionally I contradicted myself – and I’m not ashamed of that.
+[Text=Occasionally CharacterOffsetBegin=79 CharacterOffsetEnd=91 PartOfSpeech=RB Lemma=occasionally NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=92 CharacterOffsetEnd=93 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=contradicted CharacterOffsetBegin=94 CharacterOffsetEnd=106 PartOfSpeech=VBD Lemma=contradict NamedEntityTag=O]
+[Text=myself CharacterOffsetBegin=107 CharacterOffsetEnd=113 PartOfSpeech=PRP Lemma=myself NamedEntityTag=O]
+[Text=-- CharacterOffsetBegin=114 CharacterOffsetEnd=115 PartOfSpeech=: Lemma=-- NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=116 CharacterOffsetEnd=119 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=120 CharacterOffsetEnd=121 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text='m CharacterOffsetBegin=121 CharacterOffsetEnd=123 PartOfSpeech=VBP Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=124 CharacterOffsetEnd=127 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=ashamed CharacterOffsetBegin=128 CharacterOffsetEnd=135 PartOfSpeech=JJ Lemma=ashamed NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=136 CharacterOffsetEnd=138 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=139 CharacterOffsetEnd=143 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=143 CharacterOffsetEnd=144 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (ADVP (RB Occasionally))
+      (NP (PRP I))
+      (VP (VBD contradicted)
+        (NP (PRP myself))))
+    (: --)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm) (RB not)
+        (ADJP (JJ ashamed)
+          (PP (IN of)
+            (NP (DT that))))))
+    (. .)))
+
+root(ROOT-0, contradicted-3)
+advmod(contradicted-3, Occasionally-1)
+nsubj(contradicted-3, I-2)
+dobj(contradicted-3, myself-4)
+punct(contradicted-3, ---5)
+cc(contradicted-3, and-6)
+nsubj(ashamed-10, I-7)
+cop(ashamed-10, 'm-8)
+neg(ashamed-10, not-9)
+conj:and(contradicted-3, ashamed-10)
+case(that-12, of-11)
+nmod:of(ashamed-10, that-12)
+punct(contradicted-3, .-13)
+
+Sentence #3 (15 tokens):
+I changed my mind about these people and there’s nothing shameful in that.
+[Text=I CharacterOffsetBegin=145 CharacterOffsetEnd=146 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=changed CharacterOffsetBegin=147 CharacterOffsetEnd=154 PartOfSpeech=VBD Lemma=change NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=155 CharacterOffsetEnd=157 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=mind CharacterOffsetBegin=158 CharacterOffsetEnd=162 PartOfSpeech=NN Lemma=mind NamedEntityTag=O]
+[Text=about CharacterOffsetBegin=163 CharacterOffsetEnd=168 PartOfSpeech=IN Lemma=about NamedEntityTag=O]
+[Text=these CharacterOffsetBegin=169 CharacterOffsetEnd=174 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=175 CharacterOffsetEnd=181 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=182 CharacterOffsetEnd=185 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=there CharacterOffsetBegin=186 CharacterOffsetEnd=191 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text='s CharacterOffsetBegin=191 CharacterOffsetEnd=193 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=nothing CharacterOffsetBegin=194 CharacterOffsetEnd=201 PartOfSpeech=NN Lemma=nothing NamedEntityTag=O]
+[Text=shameful CharacterOffsetBegin=202 CharacterOffsetEnd=210 PartOfSpeech=JJ Lemma=shameful NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=211 CharacterOffsetEnd=213 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=214 CharacterOffsetEnd=218 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=218 CharacterOffsetEnd=219 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD changed)
+        (NP (PRP$ my) (NN mind))
+        (PP (IN about)
+          (NP (DT these) (NNS people)))))
+    (CC and)
+    (S
+      (NP (EX there))
+      (VP (VBZ 's)
+        (ADJP (NN nothing) (JJ shameful)
+          (PP (IN in)
+            (NP (DT that))))))
+    (. .)))
+
+root(ROOT-0, changed-2)
+nsubj(changed-2, I-1)
+nsubj('s-10, I-1)
+nmod:poss(mind-4, my-3)
+dobj(changed-2, mind-4)
+case(people-7, about-5)
+det(people-7, these-6)
+nmod:about(changed-2, people-7)
+cc(changed-2, and-8)
+expl('s-10, there-9)
+conj:and(changed-2, 's-10)
+nmod:npmod(shameful-12, nothing-11)
+xcomp('s-10, shameful-12)
+case(that-14, in-13)
+nmod:in(shameful-12, that-14)
+punct(changed-2, .-15)
+
+Sentence #4 (19 tokens):
+There would have been, had I done so because of external pressures or to improve my life.
+[Text=There CharacterOffsetBegin=220 CharacterOffsetEnd=225 PartOfSpeech=EX Lemma=there NamedEntityTag=O]
+[Text=would CharacterOffsetBegin=226 CharacterOffsetEnd=231 PartOfSpeech=MD Lemma=would NamedEntityTag=O]
+[Text=have CharacterOffsetBegin=232 CharacterOffsetEnd=236 PartOfSpeech=VB Lemma=have NamedEntityTag=O]
+[Text=been CharacterOffsetBegin=237 CharacterOffsetEnd=241 PartOfSpeech=VBN Lemma=be NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=241 CharacterOffsetEnd=242 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=had CharacterOffsetBegin=243 CharacterOffsetEnd=246 PartOfSpeech=VBD Lemma=have NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=247 CharacterOffsetEnd=248 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=done CharacterOffsetBegin=249 CharacterOffsetEnd=253 PartOfSpeech=VBN Lemma=do NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=254 CharacterOffsetEnd=256 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=because CharacterOffsetBegin=257 CharacterOffsetEnd=264 PartOfSpeech=IN Lemma=because NamedEntityTag=O]
+[Text=of CharacterOffsetBegin=265 CharacterOffsetEnd=267 PartOfSpeech=IN Lemma=of NamedEntityTag=O]
+[Text=external CharacterOffsetBegin=268 CharacterOffsetEnd=276 PartOfSpeech=JJ Lemma=external NamedEntityTag=O]
+[Text=pressures CharacterOffsetBegin=277 CharacterOffsetEnd=286 PartOfSpeech=NNS Lemma=pressure NamedEntityTag=O]
+[Text=or CharacterOffsetBegin=287 CharacterOffsetEnd=289 PartOfSpeech=CC Lemma=or NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=290 CharacterOffsetEnd=292 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=improve CharacterOffsetBegin=293 CharacterOffsetEnd=300 PartOfSpeech=VB Lemma=improve NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=301 CharacterOffsetEnd=303 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=life CharacterOffsetBegin=304 CharacterOffsetEnd=308 PartOfSpeech=NN Lemma=life NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=308 CharacterOffsetEnd=309 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (SINV
+    (S
+      (NP (EX There))
+      (VP (MD would)
+        (VP (VB have)
+          (VP (VBN been)))))
+    (, ,)
+    (VP (VBD had)
+      (NP (PRP I))
+      (VP (VBN done)
+        (ADVP (RB so))
+        (PP (IN because)
+          (UCP
+            (PP (IN of)
+              (NP (JJ external) (NNS pressures)))
+            (CC or)
+            (S
+              (VP (TO to)
+                (VP (VB improve))))))))
+    (NP (PRP$ my) (NN life))
+    (. .)))
+
+root(ROOT-0, done-8)
+expl(been-4, There-1)
+aux(been-4, would-2)
+aux(been-4, have-3)
+ccomp(done-8, been-4)
+punct(done-8, ,-5)
+aux(done-8, had-6)
+dobj(done-8, I-7)
+advmod(done-8, so-9)
+case(pressures-13, because-10)
+case(pressures-13, of-11)
+amod(pressures-13, external-12)
+advcl:of(done-8, pressures-13)
+cc(pressures-13, or-14)
+mark(improve-16, to-15)
+advcl:of(done-8, improve-16)
+conj:or(pressures-13, improve-16)
+nmod:poss(life-18, my-17)
+nsubj(done-8, life-18)
+punct(done-8, .-19)
+
+Sentence #5 (7 tokens):
+But that was not the case.
+[Text=But CharacterOffsetBegin=310 CharacterOffsetEnd=313 PartOfSpeech=CC Lemma=but NamedEntityTag=O]
+[Text=that CharacterOffsetBegin=314 CharacterOffsetEnd=318 PartOfSpeech=DT Lemma=that NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=319 CharacterOffsetEnd=322 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=not CharacterOffsetBegin=323 CharacterOffsetEnd=326 PartOfSpeech=RB Lemma=not NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=327 CharacterOffsetEnd=330 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=case CharacterOffsetBegin=331 CharacterOffsetEnd=335 PartOfSpeech=NN Lemma=case NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=335 CharacterOffsetEnd=336 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S (CC But)
+    (NP (DT that))
+    (VP (VBD was) (RB not)
+      (NP (DT the) (NN case)))
+    (. .)))
+
+root(ROOT-0, case-6)
+cc(case-6, But-1)
+nsubj(case-6, that-2)
+cop(case-6, was-3)
+neg(case-6, not-4)
+det(case-6, the-5)
+punct(case-6, .-7)
+
+Sentence #6 (21 tokens):
+These people simply changed and so did I. I listened to new music and grew to know the old better.
+[Text=These CharacterOffsetBegin=337 CharacterOffsetEnd=342 PartOfSpeech=DT Lemma=these NamedEntityTag=O]
+[Text=people CharacterOffsetBegin=343 CharacterOffsetEnd=349 PartOfSpeech=NNS Lemma=people NamedEntityTag=O]
+[Text=simply CharacterOffsetBegin=350 CharacterOffsetEnd=356 PartOfSpeech=RB Lemma=simply NamedEntityTag=O]
+[Text=changed CharacterOffsetBegin=357 CharacterOffsetEnd=364 PartOfSpeech=VBD Lemma=change NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=365 CharacterOffsetEnd=368 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=so CharacterOffsetBegin=369 CharacterOffsetEnd=371 PartOfSpeech=RB Lemma=so NamedEntityTag=O]
+[Text=did CharacterOffsetBegin=372 CharacterOffsetEnd=375 PartOfSpeech=VBD Lemma=do NamedEntityTag=O]
+[Text=I. CharacterOffsetBegin=376 CharacterOffsetEnd=378 PartOfSpeech=NN Lemma=i. NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=379 CharacterOffsetEnd=380 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=listened CharacterOffsetBegin=381 CharacterOffsetEnd=389 PartOfSpeech=VBD Lemma=listen NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=390 CharacterOffsetEnd=392 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=393 CharacterOffsetEnd=396 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=music CharacterOffsetBegin=397 CharacterOffsetEnd=402 PartOfSpeech=NN Lemma=music NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=403 CharacterOffsetEnd=406 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=grew CharacterOffsetBegin=407 CharacterOffsetEnd=411 PartOfSpeech=VBD Lemma=grow NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=412 CharacterOffsetEnd=414 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=know CharacterOffsetBegin=415 CharacterOffsetEnd=419 PartOfSpeech=VB Lemma=know NamedEntityTag=O]
+[Text=the CharacterOffsetBegin=420 CharacterOffsetEnd=423 PartOfSpeech=DT Lemma=the NamedEntityTag=O]
+[Text=old CharacterOffsetBegin=424 CharacterOffsetEnd=427 PartOfSpeech=JJ Lemma=old NamedEntityTag=O]
+[Text=better CharacterOffsetBegin=428 CharacterOffsetEnd=434 PartOfSpeech=JJR Lemma=better NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=434 CharacterOffsetEnd=435 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (DT These) (NNS people))
+    (ADVP (RB simply))
+    (VP
+      (VP (VBD changed))
+      (CC and)
+      (VP
+        (ADVP (RB so))
+        (VBD did)
+        (NP
+          (NP (NN I.))
+          (SBAR
+            (S
+              (NP (PRP I))
+              (VP
+                (VP (VBD listened)
+                  (PP (TO to)
+                    (NP (JJ new) (NN music))))
+                (CC and)
+                (VP (VBD grew)
+                  (S
+                    (VP (TO to)
+                      (VP (VB know)
+                        (NP (DT the) (JJ old) (JJR better))))))))))))
+    (. .)))
+
+root(ROOT-0, changed-4)
+det(people-2, These-1)
+nsubj(changed-4, people-2)
+nsubj(did-7, people-2)
+advmod(changed-4, simply-3)
+cc(changed-4, and-5)
+advmod(did-7, so-6)
+conj:and(changed-4, did-7)
+dobj(did-7, I.-8)
+nsubj(listened-10, I-9)
+nsubj(grew-15, I-9)
+nsubj:xsubj(know-17, I-9)
+acl:relcl(I.-8, listened-10)
+case(music-13, to-11)
+amod(music-13, new-12)
+nmod:to(listened-10, music-13)
+cc(listened-10, and-14)
+acl:relcl(I.-8, grew-15)
+conj:and(listened-10, grew-15)
+mark(know-17, to-16)
+xcomp(grew-15, know-17)
+det(better-20, the-18)
+amod(better-20, old-19)
+dobj(know-17, better-20)
+punct(changed-4, .-21)
+
+Sentence #7 (20 tokens):
+I read, I was told many things; I suffered from insomnia and I spent my nights ruminating.
+[Text=I CharacterOffsetBegin=436 CharacterOffsetEnd=437 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=read CharacterOffsetBegin=438 CharacterOffsetEnd=442 PartOfSpeech=VBP Lemma=read NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=442 CharacterOffsetEnd=443 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=444 CharacterOffsetEnd=445 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=was CharacterOffsetBegin=446 CharacterOffsetEnd=449 PartOfSpeech=VBD Lemma=be NamedEntityTag=O]
+[Text=told CharacterOffsetBegin=450 CharacterOffsetEnd=454 PartOfSpeech=VBN Lemma=tell NamedEntityTag=O]
+[Text=many CharacterOffsetBegin=455 CharacterOffsetEnd=459 PartOfSpeech=JJ Lemma=many NamedEntityTag=O]
+[Text=things CharacterOffsetBegin=460 CharacterOffsetEnd=466 PartOfSpeech=NNS Lemma=thing NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=466 CharacterOffsetEnd=467 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=468 CharacterOffsetEnd=469 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=suffered CharacterOffsetBegin=470 CharacterOffsetEnd=478 PartOfSpeech=VBD Lemma=suffer NamedEntityTag=O]
+[Text=from CharacterOffsetBegin=479 CharacterOffsetEnd=483 PartOfSpeech=IN Lemma=from NamedEntityTag=O]
+[Text=insomnia CharacterOffsetBegin=484 CharacterOffsetEnd=492 PartOfSpeech=NN Lemma=insomnia NamedEntityTag=O]
+[Text=and CharacterOffsetBegin=493 CharacterOffsetEnd=496 PartOfSpeech=CC Lemma=and NamedEntityTag=O]
+[Text=I CharacterOffsetBegin=497 CharacterOffsetEnd=498 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=spent CharacterOffsetBegin=499 CharacterOffsetEnd=504 PartOfSpeech=VBD Lemma=spend NamedEntityTag=O]
+[Text=my CharacterOffsetBegin=505 CharacterOffsetEnd=507 PartOfSpeech=PRP$ Lemma=my NamedEntityTag=O]
+[Text=nights CharacterOffsetBegin=508 CharacterOffsetEnd=514 PartOfSpeech=NNS Lemma=night NamedEntityTag=TIME NormalizedNamedEntityTag=TNI Timex=<TIMEX3 tid="t1" type="TIME" value="TNI">nights</TIMEX3>]
+[Text=ruminating CharacterOffsetBegin=515 CharacterOffsetEnd=525 PartOfSpeech=VBG Lemma=ruminate NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=525 CharacterOffsetEnd=526 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP read)))
+    (, ,)
+    (S
+      (S
+        (NP (PRP I))
+        (VP (VBD was)
+          (VP (VBN told)
+            (NP (JJ many) (NNS things)))))
+      (: ;)
+      (S
+        (NP (PRP I))
+        (VP (VBD suffered)
+          (PP (IN from)
+            (NP (NN insomnia))))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBD spent)
+        (NP (PRP$ my) (NNS nights))
+        (S
+          (VP (VBG ruminating)))))
+    (. .)))
+
+root(ROOT-0, read-2)
+nsubj(read-2, I-1)
+punct(read-2, ,-3)
+nsubjpass(told-6, I-4)
+auxpass(told-6, was-5)
+conj:and(read-2, told-6)
+amod(things-8, many-7)
+dobj(told-6, things-8)
+punct(told-6, ;-9)
+nsubj(suffered-11, I-10)
+parataxis(told-6, suffered-11)
+case(insomnia-13, from-12)
+nmod:from(suffered-11, insomnia-13)
+cc(read-2, and-14)
+nsubj(spent-16, I-15)
+conj:and(read-2, spent-16)
+nmod:poss(nights-18, my-17)
+nmod:tmod(spent-16, nights-18)
+xcomp(spent-16, ruminating-19)
+punct(read-2, .-20)
+
+Sentence #8 (5 tokens):
+All this affected me.
+[Text=All CharacterOffsetBegin=527 CharacterOffsetEnd=530 PartOfSpeech=PDT Lemma=all NamedEntityTag=O]
+[Text=this CharacterOffsetBegin=531 CharacterOffsetEnd=535 PartOfSpeech=DT Lemma=this NamedEntityTag=O]
+[Text=affected CharacterOffsetBegin=536 CharacterOffsetEnd=544 PartOfSpeech=VBD Lemma=affect NamedEntityTag=O]
+[Text=me CharacterOffsetBegin=545 CharacterOffsetEnd=547 PartOfSpeech=PRP Lemma=I NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=547 CharacterOffsetEnd=548 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (NP (PDT All) (DT this))
+    (VP (VBD affected)
+      (NP (PRP me)))
+    (. .)))
+
+root(ROOT-0, affected-3)
+det:predet(this-2, All-1)
+nsubj(affected-3, this-2)
+dobj(affected-3, me-4)
+punct(affected-3, .-5)
+
+Coreference set:
+	(1,7,[7,8]) -> (1,1,[1,2]), that is: "my" -> "I"
+	(1,14,[14,15]) -> (1,1,[1,2]), that is: "my" -> "I"
+	(2,2,[2,3]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(2,4,[4,5]) -> (1,1,[1,2]), that is: "myself" -> "I"
+	(2,7,[7,8]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(3,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(3,3,[3,4]) -> (1,1,[1,2]), that is: "my" -> "I"
+	(4,7,[7,8]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(4,17,[17,18]) -> (1,1,[1,2]), that is: "my" -> "I"
+	(6,9,[9,10]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(7,1,[1,2]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(7,4,[4,5]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(7,10,[10,11]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(7,15,[15,16]) -> (1,1,[1,2]), that is: "I" -> "I"
+	(7,17,[17,18]) -> (1,1,[1,2]), that is: "my" -> "I"
+	(8,4,[4,5]) -> (1,1,[1,2]), that is: "me" -> "I"
+Coreference set:
+	(1,5,[4,6]) -> (1,5,[4,9]), that is: "these people" -> "these people , my acquaintances"
+	(1,8,[7,9]) -> (1,5,[4,9]), that is: "my acquaintances" -> "these people , my acquaintances"
+	(2,12,[12,13]) -> (1,5,[4,9]), that is: "that" -> "these people , my acquaintances"
+	(3,7,[6,8]) -> (1,5,[4,9]), that is: "these people" -> "these people , my acquaintances"
+	(3,14,[14,15]) -> (1,5,[4,9]), that is: "that" -> "these people , my acquaintances"
+	(6,2,[1,3]) -> (1,5,[4,9]), that is: "These people" -> "these people , my acquaintances"
+Coreference set:
+	(4,18,[17,19]) -> (1,15,[14,16]), that is: "my life" -> "my life"
+	(5,2,[2,3]) -> (1,15,[14,16]), that is: "that" -> "my life"
+	(5,6,[5,7]) -> (1,15,[14,16]), that is: "the case" -> "my life"

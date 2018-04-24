@@ -1,0 +1,92 @@
+Sentence #1 (27 tokens):
+David played us after dinner his new violin 'Concerto in D major,' which is certain to create a general sensation; Mendelssohn accompanied.
+[Text=David CharacterOffsetBegin=0 CharacterOffsetEnd=5 PartOfSpeech=NNP Lemma=David NamedEntityTag=PERSON]
+[Text=played CharacterOffsetBegin=6 CharacterOffsetEnd=12 PartOfSpeech=VBD Lemma=play NamedEntityTag=O]
+[Text=us CharacterOffsetBegin=13 CharacterOffsetEnd=15 PartOfSpeech=PRP Lemma=we NamedEntityTag=O]
+[Text=after CharacterOffsetBegin=16 CharacterOffsetEnd=21 PartOfSpeech=IN Lemma=after NamedEntityTag=O]
+[Text=dinner CharacterOffsetBegin=22 CharacterOffsetEnd=28 PartOfSpeech=NN Lemma=dinner NamedEntityTag=O]
+[Text=his CharacterOffsetBegin=29 CharacterOffsetEnd=32 PartOfSpeech=PRP$ Lemma=he NamedEntityTag=O]
+[Text=new CharacterOffsetBegin=33 CharacterOffsetEnd=36 PartOfSpeech=JJ Lemma=new NamedEntityTag=O]
+[Text=violin CharacterOffsetBegin=37 CharacterOffsetEnd=43 PartOfSpeech=NN Lemma=violin NamedEntityTag=O]
+[Text=` CharacterOffsetBegin=44 CharacterOffsetEnd=45 PartOfSpeech=`` Lemma=` NamedEntityTag=O]
+[Text=Concerto CharacterOffsetBegin=45 CharacterOffsetEnd=53 PartOfSpeech=NNP Lemma=Concerto NamedEntityTag=O]
+[Text=in CharacterOffsetBegin=54 CharacterOffsetEnd=56 PartOfSpeech=IN Lemma=in NamedEntityTag=O]
+[Text=D CharacterOffsetBegin=57 CharacterOffsetEnd=58 PartOfSpeech=NNP Lemma=D NamedEntityTag=O]
+[Text=major CharacterOffsetBegin=59 CharacterOffsetEnd=64 PartOfSpeech=JJ Lemma=major NamedEntityTag=O]
+[Text=, CharacterOffsetBegin=64 CharacterOffsetEnd=65 PartOfSpeech=, Lemma=, NamedEntityTag=O]
+[Text=' CharacterOffsetBegin=65 CharacterOffsetEnd=66 PartOfSpeech='' Lemma=' NamedEntityTag=O]
+[Text=which CharacterOffsetBegin=67 CharacterOffsetEnd=72 PartOfSpeech=WDT Lemma=which NamedEntityTag=O]
+[Text=is CharacterOffsetBegin=73 CharacterOffsetEnd=75 PartOfSpeech=VBZ Lemma=be NamedEntityTag=O]
+[Text=certain CharacterOffsetBegin=76 CharacterOffsetEnd=83 PartOfSpeech=JJ Lemma=certain NamedEntityTag=O]
+[Text=to CharacterOffsetBegin=84 CharacterOffsetEnd=86 PartOfSpeech=TO Lemma=to NamedEntityTag=O]
+[Text=create CharacterOffsetBegin=87 CharacterOffsetEnd=93 PartOfSpeech=VB Lemma=create NamedEntityTag=O]
+[Text=a CharacterOffsetBegin=94 CharacterOffsetEnd=95 PartOfSpeech=DT Lemma=a NamedEntityTag=O]
+[Text=general CharacterOffsetBegin=96 CharacterOffsetEnd=103 PartOfSpeech=JJ Lemma=general NamedEntityTag=O]
+[Text=sensation CharacterOffsetBegin=104 CharacterOffsetEnd=113 PartOfSpeech=NN Lemma=sensation NamedEntityTag=O]
+[Text=; CharacterOffsetBegin=113 CharacterOffsetEnd=114 PartOfSpeech=: Lemma=; NamedEntityTag=O]
+[Text=Mendelssohn CharacterOffsetBegin=115 CharacterOffsetEnd=126 PartOfSpeech=NNP Lemma=Mendelssohn NamedEntityTag=PERSON]
+[Text=accompanied CharacterOffsetBegin=127 CharacterOffsetEnd=138 PartOfSpeech=VBN Lemma=accompany NamedEntityTag=O]
+[Text=. CharacterOffsetBegin=138 CharacterOffsetEnd=139 PartOfSpeech=. Lemma=. NamedEntityTag=O]
+(ROOT
+  (S
+    (S
+      (NP (NNP David))
+      (VP (VBD played)
+        (S
+          (NP (PRP us)))
+        (PP (IN after)
+          (NP
+            (NP (NN dinner))
+            (NP (PRP$ his) (JJ new) (NN violin))))
+        (`` `)
+        (NP
+          (NP (NNP Concerto))
+          (PP (IN in)
+            (NP (NNP D) (JJ major))))
+        (, ,) ('' ')
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ is)
+              (ADJP (JJ certain)
+                (S
+                  (VP (TO to)
+                    (VP (VB create)
+                      (NP (DT a) (JJ general) (NN sensation)))))))))))
+    (: ;)
+    (S
+      (NP (NNP Mendelssohn))
+      (VP (VBN accompanied)))
+    (. .)))
+
+root(ROOT-0, played-2)
+nsubj(played-2, David-1)
+xcomp(played-2, us-3)
+case(dinner-5, after-4)
+nmod:after(played-2, dinner-5)
+nmod:poss(violin-8, his-6)
+amod(violin-8, new-7)
+dep(dinner-5, violin-8)
+punct(played-2, `-9)
+dobj(played-2, Concerto-10)
+case(D-12, in-11)
+nmod:in(Concerto-10, D-12)
+amod(D-12, major-13)
+punct(played-2, ,-14)
+punct(played-2, '-15)
+nsubj(certain-18, which-16)
+nsubj:xsubj(create-20, which-16)
+cop(certain-18, is-17)
+dep(played-2, certain-18)
+mark(create-20, to-19)
+xcomp(certain-18, create-20)
+det(sensation-23, a-21)
+amod(sensation-23, general-22)
+dobj(create-20, sensation-23)
+punct(played-2, ;-24)
+nsubj(accompanied-26, Mendelssohn-25)
+parataxis(played-2, accompanied-26)
+punct(played-2, .-27)
+
+Coreference set:
+	(1,6,[6,7]) -> (1,1,[1,2]), that is: "his" -> "David"
