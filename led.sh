@@ -1,6 +1,7 @@
 #!/bin/bash
-path="/Users/ed4565/.m2/repository/led/led-discovery/"
+home=$(cd && pwd)
+path="$home/.m2/repository/led-discovery/led-tools"
 version="0.0.1-SNAPSHOT"
-jar="${path}${version}/led-discovery-${version}-jar-with-dependencies.jar"
+jar="${path}/${version}/led-tools-${version}-jar-with-dependencies.jar"
 echo "$@"
-java -Xmx8G -Dlog4j.configurationFile=src/main/resources/log4j2.xml -jar $jar "$@" 
+java -Xmx8G -Dlog4j.configurationFile=log4j2.xml -jar $jar "$@" 
