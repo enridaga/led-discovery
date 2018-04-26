@@ -12,13 +12,15 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<master.pom.version>0.0.1-SNAPSHOT</master.pom.version>
+		<led.discovery.version>${project.version}</led.discovery.version>
+		<hadoop.version>2.6.0-cdh5.14.0</hadoop.version>
+		<hive.version>1.1.0-cdh5.14.0</hive.version>
 	</properties>
 
 	<modules>
 		<module>nlp</module>
 		<module>h2db</module>
-		<module>hive</module>
+		<module>hadoop</module>
 		<module>benchmark</module>
 		<module>tools</module>
 	</modules>
@@ -26,22 +28,27 @@
 	<!-- Dependency Management -->
 	<dependencyManagement>
 		<dependencies>
-		
+
 			<!-- This project -->
 			<dependency>
 				<groupId>led-discovery</groupId>
 				<artifactId>led-nlp</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>${led.discovery.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>led-discovery</groupId>
 				<artifactId>led-h2db</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>${led.discovery.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>led-discovery</groupId>
+				<artifactId>led-benchmark</artifactId>
+				<version>${led.discovery.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>led-discovery</groupId>
 				<artifactId>led-tools</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>${led.discovery.version}</version>
 			</dependency>
 
 			<!-- Logging -->
@@ -185,24 +192,75 @@
 				<version>1.4.196</version>
 			</dependency>
 
-			<!-- https://mvnrepository.com/artifact/org.apache.hive/hive-jdbc -->
+			<!-- Hadoop / Hive -->
+			<!-- Hadoop -->
 			<dependency>
-				<groupId>org.apache.hive</groupId>
-				<artifactId>hive-jdbc</artifactId>
-				<version>2.3.2</version>
+				<groupId>org.apache.hadoop</groupId>
+				<artifactId>hadoop-client</artifactId>
+				<version>${hadoop.version}</version>
 				<exclusions>
 					<exclusion>
-						<groupId>org.slf4j</groupId>
-						<artifactId>slf4j-log4j12</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.apache.logging.log4j</groupId>
-						<artifactId>log4j-core</artifactId>
+						<groupId>log4j</groupId>
+						<artifactId>log4j</artifactId>
 					</exclusion>
 				</exclusions>
 			</dependency>
+			<!-- Hive -->
+			<dependency>
+				<groupId>org.apache.hive</groupId>
+				<artifactId>hive-exec</artifactId>
+				<version>${hive.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>log4j</groupId>
+						<artifactId>log4j</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>log4j</groupId>
+						<artifactId>apache-log4j-extras</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.hive</groupId>
+				<artifactId>hive-metastore</artifactId>
+				<version>${hive.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>log4j</groupId>
+						<artifactId>log4j</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.hive</groupId>
+				<artifactId>hive-pdk</artifactId>
+				<version>${hive.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.apache.hive/hive-jdbc -->
+			<!-- <dependency> <groupId>org.apache.hive</groupId> <artifactId>hive-jdbc</artifactId> 
+				<version>${hive.version}</version> <exclusions> <exclusion> <groupId>org.slf4j</groupId> 
+				<artifactId>slf4j-log4j12</artifactId> </exclusion> <exclusion> <groupId>org.apache.logging.log4j</groupId> 
+				<artifactId>log4j-core</artifactId> </exclusion> </exclusions> </dependency> -->
 
+			<dependency>
+				<groupId>org.jsoup</groupId>
+				<artifactId>jsoup</artifactId>
+				<version>1.11.3</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
+	<repositories>
+		<repository>
+			<id>Cloudera</id>
+			<url>https://repository.cloudera.com/content/repositories/releases/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 </project>
