@@ -1,4 +1,4 @@
-package led.discovery.hive.udf;
+package led.discovery.hadoop.hive;
 
 import org.apache.hadoop.hive.ql.exec.Description;
 import org.jsoup.Jsoup;

@@ -1,4 +1,4 @@
-package led.discovery.pig.udf;
+package led.discovery.hadoop.pig;
 
 import java.io.IOException;
 import java.util.List;
@@ -17,12 +17,12 @@ public class ToLemmaVector extends EvalFunc<Tuple> {
 	private final static Logger log = LoggerFactory.getLogger(ToLemmaVector.class);
 
 	public ToLemmaVector() {
-		log.trace("initializing");
+		//log.trace("initializing");
 	}
 
 	@Override
 	public Tuple exec(Tuple input) throws IOException {
-		log.trace("{}", input);
+		//log.trace("{}", input);
 		Tuple tuple = new DefaultTuple();
 		if (input == null || input.size() == 0)
 			return null;

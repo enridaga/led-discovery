@@ -1,4 +1,4 @@
-package led.discovery.hive.udf;
+package led.discovery.hadoop.hive;
 
 import java.util.ArrayList;
 
@@ -17,7 +17,7 @@ import led.discovery.nlp.StanfordNLPProvider;
 import led.discovery.nlp.Term;
 
 @Description(name = "ToLemmaVector", value = "_FUNC_(string) - returns an array of strings")
-public class LemmaVector extends GenericUDF {
+public class ToLemmaVector extends GenericUDF {
 	private StanfordNLPProvider provider;
 	private ObjectInspectorConverters.Converter[] converters;
 
