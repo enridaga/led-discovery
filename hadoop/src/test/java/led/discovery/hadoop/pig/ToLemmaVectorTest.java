@@ -12,6 +12,7 @@ public class ToLemmaVectorTest {
 
 	@BeforeClass
 	public static void beforeClass() throws IllegalArgumentException, IOException {
+
 	}
 
 	@Ignore

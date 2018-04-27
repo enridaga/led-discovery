@@ -1,8 +1,11 @@
 package led.discovery.benchmark;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 
 import org.apache.commons.io.IOUtils;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Rule;
@@ -11,7 +14,6 @@ import org.junit.rules.TemporaryFolder;
 import org.junit.rules.TestName;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 
 public class BenchmarkTest {
 	private static final Logger log = LoggerFactory.getLogger(BenchmarkTest.class);
@@ -41,17 +43,20 @@ public class BenchmarkTest {
 		benchmark = new BenchmarkMaker();
 	}
 
-	// @Test
+	@Test
 	public void find() throws IOException {
 		// String[] RECOLL_EXP = { "1450280673034", "1450265940821",
 		// "1450279955242", "1449479202651", "1449478691795" };
 		String[] MUSING_EXP = { "1452636825724" };
 		// String[] RECMUS_EXP = {"1452636825724"};
 		for (String experience : MUSING_EXP) {
-			String excerpt = benchmark.getExcerpt(experience);
+			URL experienceFile = BenchmarkTest.class.getClassLoader().getResource(experience +
+				".txt");
+			String excerpt = benchmark.getExcerpt(new File(experienceFile.getFile()));
 			// Read experience
 			Bookmark found = ExcerptFinder.find(excerpt, MUSING);
-
+			log.info("{}", found);
+			Assert.assertTrue(found.toString().equals("38186:39609"));
 		}
 	}
 

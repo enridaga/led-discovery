@@ -17,7 +17,10 @@ import org.slf4j.LoggerFactory;
 public class BenchmarkMaker {
 	private Logger log = LoggerFactory.getLogger(BenchmarkMaker.class);
 
-	public void annotateAll(String benchmarkDir, String bookmarksCSV) throws IOException {
+	public BenchmarkMaker() {
+	}
+
+	public void annotateAll(String dataDir, String bookmarksCSV) throws IOException {
 		File target = new File(bookmarksCSV);
 		if (target.exists()) {
 			target.delete();
@@ -26,14 +29,18 @@ public class BenchmarkMaker {
 		}
 		target.createNewFile();
 		// For each file in the sources directory
-		File sources = new File(new File(benchmarkDir), "sources");
-		File data = new File(new File(benchmarkDir), "data");
+		File sources = new File(new File(dataDir), "benchmark/sources");
+		File data = new File(new File(dataDir), "benchmark/data");
+		if (!sources.exists())
+			throw new IOException("sources folder does not exists");
+		if (!data.exists())
+			throw new IOException("data folder does not exists");
 		File[] files = sources.listFiles();
 		for (File file : files) {
 			File dataFile = new File(data, file.getName().replace(".txt", ".csv"));
 			if (file.exists() && data.exists()) {
 				log.info("Processing {}", file);
-				annotate(file.getAbsolutePath(), dataFile.getAbsolutePath(), target.getAbsolutePath());
+				annotate(file.getAbsolutePath(), dataFile.getAbsolutePath(), dataDir, target.getAbsolutePath());
 			} else {
 				log.error("Failed: {} {}", file, data);
 			}
@@ -41,7 +48,7 @@ public class BenchmarkMaker {
 
 	}
 
-	public void annotate(String source, String csvLEDs, String saveTo) throws IOException {
+	public void annotate(String source, String csvLEDs, String dataDir, String saveTo) throws IOException {
 		// Collect related experiences
 		List<String> list = new ArrayList<String>();
 		try (BufferedReader br = new BufferedReader(new FileReader(csvLEDs))) {
@@ -67,12 +74,13 @@ public class BenchmarkMaker {
 				List<String> row = new ArrayList<String>();
 				log.info("{}: {}", sourceFile.getName(), experience);
 				String id = experience.substring(experience.lastIndexOf("/") + 1);
-				String excerpt = getExcerpt(id);
-				log.info("Looking for {}", excerpt);
+				String excerpt = getExcerpt(new File(dataDir, "experiences/" + id +
+					".txt"));
+				log.trace("Excerpt:\n{}", excerpt);
 				// Read experience
 				Bookmark found = ExcerptFinder.find(excerpt, content);
 				if (found.getFrom() != -1) {
-					log.info("Found {} at {}", id, found);
+					log.debug("Found {} at {}", id, found);
 				} else {
 					log.error("Not Found: {} \n{}", source, excerpt);
 				}
@@ -86,13 +94,13 @@ public class BenchmarkMaker {
 				printer.printRecord(row);
 			}
 		}
-		log.info("Exiting");
+		log.debug("Exiting");
 	}
 
-	public String getExcerpt(String experienceId) throws IOException {
+	public String getExcerpt(File experienceFile) throws IOException {
 		String excerpt;
 		try {
-			excerpt = new String(Files.readAllBytes(new File("experiences/" + experienceId + ".txt").toPath()), "UTF-8");
+			excerpt = new String(Files.readAllBytes(experienceFile.toPath()), "UTF-8");
 		} catch (IOException e) {
 			throw e;
 		}
@@ -102,7 +110,10 @@ public class BenchmarkMaker {
 	}
 
 	public static void main(String[] args) throws IOException {
-		new BenchmarkMaker().annotateAll("./benchmark", "./benchmark/generated.csv");
+		if (args.length < 2) {
+			System.out.println("arguments:\n <data-folder> <output-file-name>");
+		}
+		new BenchmarkMaker().annotateAll(args[0], args[1]);
 	}
 
 }

@@ -55,17 +55,17 @@ public class ExcerptFinder {
 			wlen.put(w, wordvec[w].length());
 		}
 		wlen = MapUtil.sortByValueDesc(wlen);
-		// We seek from the first 5 words only
+		// 
+		double lastScore = 1.0;
+		int lastWordLength = 100;
 		for (Entry<Integer, Integer> ken : wlen.entrySet()) {
 			int x = ken.getKey();
 			log.debug("> Reference word: {}", wordvec[x]);
-			if (wordvec[x].length() < 4) {
-				// We lost our chances
+			// Only consider words longer then 5 chars
+			if (wordvec[x].length() < 6) {
 				break;
 			}
 			
-			double lastScore = 1.0;
-			int lastWordLength = 100;
 			for (int seek = startFrom; seek < content.length() - 1; seek += experienceLength) {
 				int wordpos = content.indexOf(wordvec[x], seek);
 				int pos = wordpos - experience.indexOf(wordvec[x]);
@@ -95,8 +95,8 @@ public class ExcerptFinder {
 					break;
 				}
 			}
-			if (lastScore < 0.3 || lastWordLength < 6) {
-				// If we have a good score or word is getting small, exit
+			// 0.3 is a good enough score
+			if (lastScore < 0.3 ) {
 				break;
 			}
 		}
