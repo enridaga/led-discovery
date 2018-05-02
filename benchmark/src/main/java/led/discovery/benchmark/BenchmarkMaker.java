@@ -11,6 +11,8 @@ import java.util.List;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
+import org.jsoup.Jsoup;
+import org.jsoup.safety.Whitelist;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -104,7 +106,7 @@ public class BenchmarkMaker {
 		} catch (IOException e) {
 			throw e;
 		}
-		excerpt = ExcerptFinder.removeTags(excerpt);
+		excerpt = Jsoup.clean(excerpt, Whitelist.simpleText()); // ExcerptFinder.removeTags(excerpt);
 		// String [] excerpts = excerpt.split("\\.\\.\\.");
 		return excerpt;
 	}

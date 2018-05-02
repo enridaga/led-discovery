@@ -56,7 +56,7 @@ public class BenchmarkTest {
 			// Read experience
 			Bookmark found = ExcerptFinder.find(excerpt, MUSING);
 			log.info("{}", found);
-			Assert.assertTrue(found.toString().equals("38186:39609"));
+			Assert.assertTrue(found.toString().equals("38193:39614"));
 		}
 	}
 
