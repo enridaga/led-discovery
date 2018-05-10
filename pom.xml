@@ -15,6 +15,7 @@
 		<led.discovery.version>${project.version}</led.discovery.version>
 		<hadoop.version>2.6.0-cdh5.14.0</hadoop.version>
 		<hive.version>1.1.0-cdh5.14.0</hive.version>
+		<org.eclipse.jetty.version>9.3.0.v20150612</org.eclipse.jetty.version>
 	</properties>
 
 	<modules>
@@ -24,6 +25,8 @@
 		<module>benchmark</module>
 		<module>tools</module>
 		<module>analysis/entities</module>
+		<module>annotator</module>
+		<module>runnable/app</module>
 	</modules>
 
 	<!-- Dependency Management -->
@@ -49,6 +52,21 @@
 			<dependency>
 				<groupId>led-discovery</groupId>
 				<artifactId>led-tools</artifactId>
+				<version>${led.discovery.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>led-discovery</groupId>
+				<artifactId>led-hadoop</artifactId>
+				<version>${led.discovery.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>led-discovery</groupId>
+				<artifactId>led-viewer</artifactId>
+				<version>${led.discovery.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>led-discovery</groupId>
+				<artifactId>led-app</artifactId>
 				<version>${led.discovery.version}</version>
 			</dependency>
 
@@ -253,9 +271,45 @@
 				<artifactId>jsoup</artifactId>
 				<version>1.11.3</version>
 			</dependency>
+
+			<dependency>
+				<groupId>javax.ws.rs</groupId>
+				<artifactId>jsr311-api</artifactId>
+				<version>1.1.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.glassfish.jersey.containers</groupId>
+				<artifactId>jersey-container-servlet</artifactId>
+				<version>2.14</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-server</artifactId>
+				<version>${org.eclipse.jetty.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-webapp</artifactId>
+				<version>${org.eclipse.jetty.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>2.4</version>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.jetty</groupId>
+					<artifactId>jetty-maven-plugin</artifactId>
+					<version>9.3.0.M1</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 	<repositories>
 		<repository>
 			<id>Cloudera</id>

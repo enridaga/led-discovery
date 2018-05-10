@@ -20,6 +20,7 @@ public class BenchmarkTest {
 	private BenchmarkMaker benchmark;
 	// private static String RECOLL;
 	private static String MUSING;
+	private static String MUSREM;
 	// private static String RECMUS;
 	@Rule
 	public TestName name = new TestName();
@@ -33,6 +34,7 @@ public class BenchmarkTest {
 		// IOUtils.toString(BenchmarkTest.class.getClassLoader().getResourceAsStream("./RECOLL.txt"),
 		// "UTF-8");
 		MUSING = IOUtils.toString(BenchmarkTest.class.getClassLoader().getResourceAsStream("./MUSING.txt"), "UTF-8");
+		MUSREM = IOUtils.toString(BenchmarkTest.class.getClassLoader().getResourceAsStream("./MUSREM.txt"), "UTF-8");
 		// RECMUS =
 		// IOUtils.toString(BenchmarkTest.class.getClassLoader().getResourceAsStream("./RECMUS.txt"),
 		// "UTF-8");
@@ -57,6 +59,25 @@ public class BenchmarkTest {
 			Bookmark found = ExcerptFinder.find(excerpt, MUSING);
 			log.info("{}", found);
 			Assert.assertTrue(found.toString().equals("38193:39614"));
+		}
+	}
+	
+
+	@Test
+	public void findBANTI() throws IOException {
+		// String[] RECOLL_EXP = { "1450280673034", "1450265940821",
+		// "1450279955242", "1449479202651", "1449478691795" };
+		String[] MUSREM_EXP = { "1446648222034" };
+		// String[] RECMUS_EXP = {"1452636825724"};
+		for (String experience : MUSREM_EXP) {
+			URL experienceFile = BenchmarkTest.class.getClassLoader().getResource(experience +
+				".txt");
+			String excerpt = benchmark.getExcerpt(new File(experienceFile.getFile()));
+			// Read experience
+			Bookmark found = ExcerptFinder.find(excerpt, MUSREM);
+			log.info("{}", found);
+			log.info("{}", MUSREM.substring(found.getFrom(), found.getTo()));
+			Assert.assertTrue(found.toString().equals("86772:88203"));
 		}
 	}
 

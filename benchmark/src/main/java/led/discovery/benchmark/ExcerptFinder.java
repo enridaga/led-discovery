@@ -17,10 +17,14 @@ import org.slf4j.LoggerFactory;
 
 public class ExcerptFinder {
 	private static final Logger log = LoggerFactory.getLogger(ExcerptFinder.class);
-	private static final Pattern REMOVE_SCRIPT = Pattern.compile("<script .*?>.*?</script>", Pattern.CASE_INSENSITIVE | Pattern.DOTALL | Pattern.MULTILINE);
-	private static final Pattern REMOVE_STYLES = Pattern.compile("<style .*?>.*?</style>", Pattern.CASE_INSENSITIVE | Pattern.DOTALL | Pattern.MULTILINE);
-	private static final Pattern REMOVE_CSSSTYLES = Pattern.compile("[A-Za-z0-9\\-\\_]+:[A-Za-z0-9\"\\%\\,\\-\\_\\s\\.]+?;", Pattern.CASE_INSENSITIVE | Pattern.DOTALL | Pattern.MULTILINE);
-	private static final Pattern REMOVE_TAGS = Pattern.compile("<.*?>", Pattern.CASE_INSENSITIVE | Pattern.DOTALL | Pattern.MULTILINE);
+	private static final Pattern REMOVE_SCRIPT = Pattern.compile("<script .*?>.*?</script>", Pattern.CASE_INSENSITIVE |
+		Pattern.DOTALL | Pattern.MULTILINE);
+	private static final Pattern REMOVE_STYLES = Pattern.compile("<style .*?>.*?</style>", Pattern.CASE_INSENSITIVE |
+		Pattern.DOTALL | Pattern.MULTILINE);
+	private static final Pattern REMOVE_CSSSTYLES = Pattern.compile("[A-Za-z0-9\\-\\_]+:[A-Za-z0-9\"\\%\\,\\-\\_\\s\\.]+?;", Pattern.CASE_INSENSITIVE |
+		Pattern.DOTALL | Pattern.MULTILINE);
+	private static final Pattern REMOVE_TAGS = Pattern.compile("<.*?>", Pattern.CASE_INSENSITIVE |
+		Pattern.DOTALL | Pattern.MULTILINE);
 	private static final Pattern REMOVE_ENTS = Pattern.compile("&.*?;");
 
 	public static String removeTags(String in) {
@@ -46,18 +50,27 @@ public class ExcerptFinder {
 
 	public static Bookmark find(String experience, String content, int startFrom) {
 		experience = removeTags(experience);
+		/**
+		 * We build a Vector of words from the experience, and we save the
+		 * length of the word (wlen) and its offset in the experience string
+		 * (wpos)
+		 */
 		int experienceLength = experience.length();
 		String[] wordvec = experience.split("[\\s;\\.,'\"]+");
 		Map<Integer, Integer> options = new HashMap<Integer, Integer>();
 		// Pick the first 5 longest words
 		Map<Integer, Integer> wlen = new HashMap<Integer, Integer>();
+		Map<Integer, Integer> wpos = new HashMap<Integer, Integer>();
+		int epos = 0;
 		for (int w = 0; w < wordvec.length; w++) {
 			wlen.put(w, wordvec[w].length());
+			wpos.put(w, experience.indexOf(wordvec[w], epos));
+			epos = wpos.get(w) + wlen.get(w);
 		}
+		// We sort the words by length desc
 		wlen = MapUtil.sortByValueDesc(wlen);
-		// 
+		//
 		double lastScore = 1.0;
-		int lastWordLength = 100;
 		for (Entry<Integer, Integer> ken : wlen.entrySet()) {
 			int x = ken.getKey();
 			log.debug("> Reference word: {}", wordvec[x]);
@@ -65,11 +78,12 @@ public class ExcerptFinder {
 			if (wordvec[x].length() < 6) {
 				break;
 			}
-			
+			// We search the word in the content and iterate over its
+			// occurrences, we use the experience length as moving window
 			for (int seek = startFrom; seek < content.length() - 1; seek += experienceLength) {
+				// Position of the word in the content
 				int wordpos = content.indexOf(wordvec[x], seek);
-				int pos = wordpos - experience.indexOf(wordvec[x]);
-				lastWordLength = wordvec[x].length();
+				int pos = wordpos - wpos.get(x); // potential position of the excerpt
 				log.trace("{}", pos);
 				if (pos > 0) {
 					// Let's move to the beginning of the word
@@ -85,7 +99,10 @@ public class ExcerptFinder {
 					}
 					int distance = LevenshteinDistance.getDefaultInstance().apply(experience, extracted);
 					double thisScore = Bookmark.getNormalisedScore(distance, extracted.length());
-					if(thisScore < lastScore) {
+					if(thisScore < 0.5) {
+						log.debug("{}", extracted);
+					}
+					if (thisScore < lastScore) {
 						options.put(pos, distance);
 						lastScore = thisScore;
 					}
@@ -96,7 +113,7 @@ public class ExcerptFinder {
 				}
 			}
 			// 0.3 is a good enough score
-			if (lastScore < 0.3 ) {
+			if (lastScore < 0.3) {
 				break;
 			}
 		}

@@ -67,9 +67,6 @@ public class EntitiesExtractor {
 		String server = args[0];
 		String folder = args[1];
 		String output = args[2];
-		if(args.length > 3) {
-			String blacklist = args[3];
-		}
 		new EntitiesExtractor(server).extract(folder, output);
 	}
 }
