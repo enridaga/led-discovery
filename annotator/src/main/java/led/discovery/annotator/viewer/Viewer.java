@@ -2,7 +2,9 @@ package led.discovery.annotator.viewer;
 
 import java.io.PrintStream;
 import java.io.PrintWriter;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.slf4j.Logger;
@@ -17,6 +19,8 @@ import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.util.CoreMap;
+import led.discovery.annotator.DBpediaSpotlightAnnotator.DBpediaEntityAnnotation;
+import led.discovery.annotator.DBpediaSpotlightAnnotator.EntityLabel;
 import led.discovery.annotator.MusicalHeatAnnotator.MusicalHeatAnnotation;
 import led.discovery.annotator.MusicalHeatAnnotator.MusicalHeatScoreAnnotation;
 
@@ -73,12 +77,43 @@ public class Viewer {
 		_attribute("mhscore", Double.toString(score));
 		_closeTag();
 		List<CoreLabel> tokens = map.get(TokensAnnotation.class);
+		List<EntityLabel> entities = map.get(DBpediaEntityAnnotation.class);
+		Map<Integer, EntityLabel> positions = new HashMap<Integer, EntityLabel>();
+		if (entities != null)
+			for (EntityLabel l : entities) {
+				positions.put(l.beginPosition(), l);
+			}
 		L.trace("{} tokens", tokens.size());
+		EntityLabel entity = null;
 		for (CoreLabel token : tokens) {
+			if (entity == null) {
+				entity = positions.get(token.beginPosition());
+				// Open entity
+				if (entity != null) {
+					_openEntity(entity);
+				}
+			} else {
+				// to be closed?
+				if (token.beginPosition() > entity.endPosition()) {
+					_endEntity();
+					entity = null;
+				} // otherwise the token is within the entity annotation
+			}
 			token(token);
+
 		}
 		pw.flush();
 		_endTag("sentence");
+	}
+
+	private void _endEntity() {
+		_endTag("entity");
+	}
+
+	private void _openEntity(EntityLabel entity) {
+		_startTag("entity");
+		_attribute("dbpedia", entity.getUri());
+		_closeTag();
 	}
 
 	private void _startTag(String name) {

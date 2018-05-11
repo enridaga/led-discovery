@@ -16,6 +16,9 @@
 		<hadoop.version>2.6.0-cdh5.14.0</hadoop.version>
 		<hive.version>1.1.0-cdh5.14.0</hive.version>
 		<org.eclipse.jetty.version>9.3.0.v20150612</org.eclipse.jetty.version>
+		<!-- <spotlight.service>http://model.dbpedia-spotlight.org/en/annotate</spotlight.service> -->
+		<spotlight.service>http://anne.kmi.open.ac.uk/rest/annotate</spotlight.service>
+	
 	</properties>
 
 	<modules>
@@ -291,6 +294,11 @@
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-webapp</artifactId>
 				<version>${org.eclipse.jetty.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>led-discovery</groupId>
+				<artifactId>led-analysis-entities</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

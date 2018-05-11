@@ -22,7 +22,8 @@ public class Annotator {
 	public Annotation perform(String text) {
 		Properties props = new Properties();
 		props.setProperty("customAnnotatorClass.led.musicalheat", "led.discovery.annotator.MusicalHeatAnnotator");
-		props.setProperty("annotators", "tokenize, ssplit, pos, lemma, led.musicalheat");
+		props.setProperty("customAnnotatorClass.led.entities", "led.discovery.annotator.DBpediaSpotlightAnnotator");
+		props.setProperty("annotators", "tokenize, ssplit, pos, lemma, led.musicalheat, led.entities");
 		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 		Annotation annotation = new Annotation(text);
 		pipeline.annotate(annotation);
