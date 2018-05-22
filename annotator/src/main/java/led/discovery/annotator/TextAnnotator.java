@@ -17,7 +17,7 @@ import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import led.discovery.annotator.viewer.Viewer;
 
-public class Annotator {
+public class TextAnnotator {
 
 	public Annotation perform(String text) {
 		Properties props = new Properties();
@@ -60,7 +60,7 @@ public class Annotator {
 	public static final void main(String[] args) throws IOException {
 		String file = args[0];
 		String outputfile = args[1];
-		Annotator a = new Annotator();
+		TextAnnotator a = new TextAnnotator();
 		byte[] encoded = Files.readAllBytes(Paths.get(file));
 		String text = new String(encoded, StandardCharsets.UTF_8);
 		String html = a.html(text);
