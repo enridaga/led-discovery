@@ -29,6 +29,11 @@
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
 		</dependency>
+		
+		<dependency>
+			<groupId>led-discovery</groupId>
+			<artifactId>led-annotator</artifactId>
+		</dependency>
 
 		<!-- Testing -->
 		<dependency>
@@ -62,22 +67,45 @@
 				<version>1.6.0</version>
 				<executions>
 					<execution>
+						<id>run-heat-only</id>
 						<goals>
 							<goal>exec</goal>
 						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.RunExperiment</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>run-heat-only</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>run-heat-entity</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.RunExperiment</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>run-heat-entity</argument>
+							</arguments>
+						</configuration>
 					</execution>
 				</executions>
-				<configuration>
-					<executable>java</executable>
-					<arguments>
-						<argument>-classpath</argument>
-						<classpath/>
-						<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
-						<argument>led.discovery.benchmark.BenchmarkMaker</argument>
-						<argument>${project.basedir}/../data</argument>
-						<argument>${project.basedir}/../data/benchmark/generated-benchmark.csv</argument>
-					</arguments>
-				</configuration>
+				<!-- <configuration> <executable>java</executable> <arguments> <argument>-classpath</argument> 
+					<classpath/> <argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument> 
+					<argument>led.discovery.benchmark.BenchmarkMaker</argument> <argument>${project.basedir}/../data</argument> 
+					<argument>${project.basedir}/../data/benchmark/generated-benchmark.csv</argument> 
+					</arguments> </configuration> -->
 			</plugin>
 		</plugins>
 	</build>
