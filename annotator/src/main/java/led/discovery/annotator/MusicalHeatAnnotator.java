@@ -32,6 +32,14 @@ import led.discovery.nlp.Term;
 public class MusicalHeatAnnotator implements Annotator {
 	private Logger log = LoggerFactory.getLogger(MusicalHeatAnnotator.class);
 
+	/**
+	 * An adaptation of the TFIDF score of the term[pos] from the Musical
+	 * Dictionary. When applied to sequences of tokens (sentence), it's the
+	 * average value.
+	 * 
+	 * @author enridaga
+	 *
+	 */
 	public final class MusicalHeatScoreAnnotation implements CoreAnnotation<Double> {
 		@Override
 		public Class<Double> getType() {
@@ -39,6 +47,12 @@ public class MusicalHeatAnnotator implements Annotator {
 		}
 	}
 
+	/**
+	 * A discrete value of musical heat in a 1-5 Likert scale
+	 * 
+	 * @author enridaga
+	 *
+	 */
 	public final class MusicalHeatAnnotation implements CoreAnnotation<Integer> {
 		@Override
 		public Class<Integer> getType() {
