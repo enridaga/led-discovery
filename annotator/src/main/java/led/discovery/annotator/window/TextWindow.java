@@ -51,4 +51,8 @@ public class TextWindow {
 	public int size() {
 		return this.size;
 	}
+	
+	public boolean includes(TextWindow t) {
+		return t.offsetStart() >= offsetStart() && t.offsetEnd() <= offsetEnd();
+	}
 }
