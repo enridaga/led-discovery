@@ -29,12 +29,26 @@
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>led-discovery</groupId>
 			<artifactId>led-annotator</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>led-discovery</groupId>
+			<artifactId>led-benchmark</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>edu.stanford.nlp</groupId>
+			<artifactId>stanford-corenlp</artifactId>
+			<classifier>models</classifier>
+		</dependency>
+		<dependency>
+			<groupId>edu.stanford.nlp</groupId>
+			<artifactId>stanford-corenlp</artifactId>
+		</dependency>
 		<!-- Testing -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -54,8 +68,8 @@
 			<artifactId>commons-csv</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.jsoup</groupId>
-			<artifactId>jsoup</artifactId>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
 		</dependency>
 	</dependencies>
 
@@ -97,6 +111,25 @@
 								<argument>led.discovery.experiments.RunExperiment</argument>
 								<argument>${project.basedir}/../data</argument>
 								<argument>run-heat-entity</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<!-- Analyse Results -->
+					<execution>
+						<id>run-analyse-results</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.AnalyseResults</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>run-heat-only</argument>
 							</arguments>
 						</configuration>
 					</execution>
