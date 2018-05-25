@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+
 import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetBeginAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetEndAnnotation;
 import edu.stanford.nlp.util.CoreMap;
@@ -39,11 +41,11 @@ public class TextWindow {
 	public CoreMap lastSentence() {
 		return sentences.get(sentences.size() - 1);
 	}
-	
+
 	public int offsetStart() {
 		return firstSentence().get(CharacterOffsetBeginAnnotation.class);
 	}
-	
+
 	public int offsetEnd() {
 		return lastSentence().get(CharacterOffsetEndAnnotation.class);
 	}
@@ -51,8 +53,23 @@ public class TextWindow {
 	public int size() {
 		return this.size;
 	}
-	
+
 	public boolean includes(TextWindow t) {
-		return t.offsetStart() >= offsetStart() && t.offsetEnd() <= offsetEnd();
+		int tstart = t.offsetStart();
+		int start = offsetStart();
+		return tstart >= start && t.offsetEnd() <= offsetEnd();
+	}
+
+	public String toString() {
+		return new StringBuilder().append(super.toString()).append("[").append(sentences.size()).append("/").append(size).append("]").append(isFull() == true ? "!" : "*").toString();
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof TextWindow) {
+			TextWindow to = (TextWindow) obj;
+			return to.size == size && to.sentences.equals(sentences);
+		}
+		return false;
 	}
 }

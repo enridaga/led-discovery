@@ -64,7 +64,7 @@ public class AnalyseResults {
 					while (it.hasNext()) {
 						retrieved++;
 						CSVRecord r = it.next();
-						if (r.get(3).equals("Y")) {
+						if (r.get(4).equals("Y")) {
 							// XXX already counted before. Here it would include
 							// duplicate matches
 						}

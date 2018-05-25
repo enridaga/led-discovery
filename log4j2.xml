@@ -6,7 +6,10 @@
     </Console>
   </Appenders>
   <Loggers>
-    <Root level="warn">
+    <Logger name="led.discovery.annotator.MovingWindow" additivity="false" level="trace">
+  		<AppenderRef ref="Console"/>
+  	</Logger>
+  	<Root level="warn">
       <AppenderRef ref="Console"/>
     </Root>
   </Loggers>

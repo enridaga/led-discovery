@@ -68,19 +68,23 @@ public class RunExperiment {
 		Benchmark bench = new Benchmark(benchmark);
 		StanfordCoreNLP pipeline = new StanfordCoreNLP(properties);
 		Map<String, List<Integer[]>> matches = new HashMap<String, List<Integer[]>>();
-
+		Map<String, List<Integer>> windowSizes = new HashMap<String, List<Integer>>();
 		for (File f : sourcesDir.listFiles()) {
+			L.info("Source: {}", f.getName());
 			Annotation annotation = new Annotation(FileUtils.readFileToString(f, StandardCharsets.UTF_8));
 			pipeline.annotate(annotation);
 			String fname = f.getName();
 			matches.put(fname, new ArrayList<Integer[]>());
+			windowSizes.put(fname, new ArrayList<Integer>());
 			List<TextWindow> found = annotation.get(ListeningExperienceAnnotation.class);
+			L.info(" {} found", found.size());
 			Iterator<TextWindow> it = found.iterator();
 			while (it.hasNext()) {
 				TextWindow tw = it.next();
 				int from = tw.offsetStart();
 				int to = tw.offsetEnd();
 				matches.get(fname).add(new Integer[] { from, to });
+				windowSizes.get(fname).add(tw.size());
 			}
 		}
 
@@ -90,7 +94,9 @@ public class RunExperiment {
 			for (Entry<String, List<Integer[]>> en : matches.entrySet()) {
 				int matched = 0;
 				String fname = en.getKey();
-				for (Integer[] i : en.getValue()) {
+				List<Integer[]> items =  en.getValue();
+				for (int x = 0; x <items.size(); x++) {
+					Integer[] i = items.get(x);
 					fw.write(fname);
 					fw.write(",");
 					fw.write(Integer.toString(i[0]));
@@ -98,7 +104,9 @@ public class RunExperiment {
 					fw.write(Integer.toString(i[1]));
 					fw.write(",");
 					Object[] match = bench.matches(fname, i[0], i[1]);
-
+					fw.write(Integer.toString(windowSizes.get(fname).get(x))); // add window size
+					fw.write(",");
+					
 					if (match == null) {
 						fw.write("N");
 						fw.write(",-");

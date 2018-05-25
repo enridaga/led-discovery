@@ -65,6 +65,19 @@ public class ListeningExperienceAnnotator implements Annotator {
 		}
 	}
 
+	public final class HeatMaxValueMetAnnotation implements CoreAnnotation<Double> {
+		@Override
+		public Class<Double> getType() {
+			return Double.class;
+		}
+	}
+	public final class HeatMinValueMetAnnotation implements CoreAnnotation<Double> {
+		@Override
+		public Class<Double> getType() {
+			return Double.class;
+		}
+	}
+
 	public ListeningExperienceAnnotator(String name, Properties props) {
 		// Window
 		String _windowMin = props.getProperty("custom.led.window.min");
@@ -102,18 +115,24 @@ public class ListeningExperienceAnnotator implements Annotator {
 		// Get Sentences
 		MovingWindow mv = new MovingWindow(MinWindowLength, MaxWindowLength);
 		// Evaluators
+		HeatEvaluator heat = null;
 		if (Evaluators.contains("heat")) {
 			// Heat collector
-			HeatEvaluator heat = new HeatEvaluator(heatThreshold);
+			heat = new HeatEvaluator(heatThreshold);
 			mv.addEvaluator(heat);
 		}
+		log.debug("{} sentences", annotation.get(SentencesAnnotation.class));
 		for (CoreMap sentence : annotation.get(SentencesAnnotation.class)) {
 			mv.move(sentence);
 		}
-		log.debug("Collected \n{}", mv.collected().size());
+		log.debug("Annotations collected \n{}", mv.collected().size());
 		// Link the windows to start/end sentences
 		annotation.set(ListeningExperienceAnnotation.class, mv.collected());
-
+		if (heat != null) {
+			// Heat max value met (used for training treshold)
+			annotation.set(HeatMaxValueMetAnnotation.class, heat.getMaxValueMet());
+			annotation.set(HeatMinValueMetAnnotation.class, heat.getMinValueMet());
+		}
 		for (TextWindow tw : mv.collected()) {
 
 			if (tw.firstSentence().get(ListeningExperienceStartAnnotation.class) == null) {
