@@ -71,6 +71,11 @@
 			<groupId>xerces</groupId>
 			<artifactId>xercesImpl</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>led-discovery</groupId>
+			<artifactId>led-spark</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -144,6 +149,23 @@
 								<classpath />
 								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
 								<argument>led.discovery.experiments.LearnHeatThreshold</argument>
+								<argument>${project.basedir}/../data</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<!-- Gen Positives -->
+					<execution>
+						<id>gen-positives</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.GenPositives</argument>
 								<argument>${project.basedir}/../data</argument>
 							</arguments>
 						</configuration>
