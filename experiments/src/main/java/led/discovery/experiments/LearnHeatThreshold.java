@@ -69,7 +69,7 @@ public class LearnHeatThreshold {
 			}
 		}
 		
-		Double LEDmin = 0.0;
+		Double LEDmin = 100.0;
 		Double LEDmax = 0.0;
 		for (File f : positivesDir.listFiles()) {
 			if (f.getName().endsWith(".txt")) {
