@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.commons.lang3.builder.HashCodeBuilder;
-
+import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetBeginAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetEndAnnotation;
 import edu.stanford.nlp.util.CoreMap;
@@ -60,13 +59,23 @@ public class TextWindow {
 		return tstart >= start && t.offsetEnd() <= offsetEnd();
 	}
 
+	public String toText() {
+		StringBuilder sb = new StringBuilder();
+		for (CoreMap m : sentences) {
+			String sentenceStr = m.get(CoreAnnotations.TextAnnotation.class);
+			sb.append(sentenceStr);
+			sb.append(" ");
+		}
+		return toText();
+	}
+
 	public String toString() {
 		return new StringBuilder().append(super.toString()).append("[").append(sentences.size()).append("/").append(size).append("]").append(isFull() == true ? "!" : "*").toString();
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
-		if(obj instanceof TextWindow) {
+		if (obj instanceof TextWindow) {
 			TextWindow to = (TextWindow) obj;
 			return to.size == size && to.sentences.equals(sentences);
 		}
