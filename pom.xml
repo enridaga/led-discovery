@@ -29,6 +29,7 @@
 		<module>tools</module>
 		<module>entities</module>
 		<module>annotator</module>
+		<module>spark</module>
 		<module>experiments</module>
 		<!-- <module>runnable/app</module> -->
 	</modules>
@@ -95,6 +96,11 @@
 				<version>2.10.0</version>
 			</dependency>
 
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-1.2-api</artifactId>
+				<version>2.10.0</version>
+			</dependency>
 			<!-- Testing -->
 			<dependency>
 				<groupId>junit</groupId>
@@ -300,6 +306,16 @@
 				<groupId>led-discovery</groupId>
 				<artifactId>led-analysis-entities</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.spark</groupId>
+				<artifactId>spark-mllib_2.11</artifactId>
+				<version>2.3.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.spark</groupId>
+				<artifactId>spark-core_2.11</artifactId>
+				<version>2.3.0</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
