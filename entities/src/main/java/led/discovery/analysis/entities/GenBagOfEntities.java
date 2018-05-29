@@ -32,9 +32,9 @@ public class GenBagOfEntities {
 		types = new File(dataDir, "dbpedia/instance_types_en.ttl");
 		//ontology = new File(dataDir, "dbpedia/dbpedia_2016-10.nt");
 		training = new File(dataDir, "evaluation/for-training.csv");
-		experiencesEntities = new File(dataDir, "analysis/experiences-entities.csv");
-		outputBagOfEntities = new File(dataDir, "analysis/bag-of-entities.csv");
-		outputBagOfTypes = new File(dataDir, "analysis/bag-of-types.csv");
+		experiencesEntities = new File(dataDir, "analysis/entities/experiences-entities.csv");
+		outputBagOfEntities = new File(dataDir, "analysis/entities/bag-of-entities.csv");
+		outputBagOfTypes = new File(dataDir, "analysis/entities/bag-of-types.csv");
 	}
 
 	private void _clean() throws IOException {
