@@ -119,6 +119,23 @@
 							</arguments>
 						</configuration>
 					</execution>
+					<execution>
+						<id>run-forest-only</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.RunExperiment</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>run-forest-only</argument>
+							</arguments>
+						</configuration>
+					</execution>
 					<!-- Learn Window Size -->
 					<execution>
 						<id>learn-window-size</id>
