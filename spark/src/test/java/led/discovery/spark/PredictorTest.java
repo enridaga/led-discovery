@@ -23,6 +23,7 @@ public class PredictorTest {
 	private static Predictor p;
 	private static String e_1363621374;
 	private static String e_1363623494;
+	private static String e_Reuters21578_10000;
 	private static Dataset<Row> trainingBow;
 	private static SparkSession utilSpark;
 
@@ -35,6 +36,8 @@ public class PredictorTest {
 		String trainingBOWDir = PredictorTest.class.getClassLoader().getResource("./training-bow.parquet").getPath().toString();
 		e_1363623494 = IOUtils.toString(PredictorTest.class.getClassLoader().getResource("./1363623494.txt").openStream(), StandardCharsets.UTF_8);
 		e_1363621374 = IOUtils.toString(PredictorTest.class.getClassLoader().getResource("./1363621374.txt").openStream(), StandardCharsets.UTF_8);
+		e_Reuters21578_10000 = IOUtils.toString(PredictorTest.class.getClassLoader().getResource("./Reuters21578-10000.txt").openStream(), StandardCharsets.UTF_8);
+		
 		utilSpark = SparkSession.builder().appName("Java Spark Text2Vec").config("spark.master", "local").getOrCreate();
 		trainingBow = utilSpark.read().format("parquet").load(trainingBOWDir);
 		L.info("{}", vocabulary);
@@ -55,6 +58,13 @@ public class PredictorTest {
 		boolean out2 = p.isLED(e_1363621374);
 		L.info("1363621374: {}", out2);
 		Assert.assertTrue(out2);
+	}
+	
+	@Test
+	public void test3() throws URISyntaxException, FileNotFoundException, IOException {
+		boolean out2 = p.isLED(e_Reuters21578_10000);
+		L.info("Reuters21578-10000: {}", out2);
+		Assert.assertTrue(!out2);
 	}
 
 	@Test
