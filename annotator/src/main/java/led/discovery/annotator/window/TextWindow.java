@@ -66,7 +66,7 @@ public class TextWindow {
 			sb.append(sentenceStr);
 			sb.append(" ");
 		}
-		return toText();
+		return sb.toString();
 	}
 
 	public String toString() {

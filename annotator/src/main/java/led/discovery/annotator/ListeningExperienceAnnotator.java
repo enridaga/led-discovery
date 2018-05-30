@@ -1,5 +1,6 @@
 package led.discovery.annotator;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -11,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import edu.stanford.nlp.ling.CoreAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetBeginAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.Annotator;
@@ -20,17 +22,20 @@ import edu.stanford.nlp.util.ErasureUtils;
 import led.discovery.annotator.MusicalHeatAnnotator.MusicalHeatAnnotation;
 import led.discovery.annotator.MusicalHeatAnnotator.MusicalHeatScoreAnnotation;
 import led.discovery.annotator.evaluators.HeatEvaluator;
+import led.discovery.annotator.evaluators.RandomForestEvaluator;
 import led.discovery.annotator.window.MovingWindow;
 import led.discovery.annotator.window.TextWindow;
+import led.discovery.annotator.window.TextWindowEvaluator;
 
 public class ListeningExperienceAnnotator implements Annotator {
 	private Logger log = LoggerFactory.getLogger(ListeningExperienceAnnotator.class);
 
 	private int MinWindowLength = 1;
 	private int MaxWindowLength = 5;
-	private Double heatThreshold;
+	private Properties properties;
 	private List<String> Evaluators = Arrays.asList(new String[] { "heat" });
-
+	private List<TextWindowEvaluator> _E = new ArrayList<TextWindowEvaluator>();
+	private HeatEvaluator heat = null;
 	/**
 	 * Get all the detected listening experiences
 	 */
@@ -78,10 +83,11 @@ public class ListeningExperienceAnnotator implements Annotator {
 		}
 	}
 
-	public ListeningExperienceAnnotator(String name, Properties props) {
+	public ListeningExperienceAnnotator(String name, Properties propes) {
+		properties = propes;
 		// Window
-		String _windowMin = props.getProperty("custom.led.window.min");
-		String _windowMax = props.getProperty("custom.led.window.max");
+		String _windowMin = properties.getProperty("custom.led.window.min");
+		String _windowMax = properties.getProperty("custom.led.window.max");
 		if (_windowMin != null) {
 			MinWindowLength = Integer.parseInt(_windowMin);
 		}
@@ -90,7 +96,7 @@ public class ListeningExperienceAnnotator implements Annotator {
 		}
 
 		// Evaluators
-		String _evaluators = props.getProperty("custom.led.evaluators");
+		String _evaluators = properties.getProperty("custom.led.evaluators");
 		if (_evaluators != null) {
 			Evaluators = new ArrayList<String>();
 			String[] evals = _evaluators.split(",");
@@ -99,36 +105,43 @@ public class ListeningExperienceAnnotator implements Annotator {
 			}
 			Evaluators = Collections.unmodifiableList(Evaluators);
 		}
-
-		// Evaluator :: Heat
-		String _heatThreshold = props.getProperty("custom.led.heat.threshold");
-		if (_heatThreshold == null) {
-			heatThreshold = 0.00043;
-		} else {
-			heatThreshold = Double.valueOf(_heatThreshold);
+		
+		if (Evaluators.contains("heat")) {
+			log.info("heat evaluator");
+			heat = new HeatEvaluator(properties);
+			_E.add(heat);
 		}
-
+		if (Evaluators.contains("forest")) {
+			log.info("forest evaluator");
+			try {
+				_E.add(new RandomForestEvaluator(properties));
+			} catch (IOException e) {
+				log.error("Cannot craete forest evaluator", e);
+			}
+		}
 	}
 
 	@Override
 	public void annotate(Annotation annotation) {
-		// Get Sentences
+		log.info("annotate");
+		// MovingWindow
 		MovingWindow mv = new MovingWindow(MinWindowLength, MaxWindowLength);
 		// Evaluators
-		HeatEvaluator heat = null;
-		if (Evaluators.contains("heat")) {
-			// Heat collector
-			heat = new HeatEvaluator(heatThreshold);
-			mv.addEvaluator(heat);
+		
+		for(TextWindowEvaluator twe:_E) {
+			mv.addEvaluator(twe);
 		}
+		log.info("Moving window starting");
+		// Execute
 		log.debug("{} sentences", annotation.get(SentencesAnnotation.class));
 		for (CoreMap sentence : annotation.get(SentencesAnnotation.class)) {
+			log.info("move to {}", sentence.get(CharacterOffsetBeginAnnotation.class));
 			mv.move(sentence);
 		}
 		log.debug("Annotations collected \n{}", mv.collected().size());
 		// Link the windows to start/end sentences
 		annotation.set(ListeningExperienceAnnotation.class, mv.collected());
-		if (heat != null) {
+		if (Evaluators.contains("heat")) {
 			// Heat max value met (used for training treshold)
 			annotation.set(HeatMaxValueMetAnnotation.class, heat.getMaxValueMet());
 			annotation.set(HeatMinValueMetAnnotation.class, heat.getMinValueMet());
