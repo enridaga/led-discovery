@@ -11,6 +11,7 @@ import org.apache.commons.io.IOUtils;
 import org.apache.spark.ml.PipelineModel;
 import org.apache.spark.ml.feature.CountVectorizerModel;
 import org.apache.spark.ml.feature.Tokenizer;
+import org.apache.spark.ml.feature.VectorIndexerModel;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.RowFactory;
@@ -29,8 +30,16 @@ public class Predictor {
 	private CountVectorizerModel cvModel;
 	private static final Logger L = LoggerFactory.getLogger(Predictor.class);
 
+	/**
+	 * XXX Maybe the vocabulary could be extracted from the Pipeline?
+	 * 
+	 * @param modelSource
+	 * @param vocabulary
+	 * @throws FileNotFoundException
+	 * @throws IOException
+	 */
 	public Predictor(String modelSource, String vocabulary) throws FileNotFoundException, IOException {
-		SparkSession s = SparkSession.builder().appName("Java Spark Text2Vec").config("spark.master", "local").getOrCreate();
+		SparkSession s = SparkSession.builder().appName("LED Predictor").config("spark.master", "local").getOrCreate();
 		_init(s, modelSource, vocabulary);
 	}
 
@@ -42,6 +51,7 @@ public class Predictor {
 		L.info("Initialization");
 		this.spark = spark;
 		rfModel = PipelineModel.load(modelSource);
+//		VectorIndexerModel vim = (VectorIndexerModel) rfModel.stages()[1];
 		this.vocabulary = IOUtils.readLines(new FileInputStream(vocabulary), StandardCharsets.UTF_8);
 		cvModel = new CountVectorizerModel(this.vocabulary.toArray(new String[this.vocabulary.size()]));
 		cvModel.setInputCol("words").setOutputCol("features");
