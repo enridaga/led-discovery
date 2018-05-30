@@ -7,7 +7,6 @@ import org.apache.commons.io.FileUtils;
 import org.apache.spark.ml.Pipeline;
 import org.apache.spark.ml.PipelineModel;
 import org.apache.spark.ml.PipelineStage;
-import org.apache.spark.ml.classification.RandomForestClassificationModel;
 import org.apache.spark.ml.classification.RandomForestClassifier;
 import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator;
 import org.apache.spark.ml.feature.IndexToString;
@@ -33,7 +32,7 @@ public class TrainModel {
 	private File trainingDir;
 	private File outputModelFile;
 	private File outputTestFile;
-	private static final Logger L = LoggerFactory.getLogger(GenTrainingBOW.class);
+	private static final Logger L = LoggerFactory.getLogger(TrainModel.class);
 
 	public TrainModel(String[] args) {
 		this.trainingDir = new File(args[0]);

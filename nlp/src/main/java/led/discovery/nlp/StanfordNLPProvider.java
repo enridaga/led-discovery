@@ -24,6 +24,7 @@ import edu.stanford.nlp.util.CoreMap;
 public class StanfordNLPProvider implements TermsProvider {
 	private Set<String> stopwords;
 	private StanfordCoreNLP pipeline;
+	private LemmaCleaner cleaner = new StandardLemmaCleaner();
 	private Logger log = LoggerFactory.getLogger(StanfordCoreNLP.class);
 
 	public StanfordNLPProvider() {
@@ -43,22 +44,35 @@ public class StanfordNLPProvider implements TermsProvider {
 		pipeline.annotate(document);
 		List<CoreMap> sentences = document.get(SentencesAnnotation.class);
 		List<Term> terms = new ArrayList<Term>();
-		LemmaCleaner cleaner = new StandardLemmaCleaner();
 		for (CoreMap sentence : sentences) {
-			// traversing the words in the current sentence
-			// a CoreLabel is a CoreMap with additional token-specific methods
-			for (CoreLabel token : sentence.get(TokensAnnotation.class)) {
-				// this is the text of the token
-				String lemma = token.getString(LemmaAnnotation.class);
-				String pos = token.getString(PartOfSpeechAnnotation.class);
-				if (stopwords.contains(lemma)) {
-					continue;
-				}
-				if ((lemma = cleaner.clean(lemma)) != null) {
-					terms.add(Term.build(lemma, pos));
-				}
-			}
+			terms.addAll(terms(sentence));
 		}
 		return Collections.unmodifiableList(terms);
+	}
+
+	public List<Term> terms(CoreMap sentence) {
+		List<Term> terms = new ArrayList<Term>();
+		// traversing the words in the current sentence
+		// a CoreLabel is a CoreMap with additional token-specific methods
+		for (CoreLabel token : sentence.get(TokensAnnotation.class)) {
+			// this is the text of the token
+			String lemma = token.getString(LemmaAnnotation.class);
+			String pos = token.getString(PartOfSpeechAnnotation.class);
+			if (stopwords.contains(lemma)) {
+				continue;
+			}
+			if ((lemma = cleaner.clean(lemma)) != null) {
+				terms.add(Term.build(lemma, pos));
+			}
+		}
+		return terms;
+	}
+	
+	public List<Term> terms(List<CoreMap> sentences) {
+		List<Term> terms = new ArrayList<Term>();
+		for (CoreMap s : sentences) {
+			terms.addAll(terms(s));
+		}
+		return terms;
 	}
 }

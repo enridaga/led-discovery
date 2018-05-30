@@ -68,7 +68,7 @@ public class Predictor {
 		L.trace("Tokenized");
 		Dataset<Row> vectorized = cvModel.transform(wordsData);
 		L.trace("Vectorized");
-		vectorized.show(1);
+//		vectorized.show(1);
 		return vectorized;
 	}
 
@@ -78,7 +78,7 @@ public class Predictor {
 		Dataset<Row> vectorized = vectorized(docId, text);
 		Dataset<Row> result = rfModel.transform(vectorized);
 		L.debug("Predicted");
-		result.select("predictedLabel").show(1);
+//		result.select("predictedLabel").show(1);
 		String prediction = result.select("predictedLabel").first().getAs(0);
 		return prediction.equals("1.0");
 	}

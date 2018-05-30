@@ -26,6 +26,7 @@ import led.discovery.annotator.evaluators.RandomForestEvaluator;
 import led.discovery.annotator.window.MovingWindow;
 import led.discovery.annotator.window.TextWindow;
 import led.discovery.annotator.window.TextWindowEvaluator;
+import led.discovery.nlp.StanfordNLPProvider;
 
 public class ListeningExperienceAnnotator implements Annotator {
 	private Logger log = LoggerFactory.getLogger(ListeningExperienceAnnotator.class);
@@ -36,6 +37,7 @@ public class ListeningExperienceAnnotator implements Annotator {
 	private List<String> Evaluators = Arrays.asList(new String[] { "heat" });
 	private List<TextWindowEvaluator> _E = new ArrayList<TextWindowEvaluator>();
 	private HeatEvaluator heat = null;
+	private StanfordNLPProvider provider;
 	/**
 	 * Get all the detected listening experiences
 	 */
@@ -85,6 +87,7 @@ public class ListeningExperienceAnnotator implements Annotator {
 
 	public ListeningExperienceAnnotator(String name, Properties propes) {
 		properties = propes;
+		provider = new StanfordNLPProvider();
 		// Window
 		String _windowMin = properties.getProperty("custom.led.window.min");
 		String _windowMax = properties.getProperty("custom.led.window.max");
@@ -114,7 +117,7 @@ public class ListeningExperienceAnnotator implements Annotator {
 		if (Evaluators.contains("forest")) {
 			log.info("forest evaluator");
 			try {
-				_E.add(new RandomForestEvaluator(properties));
+				_E.add(new RandomForestEvaluator(properties, provider));
 			} catch (IOException e) {
 				log.error("Cannot craete forest evaluator", e);
 			}

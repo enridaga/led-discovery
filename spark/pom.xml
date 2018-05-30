@@ -15,6 +15,10 @@
 	<!-- Dependency -->
 	<dependencies>
 		<!-- This project -->
+		<dependency>
+			<groupId>led-discovery</groupId>
+			<artifactId>led-nlp</artifactId>
+		</dependency>
 		<!-- Logging -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -100,7 +104,26 @@
 						</configuration>
 					</execution>
 					<execution>
-						<id>train-model</id>
+						<id>gen-training-bot</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-Xmx4g</argument>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
+								<argument>led.discovery.spark.GenTrainingBOT</argument>
+								<argument>${project.basedir}/../data/positives/</argument>
+								<argument>${project.basedir}/../data/negatives/</argument>
+								<argument>${project.basedir}/../data/analysis/training-bot.parquet</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>train-model-bow</id>
 						<goals>
 							<goal>exec</goal>
 						</goals>
@@ -114,6 +137,24 @@
 								<argument>led.discovery.spark.TrainModel</argument>
 								<argument>${project.basedir}/../data/analysis/training-bow.parquet</argument>
 								<argument>${project.basedir}/../data/analysis/model-bow.parquet</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>train-model-bot</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-Xmx8g</argument>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
+								<argument>led.discovery.spark.TrainModel</argument>
+								<argument>${project.basedir}/../data/analysis/training-bot.parquet</argument>
+								<argument>${project.basedir}/../data/analysis/model-bot.parquet</argument>
 							</arguments>
 						</configuration>
 					</execution>
