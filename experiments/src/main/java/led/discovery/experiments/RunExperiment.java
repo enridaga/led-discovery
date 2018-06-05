@@ -2,11 +2,13 @@ package led.discovery.experiments;
 
 import java.io.File;
 import java.io.FileWriter;
+import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -20,6 +22,7 @@ import org.slf4j.LoggerFactory;
 
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import edu.stanford.nlp.util.StringUtils;
 import led.discovery.annotator.ListeningExperienceAnnotator.ListeningExperienceAnnotation;
 import led.discovery.annotator.window.TextWindow;
 import led.discovery.benchmark.Benchmark;
@@ -35,6 +38,7 @@ public class RunExperiment {
 	private File benchmark2output;
 	private Properties properties;
 	private String experiment;
+	private File[] onSources;
 
 	public RunExperiment(String[] args) throws IOException {
 		dataDir = new File(args[0]);
@@ -46,6 +50,22 @@ public class RunExperiment {
 		properties = new Properties();
 		properties.load(getClass().getResourceAsStream(experiment +
 			".properties"));
+
+		String _onSources = properties.getProperty("led.experiment.sources");
+		if (_onSources == null) {
+			onSources = sourcesDir.listFiles();
+		} else {
+			onSources = sourcesDir.listFiles(new FilenameFilter() {
+				List<String> names = Arrays.asList(StringUtils.splitOnChar(_onSources, ','));
+
+				@Override
+				public boolean accept(File dir, String name) {
+					L.info("source {}", name);
+					return names.contains(name);
+				}
+
+			});
+		}
 	}
 
 	void clean() throws IOException {
@@ -62,6 +82,9 @@ public class RunExperiment {
 		properties.list(new PrintWriter(writer));
 		L.info("Properties: \n{}", writer.getBuffer().toString());
 		L.info("Output to: {}, {}", output2benchmark, benchmark2output);
+		L.info("On Sources: \n{}", onSources);
+		if (onSources.length == 0)
+			throw new IOException("Sources empty");
 
 		clean();
 
@@ -69,7 +92,7 @@ public class RunExperiment {
 		StanfordCoreNLP pipeline = new StanfordCoreNLP(properties);
 		Map<String, List<Integer[]>> matches = new HashMap<String, List<Integer[]>>();
 		Map<String, List<Integer>> windowSizes = new HashMap<String, List<Integer>>();
-		for (File f : sourcesDir.listFiles()) {
+		for (File f : onSources) {
 			L.info("Source: {}", f.getName());
 			Annotation annotation = new Annotation(FileUtils.readFileToString(f, StandardCharsets.UTF_8));
 			pipeline.annotate(annotation);
@@ -94,8 +117,10 @@ public class RunExperiment {
 			for (Entry<String, List<Integer[]>> en : matches.entrySet()) {
 				int matched = 0;
 				String fname = en.getKey();
-				List<Integer[]> items =  en.getValue();
-				for (int x = 0; x <items.size(); x++) {
+				if (notInSources(fname))
+					continue;
+				List<Integer[]> items = en.getValue();
+				for (int x = 0; x < items.size(); x++) {
 					Integer[] i = items.get(x);
 					fw.write(fname);
 					fw.write(",");
@@ -104,9 +129,11 @@ public class RunExperiment {
 					fw.write(Integer.toString(i[1]));
 					fw.write(",");
 					Object[] match = bench.matches(fname, i[0], i[1]);
-					fw.write(Integer.toString(windowSizes.get(fname).get(x))); // add window size
+					fw.write(Integer.toString(windowSizes.get(fname).get(x))); // add
+																				// window
+																				// size
 					fw.write(",");
-					
+
 					if (match == null) {
 						fw.write("N");
 						fw.write(",-");
@@ -167,6 +194,11 @@ public class RunExperiment {
 			}
 			L.info("B2O: {}/{}", matched, all);
 		}
+	}
+
+	private boolean notInSources(String fname) {
+		File f = new File(sourcesDir, fname);
+		return !Arrays.asList(onSources).contains(f);
 	}
 
 	public static final void main(String[] args) throws IOException {

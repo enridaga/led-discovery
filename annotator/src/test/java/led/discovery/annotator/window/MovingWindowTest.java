@@ -146,4 +146,86 @@ public class MovingWindowTest {
 		log.info("{} windows. {} expected", windows.size(), expectedWindows);
 		Assert.assertTrue(windows.size() == expectedWindows);
 	}
+	
+	@Test
+	public void testMovingFixedSize() {
+		MovingWindow mw2;
+		mw2 = new MovingWindow(1, 1);
+		mw2.addEvaluator(TestUtil.PassAll);
+		mw2.move(TestUtil.S1);
+		mw2.move(TestUtil.S2);
+		Assert.assertTrue(mw2.collected().size() == 2);
+		//
+		
+		mw2 = new MovingWindow(10, 10);
+		mw2.addEvaluator(TestUtil.PassAll);
+		List<CoreMap> text = _queue(100);
+		for (CoreMap s : text)
+			mw2.move(s);
+		log.info("{}",mw2.generatedCount);
+		Assert.assertTrue(mw2.collected().size() == 91);
+		//
+		
+		mw2 = new MovingWindow(5, 5);
+		text = _queue(5);
+		mw2.addEvaluator(TestUtil.PassAll);
+		for (CoreMap s : text)
+			mw2.move(s);
+		log.info("{}",mw2.generatedCount);
+		Assert.assertTrue(mw2.collected().size() == 1);
+		
+		mw2 = new MovingWindow(5, 5);
+		text = _queue(6);
+		mw2.addEvaluator(TestUtil.PassAll);
+		for (CoreMap s : text)
+			mw2.move(s);
+		log.info("{}",mw2.generatedCount);
+		Assert.assertTrue(mw2.collected().size() == 2);
+		//
+	}
+	
+	@Test
+	public void testStepFixedSize() {
+		MovingWindow mw2;
+		mw2 = new MovingWindow(1, 1, 1);
+		mw2.addEvaluator(TestUtil.PassAll);
+		mw2.move(TestUtil.S1);
+		mw2.move(TestUtil.S2);
+		Assert.assertTrue(mw2.collected().size() == 2);
+		//
+		
+		mw2 = new MovingWindow(10, 10, 10);
+		mw2.addEvaluator(TestUtil.PassAll);
+		List<CoreMap> text = _queue(100);
+		for (CoreMap s : text)
+			mw2.move(s);
+		log.info("{}", mw2.generatedCount);
+		Assert.assertTrue(mw2.collected().size() == 10);
+		//
+		
+		mw2 = new MovingWindow(5, 5, 1);
+		text = _queue(5);
+		mw2.addEvaluator(TestUtil.PassAll);
+		for (CoreMap s : text)
+			mw2.move(s);
+		log.info("generatedCount {}",mw2.generatedCount);
+		Assert.assertTrue(mw2.collected().size() == 1);
+		
+		mw2 = new MovingWindow(5, 5, 5);
+		text = _queue(6);
+		mw2.addEvaluator(TestUtil.PassAll);
+		for (CoreMap s : text)
+			mw2.move(s);
+		log.info("generatedCount {}",mw2.generatedCount);
+		Assert.assertTrue(mw2.collected().size() == 1);
+
+		mw2 = new MovingWindow(20, 20, 20);
+		text = _queue(20000);
+		mw2.addEvaluator(TestUtil.PassAll);
+		for (CoreMap s : text)
+			mw2.move(s);
+		log.info("generatedCount {}",mw2.generatedCount);
+		Assert.assertTrue(mw2.collected().size() == 999); // XXX Why?
+		//
+	}
 }

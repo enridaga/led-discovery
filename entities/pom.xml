@@ -67,6 +67,24 @@
 				<version>1.6.0</version>
 				<executions>
 					<execution>
+						<id>gen-reuters-entities</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.analysis.entities.spot.EntitiesExtractor</argument>
+								<argument>http://anne.kmi.open.ac.uk/rest/annotate</argument>
+								<argument>${project.basedir}/../data/negatives</argument>
+								<argument>${project.basedir}/../data/analysis/entities/reuters-entities.csv</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
 						<id>gen-entity-types</id>
 						<goals>
 							<goal>exec</goal>

@@ -29,7 +29,7 @@ public class GenEntityTypes {
 	public GenEntityTypes(String[] args) {
 		dataDir = new File(args[0]);
 		entities = new File(dataDir, "analysis/entities/experiences-entities.csv");
-		output = new File(dataDir, "analysis/entities/entities-types.csv");
+		output = new File(dataDir, "analysis/entities/experiences-entities-types.csv");
 	}
 
 	void run() throws FileNotFoundException, IOException {

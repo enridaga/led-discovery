@@ -136,6 +136,25 @@
 							</arguments>
 						</configuration>
 					</execution>
+					
+					<execution>
+						<id>experiment</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.RunExperiment</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>${experimentId}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
 					<!-- Learn Window Size -->
 					<execution>
 						<id>learn-window-size</id>
@@ -201,7 +220,7 @@
 								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
 								<argument>led.discovery.experiments.AnalyseResults</argument>
 								<argument>${project.basedir}/../data</argument>
-								<argument>run-heat-only</argument>
+								<argument>run-heat-only,run-forest-only,test-forest-glover</argument>
 							</arguments>
 						</configuration>
 					</execution>

@@ -31,8 +31,9 @@ import led.discovery.nlp.StanfordNLPProvider;
 public class ListeningExperienceAnnotator implements Annotator {
 	private Logger log = LoggerFactory.getLogger(ListeningExperienceAnnotator.class);
 
-	private int MinWindowLength = 1;
+	private int MinWindowLength = 5;
 	private int MaxWindowLength = 5;
+	private int Step = 5;
 	private Properties properties;
 	private List<String> Evaluators = Arrays.asList(new String[] { "heat" });
 	private List<TextWindowEvaluator> _E = new ArrayList<TextWindowEvaluator>();
@@ -91,11 +92,15 @@ public class ListeningExperienceAnnotator implements Annotator {
 		// Window
 		String _windowMin = properties.getProperty("custom.led.window.min");
 		String _windowMax = properties.getProperty("custom.led.window.max");
+		String _windowStep = properties.getProperty("custom.led.window.step");
 		if (_windowMin != null) {
 			MinWindowLength = Integer.parseInt(_windowMin);
 		}
 		if (_windowMax != null) {
 			MaxWindowLength = Integer.parseInt(_windowMax);
+		}
+		if (_windowStep != null) {
+			Step = Integer.parseInt(_windowStep);
 		}
 
 		// Evaluators
@@ -128,7 +133,7 @@ public class ListeningExperienceAnnotator implements Annotator {
 	public void annotate(Annotation annotation) {
 		log.info("annotate");
 		// MovingWindow
-		MovingWindow mv = new MovingWindow(MinWindowLength, MaxWindowLength);
+		MovingWindow mv = new MovingWindow(MinWindowLength, MaxWindowLength, Step);
 		// Evaluators
 		
 		for(TextWindowEvaluator twe:_E) {

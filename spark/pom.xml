@@ -104,6 +104,25 @@
 						</configuration>
 					</execution>
 					<execution>
+						<id>gen-training-file</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-Xmx4g</argument>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
+								<argument>led.discovery.spark.GenTrainingFile</argument>
+								<argument>${project.basedir}/../data/positives/</argument>
+								<argument>${project.basedir}/../data/negatives/</argument>
+								<argument>${project.basedir}/../data/analysis/training-file.csv</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
 						<id>gen-training-bot</id>
 						<goals>
 							<goal>exec</goal>
@@ -116,27 +135,8 @@
 								<classpath />
 								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
 								<argument>led.discovery.spark.GenTrainingBOT</argument>
-								<argument>${project.basedir}/../data/positives/</argument>
-								<argument>${project.basedir}/../data/negatives/</argument>
+								<argument>${project.basedir}/../data/analysis/training-file.csv</argument>
 								<argument>${project.basedir}/../data/analysis/training-bot.parquet</argument>
-							</arguments>
-						</configuration>
-					</execution>
-					<execution>
-						<id>train-model-bow</id>
-						<goals>
-							<goal>exec</goal>
-						</goals>
-						<configuration>
-							<executable>java</executable>
-							<arguments>
-								<argument>-Xmx8g</argument>
-								<argument>-classpath</argument>
-								<classpath />
-								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
-								<argument>led.discovery.spark.TrainModel</argument>
-								<argument>${project.basedir}/../data/analysis/training-bow.parquet</argument>
-								<argument>${project.basedir}/../data/analysis/model-bow.parquet</argument>
 							</arguments>
 						</configuration>
 					</execution>

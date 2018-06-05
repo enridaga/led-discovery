@@ -18,12 +18,19 @@ public class MovingWindow {
 	private List<TextWindow> collected;
 	private int min;
 	private int max;
+	private int step = 1;
 	private int fifoSize;
 	protected int generatedCount = 0;
+
 	public MovingWindow(int min, int max) {
+		this(min, max, 1);
+	}
+
+	public MovingWindow(int min, int max, int step) {
 		this.min = min;
 		this.max = max;
-		this.fifoSize = (max - min + 1);
+		this.step = step;
+		this.fifoSize = max; // (max - min + 1);
 		observers = new HashSet<TextWindowEvaluator>();
 		fifo = new ArrayList<CoreMap>();
 		collected = new ArrayList<TextWindow>();
@@ -36,7 +43,9 @@ public class MovingWindow {
 	public void move(CoreMap sentence) {
 		if (fifo.size() == this.fifoSize) {
 			// Shift
-			this.fifo.remove(0);
+			for (int s = 0; s < step; s++) {
+				this.fifo.remove(0);
+			}
 		}
 		fifo.add(sentence);
 		if (fifo.size() == this.fifoSize) {
@@ -57,7 +66,7 @@ public class MovingWindow {
 						break;
 					}
 				}
-				if(passed) {
+				if (passed) {
 					log.trace(" - Passed");
 					if (collected.size() > 0) {
 						// Remove previously added windows included in this one
