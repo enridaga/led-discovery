@@ -18,7 +18,7 @@ import org.apache.commons.lang3.StringEscapeUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import led.discovery.nlp.StanfordNLPProvider;
+import edu.stanford.nlp.util.ArrayUtils;
 
 /**
  * Generating Bags of Terms (Lemma+POS)
@@ -28,16 +28,25 @@ import led.discovery.nlp.StanfordNLPProvider;
  */
 public class GenTrainingFile {
 	private File positivesFolder;
-	private File negativesFolder;
+	private File[] negativesFolders;
 	private File outputFile;
-	private StanfordNLPProvider provider;
 	private static final Logger L = LoggerFactory.getLogger(GenTrainingFile.class);
-
+	private int mode = 1;
 	public GenTrainingFile(String[] args) {
-		provider = new StanfordNLPProvider();
 		this.positivesFolder = new File(args[0]);
-		this.negativesFolder = new File(args[1]);
+		String[] negs = args[1].split(",");
+		List<File> negatives = new ArrayList<File>();
+		for (String n : negs) {
+			negatives.add(new File(n));
+		}
+		this.negativesFolders = negatives.toArray(new File[negatives.size()]);
 		this.outputFile = new File(args[2]);
+		if(args.length > 3) {
+			mode = Integer.parseInt(args[3]);
+			if(mode !=0 && mode !=1) {
+				throw new RuntimeException("Invalid value for param mode");
+			}
+		}
 	}
 
 	private void _clean() {
@@ -64,78 +73,102 @@ public class GenTrainingFile {
 			}
 		}
 		L.info("{} positive examples loaded", numberOf);
-		L.info("Building negative examples");
-		int numberOfNeg = 0;
-		Map<String, String> negMap = new HashMap<String, String>();
-		String content = "";
-		String fname = "";
-		String remainedContent = "";
-		int combined = 0;
-		int avgDifference = 0;
 		List<File> files = new ArrayList<File>();
-		files.addAll(Arrays.asList(this.negativesFolder.listFiles()));
-		while (numberOfNeg < numberOf && !files.isEmpty()) {
-			if (content.equals("") || plen.get(numberOfNeg) > content.length()) {
-				// Get another file
-				File f = files.remove(0);
-				L.info("Get file {}", f);
+		for (File folder : this.negativesFolders) {
+			files.addAll(Arrays.asList(folder.listFiles()));
+		}
+		
+		Map<String, String> negMap = new HashMap<String, String>();
+
+		/* Plain mode */
+		if(mode == 0) {
+			L.info("Loading negative examples");
+			for(File f: files) {
 				try (FileInputStream fis = new FileInputStream(f)) {
-					content = new StringBuilder().append(content).append(" ").append(IOUtils.toString(fis, StandardCharsets.UTF_8)).toString();
-					fname = new StringBuilder().append(fname).append("__").append(f.getName()).toString();
-					combined++;
-					continue;
+					String content = IOUtils.toString(fis, StandardCharsets.UTF_8);
+					String fname = f.getName();
+					negMap.put(fname, content);
 				} catch (IOException e) {
 					L.error("", e);
 				}
 			}
-			boolean load = false;
-			// If positives are bigger and this neg is larger then the
-			// respective, take it.
-			if (avgDifference >= 0 && content.length() >= plen.get(numberOfNeg)) {
-				L.info("[take] positives are bigger, neg bigger");
-				load = true;
-			} else // If negatives are bigger and this neg is smaller, take
-					// it
-			if (avgDifference <= 0 && content.length() <= plen.get(numberOfNeg)) {
-				L.info("[take] negatives are bigger, neg smaller");
-				load = true;
-			}
-			// If positives are bigger and this neg is smaller, continue
-			// appending
-			// If positives are smaller and this neg is bigger, crop it and take it!
-			else if (avgDifference <= 0 && content.length() >= plen.get(numberOfNeg)) {
-				String[] splitc = new String[] { content.substring(0, plen.get(numberOfNeg)), content.substring(1, plen.get(numberOfNeg)) };
-				content = splitc[0];
-				remainedContent = splitc[1];
-				fname = new StringBuilder().append(fname).append("--").append(content.hashCode()).toString();
-				load = true;
-			}
-			if (load) {
-				negMap.put(fname, content);
-				L.info("{} negative ({} combined,plen:{},nlen:{})", new Object[] { numberOfNeg +
-					1, combined, plen.get(numberOfNeg), content.length() });
-				avgDifference = (avgDifference + (plen.get(numberOfNeg) - content.length())) /
-					2;
-				L.info("avgd {}", avgDifference);
-				numberOfNeg++;
-				if(!"".equals(remainedContent)) {
-					content = new StringBuilder().append(remainedContent).append(". ").toString();
-					fname = fname.substring(fname.lastIndexOf("--")) + "--" + content.hashCode();
-				}else {
-					content = "";
-					fname = "";
-				}
-				remainedContent = "";
-				combined = 0;
-			}
-
-			if (numberOfNeg >= numberOf) {
-				L.info("Reached the limit of {} negative examples", numberOfNeg);
-				break;
-			}
 		}
-		L.info("{} negative examples loaded (avgd: {})", numberOfNeg, avgDifference);
-		
+		/* Size-aware mode */
+		if (mode == 1) {
+			L.info("Building negative examples");
+			int numberOfNeg = 0;
+			
+			String content = "";
+			String fname = "";
+			String remainedContent = "";
+			int combined = 0;
+			int avgDifference = 0;
+			
+			while (numberOfNeg < numberOf && !files.isEmpty()) {
+				if (content.equals("") || plen.get(numberOfNeg) > content.length()) {
+					// Get another file
+					File f = files.remove(0);
+					L.info("Get file {}", f);
+					try (FileInputStream fis = new FileInputStream(f)) {
+						content = new StringBuilder().append(content).append(" ").append(IOUtils.toString(fis, StandardCharsets.UTF_8)).toString();
+						fname = new StringBuilder().append(fname).append("__").append(f.getName()).toString();
+						combined++;
+						continue;
+					} catch (IOException e) {
+						L.error("", e);
+					}
+				}
+				boolean load = false;
+				// If positives are bigger and this neg is larger then the
+				// respective, take it.
+				if (avgDifference >= 0 && content.length() >= plen.get(numberOfNeg)) {
+					L.info("[take] positives are bigger, neg bigger");
+					load = true;
+				} else // If negatives are bigger and this neg is smaller, take
+						// it
+				if (avgDifference <= 0 && content.length() <= plen.get(numberOfNeg)) {
+					L.info("[take] negatives are bigger, neg smaller");
+					load = true;
+				}
+				// If positives are bigger and this neg is smaller, continue
+				// appending
+				// If positives are smaller and this neg is bigger, crop it and
+				// take
+				// it!
+				else if (avgDifference <= 0 && content.length() >= plen.get(numberOfNeg)) {
+					String[] splitc = new String[] { content.substring(0, plen.get(numberOfNeg)), content.substring(1, plen.get(numberOfNeg)) };
+					content = splitc[0];
+					remainedContent = splitc[1];
+					fname = new StringBuilder().append(fname).append("--").append(content.hashCode()).toString();
+					load = true;
+				}
+				if (load) {
+					negMap.put(fname, content);
+					L.info("{} negative ({} combined,plen:{},nlen:{})", new Object[] { numberOfNeg +
+						1, combined, plen.get(numberOfNeg), content.length() });
+					avgDifference = (avgDifference + (plen.get(numberOfNeg) - content.length())) /
+						2;
+					L.info("avgd {}", avgDifference);
+					numberOfNeg++;
+					if (!"".equals(remainedContent)) {
+						content = new StringBuilder().append(remainedContent).append(". ").toString();
+						fname = fname.substring(fname.lastIndexOf("--")) + "--" +
+							content.hashCode();
+					} else {
+						content = "";
+						fname = "";
+					}
+					remainedContent = "";
+					combined = 0;
+				}
+
+				if (numberOfNeg >= numberOf) {
+					L.info("Reached the limit of {} negative examples", numberOfNeg);
+					break;
+				}
+			}
+			L.info("{} negative examples loaded (avgd: {})", numberOfNeg, avgDifference);
+		}
 		L.info("Writing {} positive entries", posMap.size());
 		L.info("Writing {} negative entries", negMap.size());
 		try (FileWriter fw = new FileWriter(outputFile, true)) {
@@ -155,8 +188,7 @@ public class GenTrainingFile {
 		w.write(",");
 		w.write(Integer.toString(content.length()));
 		w.write(",");
-		w.write(StringEscapeUtils
-			    .escapeCsv(content.replaceAll("\\R+", " ")));
+		w.write(StringEscapeUtils.escapeCsv(content.replaceAll("\\R+", " ")));
 		w.write("\n");
 	}
 

@@ -85,57 +85,6 @@
 				<artifactId>exec-maven-plugin</artifactId>
 				<version>1.6.0</version>
 				<executions>
-					<execution>
-						<id>run-heat-only</id>
-						<goals>
-							<goal>exec</goal>
-						</goals>
-						<configuration>
-							<executable>java</executable>
-							<arguments>
-								<argument>-classpath</argument>
-								<classpath />
-								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
-								<argument>led.discovery.experiments.RunExperiment</argument>
-								<argument>${project.basedir}/../data</argument>
-								<argument>run-heat-only</argument>
-							</arguments>
-						</configuration>
-					</execution>
-					<execution>
-						<id>run-heat-entity</id>
-						<goals>
-							<goal>exec</goal>
-						</goals>
-						<configuration>
-							<executable>java</executable>
-							<arguments>
-								<argument>-classpath</argument>
-								<classpath />
-								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
-								<argument>led.discovery.experiments.RunExperiment</argument>
-								<argument>${project.basedir}/../data</argument>
-								<argument>run-heat-entity</argument>
-							</arguments>
-						</configuration>
-					</execution>
-					<execution>
-						<id>run-forest-only</id>
-						<goals>
-							<goal>exec</goal>
-						</goals>
-						<configuration>
-							<executable>java</executable>
-							<arguments>
-								<argument>-classpath</argument>
-								<classpath />
-								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
-								<argument>led.discovery.experiments.RunExperiment</argument>
-								<argument>${project.basedir}/../data</argument>
-								<argument>run-forest-only</argument>
-							</arguments>
-						</configuration>
-					</execution>
 					
 					<execution>
 						<id>experiment</id>
@@ -150,7 +99,8 @@
 								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
 								<argument>led.discovery.experiments.RunExperiment</argument>
 								<argument>${project.basedir}/../data</argument>
-								<argument>${experimentId}</argument>
+								<argument>${exId}</argument>
+								<argument>${exProp}</argument>
 							</arguments>
 						</configuration>
 					</execution>
@@ -189,6 +139,42 @@
 							</arguments>
 						</configuration>
 					</execution>
+					
+					<!-- Learn Vocabulary -->
+					<execution>
+						<id>learn-vocabulary</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.LearnVocabulary</argument>
+								<argument>${project.basedir}/../data/positives/</argument>
+								<argument>${project.basedir}/../data/analysis/learnt-vocabulary.csv</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>learn-entities</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.LearnEntities</argument>
+								<argument>${project.basedir}/../data/analysis/entities/experiences-entities.csv</argument>
+								<argument>${project.basedir}/../data/analysis/learnt-entities.csv</argument>
+							</arguments>
+						</configuration>
+					</execution>
 					<!-- Gen Positives -->
 					<execution>
 						<id>gen-positives</id>
@@ -220,7 +206,8 @@
 								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
 								<argument>led.discovery.experiments.AnalyseResults</argument>
 								<argument>${project.basedir}/../data</argument>
-								<argument>run-heat-only,run-forest-only,test-forest-glover</argument>
+								<argument>${output}</argument>
+								<argument>${experiments}</argument>
 							</arguments>
 						</configuration>
 					</execution>

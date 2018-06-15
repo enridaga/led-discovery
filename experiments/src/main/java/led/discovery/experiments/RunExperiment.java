@@ -1,6 +1,7 @@
 package led.discovery.experiments;
 
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.FilenameFilter;
 import java.io.IOException;
@@ -13,7 +14,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
@@ -24,6 +24,7 @@ import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.StringUtils;
 import led.discovery.annotator.ListeningExperienceAnnotator.ListeningExperienceAnnotation;
+import led.discovery.annotator.ListeningExperienceAnnotator.NotListeningExperienceAnnotation;
 import led.discovery.annotator.window.TextWindow;
 import led.discovery.benchmark.Benchmark;
 
@@ -34,23 +35,32 @@ public class RunExperiment {
 	private File dataDir;
 	private File benchmark;
 	private File sourcesDir;
-	private File output2benchmark;
-	private File benchmark2output;
+	private File output;
 	private Properties properties;
 	private String experiment;
 	private File[] onSources;
 
 	public RunExperiment(String[] args) throws IOException {
+		L.info("Experiment launched with args: {}", args);
 		dataDir = new File(args[0]);
 		experiment = args[1];
+		String experimentProperties = null;
+		if (args.length > 2) {
+			experimentProperties = args[2];
+		}
 		benchmark = new File(dataDir, "evaluation/benchmark.csv");
 		sourcesDir = new File(dataDir, "benchmark/sources");
-		output2benchmark = new File(dataDir, "experiments/" + experiment + ".o2b.csv");
-		benchmark2output = new File(dataDir, "experiments/" + experiment + ".b2o.csv");
+		output = new File(dataDir, "experiments/" + experiment + ".output.csv");
 		properties = new Properties();
-		properties.load(getClass().getResourceAsStream(experiment +
-			".properties"));
-
+		L.warn("experimentProperties: {}", experimentProperties);
+		if (experimentProperties != null && new File(experimentProperties).exists()) {
+			try (FileReader r = new FileReader(new File(experimentProperties))) {
+				properties.load(r);
+			}
+		} else {
+			properties.load(getClass().getResourceAsStream(experiment +
+				".properties"));
+		}
 		String _onSources = properties.getProperty("led.experiment.sources");
 		if (_onSources == null) {
 			onSources = sourcesDir.listFiles();
@@ -69,10 +79,8 @@ public class RunExperiment {
 	}
 
 	void clean() throws IOException {
-		output2benchmark.delete();
-		output2benchmark.createNewFile();
-		benchmark2output.delete();
-		benchmark2output.createNewFile();
+		output.delete();
+		output.createNewFile();
 	}
 
 	void run() throws IOException {
@@ -81,7 +89,7 @@ public class RunExperiment {
 		StringWriter writer = new StringWriter();
 		properties.list(new PrintWriter(writer));
 		L.info("Properties: \n{}", writer.getBuffer().toString());
-		L.info("Output to: {}, {}", output2benchmark, benchmark2output);
+		L.info("Output to: {}, {}", output);
 		L.info("On Sources: \n{}", onSources);
 		if (onSources.length == 0)
 			throw new IOException("Sources empty");
@@ -90,50 +98,49 @@ public class RunExperiment {
 
 		Benchmark bench = new Benchmark(benchmark);
 		StanfordCoreNLP pipeline = new StanfordCoreNLP(properties);
-		Map<String, List<Integer[]>> matches = new HashMap<String, List<Integer[]>>();
-		Map<String, List<Integer>> windowSizes = new HashMap<String, List<Integer>>();
-		for (File f : onSources) {
-			L.info("Source: {}", f.getName());
-			Annotation annotation = new Annotation(FileUtils.readFileToString(f, StandardCharsets.UTF_8));
-			pipeline.annotate(annotation);
-			String fname = f.getName();
-			matches.put(fname, new ArrayList<Integer[]>());
-			windowSizes.put(fname, new ArrayList<Integer>());
-			List<TextWindow> found = annotation.get(ListeningExperienceAnnotation.class);
-			L.info(" {} found", found.size());
-			Iterator<TextWindow> it = found.iterator();
-			while (it.hasNext()) {
-				TextWindow tw = it.next();
-				int from = tw.offsetStart();
-				int to = tw.offsetEnd();
-				matches.get(fname).add(new Integer[] { from, to });
-				windowSizes.get(fname).add(tw.size());
-			}
-		}
 
-		// Writing to the output2benchmark file
 		Map<String, Integer[]> matchedExperience = new HashMap<String, Integer[]>();
-		try (FileWriter fw = new FileWriter(output2benchmark, true)) {
-			for (Entry<String, List<Integer[]>> en : matches.entrySet()) {
-				int matched = 0;
-				String fname = en.getKey();
-				if (notInSources(fname))
-					continue;
-				List<Integer[]> items = en.getValue();
-				for (int x = 0; x < items.size(); x++) {
-					Integer[] i = items.get(x);
+		try (FileWriter fw = new FileWriter(output, true)) {
+			for (File f : onSources) {
+				L.info("Source: {}", f.getName());
+				Annotation annotation = new Annotation(FileUtils.readFileToString(f, StandardCharsets.UTF_8));
+				pipeline.annotate(annotation);
+				String fname = f.getName();
+
+				List<TextWindow> passed = annotation.get(ListeningExperienceAnnotation.class);
+				List<TextWindow> notPassed = annotation.get(NotListeningExperienceAnnotation.class);
+				List<TextWindow> allSorted = new ArrayList<TextWindow>();
+				allSorted.addAll(passed);
+				allSorted.addAll(notPassed);
+				allSorted.sort(TextWindow.Sorter);
+
+				L.info(" {} passed", passed.size());
+				L.info(" {} not passed", notPassed.size());
+				Iterator<TextWindow> it = allSorted.iterator();
+				while (it.hasNext()) {
+					TextWindow tw = it.next();
+					int from = tw.offsetStart();
+					int to = tw.offsetEnd();
+					Object[] match = bench.matches(fname, from, to);
 					fw.write(fname);
 					fw.write(",");
-					fw.write(Integer.toString(i[0]));
+					fw.write(Integer.toString(from));
 					fw.write(",");
-					fw.write(Integer.toString(i[1]));
+					fw.write(Integer.toString(to));
 					fw.write(",");
-					Object[] match = bench.matches(fname, i[0], i[1]);
-					fw.write(Integer.toString(windowSizes.get(fname).get(x))); // add
-																				// window
-																				// size
+					fw.write(Integer.toString(to - from)); 
 					fw.write(",");
-
+					fw.write(Integer.toString(tw.size())); 
+					fw.write(",");
+					if(passed.contains(tw)) {
+						fw.write("Y");
+					}else if(notPassed.contains(tw)) {
+						fw.write("N");
+					}else {
+						// This should never happen!
+						fw.write("E");
+					}
+					fw.write(",");
 					if (match == null) {
 						fw.write("N");
 						fw.write(",-");
@@ -147,58 +154,13 @@ public class RunExperiment {
 						fw.write(Integer.toString((int) match[2]));
 						fw.write(",");
 						fw.write(Integer.toString((int) match[3]));
-						matchedExperience.put((String) match[1], new Integer[] { (int) match[2], (int) match[3] });
-						matched++;
+						
 					}
+					
 					fw.write("\n");
 				}
-				L.info("{}, {} O2B: {}/{}", new Object[] { experiment, fname, matched, en.getValue().size() });
 			}
 		}
-
-		// Writing to the output2benchmark file
-		try (FileWriter fw = new FileWriter(benchmark2output, true)) {
-			int matched = 0;
-			int all = 0;
-			String fname = null;
-			for (Object[] row : bench.records()) {
-				all++;
-				fname = (String) row[0];
-				String exp = (String) row[1];
-				Integer from = (Integer) row[2];
-				Integer to = (Integer) row[3];
-
-				fw.write(fname);
-				fw.write(",");
-				fw.write(exp);
-				fw.write(",");
-				fw.write(Integer.toString(from));
-				fw.write(",");
-				fw.write(Integer.toString(to));
-				fw.write(",");
-
-				if (matchedExperience.containsKey(exp)) {
-					matched++;
-					fw.write("Y");
-					fw.write(",");
-					Integer[] i = matchedExperience.get(exp);
-					fw.write(Integer.toString(i[0]));
-					fw.write(",");
-					fw.write(Integer.toString(i[1]));
-				} else {
-					fw.write("N");
-					fw.write(",-1");
-					fw.write(",-1");
-				}
-				fw.write("\n");
-			}
-			L.info("B2O: {}/{}", matched, all);
-		}
-	}
-
-	private boolean notInSources(String fname) {
-		File f = new File(sourcesDir, fname);
-		return !Arrays.asList(onSources).contains(f);
 	}
 
 	public static final void main(String[] args) throws IOException {

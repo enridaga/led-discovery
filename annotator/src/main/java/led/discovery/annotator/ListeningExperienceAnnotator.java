@@ -19,8 +19,10 @@ import edu.stanford.nlp.pipeline.Annotator;
 import edu.stanford.nlp.util.ArraySet;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.ErasureUtils;
+import led.discovery.analysis.entities.spot.SpotlightClient;
 import led.discovery.annotator.MusicalHeatAnnotator.MusicalHeatAnnotation;
 import led.discovery.annotator.MusicalHeatAnnotator.MusicalHeatScoreAnnotation;
+//import led.discovery.annotator.evaluators.EntitiesRandomForestEvaluator;
 import led.discovery.annotator.evaluators.HeatEvaluator;
 import led.discovery.annotator.evaluators.RandomForestEvaluator;
 import led.discovery.annotator.window.MovingWindow;
@@ -39,10 +41,20 @@ public class ListeningExperienceAnnotator implements Annotator {
 	private List<TextWindowEvaluator> _E = new ArrayList<TextWindowEvaluator>();
 	private HeatEvaluator heat = null;
 	private StanfordNLPProvider provider;
+	private SpotlightClient spotlight = null;
+
 	/**
 	 * Get all the detected listening experiences
 	 */
 	public final class ListeningExperienceAnnotation implements CoreAnnotation<List<TextWindow>> {
+		@Override
+		public Class<List<TextWindow>> getType() {
+			return ErasureUtils.uncheckedCast(List.class);
+		}
+	}
+
+	public final class NotListeningExperienceAnnotation
+			implements CoreAnnotation<List<TextWindow>> {
 		@Override
 		public Class<List<TextWindow>> getType() {
 			return ErasureUtils.uncheckedCast(List.class);
@@ -79,6 +91,7 @@ public class ListeningExperienceAnnotator implements Annotator {
 			return Double.class;
 		}
 	}
+
 	public final class HeatMinValueMetAnnotation implements CoreAnnotation<Double> {
 		@Override
 		public Class<Double> getType() {
@@ -89,6 +102,11 @@ public class ListeningExperienceAnnotator implements Annotator {
 	public ListeningExperienceAnnotator(String name, Properties propes) {
 		properties = propes;
 		provider = new StanfordNLPProvider();
+		// Spotlight
+		String _spotlight = properties.getProperty("custom.led.spotlight");
+		if (_spotlight != null) {
+			spotlight = new SpotlightClient(_spotlight);
+		}
 		// Window
 		String _windowMin = properties.getProperty("custom.led.window.min");
 		String _windowMax = properties.getProperty("custom.led.window.max");
@@ -113,7 +131,7 @@ public class ListeningExperienceAnnotator implements Annotator {
 			}
 			Evaluators = Collections.unmodifiableList(Evaluators);
 		}
-		
+
 		if (Evaluators.contains("heat")) {
 			log.info("heat evaluator");
 			heat = new HeatEvaluator(properties);
@@ -122,11 +140,19 @@ public class ListeningExperienceAnnotator implements Annotator {
 		if (Evaluators.contains("forest")) {
 			log.info("forest evaluator");
 			try {
-				_E.add(new RandomForestEvaluator(properties, provider));
+				_E.add(new RandomForestEvaluator(properties, provider, spotlight));
 			} catch (IOException e) {
 				log.error("Cannot craete forest evaluator", e);
 			}
 		}
+//		if (Evaluators.contains("entities")) {
+//			log.info("entities evaluator");
+//			try {
+//				_E.add(new EntitiesRandomForestEvaluator(properties, spotlight));
+//			} catch (Exception e) {
+//				log.error("Cannot craete entities evaluator", e);
+//			}
+//		}
 	}
 
 	@Override
@@ -135,26 +161,29 @@ public class ListeningExperienceAnnotator implements Annotator {
 		// MovingWindow
 		MovingWindow mv = new MovingWindow(MinWindowLength, MaxWindowLength, Step);
 		// Evaluators
-		
-		for(TextWindowEvaluator twe:_E) {
+
+		for (TextWindowEvaluator twe : _E) {
 			mv.addEvaluator(twe);
 		}
-		log.info("Moving window starting");
+		//log.info("Moving window starting");
 		// Execute
-		log.debug("{} sentences", annotation.get(SentencesAnnotation.class));
+		log.trace("{} sentences", annotation.get(SentencesAnnotation.class));
 		for (CoreMap sentence : annotation.get(SentencesAnnotation.class)) {
-			log.info("move to {}", sentence.get(CharacterOffsetBeginAnnotation.class));
+			log.trace("move to {}", sentence.get(CharacterOffsetBeginAnnotation.class));
 			mv.move(sentence);
 		}
-		log.debug("Annotations collected \n{}", mv.collected().size());
+		log.debug("Text windows generated \n{}", mv.generated());
+		log.debug("Text windows passed \n{}", mv.passed().size());
+		log.debug("Text windows not passed \n{}", mv.notPassed().size());
 		// Link the windows to start/end sentences
-		annotation.set(ListeningExperienceAnnotation.class, mv.collected());
+		annotation.set(ListeningExperienceAnnotation.class, mv.passed());
+		annotation.set(NotListeningExperienceAnnotation.class, mv.notPassed());
 		if (Evaluators.contains("heat")) {
 			// Heat max value met (used for training treshold)
 			annotation.set(HeatMaxValueMetAnnotation.class, heat.getMaxValueMet());
 			annotation.set(HeatMinValueMetAnnotation.class, heat.getMinValueMet());
 		}
-		for (TextWindow tw : mv.collected()) {
+		for (TextWindow tw : mv.passed()) {
 
 			if (tw.firstSentence().get(ListeningExperienceStartAnnotation.class) == null) {
 				tw.firstSentence().set(ListeningExperienceStartAnnotation.class, new ArrayList<TextWindow>());
@@ -183,7 +212,7 @@ public class ListeningExperienceAnnotator implements Annotator {
 
 	@Override
 	public Set<Class<? extends CoreAnnotation>> requirementsSatisfied() {
-		return Collections.unmodifiableSet(new ArraySet<>(ListeningExperienceAnnotation.class, ListeningExperienceStartAnnotation.class, ListeningExperienceEndAnnotation.class, ListeningExperienceWithinAnnotation.class));
+		return Collections.unmodifiableSet(new ArraySet<>(ListeningExperienceAnnotation.class, NotListeningExperienceAnnotation.class, ListeningExperienceStartAnnotation.class, ListeningExperienceEndAnnotation.class, ListeningExperienceWithinAnnotation.class));
 	}
 
 	@Override

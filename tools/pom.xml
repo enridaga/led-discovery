@@ -1,12 +1,13 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>led-tools</artifactId>
 	<parent>
-	    <groupId>led-discovery</groupId>
-	    <artifactId>master-pom</artifactId>
-	    <version>0.0.1-SNAPSHOT</version>
-			<relativePath>../pom.xml</relativePath>
+		<groupId>led-discovery</groupId>
+		<artifactId>master-pom</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<name>LED Discovery: Tools</name>
 	<dependencies>
@@ -124,42 +125,49 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
-				<version>1.2.1</version>
-				<configuration>
-					<executable>java</executable>
-					<longClasspath>true</longClasspath>
-					<arguments>
-						<argument>-XX:MaxPermSize=128M</argument>
-						<argument>-Xmx6G</argument>
-						<argument>-classpath</argument>
-						<classpath />
-						<argument>led.discovery.io.Main</argument>
-						<argument>./src/test/resources/files.txt</argument>
-					</arguments>
-				</configuration>
-			</plugin>
-			<plugin>
-				<artifactId>maven-assembly-plugin</artifactId>
+				<version>1.6.0</version>
 				<executions>
 					<execution>
-						<phase>package</phase>
+						<id>Main</id>
 						<goals>
-							<goal>single</goal>
+							<goal>exec</goal>
 						</goals>
+						<configuration>
+							<executable>java</executable>
+							<longClasspath>true</longClasspath>
+							<arguments>
+								<argument>-XX:MaxPermSize=128M</argument>
+								<argument>-Xmx6G</argument>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>led.discovery.io.Main</argument>
+								<argument>./src/test/resources/files.txt</argument>
+							</arguments>
+						</configuration>
 					</execution>
+					<execution>
+						<id>RED</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>led.discovery.utils.REDExperiences</argument>
+								<argument>${project.basedir}/../data/red/</argument>
+							</arguments>
+						</configuration>
+					</execution>
+
 				</executions>
-				<configuration>
-					<!-- ... -->
-					<archive>
-						<manifest>
-							<mainClass>led.discovery.io.CLI</mainClass>
-						</manifest>
-					</archive>
-					<descriptorRefs>
-						<descriptorRef>jar-with-dependencies</descriptorRef>
-					</descriptorRefs>
-				</configuration>
 			</plugin>
+			<!-- <plugin> <artifactId>maven-assembly-plugin</artifactId> <executions> 
+				<execution> <phase>package</phase> <goals> <goal>single</goal> </goals> </execution> 
+				</executions> <configuration> ... <archive> <manifest> <mainClass>led.discovery.io.CLI</mainClass> 
+				</manifest> </archive> <descriptorRefs> <descriptorRef>jar-with-dependencies</descriptorRef> 
+				</descriptorRefs> </configuration> </plugin> -->
 		</plugins>
 	</build>
 

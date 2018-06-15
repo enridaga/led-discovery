@@ -2,6 +2,7 @@ package led.discovery.annotator.window;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -15,12 +16,13 @@ public class MovingWindow {
 	private static final Logger log = LoggerFactory.getLogger(MovingWindow.class);
 	private List<CoreMap> fifo;
 	private Set<TextWindowEvaluator> observers;
-	private List<TextWindow> collected;
+	private List<TextWindow> passed;
+	private List<TextWindow> notPassed;
 	private int min;
 	private int max;
 	private int step = 1;
 	private int fifoSize;
-	protected int generatedCount = 0;
+	private int generatedCount;
 
 	public MovingWindow(int min, int max) {
 		this(min, max, 1);
@@ -33,11 +35,16 @@ public class MovingWindow {
 		this.fifoSize = max; // (max - min + 1);
 		observers = new HashSet<TextWindowEvaluator>();
 		fifo = new ArrayList<CoreMap>();
-		collected = new ArrayList<TextWindow>();
+		passed = new ArrayList<TextWindow>();
+		notPassed = new ArrayList<TextWindow>();
 	}
 
 	public void addEvaluator(TextWindowEvaluator observer) {
 		observers.add(observer);
+	}
+
+	public int generated() {
+		return this.generatedCount;
 	}
 
 	public void move(CoreMap sentence) {
@@ -59,28 +66,42 @@ public class MovingWindow {
 			this.generatedCount += generated.size();
 			// Evaluate windows
 			for (TextWindow w : generated) {
-				boolean passed = true;
+				boolean _passed = true;
 				for (TextWindowEvaluator wo : observers) {
 					if (!wo.pass(w)) {
-						passed = false;
+						_passed = false;
 						break;
 					}
 				}
-				if (passed) {
-					log.trace(" - Passed");
-					if (collected.size() > 0) {
+				if (_passed) {
+					log.debug(" - Passed");
+					if (passed.size() > 0) {
 						// Remove previously added windows included in this one
 						Set<TextWindow> remove = new HashSet<TextWindow>();
-						for (TextWindow ww : collected) {
+						for (TextWindow ww : passed) {
 							if (w.includes(ww)) {
 								remove.add(ww);
 							}
 						}
-						log.trace(" - to remove: {}", remove);
-						collected.removeAll(remove);
+						log.trace(" - passed to remove: {}", remove);
+						passed.removeAll(remove);
 					}
-					collected.add(w);
-					log.trace(" - collected: {} ", collected);
+					passed.add(w);
+					log.trace(" - collected: {} ", passed);
+				} else {
+					log.debug(" - Not Passed");
+					if (notPassed.size() > 0) {
+						// Remove previously added windows included in this one
+						Set<TextWindow> remove = new HashSet<TextWindow>();
+						for (TextWindow ww : notPassed) {
+							if (w.includes(ww)) {
+								remove.add(ww);
+							}
+						}
+						log.trace(" - not passed to remove: {}", remove);
+						notPassed.removeAll(remove);
+					}
+					notPassed.add(w);
 				}
 			}
 		}
@@ -112,7 +133,21 @@ public class MovingWindow {
 		return windows;
 	}
 
-	public List<TextWindow> collected() {
-		return Collections.unmodifiableList(collected);
+	public List<TextWindow> passed() {
+		return Collections.unmodifiableList(passed);
 	}
+
+	public List<TextWindow> notPassed() {
+		return Collections.unmodifiableList(notPassed);
+	}
+
+	public List<TextWindow> allSorted() {
+		List<TextWindow> allSorted = new ArrayList<TextWindow>();
+		allSorted.addAll(passed);
+		allSorted.addAll(notPassed);
+		allSorted.sort(TextWindow.Sorter);
+
+		return Collections.unmodifiableList(allSorted);
+	}
+	
 }

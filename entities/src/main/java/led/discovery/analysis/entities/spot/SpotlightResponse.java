@@ -42,6 +42,26 @@ public class SpotlightResponse {
 	private double confidence;
 
 	public List<SpotlightAnnotation> asList() {
+		return asList(getXml(), confidence);
+//		List<SpotlightAnnotation> annotations;
+//		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+//		try {
+//			DocumentBuilder db = dbf.newDocumentBuilder();
+//			org.w3c.dom.Document dom = db.parse(new ByteArrayInputStream(xml.getBytes("UTF-8")));
+//			NodeList nl = dom.getElementsByTagName("Resource");
+//			annotations = new ArrayList<SpotlightAnnotation>();
+//			for (int i = 0; i < nl.getLength(); ++i) {
+//				Node n = nl.item(i);
+//				SpotlightAnnotation annotation = new SpotlightAnnotation(n, this.confidence);
+//				annotations.add(annotation);
+//			}
+//		} catch (Exception e) {
+//			throw new RuntimeException(e);
+//		}
+//		return annotations;
+	}
+	
+	public static List<SpotlightAnnotation> asList(String xml, double confidence) {
 		List<SpotlightAnnotation> annotations;
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		try {
@@ -51,7 +71,7 @@ public class SpotlightResponse {
 			annotations = new ArrayList<SpotlightAnnotation>();
 			for (int i = 0; i < nl.getLength(); ++i) {
 				Node n = nl.item(i);
-				SpotlightAnnotation annotation = new SpotlightAnnotation(n, this.confidence);
+				SpotlightAnnotation annotation = new SpotlightAnnotation(n, confidence);
 				annotations.add(annotation);
 			}
 		} catch (Exception e) {

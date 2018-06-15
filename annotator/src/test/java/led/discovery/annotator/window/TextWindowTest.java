@@ -88,7 +88,6 @@ public class TextWindowTest {
 		Assert.assertTrue(tw2.includes(tw1));
 		Assert.assertTrue(tw1.includes(tw2));
 	}
-	
 
 	@Test
 	public void notIncludes1() {
@@ -103,7 +102,7 @@ public class TextWindowTest {
 		Assert.assertTrue(!tw2.includes(tw1));
 		Assert.assertTrue(!tw1.includes(tw2));
 	}
-	
+
 	@Test
 	public void notIncludes2() {
 		TextWindow tw1 = new TextWindow(3);
@@ -117,7 +116,6 @@ public class TextWindowTest {
 		Assert.assertTrue(!tw2.includes(tw1));
 		Assert.assertTrue(!tw1.includes(tw2));
 	}
-	
 
 	@Test
 	public void notIncludes3() {
@@ -126,7 +124,7 @@ public class TextWindowTest {
 		tw1.add(TestUtil.S1);
 		tw1.add(TestUtil.S2);
 		tw1.add(TestUtil.S3);
-		
+
 		tw2.add(TestUtil.S4);
 		tw2.add(TestUtil.S5);
 		tw2.add(TestUtil.S6);
@@ -137,11 +135,11 @@ public class TextWindowTest {
 		tw2.add(TestUtil.S11);
 		tw2.add(TestUtil.S12);
 		tw2.add(TestUtil.S13);
-		
+
 		Assert.assertTrue(!tw2.includes(tw1));
 		Assert.assertTrue(!tw1.includes(tw2));
 	}
-	
+
 	@Test
 	public void equalsTest() {
 		TextWindow tw1 = new TextWindow(1);
@@ -161,5 +159,38 @@ public class TextWindowTest {
 		List<Object> l3 = new ArrayList<Object>();
 		l3.add(tw3);
 		Assert.assertTrue(!l2.equals(l3));
+	}
+
+	@Test
+	public void testSorter0() {
+		TextWindow tw1 = new TextWindow(1);
+		tw1.add(TestUtil.S1);
+		TextWindow tw2 = new TextWindow(1);
+		tw2.add(TestUtil.S1);
+		
+		int zero = TextWindow.Sorter.compare(tw1, tw2);
+		Assert.assertTrue(zero == 0);
+	}
+	
+	@Test
+	public void testSorterBefore() {
+		TextWindow tw1 = new TextWindow(1);
+		tw1.add(TestUtil.S1);
+		TextWindow tw2 = new TextWindow(1);
+		tw2.add(TestUtil.S2);
+		
+		int before = TextWindow.Sorter.compare(tw1, tw2);
+		Assert.assertTrue(before == -1);
+	}
+	
+	@Test
+	public void testSorterAfter() {
+		TextWindow tw1 = new TextWindow(1);
+		tw1.add(TestUtil.S2);
+		TextWindow tw2 = new TextWindow(1);
+		tw2.add(TestUtil.S1);
+		
+		int after = TextWindow.Sorter.compare(tw1, tw2);
+		Assert.assertTrue(after == 1);
 	}
 }

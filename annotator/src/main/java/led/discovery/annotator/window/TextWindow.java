@@ -2,6 +2,7 @@ package led.discovery.annotator.window;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import edu.stanford.nlp.ling.CoreAnnotations;
@@ -12,6 +13,22 @@ import edu.stanford.nlp.util.CoreMap;
 public class TextWindow {
 	private int size;
 	private List<CoreMap> sentences;
+
+	public final static Comparator<TextWindow> Sorter = new Comparator<TextWindow>() {
+		public int compare(TextWindow o1, TextWindow o2) {
+			if (o1.equals(o2)) {
+				return 0;
+			}
+			if (o1.offsetStart() < o2.offsetStart()) {
+				return -1;
+			} else if (o1.offsetStart() == o2.offsetStart()) {
+				if (o1.offsetEnd() < o2.offsetEnd()) {
+					return -1;
+				}
+			}
+			return 1;
+		};
+	};
 
 	public TextWindow(int size) {
 		this.size = size;

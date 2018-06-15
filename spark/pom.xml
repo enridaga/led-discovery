@@ -19,6 +19,10 @@
 			<groupId>led-discovery</groupId>
 			<artifactId>led-nlp</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>led-discovery</groupId>
+			<artifactId>led-entities</artifactId>
+		</dependency>
 		<!-- Logging -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -98,13 +102,31 @@
 								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
 								<argument>led.discovery.spark.GenTrainingBOW</argument>
 								<argument>${project.basedir}/../data/positives/</argument>
-								<argument>${project.basedir}/../data/negatives/</argument>
+								<argument>${project.basedir}/../data/negatives-reuters/</argument>
 								<argument>${project.basedir}/../data/analysis/training-bow.parquet</argument>
 							</arguments>
 						</configuration>
 					</execution>
 					<execution>
-						<id>gen-training-file</id>
+						<id>gen-training-ent</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-Xmx4g</argument>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
+								<argument>led.discovery.spark.GenTrainingENT</argument>
+								<argument>${project.basedir}/../data/analysis/training-ent-file.csv</argument>
+								<argument>${project.basedir}/../data/analysis/training-ent.parquet</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>gen-training-file-le-reu</id>
 						<goals>
 							<goal>exec</goal>
 						</goals>
@@ -117,13 +139,14 @@
 								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
 								<argument>led.discovery.spark.GenTrainingFile</argument>
 								<argument>${project.basedir}/../data/positives/</argument>
-								<argument>${project.basedir}/../data/negatives/</argument>
-								<argument>${project.basedir}/../data/analysis/training-file.csv</argument>
+								<argument>${project.basedir}/../data/negatives-reuters/</argument>
+								<argument>${project.basedir}/../data/analysis/training-file-le-reu.csv</argument>
+								<argument>1</argument>
 							</arguments>
 						</configuration>
 					</execution>
 					<execution>
-						<id>gen-training-bot</id>
+						<id>gen-training-file-le-red</id>
 						<goals>
 							<goal>exec</goal>
 						</goals>
@@ -134,14 +157,36 @@
 								<argument>-classpath</argument>
 								<classpath />
 								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
-								<argument>led.discovery.spark.GenTrainingBOT</argument>
-								<argument>${project.basedir}/../data/analysis/training-file.csv</argument>
-								<argument>${project.basedir}/../data/analysis/training-bot.parquet</argument>
+								<argument>led.discovery.spark.GenTrainingFile</argument>
+								<argument>${project.basedir}/../data/positives/</argument>
+								<argument>${project.basedir}/../data/negatives-red/</argument>
+								<argument>${project.basedir}/../data/analysis/training-file-le-red.csv</argument>
+								<argument>1</argument>
 							</arguments>
 						</configuration>
 					</execution>
 					<execution>
-						<id>train-model-bot</id>
+						<id>gen-training-file-le-reu-red</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-Xmx4g</argument>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
+								<argument>led.discovery.spark.GenTrainingFile</argument>
+								<argument>${project.basedir}/../data/positives/</argument>
+								<argument>${project.basedir}/../data/negatives-reuters/,${project.basedir}/../data/negatives-red/</argument>
+								<argument>${project.basedir}/../data/analysis/training-file-le-reu-red.csv</argument>
+								<argument>1</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>gen-training-file-le-neg</id>
 						<goals>
 							<goal>exec</goal>
 						</goals>
@@ -152,9 +197,105 @@
 								<argument>-classpath</argument>
 								<classpath />
 								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
-								<argument>led.discovery.spark.TrainModel</argument>
-								<argument>${project.basedir}/../data/analysis/training-bot.parquet</argument>
-								<argument>${project.basedir}/../data/analysis/model-bot.parquet</argument>
+								<argument>led.discovery.spark.GenTrainingFile</argument>
+								<argument>${project.basedir}/../data/positives/</argument>
+								<argument>${project.basedir}/../data/negatives-reuters/,${project.basedir}/../data/negatives-red/</argument>
+								<argument>${project.basedir}/../data/analysis/training-file-le-neg.csv</argument>
+								<argument>0</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>gen-features-terms</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-Xmx8g</argument>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
+								<argument>led.discovery.spark.GenTermsFeatures</argument>
+								<argument>${project.basedir}/../data/analysis/training-file-${training}.csv</argument>
+								<argument>${project.basedir}/../data/analysis/features-${training}--${mode}.parquet</argument>
+								<argument>${vocabulary}</argument>
+								<argument>${vocabsize}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>gen-features-entities</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-Xmx8g</argument>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
+								<argument>led.discovery.spark.GenEntitiesFeatures</argument>
+								<argument>${project.basedir}/../data/analysis/training-file-${training}.csv</argument>
+								<argument>${project.basedir}/../data/analysis/features-${training}--${mode}.parquet</argument>
+								<argument>${vocabulary}</argument>
+								<argument>${vocabsize}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>train-random-forest</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-Xmx8g</argument>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
+								<argument>led.discovery.spark.TrainRandomForestModel</argument>
+								<argument>${project.basedir}/../data/analysis/features-${features}.parquet</argument>
+								<argument>${project.basedir}/../data/analysis/model-rf-${features}.parquet</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>train-svm</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-Xmx8g</argument>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
+								<argument>led.discovery.spark.TrainSVMModel</argument>
+								<argument>${project.basedir}/../data/analysis/features-${features}.parquet</argument>
+								<argument>${project.basedir}/../data/analysis/model-rf-${features}.parquet</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>train-model-ent</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-Xmx8g</argument>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
+								<argument>led.discovery.spark.TrainRandomForestModel</argument>
+								<argument>${project.basedir}/../data/analysis/training-ent.parquet</argument>
+								<argument>${project.basedir}/../data/analysis/model-ent.parquet</argument>
 							</arguments>
 						</configuration>
 					</execution>

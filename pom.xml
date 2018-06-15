@@ -23,7 +23,6 @@
 
 	<modules>
 		<module>nlp</module>
-		
 		<module>hadoop</module>
 		<module>benchmark</module>
 		<module>tools</module>
@@ -42,6 +41,11 @@
 			<dependency>
 				<groupId>led-discovery</groupId>
 				<artifactId>led-nlp</artifactId>
+				<version>${led.discovery.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>led-discovery</groupId>
+				<artifactId>led-entities</artifactId>
 				<version>${led.discovery.version}</version>
 			</dependency>
 			<dependency>
@@ -69,12 +73,6 @@
 				<artifactId>led-annotator</artifactId>
 				<version>${led.discovery.version}</version>
 			</dependency>
-			<!-- <dependency>
-				<groupId>led-discovery</groupId>
-				<artifactId>led-app</artifactId>
-				<version>${led.discovery.version}</version>
-			</dependency> -->
-
 			<!-- Logging -->
 
 			<dependency>

@@ -39,7 +39,7 @@ public class SpotlightClient {
 			if (spotlight.getBytes().length + querystring.getBytes().length > 8192) {
 				doPost = true;
 			}
-			log.info("{} {}", spotlight, text);
+			log.trace("{} {}", spotlight, text);
 			if (doPost) {
 				urlConn = (HttpURLConnection) new URL(spotlight).openConnection();
 				// Let the run-time system (RTS) know that we want input.

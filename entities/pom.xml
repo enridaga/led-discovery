@@ -101,6 +101,25 @@
 						</configuration>
 					</execution>
 					<execution>
+						<id>gen-entities-file</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.analysis.entities.GenEntitiesFile</argument>
+								<argument>${project.basedir}/../data/analysis/training-file.csv</argument>
+								<argument>${project.basedir}/../data/analysis/training-ent-file.csv</argument>
+								<argument>http://anne.kmi.open.ac.uk/rest/annotate</argument>
+								<argument>${project.basedir}/../data/spotlight/cache</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
 						<id>gen-bags</id>
 						<goals>
 							<goal>exec</goal>
