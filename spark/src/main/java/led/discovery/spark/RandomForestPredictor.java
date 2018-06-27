@@ -1,5 +1,6 @@
 package led.discovery.spark;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -47,7 +48,8 @@ public class RandomForestPredictor {
 	}
 
 	private void _init(SparkSession spark, String modelSource, String vocabulary) throws FileNotFoundException, IOException {
-		L.info("Initialization");
+		L.info("Initialization {} {}", modelSource, vocabulary);
+		L.info("Initialization2 {} {}", new File(modelSource).exists(), new File(vocabulary).exists());
 		this.spark = spark;
 		rfModel = PipelineModel.load(modelSource);
 		this.vocabulary = IOUtils.readLines(new FileInputStream(vocabulary), StandardCharsets.UTF_8);

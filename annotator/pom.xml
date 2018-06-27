@@ -69,22 +69,24 @@
 				<version>1.6.0</version>
 				<executions>
 					<execution>
+						<id>markup</id>
 						<goals>
 							<goal>exec</goal>
 						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
+								<argument>led.discovery.markup.HtmlMarkupMaker</argument>
+								<argument>${project.basedir}/src/test/resources/RECOLL.txt</argument>
+								<argument>${project.basedir}/RECOLL.html</argument>
+							</arguments>
+						</configuration>
 					</execution>
 				</executions>
-				<configuration>
-					<executable>java</executable>
-					<arguments>
-						<argument>-classpath</argument>
-						<classpath/>
-						<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
-						<argument>led.discovery.markup.HtmlMarkupMaker</argument>
-						<argument>${project.basedir}/src/test/resources/RECOLL.txt</argument>
-						<argument>${project.basedir}/RECOLL.html</argument>
-					</arguments>
-				</configuration>
+
 			</plugin>
 		</plugins>
 	</build>

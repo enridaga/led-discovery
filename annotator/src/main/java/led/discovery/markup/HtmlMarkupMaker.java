@@ -71,10 +71,12 @@ public class HtmlMarkupMaker {
 		_startTag("token");
 		_attribute("lemma", lemma);
 		_attribute("pos", pos);
-		int heatos = token.get(MusicalHeatAnnotation.class);
-		_attribute("mheat", Integer.toString(heatos));
-		double score = token.get(MusicalHeatScoreAnnotation.class);
-		_attribute("mhscore", Double.toString(score));
+		if (token.containsKey(MusicalHeatAnnotation.class)) {
+			int heatos = token.get(MusicalHeatAnnotation.class);
+			_attribute("mheat", Integer.toString(heatos));
+			double score = token.get(MusicalHeatScoreAnnotation.class);
+			_attribute("mhscore", Double.toString(score));
+		}
 		_closeTag();
 		_pw.print(token.originalText());
 		_endTag("token");
@@ -97,36 +99,44 @@ public class HtmlMarkupMaker {
 			_attribute("within-annotation", _toIdsList(map.get(ListeningExperienceWithinAnnotation.class)));
 		}
 		L.trace("sentence {} {}", begin, end);
-		int heatos = map.get(MusicalHeatAnnotation.class);
-		_attribute("mheat", Integer.toString(heatos));
-		double score = map.get(MusicalHeatScoreAnnotation.class);
-		_attribute("mhscore", Double.toString(score));
+		if (map.containsKey(MusicalHeatAnnotation.class)) {
+			int heatos = map.get(MusicalHeatAnnotation.class);
+			_attribute("mheat", Integer.toString(heatos));
+			double score = map.get(MusicalHeatScoreAnnotation.class);
+			_attribute("mhscore", Double.toString(score));
+		}
 		_closeTag();
 		List<CoreLabel> tokens = map.get(TokensAnnotation.class);
-		List<EntityLabel> entities = map.get(DBpediaEntityAnnotation.class);
-		Map<Integer, EntityLabel> positions = new HashMap<Integer, EntityLabel>();
-		if (entities != null)
-			for (EntityLabel l : entities) {
-				positions.put(l.beginPosition(), l);
-			}
-		L.trace("{} tokens", tokens.size());
-		EntityLabel entity = null;
-		for (CoreLabel token : tokens) {
-			if (entity == null) {
-				entity = positions.get(token.beginPosition());
-				// Open entity
-				if (entity != null) {
-					_openEntity(entity);
+		if (map.containsKey(DBpediaEntityAnnotation.class)) {
+			List<EntityLabel> entities = map.get(DBpediaEntityAnnotation.class);
+			Map<Integer, EntityLabel> positions = new HashMap<Integer, EntityLabel>();
+			if (entities != null)
+				for (EntityLabel l : entities) {
+					positions.put(l.beginPosition(), l);
 				}
-			} else {
-				// to be closed?
-				if (token.beginPosition() > entity.endPosition()) {
-					_endEntity();
-					entity = null;
-				} // otherwise the token is within the entity annotation
-			}
-			_token(token);
 
+			L.trace("{} tokens", tokens.size());
+			EntityLabel entity = null;
+			for (CoreLabel token : tokens) {
+				if (entity == null) {
+					entity = positions.get(token.beginPosition());
+					// Open entity
+					if (entity != null) {
+						_openEntity(entity);
+					}
+				} else {
+					// to be closed?
+					if (token.beginPosition() > entity.endPosition()) {
+						_endEntity();
+						entity = null;
+					} // otherwise the token is within the entity annotation
+				}
+				_token(token);
+			}
+		} else {
+			for (CoreLabel token : tokens) {
+				_token(token);
+			}
 		}
 		_pw.flush();
 		_endTag("sentence");
@@ -234,16 +244,10 @@ public class HtmlMarkupMaker {
 
 		// Prepare Pipeline
 		Properties props = new Properties();
-		props.setProperty("customAnnotatorClass.led.musicalheat", "led.discovery.annotator.MusicalHeatAnnotator");
-		// props.setProperty("customAnnotatorClass.led.entities",
-		// "led.discovery.annotator.DBpediaSpotlightAnnotator");
-		props.setProperty("customAnnotatorClass.led.experiences", "led.discovery.annotator.ListeningExperienceAnnotator");
-		String[] annotators = new String[] { "tokenize", "ssplit", "pos", "lemma", "led.musicalheat", // "led.entities",
-				"led.experiences" };
-		props.setProperty("annotators", StringUtils.join(annotators, ", "));
+		props.load(HtmlMarkupMaker.class.getResourceAsStream("rf--le-neg--le5k.properties"));
 		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-		// Prepared
 
+		// Prepared
 		String html = a.html(text, pipeline);
 		File output = new File(outputfile);
 		PrintWriter out = new PrintWriter(output);
