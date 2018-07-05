@@ -1,5 +1,8 @@
 package led.discovery.annotator;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -9,6 +12,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Properties;
 import java.util.Set;
 
 import org.apache.commons.csv.CSVFormat;
@@ -67,12 +71,34 @@ public class MusicalHeatAnnotator implements Annotator {
 	int bins = 5;
 	double[] binsIndexes;
 
-	public MusicalHeatAnnotator() {
+	public MusicalHeatAnnotator(String name, Properties propes) {
 		// Load musical dictionary
 		dictionary = new HashMap<String, Double>();
 		sortedTerms = new ArrayList<String>();
 		CSVFormat format = CSVFormat.DEFAULT;
-		Reader reader = new InputStreamReader(getClass().getResourceAsStream("dictionary.csv"));
+		String dictionarySource = propes.getProperty("custom.led.heat.dictionary");
+		Reader reader = null;
+
+		if (dictionarySource == null) {
+			log.info("Using embedded dictionary V1");
+			reader = new InputStreamReader(getClass().getResourceAsStream("dictionary.csv"));
+		} else {
+			try {
+				log.debug("Trying embedded dictionary {}", dictionarySource);
+				reader = new InputStreamReader(getClass().getResourceAsStream(dictionarySource));
+				log.info("Using embedded dictionary {}", dictionarySource);
+			} catch (NullPointerException npe) {
+				log.debug("Not found as embedded: {}", dictionarySource);
+				try {
+					reader = new FileReader(new File(dictionarySource));
+					log.info("Using dictionary at location {}", dictionarySource);
+				} catch (FileNotFoundException e) {
+					log.warn("Cannot find dictionary at location {}", dictionarySource);
+					throw new RuntimeException(e);
+				}
+			}
+		}
+
 		try (CSVParser parser = new CSVParser(reader, format)) {
 			Iterator<CSVRecord> records = parser.iterator();
 			while (records.hasNext()) {
@@ -96,6 +122,12 @@ public class MusicalHeatAnnotator implements Annotator {
 			log.trace("Indexes: {}", new Object[] { binsIndexes });
 		} catch (IOException e) {
 			log.error("cannot load dictionary", e);
+		} finally {
+			try {
+				reader.close();
+			} catch (IOException e) {
+				log.warn("Cannot close reader");
+			}
 		}
 	}
 
@@ -131,7 +163,8 @@ public class MusicalHeatAnnotator implements Annotator {
 				String lemma = token.getString(LemmaAnnotation.class);
 				String pos = token.getString(PartOfSpeechAnnotation.class);
 				Term term = Term.build(lemma, pos);
-				Double tfidf = dictionary.get(term.toString());
+				// XXX Changed after dictionary moved to V2
+				Double tfidf = dictionary.get(term.toAString().toLowerCase());
 				int heat = 0;
 				if (tfidf != null) {
 					heat = _getBin(tfidf);

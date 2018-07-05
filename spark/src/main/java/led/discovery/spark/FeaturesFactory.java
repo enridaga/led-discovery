@@ -2,6 +2,7 @@ package led.discovery.spark;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.jsoup.Jsoup;
@@ -36,6 +37,27 @@ public class FeaturesFactory {
 		List<String> termss = new ArrayList<String>();
 		for (Term t : terms) {
 			termss.add(t.toAString());
+		}
+		L.trace("{}", termss);
+		return termss.toArray(new String[termss.size()]);
+	}
+	
+
+	/**
+	 * 
+	 * @param text
+	 * @param pos - [v,n,...] Lowercase!!!
+	 * @return
+	 */
+	public String[] pterms(String text, String...pos) {
+		L.trace("{}", text);
+		List<String> posl = Arrays.asList(pos);
+		List<Term> terms = provider.terms(text);
+		List<String> termss = new ArrayList<String>();
+		for (Term t : terms) {
+			if(posl.isEmpty() || posl.contains(t.getAPOS().toLowerCase())) {
+				termss.add(t.toAString());
+			}
 		}
 		L.trace("{}", termss);
 		return termss.toArray(new String[termss.size()]);

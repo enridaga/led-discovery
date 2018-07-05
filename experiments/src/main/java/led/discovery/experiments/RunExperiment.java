@@ -99,7 +99,6 @@ public class RunExperiment {
 		Benchmark bench = new Benchmark(benchmark);
 		StanfordCoreNLP pipeline = new StanfordCoreNLP(properties);
 
-		Map<String, Integer[]> matchedExperience = new HashMap<String, Integer[]>();
 		try (FileWriter fw = new FileWriter(output, true)) {
 			for (File f : onSources) {
 				L.info("Source: {}", f.getName());

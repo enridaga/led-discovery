@@ -16,14 +16,14 @@ public class GenTermsFeatures extends GenFeaturesVectorAbstract {
 		super(args);
 	}
 
-	protected String prepare(String txt) {
+	protected String prepareFeatures(String sourceId, String txt, boolean positive) {
 		L.debug("txt length {}", txt.length());
 		String[] split = getFeaturesFactory().aterms(txt);
 		L.debug("{} terms", split.length);
 		return StringUtils.join(split, " ");
 	}
 
-	public static final void main(String[] args) throws FileNotFoundException, IOException {
+	public static void main(String[] args) throws FileNotFoundException, IOException {
 		new GenTermsFeatures(args).run();
 	}
 }

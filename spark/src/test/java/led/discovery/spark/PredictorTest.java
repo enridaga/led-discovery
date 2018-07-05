@@ -12,7 +12,6 @@ import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
 import org.junit.Assert;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 //import org.junit.Ignore;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -20,7 +19,7 @@ import org.slf4j.LoggerFactory;
 
 public class PredictorTest {
 	private static final Logger L = LoggerFactory.getLogger(PredictorTest.class);
-	private static RandomForestPredictor p;
+	private static RandomForestPredictorCV p;
 	private static String e_1363621374;
 	private static String e_1363623494;
 	private static String e_Reuters21578_10000;
@@ -41,7 +40,7 @@ public class PredictorTest {
 		utilSpark = SparkSession.builder().appName("Java Spark Text2Vec").config("spark.master", "local").getOrCreate();
 		trainingBow = utilSpark.read().format("parquet").load(trainingBOWDir);
 		L.info("{}", vocabulary);
-		p = new RandomForestPredictor(utilSpark, model, vocabulary);
+		p = new RandomForestPredictorCV(utilSpark, model, vocabulary);
 
 	}
 

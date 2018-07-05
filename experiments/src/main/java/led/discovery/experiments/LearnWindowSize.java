@@ -19,6 +19,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import edu.stanford.nlp.ling.CoreAnnotations;
+import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
@@ -57,7 +58,11 @@ public class LearnWindowSize {
 
 		int min = 100;
 		int max = 0;
-		Map<String, Integer> expLength = new HashMap<String, Integer>();
+		int tmin = 100;
+		int tmax = 0;
+
+		Map<String, Integer> numberOfSentences = new HashMap<String, Integer>();
+		Map<String, Integer> numberOfTokens = new HashMap<String, Integer>();
 		for (File f : experiencesDir.listFiles()) {
 			if (f.getName().endsWith(".txt")) {
 				if (!experiences.contains(f.getName().replaceAll(".txt$", ""))) {
@@ -68,24 +73,38 @@ public class LearnWindowSize {
 				Annotation a = new Annotation(IOUtils.toString(new FileInputStream(f), StandardCharsets.UTF_8));
 				pipeline.annotate(a);
 				List<CoreMap> sentences = a.get(CoreAnnotations.SentencesAnnotation.class);
+				List<CoreLabel> tokens = a.get(CoreAnnotations.TokensAnnotation.class);
 				if (sentences.size() < min) {
 					min = sentences.size();
 				}
 				if (sentences.size() > max) {
 					max = sentences.size();
 				}
-				expLength.put(f.getName(), sentences.size());
+				if (tokens.size() < tmin) {
+					tmin = tokens.size();
+				}
+				if (tokens.size() > tmax) {
+					tmax = tokens.size();
+				}
+				numberOfSentences.put(f.getName(), sentences.size());
+				numberOfTokens.put(f.getName(), tokens.size());
 			}
 		}
-		expLength = MapUtil.sortByValueDesc(expLength);
+		numberOfSentences = MapUtil.sortByValueDesc(numberOfSentences);
 		try (FileWriter fw = new FileWriter(output, true)) {
-			for (Entry<String, Integer> en : expLength.entrySet()) {
+			for (Entry<String, Integer> en : numberOfSentences.entrySet()) {
 				fw.write(en.getKey());
 				fw.write(",");
 				fw.write(Integer.toString(en.getValue()));
+				fw.write(",");
+				fw.write(Integer.toString(numberOfTokens.get(en.getKey())));
 				fw.write("\n");
 			}
 		}
+		L.info("Max number of sentences: {}", max);
+		L.info("Min number of sentences: {}", min);
+		L.info("Max number of tokens: {}", tmax);
+		L.info("Min number of tokens: {}", tmin);
 	}
 
 	public static final void main(String[] args) throws IOException {

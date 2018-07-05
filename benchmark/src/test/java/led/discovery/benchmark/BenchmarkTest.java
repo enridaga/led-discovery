@@ -26,7 +26,7 @@ public class BenchmarkTest {
 
 	@BeforeClass
 	public static void beforeClass() throws IOException {
-		Reader r = new StringReader(IOUtils.toString(BenchmarkMakerTest.class.getClassLoader().getResourceAsStream("./benchmark-sample.csv"), "UTF-8"));
+		Reader r = new StringReader(IOUtils.toString(BenchmarkMakerTest.class.getClassLoader().getResourceAsStream("./generated-benchmark.csv"), "UTF-8"));
 		benchmark = new Benchmark(r);
 	}
 
@@ -103,5 +103,14 @@ public class BenchmarkTest {
 		Integer[] m = _pos(benchmark.matches("GLOVER.txt", 395892, 394609));
 		Assert.assertTrue(m[0] == -1);
 		Assert.assertTrue(m[1] == -1);
+	}
+	
+
+	@Test
+	public void testWESLEY() {
+		Object[] o = benchmark.matches("WESLEY.txt", 241644, 242374);
+		log.info("WESLEY {} {} {} {}", o);
+		//Assert.assertTrue(m[0] == -1);
+		//Assert.assertTrue(m[1] == -1);
 	}
 }

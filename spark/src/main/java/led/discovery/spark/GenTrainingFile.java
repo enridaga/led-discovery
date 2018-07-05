@@ -21,7 +21,7 @@ import org.slf4j.LoggerFactory;
 import edu.stanford.nlp.util.ArrayUtils;
 
 /**
- * Generating Bags of Terms (Lemma+POS)
+ * Generating Training File
  * 
  * @author enridaga
  *

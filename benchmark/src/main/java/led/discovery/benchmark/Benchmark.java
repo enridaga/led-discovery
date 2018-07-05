@@ -55,6 +55,9 @@ public class Benchmark {
 				if (!experiences.containsKey(source)) {
 					experiences.put(source, new ArrayList<String>());
 				}
+				if (!experiences.containsKey(source)) {
+					experiences.put(source, new ArrayList<String>());
+				}
 				starts.get(source).add(from);
 				ends.get(source).add(to);
 				experiences.get(source).add(experience);
@@ -70,16 +73,18 @@ public class Benchmark {
 	public Object[] matches(String source, int from, int to) {
 		List<Integer> froms = starts.get(source);
 		List<Integer> tos = ends.get(source);
+		boolean found = false;
 		for (int x = 0; x < froms.size(); x++) {
 			if (from >= froms.get(x) && from < tos.get(x)) {
-				return records.get(x); // new Integer[] { froms.get(x),
-										// tos.get(x) };
+				found = true;
 			} else if (to > froms.get(x) && to <= tos.get(x)) {
-				return records.get(x); // new Integer[] { froms.get(x),
-										// tos.get(x) };
+				found = true;
 			} else if (from <= froms.get(x) && to >= tos.get(x)) {
-				return records.get(x); // new Integer[] { froms.get(x),
-										// tos.get(x) };
+				found = true;
+			}
+			
+			if(found) {
+				return new Object[] { source, experiences.get(source).get(x), froms.get(x), tos.get(x) };
 			}
 		}
 		return null;

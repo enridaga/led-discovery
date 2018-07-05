@@ -116,7 +116,7 @@ public class TrainRandomForestModel {
 		MulticlassClassificationEvaluator evaluator = new MulticlassClassificationEvaluator().setLabelCol("indexedLabel").setPredictionCol("prediction").setMetricName("accuracy");
 		double accuracy = evaluator.evaluate(predictions);
 		L.info("Test Error = {}", (1.0 - accuracy));
-
+		
 		// Model to Save
 		model.save(outputModelFile.getAbsolutePath());
 	}
