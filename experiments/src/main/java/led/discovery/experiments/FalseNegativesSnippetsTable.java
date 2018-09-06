@@ -70,21 +70,26 @@ public class FalseNegativesSnippetsTable {
 					String experienceId = r.get(7);
 					if (!experienceId.equals("-")) {
 						if (r.get(5).equals("N") && r.get(6).equals("Y")) {
-							L.info("PORCO IDDIO: {}", r);
-							if (!experiences.containsKey(experienceId)) {
-								experiences.put(experienceId, IOUtils.toString(new FileReader(new File(dataDir, "experiences/" +
-									experienceId + ".txt"))));
-							}
+							File ef = new File(dataDir, "experiences/" + experienceId + ".txt");
 							if (!falseNegatives.containsKey(exp)) {
 								falseNegatives.put(exp, new HashSet<String>());
 							}
-							falseNegatives.get(exp).add(experiences.get(experienceId));
+							if (ef.exists()) {
+								if (!experiences.containsKey(experienceId)) {
+									experiences.put(experienceId, IOUtils.toString(new FileReader(ef)));
+								}
+								falseNegatives.get(exp).add(experiences.get(experienceId));
+							} else {
+								// XXX Use source id as this comes from -gs experiments
+								falseNegatives.get(exp).add(r.get(0));
+							}
 						}
 					}
 				}
 			}
 		}
-		try (FileWriter fw = new FileWriter(output, true); CSVPrinter csvPrinter = new CSVPrinter(fw, CSVFormat.DEFAULT)) {
+		try (FileWriter fw = new FileWriter(output,false);
+				CSVPrinter csvPrinter = new CSVPrinter(fw, CSVFormat.DEFAULT)) {
 			for (Entry<String, Set<String>> en : falseNegatives.entrySet()) {
 				for (String txt : en.getValue()) {
 					csvPrinter.printRecord(en.getKey(), txt);
@@ -97,8 +102,9 @@ public class FalseNegativesSnippetsTable {
 	private void _clean() throws IOException {
 		if (output.exists()) {
 			output.delete();
-			output.createNewFile();
 		}
+		L.info("output: {} ({})", output, output.exists());
+		output.createNewFile();
 	}
 
 	public static final void main(String[] args) throws IOException {

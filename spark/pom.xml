@@ -226,6 +226,46 @@
 						</configuration>
 					</execution>
 					<execution>
+						<id>gen-features-embedded-terms</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-Xmx8g</argument>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
+								<argument>led.discovery.spark.GenEmbeddedTermsFeatures</argument>
+								<argument>${project.basedir}/../data/analysis/training-file-${training}.csv</argument>
+								<argument>${project.basedir}/../data/analysis/features-${training}--${mode}.parquet</argument>
+								<argument>${vocabulary}</argument>
+								<argument>${vocabsize}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					
+						<execution>
+						<id>embeddings</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-Xmx8g</argument>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
+								<argument>led.discovery.spark.WordEmbeddings</argument>
+								<argument>${project.basedir}/../data/analysis/features-${expId}.parquet.feat</argument>
+								<argument>${project.basedir}/../data/analysis/${expId}-word2vec.model</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
 						<id>gen-features-entities</id>
 						<goals>
 							<goal>exec</goal>
@@ -238,6 +278,26 @@
 								<classpath />
 								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
 								<argument>led.discovery.spark.GenEntitiesFeatures</argument>
+								<argument>${project.basedir}/../data/analysis/training-file-${training}.csv</argument>
+								<argument>${project.basedir}/../data/analysis/features-${training}--${mode}.parquet</argument>
+								<argument>${vocabulary}</argument>
+								<argument>${vocabsize}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>gen-features-types</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-Xmx8g</argument>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
+								<argument>led.discovery.spark.GenTypesFeatures</argument>
 								<argument>${project.basedir}/../data/analysis/training-file-${training}.csv</argument>
 								<argument>${project.basedir}/../data/analysis/features-${training}--${mode}.parquet</argument>
 								<argument>${vocabulary}</argument>

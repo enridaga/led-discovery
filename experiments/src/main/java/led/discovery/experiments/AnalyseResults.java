@@ -56,7 +56,8 @@ public class AnalyseResults {
 		try (FileWriter fw = new FileWriter(output, true)) {
 
 			fw.write("experiment,population,relevant,retrieved,positives,precision,recall,fmeasure,accuracy,error\n");
-			System.err.println("experiment,population,relevant,retrieved,positives,precision,recall,fmeasure,accuracy,error");
+			System.err.println(
+					"experiment,population,relevant,retrieved,positives,precision,recall,fmeasure,accuracy,error");
 			for (String exp : experiments) {
 				File experimentOutput = new File(experimentsDir, exp + ".output.csv");
 				// Count relevant elements
@@ -102,15 +103,19 @@ public class AnalyseResults {
 					}
 				}
 				// precision and accuracy are the same thing
-				double precision = (double) positives / (double) retrieved;
-				double recall = (double) positives / (double) relevant;
+				double precision = retrieved == 0 ? 0 : (double) positives / (double) retrieved;
+				double recall = relevant == 0 ? 0 : (double) positives / (double) relevant;
 				double fmeasure = 2 * (precision * recall) / (precision + recall);
 
-				double accuracy = (double) (truePositive + trueNegative) /
-					(double) (truePositive + trueNegative + falsePositive + falseNegative);
+				double accuracy = (double) (truePositive + trueNegative)
+						/ (double) (truePositive + trueNegative + falsePositive + falseNegative);
 				double error = 1.0 - accuracy;
 				StringBuilder sb = new StringBuilder();
-				sb.append(exp).append(",").append(Integer.toString(population)).append(",").append(Integer.toString(relevant)).append(",").append(Integer.toString(retrieved)).append(",").append(Integer.toString(positives)).append(",").append(Double.toString(precision)).append(",").append(Double.toString(recall)).append(",").append(Double.toString(fmeasure)).append(",").append(Double.toString(accuracy)).append(",").append(Double.toString(error)).append("\n");
+				sb.append(exp).append(",").append(Integer.toString(population)).append(",")
+						.append(Integer.toString(relevant)).append(",").append(Integer.toString(retrieved)).append(",")
+						.append(Integer.toString(positives)).append(",").append(Double.toString(precision)).append(",")
+						.append(Double.toString(recall)).append(",").append(Double.toString(fmeasure)).append(",")
+						.append(Double.toString(accuracy)).append(",").append(Double.toString(error)).append("\n");
 				String print = sb.toString();
 				System.err.println(print);
 				fw.write(print);

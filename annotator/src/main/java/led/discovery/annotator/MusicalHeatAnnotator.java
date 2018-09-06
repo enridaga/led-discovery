@@ -178,7 +178,7 @@ public class MusicalHeatAnnotator implements Annotator {
 				tokens++;
 			}
 			// XXX Not sure yet this makes sense
-			sentenceScore = sentenceScore / tokens;
+			sentenceScore = sentenceScore / (double) tokens;
 			sentenceHeat = _getBin(sentenceScore);
 			sentence.set(MusicalHeatAnnotation.class, sentenceHeat);
 			sentence.set(MusicalHeatScoreAnnotation.class, sentenceScore);

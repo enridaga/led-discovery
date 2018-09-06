@@ -74,7 +74,6 @@
 		<dependency>
 			<groupId>led-discovery</groupId>
 			<artifactId>led-spark</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
@@ -117,6 +116,25 @@
 								<classpath />
 								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
 								<argument>led.discovery.experiments.RunExperiment</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>${exId}</argument>
+								<argument>${exProp}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>experiment-gs</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.RunExperimentGS</argument>
 								<argument>${project.basedir}/../data</argument>
 								<argument>${exId}</argument>
 								<argument>${exProp}</argument>
@@ -227,6 +245,102 @@
 								<argument>${project.basedir}/../data</argument>
 								<argument>${output}</argument>
 								<argument>${experiments}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+						<!-- Analyse Results -->
+					<execution>
+						<id>generate-results-table</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.ResultsComparisonTable</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>${output}</argument>
+								<argument>${experiments}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>generate-false-negatives-table</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.FalseNegativesTable</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>${output}</argument>
+								<argument>${experiments}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>generate-false-positives-snippets</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.FalsePositivesSnippetsTable</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>${output}</argument>
+								<argument>${experiments}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>generate-false-negatives-snippets</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.FalseNegativesSnippetsTable</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>${output}</argument>
+								<argument>${experiments}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>analyse-components-coverage</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.AnalyseComponentsCoverage</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>${input}</argument>
+								<argument>${output}</argument>
 							</arguments>
 						</configuration>
 					</execution>

@@ -114,8 +114,19 @@ public class TrainRandomForestModel {
 
 		// Select (prediction, true label) and compute test error
 		MulticlassClassificationEvaluator evaluator = new MulticlassClassificationEvaluator().setLabelCol("indexedLabel").setPredictionCol("prediction").setMetricName("accuracy");
+		
 		double accuracy = evaluator.evaluate(predictions);
+		double error = (1.0 - accuracy);
 		L.info("Test Error = {}", (1.0 - accuracy));
+		evaluator.setMetricName("f1");
+		double f1 = evaluator.evaluate(predictions);
+		evaluator.setMetricName("weightedPrecision");
+		double precision = evaluator.evaluate(predictions);
+		evaluator.setMetricName("weightedRecall");
+		double recall = evaluator.evaluate(predictions);
+		
+		L.info("{} {} {} {} {}", new Object[] {precision, recall, f1, accuracy, error});
+		
 		
 		// Model to Save
 		model.save(outputModelFile.getAbsolutePath());

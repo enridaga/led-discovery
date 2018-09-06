@@ -6,13 +6,22 @@
     </Console>
   </Appenders>
   <Loggers>
-  	<Logger name="led.discovery.experiments" additivity="false" level="info">
-  		<AppenderRef ref="Console"/>
-  	</Logger>
-  	<Logger name="led.discovery.spark" additivity="false" level="info">
+  	<Logger name="led.discovery.experiments" additivity="false" level="warn">
   		<AppenderRef ref="Console"/>
   	</Logger>
   	<Logger name="led.discovery.annotator" additivity="false" level="info">
+  		<AppenderRef ref="Console"/>
+  	</Logger>
+  	<Logger name="led.discovery.annotator.evaluators" additivity="false" level="trace">
+  		<AppenderRef ref="Console"/>
+  	</Logger>
+  	<Logger name="led.discovery.annotator.LedComponentsAnnotator" additivity="false" level="trace">
+  		<AppenderRef ref="Console"/>
+  	</Logger>
+  	<Logger name="led.discovery.spark" additivity="false" level="warn">
+  		<AppenderRef ref="Console"/>
+  	</Logger>
+  	<Logger name="led.discovery.annotator.window" additivity="false" level="debug">
   		<AppenderRef ref="Console"/>
   	</Logger>
     <Root level="warn">

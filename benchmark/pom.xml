@@ -62,22 +62,39 @@
 				<version>1.6.0</version>
 				<executions>
 					<execution>
+						<id>generate-human-benchmark</id>
 						<goals>
 							<goal>exec</goal>
 						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.benchmark.BenchmarkMaker</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>${project.basedir}/../data/benchmark/generated-benchmark.csv</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>generate-gold-standard</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.benchmark.GenerateGoldStandard</argument>
+								<argument>${project.basedir}/../data</argument>
+							</arguments>
+						</configuration>
 					</execution>
 				</executions>
-				<configuration>
-					<executable>java</executable>
-					<arguments>
-						<argument>-classpath</argument>
-						<classpath/>
-						<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
-						<argument>led.discovery.benchmark.BenchmarkMaker</argument>
-						<argument>${project.basedir}/../data</argument>
-						<argument>${project.basedir}/../data/benchmark/generated-benchmark.csv</argument>
-					</arguments>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>

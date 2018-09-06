@@ -56,57 +56,111 @@ public class MovingWindow {
 		}
 		fifo.add(sentence);
 		if (fifo.size() == this.fifoSize) {
-			List<TextWindow> generated = new ArrayList<TextWindow>();
-			for (int x = min; x <= max; x++) {
-				generated.addAll(generateWindows(x, fifo, !_first));
-			}
-			if (_first) {
-				_first = false;
-			}
-			this.generatedCount += generated.size();
-			// Evaluate windows
-			for (TextWindow w : generated) {
-				boolean _passed = true;
-				for (TextWindowEvaluator wo : observers) {
-					if (!wo.pass(w)) {
-						_passed = false;
-						break;
-					}
-				}
-				if (_passed) {
-					log.debug(" - Passed");
-					if (passed.size() > 0) {
-						// Remove previously added windows included in this one
-						Set<TextWindow> remove = new HashSet<TextWindow>();
-						for (TextWindow ww : passed) {
-							if (w.includes(ww)) {
-								remove.add(ww);
-							}
-						}
-						log.trace(" - passed to remove: {}", remove);
-						passed.removeAll(remove);
-					}
-					passed.add(w);
-					log.trace(" - collected: {} ", passed);
-				} else {
-					log.debug(" - Not Passed");
-					if (notPassed.size() > 0) {
-						// Remove previously added windows included in this one
-						Set<TextWindow> remove = new HashSet<TextWindow>();
-						for (TextWindow ww : notPassed) {
-							if (w.includes(ww)) {
-								remove.add(ww);
-							}
-						}
-						log.trace(" - not passed to remove: {}", remove);
-						notPassed.removeAll(remove);
-					}
-					notPassed.add(w);
-				}
-			}
+			flush();
+//			List<TextWindow> generated = new ArrayList<TextWindow>();
+//			for (int x = min; x <= max; x++) {
+//				generated.addAll(generateWindows(x, fifo, !_first));
+//			}
+//			if (_first) {
+//				_first = false;
+//			}
+//			this.generatedCount += generated.size();
+//			// Evaluate windows
+//			for (TextWindow w : generated) {
+//				boolean _passed = true;
+//				for (TextWindowEvaluator wo : observers) {
+//					if (!wo.pass(w)) {
+//						_passed = false;
+//						break;
+//					}
+//				}
+//				if (_passed) {
+//					log.debug(" - Passed");
+//					if (passed.size() > 0) {
+//						// Remove previously added windows included in this one
+//						Set<TextWindow> remove = new HashSet<TextWindow>();
+//						for (TextWindow ww : passed) {
+//							if (w.includes(ww)) {
+//								remove.add(ww);
+//							}
+//						}
+//						log.trace(" - passed to remove: {}", remove);
+//						passed.removeAll(remove);
+//					}
+//					passed.add(w);
+//					log.trace(" - collected: {} ", passed);
+//				} else {
+//					log.debug(" - Not Passed");
+//					if (notPassed.size() > 0) {
+//						// Remove previously added windows included in this one
+//						Set<TextWindow> remove = new HashSet<TextWindow>();
+//						for (TextWindow ww : notPassed) {
+//							if (w.includes(ww)) {
+//								remove.add(ww);
+//							}
+//						}
+//						log.trace(" - not passed to remove: {}", remove);
+//						notPassed.removeAll(remove);
+//					}
+//					notPassed.add(w);
+//				}
+//			}
 		}
 	}
 
+	protected void flush() {
+		List<TextWindow> generated = new ArrayList<TextWindow>();
+		for (int x = min; x <= max; x++) {
+			generated.addAll(generateWindows(x, fifo, !_first));
+		}
+		if (_first) {
+			_first = false;
+		}
+		this.generatedCount += generated.size();
+		// Evaluate windows
+		for (TextWindow w : generated) {
+			if(log.isTraceEnabled()) {
+				log.trace("text window text: {}", w.toText());
+			}
+			boolean _passed = true;
+			for (TextWindowEvaluator wo : observers) {
+				if (!wo.pass(w)) {
+					_passed = false;
+					break;
+				}
+			}
+			if (_passed) {
+				log.debug(" - Passed");
+				if (passed.size() > 0) {
+					// Remove previously added windows included in this one
+					Set<TextWindow> remove = new HashSet<TextWindow>();
+					for (TextWindow ww : passed) {
+						if (w.includes(ww)) {
+							remove.add(ww);
+						}
+					}
+					log.trace(" - passed to remove: {}", remove);
+					passed.removeAll(remove);
+				}
+				passed.add(w);
+				log.trace(" - collected: {} ", passed);
+			} else {
+				log.debug(" - Not Passed");
+				if (notPassed.size() > 0) {
+					// Remove previously added windows included in this one
+					Set<TextWindow> remove = new HashSet<TextWindow>();
+					for (TextWindow ww : notPassed) {
+						if (w.includes(ww)) {
+							remove.add(ww);
+						}
+					}
+					log.trace(" - not passed to remove: {}", remove);
+					notPassed.removeAll(remove);
+				}
+				notPassed.add(w);
+			}
+		}
+	}
 	boolean _first = true;
 
 	// After the first iteration ignore every window not including the last
@@ -114,6 +168,9 @@ public class MovingWindow {
 	protected static final List<TextWindow> generateWindows(int windowSize, List<CoreMap> fifo, boolean onlyIncremented) {
 		List<TextWindow> windows = new ArrayList<TextWindow>();
 		log.trace("{} sentences in queue", fifo.size());
+		if(windowSize == -1) {
+			windowSize = fifo.size();
+		}
 		// Generate all windows of size x
 		for (int cursor = 0; cursor + windowSize <= fifo.size(); cursor++) {
 			log.trace("cursor {}", cursor);
