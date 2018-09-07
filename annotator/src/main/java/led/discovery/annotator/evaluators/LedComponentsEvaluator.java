@@ -1,6 +1,7 @@
 package led.discovery.annotator.evaluators;
 
 import java.util.Properties;
+import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,9 +13,12 @@ import edu.stanford.nlp.util.CoreMap;
 import led.discovery.annotator.LedComponentsAnnotator;
 import led.discovery.annotator.window.TextWindow;
 import led.discovery.annotator.window.TextWindowEvaluator;
+import led.discovery.nlp.LemmaCleaner;
+import led.discovery.nlp.StandardLemmaCleaner;
 
-public class LedComponentsEvaluator implements TextWindowEvaluator {
+public class LedComponentsEvaluator extends AbstractTextWindowEvaluator {
 	private Logger log = LoggerFactory.getLogger(LedComponentsEvaluator.class);
+	private LemmaCleaner cleaner = new StandardLemmaCleaner();
 
 	enum Method {
 		ALL, MIN3, MIN4;
@@ -28,7 +32,8 @@ public class LedComponentsEvaluator implements TextWindowEvaluator {
 	double thhPerformer = 0.0;
 	double thhSentiment = 0.0;
 
-	public LedComponentsEvaluator(Properties properties) {
+	public LedComponentsEvaluator(Properties properties, LemmaCleaner cleaner, Set<String> stopwords) {
+		super(cleaner, stopwords);
 		String methods = properties.getProperty("custom.led.components.method");
 		method = Method.valueOf(methods.toUpperCase());
 
@@ -72,6 +77,8 @@ public class LedComponentsEvaluator implements TextWindowEvaluator {
 			double scoresum = 0.0;
 			for (CoreMap cm : w.sentences()) {
 				for (CoreLabel token : cm.get(CoreAnnotations.TokensAnnotation.class)) {
+					if (skip(token))
+						continue;
 					tokens++;
 					Double score = token.get(cls);
 					if (score != null) {

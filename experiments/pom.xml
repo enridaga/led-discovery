@@ -344,6 +344,23 @@
 							</arguments>
 						</configuration>
 					</execution>
+					
+					<execution>
+						<id>generate-sentiment-dictionary</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.GenerateSentimentDictionary</argument>
+								<argument>${project.basedir}/../data</argument>
+							</arguments>
+						</configuration>
+					</execution>
 				</executions>
 			</plugin>
 		</plugins>

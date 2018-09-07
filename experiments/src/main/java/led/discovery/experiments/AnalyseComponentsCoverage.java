@@ -143,7 +143,7 @@ public class AnalyseComponentsCoverage {
 //		Map<String, Double> dictionarySentiment = dictionaryEnjoy;
 //		dictionarySentiment.putAll(dictionaryDislike);
 		Map<String, Double> dictionarySentiment = dictionary(
-				new File(dataDir, "le-components/dictionary-experience-1.csv"));
+				new File(dataDir, "le-components/dictionary-sentiment.csv"));
 		try (FileWriter fw = new FileWriter(output, true)) {
 			for (File f : inputDir.listFiles()) {
 				if (f.getName().endsWith(".txt")) {

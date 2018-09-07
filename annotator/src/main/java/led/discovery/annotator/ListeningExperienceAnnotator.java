@@ -2,12 +2,13 @@ package led.discovery.annotator;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Properties;
 import java.util.Set;
 
+import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,7 +31,8 @@ import led.discovery.annotator.evaluators.RandomForestEvaluator;
 import led.discovery.annotator.window.FixedWindow;
 import led.discovery.annotator.window.MovingWindow;
 import led.discovery.annotator.window.TextWindow;
-import led.discovery.annotator.window.TextWindowEvaluator;
+import led.discovery.nlp.LemmaCleaner;
+import led.discovery.nlp.StandardLemmaCleaner;
 import led.discovery.nlp.StanfordNLPProvider;
 
 public class ListeningExperienceAnnotator implements Annotator {
@@ -40,9 +42,9 @@ public class ListeningExperienceAnnotator implements Annotator {
 	private int MaxWindowLength = 5;
 	private int Step = 5;
 	private Properties properties;
-	//private List<String> Evaluators = Arrays.asList(new String[] { "heat" });
+	// private List<String> Evaluators = Arrays.asList(new String[] { "heat" });
 	CascadingEvaluator Evaluators;
-	//private List<TextWindowEvaluator> _E = new ArrayList<TextWindowEvaluator>();
+	// private List<TextWindowEvaluator> _E = new ArrayList<TextWindowEvaluator>();
 	private HeatEvaluator heat = null;
 	private LedComponentsEvaluator compo = null;
 	private StanfordNLPProvider provider;
@@ -121,28 +123,37 @@ public class ListeningExperienceAnnotator implements Annotator {
 		if (_windowStep != null) {
 			Step = Integer.parseInt(_windowStep);
 		}
-		log.info("max:{} min:{} step:{}", new Object[] {MaxWindowLength, MinWindowLength, Step});
+		log.info("max:{} min:{} step:{}", new Object[] { MaxWindowLength, MinWindowLength, Step });
 
 		// Evaluators
+		LemmaCleaner cleaner = new StandardLemmaCleaner();
+		Set<String> stopwords;
+		try {
+			stopwords = new HashSet<String>(
+					IOUtils.readLines(getClass().getResourceAsStream("/led/discovery/nlp/stopwords.txt"), "UTF-8"));
+		} catch (IOException e) {
+			log.error("Cannot load stopwords.", e);
+			throw new RuntimeException(e);
+		}
 		Evaluators = new CascadingEvaluator();
 		String _evaluators = properties.getProperty("custom.led.evaluators");
 		if (_evaluators != null) {
 			String[] evals = _evaluators.split(",");
 			for (String ev : evals) {
-				
-				if(ev.trim().toLowerCase().equals("heat")) {
+
+				if (ev.trim().toLowerCase().equals("heat")) {
 					log.info("heat evaluator");
-					heat = new HeatEvaluator(properties);
+					heat = new HeatEvaluator(properties, cleaner, stopwords);
 					Evaluators.add(heat);
 				}
-				
-				if(ev.trim().toLowerCase().equals("compo")) {
+
+				if (ev.trim().toLowerCase().equals("compo")) {
 					log.info("compo evaluator");
-					compo = new LedComponentsEvaluator(properties);
+					compo = new LedComponentsEvaluator(properties, cleaner, stopwords);
 					Evaluators.add(compo);
 				}
-				
-				if(ev.trim().toLowerCase().equals("forest")) {
+
+				if (ev.trim().toLowerCase().equals("forest")) {
 					log.info("forest evaluator");
 					try {
 						Evaluators.add(new RandomForestEvaluator(properties, provider, spotlight));
@@ -150,12 +161,12 @@ public class ListeningExperienceAnnotator implements Annotator {
 						log.error("Cannot craete forest evaluator", e);
 					}
 				}
-				
+
 			}
-			//Evaluators = Collections.unmodifiableList(Evaluators);
-		}else {
+			// Evaluators = Collections.unmodifiableList(Evaluators);
+		} else {
 			// Set default
-			
+
 		}
 
 //		if (Evaluators.contains("heat")) {
@@ -216,7 +227,7 @@ public class ListeningExperienceAnnotator implements Annotator {
 		// Link the windows to start/end sentences
 		annotation.set(ListeningExperienceAnnotation.class, mv.passed());
 		annotation.set(NotListeningExperienceAnnotation.class, mv.notPassed());
-		if (heat !=null && Evaluators.contains(heat)) {
+		if (heat != null && Evaluators.contains(heat)) {
 			// Heat max value met (used for training treshold)
 			annotation.set(HeatMaxValueMetAnnotation.class, heat.getMaxValueMet());
 			annotation.set(HeatMinValueMetAnnotation.class, heat.getMinValueMet());
@@ -260,10 +271,10 @@ public class ListeningExperienceAnnotator implements Annotator {
 	public Set<Class<? extends CoreAnnotation>> requires() {
 		// Requirements depend on evaluators
 		ArraySet<Class<? extends CoreAnnotation<?>>> set = new ArraySet<Class<? extends CoreAnnotation<?>>>();
-		if (heat!=null && Evaluators.contains(heat)) {
+		if (heat != null && Evaluators.contains(heat)) {
 			set.add(MusicalHeatScoreAnnotation.class);
 			set.add(MusicalHeatAnnotation.class);
 		}
 		return Collections.unmodifiableSet(set);
-	};
+	}
 }
