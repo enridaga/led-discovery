@@ -1,0 +1,2 @@
+#!/bin/bash
+pyspark --executor-memory 4g --driver-memory 4g --conf spark.kryoserializer.buffer.max=1024 --conf spark.akka.frameSize=2000 --conf spark.driver.maxResultSize=0 --conf spark.default.parallelism=180 --conf spark.dynamicAllocation.enabled=true --conf spark.io.compression.codec=snappy --conf spark.rdd.compress=true --conf spark.shuffle.service.enabled=true --master local

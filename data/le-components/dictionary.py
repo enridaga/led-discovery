@@ -4,7 +4,9 @@ from pyspark.sql.types import StructField
 from pyspark.sql.types import StringType
 from pyspark.sql.types import FloatType
 from pyspark.mllib.feature import Word2VecModel
-model = Word2VecModel.load(sc,'/user/edaga/led/gutenberg/word2vec.model')
+model = Word2VecModel.load(sc,'/Users/ed4565/Development/led-discovery/data/analysis/gutenberg2vec/word2vec.model')
+
+
 
 first=lambda x: x[0]
 
@@ -57,6 +59,10 @@ Event=[
     set(["event[n]"]),
     set(["case[n]","consequence[n]","effect[n]","outcome[n]","result[n]","issue[n]","upshot[n]"])
 ]
+MusicSimple=[
+    set(["music[n]"]),
+    set()
+]
 Music=[
     set(["music[n]","sing[v]"]),
     set(["medicine[n]","punishment[n]"])
@@ -71,6 +77,7 @@ Experience=[
     set(["experience[n]","participation[n]","observation[n]","apprehend[v]","experience[v]","feel[v]"]),
     set(["knowledge[n]","know[v]","live[v]","receive[v]"])
 ]
+
 dictionary(Event[0],Event[1],10000,"dictionary-event-1.csv")
 dictionary(Music[0],Music[1],10000,"dictionary-music-1.csv")
 dictionary(Listener[0],Listener[1],10000,"dictionary-listener-1.csv")
