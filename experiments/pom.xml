@@ -341,6 +341,7 @@
 								<argument>${project.basedir}/../data</argument>
 								<argument>${input}</argument>
 								<argument>${output}</argument>
+								<argument>${limit}</argument>
 							</arguments>
 						</configuration>
 					</execution>
@@ -357,6 +358,22 @@
 								<classpath />
 								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
 								<argument>led.discovery.experiments.GenerateSentimentDictionary</argument>
+								<argument>${project.basedir}/../data</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>extract-patterns</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.PatternsExtractor</argument>
 								<argument>${project.basedir}/../data</argument>
 							</arguments>
 						</configuration>

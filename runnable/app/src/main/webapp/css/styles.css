@@ -1,0 +1,80 @@
+/* RED LED #99120C rgba(153, 18, 12, 0.8); */
+
+body {
+	animation: fadeout 2s;
+}
+@keyframes fadeout {
+  100% {
+    background-color: #FFF;
+  }
+  0% {
+    background-color: #99120C;
+  }
+}
+/* Layout Fixes */
+footer ul.list-inline {
+	margin-top: 2rem;
+}
+footer .list-inline-item:not(:last-child) {
+    margin-right: 5rem;
+}
+.block-true div.le-text {
+	background-color: rgba(99, 158, 215, 0.1); /* #639ED7;*/
+}
+.led-show div div.le-text {
+	font-size: 23px;
+	font-family: Garamond, serif;
+	white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+.block-true .le-meta,
+.block-false .le-meta {
+	margin-bottom: 10px;
+	padding: 5px;
+	font-size: 0.9em;
+}
+.block-false {
+	display: none;
+}
+.block-false .le-meta{
+	display: none;
+}
+.block-true .le-meta {
+	display: block;
+}
+.block-true .le-meta{
+	background-color: rgba(99, 158, 215, 0.2);
+}
+.floating-label-form-group input, .floating-label-form-group textarea {
+	background-color: #efefef;
+}
+span.le{
+	background-color: #efefef;
+	color: #99120C;
+}
+.le-meta p{
+	display:inline-block;
+	margin:0px;
+}
+
+.btn-led {
+    color: #212529;
+    background-color: rgba(153, 18, 12, 0.3);
+    border-color: rgba(153, 18, 12, 0.4);
+}
+.le-meta .le-counter {
+	height: 20px;
+	display: inline-block;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+.le-meta .br-current-rating {
+	font-size: 16px;
+	margin-top: -5px;
+}
+.le-group-rating {
+/*	display:none; */
+}

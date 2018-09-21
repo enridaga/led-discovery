@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
+<Configure id="Server" class="org.eclipse.jetty.server.Server">
+	<New id="Rewrite" class="org.eclipse.jetty.rewrite.handler.RewriteHandler">
+		<Set name="rewriteRequestURI">true</Set>
+		<Set name="rewritePathInfo">false</Set>
+		<Set name="originalPathAttribute">requestedPath</Set>
+		<!-- Redirect / to /led/discover -->
+		<Call name="addRule">
+			<Arg>
+				<New class="org.eclipse.jetty.rewrite.handler.RewriteRegexRule">
+					<Set name="regex">/</Set>
+					<Set name="replacement">/led/discover</Set>
+				</New>
+			</Arg>
+		</Call>
+	</New> 
+</Configure>

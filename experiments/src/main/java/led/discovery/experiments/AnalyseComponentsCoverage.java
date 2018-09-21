@@ -13,8 +13,10 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Properties;
 
 import org.apache.commons.io.IOUtils;
@@ -24,6 +26,7 @@ import org.slf4j.LoggerFactory;
 import com.esotericsoftware.minlog.Log;
 
 import edu.stanford.nlp.util.StringUtils;
+import led.discovery.benchmark.MapUtil;
 import led.discovery.spark.FeaturesFactory;
 
 public class AnalyseComponentsCoverage {
@@ -33,12 +36,16 @@ public class AnalyseComponentsCoverage {
 	private File inputDir;
 	private File output;
 	private Properties properties;
+	private int limit = -1;
 
 	public AnalyseComponentsCoverage(String[] args) throws IOException {
 		dataDir = new File(args[0]);
 		inputDir = new File(args[1]);
 		output = new File(args[2]);
-
+		if (args.length > 3) {
+			limit = Integer.parseInt(args[3]);
+			L.info("Limit: {}", limit);
+		}
 		training = new File(dataDir, "evaluation/for-training.csv");
 		properties = new Properties();
 		properties.load(getClass().getResourceAsStream("LearnHeatThreshold.properties"));
@@ -51,7 +58,7 @@ public class AnalyseComponentsCoverage {
 
 	private Map<String, Double> dictionary(File file)
 			throws UnsupportedEncodingException, FileNotFoundException, IOException {
-		Map<String, Double> dict = new HashMap<String, Double>();
+		Map<String, Double> dict = new LinkedHashMap<String, Double>();
 		try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"))) {
 			String line;
 			while ((line = br.readLine()) != null) {
@@ -118,6 +125,26 @@ public class AnalyseComponentsCoverage {
 		return (double) sum / (double) len;
 	}
 
+	private Map<String, Double> cut(Map<String, Double> dictionary, int limit) {
+		L.info("Sorting dictionary");
+		Map<String, Double> _d = MapUtil.sortByValueDesc(dictionary);
+		LinkedHashMap<String, Double> __d = new LinkedHashMap<String, Double>();
+		L.info("Cutting dictionary to {}", limit);
+		int c = 0;
+		for (Entry<String, Double> s : _d.entrySet()) {
+			if(c >= limit) {
+				break;
+			}
+			c++;
+			if(L.isTraceEnabled()) {
+				L.trace("{}", s.getValue());
+			}
+			__d.put(s.getKey(), s.getValue());
+		}
+		L.info("Dictionary length: {}", __d.size());
+		return __d;
+	}
+
 	void run() throws IOException {
 		_clean();
 
@@ -134,6 +161,7 @@ public class AnalyseComponentsCoverage {
 				new File(dataDir, "le-components/dictionary-listener-1.csv"));
 		Map<String, Double> dictionaryPerformer = dictionary(
 				new File(dataDir, "le-components/dictionary-performer-1.csv"));
+
 		// Map<String, Double> dictionaryEnjoy = dictionary(new File(dataDir,
 		// "le-components/dictionary-enjoy.csv"));
 		// Map<String, Double> dictionaryDislike = dictionary(new File(dataDir,
@@ -144,6 +172,58 @@ public class AnalyseComponentsCoverage {
 //		dictionarySentiment.putAll(dictionaryDislike);
 		Map<String, Double> dictionarySentiment = dictionary(
 				new File(dataDir, "le-components/dictionary-sentiment.csv"));
+
+		Map<String, Double> dictionaryMusicSimple = dictionary(
+				new File(dataDir, "le-components/dictionary-music-simple.csv"));
+
+		if (limit > 0) {
+			L.info("Cutting Event");
+			dictionaryEvent = cut(dictionaryEvent, limit);
+			L.info("Cutting Music");
+			dictionarySound = cut(dictionarySound, limit);
+			L.info("Cutting Listener");
+			dictionaryListener = cut(dictionaryListener, limit);
+			L.info("Cutting Performer");
+			dictionaryPerformer = cut(dictionaryPerformer, limit);
+			
+			L.info("Cutting Gutenberg");
+			// Already sorted!
+			LinkedHashMap<String, Double> __d = new LinkedHashMap<String, Double>();
+			L.info("Cutting dictionary to {}", limit);
+			int c = 0;
+			for (Entry<String, Double> s : dictionaryGutenberg.entrySet()) {
+				if(c >= limit) {
+					break;
+				}
+				c++;
+				if(L.isTraceEnabled()) {
+					L.trace("{}", s.getValue());
+				}
+				__d.put(s.getKey(), s.getValue());
+			}
+			L.info("Dictionary length: {}", __d.size());
+			dictionaryGutenberg = __d;
+			
+			L.info("Cutting Sentiment");
+			dictionarySentiment = cut(dictionarySentiment, limit);
+			L.info("Cutting MusicSimple");
+			dictionaryMusicSimple = cut(dictionaryMusicSimple, limit);
+
+			L.info("dictionaryEvent: max: {}, size: {}",
+					new Object[] { dictionaryEvent.values().iterator().next(), dictionaryEvent.size() });
+			L.info("dictionarySound: max: {}, size: {}",
+					new Object[] { dictionarySound.values().iterator().next(), dictionarySound.size() });
+			L.info("dictionaryListener: max: {}, size: {}",
+					new Object[] { dictionaryListener.values().iterator().next(), dictionaryListener.size() });
+			L.info("dictionaryPerformer: max: {}, size: {}",
+					new Object[] { dictionaryPerformer.values().iterator().next(), dictionaryPerformer.size() });
+			L.info("dictionaryGutenberg: max: {}, size: {}",
+					new Object[] { dictionaryGutenberg.values().iterator().next(), dictionaryGutenberg.size() });
+			L.info("dictionarySentiment: max: {}, size: {}",
+					new Object[] { dictionarySentiment.values().iterator().next(), dictionarySentiment.size() });
+			L.info("dictionaryMusicSimple: max: {}, size: {}",
+					new Object[] { dictionaryMusicSimple.values().iterator().next(), dictionaryMusicSimple.size() });
+		}
 		try (FileWriter fw = new FileWriter(output, true)) {
 			for (File f : inputDir.listFiles()) {
 				if (f.getName().endsWith(".txt")) {
@@ -195,6 +275,13 @@ public class AnalyseComponentsCoverage {
 					fw.write(Double.toString(relevance(dictionarySentiment, terms)));
 					fw.write(","); // S
 					fw.write(Double.toString(relevance(dictionaryGutenberg, terms)));
+					// Music Simple
+					fw.write(","); // T
+					fw.write(Double.toString(hits(dictionaryMusicSimple, terms)));
+					fw.write(","); // U
+					fw.write(Double.toString(score(dictionaryMusicSimple, terms)));
+					fw.write(","); // V
+					fw.write(Double.toString(relevance(dictionaryMusicSimple, terms)));
 					fw.write("\n");
 				}
 			}

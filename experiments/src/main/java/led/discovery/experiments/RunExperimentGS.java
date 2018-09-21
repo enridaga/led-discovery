@@ -14,6 +14,8 @@ import java.util.Properties;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
+import org.jsoup.Jsoup;
+import org.jsoup.safety.Whitelist;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -87,6 +89,9 @@ public class RunExperimentGS {
 				boolean expected = row.get(0).equals("1.0");
 				String source = row.get(1);
 				String text = row.get(2);
+				//L.trace("BEFORE: {}", text);
+				text = Jsoup.clean(text, Whitelist.simpleText());
+				L.trace("Text: {}", text);
 				Annotation annotation = new Annotation(text);
 				pipeline.annotate(annotation);
 

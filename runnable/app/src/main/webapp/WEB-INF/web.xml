@@ -11,8 +11,7 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
-
-	<filter>
+	<!-- <filter>
 		<filter-name>CORS</filter-name>
 		<filter-class>com.thetransactioncompany.cors.CORSFilter</filter-class>
 		<init-param>
@@ -25,7 +24,8 @@
 		</init-param>
 		<init-param>
 			<param-name>cors.supportedHeaders</param-name>
-			<param-value>Accept, Origin, X-Requested-With, Content-Type, Last-Modified</param-value>
+			<param-value>Accept, 
+		Origin, X-Requested-With, Content-Type, Last-Modified</param-value>
 		</init-param>
 		<init-param>
 			<param-name>cors.exposedHeaders</param-name>
@@ -36,12 +36,10 @@
 			<param-value>true</param-value>
 		</init-param>
 	</filter>
-
 	<filter-mapping>
 		<filter-name>CORS</filter-name>
 		<url-pattern>/*</url-pattern>
-	</filter-mapping>
-
+	</filter-mapping> -->
 	<servlet>
 		<servlet-name>LEDAPP</servlet-name>
 		<servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
@@ -55,13 +53,15 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>LEDAPP</servlet-name>
-		<url-pattern>/*</url-pattern>
+		<url-pattern>/findler</url-pattern>
+		<url-pattern>/findler/*</url-pattern>
 	</servlet-mapping>
-
-	<servlet>
+	<listener>
+		<listener-class>led.discovery.app.Application</listener-class>
+	</listener>
+	<!-- <servlet>
 		<servlet-name>Jersey2Config</servlet-name>
 		<servlet-class>com.wordnik.swagger.jersey.config.JerseyJaxrsConfig</servlet-class>
 		<init-param>
@@ -70,20 +70,25 @@
 		</init-param>
 		<load-on-startup>2</load-on-startup>
 	</servlet>
-
 	<listener>
 		<listener-class>led.discovery.app.Application</listener-class>
 	</listener>
-
-<!-- 	<servlet-mapping>
-		<servlet-name>default</servlet-name>
-		<url-pattern>/ui/*</url-pattern>
-	</servlet-mapping>
  -->
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+
+	<error-page>
+		<error-code>503</error-code>
+		<location>/static/503.html</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/static/404.html</location>
+	</error-page>
+
 	<welcome-file-list>
 		<welcome-file>static/index.html</welcome-file>
-		<welcome-file>index.html</welcome-file>
-		<welcome-file>index.htm</welcome-file>
-		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 </web-app>

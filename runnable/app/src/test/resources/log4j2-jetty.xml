@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<!-- <PatternLayout
+				pattern="G [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" /> -->
+				<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Logger name="led.discovery.annotation" additivity="false"
+			level="debug">
+			<AppenderRef ref="Console" />
+		</Logger>
+
+		<Logger name="led.discovery.app" additivity="false"
+			level="trace">
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger name="org.eclipse.jetty" additivity="false"
+			level="info">
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Root level="info" additivity="false">
+			<AppenderRef ref="Console" />
+		</Root>
+	</Loggers>
+</Configuration>

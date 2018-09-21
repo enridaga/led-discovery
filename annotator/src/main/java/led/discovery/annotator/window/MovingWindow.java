@@ -48,7 +48,7 @@ public class MovingWindow {
 	}
 
 	public void move(CoreMap sentence) {
-		if (fifo.size() == this.fifoSize) {
+		if (fifo.size() == this.fifoSize && fifo.size() > 0) {
 			// Shift
 			for (int s = 0; s < step; s++) {
 				this.fifo.remove(0);

@@ -28,6 +28,7 @@ import led.discovery.annotator.evaluators.CascadingEvaluator;
 import led.discovery.annotator.evaluators.HeatEvaluator;
 import led.discovery.annotator.evaluators.LedComponentsEvaluator;
 import led.discovery.annotator.evaluators.RandomForestEvaluator;
+import led.discovery.annotator.evaluators.SentiMusDepEvaluator;
 import led.discovery.annotator.window.FixedWindow;
 import led.discovery.annotator.window.MovingWindow;
 import led.discovery.annotator.window.TextWindow;
@@ -46,6 +47,7 @@ public class ListeningExperienceAnnotator implements Annotator {
 	CascadingEvaluator Evaluators;
 	// private List<TextWindowEvaluator> _E = new ArrayList<TextWindowEvaluator>();
 	private HeatEvaluator heat = null;
+	private SentiMusDepEvaluator sentimus = null;
 	private LedComponentsEvaluator compo = null;
 	private StanfordNLPProvider provider;
 	private SpotlightClient spotlight = null;
@@ -145,6 +147,12 @@ public class ListeningExperienceAnnotator implements Annotator {
 					log.info("heat evaluator");
 					heat = new HeatEvaluator(properties, cleaner, stopwords);
 					Evaluators.add(heat);
+				}
+				
+				if (ev.trim().toLowerCase().equals("sentimus")) {
+					log.info("sentimus evaluator");
+					sentimus = new SentiMusDepEvaluator(properties, cleaner, stopwords);
+					Evaluators.add(sentimus);
 				}
 
 				if (ev.trim().toLowerCase().equals("compo")) {

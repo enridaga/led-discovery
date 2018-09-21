@@ -17,7 +17,7 @@ public class Standalone {
 		connector.setSoLingerTime(-1);
 		connector.setPort(cli.getPort());
 		server.setConnectors(new Connector[] { connector });
-		System.out.println("#2: server is starting on port " + cli.getPort());
+		System.out.println("#2: findler is starting on port " + cli.getPort());
 		WebAppContext root = new WebAppContext();
 		root.setContextPath("/");
 
