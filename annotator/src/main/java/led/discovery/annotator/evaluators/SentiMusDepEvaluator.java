@@ -105,7 +105,7 @@ public class SentiMusDepEvaluator extends AbstractTextWindowEvaluator {
 	}
 
 	@Override
-	public boolean pass(TextWindow w) {
+	protected Double computeScore(TextWindow w) {
 		// Types
 		List<String> dept = Arrays.asList(deps);
 		List<String> tags = Arrays.asList(new String[] {"J", "N", "V"});
@@ -126,19 +126,26 @@ public class SentiMusDepEvaluator extends AbstractTextWindowEvaluator {
 							&& depMusScore >= musicThreshold) {
 						// YES
 						log.trace("YES: {}>{} (s>m) [{} {}]", new String[] { gov.toAString(), dep.toAString() , Double.toString(govSentScore), Double.toString(depMusScore)});
-						return true;
+						return (double) 1.0;
 					}
 					if (govMusScore != null && depSentScore != null && govMusScore >= musicThreshold
 							&& depSentScore >= sentimentThreshold) {
 						// YES
 						log.trace("YES: {}>{} (m>s) [{} {}]", new String[] { gov.toAString(), dep.toAString(), Double.toString(govMusScore), Double.toString(depSentScore) });
-						return true;
+						return (double) 1.0;
 					}
 					// No
 					log.trace("NO: {}>{} ", new String[] { gov.toAString(), dep.toAString() });
 				}
 			}
 		}
-		return false;
+		return 0.0;
 	}
+
+	@Override
+	protected boolean isScoreEnough(Double score) {
+		return score > 0;
+	}
+	
+	
 }

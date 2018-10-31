@@ -18,6 +18,8 @@ import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.StreamingOutput;
 
 import org.codehaus.jackson.io.JsonStringEncoder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.esotericsoftware.minlog.Log;
 import com.google.gson.JsonElement;
@@ -30,16 +32,22 @@ import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetEndAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.util.CoreMap;
+import led.discovery.annotator.ListeningExperienceAnnotator.HeatMaxValueMetAnnotation;
+import led.discovery.annotator.ListeningExperienceAnnotator.HeatMinValueMetAnnotation;
 import led.discovery.annotator.ListeningExperienceAnnotator.ListeningExperienceAnnotation;
 import led.discovery.annotator.ListeningExperienceAnnotator.ListeningExperienceEndAnnotation;
 import led.discovery.annotator.ListeningExperienceAnnotator.ListeningExperienceStartAnnotation;
 import led.discovery.annotator.ListeningExperienceAnnotator.ListeningExperienceWithinAnnotation;
+import led.discovery.annotator.ListeningExperienceAnnotator.NotListeningExperienceAnnotation;
+import led.discovery.annotator.evaluators.HeatEvaluator;
 import led.discovery.annotator.window.TextWindow;
+import led.discovery.app.resources.Discover;
 
 public class OutputModel {
 	private List<Block> blocks;
 	private Map<String, String> metadata;
 	private int numberOfLEDFound;
+	private static Logger L = LoggerFactory.getLogger(OutputModel.class);
 
 	private OutputModel() {
 		// Init an empty model
@@ -57,23 +65,30 @@ public class OutputModel {
 		Block current = null;
 		StringBuilder text = null;
 		int previousSentenceEnd = 0;
-
+		double maxScore = 0.0;
+		double minScore = 1.0;
+		// Subsequent false blocks are merged ...
 		for (CoreMap sentence : sentences) {
 
 			// Is LED?
 			boolean isLed = false;
 			if (sentence.get(ListeningExperienceStartAnnotation.class) != null) {
 				isLed = true;
-			} else if (sentence.get(ListeningExperienceWithinAnnotation.class) != null) {
-				isLed = true;
 			} else if (sentence.get(ListeningExperienceEndAnnotation.class) != null) {
+				isLed = true;
+			} else if (sentence.get(ListeningExperienceWithinAnnotation.class) != null) {
 				isLed = true;
 			}
 
 			// It will be only in the first iteration
 			if (current != null) {
 				// Close block
-				if ((isLed && !current.isLE) || (!isLed && current.isLE)) {
+				if (
+				// This is a new Listening Experience
+				(sentence.get(ListeningExperienceStartAnnotation.class) != null) ||
+				// This is not a Listening Experience but the current was
+//						(isLed && !current.isLE) || 
+						(!isLed && current.isLE)) {
 					current.offsetEnd = previousSentenceEnd;
 					current.text = text.toString();
 					blocks.add(current);
@@ -94,8 +109,21 @@ public class OutputModel {
 				text.append(sentence.get(CoreAnnotations.TextAnnotation.class));
 				// This block will have the status of the initial sentence
 				current.isLE = isLed;
-				if(current.isLE) {
+				if (current.isLE) {
 					numberOfLEDFound++;
+				}
+				// Get the score of this window
+				if (sentence.get(ListeningExperienceStartAnnotation.class) != null) {
+					double score = sentence.get(ListeningExperienceStartAnnotation.class).get(0).getScore(HeatEvaluator.class);
+					current.setMetadata("score", Double.toString(score));
+					if(maxScore < score) {
+						maxScore = score;
+					}
+					if(minScore > score) {
+						minScore = score;
+					}
+				}else {
+					current.setMetadata("score", "-1");
 				}
 			}
 
@@ -103,12 +131,20 @@ public class OutputModel {
 			previousSentenceEnd = sentence.get(CharacterOffsetEndAnnotation.class);
 
 		}
-
+		
 		// Close and add last block
 		current.offsetEnd = previousSentenceEnd;
 		current.text = text.toString();
 		blocks.add(current);
-		
+
+		L.debug("Passed {}", annotation.get(ListeningExperienceAnnotation.class).size());
+		L.debug("Not Passed {}", annotation.get(NotListeningExperienceAnnotation.class).size());
+		L.debug("True Blocks: {}", numberOfLEDFound);
+		L.debug("False Blocks: {}", blocks.size() - numberOfLEDFound);
+		L.debug("Max score: {}", maxScore);
+		L.debug("Min score: {}", minScore);
+		setMetadata("maxScore", Double.toString(maxScore));
+		setMetadata("minScore", Double.toString(minScore));
 	}
 
 	public void setMetadata(String key, String value) {
@@ -226,6 +262,37 @@ public class OutputModel {
 			writer.append('\n');
 
 			writer.append('\t');
+			writer.append("\"meta\": {");
+			writer.append('\n');
+			writer.append('\t');
+			writer.append('\t');
+			// Metadata
+			firstMeta = true;
+			for (Entry<String, String> entry : block.getMetadata().entrySet()) {
+				if (firstMeta) {
+					firstMeta = false;
+				} else {
+					writer.append(",");
+					writer.append('\n');
+					writer.append('\t');
+					writer.append('\t');
+				}
+				// Key
+				writer.append("\"");
+				for (char j : JsonStringEncoder.getInstance().quoteAsString(entry.getKey())) {
+					writer.append(j);
+				}
+				writer.append("\": \"");
+				// Value
+				for (char j : JsonStringEncoder.getInstance().quoteAsString(entry.getValue())) {
+					writer.append(j);
+				}
+				writer.append("\"");
+			}
+			writer.append("},");
+			writer.append('\n');
+
+			writer.append('\t');
 			writer.append('\t');
 			writer.append("\"text\": \"");
 			for (char j : JsonStringEncoder.getInstance().quoteAsString(block.text))
@@ -262,6 +329,10 @@ public class OutputModel {
 			b.offsetStart = bo.get("begin").getAsInt();
 			b.offsetEnd = bo.get("end").getAsInt();
 			b.text = bo.get("text").getAsString();
+			JsonObject bmetadata = bo.get("meta").getAsJsonObject();
+			for (Entry<String, JsonElement> entry : bmetadata.entrySet()) {
+				b.setMetadata(entry.getKey(), entry.getValue().getAsString());
+			}
 			model.blocks.add(b);
 		}
 		return model;
@@ -276,6 +347,7 @@ public class OutputModel {
 		private int offsetEnd;
 		private String text;
 		private boolean isLE;
+		private Map<String, String> metadata = new HashMap<String, String>();
 
 		public int offsetStart() {
 			return offsetStart;
@@ -291,6 +363,18 @@ public class OutputModel {
 
 		public String getText() {
 			return text;
+		}
+
+		public void setMetadata(String key, String value) {
+			metadata.put(key, value);
+		}
+
+		public String getMetadata(String key) {
+			return metadata.get(key);
+		}
+
+		public Map<String, String> getMetadata() {
+			return Collections.unmodifiableMap(metadata);
 		}
 	}
 }

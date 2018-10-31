@@ -241,7 +241,7 @@ public class ListeningExperienceAnnotator implements Annotator {
 			annotation.set(HeatMinValueMetAnnotation.class, heat.getMinValueMet());
 		}
 		for (TextWindow tw : mv.passed()) {
-
+			log.debug("passed window: {}:{}", tw.offsetStart(), tw.offsetEnd());
 			if (tw.firstSentence().get(ListeningExperienceStartAnnotation.class) == null) {
 				tw.firstSentence().set(ListeningExperienceStartAnnotation.class, new ArrayList<TextWindow>());
 			}

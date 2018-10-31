@@ -41,6 +41,7 @@ public class HeatEvaluator extends AbstractTextWindowEvaluator {
 		} else {
 			threshold = Double.valueOf(_heatThreshold);
 		}
+		log.info("threshold: {}", threshold);
 //
 //		String dictionarySource = properties.getProperty("custom.led.heat.dictionary");
 //		Reader reader = null;
@@ -96,8 +97,35 @@ public class HeatEvaluator extends AbstractTextWindowEvaluator {
 		return minValueMet;
 	}
 
+//	@Override
+//	public boolean pass(TextWindow w) {
+//		double score = 0.0;
+//		int tokens = 0;
+//		for (CoreMap cm : w.sentences()) {
+//			for (CoreLabel to : cm.get(CoreAnnotations.TokensAnnotation.class)) {
+//				if (skip(to)) {
+//					continue;
+//				}
+//				score += to.get(MusicalHeatScoreAnnotation.class);
+//				tokens++;
+//			}
+//		}
+//		double relativeScore = score / (double) tokens;
+//		log.trace("score {}", Double.toString(relativeScore));
+//		if (relativeScore > maxValueMet) {
+//			maxValueMet = relativeScore;
+//		}
+//		if (relativeScore < minValueMet) {
+//			minValueMet = relativeScore;
+//		}
+//		if (relativeScore > threshold) {
+//			return true;
+//		}
+//		return false;
+//	}
+
 	@Override
-	public boolean pass(TextWindow w) {
+	protected Double computeScore(TextWindow w) {
 		double score = 0.0;
 		int tokens = 0;
 		for (CoreMap cm : w.sentences()) {
@@ -117,7 +145,12 @@ public class HeatEvaluator extends AbstractTextWindowEvaluator {
 		if (relativeScore < minValueMet) {
 			minValueMet = relativeScore;
 		}
-		if (relativeScore > threshold) {
+		return relativeScore;
+	}
+
+	@Override
+	protected boolean isScoreEnough(Double score) {
+		if (score > threshold) {
 			return true;
 		}
 		return false;

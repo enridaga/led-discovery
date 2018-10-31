@@ -3,7 +3,9 @@ package led.discovery.annotator.window;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetBeginAnnotation;
@@ -13,7 +15,7 @@ import edu.stanford.nlp.util.CoreMap;
 public class TextWindow {
 	private int size;
 	private List<CoreMap> sentences;
-
+	private Map<Object, Double> scores = new HashMap<Object, Double>();
 	public final static Comparator<TextWindow> Sorter = new Comparator<TextWindow>() {
 		public int compare(TextWindow o1, TextWindow o2) {
 			if (o1.equals(o2)) {
@@ -87,7 +89,16 @@ public class TextWindow {
 	}
 
 	public String toString() {
-		return new StringBuilder().append(super.toString()).append("[").append(sentences.size()).append("/").append(size).append("]").append(isFull() == true ? "!" : "*").toString();
+		return new StringBuilder().append(super.toString()).append("[").append(sentences.size()).append("/")
+				.append(size).append("]").append(isFull() == true ? "!" : "*").toString();
+	}
+
+	public void setScore(Object key, Double score) {
+		scores.put(key, score);
+	}
+
+	public Double getScore(Object key) {
+		return scores.get(key);
 	}
 
 	@Override

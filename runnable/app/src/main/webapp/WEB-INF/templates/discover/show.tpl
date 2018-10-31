@@ -1,59 +1,112 @@
 <!-- Post Content -->
 <article class="led-show">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-		<p>Source: <a href="$source">$source</a></p>
-		<p>Found <strong>$found</strong> traces of listening experiences</p>
-	<div class="btn-group btn-group-toggle" data-toggle="buttons">
-  		<label class="btn btn-warning active">
-    		<input type="radio" name="options" id="option2" autocomplete="off" value="list"> As List 
-  		</label>
-  		<label class="btn btn-warning ">
-    		<input type="radio" name="options" id="option1" autocomplete="off" checked value="highlight"> In text
-  		</label>
-  		<label class="btn btn-dark jumpToFirst">Jump to the first</label>
-	</div>
-	<hr/>
-#set( $number = 0)
-#foreach( $block in $blocks )
-   #if($block.isLE())
-   	#set( $number = $number + 1)
-   #end
-   <div class="block-$block.isLE()" id="le-$block.offsetStart()-$block.offsetEnd()" name="le-$block.offsetStart()-$block.offsetEnd()">
-   <div class="le-text">$StringEscapeUtils.escapeHtml($block.getText())</div>
-   <div class="le-meta">
-   	<!-- [$block.offsetStart():$block.offsetEnd()] -->
-   		<div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar">
-			<div class="input-group"><span class="badge badge-pill badge-warning le-counter">$number</span></div>
-			<div class="input-group le-group-rating">
-			<select class="le-rating" name="rating-$block.offsetStart()-$block.offsetEnd()" autocomplete="off" style="display: block;" data-from="$block.offsetStart()" data-to="$block.offsetEnd()" data-url="$source">
-                  <option value=""></option>
-                  <option value="1">No</option>
-                  <option value="2">&gt;</option>
-                  <option value="3">?</option>
-                  <option value="4">&gt;</option>
-                  <option value="5">Yes</option>
-			</select>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-10 mx-auto">
+				#if($cached == "true")
+				<p class="">Cached resource</p>
+				#end
+				<p>
+					Source: <a href="$url">$url</a>
+				</p>
+				<p>
+					Found <strong>$found</strong> traces of listening experiences
+				</p>
+<!-- 				<pre>
+Sensitivity: $th
+Max score: $maxScore
+Min score: $minScore
+sensitivity: $sensitivity
+				</pre>
+ -->				
+
+				<form class="">
+					<input type="hidden" name="url" value="$url" id="url"> <input
+						type="hidden" name="th" value="$th" id="th">
+					<div class="form-group ">
+						<label for="sensitivity">Sensitivity</label> <input
+							id="sensitivity" 
+							data-slider-id='sensitivitySlider'
+							data-slider-handle="square" 
+							type="text" 
+							data-slider-value="$sensitivity" 
+							value="$sensitivity"/>
+					</div>
+					<button type="submit" class="btn btn-primary ">update</button>
+				</form>
+
+
+				<div class="btn-group btn-group-toggle" data-toggle="buttons">
+					<label class="btn btn-warning active"> <input type="radio"
+						name="options" id="option1" autocomplete="off" checked
+						value="highlight"> In text
+					</label> <label class="btn btn-warning "> <input type="radio"
+						name="options" id="option2" autocomplete="off" value="list">
+						As List
+					</label> <label class="btn btn-dark jumpToFirst">Jump to the first</label>
+				</div>
+
+
+
+				<hr />
+				#set( $number = 0) #foreach( $block in $blocks ) #if($block.isLE())
+				#set( $number = $number + 1) #end #set( $score =
+				$block.getMetadata("score"))
+				<div class="block-$block.isLE()"
+					id="le-$block.offsetStart()-$block.offsetEnd()"
+					name="le-$block.offsetStart()-$block.offsetEnd()"
+					data-score="$score">
+					<div class="le-text">$StringEscapeUtils.escapeHtml($block.getText())</div>
+					<div class="le-meta">
+						<!-- [$block.offsetStart():$block.offsetEnd()] -->
+						<div class="btn-toolbar justify-content-between" role="toolbar"
+							aria-label="Toolbar" data-score="$score">
+							<div class="input-group">
+								<span class="badge badge-pill badge-warning le-counter">$number</span>
+							</div>
+							<!-- <div class="input-group"><span class="badge badge-pill badge-warning le-badge">Score: </span></div> -->
+							<div class="input-group le-group-rating">
+								<span class="badge badge-pill le-badge">Feedback:</span> <select
+									class="le-rating"
+									name="rating-$block.offsetStart()-$block.offsetEnd()"
+									autocomplete="off" style="display: block;"
+									data-from="$block.offsetStart()" data-to="$block.offsetEnd()"
+									data-url="$source">
+									<option value=""></option>
+									<option value="1">No</option>
+									<option value="2">&gt;</option>
+									<option value="3">?</option>
+									<option value="4">&gt;</option>
+									<option value="5">Yes</option>
+								</select>
+							</div>
+							<div class="btn-group btn-group-sm" role="group"
+								aria-label="First group">
+								#if( $number > 1 )
+								<button type="button" class="btn btn-warning jumpToPrevious">
+									<i class="fa fa-arrow-circle-o-up"></i>&nbsp;
+								</button>
+								#end #if( $number < $found )
+								<button type="button" class="btn btn-warning jumpToNext">
+									<i class="fa fa-arrow-circle-o-down"></i>&nbsp;
+								</button>
+								#end
+								<button type="button" class="btn btn-dark jumpToTop">
+									<i class="fa fa-level-up"></i>&nbsp;
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				#end
 			</div>
-			<div class="btn-group btn-group-sm" role="group" aria-label="First group">
-			#if( $number > 1 )
-   				<button type="button" class="btn btn-warning jumpToPrevious"><i class="fa fa-arrow-circle-o-up"></i>&nbsp;</button>
-   			#end
-   			#if( $number < $found )
-   				<button type="button" class="btn btn-warning jumpToNext"><i class="fa fa-arrow-circle-o-down"></i>&nbsp;</button>
-   			#end
-   				<button type="button" class="btn btn-dark jumpToTop"><i class="fa fa-level-up"></i>&nbsp;</button>
-   			</div>
-   		</div>
-   </div>
-   </div>
-#end
+		</div>
+	</div>
+</article>
+<div id="scaleJson" class="data-container">
+$sensitivityScale
 </div>
-        </div>
-      </div>
-    </article>
-   <script>
+<script>
 document.addEventListener("DOMContentLoaded", function(event) { 
 	$(document).ready(function(){
 		$("[name=options]").change(function(event, what){
@@ -139,6 +192,29 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
  			
 		});
+		
+		var sensitivityScale = JSON.parse($("#scaleJson").html());
+		
+		// Sensitivity slider
+		// With JQuery
+		 $("#sensitivity").slider({
+			min: 5,
+			max: 100,
+			step: 5,
+			/* ticks: [5, 10, 15, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100],
+		    ticks_labels: [5, 10, 15, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100],
+		    ticks_snap_bounds: 30, */
+			/* orientation: 'vertical', */
+			tooltip_position:'top',
+			tooltip: 'always'
+		}).on("slide", function(slideEvt) {
+			var val = slideEvt.value;
+			// Lookup sensitivity table
+			th = sensitivityScale[val];
+			/* console.log(val, th); */
+			$("#th").val(th);
+		}); 
+
 	});
 });
    </script>

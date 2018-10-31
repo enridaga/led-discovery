@@ -13,13 +13,17 @@ import led.discovery.nlp.StandardLemmaCleaner;
 public abstract class AbstractTextWindowEvaluator implements TextWindowEvaluator {
 	private Set<String> stopwords;
 	private LemmaCleaner cleaner = new StandardLemmaCleaner();
-	
+
 	public AbstractTextWindowEvaluator(LemmaCleaner cleaner, Set<String> stopwords) {
 		this.cleaner = cleaner;
 		this.stopwords = stopwords;
-		
+
 	}
-	
+
+	protected abstract Double computeScore(TextWindow w);
+
+	protected abstract boolean isScoreEnough(Double score);
+
 	protected boolean skip(CoreLabel token) {
 		String lemma = token.getString(LemmaAnnotation.class);
 		String pos = token.getString(PartOfSpeechAnnotation.class);
@@ -31,8 +35,11 @@ public abstract class AbstractTextWindowEvaluator implements TextWindowEvaluator
 		}
 		return true;
 	}
-	
-	@Override
-	public abstract boolean pass(TextWindow w);
+
+	public final boolean pass(TextWindow w) {
+		Double score = computeScore(w);
+		w.setScore(this.getClass(), score);
+		return isScoreEnough(score);
+	};
 
 }

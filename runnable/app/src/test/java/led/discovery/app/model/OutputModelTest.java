@@ -20,6 +20,7 @@ public class OutputModelTest {
 
 	@Test
 	public void testJson() throws IOException {
+		
 		Properties props = new Properties();
 		props.load(this.getClass().getClassLoader().getResourceAsStream("data/MusicEmbeddingsTest.properties"));
 		StringWriter writer = new StringWriter();
@@ -32,7 +33,7 @@ public class OutputModelTest {
 		pipeline.annotate(annotation);
 		OutputModel model = OutputModel.build(annotation);
 		String json1 = model.toJSON();
-		L.debug("\n{}",json1);
+		L.trace("\n{}",json1);
 		OutputModel model2 = OutputModel.fromJSON(json1);
 
 		Assert.assertTrue(model2.numberOfLEFound() == model.numberOfLEFound());

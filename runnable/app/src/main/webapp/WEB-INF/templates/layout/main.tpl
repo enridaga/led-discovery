@@ -19,6 +19,11 @@
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
+	<!-- UI Slider -->
+	<link href="/vendor/bootstrap-slider-10.2.2/css/bootstrap-slider.css" rel="stylesheet" type="text/css">
+    <!-- Bar rating -->
+    <link rel="stylesheet" href="/vendor/jquery-bar-rating-1.2.2/dist/themes/bars-square.css">
+    
     <!-- Custom styles for this template -->
     <link href="/css/clean-blog.css" rel="stylesheet">
 
@@ -77,25 +82,8 @@
     <footer id="contact" name="contact">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-          <p class="copyright text-muted">Find<span class="le">LE</span>r is developed by The Knowledge Media Institute of The Open University. </p>
-            <ul class="list-inline text-center">
-              
-              <li class="list-inline-item">
-                <a href="http://www.open.ac.uk">
-                	<img src="/img/OU-logo.png" style="height:70px"/>
-                </a>
-                
-            	<li class="list-inline-item">
-                <a href="http://kmi.open.ac.uk">
-                	<img src="/img/kmi-logo.png" style="height:70px"/>
-                  <!-- <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    KMi
-                  </span> -->
-                </a>
-              </li>
-              
+        	<div class="col-lg-8 col-md-10 mx-auto">
+        	<ul class="list-inline text-center">
               <li class="list-inline-item">
                 <a href="http://twitter.com/listenexp">
                   <span class="fa-stack fa-lg">
@@ -114,6 +102,33 @@
                 </a>
               </li>
             </ul>
+        	</div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Find<span class="le">LE</span>r is developed by The Knowledge Media Institute of The Open University. </p>
+            <ul class="list-inline text-center">
+              
+              <li class="list-inline-item">
+                <a href="http://www.listeningexperience.org">
+                	<img src="/img/LED-logo.png" style="height:70px"/>
+                </a>
+                </li>
+            	<li class="list-inline-item">
+                <a href="http://kmi.open.ac.uk">
+                	<img src="/img/kmi-logo.png" style="height:70px"/>
+                  <!-- <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    KMi
+                  </span> -->
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="http://www.open.ac.uk">
+                	<img src="/img/OU-logo.png" style="height:70px"/>
+                </a>
+               </li>
+            </ul>
             <p class="copyright text-muted">Contact: enrico.daga[at]open.ac.uk<br/>Copyright &copy; The Open University 2018</p>
           </div>
         </div>
@@ -124,7 +139,8 @@
     <script src="/vendor/jquery/jquery.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="/vendor/jquery-bar-rating-1.2.2/dist/jquery.barrating.min.js"></script>
-    <link rel="stylesheet" href="/vendor/jquery-bar-rating-1.2.2/dist/themes/bars-square.css">
+    
+    <script src="/vendor/bootstrap-slider-10.2.2/bootstrap-slider.min.js"></script>
     
     <!-- Form Validation JavaScript -->
     <script src="/js/jqBootstrapValidation.js"></script>

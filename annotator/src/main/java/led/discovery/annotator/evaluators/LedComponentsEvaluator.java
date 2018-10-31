@@ -53,9 +53,58 @@ public class LedComponentsEvaluator extends AbstractTextWindowEvaluator {
 			thhSentiment = Double.parseDouble(properties.getProperty("custom.led.components.thh.sentiment"));
 		}
 	}
+//
+//	@Override
+//	public boolean pass(TextWindow w) {
+//		int amount = 0;
+//		for (Class<? extends CoreAnnotation<Double>> cls : LedComponentsAnnotator.annotations.values()) {
+//			double thh;
+//			if (cls.equals(LedComponentsAnnotator.LedEventAnnotation.class)) {
+//				thh = thhEvent;
+//			} else if (cls.equals(LedComponentsAnnotator.LedSoundAnnotation.class)) {
+//				thh = thhSound;
+//			} else if (cls.equals(LedComponentsAnnotator.LedListenerAnnotation.class)) {
+//				thh = thhListener;
+//			} else if (cls.equals(LedComponentsAnnotator.LedPerformerAnnotation.class)) {
+//				thh = thhPerformer;
+//			} else if (cls.equals(LedComponentsAnnotator.LedSentimentAnnotation.class)) {
+//				thh = thhSentiment;
+//			} else
+//				throw new RuntimeException("Unknown annotator: " + cls.getName());
+//
+//			// If any sentence has some components
+//			int tokens = 0;
+//			double scoresum = 0.0;
+//			for (CoreMap cm : w.sentences()) {
+//				for (CoreLabel token : cm.get(CoreAnnotations.TokensAnnotation.class)) {
+//					if (skip(token))
+//						continue;
+//					tokens++;
+//					Double score = token.get(cls);
+//					if (score != null) {
+//						scoresum += score;
+//					}
+//				}
+//			}
+//			double thescore = scoresum / (double) tokens;
+//			if (thescore > thh) {
+//				log.trace("has component: {}", cls);
+//				amount++;
+//			}
+//		}
+//		log.debug("amount: {}", amount);
+//		if (method.equals(Method.ALL)) {
+//			return amount == 5;
+//		} else if (method.equals(Method.MIN4)) {
+//			return amount >= 4;
+//		} else if (method.equals(Method.MIN3)) {
+//			return amount >= 3;
+//		}
+//		return false;
+//	}
 
 	@Override
-	public boolean pass(TextWindow w) {
+	protected Double computeScore(TextWindow w) {
 		int amount = 0;
 		for (Class<? extends CoreAnnotation<Double>> cls : LedComponentsAnnotator.annotations.values()) {
 			double thh;
@@ -87,12 +136,20 @@ public class LedComponentsEvaluator extends AbstractTextWindowEvaluator {
 				}
 			}
 			double thescore = scoresum / (double) tokens;
+			w.setScore(cls, thescore);
+			
 			if (thescore > thh) {
 				log.trace("has component: {}", cls);
 				amount++;
 			}
 		}
+		w.setScore(this.getClass(), (double) amount);
 		log.debug("amount: {}", amount);
+		return (double) amount;
+	}
+
+	@Override
+	protected boolean isScoreEnough(Double amount) {
 		if (method.equals(Method.ALL)) {
 			return amount == 5;
 		} else if (method.equals(Method.MIN4)) {

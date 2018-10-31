@@ -12,10 +12,13 @@ import org.glassfish.jersey.server.ResourceConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import led.discovery.app.model.FileCache;
+
 public class Application extends ResourceConfig implements ServletContextListener {
 	private Logger log = LoggerFactory.getLogger(Application.class);
 	public final static String DATA_DIR = "LED_DATA_DIR";
 	public final static String CACHE_DIR = "LED_CACHE_DIR";
+	public final static String CACHE = "LED_CACHE";
 	public final static String VELOCITY = "LED_VELOCITY";
 
 	public Application() {
@@ -51,7 +54,8 @@ public class Application extends ResourceConfig implements ServletContextListene
 			throw exe;
 		}
 		ctx.setAttribute(CACHE_DIR, cacheDir);
-
+		ctx.setAttribute(CACHE, new FileCache(cacheDir));
+		
 		// Initialise template engine
 		VelocityEngine engine = new VelocityEngine();
 		Properties p = new Properties();
