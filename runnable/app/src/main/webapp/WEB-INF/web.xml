@@ -11,35 +11,16 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
-	<!-- <filter>
-		<filter-name>CORS</filter-name>
-		<filter-class>com.thetransactioncompany.cors.CORSFilter</filter-class>
-		<init-param>
-			<param-name>cors.allowOrigin</param-name>
-			<param-value>*</param-value>
-		</init-param>
-		<init-param>
-			<param-name>cors.supportedMethods</param-name>
-			<param-value>GET, POST, HEAD, PUT, DELETE, PATCH, OPTIONS</param-value>
-		</init-param>
-		<init-param>
-			<param-name>cors.supportedHeaders</param-name>
-			<param-value>Accept, 
-		Origin, X-Requested-With, Content-Type, Last-Modified</param-value>
-		</init-param>
-		<init-param>
-			<param-name>cors.exposedHeaders</param-name>
-			<param-value>Set-Cookie</param-value>
-		</init-param>
-		<init-param>
-			<param-name>cors.supportsCredentials</param-name>
-			<param-value>true</param-value>
-		</init-param>
-	</filter>
-	<filter-mapping>
-		<filter-name>CORS</filter-name>
-		<url-pattern>/*</url-pattern>
-	</filter-mapping> -->
+	<!-- <filter> <filter-name>CORS</filter-name> <filter-class>com.thetransactioncompany.cors.CORSFilter</filter-class> 
+		<init-param> <param-name>cors.allowOrigin</param-name> <param-value>*</param-value> 
+		</init-param> <init-param> <param-name>cors.supportedMethods</param-name> 
+		<param-value>GET, POST, HEAD, PUT, DELETE, PATCH, OPTIONS</param-value> </init-param> 
+		<init-param> <param-name>cors.supportedHeaders</param-name> <param-value>Accept, 
+		Origin, X-Requested-With, Content-Type, Last-Modified</param-value> </init-param> 
+		<init-param> <param-name>cors.exposedHeaders</param-name> <param-value>Set-Cookie</param-value> 
+		</init-param> <init-param> <param-name>cors.supportsCredentials</param-name> 
+		<param-value>true</param-value> </init-param> </filter> <filter-mapping> 
+		<filter-name>CORS</filter-name> <url-pattern>/*</url-pattern> </filter-mapping> -->
 	<servlet>
 		<servlet-name>LEDAPP</servlet-name>
 		<servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
@@ -51,6 +32,10 @@
 			<param-name>jersey.config.server.wadl.disableWadl</param-name>
 			<param-value>true</param-value>
 		</init-param>
+		<init-param>
+			<param-name>jersey.config.server.provider.classnames</param-name>
+			<param-value>org.glassfish.jersey.media.multipart.MultiPartFeature</param-value>
+		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet-mapping>
@@ -61,19 +46,10 @@
 	<listener>
 		<listener-class>led.discovery.app.Application</listener-class>
 	</listener>
-	<!-- <servlet>
-		<servlet-name>Jersey2Config</servlet-name>
-		<servlet-class>com.wordnik.swagger.jersey.config.JerseyJaxrsConfig</servlet-class>
-		<init-param>
-			<param-name>api.version</param-name>
-			<param-value>0.1.0</param-value>
-		</init-param>
-		<load-on-startup>2</load-on-startup>
-	</servlet>
-	<listener>
-		<listener-class>led.discovery.app.Application</listener-class>
-	</listener>
- -->
+	<!-- <servlet> <servlet-name>Jersey2Config</servlet-name> <servlet-class>com.wordnik.swagger.jersey.config.JerseyJaxrsConfig</servlet-class> 
+		<init-param> <param-name>api.version</param-name> <param-value>0.1.0</param-value> 
+		</init-param> <load-on-startup>2</load-on-startup> </servlet> <listener> 
+		<listener-class>led.discovery.app.Application</listener-class> </listener> -->
 	<servlet-mapping>
 		<servlet-name>default</servlet-name>
 		<url-pattern>/*</url-pattern>

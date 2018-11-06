@@ -3,38 +3,53 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-md-10 mx-auto">
+				<!-- 
 				#if($cached == "true")
 				<p class="">Cached resource</p>
 				#end
+			 -->
 				<p>
-					Source: <a href="$url">$url</a>
+					#if($source.indexOf("http:") == 0|| $source.indexOf("https:") == 0)
+					Source: <a href="$source">$source</a> #else Source: <a
+						href="$findlerBasePath/id=$source">$source</a> #end
 				</p>
-				<p>
-					Found <strong>$found</strong> traces of listening experiences
-				</p>
-<!-- 				<pre>
-Sensitivity: $th
-Max score: $maxScore
-Min score: $minScore
-sensitivity: $sensitivity
-				</pre>
- -->				
-
-				<form class="">
-					<input type="hidden" name="url" value="$url" id="url"> <input
-						type="hidden" name="th" value="$th" id="th">
-					<div class="form-group ">
-						<label for="sensitivity">Sensitivity</label> <input
-							id="sensitivity" 
-							data-slider-id='sensitivitySlider'
-							data-slider-handle="square" 
-							type="text" 
-							data-slider-value="$sensitivity" 
-							value="$sensitivity"/>
+				<form class="form-inline justify-content-between sensitivity">
+					<input type="hidden" name="id" value="$source" id="sourceId">
+					<input type="hidden" name="th" value="$th" id="th">
+					<div class="form-group">
+						<span class="btn">Skepticism: <span
+							class="le-sensitivity-label">$sensitivity/100</span></span>
 					</div>
-					<button type="submit" class="btn btn-primary ">update</button>
-				</form>
+					<div class="form-group ">
+						<button aria-label="Less" type="button"
+							class="btn btn-warning le-sensitivity-less">
+							<i class="fa fa-angle-left"></i>
+						</button>
+					</div>
 
+					<div class="form-group">
+						<input id="sensitivity" data-slider-id='sensitivitySlider'
+							data-slider-handle="square" type="text"
+							data-slider-tooltip="always"
+							data-slider-value="$sensitivity" value="$sensitivity" />
+					</div>
+					<div class="form-group btn-group">
+						<button aria-label="More" type="button"
+							class="btn btn-warning le-sensitivity-more">
+							<i class="fa fa-angle-right"></i>
+						</button>
+						<button aria-label="Reset" type="button"
+							class="btn btn-warning le-sensitivity-reset">
+							<i class="fa fa-backspace"></i>
+						</button>
+						<button aria-label="Reload" type="submit" class="btn btn-primary ">
+							<i class="fa fa-sync"></i>
+						</button>
+					</div>
+				</form>
+				<p>
+					<strong>$found</strong> traces of listening experiences found
+				</p>
 
 				<div class="btn-group btn-group-toggle" data-toggle="buttons">
 					<label class="btn btn-warning active"> <input type="radio"
@@ -45,9 +60,10 @@ sensitivity: $sensitivity
 						As List
 					</label> <label class="btn btn-dark jumpToFirst">Jump to the first</label>
 				</div>
-
-
-
+				
+				<!-- <div class="le-remember-actions">
+				<a href="https://twitter.com/intent/tweet?text=FindLEr&url="><i class="fa fa-twitter"></i></a>
+				</div> -->
 				<hr />
 				#set( $number = 0) #foreach( $block in $blocks ) #if($block.isLE())
 				#set( $number = $number + 1) #end #set( $score =
@@ -103,20 +119,17 @@ sensitivity: $sensitivity
 		</div>
 	</div>
 </article>
-<div id="scaleJson" class="data-container">
-$sensitivityScale
-</div>
+<div id="scaleJson" class="data-container">$sensitivityScale</div>
 <script>
 document.addEventListener("DOMContentLoaded", function(event) { 
 	$(document).ready(function(){
+		
 		$("[name=options]").change(function(event, what){
 			var action = $(event.target).val();
 			if(action == 'list'){
 				$("div.block-false").hide();
-//				$("div.block-true div.le-meta").show();
 			}else{
 				$("div.block-false").show();
-//				$("div.block-true div.le-meta").hide();
 			}
 		});
 		
@@ -179,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			var feedbackId = url+":"+from+""+to;
 			/* console.log("hit rating", feedbackId); */
 			#set ( $d = "$")
-			var jqxhr = ${d}.post( "findler/feedback", { url: url, text: text, from: from, to: to, rating: rating } ).done(function() {
+			var jqxhr = ${d}.post( "/findler/feedback", { url: url, text: text, from: from, to: to, rating: rating } ).done(function() {
 			    alert( "Thank you for your feedback" );
 			    if(window.localStorage){
 			    	window.localStorage.setItem(feedbackId,rating);
@@ -194,8 +207,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		});
 		
 		var sensitivityScale = JSON.parse($("#scaleJson").html());
-		
+		var currentSensitivity = $("#sensitivity").val();
+		var currentSensitivityLabel = $(".le-sensitivity-label").html();
 		// Sensitivity slider
+		function onChangeSensitivity(val){
+			th = sensitivityScale[val];
+			$("#th").val(th);
+			var newSensitivityLabel = val+"/100";
+			//console.log(currentSensitivityLabel, newSensitivityLabel);
+			if(newSensitivityLabel!=currentSensitivityLabel){
+				$(".le-sensitivity-label").addClass("le-sensitivity-modified");	
+			}else{
+				$(".le-sensitivity-label").removeClass("le-sensitivity-modified");
+			}
+			$(".le-sensitivity-label").html(newSensitivityLabel);
+		}
 		// With JQuery
 		 $("#sensitivity").slider({
 			min: 5,
@@ -207,14 +233,35 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			/* orientation: 'vertical', */
 			tooltip_position:'top',
 			tooltip: 'always'
+		}).on("change", function(el){
+			onChangeSensitivity(el.target.value);
+			//$(this).trigger("slide");
 		}).on("slide", function(slideEvt) {
-			var val = slideEvt.value;
-			// Lookup sensitivity table
-			th = sensitivityScale[val];
-			/* console.log(val, th); */
-			$("#th").val(th);
+			onChangeSensitivity(slideEvt.value);
 		}); 
 
+		$(".le-sensitivity-more").click(function(){
+			
+			var val = $("#sensitivity").val();
+			/* console.log("more", val); */
+			if(val >= 100) return;
+			var value = parseInt(val) + 5;
+			$("#sensitivity").slider("setValue", value);
+			onChangeSensitivity(value);
+		});
+		$(".le-sensitivity-less").click(function(){
+			var val = $("#sensitivity").val();
+			/* console.log("less", val); */
+			if(val <= 5) return;
+			var value = parseInt(val) - 5;
+			$("#sensitivity").slider("setValue", value);
+			onChangeSensitivity(value);
+		});
+		$(".le-sensitivity-reset").click(function(){
+			/* console.log("reset"); */
+			$("#sensitivity").slider("setValue", currentSensitivity);
+			onChangeSensitivity(currentSensitivity);
+		});
 	});
 });
    </script>

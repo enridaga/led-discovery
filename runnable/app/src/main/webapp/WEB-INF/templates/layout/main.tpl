@@ -74,10 +74,9 @@
         </div>
       </div>
     </header>
-  
-  #parse($body)
-  <hr>
-
+  	<article>
+#parse($body)
+	</article>
     <!-- Footer -->
     <footer id="contact" name="contact">
       <div class="container">
