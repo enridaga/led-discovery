@@ -21,7 +21,6 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.WebApplicationException;
@@ -76,7 +75,7 @@ public class Discover {
 	public Response htmlGET() {
 		L.debug("GET htmlGET");
 		VelocityContext vcontext = getVelocityContext();
-		vcontext.put("body", "discover/input.tpl");
+		vcontext.put("body", getTemplate("/discover/input.tpl"));
 		return Response.ok(getRenderer(vcontext).toString()).build();
 	}
 
@@ -264,6 +263,7 @@ public class Discover {
 		VelocityContext vcontext = new VelocityContext();
 		vcontext.put("StringEscapeUtils", StringEscapeUtils.class);
 		vcontext.put("findlerBasePath", "/findler");
+		vcontext.put("servlet", this);
 		return vcontext;
 	}
 
@@ -271,7 +271,7 @@ public class Discover {
 		VelocityContext vcontext = getVelocityContext();
 		vcontext.put("found", model.numberOfLEFound());
 		vcontext.put("blocks", model.blocks());
-		vcontext.put("body", "discover/show.tpl");
+		vcontext.put("body", getTemplate("/discover/show.tpl"));
 		vcontext.put("cached", model.getMetadata("cached"));
 		vcontext.put("sensitivityScale", new Gson().toJson(getSensitivityScale(defaultTh)));
 		vcontext.put("sensitivity", sensitivity(getSensitivityScale(defaultTh), th));
@@ -292,7 +292,7 @@ public class Discover {
 
 	public StringWriter errorPage(String message, Exception e) {
 		VelocityContext vcontext = getVelocityContext();
-		vcontext.put("body", "layout/error.tpl");
+		vcontext.put("body", getTemplate("/layout/error.tpl"));
 		vcontext.put("message", message);
 		vcontext.put("exception", e);
 		return getRenderer(vcontext);
@@ -300,16 +300,21 @@ public class Discover {
 
 	public StringWriter errorPage(String message) {
 		VelocityContext vcontext = getVelocityContext();
-		vcontext.put("body", "layout/error.tpl");
+		vcontext.put("body", getTemplate("/layout/error.tpl"));
 		vcontext.put("message", message);
 		return getRenderer(vcontext);
 	}
 
+	public String getTemplate(String relativePath) {
+		String base = (String) context.getAttribute(Application.TEMPLATES);
+		return base + relativePath;	
+	}
+	
 	public StringWriter getRenderer(VelocityContext vcontext) {
 		StringWriter sw = new StringWriter();
 		VelocityEngine engine = (VelocityEngine) context.getAttribute(Application.VELOCITY);
 		Template template = null;
-		template = engine.getTemplate("layout/main.tpl");
+		template = engine.getTemplate(getTemplate("/layout/main.tpl"));
 		template.merge(vcontext, sw);
 		return sw;
 	}

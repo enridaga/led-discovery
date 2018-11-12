@@ -13,52 +13,56 @@
 					Source: <a href="$source">$source</a> #else Source: <a
 						href="$findlerBasePath/id=$source">$source</a> #end
 				</p>
+				<p>
+					<strong>$found</strong> traces of listening experiences found.	
+				</p>
+				<p><span>Skepticism: <span class="le-sensitivity-label">$sensitivity/100</span></span>
+								- Increase to obtain less results.</p>
+				
 				<form class="form-inline justify-content-between sensitivity">
 					<input type="hidden" name="id" value="$source" id="sourceId">
 					<input type="hidden" name="th" value="$th" id="th">
 					<div class="form-group">
-						<span class="btn">Skepticism: <span
-							class="le-sensitivity-label">$sensitivity/100</span></span>
-					</div>
-					<div class="form-group ">
-						<button aria-label="Less" type="button"
-							class="btn btn-warning le-sensitivity-less">
-							<i class="fa fa-angle-left"></i>
-						</button>
-					</div>
-
-					<div class="form-group">
+						<div class="btn-group ">
+							<button aria-label="Reset" type="button"
+							disabled="disabled"
+							title="Reset score"
+							class="btn btn-warning le-sensitivity-reset">
+							<strong><i class="fa fa-hashtag"></i></strong>
+							</button>
+							<button aria-label="Less" type="button"
+								title="More results"
+								class="btn btn-sm btn-warning le-sensitivity-less">
+								<strong><i class="fa fa-caret-left"></i></strong>
+							</button>
+						</div>
+						<div class="btn-group ">
 						<input id="sensitivity" data-slider-id='sensitivitySlider'
 							data-slider-handle="square" type="text"
 							data-slider-tooltip="always"
 							data-slider-value="$sensitivity" value="$sensitivity" />
-					</div>
-					<div class="form-group btn-group">
-						<button aria-label="More" type="button"
-							class="btn btn-warning le-sensitivity-more">
-							<i class="fa fa-angle-right"></i>
-						</button>
-						<button aria-label="Reset" type="button"
-							class="btn btn-warning le-sensitivity-reset">
-							<i class="fa fa-backspace"></i>
-						</button>
-						<button aria-label="Reload" type="submit" class="btn btn-primary ">
-							<i class="fa fa-sync"></i>
+						</div>
+						<div class="btn-group btn-group">
+							<button aria-label="More" type="button"
+								title="Less results"
+								class="btn btn-warning le-sensitivity-more">
+								<strong><i class="fa fa-caret-right"></i></strong>
+							</button>
+							<button aria-label="Reload" type="submit" class="btn btn-primary le-sensitivity-update" disabled="disabled">
+							<strong><i class="fa fa-sync"></i></strong>
 						</button>
 					</div>
+				</div>
 				</form>
-				<p>
-					<strong>$found</strong> traces of listening experiences found
-				</p>
-
-				<div class="btn-group btn-group-toggle" data-toggle="buttons">
-					<label class="btn btn-warning active"> <input type="radio"
+				<p></p>
+				<div class="form-group btn-group btn-group-toggle" data-toggle="buttons">
+					<label class="btn btn-warning active" id="inText"> <input type="radio"
 						name="options" id="option1" autocomplete="off" checked
 						value="highlight"> In text
-					</label> <label class="btn btn-warning "> <input type="radio"
+					</label> <label class="btn btn-warning " id="asList"> <input type="radio"
 						name="options" id="option2" autocomplete="off" value="list">
 						As List
-					</label> <label class="btn btn-dark jumpToFirst">Jump to the first</label>
+					</label> <label class="btn btn-dark jumpToFirst">first</label>
 				</div>
 				
 				<!-- <div class="le-remember-actions">
@@ -89,15 +93,19 @@
 									data-from="$block.offsetStart()" data-to="$block.offsetEnd()"
 									data-url="$source">
 									<option value=""></option>
-									<option value="1">No</option>
-									<option value="2">&gt;</option>
-									<option value="3">?</option>
-									<option value="4">&gt;</option>
-									<option value="5">Yes</option>
+									<option value="1" data-html="<i class=&quot;fa fa-skull&quot;></i>">1</option>
+									<option value="2" data-html="<i class=&quot;fa fa-times&quot;></i>">2</option>
+									<option value="3" data-html="<i class=&quot;fa fa-question&quot;></i>">3</option>
+									<option value="4" data-html="<i class=&quot;fa fa-check&quot;></i>">4</option>
+									<option value="5" data-html="<i class=&quot;fa fa-check-double&quot;></i>">5</option>
 								</select>
 							</div>
 							<div class="btn-group btn-group-sm" role="group"
 								aria-label="First group">
+								<button type="button" class="btn btn-dark showInContext">
+									<i class="fa fa-list"></i>&nbsp;
+								</button>
+								
 								#if( $number > 1 )
 								<button type="button" class="btn btn-warning jumpToPrevious">
 									<i class="fa fa-arrow-circle-o-up"></i>&nbsp;
@@ -123,14 +131,36 @@
 <script>
 document.addEventListener("DOMContentLoaded", function(event) { 
 	$(document).ready(function(){
-		
+
 		$("[name=options]").change(function(event, what){
 			var action = $(event.target).val();
 			if(action == 'list'){
 				$("div.block-false").hide();
+				$("button.showInContext i").removeClass("fa-list").addClass("fa-stream");
 			}else{
 				$("div.block-false").show();
+				$("button.showInContext i").removeClass("fa-stream").addClass("fa-list");
 			}
+		});
+		
+		function jumpToMe(e){
+			var targetLE = $(e.target).closest("div.block-true");
+			if(!targetLE){
+				return;
+			}
+			$([document.documentElement, document.body]).animate({
+        		scrollTop: targetLE.offset().top-80
+    		}, 1000);
+		}
+		$(".showInContext").click(function(e){
+			if($("#inText").hasClass("active")){
+				// In text
+				$("#asList").click();
+			}else{
+				// As list
+				$("#inText").click();
+			}
+			jumpToMe(e);
 		});
 		
 		$(".jumpToFirst").click(function(){
@@ -176,12 +206,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				    $(this).val(rating+"");
 		    	  }
 		      }).barrating('show', {
-		    	    theme: 'bars-square',
+				  //theme: 'movie-rating',
+				  theme: 'bars-square',
+				  // theme: 'fontawesome-stars',
 		            showValues: true,
 		            showSelectedRating: false,
 		            allowEmpty: true
 		        });
 		});
+		
+		var sensitivityScale = JSON.parse($("#scaleJson").html());
+		var currentSensitivity = $("#sensitivity").val();
+		var currentSensitivityLabel = $(".le-sensitivity-label").html();
 		
 		$(".le-rating").change(function(event){
 			var rating = $(event.target).val();
@@ -190,9 +226,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			var to = $(event.target).data("to");
 			var text = $(event.target).closest("div.block-true").find(".le-text").html();
 			var feedbackId = url+":"+from+""+to;
-			/* console.log("hit rating", feedbackId); */
-			#set ( $d = "$")
-			var jqxhr = ${d}.post( "/findler/feedback", { url: url, text: text, from: from, to: to, rating: rating } ).done(function() {
+			var jqxhr = jQuery.post( "/findler/feedback", { url: url, text: text, from: from, to: to, rating: rating, th: currentSensitivity } ).done(function() {
 			    alert( "Thank you for your feedback" );
 			    if(window.localStorage){
 			    	window.localStorage.setItem(feedbackId,rating);
@@ -206,9 +240,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
  			
 		});
 		
-		var sensitivityScale = JSON.parse($("#scaleJson").html());
-		var currentSensitivity = $("#sensitivity").val();
-		var currentSensitivityLabel = $(".le-sensitivity-label").html();
 		// Sensitivity slider
 		function onChangeSensitivity(val){
 			th = sensitivityScale[val];
@@ -217,8 +248,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			//console.log(currentSensitivityLabel, newSensitivityLabel);
 			if(newSensitivityLabel!=currentSensitivityLabel){
 				$(".le-sensitivity-label").addClass("le-sensitivity-modified");	
+				$(".le-sensitivity-update").removeAttr("disabled");
+				$(".le-sensitivity-reset").removeAttr("disabled");
+
 			}else{
 				$(".le-sensitivity-label").removeClass("le-sensitivity-modified");
+				$(".le-sensitivity-update").attr("disabled","disabled");
+				$(".le-sensitivity-reset").attr("disabled","disabled");
 			}
 			$(".le-sensitivity-label").html(newSensitivityLabel);
 		}
@@ -241,7 +277,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		}); 
 
 		$(".le-sensitivity-more").click(function(){
-			
 			var val = $("#sensitivity").val();
 			/* console.log("more", val); */
 			if(val >= 100) return;

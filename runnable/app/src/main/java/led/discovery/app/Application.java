@@ -8,6 +8,8 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
 import org.apache.velocity.app.VelocityEngine;
+import org.apache.velocity.runtime.RuntimeConstants;
+import org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +22,7 @@ public class Application extends ResourceConfig implements ServletContextListene
 	public final static String CACHE_DIR = "LED_CACHE_DIR";
 	public final static String CACHE = "LED_CACHE";
 	public final static String VELOCITY = "LED_VELOCITY";
+	public static final String TEMPLATES = "LED_TEMPLATE";
 
 	public Application() {
 		log.info("Inizialise resources.");
@@ -59,16 +62,16 @@ public class Application extends ResourceConfig implements ServletContextListene
 		// Initialise template engine
 		VelocityEngine engine = new VelocityEngine();
 		Properties p = new Properties();
-		p.setProperty("resource.loader", "webapp");
-		p.setProperty("webapp.resource.loader.class", "org.apache.velocity.tools.view.WebappResourceLoader");
-		p.setProperty("webapp.resource.loader.path", "/WEB-INF/templates/");
-//		p.setProperty("resource.loader", "class");
-//		p.setProperty("class.resource.loader.description", "Velocity Classpath Resource Loader");
-//		p.setProperty("class.resource.loader.class", "org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader");
-		p.setProperty("file.resource.loader.cache", "false");
+//		p.setProperty("resource.loader", "webapp");
+//		p.setProperty("webapp.resource.loader.class", "org.apache.velocity.tools.view.WebappResourceLoader");
+//		p.setProperty("webapp.resource.loader.path", "/WEB-INF/templates/");
+		p.setProperty(RuntimeConstants.RESOURCE_LOADER, "classpath"); 
+		p.setProperty("classpath.resource.loader.class", ClasspathResourceLoader.class.getName());
+		p.setProperty("file.resource.loader.cache", "true");
 		engine.setApplicationAttribute("javax.servlet.ServletContext", ctx);
 		engine.init(p);
 		ctx.setAttribute(VELOCITY, engine);
+		ctx.setAttribute(TEMPLATES, "/WEB-INF/templates");
 		log.info("Initialized.");
 	}
 }

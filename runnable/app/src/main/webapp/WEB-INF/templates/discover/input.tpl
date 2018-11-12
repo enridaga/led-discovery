@@ -1,3 +1,4 @@
+<br/>
 <div class="container">
 <ul class="nav col-lg-8 col-md-10 mx-auto">
   <li class="nav-item">
@@ -8,10 +9,10 @@
   </li>
 </ul>
 <div id="inputURLForm" class="le-input-area">
-#parse('discover/input-url.tpl')
+#parse($servlet.getTemplate('/discover/input-url.tpl'))
 </div>
 <div id="inputFileForm" class="le-input-area le-invisible">
-#parse('discover/input-file.tpl')
+#parse($servlet.getTemplate('/discover/input-file.tpl'))
 </div>
 <script>
 document.addEventListener("DOMContentLoaded", function(event) { 

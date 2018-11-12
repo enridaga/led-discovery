@@ -60,7 +60,7 @@ public class Feedback {
 	@Produces("application/json")
 	public Response POST(@Context HttpServletRequest request, @FormParam("url") String url,
 			@FormParam("text") String text, @FormParam("from") int from, @FormParam("to") int to,
-			@FormParam("rating") int rating) {
+			@FormParam("rating") int rating, @FormParam("th") double th) {
 		try {
 			String sessionId = request.getSession().getId();
 			L.debug("[{}] {} - {}:{} {}", new Object[] { sessionId, url, from, to, rating });
@@ -74,6 +74,8 @@ public class Feedback {
 			sb.append(sessionId);
 			sb.append(',');
 			sb.append(new CsvEscaper().translate(url));
+			sb.append(',');
+			sb.append(Double.toString(th));
 			sb.append(',');
 			sb.append(Integer.toString(from));
 			sb.append(':');

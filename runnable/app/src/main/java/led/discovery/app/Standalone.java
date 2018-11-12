@@ -1,8 +1,14 @@
 package led.discovery.app;
 
 import org.eclipse.jetty.server.Connector;
+import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
+import org.eclipse.jetty.server.handler.ContextHandler;
+import org.eclipse.jetty.server.handler.HandlerCollection;
+import org.eclipse.jetty.server.handler.HandlerList;
+import org.eclipse.jetty.server.handler.ResourceHandler;
+import org.eclipse.jetty.util.resource.Resource;
 import org.eclipse.jetty.webapp.WebAppContext;
 
 public class Standalone {
@@ -18,16 +24,44 @@ public class Standalone {
 		connector.setPort(cli.getPort());
 		server.setConnectors(new Connector[] { connector });
 		System.out.println("#2: findler is starting on port " + cli.getPort());
-		WebAppContext root = new WebAppContext();
-		root.setContextPath("/");
+//		WebAppContext root = new WebAppContext();
+//		root.setContextPath("/");
+//
+//		String webxmlLocation = Standalone.class.getResource("/WEB-INF/web.xml").toString();
+//		root.setDescriptor(webxmlLocation);
+//
+////		String resLocation = Standalone.class.getResource("/static").toString();
+//		root.setResourceBase(".");
+//		root.setParentLoaderPriority(true);
+//		server.setHandler(root);
+		
+		// Handlers
+		HandlerCollection handlers = new HandlerCollection();
+
+		// Web App
+		WebAppContext webapp = new WebAppContext();
+		webapp.setContextPath("/");
 
 		String webxmlLocation = Standalone.class.getResource("/WEB-INF/web.xml").toString();
-		root.setDescriptor(webxmlLocation);
+		webapp.setDescriptor(webxmlLocation);
 
 		String resLocation = Standalone.class.getResource("/static").toString();
-		root.setResourceBase(resLocation);
-		root.setParentLoaderPriority(true);
-		server.setHandler(root);
+		webapp.setResourceBase(resLocation);
+		webapp.setParentLoaderPriority(true);
+
+		// Resources
+		for (String resource : new String[] { "css", "img", "vendor", "js" }) {
+			ContextHandler capHandler = new ContextHandler();
+			capHandler.setContextPath("/" + resource);
+			ResourceHandler resHandler = new ResourceHandler();
+			resHandler.setBaseResource(Resource.newClassPathResource(resource));
+			capHandler.setHandler(resHandler);
+			handlers.addHandler(capHandler);
+		}
+		handlers.addHandler(webapp);
+		server.setHandler(handlers);
+		
+		
 		System.out.println("#3: resources setup");
 
 		try {
