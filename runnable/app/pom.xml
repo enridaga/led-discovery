@@ -141,9 +141,15 @@
 			<groupId>org.apache.velocity</groupId>
 			<artifactId>velocity-engine-core</artifactId>
 		</dependency>
+		<!-- <dependency> <groupId>org.apache.velocity</groupId> <artifactId>velocity-tools</artifactId> 
+			</dependency> -->
 		<dependency>
-			<groupId>org.apache.velocity</groupId>
-			<artifactId>velocity-tools</artifactId>
+			<groupId>org.apache.velocity.tools</groupId>
+			<artifactId>velocity-tools-generic</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.velocity.tools</groupId>
+			<artifactId>velocity-tools-view</artifactId>
 		</dependency>
 	</dependencies>
 	<profiles>
@@ -209,8 +215,9 @@
 					</systemProperties>
 					<webApp>
 						<!-- <overrideDescriptor>src/test/resources/jetty-override-web.xml</overrideDescriptor> -->
-						<!-- <resourceBases> <resourceBase>src/main/webapp/static</resourceBase> 
-							</resourceBases> -->
+						<resourceBases>
+							<resourceBase>src/main/webapp</resourceBase>
+						</resourceBases>
 
 						<!-- no need to scan anything as we're using servlet 2.5 and moreover, 
 							we're not using ServletContainerInitializer(s) -->
