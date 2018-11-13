@@ -105,7 +105,6 @@
 								<button type="button" class="btn btn-dark showInContext">
 									<i class="fa fa-list"></i>&nbsp;
 								</button>
-								
 								#if( $number > 1 )
 								<button type="button" class="btn btn-warning jumpToPrevious">
 									<i class="fa fa-arrow-circle-o-up"></i>&nbsp;
