@@ -12,7 +12,9 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Properties;
 
@@ -70,11 +72,38 @@ public class Discover {
 
 	private LinkedHashMap<Integer, Double> sensitivityScale = null;
 
+	private static Map<String, String> ddat = null;
+
 	@GET
 	@Produces("text/html")
 	public Response htmlGET() {
 		L.debug("GET htmlGET");
 		VelocityContext vcontext = getVelocityContext();
+		if (ddat == null) {
+			ddat = new HashMap<String, String>();
+			// Check if demo URL exists
+			File demo = new File((String) context.getAttribute(Application.DATA_DIR), "demo.txt");
+			if (demo.exists()) {
+				L.debug("Demo file exists");
+				String dco;
+				try {
+					dco = IOUtils.toString(new FileInputStream(demo), StandardCharsets.UTF_8);
+					if (L.isDebugEnabled()) {
+						L.debug("Demo: \n{}", dco);
+					}
+					for (String s : dco.split("\n")) {
+						String[] tk = s.split("\\|");
+						L.debug("{} {}", tk[1], tk[0]);
+						ddat.put(tk[1].trim(), tk[0]);
+					}
+				} catch (Exception e) {
+					L.error("Cannot read demo url lists at " + demo, e);
+				}
+			} else {
+				L.debug("Demo file does not exist: {}", demo);
+			}
+		}
+		vcontext.put("demo", ddat);
 		vcontext.put("body", getTemplate("/discover/input.tpl"));
 		return Response.ok(getRenderer(vcontext).toString()).build();
 	}
@@ -307,9 +336,9 @@ public class Discover {
 
 	public String getTemplate(String relativePath) {
 		String base = (String) context.getAttribute(Application.TEMPLATES);
-		return base + relativePath;	
+		return base + relativePath;
 	}
-	
+
 	public StringWriter getRenderer(VelocityContext vcontext) {
 		StringWriter sw = new StringWriter();
 		VelocityEngine engine = (VelocityEngine) context.getAttribute(Application.VELOCITY);

@@ -67,7 +67,11 @@ public class Application extends ResourceConfig implements ServletContextListene
 //		p.setProperty("webapp.resource.loader.path", "/WEB-INF/templates/");
 		p.setProperty(RuntimeConstants.RESOURCE_LOADER, "classpath"); 
 		p.setProperty("classpath.resource.loader.class", ClasspathResourceLoader.class.getName());
-		p.setProperty("file.resource.loader.cache", "true");
+		if(!log.isDebugEnabled()) {
+			p.setProperty("file.resource.loader.cache", "true");
+		}else {
+			p.setProperty("file.resource.loader.cache", "false");
+		}
 		engine.setApplicationAttribute("javax.servlet.ServletContext", ctx);
 		engine.init(p);
 		ctx.setAttribute(VELOCITY, engine);

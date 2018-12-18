@@ -56,12 +56,12 @@
 				</form>
 				<p></p>
 				<div class="form-group btn-group btn-group-toggle" data-toggle="buttons">
-					<label class="btn btn-warning active" id="inText"> <input type="radio"
-						name="options" id="option1" autocomplete="off" checked
-						value="highlight"> In text
-					</label> <label class="btn btn-warning " id="asList"> <input type="radio"
-						name="options" id="option2" autocomplete="off" value="list">
+					<label class="btn btn-warning " id="asList"> <input type="radio"
+						name="options" id="option2" autocomplete="off" checked value="list">
 						As List
+					</label> <label class="btn btn-warning active" id="inText"> <input type="radio"
+						name="options" id="option1" autocomplete="off" 
+						value="highlight"> In text
 					</label> <label class="btn btn-dark jumpToFirst">first</label>
 				</div>
 				
@@ -70,8 +70,8 @@
 				</div> -->
 				<hr />
 				#set( $number = 0) #foreach( $block in $blocks ) #if($block.isLE())
-				#set( $number = $number + 1) #end #set( $score =
-				$block.getMetadata("score"))
+				#set( $number = $number + 1) #end 
+				#set( $score = $block.getMetadata("score"))
 				<div class="block-$block.isLE()"
 					id="le-$block.offsetStart()-$block.offsetEnd()"
 					name="le-$block.offsetStart()-$block.offsetEnd()"

@@ -12,5 +12,27 @@
 		</form>
 		</div>
 	</div>
+	<div class="row">
+			#if(!$demo.isEmpty())
+            <div class="col-lg-8 col-md-10 mx-auto">
+            	<p>Try:</p>
+            	<ul>
+            	#foreach( $u in $demo.entrySet() )
+    				<li class="demo-try-url"><a href="javascript:void(0)" data-url="$u.getKey()">$u.getValue()</a></li>
+  				#end
+            	</ul>
+            </div>
+            #end
+	</div>
+<script>
+document.addEventListener("DOMContentLoaded", function(event) { 
+	$(document).ready(function(){
+		$(".demo-try-url a").click(function(){
+			$("#url").val($(this).data("url"));
+			$("#sendMessageButton").click();
+		});
+	});
+});
+</script>	
 
 
