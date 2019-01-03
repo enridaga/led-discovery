@@ -56,13 +56,13 @@
 				</form>
 				<p></p>
 				<div class="form-group btn-group btn-group-toggle" data-toggle="buttons">
-					<label class="btn btn-warning " id="asList"> <input type="radio"
+					<label class="btn btn-warning active" id="asList" data-toggle="tooltip" data-placement="top" title="Show as list"> <input type="radio"
 						name="options" id="option2" autocomplete="off" checked value="list">
 						As List
-					</label> <label class="btn btn-warning active" id="inText"> <input type="radio"
+					</label> <label class="btn btn-warning " id="inText" data-toggle="tooltip" data-placement="top" title="Show in context"> <input type="radio"
 						name="options" id="option1" autocomplete="off" 
 						value="highlight"> In text
-					</label> <label class="btn btn-dark jumpToFirst">first</label>
+					</label> <label class="btn btn-dark jumpToFirst" data-toggle="tooltip" data-placement="top" title="Jump to the first result">first</label>
 				</div>
 				
 				<!-- <div class="le-remember-actions">
@@ -93,28 +93,28 @@
 									data-from="$block.offsetStart()" data-to="$block.offsetEnd()"
 									data-url="$source">
 									<option value=""></option>
-									<option value="1" data-html="<i class=&quot;fa fa-skull&quot;></i>">1</option>
-									<option value="2" data-html="<i class=&quot;fa fa-times&quot;></i>">2</option>
-									<option value="3" data-html="<i class=&quot;fa fa-question&quot;></i>">3</option>
-									<option value="4" data-html="<i class=&quot;fa fa-check&quot;></i>">4</option>
-									<option value="5" data-html="<i class=&quot;fa fa-check-double&quot;></i>">5</option>
+									<option value="1" data-html="<i class=&quot;fa fa-skull&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Definitely not&quot;></i>">1</option>
+									<option value="2" data-html="<i class=&quot;fa fa-times&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Probably not&quot;></i>">2</option>
+									<option value="3" data-html="<i class=&quot;fa fa-question&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Maybe&quot;></i>">3</option>
+									<option value="4" data-html="<i class=&quot;fa fa-check&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Probably true&quot;></i>">4</option>
+									<option value="5" data-html="<i class=&quot;fa fa-check-double&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Definitely true&quot;></i>">5</option>
 								</select>
 							</div>
 							<div class="btn-group btn-group-sm" role="group"
 								aria-label="First group">
-								<button type="button" class="btn btn-dark showInContext">
-									<i class="fa fa-list"></i>&nbsp;
+								<button type="button" class="btn btn-dark showInContext" data-toggle="tooltip" data-placement="top" title="Show in context">
+									<i class="fa fa-stream"></i>&nbsp;
 								</button>
 								#if( $number > 1 )
-								<button type="button" class="btn btn-warning jumpToPrevious">
+								<button type="button" class="btn btn-warning jumpToPrevious" data-toggle="tooltip" data-placement="top" title="Jump to the previous result">
 									<i class="fa fa-arrow-circle-o-up"></i>&nbsp;
 								</button>
 								#end #if( $number < $found )
-								<button type="button" class="btn btn-warning jumpToNext">
+								<button type="button" class="btn btn-warning jumpToNext" data-toggle="tooltip" data-placement="top" title="Jump to the next result">
 									<i class="fa fa-arrow-circle-o-down"></i>&nbsp;
 								</button>
 								#end
-								<button type="button" class="btn btn-dark jumpToTop">
+								<button type="button" class="btn btn-dark jumpToTop" data-toggle="tooltip" data-placement="top" title="Jump to the top">
 									<i class="fa fa-level-up"></i>&nbsp;
 								</button>
 							</div>
@@ -155,10 +155,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			if($("#inText").hasClass("active")){
 				// In text
 				$("#asList").click();
+				$(".showInContext").attr("data-original-title","Show in context")
 			}else{
 				// As list
 				$("#inText").click();
+				$(".showInContext").attr("data-original-title","Show as list")
 			}
+			$(".showInContext").tooltip()
 			jumpToMe(e);
 		});
 		
@@ -235,8 +238,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			  }).always(function() {
 			    /* alert( "finished" ); */
 			  });
-
- 			
 		});
 		
 		// Sensitivity slider
@@ -296,6 +297,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			$("#sensitivity").slider("setValue", currentSensitivity);
 			onChangeSensitivity(currentSensitivity);
 		});
+		$(".le-group-rating").hover(function(){
+			$(this).find('[data-toggle="tooltip"]').tooltip()
+		});
+		$('[data-toggle="tooltip"]').tooltip()
 	});
 });
    </script>
