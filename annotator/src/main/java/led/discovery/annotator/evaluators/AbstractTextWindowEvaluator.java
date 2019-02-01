@@ -26,7 +26,7 @@ public abstract class AbstractTextWindowEvaluator implements TextWindowEvaluator
 
 	protected boolean skip(CoreLabel token) {
 		String lemma = token.getString(LemmaAnnotation.class);
-		String pos = token.getString(PartOfSpeechAnnotation.class);
+//		String pos = token.getString(PartOfSpeechAnnotation.class);
 		if (stopwords.contains(lemma)) {
 			return true;
 		}
