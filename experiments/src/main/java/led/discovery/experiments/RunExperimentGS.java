@@ -6,10 +6,13 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Properties;
+import java.util.TreeMap;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
@@ -137,7 +140,25 @@ public class RunExperimentGS {
 					fw.write(",");
 					fw.write(Integer.toString(text.length()));
 				}
-
+				
+				// Add Column for Scores
+				fw.write(",");
+				Map<Object,Double> scores = tw.getScores();
+				TreeMap<String,Double> scoresSorted = new TreeMap<String,Double>();
+				for(Entry<Object,Double> en: scores.entrySet()) {
+					scoresSorted.put(((Class<?>)en.getKey()).getSimpleName(), en.getValue());
+				}
+				boolean first = true;
+				for(Entry<String,Double> en: scoresSorted.entrySet()) {
+					if(first) {
+						first = false;
+					}else {
+						fw.write("&");
+					}
+					fw.write(en.getKey());
+					fw.write("=");
+					fw.write(Double.toString(en.getValue()));
+				}
 				fw.write("\n");
 			}
 		}
