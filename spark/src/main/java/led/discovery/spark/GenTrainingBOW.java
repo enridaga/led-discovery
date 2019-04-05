@@ -43,7 +43,6 @@ public class GenTrainingBOW {
 		this.positivesFolder = new File(args[0]);
 		this.negativesFolder = new File(args[1]);
 		this.outputFile = new File(args[2]);
-		this.outputFile = new File(args[2]);
 	}
 
 	private void _clean() {

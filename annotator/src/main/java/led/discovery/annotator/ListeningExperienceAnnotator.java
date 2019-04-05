@@ -21,12 +21,15 @@ import edu.stanford.nlp.util.ArraySet;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.ErasureUtils;
 import led.discovery.analysis.entities.spot.SpotlightClient;
+import led.discovery.annotator.MusicalEntityAnnotator.MusicalEntityAnnotation;
 import led.discovery.annotator.MusicalHeatAnnotator.MusicalHeatAnnotation;
 import led.discovery.annotator.MusicalHeatAnnotator.MusicalHeatScoreAnnotation;
 import led.discovery.annotator.evaluators.CascadingEvaluator;
+import led.discovery.annotator.evaluators.HeatEntityEvaluator;
 //import led.discovery.annotator.evaluators.EntitiesRandomForestEvaluator;
 import led.discovery.annotator.evaluators.HeatEvaluator;
 import led.discovery.annotator.evaluators.LedComponentsEvaluator;
+import led.discovery.annotator.evaluators.MusicalEntityEvaluator;
 import led.discovery.annotator.evaluators.RandomForestEvaluator;
 import led.discovery.annotator.evaluators.SentiMusDepEvaluator;
 import led.discovery.annotator.window.FixedWindow;
@@ -47,6 +50,8 @@ public class ListeningExperienceAnnotator implements Annotator {
 	CascadingEvaluator Evaluators;
 	// private List<TextWindowEvaluator> _E = new ArrayList<TextWindowEvaluator>();
 	private HeatEvaluator heat = null;
+	private MusicalEntityEvaluator musicentity = null;
+	private HeatEntityEvaluator heatmusicentity = null;
 	private SentiMusDepEvaluator sentimus = null;
 	private LedComponentsEvaluator compo = null;
 	private StanfordNLPProvider provider;
@@ -169,40 +174,22 @@ public class ListeningExperienceAnnotator implements Annotator {
 						log.error("Cannot craete forest evaluator", e);
 					}
 				}
-
+				
+				if (ev.trim().toLowerCase().equals("musicentity")) {
+					log.info("musicentity evaluator");
+					musicentity = new MusicalEntityEvaluator(properties);
+					Evaluators.add(musicentity);
+				}
+				
+				if (ev.trim().toLowerCase().equals("heatmusicentity")) {
+					log.info("musicentity evaluator");
+					heatmusicentity = new HeatEntityEvaluator(properties, cleaner, stopwords);
+					Evaluators.add(heatmusicentity);
+				}
 			}
-			// Evaluators = Collections.unmodifiableList(Evaluators);
 		} else {
-			// Set default
-
+			// Set default?
 		}
-
-//		if (Evaluators.contains("heat")) {
-//			log.info("heat evaluator");
-//			heat = new HeatEvaluator(properties);
-//			_E.add(heat);
-//		}
-//		if (Evaluators.contains("compo")) {
-//			log.info("compo evaluator");
-//			compo = new LedComponentsEvaluator(properties);
-//			_E.add(compo);
-//		}
-//		if (Evaluators.contains("forest")) {
-//			log.info("forest evaluator");
-//			try {
-//				_E.add(new RandomForestEvaluator(properties, provider, spotlight));
-//			} catch (IOException e) {
-//				log.error("Cannot craete forest evaluator", e);
-//			}
-//		}
-//		if (Evaluators.contains("entities")) {
-//			log.info("entities evaluator");
-//			try {
-//				_E.add(new EntitiesRandomForestEvaluator(properties, spotlight));
-//			} catch (Exception e) {
-//				log.error("Cannot craete entities evaluator", e);
-//			}
-//		}
 	}
 
 	@Override
@@ -282,6 +269,9 @@ public class ListeningExperienceAnnotator implements Annotator {
 		if (heat != null && Evaluators.contains(heat)) {
 			set.add(MusicalHeatScoreAnnotation.class);
 			set.add(MusicalHeatAnnotation.class);
+		}
+		if (musicentity != null && Evaluators.contains(musicentity)) {
+			set.add(MusicalEntityAnnotation.class);
 		}
 		return Collections.unmodifiableSet(set);
 	}

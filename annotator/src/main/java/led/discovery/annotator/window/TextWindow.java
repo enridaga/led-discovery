@@ -97,6 +97,10 @@ public class TextWindow {
 		scores.put(key, score);
 	}
 
+	public Map<Object,Double> getScores(){
+		return Collections.unmodifiableMap(scores);
+	}
+	
 	public Double getScore(Object key) {
 		return scores.get(key);
 	}
