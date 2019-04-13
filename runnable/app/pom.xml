@@ -223,12 +223,13 @@
 						<!-- for more relevant information regarding scanning of classes refer 
 							to https://java.net/jira/browse/SERVLET_SPEC-36 -->
 						<!-- <webInfIncludeJarPattern>.*</webInfIncludeJarPattern> <containerIncludeJarPattern>^$</containerIncludeJarPattern> -->
-						<!--<webInfIncludeJarPattern>.*/spring-[^/]*\.jar$|.*/.*jsp-api-[^/]\.jar$|./.*jsp-[^/]\.jar$|./.*taglibs[^/]*\.jar$</webInfIncludeJarPattern> -->
+						<!-- <webInfIncludeJarPattern>.*/spring-[^/]*\.jar$|.*/.*jsp-api-[^/]\.jar$|./.*jsp-[^/]\.jar$|./.*taglibs[^/]*\.jar$</webInfIncludeJarPattern> -->
 
 					</webApp>
 					<!-- <jettyXml>src/test/resources/jetty.xml</jettyXml> -->
 					<!-- <reload>manual</reload> -->
 					<scanClassesPattern>
+						<include>led.discovery/*</include>
 						<!-- <excludes> <exclude>**/Foo.class</exclude> </excludes> -->
 					</scanClassesPattern>
 				</configuration>

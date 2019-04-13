@@ -2,6 +2,7 @@ package led.discovery.annotator;
 
 import java.io.File;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -10,6 +11,7 @@ import java.util.List;
 import java.util.Properties;
 import java.util.Set;
 
+import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -21,7 +23,7 @@ import org.apache.http.message.BasicNameValuePair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.amazonaws.util.IOUtils;
+//import com.amazonaws.util.IOUtils;
 
 import edu.stanford.nlp.ling.CoreAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
@@ -30,7 +32,7 @@ import edu.stanford.nlp.pipeline.Annotator;
 import edu.stanford.nlp.util.ArraySet;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.ErasureUtils;
-import led.discovery.analysis.entities.spot.SpotlightResponse;
+
 import led.discovery.annotator.DBpediaSpotlightAnnotator.DBpediaEntityAnnotation;
 import led.discovery.annotator.DBpediaSpotlightAnnotator.EntityLabel;
 import led.discovery.annotator.apicache.SimpleCache;
@@ -112,7 +114,8 @@ public class MusicalEntityAnnotator implements Annotator {
 				HttpResponse response = httpclient.execute(httppost);
 				HttpEntity entity = response.getEntity();
 				try (InputStream instream = entity.getContent()) {
-					result = IOUtils.toString(instream);
+					// TODO Check headers ...
+					result = IOUtils.toString(instream, StandardCharsets.UTF_8);
 				}
 				if (updateCache) {
 					cache.set_cache(key, result);

@@ -29,6 +29,7 @@ import led.discovery.annotator.apicache.SimpleCache;
 public class DBpediaSpotlightAnnotator implements Annotator {
 	private Logger log = LoggerFactory.getLogger(DBpediaSpotlightAnnotator.class);
 	private SimpleCache cache;
+
 	/**
 	 * A URI
 	 *
@@ -45,6 +46,7 @@ public class DBpediaSpotlightAnnotator implements Annotator {
 	private SpotlightClient client;
 	private double confidence;
 	private int support;
+
 	public DBpediaSpotlightAnnotator(String name, Properties props) {
 		// load the lemma file
 		// format should be tsv with word and lemma
@@ -67,14 +69,14 @@ public class DBpediaSpotlightAnnotator implements Annotator {
 			log.trace("{}", sentence);
 			int sentenceOffset = sentence.get(CoreAnnotations.TokensAnnotation.class).get(0).beginPosition();
 			String text = sentence.get(CoreAnnotations.TextAnnotation.class);
-			
+
 			try {
 				String key = SimpleCache.hashLabel(text + confidence + support);
 				SpotlightResponse r;
 				boolean updateCache = false;
-				if(cache.is_cached(key)) {
+				if (cache.is_cached(key)) {
 					r = (SpotlightResponse) cache.get_cache_as_object(key);
-				}else {
+				} else {
 					updateCache = true;
 					r = client.perform(text, confidence, support);
 				}
@@ -83,8 +85,7 @@ public class DBpediaSpotlightAnnotator implements Annotator {
 					log.trace("{} [{}]", an.getUri(), an.getConfidence());
 					EntityLabel el = new EntityLabel();
 					el.setBeginPosition(sentenceOffset + an.getOffset());
-					el.setEndPosition(sentenceOffset + an.getOffset() +
-						an.getSurfaceForm().length());
+					el.setEndPosition(sentenceOffset + an.getOffset() + an.getSurfaceForm().length());
 					el.setNER(an.getUri());
 					el.setUri(an.getUri());
 					List<String> types = an.getTypes();
@@ -95,7 +96,7 @@ public class DBpediaSpotlightAnnotator implements Annotator {
 					entities.add(el);
 				}
 				sentence.set(DBpediaEntityAnnotation.class, entities);
-				if(updateCache) {
+				if (updateCache) {
 					cache.set_cache(key, r);
 				}
 			} catch (IOException e) {
@@ -113,7 +114,8 @@ public class DBpediaSpotlightAnnotator implements Annotator {
 
 	@Override
 	public Set<Class<? extends CoreAnnotation>> requires() {
-		return Collections.unmodifiableSet(new ArraySet<>(Arrays.asList(CoreAnnotations.TextAnnotation.class, CoreAnnotations.TokensAnnotation.class, CoreAnnotations.SentencesAnnotation.class)));
+		return Collections.unmodifiableSet(new ArraySet<>(Arrays.asList(CoreAnnotations.TextAnnotation.class,
+				CoreAnnotations.TokensAnnotation.class, CoreAnnotations.SentencesAnnotation.class)));
 	}
 
 	public class EntityLabel extends CoreLabel {
@@ -140,5 +142,8 @@ public class DBpediaSpotlightAnnotator implements Annotator {
 		private String uri;
 		private List<String> types;
 
+		public String toString() {
+			return uri;
+		}
 	}
 }

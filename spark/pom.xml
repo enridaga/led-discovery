@@ -186,7 +186,7 @@
 						</configuration>
 					</execution>
 					<execution>
-						<id>gen-training-file-le-neg</id>
+						<id>gen-training-file-le-neg</id> <!-- This is the one used in the final evaluation -->
 						<goals>
 							<goal>exec</goal>
 						</goals>
@@ -306,7 +306,7 @@
 						</configuration>
 					</execution>
 					<execution>
-						<id>train-random-forest</id>
+						<id>train-random-forest</id> <!-- This is the one used in the final evaluation -->
 						<goals>
 							<goal>exec</goal>
 						</goals>
@@ -319,7 +319,7 @@
 								<argument>-Dlog4j.configurationFile=${project.basedir}/src/test/resources/log4j2.xml</argument>
 								<argument>led.discovery.spark.TrainRandomForestModel</argument>
 								<argument>${project.basedir}/../data/analysis/features-${features}.parquet</argument>
-								<argument>${project.basedir}/../data/analysis/model-rf-${features}.parquet</argument>
+								<argument>${project.basedir}/../data/analysis/model-rf-${features}-reproduced.parquet</argument>
 							</arguments>
 						</configuration>
 					</execution>

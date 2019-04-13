@@ -18,12 +18,12 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
 	$(document).ready(function(){
 		$(".le-input-selector").click(function(){
-			console.log("Clicked", this);
+			/*console.log("Clicked", this);*/
 			var elem = $(this);
 			var target = elem.data("enables");
 			$(".le-input-area").hide();
 			$("#" + target).show();
-			console.log("target", target);
+			/* console.log("target", target); */
 			$(".le-input-selector").removeClass("active");
 			elem.addClass("active");
 		});

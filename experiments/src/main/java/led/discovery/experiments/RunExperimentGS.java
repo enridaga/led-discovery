@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Properties;
-import java.util.Set;
 import java.util.TreeMap;
 
 import org.apache.commons.csv.CSVFormat;
@@ -29,17 +28,14 @@ import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import edu.stanford.nlp.semgraph.SemanticGraph;
-import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations.BasicDependenciesAnnotation;
-import edu.stanford.nlp.trees.TypedDependency;
 import edu.stanford.nlp.util.CoreMap;
 import led.discovery.annotator.DBpediaSpotlightAnnotator.DBpediaEntityAnnotation;
 import led.discovery.annotator.DBpediaSpotlightAnnotator.EntityLabel;
 import led.discovery.annotator.ListeningExperienceAnnotator.ListeningExperienceAnnotation;
 import led.discovery.annotator.ListeningExperienceAnnotator.NotListeningExperienceAnnotation;
-import led.discovery.annotator.MusicalEntityAnnotator.MusicalEntityAnnotation;
 import led.discovery.annotator.MusicalHeatAnnotator.MusicalHeatScoreAnnotation;
-import led.discovery.annotator.evaluators.HeatEntityEvaluator;
+import led.discovery.annotator.evaluators.HeatEntityEvaluator.HeatEntityScoreAnnotation;
+import led.discovery.annotator.evaluators.HeatEntityEvaluator.MusicalEntityUriAnnotation;
 import led.discovery.annotator.window.TextWindow;
 
 public class RunExperimentGS {
@@ -111,7 +107,7 @@ public class RunExperimentGS {
 					CSVRecord row = iter.next();
 					boolean expected = row.get(0).equals("1.0");
 					String source = row.get(1);
-					if(sources.contains(source)) {
+					if (sources.contains(source)) {
 						L.info("Source: {} [{}]", source, expected);
 
 						String text = row.get(2);
@@ -123,7 +119,7 @@ public class RunExperimentGS {
 
 						List<TextWindow> passed = annotation.get(ListeningExperienceAnnotation.class);
 						List<TextWindow> notPassed = annotation.get(NotListeningExperienceAnnotation.class);
-						
+
 						TextWindow tw;
 						if (passed.size() == 1) {
 							L.info("PASSED");
@@ -132,31 +128,44 @@ public class RunExperimentGS {
 							L.info("NOT PASSED");
 							tw = notPassed.get(0);
 						}
-						
-						for(CoreMap cm:tw.sentences()) {
-							SemanticGraph tree = cm.get(BasicDependenciesAnnotation.class);
-							List<EntityLabel> entities = cm.get(DBpediaEntityAnnotation.class);
-							Set<String> musicEntities = cm.get(MusicalEntityAnnotation.class);
-							for (TypedDependency co : tree.typedDependencies()) {
-								L.info("> {}", co);
-							}
-						}
-						
-						Map<Object, Double> scores = tw.getScores();
-						TreeMap<String, Double> scoresSorted = new TreeMap<String, Double>();
-						for (Entry<Object, Double> en : scores.entrySet()) {
 
-							String k;
-							if (en.getKey() instanceof Class<?>) {
-								k = ((Class<?>) en.getKey()).getSimpleName();
-							} else {
-								k = en.getKey().toString();
+						Double tot = 0.0;
+						int len = 0;
+						for (CoreMap cm : tw.sentences()) {
+							List<EntityLabel> entities = cm.get(DBpediaEntityAnnotation.class);
+							System.out.println();
+							L.info("> {}", entities);
+							System.out.println();
+							for (CoreLabel to : cm.get(CoreAnnotations.TokensAnnotation.class)) {
+//								if (!to.containsKey(HeatEntityScoreAnnotation.class))
+//									continue;
+								len++;
+
+								System.out.print(to.lemma());
+								System.out.print("[");
+								System.out.print(to.tag().toLowerCase().substring(0,1));
+								System.out.print("]");
+								if (to.containsKey(MusicalEntityUriAnnotation.class)) {
+									System.out.print("->");
+									System.out.print(to.get(MusicalEntityUriAnnotation.class));
+								} 
+								System.out.print(":");
+								Double val = to.get(HeatEntityScoreAnnotation.class);
+								if (val == null)
+									val = 0.0;
+								tot += val;
+								double ts = to.get(MusicalHeatScoreAnnotation.class);
+								System.out.print(Double.toString(ts));
+								System.out.print(":");
+								System.out.print(Double.toString(val));
+								System.out.print(" ");
 							}
-							scoresSorted.put(k, en.getValue());
 						}
-						for (Entry<String, Double> en : scoresSorted.entrySet()) {
-							L.info("{} = {}", en.getKey(),Double.toString(en.getValue()));
-						}
+						Double mean = tot / len;
+						System.out.println();
+						System.out.print("Mean: ");
+						System.out.print(Double.toString(mean));
+						System.out.println("");
 					}
 				}
 			}

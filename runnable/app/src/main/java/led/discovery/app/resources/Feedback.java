@@ -48,12 +48,14 @@ public class Feedback {
 		feedbackFile = "/feedback" + date + ".csv";
 		L.info("Feedback file: {}", feedbackFile);
 	}
-	
+
 	@GET
 	public Response htmlGET() {
 		L.info("HIT GET");
 		return Response.ok("OK!").build();
 	}
+
+	private final static Object lock = new Object();
 
 	@POST
 	@Consumes("application/x-www-form-urlencoded")
@@ -69,7 +71,6 @@ public class Feedback {
 			String pattern = "-yyyy-MM-dd";
 			SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 			String date = simpleDateFormat.format(new Date());
-			FileWriter fw = new FileWriter(new File(dataDir, feedbackFile), true);
 			StringBuilder sb = new StringBuilder();
 			sb.append(sessionId);
 			sb.append(',');
@@ -85,8 +86,11 @@ public class Feedback {
 			sb.append(',');
 			sb.append(new CsvEscaper().translate(text));
 			sb.append('\n');
-			fw.write(sb.toString());
-			fw.close();
+			synchronized (lock) {
+				FileWriter fw = new FileWriter(new File(dataDir, feedbackFile), true);
+				fw.write(sb.toString());
+				fw.close();
+			}
 			L.debug("Written to {}", feedbackFile);
 			return Response.ok().build();
 		} catch (IOException e) {

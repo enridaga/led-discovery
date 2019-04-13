@@ -16,6 +16,7 @@
 				<p>
 					<strong>$found</strong> traces of listening experiences found.	
 				</p>
+				#if( $!userInputEnabled )
 				<p><span>Skepticism: <span class="le-sensitivity-label">$sensitivity/100</span></span>
 								- Increase to obtain less results.</p>
 				
@@ -55,6 +56,7 @@
 				</div>
 				</form>
 				<p></p>
+				#end
 				<div class="form-group btn-group btn-group-toggle" data-toggle="buttons">
 					<label class="btn btn-warning active" id="asList" data-toggle="tooltip" data-placement="top" title="Show as list"> <input type="radio"
 						name="options" id="option2" autocomplete="off" checked value="list">
@@ -101,7 +103,10 @@
 								</select>
 							</div>
 							<div class="btn-group btn-group-sm" role="group"
-								aria-label="First group">
+								aria-label="group">
+								<button type="button" class="btn btn-dark wrapUnwrap" data-toggle="tooltip" data-placement="top" title="Wrap/unwrap">
+									<i class="fa fa-paragraph"></i>&nbsp;
+								</button>
 								<button type="button" class="btn btn-dark showInContext" data-toggle="tooltip" data-placement="top" title="Show in context">
 									<i class="fa fa-stream"></i>&nbsp;
 								</button>
@@ -126,11 +131,13 @@
 		</div>
 	</div>
 </article>
+<div class="alert alert-success" id="feedback-success-alert" style="background-color: #FFF; border-color:#D39E00 ;border-width: 5px; width: 500px; position:fixed; left: 50%; margin-left:-250px; top:-100px;">
+    <strong>Feedback recorded!</strong>
+</div>
 <div id="scaleJson" class="data-container">$sensitivityScale</div>
 <script>
 document.addEventListener("DOMContentLoaded", function(event) { 
 	$(document).ready(function(){
-
 		$("[name=options]").change(function(event, what){
 			var action = $(event.target).val();
 			if(action == 'list'){
@@ -151,6 +158,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         		scrollTop: targetLE.offset().top-80
     		}, 1000);
 		}
+		
 		$(".showInContext").click(function(e){
 			if($("#inText").hasClass("active")){
 				// In text
@@ -170,6 +178,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		 	$([document.documentElement, document.body]).animate({
         		scrollTop: targetLE.offset().top-80
     		}, 1000);
+		});
+		$(".wrapUnwrap").click(function(event){
+			/* console.log(event); */
+			if($(event.target).hasClass("btn-dark")){
+				$(".le-text").addClass("le-text-unwrap");
+				$(".wrapUnwrap").addClass("btn-light").removeClass("btn-dark");
+			}else{
+				$(".le-text").removeClass("le-text-unwrap");
+				$(".wrapUnwrap").removeClass("btn-light").addClass("btn-dark");
+			}
+			jumpToMe(event);
 		});
 		$(".jumpToPrevious").click(function(event){
 			var targetLE = $(event.target).closest("div.block-true").prevAll("div.block-true").first();
@@ -200,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		    	  var url = $(this).data("url");
 				  var from = $(this).data("from");
 				  var to = $(this).data("to");
-				  var feedbackId = url+":"+from+""+to;
+				  var feedbackId = url+":"+from+":"+to;
 				  /* console.log(feedbackId, url); */
 		    	  if(window.localStorage &&  window.localStorage.getItem(feedbackId) ){
 				    var rating = window.localStorage.getItem(feedbackId);
@@ -221,15 +240,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		var currentSensitivity = $("#sensitivity").val();
 		var currentSensitivityLabel = $(".le-sensitivity-label").html();
 		
+		$("#feedback-success-alert").hide();
 		$(".le-rating").change(function(event){
+			
+			/* var e = event || window.event;
+
+		    var pageX = e.pageX;
+		    var pageY = e.pageY;
+
+		    // IE 8
+		    if (pageX === undefined) {
+		        pageX = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+		        pageY = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+		    } */
+		    $("#feedback-success-alert").css("top", 200);
+			
 			var rating = $(event.target).val();
 			var url = $(event.target).data("url");
 			var from = $(event.target).data("from");
 			var to = $(event.target).data("to");
 			var text = $(event.target).closest("div.block-true").find(".le-text").html();
-			var feedbackId = url+":"+from+""+to;
+			var feedbackId = url+":"+from+":"+to;
 			var jqxhr = jQuery.post( "/findler/feedback", { url: url, text: text, from: from, to: to, rating: rating, th: currentSensitivity } ).done(function() {
-			    alert( "Thank you for your feedback" );
+			    /* alert( "Thank you for your feedback" ); */
+			    $("#feedback-success-alert").fadeTo(2000, 500).slideUp(500, function(){
+			        $("#feedback-success-alert").fadeOut(500);
+			    });
 			    if(window.localStorage){
 			    	window.localStorage.setItem(feedbackId,rating);
 			    }

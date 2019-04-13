@@ -8,10 +8,12 @@ import java.util.Set;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import edu.stanford.nlp.ling.CoreAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.IndexedWord;
 import edu.stanford.nlp.util.CoreMap;
+import edu.stanford.nlp.util.ErasureUtils;
 import led.discovery.annotator.DBpediaSpotlightAnnotator.DBpediaEntityAnnotation;
 import led.discovery.annotator.DBpediaSpotlightAnnotator.EntityLabel;
 import led.discovery.annotator.MusicalEntityAnnotator.MusicalEntityAnnotation;
@@ -25,7 +27,7 @@ public class HeatEntityEvaluator extends AbstractTextWindowEvaluator {
 	private double minValueMet = 100.0;
 	public final static Double DEFAULT_THRESHOLD = 0.00043;
 	private String[] skippos;
-	private Logger log = LoggerFactory.getLogger(HeatEvaluator.class);
+	private Logger log = LoggerFactory.getLogger(HeatEntityEvaluator.class);
 
 	public HeatEntityEvaluator(Properties properties, LemmaCleaner cleaner, Set<String> stopwords) {
 		super(cleaner, stopwords);
@@ -71,12 +73,14 @@ public class HeatEntityEvaluator extends AbstractTextWindowEvaluator {
 					log.trace("{} [{}] = {}", new Object[] { to, to.tag(), ts });
 					entity = findEntity(to, entities, musicEntities);
 					if (entity != null) { // ENTITY BOOST
+						to.set(MusicalEntityUriAnnotation.class, entity);
 						if (ts > 0.0)
 							ts *= 2.0;
 						else
 							ts += 1.078270082; // Standard average score from training
 						log.trace("{} ====> {}", entity, ts);
 					}
+					to.set(HeatEntityScoreAnnotation.class, ts);
 					score += ts;
 				} // ONLY SOME POS CONTRIBUTE TO INCREASE THE SCORE BUT NON RELEVANT TAGS CONTRIBUTE TO DOWNSIZE THE SCORE
 				tokens++;
@@ -110,5 +114,17 @@ public class HeatEntityEvaluator extends AbstractTextWindowEvaluator {
 			}
 		}
 		return null;
+	}
+	public final class HeatEntityScoreAnnotation implements CoreAnnotation<Double> {
+		@Override
+		public Class<Double> getType() {
+			return ErasureUtils.uncheckedCast(Double.class);
+		}
+	}
+	public final class MusicalEntityUriAnnotation implements CoreAnnotation<String> {
+		@Override
+		public Class<String> getType() {
+			return ErasureUtils.uncheckedCast(String.class);
+		}
 	}
 }

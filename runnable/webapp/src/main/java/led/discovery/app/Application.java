@@ -1,6 +1,5 @@
 package led.discovery.app;
 
-import java.io.File;
 import java.util.Properties;
 
 import javax.servlet.ServletContext;
@@ -14,20 +13,13 @@ import org.glassfish.jersey.server.ResourceConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import led.discovery.app.model.FileCache;
-
 public class Application extends ResourceConfig implements ServletContextListener {
 	private Logger log = LoggerFactory.getLogger(Application.class);
-	public final static String DATA_DIR = "LED_DATA_DIR";
-	public final static String CACHE_DIR = "LED_CACHE_DIR";
-	public final static String USER_INPUT_ENABLED = "LED_USER_INPUT_ENABLED";
-	public final static String CACHE = "LED_CACHE";
 	public final static String VELOCITY = "LED_VELOCITY";
-	public static final String TEMPLATES = "LED_TEMPLATE";
-
+	public final static String TEMPLATES = "LED_TEMPLATES";
 	public Application() {
-		log.info("Inizialise resources.");
-		packages("led.discovery.app.resources");
+		log.error("Inizialise resources.");
+		packages("led.discovery.app.resources"); // .packages("com.wordnik.swagger.jaxrs.json");
 	}
 
 	public void contextDestroyed(ServletContextEvent arg0) {
@@ -37,37 +29,7 @@ public class Application extends ResourceConfig implements ServletContextListene
 	public void contextInitialized(ServletContextEvent arg0) {
 		log.info("Initializing context.");
 		ServletContext ctx = arg0.getServletContext();
-		//
-		String dataDir = System.getProperty("led.dataDir");
-		if (dataDir == null || (!new File(dataDir).exists())) {
-			log.error("Invalid or missing led.dataDir: " + dataDir);
-			log.error("was: {}", dataDir);
-			throw new RuntimeException();
-		}
-		ctx.setAttribute(DATA_DIR, dataDir);
-		//
-		String cacheDir = System.getProperty("led.cacheDir");
-		if (cacheDir == null) {
-			log.error("Invalid or missing system property: led.cacheDir");
-			throw new RuntimeException("Missing parameter led.cacheDir");
-		}
-		log.info("cacheDir: {}", cacheDir);
-		try {
-			if (!new File(cacheDir).exists()) {
-				new File(cacheDir).mkdirs();
-			}
-		} catch (SecurityException exe) {
-			throw exe;
-		}
-		//
-		boolean userInputEnabled = Boolean.valueOf(System.getProperty("led.userInputEnabled", "True"));
-		//
-		ctx.setAttribute(USER_INPUT_ENABLED, userInputEnabled);
-		ctx.setAttribute(DATA_DIR, dataDir);
-		//
-		ctx.setAttribute(CACHE_DIR, cacheDir);
-		ctx.setAttribute(CACHE, new FileCache(cacheDir));
-		
+
 		// Initialise template engine
 		VelocityEngine engine = new VelocityEngine();
 		Properties p = new Properties();
@@ -76,11 +38,6 @@ public class Application extends ResourceConfig implements ServletContextListene
 //		p.setProperty("webapp.resource.loader.path", "/WEB-INF/templates/");
 		p.setProperty(RuntimeConstants.RESOURCE_LOADER, "classpath"); 
 		p.setProperty("classpath.resource.loader.class", ClasspathResourceLoader.class.getName());
-		if(!log.isDebugEnabled()) {
-			p.setProperty("file.resource.loader.cache", "true");
-		}else {
-			p.setProperty("file.resource.loader.cache", "false");
-		}
 		engine.setApplicationAttribute("javax.servlet.ServletContext", ctx);
 		engine.init(p);
 		ctx.setAttribute(VELOCITY, engine);

@@ -77,11 +77,12 @@ public class Discover {
 	@GET
 	@Produces("text/html")
 	public Response htmlGET() {
-		L.debug("GET htmlGET");
+		L.debug("GET htmlGETs");
 		VelocityContext vcontext = getVelocityContext();
 		if (ddat == null) {
 			ddat = new HashMap<String, String>();
 			// Check if demo URL exists
+			// FIXME Change file name to collection.txt
 			File demo = new File((String) context.getAttribute(Application.DATA_DIR), "demo.txt");
 			if (demo.exists()) {
 				L.debug("Demo file exists");
@@ -104,7 +105,11 @@ public class Discover {
 			}
 		}
 		vcontext.put("demo", ddat);
-		vcontext.put("body", getTemplate("/discover/input.tpl"));
+		String tmpl = "/discover/selectbook.tpl";
+		if ((boolean) context.getAttribute(Application.USER_INPUT_ENABLED)) {
+			tmpl = "/discover/input.tpl";
+		}
+		vcontext.put("body", getTemplate(tmpl));
 		return Response.ok(getRenderer(vcontext).toString()).build();
 	}
 
@@ -136,6 +141,7 @@ public class Discover {
 					.entity(errorPage("source parameter is mandatory").toString()).build();
 		}
 		try {
+			// TODO get method properties from a configuration variable, to support multiple methods on the same instance
 			Properties properties = getMethodProperties("MusicEmbeddings");
 			double defaultTh = Double.parseDouble(properties.getProperty("custom.led.heat.threshold"));
 			if (th == null) {
@@ -293,6 +299,7 @@ public class Discover {
 		vcontext.put("StringEscapeUtils", StringEscapeUtils.class);
 		vcontext.put("findlerBasePath", "/findler");
 		vcontext.put("servlet", this);
+		vcontext.put("userInputEnabled", (boolean) context.getAttribute(Application.USER_INPUT_ENABLED));
 		return vcontext;
 	}
 

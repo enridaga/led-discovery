@@ -32,16 +32,13 @@ import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetEndAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.util.CoreMap;
-import led.discovery.annotator.ListeningExperienceAnnotator.HeatMaxValueMetAnnotation;
-import led.discovery.annotator.ListeningExperienceAnnotator.HeatMinValueMetAnnotation;
 import led.discovery.annotator.ListeningExperienceAnnotator.ListeningExperienceAnnotation;
 import led.discovery.annotator.ListeningExperienceAnnotator.ListeningExperienceEndAnnotation;
 import led.discovery.annotator.ListeningExperienceAnnotator.ListeningExperienceStartAnnotation;
 import led.discovery.annotator.ListeningExperienceAnnotator.ListeningExperienceWithinAnnotation;
 import led.discovery.annotator.ListeningExperienceAnnotator.NotListeningExperienceAnnotation;
+import led.discovery.annotator.evaluators.HeatEntityEvaluator;
 import led.discovery.annotator.evaluators.HeatEvaluator;
-import led.discovery.annotator.window.TextWindow;
-import led.discovery.app.resources.Discover;
 
 public class OutputModel {
 	private List<Block> blocks;
@@ -69,7 +66,7 @@ public class OutputModel {
 		double minScore = 1.0;
 		// Subsequent false blocks are merged ...
 		for (CoreMap sentence : sentences) {
-
+			
 			// Is LED?
 			boolean isLed = false;
 			if (sentence.get(ListeningExperienceStartAnnotation.class) != null) {
@@ -110,12 +107,21 @@ public class OutputModel {
 				// This block will have the status of the initial sentence
 				current.isLE = isLed;
 				if (current.isLE) {
+					L.debug(" ~~~ ~~~ ~~~ ~~~ ");
 					numberOfLEDFound++;
 				}
 				// Get the score of this window
 				if (sentence.get(ListeningExperienceStartAnnotation.class) != null) {
-					double score = sentence.get(ListeningExperienceStartAnnotation.class).get(0).getScore(HeatEvaluator.class);
+					// FIXME
+					// TODO the evaluator depends on the configured method!
+					double score;
+					try{
+						score = sentence.get(ListeningExperienceStartAnnotation.class).get(0).getScore(HeatEvaluator.class);
+					}catch(NullPointerException npe) {
+						score = sentence.get(ListeningExperienceStartAnnotation.class).get(0).getScore(HeatEntityEvaluator.class);						
+					}
 					current.setMetadata("score", Double.toString(score));
+					L.debug(" ~~~ score: {}", current.getMetadata("score"));
 					if(maxScore < score) {
 						maxScore = score;
 					}
@@ -129,14 +135,16 @@ public class OutputModel {
 
 			// Setting end in case we need to close the block in the next iteration
 			previousSentenceEnd = sentence.get(CharacterOffsetEndAnnotation.class);
-
+			if (L.isDebugEnabled() && current.isLE) {
+				L.debug(" ~~~ text: {}", sentence.get(CoreAnnotations.TextAnnotation.class));
+			}
 		}
 		
 		// Close and add last block
 		current.offsetEnd = previousSentenceEnd;
 		current.text = text.toString();
 		blocks.add(current);
-
+		
 		L.debug("Passed {}", annotation.get(ListeningExperienceAnnotation.class).size());
 		L.debug("Not Passed {}", annotation.get(NotListeningExperienceAnnotation.class).size());
 		L.debug("True Blocks: {}", numberOfLEDFound);
