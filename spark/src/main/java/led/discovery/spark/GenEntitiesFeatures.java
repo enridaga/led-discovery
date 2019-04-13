@@ -10,7 +10,6 @@ import led.discovery.analysis.entities.spot.SpotlightClient;
 /**
  * Generating Bags of Terms (Lemma+POS)
  * 
- * @author enridaga
  *
  */
 public class GenEntitiesFeatures extends GenFeaturesVectorAbstract {

@@ -40,7 +40,6 @@ import led.discovery.nlp.Term;
 /**
  * Generating Bags of Terms (Lemma+POS)
  * 
- * @author enridaga
  *
  */
 public class GenTrainingENT {

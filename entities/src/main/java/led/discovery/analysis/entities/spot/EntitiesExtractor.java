@@ -16,7 +16,6 @@ import org.slf4j.LoggerFactory;
 /**
  * To extract entities
  * 
- * @author enridaga
  *
  */
 public class EntitiesExtractor {

@@ -8,7 +8,6 @@ import org.apache.commons.lang.StringUtils;
 /**
  * Generating Bags of Terms (Lemma+POS)
  * 
- * @author enridaga
  *
  */
 public class GenTermsFeatures extends GenFeaturesVectorAbstract {

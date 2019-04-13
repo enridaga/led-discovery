@@ -26,7 +26,6 @@ import org.slf4j.LoggerFactory;
  * See
  * https://spark.apache.org/docs/2.2.0/ml-classification-regression.html#random-forest-classifier
  * 
- * @author enridaga
  *
  */
 public class TrainRandomForestModel {

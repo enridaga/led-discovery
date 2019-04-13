@@ -29,7 +29,6 @@ import org.slf4j.LoggerFactory;
 /**
  * See https://spark.apache.org/docs/2.1.0/ml-features.html#tf-idf
  * 
- * @author enridaga
  *
  */
 public class GenTrainingBOW {

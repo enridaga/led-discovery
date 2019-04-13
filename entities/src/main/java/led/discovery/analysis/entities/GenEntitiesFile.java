@@ -34,7 +34,6 @@ import led.discovery.analysis.entities.spot.SpotlightResponse;
 /**
  * Generating Entities
  * 
- * @author enridaga
  *
  */
 public class GenEntitiesFile {

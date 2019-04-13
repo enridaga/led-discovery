@@ -28,7 +28,6 @@ import scala.Tuple2;
  * See
  * https://spark.apache.org/docs/2.2.0/ml-classification-regression.html#random-forest-classifier
  * 
- * @author enridaga
  *
  */
 public class TrainSVMModel {

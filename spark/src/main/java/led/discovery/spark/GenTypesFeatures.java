@@ -17,7 +17,6 @@ import led.discovery.analysis.entities.DBPediaTypes;
 /**
  * Generating Bags of Terms (Lemma+POS)
  * 
- * @author enridaga
  *
  */
 public class GenTypesFeatures extends GenEntitiesFeatures {

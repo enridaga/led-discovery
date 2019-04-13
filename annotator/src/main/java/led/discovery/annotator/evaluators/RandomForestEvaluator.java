@@ -21,7 +21,6 @@ import led.discovery.spark.RandomForestPredictorEmb;
 /**
  * Properties:
  * 
- * @author enridaga
  *
  */
 public class RandomForestEvaluator implements TextWindowEvaluator {

@@ -6,7 +6,6 @@ import java.io.IOException;
 /**
  * Generating Bags of Terms (Lemma+POS)
  * 
- * @author enridaga
  *
  */
 public class GenEmbeddedTermsFeatures extends GenTermsFeatures {

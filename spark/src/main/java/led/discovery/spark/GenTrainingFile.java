@@ -23,7 +23,6 @@ import edu.stanford.nlp.util.ArrayUtils;
 /**
  * Generating Training File
  * 
- * @author enridaga
  *
  */
 public class GenTrainingFile {
