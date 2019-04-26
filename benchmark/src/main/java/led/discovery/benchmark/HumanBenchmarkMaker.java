@@ -16,10 +16,10 @@ import org.jsoup.safety.Whitelist;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class BenchmarkMaker {
-	private Logger log = LoggerFactory.getLogger(BenchmarkMaker.class);
+public class HumanBenchmarkMaker {
+	private Logger log = LoggerFactory.getLogger(HumanBenchmarkMaker.class);
 
-	public BenchmarkMaker() {
+	public HumanBenchmarkMaker() {
 	}
 
 	public void annotateAll(String dataDir, String bookmarksCSV) throws IOException {
@@ -115,7 +115,7 @@ public class BenchmarkMaker {
 		if (args.length < 2) {
 			System.out.println("arguments:\n <data-folder> <output-file-name>");
 		}
-		new BenchmarkMaker().annotateAll(args[0], args[1]);
+		new HumanBenchmarkMaker().annotateAll(args[0], args[1]);
 	}
 
 }

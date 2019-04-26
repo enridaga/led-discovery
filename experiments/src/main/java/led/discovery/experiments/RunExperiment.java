@@ -26,8 +26,13 @@ import edu.stanford.nlp.util.StringUtils;
 import led.discovery.annotator.ListeningExperienceAnnotator.ListeningExperienceAnnotation;
 import led.discovery.annotator.ListeningExperienceAnnotator.NotListeningExperienceAnnotation;
 import led.discovery.annotator.window.TextWindow;
-import led.discovery.benchmark.Benchmark;
-
+import led.discovery.benchmark.ExperiencesInSources;
+/**
+ * 
+ * 
+ * @deprecated This class to perform experiments with the human benchmark derived annotating sources with known listening experiences. However, that benchmark has been superseeded by the Gold Standard
+ * @use {@link RunExperimentGS}
+ */
 public class RunExperiment {
 
 	private static final Logger L = LoggerFactory.getLogger(RunExperiment.class);
@@ -96,7 +101,7 @@ public class RunExperiment {
 
 		clean();
 
-		Benchmark bench = new Benchmark(benchmark);
+		ExperiencesInSources bench = new ExperiencesInSources(benchmark);
 		StanfordCoreNLP pipeline = new StanfordCoreNLP(properties);
 
 		try (FileWriter fw = new FileWriter(output, true)) {

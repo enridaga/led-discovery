@@ -38,6 +38,11 @@ import led.discovery.annotator.evaluators.HeatEntityEvaluator.HeatEntityScoreAnn
 import led.discovery.annotator.evaluators.HeatEntityEvaluator.MusicalEntityUriAnnotation;
 import led.discovery.annotator.window.TextWindow;
 
+/**
+ * Run Experiments using the Gold Standard.
+ * 
+ *
+ */
 public class RunExperimentGS {
 
 	private static final Logger L = LoggerFactory.getLogger(RunExperimentGS.class);
@@ -143,12 +148,12 @@ public class RunExperimentGS {
 
 								System.out.print(to.lemma());
 								System.out.print("[");
-								System.out.print(to.tag().toLowerCase().substring(0,1));
+								System.out.print(to.tag().toLowerCase().substring(0, 1));
 								System.out.print("]");
 								if (to.containsKey(MusicalEntityUriAnnotation.class)) {
 									System.out.print("->");
 									System.out.print(to.get(MusicalEntityUriAnnotation.class));
-								} 
+								}
 								System.out.print(":");
 								Double val = to.get(HeatEntityScoreAnnotation.class);
 								if (val == null)

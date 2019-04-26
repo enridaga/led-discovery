@@ -15,9 +15,9 @@ import org.junit.rules.TestName;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class BenchmarkMakerTest {
-	private static final Logger log = LoggerFactory.getLogger(BenchmarkMakerTest.class);
-	private BenchmarkMaker benchmark;
+public class HumanBenchmarkMakerTest {
+	private static final Logger log = LoggerFactory.getLogger(HumanBenchmarkMakerTest.class);
+	private HumanBenchmarkMaker benchmark;
 	// private static String RECOLL;
 	private static String MUSING;
 	private static String MUSREM;
@@ -31,18 +31,18 @@ public class BenchmarkMakerTest {
 	@BeforeClass
 	public static void beforeClass() throws IOException {
 		// RECOLL =
-		// IOUtils.toString(BenchmarkTest.class.getClassLoader().getResourceAsStream("./RECOLL.txt"),
+		// IOUtils.toString(ExperiencesInSourcesTest.class.getClassLoader().getResourceAsStream("./RECOLL.txt"),
 		// "UTF-8");
-		MUSING = IOUtils.toString(BenchmarkMakerTest.class.getClassLoader().getResourceAsStream("./MUSING.txt"), "UTF-8");
-		MUSREM = IOUtils.toString(BenchmarkMakerTest.class.getClassLoader().getResourceAsStream("./MUSREM.txt"), "UTF-8");
+		MUSING = IOUtils.toString(HumanBenchmarkMakerTest.class.getClassLoader().getResourceAsStream("./MUSING.txt"), "UTF-8");
+		MUSREM = IOUtils.toString(HumanBenchmarkMakerTest.class.getClassLoader().getResourceAsStream("./MUSREM.txt"), "UTF-8");
 		// RECMUS =
-		// IOUtils.toString(BenchmarkTest.class.getClassLoader().getResourceAsStream("./RECMUS.txt"),
+		// IOUtils.toString(ExperiencesInSourcesTest.class.getClassLoader().getResourceAsStream("./RECMUS.txt"),
 		// "UTF-8");
 	}
 
 	@Before
 	public void before() {
-		benchmark = new BenchmarkMaker();
+		benchmark = new HumanBenchmarkMaker();
 	}
 
 	@Test
@@ -52,7 +52,7 @@ public class BenchmarkMakerTest {
 		String[] MUSING_EXP = { "1452636825724" };
 		// String[] RECMUS_EXP = {"1452636825724"};
 		for (String experience : MUSING_EXP) {
-			URL experienceFile = BenchmarkMakerTest.class.getClassLoader().getResource(experience +
+			URL experienceFile = HumanBenchmarkMakerTest.class.getClassLoader().getResource(experience +
 				".txt");
 			String excerpt = benchmark.getExcerpt(new File(experienceFile.getFile()));
 			// Read experience
@@ -70,7 +70,7 @@ public class BenchmarkMakerTest {
 		String[] MUSREM_EXP = { "1446648222034" };
 		// String[] RECMUS_EXP = {"1452636825724"};
 		for (String experience : MUSREM_EXP) {
-			URL experienceFile = BenchmarkMakerTest.class.getClassLoader().getResource(experience +
+			URL experienceFile = HumanBenchmarkMakerTest.class.getClassLoader().getResource(experience +
 				".txt");
 			String excerpt = benchmark.getExcerpt(new File(experienceFile.getFile()));
 			// Read experience

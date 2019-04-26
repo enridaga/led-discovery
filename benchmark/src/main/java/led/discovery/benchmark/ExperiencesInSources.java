@@ -16,17 +16,17 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 
-public class Benchmark {
+public class ExperiencesInSources {
 	Map<String, List<Integer>> starts;
 	Map<String, List<Integer>> ends;
 	Map<String, List<String>> experiences;
 	List<Object[]> records;
 
-	public Benchmark(File data) throws IOException {
+	public ExperiencesInSources(File data) throws IOException {
 		_init(new FileReader(data));
 	}
 
-	public Benchmark(Reader data) throws IOException {
+	public ExperiencesInSources(Reader data) throws IOException {
 		_init(data);
 	}
 
