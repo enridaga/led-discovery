@@ -26,7 +26,6 @@
 		<module>nlp</module>
 		<module>hadoop</module>
 		<module>benchmark</module>
-		<module>h2db</module>
 		<module>tools</module>
 		<module>entities</module>
 		<module>annotator</module>
@@ -56,11 +55,6 @@
 			<dependency>
 				<groupId>led-discovery</groupId>
 				<artifactId>led-entities</artifactId>
-				<version>${led.discovery.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>led-discovery</groupId>
-				<artifactId>led-h2db</artifactId>
 				<version>${led.discovery.version}</version>
 			</dependency>
 			<dependency>
@@ -226,13 +220,6 @@
 				<groupId>org.apache.jena</groupId>
 				<artifactId>jena-arq</artifactId>
 				<version>3.6.0</version>
-			</dependency>
-
-			<!-- H2 Database -->
-			<dependency>
-				<groupId>com.h2database</groupId>
-				<artifactId>h2</artifactId>
-				<version>1.4.196</version>
 			</dependency>
 
 			<!-- Hadoop / Hive -->

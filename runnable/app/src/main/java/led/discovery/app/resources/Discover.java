@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.net.HttpURLConnection;
@@ -50,11 +49,10 @@ import org.slf4j.LoggerFactory;
 
 import com.google.gson.Gson;
 
-import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.pipeline.AnnotationPipeline;
-import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import led.discovery.app.Application;
 import led.discovery.app.model.FileCache;
+import led.discovery.app.model.Findler;
+import led.discovery.app.model.FindlerManager;
 import led.discovery.app.model.OutputModel;
 
 @Path("")
@@ -255,44 +253,47 @@ public class Discover {
 		String text = getCache().get(sourceId);
 		boolean usecache = requestUri.getQueryParameters().getFirst("nocache") == null;
 		boolean recache = requestUri.getQueryParameters().getFirst("recache") != null;
-		OutputModel model = find(sourceId, text, properties, usecache, recache);
+		OutputModel model = new FindlerManager(new Findler(properties), getCache()).find(sourceId, text, usecache, recache);
 		return model;
 	}
 
-	public OutputModel find(String source, String text, Properties properties, boolean usecache, boolean recache)
-			throws IOException {
-		StringWriter writer = new StringWriter();
-		properties.list(new PrintWriter(writer));
-		String th = properties.getProperty("custom.led.heat.threshold");
-		String outputId = getCache().buildHash(source, th, writer.getBuffer().toString());
-
-		// If exists in cache reload it
-		OutputModel model;
-		if (getCache().containsHash(outputId) && usecache && !recache) {
-			L.info("Reading from cache: {}", outputId);
-			model = OutputModel.fromJSON(getCache().getByHash(outputId));
-			model.setMetadata("cached", "true");
-		} else {
-			L.info("Computing annotations");
-			final Annotation annotation = annotate(text, properties);
-			model = OutputModel.build(annotation);
-			model.setMetadata("source", source);
-			model.setMetadata("bytes", Integer.toString(text.getBytes().length));
-			model.setMetadata("hash", outputId);
-			model.setMetadata("th", properties.getProperty("custom.led.heat.threshold"));
-			for (Object k : properties.keySet()) {
-				model.setMetadata("property-" + k, properties.getProperty((String) k));
-			}
-			if (usecache) {
-				L.info("Writing cache: {}", outputId);
-				OutputStream fos = getCache().putStream(outputId);
-				OutputModel.writeAsJSON(model, fos);
-				L.trace("Written: {}", outputId);
-			}
-			model.setMetadata("cached", "false");
-		}
-		return model;
-	}
+//	public OutputModel find(String source, String text, Properties properties, boolean usecache, boolean recache)
+//			throws IOException {
+//		StringWriter writer = new StringWriter();
+//		properties.list(new PrintWriter(writer));
+//		String th = properties.getProperty("custom.led.heat.threshold");
+//		String outputId = getCache().buildHash(source, th, writer.getBuffer().toString());
+//
+//		// If exists in cache reload it
+//		OutputModel model;
+//		if (getCache().containsHash(outputId) && usecache && !recache) {
+//			L.info("Reading from cache: {}", outputId);
+//			model = OutputModel.fromJSON(getCache().getByHash(outputId));
+//			model.setMetadata("cached", "true");
+//		} else {
+//			L.info("Computing annotations");
+////			final Annotation annotation = annotate(text, properties);
+////			model = OutputModel.build(annotation);
+////			model.setMetadata("bytes", Integer.toString(text.getBytes().length));
+////			model.setMetadata("th", properties.getProperty("custom.led.heat.threshold"));
+////			for (Object k : properties.keySet()) {
+////				model.setMetadata("property-" + k, properties.getProperty((String) k));
+////			}
+//			model = new Findler(properties).find(text);
+//			model.setMetadata("source", source);
+//			model.setMetadata("hash", outputId);
+//			
+//			
+//			if (usecache) {
+//				L.info("Writing cache: {}", outputId);
+//				OutputStream fos = getCache().putStream(outputId);
+//				OutputModel.writeAsJSON(model, fos);
+//				L.trace("Written: {}", outputId);
+//			}
+//			model.setMetadata("cached", "false");
+//		}
+//		return model;
+//	}
 
 	public VelocityContext getVelocityContext() {
 		VelocityContext vcontext = new VelocityContext();
@@ -354,19 +355,19 @@ public class Discover {
 		template.merge(vcontext, sw);
 		return sw;
 	}
-
-	public Annotation annotate(String text, Properties method) {
-		if (L.isDebugEnabled()) {
-			StringWriter writer = new StringWriter();
-			method.list(new PrintWriter(writer));
-			L.debug("Annotate with properties: \n{}", writer.getBuffer().toString());
-		}
-		StanfordCoreNLP.clearAnnotatorPool();
-		AnnotationPipeline pipeline = new StanfordCoreNLP(method);
-		Annotation annotation = new Annotation(text);
-		pipeline.annotate(annotation);
-		return annotation;
-	}
+//
+//	public Annotation annotate(String text, Properties method) {
+//		if (L.isDebugEnabled()) {
+//			StringWriter writer = new StringWriter();
+//			method.list(new PrintWriter(writer));
+//			L.debug("Annotate with properties: \n{}", writer.getBuffer().toString());
+//		}
+//		StanfordCoreNLP.clearAnnotatorPool();
+//		AnnotationPipeline pipeline = new StanfordCoreNLP(method);
+//		Annotation annotation = new Annotation(text);
+//		pipeline.annotate(annotation);
+//		return annotation;
+//	}
 
 	public Properties getMethodProperties(String method) throws IOException {
 		File properties = new File((String) context.getAttribute(Application.DATA_DIR), method + ".properties");

@@ -4,8 +4,11 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Base64;
 import java.util.Iterator;
+import java.util.List;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -18,6 +21,7 @@ import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import edu.stanford.nlp.util.StringUtils;
 import led.discovery.nlp.StanfordNLPProvider;
 import led.discovery.utils.GutenbergZipFileSourceFactory;
 
@@ -28,11 +32,11 @@ public class CLI {
 		public abstract void perform() throws Exception;
 	}
 
-	class LoadInTSVCommand extends Command {
+	class LoadDocsTermsInTSVCommand extends Command {
 		File from;
 		File tsvFile;
 
-		public LoadInTSVCommand(File from, File tsvFile) {
+		public LoadDocsTermsInTSVCommand(File from, File tsvFile) {
 			this.from = from;
 			this.tsvFile = tsvFile;
 		}
@@ -41,8 +45,7 @@ public class CLI {
 		public void perform() throws Exception {
 			GutenbergZipFileSourceFactory fac = new GutenbergZipFileSourceFactory();
 			FileSourceProvider provider = new FileSourceProvider(fac);
-			provider.addFromDirectory(from);
-			ProcessToTSV loader = new ProcessToTSV(tsvFile, provider, new StanfordNLPProvider());
+			DocsTermsToTSV loader = new DocsTermsToTSV(tsvFile, provider, new StanfordNLPProvider());
 			loader.load();
 		}
 	}
@@ -60,7 +63,23 @@ public class CLI {
 		public void perform() throws Exception {
 			GutenbergZipFileSourceFactory fac = new GutenbergZipFileSourceFactory();
 			FileSourceProvider provider = new FileSourceProvider(fac);
-			provider.addFromDirectory(from);
+			if (from.isDirectory()) {
+				provider.addFromDirectory(from);
+			} else if (from.isFile()) {
+				List<String> lines = Files.readAllLines(from.toPath());
+				for(String f : lines) {
+					// Support reference to home directory
+					f = f.replaceFirst("^~", System.getProperty("user.home"));
+					File q = new File(f);
+					try {
+						provider.add(q);
+					}catch(Exception e) {
+						log.error(e.getMessage());
+					}
+				}
+			}else {
+				throw new IOException("Invalid file type " + from.exists());
+			}
 			FileWriter fw = null;
 			Iterator<Source> i = provider.getSources();
 			fw = new FileWriter(tsvFile);
@@ -72,7 +91,7 @@ public class CLI {
 						String id = s.getDocumentName();
 						String text = IOUtils.toString(s.getContent(), s.getEncoding());
 						byte[] bytesEncoded = Base64.getEncoder().encode(text.getBytes());
-						//System.out.println("encoded value is " + new String(bytesEncoded));
+						// System.out.println("encoded value is " + new String(bytesEncoded));
 						bw.write(id);
 						bw.write("\t");
 						bw.write("GUTENBERG");
@@ -84,7 +103,8 @@ public class CLI {
 						bw.write(new String(bytesEncoded));
 						bw.write("\n");
 						long end = System.currentTimeMillis();
-						log.info("{} [loaded in {}{}]", new Object[] { s.getDocumentName(), ((end - start) / 1000), "s" });
+						log.info("{} [loaded in {}{}]",
+								new Object[] { s.getDocumentName(), ((end - start) / 1000), "s" });
 					} catch (IOException e) {
 						log.error("Cannot load source {}: {}", s.getDocumentName(), e.getMessage());
 					}
@@ -95,7 +115,7 @@ public class CLI {
 			}
 		}
 	}
-	
+
 	class CreateListeningExperiencesTSV extends Command {
 		File from;
 		File tsvFile;
@@ -109,39 +129,40 @@ public class CLI {
 		public void perform() throws Exception {
 			FileSourceProvider provider = new FileSourceProvider(new FileSourceFactory());
 			provider.addFromDirectory(from);
-			ProcessToTSV loader = new ProcessToTSV(tsvFile, provider, new StanfordNLPProvider());
+			DocsTermsToTSV loader = new DocsTermsToTSV(tsvFile, provider, new StanfordNLPProvider());
 			loader.load();
 		}
 	}
 
-
 	private Options getOptions() {
-		Option load = Option.builder().longOpt("load").desc("load command").build();
+		Option parseToTSV = Option.builder().longOpt("parseToTSV")
+				.desc("parseToTSV command. From a direcotry of zips to a TSV of {docId,position,term[pos]}").build();
 		Option wrap = Option.builder().longOpt("wrap").desc("wrap command").build();
 		Option parseLe = Option.builder().longOpt("parse-le").desc("parse leds command").build();
-		Option from = Option.builder().longOpt("from").argName("from").hasArg().desc("Folder to load files from").build();
+		Option from = Option.builder().longOpt("from").argName("from").hasArg()
+				.desc("Folder to load files from or file containing a list of files.").build();
 		Option to = Option.builder().longOpt("to").argName("to").hasArg().desc("File to write to").build();
-
 
 		Option docId = Option.builder().longOpt("docId").argName("docId").hasArg().desc("DOC Id").build();
 		Option limit = Option.builder().longOpt("limit").argName("limit").hasArg().desc("Limit").build();
 
 		Options options = new Options();
-		
-		
-		options.addOption(load);
+
+		options.addOption(parseToTSV);
 		options.addOption(parseLe);
 		options.addOption(wrap);
-		
+
 		options.addOption(from);
 		options.addOption(to);
-		
+
 		options.addOption(docId);
 		options.addOption(limit);
 		return options;
 	}
 
 	private void start(String[] args) {
+		System.out.println("start");
+		System.out.println(StringUtils.join(args," "));
 		// Available Commands
 		Options options = getOptions();
 
@@ -151,10 +172,10 @@ public class CLI {
 			// parse the command line arguments
 			CommandLine line = parser.parse(options, args);
 
-			if (line.hasOption("load") && line.hasOption("from") && line.hasOption("to")) {
+			if (line.hasOption("parseToTSV") && line.hasOption("from") && line.hasOption("to")) {
 				File from = new File(line.getOptionValue("from"));
 				File to = new File(line.getOptionValue("to"));
-				new LoadInTSVCommand(from, to).perform();
+				new LoadDocsTermsInTSVCommand(from, to).perform();
 			} else if (line.hasOption("parse-le") && line.hasOption("from") && line.hasOption("to")) {
 				File from = new File(line.getOptionValue("from"));
 				File to = new File(line.getOptionValue("to"));

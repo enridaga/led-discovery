@@ -16,22 +16,22 @@ import org.slf4j.LoggerFactory;
 import led.discovery.nlp.Term;
 import led.discovery.nlp.TermsProvider;
 
-public class ProcessToTSV {
+public class DocsTermsToTSV {
 
 	private TermsProvider provider;
-	private Logger log = LoggerFactory.getLogger(ProcessToTSV.class);
+	private Logger log = LoggerFactory.getLogger(DocsTermsToTSV.class);
 	private SourceProvider sourceProvider;
 	private File targetFile;
 
-	public ProcessToTSV(File targetFile, SourceProvider sourceProvider, TermsProvider provider) {
+	public DocsTermsToTSV(File targetFile, SourceProvider sourceProvider, TermsProvider provider) {
 		this.provider = provider;
 		this.targetFile = targetFile;
 		this.sourceProvider = sourceProvider;
 	}
 
-	public void add(String name, InputStream is, Charset encoding) throws IOException {
-		// db.addDocument(name, terms);
-	}
+//	public void add(String name, InputStream is, Charset encoding) throws IOException {
+//		// db.addDocument(name, terms);
+//	}
 
 	public void load() throws IOException {
 		FileWriter fw = null;

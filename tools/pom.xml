@@ -110,6 +110,10 @@
 			<groupId>led-discovery</groupId>
 			<artifactId>led-nlp</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>led-discovery</groupId>
+			<artifactId>led-annotator</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -120,20 +124,16 @@
 				<version>1.6.0</version>
 				<executions>
 					<execution>
-						<id>Main</id>
+						<id>wrap</id>
 						<goals>
-							<goal>exec</goal>
+							<goal>java</goal>
 						</goals>
 						<configuration>
-							<executable>java</executable>
-							<longClasspath>true</longClasspath>
+							<mainClass>led.discovery.io.CLI</mainClass>
 							<arguments>
-								<argument>-XX:MaxPermSize=128M</argument>
-								<argument>-Xmx6G</argument>
-								<argument>-classpath</argument>
-								<classpath />
-								<argument>led.discovery.io.Main</argument>
-								<argument>./src/test/resources/files.txt</argument>
+								<argument>--wrap</argument>
+								<argument>--from=${led.from}</argument>
+								<argument>--to=${led.to}</argument>
 							</arguments>
 						</configuration>
 					</execution>
