@@ -19,7 +19,7 @@ import led.discovery.nlp.TermsProvider;
 public class ProcessToTSV {
 
 	private TermsProvider provider;
-	private Logger log = LoggerFactory.getLogger(Loader.class);
+	private Logger log = LoggerFactory.getLogger(ProcessToTSV.class);
 	private SourceProvider sourceProvider;
 	private File targetFile;
 
