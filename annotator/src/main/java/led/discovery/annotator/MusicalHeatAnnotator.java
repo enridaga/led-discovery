@@ -37,7 +37,7 @@ public class MusicalHeatAnnotator implements Annotator {
 	private Logger log = LoggerFactory.getLogger(MusicalHeatAnnotator.class);
 
 	/**
-	 * An adaptation of the TFIDF score of the term[pos] from the Musical
+	 * A computation of the score of the term[pos] from the referenced
 	 * Dictionary. When applied to sequences of tokens (sentence), it's the
 	 * average value.
 	 * 

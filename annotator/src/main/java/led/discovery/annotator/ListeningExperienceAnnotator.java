@@ -28,6 +28,7 @@ import led.discovery.annotator.evaluators.CascadingEvaluator;
 import led.discovery.annotator.evaluators.HeatEntityEvaluator;
 //import led.discovery.annotator.evaluators.EntitiesRandomForestEvaluator;
 import led.discovery.annotator.evaluators.HeatEvaluator;
+import led.discovery.annotator.evaluators.HybridEvaluator;
 import led.discovery.annotator.evaluators.LedComponentsEvaluator;
 import led.discovery.annotator.evaluators.MusicalEntityEvaluator;
 import led.discovery.annotator.evaluators.RandomForestEvaluator;
@@ -52,6 +53,7 @@ public class ListeningExperienceAnnotator implements Annotator {
 	private HeatEvaluator heat = null;
 	private MusicalEntityEvaluator musicentity = null;
 	private HeatEntityEvaluator heatmusicentity = null;
+	private HybridEvaluator hybrid = null;
 	private SentiMusDepEvaluator sentimus = null;
 	private LedComponentsEvaluator compo = null;
 	private StanfordNLPProvider provider;
@@ -182,9 +184,15 @@ public class ListeningExperienceAnnotator implements Annotator {
 				}
 				
 				if (ev.trim().toLowerCase().equals("heatmusicentity")) {
-					log.info("musicentity evaluator");
+					log.info("heatmusicentity evaluator");
 					heatmusicentity = new HeatEntityEvaluator(properties, cleaner, stopwords);
 					Evaluators.add(heatmusicentity);
+				}
+				
+				if (ev.trim().toLowerCase().equals("hybrid")) {
+					log.info("hybrid evaluator");
+					hybrid = new HybridEvaluator(properties, cleaner, stopwords);
+					Evaluators.add(hybrid);
 				}
 			}
 		} else {
