@@ -1,11 +1,14 @@
 package led.discovery.io;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Base64;
 import java.util.Iterator;
 import java.util.List;
@@ -22,17 +25,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import edu.stanford.nlp.util.StringUtils;
+import led.discovery.app.model.OutputModel;
 import led.discovery.nlp.StanfordNLPProvider;
 import led.discovery.utils.GutenbergZipFileSourceFactory;
 
-public class CLI {
-	private static Logger log = LoggerFactory.getLogger(CLI.class);
+public class Tools {
+	private static Logger log = LoggerFactory.getLogger(Tools.class);
 
-	abstract class Command {
-		public abstract void perform() throws Exception;
-	}
-
-	class LoadDocsTermsInTSVCommand extends Command {
+	public static class LoadDocsTermsInTSVCommand {
 		File from;
 		File tsvFile;
 
@@ -41,16 +41,21 @@ public class CLI {
 			this.tsvFile = tsvFile;
 		}
 
-		@Override
 		public void perform() throws Exception {
 			GutenbergZipFileSourceFactory fac = new GutenbergZipFileSourceFactory();
 			FileSourceProvider provider = new FileSourceProvider(fac);
 			DocsTermsToTSV loader = new DocsTermsToTSV(tsvFile, provider, new StanfordNLPProvider());
 			loader.load();
 		}
+
+		public static void main(String[] args) throws Exception {
+			File from = new File(args[0]);
+			File to = new File(args[1]);
+			new LoadDocsTermsInTSVCommand(from, to).perform();
+		}
 	}
 
-	class CreateSingleDocList extends Command {
+	public static class CreateSingleDocList {
 		File from;
 		File tsvFile;
 
@@ -59,7 +64,6 @@ public class CLI {
 			this.tsvFile = tsvFile;
 		}
 
-		@Override
 		public void perform() throws Exception {
 			GutenbergZipFileSourceFactory fac = new GutenbergZipFileSourceFactory();
 			FileSourceProvider provider = new FileSourceProvider(fac);
@@ -67,17 +71,17 @@ public class CLI {
 				provider.addFromDirectory(from);
 			} else if (from.isFile()) {
 				List<String> lines = Files.readAllLines(from.toPath());
-				for(String f : lines) {
+				for (String f : lines) {
 					// Support reference to home directory
 					f = f.replaceFirst("^~", System.getProperty("user.home"));
 					File q = new File(f);
 					try {
 						provider.add(q);
-					}catch(Exception e) {
+					} catch (Exception e) {
 						log.error(e.getMessage());
 					}
 				}
-			}else {
+			} else {
 				throw new IOException("Invalid file type " + from.exists());
 			}
 			FileWriter fw = null;
@@ -114,9 +118,62 @@ public class CLI {
 				fw.close();
 			}
 		}
+
+		public static void main(String[] args) throws Exception {
+			File from = new File(args[0]);
+			File to = new File(args[1]);
+			new CreateSingleDocList(from, to).perform();
+		}
 	}
 
-	class CreateListeningExperiencesTSV extends Command {
+	public static class BuildDocsCache {
+		File fromTsv;
+		File listSources;
+		File cacheDir;
+
+		public BuildDocsCache(File fromTsv, File outputFile, File cacheDir) {
+			this.fromTsv = fromTsv;
+			this.listSources = outputFile;
+			this.cacheDir = cacheDir;
+		}
+
+		public void perform() throws Exception {
+			RunAnnotator ann = new RunAnnotator(cacheDir.getAbsolutePath());
+			System.out.println("perform()");
+			try (FileOutputStream fos = new FileOutputStream(listSources);
+					BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(fos));
+					BufferedReader reader = new BufferedReader(new FileReader(fromTsv));) {
+
+				String line;
+				while ((line = reader.readLine()) != null) {
+					String[] fields = line.split("\t");
+					String sourceId = fields[0];
+					log.info(sourceId);
+					String text = new String(Base64.getDecoder().decode(fields[4].getBytes()), fields[3]);
+					// System.out.println(text.substring(0, 200));
+					OutputModel m = ann.annotate(sourceId, text);
+					String l = new StringBuilder().append(sourceId).append(" ").append(m.getMetadata("hash"))
+							.append(" ").append(m.getMetadata("maxScore")).append(" ")
+							.append(Integer.toString(m.numberOfLEFound())).append("\n").toString();
+					System.out.println(l);
+					bw.write(l);
+				}
+				reader.close();
+				bw.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+
+		public static void main(String[] args) throws Exception {
+			File fromTsv = new File(args[0]);
+			File outputFile = new File(args[1]);
+			File cacheDir = new File(args[2]);
+			new BuildDocsCache(fromTsv, outputFile, cacheDir).perform();
+		}
+	}
+
+	public static class CreateListeningExperiencesTSV {
 		File from;
 		File tsvFile;
 
@@ -125,86 +182,17 @@ public class CLI {
 			this.tsvFile = tsvFile;
 		}
 
-		@Override
 		public void perform() throws Exception {
 			FileSourceProvider provider = new FileSourceProvider(new FileSourceFactory());
 			provider.addFromDirectory(from);
 			DocsTermsToTSV loader = new DocsTermsToTSV(tsvFile, provider, new StanfordNLPProvider());
 			loader.load();
 		}
-	}
 
-	private Options getOptions() {
-		Option parseToTSV = Option.builder().longOpt("parseToTSV")
-				.desc("parseToTSV command. From a direcotry of zips to a TSV of {docId,position,term[pos]}").build();
-		Option wrap = Option.builder().longOpt("wrap").desc("wrap command").build();
-		Option parseLe = Option.builder().longOpt("parse-le").desc("parse leds command").build();
-		Option from = Option.builder().longOpt("from").argName("from").hasArg()
-				.desc("Folder to load files from or file containing a list of files.").build();
-		Option to = Option.builder().longOpt("to").argName("to").hasArg().desc("File to write to").build();
-
-		Option docId = Option.builder().longOpt("docId").argName("docId").hasArg().desc("DOC Id").build();
-		Option limit = Option.builder().longOpt("limit").argName("limit").hasArg().desc("Limit").build();
-
-		Options options = new Options();
-
-		options.addOption(parseToTSV);
-		options.addOption(parseLe);
-		options.addOption(wrap);
-
-		options.addOption(from);
-		options.addOption(to);
-
-		options.addOption(docId);
-		options.addOption(limit);
-		return options;
-	}
-
-	private void start(String[] args) {
-		System.out.println("start");
-		System.out.println(StringUtils.join(args," "));
-		// Available Commands
-		Options options = getOptions();
-
-		// create the parser
-		CommandLineParser parser = new DefaultParser();
-		try {
-			// parse the command line arguments
-			CommandLine line = parser.parse(options, args);
-
-			if (line.hasOption("parseToTSV") && line.hasOption("from") && line.hasOption("to")) {
-				File from = new File(line.getOptionValue("from"));
-				File to = new File(line.getOptionValue("to"));
-				new LoadDocsTermsInTSVCommand(from, to).perform();
-			} else if (line.hasOption("parse-le") && line.hasOption("from") && line.hasOption("to")) {
-				File from = new File(line.getOptionValue("from"));
-				File to = new File(line.getOptionValue("to"));
-				new CreateListeningExperiencesTSV(from, to).perform();
-			} else if (line.hasOption("wrap") && line.hasOption("from") && line.hasOption("to")) {
-				File from = new File(line.getOptionValue("from"));
-				File to = new File(line.getOptionValue("to"));
-				new CreateSingleDocList(from, to).perform();
-			} else if (line.hasOption("help")) {
-				HelpFormatter formatter = new HelpFormatter();
-				formatter.printHelp("led", options);
-			} else {
-				System.out.println("Insufficient or wrong arguments");
-			}
-
-		} catch (IndexOutOfBoundsException exp) {
-			// oops, something went wrong
-			System.err.println("Arguments missing" + exp.getMessage());
-		} catch (ParseException exp) {
-			// oops, something went wrong
-			System.err.println("Parsing failed.  Reason: " + exp.getMessage());
-		} catch (Exception e) {
-			log.error("A problem occurred.", e);
+		public static void main(String[] args) throws Exception {
+			File from = new File(args[0]);
+			File to = new File(args[1]);
+			new CreateListeningExperiencesTSV(from, to).perform();
 		}
 	}
-
-	public static void main(String[] args) {
-		CLI cli = new CLI();
-		cli.start(args);
-	}
-
 }

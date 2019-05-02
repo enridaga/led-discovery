@@ -114,6 +114,10 @@
 			<groupId>led-discovery</groupId>
 			<artifactId>led-annotator</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>led-discovery</groupId>
+			<artifactId>led-app</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -124,19 +128,41 @@
 				<version>1.6.0</version>
 				<executions>
 					<execution>
-						<id>wrap</id>
+						<id>wrap-in-tsv</id>
 						<goals>
-							<goal>java</goal>
+							<goal>exec</goal>
 						</goals>
 						<configuration>
-							<mainClass>led.discovery.io.CLI</mainClass>
+							<executable>java</executable>
 							<arguments>
-								<argument>--wrap</argument>
-								<argument>--from=${led.from}</argument>
-								<argument>--to=${led.to}</argument>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.io.Tools$CreateSingleDocList</argument>
+								<argument>${led.from}</argument>
+								<argument>${led.to}</argument>
 							</arguments>
 						</configuration>
 					</execution>
+					<execution>
+						<id>build-cache</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.io.Tools$BuildDocsCache</argument>
+								<argument>${led.from}</argument>
+								<argument>${led.to}</argument>
+								<argument>${led.folder}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
 					<execution>
 						<id>RED</id>
 						<goals>
@@ -147,6 +173,7 @@
 							<arguments>
 								<argument>-classpath</argument>
 								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
 								<argument>led.discovery.utils.REDExperiences</argument>
 								<argument>${project.basedir}/../data/red/</argument>
 							</arguments>
@@ -157,7 +184,7 @@
 			</plugin>
 			<!-- <plugin> <artifactId>maven-assembly-plugin</artifactId> <executions> 
 				<execution> <phase>package</phase> <goals> <goal>single</goal> </goals> </execution> 
-				</executions> <configuration> ... <archive> <manifest> <mainClass>led.discovery.io.CLI</mainClass> 
+				</executions> <configuration> ... <archive> <manifest> <mainClass>led.discovery.io.Tools</mainClass> 
 				</manifest> </archive> <descriptorRefs> <descriptorRef>jar-with-dependencies</descriptorRef> 
 				</descriptorRefs> </configuration> </plugin> -->
 		</plugins>
