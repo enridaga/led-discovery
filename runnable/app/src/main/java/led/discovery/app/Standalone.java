@@ -12,13 +12,11 @@ import org.eclipse.jetty.util.resource.Resource;
 import org.eclipse.jetty.webapp.WebAppContext;
 
 public class Standalone {
-	public static void main(String[] args) {
-		System.out.println("#1: welcome to the led discovery");
-		AppCli cli = new AppCli(args);
-		cli.parse();
+	
+	public static void startServer(AppCli cli) {
+		System.out.println("#1: welcome to FindLEr");
 		Server server = new Server();
 		ServerConnector connector = new ServerConnector(server);
-
 		connector.setIdleTimeout(1000 * 60 * 60);
 		connector.setSoLingerTime(-1);
 		connector.setPort(cli.getPort());
@@ -74,5 +72,13 @@ public class Standalone {
 			System.exit(100);
 		}
 		System.out.println("#6: thank you");
+	}
+	
+	public static void main(String[] args) {
+		
+		AppCli cli = new AppCli(args);
+		cli.parse();
+		
+
 	}
 }

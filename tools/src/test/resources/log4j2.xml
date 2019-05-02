@@ -6,7 +6,10 @@
     </Console>
   </Appenders>
   <Loggers>
-    <Root level="warn">
+      <Logger name="led.discovery.app" level="debug"/>
+      <Logger name="led.discovery.annotator.MusicalEntityAnnotator" level="trace"/>
+      <Logger name="led.discovery.tools" level="debug"/>
+      <Root level="warn">
       <AppenderRef ref="Console"/>
     </Root>
   </Loggers>

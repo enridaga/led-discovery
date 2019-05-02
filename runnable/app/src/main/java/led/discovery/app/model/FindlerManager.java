@@ -22,6 +22,10 @@ public class FindlerManager {
 		return find(source, text, true, false);
 	}
 
+	public FileCache getCache() {
+		return fileCache;
+	}
+
 	public OutputModel find(String source, String text, boolean usecache, boolean recache) throws IOException {
 		StringWriter writer = new StringWriter();
 		findler.getProperties().list(new PrintWriter(writer));

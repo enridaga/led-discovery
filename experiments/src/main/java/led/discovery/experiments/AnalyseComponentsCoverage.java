@@ -56,7 +56,7 @@ public class AnalyseComponentsCoverage {
 		output.createNewFile();
 	}
 
-	private Map<String, Double> dictionary(File file)
+	public static final Map<String, Double> dictionary(File file)
 			throws UnsupportedEncodingException, FileNotFoundException, IOException {
 		Map<String, Double> dict = new LinkedHashMap<String, Double>();
 		try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"))) {
@@ -80,7 +80,7 @@ public class AnalyseComponentsCoverage {
 	 * @param terms
 	 * @return
 	 */
-	private double hits(Map<String, Double> dictionary, String[] terms) {
+	public static final double hits(Map<String, Double> dictionary, String[] terms) {
 		List<String> l = new ArrayList<String>(Arrays.asList(terms));
 		l.retainAll(dictionary.keySet());
 		return (double) l.size() / (double) terms.length;
@@ -93,7 +93,7 @@ public class AnalyseComponentsCoverage {
 	 * @param terms
 	 * @return
 	 */
-	private double score(Map<String, Double> dictionary, String[] terms) {
+	public static double score(Map<String, Double> dictionary, String[] terms) {
 		double sum = 0;
 		for (String t : terms) {
 			if (dictionary.containsKey(t)) {
@@ -111,7 +111,7 @@ public class AnalyseComponentsCoverage {
 	 * @param terms
 	 * @return
 	 */
-	private double relevance(Map<String, Double> dictionary, String[] terms) {
+	public static double relevance(Map<String, Double> dictionary, String[] terms) {
 		double sum = 0;
 		int len = 0;
 		for (String t : terms) {
