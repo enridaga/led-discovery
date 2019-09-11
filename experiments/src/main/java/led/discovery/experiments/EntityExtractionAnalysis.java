@@ -19,6 +19,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Properties;
 
 import org.apache.commons.csv.CSVFormat;
@@ -81,12 +82,16 @@ public class EntityExtractionAnalysis {
 				String excerptKey = r.get(0).substring(r.get(0).lastIndexOf('/') + 1);
 				String source = r.get(1);
 				String excerpt = r.get(2);
+				String agent = r.get(3);
+				String place = r.get(4);
 				L.info("LE: {}", excerptKey);
 				L.info("Source: {}", source);
 				L.info("Excerpt: {}", excerpt.substring(0, excerpt.length() > 50 ? 50 : excerpt.length()));
+
 				try {
-					// Load the source
 					String sourceKey = extractArchiveId(source);
+
+					// Load the source
 					if (!sources.containsKey(sourceKey)) {
 						Source s = new Source(source);
 						sources.put(sourceKey, s);
@@ -107,6 +112,7 @@ public class EntityExtractionAnalysis {
 					}
 
 					L.info("Source entities: {}", sourcesEntities.get(sourceKey).entities.size());
+
 					// Load excerpt entities
 					if (!excerptEntities.containsKey(excerptKey)) {
 						Entities entities = new Entities(excerptKey, excerpt);
@@ -114,13 +120,80 @@ public class EntityExtractionAnalysis {
 					}
 
 					L.info("Excerpt entities: {}", excerptEntities.get(excerptKey).entities.size());
+
+					// Is the entity present in the book?
+					int placeInSource = sourcesEntities.get(sourceKey).map().containsKey(place)
+							? sourcesEntities.get(sourceKey).map().get(place).size()
+							: 0;
+					int agentInSource = sourcesEntities.get(sourceKey).map().containsKey(agent)
+							? sourcesEntities.get(sourceKey).map().get(agent).size()
+							: 0;
+					int placeInExcerpt = excerptEntities.get(sourceKey).map().containsKey(place)
+							? excerptEntities.get(sourceKey).map().get(place).size()
+							: 0;
+					int agentInExcerpt = excerptEntities.get(sourceKey).map().containsKey(agent)
+							? excerptEntities.get(sourceKey).map().get(agent).size()
+							: 0;
+
+					int placeDistanceFromExcerpt = placeInExcerpt > 0 ? 0
+							: distance(place, excerpts.get(excerptKey).bookmark,
+									sourcesEntities.get(sourceKey).map().get(place));
+					int agentDistanceFromExcerpt = agentInExcerpt > 0 ? 0
+							: distance(agent, excerpts.get(excerptKey).bookmark,
+									sourcesEntities.get(sourceKey).map().get(agent));
+
+					fw.append(sourceKey);
+					fw.append(",");
+					fw.append(excerptKey);
+					fw.append(",");
+					fw.append(Integer.toString(placeInSource)); // number of mentions
+					fw.append(",");
+					fw.append(Integer.toString(agentInSource)); // number of mentions
+					fw.append(",");
+					fw.append(Integer.toString(placeInExcerpt));
+					fw.append(",");
+					fw.append(Integer.toString(agentInExcerpt));
+					fw.append(",");
+					fw.append(Integer.toString(placeDistanceFromExcerpt));
+					fw.append(",");
+					fw.append(Integer.toString(agentDistanceFromExcerpt));
+					fw.append("\n");
+					fw.flush();
 				} catch (Exception e) {
-					L.warn(" - Skipping! ({})", e.getClass().toString());
-					e.printStackTrace();
+					L.warn(" - Skipping! ({} / {} / {})", new Object[] { excerptKey, e.getClass().toString() });
+					L.error(" - Exception: ", e);
 					continue;
 				}
 			}
 		}
+	}
+
+	private int distance(String entity, Integer[] excerpt, List<Integer[]> positions) {
+		if (positions == null || positions.size() == 0) {
+			return -1;
+		}
+		int distance = 10000000;
+		// Find the closest in entities
+		for (Integer[] pos : positions) {
+			int d;
+			// Before
+			if (pos[1] <= excerpt[0]) {
+				d = excerpt[0] - pos[1];
+			} else
+			// After
+			if (pos[0] >= excerpt[1]) {
+				d = excerpt[1] - pos[1];
+			} else {
+				// This should never happen
+				L.warn("Distance equals 0!!!");
+				d = 0;
+			}
+
+			if (d < distance) {
+				distance = d;
+			}
+		}
+		return distance;
 	}
 
 	private Map<String, List<Integer[]>> spotlight(String text) {
@@ -231,6 +304,9 @@ public class EntityExtractionAnalysis {
 				objectInputStream.close();
 				this.entities = (Map<String, List<Integer[]>>) object;
 				L.debug(" - Entities legnth: {}", entities.size());
+			} catch (NullPointerException e) {
+				L.error("What went wrong?");
+				throw new IOException(e);
 			} catch (Exception e) {
 				throw new IOException(e);
 			}
