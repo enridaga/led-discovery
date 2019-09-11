@@ -32,6 +32,9 @@ import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetEndAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.util.CoreMap;
+import edu.stanford.nlp.util.StringUtils;
+import led.discovery.annotator.DBpediaSpotlightAnnotator.DBpediaEntityAnnotation;
+import led.discovery.annotator.DBpediaSpotlightAnnotator.EntityLabel;
 import led.discovery.annotator.ListeningExperienceAnnotator.ListeningExperienceAnnotation;
 import led.discovery.annotator.ListeningExperienceAnnotator.ListeningExperienceEndAnnotation;
 import led.discovery.annotator.ListeningExperienceAnnotator.ListeningExperienceStartAnnotation;
@@ -66,7 +69,7 @@ public class OutputModel {
 		double minScore = 1.0;
 		// Subsequent false blocks are merged ...
 		for (CoreMap sentence : sentences) {
-			
+
 			// Is LED?
 			boolean isLed = false;
 			if (sentence.get(ListeningExperienceStartAnnotation.class) != null) {
@@ -115,20 +118,33 @@ public class OutputModel {
 					// FIXME
 					// TODO the evaluator depends on the configured method!
 					double score;
-					try{
-						score = sentence.get(ListeningExperienceStartAnnotation.class).get(0).getScore(HeatEvaluator.class);
-					}catch(NullPointerException npe) {
-						score = sentence.get(ListeningExperienceStartAnnotation.class).get(0).getScore(HeatEntityEvaluator.class);						
+					try {
+						score = sentence.get(ListeningExperienceStartAnnotation.class).get(0)
+								.getScore(HeatEvaluator.class);
+					} catch (NullPointerException npe) {
+						score = sentence.get(ListeningExperienceStartAnnotation.class).get(0)
+								.getScore(HeatEntityEvaluator.class);
 					}
 					current.setMetadata("score", Double.toString(score));
 					L.debug(" ~~~ score: {}", current.getMetadata("score"));
-					if(maxScore < score) {
+
+					// We should also set entities
+					try {
+						List<EntityLabel> entities = sentence.get(DBpediaEntityAnnotation.class);
+						for (EntityLabel l : entities) {
+							current.setMetadata(new StringBuilder().append("entity:").append(l.originalText()).append(":").append(Integer.toString(l.beginPosition())).append(":").append(Integer.toString(l.endPosition())).toString(), l.getUri());
+						}
+					} catch (NullPointerException npe) {
+					}
+					// We should also set filtered entities
+
+					if (maxScore < score) {
 						maxScore = score;
 					}
-					if(minScore > score) {
+					if (minScore > score) {
 						minScore = score;
 					}
-				}else {
+				} else {
 					current.setMetadata("score", "-1");
 				}
 			}
@@ -139,12 +155,12 @@ public class OutputModel {
 				L.debug(" ~~~ text: {}", sentence.get(CoreAnnotations.TextAnnotation.class));
 			}
 		}
-		
+
 		// Close and add last block
 		current.offsetEnd = previousSentenceEnd;
 		current.text = text.toString();
 		blocks.add(current);
-		
+
 		L.debug("Passed {}", annotation.get(ListeningExperienceAnnotation.class).size());
 		L.debug("Not Passed {}", annotation.get(NotListeningExperienceAnnotation.class).size());
 		L.debug("True Blocks: {}", numberOfLEDFound);

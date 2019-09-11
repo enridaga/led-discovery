@@ -41,7 +41,9 @@ public class Findler {
 			method.list(new PrintWriter(writer));
 			L.debug("Annotate with properties: \n{}", writer.getBuffer().toString());
 		}
+		// TODO Remove this
 		StanfordCoreNLP.clearAnnotatorPool();
+		// FIXME Move this to the constructor
 		AnnotationPipeline pipeline = new StanfordCoreNLP(method);
 		Annotation annotation = new Annotation(text);
 		pipeline.annotate(annotation);

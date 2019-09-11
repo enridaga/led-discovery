@@ -3,6 +3,7 @@ package led.discovery.io;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -12,20 +13,15 @@ import java.nio.file.Files;
 import java.util.Base64;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
-import org.apache.commons.cli.CommandLine;
-import org.apache.commons.cli.CommandLineParser;
-import org.apache.commons.cli.DefaultParser;
-import org.apache.commons.cli.HelpFormatter;
-import org.apache.commons.cli.Option;
-import org.apache.commons.cli.Options;
-import org.apache.commons.cli.ParseException;
 import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import edu.stanford.nlp.util.StringUtils;
 import led.discovery.app.model.OutputModel;
+import led.discovery.app.model.OutputModel.Block;
 import led.discovery.nlp.StanfordNLPProvider;
 import led.discovery.utils.GutenbergZipFileSourceFactory;
 
@@ -123,6 +119,33 @@ public class Tools {
 			File from = new File(args[0]);
 			File to = new File(args[1]);
 			new CreateSingleDocList(from, to).perform();
+		}
+	}
+
+	public static class ExploreCache {
+		public void list(File cache, String filename) throws FileNotFoundException, IOException {
+			OutputModel m = OutputModel.fromJSON(IOUtils.toString(new FileReader(new File(cache, filename))));
+			Iterator<Block> i = m.blocks();
+			while (i.hasNext()) {
+				Block b = i.next();
+				if (b.isLE()) {
+					System.out.println("--------------------------------------------------------------");
+					System.out.print(b.offsetStart());
+					System.out.print(":");
+					System.out.println(b.offsetEnd());
+					System.out.println(b.getText());
+					Map<String, String> meta = b.getMetadata();
+					for (Entry<String, String> mm : meta.entrySet()) {
+						System.out.print(mm.getKey());
+						System.out.print(": ");
+						System.out.println(mm.getValue());
+					}
+				}
+			}
+		}
+		public static void main(String[] args) throws Exception {
+			File cache = new File(args[0]);
+			new ExploreCache().list(cache, args[1]);
 		}
 	}
 

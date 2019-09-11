@@ -3,6 +3,7 @@ package led.discovery.experiments;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -14,6 +15,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -163,6 +166,19 @@ public class REDDataset {
 
 	}
 
+	public void createTestDataset(String filesDir, String testFileListLocation, String outputFileLocation)
+			throws FileNotFoundException, IOException {
+		try (BufferedReader r = new BufferedReader(new FileReader(testFileListLocation));
+				FileWriter fw = new FileWriter(outputFileLocation, true);
+				CSVPrinter writer = new CSVPrinter(fw, CSVFormat.DEFAULT);) {
+			for (String line; (line = r.readLine()) != null;) {
+				File f = new File(filesDir, line);
+				String text = IOUtils.toString(new FileReader(f));
+				writer.printRecord("1.0", line, text);
+			}
+		}
+	}
+
 	/**
 	 * 
 	 * @param inputFileLocation
@@ -178,8 +194,8 @@ public class REDDataset {
 	 * @param trainingSetList
 	 * @param dictionary
 	 */
-	public void analyseDistribution(String filesDir, String trainingSetList, String dictionaryFileLocation, String outputFileLocation)
-			throws IOException {
+	public void analyseDistribution(String filesDir, String trainingSetList, String dictionaryFileLocation,
+			String outputFileLocation) throws IOException {
 		FeaturesFactory factory = new FeaturesFactory();
 		Map<String, Double> dictionary = AnalyseComponentsCoverage.dictionary(new File(dictionaryFileLocation));
 
@@ -198,7 +214,7 @@ public class REDDataset {
 				fw.write(Double.toString(AnalyseComponentsCoverage.score(dictionary, terms)));
 				fw.write(","); // D
 				fw.write(Double.toString(AnalyseComponentsCoverage.relevance(dictionary, terms)));
-				fw.write("\n"); // 
+				fw.write("\n"); //
 			}
 		}
 	}
@@ -217,7 +233,13 @@ public class REDDataset {
 
 	public static class AnalyseDistribution {
 		public static void main(String[] args) throws IOException {
-			new REDDataset().analyseDistribution(args[0], args[1], args[2], args[3 ]);
+			new REDDataset().analyseDistribution(args[0], args[1], args[2], args[3]);
+		}
+	}
+
+	public static class CreateTestDataset {
+		public static void main(String[] args) throws IOException {
+			new REDDataset().createTestDataset(args[0], args[1], args[2]);
 		}
 	}
 }

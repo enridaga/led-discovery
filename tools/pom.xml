@@ -162,7 +162,23 @@
 							</arguments>
 						</configuration>
 					</execution>
-					
+					<execution>
+						<id>explore-cache</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.io.Tools$ExploreCache</argument>
+								<argument>${led.cache}</argument>
+								<argument>${led.filename}</argument>
+							</arguments>
+						</configuration>
+					</execution>
 					<execution>
 						<id>RED</id>
 						<goals>
@@ -179,14 +195,9 @@
 							</arguments>
 						</configuration>
 					</execution>
-
 				</executions>
 			</plugin>
-			<!-- <plugin> <artifactId>maven-assembly-plugin</artifactId> <executions> 
-				<execution> <phase>package</phase> <goals> <goal>single</goal> </goals> </execution> 
-				</executions> <configuration> ... <archive> <manifest> <mainClass>led.discovery.io.Tools</mainClass> 
-				</manifest> </archive> <descriptorRefs> <descriptorRef>jar-with-dependencies</descriptorRef> 
-				</descriptorRefs> </configuration> </plugin> -->
+			
 		</plugins>
 	</build>
 
