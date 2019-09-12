@@ -128,18 +128,18 @@ public class EntityExtractionAnalysis {
 					int agentInSource = sourcesEntities.get(sourceKey).map().containsKey(agent)
 							? sourcesEntities.get(sourceKey).map().get(agent).size()
 							: 0;
-					int placeInExcerpt = excerptEntities.get(sourceKey).map().containsKey(place)
+					int placeInExcerpt = excerptEntities.get(excerptKey).map().containsKey(place)
 							? excerptEntities.get(sourceKey).map().get(place).size()
 							: 0;
-					int agentInExcerpt = excerptEntities.get(sourceKey).map().containsKey(agent)
+					int agentInExcerpt = excerptEntities.get(excerptKey).map().containsKey(agent)
 							? excerptEntities.get(sourceKey).map().get(agent).size()
 							: 0;
 
 					int placeDistanceFromExcerpt = placeInExcerpt > 0 ? 0
-							: distance(place, excerpts.get(excerptKey).bookmark,
+							: distance(place, excerpts.get(excerptKey).getBookmark(),
 									sourcesEntities.get(sourceKey).map().get(place));
 					int agentDistanceFromExcerpt = agentInExcerpt > 0 ? 0
-							: distance(agent, excerpts.get(excerptKey).bookmark,
+							: distance(agent, excerpts.get(excerptKey).getBookmark(),
 									sourcesEntities.get(sourceKey).map().get(agent));
 
 					fw.append(sourceKey);
