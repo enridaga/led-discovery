@@ -60,6 +60,8 @@ public class EntityExtractionAnalysis {
 	}
 
 	public void run() throws IOException {
+		_clean();
+		
 		Map<String, Source> sources = new HashMap<String, Source>();
 		Map<String, Excerpt> excerpts = new HashMap<String, Excerpt>();
 		Map<String, Entities> sourcesEntities = new HashMap<String, Entities>();
