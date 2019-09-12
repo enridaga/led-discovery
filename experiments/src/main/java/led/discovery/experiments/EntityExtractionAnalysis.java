@@ -165,8 +165,18 @@ public class EntityExtractionAnalysis {
 					fw.append(",");
 					fw.append(excerptKey);
 					fw.append(",");
-					fw.append(place); // 
-					fw.append(agent); // 
+					
+					fw.append('"');
+					fw.append(place); //
+					fw.append('"');
+					
+					fw.append(",");
+					
+					fw.append('"');
+					fw.append(agent); //
+					fw.append('"');
+					
+					fw.append(",");
 					fw.append(Integer.toString(placeInSource)); // number of mentions
 					fw.append(",");
 					fw.append(Integer.toString(agentInSource)); // number of mentions
@@ -192,7 +202,9 @@ public class EntityExtractionAnalysis {
 		for (Entry<String, Entities> sourceE : sourcesEntities.entrySet()) {
 			try (FileWriter fw = new FileWriter(new File(sourcesDir, sourceE.getKey() + "_elist.csv"), true)) {
 				for (Entry<String, List<Integer[]>> en : sourceE.getValue().map().entrySet()) {
+					fw.append('"');
 					fw.append(en.getKey());
+					fw.append('"');
 					fw.append(",");
 					fw.append(Integer.toString(en.getValue().size()));
 					fw.append("\n");
@@ -205,7 +217,9 @@ public class EntityExtractionAnalysis {
 		for (Entry<String, Entities> excerptE : excerptEntities.entrySet()) {
 			try (FileWriter fw = new FileWriter(new File(sourcesDir, excerptE.getKey() + "_elist.csv"), true)) {
 				for (Entry<String, List<Integer[]>> en : excerptE.getValue().map().entrySet()) {
+					fw.append('"');
 					fw.append(en.getKey());
+					fw.append('"');
 					fw.append(",");
 					fw.append(Integer.toString(en.getValue().size()));
 					fw.append("\n");
