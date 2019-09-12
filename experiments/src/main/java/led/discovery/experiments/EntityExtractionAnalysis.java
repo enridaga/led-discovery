@@ -74,8 +74,18 @@ public class EntityExtractionAnalysis {
 			fw.append(",");
 			fw.append("excerpt");
 			fw.append(",");
-			fw.append("place"); // 
-			fw.append("agent"); // 
+			fw.append("place"); //
+			fw.append(",");
+			fw.append("agent"); //
+			fw.append(",");
+			
+			fw.append("excerptStarts"); // 
+			fw.append(",");
+			fw.append("excerptEnds"); // 
+			fw.append(",");
+			fw.append("sourceSize"); // 
+			fw.append(",");
+			
 			fw.append("placeInSource"); // number of mentions
 			fw.append(",");
 			fw.append("agentInSource"); // number of mentions
@@ -177,6 +187,14 @@ public class EntityExtractionAnalysis {
 					fw.append('"');
 					fw.append(agent); //
 					fw.append('"');
+					
+					fw.append(",");
+					fw.append(Integer.toString(excerpts.get(excerptKey).getBookmark()[0])); // excerpt starts
+					fw.append(",");
+					fw.append(Integer.toString(excerpts.get(excerptKey).getBookmark()[1])); // excerpt ends
+					fw.append(",");
+					fw.append(Integer.toString(sources.get(sourceKey).getContent().length())); // source length
+					fw.append(",");
 					
 					fw.append(",");
 					fw.append(Integer.toString(placeInSource)); // number of mentions
