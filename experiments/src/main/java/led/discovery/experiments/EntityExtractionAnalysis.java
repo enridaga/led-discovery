@@ -196,10 +196,9 @@ public class EntityExtractionAnalysis {
 					fw.append(Integer.toString(sources.get(sourceKey).getContent().length())); // source length
 					fw.append(",");
 					
+					fw.append(Integer.toString(placeInSource)); // number of mentions of place in source
 					fw.append(",");
-					fw.append(Integer.toString(placeInSource)); // number of mentions
-					fw.append(",");
-					fw.append(Integer.toString(agentInSource)); // number of mentions
+					fw.append(Integer.toString(agentInSource)); // number of mentions of agent in source
 					fw.append(",");
 					fw.append(Integer.toString(placeInExcerpt));
 					fw.append(",");
