@@ -120,7 +120,7 @@ public class EntityExtractionAnalysis {
 				L.info("Sources: {}", sources__);
 				L.info("Source: {}", source);
 				L.info("Excerpt: {}", excerpt.substring(0, excerpt.length() > 50 ? 50 : excerpt.length()));
-				if(true)continue;
+				
 				try {
 					String sourceKey = extractArchiveId(source);
 
