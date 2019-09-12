@@ -111,16 +111,30 @@ public class EntityExtractionAnalysis {
 					continue;
 				}
 				String excerptKey = r.get(0).substring(r.get(0).lastIndexOf('/') + 1);
+
+				// If we already visited this LE, continue
+				if(excerpts.containsKey(excerptKey)) {
+					L.warn("Skipping (visited): {}", excerptKey);
+					continue;
+				}
+				
 				String sources__ = r.get(1);
 				String source = sources__.split("\\|")[0];
 				String excerpt = r.get(2);
 				String agent = r.get(3);
 				String place = r.get(4);
+				
+				// If both agent or place are empty, skip
+				if(agent.equals("") && place.equals("")) {
+					L.warn("Skipping (empty): {}", excerptKey);
+					continue;
+				}
+				
 				L.info("LE: {}", excerptKey);
 				L.info("Sources: {}", sources__);
 				L.info("Source: {}", source);
 				L.info("Excerpt: {}", excerpt.substring(0, excerpt.length() > 50 ? 50 : excerpt.length()));
-				
+
 				try {
 					String sourceKey = extractArchiveId(source);
 
