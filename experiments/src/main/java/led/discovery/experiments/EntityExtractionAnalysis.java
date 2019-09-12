@@ -60,6 +60,10 @@ public class EntityExtractionAnalysis {
 	}
 
 	public void run() throws IOException {
+		Map<String, Source> sources = new HashMap<String, Source>();
+		Map<String, Excerpt> excerpts = new HashMap<String, Excerpt>();
+		Map<String, Entities> sourcesEntities = new HashMap<String, Entities>();
+		Map<String, Entities> excerptEntities = new HashMap<String, Entities>();
 
 		// Iterate over csv and download TXT version of sources from archive.org
 		try (CSVParser reading = new CSVParser(new FileReader(input), CSVFormat.DEFAULT);
@@ -68,10 +72,6 @@ public class EntityExtractionAnalysis {
 			//
 			Iterator<CSVRecord> iter = reading.getRecords().iterator();
 			boolean skip = true;
-			Map<String, Source> sources = new HashMap<String, Source>();
-			Map<String, Excerpt> excerpts = new HashMap<String, Excerpt>();
-			Map<String, Entities> sourcesEntities = new HashMap<String, Entities>();
-			Map<String, Entities> excerptEntities = new HashMap<String, Entities>();
 
 			while (iter.hasNext()) {
 				CSVRecord r = iter.next();
@@ -163,6 +163,32 @@ public class EntityExtractionAnalysis {
 					L.warn(" - Skipping! ({} / {} / {})", new Object[] { excerptKey, e.getClass().toString() });
 					L.error(" - Exception: ", e);
 					continue;
+				}
+			}
+		}
+
+		// dump entities
+		for (Entry<String, Entities> sourceE : sourcesEntities.entrySet()) {
+			try (FileWriter fw = new FileWriter(new File(sourcesDir, sourceE.getKey() + "_elist.csv"), true)) {
+				for (Entry<String, List<Integer[]>> en : sourceE.getValue().map().entrySet()) {
+					fw.append(en.getKey());
+					fw.append(",");
+					fw.append(Integer.toString(en.getValue().size()));
+					fw.append("\n");
+					fw.flush();
+				}
+			}
+		}
+
+		// dump entities
+		for (Entry<String, Entities> excerptE : excerptEntities.entrySet()) {
+			try (FileWriter fw = new FileWriter(new File(sourcesDir, excerptE.getKey() + "_elist.csv"), true)) {
+				for (Entry<String, List<Integer[]>> en : excerptE.getValue().map().entrySet()) {
+					fw.append(en.getKey());
+					fw.append(",");
+					fw.append(Integer.toString(en.getValue().size()));
+					fw.append("\n");
+					fw.flush();
 				}
 			}
 		}
