@@ -219,7 +219,10 @@ public class EntityExtractionAnalysis {
 
 		// dump entities
 		for (Entry<String, Entities> sourceE : sourcesEntities.entrySet()) {
-			try (FileWriter fw = new FileWriter(new File(sourcesDir, sourceE.getKey() + "_elist.csv"), true)) {
+			File fel = new File(sourcesDir, sourceE.getKey() + "_elist.csv");
+			fel.delete();
+			L.info("Saving source entities: {}", fel);
+			try (FileWriter fw = new FileWriter(fel, false)) {
 				for (Entry<String, List<Integer[]>> en : sourceE.getValue().map().entrySet()) {
 					fw.append('"');
 					fw.append(en.getKey());
@@ -234,7 +237,10 @@ public class EntityExtractionAnalysis {
 
 		// dump entities
 		for (Entry<String, Entities> excerptE : excerptEntities.entrySet()) {
-			try (FileWriter fw = new FileWriter(new File(sourcesDir, excerptE.getKey() + "_elist.csv"), true)) {
+			File fel = new File(sourcesDir, excerptE.getKey() + "_elist.csv");
+			fel.delete();
+			L.info("Saving excerpt entities: {}", fel);
+			try (FileWriter fw = new FileWriter(fel, false)) {
 				for (Entry<String, List<Integer[]>> en : excerptE.getValue().map().entrySet()) {
 					fw.append('"');
 					fw.append(en.getKey());
