@@ -119,7 +119,7 @@ public class EntityExtractionAnalysis {
 						excerptEntities.put(sourceKey, entities);
 					}
 
-					L.info("Excerpt entities: {}", excerptEntities.get(excerptKey).entities.size());
+					L.info("Excerpt entities: {}", excerptEntities.get(excerptKey).map().size());
 
 					// Is the entity present in the book?
 					int placeInSource = sourcesEntities.get(sourceKey).map().containsKey(place)
@@ -303,11 +303,12 @@ public class EntityExtractionAnalysis {
 				Object object = objectInputStream.readObject();
 				objectInputStream.close();
 				this.entities = (Map<String, List<Integer[]>>) object;
-				L.debug(" - Entities legnth: {}", entities.size());
+				L.debug(" - Entities length: {}", entities.size());
 			} catch (NullPointerException e) {
-				L.error("What went wrong?");
+				L.debug("Throwing IOE(NPE)");
 				throw new IOException(e);
 			} catch (Exception e) {
+				L.debug("Throwing IOE");
 				throw new IOException(e);
 			}
 
