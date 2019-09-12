@@ -68,6 +68,25 @@ public class EntityExtractionAnalysis {
 		// Iterate over csv and download TXT version of sources from archive.org
 		try (CSVParser reading = new CSVParser(new FileReader(input), CSVFormat.DEFAULT);
 				FileWriter fw = new FileWriter(output, true)) {
+			fw.append("source");
+			fw.append(",");
+			fw.append("excerpt");
+			fw.append(",");
+			fw.append("place"); // 
+			fw.append("agent"); // 
+			fw.append("placeInSource"); // number of mentions
+			fw.append(",");
+			fw.append("agentInSource"); // number of mentions
+			fw.append(",");
+			fw.append("placeInExcerpt");
+			fw.append(",");
+			fw.append("agentInExcerpt");
+			fw.append(",");
+			fw.append("placeDistanceFromExcerpt");
+			fw.append(",");
+			fw.append("agentDistanceFromExcerpt");
+			fw.append("\n");
+			fw.flush();
 
 			//
 			Iterator<CSVRecord> iter = reading.getRecords().iterator();
@@ -146,6 +165,8 @@ public class EntityExtractionAnalysis {
 					fw.append(",");
 					fw.append(excerptKey);
 					fw.append(",");
+					fw.append(place); // 
+					fw.append(agent); // 
 					fw.append(Integer.toString(placeInSource)); // number of mentions
 					fw.append(",");
 					fw.append(Integer.toString(agentInSource)); // number of mentions
