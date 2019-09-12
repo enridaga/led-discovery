@@ -116,7 +116,7 @@ public class EntityExtractionAnalysis {
 					// Load excerpt entities
 					if (!excerptEntities.containsKey(excerptKey)) {
 						Entities entities = new Entities(excerptKey, excerpt);
-						excerptEntities.put(sourceKey, entities);
+						excerptEntities.put(excerptKey, entities);
 					}
 
 					L.info("Excerpt entities: {}", excerptEntities.get(excerptKey).map().size());
