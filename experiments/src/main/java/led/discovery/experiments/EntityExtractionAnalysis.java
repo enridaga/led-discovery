@@ -284,7 +284,7 @@ public class EntityExtractionAnalysis {
 			} else
 			// After
 			if (pos[0] >= excerpt[1]) {
-				d = excerpt[1] - pos[1];
+				d = pos[0] - excerpt[1];
 			} else {
 				// This should never happen
 				L.warn("Distance equals 0!!!");
