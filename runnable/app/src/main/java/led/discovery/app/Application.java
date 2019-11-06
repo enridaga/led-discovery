@@ -7,6 +7,8 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
+import org.apache.stanbol.commons.jobs.api.JobManager;
+import org.apache.stanbol.commons.jobs.impl.JobManagerImpl;
 import org.apache.velocity.app.VelocityEngine;
 import org.apache.velocity.runtime.RuntimeConstants;
 import org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader;
@@ -24,6 +26,7 @@ public class Application extends ResourceConfig implements ServletContextListene
 	public final static String CACHE = "LED_CACHE";
 	public final static String VELOCITY = "LED_VELOCITY";
 	public static final String TEMPLATES = "LED_TEMPLATE";
+	public static final String JOB_MANAGER = "LED_JOB_MANAGER";
 
 	public Application() {
 		log.info("Inizialise resources.");
@@ -83,7 +86,10 @@ public class Application extends ResourceConfig implements ServletContextListene
 		}
 		engine.setApplicationAttribute("javax.servlet.ServletContext", ctx);
 		engine.init(p);
+		
+		JobManager jobManager = new JobManagerImpl();
 		ctx.setAttribute(VELOCITY, engine);
+		ctx.setAttribute(JOB_MANAGER, jobManager);
 		ctx.setAttribute(TEMPLATES, "/WEB-INF/templates");
 		log.info("Initialized.");
 	}

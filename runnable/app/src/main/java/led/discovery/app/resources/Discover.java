@@ -17,7 +17,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Properties;
 
-import javax.servlet.ServletContext;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -25,20 +24,15 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.WebApplicationException;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.StreamingOutput;
-import javax.ws.rs.core.UriInfo;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.http.client.utils.URIBuilder;
-import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
-import org.apache.velocity.app.VelocityEngine;
 import org.apache.velocity.exception.VelocityException;
 import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
 import org.glassfish.jersey.media.multipart.FormDataParam;
@@ -56,16 +50,7 @@ import led.discovery.app.model.FindlerManager;
 import led.discovery.app.model.OutputModel;
 
 @Path("")
-public class Discover {
-	@Context
-	protected HttpHeaders requestHeaders;
-
-	@Context
-	protected UriInfo requestUri;
-
-	@Context
-	protected ServletContext context;
-
+public class Discover extends AbstractResource {
 	private static Logger L = LoggerFactory.getLogger(Discover.class);
 
 	private LinkedHashMap<Integer, Double> sensitivityScale = null;
@@ -295,16 +280,8 @@ public class Discover {
 //		return model;
 //	}
 
-	public VelocityContext getVelocityContext() {
-		VelocityContext vcontext = new VelocityContext();
-		vcontext.put("StringEscapeUtils", StringEscapeUtils.class);
-		vcontext.put("findlerBasePath", "/findler");
-		vcontext.put("servlet", this);
-		vcontext.put("userInputEnabled", (boolean) context.getAttribute(Application.USER_INPUT_ENABLED));
-		return vcontext;
-	}
 
-	public VelocityContext prepareContext(OutputModel model, double defaultTh, double th) {
+	private VelocityContext prepareContext(OutputModel model, double defaultTh, double th) {
 		VelocityContext vcontext = getVelocityContext();
 		vcontext.put("found", model.numberOfLEFound());
 		vcontext.put("blocks", model.blocks());
@@ -319,57 +296,7 @@ public class Discover {
 		return vcontext;
 	}
 
-	public Response error500(String message, Exception e) {
-		return Response.status(500).entity(errorPage(message, e).toString()).build();
-	}
-
-	public Response error400(String message) {
-		return Response.status(400).entity(errorPage(message).toString()).build();
-	}
-
-	public StringWriter errorPage(String message, Exception e) {
-		VelocityContext vcontext = getVelocityContext();
-		vcontext.put("body", getTemplate("/layout/error.tpl"));
-		vcontext.put("message", message);
-		vcontext.put("exception", e);
-		return getRenderer(vcontext);
-	}
-
-	public StringWriter errorPage(String message) {
-		VelocityContext vcontext = getVelocityContext();
-		vcontext.put("body", getTemplate("/layout/error.tpl"));
-		vcontext.put("message", message);
-		return getRenderer(vcontext);
-	}
-
-	public String getTemplate(String relativePath) {
-		String base = (String) context.getAttribute(Application.TEMPLATES);
-		return base + relativePath;
-	}
-
-	public StringWriter getRenderer(VelocityContext vcontext) {
-		StringWriter sw = new StringWriter();
-		VelocityEngine engine = (VelocityEngine) context.getAttribute(Application.VELOCITY);
-		Template template = null;
-		template = engine.getTemplate(getTemplate("/layout/main.tpl"));
-		template.merge(vcontext, sw);
-		return sw;
-	}
-//
-//	public Annotation annotate(String text, Properties method) {
-//		if (L.isDebugEnabled()) {
-//			StringWriter writer = new StringWriter();
-//			method.list(new PrintWriter(writer));
-//			L.debug("Annotate with properties: \n{}", writer.getBuffer().toString());
-//		}
-//		StanfordCoreNLP.clearAnnotatorPool();
-//		AnnotationPipeline pipeline = new StanfordCoreNLP(method);
-//		Annotation annotation = new Annotation(text);
-//		pipeline.annotate(annotation);
-//		return annotation;
-//	}
-
-	public Properties getMethodProperties(String method) throws IOException {
+	private Properties getMethodProperties(String method) throws IOException {
 		File properties = new File((String) context.getAttribute(Application.DATA_DIR), method + ".properties");
 		if (properties.exists()) {
 			Properties props = new Properties();
@@ -385,7 +312,7 @@ public class Discover {
 		}
 	}
 
-	public final LinkedHashMap<Integer, Double> getSensitivityScale(double reset) throws NullPointerException {
+	private final LinkedHashMap<Integer, Double> getSensitivityScale(double reset) throws NullPointerException {
 		if (sensitivityScale == null) {
 			double valMax = 1.0;
 			double valMin = 0.01;

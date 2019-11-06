@@ -78,7 +78,7 @@ public class Standalone {
 		
 		AppCli cli = new AppCli(args);
 		cli.parse();
-		
+		startServer(cli);
 
 	}
 }
