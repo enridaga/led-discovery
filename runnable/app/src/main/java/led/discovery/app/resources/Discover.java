@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.net.HttpURLConnection;
+import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.URLConnection;
@@ -26,12 +27,11 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import javax.ws.rs.core.StreamingOutput;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.http.client.utils.URIBuilder;
+import org.apache.stanbol.commons.jobs.api.JobManager;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.exception.VelocityException;
 import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
@@ -48,6 +48,8 @@ import led.discovery.app.model.FileCache;
 import led.discovery.app.model.Findler;
 import led.discovery.app.model.FindlerManager;
 import led.discovery.app.model.OutputModel;
+import led.discovery.app.model.OutputModelJob;
+import led.discovery.app.model.OutputModelJobResult;
 
 @Path("")
 public class Discover extends AbstractResource {
@@ -55,15 +57,15 @@ public class Discover extends AbstractResource {
 
 	private LinkedHashMap<Integer, Double> sensitivityScale = null;
 
-	private static Map<String, String> ddat = null;
+	private static Map<String, String> demoData = null;
 
 	@GET
 	@Produces("text/html")
 	public Response htmlGET() {
 		L.debug("GET htmlGETs");
 		VelocityContext vcontext = getVelocityContext();
-		if (ddat == null) {
-			ddat = new HashMap<String, String>();
+		if (demoData == null) {
+			demoData = new HashMap<String, String>();
 			// Check if demo URL exists
 			// FIXME Change file name to collection.txt
 			File demo = new File((String) context.getAttribute(Application.DATA_DIR), "demo.txt");
@@ -78,7 +80,7 @@ public class Discover extends AbstractResource {
 					for (String s : dco.split("\n")) {
 						String[] tk = s.split("\\|");
 						L.debug("{} {}", tk[1], tk[0]);
-						ddat.put(tk[1].trim(), tk[0]);
+						demoData.put(tk[1].trim(), tk[0]);
 					}
 				} catch (Exception e) {
 					L.error("Cannot read demo url lists at " + demo, e);
@@ -87,7 +89,7 @@ public class Discover extends AbstractResource {
 				L.debug("Demo file does not exist: {}", demo);
 			}
 		}
-		vcontext.put("demo", ddat);
+		vcontext.put("demo", demoData);
 		String tmpl = "/discover/selectbook.tpl";
 		if ((boolean) context.getAttribute(Application.USER_INPUT_ENABLED)) {
 			tmpl = "/discover/input.tpl";
@@ -118,13 +120,13 @@ public class Discover extends AbstractResource {
 	@Path("source")
 	@Produces("text/html")
 	public Response htmlGETsource(@QueryParam("id") String sourceId, @QueryParam("th") Double th) {
-		L.debug("GET htmlGETsource");
+		L.debug("GET jsonGETsource");
 		if (sourceId == null) {
-			return Response.status(HttpURLConnection.HTTP_BAD_REQUEST)
-					.entity(errorPage("source parameter is mandatory").toString()).build();
+			return Response.status(400).entity("Missing query parameter: url").build();
 		}
+		boolean usecache = requestUri.getQueryParameters().getFirst("nocache") == null;
+		boolean recache = requestUri.getQueryParameters().getFirst("recache") != null;
 		try {
-			// TODO get method properties from a configuration variable, to support multiple methods on the same instance
 			Properties properties = getMethodProperties("MusicEmbeddings");
 			double defaultTh = Double.parseDouble(properties.getProperty("custom.led.heat.threshold"));
 			if (th == null) {
@@ -133,26 +135,45 @@ public class Discover extends AbstractResource {
 				properties.setProperty("custom.led.heat.threshold", Double.toString(th));
 			}
 			L.debug("Threshold: {}", th);
-			L.debug("Property th: {}", properties.getProperty("custom.led.heat.threshold"));
-			try {
+			
+			final FindlerManager fm = buildManager(properties);
+			if (!recache && usecache && fm.hasOutputModelCached(sourceId)) {
+				OutputModel model = fm.fromCache(sourceId);
 				VelocityContext vcontext = getVelocityContext();
-				L.debug("processing source: {}", sourceId);
-				OutputModel model = findSource(sourceId, properties);
 				vcontext = prepareContext(model, defaultTh, th);
 				vcontext.put("source", sourceId);
 				return Response.ok(getRenderer(vcontext).toString()).build();
-			} catch (IOException e) {
-				L.error("Problem with input url", e);
-				return Response.status(500).entity(errorPage("There was a problem accessing the URL", e).toString())
-						.build();
-			} catch (VelocityException mie) {
-				L.error("Problem with template engine", mie);
-				throw new WebApplicationException(mie, 500);
+			}else {
+				// If a job with that source is not running, start one.
+				// Start a background job
+				// Don't use cache = start a background job
+				String jobId;
+				// If a job is already running
+				if(!outputHasJobId(fm.buildOutputModelCacheId(sourceId))) {
+					// Don't use cache = start a background job
+					jobId = startJob(fm, sourceId, usecache || recache);
+					outputSetJobId(fm.buildOutputModelCacheId(sourceId), jobId);
+				}else {
+					jobId = outputGetJobId(fm.buildOutputModelCacheId(sourceId));
+				}
+				VelocityContext vcontext = getVelocityContext();
+				vcontext.put("body", getTemplate("/discover/waiting.tpl"));
+				vcontext.put("source", sourceId);
+				vcontext.put("jobId", jobId);
+				return Response.ok(getRenderer(vcontext).toString()).build();
 			}
+		} catch (VelocityException mie) {
+			L.error("Problem with template engine", mie);
+			throw new WebApplicationException(mie, 500);
 		} catch (Exception ee) {
 			L.error("Internal error", ee);
 			return Response.status(500).entity(ExceptionUtils.getStackTrace(ee)).build();
-		}
+		} 
+	}
+	
+
+	public FindlerManager buildManager(Properties properties) throws IOException {
+		return new FindlerManager(new Findler(properties), getCache());
 	}
 
 	@GET
@@ -162,20 +183,74 @@ public class Discover extends AbstractResource {
 		L.debug("GET jsonGETsource");
 		if (sourceId == null) {
 			return Response.status(400).entity("Missing query parameter: url").build();
-		} else {
-			L.debug("processing source: {}", sourceId);
-			try {
-				Properties properties = getMethodProperties("MusicEmbeddings");
-				OutputModel model = findSource(sourceId, properties);
-				StreamingOutput stream = model.streamJSON();
-				return Response.ok(stream).header("Content-type", "application/json; charset=utf8").build();
-			} catch (IOException e) {
-				L.error("Problem with input url", e);
-				throw new WebApplicationException(500);
+		}
+		boolean usecache = requestUri.getQueryParameters().getFirst("nocache") == null;
+		boolean recache = requestUri.getQueryParameters().getFirst("recache") != null;
+		try {
+			Properties properties = getMethodProperties("MusicEmbeddings");
+			double defaultTh = Double.parseDouble(properties.getProperty("custom.led.heat.threshold"));
+			if (th == null) {
+				th = defaultTh;
+			} else {
+				properties.setProperty("custom.led.heat.threshold", Double.toString(th));
 			}
+			L.debug("Threshold: {}", th);
+			
+			final FindlerManager fm = buildManager(properties);
+			if (!recache && usecache && fm.hasOutputModelCached(sourceId)) {
+				// Cleanup the Job Queue
+				outputRemoveJobId(fm.buildOutputModelCacheId(sourceId));
+				OutputModel model = fm.fromCache(sourceId);
+				return Response.ok(model.streamJSON()).header("Content-type", "application/json; charset=utf8").build();
+			}
+			String jobId;
+			// If a job is already running
+			if(!outputHasJobId(fm.buildOutputModelCacheId(sourceId))) {
+				// Don't use cache = start a background job
+				jobId = startJob(fm, sourceId, usecache || recache);
+				outputSetJobId(fm.buildOutputModelCacheId(sourceId), jobId);
+			}else {
+				jobId = outputGetJobId(fm.buildOutputModelCacheId(sourceId));
+			}
+
+			// This service returns 201 Created on success
+			String location = requestUri.getBaseUri() + "/jobs/" + jobId;
+			String info = new StringBuilder().append("{ \"message\":\"Job started.\",\n\"location\":\"")
+					.append("\"Location\": \"").append(location).append("\"").toString();
+			return Response.created(URI.create(location)).header("Content-type", "text/plain").entity(info).build();
+		} catch (IOException e1) {
+			L.error("", e1);
+			throw new WebApplicationException(e1);
 		}
 	}
 
+	private String startJob(FindlerManager fm, String sourceId, boolean cacheOutput) {
+		L.debug("processing source: {}", sourceId);
+		JobManager jm = getJobManager();
+		String jobId = jm.execute(new OutputModelJob() {
+
+			@Override
+			public OutputModelJobResult call() throws Exception {
+
+				try {
+					String text = getCache().get(sourceId);
+					OutputModel model = fm.find(sourceId, text, cacheOutput);
+					return new OutputModelJobResult(model, "OK");
+				} catch (IOException e) {
+					L.error("Problem with input url", e);
+					return new OutputModelJobResult(e.getMessage(), e);
+				}
+			}
+
+			@Override
+			public String buildResultLocation(String jobId) {
+				return "jobs/" + jobId;
+			}
+		});
+		L.debug("created job: {}", jobId);
+		return jobId;
+	}
+	
 	@POST
 	@Path("file")
 	@Consumes(MediaType.MULTIPART_FORM_DATA)
@@ -234,13 +309,14 @@ public class Discover extends AbstractResource {
 		return (FileCache) context.getAttribute(Application.CACHE);
 	}
 
-	public OutputModel findSource(String sourceId, Properties properties) throws IOException {
-		String text = getCache().get(sourceId);
-		boolean usecache = requestUri.getQueryParameters().getFirst("nocache") == null;
-		boolean recache = requestUri.getQueryParameters().getFirst("recache") != null;
-		OutputModel model = new FindlerManager(new Findler(properties), getCache()).find(sourceId, text, usecache, recache);
-		return model;
-	}
+//	public OutputModel findSource(String sourceId, Properties properties) throws IOException {
+//		String text = getCache().get(sourceId);
+//		boolean usecache = requestUri.getQueryParameters().getFirst("nocache") == null;
+//		boolean recache = requestUri.getQueryParameters().getFirst("recache") != null;
+//		OutputModel model = new FindlerManager(new Findler(properties), getCache()).find(sourceId, text, usecache,
+//				recache);
+//		return model;
+//	}
 
 //	public OutputModel find(String source, String text, Properties properties, boolean usecache, boolean recache)
 //			throws IOException {
@@ -279,7 +355,6 @@ public class Discover extends AbstractResource {
 //		}
 //		return model;
 //	}
-
 
 	private VelocityContext prepareContext(OutputModel model, double defaultTh, double th) {
 		VelocityContext vcontext = getVelocityContext();

@@ -228,6 +228,7 @@
 							we're not using ServletContainerInitializer(s) -->
 						<!-- for more relevant information regarding scanning of classes refer 
 							to https://java.net/jira/browse/SERVLET_SPEC-36 -->
+						<webInfIncludeJarPattern>nothing.jar</webInfIncludeJarPattern>
 						<!-- <webInfIncludeJarPattern>.*</webInfIncludeJarPattern> <containerIncludeJarPattern>^$</containerIncludeJarPattern> -->
 						<!-- <webInfIncludeJarPattern>.*/spring-[^/]*\.jar$|.*/.*jsp-api-[^/]\.jar$|./.*jsp-[^/]\.jar$|./.*taglibs[^/]*\.jar$</webInfIncludeJarPattern> -->
 
@@ -235,7 +236,7 @@
 					<!-- <jettyXml>src/test/resources/jetty.xml</jettyXml> -->
 					<!-- <reload>manual</reload> -->
 					<scanClassesPattern>
-						<include>led.discovery/*</include>
+						<include>led/discovery/*</include>
 						<!-- <excludes> <exclude>**/Foo.class</exclude> </excludes> -->
 					</scanClassesPattern>
 				</configuration>

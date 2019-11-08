@@ -1,6 +1,8 @@
 package led.discovery.app.resources;
 
 import java.io.StringWriter;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.ServletContext;
 import javax.ws.rs.core.Context;
@@ -29,6 +31,24 @@ public class AbstractResource {
 		super();
 	}
 
+	private static Map<String,String> outputToJob = new HashMap<String,String>();
+	
+	protected boolean outputHasJobId(String source) {
+		return outputToJob.containsKey(source);
+	}
+	
+	protected void outputSetJobId(String source, String jobId) {
+		outputToJob.put(source, jobId);
+	}
+	
+	protected String outputGetJobId(String source) {
+		return outputToJob.get(source);
+	}
+	
+	protected String outputRemoveJobId(String source) {
+		return outputToJob.remove(source);
+	}
+	
 	protected Response error500(String message, Exception e) {
 		return Response.status(500).entity(errorPage(message, e).toString()).build();
 	}
