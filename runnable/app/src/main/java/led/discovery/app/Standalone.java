@@ -48,7 +48,7 @@ public class Standalone {
 		webapp.setParentLoaderPriority(true);
 
 		// Resources
-		for (String resource : new String[] { "css", "img", "vendor", "js" }) {
+		for (String resource : new String[] { "css", "img", "vendor", "js", "books" }) {
 			ContextHandler capHandler = new ContextHandler();
 			capHandler.setContextPath("/" + resource);
 			ResourceHandler resHandler = new ResourceHandler();

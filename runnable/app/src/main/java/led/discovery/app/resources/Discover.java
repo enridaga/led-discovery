@@ -228,6 +228,7 @@ public class Discover extends AbstractResource {
 		if(method == null) {
 			method = getDefaultMethod();
 		}
+		
 		boolean usecache = requestUri.getQueryParameters().getFirst("nocache") == null;
 		boolean recache = requestUri.getQueryParameters().getFirst("recache") != null;
 		try {

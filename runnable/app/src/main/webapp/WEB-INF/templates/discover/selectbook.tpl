@@ -1,9 +1,9 @@
 
 	<div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-        <form method="GET" name="discover" id="urlForm" action="${findlerBasePath}/source" class="form-inline row">
+        <form method="GET" name="discover" id="urlForm" action="${findlerBasePath}/url" class="form-inline row">
 			<div class="form-group controls col-md-10">
-				<input style="width:100%" type="hidden" name="id" class="form-control" id="url">
+				<input style="width:100%" type="hidden" name="url" class="form-control" id="url">
             </div>
             <!-- <div class="form-group col-md-2" style="">
 				<button type="submit" class="btn btn-primary" id="sendMessageButton">Discover!</button>
