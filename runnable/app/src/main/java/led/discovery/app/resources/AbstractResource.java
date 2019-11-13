@@ -1,6 +1,7 @@
 package led.discovery.app.resources;
 
 import java.io.StringWriter;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,21 +33,28 @@ public class AbstractResource {
 	}
 
 	private static Map<String, String> outputToJob = new HashMap<String, String>();
+	private static Map<String, Date> jobsStartTime = new HashMap<String, Date>();
 
-	protected boolean outputHasJobId(String source) {
-		return outputToJob.containsKey(source);
+	protected boolean outputHasJobId(String outputId) {
+		return outputToJob.containsKey(outputId);
 	}
 
-	protected void outputSetJobId(String source, String jobId) {
-		outputToJob.put(source, jobId);
+	protected void outputSetJobId(String outputId, String jobId, Date jobStartTime) {
+		jobsStartTime.put(jobId, jobStartTime);
+		outputToJob.put(outputId, jobId);
 	}
 
-	protected String outputGetJobId(String source) {
-		return outputToJob.get(source);
+	protected String outputGetJobId(String outputId) {
+		return outputToJob.get(outputId);
 	}
 
-	protected String outputRemoveJobId(String source) {
-		return outputToJob.remove(source);
+	protected String outputRemoveJobId(String outputId) {
+		jobsStartTime.remove(outputId);
+		return outputToJob.remove(outputId);
+	}
+	
+	protected Date getJobStartTime(String jobId) {
+		return jobsStartTime.get(jobId);
 	}
 
 	protected Response error500(String message, Exception e) {

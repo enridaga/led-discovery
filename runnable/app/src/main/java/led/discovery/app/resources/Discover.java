@@ -12,12 +12,13 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
+import java.util.Collections;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Properties;
-import java.util.concurrent.Future;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -58,15 +59,11 @@ public class Discover extends AbstractResource {
 
 	private LinkedHashMap<Integer, Double> sensitivityScale = null;
 
-	private static Map<String, String> demoData = null;
+	private static Map<String, String> _demoData = null;
 
-	@GET
-	@Produces("text/html")
-	public Response htmlGET() {
-		L.debug("GET htmlGETs");
-		VelocityContext vcontext = getVelocityContext();
-		if (demoData == null) {
-			demoData = new HashMap<String, String>();
+	private Map<String, String> getDemoData(){
+		if (_demoData == null) {
+			_demoData = new HashMap<String, String>();
 			// Check if demo URL exists
 			// FIXME Change file name to collection.txt
 			File demo = new File((String) context.getAttribute(Application.DATA_DIR), "demo.txt");
@@ -81,7 +78,7 @@ public class Discover extends AbstractResource {
 					for (String s : dco.split("\n")) {
 						String[] tk = s.split("\\|");
 						L.debug("{} {}", tk[1], tk[0]);
-						demoData.put(tk[1].trim(), tk[0]);
+						_demoData.put(tk[1].trim(), tk[0]);
 					}
 				} catch (Exception e) {
 					L.error("Cannot read demo url lists at " + demo, e);
@@ -90,7 +87,15 @@ public class Discover extends AbstractResource {
 				L.debug("Demo file does not exist: {}", demo);
 			}
 		}
-		vcontext.put("demo", demoData);
+		return Collections.unmodifiableMap(_demoData);
+	}
+	@GET
+	@Produces("text/html")
+	public Response htmlGET() {
+		L.debug("GET htmlGETs");
+		VelocityContext vcontext = getVelocityContext();
+		
+		vcontext.put("demo", getDemoData());
 		String tmpl = "/discover/selectbook.tpl";
 		if ((boolean) context.getAttribute(Application.USER_INPUT_ENABLED)) {
 			tmpl = "/discover/input.tpl";
@@ -154,7 +159,7 @@ public class Discover extends AbstractResource {
 				VelocityContext vcontext = getVelocityContext();
 				vcontext = prepareContext(model, defaultTh, th);
 				vcontext.put("source", sourceId);
-				vcontext.put("sourceTitle", demoData.containsKey(sourceId) ? demoData.get(sourceId) : sourceId);
+				vcontext.put("sourceTitle", getDemoData().containsKey(sourceId) ? getDemoData().get(sourceId) : sourceId);
 				return Response.ok(getRenderer(vcontext).toString()).build();
 			} else {
 				L.debug("Output not ready");
@@ -168,7 +173,6 @@ public class Discover extends AbstractResource {
 					L.debug("Create a new Job");
 					// Don't use cache = start a background job
 					jobId = startJob(fm, sourceId, usecache || recache);
-					outputSetJobId(outputCacheId, jobId);
 				} else {
 					L.debug("Get info on existing Job");
 					jobId = outputGetJobId(outputCacheId);
@@ -193,9 +197,10 @@ public class Discover extends AbstractResource {
 				vcontext.put("body", getTemplate("/discover/waiting.tpl"));
 				vcontext.put("scripts", new String[] {getTemplate("/discover/waiting-script.tpl")});
 				vcontext.put("source", sourceId);
-				vcontext.put("sourceTitle", demoData.containsKey(sourceId) ? demoData.get(sourceId) : sourceId);
+				vcontext.put("sourceTitle", getDemoData().containsKey(sourceId) ? getDemoData().get(sourceId) : sourceId);
 				vcontext.put("error", error);
 				vcontext.put("jobId", jobId);
+				vcontext.put("startedAt", getJobStartTime(jobId));
 				return Response.ok(getRenderer(vcontext).toString()).build();
 			}
 		} catch (VelocityException mie) {
@@ -248,7 +253,6 @@ public class Discover extends AbstractResource {
 			if(!outputHasJobId(fm.buildOutputModelCacheId(sourceId))) {
 				// Don't use cache = start a background job
 				jobId = startJob(fm, sourceId, usecache || recache);
-				outputSetJobId(fm.buildOutputModelCacheId(sourceId), jobId);
 			}else {
 				jobId = outputGetJobId(fm.buildOutputModelCacheId(sourceId));
 			}
@@ -287,6 +291,7 @@ public class Discover extends AbstractResource {
 				return "jobs/" + jobId;
 			}
 		});
+		outputSetJobId(fm.buildOutputModelCacheId(sourceId), jobId, new Date());
 		L.debug("created job: {}", jobId);
 		return jobId;
 	}
@@ -333,7 +338,15 @@ public class Discover extends AbstractResource {
 	}
 
 	private void saveUrl(String url) throws IOException {
-		URLConnection u = new URL(url).openConnection();
+		String location;
+		if(url.startsWith("findler:")) {
+			L.debug("findler uri (before): {}", url);
+			location = requestUri.getBaseUri().resolve("/" + url.substring(8)).toString();
+			L.debug("findler uri (after): {}", location);
+		} else {
+			location = url;
+		}
+		URLConnection u = new URL(location).openConnection();
 		// String type = u.getHeaderField("Content-Type");
 		String text = IOUtils.toString(u.getInputStream(), StandardCharsets.UTF_8);
 

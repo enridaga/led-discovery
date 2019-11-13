@@ -8,10 +8,14 @@
 				<p class="">Cached resource</p>
 				#end
 			 -->
-				<p>
+				<p>Source:
 					#if($source.indexOf("http:") == 0|| $source.indexOf("https:") == 0)
-					Source: <a href="$source">$source</a> #else Source: <a
-						href="$findlerBasePath/id=$source">$source</a> #end
+					<a href="$source">$sourceTitle</a> 
+					#elseif($source.indexOf("findler:") == 0)
+					<a href="$findlerBasePath/../$source.substring(8)">$sourceTitle</a> 
+					#else
+					<b>$sourceTitle</b>
+					#end
 				</p>
 				<p>
 					<strong>$found</strong> traces of listening experiences found.	

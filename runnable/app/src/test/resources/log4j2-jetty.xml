@@ -8,8 +8,17 @@
 		</Console>
 	</Appenders>
 	<Loggers>
-		<Logger name="led.discovery.annotation" additivity="false"
-			level="debug">
+		<Logger name="led.discovery.annotator" additivity="false"
+			level="error">
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger name="led.discovery.annotator.evaluators.HybridEvaluator" additivity="false"
+			level="trace">
+			<AppenderRef ref="Console" />
+		</Logger>
+
+		<Logger name="led.discovery.analysis" additivity="false"
+			level="error">
 			<AppenderRef ref="Console" />
 		</Logger>
 
