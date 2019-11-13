@@ -23,6 +23,7 @@ import led.discovery.nlp.LemmaCleaner;
 
 public class HeatEntityEvaluator extends AbstractTextWindowEvaluator {
 	private Double threshold;
+	private int minimum_tokens;
 	private double maxValueMet = 0.0;
 	private double minValueMet = 100.0;
 	public final static Double DEFAULT_THRESHOLD = 0.00043;
@@ -31,6 +32,7 @@ public class HeatEntityEvaluator extends AbstractTextWindowEvaluator {
 
 	public HeatEntityEvaluator(Properties properties, LemmaCleaner cleaner, Set<String> stopwords) {
 		super(cleaner, stopwords);
+		Integer _minimum_tokens = Integer.parseInt(properties.getProperty("custom.led.hybrid.mintokens", "10"));
 		String _heatThreshold = properties.getProperty("custom.led.heat.threshold");
 		String _skippos = properties.getProperty("custom.led.heat.skippos");
 		if (_heatThreshold == null) {
@@ -45,6 +47,8 @@ public class HeatEntityEvaluator extends AbstractTextWindowEvaluator {
 		}
 
 		log.info("threshold: {}", threshold);
+		this.minimum_tokens = _minimum_tokens;
+		log.info("minimum tokens: {}", minimum_tokens);
 	}
 
 	public double getMaxValueMet() {
@@ -86,7 +90,13 @@ public class HeatEntityEvaluator extends AbstractTextWindowEvaluator {
 				tokens++;
 			}
 		}
-
+		if(minimum_tokens > tokens) {
+			if(log.isTraceEnabled()) {
+				log.trace("not enough tokens: {}", tokens);
+				log.trace("text was: {}", w.toText());
+			}
+			return 0.0;
+		}
 		double relativeScore = score / (double) tokens;
 		log.trace("score {}", Double.toString(relativeScore));
 		if (relativeScore > maxValueMet) {

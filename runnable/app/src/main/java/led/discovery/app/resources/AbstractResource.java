@@ -31,24 +31,24 @@ public class AbstractResource {
 		super();
 	}
 
-	private static Map<String,String> outputToJob = new HashMap<String,String>();
-	
+	private static Map<String, String> outputToJob = new HashMap<String, String>();
+
 	protected boolean outputHasJobId(String source) {
 		return outputToJob.containsKey(source);
 	}
-	
+
 	protected void outputSetJobId(String source, String jobId) {
 		outputToJob.put(source, jobId);
 	}
-	
+
 	protected String outputGetJobId(String source) {
 		return outputToJob.get(source);
 	}
-	
+
 	protected String outputRemoveJobId(String source) {
 		return outputToJob.remove(source);
 	}
-	
+
 	protected Response error500(String message, Exception e) {
 		return Response.status(500).entity(errorPage(message, e).toString()).build();
 	}
@@ -95,10 +95,14 @@ public class AbstractResource {
 		return vcontext;
 	}
 
+	protected String getDefaultMethod() {
+		return (String) context.getAttribute(Application.METHOD);
+	}
+
 	protected JobManager getJobManager() {
 		return (JobManager) context.getAttribute(Application.JOB_MANAGER);
 	}
-	
+
 	protected Response ok(VelocityContext vc) {
 		return Response.ok(getRenderer(vc).toString()).build();
 	}

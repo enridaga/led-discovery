@@ -31,7 +31,7 @@ public class RunAnnotator {
 	}
 
 	public OutputModel annotate(String sourceId, String text) throws IOException {
-		return manager.find(sourceId, text);
+		return manager.find(sourceId, text, true);
 	}
 
 }

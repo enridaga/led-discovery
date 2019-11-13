@@ -17,6 +17,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Properties;
+import java.util.concurrent.Future;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -119,15 +120,19 @@ public class Discover extends AbstractResource {
 	@GET
 	@Path("source")
 	@Produces("text/html")
-	public Response htmlGETsource(@QueryParam("id") String sourceId, @QueryParam("th") Double th) {
-		L.debug("GET jsonGETsource");
+	public Response htmlGETsource(@QueryParam("id") String sourceId, @QueryParam("th") Double th, @QueryParam("method") String method) {
+		L.debug("GET htmlGETsource");
 		if (sourceId == null) {
 			return Response.status(400).entity("Missing query parameter: url").build();
+		}
+		if(method == null) {
+			method = getDefaultMethod();
 		}
 		boolean usecache = requestUri.getQueryParameters().getFirst("nocache") == null;
 		boolean recache = requestUri.getQueryParameters().getFirst("recache") != null;
 		try {
-			Properties properties = getMethodProperties("MusicEmbeddings");
+			// TODO move threshold to annotation metadata
+			Properties properties = getMethodProperties(method);
 			double defaultTh = Double.parseDouble(properties.getProperty("custom.led.heat.threshold"));
 			if (th == null) {
 				th = defaultTh;
@@ -137,28 +142,59 @@ public class Discover extends AbstractResource {
 			L.debug("Threshold: {}", th);
 			
 			final FindlerManager fm = buildManager(properties);
-			if (!recache && usecache && fm.hasOutputModelCached(sourceId)) {
-				OutputModel model = fm.fromCache(sourceId);
+			String outputCacheId = fm.buildOutputModelCacheId(sourceId);
+			L.debug("use cache: {}", usecache);
+			L.debug("update cache: {}", recache);
+			L.debug("sourceId: {}", sourceId);
+			
+			L.debug("output cache id: {}", outputCacheId);
+			if (!recache && usecache && fm.hasOutputModelCachedBySourceId(sourceId)) {
+				L.debug("Visualise result");
+				OutputModel model = fm.fromCacheBySourceId(sourceId);
 				VelocityContext vcontext = getVelocityContext();
 				vcontext = prepareContext(model, defaultTh, th);
 				vcontext.put("source", sourceId);
+				vcontext.put("sourceTitle", demoData.containsKey(sourceId) ? demoData.get(sourceId) : sourceId);
 				return Response.ok(getRenderer(vcontext).toString()).build();
-			}else {
+			} else {
+				L.debug("Output not ready");
+				// TODO recache
 				// If a job with that source is not running, start one.
 				// Start a background job
 				// Don't use cache = start a background job
 				String jobId;
 				// If a job is already running
-				if(!outputHasJobId(fm.buildOutputModelCacheId(sourceId))) {
+				if(!outputHasJobId(outputCacheId)) {
+					L.debug("Create a new Job");
 					// Don't use cache = start a background job
 					jobId = startJob(fm, sourceId, usecache || recache);
-					outputSetJobId(fm.buildOutputModelCacheId(sourceId), jobId);
-				}else {
-					jobId = outputGetJobId(fm.buildOutputModelCacheId(sourceId));
+					outputSetJobId(outputCacheId, jobId);
+				} else {
+					L.debug("Get info on existing Job");
+					jobId = outputGetJobId(outputCacheId);
+					L.debug("Job Id: {}", jobId);
 				}
+				
+				// If Job is ready and output is not, then an error occurred!
+				boolean error = false;
+				L.debug("Job done: {}", getJobManager().ping(jobId).isDone());
+				if(getJobManager().ping(jobId).isDone()) {
+					
+					if(!fm.hasOutputModelCachedBySourceId(sourceId)) {
+						Object jr = (Object) getJobManager().ping(jobId).get();
+						L.debug("ping(jobId).get() is of type {}", jr.getClass());
+						
+						// Some error occurred
+						error = true;
+					}
+				}
+				
 				VelocityContext vcontext = getVelocityContext();
 				vcontext.put("body", getTemplate("/discover/waiting.tpl"));
+				vcontext.put("scripts", new String[] {getTemplate("/discover/waiting-script.tpl")});
 				vcontext.put("source", sourceId);
+				vcontext.put("sourceTitle", demoData.containsKey(sourceId) ? demoData.get(sourceId) : sourceId);
+				vcontext.put("error", error);
 				vcontext.put("jobId", jobId);
 				return Response.ok(getRenderer(vcontext).toString()).build();
 			}
@@ -179,15 +215,19 @@ public class Discover extends AbstractResource {
 	@GET
 	@Path("source")
 	@Produces("application/json")
-	public Response jsonGETsource(@QueryParam("id") String sourceId, @QueryParam("th") Double th) {
+	public Response jsonGETsource(@QueryParam("id") String sourceId, @QueryParam("th") Double th, @QueryParam("method") String method) {
 		L.debug("GET jsonGETsource");
 		if (sourceId == null) {
 			return Response.status(400).entity("Missing query parameter: url").build();
 		}
+		if(method == null) {
+			method = getDefaultMethod();
+		}
 		boolean usecache = requestUri.getQueryParameters().getFirst("nocache") == null;
 		boolean recache = requestUri.getQueryParameters().getFirst("recache") != null;
 		try {
-			Properties properties = getMethodProperties("MusicEmbeddings");
+			// TODO move threshold to annotation metadata
+			Properties properties = getMethodProperties(method);
 			double defaultTh = Double.parseDouble(properties.getProperty("custom.led.heat.threshold"));
 			if (th == null) {
 				th = defaultTh;
@@ -197,10 +237,10 @@ public class Discover extends AbstractResource {
 			L.debug("Threshold: {}", th);
 			
 			final FindlerManager fm = buildManager(properties);
-			if (!recache && usecache && fm.hasOutputModelCached(sourceId)) {
+			if (!recache && usecache && fm.hasOutputModelCachedBySourceId(sourceId)) {
 				// Cleanup the Job Queue
 				outputRemoveJobId(fm.buildOutputModelCacheId(sourceId));
-				OutputModel model = fm.fromCache(sourceId);
+				OutputModel model = fm.fromCacheBySourceId(sourceId);
 				return Response.ok(model.streamJSON()).header("Content-type", "application/json; charset=utf8").build();
 			}
 			String jobId;
@@ -308,53 +348,6 @@ public class Discover extends AbstractResource {
 	public FileCache getCache() {
 		return (FileCache) context.getAttribute(Application.CACHE);
 	}
-
-//	public OutputModel findSource(String sourceId, Properties properties) throws IOException {
-//		String text = getCache().get(sourceId);
-//		boolean usecache = requestUri.getQueryParameters().getFirst("nocache") == null;
-//		boolean recache = requestUri.getQueryParameters().getFirst("recache") != null;
-//		OutputModel model = new FindlerManager(new Findler(properties), getCache()).find(sourceId, text, usecache,
-//				recache);
-//		return model;
-//	}
-
-//	public OutputModel find(String source, String text, Properties properties, boolean usecache, boolean recache)
-//			throws IOException {
-//		StringWriter writer = new StringWriter();
-//		properties.list(new PrintWriter(writer));
-//		String th = properties.getProperty("custom.led.heat.threshold");
-//		String outputId = getCache().buildHash(source, th, writer.getBuffer().toString());
-//
-//		// If exists in cache reload it
-//		OutputModel model;
-//		if (getCache().containsHash(outputId) && usecache && !recache) {
-//			L.info("Reading from cache: {}", outputId);
-//			model = OutputModel.fromJSON(getCache().getByHash(outputId));
-//			model.setMetadata("cached", "true");
-//		} else {
-//			L.info("Computing annotations");
-////			final Annotation annotation = annotate(text, properties);
-////			model = OutputModel.build(annotation);
-////			model.setMetadata("bytes", Integer.toString(text.getBytes().length));
-////			model.setMetadata("th", properties.getProperty("custom.led.heat.threshold"));
-////			for (Object k : properties.keySet()) {
-////				model.setMetadata("property-" + k, properties.getProperty((String) k));
-////			}
-//			model = new Findler(properties).find(text);
-//			model.setMetadata("source", source);
-//			model.setMetadata("hash", outputId);
-//			
-//			
-//			if (usecache) {
-//				L.info("Writing cache: {}", outputId);
-//				OutputStream fos = getCache().putStream(outputId);
-//				OutputModel.writeAsJSON(model, fos);
-//				L.trace("Written: {}", outputId);
-//			}
-//			model.setMetadata("cached", "false");
-//		}
-//		return model;
-//	}
 
 	private VelocityContext prepareContext(OutputModel model, double defaultTh, double th) {
 		VelocityContext vcontext = getVelocityContext();

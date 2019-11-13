@@ -26,9 +26,11 @@ public class HybridEvaluator extends AbstractTextWindowEvaluator {
 	private double minValueMet = 100.0;
 	private Double multiplier;
 	private Double standard_score;
+	private Integer minimum_tokens;
 	public final static String DEFAULT_THRESHOLD = "0.00043";
 	public final static String DEFAULT_STANDARD_SCORE = "1.078270082";
 	public final static String DEFAULT_BOOST_MULTIPLIER = "2.0";
+	public final static String DEFAULT_MINIMUM_TOKENS = "0";
 	private String[] skippos;
 	private Logger log = LoggerFactory.getLogger(HybridEvaluator.class);
 
@@ -38,6 +40,7 @@ public class HybridEvaluator extends AbstractTextWindowEvaluator {
 		threshold = Double.parseDouble(properties.getProperty("custom.led.heat.threshold", DEFAULT_THRESHOLD));
 		standard_score = Double.parseDouble(properties.getProperty("custom.led.hybrid.standard", DEFAULT_STANDARD_SCORE));
 		multiplier = Double.parseDouble(properties.getProperty("custom.led.hybrid.multiplier", DEFAULT_BOOST_MULTIPLIER));
+		minimum_tokens = Integer.parseInt(properties.getProperty("custom.led.hybrid.mintokens", DEFAULT_MINIMUM_TOKENS));
 		
 		String _skippos = properties.getProperty("custom.led.heat.skippos");
 		if (_skippos == null) {
@@ -47,6 +50,7 @@ public class HybridEvaluator extends AbstractTextWindowEvaluator {
 		}
 		log.debug("skippos: {}", skippos);
 		log.debug("standard_score: {}", standard_score);
+		log.debug("minimum_tokens: {}", minimum_tokens);
 		log.debug("multiplier: {}", multiplier);
 		log.debug("threshold: {}", threshold);
 	}
@@ -61,6 +65,7 @@ public class HybridEvaluator extends AbstractTextWindowEvaluator {
 
 	@Override
 	protected Double computeScore(TextWindow w) {
+		
 		double score = 0.0;
 		String entity;
 		int tokens = 0;
@@ -91,8 +96,15 @@ public class HybridEvaluator extends AbstractTextWindowEvaluator {
 			}
 		}
 
+		if(minimum_tokens > tokens) {
+			if(log.isTraceEnabled()) {
+				log.trace("not enough tokens: {}", tokens);
+				log.trace("text was: {}", w.toText());
+			}
+			return 0.0;
+		}
 		double relativeScore = score / (double) tokens;
-		log.trace("score {}", Double.toString(relativeScore));
+		log.trace("score {} tokens {}", Double.toString(relativeScore), tokens);
 		if (relativeScore > maxValueMet) {
 			maxValueMet = relativeScore;
 		}

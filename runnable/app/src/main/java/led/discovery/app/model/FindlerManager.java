@@ -26,8 +26,8 @@ public class FindlerManager {
 		return fileCache;
 	}
 
-	public boolean hasOutputModelCached(String source) {
-		return fileCache.containsHash(buildOutputModelCacheId(source));
+	public boolean hasOutputModelCachedBySourceId(String sourceId) {
+		return fileCache.containsHash(buildOutputModelCacheId(sourceId));
 	}
 
 	public String buildOutputModelCacheId(String source) {
@@ -56,7 +56,7 @@ public class FindlerManager {
 		return model;
 	}
 
-	public OutputModel fromCache(String source) throws IOException {
+	public OutputModel fromCacheBySourceId(String source) throws IOException {
 		String outputId = buildOutputModelCacheId(source);
 		if (fileCache.containsHash(outputId)) {
 			OutputModel model;

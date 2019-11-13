@@ -45,6 +45,7 @@ public class Findler {
 		StanfordCoreNLP.clearAnnotatorPool();
 		// FIXME Move this to the constructor
 		AnnotationPipeline pipeline = new StanfordCoreNLP(method);
+		// TODO move threshold to annotation metadata
 		Annotation annotation = new Annotation(text);
 		pipeline.annotate(annotation);
 		return annotation;

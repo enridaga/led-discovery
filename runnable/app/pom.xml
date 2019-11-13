@@ -207,11 +207,18 @@
 					<systemProperties>
 						<systemProperty>
 							<name>led.dataDir</name>
-							<value>${project.basedir}/src/test/resources/data/</value>
+							<!-- <value>${project.basedir}/src/test/resources/data/</value> -->
+							<value>${project.basedir}/hybrid-data/</value>
 						</systemProperty>
 						<systemProperty>
 							<name>led.cacheDir</name>
+							<!-- <value>${project.basedir}/cache/</value> -->
 							<value>${project.basedir}/cache/</value>
+						</systemProperty>
+						<systemProperty>
+							<name>led.method</name>
+							<!-- <value>MusicEmbeddings</value> -->
+							<value>heat-entity-music-filtered</value>
 						</systemProperty>
 						<systemProperty>
 							<name>log4j.configurationFile</name>

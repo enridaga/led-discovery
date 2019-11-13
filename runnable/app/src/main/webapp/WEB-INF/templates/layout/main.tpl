@@ -138,7 +138,7 @@
     <script src="/vendor/jquery/jquery.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="/vendor/jquery-bar-rating-1.2.2/dist/jquery.barrating.min.js"></script>
-    
+    <script src="/vendor/moment-2.24.0/moment.min.js"></script>
     <script src="/vendor/bootstrap-slider-10.2.2/bootstrap-slider.min.js"></script>
     
     <!-- Form Validation JavaScript -->
@@ -146,5 +146,10 @@
     
     <!-- Custom scripts for this template -->
     <script src="/js/clean-blog.min.js"></script>
+    
+#foreach ($script in $scripts)
+    #parse($script)
+#end
+
   </body>
 </html>

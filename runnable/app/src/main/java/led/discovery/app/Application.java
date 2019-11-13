@@ -26,6 +26,7 @@ public class Application extends ResourceConfig implements ServletContextListene
 	public final static String CACHE = "LED_CACHE";
 	public final static String VELOCITY = "LED_VELOCITY";
 	public static final String TEMPLATES = "LED_TEMPLATE";
+	public static final String METHOD = "LED_METHOD";
 	public static final String JOB_MANAGER = "LED_JOB_MANAGER";
 
 	public Application() {
@@ -52,7 +53,13 @@ public class Application extends ResourceConfig implements ServletContextListene
 		String cacheDir = System.getProperty("led.cacheDir");
 		if (cacheDir == null) {
 			log.error("Invalid or missing system property: led.cacheDir");
-			throw new RuntimeException("Missing parameter led.cacheDir");
+			throw new RuntimeException("Invalid or missing parameter led.cacheDir");
+		}
+		String method = System.getProperty("led.method");
+		if (method == null) {
+			log.error("Invalid or missing system property: led.method (Should be the name of the properties file in the data dir)");
+			log.error("was: {}", method);
+			throw new RuntimeException("Invalid or missing parameter led.method");
 		}
 		log.info("cacheDir: {}", cacheDir);
 		try {
@@ -68,6 +75,7 @@ public class Application extends ResourceConfig implements ServletContextListene
 		ctx.setAttribute(USER_INPUT_ENABLED, userInputEnabled);
 		ctx.setAttribute(DATA_DIR, dataDir);
 		//
+		ctx.setAttribute(METHOD, method);
 		ctx.setAttribute(CACHE_DIR, cacheDir);
 		ctx.setAttribute(CACHE, new FileCache(cacheDir));
 		

@@ -55,9 +55,12 @@ public class DBpediaSpotlightAnnotator implements Annotator {
 		cache.set_cache_extension(".spotlight");
 		confidence = Double.parseDouble(props.getProperty("custom.spotlight.confidence", "0.2"));
 		support = Integer.parseInt(props.getProperty("custom.spotlight.support", "0"));
+		
 		if (service == null) {
 			service = "http://anne.kmi.open.ac.uk/rest/annotate";
 		}
+		
+		log.debug("Using service {}", service);
 		// cache = props.getProperty("custom.spotlight.cache");
 		client = new SpotlightClient(service);
 	}
