@@ -1,8 +1,8 @@
 #!/bin/bash
 
-file=target/led-discovery-app-0.0.4-SNAPSHOT.jar
+file=target/led-discovery-app-0.0.4.jar
 data="hybrid-data"
-cache="hybrid-cache"
+cache="hybrid-cache2"
 method="heat-entity-music-filtered"
 input="0"
 log4j2="log4j2.xml"
