@@ -7,7 +7,9 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,9 +32,11 @@ public class SpotlightClient {
 		long sss;
 		// URL connection channel.
 		StringBuilder stringBuilder;
+		Map<String, String> headers = new HashMap<String, String>();
 		try {
 			HttpURLConnection urlConn;
-			String querystring = new StringBuilder().append("text=").append(URLEncoder.encode(text, "UTF-8")).append("&confidence=").append(confidence).append("&support=").append(support).toString();
+			String querystring = new StringBuilder().append("text=").append(URLEncoder.encode(text, "UTF-8"))
+					.append("&confidence=").append(confidence).append("&support=").append(support).toString();
 			// 8192 bytes as max URL length
 			boolean doPost = true; // XXX We always do a HTTP POST
 
@@ -60,8 +64,7 @@ public class SpotlightClient {
 				printout.close();
 			} else {
 				// Do GET
-				urlConn = (HttpURLConnection) new URL(spotlight + '?' +
-					querystring).openConnection();
+				urlConn = (HttpURLConnection) new URL(spotlight + '?' + querystring).openConnection();
 				urlConn.setRequestProperty("Accept", "text/xml");
 			}
 			sss = System.currentTimeMillis();
@@ -75,6 +78,7 @@ public class SpotlightClient {
 			boolean httpHeader = true;
 			stringBuilder = new StringBuilder();
 			while ((line = input.readLine()) != null) {
+
 				if (httpHeader) {
 					if (line.length() > 5) {
 						test = line.substring(0, 5);
@@ -82,6 +86,13 @@ public class SpotlightClient {
 					if (test.equals("<?xml")) {
 						httpHeader = false;
 						stringBuilder.append(line);
+					} else {
+						if (line.contains(":")) {
+							headers.put(line.substring(0, line.indexOf(':')), line.substring(line.indexOf(':') + 1));
+						} else {
+							headers.put(line, "");
+						}
+						log.trace("header line: {}", line);
 					}
 				} else {
 					stringBuilder.append(line);
@@ -93,7 +104,7 @@ public class SpotlightClient {
 			throw e;
 		}
 
-		return new SpotlightResponse(stringBuilder.toString(), sss, confidence, support);
+		return new SpotlightResponse(stringBuilder.toString(), sss, confidence, support, headers);
 	}
 
 	public static void main(String[] args) throws IOException {

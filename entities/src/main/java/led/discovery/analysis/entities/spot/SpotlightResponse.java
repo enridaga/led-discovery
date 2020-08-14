@@ -3,7 +3,9 @@ package led.discovery.analysis.entities.spot;
 import java.io.ByteArrayInputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -12,7 +14,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class SpotlightResponse implements Serializable {
-
+	private Map<String, String> headers;
 	/**
 	 * 
 	 */
@@ -21,14 +23,19 @@ public class SpotlightResponse implements Serializable {
 	public SpotlightResponse() {
 	}
 
-	public SpotlightResponse(String xml, long ms, double confidence, int support) {
+	public SpotlightResponse(String xml, long ms, double confidence, int support, Map<String, String> headers) {
 		this.xml = xml;
 		this.milliseconds = ms;
 		this.confidence = confidence;
+		this.headers = headers;
 	}
 
 	public String getXml() {
 		return xml;
+	}
+	
+	public Map<String,String> getResponseHeaders(){
+		return Collections.unmodifiableMap(headers);
 	}
 
 	protected void setXml(String xml) {
@@ -66,7 +73,7 @@ public class SpotlightResponse implements Serializable {
 //		}
 //		return annotations;
 	}
-	
+
 	public static List<SpotlightAnnotation> asList(String xml, double confidence) {
 		List<SpotlightAnnotation> annotations;
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
