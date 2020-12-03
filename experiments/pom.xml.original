@@ -1,0 +1,661 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>led-experiments</artifactId>
+	<parent>
+		<groupId>led-discovery</groupId>
+		<artifactId>master-pom</artifactId>
+		<version>0.0.4-SNAPSHOT<!--led-version--></version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	<name>LED Discovery: Experiments</name>
+	<packaging>jar</packaging>
+
+	<!-- Dependency -->
+	<dependencies>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>led-discovery</groupId>
+			<artifactId>led-annotator</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>led-discovery</groupId>
+			<artifactId>led-benchmark</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>edu.stanford.nlp</groupId>
+			<artifactId>stanford-corenlp</artifactId>
+			<classifier>models</classifier>
+		</dependency>
+		<dependency>
+			<groupId>edu.stanford.nlp</groupId>
+			<artifactId>stanford-corenlp</artifactId>
+		</dependency>
+		<!-- Testing -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-text</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-csv</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>led-discovery</groupId>
+			<artifactId>led-spark</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.6.0</version>
+				<executions>
+				
+				<execution>
+						<id>annotator</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.RunAnnotator</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>${exId}</argument>
+								<argument>${exProp}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>experiment</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.RunExperiment</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>${exId}</argument>
+								<argument>${exProp}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>experiment-gs</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.RunExperimentGS</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>${exId}</argument>
+								<argument>${exProp}</argument>
+								<argument>${lookup}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<!-- Learn Window Size -->
+					<execution>
+						<id>learn-window-size</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.LearnWindowSize</argument>
+								<argument>${project.basedir}/../data</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<!-- Learn Heat Threshold -->
+					<execution>
+						<id>learn-heat-threshold</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.LearnHeatThreshold</argument>
+								<argument>${project.basedir}/../data</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<!-- Learn Vocabulary -->
+					<execution>
+						<id>learn-vocabulary</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.LearnVocabulary</argument>
+								<argument>${project.basedir}/../data/positives/</argument>
+								<argument>${project.basedir}/../data/analysis/learnt-vocabulary.csv</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>learn-entities</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.LearnEntities</argument>
+								<argument>${project.basedir}/../data/analysis/entities/experiences-entities.csv</argument>
+								<argument>${project.basedir}/../data/analysis/learnt-entities.csv</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<!-- Gen Positives -->
+					<execution>
+						<id>gen-positives</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.GenPositives</argument>
+								<argument>${project.basedir}/../data</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<!-- Analyse Results -->
+					<execution>
+						<id>analyse-results</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.AnalyseResults</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>${output}</argument>
+								<argument>${experiments}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+						<!-- Analyse Results -->
+					<execution>
+						<id>generate-results-table</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.ResultsComparisonTable</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>${output}</argument>
+								<argument>${experiments}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>generate-false-negatives-table</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.FalseNegativesTable</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>${output}</argument>
+								<argument>${experiments}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>generate-false-positives-snippets</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.FalsePositivesSnippetsTable</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>${output}</argument>
+								<argument>${experiments}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>generate-false-negatives-snippets</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.FalseNegativesSnippetsTable</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>${output}</argument>
+								<argument>${experiments}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>analyse-components-coverage</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.AnalyseComponentsCoverage</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>${input}</argument>
+								<argument>${output}</argument>
+								<argument>${limit}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					
+					<execution>
+						<id>gold-standard-measures</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.GoldStandardMeasures</argument>
+								<argument>${project.basedir}/../data</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					
+					<execution>
+						<id>generate-sentiment-dictionary</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.GenerateSentimentDictionary</argument>
+								<argument>${project.basedir}/../data</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>extract-patterns</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.PatternsExtractor</argument>
+								<argument>${project.basedir}/../data</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>gen-prepared-gs</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.GoldStandardPrepareForEvaluation</argument>
+								<argument>${project.basedir}/../data</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					
+					<execution>
+						<id>red-count-words</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.REDDataset$CountWords</argument>
+								<argument>${project.basedir}/../data/negatives-red</argument>
+								<argument>${project.basedir}/../data/red/files.csv</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					
+					<execution>
+						<id>red-gen-training-test</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.REDDataset$GenerateTrainingAndTest</argument>
+								<argument>${project.basedir}/../data/red/files.csv</argument>
+								<argument>${project.basedir}/../data/red/training-SNAPSHOT.txt</argument>
+								<argument>${project.basedir}/../data/red/test-SNAPSHOT.txt</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>red-read-threshold-analysis</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.REDDataset$AnalyseDistribution</argument>
+								<argument>${project.basedir}/../data/negatives-red</argument>
+								<argument>${project.basedir}/../data/red/training-1.txt</argument>
+								<argument>${project.basedir}/../data/red/read-dictionary.txt</argument>
+								<argument>${project.basedir}/../data/red/red-read-threshold-analysis-1.csv</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>reuters-read-threshold-analysis</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.REDDataset$AnalyseDistribution</argument>
+								<argument>${project.basedir}/../data/negatives-reuters</argument>
+								<argument>${project.basedir}/../data/red/reuters-files.txt</argument>
+								<argument>${project.basedir}/../data/red/read-dictionary.txt</argument>
+								<argument>${project.basedir}/../data/red/reuters-read-threshold-analysis-1.csv</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					
+					<execution>
+						<id>led-read-threshold-analysis</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.REDDataset$AnalyseDistribution</argument>
+								<argument>${project.basedir}/../data/positives</argument>
+								<argument>${project.basedir}/../data/red/led-files.txt</argument>
+								<argument>${project.basedir}/../data/red/read-dictionary.txt</argument>
+								<argument>${project.basedir}/../data/red/led-read-threshold-analysis-1.csv</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>red-book-threshold-analysis</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.REDDataset$AnalyseDistribution</argument>
+								<argument>${project.basedir}/../data/negatives-red</argument>
+								<argument>${project.basedir}/../data/red/training-1.txt</argument>
+								<argument>${project.basedir}/../data/red/dictionary-book.csv</argument>
+								<argument>${project.basedir}/../data/red/red-book-threshold-analysis-1.csv</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>reuters-book-threshold-analysis</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.REDDataset$AnalyseDistribution</argument>
+								<argument>${project.basedir}/../data/negatives-reuters</argument>
+								<argument>${project.basedir}/../data/red/reuters-files.txt</argument>
+								<argument>${project.basedir}/../data/red/dictionary-book.csv</argument>
+								<argument>${project.basedir}/../data/red/reuters-book-threshold-analysis-1.csv</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>led-book-threshold-analysis</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.REDDataset$AnalyseDistribution</argument>
+								<argument>${project.basedir}/../data/positives</argument>
+								<argument>${project.basedir}/../data/red/led-files.txt</argument>
+								<argument>${project.basedir}/../data/red/dictionary-book.csv</argument>
+								<argument>${project.basedir}/../data/red/led-book-threshold-analysis-1.csv</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					
+					<execution>
+						<id>red-create-test-dataset</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.REDDataset$CreateTestDataset</argument>
+								<argument>${project.basedir}/../data/negatives-red</argument>
+								<argument>${project.basedir}/../data/red/test-1.txt</argument>
+								<argument>${project.basedir}/../data/red/dataset.csv</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					
+					<execution>
+						<id>experiment-red</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.RunExperimentRED</argument>
+								<argument>${project.basedir}/../data</argument>
+								<argument>${exId}</argument>
+								<argument>${project.basedir}/../data/red/experiments/${exProp}.properties</argument>
+								<argument>${lookup}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>red-analyse-results</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.AnalyseResults</argument>
+								<argument>${project.basedir}/../data/red</argument>
+								<argument>${output}</argument>
+								<argument>${experiments}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>eeanalysis</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>java</executable>
+							<arguments>
+								<argument>-classpath</argument>
+								<classpath />
+								<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
+								<argument>led.discovery.experiments.EntityExtractionAnalysis</argument>
+								<argument>${project.basedir}/../data/eeanalysis</argument>
+								<!-- <argument>${output}</argument> -->
+							</arguments>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
