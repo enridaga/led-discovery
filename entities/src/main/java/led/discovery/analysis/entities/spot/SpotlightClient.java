@@ -54,8 +54,9 @@ public class SpotlightClient {
 				urlConn.setUseCaches(false);
 				// Request method
 				urlConn.setRequestMethod("POST");
-				// Specify the content type.
+				// Specify the content type
 				urlConn.setRequestProperty("Accept", "text/xml");
+				urlConn.setRequestProperty("Accept-charset", "UTF-8");
 				// Send POST output.
 				DataOutputStream printout = new DataOutputStream(urlConn.getOutputStream());
 
@@ -69,7 +70,7 @@ public class SpotlightClient {
 			}
 			sss = System.currentTimeMillis();
 			// Get response data.
-			BufferedReader input = new BufferedReader(new InputStreamReader(urlConn.getInputStream()));
+			BufferedReader input = new BufferedReader(new InputStreamReader(urlConn.getInputStream(), "UTF-8"));
 			sss = (System.currentTimeMillis() - sss);
 			String line;
 			String test = "";
