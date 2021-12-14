@@ -5,7 +5,7 @@
 	<parent>
 	    <groupId>led-discovery</groupId>
 	    <artifactId>master-pom</artifactId>
-	    <version>0.0.5-SNAPSHOT<!--led-version--></version>
+	    <version>0.0.6-SNAPSHOT<!--led-version--></version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<name>LED Discovery: NLP</name>
@@ -56,6 +56,23 @@
 			<groupId>xerces</groupId>
 			<artifactId>xercesImpl</artifactId>
 		</dependency>
+		<!-- JAXB -->
+	    <dependency>
+	        <groupId>com.sun.xml.bind</groupId>
+	        <artifactId>jaxb-core</artifactId>
+	    </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+        </dependency>
+<dependency>
+    <groupId>javax.activation</groupId>
+    <artifactId>activation</artifactId>
+</dependency>
 	</dependencies>
 
 </project>
