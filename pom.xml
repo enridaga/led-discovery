@@ -16,9 +16,9 @@
 		<hadoop.version>2.6.0-cdh5.14.0</hadoop.version>
 		<hive.version>1.1.0-cdh5.14.0</hive.version>
 		<org.eclipse.jetty.version>9.3.0.v20150612</org.eclipse.jetty.version> <!-- 9.3.0.v20150612 9.3.0.M1 9.4.12.v20180830 -->
-		<org.apache.logging.log4j.version>2.8.2</org.apache.logging.log4j.version>
+		<org.apache.logging.log4j.version>2.15.0</org.apache.logging.log4j.version>
 		<!-- <spotlight.service>http://model.dbpedia-spotlight.org/en/annotate</spotlight.service> -->
-		<spotlight.service>http://anne.kmi.open.ac.uk/rest/annotate</spotlight.service>
+		<spotlight.service>http://whise.kmi.open.ac.uk/rest/annotate</spotlight.service>
 
 	</properties>
 
@@ -391,6 +391,28 @@
 				<artifactId>velocity-tools-view</artifactId>
 				<version>3.0</version>
 			</dependency>
+            <!-- JAXB -->
+            <dependency>
+                <groupId>com.sun.xml.bind</groupId>
+                <artifactId>jaxb-core</artifactId>
+                <version>2.3.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.xml.bind</groupId>
+                <artifactId>jaxb-impl</artifactId>
+                <version>2.3.0</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.xml.bind</groupId>
+                <artifactId>jaxb-api</artifactId>
+                <version>2.3.0</version>
+            </dependency>
+<dependency>
+    <groupId>javax.activation</groupId>
+    <artifactId>activation</artifactId>
+    <version>1.1.1</version>
+</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 	<build>
