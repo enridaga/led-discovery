@@ -10,6 +10,17 @@ model = Word2VecModel.load(sc,'/Users/ed4565/Development/led-discovery/data/anal
 
 first=lambda x: x[0]
 
+def dictionaryGetMulti(concepts, size):
+    keep=list()
+    syns=list()
+    for c in concepts:
+        syn=model.findSynonyms(c,size/len(concepts))
+        terms=map(first,syn)
+        keep=list(set(terms) | set(keep))
+        syns=list(set(syn) | set(syns))
+    result=filter(lambda x: x[0] in keep,syns)
+    return result
+
 def disamb0(primary,subtract,size):
   primaryd=model.findSynonyms(primary,size)
   primaryt=map(first,primaryd)
@@ -46,6 +57,15 @@ def intersect(terms,size):
 def toCSVLine(data): 
   return ','.join(str(d) for d in data)
 
+def dictionaryMulti(concepts,size,output):
+ dict=dictionaryGetMulti(concepts,size)
+ file=open(output,"w")
+ for j in dict:
+  file.write(j[0].encode('utf8'))
+  file.write(",")
+  file.write("%s" % j[1])
+  file.write("\n")
+
 def dictionary(term,antiterm,size,output):
  dict=disamb(term,antiterm,size)
  file=open(output,"w")
@@ -78,8 +98,14 @@ Experience=[
     set(["knowledge[n]","know[v]","live[v]","receive[v]"])
 ]
 
-dictionary(Event[0],Event[1],10000,"dictionary-event-1.csv")
-dictionary(Music[0],Music[1],10000,"dictionary-music-1.csv")
-dictionary(Listener[0],Listener[1],10000,"dictionary-listener-1.csv")
-dictionary(Performer[0],Performer[1],10000,"dictionary-performer-1.csv")
-dictionary(Experience[0],Experience[1],10000,"dictionary-experience-1.csv")
+Child=[
+    set(["music[n]","childhood[n]"]),
+    set()
+]
+dictionaryMulti(["music[n]","childhood[n]"], 10000, "dictionary-multi-music-childhood.csv")
+#dictionary(Child[0],Child[1],10000,"dictionary-child2.csv")
+#dictionary(Event[0],Event[1],10000,"dictionary-event-1.csv")
+#dictionary(Music[0],Music[1],10000,"dictionary-music-1.csv")
+#dictionary(Listener[0],Listener[1],10000,"dictionary-listener-1.csv")
+#dictionary(Performer[0],Performer[1],10000,"dictionary-performer-1.csv")
+#dictionary(Experience[0],Experience[1],10000,"dictionary-experience-1.csv")
