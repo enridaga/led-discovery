@@ -2,8 +2,12 @@ from pyspark.sql.types import StructType
 from pyspark.sql.types import Row
 from pyspark.sql.types import StructField
 from pyspark.sql.types import StringType
+from pyspark.sql import SparkSession
 from pyspark.sql.types import FloatType
 from pyspark.mllib.feature import Word2VecModel
+
+#s = scSparkSession.builder.appName("SimpleApp").getOrCreate()
+#sc = SparkSession.builder.master('local[*]').config("spark.driver.memory", "8g").config("spark.executor.memory", "16g").config("spark.dirver.maxResultSize","8g ").appName('led-dictioanry').getOrCreate()
 model = Word2VecModel.load(sc,'/Users/ed4565/Development/led-discovery/data/analysis/gutenberg2vec/word2vec.model')
 
 
@@ -34,15 +38,30 @@ def disamb0(primary,subtract,size):
 
 def disamb(primarys,subtract,size):
   keep=list()
+  primaryk=list()
+  # Load embeddings from primary concepts
   for primary in primarys:
-    primaryd=model.findSynonyms(primary,size)
-    primaryt=map(first,primaryd)
+    #print('primary', primary)
+    primaryd=list(model.findSynonyms(primary,size))
+    #print('primaryd', primaryd[:10])
+    primaryk = primaryk + primaryd
+    #print('primaryk', primaryk[-10:])
+    primaryt = list(map(first,primaryd))
+    #print('prymaryt',primaryt[:10])
+    # Keep a list of labels, to be used later
     keep=list(set(primaryt) | set(keep))
+    #print(keep[:10])
+  # Subtract embeddings from anti-concepts
   for subt in subtract:
     subtd=model.findSynonyms(subt,size)
     subtt=map(first,subtd)
     keep=list(set(keep)-set(subtt)-set([subt]))
-  result=filter(lambda x: x[0] in keep, primaryd)
+  # Recover scores from primary concepts
+  result=list(filter(lambda x: x[0] in keep, primaryk))
+  # Add key concepts
+  for primary in primarys:
+      result.append((primary, 1.0))
+  #print(result[:10])
   return result
 
 def intersect(terms,size):
@@ -68,12 +87,12 @@ def dictionaryMulti(concepts,size,output):
 
 def dictionary(term,antiterm,size,output):
  dict=disamb(term,antiterm,size)
- file=open(output,"w")
+ file=open(output,"wb")
  for j in dict:
   file.write(j[0].encode('utf8'))
-  file.write(",")
-  file.write("%s" % j[1])
-  file.write("\n")
+  file.write(",".encode('utf8'))
+  file.write(str(j[1]).encode('utf8'))
+  file.write("\n".encode('utf8'))
 
 Event=[
     set(["event[n]"]),
@@ -102,8 +121,8 @@ Child=[
     set(["music[n]","childhood[n]"]),
     set()
 ]
-dictionaryMulti(["music[n]","childhood[n]"], 10000, "dictionary-multi-music-childhood.csv")
-#dictionary(Child[0],Child[1],10000,"dictionary-child2.csv")
+#dictionaryMulti(["music[n]","childhood[n]"], 10000, "dictionary-multi-music-childhood.csv")
+#dictionary(Child[0],Child[1],5000,"dictionary-child4.csv")
 #dictionary(Event[0],Event[1],10000,"dictionary-event-1.csv")
 #dictionary(Music[0],Music[1],10000,"dictionary-music-1.csv")
 #dictionary(Listener[0],Listener[1],10000,"dictionary-listener-1.csv")
